@@ -1,0 +1,15 @@
+[Desktop Entry]
+_Name=Font Viewer
+_Comment=Preview fonts
+Icon=preferences-desktop-font
+Exec=gnome-font-viewer %u
+Terminal=false
+Type=Application
+StartupNotify=true
+NoDisplay=true
+MimeType=application/x-font-ttf;application/x-font-pcf;application/x-font-type1;application/x-font-otf;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-utils
+X-GNOME-Bugzilla-Component=font-viewer
+X-GNOME-Bugzilla-OtherBinaries=gnome-thumbnail-font
+X-GNOME-Bugzilla-Version=@VERSION@
