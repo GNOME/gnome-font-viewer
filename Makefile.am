@@ -32,9 +32,6 @@ gnome_font_viewer_SOURCES = \
 	$(ftstream_SOURCES) \
 	font-view.c
 
-schemasdir = $(GCONF_SCHEMA_FILE_DIR)
-schemas_DATA = fontilus.schemas
-
 desktopdir = $(datadir)/applications
 desktop_in_files = gnome-font-viewer.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
@@ -52,7 +49,7 @@ uninstall-local:
 @INTLTOOL_DIRECTORY_RULE@
 
 CLEANFILES = $(desktop_in_files) $(desktop_DATA) \
-  $(schemas_DATA) $(directory_DATA)
+ $(directory_DATA)
 
 EXTRA_DIST = \
   gnome-font-viewer.thumbnailer \
