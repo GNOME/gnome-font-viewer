@@ -39,8 +39,11 @@ vfs_stream_read (FT_Stream stream,
     GFileInputStream *handle = stream->descriptor.pointer;
     gssize bytes_read = 0;
 
+    if (!count && offset > stream->size)
+        return 1;
+
     if (!g_seekable_seek (G_SEEKABLE (handle), offset, G_SEEK_SET, NULL, NULL))
-        return 0;
+        return (count ? 0 : 1);
 
     if (count > 0) {
         bytes_read = g_input_stream_read (G_INPUT_STREAM (handle), buffer,
