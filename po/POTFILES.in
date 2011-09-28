@@ -1,0 +1,5 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+src/font-thumbnailer.c
+src/font-view.c
+src/gnome-font-viewer.desktop.in.in
