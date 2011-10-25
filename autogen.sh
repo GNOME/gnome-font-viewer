@@ -4,7 +4,7 @@
 srcdir=`dirname $0`
 test -z "$srcdir" && srcdir=.
 
-PKG_NAME="GNOME Utilities"
+PKG_NAME="GNOME Font Viewer"
 
 (test -f $srcdir/configure.ac \
   && test -f $srcdir/src/font-view.c) || {

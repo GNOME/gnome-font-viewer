@@ -1,17 +1,17 @@
 dnl -*- mode: m4 -*-
 AC_PREREQ(2.63)
-AC_INIT([gnome-font-viewer],[3.3.3],[],[gnome-font-viewer])
+AC_INIT([gnome-font-viewer], [3.3.3],
+	[http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer],
+	[gnome-font-viewer],
+	[http://live.gnome.org/GnomeUtils])
 
 AC_CONFIG_HEADERS(config.h)
 AC_CONFIG_MACRO_DIR([m4])
 
-m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES([yes])])
-
 AC_CANONICAL_TARGET
 
-# require automake 1.10
-AM_INIT_AUTOMAKE([1.10 dist-bzip2 no-dist-gzip foreign])
-AM_MAINTAINER_MODE
+AM_INIT_AUTOMAKE([1.11 dist-xz no-dist-gzip foreign])
+AM_SILENT_RULES([yes])
 
 GETTEXT_PACKAGE=AC_PACKAGE_NAME
 AC_SUBST(GETTEXT_PACKAGE)
@@ -31,10 +31,8 @@ AC_PROG_CXX
 AC_ISC_POSIX
 AC_HEADER_STDC
 
-AM_DISABLE_STATIC
-# enable libtool
-AC_PROG_LIBTOOL
-# avoid libtool for LTCOMPILE, use it only to link
+LT_PREREQ([2.2.6])
+LT_INIT([disable-static])
 
 ## don't rerun to this point if we abort
 AC_CACHE_SAVE
