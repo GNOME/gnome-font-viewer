@@ -1,6 +1,6 @@
 dnl -*- mode: m4 -*-
 AC_PREREQ(2.63)
-AC_INIT([gnome-font-viewer],[3.3.0],[],[gnome-font-viewer])
+AC_INIT([gnome-font-viewer],[3.3.2],[],[gnome-font-viewer])
 
 AC_CONFIG_HEADERS(config.h)
 AC_CONFIG_MACRO_DIR([m4])
