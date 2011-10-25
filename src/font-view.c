@@ -528,7 +528,7 @@ main (int argc,
     g_free (title);
     gtk_window_set_resizable (GTK_WINDOW (window), TRUE);
 
-    hbox = gtk_hbox_new (FALSE, 0);
+    hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
     gtk_container_add (GTK_CONTAINER (window), hbox);
 
     swin = gtk_scrolled_window_new (NULL, NULL);
