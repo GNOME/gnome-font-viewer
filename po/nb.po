@@ -1,23 +1,22 @@
-# Norwegian translation of gnome-utils (bokmål dialect).
+# Norwegian bokmål translation of gnome-font-viewer.
 # Copyright (C) 1999-2005 Free Software Foundation, Inc.
 #
-# Kjartan Maraas <kmaraas@gnome.org>, 1999-2011.
+# Kjartan Maraas <kmaraas@gnome.org>, 1999-2012.
 # Terance Edward Sola <terance@lyse.net>, 2005.
 # Torstein Adolf Winterseth <kvikende@fsfe.org>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.91.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-06 14:36-0400\n"
-"PO-Revision-Date: 2011-08-10 15:24+0200\n"
+"POT-Creation-Date: 2012-01-25 13:10+0100\n"
+"PO-Revision-Date: 2012-01-25 13:11+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
-"Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
+"Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.1\n"
 
 #: ../src/font-thumbnailer.c:267
 msgid "Text to thumbnail (default: Aa)"
@@ -39,48 +38,48 @@ msgstr "STØRRELSE"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "SKRIFTFIL UTDATAFIL"
 
-#: ../src/font-view.c:289
+#: ../src/font-view.c:284
 msgid "Name:"
 msgstr "Navn:"
 
-#: ../src/font-view.c:292
+#: ../src/font-view.c:287
 msgid "Style:"
 msgstr "Stil:"
 
-#: ../src/font-view.c:304
+#: ../src/font-view.c:299
 msgid "Type:"
 msgstr "Type:"
 
-#: ../src/font-view.c:308
+#: ../src/font-view.c:303
 msgid "Size:"
 msgstr "Størrelse:"
 
-#: ../src/font-view.c:352 ../src/font-view.c:365
+#: ../src/font-view.c:347 ../src/font-view.c:360
 msgid "Version:"
 msgstr "Versjon:"
 
-#: ../src/font-view.c:356 ../src/font-view.c:367
+#: ../src/font-view.c:351 ../src/font-view.c:362
 msgid "Copyright:"
 msgstr "Opphavsrett:"
 
-#: ../src/font-view.c:360
+#: ../src/font-view.c:355
 msgid "Description:"
 msgstr "Beskrivelse:"
 
-#: ../src/font-view.c:428
+#: ../src/font-view.c:423
 msgid "Installed"
 msgstr "Installert"
 
-#: ../src/font-view.c:430
+#: ../src/font-view.c:425
 msgid "Install Failed"
 msgstr "Installering feilet"
 
-#: ../src/font-view.c:502
+#: ../src/font-view.c:497
 #, c-format
 msgid "Usage: %s fontfile\n"
 msgstr "Bruk: %s skriftfil\n"
 
-#: ../src/font-view.c:572
+#: ../src/font-view.c:569
 msgid "I_nstall Font"
 msgstr "I_nstaller skrift"
 
