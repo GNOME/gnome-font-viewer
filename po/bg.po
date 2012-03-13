@@ -1,4 +1,4 @@
-# Bulgarian translation of gnome-utils po-file.
+# Bulgarian translation of gnome-font-viewer po-file.
 # Copyright (C) 2002, 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
 # Copyright (C) 2009, 2010, 2011 Free Software Foundation, Inc.
 # Borislav Aleksandrov <B.Aleksandrov@cnsys.bg>, 2002.
@@ -11,10 +11,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils master\n"
+"Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-06 14:35-0400\n"
-"PO-Revision-Date: 2011-08-11 22:44+0300\n"
+"POT-Creation-Date: 2012-03-13 19:49+0200\n"
+"PO-Revision-Date: 2012-03-13 19:49+0200\n"
 "Last-Translator: Krasimir Chonov <mk2616@abv.bg>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "Language: bg\n"
@@ -43,48 +43,48 @@ msgstr "РАЗМЕР"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ФАЙЛ-С-ШРИФТ ИЗХОДЕН-ФАЙЛ"
 
-#: ../src/font-view.c:289
+#: ../src/font-view.c:284
 msgid "Name:"
 msgstr "Име:"
 
-#: ../src/font-view.c:292
+#: ../src/font-view.c:287
 msgid "Style:"
 msgstr "Стил:"
 
-#: ../src/font-view.c:304
+#: ../src/font-view.c:299
 msgid "Type:"
 msgstr "Вид:"
 
-#: ../src/font-view.c:308
+#: ../src/font-view.c:303
 msgid "Size:"
 msgstr "Размер:"
 
-#: ../src/font-view.c:352 ../src/font-view.c:365
+#: ../src/font-view.c:347 ../src/font-view.c:360
 msgid "Version:"
 msgstr "Версия:"
 
-#: ../src/font-view.c:356 ../src/font-view.c:367
+#: ../src/font-view.c:351 ../src/font-view.c:362
 msgid "Copyright:"
 msgstr "Авторски права:"
 
-#: ../src/font-view.c:360
+#: ../src/font-view.c:355
 msgid "Description:"
 msgstr "Описание:"
 
-#: ../src/font-view.c:428
+#: ../src/font-view.c:423
 msgid "Installed"
 msgstr "Инсталиран"
 
-#: ../src/font-view.c:430
+#: ../src/font-view.c:425
 msgid "Install Failed"
 msgstr "Неуспешно инсталиране"
 
-#: ../src/font-view.c:502
+#: ../src/font-view.c:497
 #, c-format
 msgid "Usage: %s fontfile\n"
 msgstr "Употреба: %s fontfile\n"
 
-#: ../src/font-view.c:572
+#: ../src/font-view.c:569
 msgid "I_nstall Font"
 msgstr "Инсталир_ане на шрифт"
 
