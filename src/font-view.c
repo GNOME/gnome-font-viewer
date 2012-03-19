@@ -207,7 +207,6 @@ draw_callback (GtkWidget *drawing_area,
 	draw_string (cr, text, &pos_y);
     }
 
- end:
     g_free (sizes);
 }
 
@@ -232,7 +231,6 @@ add_row (GtkWidget *grid,
     if (multiline) {
 	GtkWidget *label, *viewport;
 	GtkScrolledWindow *swin;
-        guint flags;
 
         label = gtk_label_new (value);
         gtk_label_set_line_wrap (GTK_LABEL (label), TRUE);
@@ -482,7 +480,6 @@ main (int argc,
     FT_Face face;
     GFile *file;
     gchar *font_file, *title;
-    gint row;
     GtkWidget *window, *hbox, *grid, *swin, *drawing_area;
     GdkColor white = { 0, 0xffff, 0xffff, 0xffff };
     GtkWidget *button, *align;
