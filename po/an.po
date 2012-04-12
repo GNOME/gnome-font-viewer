@@ -1,0 +1,90 @@
+# Aragonese translation for gnome-font-viewer.
+# Copyright (C) 2012 gnome-font-viewer's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-font-viewer package.
+# Daniel Martinez Cucalon <entaltoaragon@gmail.com>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-font-viewer master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-04-01 07:17+0000\n"
+"PO-Revision-Date: 2012-04-01 07:17+0000\n"
+"Last-Translator: Daniel Martinez Cucalon <entaltoaragon@gmail.com>\n"
+"Language-Team: Aragonese <softaragones@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/font-thumbnailer.c:267
+msgid "Text to thumbnail (default: Aa)"
+msgstr "Texto a miniaturizar (predeterminau: Aa)"
+
+#: ../src/font-thumbnailer.c:267
+msgid "TEXT"
+msgstr "TEXTO"
+
+#: ../src/font-thumbnailer.c:269
+msgid "Font size (default: 64)"
+msgstr "Tamanyo d'a tipografía (predeterminau: 64)"
+
+#: ../src/font-thumbnailer.c:269
+msgid "SIZE"
+msgstr "TAMANYO"
+
+#: ../src/font-thumbnailer.c:271
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "FICHERO-DE-TIPOGRAFÍA FICHERO-DE-SURTIDA"
+
+#: ../src/font-view.c:282
+msgid "Name:"
+msgstr "Nombre:"
+
+#: ../src/font-view.c:285
+msgid "Style:"
+msgstr "Estilo:"
+
+#: ../src/font-view.c:297
+msgid "Type:"
+msgstr "Tipo:"
+
+#: ../src/font-view.c:301
+msgid "Size:"
+msgstr "Tamanyo:"
+
+#: ../src/font-view.c:345 ../src/font-view.c:358
+msgid "Version:"
+msgstr "Versión:"
+
+#: ../src/font-view.c:349 ../src/font-view.c:360
+msgid "Copyright:"
+msgstr "Copyright:"
+
+#: ../src/font-view.c:353
+msgid "Description:"
+msgstr "Descripción:"
+
+#: ../src/font-view.c:421
+msgid "Installed"
+msgstr "Instalau"
+
+#: ../src/font-view.c:423
+msgid "Install Failed"
+msgstr "Falló a instalación"
+
+#: ../src/font-view.c:494
+#, c-format
+msgid "Usage: %s fontfile\n"
+msgstr "Uso: %s fichero de tipografía\n"
+
+#: ../src/font-view.c:566
+msgid "I_nstall Font"
+msgstr "I_nstalar tipografía"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:1
+msgid "Font Viewer"
+msgstr "Visor de tipografías"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "Preview fonts"
+msgstr "Vista previa d'as tipografías"
