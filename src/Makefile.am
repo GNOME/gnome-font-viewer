@@ -11,11 +11,16 @@ ftstream_SOURCES = \
 	ftstream-vfs.h \
 	ftstream-vfs.c
 
+font_loader_SOURCES = \
+	sushi-font-loader.h \
+	sushi-font-loader.c
+
 gnome_thumbnail_font_LDADD = \
 	$(FONTVIEW_LIBS)
 
 gnome_thumbnail_font_SOURCES = \
 	$(ftstream_SOURCES) \
+	$(font_loader_SOURCES) \
 	font-thumbnailer.c \
 	totem-resources.c \
 	totem-resources.h
@@ -25,6 +30,9 @@ gnome_font_viewer_LDADD = \
 
 gnome_font_viewer_SOURCES = \
 	$(ftstream_SOURCES) \
+	$(font_loader_SOURCES) \
+	sushi-font-widget.h \
+	sushi-font-widget.c \
 	font-view.c
 
 desktopdir = $(datadir)/applications
