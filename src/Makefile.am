@@ -12,6 +12,7 @@ font_loader_SOURCES = \
 	sushi-font-loader.c
 
 gnome_thumbnail_font_LDADD = \
+	-lm \
 	$(FONTVIEW_LIBS)
 
 gnome_thumbnail_font_SOURCES = \
