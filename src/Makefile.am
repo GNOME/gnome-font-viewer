@@ -21,10 +21,13 @@ gnome_thumbnail_font_SOURCES = \
 	totem-resources.h
 
 gnome_font_viewer_LDADD = \
+	-lm \
 	$(FONTVIEW_LIBS)
 
 gnome_font_viewer_SOURCES = \
 	$(font_loader_SOURCES) \
+	gd-main-toolbar.h \
+	gd-main-toolbar.c \
 	sushi-font-widget.h \
 	sushi-font-widget.c \
 	font-view.c
