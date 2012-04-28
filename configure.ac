@@ -43,7 +43,9 @@ GLIB_MIN_VERSION=2.31.0
 GTK_MIN_VERSION=3.0.0
 
 PKG_CHECK_MODULES(FONTVIEW,
+                  fontconfig
                   freetype2
+                  gnome-desktop-3.0
                   gio-2.0 >= $GLIB_MIN_VERSION
                   glib-2.0 >= $GLIB_MIN_VERSION
                   gtk+-3.0 >= $GTK_MIN_VERSION)
