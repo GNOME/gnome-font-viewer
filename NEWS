@@ -1,3 +1,13 @@
+GNOME Font Viewer - 3.5.1
+-------------------------------------------------------------------------------
+
+ • Rewrite the user interface using a GNOME 3 style
+ • Implement a gallery mode for all the fonts on the system
+ • Add an application menu and an about dialog
+ • Make "Install" button insensitive if the font is already installed
+ • Port the thumbnailer to cairo drawing
+ • Translation updates
+
 GNOME Font Viewer - 3.4.0
 -------------------------------------------------------------------------------
 
