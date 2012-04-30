@@ -10,92 +10,122 @@
 # Pablo Saratxaga <srtxg@chanae.alphanet.ch> 1999.
 # Manuel de Vega Barreiro <barreiro@arrakis.es> 2000-2001.
 # Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009, 2010, 2011.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-06 14:35-0400\n"
-"PO-Revision-Date: 2011-09-14 17:43+0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-04-29 22:14+0000\n"
+"PO-Revision-Date: 2012-04-30 13:07+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Texto a miniaturizar (predeterminado: Aa)"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "TEXT"
 msgstr "TEXTO"
 
-#: ../src/font-thumbnailer.c:269
-msgid "Font size (default: 64)"
-msgstr "Tamaño de la tipografía (predeterminado: 64)"
+#: ../src/font-thumbnailer.c:192
+#| msgid "Text to thumbnail (default: Aa)"
+msgid "Thumbnail size (default: 128)"
+msgstr "Tamaño de la miniatura (predeterminado: 128)"
 
-#: ../src/font-thumbnailer.c:269
+#: ../src/font-thumbnailer.c:192
 msgid "SIZE"
 msgstr "TAMAÑO"
 
-#: ../src/font-thumbnailer.c:271
+#: ../src/font-thumbnailer.c:194
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ARCHIVO-DE-TIPOGRAFÍA ARCHIVO-DE-SALIDA"
 
-#: ../src/font-view.c:289
-msgid "Name:"
-msgstr "Nombre:"
+#: ../src/font-view.c:169
+#| msgid "Name:"
+msgid "Name"
+msgstr "Nombre"
 
-#: ../src/font-view.c:292
-msgid "Style:"
-msgstr "Estilo:"
+#: ../src/font-view.c:172
+#| msgid "Style:"
+msgid "Style"
+msgstr "Estilo"
 
-#: ../src/font-view.c:304
-msgid "Type:"
-msgstr "Tipo:"
+#: ../src/font-view.c:182
+#| msgid "Type:"
+msgid "Type"
+msgstr "Tipo"
 
-#: ../src/font-view.c:308
-msgid "Size:"
-msgstr "Tamaño:"
+#: ../src/font-view.c:226 ../src/font-view.c:240
+#| msgid "Version:"
+msgid "Version"
+msgstr "Version"
 
-#: ../src/font-view.c:352 ../src/font-view.c:365
-msgid "Version:"
-msgstr "Versión:"
+#: ../src/font-view.c:231 ../src/font-view.c:242
+#| msgid "Copyright:"
+msgid "Copyright"
+msgstr "Copyright"
 
-#: ../src/font-view.c:356 ../src/font-view.c:367
-msgid "Copyright:"
-msgstr "Copyright:"
+#: ../src/font-view.c:235
+#| msgid "Description:"
+msgid "Description"
+msgstr "Descripción"
 
-#: ../src/font-view.c:360
-msgid "Description:"
-msgstr "Descripción:"
-
-#: ../src/font-view.c:428
-msgid "Installed"
-msgstr "Instalado"
-
-#: ../src/font-view.c:430
+#: ../src/font-view.c:253
 msgid "Install Failed"
 msgstr "Falló la instalación"
 
-#: ../src/font-view.c:502
-#, c-format
-msgid "Usage: %s fontfile\n"
-msgstr "Uso: %s archivo de tipografía\n"
+#: ../src/font-view.c:259
+msgid "Installed"
+msgstr "Instalado"
 
-#: ../src/font-view.c:572
-msgid "I_nstall Font"
-msgstr "I_nstalar tipografía"
+#: ../src/font-view.c:262 ../src/font-view.c:404
+#| msgid "Installed"
+msgid "Install"
+msgstr "Instalar"
 
+#: ../src/font-view.c:397
+msgid "Info"
+msgstr "Información"
+
+#: ../src/font-view.c:411
+msgid "Back"
+msgstr "Atrás"
+
+#: ../src/font-view.c:491
+#| msgid "I_nstall Font"
+msgid "All Fonts"
+msgstr "Todas las tipografías"
+
+#: ../src/font-view.c:572 ../src/font-view.c:613
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Visor de tipografías"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "Preview fonts"
-msgstr "Vista previa de las tipografías"
+#: ../src/font-view.c:573 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "Ver las tipografías de su sistema"
+
+#: ../src/font-view.c:575
+msgid "translator-credits"
+msgstr "Daniel Mustieles <daniel.mustieles@gmail.com>, 2012"
+
+#~ msgid "Font size (default: 64)"
+#~ msgstr "Tamaño de la tipografía (predeterminado: 64)"
+
+#~ msgid "Size:"
+#~ msgstr "Tamaño:"
+
+#~ msgid "Usage: %s fontfile\n"
+#~ msgstr "Uso: %s archivo de tipografía\n"
+
+#~ msgid "Preview fonts"
+#~ msgstr "Vista previa de las tipografías"
