@@ -173,6 +173,7 @@ gd_main_toolbar_constructed (GObject *obj)
   grid = gtk_grid_new ();
   gtk_widget_set_halign (grid, GTK_ALIGN_CENTER);
   gtk_widget_set_valign (grid, GTK_ALIGN_CENTER);
+  gtk_grid_set_column_spacing (GTK_GRID (grid), 12);
   gtk_container_add (GTK_CONTAINER (self->priv->center_group), grid);
 
   self->priv->title_label = gtk_label_new (NULL);
@@ -181,7 +182,6 @@ gd_main_toolbar_constructed (GObject *obj)
 
   self->priv->detail_label = gtk_label_new (NULL);
   gtk_widget_set_no_show_all (self->priv->detail_label, TRUE);
-  gtk_widget_set_margin_left (self->priv->detail_label, 12);
   gtk_style_context_add_class (gtk_widget_get_style_context (self->priv->detail_label), "dim-label");
   gtk_container_add (GTK_CONTAINER (grid), self->priv->detail_label);
 
