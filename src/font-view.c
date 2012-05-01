@@ -130,6 +130,26 @@ strip_whitespace (gchar **original)
     *original = g_string_free (reassembled, FALSE);
 }
 
+#define MATCH_VERSION_STR "Version"
+
+static void
+strip_version (gchar **original)
+{
+    gchar *ptr, *stripped;
+
+    ptr = g_strstr_len (*original, -1, MATCH_VERSION_STR);
+    if (!ptr)
+        return;
+
+    ptr += strlen (MATCH_VERSION_STR);
+    stripped = g_strdup (ptr);
+
+    strip_whitespace (&stripped);
+
+    g_free (*original);
+    *original = stripped;
+}
+
 static void
 add_row (GtkWidget *grid,
 	 const gchar *name,
@@ -227,7 +247,8 @@ populate_grid (FontViewApplication *self,
 	    }
 	}
 	if (version) {
-	    add_row (grid, _("Version"), version, FALSE);
+            strip_version (&version);
+            add_row (grid, _("Version"), version, FALSE);
 	    g_free (version);
 	}
 	if (copyright) {
