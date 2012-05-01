@@ -29,6 +29,7 @@
 #include FT_SFNT_NAMES_H
 #include FT_TRUETYPE_IDS_H
 #include <cairo/cairo-ft.h>
+#include <fontconfig/fontconfig.h>
 #include <gio/gio.h>
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
@@ -688,6 +689,14 @@ font_view_application_activate (GApplication *application)
 }
 
 static void
+font_view_application_quit_mainloop (GApplication *application)
+{
+    G_APPLICATION_CLASS (font_view_application_parent_class)->quit_mainloop (application);
+
+    FcFini ();
+}
+
+static void
 font_view_application_dispose (GObject *obj)
 {
     FontViewApplication *self = FONT_VIEW_APPLICATION (obj);
@@ -713,6 +722,7 @@ font_view_application_class_init (FontViewApplicationClass *klass)
     aclass->activate = font_view_application_activate;
     aclass->startup = font_view_application_startup;
     aclass->open = font_view_application_open;
+    aclass->quit_mainloop = font_view_application_quit_mainloop;
 
     oclass->dispose = font_view_application_dispose;
 }
@@ -721,6 +731,10 @@ static GApplication *
 font_view_application_new (void)
 {
     g_type_init ();
+
+    if (!FcInit ())
+        g_critical ("Can't initialize fontconfig library");
+
     return g_object_new (FONT_VIEW_TYPE_APPLICATION,
                          "application-id", "org.gnome.font-viewer",
                          "flags", G_APPLICATION_HANDLES_OPEN,
