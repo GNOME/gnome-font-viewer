@@ -262,10 +262,20 @@ populate_grid (FontViewApplication *self,
 	    g_free (description);
 	}
     } else if (FT_Get_PS_Font_Info (face, &ps_info) == 0) {
-	if (ps_info.version && g_utf8_validate (ps_info.version, -1, NULL))
-	    add_row (grid, _("Version"), ps_info.version, FALSE);
-	if (ps_info.notice && g_utf8_validate (ps_info.notice, -1, NULL))
-	    add_row (grid, _("Copyright"), ps_info.notice, TRUE);
+        gchar *compressed;
+
+	if (ps_info.version && g_utf8_validate (ps_info.version, -1, NULL)) {
+            compressed = g_strcompress (ps_info.version);
+            strip_version (&compressed);
+            add_row (grid, _("Version"), compressed, FALSE);
+            g_free (compressed);
+        }
+	if (ps_info.notice && g_utf8_validate (ps_info.notice, -1, NULL)) {
+            compressed = g_strcompress (ps_info.notice);
+            strip_whitespace (&compressed);
+            add_row (grid, _("Copyright"), compressed, TRUE);
+            g_free (compressed);
+        }
     }
 }
 
