@@ -22,7 +22,7 @@
  * You should have received a copy of the GNU Lesser General Public
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-*/
+ */
 
 #include <string.h>
 #include <errno.h>
@@ -239,6 +239,14 @@ typedef struct {
     gchar *font_path;
 } LoadThumbnailData;
 
+static void 
+load_thumbnail_data_free (LoadThumbnailData *data)
+{
+    g_object_unref (data->self);
+    g_free (data->font_path);
+    g_slice_free (LoadThumbnailData, data);
+}
+
 static void
 thumbnail_ready_cb (GObject *source,
                     GAsyncResult *res,
@@ -300,6 +308,7 @@ pixbuf_async_ready_cb (GObject *source,
     LoadThumbnailData *data = user_data;
     GdkPixbuf *pix;
     GtkTreeIter iter;
+    GFile *file;
 
     pix = gdk_pixbuf_new_from_stream_finish (res, NULL);
 
@@ -310,11 +319,13 @@ pixbuf_async_ready_cb (GObject *source,
                                 -1);
 
         g_object_unref (pix);
+    } else {
+        file = g_file_new_for_path (data->font_path);
+        set_fallback_icon (data->self, file);
+        g_object_unref (file);
     }
 
-    g_object_unref (data->self);
-    g_free (data->font_path);
-    g_slice_free (LoadThumbnailData, data);
+    load_thumbnail_data_free (data);
 }
 
 static void
@@ -333,6 +344,9 @@ thumb_file_read_async_ready_cb (GObject *source,
                                                    128, 128, TRUE,
                                                    NULL, pixbuf_async_ready_cb, data);
         g_object_unref (is);
+    } else {
+        set_fallback_icon (data->self, G_FILE (source));
+        load_thumbnail_data_free (data);
     }
 }
 
@@ -415,6 +429,9 @@ ensure_font_list (FontViewModel *self)
     for (i = 0; i < self->priv->font_list->nfont; i++) {
 	FcPatternGetString (self->priv->font_list->fonts[i], FC_FILE, 0, &file);
         font_name = font_utils_get_font_name_for_file (self->priv->library, (const gchar *) file);
+
+        if (!font_name)
+            continue;
 
         gtk_list_store_append (GTK_LIST_STORE (self), &iter);
         gtk_list_store_set (GTK_LIST_STORE (self), &iter,
