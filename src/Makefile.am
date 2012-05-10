@@ -7,6 +7,20 @@ bin_PROGRAMS = \
 	gnome-thumbnail-font \
 	gnome-font-viewer
 
+UI_FILES = \
+	font-view-app-menu.ui
+
+font-view-resources.c: gnome-font-viewer.gresource.xml $(UI_FILES)
+	$(AM_V_GEN)glib-compile-resources --target=$@ --sourcedir=$(srcdir) --generate-source --c-name font_view $(srcdir)/gnome-font-viewer.gresource.xml
+
+font-view-resources.h: gnome-font-viewer.gresource.xml $(UI_FILES)
+	$(AM_V_GEN)glib-compile-resources --target=$@ --sourcedir=$(srcdir) --generate-header --c-name font_view $(srcdir)/gnome-font-viewer.gresource.xml
+
+BUILT_SOURCES = \
+	font-view-resources.c		\
+	font-view-resources.h		\
+	$(NULL)
+
 font_loader_SOURCES = \
 	sushi-font-loader.h \
 	sushi-font-loader.c
@@ -26,6 +40,7 @@ gnome_font_viewer_LDADD = \
 	$(FONTVIEW_LIBS)
 
 gnome_font_viewer_SOURCES = \
+	$(BUILT_SOURCES) \
 	$(font_loader_SOURCES) \
 	font-model.h \
 	font-model.c \
