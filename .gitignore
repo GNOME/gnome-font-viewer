@@ -1,3 +1,5 @@
+*~
+*.tar.xz
 ABOUT-NLS
 Makefile
 Makefile.in
@@ -25,6 +27,7 @@ po/Makevars.template
 po/POTFILES
 po/Rules-quot
 po/*.gmo
+po/*.pot
 po/boldquot.sed
 po/en@boldquot.header
 po/en@quot.header
@@ -34,6 +37,8 @@ po/remove-potcdate.sin
 po/stamp-it
 src/.deps/
 src/*.o
+src/font-view-resources.c
+src/font-view-resources.h
 src/gnome-font-viewer
 src/gnome-font-viewer.desktop
 src/gnome-font-viewer.desktop.in
