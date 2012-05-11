@@ -24,8 +24,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils-master-po-gl-14799\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-30 16:12+0200\n"
-"PO-Revision-Date: 2012-04-30 16:13+0200\n"
+"POT-Creation-Date: 2012-05-11 11:22+0200\n"
+"PO-Revision-Date: 2012-05-11 11:22+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: Galician <gnome-l10n-gl@gnome.org>\n"
 "Language: gl\n"
@@ -55,66 +55,74 @@ msgstr "TAMAÑO"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FICHEIRO-DE-TIPOGRAFIA FICHEIRO-DE-SAÍDA"
 
-#: ../src/font-view.c:169
+#: ../src/font-view.c:177
 msgid "Name"
 msgstr "Nome"
 
-#: ../src/font-view.c:172
+#: ../src/font-view.c:180
 msgid "Style"
 msgstr "Estilo"
 
-#: ../src/font-view.c:182
+#: ../src/font-view.c:190
 msgid "Type"
 msgstr "Tipo"
 
-#: ../src/font-view.c:226 ../src/font-view.c:240
+#: ../src/font-view.c:235 ../src/font-view.c:254
 msgid "Version"
 msgstr "Versión"
 
-#: ../src/font-view.c:231 ../src/font-view.c:242
+#: ../src/font-view.c:240 ../src/font-view.c:260
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../src/font-view.c:235
+#: ../src/font-view.c:245
 msgid "Description"
 msgstr "Descrición"
 
-#: ../src/font-view.c:253
+#: ../src/font-view.c:273
 msgid "Install Failed"
 msgstr "Produciuse un fallo na instalación"
 
-#: ../src/font-view.c:259
+#: ../src/font-view.c:279
 msgid "Installed"
 msgstr "Instalado"
 
-#: ../src/font-view.c:262 ../src/font-view.c:404
+#: ../src/font-view.c:282 ../src/font-view.c:427
 msgid "Install"
 msgstr "Instalar"
 
-#: ../src/font-view.c:397
+#: ../src/font-view.c:420
 msgid "Info"
 msgstr "Información"
 
-#: ../src/font-view.c:411
+#: ../src/font-view.c:433
 msgid "Back"
 msgstr "Atrás"
 
-#: ../src/font-view.c:491
+#: ../src/font-view.c:524
 msgid "All Fonts"
 msgstr "Todos os tipos de letra"
 
-#: ../src/font-view.c:572 ../src/font-view.c:613
+#: ../src/font-view.c:605 ../src/font-view.c:648
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Visor de tipos de letra"
 
-#: ../src/font-view.c:573 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:606 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Ver os tipos de letra do seu sistema"
 
-#: ../src/font-view.c:575
+#: ../src/font-view.c:608
 msgid "translator-credits"
 msgstr "Fran Dieguez <frandieguez@gnome.org>, 2012."
+
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "Sobre Visor de tipos de letra"
+
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "_Saír"
 
 #. right section
 #: ../src/gd-main-toolbar.c:269
