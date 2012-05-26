@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils trunk\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-04-30 13:23+0000\n"
-"PO-Revision-Date: 2012-04-30 18:13+0300\n"
+"POT-Creation-Date: 2012-05-11 09:22+0000\n"
+"PO-Revision-Date: 2012-05-27 00:07+0300\n"
 "Last-Translator: Yuri Myasoedov <omerta13@yandex.ru>\n"
 "Language-Team: Russian <gnome-cyr@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -26,6 +26,8 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "10<=4 && (n%100<10 || n%100>=20) ? 1: 2);\n"
 "X-Generator: KBabel 1.11.4\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIAN FEDERATION\n"
 
 #: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
@@ -36,7 +38,6 @@ msgid "TEXT"
 msgstr "ТЕКСТ"
 
 #: ../src/font-thumbnailer.c:192
-#| msgid "Text to thumbnail (default: Aa)"
 msgid "Thumbnail size (default: 128)"
 msgstr "Размер миниатюры (по умолчанию: 128)"
 
@@ -48,79 +49,79 @@ msgstr "РАЗМЕР"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ФАЙЛ-ШРИФТА ФАЙЛ-ВЫВОДА"
 
-#: ../src/font-view.c:169
-#| msgid "Name:"
+#: ../src/font-view.c:177
 msgid "Name"
 msgstr "Название"
 
-#: ../src/font-view.c:172
-#| msgid "Style:"
+#: ../src/font-view.c:180
 msgid "Style"
 msgstr "Стиль"
 
-#: ../src/font-view.c:182
-#| msgid "Type:"
+#: ../src/font-view.c:190
 msgid "Type"
 msgstr "Тип"
 
-#: ../src/font-view.c:226
-#: ../src/font-view.c:240
-#| msgid "Version:"
+#: ../src/font-view.c:235
+#: ../src/font-view.c:254
 msgid "Version"
 msgstr "Версия"
 
-#: ../src/font-view.c:231
-#: ../src/font-view.c:242
-#| msgid "Copyright:"
+#: ../src/font-view.c:240
+#: ../src/font-view.c:260
 msgid "Copyright"
 msgstr "Авторское право"
 
-#: ../src/font-view.c:235
-#| msgid "Description:"
+#: ../src/font-view.c:245
 msgid "Description"
 msgstr "Описание"
 
-#: ../src/font-view.c:253
+#: ../src/font-view.c:273
 msgid "Install Failed"
 msgstr "Сбой при установке"
 
-#: ../src/font-view.c:259
+#: ../src/font-view.c:279
 msgid "Installed"
 msgstr "Установлено"
 
-#: ../src/font-view.c:262
-#: ../src/font-view.c:404
-#| msgid "Installed"
+#: ../src/font-view.c:282
+#: ../src/font-view.c:427
 msgid "Install"
 msgstr "Установить"
 
-#: ../src/font-view.c:397
+#: ../src/font-view.c:420
 msgid "Info"
 msgstr "Информация"
 
-#: ../src/font-view.c:411
+#: ../src/font-view.c:433
 msgid "Back"
 msgstr "Назад"
 
-#: ../src/font-view.c:491
-#| msgid "I_nstall Font"
+#: ../src/font-view.c:524
 msgid "All Fonts"
 msgstr "Все шрифты"
 
-#: ../src/font-view.c:572
-#: ../src/font-view.c:613
+#: ../src/font-view.c:605
+#: ../src/font-view.c:648
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Программа просмотра шрифтов"
 
-#: ../src/font-view.c:573
+#: ../src/font-view.c:606
 #: ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Просмотр шрифтов, доступных в системе"
 
-#: ../src/font-view.c:575
+#: ../src/font-view.c:608
 msgid "translator-credits"
 msgstr "Юрий Мясоедов <omerta13@yandex.ru>, 2012"
+
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "О программе просмотра шрифтов"
+
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "Закончить"
 
 #. right section
 #: ../src/gd-main-toolbar.c:269
