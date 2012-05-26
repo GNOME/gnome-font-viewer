@@ -17,8 +17,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.HEAD.he\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-05 18:23+0300\n"
-"PO-Revision-Date: 2012-05-05 18:25+0200\n"
+"POT-Creation-Date: 2012-05-26 07:33+0300\n"
+"PO-Revision-Date: 2012-05-26 07:33+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
 "Language: he\n"
@@ -49,71 +49,79 @@ msgstr "SIZE"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
-#: ../src/font-view.c:194
+#: ../src/font-view.c:177
 msgid "Name"
 msgstr "שם"
 
-#: ../src/font-view.c:197
+#: ../src/font-view.c:180
 msgid "Style"
 msgstr "סגנון"
 
-#: ../src/font-view.c:207
+#: ../src/font-view.c:190
 msgid "Type"
 msgstr "סוג"
 
-#: ../src/font-view.c:252
-#: ../src/font-view.c:271
+#: ../src/font-view.c:235
+#: ../src/font-view.c:254
 msgid "Version"
 msgstr "גרסה"
 
-#: ../src/font-view.c:257
-#: ../src/font-view.c:277
+#: ../src/font-view.c:240
+#: ../src/font-view.c:260
 msgid "Copyright"
 msgstr "זכויות יוצרים"
 
-#: ../src/font-view.c:262
+#: ../src/font-view.c:245
 msgid "Description"
 msgstr "תיאור"
 
-#: ../src/font-view.c:290
+#: ../src/font-view.c:273
 msgid "Install Failed"
 msgstr "ההתקנה נכשלה"
 
-#: ../src/font-view.c:296
+#: ../src/font-view.c:279
 msgid "Installed"
 msgstr "מותקן"
 
-#: ../src/font-view.c:299
-#: ../src/font-view.c:444
+#: ../src/font-view.c:282
+#: ../src/font-view.c:427
 msgid "Install"
 msgstr "התקנה"
 
-#: ../src/font-view.c:437
+#: ../src/font-view.c:420
 msgid "Info"
 msgstr "פרטים"
 
-#: ../src/font-view.c:450
+#: ../src/font-view.c:433
 msgid "Back"
 msgstr "חזרה"
 
-#: ../src/font-view.c:541
+#: ../src/font-view.c:524
 msgid "All Fonts"
 msgstr "כל הגופנים"
 
-#: ../src/font-view.c:622
-#: ../src/font-view.c:665
+#: ../src/font-view.c:605
+#: ../src/font-view.c:648
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "מציג הגופנים"
 
-#: ../src/font-view.c:623
+#: ../src/font-view.c:606
 #: ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "צפייה בגופנים במערכת שלך"
 
-#: ../src/font-view.c:625
+#: ../src/font-view.c:608
 msgid "translator-credits"
 msgstr "ירון שהרבני <sh.yaron@gmail.com>"
+
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "על אודות מציג הגופנים"
+
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "יציאה"
 
 #. right section
 #: ../src/gd-main-toolbar.c:269
