@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer 3.5.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-03 13:36+0200\n"
-"PO-Revision-Date: 2012-05-03 13:36+0200\n"
+"POT-Creation-Date: 2012-05-30 14:04+0200\n"
+"PO-Revision-Date: 2012-05-30 14:04+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: \n"
@@ -38,66 +38,74 @@ msgstr "STØRRELSE"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "SKRIFTFIL UTDATAFIL"
 
-#: ../src/font-view.c:194
+#: ../src/font-view.c:177
 msgid "Name"
 msgstr "Navn"
 
-#: ../src/font-view.c:197
+#: ../src/font-view.c:180
 msgid "Style"
 msgstr "Stil"
 
-#: ../src/font-view.c:207
+#: ../src/font-view.c:190
 msgid "Type"
 msgstr "Type"
 
-#: ../src/font-view.c:252 ../src/font-view.c:271
+#: ../src/font-view.c:235 ../src/font-view.c:254
 msgid "Version"
 msgstr "Versjon"
 
-#: ../src/font-view.c:257 ../src/font-view.c:277
+#: ../src/font-view.c:240 ../src/font-view.c:260
 msgid "Copyright"
 msgstr "Opphavsrett"
 
-#: ../src/font-view.c:262
+#: ../src/font-view.c:245
 msgid "Description"
 msgstr "Beskrivelse"
 
-#: ../src/font-view.c:290
+#: ../src/font-view.c:273
 msgid "Install Failed"
 msgstr "Installering feilet"
 
-#: ../src/font-view.c:296
+#: ../src/font-view.c:279
 msgid "Installed"
 msgstr "Installert"
 
-#: ../src/font-view.c:299 ../src/font-view.c:434
+#: ../src/font-view.c:282 ../src/font-view.c:427
 msgid "Install"
 msgstr "Installer"
 
-#: ../src/font-view.c:427
+#: ../src/font-view.c:420
 msgid "Info"
 msgstr "Informasjon"
 
-#: ../src/font-view.c:441
+#: ../src/font-view.c:433
 msgid "Back"
 msgstr "Tilbake"
 
-#: ../src/font-view.c:532
+#: ../src/font-view.c:524
 msgid "All Fonts"
 msgstr "Alle skrifter"
 
-#: ../src/font-view.c:613 ../src/font-view.c:654
+#: ../src/font-view.c:605 ../src/font-view.c:648
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Skriftvisning"
 
-#: ../src/font-view.c:614 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:606 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Vis skrifter på systemet"
 
-#: ../src/font-view.c:616
+#: ../src/font-view.c:608
 msgid "translator-credits"
 msgstr "Kjartan Maraas <kmaraas@gnome.org>"
+
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "Om Skriftvisning"
+
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "Avslutt"
 
 #. right section
 #: ../src/gd-main-toolbar.c:269
