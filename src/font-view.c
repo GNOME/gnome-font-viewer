@@ -566,6 +566,20 @@ font_view_application_do_overview (FontViewApplication *self)
     gtk_widget_show_all (self->swin_view);
 }
 
+static gboolean
+font_view_window_key_press_event_cb (GtkWidget *widget,
+                                     GdkEventKey *event,
+                                     gpointer user_data)
+{
+    if (event->keyval == GDK_KEY_q &&
+        (event->state & GDK_CONTROL_MASK) != 0) {
+        gtk_widget_destroy (widget);
+        return TRUE;
+    }
+
+    return FALSE;
+}
+
 static void
 font_view_application_open (GApplication *application,
                             GFile **files,
@@ -646,6 +660,9 @@ font_view_application_startup (GApplication *application)
     gtk_window_set_default_size (GTK_WINDOW (window), 800, 600);
     gtk_window_set_hide_titlebar_when_maximized (GTK_WINDOW (window), TRUE);
     gtk_window_set_title (GTK_WINDOW (window), _("Font Viewer"));
+
+    g_signal_connect (window, "key-press-event",
+                      G_CALLBACK (font_view_window_key_press_event_cb), self);
 
     self->main_grid = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
     gtk_container_add (GTK_CONTAINER (self->main_window), self->main_grid);
