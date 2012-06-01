@@ -35,24 +35,12 @@ struct _GdMainToolbarPrivate {
   GtkToolItem *right_group;
 
   GtkWidget *left_grid;
-  GtkWidget *back;
 
   GtkWidget *title_label;
   GtkWidget *detail_label;
 
   GtkWidget *right_grid;
-
-  GdMainToolbarMode mode;
 };
-
-enum {
-  SELECTION_MODE_REQUEST = 1,
-  GO_BACK_REQUEST,
-  CLEAR_REQUEST,
-  NUM_SIGNALS
-};
-
-static guint signals[NUM_SIGNALS] = { 0, };
 
 static void
 gd_main_toolbar_dispose (GObject *obj)
@@ -125,14 +113,6 @@ get_text_button (const gchar *label)
 }
 
 static void
-on_back_button_clicked (GtkButton *b,
-                        gpointer user_data)
-{
-  GdMainToolbar *self = user_data;
-  g_signal_emit (self, signals[GO_BACK_REQUEST], 0);
-}
-
-static void
 gd_main_toolbar_constructed (GObject *obj)
 {
   GdMainToolbar *self = GD_MAIN_TOOLBAR (obj);
@@ -154,13 +134,6 @@ gd_main_toolbar_constructed (GObject *obj)
   self->priv->left_grid = gtk_grid_new ();
   gtk_grid_set_column_spacing (GTK_GRID (self->priv->left_grid), 12);
   gtk_container_add (GTK_CONTAINER (self->priv->left_group), self->priv->left_grid);
-
-  self->priv->back = get_symbolic_button ("go-previous-symbolic");
-  gtk_widget_set_no_show_all (self->priv->back, TRUE);
-  gtk_container_add (GTK_CONTAINER (self->priv->left_grid), self->priv->back);
-
-  g_signal_connect (self->priv->back, "clicked",
-                    G_CALLBACK (on_back_button_clicked), self);
 
   /* center section */
   self->priv->center_group = gtk_tool_item_new ();
@@ -205,7 +178,6 @@ static void
 gd_main_toolbar_init (GdMainToolbar *self)
 {
   self->priv = G_TYPE_INSTANCE_GET_PRIVATE (self, GD_TYPE_MAIN_TOOLBAR, GdMainToolbarPrivate);
-  self->priv->mode = GD_MAIN_TOOLBAR_MODE_INVALID;
 }
 
 static void
@@ -217,160 +189,21 @@ gd_main_toolbar_class_init (GdMainToolbarClass *klass)
   oclass->constructed = gd_main_toolbar_constructed;
   oclass->dispose = gd_main_toolbar_dispose;
 
-  signals[SELECTION_MODE_REQUEST] =
-    g_signal_new ("selection-mode-request",
-                  GD_TYPE_MAIN_TOOLBAR,
-                  G_SIGNAL_RUN_FIRST,
-                  0, NULL, NULL, NULL,
-                  G_TYPE_NONE,
-                  1, G_TYPE_BOOLEAN);
-  signals[GO_BACK_REQUEST] =
-    g_signal_new ("go-back-request",
-                  GD_TYPE_MAIN_TOOLBAR,
-                  G_SIGNAL_RUN_FIRST,
-                  0, NULL, NULL, NULL,
-                  G_TYPE_NONE, 0);
-  signals[CLEAR_REQUEST] =
-    g_signal_new ("clear-request",
-                  GD_TYPE_MAIN_TOOLBAR,
-                  G_SIGNAL_RUN_FIRST,
-                  0, NULL, NULL, NULL,
-                  G_TYPE_NONE, 0);
-
   g_type_class_add_private (klass, sizeof (GdMainToolbarPrivate));
 }
 
-static void
-on_selection_mode_button_clicked (GtkButton *b,
-                                  gpointer user_data)
-{
-  GdMainToolbar *self = user_data;
-  g_signal_emit (self, signals[SELECTION_MODE_REQUEST], 0, TRUE);
-}
-
-static void
-on_selection_mode_done_button_clicked (GtkButton *b,
-                                       gpointer user_data)
-{
-  GdMainToolbar *self = user_data;
-  g_signal_emit (self, signals[SELECTION_MODE_REQUEST], 0, FALSE);
-}
-
-static void
-gd_main_toolbar_populate_for_selection (GdMainToolbar *self)
-{
-  GtkWidget *w;
-
-  gtk_style_context_add_class (gtk_widget_get_style_context (GTK_WIDGET (self)),
-                               "documents-selection-mode");
-  gtk_widget_reset_style (GTK_WIDGET (self));
-
-  /* right section */
-  w = get_text_button (_("Done"));
-  gtk_container_add (GTK_CONTAINER (self->priv->right_grid), w);
-
-  g_signal_connect (w, "clicked",
-                    G_CALLBACK (on_selection_mode_done_button_clicked), self);
-
-  gtk_widget_show_all (GTK_WIDGET (self));
-}
-
-static void
-gd_main_toolbar_populate_for_overview (GdMainToolbar *self)
-{
-  GtkWidget *button;
-
-  /* right section */
-  button = get_symbolic_button ("emblem-default-symbolic");
-  gtk_container_add (GTK_CONTAINER (self->priv->right_grid), button);
-
-  g_signal_connect (button, "clicked",
-                    G_CALLBACK (on_selection_mode_button_clicked), self);
-
-  gtk_widget_show_all (GTK_WIDGET (self));
-}
-
-static void
-gd_main_toolbar_populate_for_preview (GdMainToolbar *self)
-{
-  gtk_widget_show (self->priv->back);
-  gtk_widget_show_all (GTK_WIDGET (self));
-}
-
-static void
-on_left_grid_clear (GtkWidget *w,
-                    gpointer user_data)
-{
-  GdMainToolbar *self = user_data;
-
-  if (w != self->priv->back)
-    gtk_widget_destroy (w);
-}
-
-static void
+void
 gd_main_toolbar_clear (GdMainToolbar *self)
 {
-  GtkStyleContext *context;
-
   /* reset labels */
   gtk_label_set_text (GTK_LABEL (self->priv->title_label), "");
   gtk_label_set_text (GTK_LABEL (self->priv->detail_label), "");
 
-  /* clear all on the left, except the back button */
-  gtk_widget_hide (self->priv->back);
+  /* clear all added buttons */
   gtk_container_foreach (GTK_CONTAINER (self->priv->left_grid),
-                         on_left_grid_clear, self);
-
-  /* clear all on the right */
+                         (GtkCallback) gtk_widget_destroy, self);
   gtk_container_foreach (GTK_CONTAINER (self->priv->right_grid), 
                          (GtkCallback) gtk_widget_destroy, self);
-
-  context = gtk_widget_get_style_context (GTK_WIDGET (self));
-  if (gtk_style_context_has_class (context, "documents-selection-mode"))
-    {
-      gtk_style_context_remove_class (context, "documents-selection-mode");
-      gtk_widget_reset_style (GTK_WIDGET (self));
-    }
-
-  g_signal_emit (self, signals[CLEAR_REQUEST], 0);
-}
-
-/**
- * gd_main_toolbar_set_mode:
- * @mode:
- *
- */
-void
-gd_main_toolbar_set_mode (GdMainToolbar *self,
-                          GdMainToolbarMode mode)
-{
-  if (mode == self->priv->mode)
-    return;
-
-  gd_main_toolbar_clear (self);
-  self->priv->mode = mode;
-
-  switch (mode)
-    {
-    case GD_MAIN_TOOLBAR_MODE_OVERVIEW:
-      gd_main_toolbar_populate_for_overview (self);
-      break;
-    case GD_MAIN_TOOLBAR_MODE_SELECTION:
-      gd_main_toolbar_populate_for_selection (self);
-      break;
-    case GD_MAIN_TOOLBAR_MODE_PREVIEW:
-      gd_main_toolbar_populate_for_preview (self);
-      break;
-    default:
-      g_assert_not_reached ();
-      break;
-    }
-}
-
-GdMainToolbarMode
-gd_main_toolbar_get_mode (GdMainToolbar *self)
-{
-  return self->priv->mode;
 }
 
 /**
@@ -415,27 +248,21 @@ gd_main_toolbar_set_labels (GdMainToolbar *self,
   g_free (real_primary);
 }
 
-/**
- * gd_main_toolbar_set_back_visible:
- * @self:
- * @visible:
- *
- */
-void
-gd_main_toolbar_set_back_visible (GdMainToolbar *self,
-                                  gboolean visible)
-{
-  if (visible != gtk_widget_get_visible (self->priv->back))
-    gtk_widget_set_visible (self->priv->back, visible);
-
-}
-
 GtkWidget *
 gd_main_toolbar_new (void)
 {
   return g_object_new (GD_TYPE_MAIN_TOOLBAR, NULL);
 }
 
+/**
+ * gd_main_toolbar_add_button:
+ * @self:
+ * @icon_name: (allow-none):
+ * @label: (allow-none):
+ * @pack_start:
+ *
+ * Returns: (transfer none):
+ */
 GtkWidget *
 gd_main_toolbar_add_button (GdMainToolbar *self,
                             const gchar *icon_name,
