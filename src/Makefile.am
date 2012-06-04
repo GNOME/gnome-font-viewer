@@ -68,11 +68,15 @@ uninstall-local:
 @INTLTOOL_DESKTOP_RULE@
 @INTLTOOL_DIRECTORY_RULE@
 
-CLEANFILES = $(desktop_in_files) $(desktop_DATA) \
- $(directory_DATA)
+CLEANFILES = \
+	$(desktop_in_files) \
+	$(desktop_DATA) \
+	$(directory_DATA)
 
 EXTRA_DIST = \
-  gnome-font-viewer.thumbnailer \
-  gnome-font-viewer.desktop.in.in
+	$(UI_FILES) \
+	gnome-font-viewer.thumbnailer \
+	gnome-font-viewer.desktop.in.in \
+	gnome-font-viewer.gresource.xml
 
 -include $(top_srcdir)/git.mk
