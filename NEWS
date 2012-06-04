@@ -1,3 +1,21 @@
+GNOME Font Viewer - 3.5.2
+-------------------------------------------------------------------------------
+
+ • Fall back to C locale when constructing the sample string before picking an
+   entirely random-glyph string
+ • Flip font widget orientation for RTL locales
+ • Always pick a valid size for fixed-size fonts
+ • Fix missing string compression before display for PS fonts
+ • Improve string sanitizing before display for information fetched out of the
+   font files
+ • Monitor fontconfig directories for new fonts
+ • Support fontconfig XDG_DATA_HOME directory for font install, if present
+ • Set a fallback icon when thumbnails are not available
+ • Force black on white for font text display
+ • Quit with Ctrl+Q
+ • Use GResource for UI files
+ • Correctly update the install button when install completes
+
 GNOME Font Viewer - 3.5.1
 -------------------------------------------------------------------------------
 
