@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-04-30 13:23+0000\n"
-"PO-Revision-Date: 2012-05-03 22:59+0300\n"
+"POT-Creation-Date: 2012-06-01 19:04+0000\n"
+"PO-Revision-Date: 2012-06-08 18:15+0300\n"
 "Last-Translator: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -38,68 +38,72 @@ msgstr "ПАМЕР"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ФАЙЛ_ШРЫФТУ ВЫХАДНЫ_ФАЙЛ"
 
-#: ../src/font-view.c:169
+#: ../src/font-view.c:177
 msgid "Name"
 msgstr "Назва"
 
-#: ../src/font-view.c:172
+#: ../src/font-view.c:180
 msgid "Style"
 msgstr "Стыль"
 
-#: ../src/font-view.c:182
+#: ../src/font-view.c:190
 msgid "Type"
 msgstr "Тып"
 
-#: ../src/font-view.c:226 ../src/font-view.c:240
+#: ../src/font-view.c:235 ../src/font-view.c:254
 msgid "Version"
 msgstr "Версія"
 
-#: ../src/font-view.c:231 ../src/font-view.c:242
+#: ../src/font-view.c:240 ../src/font-view.c:260
 msgid "Copyright"
 msgstr "Аўтарскія правы"
 
-#: ../src/font-view.c:235
+#: ../src/font-view.c:245
 msgid "Description"
 msgstr "Апісанне"
 
-#: ../src/font-view.c:253
+#: ../src/font-view.c:273
 msgid "Install Failed"
 msgstr "Няўдалая ўсталёўка"
 
-#: ../src/font-view.c:259
+#: ../src/font-view.c:279
 msgid "Installed"
 msgstr "Усталяваны"
 
-#: ../src/font-view.c:262 ../src/font-view.c:404
+#: ../src/font-view.c:282 ../src/font-view.c:427
 msgid "Install"
 msgstr "Усталяваць"
 
-#: ../src/font-view.c:397
+#: ../src/font-view.c:420
 msgid "Info"
 msgstr "Звесткі"
 
-#: ../src/font-view.c:411
+#: ../src/font-view.c:433
 msgid "Back"
 msgstr "Назад"
 
-#: ../src/font-view.c:491
+#: ../src/font-view.c:524
 msgid "All Fonts"
 msgstr "Усе шрыфты"
 
-#: ../src/font-view.c:572 ../src/font-view.c:613
+#: ../src/font-view.c:605 ../src/font-view.c:648
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Праглядальнік шрыфтоў"
 
-#: ../src/font-view.c:573 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:606 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Прагляд шрыфтоў у вашай сістэме"
 
-#: ../src/font-view.c:575
+#: ../src/font-view.c:608
 msgid "translator-credits"
 msgstr "Ігар Грачышка <ihar.hrachyshka@gmail.com>"
 
-#. right section
-#: ../src/gd-main-toolbar.c:269
-msgid "Done"
-msgstr "Зроблена"
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "Аб Праглядальніку шрыфтоў"
+
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "Выйсці"
+
