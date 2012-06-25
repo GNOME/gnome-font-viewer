@@ -1,3 +1,9 @@
+GNOME Font Viewer - 3.5.3
+-------------------------------------------------------------------------------
+
+ • Refactor thumbnailing code to use g_io_scheduler_push_job() for robustness
+ • Translation updates
+
 GNOME Font Viewer - 3.5.2
 -------------------------------------------------------------------------------
 
