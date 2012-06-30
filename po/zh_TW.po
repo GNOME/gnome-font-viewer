@@ -13,9 +13,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 3.1.90\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-06 14:36-0400\n"
-"PO-Revision-Date: 2011-09-05 19:15+0800\n"
-"Last-Translator: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>\n"
+"POT-Creation-Date: 2012-06-30 23:07+0800\n"
+"PO-Revision-Date: 2012-06-30 13:35+0800\n"
+"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (traditional)\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
@@ -23,75 +23,112 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
 msgstr "文字轉為縮圖（預設：Aa）"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "TEXT"
 msgstr "文字"
 
-#: ../src/font-thumbnailer.c:269
-msgid "Font size (default: 64)"
-msgstr "字型大小（預設：64）"
+#: ../src/font-thumbnailer.c:192
+msgid "Thumbnail size (default: 128)"
+msgstr "縮圖大小 (預設：128)"
 
-#: ../src/font-thumbnailer.c:269
+#: ../src/font-thumbnailer.c:192
 msgid "SIZE"
 msgstr "大小"
 
-#: ../src/font-thumbnailer.c:271
+#: ../src/font-thumbnailer.c:194
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "字型檔 輸出檔"
 
-#: ../src/font-view.c:289
-msgid "Name:"
-msgstr "名稱："
+#: ../src/font-view.c:177
+msgid "Name"
+msgstr "名稱"
 
-#: ../src/font-view.c:292
-msgid "Style:"
-msgstr "字款："
+#: ../src/font-view.c:180
+msgid "Style"
+msgstr "字樣"
 
-#: ../src/font-view.c:304
-msgid "Type:"
-msgstr "類型："
+#: ../src/font-view.c:190
+msgid "Type"
+msgstr "類型"
 
-#: ../src/font-view.c:308
-msgid "Size:"
-msgstr "大小："
+#: ../src/font-view.c:235 ../src/font-view.c:254
+msgid "Version"
+msgstr "版本"
 
-#: ../src/font-view.c:352 ../src/font-view.c:365
-msgid "Version:"
-msgstr "版本："
+#: ../src/font-view.c:240 ../src/font-view.c:260
+msgid "Copyright"
+msgstr "版權"
 
-#: ../src/font-view.c:356 ../src/font-view.c:367
-msgid "Copyright:"
-msgstr "版權："
+#: ../src/font-view.c:245
+msgid "Description"
+msgstr "描述"
 
-#: ../src/font-view.c:360
-msgid "Description:"
-msgstr "描述："
-
-#: ../src/font-view.c:428
-msgid "Installed"
-msgstr "已安裝"
-
-#: ../src/font-view.c:430
+#: ../src/font-view.c:273
 msgid "Install Failed"
 msgstr "安裝失敗"
 
-#: ../src/font-view.c:502
-#, c-format
-msgid "Usage: %s fontfile\n"
-msgstr "用法：%s 字型檔\n"
+#: ../src/font-view.c:279
+msgid "Installed"
+msgstr "已安裝"
 
-#: ../src/font-view.c:572
-msgid "I_nstall Font"
-msgstr "安裝字型(_N)"
+#: ../src/font-view.c:282 ../src/font-view.c:467
+msgid "Install"
+msgstr "安裝"
 
+#: ../src/font-view.c:460
+msgid "Info"
+msgstr "資訊"
+
+#: ../src/font-view.c:473
+msgid "Back"
+msgstr "返回"
+
+#: ../src/font-view.c:564
+msgid "All Fonts"
+msgstr "所有字型"
+
+#: ../src/font-view.c:659 ../src/font-view.c:702
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "字型檢視程式"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "Preview fonts"
-msgstr "預覽字型"
+#: ../src/font-view.c:660 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "檢視您系統上的字型"
+
+#: ../src/font-view.c:662
+msgid "translator-credits"
+msgstr ""
+"Ming-Yen Hsu <myhsu@cyberdude.com>, 1999.\n"
+"Abel Cheung <abel@oaka.org>, 2001, 02, 03, 04.\n"
+"Roy Hiu-yeung Chan <roy.chan@debian.org.hk>, 2004.\n"
+"Lin-Chieh Shangkuan <r93066@csie.ntu.edu.tw> 2006.\n"
+"Ching-Hung Lin <billlin@wshlab2.ee.kuas.edu.tw>, 2006.\n"
+"Woodman Tuen <wmtuen@gmail.com>, 2007.\n"
+"Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>,2008, 2009, 2010.\n"
+"Wei-Lun Chao <chaoweilun@gmail.com>, 2010.\n"
+"Cheng-Chia Tseng <pswo10680@gmail.com>, 2012."
+
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "關於字型檢視器"
+
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "退出"
+
+#~ msgid "Font size (default: 64)"
+#~ msgstr "字型大小（預設：64）"
+
+#~ msgid "Size:"
+#~ msgstr "大小："
+
+#~ msgid "Usage: %s fontfile\n"
+#~ msgstr "用法：%s 字型檔\n"
+
+#~ msgid "Preview fonts"
+#~ msgstr "預覽字型"
