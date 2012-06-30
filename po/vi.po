@@ -1,6 +1,6 @@
 # Vietnamese Translation for GNOME Utils.
 # Copyright © 2009 GNOME i18n Project for Vietnamese.
-# Nguyễn Thái Ngọc Duy <pclouds@gmail.com>, 2002,2007,2011.
+# Nguyễn Thái Ngọc Duy <pclouds@gmail.com>, 2002,2007,2011-2012.
 # Clytie Siddall <clytie@riverland.net.au>, 2005-2009.
 #
 msgid ""
@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2012-06-01 19:04+0000\n"
-"PO-Revision-Date: 2012-06-30 20:08+0700\n"
+"PO-Revision-Date: 2012-06-30 20:10+0700\n"
 "Last-Translator: Nguyễn Thái Ngọc Duy <pclouds@gmail.com>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -28,10 +28,9 @@ msgid "TEXT"
 msgstr "CHỮ"
 
 #: ../src/font-thumbnailer.c:192
-#, fuzzy
 #| msgid "Text to thumbnail (default: Aa)"
 msgid "Thumbnail size (default: 128)"
-msgstr "Chữ kế hình (mặc định: Aa)"
+msgstr "Kích thước ảnh mẫu (mặc định: 128)"
 
 #: ../src/font-thumbnailer.c:192
 msgid "SIZE"
@@ -42,40 +41,34 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "TẬP-TIN-PHÔNG KẾT-XUẤT"
 
 #: ../src/font-view.c:177
-#, fuzzy
 #| msgid "Name:"
 msgid "Name"
-msgstr "Tên:"
+msgstr "Tên"
 
 #: ../src/font-view.c:180
-#, fuzzy
 #| msgid "Style:"
 msgid "Style"
-msgstr "Kiểu:"
+msgstr "Kiểu"
 
 #: ../src/font-view.c:190
-#, fuzzy
 #| msgid "Type:"
 msgid "Type"
-msgstr "Kiểu:"
+msgstr "Loại"
 
 #: ../src/font-view.c:235 ../src/font-view.c:254
-#, fuzzy
 #| msgid "Version:"
 msgid "Version"
-msgstr "Phiên bản:"
+msgstr "Phiên bản"
 
 #: ../src/font-view.c:240 ../src/font-view.c:260
-#, fuzzy
 #| msgid "Copyright:"
 msgid "Copyright"
-msgstr "Bản quyền:"
+msgstr "Bản quyền"
 
 #: ../src/font-view.c:245
-#, fuzzy
 #| msgid "Description:"
 msgid "Description"
-msgstr "Mô tả:"
+msgstr "Mô tả"
 
 #: ../src/font-view.c:273
 msgid "Install Failed"
@@ -86,24 +79,22 @@ msgid "Installed"
 msgstr "Đã cài"
 
 #: ../src/font-view.c:282 ../src/font-view.c:427
-#, fuzzy
 #| msgid "Installed"
 msgid "Install"
-msgstr "Đã cài"
+msgstr "Cài đặt"
 
 #: ../src/font-view.c:420
 msgid "Info"
-msgstr ""
+msgstr "Thông tin"
 
 #: ../src/font-view.c:433
 msgid "Back"
-msgstr ""
+msgstr "Lùi"
 
 #: ../src/font-view.c:524
-#, fuzzy
 #| msgid "I_nstall Font"
 msgid "All Fonts"
-msgstr "_Cài đặt phông"
+msgstr "Mọi phông"
 
 #: ../src/font-view.c:605 ../src/font-view.c:648
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
@@ -112,21 +103,20 @@ msgstr "Trình xem phông"
 
 #: ../src/font-view.c:606 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
-msgstr ""
+msgstr "Xem phông trên hệ thống"
 
 #: ../src/font-view.c:608
 msgid "translator-credits"
-msgstr ""
+msgstr "Nguyễn Thái Ngọc Duy <pclouds@gmail.com>"
 
 #: ../src/font-view-app-menu.ui.h:1
-#, fuzzy
 #| msgid "Font Viewer"
 msgid "About Font Viewer"
-msgstr "Trình xem phông"
+msgstr "Giới thiệu Trình xem phông"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
-msgstr ""
+msgstr "Thoát"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "Cỡ chữ (mặc định: 64)"
