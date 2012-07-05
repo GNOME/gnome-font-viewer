@@ -6,15 +6,15 @@
 # Peter Slavov <pslavov@i-space.org>, 2004.
 # Yavor Doganov <yavor@doganov.org>, 2005.
 # Rostislav Raykov <zbrox@i-space.org>, 2006.
-# Alexander Shopov <ash@kambanaria.org>, 2006, 2007, 2008, 2009, 2011.
+# Alexander Shopov <ash@kambanaria.org>, 2006, 2007, 2008, 2009, 2011, 2012.
 # Krasimir Chonov <mk2616@abv.bg>, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-13 19:49+0200\n"
-"PO-Revision-Date: 2012-03-13 19:49+0200\n"
+"POT-Creation-Date: 2012-07-05 11:45+0300\n"
+"PO-Revision-Date: 2012-07-05 11:44+0300\n"
 "Last-Translator: Krasimir Chonov <mk2616@abv.bg>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "Language: bg\n"
@@ -23,75 +23,103 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Показван текст (стандартно: „Aa“)"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "TEXT"
 msgstr "ТЕКСТ"
 
-#: ../src/font-thumbnailer.c:269
-msgid "Font size (default: 64)"
-msgstr "Размер на шрифта (стандартно: 64)"
+#: ../src/font-thumbnailer.c:192
+msgid "Thumbnail size (default: 128)"
+msgstr "Размер на иконата (стандартно: 128)"
 
-#: ../src/font-thumbnailer.c:269
+#: ../src/font-thumbnailer.c:192
 msgid "SIZE"
 msgstr "РАЗМЕР"
 
-#: ../src/font-thumbnailer.c:271
+#: ../src/font-thumbnailer.c:194
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ФАЙЛ-С-ШРИФТ ИЗХОДЕН-ФАЙЛ"
 
-#: ../src/font-view.c:284
-msgid "Name:"
-msgstr "Име:"
+#: ../src/font-view.c:177
+msgid "Name"
+msgstr "Име"
 
-#: ../src/font-view.c:287
-msgid "Style:"
-msgstr "Стил:"
+#: ../src/font-view.c:180
+msgid "Style"
+msgstr "Стил"
 
-#: ../src/font-view.c:299
-msgid "Type:"
-msgstr "Вид:"
+#: ../src/font-view.c:190
+msgid "Type"
+msgstr "Вид"
 
-#: ../src/font-view.c:303
-msgid "Size:"
-msgstr "Размер:"
+#: ../src/font-view.c:235 ../src/font-view.c:254
+msgid "Version"
+msgstr "Версия"
 
-#: ../src/font-view.c:347 ../src/font-view.c:360
-msgid "Version:"
-msgstr "Версия:"
+#: ../src/font-view.c:240 ../src/font-view.c:260
+msgid "Copyright"
+msgstr "Авторски права"
 
-#: ../src/font-view.c:351 ../src/font-view.c:362
-msgid "Copyright:"
-msgstr "Авторски права:"
+#: ../src/font-view.c:245
+msgid "Description"
+msgstr "Описание"
 
-#: ../src/font-view.c:355
-msgid "Description:"
-msgstr "Описание:"
-
-#: ../src/font-view.c:423
-msgid "Installed"
-msgstr "Инсталиран"
-
-#: ../src/font-view.c:425
+#: ../src/font-view.c:273
 msgid "Install Failed"
 msgstr "Неуспешно инсталиране"
 
-#: ../src/font-view.c:497
-#, c-format
-msgid "Usage: %s fontfile\n"
-msgstr "Употреба: %s fontfile\n"
+#: ../src/font-view.c:279
+msgid "Installed"
+msgstr "Инсталиран"
 
-#: ../src/font-view.c:569
-msgid "I_nstall Font"
-msgstr "Инсталир_ане на шрифт"
+#: ../src/font-view.c:282 ../src/font-view.c:467
+msgid "Install"
+msgstr "Инсталиране"
 
+#: ../src/font-view.c:460
+msgid "Info"
+msgstr "Информация"
+
+#: ../src/font-view.c:473
+msgid "Back"
+msgstr "Назад"
+
+#: ../src/font-view.c:564
+msgid "All Fonts"
+msgstr "Всички шрифтове"
+
+#: ../src/font-view.c:659 ../src/font-view.c:702
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Преглед на шрифт"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "Preview fonts"
+#: ../src/font-view.c:660 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
 msgstr "Преглед на шрифтовете"
+
+#: ../src/font-view.c:662
+msgid "translator-credits"
+msgstr ""
+"Александър Шопов <ash@kambanaria.org>\n"
+"Красимир Чонов <mk2616@abv.bg>\n"
+"Ростислав Райков <zbrox@i-space.org>\n"
+"Явор Доганов <yavor@doganov.org>\n"
+"Владимир Петков <kaladan@gmail.com>\n"
+"Петър Славов <pslavov@i-space.org>\n"
+"Борислав Александров\n"
+"\n"
+"Научете повече за нас на <a href=\"http://gnome.cult.bg\">http://gnome.cult."
+"bg</a>\n"
+"Докладвайте за грешки на <a href=\"http://gnome.cult.bg/bugs\">http://gnome."
+"cult.bg/bugs</a>"
+
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "Относно"
+
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "Спиране на програмата"
