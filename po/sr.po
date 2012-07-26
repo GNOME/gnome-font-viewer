@@ -1,91 +1,107 @@
 # Милош Поповић <gpopac@gmail.com>, 2011.
-# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2011.
+# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils-2.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-06 14:36-0400\n"
-"PO-Revision-Date: 2011-09-11 15:52+0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-06-01 19:04+0000\n"
+"PO-Revision-Date: 2012-07-26 23:32+0200\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 :    n"
-"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Virtaal 0.7.0\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
+"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
-msgstr "Текст у умањени приказ (подразумевано: Aa)"
+msgstr "Текст у минијатуру (основно: Aa)"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "TEXT"
 msgstr "ТЕКСТ"
 
-#: ../src/font-thumbnailer.c:269
-msgid "Font size (default: 64)"
-msgstr "Величина фонта (подразумевано: 64)"
+#: ../src/font-thumbnailer.c:192
+msgid "Thumbnail size (default: 128)"
+msgstr "Величина минијатуре (основно: 128)"
 
-#: ../src/font-thumbnailer.c:269
+#: ../src/font-thumbnailer.c:192
 msgid "SIZE"
 msgstr "ВЕЛИЧИНА"
 
-#: ../src/font-thumbnailer.c:271
+#: ../src/font-thumbnailer.c:194
 msgid "FONT-FILE OUTPUT-FILE"
-msgstr "ДАТОТЕКА-ФОНТА ИЗЛАЗНА-ДАТОТЕКА"
+msgstr "ДАТОТЕКА-ПИСМА ИЗЛАЗНА-ДАТОТЕКА"
 
-#: ../src/font-view.c:289
-msgid "Name:"
-msgstr "Име:"
+#: ../src/font-view.c:177
+msgid "Name"
+msgstr "Назив"
 
-#: ../src/font-view.c:292
-msgid "Style:"
-msgstr "Стил:"
+#: ../src/font-view.c:180
+msgid "Style"
+msgstr "Стил"
 
-#: ../src/font-view.c:304
-msgid "Type:"
-msgstr "Тип:"
+#: ../src/font-view.c:190
+msgid "Type"
+msgstr "Врста"
 
-#: ../src/font-view.c:308
-msgid "Size:"
-msgstr "Величина:"
+#: ../src/font-view.c:235 ../src/font-view.c:254
+msgid "Version"
+msgstr "Издање"
 
-#: ../src/font-view.c:352 ../src/font-view.c:365
-msgid "Version:"
-msgstr "Издање:"
+#: ../src/font-view.c:240 ../src/font-view.c:260
+msgid "Copyright"
+msgstr "Ауторска права"
 
-#: ../src/font-view.c:356 ../src/font-view.c:367
-msgid "Copyright:"
-msgstr "Ауторско право:"
+#: ../src/font-view.c:245
+msgid "Description"
+msgstr "Опис"
 
-#: ../src/font-view.c:360
-msgid "Description:"
-msgstr "Опис:"
-
-#: ../src/font-view.c:428
-msgid "Installed"
-msgstr "Инсталиран"
-
-#: ../src/font-view.c:430
+#: ../src/font-view.c:273
 msgid "Install Failed"
-msgstr "Није успела инсталација"
+msgstr "Инсталација није успела"
 
-#: ../src/font-view.c:502
-#, c-format
-msgid "Usage: %s fontfile\n"
-msgstr "Употреба: %s датотека-фонта\n"
+#: ../src/font-view.c:279
+msgid "Installed"
+msgstr "Инсталирано"
 
-#: ../src/font-view.c:572
-msgid "I_nstall Font"
-msgstr "_Инсталирај фонт"
+#: ../src/font-view.c:282 ../src/font-view.c:427
+msgid "Install"
+msgstr "Инсталирај"
 
+#: ../src/font-view.c:420
+msgid "Info"
+msgstr "Подаци"
+
+#: ../src/font-view.c:433
+msgid "Back"
+msgstr "Назад"
+
+#: ../src/font-view.c:524
+msgid "All Fonts"
+msgstr "Сва писма"
+
+#: ../src/font-view.c:605 ../src/font-view.c:648
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
-msgstr "Приказ фонта"
+msgstr "Прегледач писама"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "Preview fonts"
-msgstr "Преглед фонтова"
+#: ../src/font-view.c:606 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "Прегледајте писма на вашем систему"
+
+#: ../src/font-view.c:608
+msgid "translator-credits"
+msgstr "  Мирослав Николић <mirosavnikoic@rocketmailcom>"
+
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "О прегледачу писама"
+
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "Изађи"
