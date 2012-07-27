@@ -1,6 +1,6 @@
-# Hungarian translation of gnome-utils.
+# Hungarian translation of gnome-font-viewer.
 # Copyright (C) 1999 - 2006, 2007, 2008, 2009, 2010, 2011 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gnome-utils package.
+# This file is distributed under the same license as the gnome-font-viewer package.
 #
 # Szabolcs Ban <shooby at gnome dot hu>, 1999, 2000.
 # Gergely Nagy <greg at gnome dot hu>, 2001.
@@ -12,7 +12,7 @@
 # Lukács Bence <lukacs.bence1 at gmail dot com>, 2012.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils master\n"
+"Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-07-27 12:00+0200\n"
 "PO-Revision-Date: 2012-07-27 11:59+0200\n"
