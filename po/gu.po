@@ -1,20 +1,21 @@
 # translation of gnome-utils.master.gu.po to Gujarati
 # Ankit Patel <ankit644@yahoo.com>, 2005, 2006.
 # Ankit Patel <ankit@redhat.com>, 2005, 2007, 2009.
-# Sweta Kothari <swkothar@redhat.com>, 2009.
+# Sweta Kothari <swkothar@redhat.com>, 2009, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master.gu\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-06 14:35-0400\n"
-"PO-Revision-Date: 2009-09-10 14:46+0530\n"
-"Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
-"Language-Team: Gujarati\n"
-"Language: \n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
+"cgi?product=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-06-01 19:04+0000\n"
+"PO-Revision-Date: 2012-07-30 13:30+0530\n"
+"Last-Translator: \n"
+"Language-Team: gu_IN <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"Language: \n"
+"X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "\n"
 "\n"
@@ -45,82 +46,99 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
-msgstr ""
+msgstr "થમ્ભનેઇલ માટે લખાણ (મૂળભૂત: Aa)"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "TEXT"
-msgstr ""
+msgstr "TEXT"
 
-#: ../src/font-thumbnailer.c:269
-msgid "Font size (default: 64)"
-msgstr ""
+#: ../src/font-thumbnailer.c:192
+msgid "Thumbnail size (default: 128)"
+msgstr "થમ્ભનેઇલ માપ (મૂળભૂત: 128)"
 
-#: ../src/font-thumbnailer.c:269
+#: ../src/font-thumbnailer.c:192
 msgid "SIZE"
-msgstr ""
+msgstr "SIZE"
 
-#: ../src/font-thumbnailer.c:271
+#: ../src/font-thumbnailer.c:194
 msgid "FONT-FILE OUTPUT-FILE"
-msgstr ""
+msgstr "FONT-FILE OUTPUT-FILE"
 
-#: ../src/font-view.c:289
-#, fuzzy
-msgid "Name:"
-msgstr "નામ (_N):"
+#: ../src/font-view.c:177
+msgid "Name"
+msgstr "નામ"
 
-#: ../src/font-view.c:292
-msgid "Style:"
-msgstr ""
+#: ../src/font-view.c:180
+msgid "Style"
+msgstr "શૈલી"
 
-#: ../src/font-view.c:304
-#, fuzzy
-msgid "Type:"
+#: ../src/font-view.c:190
+msgid "Type"
 msgstr "પ્રકાર"
 
-#: ../src/font-view.c:308
-#, fuzzy
-msgid "Size:"
-msgstr "માપ"
+#: ../src/font-view.c:235 ../src/font-view.c:254
+msgid "Version"
+msgstr "આવૃત્તિ"
 
-#: ../src/font-view.c:352 ../src/font-view.c:365
-#, fuzzy
-msgid "Version:"
-msgstr "આવૃત્તિ: "
+#: ../src/font-view.c:240 ../src/font-view.c:260
+msgid "Copyright"
+msgstr "કોપીરાઇટ"
 
-#: ../src/font-view.c:356 ../src/font-view.c:367
-msgid "Copyright:"
-msgstr ""
+#: ../src/font-view.c:245
+msgid "Description"
+msgstr "વર્ણન"
 
-#: ../src/font-view.c:360
-#, fuzzy
-msgid "Description:"
-msgstr "વર્ણન (_D):"
-
-#: ../src/font-view.c:428
-msgid "Installed"
-msgstr ""
-
-#: ../src/font-view.c:430
+#: ../src/font-view.c:273
 msgid "Install Failed"
-msgstr ""
+msgstr "સ્થાપન નિષ્ફળ"
 
-#: ../src/font-view.c:502
-#, c-format
-msgid "Usage: %s fontfile\n"
-msgstr ""
+#: ../src/font-view.c:279
+msgid "Installed"
+msgstr "સ્થાપિત થયેલ"
 
-#: ../src/font-view.c:572
-msgid "I_nstall Font"
-msgstr ""
+#: ../src/font-view.c:282 ../src/font-view.c:427
+msgid "Install"
+msgstr "સ્થાપિત કરો"
 
+#: ../src/font-view.c:420
+msgid "Info"
+msgstr "જાણકારી"
+
+#: ../src/font-view.c:433
+msgid "Back"
+msgstr "પાછા જાઓ"
+
+#: ../src/font-view.c:524
+msgid "All Fonts"
+msgstr "બધા ફોન્ટ"
+
+#: ../src/font-view.c:605 ../src/font-view.c:648
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
-#, fuzzy
 msgid "Font Viewer"
-msgstr "લોગ દર્શક"
+msgstr "ફોન્ટ દર્શક"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:606 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "તમારી સિસ્ટમ પર ફોન્ટ જુઓ"
+
+#: ../src/font-view.c:608
+msgid "translator-credits"
+msgstr "Sweta Kothari <swkothar@redhat.com>"
+
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "ફોન્ટ દર્શક વિશે"
+
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "બહાર નીકળો"
+
 #, fuzzy
-msgid "Preview fonts"
-msgstr "આ દસ્તાવેજ નું પૂર્વદર્શન કરો"
+#~ msgid "Size:"
+#~ msgstr "માપ"
+
+#, fuzzy
+#~ msgid "Preview fonts"
+#~ msgstr "આ દસ્તાવેજ નું પૂર્વદર્શન કરો"
