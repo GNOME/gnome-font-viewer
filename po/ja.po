@@ -126,10 +126,8 @@ msgid "translator-credits"
 msgstr ""
 
 #: ../src/font-view-app-menu.ui.h:1
-#, fuzzy
-#| msgid "Font Viewer"
 msgid "About Font Viewer"
-msgstr "フォントビューアー"
+msgstr "このアプリケーションについて"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
