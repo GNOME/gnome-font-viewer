@@ -16,9 +16,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-06-01 19:04+0000\n"
-"PO-Revision-Date: 2011-09-24 18:11+0900\n"
-"Last-Translator: Yasumichi Akahoshi <yasumichi@vinelinux.org>\n"
+"POT-Creation-Date: 2012-08-02 05:00+0000\n"
+"PO-Revision-Date: 2012-08-05 16:22+0900\n"
+"Last-Translator: OKANO Takayoshi <kano@na.rim.or.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -49,40 +49,28 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
 #: ../src/font-view.c:177
-#, fuzzy
-#| msgid "Name:"
 msgid "Name"
-msgstr "名前:"
+msgstr "名前"
 
 #: ../src/font-view.c:180
-#, fuzzy
-#| msgid "Style:"
 msgid "Style"
-msgstr "スタイル:"
+msgstr "スタイル"
 
 #: ../src/font-view.c:190
-#, fuzzy
-#| msgid "Type:"
 msgid "Type"
-msgstr "種類:"
+msgstr "種類"
 
 #: ../src/font-view.c:235 ../src/font-view.c:254
-#, fuzzy
-#| msgid "Version:"
 msgid "Version"
-msgstr "バージョン: "
+msgstr "バージョン"
 
 #: ../src/font-view.c:240 ../src/font-view.c:260
-#, fuzzy
-#| msgid "Copyright:"
 msgid "Copyright"
-msgstr "著作権:"
+msgstr "著作権"
 
 #: ../src/font-view.c:245
-#, fuzzy
-#| msgid "Description:"
 msgid "Description"
-msgstr "説明:"
+msgstr "説明"
 
 #: ../src/font-view.c:273
 msgid "Install Failed"
@@ -92,36 +80,36 @@ msgstr "インストールに失敗しました"
 msgid "Installed"
 msgstr "インストールされました"
 
-#: ../src/font-view.c:282 ../src/font-view.c:427
+#: ../src/font-view.c:282 ../src/font-view.c:467
 #, fuzzy
 #| msgid "Installed"
 msgid "Install"
 msgstr "インストールされました"
 
-#: ../src/font-view.c:420
+#: ../src/font-view.c:460
 msgid "Info"
 msgstr ""
 
-#: ../src/font-view.c:433
+#: ../src/font-view.c:473
 msgid "Back"
 msgstr ""
 
-#: ../src/font-view.c:524
+#: ../src/font-view.c:564
 #, fuzzy
 #| msgid "I_nstall Font"
 msgid "All Fonts"
 msgstr "フォントをインストール(_N)"
 
-#: ../src/font-view.c:605 ../src/font-view.c:648
+#: ../src/font-view.c:659 ../src/font-view.c:702
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "フォントビューアー"
 
-#: ../src/font-view.c:606 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:660 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr ""
 
-#: ../src/font-view.c:608
+#: ../src/font-view.c:662
 msgid "translator-credits"
 msgstr ""
 
