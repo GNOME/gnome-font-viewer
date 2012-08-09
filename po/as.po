@@ -4,91 +4,122 @@
 #
 # Amitakhya Phukan <aphukan@redhat.com>, 2008.
 # Amitakhya Phukan <amitakhya@svn.gnome.org>, 2008, 2009.
-# Nilamdyuti Goswami <ngoswami@redhat.com>, 2011.
+# Nilamdyuti Goswami <ngoswami@redhat.com>, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: as\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-06 14:35-0400\n"
-"PO-Revision-Date: 2011-03-15 15:19+0000\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
+"cgi?product=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-08-08 16:12+0000\n"
+"PO-Revision-Date: 2012-08-09 20:57+0530\n"
 "Last-Translator: Nilamdyuti Goswami <ngoswami@redhat.com>\n"
-"Language-Team: Assamese <kde-i18n-doc@kde.org>\n"
-"Language: as\n"
+"Language-Team: as_IN <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: as\n"
 "Plural-Forms: nplurals=2; plural=(n!=1)\n"
 "X-Generator: Lokalize 1.0\n"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
 msgstr "লিখনীৰ পৰা থাম্বনেইল (অবিকল্পিত: Aa)"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "TEXT"
-msgstr "লিখনী"
+msgstr "TEXT"
 
-#: ../src/font-thumbnailer.c:269
-msgid "Font size (default: 64)"
-msgstr "ফন্টৰ আকাৰ (অবিকল্পিত: ৬৪)"
+#: ../src/font-thumbnailer.c:192
+msgid "Thumbnail size (default: 128)"
+msgstr "থাম্বনেইলৰ আকাৰ (অবিকল্পিত: ১২৮)"
 
-#: ../src/font-thumbnailer.c:269
+#: ../src/font-thumbnailer.c:192
 msgid "SIZE"
-msgstr "আকাৰ"
+msgstr "SIZE"
 
-#: ../src/font-thumbnailer.c:271
+#: ../src/font-thumbnailer.c:194
 msgid "FONT-FILE OUTPUT-FILE"
-msgstr "ফন্ট-নথিপত্ৰ আউটপুট-নথিপত্ৰ"
+msgstr "FONT-FILE OUTPUT-FILE"
 
-#: ../src/font-view.c:289
-msgid "Name:"
-msgstr "নাম:"
+#: ../src/font-view.c:177
+msgid "Name"
+msgstr "নাম"
 
-#: ../src/font-view.c:292
-msgid "Style:"
-msgstr "শৈলী:"
+#: ../src/font-view.c:180
+msgid "Style"
+msgstr "শৈলী"
 
-#: ../src/font-view.c:304
-msgid "Type:"
-msgstr "ধৰণ:"
+#: ../src/font-view.c:190
+msgid "Type"
+msgstr "ধৰণ"
 
-#: ../src/font-view.c:308
-msgid "Size:"
-msgstr "আকাৰ:"
+#: ../src/font-view.c:235 ../src/font-view.c:254
+msgid "Version"
+msgstr "সংস্কৰণ"
 
-#: ../src/font-view.c:352 ../src/font-view.c:365
-msgid "Version:"
-msgstr "সংস্কৰণ: "
+#: ../src/font-view.c:240 ../src/font-view.c:260
+msgid "Copyright"
+msgstr "স্বত্বাধিকাৰ"
 
-#: ../src/font-view.c:356 ../src/font-view.c:367
-msgid "Copyright:"
-msgstr "কপিৰাইট:"
+#: ../src/font-view.c:245
+msgid "Description"
+msgstr "বিৱৰণ"
 
-#: ../src/font-view.c:360
-msgid "Description:"
-msgstr "বিৱৰণ:"
-
-#: ../src/font-view.c:428
-msgid "Installed"
-msgstr "ইনস্টল হৈ থকা"
-
-#: ../src/font-view.c:430
+#: ../src/font-view.c:273
 msgid "Install Failed"
 msgstr "ইনস্টল ব্যৰ্থ"
 
-#: ../src/font-view.c:502
-#, c-format
-msgid "Usage: %s fontfile\n"
-msgstr "ব্যৱহাৰ: %s ফন্টনথিপত্ৰ\n"
+#: ../src/font-view.c:279
+msgid "Installed"
+msgstr "ইনস্টল্ড"
 
-#: ../src/font-view.c:572
-msgid "I_nstall Font"
-msgstr "ফন্ট ইনস্টল কৰা (_n)"
+#: ../src/font-view.c:282 ../src/font-view.c:467
+msgid "Install"
+msgstr "ইনস্টল কৰক"
 
+#: ../src/font-view.c:460
+msgid "Info"
+msgstr "তথ্য"
+
+#: ../src/font-view.c:473
+msgid "Back"
+msgstr "পিছলৈ"
+
+#: ../src/font-view.c:564
+msgid "All Fonts"
+msgstr "সকলো ফন্ট"
+
+#: ../src/font-view.c:659 ../src/font-view.c:702
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "ফন্ট দৰ্শক"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "Preview fonts"
-msgstr "ফন্টসমূহ পূৰ্বদৰ্শন"
+#: ../src/font-view.c:660 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "আপোনাৰ চিস্টেমৰ ফন্টসমূহ দৰ্শন কৰক"
+
+#: ../src/font-view.c:662
+msgid "translator-credits"
+msgstr ""
+"অমিতাক্ষ ফুকন (aphukan@fedoraproject.org), নীলমদ্যুতি গোস্বামী "
+"(ngoswami@redhat.com)"
+
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "ফন্ট দৰ্শকৰ বিষয়ে"
+
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "প্ৰস্থান কৰক"
+
+#~ msgid "Font size (default: 64)"
+#~ msgstr "ফন্টৰ আকাৰ (অবিকল্পিত: ৬৪)"
+
+#~ msgid "Size:"
+#~ msgstr "আকাৰ:"
+
+#~ msgid "Usage: %s fontfile\n"
+#~ msgstr "ব্যৱহাৰ: %s ফন্টনথিপত্ৰ\n"
+
+#~ msgid "Preview fonts"
+#~ msgstr "ফন্টসমূহ পূৰ্বদৰ্শন কৰক"
