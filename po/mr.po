@@ -3,20 +3,21 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # sandeep shedmake <sandeep.shedmake@gmail.com>, 2007.
-# Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2008, 2009.
-# Sandeep Shedmake <sshedmak@redhat.com>, 2009.
+# Sandeep Shedmake <sshedmak@redhat.com>, 2008, 2009.
+# Sandeep Shedmake <sshedmak@redhat.com>, 2009, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: mr\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-06 14:36-0400\n"
-"PO-Revision-Date: 2009-09-11 11:48+0530\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-06-01 19:04+0000\n"
+"PO-Revision-Date: 2012-08-12 21:33+0530\n"
 "Last-Translator: Sandeep Shedmake <sshedmak@redhat.com>\n"
 "Language-Team: Marathi <fedora-trans-mr@redhat.com>\n"
-"Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: mr\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "\n"
 "\n"
@@ -26,84 +27,101 @@ msgstr ""
 "\n"
 "\n"
 "\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Lokalize 1.4\n"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
-msgstr ""
+msgstr "मजकूर ते थम्बनेल (पूर्वनिर्धारित: Aa)"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "TEXT"
-msgstr ""
+msgstr "मजकूर"
 
-#: ../src/font-thumbnailer.c:269
-msgid "Font size (default: 64)"
-msgstr ""
+#: ../src/font-thumbnailer.c:192
+msgid "Thumbnail size (default: 128)"
+msgstr "थम्बनेल आकार (पूर्वनिर्धारित: 128)"
 
-#: ../src/font-thumbnailer.c:269
+#: ../src/font-thumbnailer.c:192
 msgid "SIZE"
-msgstr ""
-
-#: ../src/font-thumbnailer.c:271
-msgid "FONT-FILE OUTPUT-FILE"
-msgstr ""
-
-#: ../src/font-view.c:289
-#, fuzzy
-msgid "Name:"
-msgstr "नाव (_N):"
-
-#: ../src/font-view.c:292
-msgid "Style:"
-msgstr ""
-
-#: ../src/font-view.c:304
-#, fuzzy
-msgid "Type:"
-msgstr "प्रकार"
-
-#: ../src/font-view.c:308
-#, fuzzy
-msgid "Size:"
 msgstr "आकार"
 
-#: ../src/font-view.c:352 ../src/font-view.c:365
-#, fuzzy
-msgid "Version:"
-msgstr "आवृत्ती: "
+#: ../src/font-thumbnailer.c:194
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "FONT-FILE OUTPUT-FILE"
 
-#: ../src/font-view.c:356 ../src/font-view.c:367
-msgid "Copyright:"
-msgstr ""
+#: ../src/font-view.c:177
+msgid "Name"
+msgstr "नाव"
 
-#: ../src/font-view.c:360
-#, fuzzy
-msgid "Description:"
-msgstr "वर्णन (_D):"
+#: ../src/font-view.c:180
+msgid "Style"
+msgstr "शैली"
 
-#: ../src/font-view.c:428
-msgid "Installed"
-msgstr ""
+#: ../src/font-view.c:190
+msgid "Type"
+msgstr "प्रकार"
 
-#: ../src/font-view.c:430
+#: ../src/font-view.c:235 ../src/font-view.c:254
+msgid "Version"
+msgstr "आवृत्ती"
+
+#: ../src/font-view.c:240 ../src/font-view.c:260
+msgid "Copyright"
+msgstr "सर्वहक्काधिकार"
+
+#: ../src/font-view.c:245
+msgid "Description"
+msgstr "वर्णन"
+
+#: ../src/font-view.c:273
 msgid "Install Failed"
-msgstr ""
+msgstr "प्रतिष्ठापन अपयशी"
 
-#: ../src/font-view.c:502
-#, c-format
-msgid "Usage: %s fontfile\n"
-msgstr ""
+#: ../src/font-view.c:279
+msgid "Installed"
+msgstr "प्रतिष्ठापीत"
 
-#: ../src/font-view.c:572
-msgid "I_nstall Font"
-msgstr ""
+#: ../src/font-view.c:282 ../src/font-view.c:427
+msgid "Install"
+msgstr "प्रतिष्ठापीत करा"
 
+#: ../src/font-view.c:420
+msgid "Info"
+msgstr "माहिती"
+
+#: ../src/font-view.c:433
+msgid "Back"
+msgstr "मागे"
+
+#: ../src/font-view.c:524
+msgid "All Fonts"
+msgstr "सर्व फाँट्स्"
+
+#: ../src/font-view.c:605 ../src/font-view.c:648
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
-#, fuzzy
 msgid "Font Viewer"
-msgstr "लॉग दर्शिका"
+msgstr "फाँट व्युअर"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:606 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "प्रणालीवरील फाँट्स्चे दृष्य"
+
+#: ../src/font-view.c:608
+msgid "translator-credits"
+msgstr "संदिप शेडमाके <sshedmak@redhat.com>, 2012"
+
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "फाँट व्युअरविषयी"
+
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "बाहेर पडा"
+
 #, fuzzy
-msgid "Preview fonts"
-msgstr "या दस्तऐवजाचे पूर्वदृश्य पहा"
+#~ msgid "Size:"
+#~ msgstr "आकार"
+
+#, fuzzy
+#~ msgid "Preview fonts"
+#~ msgstr "या दस्तऐवजाचे पूर्वदृश्य पहा"
