@@ -1,5 +1,5 @@
 # gnome-utils ja.po.
-# Copyright (C) 1998-2011 gnome-util's COPYRIGHT HOLDER
+# Copyright (C) 1998-2012 gnome-util's COPYRIGHT HOLDER
 # Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1998.
 # Yuusuke Tahara <tahara@gnome.gr.jp>, 2000.
 # Yukihiro Nakai <nakai@gnome.gr.jp>, 2000.
@@ -11,14 +11,16 @@
 # Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009, 2010.
 # Yasumichi Akahoshi <yasumichi@vinelinux.org>, 2010, 2011.
 # OKANO Takayoshi <kano@na.rim.or.jp>, 2011, 2012.
+# Jiro Matsuzawa <jmatsuzawa@gnome.org>, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-08-08 16:12+0000\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-08-19 01:13+0000\n"
 "PO-Revision-Date: 2012-08-09 21:20+0900\n"
-"Last-Translator: OKANO Takayoshi <kano@na.rim.or.jp>\n"
+"Last-Translator: Jiro Matsuzawa <jmatsuzawa@gnome.org>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -76,7 +78,7 @@ msgstr "インストールに失敗しました"
 
 #: ../src/font-view.c:279
 msgid "Installed"
-msgstr "インストールされました"
+msgstr "インストール済み"
 
 #: ../src/font-view.c:282 ../src/font-view.c:467
 msgid "Install"
@@ -116,7 +118,8 @@ msgstr ""
 "Satoru SATOH <ss@gnome.gr.jp>, 2006.\n"
 "Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009, 2010.\n"
 "Yasumichi Akahoshi <yasumichi@vinelinux.org>, 2010, 2011.\n"
-"OKANO Takayoshi <kano@na.rim.or.jp>, 2011, 2012."
+"OKANO Takayoshi <kano@na.rim.or.jp>, 2011, 2012.\n"
+"松澤 二郎 <jmatsuzawa@gnome.org>, 2012."
 
 #: ../src/font-view-app-menu.ui.h:1
 msgid "About Font Viewer"
