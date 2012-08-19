@@ -10,14 +10,14 @@
 # Satoru SATOH <ss@gnome.gr.jp>, 2006.
 # Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009, 2010.
 # Yasumichi Akahoshi <yasumichi@vinelinux.org>, 2010, 2011.
-# Takayoshi OKANO <kano@na.rim.or.jp>, 2011.
+# OKANO Takayoshi <kano@na.rim.or.jp>, 2011, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-08-02 05:00+0000\n"
-"PO-Revision-Date: 2012-08-05 16:22+0900\n"
+"POT-Creation-Date: 2012-08-08 16:12+0000\n"
+"PO-Revision-Date: 2012-08-09 21:20+0900\n"
 "Last-Translator: OKANO Takayoshi <kano@na.rim.or.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
@@ -35,10 +35,8 @@ msgid "TEXT"
 msgstr "TEXT"
 
 #: ../src/font-thumbnailer.c:192
-#, fuzzy
-#| msgid "Text to thumbnail (default: Aa)"
 msgid "Thumbnail size (default: 128)"
-msgstr "サムネイルの文字 (デフォルトは Aa)"
+msgstr "サムネイルの大きさ (デフォルトは 128)"
 
 #: ../src/font-thumbnailer.c:192
 msgid "SIZE"
@@ -81,24 +79,20 @@ msgid "Installed"
 msgstr "インストールされました"
 
 #: ../src/font-view.c:282 ../src/font-view.c:467
-#, fuzzy
-#| msgid "Installed"
 msgid "Install"
-msgstr "インストールされました"
+msgstr "インストール"
 
 #: ../src/font-view.c:460
 msgid "Info"
-msgstr ""
+msgstr "情報"
 
 #: ../src/font-view.c:473
 msgid "Back"
-msgstr ""
+msgstr "戻る"
 
 #: ../src/font-view.c:564
-#, fuzzy
-#| msgid "I_nstall Font"
 msgid "All Fonts"
-msgstr "フォントをインストール(_N)"
+msgstr "すべてのフォント"
 
 #: ../src/font-view.c:659 ../src/font-view.c:702
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
@@ -107,11 +101,22 @@ msgstr "フォントビューアー"
 
 #: ../src/font-view.c:660 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
-msgstr ""
+msgstr "システム上のフォントを閲覧します"
 
 #: ../src/font-view.c:662
 msgid "translator-credits"
 msgstr ""
+"Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1998.\n"
+"Yuusuke Tahara <tahara@gnome.gr.jp>, 2000.\n"
+"Yukihiro Nakai <nakai@gnome.gr.jp>, 2000.\n"
+"Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2000-2002, 2009, 2011.\n"
+"Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.\n"
+"Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.\n"
+"KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.\n"
+"Satoru SATOH <ss@gnome.gr.jp>, 2006.\n"
+"Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009, 2010.\n"
+"Yasumichi Akahoshi <yasumichi@vinelinux.org>, 2010, 2011.\n"
+"OKANO Takayoshi <kano@na.rim.or.jp>, 2011, 2012."
 
 #: ../src/font-view-app-menu.ui.h:1
 msgid "About Font Viewer"
@@ -119,7 +124,7 @@ msgstr "このアプリケーションについて"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
-msgstr ""
+msgstr "終了"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "フォントの大きさ (デフォルトは 64)"
