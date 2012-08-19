@@ -15,15 +15,16 @@
 # Mario Blättermann <mariobl@gnome.org>, 2009, 2011.
 # Paul Seyfert <pseyfert@mathphys.fsk.uni-heidelberg.de>, 2011.
 # Wolfgang Stöggl <c72578@yahoo.de>, 2011.
-# Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009, 2011.
+# Tobias Endrigkeit <tobiasendrigkeit@googlemail.com>, 2012.
+# Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009, 2011, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-06 14:35-0400\n"
-"PO-Revision-Date: 2011-09-18 14:40+0100\n"
-"Last-Translator: Mario Blättermann <mariobl@freenet.de>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-07-07 17:06+0000\n"
+"PO-Revision-Date: 2012-08-19 14:01+0100\n"
+"Last-Translator: Christian Kirbach <Christian.Kirbach@googlemail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -31,75 +32,115 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Text der Vorschau (Vorgabe: Aa)"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "TEXT"
 msgstr "TEXT"
 
-#: ../src/font-thumbnailer.c:269
-msgid "Font size (default: 64)"
-msgstr "Schriftgröße (Vorgabe: 64)"
+#: ../src/font-thumbnailer.c:192
+msgid "Thumbnail size (default: 128)"
+msgstr "Vorschaugröße (Vorgabe: 128)"
 
-#: ../src/font-thumbnailer.c:269
+#: ../src/font-thumbnailer.c:192
 msgid "SIZE"
 msgstr "GRÖSSE"
 
-#: ../src/font-thumbnailer.c:271
+#: ../src/font-thumbnailer.c:194
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "SCHRIFT-DATEI AUSGABE-DATEI"
 
-#: ../src/font-view.c:289
-msgid "Name:"
-msgstr "Name:"
+#: ../src/font-view.c:177
+msgid "Name"
+msgstr "Name"
 
-#: ../src/font-view.c:292
-msgid "Style:"
-msgstr "Stil:"
+#: ../src/font-view.c:180
+msgid "Style"
+msgstr "Stil"
 
-#: ../src/font-view.c:304
-msgid "Type:"
-msgstr "Typ:"
+#: ../src/font-view.c:190
+msgid "Type"
+msgstr "Typ"
 
-#: ../src/font-view.c:308
-msgid "Size:"
-msgstr "Größe:"
+#: ../src/font-view.c:235
+#: ../src/font-view.c:254
+msgid "Version"
+msgstr "Version"
 
-#: ../src/font-view.c:352 ../src/font-view.c:365
-msgid "Version:"
-msgstr "Version: "
+#: ../src/font-view.c:240
+#: ../src/font-view.c:260
+msgid "Copyright"
+msgstr "Copyright"
 
-#: ../src/font-view.c:356 ../src/font-view.c:367
-msgid "Copyright:"
-msgstr "Copyright:"
+#: ../src/font-view.c:245
+msgid "Description"
+msgstr "Beschreibung"
 
-#: ../src/font-view.c:360
-msgid "Description:"
-msgstr "Beschreibung:"
-
-#: ../src/font-view.c:428
-msgid "Installed"
-msgstr "Installiert"
-
-#: ../src/font-view.c:430
+#: ../src/font-view.c:273
 msgid "Install Failed"
 msgstr "Installation fehlgeschlagen"
 
-#: ../src/font-view.c:502
-#, c-format
-msgid "Usage: %s fontfile\n"
-msgstr "Aufruf: %s Schriftdatei\n"
+#: ../src/font-view.c:279
+msgid "Installed"
+msgstr "Installiert"
 
-#: ../src/font-view.c:572
-msgid "I_nstall Font"
-msgstr "Schrift _installieren"
+#: ../src/font-view.c:282
+#: ../src/font-view.c:467
+msgid "Install"
+msgstr "Installieren"
 
+#: ../src/font-view.c:460
+msgid "Info"
+msgstr "Info"
+
+#: ../src/font-view.c:473
+msgid "Back"
+msgstr "Zurück"
+
+#: ../src/font-view.c:564
+msgid "All Fonts"
+msgstr "Alle Schriftarten"
+
+#: ../src/font-view.c:659
+#: ../src/font-view.c:702
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Schriftartenbetrachter"
 
+#: ../src/font-view.c:660
 #: ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "Preview fonts"
-msgstr "Vorschau von Schriften anzeigen"
+msgid "View fonts on your system"
+msgstr "Schriftarten Ihres Systems betrachten"
+
+#: ../src/font-view.c:662
+msgid "translator-credits"
+msgstr ""
+"Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009, 2011, 2012.\n"
+"Tobias Endrigkeit <tobiasendrigkeit@googlemail.com>, 2012."
+
+#: ../src/font-view-app-menu.ui.h:1
+#| msgid "Font Viewer"
+msgid "About Font Viewer"
+msgstr "Info zu Schriftartenbetrachter"
+
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "Beenden"
+
+#, fuzzy
+#~ msgid "Done"
+#~ msgstr "Erledigt"
+
+#~ msgid "Font size (default: 64)"
+#~ msgstr "Schriftgröße (Vorgabe: 64)"
+
+#~ msgid "Size:"
+#~ msgstr "Größe:"
+
+#~ msgid "Usage: %s fontfile\n"
+#~ msgstr "Aufruf: %s Schriftdatei\n"
+
+#~ msgid "Preview fonts"
+#~ msgstr "Vorschau von Schriften anzeigen"
