@@ -1,3 +1,10 @@
+GNOME Font Viewer - 3.5.90
+-------------------------------------------------------------------------------
+
+ • Improve performance when loading the application's overview
+ • Make loading of the overview model completely asynchronous
+ • Translation updates
+
 GNOME Font Viewer - 3.5.4
 -------------------------------------------------------------------------------
 
