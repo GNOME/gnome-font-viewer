@@ -59,8 +59,6 @@ enum {
 
 static guint signals[NUM_SIGNALS] = { 0, };
 
-static void ensure_thumbnail (FontViewModel *self, const gchar *path);
-
 G_DEFINE_TYPE (FontViewModel, font_view_model, GTK_TYPE_LIST_STORE);
 
 #define ATTRIBUTES_FOR_CREATING_THUMBNAIL \
@@ -75,32 +73,26 @@ typedef struct {
     FT_Face face;
     GtkTreeIter iter;
     gboolean found;
-} IterForFileData;
+} IterForFaceData;
 
 static gboolean
-iter_for_file_foreach (GtkTreeModel *model,
+iter_for_face_foreach (GtkTreeModel *model,
                        GtkTreePath *path,
                        GtkTreeIter *iter,
                        gpointer user_data)
 {
-    IterForFileData *data = user_data;
-    gchar *font_path, *font_name, *match_name;
+    IterForFaceData *data = user_data;
+    gchar *font_name, *match_name;
     gboolean retval;
 
     gtk_tree_model_get (GTK_TREE_MODEL (model), iter,
                         COLUMN_NAME, &font_name,
-                        COLUMN_PATH, &font_path,
                         -1);
 
-    if (data->file) {
-        retval = (g_strcmp0 (font_path, data->file) == 0);
-    } else if (data->face) {
-        match_name = font_utils_get_font_name (data->face);
-        retval = (g_strcmp0 (font_name, match_name) == 0);
-        g_free (match_name);
-    }
+    match_name = font_utils_get_font_name (data->face);
+    retval = (g_strcmp0 (font_name, match_name) == 0);
 
-    g_free (font_path);
+    g_free (match_name);
     g_free (font_name);
 
     if (retval) {
@@ -111,48 +103,28 @@ iter_for_file_foreach (GtkTreeModel *model,
     return retval;
 }
 
-static gboolean
-font_view_model_get_iter_internal (FontViewModel *self,
-                                   const gchar *file,
+gboolean
+font_view_model_get_iter_for_face (FontViewModel *self,
                                    FT_Face face,
                                    GtkTreeIter *iter)
 {
-    IterForFileData *data = g_slice_new0 (IterForFileData);
+    IterForFaceData *data = g_slice_new0 (IterForFaceData);
     gboolean found;
 
-    data->file = file;
     data->face = face;
     data->found = FALSE;
 
     gtk_tree_model_foreach (GTK_TREE_MODEL (self),
-                            iter_for_file_foreach,
+                            iter_for_face_foreach,
                             data);
 
     found = data->found;
     if (found && iter)
         *iter = data->iter;
 
-    g_slice_free (IterForFileData, data);
+    g_slice_free (IterForFaceData, data);
 
     return found;
-}
-
-gboolean
-font_view_model_get_iter_for_file (FontViewModel *self,
-                                   const gchar *file,
-                                   GtkTreeIter *iter)
-{
-    return font_view_model_get_iter_internal
-        (self, file, NULL, iter);
-}
-
-gboolean
-font_view_model_get_iter_for_face (FontViewModel *self,
-                                   FT_Face face,
-                                   GtkTreeIter *iter)
-{
-    return font_view_model_get_iter_internal
-        (self, NULL, face, iter);
 }
 
 typedef struct {
@@ -160,6 +132,7 @@ typedef struct {
     GFile *font_file;
     gchar *font_path;
     GdkPixbuf *pixbuf;
+    GtkTreeIter iter;
 } LoadThumbnailData;
 
 static void 
@@ -177,11 +150,9 @@ static gboolean
 ensure_thumbnail_job_done (gpointer user_data)
 {
     LoadThumbnailData *data = user_data;
-    GtkTreeIter iter;
 
-    if ((data->pixbuf != NULL) &&
-        (font_view_model_get_iter_for_file (data->self, data->font_path, &iter)))
-        gtk_list_store_set (GTK_LIST_STORE (data->self), &iter,
+    if (data->pixbuf != NULL)
+        gtk_list_store_set (GTK_LIST_STORE (data->self), &(data->iter),
                             COLUMN_ICON, data->pixbuf,
                             -1);
 
@@ -299,7 +270,8 @@ ensure_thumbnail_job (GIOSchedulerJob *job,
 
 static void
 ensure_thumbnail (FontViewModel *self,
-                  const gchar *path)
+                  const gchar *path,
+                  GtkTreeIter *iter)
 {
     LoadThumbnailData *data;
 
@@ -307,6 +279,7 @@ ensure_thumbnail (FontViewModel *self,
     data->self = g_object_ref (self);
     data->font_file = g_file_new_for_path (path);
     data->font_path = g_strdup (path);
+    data->iter = *iter;
 
     g_io_scheduler_push_job (ensure_thumbnail_job, data,
                              NULL, G_PRIORITY_DEFAULT, NULL);
@@ -345,6 +318,8 @@ ensure_font_list (FontViewModel *self)
         return;
 
     for (i = 0; i < self->priv->font_list->nfont; i++) {
+        GtkTreeIter iter;
+
 	FcPatternGetString (self->priv->font_list->fonts[i], FC_FILE, 0, &file);
         font_name = font_utils_get_font_name_for_file (self->priv->library, (const gchar *) file);
 
@@ -353,7 +328,7 @@ ensure_font_list (FontViewModel *self)
 
         collation_key = g_utf8_collate_key (font_name, -1);
 
-        gtk_list_store_insert_with_values (GTK_LIST_STORE (self), NULL, -1,
+        gtk_list_store_insert_with_values (GTK_LIST_STORE (self), &iter, -1,
                                            COLUMN_NAME, font_name,
                                            COLUMN_POINTER, self->priv->font_list->fonts[i],
                                            COLUMN_PATH, file,
@@ -361,7 +336,7 @@ ensure_font_list (FontViewModel *self)
                                            COLUMN_COLLATION_KEY, collation_key,
                                            -1);
 
-        ensure_thumbnail (self, (const gchar *) file);
+        ensure_thumbnail (self, (const gchar *) file, &iter);
 
         g_free (font_name);
         g_free (collation_key);
