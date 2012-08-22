@@ -22,9 +22,6 @@ PKG_PROG_PKG_CONFIG([0.22])
 AM_GNU_GETTEXT([external])
 AM_GNU_GETTEXT_VERSION([0.17])
 
-## don't rerun to this point if we abort
-AC_CACHE_SAVE
-
 AC_PROG_CC
 AM_PROG_CC_C_O
 AC_PROG_CXX
