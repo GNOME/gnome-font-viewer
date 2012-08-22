@@ -3,5 +3,5 @@
 src/font-thumbnailer.c
 src/font-view.c
 [type: gettext/glade]src/font-view-app-menu.ui
-src/gd-main-toolbar.c
+libgd/libgd/gd-main-toolbar.c
 src/gnome-font-viewer.desktop.in.in
