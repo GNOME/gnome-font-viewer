@@ -1,7 +1,8 @@
 INCLUDES =					\
 	$(FONTVIEW_CFLAGS)			\
 	-DDIRECTORY_DIR=\"$(directorydir)\" 	\
-	-DGNOMELOCALEDIR=\"$(datadir)/locale\"
+	-DGNOMELOCALEDIR=\"$(datadir)/locale\"  \
+	-I$(top_srcdir)/libgd
 
 bin_PROGRAMS = \
 	gnome-thumbnail-font \
@@ -37,6 +38,7 @@ gnome_thumbnail_font_SOURCES = \
 
 gnome_font_viewer_LDADD = \
 	-lm \
+	$(top_builddir)/libgd/libgd.la \
 	$(FONTVIEW_LIBS)
 
 gnome_font_viewer_SOURCES = \
@@ -46,8 +48,6 @@ gnome_font_viewer_SOURCES = \
 	font-model.c \
 	font-utils.h \
 	font-utils.c \
-	gd-main-toolbar.h \
-	gd-main-toolbar.c \
 	sushi-font-widget.h \
 	sushi-font-widget.c \
 	font-view.c

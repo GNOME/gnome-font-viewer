@@ -50,8 +50,14 @@ PKG_CHECK_MODULES(FONTVIEW,
                   glib-2.0 >= $GLIB_MIN_VERSION
                   gtk+-3.0 >= $GTK_MIN_VERSION)
 
+LIBGD_INIT([
+  main-toolbar
+  static
+])
+
 AC_CONFIG_FILES([
 Makefile
+libgd/Makefile
 src/Makefile
 src/gnome-font-viewer.desktop.in
 po/Makefile.in

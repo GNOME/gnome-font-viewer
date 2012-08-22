@@ -5,6 +5,7 @@ srcdir=`dirname $0`
 test -z "$srcdir" && srcdir=.
 
 PKG_NAME="GNOME Font Viewer"
+ACLOCAL_FLAGS="-I libgd"
 
 (test -f $srcdir/configure.ac \
   && test -f $srcdir/src/font-view.c) || {

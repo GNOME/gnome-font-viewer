@@ -35,8 +35,9 @@
 #include <glib/gi18n.h>
 
 #include "font-model.h"
-#include "gd-main-toolbar.h"
 #include "sushi-font-widget.h"
+
+#include <libgd/gd-main-toolbar.h>
 
 #define FONT_VIEW_TYPE_APPLICATION font_view_application_get_type()
 #define FONT_VIEW_APPLICATION(obj) \

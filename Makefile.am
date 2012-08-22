@@ -1,1 +1,1 @@
-SUBDIRS = src po
+SUBDIRS = libgd src po
