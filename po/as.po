@@ -119,7 +119,7 @@ msgstr "প্ৰস্থান কৰক"
 #~ msgstr "আকাৰ:"
 
 #~ msgid "Usage: %s fontfile\n"
-#~ msgstr "ব্যৱহাৰ: %s ফন্টনথিপত্ৰ\n"
+#~ msgstr "ব্যৱহাৰ: %s ফন্টফাইল\n"
 
 #~ msgid "Preview fonts"
 #~ msgstr "ফন্টসমূহ পূৰ্বদৰ্শন কৰক"
