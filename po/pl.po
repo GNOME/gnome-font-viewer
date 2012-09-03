@@ -4,12 +4,19 @@
 # pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
 # gnomepl@aviary.pl
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Zbigniew Chyla <chyla@alice.ci.pwr.wroc.pl>, 1999-2003.
+# Artur Flinta <aflinta@at.kernel.pl>, 2003-2005.
+# Wadim Dziedzic <wdziedzic@aviary.pl>, 2007.
+# Tomasz Dominikowski <dominikowski@gmail.com>, 2007-2009.
+# Joanna Mazgaj <jmazgaj@aviary.pl>, 2008.
+# Piotr Drąg <piotrdrag@gmail.com>, 2010-2012.
+# Aviary.pl <gnomepl@aviary.pl>, 2007-2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-22 01:06+0200\n"
-"PO-Revision-Date: 2012-08-22 01:07+0200\n"
+"POT-Creation-Date: 2012-09-03 23:09+0200\n"
+"PO-Revision-Date: 2012-09-03 23:10+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -41,67 +48,6 @@ msgstr "ROZMIAR"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "PLIK-CZCIONKI PLIK-WYJŚCIOWY"
 
-#: ../src/font-view.c:177
-msgid "Name"
-msgstr "Nazwa"
-
-#: ../src/font-view.c:180
-msgid "Style"
-msgstr "Styl"
-
-#: ../src/font-view.c:190
-msgid "Type"
-msgstr "Typ"
-
-#: ../src/font-view.c:235 ../src/font-view.c:254
-msgid "Version"
-msgstr "Wersja"
-
-#: ../src/font-view.c:240 ../src/font-view.c:260
-msgid "Copyright"
-msgstr "Prawa autorskie"
-
-#: ../src/font-view.c:245
-msgid "Description"
-msgstr "Opis"
-
-#: ../src/font-view.c:273
-msgid "Install Failed"
-msgstr "Instalacja się nie powiodła"
-
-#: ../src/font-view.c:279
-msgid "Installed"
-msgstr "Zainstalowana"
-
-#: ../src/font-view.c:282 ../src/font-view.c:467
-msgid "Install"
-msgstr "Zainstaluj"
-
-#: ../src/font-view.c:460
-msgid "Info"
-msgstr "Informacje"
-
-#: ../src/font-view.c:473
-msgid "Back"
-msgstr "Wstecz"
-
-#: ../src/font-view.c:564
-msgid "All Fonts"
-msgstr "Wszystkie czcionki"
-
-#: ../src/font-view.c:659 ../src/font-view.c:702
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "Przeglądarka czcionek"
-
-#: ../src/font-view.c:660 ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "View fonts on your system"
-msgstr "Wyświetlanie czcionek w systemie"
-
-#: ../src/font-view.c:662
-msgid "translator-credits"
-msgstr "Aviary.pl <gnomepl@aviary.pl>, 2008, 2009, 2010, 2011, 2012"
-
 #: ../src/font-view-app-menu.ui.h:1
 msgid "About Font Viewer"
 msgstr "O przeglądarce czcionek"
@@ -109,3 +55,71 @@ msgstr "O przeglądarce czcionek"
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
 msgstr "Zakończ"
+
+#: ../src/font-view.c:178
+msgid "Name"
+msgstr "Nazwa"
+
+#: ../src/font-view.c:181
+msgid "Style"
+msgstr "Styl"
+
+#: ../src/font-view.c:191
+msgid "Type"
+msgstr "Typ"
+
+#: ../src/font-view.c:236 ../src/font-view.c:255
+msgid "Version"
+msgstr "Wersja"
+
+#: ../src/font-view.c:241 ../src/font-view.c:261
+msgid "Copyright"
+msgstr "Prawa autorskie"
+
+#: ../src/font-view.c:246
+msgid "Description"
+msgstr "Opis"
+
+#: ../src/font-view.c:274
+msgid "Install Failed"
+msgstr "Instalacja się nie powiodła"
+
+#: ../src/font-view.c:280
+msgid "Installed"
+msgstr "Zainstalowana"
+
+#: ../src/font-view.c:283 ../src/font-view.c:468
+msgid "Install"
+msgstr "Zainstaluj"
+
+#: ../src/font-view.c:461
+msgid "Info"
+msgstr "Informacje"
+
+#: ../src/font-view.c:474
+msgid "Back"
+msgstr "Wstecz"
+
+#: ../src/font-view.c:565
+msgid "All Fonts"
+msgstr "Wszystkie czcionki"
+
+#: ../src/font-view.c:660 ../src/font-view.c:703
+#: ../src/gnome-font-viewer.desktop.in.in.h:1
+msgid "Font Viewer"
+msgstr "Przeglądarka czcionek"
+
+#: ../src/font-view.c:661 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "Wyświetlanie czcionek w systemie"
+
+#: ../src/font-view.c:663
+msgid "translator-credits"
+msgstr ""
+"Zbigniew Chyla <chyla@alice.ci.pwr.wroc.pl>, 1999-2003\n"
+"Artur Flinta <aflinta@at.kernel.pl>, 2003-2005\n"
+"Wadim Dziedzic <wdziedzic@aviary.pl>, 2007\n"
+"Tomasz Dominikowski <dominikowski@gmail.com>, 2007-2009\n"
+"Joanna Mazgaj <jmazgaj@aviary.pl>, 2008\n"
+"Piotr Drąg <piotrdrag@gmail.com>, 2010-2012\n"
+"Aviary.pl <gnomepl@aviary.pl>, 2007-2012"
