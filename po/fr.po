@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: gnome-utils HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-04-30 13:23+0000\n"
+"POT-Creation-Date: 2012-08-22 16:06+0000\n"
 "PO-Revision-Date: 2012-04-30 22:01+0200\n"
 "Last-Translator: Bruno Brouard <annoa.b@gmail.com>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 "Plural-Forms: nplurals=2; plural=n>1;\n"
 
 #: ../src/font-thumbnailer.c:190
@@ -39,70 +39,74 @@ msgstr "TAILLE"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FICHIER-POLICE FICHIER-SORTIE"
 
-#: ../src/font-view.c:169
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "À propos du Visionneur de police"
+
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "Quitter"
+
+#: ../src/font-view.c:178
 msgid "Name"
 msgstr "Nom"
 
-#: ../src/font-view.c:172
+#: ../src/font-view.c:181
 msgid "Style"
 msgstr "Style"
 
-#: ../src/font-view.c:182
+#: ../src/font-view.c:191
 msgid "Type"
 msgstr "Type"
 
-#: ../src/font-view.c:226 ../src/font-view.c:240
+#: ../src/font-view.c:236 ../src/font-view.c:255
 msgid "Version"
 msgstr "Version"
 
-#: ../src/font-view.c:231 ../src/font-view.c:242
+#: ../src/font-view.c:241 ../src/font-view.c:261
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../src/font-view.c:235
+#: ../src/font-view.c:246
 msgid "Description"
 msgstr "Description"
 
-#: ../src/font-view.c:253
+#: ../src/font-view.c:274
 msgid "Install Failed"
 msgstr "Échec de l'installation "
 
-#: ../src/font-view.c:259
+#: ../src/font-view.c:280
 msgid "Installed"
 msgstr "Installé"
 
-#: ../src/font-view.c:262 ../src/font-view.c:404
+#: ../src/font-view.c:283 ../src/font-view.c:468
 msgid "Install"
 msgstr "Installer"
 
-#: ../src/font-view.c:397
+#: ../src/font-view.c:461
 msgid "Info"
 msgstr "Information"
 
-#: ../src/font-view.c:411
+#: ../src/font-view.c:474
 msgid "Back"
 msgstr "Retour"
 
-#: ../src/font-view.c:491
+#: ../src/font-view.c:565
 msgid "All Fonts"
 msgstr "Toutes les polices"
 
-#: ../src/font-view.c:572 ../src/font-view.c:613
+#: ../src/font-view.c:660 ../src/font-view.c:703
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Visionneur de police"
 
-#: ../src/font-view.c:573 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:661 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Affiche les polices de votre système"
 
-#: ../src/font-view.c:575
+#: ../src/font-view.c:663
 msgid "translator-credits"
-msgstr ""
-"Bruno Brouard <annoa.b@gmail.com>"
- 
-#. right section
-#: ../src/gd-main-toolbar.c:269
-msgid "Done"
-msgstr "Terminé"
+msgstr "Bruno Brouard <annoa.b@gmail.com>"
 
+#~ msgid "Done"
+#~ msgstr "Terminé"
