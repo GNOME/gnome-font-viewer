@@ -1,94 +1,123 @@
 # Thai translation for gnome-utils.
-# Copyright (C) 2004-2011 Free Software Foundation, Inc.
+# Copyright (C) 2004-2012 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-utils package.
 # Khunti Yeesoon <sc445138@bucc3.buu.ac.th>, 2003.
 # Paisa Seeluangsawat <paisa@users.sf.net>, 2004.
 # Supranee Thirawatthanasuk <supranee@opentle.org>, 2004.
-# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2005-2011.
+# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2005-2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-06 14:36-0400\n"
-"PO-Revision-Date: 2011-09-18 14:16+0700\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-06-01 19:04+0000\n"
+"PO-Revision-Date: 2012-09-08 19:54+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
-"Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: th\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
 msgstr "ข้อความที่จะใช้ทำภาพย่อ (ค่าปริยาย: Aa)"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "TEXT"
 msgstr "ข้อความ"
 
-#: ../src/font-thumbnailer.c:269
-msgid "Font size (default: 64)"
-msgstr "ขนาดแบบอักษร (ค่าปริยาย: 64)"
+#: ../src/font-thumbnailer.c:192
+msgid "Thumbnail size (default: 128)"
+msgstr "ขนาดของภาพย่อ (ค่าปริยาย: 128)"
 
-#: ../src/font-thumbnailer.c:269
+#: ../src/font-thumbnailer.c:192
 msgid "SIZE"
 msgstr "ขนาด"
 
-#: ../src/font-thumbnailer.c:271
+#: ../src/font-thumbnailer.c:194
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "แฟ้มแบบอักษร แฟ้มผลลัพธ์"
 
-#: ../src/font-view.c:289
-msgid "Name:"
-msgstr "ชื่อ:"
+#: ../src/font-view.c:177
+msgid "Name"
+msgstr "ชื่อ"
 
-#: ../src/font-view.c:292
-msgid "Style:"
-msgstr "สไตล์:"
+#: ../src/font-view.c:180
+msgid "Style"
+msgstr "สไตล์"
 
-#: ../src/font-view.c:304
-msgid "Type:"
-msgstr "ชนิด:"
+#: ../src/font-view.c:190
+msgid "Type"
+msgstr "ชนิด"
 
-#: ../src/font-view.c:308
-msgid "Size:"
-msgstr "ขนาด:"
+#: ../src/font-view.c:235 ../src/font-view.c:254
+msgid "Version"
+msgstr "รุ่น"
 
-#: ../src/font-view.c:352 ../src/font-view.c:365
-msgid "Version:"
-msgstr "รุ่น:"
+#: ../src/font-view.c:240 ../src/font-view.c:260
+msgid "Copyright"
+msgstr "ลิขสิทธิ์"
 
-#: ../src/font-view.c:356 ../src/font-view.c:367
-msgid "Copyright:"
-msgstr "ลิขสิทธิ์:"
+#: ../src/font-view.c:245
+msgid "Description"
+msgstr "คำบรรยาย"
 
-#: ../src/font-view.c:360
-msgid "Description:"
-msgstr "คำบรรยาย:"
-
-#: ../src/font-view.c:428
-msgid "Installed"
-msgstr "ติดตั้งแล้ว"
-
-#: ../src/font-view.c:430
+#: ../src/font-view.c:273
 msgid "Install Failed"
 msgstr "ติดตั้งไม่สำเร็จ"
 
-#: ../src/font-view.c:502
-#, c-format
-msgid "Usage: %s fontfile\n"
-msgstr "วิธีใช้: %s แฟ้มแบบอักษร\n"
+#: ../src/font-view.c:279
+msgid "Installed"
+msgstr "ติดตั้งแล้ว"
 
-#: ../src/font-view.c:572
-msgid "I_nstall Font"
-msgstr "_ติดตั้งแบบอักษร"
+#: ../src/font-view.c:282 ../src/font-view.c:427
+msgid "Install"
+msgstr "ติดตั้ง"
 
+#: ../src/font-view.c:420
+msgid "Info"
+msgstr "ข้อมูล"
+
+#: ../src/font-view.c:433
+msgid "Back"
+msgstr "ย้อนกลับ"
+
+#: ../src/font-view.c:524
+msgid "All Fonts"
+msgstr "แบบอักษรทั้งหมด"
+
+#: ../src/font-view.c:605 ../src/font-view.c:648
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "โปรแกรมดูแบบอักษร"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "Preview fonts"
-msgstr "ดูตัวอย่างของแบบอักษร"
+#: ../src/font-view.c:606 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "ดูแบบอักษรต่างๆ ในระบบของคุณ"
+
+#: ../src/font-view.c:608
+msgid "translator-credits"
+msgstr "Theppitak Karoonboonyanan <thep@linux.thai.net>"
+
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "เกี่ยวกับโปรแกรมดูแบบอักษร"
+
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "ออก"
+
+#~ msgid "Font size (default: 64)"
+#~ msgstr "ขนาดแบบอักษร (ค่าปริยาย: 64)"
+
+#~ msgid "Size:"
+#~ msgstr "ขนาด:"
+
+#~ msgid "Usage: %s fontfile\n"
+#~ msgstr "วิธีใช้: %s แฟ้มแบบอักษร\n"
+
+#~ msgid "Preview fonts"
+#~ msgstr "ดูตัวอย่างของแบบอักษร"
