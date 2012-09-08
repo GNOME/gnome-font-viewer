@@ -15,92 +15,109 @@
 # Petr Kovar <pknbe@volny.cz>, 2008, 2009.
 # Lucas Lommer <llommer@svn.gnome.org>, 2009 (just a small fix).
 # Adrian Guniš <andygun696@gmail.com>, 2008, 2009, 2010.
-# Marek Černocký <marek@manet.cz>, 2010 (just a small fixes), 2011.
+# Marek Černocký <marek@manet.cz>, 2010 (just a small fixes), 2011, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-06 14:35-0400\n"
-"PO-Revision-Date: 2011-07-20 20:29+0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-06-01 19:04+0000\n"
+"PO-Revision-Date: 2012-09-08 22:17+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
-"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: cs\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Lokalize 1.0\n"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Text pro náhled (výchozí: Aa)"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "TEXT"
 msgstr "TEXT"
 
-#: ../src/font-thumbnailer.c:269
-msgid "Font size (default: 64)"
-msgstr "Velikost písma (výchozí: 64)"
+#: ../src/font-thumbnailer.c:192
+msgid "Thumbnail size (default: 128)"
+msgstr "Velikost náhledu (výchozí: 128)"
 
-#: ../src/font-thumbnailer.c:269
+#: ../src/font-thumbnailer.c:192
 msgid "SIZE"
 msgstr "VELIKOST"
 
-#: ../src/font-thumbnailer.c:271
+#: ../src/font-thumbnailer.c:194
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "SOUBOR-PÍSMA VÝSTUPNÍ-SOUBOR"
 
-#: ../src/font-view.c:289
-msgid "Name:"
-msgstr "Název:"
+#: ../src/font-view.c:177
+msgid "Name"
+msgstr "Název"
 
-#: ../src/font-view.c:292
-msgid "Style:"
-msgstr "Styl:"
+#: ../src/font-view.c:180
+msgid "Style"
+msgstr "Styl"
 
-#: ../src/font-view.c:304
-msgid "Type:"
-msgstr "Typ:"
+#: ../src/font-view.c:190
+msgid "Type"
+msgstr "Typ"
 
-#: ../src/font-view.c:308
-msgid "Size:"
-msgstr "Velikost:"
+#: ../src/font-view.c:235 ../src/font-view.c:254
+msgid "Version"
+msgstr "Verze"
 
-#: ../src/font-view.c:352 ../src/font-view.c:365
-msgid "Version:"
-msgstr "Verze:"
+#: ../src/font-view.c:240 ../src/font-view.c:260
+msgid "Copyright"
+msgstr "Copyright"
 
-#: ../src/font-view.c:356 ../src/font-view.c:367
-msgid "Copyright:"
-msgstr "Copyright:"
+#: ../src/font-view.c:245
+msgid "Description"
+msgstr "Popis"
 
-#: ../src/font-view.c:360
-msgid "Description:"
-msgstr "Popis:"
-
-#: ../src/font-view.c:428
-msgid "Installed"
-msgstr "Nainstalováno"
-
-#: ../src/font-view.c:430
+#: ../src/font-view.c:273
 msgid "Install Failed"
 msgstr "Instalace selhala"
 
-#: ../src/font-view.c:502
-#, c-format
-msgid "Usage: %s fontfile\n"
-msgstr "Použití: %s soubor_písma\n"
+#: ../src/font-view.c:279
+msgid "Installed"
+msgstr "Nainstalováno"
 
-#: ../src/font-view.c:572
-msgid "I_nstall Font"
-msgstr "I_nstalovat písmo"
+#: ../src/font-view.c:282 ../src/font-view.c:427
+msgid "Install"
+msgstr "Nainstalovat"
 
+#: ../src/font-view.c:420
+msgid "Info"
+msgstr "Informace"
+
+#: ../src/font-view.c:433
+msgid "Back"
+msgstr "Zpět"
+
+#: ../src/font-view.c:524
+msgid "All Fonts"
+msgstr "Všechna písma"
+
+#: ../src/font-view.c:605 ../src/font-view.c:648
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Prohlížeč písem"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "Preview fonts"
-msgstr "Náhled písem"
+#: ../src/font-view.c:606 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "Prohlížet si písma ve svém systému"
+
+#: ../src/font-view.c:608
+msgid "translator-credits"
+msgstr "Marek Černocký <marek@manet.cz>"
+
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "O prohlížeči písem"
+
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "Ukončit"
