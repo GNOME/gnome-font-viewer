@@ -19,23 +19,22 @@
 # Rodrigo Padula de Oliveira <contato@rodrigopadula.com>, 2011.
 # André Gondim <In memoriam>, 2011.
 # Breno Felipe Morais de Santana <breno_info@globomail.com>, 2012.
+# Rafael Ferreira <rafael.f.f1@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-04-30 13:23+0000\n"
-"PO-Revision-Date: 2012-04-30 10:49-0300\n"
-"Last-Translator: Breno Felipe Morais de Santana <breno_info@globomail.com>\n"
+"POT-Creation-Date: 2012-09-08 20:19+0000\n"
+"PO-Revision-Date: 2012-09-11 09:08-0300\n"
+"Last-Translator: Rafael Ferreira <rafael.f.f1@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Virtaal 0.2\n"
-"X-Poedit-Language: Portuguese\n"
-"X-Poedit-Country: Brazil\n"
 
 #: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
@@ -46,7 +45,6 @@ msgid "TEXT"
 msgstr "TEXTO"
 
 #: ../src/font-thumbnailer.c:192
-#| msgid "Text to thumbnail (default: Aa)"
 msgid "Thumbnail size (default: 128)"
 msgstr "Texto para miniatura (padrão: Aa)"
 
@@ -58,74 +56,75 @@ msgstr "TAMANHO"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ARQUIVO-FONTE ARQUIVO-SAÍDA"
 
-#: ../src/font-view.c:169
-#| msgid "Name:"
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "Sobre o Visualizador de fontes"
+
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "Sair"
+
+#: ../src/font-view.c:178
 msgid "Name"
 msgstr "Nome"
 
-#: ../src/font-view.c:172
-#| msgid "Style:"
+#: ../src/font-view.c:181
 msgid "Style"
 msgstr "Estilo"
 
-#: ../src/font-view.c:182
-#| msgid "Type:"
+#: ../src/font-view.c:191
 msgid "Type"
 msgstr "Tipo"
 
-#: ../src/font-view.c:226 ../src/font-view.c:240
-#| msgid "Version:"
+#: ../src/font-view.c:236 ../src/font-view.c:255
 msgid "Version"
 msgstr "Versão"
 
-#: ../src/font-view.c:231 ../src/font-view.c:242
-#| msgid "Copyright:"
+#: ../src/font-view.c:241 ../src/font-view.c:261
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../src/font-view.c:235
-#| msgid "Description:"
+#: ../src/font-view.c:246
 msgid "Description"
 msgstr "Descrição"
 
-#: ../src/font-view.c:253
+#: ../src/font-view.c:274
 msgid "Install Failed"
 msgstr "Instalação falhou"
 
-#: ../src/font-view.c:259
+#: ../src/font-view.c:280
 msgid "Installed"
 msgstr "Instalado"
 
-#: ../src/font-view.c:262 ../src/font-view.c:404
-#| msgid "Installed"
+#: ../src/font-view.c:283 ../src/font-view.c:468
 msgid "Install"
 msgstr "Instalar"
 
-#: ../src/font-view.c:397
+#: ../src/font-view.c:461
 msgid "Info"
 msgstr "Informação"
 
-#: ../src/font-view.c:411
+#: ../src/font-view.c:474
 msgid "Back"
 msgstr "Voltar"
 
-#: ../src/font-view.c:491
-#| msgid "I_nstall Font"
+#: ../src/font-view.c:565
 msgid "All Fonts"
 msgstr "Todas as fontes"
 
-#: ../src/font-view.c:572 ../src/font-view.c:613
+#: ../src/font-view.c:660 ../src/font-view.c:703
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Visualizador de fontes"
 
-#: ../src/font-view.c:573 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:661 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Ver fontes no seu sistema"
 
-#: ../src/font-view.c:575
+#: ../src/font-view.c:663
 msgid "translator-credits"
-msgstr "Alexandre Hautequest <hquest@fesppr.br>\n"
+msgstr ""
+"Alexandre Hautequest <hquest@fesppr.br>\n"
 "Ariel Bressan da Silva <ariel@conectiva.com.br>\n"
 "Francisco Petrúcio Cavalcante Junior <fpcj@impa.br>\n"
 "Evandro Fernandes Giovanini <evandrofg@ig.com.br>\n"
@@ -142,9 +141,8 @@ msgstr "Alexandre Hautequest <hquest@fesppr.br>\n"
 "Antonio Fernandes C. Neto <fernandesn@gnome.org>\n"
 "Rodrigo Padula de Oliveira <contato@rodrigopadula.com>\n"
 "André Gondim <andregondim@ubuntu.com>\n"
-"Breno Felipe Morais de Santana <breno_info@globomail.com>"
+"Breno Felipe Morais de Santana <breno_info@globomail.com>\n"
+"Rafael Ferreira <rafael.f.f1@gmail.com>"
 
-#. right section
-#: ../src/gd-main-toolbar.c:269
-msgid "Done"
-msgstr "Feito"
+#~ msgid "Done"
+#~ msgstr "Feito"
