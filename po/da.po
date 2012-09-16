@@ -1,5 +1,5 @@
 # Danish Translation of gnome-utils.
-# Copyright (C) 1999-2011 Free Software Foundation, Inc.
+# Copyright (C) 1999-2012 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-utils package.
 # Kenneth Christiansen <kenneth@ripen.dk>, 1998-2000.
 # Kim Schulz <kim@schulz.dk>, 1999.
@@ -8,8 +8,8 @@
 # Ole Laursen <olau@hardworking.dk>, 2001, 02, 03, 04.
 # Martin Willemoes Hansen <mwh@sysrq.dk>, 2004, 05.
 # Kenneth Nielsen <k.nielsen81@gmail.com>, 2008.
-# Ask Hjorth Larsen <asklarsen@gmail.com>, 2007, 08, 09, 10, 11.
 # Joe Hansen <joedalton2@yahoo.dk>, 2011.
+# Ask Hjorth Larsen <asklarsen@gmail.com>, 2007, 08, 09, 10, 11, 12.
 #
 #
 # Husk at tilføje dig i credit-listen (besked id "translator-credits")
@@ -22,8 +22,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-06 14:35-0400\n"
-"PO-Revision-Date: 2011-09-12 00:44+0200\n"
+"POT-Creation-Date: 2012-09-16 13:25+0200\n"
+"PO-Revision-Date: 2012-09-16 01:16+0200\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -32,75 +32,115 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Tekst for miniature (som standard: Aa)"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "TEXT"
 msgstr "TEKST"
 
-#: ../src/font-thumbnailer.c:269
-msgid "Font size (default: 64)"
-msgstr "Skriftstørrelse (som standard: 64)"
+#: ../src/font-thumbnailer.c:192
+msgid "Thumbnail size (default: 128)"
+msgstr "Miniaturestørrelse (standardværdi: 128)"
 
-#: ../src/font-thumbnailer.c:269
+#: ../src/font-thumbnailer.c:192
 msgid "SIZE"
 msgstr "STØRRELSE"
 
-#: ../src/font-thumbnailer.c:271
+#: ../src/font-thumbnailer.c:194
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "SKRIFTTYPEFIL UDDATAFIL"
 
-#: ../src/font-view.c:289
-msgid "Name:"
-msgstr "Navn:"
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "Om Skrifttypefremviser"
 
-#: ../src/font-view.c:292
-msgid "Style:"
-msgstr "Stil:"
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "Afslut"
 
-#: ../src/font-view.c:304
-msgid "Type:"
-msgstr "Type:"
+#: ../src/font-view.c:178
+msgid "Name"
+msgstr "Navn"
 
-#: ../src/font-view.c:308
-msgid "Size:"
-msgstr "Størrelse:"
+#: ../src/font-view.c:181
+msgid "Style"
+msgstr "Stil"
 
-#: ../src/font-view.c:352 ../src/font-view.c:365
-msgid "Version:"
-msgstr "Version:"
+#: ../src/font-view.c:191
+msgid "Type"
+msgstr "Type"
 
-#: ../src/font-view.c:356 ../src/font-view.c:367
-msgid "Copyright:"
-msgstr "Ophavsret:"
+#: ../src/font-view.c:236 ../src/font-view.c:255
+msgid "Version"
+msgstr "Version"
 
-#: ../src/font-view.c:360
-msgid "Description:"
-msgstr "Beskrivelse:"
+#: ../src/font-view.c:241 ../src/font-view.c:261
+msgid "Copyright"
+msgstr "Ophavsret"
 
-#: ../src/font-view.c:428
-msgid "Installed"
-msgstr "Installeret"
+#: ../src/font-view.c:246
+msgid "Description"
+msgstr "Beskrivelse"
 
-#: ../src/font-view.c:430
+#: ../src/font-view.c:274
 msgid "Install Failed"
 msgstr "Installation mislykkedes"
 
-#: ../src/font-view.c:502
-#, c-format
-msgid "Usage: %s fontfile\n"
-msgstr "Brug: %s skrifttypefil\n"
+#: ../src/font-view.c:280
+msgid "Installed"
+msgstr "Installeret"
 
-#: ../src/font-view.c:572
-msgid "I_nstall Font"
-msgstr "I_nstallér skrifttype"
+#: ../src/font-view.c:283 ../src/font-view.c:468
+msgid "Install"
+msgstr "Installér"
 
+#: ../src/font-view.c:461
+msgid "Info"
+msgstr "Info"
+
+#: ../src/font-view.c:474
+msgid "Back"
+msgstr "Tilbage"
+
+#: ../src/font-view.c:565
+msgid "All Fonts"
+msgstr "Alle skrifttyper"
+
+#: ../src/font-view.c:660 ../src/font-view.c:703
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Skrifttypefremviser"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "Preview fonts"
-msgstr "Forhåndsvis skrifttyper"
+#: ../src/font-view.c:661 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "Vis skrifttyper på dit system"
+
+#: ../src/font-view.c:663
+msgid "translator-credits"
+msgstr ""
+"Kenneth Christiansen\n"
+"Kim Schulz\n"
+"Birger Langkjer\n"
+"Keld Simonsen\n"
+"Ole Laursen\n"
+"Martin Willemoes Hansen\n"
+"Kenneth Nielsen\n"
+"Joe Hansen\n"
+"Ask Hjorth Larsen\n"
+"\n"
+"Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
+"Mere info: http://www.dansk-gruppen.dk"
+
+#~ msgid "Font size (default: 64)"
+#~ msgstr "Skriftstørrelse (som standard: 64)"
+
+#~ msgid "Size:"
+#~ msgstr "Størrelse:"
+
+#~ msgid "Usage: %s fontfile\n"
+#~ msgstr "Brug: %s skrifttypefil\n"
+
+#~ msgid "Preview fonts"
+#~ msgstr "Forhåndsvis skrifttyper"
