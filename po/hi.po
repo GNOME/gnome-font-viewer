@@ -5,19 +5,21 @@
 # Ravishankar Shrivastava <raviratlami@yahoo.com>, 2004.
 # Rajesh Ranjan <rranjan@redhat.com>, 2005, 2006, 2009.
 # Rajesh Ranjan <rajesh672@gmail.com>, 2009.
+# rajesh <rajeshkajha@yahoo.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master.hi\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-06 14:35-0400\n"
-"PO-Revision-Date: 2011-03-28 13:46+0530\n"
-"Last-Translator: Rajesh Ranjan\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-06-01 19:04+0000\n"
+"PO-Revision-Date: 2012-09-21 14:17+0530\n"
+"Last-Translator: rajesh <rajeshkajha@yahoo.com>\n"
 "Language-Team: Hindi <Indlinux>\n"
-"Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"Language: hi\n"
+"X-Generator: Lokalize 1.2\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "\n"
 "\n"
@@ -28,82 +30,107 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
 msgstr "पाठ से लघुचित्र (default: Aa)"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "TEXT"
 msgstr "TEXT"
 
-#: ../src/font-thumbnailer.c:269
-msgid "Font size (default: 64)"
-msgstr "फाँट आकार (default: 64)"
+#: ../src/font-thumbnailer.c:192
+#| msgid "Text to thumbnail (default: Aa)"
+msgid "Thumbnail size (default: 128)"
+msgstr "लघुचित्र आकार (default: Aa)"
 
-#: ../src/font-thumbnailer.c:269
+#: ../src/font-thumbnailer.c:192
 msgid "SIZE"
 msgstr "आकार"
 
-#: ../src/font-thumbnailer.c:271
+#: ../src/font-thumbnailer.c:194
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
-#: ../src/font-view.c:289
-#, fuzzy
-msgid "Name:"
-msgstr "नाम:"
+#: ../src/font-view.c:177
+msgid "Name"
+msgstr "नाम"
 
-#: ../src/font-view.c:292
-msgid "Style:"
-msgstr "शैली:"
+#: ../src/font-view.c:180
+#| msgid "Style:"
+msgid "Style"
+msgstr "शैली"
 
-#: ../src/font-view.c:304
-#, fuzzy
-msgid "Type:"
-msgstr "क़िस्मः"
+#: ../src/font-view.c:190
+msgid "Type"
+msgstr "प्रकार"
 
-#: ../src/font-view.c:308
-#, fuzzy
-msgid "Size:"
-msgstr "आकारः"
+#: ../src/font-view.c:235 ../src/font-view.c:254
+msgid "Version"
+msgstr "संस्करण"
 
-#: ../src/font-view.c:352 ../src/font-view.c:365
-#, fuzzy
-msgid "Version:"
-msgstr "संस्करण:"
+#: ../src/font-view.c:240 ../src/font-view.c:260
+#| msgid "Copyright:"
+msgid "Copyright"
+msgstr "कॉपीराइट"
 
-#: ../src/font-view.c:356 ../src/font-view.c:367
-msgid "Copyright:"
-msgstr "कॉपीराइट:"
+#: ../src/font-view.c:245
+msgid "Description"
+msgstr "वर्णन"
 
-#: ../src/font-view.c:360
-#, fuzzy
-msgid "Description:"
-msgstr "वर्णनः"
-
-#: ../src/font-view.c:428
-msgid "Installed"
-msgstr "स्थापित "
-
-#: ../src/font-view.c:430
+#: ../src/font-view.c:273
 msgid "Install Failed"
 msgstr "संस्थापन विफल"
 
-#: ../src/font-view.c:502
-#, c-format
-msgid "Usage: %s fontfile\n"
-msgstr ""
+#: ../src/font-view.c:279
+msgid "Installed"
+msgstr "स्थापित "
 
-#: ../src/font-view.c:572
-msgid "I_nstall Font"
-msgstr "फ़ॉन्ट संस्थापित करें (_n)"
+#: ../src/font-view.c:282 ../src/font-view.c:427
+#| msgid "Installed"
+msgid "Install"
+msgstr "संस्थापित करें"
 
+#: ../src/font-view.c:420
+msgid "Info"
+msgstr "सूचना"
+
+#: ../src/font-view.c:433
+msgid "Back"
+msgstr "पीछे"
+
+#: ../src/font-view.c:524
+#| msgid "I_nstall Font"
+msgid "All Fonts"
+msgstr "सभी फ़ॉन्ट"
+
+#: ../src/font-view.c:605 ../src/font-view.c:648
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
-#, fuzzy
 msgid "Font Viewer"
 msgstr "फ़ॉन्ट प्रदर्शक"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:606 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "अपने तंत्र पर फ़ॉन्ट देखें"
+
+#: ../src/font-view.c:608
+msgid "translator-credits"
+msgstr "राजेश रंजन (rranjan@redhat.com, rajeshkajha@yahoo.com)"
+
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "फ़ॉन्ट प्रदर्शक के बारे में"
+
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "बाहर"
+
+#~ msgid "Font size (default: 64)"
+#~ msgstr "फाँट आकार (default: 64)"
+
 #, fuzzy
-msgid "Preview fonts"
-msgstr "पूर्वावलोकन फान्ट"
+#~ msgid "Size:"
+#~ msgstr "आकारः"
+
+#, fuzzy
+#~ msgid "Preview fonts"
+#~ msgstr "पूर्वावलोकन फान्ट"
