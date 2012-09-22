@@ -5,14 +5,15 @@
 # Jordi Mallach <jordi@sindominio.net>, 2002, 2003, 2004, 2005.
 # Josep Puigdemont <josep.puigdemont@gmail.com>, 2005, 2006, 2007.
 # Gil Forcada <gilforcada@guifi.net>, 2006, 2008.
-# Joan Duran <jodufi@gmail.com>, 2008-2011.
+# Joan Duran <jodufi@gmail.com>, 2008-2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-06 14:35-0400\n"
-"PO-Revision-Date: 2011-09-06 23:22+0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-09-11 14:08+0000\n"
+"PO-Revision-Date: 2012-09-13 23:02+0200\n"
 "Last-Translator: Joan Duran <jodufi@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
@@ -21,75 +22,103 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Text a miniaturitzar (predeterminat: Aa)"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "TEXT"
 msgstr "TEXT"
 
-#: ../src/font-thumbnailer.c:269
-msgid "Font size (default: 64)"
-msgstr "Mida de la lletra (predeterminat: 64)"
+#: ../src/font-thumbnailer.c:192
+msgid "Thumbnail size (default: 128)"
+msgstr "Mida de la miniatura (per defecte: 128)"
 
-#: ../src/font-thumbnailer.c:269
+#: ../src/font-thumbnailer.c:192
 msgid "SIZE"
 msgstr "MIDA"
 
-#: ../src/font-thumbnailer.c:271
+#: ../src/font-thumbnailer.c:194
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FITXER-DE-TIPUS-DE-LLETRA FITXER-DE-SORTIDA"
 
-#: ../src/font-view.c:289
-msgid "Name:"
-msgstr "Nom:"
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "Quant al visualitzador de tipus de lletra"
 
-#: ../src/font-view.c:292
-msgid "Style:"
-msgstr "Estil:"
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "Surt"
 
-#: ../src/font-view.c:304
-msgid "Type:"
-msgstr "Tipus:"
+#: ../src/font-view.c:178
+msgid "Name"
+msgstr "Nom"
 
-#: ../src/font-view.c:308
-msgid "Size:"
-msgstr "Mida:"
+#: ../src/font-view.c:181
+msgid "Style"
+msgstr "Estil"
 
-#: ../src/font-view.c:352 ../src/font-view.c:365
-msgid "Version:"
-msgstr "Versió:"
+#: ../src/font-view.c:191
+msgid "Type"
+msgstr "Tipus"
 
-#: ../src/font-view.c:356 ../src/font-view.c:367
-msgid "Copyright:"
-msgstr "Copyright:"
+#: ../src/font-view.c:236 ../src/font-view.c:255
+msgid "Version"
+msgstr "Versió"
 
-#: ../src/font-view.c:360
-msgid "Description:"
-msgstr "Descripció:"
+#: ../src/font-view.c:241 ../src/font-view.c:261
+msgid "Copyright"
+msgstr "Copyright"
 
-#: ../src/font-view.c:428
-msgid "Installed"
-msgstr "S'ha instal·lat"
+#: ../src/font-view.c:246
+msgid "Description"
+msgstr "Descripció"
 
-#: ../src/font-view.c:430
+#: ../src/font-view.c:274
 msgid "Install Failed"
 msgstr "Ha fallat la instal·lació"
 
-#: ../src/font-view.c:502
-#, c-format
-msgid "Usage: %s fontfile\n"
-msgstr "Utilització: %s fitxerdetipusdelletra\n"
+#: ../src/font-view.c:280
+msgid "Installed"
+msgstr "S'ha instal·lat"
 
-#: ../src/font-view.c:572
-msgid "I_nstall Font"
-msgstr "I_nstal·la un tipus de lletra"
+#: ../src/font-view.c:283 ../src/font-view.c:468
+msgid "Install"
+msgstr "Instal·la"
 
+#: ../src/font-view.c:461
+msgid "Info"
+msgstr "Informació"
+
+#: ../src/font-view.c:474
+msgid "Back"
+msgstr "Enrere"
+
+#: ../src/font-view.c:565
+msgid "All Fonts"
+msgstr "Tots els tipus de lletra"
+
+#: ../src/font-view.c:660 ../src/font-view.c:703
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Visualitzador de tipus de lletra"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "Preview fonts"
-msgstr "Previsualitza els tipus de lletra"
+#: ../src/font-view.c:661 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "Visualitza tots els tipus de lletra del sistema"
+
+#: ../src/font-view.c:663
+msgid "translator-credits"
+msgstr "Joan Duran <jodufi@gmail.com>"
+
+#~ msgid "Font size (default: 64)"
+#~ msgstr "Mida de la lletra (predeterminat: 64)"
+
+#~ msgid "Size:"
+#~ msgstr "Mida:"
+
+#~ msgid "Usage: %s fontfile\n"
+#~ msgstr "Utilització: %s fitxerdetipusdelletra\n"
+
+#~ msgid "Preview fonts"
+#~ msgstr "Previsualitza els tipus de lletra"
