@@ -9,14 +9,16 @@
 # Tõivo Leedjärv <toivo linux ee>, 2002.
 # Ivar Smolin <okul linux ee>, 2005–2011.
 # Priit Laes <amd store20 com>, 2005.
+# Mattias Põldaru <mahfiaz@gmail.com>, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils MASTER\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-06 14:35-0400\n"
-"PO-Revision-Date: 2011-03-21 10:50+0200\n"
-"Last-Translator: Ivar Smolin <okul@linux.ee>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-09-22 16:30+0000\n"
+"PO-Revision-Date: 2012-09-23 16:07+0300\n"
+"Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
@@ -24,75 +26,73 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../src/font-thumbnailer.c:267
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Pisipildiks tehtav tekst (vaikimisi: Aa)"
 
-#: ../src/font-thumbnailer.c:267
 msgid "TEXT"
 msgstr "TEKST"
 
-#: ../src/font-thumbnailer.c:269
-msgid "Font size (default: 64)"
-msgstr "Kirjatüübi suurus (vaikimisi: 64)"
+msgid "Thumbnail size (default: 128)"
+msgstr "Pisipildi suurus (vaikimisi: 128)"
 
-#: ../src/font-thumbnailer.c:269
 msgid "SIZE"
 msgstr "SUURUS"
 
-#: ../src/font-thumbnailer.c:271
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "KIRJATÜÜBI-FAIL VÄLJUNDFAIL"
 
-#: ../src/font-view.c:289
-msgid "Name:"
-msgstr "Nimi:"
+msgid "About Font Viewer"
+msgstr "Kirjatüüpide näitajast lähemalt"
 
-#: ../src/font-view.c:292
-msgid "Style:"
-msgstr "Laad:"
+msgid "Quit"
+msgstr "Lõpeta"
 
-#: ../src/font-view.c:304
-msgid "Type:"
-msgstr "Liik:"
+msgid "Name"
+msgstr "Nimi"
 
-#: ../src/font-view.c:308
-msgid "Size:"
-msgstr "Suurus:"
+msgid "Style"
+msgstr "Laad"
 
-#: ../src/font-view.c:352 ../src/font-view.c:365
-msgid "Version:"
-msgstr "Versioon:"
+msgid "Type"
+msgstr "Liik"
 
-#: ../src/font-view.c:356 ../src/font-view.c:367
-msgid "Copyright:"
-msgstr "Autoriõigused:"
+msgid "Version"
+msgstr "Versioon"
 
-#: ../src/font-view.c:360
-msgid "Description:"
-msgstr "Kirjeldus:"
+msgid "Copyright"
+msgstr "Autoriõigused"
 
-#: ../src/font-view.c:428
-msgid "Installed"
-msgstr "Paigaldatud"
+msgid "Description"
+msgstr "Kirjeldus"
 
-#: ../src/font-view.c:430
 msgid "Install Failed"
 msgstr "Tõrge paigaldamisel"
 
-#: ../src/font-view.c:502
-#, c-format
-msgid "Usage: %s fontfile\n"
-msgstr "Kasutamine: %s kirjatüübi-fail\n"
+msgid "Installed"
+msgstr "Paigaldatud"
 
-#: ../src/font-view.c:572
-msgid "I_nstall Font"
-msgstr "_Paigalda kirjatüüp"
+msgid "Install"
+msgstr "Paigalda"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+msgid "Info"
+msgstr "Info"
+
+msgid "Back"
+msgstr "Tagasi"
+
+msgid "All Fonts"
+msgstr "Kõik kirjatüübid"
+
 msgid "Font Viewer"
 msgstr "Kirjatüüpide näitaja"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "Preview fonts"
-msgstr "Kirjatüüpide vaatlemine"
+msgid "View fonts on your system"
+msgstr "Kuva selles arvutis olevaid kirjatüüpe"
+
+msgid "translator-credits"
+msgstr ""
+"Lauris Kaplinski <lauris ariman ee>, 1999.\n"
+"Tõivo Leedjärv <toivo linux ee>, 2002.\n"
+"Ivar Smolin <okul linux ee>, 2005–2011.\n"
+"Priit Laes <amd store20 com>, 2005.\n"
+"Mattias Põldaru <mahfiaz@gmail.com>, 2012."
