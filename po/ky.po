@@ -1,4 +1,4 @@
-# translation of gnome-utils to Kyrgyz
+# translation of gnome-font-viewer to Kyrgyz
 # Copyright (C) 1999-2002, 2004, 2005, 2006, 2007, 2008, 2010 Free Software Foundation, Inc.
 #
 #
@@ -6,7 +6,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils trunk\n"
+"Project-Id-Version: gnome-font-viewer gnome-3-6\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2012-09-25 23:14+0000\n"
