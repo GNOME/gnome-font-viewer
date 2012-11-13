@@ -1,3 +1,10 @@
+GNOME Font Viewer - 3.6.1
+-------------------------------------------------------------------------------
+
+ • Fix application name showing in dialog title
+ • Fix a possible crasher when updating the font list
+ • Translation updates
+
 GNOME Font Viewer - 3.6.0
 -------------------------------------------------------------------------------
 
