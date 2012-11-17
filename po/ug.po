@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-06 14:36-0400\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-09-25 23:14+0000\n"
 "PO-Revision-Date: 2011-08-08 15:43+0600\n"
 "Last-Translator: Sahran <sahran.ug@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -18,75 +18,121 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
 msgstr "كىچىك سۈرەتكە تېكىست ئىشلەت (كۆڭۈلدىكى: Aa)"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "TEXT"
 msgstr "تېكىست"
 
-#: ../src/font-thumbnailer.c:269
-msgid "Font size (default: 64)"
-msgstr "خەت چوڭلۇقى (كۆڭۈلدىكى: 64)"
+#: ../src/font-thumbnailer.c:192
+#| msgid "Text to thumbnail (default: Aa)"
+msgid "Thumbnail size (default: 128)"
+msgstr "كىچىك سۈرەت چوڭلۇقى(كۆڭۈلدىكىسى: 128)"
 
-#: ../src/font-thumbnailer.c:269
+#: ../src/font-thumbnailer.c:192
 msgid "SIZE"
 msgstr "چوڭلۇقى"
 
-#: ../src/font-thumbnailer.c:271
+#: ../src/font-thumbnailer.c:194
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "خەت نۇسخا-ھۆججەت چىقار-ھۆججەت"
 
-#: ../src/font-view.c:289
-msgid "Name:"
-msgstr "ئاتى:"
+#: ../src/font-view-app-menu.ui.h:1
+#| msgid "Font Viewer"
+msgid "About Font Viewer"
+msgstr "خەت نۇسخا كۆرگۈ ھەققىدە"
 
-#: ../src/font-view.c:292
-msgid "Style:"
-msgstr "ئۇسلۇب:"
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "ئاخىرلاشتۇر"
 
-#: ../src/font-view.c:304
-msgid "Type:"
-msgstr "تىپى:"
+#: ../src/font-view.c:178
+#| msgid "Name:"
+msgid "Name"
+msgstr "ئاتى"
 
-#: ../src/font-view.c:308
-msgid "Size:"
-msgstr "چوڭلۇقى:"
+#: ../src/font-view.c:181
+#| msgid "Style:"
+msgid "Style"
+msgstr "ئۇسلۇب"
 
-#: ../src/font-view.c:352 ../src/font-view.c:365
-msgid "Version:"
-msgstr "نەشرى:"
+#: ../src/font-view.c:191
+#| msgid "Type:"
+msgid "Type"
+msgstr "تىپى"
 
-#: ../src/font-view.c:356 ../src/font-view.c:367
-msgid "Copyright:"
-msgstr "نەشر ھوقۇقى:"
+#: ../src/font-view.c:236 ../src/font-view.c:255
+#| msgid "Version:"
+msgid "Version"
+msgstr "نەشرى"
 
-#: ../src/font-view.c:360
-msgid "Description:"
-msgstr "چۈشەندۈرۈش:"
+#: ../src/font-view.c:241 ../src/font-view.c:261
+#| msgid "Copyright:"
+msgid "Copyright"
+msgstr "نەشر ھوقۇقى"
 
-#: ../src/font-view.c:428
-msgid "Installed"
-msgstr "ئورنىتىلغان"
+#: ../src/font-view.c:246
+#| msgid "Description:"
+msgid "Description"
+msgstr "چۈشەندۈرۈش"
 
-#: ../src/font-view.c:430
+#: ../src/font-view.c:274
 msgid "Install Failed"
 msgstr "ئورنىتىش مەغلۇپ بولدى."
 
-#: ../src/font-view.c:502
-#, c-format
-msgid "Usage: %s fontfile\n"
-msgstr "ئىشلىتىش ئۇسۇلى: %s خەت نۇسخا ھۆججىتى\n"
+#: ../src/font-view.c:280
+msgid "Installed"
+msgstr "ئورنىتىلغان"
 
-#: ../src/font-view.c:572
-msgid "I_nstall Font"
-msgstr "خەت نۇسخا ئورنات(_N)"
+#: ../src/font-view.c:283 ../src/font-view.c:468
+#| msgid "Installed"
+msgid "Install"
+msgstr "ئورنات"
 
+#: ../src/font-view.c:461
+msgid "Info"
+msgstr "ئۇچۇر"
+
+#: ../src/font-view.c:474
+msgid "Back"
+msgstr "كەينى"
+
+#: ../src/font-view.c:565
+#| msgid "I_nstall Font"
+msgid "All Fonts"
+msgstr "بارلىق خەت نۇسخىلىرى"
+
+#: ../src/font-view.c:660 ../src/font-view.c:703
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
-msgstr "خەت نۇسخا كۆرگۈچ"
+msgstr "خەت نۇسخا كۆرگۈ"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "Preview fonts"
-msgstr "خەت نۇسخىنى ئالدىن كۆزەت"
+#: ../src/font-view.c:661 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "بۇ سىستېمىدىكى خەت نۇسخىلىرىنى كۆرۈش پروگراممىسىدۇر"
+
+#: ../src/font-view.c:663
+msgid "translator-credits"
+msgstr "Gheyret Kenji <gheyret@gmail.com>\n"
+"Sahran<sahran@live.com>\n"
+"Muhemmed Erdem <misran_erdem@hotmail.com>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Abdumomin.Kadir https://launchpad.net/~abdumomin-kadir\n"
+"  Gheyret T.Kenji https://launchpad.net/~gheyret\n"
+"  Gheyret T.Kenji https://launchpad.net/~gheyretkenji\n"
+"  Sahran https://launchpad.net/~sahran"
+
+#~ msgid "Font size (default: 64)"
+#~ msgstr "خەت چوڭلۇقى (كۆڭۈلدىكى: 64)"
+
+#~ msgid "Size:"
+#~ msgstr "چوڭلۇقى:"
+
+#~ msgid "Usage: %s fontfile\n"
+#~ msgstr "ئىشلىتىش ئۇسۇلى: %s خەت نۇسخا ھۆججىتى\n"
+
+#~ msgid "Preview fonts"
+#~ msgstr "خەت نۇسخىنى ئالدىن كۆزەت"
