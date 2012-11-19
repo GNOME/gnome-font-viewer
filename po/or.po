@@ -4,15 +4,16 @@
 #
 # Subhransu Behera <arya_subhransu@yahoo.co.in>, 2006.
 # Manoj Kumar Giri <giri.manojkr@gmail.com>, 2008.
-# Manoj Kumar Giri <mgiri@redhat.com>, 2009, 2010.
+# Manoj Kumar Giri <mgiri@redhat.com>, 2009, 2010, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master.or\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-06 14:36-0400\n"
-"PO-Revision-Date: 2010-04-16 12:54+0530\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-09-25 23:14+0000\n"
+"PO-Revision-Date: 2012-11-19 17:14+0530\n"
 "Last-Translator: Manoj Kumar Giri <mgiri@redhat.com>\n"
-"Language-Team: Oriya <Translation-team-or@lists.sourceforge.net>\n"
+"Language-Team: Oriya <oriya-it@googlegroups.com>\n"
 "Language: or\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,84 +27,101 @@ msgstr ""
 "\n"
 "\n"
 "\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Lokalize 1.5\n"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
-msgstr ""
+msgstr "ଅଙ୍ଗୁଳି ଚିହ୍ନ ପାଇଁ ପାଠ୍ୟ (ପୂର୍ବନିର୍ଦ୍ଧାରିତ: Aa)"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "TEXT"
-msgstr ""
+msgstr "ପାଠ୍ୟ"
 
-#: ../src/font-thumbnailer.c:269
-msgid "Font size (default: 64)"
-msgstr ""
+#: ../src/font-thumbnailer.c:192
+msgid "Thumbnail size (default: 128)"
+msgstr "ଅଙ୍ଗୁଳି ଚିହ୍ନ ଆକାର (ପୂର୍ବନିର୍ଦ୍ଧାରିତ: 128)"
 
-#: ../src/font-thumbnailer.c:269
+#: ../src/font-thumbnailer.c:192
 msgid "SIZE"
-msgstr ""
-
-#: ../src/font-thumbnailer.c:271
-msgid "FONT-FILE OUTPUT-FILE"
-msgstr ""
-
-#: ../src/font-view.c:289
-#, fuzzy
-msgid "Name:"
-msgstr "ନାମ (_N):"
-
-#: ../src/font-view.c:292
-msgid "Style:"
-msgstr ""
-
-#: ../src/font-view.c:304
-#, fuzzy
-msgid "Type:"
-msgstr "ପ୍ରକାର"
-
-#: ../src/font-view.c:308
-#, fuzzy
-msgid "Size:"
 msgstr "ଆକାର"
 
-#: ../src/font-view.c:352 ../src/font-view.c:365
-#, fuzzy
-msgid "Version:"
-msgstr "ସଂସ୍କରଣ:"
+#: ../src/font-thumbnailer.c:194
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "ଅକ୍ଷରରୂପ ଫାଇଲ ଫଳାଫଳ ଫାଇଲ"
 
-#: ../src/font-view.c:356 ../src/font-view.c:367
-msgid "Copyright:"
-msgstr ""
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "ଅକ୍ଷରରୂପ ପ୍ରଦର୍ଶିକା ବିଷୟରେ"
 
-#: ../src/font-view.c:360
-#, fuzzy
-msgid "Description:"
-msgstr "ବର୍ଣ୍ଣନା (_D):"
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "ବିଦାୟ ନିଅନ୍ତୁ"
 
-#: ../src/font-view.c:428
-msgid "Installed"
-msgstr ""
+#: ../src/font-view.c:178
+msgid "Name"
+msgstr "ନାମ"
 
-#: ../src/font-view.c:430
+#: ../src/font-view.c:181
+msgid "Style"
+msgstr "ଶୈଳୀ"
+
+#: ../src/font-view.c:191
+msgid "Type"
+msgstr "ପ୍ରକାର"
+
+#: ../src/font-view.c:236 ../src/font-view.c:255
+msgid "Version"
+msgstr "ସଂସ୍କରଣ"
+
+#: ../src/font-view.c:241 ../src/font-view.c:261
+msgid "Copyright"
+msgstr "ସତ୍ତ୍ୱାଧୀକାର"
+
+#: ../src/font-view.c:246
+msgid "Description"
+msgstr "ବର୍ଣ୍ଣନା"
+
+#: ../src/font-view.c:274
 msgid "Install Failed"
-msgstr ""
+msgstr "ସ୍ଥାପନ ବିଫଳ ହେଲା"
 
-#: ../src/font-view.c:502
-#, c-format
-msgid "Usage: %s fontfile\n"
-msgstr ""
+#: ../src/font-view.c:280
+msgid "Installed"
+msgstr "ସ୍ଥାପିତ"
 
-#: ../src/font-view.c:572
-msgid "I_nstall Font"
-msgstr ""
+#: ../src/font-view.c:283 ../src/font-view.c:468
+msgid "Install"
+msgstr "ସ୍ଥାପନ କରନ୍ତୁ"
 
+#: ../src/font-view.c:461
+msgid "Info"
+msgstr "ସୂଚନା"
+
+#: ../src/font-view.c:474
+msgid "Back"
+msgstr "ପଛ"
+
+#: ../src/font-view.c:565
+msgid "All Fonts"
+msgstr "ସମସ୍ତ ଅକ୍ଷରରୂପଗୁଡିକ"
+
+#: ../src/font-view.c:660 ../src/font-view.c:703
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
-#, fuzzy
 msgid "Font Viewer"
-msgstr "ଲଗ ପ୍ରଦର୍ଶକ"
+msgstr "ଅକ୍ଷରରୂପ ପ୍ରଦର୍ଶିକା"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:661 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "ଆପଣଙ୍କ ତନ୍ତ୍ରରେ ଅକ୍ଷରରୂପଗୁଡ଼ିକୁ ଦେଖନ୍ତୁ"
+
+#: ../src/font-view.c:663
+msgid "translator-credits"
+msgstr "ମନୋଜ କୁମାର ଗିରି <mgiri@redhat.com>"
+
 #, fuzzy
-msgid "Preview fonts"
-msgstr "ଏହି ଦଲିଲକୁ ପ୍ରାକ ଦର୍ଶନ୍ରଣ କରନ୍ତୁ"
+#~ msgid "Size:"
+#~ msgstr "ଆକାର"
+
+#, fuzzy
+#~ msgid "Preview fonts"
+#~ msgstr "ଏହି ଦଲିଲକୁ ପ୍ରାକ ଦର୍ଶନ୍ରଣ କରନ୍ତୁ"
