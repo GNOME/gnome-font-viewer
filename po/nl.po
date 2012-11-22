@@ -5,7 +5,7 @@
 # Jan-Willem Harmanny <jwharmanny@hotmail.com>, 2003.
 # Tino Meinen <a.t.meinen@chello.nl>, 2004–2008.
 # Vincent van Adrighem <adrighem@gnome.org>, 2006.
-# Wouter Bolsterlee <wbolster@gnome.org>, 2006–2011.
+# Wouter Bolsterlee <wbolster@gnome.org>, 2006–2012.
 # Hannie Dumoleyn <hannie@ubuntu-nl.org>, 2010–2011.
 #
 # side bar = side pane = zijpaneel
@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master.nl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-06 14:36-0400\n"
-"PO-Revision-Date: 2011-03-26 15:01+0100\n"
+"POT-Creation-Date: 2012-11-22 12:42+0100\n"
+"PO-Revision-Date: 2012-11-22 12:42+0100\n"
 "Last-Translator: Wouter Bolsterlee <wbolster@gnome.org>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "Language: nl\n"
@@ -24,75 +24,105 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Tekst voor miniatuur (standaard: Aa)"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:190
 msgid "TEXT"
 msgstr "TEKST"
 
-#: ../src/font-thumbnailer.c:269
-msgid "Font size (default: 64)"
-msgstr "Lettergrootte (standaard: 64)"
+#: ../src/font-thumbnailer.c:192
+msgid "Thumbnail size (default: 128)"
+msgstr "Grootte van miniatuur (standaard: 128)"
 
-#: ../src/font-thumbnailer.c:269
+#: ../src/font-thumbnailer.c:192
 msgid "SIZE"
 msgstr "GROOTTE"
 
-#: ../src/font-thumbnailer.c:271
+#: ../src/font-thumbnailer.c:194
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "LETTERTYPEBESTAND UITVOERBESTAND"
 
-#: ../src/font-view.c:289
-msgid "Name:"
-msgstr "Naam:"
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "Over lettertype-voorbeeld"
 
-#: ../src/font-view.c:292
-msgid "Style:"
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "Afsluiten"
+
+#: ../src/font-view.c:178
+msgid "Name"
+msgstr "Naam"
+
+#: ../src/font-view.c:181
+msgid "Style"
 msgstr "Stijl"
 
-#: ../src/font-view.c:304
-msgid "Type:"
-msgstr "Type:"
+#: ../src/font-view.c:191
+msgid "Type"
+msgstr "Type"
 
-#: ../src/font-view.c:308
-msgid "Size:"
-msgstr "Grootte:"
+#: ../src/font-view.c:236 ../src/font-view.c:255
+msgid "Version"
+msgstr "Versie"
 
-#: ../src/font-view.c:352 ../src/font-view.c:365
-msgid "Version:"
-msgstr "Versie:"
+#: ../src/font-view.c:241 ../src/font-view.c:261
+msgid "Copyright"
+msgstr "Copyright"
 
-#: ../src/font-view.c:356 ../src/font-view.c:367
-msgid "Copyright:"
-msgstr "Copyright:"
+#: ../src/font-view.c:246
+msgid "Description"
+msgstr "Omschrijving"
 
-#: ../src/font-view.c:360
-msgid "Description:"
-msgstr "Omschrijving:"
-
-#: ../src/font-view.c:428
-msgid "Installed"
-msgstr "Geïnstalleerd"
-
-#: ../src/font-view.c:430
+#: ../src/font-view.c:274
 msgid "Install Failed"
 msgstr "Installatie mislukt"
 
-#: ../src/font-view.c:502
-#, c-format
-msgid "Usage: %s fontfile\n"
-msgstr "Gebruik: %s lettertypebestand\n"
+#: ../src/font-view.c:280
+msgid "Installed"
+msgstr "Geïnstalleerd"
 
-#: ../src/font-view.c:572
-msgid "I_nstall Font"
-msgstr "Lettertype _installeren"
+#: ../src/font-view.c:283 ../src/font-view.c:468
+msgid "Install"
+msgstr "Installeren"
 
+#: ../src/font-view.c:461
+msgid "Info"
+msgstr "Informatie"
+
+#: ../src/font-view.c:474
+msgid "Back"
+msgstr "Terug"
+
+#: ../src/font-view.c:565
+msgid "All Fonts"
+msgstr "Alle lettertypes"
+
+#: ../src/font-view.c:660 ../src/font-view.c:703
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Lettertype-voorbeeld"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "Preview fonts"
-msgstr "Voorbeelden van lettertypen tonen"
+#: ../src/font-view.c:661 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "Lettertypes op uw systeem bekijken"
+
+#: ../src/font-view.c:663
+msgid "translator-credits"
+msgstr ""
+"Wouter Bolsterlee\n"
+"Hannie Dumoleyn"
+
+#~ msgid "Font size (default: 64)"
+#~ msgstr "Lettergrootte (standaard: 64)"
+
+#~ msgid "Size:"
+#~ msgstr "Grootte:"
+
+#~ msgid "Usage: %s fontfile\n"
+#~ msgstr "Gebruik: %s lettertypebestand\n"
+
+#~ msgid "Preview fonts"
+#~ msgstr "Voorbeelden van lettertypen tonen"
