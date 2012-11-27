@@ -8,20 +8,20 @@ msgstr ""
 "Project-Id-Version: gnome-utils.master.kn\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-06-01 19:04+0000\n"
-"PO-Revision-Date: 2012-09-26 15:33+0530\n"
+"POT-Creation-Date: 2012-11-26 18:57+0000\n"
+"PO-Revision-Date: 2012-11-27 12:21+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <en@li.org>\n"
+"Language: kn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: kn\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Lokalize 1.5\n"
 
 #: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
-msgstr ""
+msgstr "ಪಠ್ಯದಿಂದ ತಂಬ್‍ನೈಲ್‌ಗೆ (ಪೂರ್ವನಿಯೋಜಿತ: Aa )"
 
 #: ../src/font-thumbnailer.c:190
 msgid "TEXT"
@@ -29,7 +29,7 @@ msgstr "TEXT"
 
 #: ../src/font-thumbnailer.c:192
 msgid "Thumbnail size (default: 128)"
-msgstr ""
+msgstr "ತಂಬ್‍ನೈಲ್‍ನ ಗಾತ್ರ (ಪೂರ್ವನಿಯೋಜಿತ: 128)"
 
 #: ../src/font-thumbnailer.c:192
 msgid "SIZE"
@@ -39,76 +39,74 @@ msgstr "SIZE"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
-#: ../src/font-view.c:177
-msgid "Name"
-msgstr "ಹೆಸರು"
-
-#: ../src/font-view.c:180
-msgid "Style"
-msgstr "ಶೈಲಿ"
-
-#: ../src/font-view.c:190
-msgid "Type"
-msgstr "ಬಗೆ"
-
-#: ../src/font-view.c:235 ../src/font-view.c:254
-msgid "Version"
-msgstr "ಆವೃತ್ತಿ"
-
-#: ../src/font-view.c:240 ../src/font-view.c:260
-msgid "Copyright"
-msgstr "ಹಕ್ಕು"
-
-#: ../src/font-view.c:245
-msgid "Description"
-msgstr "ವಿವರಣೆ"
-
-#: ../src/font-view.c:273
-msgid "Install Failed"
-msgstr "ಅನುಸ್ಥಾಪಿಸುವಲ್ಲಿ ವಿಫಲಗೊಂಡಿದೆ"
-
-#: ../src/font-view.c:279
-msgid "Installed"
-msgstr "ಅನುಸ್ಥಾಪಿಸಲಾದ"
-
-#: ../src/font-view.c:282 ../src/font-view.c:427
-msgid "Install"
-msgstr "ಅನುಸ್ಥಾಪಿಸು"
-
-#: ../src/font-view.c:420
-msgid "Info"
-msgstr "ಮಾಹಿತಿ"
-
-#: ../src/font-view.c:433
-msgid "Back"
-msgstr "ಹಿಂದಕ್ಕೆ"
-
-#: ../src/font-view.c:524
-msgid "All Fonts"
-msgstr "ಎಲ್ಲಾ ಅಕ್ಷರಶೈಲಿಗಳು"
-
-#: ../src/font-view.c:605 ../src/font-view.c:648
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "ಅಕ್ಷರಶೈಲಿ ವೀಕ್ಷಕ"
-
-#: ../src/font-view.c:606 ../src/gnome-font-viewer.desktop.in.in.h:2
-#, fuzzy
-msgid "View fonts on your system"
-msgstr "ನಿಮ್ಮ ಗಣಕದಲ್ಲಿನ ಅಕ್ಷರಶೈಲಿಗಳನ್ನು ನೋಡಿ"
-
-#: ../src/font-view.c:608
-msgid "translator-credits"
-msgstr "ಶಂಕರ್ ಪ್ರಸಾದ್ ಎಂ. ವಿ. <svenkate@redhat.com>"
-
 #: ../src/font-view-app-menu.ui.h:1
-#, fuzzy
 msgid "About Font Viewer"
-msgstr "ದಾಖಲೆಯ ವೀಕ್ಷಕ ಕುರಿತು"
+msgstr "ಅಕ್ಷರಶೈಲಿ ವೀಕ್ಷಕದ ಕುರಿತು"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
 msgstr "ನಿರ್ಗಮಿಸು"
+
+#: ../src/font-view.c:178
+msgid "Name"
+msgstr "ಹೆಸರು"
+
+#: ../src/font-view.c:181
+msgid "Style"
+msgstr "ಶೈಲಿ"
+
+#: ../src/font-view.c:191
+msgid "Type"
+msgstr "ಬಗೆ"
+
+#: ../src/font-view.c:236 ../src/font-view.c:255
+msgid "Version"
+msgstr "ಆವೃತ್ತಿ"
+
+#: ../src/font-view.c:241 ../src/font-view.c:261
+msgid "Copyright"
+msgstr "ಹಕ್ಕು"
+
+#: ../src/font-view.c:246
+msgid "Description"
+msgstr "ವಿವರಣೆ"
+
+#: ../src/font-view.c:274
+msgid "Install Failed"
+msgstr "ಅನುಸ್ಥಾಪಿಸುವಲ್ಲಿ ವಿಫಲಗೊಂಡಿದೆ"
+
+#: ../src/font-view.c:280
+msgid "Installed"
+msgstr "ಅನುಸ್ಥಾಪಿಸಲಾದ"
+
+#: ../src/font-view.c:283 ../src/font-view.c:468
+msgid "Install"
+msgstr "ಅನುಸ್ಥಾಪಿಸು"
+
+#: ../src/font-view.c:461
+msgid "Info"
+msgstr "ಮಾಹಿತಿ"
+
+#: ../src/font-view.c:474
+msgid "Back"
+msgstr "ಹಿಂದಕ್ಕೆ"
+
+#: ../src/font-view.c:565
+msgid "All Fonts"
+msgstr "ಎಲ್ಲಾ ಅಕ್ಷರಶೈಲಿಗಳು"
+
+#: ../src/font-view.c:660 ../src/font-view.c:703
+#: ../src/gnome-font-viewer.desktop.in.in.h:1
+msgid "Font Viewer"
+msgstr "ಅಕ್ಷರಶೈಲಿ ವೀಕ್ಷಕ"
+
+#: ../src/font-view.c:661 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "ನಿಮ್ಮ ವ್ಯವಸ್ಥೆಯಲ್ಲಿನ ಅಕ್ಷರಶೈಲಿಗಳನ್ನು ನೋಡಿ"
+
+#: ../src/font-view.c:663
+msgid "translator-credits"
+msgstr "ಶಂಕರ್ ಪ್ರಸಾದ್ ಎಂ. ವಿ. <svenkate@redhat.com>"
 
 #, fuzzy
 #~ msgid "Size:"
