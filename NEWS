@@ -1,3 +1,24 @@
+GNOME Font Viewer - 3.7.3
+-------------------------------------------------------------------------------
+
+ • Show an error dialog when we fail to load a font file
+ • Fix a crasher when opening a non-existing file from the command line
+ • Translation updates
+
+GNOME Font Viewer - 3.6.2
+-------------------------------------------------------------------------------
+
+ • Fix Install button not refreshing correctly when opening an installed font
+ • Fix a crasher when installing a new font
+ • Translation updates
+
+GNOME Font Viewer - 3.6.1
+-------------------------------------------------------------------------------
+
+ • Fix application name showing in dialog title
+ • Fix a possible crasher when updating the font list
+ • Translation updates
+
 GNOME Font Viewer - 3.6.0
 -------------------------------------------------------------------------------
 
