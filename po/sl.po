@@ -7,19 +7,20 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-05-10 20:10+0000\n"
-"PO-Revision-Date: 2012-05-29 09:00+0100\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-12-17 15:15+0000\n"
+"PO-Revision-Date: 2012-12-18 08:36+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
+"Language: sl_SI\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n%100==4 ? 3 : 0);\n"
-"X-Poedit-Language: Slovenian\n"
-"X-Poedit-Country: SLOVENIA\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
@@ -30,7 +31,6 @@ msgid "TEXT"
 msgstr "BESEDILO"
 
 #: ../src/font-thumbnailer.c:192
-#| msgid "Text to thumbnail (default: Aa)"
 msgid "Thumbnail size (default: 128)"
 msgstr "Velikost sličice (privzeto: 128)"
 
@@ -42,82 +42,7 @@ msgstr "VELIKOST"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "DATOTEKA-PISAVE ODVODNA-DATOTEKA"
 
-#: ../src/font-view.c:177
-#| msgid "Name:"
-msgid "Name"
-msgstr "Ime"
-
-#: ../src/font-view.c:180
-#| msgid "Style:"
-msgid "Style"
-msgstr "Slog"
-
-#: ../src/font-view.c:190
-#| msgid "Type:"
-msgid "Type"
-msgstr "Vrsta"
-
-#: ../src/font-view.c:235
-#: ../src/font-view.c:254
-#| msgid "Version:"
-msgid "Version"
-msgstr "Različica"
-
-#: ../src/font-view.c:240
-#: ../src/font-view.c:260
-#| msgid "Copyright:"
-msgid "Copyright"
-msgstr "Avtorske pravice"
-
-#: ../src/font-view.c:245
-#| msgid "Description:"
-msgid "Description"
-msgstr "Opis"
-
-#: ../src/font-view.c:273
-msgid "Install Failed"
-msgstr "Namestitev je spodletela"
-
-#: ../src/font-view.c:279
-msgid "Installed"
-msgstr "Nameščeno"
-
-#: ../src/font-view.c:282
-#: ../src/font-view.c:427
-#| msgid "Installed"
-msgid "Install"
-msgstr "Namesti"
-
-#: ../src/font-view.c:420
-msgid "Info"
-msgstr "Podrobnosti"
-
-#: ../src/font-view.c:433
-msgid "Back"
-msgstr "Nazaj"
-
-#: ../src/font-view.c:524
-#| msgid "I_nstall Font"
-msgid "All Fonts"
-msgstr "Vse pisave"
-
-#: ../src/font-view.c:605
-#: ../src/font-view.c:648
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "Pregledovalnik pisav"
-
-#: ../src/font-view.c:606
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "View fonts on your system"
-msgstr "Pregled pisav v sistemu"
-
-#: ../src/font-view.c:608
-msgid "translator-credits"
-msgstr "Matej Urbančič <mateju@svn.gnome.org>"
-
 #: ../src/font-view-app-menu.ui.h:1
-#| msgid "Font Viewer"
 msgid "About Font Viewer"
 msgstr "O pregledovalniku pisav"
 
@@ -125,10 +50,73 @@ msgstr "O pregledovalniku pisav"
 msgid "Quit"
 msgstr "Končaj"
 
-#. right section
-#: ../src/gd-main-toolbar.c:269
-msgid "Done"
-msgstr "Končano"
+#: ../src/font-view.c:178
+msgid "Name"
+msgstr "Ime"
+
+#: ../src/font-view.c:181
+msgid "Style"
+msgstr "Slog"
+
+#: ../src/font-view.c:191
+msgid "Type"
+msgstr "Vrsta"
+
+#: ../src/font-view.c:236 ../src/font-view.c:255
+msgid "Version"
+msgstr "Različica"
+
+#: ../src/font-view.c:241 ../src/font-view.c:261
+msgid "Copyright"
+msgstr "Avtorske pravice"
+
+#: ../src/font-view.c:246
+msgid "Description"
+msgstr "Opis"
+
+#: ../src/font-view.c:274
+msgid "Install Failed"
+msgstr "Namestitev je spodletela"
+
+#: ../src/font-view.c:280
+msgid "Installed"
+msgstr "Nameščeno"
+
+#: ../src/font-view.c:283 ../src/font-view.c:515
+msgid "Install"
+msgstr "Namesti"
+
+#: ../src/font-view.c:416
+msgid "This font could not be displayed."
+msgstr "Pisave ni mogoče pokazati."
+
+#: ../src/font-view.c:508
+msgid "Info"
+msgstr "Podrobnosti"
+
+#: ../src/font-view.c:521
+msgid "Back"
+msgstr "Nazaj"
+
+#: ../src/font-view.c:618
+msgid "All Fonts"
+msgstr "Vse pisave"
+
+#: ../src/font-view.c:735 ../src/font-view.c:774
+#: ../src/gnome-font-viewer.desktop.in.in.h:1
+msgid "Font Viewer"
+msgstr "Pregledovalnik pisav"
+
+#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "Pregled pisav v sistemu"
+
+#: ../src/font-view.c:738
+msgid "translator-credits"
+msgstr "Matej Urbančič <mateju@svn.gnome.org>"
+
+#~ msgid "Done"
+#~ msgstr "Končano"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "Velikost pisave (privzeto: 64)"
