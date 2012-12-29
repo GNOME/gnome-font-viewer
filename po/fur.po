@@ -1,0 +1,107 @@
+# Friulian translation for gnome-font-viewer.
+# Copyright (C) 2012 gnome-font-viewer's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-font-viewer package.
+# TmTFx <f.t.public@gmail.com>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-font-viewer gnome-3-6\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-12-09 08:37+0000\n"
+"PO-Revision-Date: 2012-12-28 01:56+0100\n"
+"Last-Translator: TmTFx <f.t.public@gmail.com>\n"
+"Language-Team: Friulian <fur@li.org>\n"
+"Language: fur\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/font-thumbnailer.c:190
+msgid "Text to thumbnail (default: Aa)"
+msgstr "Test da miniaturizzâ (default: Aa)"
+
+#: ../src/font-thumbnailer.c:190
+msgid "TEXT"
+msgstr "TEST"
+
+#: ../src/font-thumbnailer.c:192
+msgid "Thumbnail size (default: 128)"
+msgstr "Dimension de miniature (default: 128)"
+
+#: ../src/font-thumbnailer.c:192
+msgid "SIZE"
+msgstr "DIMENSION"
+
+#: ../src/font-thumbnailer.c:194
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr ""
+
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "Informazions su Visôr di Font"
+
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "Jessi"
+
+#: ../src/font-view.c:178
+msgid "Name"
+msgstr "Non"
+
+#: ../src/font-view.c:181
+msgid "Style"
+msgstr "Stîl"
+
+#: ../src/font-view.c:191
+msgid "Type"
+msgstr "Gjenar"
+
+#: ../src/font-view.c:236 ../src/font-view.c:255
+msgid "Version"
+msgstr "Version"
+
+#: ../src/font-view.c:241 ../src/font-view.c:261
+msgid "Copyright"
+msgstr ""
+
+#: ../src/font-view.c:246
+msgid "Description"
+msgstr "Descrizion"
+
+#: ../src/font-view.c:274
+msgid "Install Failed"
+msgstr "Installazion Falide"
+
+#: ../src/font-view.c:280
+msgid "Installed"
+msgstr "Installât"
+
+#: ../src/font-view.c:283 ../src/font-view.c:468
+msgid "Install"
+msgstr "Installe"
+
+#: ../src/font-view.c:461
+msgid "Info"
+msgstr "Informazions"
+
+#: ../src/font-view.c:474
+msgid "Back"
+msgstr "Indaûr"
+
+#: ../src/font-view.c:565
+msgid "All Fonts"
+msgstr "Ducj i Font"
+
+#: ../src/font-view.c:660 ../src/font-view.c:703
+#: ../src/gnome-font-viewer.desktop.in.in.h:1
+msgid "Font Viewer"
+msgstr "Visôr di Font"
+
+#: ../src/font-view.c:661 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "Viôt i font tal to sisteme"
+
+#: ../src/font-view.c:663
+msgid "translator-credits"
+msgstr ""
