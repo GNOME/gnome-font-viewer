@@ -10,14 +10,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-06-01 19:04+0000\n"
-"PO-Revision-Date: 2012-07-14 18:55+0300\n"
+"POT-Creation-Date: 2012-12-07 15:05+0000\n"
+"PO-Revision-Date: 2013-01-02 22:30+0300\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lithuanian <gnome-lt@lists.akl.lt>\n"
+"Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: lt\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Virtaal 0.5.2\n"
 
@@ -30,7 +30,6 @@ msgid "TEXT"
 msgstr "TEKSTAS"
 
 #: ../src/font-thumbnailer.c:192
-#| msgid "Text to thumbnail (default: Aa)"
 msgid "Thumbnail size (default: 128)"
 msgstr "Miniatiūrų dydis (numatyta: 128)"
 
@@ -42,84 +41,7 @@ msgstr "DYDIS"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ŠRIFTO-FAILAS REZULTATO-FAILAS"
 
-#: ../src/font-view.c:177
-#| msgid "Name:"
-msgid "Name"
-msgstr "Pavadinimas"
-
-#: ../src/font-view.c:180
-#| msgid "Style:"
-msgid "Style"
-msgstr "Stilius"
-
-#: ../src/font-view.c:190
-#| msgid "Type:"
-msgid "Type"
-msgstr "Tipas"
-
-#: ../src/font-view.c:235
-#: ../src/font-view.c:254
-#| msgid "Version:"
-msgid "Version"
-msgstr "Versija"
-
-#: ../src/font-view.c:240
-#: ../src/font-view.c:260
-#| msgid "Copyright:"
-msgid "Copyright"
-msgstr "Autorinės teisės"
-
-#: ../src/font-view.c:245
-#| msgid "Description:"
-msgid "Description"
-msgstr "Aprašymas"
-
-#: ../src/font-view.c:273
-msgid "Install Failed"
-msgstr "Diegimas nepavyko"
-
-#: ../src/font-view.c:279
-msgid "Installed"
-msgstr "Įdiegta"
-
-#: ../src/font-view.c:282
-#: ../src/font-view.c:427
-#| msgid "Installed"
-msgid "Install"
-msgstr "Įdiegti"
-
-#: ../src/font-view.c:420
-msgid "Info"
-msgstr "Informacija"
-
-#: ../src/font-view.c:433
-msgid "Back"
-msgstr "Atgal"
-
-#: ../src/font-view.c:524
-#| msgid "I_nstall Font"
-msgid "All Fonts"
-msgstr "Visi šriftai"
-
-#: ../src/font-view.c:605
-#: ../src/font-view.c:648
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "Šriftų žiūryklė"
-
-#: ../src/font-view.c:606
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "View fonts on your system"
-msgstr "Rodyti sistemos šriftus"
-
-#: ../src/font-view.c:608
-msgid "translator-credits"
-msgstr ""
-"išvertė:\n"
-"Aurimas Černius <aurisc4@gmail.com>"
-
 #: ../src/font-view-app-menu.ui.h:1
-#| msgid "Font Viewer"
 msgid "About Font Viewer"
 msgstr "Apie šriftų žiūryklę"
 
@@ -127,14 +49,75 @@ msgstr "Apie šriftų žiūryklę"
 msgid "Quit"
 msgstr "Išeiti"
 
-#~ msgid "Font size (default: 64)"
-#~ msgstr "Šrifto dydis (numatyta: 64)"
+#: ../src/font-view.c:178
+msgid "Name"
+msgstr "Pavadinimas"
 
-#~ msgid "Size:"
-#~ msgstr "Dydis:"
+#: ../src/font-view.c:181
+msgid "Style"
+msgstr "Stilius"
 
-#~ msgid "Usage: %s fontfile\n"
-#~ msgstr "Naudojimas: %s šriftofailas\n"
+#: ../src/font-view.c:191
+msgid "Type"
+msgstr "Tipas"
 
-#~ msgid "Preview fonts"
-#~ msgstr "Peržiūrėti šriftus"
+#: ../src/font-view.c:236
+#: ../src/font-view.c:255
+msgid "Version"
+msgstr "Versija"
+
+#: ../src/font-view.c:241
+#: ../src/font-view.c:261
+msgid "Copyright"
+msgstr "Autorinės teisės"
+
+#: ../src/font-view.c:246
+msgid "Description"
+msgstr "Aprašymas"
+
+#: ../src/font-view.c:274
+msgid "Install Failed"
+msgstr "Diegimas nepavyko"
+
+#: ../src/font-view.c:280
+msgid "Installed"
+msgstr "Įdiegta"
+
+#: ../src/font-view.c:283
+#: ../src/font-view.c:512
+msgid "Install"
+msgstr "Įdiegti"
+
+#: ../src/font-view.c:416
+msgid "This font could not be displayed."
+msgstr "Nepavyko parodyti šio šrifto."
+
+#: ../src/font-view.c:505
+msgid "Info"
+msgstr "Informacija"
+
+#: ../src/font-view.c:518
+msgid "Back"
+msgstr "Atgal"
+
+#: ../src/font-view.c:615
+msgid "All Fonts"
+msgstr "Visi šriftai"
+
+#: ../src/font-view.c:732
+#: ../src/font-view.c:771
+#: ../src/gnome-font-viewer.desktop.in.in.h:1
+msgid "Font Viewer"
+msgstr "Šriftų žiūryklė"
+
+#: ../src/font-view.c:733
+#: ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "Rodyti sistemos šriftus"
+
+#: ../src/font-view.c:735
+msgid "translator-credits"
+msgstr ""
+"išvertė:\n"
+"Aurimas Černius <aurisc4@gmail.com>"
+
