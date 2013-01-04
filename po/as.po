@@ -4,14 +4,14 @@
 #
 # Amitakhya Phukan <aphukan@redhat.com>, 2008.
 # Amitakhya Phukan <amitakhya@svn.gnome.org>, 2008, 2009.
-# Nilamdyuti Goswami <ngoswami@redhat.com>, 2011, 2012.
+# Nilamdyuti Goswami <ngoswami@redhat.com>, 2011, 2012, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: as\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-12-07 15:05+0000\n"
-"PO-Revision-Date: 2012-12-12 13:45+0530\n"
+"POT-Creation-Date: 2013-01-03 12:34+0000\n"
+"PO-Revision-Date: 2013-01-04 14:51+0530\n"
 "Last-Translator: Nilamdyuti Goswami <ngoswami@redhat.com>\n"
 "Language-Team: Assamese <kde-i18n-doc@kde.org>\n"
 "Language: as\n"
@@ -81,7 +81,7 @@ msgstr "ইনস্টল ব্যৰ্থ"
 msgid "Installed"
 msgstr "ইনস্টল্ড"
 
-#: ../src/font-view.c:283 ../src/font-view.c:512
+#: ../src/font-view.c:283 ../src/font-view.c:515
 msgid "Install"
 msgstr "ইনস্টল কৰক"
 
@@ -89,33 +89,37 @@ msgstr "ইনস্টল কৰক"
 msgid "This font could not be displayed."
 msgstr "এই ফন্টক প্ৰদৰ্শন কৰিব নোৱাৰি।"
 
-#: ../src/font-view.c:505
+#: ../src/font-view.c:508
 msgid "Info"
 msgstr "তথ্য"
 
-#: ../src/font-view.c:518
+#: ../src/font-view.c:521
 msgid "Back"
 msgstr "পিছলৈ"
 
-#: ../src/font-view.c:615
+#: ../src/font-view.c:618
 msgid "All Fonts"
 msgstr "সকলো ফন্ট"
 
-#: ../src/font-view.c:732 ../src/font-view.c:771
+#: ../src/font-view.c:735 ../src/font-view.c:774
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "ফন্ট দৰ্শক"
 
-#: ../src/font-view.c:733 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "আপোনাৰ চিস্টেমৰ ফন্টসমূহ দৰ্শন কৰক"
 
-#: ../src/font-view.c:735
+#: ../src/font-view.c:738
 msgid "translator-credits"
 msgstr ""
 "অমিতাক্ষ ফুকন (aphukan@fedoraproject.org), নীলমদ্যুতি গোস্বামী "
 "(ngoswami@redhat."
 "com)"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "fonts;fontface;"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "ফন্টৰ আকাৰ (অবিকল্পিত: ৬৪)"
