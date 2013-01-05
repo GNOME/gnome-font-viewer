@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.HEAD.he\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-05 02:09+0200\n"
+"POT-Creation-Date: 2013-01-06 01:37+0200\n"
 "PO-Revision-Date: 2013-01-05 02:10+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
@@ -69,13 +69,11 @@ msgstr "סגנון"
 msgid "Type"
 msgstr "סוג"
 
-#: ../src/font-view.c:236
-#: ../src/font-view.c:255
+#: ../src/font-view.c:236 ../src/font-view.c:255
 msgid "Version"
 msgstr "גרסה"
 
-#: ../src/font-view.c:241
-#: ../src/font-view.c:261
+#: ../src/font-view.c:241 ../src/font-view.c:261
 msgid "Copyright"
 msgstr "זכויות יוצרים"
 
@@ -91,8 +89,7 @@ msgstr "ההתקנה נכשלה"
 msgid "Installed"
 msgstr "מותקן"
 
-#: ../src/font-view.c:283
-#: ../src/font-view.c:515
+#: ../src/font-view.c:283 ../src/font-view.c:515
 msgid "Install"
 msgstr "התקנה"
 
@@ -112,14 +109,12 @@ msgstr "חזרה"
 msgid "All Fonts"
 msgstr "כל הגופנים"
 
-#: ../src/font-view.c:735
-#: ../src/font-view.c:774
+#: ../src/font-view.c:735 ../src/font-view.c:774
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "מציג הגופנים"
 
-#: ../src/font-view.c:736
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "צפייה בגופנים במערכת שלך"
 
