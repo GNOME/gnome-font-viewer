@@ -1,15 +1,15 @@
 # Norwegian bokmål translation of gnome-font-viewer.
 # Copyright (C) 1999-2005 Free Software Foundation, Inc.
 #
-# Kjartan Maraas <kmaraas@gnome.org>, 1999-2012.
+# Kjartan Maraas <kmaraas@gnome.org>, 1999-2013.
 # Terance Edward Sola <terance@lyse.net>, 2005.
 # Torstein Adolf Winterseth <kvikende@fsfe.org>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer 3.7.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-21 16:39+0100\n"
-"PO-Revision-Date: 2012-12-21 16:40+0100\n"
+"POT-Creation-Date: 2013-01-07 11:45+0100\n"
+"PO-Revision-Date: 2013-01-07 11:45+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: \n"
@@ -110,3 +110,7 @@ msgstr "Vis skrifter på systemet"
 #: ../src/font-view.c:738
 msgid "translator-credits"
 msgstr "Kjartan Maraas <kmaraas@gnome.org>"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "skrifter;skrifttyper;"
