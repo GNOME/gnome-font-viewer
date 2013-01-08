@@ -10,23 +10,23 @@
 # Pablo Saratxaga <srtxg@chanae.alphanet.ch> 1999.
 # Manuel de Vega Barreiro <barreiro@arrakis.es> 2000-2001.
 # Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009, 2010, 2011.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-12-07 15:05+0000\n"
-"PO-Revision-Date: 2012-12-16 20:57+0100\n"
+"POT-Creation-Date: 2013-01-03 12:34+0000\n"
+"PO-Revision-Date: 2013-01-08 14:16+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
-"Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
+"Language-Team: Español <gnome-es-list@gnome.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Gtranslator 2.91.5\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
 #: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
@@ -88,7 +88,7 @@ msgstr "Falló la instalación"
 msgid "Installed"
 msgstr "Instalado"
 
-#: ../src/font-view.c:283 ../src/font-view.c:512
+#: ../src/font-view.c:283 ../src/font-view.c:515
 msgid "Install"
 msgstr "Instalar"
 
@@ -96,30 +96,34 @@ msgstr "Instalar"
 msgid "This font could not be displayed."
 msgstr "No se pudo mostrar esta tipografía."
 
-#: ../src/font-view.c:505
+#: ../src/font-view.c:508
 msgid "Info"
 msgstr "Información"
 
-#: ../src/font-view.c:518
+#: ../src/font-view.c:521
 msgid "Back"
 msgstr "Atrás"
 
-#: ../src/font-view.c:615
+#: ../src/font-view.c:618
 msgid "All Fonts"
 msgstr "Todas las tipografías"
 
-#: ../src/font-view.c:732 ../src/font-view.c:771
+#: ../src/font-view.c:735 ../src/font-view.c:774
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Visor de tipografías"
 
-#: ../src/font-view.c:733 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Ver las tipografías de su sistema"
 
-#: ../src/font-view.c:735
+#: ../src/font-view.c:738
 msgid "translator-credits"
 msgstr "Daniel Mustieles <daniel.mustieles@gmail.com>, 2012"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "tipografía;letra;tipo;"
 
 #~ msgid "Done"
 #~ msgstr "Hecho"
