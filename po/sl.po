@@ -2,15 +2,15 @@
 # Copyright (C) 2000-2006 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-font-viewer package.
 #
-# Matej Urbančič <mateju@svn.gnome.org>, 2007 - 2012.
+# Matej Urbančič <mateju@svn.gnome.org>, 2007 - 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-12-17 15:15+0000\n"
-"PO-Revision-Date: 2012-12-18 08:36+0100\n"
+"POT-Creation-Date: 2013-01-08 13:43+0000\n"
+"PO-Revision-Date: 2013-01-09 15:19+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -114,6 +114,10 @@ msgstr "Pregled pisav v sistemu"
 #: ../src/font-view.c:738
 msgid "translator-credits"
 msgstr "Matej Urbančič <mateju@svn.gnome.org>"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "pisave;fonti;oblika zapisa;zapis;"
 
 #~ msgid "Done"
 #~ msgstr "Končano"
