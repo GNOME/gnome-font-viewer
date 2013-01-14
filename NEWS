@@ -1,3 +1,11 @@
+GNOME Font Viewer - 3.7.4
+-------------------------------------------------------------------------------
+
+ • Don't paint a white background below font thumbnails
+ • Add keywords to the desktop file
+ • Don't call g_type_init(), depends on GLib 2.35.1
+ • Translation updates
+
 GNOME Font Viewer - 3.7.3
 -------------------------------------------------------------------------------
 
