@@ -131,7 +131,7 @@ msgstr "Gheyret Kenji <gheyret@gmail.com>\n"
 
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
-msgstr "خەت نۇسخا؛ فونت؛fonts؛fontface؛"
+msgstr "خەت نۇسخا;فونت;fonts;fontface;"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "خەت چوڭلۇقى (كۆڭۈلدىكى: 64)"
