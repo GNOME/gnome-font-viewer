@@ -1,12 +1,15 @@
+# Serbian translation of gnome-font-viewer
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2012—2013.
+# This file is distributed under the same license as the gnome-font-viewer package.
 # Милош Поповић <gpopac@gmail.com>, 2011.
-# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2011, 2012.
+# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2011, 2012, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils-2.0\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-06-01 19:04+0000\n"
-"PO-Revision-Date: 2012-07-26 23:32+0200\n"
+"POT-Creation-Date: 2013-01-03 12:34+0000\n"
+"PO-Revision-Date: 2013-01-18 23:38+0200\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
@@ -37,67 +40,6 @@ msgstr "ВЕЛИЧИНА"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ДАТОТЕКА-ПИСМА ИЗЛАЗНА-ДАТОТЕКА"
 
-#: ../src/font-view.c:177
-msgid "Name"
-msgstr "Назив"
-
-#: ../src/font-view.c:180
-msgid "Style"
-msgstr "Стил"
-
-#: ../src/font-view.c:190
-msgid "Type"
-msgstr "Врста"
-
-#: ../src/font-view.c:235 ../src/font-view.c:254
-msgid "Version"
-msgstr "Издање"
-
-#: ../src/font-view.c:240 ../src/font-view.c:260
-msgid "Copyright"
-msgstr "Ауторска права"
-
-#: ../src/font-view.c:245
-msgid "Description"
-msgstr "Опис"
-
-#: ../src/font-view.c:273
-msgid "Install Failed"
-msgstr "Инсталација није успела"
-
-#: ../src/font-view.c:279
-msgid "Installed"
-msgstr "Инсталирано"
-
-#: ../src/font-view.c:282 ../src/font-view.c:427
-msgid "Install"
-msgstr "Инсталирај"
-
-#: ../src/font-view.c:420
-msgid "Info"
-msgstr "Подаци"
-
-#: ../src/font-view.c:433
-msgid "Back"
-msgstr "Назад"
-
-#: ../src/font-view.c:524
-msgid "All Fonts"
-msgstr "Сва писма"
-
-#: ../src/font-view.c:605 ../src/font-view.c:648
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "Прегледач писама"
-
-#: ../src/font-view.c:606 ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "View fonts on your system"
-msgstr "Прегледајте писма на вашем систему"
-
-#: ../src/font-view.c:608
-msgid "translator-credits"
-msgstr "  Мирослав Николић <mirosavnikoic@rocketmailcom>"
-
 #: ../src/font-view-app-menu.ui.h:1
 msgid "About Font Viewer"
 msgstr "О прегледачу писама"
@@ -105,3 +47,75 @@ msgstr "О прегледачу писама"
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
 msgstr "Изађи"
+
+#: ../src/font-view.c:178
+msgid "Name"
+msgstr "Назив"
+
+#: ../src/font-view.c:181
+msgid "Style"
+msgstr "Стил"
+
+#: ../src/font-view.c:191
+msgid "Type"
+msgstr "Врста"
+
+#: ../src/font-view.c:236 ../src/font-view.c:255
+msgid "Version"
+msgstr "Издање"
+
+#: ../src/font-view.c:241 ../src/font-view.c:261
+msgid "Copyright"
+msgstr "Ауторска права"
+
+#: ../src/font-view.c:246
+msgid "Description"
+msgstr "Опис"
+
+#: ../src/font-view.c:274
+msgid "Install Failed"
+msgstr "Инсталација није успела"
+
+#: ../src/font-view.c:280
+msgid "Installed"
+msgstr "Инсталирано"
+
+#: ../src/font-view.c:283 ../src/font-view.c:515
+msgid "Install"
+msgstr "Инсталирај"
+
+#: ../src/font-view.c:416
+msgid "This font could not be displayed."
+msgstr "Овај словни лик не може бити приказан."
+
+#: ../src/font-view.c:508
+msgid "Info"
+msgstr "Подаци"
+
+#: ../src/font-view.c:521
+msgid "Back"
+msgstr "Назад"
+
+#: ../src/font-view.c:618
+msgid "All Fonts"
+msgstr "Сва писма"
+
+#: ../src/font-view.c:735 ../src/font-view.c:774
+#: ../src/gnome-font-viewer.desktop.in.in.h:1
+msgid "Font Viewer"
+msgstr "Прегледач писама"
+
+#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "Прегледајте писма на вашем систему"
+
+#: ../src/font-view.c:738
+msgid "translator-credits"
+msgstr ""
+"  Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
+"\n"
+"http://prevod.org — превод на српски језик"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "слова;словни ликови;писма;"
