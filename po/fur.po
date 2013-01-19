@@ -8,32 +8,33 @@ msgstr ""
 "Project-Id-Version: gnome-font-viewer gnome-3-6\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-12-09 08:37+0000\n"
-"PO-Revision-Date: 2012-12-28 01:56+0100\n"
-"Last-Translator: TmTFx <f.t.public@gmail.com>\n"
+"POT-Creation-Date: 2013-01-18 22:39+0000\n"
+"PO-Revision-Date: 2013-01-19 12:21+0100\n"
+"Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Test da miniaturizzâ (default: Aa)"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "TEST"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "Dimension de miniature (default: 128)"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "DIMENSION"
 
-#: ../src/font-thumbnailer.c:194
+#: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr ""
 
@@ -43,7 +44,7 @@ msgstr "Informazions su Visôr di Font"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
-msgstr "Jessi"
+msgstr "Jes"
 
 #: ../src/font-view.c:178
 msgid "Name"
@@ -77,31 +78,39 @@ msgstr "Installazion Falide"
 msgid "Installed"
 msgstr "Installât"
 
-#: ../src/font-view.c:283 ../src/font-view.c:468
+#: ../src/font-view.c:283 ../src/font-view.c:515
 msgid "Install"
 msgstr "Installe"
 
-#: ../src/font-view.c:461
+#: ../src/font-view.c:416
+msgid "This font could not be displayed."
+msgstr "Chest font a nol puès sedi mostrât."
+
+#: ../src/font-view.c:508
 msgid "Info"
 msgstr "Informazions"
 
-#: ../src/font-view.c:474
+#: ../src/font-view.c:521
 msgid "Back"
 msgstr "Indaûr"
 
-#: ../src/font-view.c:565
+#: ../src/font-view.c:618
 msgid "All Fonts"
 msgstr "Ducj i Font"
 
-#: ../src/font-view.c:660 ../src/font-view.c:703
+#: ../src/font-view.c:735 ../src/font-view.c:774
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Visôr di Font"
 
-#: ../src/font-view.c:661 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Viôt i font tal to sisteme"
 
-#: ../src/font-view.c:663
+#: ../src/font-view.c:738
 msgid "translator-credits"
+msgstr "Fabio Tomat <f.t.public@gmail.com>"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
 msgstr ""
