@@ -1,11 +1,11 @@
-# Dutch translation for gnome-utils
+# Dutch translation for gnome-font-viewer
 #
-# This file is distributed under the same license as the gnome-utils package.
+# This file is distributed under the same license as the font-viewer package.
 #
 # Jan-Willem Harmanny <jwharmanny@hotmail.com>, 2003.
 # Tino Meinen <a.t.meinen@chello.nl>, 2004–2008.
 # Vincent van Adrighem <adrighem@gnome.org>, 2006.
-# Wouter Bolsterlee <wbolster@gnome.org>, 2006–2012.
+# Wouter Bolsterlee <wbolster@gnome.org>, 2006–2013.
 # Hannie Dumoleyn <hannie@ubuntu-nl.org>, 2010–2011.
 #
 # side bar = side pane = zijpaneel
@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master.nl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-22 12:42+0100\n"
-"PO-Revision-Date: 2012-11-22 12:42+0100\n"
+"POT-Creation-Date: 2013-02-06 21:55+0100\n"
+"PO-Revision-Date: 2013-02-06 21:55+0100\n"
 "Last-Translator: Wouter Bolsterlee <wbolster@gnome.org>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "Language: nl\n"
@@ -24,23 +24,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Tekst voor miniatuur (standaard: Aa)"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "TEKST"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "Grootte van miniatuur (standaard: 128)"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "GROOTTE"
 
-#: ../src/font-thumbnailer.c:194
+#: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "LETTERTYPEBESTAND UITVOERBESTAND"
 
@@ -84,36 +84,44 @@ msgstr "Installatie mislukt"
 msgid "Installed"
 msgstr "Geïnstalleerd"
 
-#: ../src/font-view.c:283 ../src/font-view.c:468
+#: ../src/font-view.c:283 ../src/font-view.c:515
 msgid "Install"
 msgstr "Installeren"
 
-#: ../src/font-view.c:461
+#: ../src/font-view.c:416
+msgid "This font could not be displayed."
+msgstr "Dit lettertype kon niet getoond worden."
+
+#: ../src/font-view.c:508
 msgid "Info"
 msgstr "Informatie"
 
-#: ../src/font-view.c:474
+#: ../src/font-view.c:521
 msgid "Back"
 msgstr "Terug"
 
-#: ../src/font-view.c:565
+#: ../src/font-view.c:618
 msgid "All Fonts"
 msgstr "Alle lettertypes"
 
-#: ../src/font-view.c:660 ../src/font-view.c:703
+#: ../src/font-view.c:735 ../src/font-view.c:774
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Lettertype-voorbeeld"
 
-#: ../src/font-view.c:661 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Lettertypes op uw systeem bekijken"
 
-#: ../src/font-view.c:663
+#: ../src/font-view.c:738
 msgid "translator-credits"
 msgstr ""
 "Wouter Bolsterlee\n"
 "Hannie Dumoleyn"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "lettertype;letter;font;typografie;"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "Lettergrootte (standaard: 64)"
