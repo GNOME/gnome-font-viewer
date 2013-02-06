@@ -1,4 +1,4 @@
-INCLUDES =					\
+AM_CPPFLAGS =					\
 	$(FONTVIEW_CFLAGS)			\
 	-DDIRECTORY_DIR=\"$(directorydir)\" 	\
 	-DGNOMELOCALEDIR=\"$(datadir)/locale\"  \
