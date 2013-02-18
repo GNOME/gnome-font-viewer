@@ -15,23 +15,23 @@
 # Petr Kovar <pknbe@volny.cz>, 2008, 2009.
 # Lucas Lommer <llommer@svn.gnome.org>, 2009 (just a small fix).
 # Adrian Guniš <andygun696@gmail.com>, 2008, 2009, 2010.
-# Marek Černocký <marek@manet.cz>, 2010 (just a small fixes), 2011, 2012.
+# Marek Černocký <marek@manet.cz>, 2010 (just a small fixes), 2011, 2012, 2013.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils\n"
+"Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-06-01 19:04+0000\n"
-"PO-Revision-Date: 2012-09-08 22:17+0200\n"
+"POT-Creation-Date: 2013-01-03 12:34+0000\n"
+"PO-Revision-Date: 2013-02-18 09:41+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: cs\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Gtranslator 2.91.6\n"
 
 #: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
@@ -53,67 +53,6 @@ msgstr "VELIKOST"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "SOUBOR-PÍSMA VÝSTUPNÍ-SOUBOR"
 
-#: ../src/font-view.c:177
-msgid "Name"
-msgstr "Název"
-
-#: ../src/font-view.c:180
-msgid "Style"
-msgstr "Styl"
-
-#: ../src/font-view.c:190
-msgid "Type"
-msgstr "Typ"
-
-#: ../src/font-view.c:235 ../src/font-view.c:254
-msgid "Version"
-msgstr "Verze"
-
-#: ../src/font-view.c:240 ../src/font-view.c:260
-msgid "Copyright"
-msgstr "Copyright"
-
-#: ../src/font-view.c:245
-msgid "Description"
-msgstr "Popis"
-
-#: ../src/font-view.c:273
-msgid "Install Failed"
-msgstr "Instalace selhala"
-
-#: ../src/font-view.c:279
-msgid "Installed"
-msgstr "Nainstalováno"
-
-#: ../src/font-view.c:282 ../src/font-view.c:427
-msgid "Install"
-msgstr "Nainstalovat"
-
-#: ../src/font-view.c:420
-msgid "Info"
-msgstr "Informace"
-
-#: ../src/font-view.c:433
-msgid "Back"
-msgstr "Zpět"
-
-#: ../src/font-view.c:524
-msgid "All Fonts"
-msgstr "Všechna písma"
-
-#: ../src/font-view.c:605 ../src/font-view.c:648
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "Prohlížeč písem"
-
-#: ../src/font-view.c:606 ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "View fonts on your system"
-msgstr "Prohlížet si písma ve svém systému"
-
-#: ../src/font-view.c:608
-msgid "translator-credits"
-msgstr "Marek Černocký <marek@manet.cz>"
-
 #: ../src/font-view-app-menu.ui.h:1
 msgid "About Font Viewer"
 msgstr "O prohlížeči písem"
@@ -121,3 +60,72 @@ msgstr "O prohlížeči písem"
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
 msgstr "Ukončit"
+
+#: ../src/font-view.c:178
+msgid "Name"
+msgstr "Název"
+
+#: ../src/font-view.c:181
+msgid "Style"
+msgstr "Styl"
+
+#: ../src/font-view.c:191
+msgid "Type"
+msgstr "Typ"
+
+#: ../src/font-view.c:236 ../src/font-view.c:255
+msgid "Version"
+msgstr "Verze"
+
+#: ../src/font-view.c:241 ../src/font-view.c:261
+msgid "Copyright"
+msgstr "Copyright"
+
+#: ../src/font-view.c:246
+msgid "Description"
+msgstr "Popis"
+
+#: ../src/font-view.c:274
+msgid "Install Failed"
+msgstr "Instalace selhala"
+
+#: ../src/font-view.c:280
+msgid "Installed"
+msgstr "Nainstalováno"
+
+#: ../src/font-view.c:283 ../src/font-view.c:515
+msgid "Install"
+msgstr "Nainstalovat"
+
+#: ../src/font-view.c:416
+msgid "This font could not be displayed."
+msgstr "Toto písmo nelze zobrazit."
+
+#: ../src/font-view.c:508
+msgid "Info"
+msgstr "Informace"
+
+#: ../src/font-view.c:521
+msgid "Back"
+msgstr "Zpět"
+
+#: ../src/font-view.c:618
+msgid "All Fonts"
+msgstr "Všechna písma"
+
+#: ../src/font-view.c:735 ../src/font-view.c:774
+#: ../src/gnome-font-viewer.desktop.in.in.h:1
+msgid "Font Viewer"
+msgstr "Prohlížeč písem"
+
+#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "Prohlížet si písma ve svém systému"
+
+#: ../src/font-view.c:738
+msgid "translator-credits"
+msgstr "Marek Černocký <marek@manet.cz>"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "fonty;písma;řezy;"
