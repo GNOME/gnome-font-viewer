@@ -6,16 +6,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-09-26 18:42+0000\n"
-"PO-Revision-Date: 2012-09-29 13:40+0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-01-03 12:34+0000\n"
+"PO-Revision-Date: 2013-02-18 23:20+0100\n"
 "Last-Translator: Daniel Martinez <entaltoaragon@gmail.com>\n"
 "Language-Team: Aragonés <softaragones@googlegroups.com>\n"
 "Language: an\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bits\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
 #: ../src/font-thumbnailer.c:190
@@ -27,7 +26,6 @@ msgid "TEXT"
 msgstr "TEXTO"
 
 #: ../src/font-thumbnailer.c:192
-#| msgid "Text to thumbnail (default: Aa)"
 msgid "Thumbnail size (default: 128)"
 msgstr "Grandaria d'a miniatura (predeterminau: 128)"
 
@@ -40,7 +38,6 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FICHERO-DE-TIPOGRAFÍA FICHERO-DE-SURTIDA"
 
 #: ../src/font-view-app-menu.ui.h:1
-#| msgid "Font Viewer"
 msgid "About Font Viewer"
 msgstr "Arredol d'o Visor de tipografías"
 
@@ -49,32 +46,28 @@ msgid "Quit"
 msgstr "Salir"
 
 #: ../src/font-view.c:178
-#| msgid "Name:"
 msgid "Name"
 msgstr "Nombre"
 
 #: ../src/font-view.c:181
-#| msgid "Style:"
 msgid "Style"
 msgstr "Estilo"
 
 #: ../src/font-view.c:191
-#| msgid "Type:"
 msgid "Type"
 msgstr "Tipo"
 
-#: ../src/font-view.c:236 ../src/font-view.c:255
-#| msgid "Version:"
+#: ../src/font-view.c:236
+#: ../src/font-view.c:255
 msgid "Version"
 msgstr "Version"
 
-#: ../src/font-view.c:241 ../src/font-view.c:261
-#| msgid "Copyright:"
+#: ../src/font-view.c:241
+#: ../src/font-view.c:261
 msgid "Copyright"
 msgstr "Copyright"
 
 #: ../src/font-view.c:246
-#| msgid "Description:"
 msgid "Description"
 msgstr "Descripción"
 
@@ -86,36 +79,45 @@ msgstr "Falló a instalación"
 msgid "Installed"
 msgstr "Instalau"
 
-#: ../src/font-view.c:283 ../src/font-view.c:468
-#| msgid "Installed"
+#: ../src/font-view.c:283
+#: ../src/font-view.c:515
 msgid "Install"
 msgstr "Instalar"
 
-#: ../src/font-view.c:461
+#: ../src/font-view.c:416
+msgid "This font could not be displayed."
+msgstr "No se podió amostrar ista tipografía."
+
+#: ../src/font-view.c:508
 msgid "Info"
 msgstr "Información"
 
-#: ../src/font-view.c:474
+#: ../src/font-view.c:521
 msgid "Back"
 msgstr "Tazaga"
 
-#: ../src/font-view.c:565
-#| msgid "I_nstall Font"
+#: ../src/font-view.c:618
 msgid "All Fonts"
 msgstr "Todas as tipografías"
 
-#: ../src/font-view.c:660 ../src/font-view.c:703
+#: ../src/font-view.c:735
+#: ../src/font-view.c:774
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Visor de tipografías"
 
-#: ../src/font-view.c:661 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:736
+#: ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Veyer as tipografías d'o suyo sistema"
 
-#: ../src/font-view.c:663
+#: ../src/font-view.c:738
 msgid "translator-credits"
 msgstr "Daniel Martinez <entaltoaragon@gmail.com>, 2012"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "fuente;tipografia;"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "Tamanyo d'a tipografía (predeterminau: 64)"
