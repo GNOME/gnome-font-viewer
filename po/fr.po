@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-08-22 16:06+0000\n"
-"PO-Revision-Date: 2012-04-30 22:01+0200\n"
+"POT-Creation-Date: 2013-02-22 14:57+0000\n"
+"PO-Revision-Date: 2013-02-25 20:17+0100\n"
 "Last-Translator: Bruno Brouard <annoa.b@gmail.com>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "Language: \n"
@@ -19,23 +19,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n>1;\n"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Texte à miniaturiser (par défaut : Aa)"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "TEXTE"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "Taille des vignettes (par défaut : 128)"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "TAILLE"
 
-#: ../src/font-thumbnailer.c:194
+#: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FICHIER-POLICE FICHIER-SORTIE"
 
@@ -79,34 +79,42 @@ msgstr "Échec de l'installation "
 msgid "Installed"
 msgstr "Installé"
 
-#: ../src/font-view.c:283 ../src/font-view.c:468
+#: ../src/font-view.c:283 ../src/font-view.c:515
 msgid "Install"
 msgstr "Installer"
 
-#: ../src/font-view.c:461
+#: ../src/font-view.c:416
+msgid "This font could not be displayed."
+msgstr "Cette police n'a pas pu être affichée."
+
+#: ../src/font-view.c:508
 msgid "Info"
 msgstr "Information"
 
-#: ../src/font-view.c:474
+#: ../src/font-view.c:521
 msgid "Back"
 msgstr "Retour"
 
-#: ../src/font-view.c:565
+#: ../src/font-view.c:618
 msgid "All Fonts"
 msgstr "Toutes les polices"
 
-#: ../src/font-view.c:660 ../src/font-view.c:703
+#: ../src/font-view.c:735 ../src/font-view.c:774
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Visionneur de police"
 
-#: ../src/font-view.c:661 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Affiche les polices de votre système"
 
-#: ../src/font-view.c:663
+#: ../src/font-view.c:738
 msgid "translator-credits"
 msgstr "Bruno Brouard <annoa.b@gmail.com>"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "polices;fontes;"
 
 #~ msgid "Done"
 #~ msgstr "Terminé"
