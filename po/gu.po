@@ -1,20 +1,20 @@
 # translation of gnome-utils.master.gu.po to Gujarati
 # Ankit Patel <ankit644@yahoo.com>, 2005, 2006.
 # Ankit Patel <ankit@redhat.com>, 2005, 2007, 2009.
-# Sweta Kothari <swkothar@redhat.com>, 2009, 2012.
+# Sweta Kothari <swkothar@redhat.com>, 2009, 2012, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master.gu\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
 "cgi?product=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-06-01 19:04+0000\n"
-"PO-Revision-Date: 2012-07-30 13:30+0530\n"
+"POT-Creation-Date: 2013-01-03 12:34+0000\n"
+"PO-Revision-Date: 2013-02-28 13:43+0530\n"
 "Last-Translator: \n"
-"Language-Team: gu_IN <kde-i18n-doc@kde.org>\n"
+"Language-Team: American English <kde-i18n-doc@kde.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "\n"
@@ -66,67 +66,6 @@ msgstr "SIZE"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
-#: ../src/font-view.c:177
-msgid "Name"
-msgstr "નામ"
-
-#: ../src/font-view.c:180
-msgid "Style"
-msgstr "શૈલી"
-
-#: ../src/font-view.c:190
-msgid "Type"
-msgstr "પ્રકાર"
-
-#: ../src/font-view.c:235 ../src/font-view.c:254
-msgid "Version"
-msgstr "આવૃત્તિ"
-
-#: ../src/font-view.c:240 ../src/font-view.c:260
-msgid "Copyright"
-msgstr "કોપીરાઇટ"
-
-#: ../src/font-view.c:245
-msgid "Description"
-msgstr "વર્ણન"
-
-#: ../src/font-view.c:273
-msgid "Install Failed"
-msgstr "સ્થાપન નિષ્ફળ"
-
-#: ../src/font-view.c:279
-msgid "Installed"
-msgstr "સ્થાપિત થયેલ"
-
-#: ../src/font-view.c:282 ../src/font-view.c:427
-msgid "Install"
-msgstr "સ્થાપિત કરો"
-
-#: ../src/font-view.c:420
-msgid "Info"
-msgstr "જાણકારી"
-
-#: ../src/font-view.c:433
-msgid "Back"
-msgstr "પાછા જાઓ"
-
-#: ../src/font-view.c:524
-msgid "All Fonts"
-msgstr "બધા ફોન્ટ"
-
-#: ../src/font-view.c:605 ../src/font-view.c:648
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "ફોન્ટ દર્શક"
-
-#: ../src/font-view.c:606 ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "View fonts on your system"
-msgstr "તમારી સિસ્ટમ પર ફોન્ટ જુઓ"
-
-#: ../src/font-view.c:608
-msgid "translator-credits"
-msgstr "Sweta Kothari <swkothar@redhat.com>"
-
 #: ../src/font-view-app-menu.ui.h:1
 msgid "About Font Viewer"
 msgstr "ફોન્ટ દર્શક વિશે"
@@ -134,6 +73,75 @@ msgstr "ફોન્ટ દર્શક વિશે"
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
 msgstr "બહાર નીકળો"
+
+#: ../src/font-view.c:178
+msgid "Name"
+msgstr "નામ"
+
+#: ../src/font-view.c:181
+msgid "Style"
+msgstr "શૈલી"
+
+#: ../src/font-view.c:191
+msgid "Type"
+msgstr "પ્રકાર"
+
+#: ../src/font-view.c:236 ../src/font-view.c:255
+msgid "Version"
+msgstr "આવૃત્તિ"
+
+#: ../src/font-view.c:241 ../src/font-view.c:261
+msgid "Copyright"
+msgstr "કોપીરાઇટ"
+
+#: ../src/font-view.c:246
+msgid "Description"
+msgstr "વર્ણન"
+
+#: ../src/font-view.c:274
+msgid "Install Failed"
+msgstr "સ્થાપન નિષ્ફળ"
+
+#: ../src/font-view.c:280
+msgid "Installed"
+msgstr "સ્થાપિત થયેલ"
+
+#: ../src/font-view.c:283 ../src/font-view.c:515
+msgid "Install"
+msgstr "સ્થાપિત કરો"
+
+#: ../src/font-view.c:416
+msgid "This font could not be displayed."
+msgstr "આ ફોન્ટને દર્શાવી શક્યા નહિં."
+
+#: ../src/font-view.c:508
+msgid "Info"
+msgstr "જાણકારી"
+
+#: ../src/font-view.c:521
+msgid "Back"
+msgstr "પાછા જાઓ"
+
+#: ../src/font-view.c:618
+msgid "All Fonts"
+msgstr "બધા ફોન્ટ"
+
+#: ../src/font-view.c:735 ../src/font-view.c:774
+#: ../src/gnome-font-viewer.desktop.in.in.h:1
+msgid "Font Viewer"
+msgstr "ફોન્ટ દર્શક"
+
+#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "તમારી સિસ્ટમ પર ફોન્ટ જુઓ"
+
+#: ../src/font-view.c:738
+msgid "translator-credits"
+msgstr "Sweta Kothari <swkothar@redhat.com>"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "ફોન્ટ;ફોન્ટફેસ;"
 
 #, fuzzy
 #~ msgid "Size:"
