@@ -49,6 +49,7 @@ PKG_CHECK_MODULES(FONTVIEW,
 
 LIBGD_INIT([
   main-toolbar
+  stack
   static
 ])
 

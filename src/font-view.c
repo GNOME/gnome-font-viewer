@@ -37,7 +37,7 @@
 #include "font-model.h"
 #include "sushi-font-widget.h"
 
-#include <libgd/gd-main-toolbar.h>
+#include <libgd/gd.h>
 
 #define FONT_VIEW_TYPE_APPLICATION font_view_application_get_type()
 #define FONT_VIEW_APPLICATION(obj) \
@@ -55,7 +55,7 @@ typedef struct {
     GtkWidget *info_button;
     GtkWidget *install_button;
     GtkWidget *back_button;
-    GtkWidget *notebook;
+    GtkWidget *stack;
     GtkWidget *swin_view;
     GtkWidget *swin_preview;
     GtkWidget *icon_view;
@@ -528,20 +528,10 @@ font_view_application_do_open (FontViewApplication *self,
     uri = g_file_get_uri (file);
 
     if (self->font_widget == NULL) {
-        GdkRGBA white = { 1.0, 1.0, 1.0, 1.0 };
-        GdkRGBA black = { 0.0, 0.0, 0.0, 1.0 };
         GtkWidget *w;
 
         self->font_widget = GTK_WIDGET (sushi_font_widget_new (uri));
-
-        gtk_widget_override_color (self->font_widget, GTK_STATE_NORMAL, &black);
-        gtk_widget_override_background_color (self->font_widget, GTK_STATE_FLAG_NORMAL, &white);
-
-        w = gtk_viewport_new (NULL, NULL);
-        gtk_viewport_set_shadow_type (GTK_VIEWPORT (w), GTK_SHADOW_NONE);
-
-        gtk_container_add (GTK_CONTAINER (w), self->font_widget);
-        gtk_container_add (GTK_CONTAINER (self->swin_preview), w);
+        gtk_container_add (GTK_CONTAINER (self->swin_preview), self->font_widget);
 
         g_signal_connect (self->font_widget, "loaded",
                           G_CALLBACK (font_widget_loaded_cb), self);
@@ -553,8 +543,8 @@ font_view_application_do_open (FontViewApplication *self,
 
     g_free (uri);
 
-    gtk_widget_show_all (self->swin_preview);
-    gtk_notebook_set_current_page (GTK_NOTEBOOK (self->notebook), 1);
+    gtk_widget_show_all (self->main_window);
+    gd_stack_set_visible_child_name (GD_STACK (self->stack), "preview");
 }
 
 static gboolean
@@ -656,8 +646,8 @@ font_view_application_do_overview (FontViewApplication *self)
                           G_CALLBACK (icon_view_release_cb), self);
     }
 
-    gtk_notebook_set_current_page (GTK_NOTEBOOK (self->notebook), 0);
-    gtk_widget_show_all (self->swin_view);
+    gtk_widget_show_all (self->main_window);
+    gd_stack_set_visible_child_name (GD_STACK (self->stack), "overview");
 }
 
 static gboolean
@@ -783,23 +773,23 @@ font_view_application_startup (GApplication *application)
     gtk_style_context_add_class (gtk_widget_get_style_context (self->toolbar), "menubar");
     gtk_container_add (GTK_CONTAINER (self->main_grid), self->toolbar);
 
-    self->notebook = gtk_notebook_new ();
-    gtk_container_add (GTK_CONTAINER (self->main_grid), self->notebook);
-    gtk_widget_set_hexpand (self->notebook, TRUE);
-    gtk_widget_set_vexpand (self->notebook, TRUE);
-    gtk_notebook_set_show_tabs (GTK_NOTEBOOK (self->notebook), FALSE);
+    self->stack = gd_stack_new ();
+    gd_stack_set_transition_type (GD_STACK (self->stack), GD_STACK_TRANSITION_TYPE_CROSSFADE);
+    gtk_container_add (GTK_CONTAINER (self->main_grid), self->stack);
+    gtk_widget_set_hexpand (self->stack, TRUE);
+    gtk_widget_set_vexpand (self->stack, TRUE);
 
     self->swin_view = swin = gtk_scrolled_window_new (NULL, NULL);
     gtk_scrolled_window_set_shadow_type (GTK_SCROLLED_WINDOW (swin), GTK_SHADOW_IN);
     gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (swin),
 				    GTK_POLICY_NEVER, GTK_POLICY_AUTOMATIC);
-    gtk_container_add (GTK_CONTAINER (self->notebook), swin);
+    gd_stack_add_named (GD_STACK (self->stack), swin, "overview");
 
     self->swin_preview = swin = gtk_scrolled_window_new (NULL, NULL);
     gtk_scrolled_window_set_shadow_type (GTK_SCROLLED_WINDOW (swin), GTK_SHADOW_IN);
     gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (swin),
          			    GTK_POLICY_AUTOMATIC, GTK_POLICY_NEVER);
-    gtk_container_add (GTK_CONTAINER (self->notebook), swin);
+    gd_stack_add_named (GD_STACK (self->stack), swin, "preview");
 
     gtk_widget_show_all (window);
 }
