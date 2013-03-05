@@ -48,7 +48,7 @@ typedef struct {
 
     GtkWidget *main_window;;
     GtkWidget *main_grid;
-    GtkWidget *toolbar;
+    GtkWidget *header;
     GtkWidget *title_label;
     GtkWidget *side_grid;
     GtkWidget *font_widget;
@@ -446,8 +446,9 @@ font_widget_loaded_cb (SushiFontWidget *font_widget,
     uri = sushi_font_widget_get_uri (font_widget);
     self->font_file = g_file_new_for_uri (uri);
 
-    gd_main_toolbar_set_labels (GD_MAIN_TOOLBAR (self->toolbar),
-                                face->family_name, face->style_name);
+    gd_header_bar_set_title (GD_HEADER_BAR (self->header), face->family_name);
+    gd_header_bar_set_subtitle (GD_HEADER_BAR (self->header), face->style_name);
+
     install_button_refresh_appearance (self, NULL);
 }
 
@@ -504,26 +505,28 @@ font_view_application_do_open (FontViewApplication *self,
 
     font_view_ensure_model (self);
 
-    self->info_button = gd_main_toolbar_add_button (GD_MAIN_TOOLBAR (self->toolbar),
-                                                    NULL, _("Info"), 
-                                                    FALSE);
+    self->info_button = gd_header_simple_button_new ();
+    gd_header_button_set_label (GD_HEADER_BUTTON (self->info_button), _("Info"));
+    gd_header_bar_pack_end (GD_HEADER_BAR (self->header), self->info_button);
+
     g_signal_connect (self->info_button, "clicked",
                       G_CALLBACK (info_button_clicked_cb), self);
 
     /* add install button */
-    self->install_button = gd_main_toolbar_add_button (GD_MAIN_TOOLBAR (self->toolbar),
-                                                       NULL, _("Install"), 
-                                                       FALSE);
+    self->install_button = gd_header_simple_button_new ();
+    gd_header_button_set_label (GD_HEADER_BUTTON (self->install_button), _("Install"));
+    gd_header_bar_pack_end (GD_HEADER_BAR (self->header), self->install_button);
+
     g_signal_connect (self->install_button, "clicked",
                       G_CALLBACK (install_button_clicked_cb), self);
 
-    self->back_button = gd_main_toolbar_add_button (GD_MAIN_TOOLBAR (self->toolbar),
-                                                    "go-previous-symbolic", _("Back"),
-                                                    TRUE);
+    self->back_button = gd_header_simple_button_new ();
+    gd_header_button_set_label (GD_HEADER_BUTTON (self->back_button), _("Back"));
+    gd_header_button_set_symbolic_icon_name (GD_HEADER_BUTTON (self->back_button), "go-previous-symbolic");
+    gd_header_bar_pack_start (GD_HEADER_BAR (self->header), self->back_button);
+
     g_signal_connect (self->back_button, "clicked",
                       G_CALLBACK (back_button_clicked_cb), self);
-
-    gtk_widget_set_vexpand (self->toolbar, FALSE);
 
     uri = g_file_get_uri (file);
 
@@ -605,7 +608,8 @@ font_view_application_do_overview (FontViewApplication *self)
 
     font_view_ensure_model (self);
 
-    gd_main_toolbar_set_labels (GD_MAIN_TOOLBAR (self->toolbar), _("All Fonts"), NULL);
+    gd_header_bar_set_title (GD_HEADER_BAR (self->header), _("All Fonts"));
+    gd_header_bar_set_subtitle (GD_HEADER_BAR (self->header), NULL);
 
     if (self->icon_view == NULL) {
         GtkWidget *icon_view;
@@ -769,9 +773,8 @@ font_view_application_startup (GApplication *application)
     self->main_grid = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
     gtk_container_add (GTK_CONTAINER (self->main_window), self->main_grid);
 
-    self->toolbar = gd_main_toolbar_new ();
-    gtk_style_context_add_class (gtk_widget_get_style_context (self->toolbar), "menubar");
-    gtk_container_add (GTK_CONTAINER (self->main_grid), self->toolbar);
+    self->header = gd_header_bar_new ();
+    gtk_container_add (GTK_CONTAINER (self->main_grid), self->header);
 
     self->stack = gd_stack_new ();
     gd_stack_set_transition_type (GD_STACK (self->stack), GD_STACK_TRANSITION_TYPE_CROSSFADE);
@@ -780,13 +783,11 @@ font_view_application_startup (GApplication *application)
     gtk_widget_set_vexpand (self->stack, TRUE);
 
     self->swin_view = swin = gtk_scrolled_window_new (NULL, NULL);
-    gtk_scrolled_window_set_shadow_type (GTK_SCROLLED_WINDOW (swin), GTK_SHADOW_IN);
     gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (swin),
 				    GTK_POLICY_NEVER, GTK_POLICY_AUTOMATIC);
     gd_stack_add_named (GD_STACK (self->stack), swin, "overview");
 
     self->swin_preview = swin = gtk_scrolled_window_new (NULL, NULL);
-    gtk_scrolled_window_set_shadow_type (GTK_SCROLLED_WINDOW (swin), GTK_SHADOW_IN);
     gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (swin),
          			    GTK_POLICY_AUTOMATIC, GTK_POLICY_NEVER);
     gd_stack_add_named (GD_STACK (self->stack), swin, "preview");

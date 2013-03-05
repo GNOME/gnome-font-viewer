@@ -48,7 +48,7 @@ PKG_CHECK_MODULES(FONTVIEW,
                   gtk+-3.0 >= $GTK_MIN_VERSION)
 
 LIBGD_INIT([
-  main-toolbar
+  header-bar
   stack
   static
 ])
