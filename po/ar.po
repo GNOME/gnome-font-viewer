@@ -4,14 +4,14 @@
 # Sayed Jaffer Al-Mosawi <mosawi@arabeyes.org>, 2002.
 # Abdulaziz Al-Arfaj <alarfaj0@yahoo.com>, 2004.
 # Djihed Afifi <djihed@gmail.com>, 2006.
-# Khaled Hosny <khaledhosny@eglug.org>, 2006, 2007, 2008, 2010, 2011, 2012.
+# Khaled Hosny <khaledhosny@eglug.org>, 2006, 2007, 2008, 2010, 2011, 2012, 2013.
 # Anas Afif Emad <anas.e87@gmail.com, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.gnome-2-16.ar\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-24 12:57+0200\n"
-"PO-Revision-Date: 2012-12-24 12:57+0200\n"
+"POT-Creation-Date: 2013-03-09 18:30+0200\n"
+"PO-Revision-Date: 2013-03-09 18:30+0200\n"
 "Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "Language: ar\n"
@@ -23,23 +23,23 @@ msgstr ""
 "X-Generator: Virtaal 0.7.0\n"
 "X-Project-Style: gnome\n"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "النص الذي سيوضع في المصغرة (المبدئي: Aa)"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "نص"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "حجم المصغرة (المبدئي: 128)"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "SIZE"
 
-#: ../src/font-thumbnailer.c:194
+#: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
@@ -83,7 +83,7 @@ msgstr "فشل التّثبيت"
 msgid "Installed"
 msgstr "مثبَّت"
 
-#: ../src/font-view.c:283 ../src/font-view.c:515
+#: ../src/font-view.c:283 ../src/font-view.c:517
 msgid "Install"
 msgstr "ثبّت"
 
@@ -91,32 +91,36 @@ msgstr "ثبّت"
 msgid "This font could not be displayed."
 msgstr "تعذّر عرض هذا الخط."
 
-#: ../src/font-view.c:508
+#: ../src/font-view.c:509
 msgid "Info"
 msgstr "معلومات"
 
-#: ../src/font-view.c:521
+#: ../src/font-view.c:524
 msgid "Back"
 msgstr "السابق"
 
-#: ../src/font-view.c:618
+#: ../src/font-view.c:611
 msgid "All Fonts"
 msgstr "كل الخطوط"
 
-#: ../src/font-view.c:735 ../src/font-view.c:774
+#: ../src/font-view.c:729 ../src/font-view.c:768
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "عارض الخطوط"
 
-#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:730 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "اعرض الخطوط على نظامك"
 
-#: ../src/font-view.c:738
+#: ../src/font-view.c:732
 msgid "translator-credits"
 msgstr ""
 "فريق عربآيز للترجمة http://arabeyes.org:\n"
 "خالد حسني <khaledhosny@eglug.org>"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "خط;خطوط;"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "Font size (default: 64)"
