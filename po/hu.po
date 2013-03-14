@@ -10,14 +10,14 @@
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2004, 2006, 2007, 2008, 2009, 2010, 2011, 2012.
 # Mate ORY <orymate at gmail d0t com>, 2006.
 # Lukács Bence <lukacs.bence1 at gmail dot com>, 2012.
-# Balázs Úr <urbalazs at gmail dot com>, 2012.
+# Balázs Úr <urbalazs at gmail dot com>, 2012, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-12-07 15:05+0000\n"
-"PO-Revision-Date: 2012-12-31 19:08+0100\n"
+"POT-Creation-Date: 2013-01-03 12:34+0000\n"
+"PO-Revision-Date: 2013-03-14 21:51+0100\n"
 "Last-Translator: Balázs Úr <urbalazs at gmail dot com>\n"
 "Language-Team: Hungarian <kde-i18n-doc@kde.org>\n"
 "Language: hu\n"
@@ -87,7 +87,7 @@ msgstr "A telepítés meghiúsult"
 msgid "Installed"
 msgstr "Telepítve"
 
-#: ../src/font-view.c:283 ../src/font-view.c:512
+#: ../src/font-view.c:283 ../src/font-view.c:515
 msgid "Install"
 msgstr "Telepítés"
 
@@ -95,28 +95,28 @@ msgstr "Telepítés"
 msgid "This font could not be displayed."
 msgstr "Ez a betűkészlet nem jeleníthető meg."
 
-#: ../src/font-view.c:505
+#: ../src/font-view.c:508
 msgid "Info"
 msgstr "Információk"
 
-#: ../src/font-view.c:518
+#: ../src/font-view.c:521
 msgid "Back"
 msgstr "Vissza"
 
-#: ../src/font-view.c:615
+#: ../src/font-view.c:618
 msgid "All Fonts"
 msgstr "Minden betűkészlet"
 
-#: ../src/font-view.c:732 ../src/font-view.c:771
+#: ../src/font-view.c:735 ../src/font-view.c:774
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Betűkészlet-megjelenítő"
 
-#: ../src/font-view.c:733 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Telepített betűkészletek megjelenítése"
 
-#: ../src/font-view.c:735
+#: ../src/font-view.c:738
 msgid "translator-credits"
 msgstr ""
 "Bán Szabolcs <shooby at gnome dot hu>\n"
@@ -127,6 +127,10 @@ msgstr ""
 "Őry Máté <orymate at gmail d0t com>\n"
 "Sári Gábor <saga at gnome dot hu>\n"
 "Tímár András <timar at gnome dot hu>"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "betűk;betűkészlet;"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "Betűméret (alapértelmezett: 64)"
