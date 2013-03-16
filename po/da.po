@@ -22,8 +22,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-16 13:25+0200\n"
-"PO-Revision-Date: 2012-09-16 01:16+0200\n"
+"POT-Creation-Date: 2013-03-16 17:20+0100\n"
+"PO-Revision-Date: 2013-03-16 17:16+0100\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -32,23 +32,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Tekst for miniature (som standard: Aa)"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "TEKST"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "Miniaturestørrelse (standardværdi: 128)"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "STØRRELSE"
 
-#: ../src/font-thumbnailer.c:194
+#: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "SKRIFTTYPEFIL UDDATAFIL"
 
@@ -92,32 +92,36 @@ msgstr "Installation mislykkedes"
 msgid "Installed"
 msgstr "Installeret"
 
-#: ../src/font-view.c:283 ../src/font-view.c:468
+#: ../src/font-view.c:283 ../src/font-view.c:517
 msgid "Install"
 msgstr "Installér"
 
-#: ../src/font-view.c:461
+#: ../src/font-view.c:416
+msgid "This font could not be displayed."
+msgstr "Denne skrifttype kunne ikke vises."
+
+#: ../src/font-view.c:509
 msgid "Info"
 msgstr "Info"
 
-#: ../src/font-view.c:474
+#: ../src/font-view.c:524
 msgid "Back"
 msgstr "Tilbage"
 
-#: ../src/font-view.c:565
+#: ../src/font-view.c:611
 msgid "All Fonts"
 msgstr "Alle skrifttyper"
 
-#: ../src/font-view.c:660 ../src/font-view.c:703
+#: ../src/font-view.c:729 ../src/font-view.c:768
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Skrifttypefremviser"
 
-#: ../src/font-view.c:661 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:730 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Vis skrifttyper på dit system"
 
-#: ../src/font-view.c:663
+#: ../src/font-view.c:732
 msgid "translator-credits"
 msgstr ""
 "Kenneth Christiansen\n"
@@ -132,6 +136,10 @@ msgstr ""
 "\n"
 "Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
 "Mere info: http://www.dansk-gruppen.dk"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "skrifttyper;skrifttypefamilie;skrifttypefremtoning;"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "Skriftstørrelse (som standard: 64)"
