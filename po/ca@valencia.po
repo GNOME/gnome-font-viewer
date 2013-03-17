@@ -5,14 +5,14 @@
 # Jordi Mallach <jordi@sindominio.net>, 2002, 2003, 2004, 2005.
 # Josep Puigdemont <josep.puigdemont@gmail.com>, 2005, 2006, 2007.
 # Gil Forcada <gilforcada@guifi.net>, 2006, 2008.
-# Joan Duran <jodufi@gmail.com>, 2008-2012.
+# Joan Duran <jodufi@gmail.com>, 2008-2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-22 18:26+0200\n"
-"PO-Revision-Date: 2012-09-13 23:02+0200\n"
+"POT-Creation-Date: 2013-03-17 19:54+0100\n"
+"PO-Revision-Date: 2013-03-05 08:06+0200\n"
 "Last-Translator: Joan Duran <jodufi@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca-XV\n"
@@ -21,23 +21,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Text a miniaturitzar (predeterminat: Aa)"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "TEXT"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "Mida de la miniatura (per defecte: 128)"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "MIDA"
 
-#: ../src/font-thumbnailer.c:194
+#: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FITXER-DE-TIPUS-DE-LLETRA FITXER-DE-SORTIDA"
 
@@ -81,34 +81,42 @@ msgstr "Ha fallat la instal·lació"
 msgid "Installed"
 msgstr "S'ha instal·lat"
 
-#: ../src/font-view.c:283 ../src/font-view.c:468
+#: ../src/font-view.c:283 ../src/font-view.c:517
 msgid "Install"
 msgstr "Instal·la"
 
-#: ../src/font-view.c:461
+#: ../src/font-view.c:416
+msgid "This font could not be displayed."
+msgstr "No es pot visualitzar este tipus de lletra."
+
+#: ../src/font-view.c:509
 msgid "Info"
 msgstr "Informació"
 
-#: ../src/font-view.c:474
+#: ../src/font-view.c:524
 msgid "Back"
 msgstr "Arrere"
 
-#: ../src/font-view.c:565
+#: ../src/font-view.c:611
 msgid "All Fonts"
 msgstr "Tots els tipus de lletra"
 
-#: ../src/font-view.c:660 ../src/font-view.c:703
+#: ../src/font-view.c:729 ../src/font-view.c:768
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Visualitzador de tipus de lletra"
 
-#: ../src/font-view.c:661 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:730 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Visualitza tots els tipus de lletra del sistema"
 
-#: ../src/font-view.c:663
+#: ../src/font-view.c:732
 msgid "translator-credits"
 msgstr "Joan Duran <jodufi@gmail.com>"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "tipus de lletra;tipografia;"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "Mida de la lletra (predeterminat: 64)"
