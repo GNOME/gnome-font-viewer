@@ -2,14 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Shankar Prasad <svenkate@redhat.com>, 2008, 2009, 2012.
+# Shankar Prasad <svenkate@redhat.com>, 2008, 2009, 2012, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master.kn\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-11-26 18:57+0000\n"
-"PO-Revision-Date: 2012-11-27 12:21+0530\n"
+"POT-Creation-Date: 2013-01-03 12:34+0000\n"
+"PO-Revision-Date: 2013-03-18 14:04+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <en@li.org>\n"
 "Language: kn\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
-msgstr "ಪಠ್ಯದಿಂದ ತಂಬ್‍ನೈಲ್‌ಗೆ (ಪೂರ್ವನಿಯೋಜಿತ: Aa )"
+msgstr "ಪಠ್ಯದಿಂದ ಕಿರುಚಿತ್ರಕ್ಕೆ (ಪೂರ್ವನಿಯೋಜಿತ: Aa )"
 
 #: ../src/font-thumbnailer.c:190
 msgid "TEXT"
@@ -29,7 +29,7 @@ msgstr "TEXT"
 
 #: ../src/font-thumbnailer.c:192
 msgid "Thumbnail size (default: 128)"
-msgstr "ತಂಬ್‍ನೈಲ್‍ನ ಗಾತ್ರ (ಪೂರ್ವನಿಯೋಜಿತ: 128)"
+msgstr "ಕಿರುಚಿತ್ರದ ಗಾತ್ರ (ಪೂರ್ವನಿಯೋಜಿತ: 128)"
 
 #: ../src/font-thumbnailer.c:192
 msgid "SIZE"
@@ -79,34 +79,42 @@ msgstr "ಅನುಸ್ಥಾಪಿಸುವಲ್ಲಿ ವಿಫಲಗೊಂ�
 msgid "Installed"
 msgstr "ಅನುಸ್ಥಾಪಿಸಲಾದ"
 
-#: ../src/font-view.c:283 ../src/font-view.c:468
+#: ../src/font-view.c:283 ../src/font-view.c:515
 msgid "Install"
 msgstr "ಅನುಸ್ಥಾಪಿಸು"
 
-#: ../src/font-view.c:461
+#: ../src/font-view.c:416
+msgid "This font could not be displayed."
+msgstr "ಈ ಅಕ್ಷರಶೈಲಿಯನ್ನು ತೋರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
+
+#: ../src/font-view.c:508
 msgid "Info"
 msgstr "ಮಾಹಿತಿ"
 
-#: ../src/font-view.c:474
+#: ../src/font-view.c:521
 msgid "Back"
 msgstr "ಹಿಂದಕ್ಕೆ"
 
-#: ../src/font-view.c:565
+#: ../src/font-view.c:618
 msgid "All Fonts"
 msgstr "ಎಲ್ಲಾ ಅಕ್ಷರಶೈಲಿಗಳು"
 
-#: ../src/font-view.c:660 ../src/font-view.c:703
+#: ../src/font-view.c:735 ../src/font-view.c:774
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "ಅಕ್ಷರಶೈಲಿ ವೀಕ್ಷಕ"
 
-#: ../src/font-view.c:661 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "ನಿಮ್ಮ ವ್ಯವಸ್ಥೆಯಲ್ಲಿನ ಅಕ್ಷರಶೈಲಿಗಳನ್ನು ನೋಡಿ"
 
-#: ../src/font-view.c:663
+#: ../src/font-view.c:738
 msgid "translator-credits"
 msgstr "ಶಂಕರ್ ಪ್ರಸಾದ್ ಎಂ. ವಿ. <svenkate@redhat.com>"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "ಅಕ್ಷರಶೈಲಿಗಳು;ಅಕ್ಷರಶೈಲಿಗುಂಪು"
 
 #, fuzzy
 #~ msgid "Size:"
