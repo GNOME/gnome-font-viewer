@@ -5,21 +5,21 @@
 # Ravishankar Shrivastava <raviratlami@yahoo.com>, 2004.
 # Rajesh Ranjan <rranjan@redhat.com>, 2005, 2006, 2009.
 # Rajesh Ranjan <rajesh672@gmail.com>, 2009.
-# rajesh <rajeshkajha@yahoo.com>, 2012.
+# rajesh <rajeshkajha@yahoo.com>, 2012, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master.hi\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-01-03 12:34+0000\n"
-"PO-Revision-Date: 2012-09-21 14:17+0530\n"
-"Last-Translator: rajesh <rajeshkajha@yahoo.com>\n"
-"Language-Team: Hindi <Indlinux>\n"
+"POT-Creation-Date: 2013-03-21 09:51+0000\n"
+"PO-Revision-Date: 2013-03-22 12:15+0530\n"
+"Last-Translator: raj <raj>\n"
+"Language-Team: Hindi <kde-i18n-doc@kde.org>\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "\n"
 "\n"
@@ -30,23 +30,23 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "पाठ से लघुचित्र (default: Aa)"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "TEXT"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "लघुचित्र आकार (default: Aa)"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "आकार"
 
-#: ../src/font-thumbnailer.c:194
+#: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
@@ -90,42 +90,42 @@ msgstr "संस्थापन विफल"
 msgid "Installed"
 msgstr "स्थापित "
 
-#: ../src/font-view.c:283 ../src/font-view.c:515
+#: ../src/font-view.c:283 ../src/font-view.c:517
 msgid "Install"
 msgstr "संस्थापित करें"
 
 #: ../src/font-view.c:416
 msgid "This font could not be displayed."
-msgstr ""
+msgstr "इस फ़ॉन्ट को प्रदर्शित नहीं किया जा सका."
 
-#: ../src/font-view.c:508
+#: ../src/font-view.c:509
 msgid "Info"
 msgstr "सूचना"
 
-#: ../src/font-view.c:521
+#: ../src/font-view.c:524
 msgid "Back"
 msgstr "पीछे"
 
-#: ../src/font-view.c:618
+#: ../src/font-view.c:611
 msgid "All Fonts"
 msgstr "सभी फ़ॉन्ट"
 
-#: ../src/font-view.c:735 ../src/font-view.c:774
+#: ../src/font-view.c:729 ../src/font-view.c:768
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "फ़ॉन्ट प्रदर्शक"
 
-#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:730 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "अपने तंत्र पर फ़ॉन्ट देखें"
 
-#: ../src/font-view.c:738
+#: ../src/font-view.c:732
 msgid "translator-credits"
 msgstr "राजेश रंजन (rranjan@redhat.com, rajeshkajha@yahoo.com)"
 
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
-msgstr ""
+msgstr "fonts;fontface;"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "फाँट आकार (default: 64)"
