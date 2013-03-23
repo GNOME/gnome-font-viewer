@@ -1,6 +1,6 @@
-# Slovak translation for gnome-utils.
+# Slovak translation for gnome-font-viewer.
 # Copyright (C) 2000-2003, 2005, 2008-2012 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gnome-utils package.
+# This file is distributed under the same license as the gnome-font-viewer package.
 # Stanislav Višňovský <visnovsky@nenya.ms.mff.cuni.cz>, 2000-2002.
 # Stanislav Višňovský <visnovsky@kde.org>, 2003.
 # Stanislav Višňovský <visnov@suse.cz>, 2003.
@@ -10,11 +10,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils\n"
+"Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-09-29 11:42+0000\n"
-"PO-Revision-Date: 2012-10-07 13:11+0100\n"
+"POT-Creation-Date: 2013-03-22 06:48+0000\n"
+"PO-Revision-Date: 2013-03-23 12:01+0100\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "Language: sk\n"
@@ -22,30 +22,31 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
+"X-Generator: Poedit 1.5.4\n"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
-msgstr "Text do náhľadu (predvolený: Aa)"
+msgstr "Text do miniatúry (predvolený: Aa)"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "TEXT"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "Veľkosť miniatúry (predvolená: 128)"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "VEĽKOSŤ"
 
-#: ../src/font-thumbnailer.c:194
+#: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "SÚBOR-S-PÍSMOM VÝSTUPNÝ-SÚBOR"
 
 #: ../src/font-view-app-menu.ui.h:1
 msgid "About Font Viewer"
-msgstr "O aplikácii Prehliadač písiem"
+msgstr "O programe Prehliadač písiem"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -69,7 +70,7 @@ msgstr "Verzia"
 
 #: ../src/font-view.c:241 ../src/font-view.c:261
 msgid "Copyright"
-msgstr "Autorské práva"
+msgstr "Autorské právo"
 
 #: ../src/font-view.c:246
 msgid "Description"
@@ -83,32 +84,39 @@ msgstr "Inštalácia zlyhala"
 msgid "Installed"
 msgstr "Nainštalované"
 
-#: ../src/font-view.c:283 ../src/font-view.c:468
+#: ../src/font-view.c:283 ../src/font-view.c:517
 msgid "Install"
 msgstr "Nainštalovať"
 
-#: ../src/font-view.c:461
+#: ../src/font-view.c:416
+msgid "This font could not be displayed."
+msgstr "Toto písmo sa nepodarilo zobraziť."
+
+#: ../src/font-view.c:509
 msgid "Info"
 msgstr "Informácie"
 
-#: ../src/font-view.c:474
+#: ../src/font-view.c:524
 msgid "Back"
 msgstr "Späť"
 
-#: ../src/font-view.c:565
+#: ../src/font-view.c:611
 msgid "All Fonts"
 msgstr "Všetky písma"
 
-#: ../src/font-view.c:660 ../src/font-view.c:703
+#: ../src/font-view.c:729 ../src/font-view.c:768
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Prehliadač písiem"
 
-# PK: zmenil som na male, dal som na prediskutovanie v ML
-#: ../src/font-view.c:661 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:730 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Zobrazenie písiem vo vašom systéme"
 
-#: ../src/font-view.c:663
+#: ../src/font-view.c:732
 msgid "translator-credits"
 msgstr "Dušan Kazik <prescott66@gmail.com>"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "písmo;písma;rodina;"
