@@ -1,6 +1,6 @@
 dnl -*- mode: m4 -*-
 AC_PREREQ(2.63)
-AC_INIT([gnome-font-viewer], [3.6.0],
+AC_INIT([gnome-font-viewer], [3.7.91],
 	[http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer],
 	[gnome-font-viewer],
 	[http://live.gnome.org/GnomeUtils])
@@ -36,7 +36,7 @@ AC_CACHE_SAVE
 
 GLIB_GSETTINGS
 
-GLIB_MIN_VERSION=2.31.0
+GLIB_MIN_VERSION=2.35.1
 GTK_MIN_VERSION=3.0.0
 
 PKG_CHECK_MODULES(FONTVIEW,
@@ -48,7 +48,8 @@ PKG_CHECK_MODULES(FONTVIEW,
                   gtk+-3.0 >= $GTK_MIN_VERSION)
 
 LIBGD_INIT([
-  main-toolbar
+  header-bar
+  stack
   static
 ])
 

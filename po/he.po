@@ -17,8 +17,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.HEAD.he\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-26 07:33+0300\n"
-"PO-Revision-Date: 2012-05-26 07:33+0200\n"
+"POT-Creation-Date: 2013-01-06 01:37+0200\n"
+"PO-Revision-Date: 2013-01-05 02:10+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
 "Language: he\n"
@@ -49,72 +49,6 @@ msgstr "SIZE"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
-#: ../src/font-view.c:177
-msgid "Name"
-msgstr "שם"
-
-#: ../src/font-view.c:180
-msgid "Style"
-msgstr "סגנון"
-
-#: ../src/font-view.c:190
-msgid "Type"
-msgstr "סוג"
-
-#: ../src/font-view.c:235
-#: ../src/font-view.c:254
-msgid "Version"
-msgstr "גרסה"
-
-#: ../src/font-view.c:240
-#: ../src/font-view.c:260
-msgid "Copyright"
-msgstr "זכויות יוצרים"
-
-#: ../src/font-view.c:245
-msgid "Description"
-msgstr "תיאור"
-
-#: ../src/font-view.c:273
-msgid "Install Failed"
-msgstr "ההתקנה נכשלה"
-
-#: ../src/font-view.c:279
-msgid "Installed"
-msgstr "מותקן"
-
-#: ../src/font-view.c:282
-#: ../src/font-view.c:427
-msgid "Install"
-msgstr "התקנה"
-
-#: ../src/font-view.c:420
-msgid "Info"
-msgstr "פרטים"
-
-#: ../src/font-view.c:433
-msgid "Back"
-msgstr "חזרה"
-
-#: ../src/font-view.c:524
-msgid "All Fonts"
-msgstr "כל הגופנים"
-
-#: ../src/font-view.c:605
-#: ../src/font-view.c:648
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "מציג הגופנים"
-
-#: ../src/font-view.c:606
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "View fonts on your system"
-msgstr "צפייה בגופנים במערכת שלך"
-
-#: ../src/font-view.c:608
-msgid "translator-credits"
-msgstr "ירון שהרבני <sh.yaron@gmail.com>"
-
 #: ../src/font-view-app-menu.ui.h:1
 msgid "About Font Viewer"
 msgstr "על אודות מציג הגופנים"
@@ -123,10 +57,77 @@ msgstr "על אודות מציג הגופנים"
 msgid "Quit"
 msgstr "יציאה"
 
-#. right section
-#: ../src/gd-main-toolbar.c:269
-msgid "Done"
-msgstr "בוצע"
+#: ../src/font-view.c:178
+msgid "Name"
+msgstr "שם"
+
+#: ../src/font-view.c:181
+msgid "Style"
+msgstr "סגנון"
+
+#: ../src/font-view.c:191
+msgid "Type"
+msgstr "סוג"
+
+#: ../src/font-view.c:236 ../src/font-view.c:255
+msgid "Version"
+msgstr "גרסה"
+
+#: ../src/font-view.c:241 ../src/font-view.c:261
+msgid "Copyright"
+msgstr "זכויות יוצרים"
+
+#: ../src/font-view.c:246
+msgid "Description"
+msgstr "תיאור"
+
+#: ../src/font-view.c:274
+msgid "Install Failed"
+msgstr "ההתקנה נכשלה"
+
+#: ../src/font-view.c:280
+msgid "Installed"
+msgstr "מותקן"
+
+#: ../src/font-view.c:283 ../src/font-view.c:515
+msgid "Install"
+msgstr "התקנה"
+
+#: ../src/font-view.c:416
+msgid "This font could not be displayed."
+msgstr "לא ניתן להציג גופן זה."
+
+#: ../src/font-view.c:508
+msgid "Info"
+msgstr "פרטים"
+
+#: ../src/font-view.c:521
+msgid "Back"
+msgstr "חזרה"
+
+#: ../src/font-view.c:618
+msgid "All Fonts"
+msgstr "כל הגופנים"
+
+#: ../src/font-view.c:735 ../src/font-view.c:774
+#: ../src/gnome-font-viewer.desktop.in.in.h:1
+msgid "Font Viewer"
+msgstr "מציג הגופנים"
+
+#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "צפייה בגופנים במערכת שלך"
+
+#: ../src/font-view.c:738
+msgid "translator-credits"
+msgstr "ירון שהרבני <sh.yaron@gmail.com>"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "גופנים;גופן;פונטים;גליפים;"
+
+#~ msgid "Done"
+#~ msgstr "בוצע"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "גודל הגופן (בררת מחדל: 64)"

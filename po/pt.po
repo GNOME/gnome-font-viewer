@@ -1,15 +1,15 @@
 # gnome-utils's Portuguese translation
-# Copyright © 1999, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012 gnome-utils
+# Copyright © 1999, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 gnome-utils
 # Distributed under the same licence as the gnome-utils package
 # Nuno Ferreira <nmrf@rnl.ist.utl.pt>, 1999.
-# Duarte Loreto <happyguy_pt@hotmail.com>, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012.
-#
+# Duarte Loreto <happyguy_pt@hotmail.com>, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013.
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: 3.6\n"
+"Project-Id-Version: 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-01 01:02+0100\n"
-"PO-Revision-Date: 2012-09-01 01:05+0000\n"
+"POT-Creation-Date: 2013-03-12 22:53+0000\n"
+"PO-Revision-Date: 2013-03-12 22:55+0000\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
 "Language: pt\n"
@@ -18,23 +18,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Texto para amostragem (omissão: Aa)"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "TEXTO"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "Texto para amostragem (omissão: 128)"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "TAMANHO"
 
-#: ../src/font-thumbnailer.c:194
+#: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FICHEIRO-FONTE FICHEIRO-SAÍDA"
 
@@ -78,34 +78,42 @@ msgstr "Falha ao Instalar"
 msgid "Installed"
 msgstr "Instalada"
 
-#: ../src/font-view.c:283 ../src/font-view.c:468
+#: ../src/font-view.c:283 ../src/font-view.c:517
 msgid "Install"
 msgstr "Instalar"
 
-#: ../src/font-view.c:461
+#: ../src/font-view.c:416
+msgid "This font could not be displayed."
+msgstr "Incapaz de apresentar esta fonte."
+
+#: ../src/font-view.c:509
 msgid "Info"
 msgstr "Informação"
 
-#: ../src/font-view.c:474
+#: ../src/font-view.c:524
 msgid "Back"
 msgstr "Retroceder"
 
-#: ../src/font-view.c:565
+#: ../src/font-view.c:611
 msgid "All Fonts"
 msgstr "Todas as Fontes"
 
-#: ../src/font-view.c:660 ../src/font-view.c:703
+#: ../src/font-view.c:729 ../src/font-view.c:768
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Visualizador de Fontes"
 
-#: ../src/font-view.c:661 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:730 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Visualize as fontes no seu sistema"
 
-#: ../src/font-view.c:663
+#: ../src/font-view.c:732
 msgid "translator-credits"
 msgstr "Duarte Loreto <happyguy_pt@hotmail.com>"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "fontes;tipos de fonte;"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "Tamanho da fonte (omissão: 64)"

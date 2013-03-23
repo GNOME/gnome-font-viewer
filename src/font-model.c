@@ -45,11 +45,13 @@
 struct _FontViewModelPrivate {
     /* list of fonts in fontconfig database */
     FcFontSet *font_list;
+    GMutex font_list_mutex;
 
     FT_Library library;
 
     GList *monitors;
     GdkPixbuf *fallback_icon;
+    GCancellable *cancellable;
 };
 
 enum {
@@ -341,6 +343,8 @@ font_infos_loaded (gpointer user_data)
         thumb_infos = g_list_prepend (thumb_infos, thumb_info);
     }
 
+    g_signal_emit (self, signals[CONFIG_CHANGED], 0);
+
     g_io_scheduler_push_job (ensure_thumbnails_job,
                              thumb_infos, NULL,
                              G_PRIORITY_DEFAULT, NULL);
@@ -355,15 +359,26 @@ load_font_infos (GIOSchedulerJob *job,
 {
     FontViewModel *self = user_data;
     LoadFontInfosData *data;
-    gint i;
+    gint i, n_fonts;
     GList *font_infos = NULL;
 
-    for (i = 0; i < self->priv->font_list->nfont; i++) {
+    if (g_cancellable_is_cancelled (cancellable))
+        return FALSE;
+
+    n_fonts = self->priv->font_list->nfont;
+
+    for (i = 0; i < n_fonts; i++) {
         FontInfoData *font_info;
         FcChar8 *file;
         gchar *font_name;
 
-	FcPatternGetString (self->priv->font_list->fonts[i], FC_FILE, 0, &file);
+        if (g_cancellable_is_cancelled (cancellable))
+            break;
+
+        g_mutex_lock (&self->priv->font_list_mutex);
+        FcPatternGetString (self->priv->font_list->fonts[i], FC_FILE, 0, &file);
+        g_mutex_unlock (&self->priv->font_list_mutex);
+
         font_name = font_utils_get_font_name_for_file (self->priv->library, (const gchar *) file);
 
         if (!font_name)
@@ -380,8 +395,11 @@ load_font_infos (GIOSchedulerJob *job,
     data->self = g_object_ref (self);
     data->font_infos = font_infos;
 
-    g_io_scheduler_job_send_to_mainloop_async (job, font_infos_loaded,
-                                               data, load_font_infos_data_free);
+    if (g_cancellable_is_cancelled (cancellable))
+        load_font_infos_data_free (data);
+    else
+        g_io_scheduler_job_send_to_mainloop_async (job, font_infos_loaded,
+                                                   data, load_font_infos_data_free);
 
     return FALSE;
 }
@@ -393,21 +411,30 @@ ensure_font_list (FontViewModel *self)
     FcPattern *pat;
     FcObjectSet *os;
 
-    if (self->priv->font_list) {
-            FcFontSetDestroy (self->priv->font_list);
-            self->priv->font_list = NULL;
-    }
-
-    gtk_list_store_clear (GTK_LIST_STORE (self));
-
     /* always reinitialize the font database */
     if (!FcInitReinitialize())
         return;
 
+    if (self->priv->cancellable) {
+        g_cancellable_cancel (self->priv->cancellable);
+        g_clear_object (&self->priv->cancellable);
+    }
+
+    gtk_list_store_clear (GTK_LIST_STORE (self));
+
     pat = FcPatternCreate ();
     os = FcObjectSetBuild (FC_FILE, FC_FAMILY, FC_WEIGHT, FC_SLANT, NULL);
 
+    g_mutex_lock (&self->priv->font_list_mutex);
+
+    if (self->priv->font_list) {
+        FcFontSetDestroy (self->priv->font_list);
+        self->priv->font_list = NULL;
+    }
+
     self->priv->font_list = FcFontList (NULL, pat, os);
+
+    g_mutex_unlock (&self->priv->font_list_mutex);
 
     FcPatternDestroy (pat);
     FcObjectSetDestroy (os);
@@ -415,8 +442,9 @@ ensure_font_list (FontViewModel *self)
     if (!self->priv->font_list)
         return;
 
+    self->priv->cancellable = g_cancellable_new ();
     g_io_scheduler_push_job (load_font_infos, self, NULL,
-                             G_PRIORITY_DEFAULT, NULL);
+                             G_PRIORITY_DEFAULT, self->priv->cancellable);
 }
 
 static gboolean
@@ -463,10 +491,8 @@ file_monitor_changed_cb (GFileMonitor *monitor,
 
     if (event == G_FILE_MONITOR_EVENT_CHANGES_DONE_HINT ||
         event == G_FILE_MONITOR_EVENT_DELETED ||
-        event == G_FILE_MONITOR_EVENT_CREATED) {
+        event == G_FILE_MONITOR_EVENT_CREATED)
         ensure_font_list (self);
-        g_signal_emit (self, signals[CONFIG_CHANGED], 0);
-    }
 }
 
 static void
@@ -532,6 +558,8 @@ font_view_model_init (FontViewModel *self)
     if (FT_Init_FreeType (&self->priv->library) != FT_Err_Ok)
         g_critical ("Can't initialize FreeType library");
 
+    g_mutex_init (&self->priv->font_list_mutex);
+
     gtk_list_store_set_column_types (GTK_LIST_STORE (self),
                                      NUM_COLUMNS, types);
 
@@ -554,9 +582,14 @@ font_view_model_finalize (GObject *obj)
 {
     FontViewModel *self = FONT_VIEW_MODEL (obj);
 
+    if (self->priv->cancellable) {
+        g_cancellable_cancel (self->priv->cancellable);
+        g_clear_object (&self->priv->cancellable);
+    }
+
     if (self->priv->font_list) {
-            FcFontSetDestroy (self->priv->font_list);
-            self->priv->font_list = NULL;
+        FcFontSetDestroy (self->priv->font_list);
+        self->priv->font_list = NULL;
     }
 
     if (self->priv->library != NULL) {
@@ -564,6 +597,7 @@ font_view_model_finalize (GObject *obj)
         self->priv->library = NULL;
     }
 
+    g_mutex_clear (&self->priv->font_list_mutex);
     g_clear_object (&self->priv->fallback_icon);
     g_list_free_full (self->priv->monitors, (GDestroyNotify) g_object_unref);
 

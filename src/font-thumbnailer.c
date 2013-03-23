@@ -176,7 +176,6 @@ main (int argc,
     gchar *contents = NULL;
     gboolean retval, default_thumbstr = TRUE;
     gint rv = 1;
-    GdkRGBA white = { 1.0, 1.0, 1.0, 1.0 };
     GdkRGBA black = { 0.0, 0.0, 0.0, 1.0 };
     cairo_surface_t *surface;
     cairo_t *cr;
@@ -200,8 +199,6 @@ main (int argc,
     textdomain (GETTEXT_PACKAGE);
 
     setlocale (LC_ALL, "");
-
-    g_type_init ();
 
     context = g_option_context_new (NULL);
     g_option_context_add_main_entries (context, options, GETTEXT_PACKAGE);
@@ -263,9 +260,6 @@ main (int argc,
     surface = cairo_image_surface_create (CAIRO_FORMAT_ARGB32,
                                           thumb_size, thumb_size);
     cr = cairo_create (surface);
-
-    gdk_cairo_set_source_rgba (cr, &white);
-    cairo_paint (cr);
 
     font = cairo_ft_font_face_create_for_ft_face (face, 0);
     cairo_set_font_face (cr, font);

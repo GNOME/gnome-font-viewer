@@ -2,95 +2,130 @@
 # Copyright (C) 2005, 2006, 2007, 2008, 2009, 2010, 2011 Free Software Foundation, Inc.
 # This file is distributed under the same license as the baobab package.
 # Mikel Olasagasti <hey_neken@mundurat.net>, 2005.
-# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2005, 2006, 2007, 2008, 2009, 2010, 2011.
-# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2007.
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2005, 2006, 2007, 2008, 2009, 2010, 2011.
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2012, 2013.
 # Julen Ruiz Aizpuru <julenx@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-06 14:35-0400\n"
-"PO-Revision-Date: 2011-09-23 11:26+0200\n"
-"Last-Translator: Julen Ruiz Aizpuru <julenx@gmail.com>\n"
-"Language-Team: librezale@librezale.org\n"
+"POT-Creation-Date: 2013-02-02 12:24+0100\n"
+"PO-Revision-Date: 2013-02-02 12:25+0100\n"
+"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
+"Language-Team: Basque <itzulpena@euskalgnu.org>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.1-beta1\n"
+"X-Generator: Lokalize 1.4\n"
 "X-Project-Style: gnome\n"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Testua txikiagotzeko (lehenetsia: Aa)"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "TESTUA"
 
-#: ../src/font-thumbnailer.c:269
-msgid "Font size (default: 64)"
-msgstr "Letra-tamaina (lehenetsita: 64)"
+#: ../src/font-thumbnailer.c:191
+msgid "Thumbnail size (default: 128)"
+msgstr "Koadro txikien tamaina (lehenetsia: 128)"
 
-#: ../src/font-thumbnailer.c:269
+#: ../src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "TAMAINA"
 
-#: ../src/font-thumbnailer.c:271
+#: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "LETRA-TIPOEN_FITXATEGIA IRTEERAKO-FITXATEGIA"
 
-#: ../src/font-view.c:289
-msgid "Name:"
-msgstr "Izena:"
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "Letra-tipoen ikustaileari buruz"
 
-#: ../src/font-view.c:292
-msgid "Style:"
-msgstr "Estiloa:"
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "Irten"
 
-#: ../src/font-view.c:304
-msgid "Type:"
-msgstr "Mota:"
+#: ../src/font-view.c:178
+msgid "Name"
+msgstr "Izena"
 
-#: ../src/font-view.c:308
-msgid "Size:"
-msgstr "Tamaina:"
+#: ../src/font-view.c:181
+msgid "Style"
+msgstr "Estiloa"
 
-#: ../src/font-view.c:352 ../src/font-view.c:365
-msgid "Version:"
-msgstr "Bertsioa:"
+#: ../src/font-view.c:191
+msgid "Type"
+msgstr "Mota"
 
-#: ../src/font-view.c:356 ../src/font-view.c:367
-msgid "Copyright:"
-msgstr "Copyright-a:"
+#: ../src/font-view.c:236 ../src/font-view.c:255
+msgid "Version"
+msgstr "Bertsioa"
 
-#
-#: ../src/font-view.c:360
-msgid "Description:"
-msgstr "Azalpena:"
+#: ../src/font-view.c:241 ../src/font-view.c:261
+msgid "Copyright"
+msgstr "Copyright-a"
 
-#: ../src/font-view.c:428
-msgid "Installed"
-msgstr "Instalatuta"
+#: ../src/font-view.c:246
+msgid "Description"
+msgstr "Azalpena"
 
-#: ../src/font-view.c:430
+#: ../src/font-view.c:274
 msgid "Install Failed"
 msgstr "Instalazioak huts egin du"
 
-#: ../src/font-view.c:502
-#, c-format
-msgid "Usage: %s fontfile\n"
-msgstr "Erabilera: %s letra-tipoen fitxategia\n"
+#: ../src/font-view.c:280
+msgid "Installed"
+msgstr "Instalatuta"
 
-#: ../src/font-view.c:572
-msgid "I_nstall Font"
-msgstr "_Instalatu letra-tipoa"
+#: ../src/font-view.c:283 ../src/font-view.c:515
+msgid "Install"
+msgstr "Instalatu"
 
+#: ../src/font-view.c:416
+msgid "This font could not be displayed."
+msgstr "Letra-tipo hau ezin izan da bistaratu."
+
+#: ../src/font-view.c:508
+msgid "Info"
+msgstr "Informazioa"
+
+#: ../src/font-view.c:521
+msgid "Back"
+msgstr "Atzera"
+
+#: ../src/font-view.c:618
+msgid "All Fonts"
+msgstr "Letra-tipo guztiak"
+
+#: ../src/font-view.c:735 ../src/font-view.c:774
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Letra-tipoen ikustailea"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "Preview fonts"
-msgstr "Aurreikusi letra-tipoak"
+#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "Ikusi sistemako letra-tipoak"
+
+#: ../src/font-view.c:738
+msgid "translator-credits"
+msgstr "Iñaki Larrañaga Murgoitio <dooteo@zundan.com>"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "tipografia;letra-tipoak;letra;tipoa;"
+
+#~ msgid "Font size (default: 64)"
+#~ msgstr "Letra-tamaina (lehenetsita: 64)"
+
+#~ msgid "Size:"
+#~ msgstr "Tamaina:"
+
+#~ msgid "Usage: %s fontfile\n"
+#~ msgstr "Erabilera: %s letra-tipoen fitxategia\n"
+
+#~ msgid "Preview fonts"
+#~ msgstr "Aurreikusi letra-tipoak"

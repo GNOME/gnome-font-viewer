@@ -10,20 +10,22 @@
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2004, 2006, 2007, 2008, 2009, 2010, 2011, 2012.
 # Mate ORY <orymate at gmail d0t com>, 2006.
 # Lukács Bence <lukacs.bence1 at gmail dot com>, 2012.
+# Balázs Úr <urbalazs at gmail dot com>, 2012, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-27 12:00+0200\n"
-"PO-Revision-Date: 2012-07-27 11:59+0200\n"
-"Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
-"Language-Team: Magyar <gnome-hu-list at gnome dot org>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-01-03 12:34+0000\n"
+"PO-Revision-Date: 2013-03-14 21:51+0100\n"
+"Last-Translator: Balázs Úr <urbalazs at gmail dot com>\n"
+"Language-Team: Hungarian <kde-i18n-doc@kde.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 1.2\n"
 
 #: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
@@ -45,64 +47,76 @@ msgstr "MÉRET"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "BETŰKÉSZLETFÁJL KIMENETIFÁJL"
 
-#: ../src/font-view.c:177
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "A Betűkészlet-megjelenítő névjegye"
+
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "Kilépés"
+
+#: ../src/font-view.c:178
 msgid "Name"
 msgstr "Név"
 
-#: ../src/font-view.c:180
+#: ../src/font-view.c:181
 msgid "Style"
 msgstr "Stílus"
 
-#: ../src/font-view.c:190
+#: ../src/font-view.c:191
 msgid "Type"
 msgstr "Típus"
 
-#: ../src/font-view.c:235 ../src/font-view.c:254
+#: ../src/font-view.c:236 ../src/font-view.c:255
 msgid "Version"
 msgstr "Verzió"
 
-#: ../src/font-view.c:240 ../src/font-view.c:260
+#: ../src/font-view.c:241 ../src/font-view.c:261
 msgid "Copyright"
 msgstr "Szerzői jog"
 
-#: ../src/font-view.c:245
+#: ../src/font-view.c:246
 msgid "Description"
 msgstr "Leírás"
 
-#: ../src/font-view.c:273
+#: ../src/font-view.c:274
 msgid "Install Failed"
 msgstr "A telepítés meghiúsult"
 
-#: ../src/font-view.c:279
+#: ../src/font-view.c:280
 msgid "Installed"
 msgstr "Telepítve"
 
-#: ../src/font-view.c:282 ../src/font-view.c:467
+#: ../src/font-view.c:283 ../src/font-view.c:515
 msgid "Install"
 msgstr "Telepítés"
 
-#: ../src/font-view.c:460
+#: ../src/font-view.c:416
+msgid "This font could not be displayed."
+msgstr "Ez a betűkészlet nem jeleníthető meg."
+
+#: ../src/font-view.c:508
 msgid "Info"
 msgstr "Információk"
 
-#: ../src/font-view.c:473
+#: ../src/font-view.c:521
 msgid "Back"
 msgstr "Vissza"
 
-#: ../src/font-view.c:564
+#: ../src/font-view.c:618
 msgid "All Fonts"
 msgstr "Minden betűkészlet"
 
-#: ../src/font-view.c:659 ../src/font-view.c:702
+#: ../src/font-view.c:735 ../src/font-view.c:774
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Betűkészlet-megjelenítő"
 
-#: ../src/font-view.c:660 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Telepített betűkészletek megjelenítése"
 
-#: ../src/font-view.c:662
+#: ../src/font-view.c:738
 msgid "translator-credits"
 msgstr ""
 "Bán Szabolcs <shooby at gnome dot hu>\n"
@@ -114,11 +128,9 @@ msgstr ""
 "Sári Gábor <saga at gnome dot hu>\n"
 "Tímár András <timar at gnome dot hu>"
 
-#~ msgid "About Font Viewer"
-#~ msgstr "A Betűkészlet-megjelenítő névjegye"
-
-#~ msgid "Quit"
-#~ msgstr "Kilépés"
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "betűk;betűkészlet;"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "Betűméret (alapértelmezett: 64)"

@@ -13,9 +13,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-07-16 20:19+0000\n"
-"PO-Revision-Date: 2012-08-05 12:24+0330\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-01-03 12:34+0000\n"
+"PO-Revision-Date: 2013-03-21 08:29+0330\n"
 "Last-Translator: Arash Mousavi <mousavi.arash@gmail.com>\n"
 "Language-Team: Persian\n"
 "Language: fa\n"
@@ -23,9 +24,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Poedit-Language: Persian\n"
-"X-Poedit-Country: IRAN, ISLAMIC REPUBLIC OF\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
@@ -47,74 +47,6 @@ msgstr "SIZE"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
-#: ../src/font-view.c:177
-msgid "Name"
-msgstr "نام"
-
-#: ../src/font-view.c:180
-msgid "Style"
-msgstr "سبک"
-
-#: ../src/font-view.c:190
-msgid "Type"
-msgstr "نوع"
-
-#: ../src/font-view.c:235
-#: ../src/font-view.c:254
-msgid "Version"
-msgstr "نسخه"
-
-#: ../src/font-view.c:240
-#: ../src/font-view.c:260
-msgid "Copyright"
-msgstr "حق رونوشت"
-
-#: ../src/font-view.c:245
-msgid "Description"
-msgstr "شرح"
-
-#: ../src/font-view.c:273
-msgid "Install Failed"
-msgstr "نصب شکست خورد"
-
-#: ../src/font-view.c:279
-msgid "Installed"
-msgstr "نصب شد"
-
-#: ../src/font-view.c:282
-#: ../src/font-view.c:467
-msgid "Install"
-msgstr "نصب"
-
-#: ../src/font-view.c:460
-msgid "Info"
-msgstr "اطلاعات"
-
-#: ../src/font-view.c:473
-msgid "Back"
-msgstr "بازگشت"
-
-#: ../src/font-view.c:564
-msgid "All Fonts"
-msgstr "تمام قلم‌ها"
-
-#: ../src/font-view.c:659
-#: ../src/font-view.c:702
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "نمایشگر قلم"
-
-#: ../src/font-view.c:660
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "View fonts on your system"
-msgstr "قلم‌های روی سیستم را ببینید"
-
-#: ../src/font-view.c:662
-msgid "translator-credits"
-msgstr ""
-"دانیال بهزادی <dani.behzi@gmail.com>\n"
-"آرش موسوی <mousavi.arash@gmail.com>"
-
 #: ../src/font-view-app-menu.ui.h:1
 msgid "About Font Viewer"
 msgstr "درباره‌ی نمایشگر قلم"
@@ -122,6 +54,77 @@ msgstr "درباره‌ی نمایشگر قلم"
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
 msgstr "خروج"
+
+#: ../src/font-view.c:178
+msgid "Name"
+msgstr "نام"
+
+#: ../src/font-view.c:181
+msgid "Style"
+msgstr "سبک"
+
+#: ../src/font-view.c:191
+msgid "Type"
+msgstr "نوع"
+
+#: ../src/font-view.c:236 ../src/font-view.c:255
+msgid "Version"
+msgstr "نسخه"
+
+#: ../src/font-view.c:241 ../src/font-view.c:261
+msgid "Copyright"
+msgstr "حق رونوشت"
+
+#: ../src/font-view.c:246
+msgid "Description"
+msgstr "شرح"
+
+#: ../src/font-view.c:274
+msgid "Install Failed"
+msgstr "نصب شکست خورد"
+
+#: ../src/font-view.c:280
+msgid "Installed"
+msgstr "نصب شد"
+
+#: ../src/font-view.c:283 ../src/font-view.c:515
+msgid "Install"
+msgstr "نصب"
+
+#: ../src/font-view.c:416
+msgid "This font could not be displayed."
+msgstr "این قلم را نمی‌توان نمایش داد."
+
+#: ../src/font-view.c:508
+msgid "Info"
+msgstr "اطلاعات"
+
+#: ../src/font-view.c:521
+msgid "Back"
+msgstr "بازگشت"
+
+#: ../src/font-view.c:618
+msgid "All Fonts"
+msgstr "تمام قلم‌ها"
+
+#: ../src/font-view.c:735 ../src/font-view.c:774
+#: ../src/gnome-font-viewer.desktop.in.in.h:1
+msgid "Font Viewer"
+msgstr "نمایشگر قلم"
+
+#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "قلم‌های روی سیستم را ببینید"
+
+#: ../src/font-view.c:738
+msgid "translator-credits"
+msgstr ""
+"دانیال بهزادی <dani.behzi@gmail.com>\n"
+"آرش موسوی <mousavi.arash@gmail.com>"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "fonts;fontface;قلم‌ها;"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "اندازه قلم (پیش‌فرض: ۶۴)"

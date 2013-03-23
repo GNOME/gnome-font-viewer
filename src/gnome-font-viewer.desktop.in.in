@@ -1,6 +1,7 @@
 [Desktop Entry]
 _Name=Font Viewer
 _Comment=View fonts on your system
+_Keywords=fonts;fontface;
 Icon=preferences-desktop-font
 Exec=gnome-font-viewer %u
 Terminal=false

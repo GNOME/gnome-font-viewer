@@ -1,4 +1,4 @@
-INCLUDES =					\
+AM_CPPFLAGS =					\
 	$(FONTVIEW_CFLAGS)			\
 	-DDIRECTORY_DIR=\"$(directorydir)\" 	\
 	-DGNOMELOCALEDIR=\"$(datadir)/locale\"  \
@@ -8,13 +8,10 @@ bin_PROGRAMS = \
 	gnome-thumbnail-font \
 	gnome-font-viewer
 
-UI_FILES = \
-	font-view-app-menu.ui
-
-font-view-resources.c: gnome-font-viewer.gresource.xml $(UI_FILES)
+resource_files = $(shell glib-compile-resources --sourcedir=$(srcdir) --generate-dependencies $(srcdir)/gnome-font-viewer.gresource.xml)
+font-view-resources.c: gnome-font-viewer.gresource.xml $(resource_files)
 	$(AM_V_GEN)glib-compile-resources --target=$@ --sourcedir=$(srcdir) --generate-source --c-name font_view $(srcdir)/gnome-font-viewer.gresource.xml
-
-font-view-resources.h: gnome-font-viewer.gresource.xml $(UI_FILES)
+font-view-resources.h: gnome-font-viewer.gresource.xml $(resource_files)
 	$(AM_V_GEN)glib-compile-resources --target=$@ --sourcedir=$(srcdir) --generate-header --c-name font_view $(srcdir)/gnome-font-viewer.gresource.xml
 
 BUILT_SOURCES = \
@@ -74,7 +71,7 @@ CLEANFILES = \
 	$(directory_DATA)
 
 EXTRA_DIST = \
-	$(UI_FILES) \
+	$(resource_files) \
 	gnome-font-viewer.thumbnailer \
 	gnome-font-viewer.desktop.in.in \
 	gnome-font-viewer.gresource.xml

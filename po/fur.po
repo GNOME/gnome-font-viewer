@@ -1,121 +1,116 @@
-# Serbian translation of gnome-font-viewer
-# Courtesy of Prevod.org team (http://prevod.org/) -- 2012—2013.
+# Friulian translation for gnome-font-viewer.
+# Copyright (C) 2012 gnome-font-viewer's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-font-viewer package.
-# Miloš Popović <gpopac@gmail.com>, 2011.
-# Miroslav Nikolić <miroslavnikolic@rocketmail.com>, 2011, 2012, 2013.
+# TmTFx <f.t.public@gmail.com>, 2012.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils-2.0\n"
+"Project-Id-Version: gnome-font-viewer gnome-3-6\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-01-03 12:34+0000\n"
-"PO-Revision-Date: 2013-01-18 23:38+0200\n"
-"Last-Translator: Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
-"Language-Team: Serbian <gnom@prevod.org>\n"
-"Language: sr\n"
+"POT-Creation-Date: 2013-01-18 22:39+0000\n"
+"PO-Revision-Date: 2013-01-19 12:21+0100\n"
+"Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
+"Language-Team: Friulian <fur@li.org>\n"
+"Language: fur\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
-"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Project-Style: gnome\n"
+"X-Generator: Poedit 1.5.4\n"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
-msgstr "Tekst u minijaturu (osnovno: Aa)"
+msgstr "Test da miniaturizzâ (default: Aa)"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "TEXT"
-msgstr "TEKST"
+msgstr "TEST"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
-msgstr "Veličina minijature (osnovno: 128)"
+msgstr "Dimension de miniature (default: 128)"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "SIZE"
-msgstr "VELIČINA"
+msgstr "DIMENSION"
 
-#: ../src/font-thumbnailer.c:194
+#: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
-msgstr "DATOTEKA-PISMA IZLAZNA-DATOTEKA"
+msgstr ""
 
 #: ../src/font-view-app-menu.ui.h:1
 msgid "About Font Viewer"
-msgstr "O pregledaču pisama"
+msgstr "Informazions su Visôr di Font"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
-msgstr "Izađi"
+msgstr "Jes"
 
 #: ../src/font-view.c:178
 msgid "Name"
-msgstr "Naziv"
+msgstr "Non"
 
 #: ../src/font-view.c:181
 msgid "Style"
-msgstr "Stil"
+msgstr "Stîl"
 
 #: ../src/font-view.c:191
 msgid "Type"
-msgstr "Vrsta"
+msgstr "Gjenar"
 
 #: ../src/font-view.c:236 ../src/font-view.c:255
 msgid "Version"
-msgstr "Izdanje"
+msgstr "Version"
 
 #: ../src/font-view.c:241 ../src/font-view.c:261
 msgid "Copyright"
-msgstr "Autorska prava"
+msgstr ""
 
 #: ../src/font-view.c:246
 msgid "Description"
-msgstr "Opis"
+msgstr "Descrizion"
 
 #: ../src/font-view.c:274
 msgid "Install Failed"
-msgstr "Instalacija nije uspela"
+msgstr "Installazion Falide"
 
 #: ../src/font-view.c:280
 msgid "Installed"
-msgstr "Instalirano"
+msgstr "Installât"
 
 #: ../src/font-view.c:283 ../src/font-view.c:515
 msgid "Install"
-msgstr "Instaliraj"
+msgstr "Installe"
 
 #: ../src/font-view.c:416
 msgid "This font could not be displayed."
-msgstr "Ovaj slovni lik ne može biti prikazan."
+msgstr "Chest font a nol puès sedi mostrât."
 
 #: ../src/font-view.c:508
 msgid "Info"
-msgstr "Podaci"
+msgstr "Informazions"
 
 #: ../src/font-view.c:521
 msgid "Back"
-msgstr "Nazad"
+msgstr "Indaûr"
 
 #: ../src/font-view.c:618
 msgid "All Fonts"
-msgstr "Sva pisma"
+msgstr "Ducj i Font"
 
 #: ../src/font-view.c:735 ../src/font-view.c:774
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
-msgstr "Pregledač pisama"
+msgstr "Visôr di Font"
 
 #: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
-msgstr "Pregledajte pisma na vašem sistemu"
+msgstr "Viôt i font tal to sisteme"
 
 #: ../src/font-view.c:738
 msgid "translator-credits"
-msgstr ""
-"  Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
-"\n"
-"http://prevod.org — prevod na srpski jezik"
+msgstr "Fabio Tomat <f.t.public@gmail.com>"
 
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
-msgstr "slova;slovni likovi;pisma;"
+msgstr ""
