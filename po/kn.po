@@ -114,7 +114,7 @@ msgstr "ಶಂಕರ್ ಪ್ರಸಾದ್ ಎಂ. ವಿ. <svenkate@redhat.c
 
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
-msgstr "ಅಕ್ಷರಶೈಲಿಗಳು;ಅಕ್ಷರಶೈಲಿಗುಂಪು"
+msgstr "ಅಕ್ಷರಶೈಲಿಗಳು;ಅಕ್ಷರಶೈಲಿಗುಂಪು;"
 
 #, fuzzy
 #~ msgid "Size:"
