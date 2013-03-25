@@ -1,24 +1,25 @@
 # Telugu translation of gnome-font-viewer.
-# Copyright (C) 2007,2012 Swecha Telugu Localisation Team <localization@swecha.net> 
+# Copyright (C) 2007,2012 Swecha Telugu Localisation Team <localization@swecha.net>
 # This file is distributed under the same license as the gnome-font-viewer package.
 # Pramod <pramodfsf@gmail.com>, 2007.
-# Krishna Babu K <kkrothap@redhat.com>, 2007, 2009, 2010.
+# Krishna Babu K <kkrothap@redhat.com>, 2007, 2009, 2010, 2013.
 # Praveen Illa <mail2ipn@gmail.com>, 2011, 2012.
-# Sasi Bhushan Boddepalli <sasi@swecha.net>, 2012
+# Sasi Bhushan Boddepalli <sasi@swecha.net>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: te\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-06-01 19:04+0000\n"
-"PO-Revision-Date: 2012-04-30 22:27+0530\n"
-"Last-Translator: Sasi Bhushan Boddepalli <sasi@swecha.net>\n"
-"Language-Team: Telugu <indlinux-telugu@lists.sourceforge.net>\n"
+"POT-Creation-Date: 2013-01-03 12:34+0000\n"
+"PO-Revision-Date: 2013-03-25 14:37+0530\n"
+"Last-Translator: Krishnababu Krothapalli <kkrothap@redhat.com>\n"
+"Language-Team: Telugu <Fedora-trans-te@redhat.com>\n"
+"Language: te\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: te\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Lokalize 1.5\n"
 
 #: ../src/font-thumbnailer.c:190
 msgid "Text to thumbnail (default: Aa)"
@@ -40,75 +41,82 @@ msgstr "పరిమాణం"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ఖతి-ఫైల్ అవుట్‌పుట్-ఫైల్"
 
-#: ../src/font-view.c:177
-msgid "Name"
-msgstr "పేరు"
-
-#: ../src/font-view.c:180
-msgid "Style"
-msgstr "శైలి"
-
-#: ../src/font-view.c:190
-msgid "Type"
-msgstr "రకం"
-
-#: ../src/font-view.c:235 ../src/font-view.c:254
-msgid "Version"
-msgstr "రూపాంతరం"
-
-#: ../src/font-view.c:240 ../src/font-view.c:260
-msgid "Copyright"
-msgstr "నకలుహక్కు"
-
-#: ../src/font-view.c:245
-msgid "Description"
-msgstr "వివరణ"
-
-#: ../src/font-view.c:273
-msgid "Install Failed"
-msgstr "స్థాపన విఫలమైంది"
-
-#: ../src/font-view.c:279
-msgid "Installed"
-msgstr "స్థాపించబడింది"
-
-#: ../src/font-view.c:282 ../src/font-view.c:427
-msgid "Install"
-msgstr "స్థాపించు"
-
-#: ../src/font-view.c:420
-msgid "Info"
-msgstr "సమాచారం"
-
-#: ../src/font-view.c:433
-msgid "Back"
-msgstr "వెనుకకు"
-
-#: ../src/font-view.c:524
-msgid "All Fonts"
-msgstr "అన్ని ఖతులు"
-
-#: ../src/font-view.c:605 ../src/font-view.c:648
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "ఖతి వీక్షకం"
-
-#: ../src/font-view.c:606 ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "View fonts on your system"
-msgstr "మీ వ్యవస్థలో ఉన్న ఖతులను చూడండి"
-
-#: ../src/font-view.c:608
-msgid "translator-credits"
-msgstr "Praveen Illa <mail2ipn@gmail.com>, 2011-12."
-
 #: ../src/font-view-app-menu.ui.h:1
-#| msgid "Font Viewer"
 msgid "About Font Viewer"
 msgstr "ఖతి వీక్షణం గురించి"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
 msgstr "వదలిపెట్టు"
+
+#: ../src/font-view.c:178
+msgid "Name"
+msgstr "పేరు"
+
+#: ../src/font-view.c:181
+msgid "Style"
+msgstr "శైలి"
+
+#: ../src/font-view.c:191
+msgid "Type"
+msgstr "రకం"
+
+#: ../src/font-view.c:236 ../src/font-view.c:255
+msgid "Version"
+msgstr "రూపాంతరం"
+
+#: ../src/font-view.c:241 ../src/font-view.c:261
+msgid "Copyright"
+msgstr "నకలుహక్కు"
+
+#: ../src/font-view.c:246
+msgid "Description"
+msgstr "వివరణ"
+
+#: ../src/font-view.c:274
+msgid "Install Failed"
+msgstr "స్థాపన విఫలమైంది"
+
+#: ../src/font-view.c:280
+msgid "Installed"
+msgstr "స్థాపించబడింది"
+
+#: ../src/font-view.c:283 ../src/font-view.c:515
+msgid "Install"
+msgstr "స్థాపించు"
+
+#: ../src/font-view.c:416
+msgid "This font could not be displayed."
+msgstr "ఫాంటు ప్రదర్శించబడలేదు."
+
+#: ../src/font-view.c:508
+msgid "Info"
+msgstr "సమాచారం"
+
+#: ../src/font-view.c:521
+msgid "Back"
+msgstr "వెనుకకు"
+
+#: ../src/font-view.c:618
+msgid "All Fonts"
+msgstr "అన్ని ఖతులు"
+
+#: ../src/font-view.c:735 ../src/font-view.c:774
+#: ../src/gnome-font-viewer.desktop.in.in.h:1
+msgid "Font Viewer"
+msgstr "ఖతి వీక్షకం"
+
+#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "మీ వ్యవస్థలో ఉన్న ఖతులను చూడండి"
+
+#: ../src/font-view.c:738
+msgid "translator-credits"
+msgstr "Praveen Illa <mail2ipn@gmail.com>, 2011-12."
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "fonts;fontface;"
 
 #~ msgid "Done"
 #~ msgstr "అయినది"
