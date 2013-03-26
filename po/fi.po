@@ -17,8 +17,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-01-03 12:34+0000\n"
-"PO-Revision-Date: 2013-03-05 20:39+0200\n"
+"POT-Creation-Date: 2013-03-23 13:30+0000\n"
+"PO-Revision-Date: 2013-03-26 20:14+0200\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
 "Language: fi\n"
@@ -28,29 +28,29 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n == 1 ? 0 : 1;\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Teksti pikkukuvaan (oletus: Aa)"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "TEKSTI"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "Pikkukuvan koko (oletus: 128)"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "KOKO"
 
-#: ../src/font-thumbnailer.c:194
+#: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "KIRJASIN-TIEDOSTO TULOSTE-TIEDOSTO"
 
 #: ../src/font-view-app-menu.ui.h:1
 msgid "About Font Viewer"
-msgstr "Tietoja kirjasinkatselimesta"
+msgstr "Tietoja - Kirjasinkatselin"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -88,7 +88,7 @@ msgstr "Asennus epäonnistui"
 msgid "Installed"
 msgstr "Asennettu"
 
-#: ../src/font-view.c:283 ../src/font-view.c:515
+#: ../src/font-view.c:283 ../src/font-view.c:517
 msgid "Install"
 msgstr "Asenna"
 
@@ -96,28 +96,28 @@ msgstr "Asenna"
 msgid "This font could not be displayed."
 msgstr "Tämän fontin näyttäminen epäonnistui."
 
-#: ../src/font-view.c:508
+#: ../src/font-view.c:509
 msgid "Info"
 msgstr "Tiedot"
 
-#: ../src/font-view.c:521
+#: ../src/font-view.c:524
 msgid "Back"
 msgstr "Takaisin"
 
-#: ../src/font-view.c:618
+#: ../src/font-view.c:611
 msgid "All Fonts"
 msgstr "Kaikki kirjasimet"
 
-#: ../src/font-view.c:735 ../src/font-view.c:774
+#: ../src/font-view.c:729 ../src/font-view.c:768
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Kirjasinkatselin"
 
-#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:730 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Katsele koneellasi olevia kirjasimia"
 
-#: ../src/font-view.c:738
+#: ../src/font-view.c:732
 msgid "translator-credits"
 msgstr "Jiri Grönroos"
 
