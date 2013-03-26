@@ -6,13 +6,14 @@
 # int_ua <xintx.ua@gmail.com>, 2010.
 # Korostil Daniel <ted.korostiled@gmail.com>, 2011.
 # Re. <ted.korostiled@gmail.com>, 2012.
+# Daniel Korostil <ted.korostiled@gmail.com>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-26 09:11+0300\n"
-"PO-Revision-Date: 2012-09-26 09:13+0300\n"
-"Last-Translator: Re. <ted.korostiled@gmail.com>\n"
+"POT-Creation-Date: 2013-03-26 14:52+0200\n"
+"PO-Revision-Date: 2013-03-26 14:53+0300\n"
+"Last-Translator: Daniel Korostil <ted.korostiled@gmail.com>\n"
 "Language-Team: linux.org.ua\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
@@ -23,23 +24,23 @@ msgstr ""
 "X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Текст до мініатюри (типово: Aa)"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "ТЕКСТ"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "Розмір мініатюри (типово: 128)"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "РОЗМІР"
 
-#: ../src/font-thumbnailer.c:194
+#: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ФАЙЛ-ШРИФТУ ФАЙЛ-ВИВОДУ"
 
@@ -83,34 +84,42 @@ msgstr "Помилка при встановленні"
 msgid "Installed"
 msgstr "Встановлено"
 
-#: ../src/font-view.c:283 ../src/font-view.c:468
+#: ../src/font-view.c:283 ../src/font-view.c:517
 msgid "Install"
 msgstr "Встановити"
 
-#: ../src/font-view.c:461
+#: ../src/font-view.c:416
+msgid "This font could not be displayed."
+msgstr "Цей шрифт неможливо показати."
+
+#: ../src/font-view.c:509
 msgid "Info"
 msgstr "Інформація"
 
-#: ../src/font-view.c:474
+#: ../src/font-view.c:524
 msgid "Back"
 msgstr "Назад"
 
-#: ../src/font-view.c:565
+#: ../src/font-view.c:611
 msgid "All Fonts"
 msgstr "_Усі шрифти"
 
-#: ../src/font-view.c:660 ../src/font-view.c:703
+#: ../src/font-view.c:729 ../src/font-view.c:768
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Перегляд шрифтів"
 
-#: ../src/font-view.c:661 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:730 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Переглянути шрифти на вашій системі"
 
-#: ../src/font-view.c:663
+#: ../src/font-view.c:732
 msgid "translator-credits"
 msgstr "Daniel Korostil <ted.korostiled@gmail.com>"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "шрифт;текст;"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "Розмір шрифту (типово: 64)"
