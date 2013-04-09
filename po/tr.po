@@ -8,104 +8,44 @@
 # Deniz Koçak <lenduha@gmail.com>, 2005.
 # Baris Cicek <baris@teamforce.name.tr>, 2004, 2005, 2008, 2009.
 # İlker DAĞLI <ilker@ilkerdagli.info>, 2011.
-# Muhammet Kara <muhammetk@acikkaynak.name.tr>, 2011, 2012.
 # Osman Karagöz <osmank3@gmail.com>, 2012.
+# Muhammet Kara <muhammetk@gmail.com>, 2011, 2012, 2013.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-07-07 17:06+0000\n"
-"PO-Revision-Date: 2012-08-08 19:01+0000\n"
-"Last-Translator: Muhammet Kara <muhammetk@acikkaynak.name.tr>\n"
-"Language-Team: Turkish <gnometurk@gnome.org>\n"
+"POT-Creation-Date: 2013-04-01 16:17+0000\n"
+"PO-Revision-Date: 2013-04-07 05:08+0300\n"
+"Last-Translator: Muhammet Kara <muhammetk@gmail.com>\n"
+"Language-Team: Turkish <gnome-turk@gnome.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 1.4\n"
+"X-Generator: Gtranslator 2.91.6\n"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
-msgstr "Örneklendirilecek metin (öntanımlı: Aa)"
+msgstr "Örneklendirilecek metin (öntanımlı: Aa)"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "TEXT"
-msgstr "METİN"
+msgstr "METİN"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "Küçük resim boyutu (öntanımlı: 128)"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "BOYUT"
 
-#: ../src/font-thumbnailer.c:194
+#: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
-msgstr "YAZITİPİ-DOSYASI ÇIKTI-DOSYASI"
-
-#: ../src/font-view.c:177
-msgid "Name"
-msgstr "Ad"
-
-#: ../src/font-view.c:180
-msgid "Style"
-msgstr "Biçem"
-
-#: ../src/font-view.c:190
-msgid "Type"
-msgstr "Tür"
-
-#: ../src/font-view.c:235 ../src/font-view.c:254
-msgid "Version"
-msgstr "Sürüm"
-
-#: ../src/font-view.c:240 ../src/font-view.c:260
-msgid "Copyright"
-msgstr "Telif Hakkı"
-
-#: ../src/font-view.c:245
-msgid "Description"
-msgstr "Açıklama"
-
-#: ../src/font-view.c:273
-msgid "Install Failed"
-msgstr "Kurulum Başarısız"
-
-#: ../src/font-view.c:279
-msgid "Installed"
-msgstr "Kuruldu"
-
-#: ../src/font-view.c:282 ../src/font-view.c:467
-msgid "Install"
-msgstr "Kur"
-
-#: ../src/font-view.c:460
-msgid "Info"
-msgstr "Bilgi"
-
-#: ../src/font-view.c:473
-msgid "Back"
-msgstr "Geri"
-
-#: ../src/font-view.c:564
-msgid "All Fonts"
-msgstr "Tüm Yazı Tipleri"
-
-#: ../src/font-view.c:659 ../src/font-view.c:702
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "Yazıtipi Görüntüleyici"
-
-#: ../src/font-view.c:660 ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "View fonts on your system"
-msgstr "Sisteminizdeki yazı tiplerini görüntüleyin"
-
-#: ../src/font-view.c:662
-msgid "translator-credits"
-msgstr "GNOME Türkiye Çeviri Takımı <gnometurk@gnome.org>"
+msgstr "YAZI-TİPİ-DOSYASI ÇIKTI-DOSYASI"
 
 #: ../src/font-view-app-menu.ui.h:1
 msgid "About Font Viewer"
@@ -114,6 +54,75 @@ msgstr "Yazı Tipi Görüntüleyici Hakkında"
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
 msgstr "Çıkış"
+
+#: ../src/font-view.c:178
+msgid "Name"
+msgstr "Ad"
+
+#: ../src/font-view.c:181
+msgid "Style"
+msgstr "Biçem"
+
+#: ../src/font-view.c:191
+msgid "Type"
+msgstr "Tür"
+
+#: ../src/font-view.c:236 ../src/font-view.c:255
+msgid "Version"
+msgstr "Sürüm"
+
+#: ../src/font-view.c:241 ../src/font-view.c:261
+msgid "Copyright"
+msgstr "Telif Hakkı"
+
+#: ../src/font-view.c:246
+msgid "Description"
+msgstr "Açıklama"
+
+#: ../src/font-view.c:274
+msgid "Install Failed"
+msgstr "Kurulum Başarısız"
+
+#: ../src/font-view.c:280
+msgid "Installed"
+msgstr "Kuruldu"
+
+#: ../src/font-view.c:283 ../src/font-view.c:517
+msgid "Install"
+msgstr "Kur"
+
+#: ../src/font-view.c:416
+msgid "This font could not be displayed."
+msgstr "Bu yazı tipi görüntülenemiyor."
+
+#: ../src/font-view.c:509
+msgid "Info"
+msgstr "Bilgi"
+
+#: ../src/font-view.c:524
+msgid "Back"
+msgstr "Geri"
+
+#: ../src/font-view.c:611
+msgid "All Fonts"
+msgstr "Tüm Yazı Tipleri"
+
+#: ../src/font-view.c:729 ../src/font-view.c:768
+#: ../src/gnome-font-viewer.desktop.in.in.h:1
+msgid "Font Viewer"
+msgstr "Yazı Tipi Görüntüleyici"
+
+#: ../src/font-view.c:730 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "Sisteminizdeki yazı tiplerini görüntüleyin"
+
+#: ../src/font-view.c:732
+msgid "translator-credits"
+msgstr "GNOME Türkiye Çeviri Takımı <gnometurk@gnome.org>"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "yazı tipleri; yazı tipi ailesi;"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "Yazıtipi boyutu (öntanımlı: 64)"
