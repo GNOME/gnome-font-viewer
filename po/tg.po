@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2013-03-05 02:48+0000\n"
-"PO-Revision-Date: 2013-01-19 17:39+0500\n"
+"PO-Revision-Date: 2013-05-30 16:48+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: \n"
 "Language: Tajik\n"
@@ -36,11 +36,11 @@ msgstr "АНДОЗА"
 
 #: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
-msgstr ""
+msgstr "ФАЙЛИ-ШРИФТ ФАЙЛИ-БАРОРИШ"
 
 #: ../src/font-view-app-menu.ui.h:1
 msgid "About Font Viewer"
-msgstr "Дар бораи брномаи пшнамоиши шрифтҳо"
+msgstr "Дар бораи брномаи пешнамоиши шрифт"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -101,7 +101,7 @@ msgstr "Ҳамаи шрифтҳо"
 #: ../src/font-view.c:729 ../src/font-view.c:768
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
-msgstr "Барномаи Намоиши шрифтҳо"
+msgstr "Барномаи пешнамоиши шрифт"
 
 #: ../src/font-view.c:730 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
@@ -109,8 +109,8 @@ msgstr "Намоиш додани шрифтҳои системаи шумо"
 
 #: ../src/font-view.c:732
 msgid "translator-credits"
-msgstr ""
+msgstr "Victor Ibragimov"
 
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
-msgstr ""
+msgstr "шрифт;намуди шрифт;"
