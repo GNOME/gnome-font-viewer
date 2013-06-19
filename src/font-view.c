@@ -502,8 +502,11 @@ font_view_application_do_open (FontViewApplication *self,
                                GFile *file)
 {
     gchar *uri;
+    gboolean rtl;
 
     font_view_ensure_model (self);
+
+    rtl = gtk_widget_get_default_direction () == GTK_TEXT_DIR_RTL;
 
     self->info_button = gd_header_simple_button_new ();
     gd_header_button_set_label (GD_HEADER_BUTTON (self->info_button), _("Info"));
@@ -522,7 +525,8 @@ font_view_application_do_open (FontViewApplication *self,
 
     self->back_button = gd_header_simple_button_new ();
     gd_header_button_set_label (GD_HEADER_BUTTON (self->back_button), _("Back"));
-    gd_header_button_set_symbolic_icon_name (GD_HEADER_BUTTON (self->back_button), "go-previous-symbolic");
+    gd_header_button_set_symbolic_icon_name (GD_HEADER_BUTTON (self->back_button),
+					     rtl ? "go-previous-rtl-symbolic" : "go-previous-symbolic");
     gd_header_bar_pack_start (GD_HEADER_BAR (self->header), self->back_button);
 
     g_signal_connect (self->back_button, "clicked",
