@@ -551,7 +551,7 @@ font_view_application_do_open (FontViewApplication *self,
     g_free (uri);
 
     gtk_widget_show_all (self->main_window);
-    gd_stack_set_visible_child_name (GD_STACK (self->stack), "preview");
+    gtk_stack_set_visible_child_name (GTK_STACK (self->stack), "preview");
 }
 
 static gboolean
@@ -655,7 +655,7 @@ font_view_application_do_overview (FontViewApplication *self)
     }
 
     gtk_widget_show_all (self->main_window);
-    gd_stack_set_visible_child_name (GD_STACK (self->stack), "overview");
+    gtk_stack_set_visible_child_name (GTK_STACK (self->stack), "overview");
 }
 
 static gboolean
@@ -780,8 +780,8 @@ font_view_application_startup (GApplication *application)
     self->header = gd_header_bar_new ();
     gtk_container_add (GTK_CONTAINER (self->main_grid), self->header);
 
-    self->stack = gd_stack_new ();
-    gd_stack_set_transition_type (GD_STACK (self->stack), GD_STACK_TRANSITION_TYPE_CROSSFADE);
+    self->stack = gtk_stack_new ();
+    gtk_stack_set_transition_type (GTK_STACK (self->stack), GTK_STACK_TRANSITION_TYPE_CROSSFADE);
     gtk_container_add (GTK_CONTAINER (self->main_grid), self->stack);
     gtk_widget_set_hexpand (self->stack, TRUE);
     gtk_widget_set_vexpand (self->stack, TRUE);
@@ -789,12 +789,12 @@ font_view_application_startup (GApplication *application)
     self->swin_view = swin = gtk_scrolled_window_new (NULL, NULL);
     gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (swin),
 				    GTK_POLICY_NEVER, GTK_POLICY_AUTOMATIC);
-    gd_stack_add_named (GD_STACK (self->stack), swin, "overview");
+    gtk_stack_add_named (GTK_STACK (self->stack), swin, "overview");
 
     self->swin_preview = swin = gtk_scrolled_window_new (NULL, NULL);
     gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (swin),
          			    GTK_POLICY_AUTOMATIC, GTK_POLICY_NEVER);
-    gd_stack_add_named (GD_STACK (self->stack), swin, "preview");
+    gtk_stack_add_named (GTK_STACK (self->stack), swin, "preview");
 
     gtk_widget_show_all (window);
 }

@@ -37,7 +37,7 @@ AC_CACHE_SAVE
 GLIB_GSETTINGS
 
 GLIB_MIN_VERSION=2.35.1
-GTK_MIN_VERSION=3.0.0
+GTK_MIN_VERSION=3.9.0
 
 PKG_CHECK_MODULES(FONTVIEW,
                   fontconfig
@@ -49,7 +49,6 @@ PKG_CHECK_MODULES(FONTVIEW,
 
 LIBGD_INIT([
   header-bar
-  stack
   static
 ])
 
