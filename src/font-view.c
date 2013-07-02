@@ -37,8 +37,6 @@
 #include "font-model.h"
 #include "sushi-font-widget.h"
 
-#include <libgd/gd.h>
-
 #define FONT_VIEW_TYPE_APPLICATION font_view_application_get_type()
 #define FONT_VIEW_APPLICATION(obj) \
   (G_TYPE_CHECK_INSTANCE_CAST ((obj), FONT_VIEW_TYPE_APPLICATION, FontViewApplication))
@@ -446,8 +444,8 @@ font_widget_loaded_cb (SushiFontWidget *font_widget,
     uri = sushi_font_widget_get_uri (font_widget);
     self->font_file = g_file_new_for_uri (uri);
 
-    gd_header_bar_set_title (GD_HEADER_BAR (self->header), face->family_name);
-    gd_header_bar_set_subtitle (GD_HEADER_BAR (self->header), face->style_name);
+    gtk_header_bar_set_title (GTK_HEADER_BAR (self->header), face->family_name);
+    gtk_header_bar_set_subtitle (GTK_HEADER_BAR (self->header), face->style_name);
 
     install_button_refresh_appearance (self, NULL);
 }
@@ -501,6 +499,7 @@ static void
 font_view_application_do_open (FontViewApplication *self,
                                GFile *file)
 {
+    GtkWidget *back_image;
     gchar *uri;
     gboolean rtl;
 
@@ -508,26 +507,35 @@ font_view_application_do_open (FontViewApplication *self,
 
     rtl = gtk_widget_get_default_direction () == GTK_TEXT_DIR_RTL;
 
-    self->info_button = gd_header_simple_button_new ();
-    gd_header_button_set_label (GD_HEADER_BUTTON (self->info_button), _("Info"));
-    gd_header_bar_pack_end (GD_HEADER_BAR (self->header), self->info_button);
+    self->info_button = gtk_button_new_with_label (_("Info"));
+    gtk_widget_set_valign (self->info_button, GTK_ALIGN_CENTER);
+    gtk_style_context_add_class (gtk_widget_get_style_context (self->info_button),
+                                 "text-button");
+    gtk_header_bar_pack_end (GTK_HEADER_BAR (self->header), self->info_button);
 
     g_signal_connect (self->info_button, "clicked",
                       G_CALLBACK (info_button_clicked_cb), self);
 
     /* add install button */
-    self->install_button = gd_header_simple_button_new ();
-    gd_header_button_set_label (GD_HEADER_BUTTON (self->install_button), _("Install"));
-    gd_header_bar_pack_end (GD_HEADER_BAR (self->header), self->install_button);
+    self->install_button = gtk_button_new_with_label (_("Install"));
+    gtk_widget_set_valign (self->install_button, GTK_ALIGN_CENTER);
+    gtk_style_context_add_class (gtk_widget_get_style_context (self->install_button),
+                                 "text-button");
+    gtk_header_bar_pack_end (GTK_HEADER_BAR (self->header), self->install_button);
 
     g_signal_connect (self->install_button, "clicked",
                       G_CALLBACK (install_button_clicked_cb), self);
 
-    self->back_button = gd_header_simple_button_new ();
-    gd_header_button_set_label (GD_HEADER_BUTTON (self->back_button), _("Back"));
-    gd_header_button_set_symbolic_icon_name (GD_HEADER_BUTTON (self->back_button),
-					     rtl ? "go-previous-rtl-symbolic" : "go-previous-symbolic");
-    gd_header_bar_pack_start (GD_HEADER_BAR (self->header), self->back_button);
+    self->back_button = gtk_button_new ();
+    back_image = gtk_image_new_from_icon_name (rtl ? "go-previous-rtl-symbolic" :
+                                                     "go-previous-symbolic",
+                                               GTK_ICON_SIZE_MENU);
+    gtk_button_set_image (GTK_BUTTON (self->back_button), back_image);
+    gtk_widget_set_tooltip_text (self->back_button, _("Back"));
+    gtk_widget_set_valign (self->back_button, GTK_ALIGN_CENTER);
+    gtk_style_context_add_class (gtk_widget_get_style_context (self->back_button),
+                                 "image-button");
+    gtk_header_bar_pack_start (GTK_HEADER_BAR (self->header), self->back_button);
 
     g_signal_connect (self->back_button, "clicked",
                       G_CALLBACK (back_button_clicked_cb), self);
@@ -612,8 +620,8 @@ font_view_application_do_overview (FontViewApplication *self)
 
     font_view_ensure_model (self);
 
-    gd_header_bar_set_title (GD_HEADER_BAR (self->header), _("All Fonts"));
-    gd_header_bar_set_subtitle (GD_HEADER_BAR (self->header), NULL);
+    gtk_header_bar_set_title (GTK_HEADER_BAR (self->header), _("All Fonts"));
+    gtk_header_bar_set_subtitle (GTK_HEADER_BAR (self->header), NULL);
 
     if (self->icon_view == NULL) {
         GtkWidget *icon_view;
@@ -777,7 +785,7 @@ font_view_application_startup (GApplication *application)
     self->main_grid = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
     gtk_container_add (GTK_CONTAINER (self->main_window), self->main_grid);
 
-    self->header = gd_header_bar_new ();
+    self->header = gtk_header_bar_new ();
     gtk_container_add (GTK_CONTAINER (self->main_grid), self->header);
 
     self->stack = gtk_stack_new ();
