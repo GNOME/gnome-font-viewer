@@ -5,7 +5,6 @@ srcdir=`dirname $0`
 test -z "$srcdir" && srcdir=.
 
 PKG_NAME="GNOME Font Viewer"
-ACLOCAL_FLAGS="-I libgd $ACLOCAL_FLAGS"
 
 (test -f $srcdir/configure.ac \
   && test -f $srcdir/src/font-view.c) || {
@@ -18,7 +17,5 @@ which gnome-autogen.sh || {
     echo "You need to install gnome-common package"
     exit 1
 }
-
-git submodule update --init --recursive
 
 USE_GNOME2_MACROS=1 USE_COMMON_DOC_BUILD=yes . gnome-autogen.sh

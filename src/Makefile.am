@@ -1,8 +1,7 @@
 AM_CPPFLAGS =					\
 	$(FONTVIEW_CFLAGS)			\
 	-DDIRECTORY_DIR=\"$(directorydir)\" 	\
-	-DGNOMELOCALEDIR=\"$(datadir)/locale\"  \
-	-I$(top_srcdir)/libgd
+	-DGNOMELOCALEDIR=\"$(datadir)/locale\"
 
 bin_PROGRAMS = \
 	gnome-thumbnail-font \
@@ -35,7 +34,6 @@ gnome_thumbnail_font_SOURCES = \
 
 gnome_font_viewer_LDADD = \
 	-lm \
-	$(top_builddir)/libgd/libgd.la \
 	$(FONTVIEW_LIBS)
 
 gnome_font_viewer_SOURCES = \
