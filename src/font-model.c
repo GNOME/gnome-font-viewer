@@ -52,6 +52,9 @@ struct _FontViewModelPrivate {
     GList *monitors;
     GdkPixbuf *fallback_icon;
     GCancellable *cancellable;
+
+    gint scale_factor;
+    guint font_list_idle_id;
 };
 
 enum {
@@ -456,6 +459,16 @@ ensure_font_list_idle (gpointer user_data)
     return FALSE;
 }
 
+static void
+schedule_update_font_list (FontViewModel *self)
+{
+    if (self->priv->font_list_idle_id != 0)
+        return;
+
+    self->priv->font_list_idle_id =
+        g_idle_add (ensure_font_list_idle, self);
+}
+
 static int
 font_view_model_sort_func (GtkTreeModel *model,
                            GtkTreeIter *a,
@@ -571,9 +584,7 @@ font_view_model_init (FontViewModel *self)
                                      font_view_model_sort_func,
                                      NULL, NULL);
 
-    self->priv->fallback_icon = get_fallback_icon ();
-
-    g_idle_add (ensure_font_list_idle, self);
+    schedule_update_font_list (self);
     create_file_monitors (self);
 }
 
@@ -595,6 +606,11 @@ font_view_model_finalize (GObject *obj)
     if (self->priv->library != NULL) {
         FT_Done_FreeType (self->priv->library);
         self->priv->library = NULL;
+    }
+
+    if (self->priv->font_list_idle_id != 0) {
+        g_source_remove (self->priv->font_list_idle_id);
+        self->priv->font_list_idle_id = 0;
     }
 
     g_mutex_clear (&self->priv->font_list_mutex);
@@ -624,4 +640,13 @@ GtkTreeModel *
 font_view_model_new (void)
 {
     return g_object_new (FONT_VIEW_TYPE_MODEL, NULL);
+}
+
+void
+font_view_model_set_scale_factor (FontViewModel *self,
+                                  gint           scale_factor)
+{
+    self->priv->scale_factor = scale_factor;
+
+    schedule_update_font_list (self);
 }

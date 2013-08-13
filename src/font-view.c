@@ -485,6 +485,14 @@ info_button_clicked_cb (GtkButton *button,
 }
 
 static void
+font_view_update_scale_factor (FontViewApplication *self)
+{
+    gint scale_factor = gtk_widget_get_scale_factor (self->main_window);
+    font_view_model_set_scale_factor (FONT_VIEW_MODEL (self->model),
+                                      scale_factor);
+}
+
+static void
 font_view_ensure_model (FontViewApplication *self)
 {
     if (self->model != NULL)
@@ -493,6 +501,10 @@ font_view_ensure_model (FontViewApplication *self)
     self->model = font_view_model_new ();
     g_signal_connect (self->model, "config-changed",
                       G_CALLBACK (font_model_config_changed_cb), self);
+
+    g_signal_connect (self->main_window, "notify::scale-factor",
+                      G_CALLBACK (font_view_update_scale_factor), self);
+    font_view_update_scale_factor (self);
 }
 
 static void
