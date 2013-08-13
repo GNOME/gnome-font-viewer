@@ -189,7 +189,7 @@ create_thumbnail (ThumbInfoData *thumb_info)
 
     mtime = g_file_info_get_attribute_uint64 (info, G_FILE_ATTRIBUTE_TIME_MODIFIED);
 
-    factory = gnome_desktop_thumbnail_factory_new (GNOME_DESKTOP_THUMBNAIL_SIZE_NORMAL);
+    factory = gnome_desktop_thumbnail_factory_new (GNOME_DESKTOP_THUMBNAIL_SIZE_LARGE);
     pixbuf = gnome_desktop_thumbnail_factory_generate_thumbnail
         (factory, 
          uri, g_file_info_get_content_type (info));
