@@ -776,17 +776,18 @@ font_view_application_startup (GApplication *application)
     self->main_window = window = gtk_application_window_new (GTK_APPLICATION (application));
     gtk_window_set_resizable (GTK_WINDOW (window), TRUE);
     gtk_window_set_default_size (GTK_WINDOW (window), 800, 600);
-    gtk_window_set_hide_titlebar_when_maximized (GTK_WINDOW (window), TRUE);
-    gtk_window_set_title (GTK_WINDOW (window), _("Font Viewer"));
+
+    self->header = gtk_header_bar_new ();
+    gtk_header_bar_set_show_close_button (GTK_HEADER_BAR (self->header), TRUE);
+    gtk_style_context_add_class (gtk_widget_get_style_context (GTK_WIDGET (self->header)),
+                                 "titlebar");
+    gtk_window_set_titlebar (GTK_WINDOW (self->main_window), self->header);
 
     g_signal_connect (window, "key-press-event",
                       G_CALLBACK (font_view_window_key_press_event_cb), self);
 
     self->main_grid = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
     gtk_container_add (GTK_CONTAINER (self->main_window), self->main_grid);
-
-    self->header = gtk_header_bar_new ();
-    gtk_container_add (GTK_CONTAINER (self->main_grid), self->header);
 
     self->stack = gtk_stack_new ();
     gtk_stack_set_transition_type (GTK_STACK (self->stack), GTK_STACK_TRANSITION_TYPE_CROSSFADE);
