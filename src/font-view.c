@@ -657,7 +657,7 @@ font_view_application_do_overview (FontViewApplication *self)
 
         gtk_cell_layout_pack_start (GTK_CELL_LAYOUT (icon_view), cell, FALSE);
         gtk_cell_layout_add_attribute (GTK_CELL_LAYOUT (icon_view), cell,
-                                       "pixbuf", COLUMN_ICON);
+                                       "surface", COLUMN_ICON);
         
         cell = gtk_cell_renderer_text_new ();
         g_object_set (cell,

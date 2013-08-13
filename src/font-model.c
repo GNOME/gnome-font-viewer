@@ -30,6 +30,7 @@
 #include <sys/types.h>
 
 #include <gtk/gtk.h>
+#include <cairo-gobject.h>
 
 #include <ft2build.h>
 #include FT_FREETYPE_H
@@ -50,7 +51,7 @@ struct _FontViewModelPrivate {
     FT_Library library;
 
     GList *monitors;
-    GdkPixbuf *fallback_icon;
+    cairo_surface_t *fallback_icon;
     GCancellable *cancellable;
 
     gint scale_factor;
@@ -136,7 +137,7 @@ typedef struct {
     FontViewModel *self;
     GFile *font_file;
     gchar *font_path;
-    GdkPixbuf *pixbuf;
+    cairo_surface_t *surface;
     GtkTreeIter iter;
 } ThumbInfoData;
 
@@ -147,7 +148,7 @@ thumb_info_data_free (gpointer user_data)
 
     g_object_unref (thumb_info->self);
     g_object_unref (thumb_info->font_file);
-    g_clear_object (&thumb_info->pixbuf);
+    g_clear_pointer (&thumb_info->surface, cairo_surface_destroy);
     g_free (thumb_info->font_path);
 
     g_slice_free (ThumbInfoData, thumb_info);
@@ -158,9 +159,9 @@ one_thumbnail_done (gpointer user_data)
 {
     ThumbInfoData *thumb_info = user_data;
 
-    if (thumb_info->pixbuf != NULL)
+    if (thumb_info->surface != NULL)
         gtk_list_store_set (GTK_LIST_STORE (thumb_info->self), &(thumb_info->iter),
-                            COLUMN_ICON, thumb_info->pixbuf,
+                            COLUMN_ICON, thumb_info->surface,
                             -1);
 
     thumb_info_data_free (thumb_info);
@@ -168,7 +169,7 @@ one_thumbnail_done (gpointer user_data)
     return FALSE;
 }
 
-static GdkPixbuf *
+static cairo_surface_t *
 create_thumbnail (ThumbInfoData *thumb_info)
 {
     GFile *file = thumb_info->font_file;
@@ -176,6 +177,7 @@ create_thumbnail (ThumbInfoData *thumb_info)
     gchar *uri;
     guint64 mtime;
 
+    cairo_surface_t *surface = NULL;
     GdkPixbuf *pixbuf = NULL;
     GFileInfo *info = NULL;
 
@@ -209,7 +211,12 @@ create_thumbnail (ThumbInfoData *thumb_info)
  out:
   g_clear_object (&info);
 
-  return pixbuf;
+  if (pixbuf != NULL)
+      surface = gdk_cairo_surface_create_from_pixbuf (pixbuf, thumb_info->self->priv->scale_factor,
+                                                      NULL);
+  g_clear_object (&pixbuf);
+
+  return surface;
 }
 
 static gboolean
@@ -228,6 +235,8 @@ ensure_thumbnails_job (GIOSchedulerJob *job,
         GFile *thumb_file = NULL;
         GFileInputStream *is = NULL;
         GFileInfo *info = NULL;
+        GdkPixbuf *pixbuf = NULL;
+        gint scale_factor = thumb_info->self->priv->scale_factor;
 
         info = g_file_query_info (thumb_info->font_file,
                                   ATTRIBUTES_FOR_EXISTING_THUMBNAIL,
@@ -259,16 +268,20 @@ ensure_thumbnails_job (GIOSchedulerJob *job,
                 goto next;
             }
 
-            thumb_info->pixbuf = gdk_pixbuf_new_from_stream_at_scale (G_INPUT_STREAM (is),
-                                                                      128, 128, TRUE,
-                                                                      NULL, &error);
+            pixbuf = gdk_pixbuf_new_from_stream_at_scale (G_INPUT_STREAM (is),
+                                                          128 * scale_factor, 128 * scale_factor,
+                                                          TRUE,
+                                                          NULL, &error);
 
             if (error != NULL) {
                 g_debug ("Can't read thumbnail pixbuf %s: %s\n", thumb_path, error->message);
                 goto next;
             }
+
+            thumb_info->surface = gdk_cairo_surface_create_from_pixbuf (pixbuf, scale_factor, NULL);
+            g_clear_object (&pixbuf);
         } else {
-            thumb_info->pixbuf = create_thumbnail (thumb_info);
+            thumb_info->surface = create_thumbnail (thumb_info);
         }
 
     next:
@@ -316,12 +329,39 @@ load_font_infos_data_free (gpointer user_data)
     g_slice_free (LoadFontInfosData, data);
 }
 
+static void
+ensure_fallback_icon (FontViewModel *self)
+{
+    GtkIconTheme *icon_theme;
+    GtkIconInfo *icon_info;
+    GdkPixbuf *pix;
+    GIcon *icon = NULL;
+
+    if (self->priv->fallback_icon != NULL)
+        return;
+
+    icon_theme = gtk_icon_theme_get_default ();
+    icon = g_content_type_get_icon ("application/x-font-ttf");
+    icon_info = gtk_icon_theme_lookup_by_gicon_for_scale (icon_theme, icon,
+                                                          128, self->priv->scale_factor,
+                                                          GTK_ICON_LOOKUP_GENERIC_FALLBACK);
+    g_object_unref (icon);
+
+    if (!icon_info)
+        return;
+
+    self->priv->fallback_icon = gtk_icon_info_load_surface (icon_info, NULL, NULL);
+    g_object_unref (icon_info);
+}
+
 static gboolean
 font_infos_loaded (gpointer user_data)
 {
     LoadFontInfosData *data = user_data;
     FontViewModel *self = data->self;
     GList *l, *thumb_infos = NULL;
+
+    ensure_fallback_icon (self);
 
     for (l = data->font_infos; l != NULL; l = l->next) {
         FontInfoData *font_info = l->data;
@@ -537,34 +577,11 @@ create_file_monitors (FontViewModel *self)
     FcStrListDone (str_list);
 }
 
-static GdkPixbuf *
-get_fallback_icon (void)
-{
-    GtkIconTheme *icon_theme;
-    GtkIconInfo *icon_info;
-    GdkPixbuf *pix;
-    GIcon *icon = NULL;
-
-    icon_theme = gtk_icon_theme_get_default ();
-    icon = g_content_type_get_icon ("application/x-font-ttf");
-    icon_info = gtk_icon_theme_lookup_by_gicon (icon_theme, icon,
-                                                128, GTK_ICON_LOOKUP_GENERIC_FALLBACK);
-    g_object_unref (icon);
-
-    if (!icon_info)
-        return NULL;
-
-    pix = gtk_icon_info_load_icon (icon_info, NULL);
-    g_object_unref (icon_info);
-
-    return pix;
-}
-
 static void
 font_view_model_init (FontViewModel *self)
 {
     GType types[NUM_COLUMNS] =
-        { G_TYPE_STRING, G_TYPE_STRING, GDK_TYPE_PIXBUF, G_TYPE_STRING };
+        { G_TYPE_STRING, G_TYPE_STRING, CAIRO_GOBJECT_TYPE_SURFACE, G_TYPE_STRING };
 
     self->priv = G_TYPE_INSTANCE_GET_PRIVATE (self, FONT_VIEW_TYPE_MODEL, FontViewModelPrivate);
 
@@ -614,7 +631,7 @@ font_view_model_finalize (GObject *obj)
     }
 
     g_mutex_clear (&self->priv->font_list_mutex);
-    g_clear_object (&self->priv->fallback_icon);
+    g_clear_pointer (&self->priv->fallback_icon, cairo_surface_destroy);
     g_list_free_full (self->priv->monitors, (GDestroyNotify) g_object_unref);
 
     G_OBJECT_CLASS (font_view_model_parent_class)->finalize (obj);
@@ -648,5 +665,6 @@ font_view_model_set_scale_factor (FontViewModel *self,
 {
     self->priv->scale_factor = scale_factor;
 
+    g_clear_pointer (&self->priv->fallback_icon, cairo_surface_destroy);
     schedule_update_font_list (self);
 }
