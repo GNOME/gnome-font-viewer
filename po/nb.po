@@ -6,10 +6,10 @@
 # Torstein Adolf Winterseth <kvikende@fsfe.org>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-font-viewer 3.7.x\n"
+"Project-Id-Version: gnome-font-viewer 3.9.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-07 11:45+0100\n"
-"PO-Revision-Date: 2013-01-07 11:45+0100\n"
+"POT-Creation-Date: 2013-08-14 14:55+0200\n"
+"PO-Revision-Date: 2013-08-14 14:55+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: \n"
@@ -18,23 +18,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Tekst for miniatyr (forvalg: Aa)"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "TEKST"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "Størrelse på miniatyr (forvalg: 128)"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "STØRRELSE"
 
-#: ../src/font-thumbnailer.c:194
+#: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "SKRIFTFIL UTDATAFIL"
 
@@ -46,68 +46,72 @@ msgstr "Om Skriftvisning"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: ../src/font-view.c:178
+#: ../src/font-view.c:176
 msgid "Name"
 msgstr "Navn"
 
-#: ../src/font-view.c:181
+#: ../src/font-view.c:179
 msgid "Style"
 msgstr "Stil"
 
-#: ../src/font-view.c:191
+#: ../src/font-view.c:189
 msgid "Type"
 msgstr "Type"
 
-#: ../src/font-view.c:236 ../src/font-view.c:255
+#: ../src/font-view.c:234 ../src/font-view.c:253
 msgid "Version"
 msgstr "Versjon"
 
-#: ../src/font-view.c:241 ../src/font-view.c:261
+#: ../src/font-view.c:239 ../src/font-view.c:259
 msgid "Copyright"
 msgstr "Opphavsrett"
 
-#: ../src/font-view.c:246
+#: ../src/font-view.c:244
 msgid "Description"
 msgstr "Beskrivelse"
 
-#: ../src/font-view.c:274
+#: ../src/font-view.c:272
 msgid "Install Failed"
 msgstr "Installering feilet"
 
-#: ../src/font-view.c:280
+#: ../src/font-view.c:278
 msgid "Installed"
 msgstr "Installert"
 
-#: ../src/font-view.c:283 ../src/font-view.c:515
+#. add install button
+#: ../src/font-view.c:281 ../src/font-view.c:532
 msgid "Install"
 msgstr "Installer"
 
-#: ../src/font-view.c:416
+#: ../src/font-view.c:414
 msgid "This font could not be displayed."
 msgstr "Denne skriften kunne ikke vises."
 
-#: ../src/font-view.c:508
+#: ../src/font-view.c:479
+msgid "_Close"
+msgstr "_Lukk"
+
+#: ../src/font-view.c:522
 msgid "Info"
 msgstr "Informasjon"
 
-#: ../src/font-view.c:521
+#: ../src/font-view.c:546
 msgid "Back"
 msgstr "Tilbake"
 
-#: ../src/font-view.c:618
+#: ../src/font-view.c:635
 msgid "All Fonts"
 msgstr "Alle skrifter"
 
-#: ../src/font-view.c:735 ../src/font-view.c:774
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:753 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Skriftvisning"
 
-#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:754 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Vis skrifter på systemet"
 
-#: ../src/font-view.c:738
+#: ../src/font-view.c:756
 msgid "translator-credits"
 msgstr "Kjartan Maraas <kmaraas@gnome.org>"
 
