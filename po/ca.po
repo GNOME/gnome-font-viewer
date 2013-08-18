@@ -12,14 +12,14 @@ msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-03-05 02:52+0000\n"
-"PO-Revision-Date: 2013-03-05 08:06+0200\n"
+"POT-Creation-Date: 2013-08-13 00:20+0000\n"
+"PO-Revision-Date: 2013-08-18 21:59+0200\n"
 "Last-Translator: Joan Duran <jodufi@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8bits\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: ../src/font-thumbnailer.c:189
@@ -50,83 +50,76 @@ msgstr "Quant al visualitzador de tipus de lletra"
 msgid "Quit"
 msgstr "Surt"
 
-#: ../src/font-view.c:178
+#: ../src/font-view.c:176
 msgid "Name"
 msgstr "Nom"
 
-#: ../src/font-view.c:181
+#: ../src/font-view.c:179
 msgid "Style"
 msgstr "Estil"
 
-#: ../src/font-view.c:191
+#: ../src/font-view.c:189
 msgid "Type"
 msgstr "Tipus"
 
-#: ../src/font-view.c:236 ../src/font-view.c:255
+#: ../src/font-view.c:234 ../src/font-view.c:253
 msgid "Version"
 msgstr "Versió"
 
-#: ../src/font-view.c:241 ../src/font-view.c:261
+#: ../src/font-view.c:239 ../src/font-view.c:259
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../src/font-view.c:246
+#: ../src/font-view.c:244
 msgid "Description"
 msgstr "Descripció"
 
-#: ../src/font-view.c:274
+#: ../src/font-view.c:272
 msgid "Install Failed"
 msgstr "Ha fallat la instal·lació"
 
-#: ../src/font-view.c:280
+#: ../src/font-view.c:278
 msgid "Installed"
 msgstr "S'ha instal·lat"
 
-#: ../src/font-view.c:283 ../src/font-view.c:517
+#. add install button
+#: ../src/font-view.c:281 ../src/font-view.c:520
 msgid "Install"
 msgstr "Instal·la"
 
-#: ../src/font-view.c:416
+#: ../src/font-view.c:414
 msgid "This font could not be displayed."
 msgstr "No es pot visualitzar aquest tipus de lletra."
 
-#: ../src/font-view.c:509
+#: ../src/font-view.c:479
+msgid "_Close"
+msgstr "_Tanca"
+
+#: ../src/font-view.c:510
 msgid "Info"
 msgstr "Informació"
 
-#: ../src/font-view.c:524
+#: ../src/font-view.c:534
 msgid "Back"
 msgstr "Enrere"
 
-#: ../src/font-view.c:611
+#: ../src/font-view.c:623
 msgid "All Fonts"
 msgstr "Tots els tipus de lletra"
 
-#: ../src/font-view.c:729 ../src/font-view.c:768
+#: ../src/font-view.c:741 ../src/font-view.c:780
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Visualitzador de tipus de lletra"
 
-#: ../src/font-view.c:730 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:742 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Visualitza tots els tipus de lletra del sistema"
 
-#: ../src/font-view.c:732
+#: ../src/font-view.c:744
 msgid "translator-credits"
 msgstr "Joan Duran <jodufi@gmail.com>"
 
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "tipus de lletra;tipografia;"
-
-#~ msgid "Font size (default: 64)"
-#~ msgstr "Mida de la lletra (predeterminat: 64)"
-
-#~ msgid "Size:"
-#~ msgstr "Mida:"
-
-#~ msgid "Usage: %s fontfile\n"
-#~ msgstr "Utilització: %s fitxerdetipusdelletra\n"
-
-#~ msgid "Preview fonts"
-#~ msgstr "Previsualitza els tipus de lletra"
