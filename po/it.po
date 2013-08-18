@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-25 16:00+0100\n"
-"PO-Revision-Date: 2013-01-25 16:01+0100\n"
+"POT-Creation-Date: 2013-08-18 14:24+0200\n"
+"PO-Revision-Date: 2013-08-18 14:25+0200\n"
 "Last-Translator: Milo Casagrande <milo@ubuntu.com>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
 "Language: it\n"
@@ -21,6 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Gtranslator 2.91.6\n"
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -50,68 +51,72 @@ msgstr "Informazioni su Visualizzatore di caratteri"
 msgid "Quit"
 msgstr "Esci"
 
-#: ../src/font-view.c:178
+#: ../src/font-view.c:176
 msgid "Name"
 msgstr "Nome"
 
-#: ../src/font-view.c:181
+#: ../src/font-view.c:179
 msgid "Style"
 msgstr "Stile"
 
-#: ../src/font-view.c:191
+#: ../src/font-view.c:189
 msgid "Type"
 msgstr "Tipo"
 
-#: ../src/font-view.c:236 ../src/font-view.c:255
+#: ../src/font-view.c:234 ../src/font-view.c:253
 msgid "Version"
 msgstr "Versione"
 
-#: ../src/font-view.c:241 ../src/font-view.c:261
+#: ../src/font-view.c:239 ../src/font-view.c:259
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../src/font-view.c:246
+#: ../src/font-view.c:244
 msgid "Description"
 msgstr "Descrizione"
 
-#: ../src/font-view.c:274
+#: ../src/font-view.c:272
 msgid "Install Failed"
 msgstr "Installazione non riuscita"
 
-#: ../src/font-view.c:280
+#: ../src/font-view.c:278
 msgid "Installed"
 msgstr "Installato"
 
-#: ../src/font-view.c:283 ../src/font-view.c:515
+#. add install button
+#: ../src/font-view.c:281 ../src/font-view.c:532
 msgid "Install"
 msgstr "Installa"
 
-#: ../src/font-view.c:416
+#: ../src/font-view.c:414
 msgid "This font could not be displayed."
 msgstr "Impossibile visualizzare questo carattere."
 
-#: ../src/font-view.c:508
+#: ../src/font-view.c:479
+msgid "_Close"
+msgstr "_Chiudi"
+
+#: ../src/font-view.c:522
 msgid "Info"
 msgstr "Informazioni"
 
-#: ../src/font-view.c:521
+#: ../src/font-view.c:546
 msgid "Back"
 msgstr "Indietro"
 
-#: ../src/font-view.c:618
+#: ../src/font-view.c:635
 msgid "All Fonts"
 msgstr "Tutti i caratteri"
 
-#: ../src/font-view.c:735 ../src/font-view.c:774
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:753 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Visualizzatore di caratteri"
 
-#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:754 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Visualizza i caratteri presenti nel sistema"
 
-#: ../src/font-view.c:738
+#: ../src/font-view.c:756
 msgid "translator-credits"
 msgstr ""
 "Milo Casagrande <milo@ubuntu.com>\n"
