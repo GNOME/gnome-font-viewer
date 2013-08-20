@@ -517,40 +517,45 @@ font_view_application_do_open (FontViewApplication *self,
 
     font_view_ensure_model (self);
 
-    rtl = gtk_widget_get_default_direction () == GTK_TEXT_DIR_RTL;
+    if (self->info_button == NULL) {
+        self->info_button = gtk_button_new_with_label (_("Info"));
+        gtk_widget_set_valign (self->info_button, GTK_ALIGN_CENTER);
+        gtk_style_context_add_class (gtk_widget_get_style_context (self->info_button),
+                                     "text-button");
+        gtk_header_bar_pack_end (GTK_HEADER_BAR (self->header), self->info_button);
 
-    self->info_button = gtk_button_new_with_label (_("Info"));
-    gtk_widget_set_valign (self->info_button, GTK_ALIGN_CENTER);
-    gtk_style_context_add_class (gtk_widget_get_style_context (self->info_button),
-                                 "text-button");
-    gtk_header_bar_pack_end (GTK_HEADER_BAR (self->header), self->info_button);
-
-    g_signal_connect (self->info_button, "clicked",
-                      G_CALLBACK (info_button_clicked_cb), self);
+        g_signal_connect (self->info_button, "clicked",
+                          G_CALLBACK (info_button_clicked_cb), self);
+    }
 
     /* add install button */
-    self->install_button = gtk_button_new_with_label (_("Install"));
-    gtk_widget_set_valign (self->install_button, GTK_ALIGN_CENTER);
-    gtk_style_context_add_class (gtk_widget_get_style_context (self->install_button),
-                                 "text-button");
-    gtk_header_bar_pack_end (GTK_HEADER_BAR (self->header), self->install_button);
+    if (self->install_button == NULL) {
+        self->install_button = gtk_button_new_with_label (_("Install"));
+        gtk_widget_set_valign (self->install_button, GTK_ALIGN_CENTER);
+        gtk_style_context_add_class (gtk_widget_get_style_context (self->install_button),
+                                     "text-button");
+        gtk_header_bar_pack_end (GTK_HEADER_BAR (self->header), self->install_button);
 
-    g_signal_connect (self->install_button, "clicked",
-                      G_CALLBACK (install_button_clicked_cb), self);
+        g_signal_connect (self->install_button, "clicked",
+                          G_CALLBACK (install_button_clicked_cb), self);
+    }
 
-    self->back_button = gtk_button_new ();
-    back_image = gtk_image_new_from_icon_name (rtl ? "go-previous-rtl-symbolic" :
-                                                     "go-previous-symbolic",
-                                               GTK_ICON_SIZE_MENU);
-    gtk_button_set_image (GTK_BUTTON (self->back_button), back_image);
-    gtk_widget_set_tooltip_text (self->back_button, _("Back"));
-    gtk_widget_set_valign (self->back_button, GTK_ALIGN_CENTER);
-    gtk_style_context_add_class (gtk_widget_get_style_context (self->back_button),
-                                 "image-button");
-    gtk_header_bar_pack_start (GTK_HEADER_BAR (self->header), self->back_button);
+    if (self->back_button == NULL) {
+        self->back_button = gtk_button_new ();
+        rtl = gtk_widget_get_default_direction () == GTK_TEXT_DIR_RTL;
+        back_image = gtk_image_new_from_icon_name (rtl ? "go-previous-rtl-symbolic" :
+                                                   "go-previous-symbolic",
+                                                   GTK_ICON_SIZE_MENU);
+        gtk_button_set_image (GTK_BUTTON (self->back_button), back_image);
+        gtk_widget_set_tooltip_text (self->back_button, _("Back"));
+        gtk_widget_set_valign (self->back_button, GTK_ALIGN_CENTER);
+        gtk_style_context_add_class (gtk_widget_get_style_context (self->back_button),
+                                     "image-button");
+        gtk_header_bar_pack_start (GTK_HEADER_BAR (self->header), self->back_button);
 
-    g_signal_connect (self->back_button, "clicked",
-                      G_CALLBACK (back_button_clicked_cb), self);
+        g_signal_connect (self->back_button, "clicked",
+                          G_CALLBACK (back_button_clicked_cb), self);
+    }
 
     uri = g_file_get_uri (file);
 
