@@ -1,3 +1,12 @@
+GNOME Font Viewer - 3.9.90
+-------------------------------------------------------------------------------
+
+ • Fix back button direction for RTL locales (Yosef Or Boczko)
+ • Port to GtkStack and GtkHeaderBar (Yosef Or Boczko)
+ • Support Hi-Dpi displays
+ • Make sure not to append extra header buttons when loading a file
+ • Translation updates
+
 GNOME Font Viewer - 3.8.0
 -------------------------------------------------------------------------------
 
