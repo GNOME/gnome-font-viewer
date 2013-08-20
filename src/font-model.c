@@ -212,9 +212,17 @@ create_thumbnail (ThumbInfoData *thumb_info)
   g_clear_object (&info);
 
   if (pixbuf != NULL)
-      surface = gdk_cairo_surface_create_from_pixbuf (pixbuf, thumb_info->self->priv->scale_factor,
-                                                      NULL);
-  g_clear_object (&pixbuf);
+      {
+          GdkPixbuf *scaled = gdk_pixbuf_scale_simple (pixbuf,
+                                                       128 * thumb_info->self->priv->scale_factor,
+                                                       128 * thumb_info->self->priv->scale_factor,
+                                                       GDK_INTERP_BILINEAR);
+          g_object_unref (pixbuf);
+
+          surface = gdk_cairo_surface_create_from_pixbuf (scaled, thumb_info->self->priv->scale_factor,
+                                                          NULL);
+          g_object_unref (scaled);
+      }
 
   return surface;
 }
