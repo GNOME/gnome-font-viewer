@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-31 20:29+0100\n"
-"PO-Revision-Date: 2013-01-31 20:30+0100\n"
+"POT-Creation-Date: 2013-08-20 21:29+0200\n"
+"PO-Revision-Date: 2013-08-20 21:30+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -56,68 +56,71 @@ msgstr "O przeglądarce czcionek"
 msgid "Quit"
 msgstr "Zakończ"
 
-#: ../src/font-view.c:178
+#: ../src/font-view.c:176
 msgid "Name"
 msgstr "Nazwa"
 
-#: ../src/font-view.c:181
+#: ../src/font-view.c:179
 msgid "Style"
 msgstr "Styl"
 
-#: ../src/font-view.c:191
+#: ../src/font-view.c:189
 msgid "Type"
 msgstr "Typ"
 
-#: ../src/font-view.c:236 ../src/font-view.c:255
+#: ../src/font-view.c:234 ../src/font-view.c:253
 msgid "Version"
 msgstr "Wersja"
 
-#: ../src/font-view.c:241 ../src/font-view.c:261
+#: ../src/font-view.c:239 ../src/font-view.c:259
 msgid "Copyright"
 msgstr "Prawa autorskie"
 
-#: ../src/font-view.c:246
+#: ../src/font-view.c:244
 msgid "Description"
 msgstr "Opis"
 
-#: ../src/font-view.c:274
+#: ../src/font-view.c:272
 msgid "Install Failed"
 msgstr "Instalacja się nie powiodła"
 
-#: ../src/font-view.c:280
+#: ../src/font-view.c:278
 msgid "Installed"
 msgstr "Zainstalowana"
 
-#: ../src/font-view.c:283 ../src/font-view.c:515
+#: ../src/font-view.c:281 ../src/font-view.c:533
 msgid "Install"
 msgstr "Zainstaluj"
 
-#: ../src/font-view.c:416
+#: ../src/font-view.c:414
 msgid "This font could not be displayed."
 msgstr "Nie można wyświetlić tej czcionki."
 
-#: ../src/font-view.c:508
+#: ../src/font-view.c:479
+msgid "_Close"
+msgstr "Za_mknij"
+
+#: ../src/font-view.c:521
 msgid "Info"
 msgstr "Informacje"
 
-#: ../src/font-view.c:521
+#: ../src/font-view.c:550
 msgid "Back"
 msgstr "Wstecz"
 
-#: ../src/font-view.c:618
+#: ../src/font-view.c:640
 msgid "All Fonts"
 msgstr "Wszystkie czcionki"
 
-#: ../src/font-view.c:735 ../src/font-view.c:774
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Przeglądarka czcionek"
 
-#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Wyświetlanie czcionek w systemie"
 
-#: ../src/font-view.c:738
+#: ../src/font-view.c:761
 msgid "translator-credits"
 msgstr ""
 "Zbigniew Chyla <chyla@alice.ci.pwr.wroc.pl>, 1999-2003\n"
@@ -130,4 +133,4 @@ msgstr ""
 
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
-msgstr "czcionki;fonty;"
+msgstr "czcionki;fonty;pismo;"
