@@ -116,4 +116,4 @@ msgstr ""
 
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
-msgstr "Nodrezhoù;Nodrezh"
+msgstr "Nodrezhoù;Nodrezh;"
