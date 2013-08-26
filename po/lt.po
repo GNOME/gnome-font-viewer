@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-01-03 12:34+0000\n"
-"PO-Revision-Date: 2013-02-09 23:05+0200\n"
+"POT-Creation-Date: 2013-08-13 00:20+0000\n"
+"PO-Revision-Date: 2013-08-26 23:14+0300\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -25,23 +25,23 @@ msgstr ""
 "%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Gtranslator 2.91.6\n"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Tekstas į miniatiūrą (numatyta: Aa)"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "TEKSTAS"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "Miniatiūrų dydis (numatyta: 128)"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "DYDIS"
 
-#: ../src/font-thumbnailer.c:194
+#: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ŠRIFTO-FAILAS REZULTATO-FAILAS"
 
@@ -53,68 +53,73 @@ msgstr "Apie šriftų žiūryklę"
 msgid "Quit"
 msgstr "Išeiti"
 
-#: ../src/font-view.c:178
+#: ../src/font-view.c:176
 msgid "Name"
 msgstr "Pavadinimas"
 
-#: ../src/font-view.c:181
+#: ../src/font-view.c:179
 msgid "Style"
 msgstr "Stilius"
 
-#: ../src/font-view.c:191
+#: ../src/font-view.c:189
 msgid "Type"
 msgstr "Tipas"
 
-#: ../src/font-view.c:236 ../src/font-view.c:255
+#: ../src/font-view.c:234 ../src/font-view.c:253
 msgid "Version"
 msgstr "Versija"
 
-#: ../src/font-view.c:241 ../src/font-view.c:261
+#: ../src/font-view.c:239 ../src/font-view.c:259
 msgid "Copyright"
 msgstr "Autorinės teisės"
 
-#: ../src/font-view.c:246
+#: ../src/font-view.c:244
 msgid "Description"
 msgstr "Aprašymas"
 
-#: ../src/font-view.c:274
+#: ../src/font-view.c:272
 msgid "Install Failed"
 msgstr "Diegimas nepavyko"
 
-#: ../src/font-view.c:280
+#: ../src/font-view.c:278
 msgid "Installed"
 msgstr "Įdiegta"
 
-#: ../src/font-view.c:283 ../src/font-view.c:515
+#. add install button
+#: ../src/font-view.c:281 ../src/font-view.c:520
 msgid "Install"
 msgstr "Įdiegti"
 
-#: ../src/font-view.c:416
+#: ../src/font-view.c:414
 msgid "This font could not be displayed."
 msgstr "Nepavyko parodyti šio šrifto."
 
-#: ../src/font-view.c:508
+#: ../src/font-view.c:479
+msgid "_Close"
+msgstr "_Užverti"
+
+#: ../src/font-view.c:510
 msgid "Info"
 msgstr "Informacija"
 
-#: ../src/font-view.c:521
+#: ../src/font-view.c:534
 msgid "Back"
 msgstr "Atgal"
 
-#: ../src/font-view.c:618
+#: ../src/font-view.c:623
 msgid "All Fonts"
 msgstr "Visi šriftai"
 
-#: ../src/font-view.c:735 ../src/font-view.c:774
+#: ../src/font-view.c:741 ../src/font-view.c:780
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Šriftų žiūryklė"
 
-#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:742 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Rodyti sistemos šriftus"
 
-#: ../src/font-view.c:738
+#: ../src/font-view.c:744
 msgid "translator-credits"
 msgstr ""
 "išvertė:\n"
