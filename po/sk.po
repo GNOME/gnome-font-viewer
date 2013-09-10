@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-03-22 06:48+0000\n"
-"PO-Revision-Date: 2013-03-23 12:01+0100\n"
+"POT-Creation-Date: 2013-08-27 14:48+0000\n"
+"PO-Revision-Date: 2013-08-29 13:54+0100\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "Language: sk\n"
@@ -52,68 +52,71 @@ msgstr "O programe Prehliadač písiem"
 msgid "Quit"
 msgstr "Ukončiť"
 
-#: ../src/font-view.c:178
+#: ../src/font-view.c:176
 msgid "Name"
 msgstr "Názov"
 
-#: ../src/font-view.c:181
+#: ../src/font-view.c:179
 msgid "Style"
 msgstr "Štýl"
 
-#: ../src/font-view.c:191
+#: ../src/font-view.c:189
 msgid "Type"
 msgstr "Typ"
 
-#: ../src/font-view.c:236 ../src/font-view.c:255
+#: ../src/font-view.c:234 ../src/font-view.c:253
 msgid "Version"
 msgstr "Verzia"
 
-#: ../src/font-view.c:241 ../src/font-view.c:261
+#: ../src/font-view.c:239 ../src/font-view.c:259
 msgid "Copyright"
 msgstr "Autorské právo"
 
-#: ../src/font-view.c:246
+#: ../src/font-view.c:244
 msgid "Description"
 msgstr "Popis"
 
-#: ../src/font-view.c:274
+#: ../src/font-view.c:272
 msgid "Install Failed"
 msgstr "Inštalácia zlyhala"
 
-#: ../src/font-view.c:280
+#: ../src/font-view.c:278
 msgid "Installed"
 msgstr "Nainštalované"
 
-#: ../src/font-view.c:283 ../src/font-view.c:517
+#: ../src/font-view.c:281 ../src/font-view.c:533
 msgid "Install"
 msgstr "Nainštalovať"
 
-#: ../src/font-view.c:416
+#: ../src/font-view.c:414
 msgid "This font could not be displayed."
 msgstr "Toto písmo sa nepodarilo zobraziť."
 
-#: ../src/font-view.c:509
+#: ../src/font-view.c:479
+msgid "_Close"
+msgstr "_Zavrieť"
+
+#: ../src/font-view.c:521
 msgid "Info"
 msgstr "Informácie"
 
-#: ../src/font-view.c:524
+#: ../src/font-view.c:550
 msgid "Back"
 msgstr "Späť"
 
-#: ../src/font-view.c:611
+#: ../src/font-view.c:640
 msgid "All Fonts"
 msgstr "Všetky písma"
 
-#: ../src/font-view.c:729 ../src/font-view.c:768
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Prehliadač písiem"
 
-#: ../src/font-view.c:730 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Zobrazenie písiem vo vašom systéme"
 
-#: ../src/font-view.c:732
+#: ../src/font-view.c:761
 msgid "translator-credits"
 msgstr "Dušan Kazik <prescott66@gmail.com>"
 
