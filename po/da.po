@@ -7,7 +7,7 @@
 # Keld Simonsen <keld@dkuug.dk>, 2000-2001.
 # Ole Laursen <olau@hardworking.dk>, 2001, 02, 03, 04.
 # Martin Willemoes Hansen <mwh@sysrq.dk>, 2004, 05.
-# Kenneth Nielsen <k.nielsen81@gmail.com>, 2008.
+# Kenneth Nielsen <k.nielsen81@gmail.com>, 2008, 2013.
 # Joe Hansen <joedalton2@yahoo.dk>, 2011.
 # Ask Hjorth Larsen <asklarsen@gmail.com>, 2007, 08, 09, 10, 11, 12.
 #
@@ -22,9 +22,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-16 17:20+0100\n"
-"PO-Revision-Date: 2013-03-16 17:16+0100\n"
-"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
+"POT-Creation-Date: 2013-09-16 00:41+0200\n"
+"PO-Revision-Date: 2013-09-14 15:33+0200\n"
+"Last-Translator: Kenneth Nielsen <k.nielsen81@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
@@ -60,68 +60,71 @@ msgstr "Om Skrifttypefremviser"
 msgid "Quit"
 msgstr "Afslut"
 
-#: ../src/font-view.c:178
+#: ../src/font-view.c:176
 msgid "Name"
 msgstr "Navn"
 
-#: ../src/font-view.c:181
+#: ../src/font-view.c:179
 msgid "Style"
 msgstr "Stil"
 
-#: ../src/font-view.c:191
+#: ../src/font-view.c:189
 msgid "Type"
 msgstr "Type"
 
-#: ../src/font-view.c:236 ../src/font-view.c:255
+#: ../src/font-view.c:234 ../src/font-view.c:253
 msgid "Version"
 msgstr "Version"
 
-#: ../src/font-view.c:241 ../src/font-view.c:261
+#: ../src/font-view.c:239 ../src/font-view.c:259
 msgid "Copyright"
 msgstr "Ophavsret"
 
-#: ../src/font-view.c:246
+#: ../src/font-view.c:244
 msgid "Description"
 msgstr "Beskrivelse"
 
-#: ../src/font-view.c:274
+#: ../src/font-view.c:272
 msgid "Install Failed"
 msgstr "Installation mislykkedes"
 
-#: ../src/font-view.c:280
+#: ../src/font-view.c:278
 msgid "Installed"
 msgstr "Installeret"
 
-#: ../src/font-view.c:283 ../src/font-view.c:517
+#: ../src/font-view.c:281 ../src/font-view.c:533
 msgid "Install"
 msgstr "Installér"
 
-#: ../src/font-view.c:416
+#: ../src/font-view.c:414
 msgid "This font could not be displayed."
 msgstr "Denne skrifttype kunne ikke vises."
 
-#: ../src/font-view.c:509
+#: ../src/font-view.c:479
+msgid "_Close"
+msgstr "_Luk"
+
+#: ../src/font-view.c:521
 msgid "Info"
 msgstr "Info"
 
-#: ../src/font-view.c:524
+#: ../src/font-view.c:550
 msgid "Back"
 msgstr "Tilbage"
 
-#: ../src/font-view.c:611
+#: ../src/font-view.c:640
 msgid "All Fonts"
 msgstr "Alle skrifttyper"
 
-#: ../src/font-view.c:729 ../src/font-view.c:768
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Skrifttypefremviser"
 
-#: ../src/font-view.c:730 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Vis skrifttyper på dit system"
 
-#: ../src/font-view.c:732
+#: ../src/font-view.c:761
 msgid "translator-credits"
 msgstr ""
 "Kenneth Christiansen\n"
