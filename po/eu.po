@@ -1,18 +1,20 @@
 # translation of eu.po to Basque
 # Copyright (C) 2005, 2006, 2007, 2008, 2009, 2010, 2011 Free Software Foundation, Inc.
 # This file is distributed under the same license as the baobab package.
+#
 # Mikel Olasagasti <hey_neken@mundurat.net>, 2005.
 # Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2005, 2006, 2007, 2008, 2009, 2010, 2011.
 # Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2012, 2013.
 # Julen Ruiz Aizpuru <julenx@gmail.com>, 2011.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-02 12:24+0100\n"
-"PO-Revision-Date: 2013-02-02 12:25+0100\n"
+"POT-Creation-Date: 2013-09-16 22:04+0200\n"
+"PO-Revision-Date: 2013-09-16 22:04+0200\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
-"Language-Team: Basque <itzulpena@euskalgnu.org>\n"
+"Language-Team: Basque <librezale@librezale.org>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -49,68 +51,71 @@ msgstr "Letra-tipoen ikustaileari buruz"
 msgid "Quit"
 msgstr "Irten"
 
-#: ../src/font-view.c:178
+#: ../src/font-view.c:176
 msgid "Name"
 msgstr "Izena"
 
-#: ../src/font-view.c:181
+#: ../src/font-view.c:179
 msgid "Style"
 msgstr "Estiloa"
 
-#: ../src/font-view.c:191
+#: ../src/font-view.c:189
 msgid "Type"
 msgstr "Mota"
 
-#: ../src/font-view.c:236 ../src/font-view.c:255
+#: ../src/font-view.c:234 ../src/font-view.c:253
 msgid "Version"
 msgstr "Bertsioa"
 
-#: ../src/font-view.c:241 ../src/font-view.c:261
+#: ../src/font-view.c:239 ../src/font-view.c:259
 msgid "Copyright"
 msgstr "Copyright-a"
 
-#: ../src/font-view.c:246
+#: ../src/font-view.c:244
 msgid "Description"
 msgstr "Azalpena"
 
-#: ../src/font-view.c:274
+#: ../src/font-view.c:272
 msgid "Install Failed"
 msgstr "Instalazioak huts egin du"
 
-#: ../src/font-view.c:280
+#: ../src/font-view.c:278
 msgid "Installed"
 msgstr "Instalatuta"
 
-#: ../src/font-view.c:283 ../src/font-view.c:515
+#: ../src/font-view.c:281 ../src/font-view.c:533
 msgid "Install"
 msgstr "Instalatu"
 
-#: ../src/font-view.c:416
+#: ../src/font-view.c:414
 msgid "This font could not be displayed."
 msgstr "Letra-tipo hau ezin izan da bistaratu."
 
-#: ../src/font-view.c:508
+#: ../src/font-view.c:479
+msgid "_Close"
+msgstr "_Itxi"
+
+#: ../src/font-view.c:521
 msgid "Info"
 msgstr "Informazioa"
 
-#: ../src/font-view.c:521
+#: ../src/font-view.c:550
 msgid "Back"
 msgstr "Atzera"
 
-#: ../src/font-view.c:618
+#: ../src/font-view.c:640
 msgid "All Fonts"
 msgstr "Letra-tipo guztiak"
 
-#: ../src/font-view.c:735 ../src/font-view.c:774
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Letra-tipoen ikustailea"
 
-#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Ikusi sistemako letra-tipoak"
 
-#: ../src/font-view.c:738
+#: ../src/font-view.c:761
 msgid "translator-credits"
 msgstr "Iñaki Larrañaga Murgoitio <dooteo@zundan.com>"
 
