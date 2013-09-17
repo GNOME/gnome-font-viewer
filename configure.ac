@@ -39,6 +39,7 @@ GTK_MIN_VERSION=3.11.4
 PKG_CHECK_MODULES(FONTVIEW,
                   fontconfig
                   freetype2
+                  harfbuzz >= 0.9.9
                   gnome-desktop-3.0
                   gio-2.0 >= $GLIB_MIN_VERSION
                   glib-2.0 >= $GLIB_MIN_VERSION
