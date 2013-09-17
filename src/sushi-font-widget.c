@@ -232,27 +232,19 @@ check_font_contain_text (FT_Face face,
   gunichar *string;
   glong len, idx, map;
   FT_CharMap charmap;
-  gboolean retval = FALSE;
+  gboolean retval = TRUE;
 
   string = g_utf8_to_ucs4_fast (text, -1, &len);
 
-  for (map = 0; map < face->num_charmaps; map++) {
-    charmap = face->charmaps[map];
-    FT_Set_Charmap (face, charmap);
+  FT_Select_Charmap (face, FT_ENCODING_UNICODE);
 
-    retval = TRUE;
+  for (idx = 0; idx < len; idx++) {
+    gunichar c = string[idx];
 
-    for (idx = 0; idx < len; idx++) {
-      gunichar c = string[idx];
-
-      if (!FT_Get_Char_Index (face, c)) {
-        retval = FALSE;
-        break;
-      }
-    }
-
-    if (retval)
+    if (!FT_Get_Char_Index (face, c)) {
+      retval = FALSE;
       break;
+    }
   }
 
   g_free (string);
