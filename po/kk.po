@@ -1,0 +1,119 @@
+# Kazakh translation for gnome-font-viewer.
+# Copyright (C) 2013 gnome-font-viewer's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-font-viewer package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-font-viewer master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-09-21 09:49+0000\n"
+"PO-Revision-Date: 2013-09-21 16:20+0600\n"
+"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
+"Language-Team: Kazakh <kk@li.org>\n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: ../src/font-thumbnailer.c:189
+msgid "Text to thumbnail (default: Aa)"
+msgstr "Үлгі үшін мәтін (бастапқысы: Aa)"
+
+#: ../src/font-thumbnailer.c:189
+msgid "TEXT"
+msgstr "МӘТІН"
+
+#: ../src/font-thumbnailer.c:191
+msgid "Thumbnail size (default: 128)"
+msgstr "Үлгі өлшемі (бастапқысы: 128)"
+
+#: ../src/font-thumbnailer.c:191
+msgid "SIZE"
+msgstr "ӨЛШЕМІ"
+
+#: ../src/font-thumbnailer.c:193
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "ҚАРІП-ФАЙЛ ШЫҒЫС-ФАЙЛЫ"
+
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "Қаріптер көрсетушісі жөнінде"
+
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "Шығу"
+
+#: ../src/font-view.c:176
+msgid "Name"
+msgstr "Аты"
+
+#: ../src/font-view.c:179
+msgid "Style"
+msgstr "Стилі"
+
+#: ../src/font-view.c:189
+msgid "Type"
+msgstr "Түрі"
+
+#: ../src/font-view.c:234 ../src/font-view.c:253
+msgid "Version"
+msgstr "Нұсқасы"
+
+#: ../src/font-view.c:239 ../src/font-view.c:259
+msgid "Copyright"
+msgstr "Copyright"
+
+#: ../src/font-view.c:244
+msgid "Description"
+msgstr "Анықтамасы"
+
+#: ../src/font-view.c:272
+msgid "Install Failed"
+msgstr "Орнату сәтсіз аяқталды"
+
+#: ../src/font-view.c:278
+msgid "Installed"
+msgstr "Орнатылған"
+
+#: ../src/font-view.c:281 ../src/font-view.c:533
+msgid "Install"
+msgstr "Орнату"
+
+#: ../src/font-view.c:414
+msgid "This font could not be displayed."
+msgstr "Бұл қаріпті көрсету мүмкін емес"
+
+#: ../src/font-view.c:479
+msgid "_Close"
+msgstr "Жа_бу"
+
+#: ../src/font-view.c:521
+msgid "Info"
+msgstr "Ақпараты"
+
+#: ../src/font-view.c:550
+msgid "Back"
+msgstr "Кері"
+
+#: ../src/font-view.c:640
+msgid "All Fonts"
+msgstr "Барлық қаріптер"
+
+#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
+msgid "Font Viewer"
+msgstr "Қаріптер көрсетушісі"
+
+#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "Жүйеңіздегі қаріптерді қарау"
+
+#: ../src/font-view.c:761
+msgid "translator-credits"
+msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "қаріп;"
