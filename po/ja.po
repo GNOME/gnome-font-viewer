@@ -16,9 +16,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-08-19 01:13+0000\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-07-05 23:13+0000\n"
 "PO-Revision-Date: 2012-08-09 21:20+0900\n"
 "Last-Translator: Jiro Matsuzawa <jmatsuzawa@gnome.org>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
@@ -28,84 +27,96 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "サムネイルの文字 (デフォルトは Aa)"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "TEXT"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "サムネイルの大きさ (デフォルトは 128)"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "SIZE"
 
-#: ../src/font-thumbnailer.c:194
+#: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
-#: ../src/font-view.c:177
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "このアプリケーションについて"
+
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "終了"
+
+#: ../src/font-view.c:178
 msgid "Name"
 msgstr "名前"
 
-#: ../src/font-view.c:180
+#: ../src/font-view.c:181
 msgid "Style"
 msgstr "スタイル"
 
-#: ../src/font-view.c:190
+#: ../src/font-view.c:191
 msgid "Type"
 msgstr "種類"
 
-#: ../src/font-view.c:235 ../src/font-view.c:254
+#: ../src/font-view.c:236 ../src/font-view.c:255
 msgid "Version"
 msgstr "バージョン"
 
-#: ../src/font-view.c:240 ../src/font-view.c:260
+#: ../src/font-view.c:241 ../src/font-view.c:261
 msgid "Copyright"
 msgstr "著作権"
 
-#: ../src/font-view.c:245
+#: ../src/font-view.c:246
 msgid "Description"
 msgstr "説明"
 
-#: ../src/font-view.c:273
+#: ../src/font-view.c:274
 msgid "Install Failed"
 msgstr "インストールに失敗しました"
 
-#: ../src/font-view.c:279
+#: ../src/font-view.c:280
 msgid "Installed"
 msgstr "インストール済み"
 
-#: ../src/font-view.c:282 ../src/font-view.c:467
+#: ../src/font-view.c:283 ../src/font-view.c:520
 msgid "Install"
 msgstr "インストール"
 
-#: ../src/font-view.c:460
+#: ../src/font-view.c:416
+msgid "This font could not be displayed."
+msgstr "フォントを表示できませんでした。"
+
+#: ../src/font-view.c:512
 msgid "Info"
 msgstr "情報"
 
-#: ../src/font-view.c:473
+#: ../src/font-view.c:527
 msgid "Back"
 msgstr "戻る"
 
-#: ../src/font-view.c:564
+#: ../src/font-view.c:615
 msgid "All Fonts"
 msgstr "すべてのフォント"
 
-#: ../src/font-view.c:659 ../src/font-view.c:702
+#: ../src/font-view.c:733 ../src/font-view.c:772
 #: ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "フォントビューアー"
 
-#: ../src/font-view.c:660 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:734 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "システム上のフォントを閲覧します"
 
-#: ../src/font-view.c:662
+#: ../src/font-view.c:736
 msgid "translator-credits"
 msgstr ""
 "Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1998.\n"
@@ -121,13 +132,9 @@ msgstr ""
 "OKANO Takayoshi <kano@na.rim.or.jp>, 2011, 2012.\n"
 "松澤 二郎 <jmatsuzawa@gnome.org>, 2012."
 
-#: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "このアプリケーションについて"
-
-#: ../src/font-view-app-menu.ui.h:2
-msgid "Quit"
-msgstr "終了"
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "fonts;fontface;フォント書体;"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "フォントの大きさ (デフォルトは 64)"
