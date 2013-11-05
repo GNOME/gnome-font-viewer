@@ -29,13 +29,14 @@
 # Simos Xenitellis <simos.lists@googlemail.com>, 2010.
 # Tom Tryfonidis <tomtryf@gmail.com>, 2012.
 # Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>, 2013.
+# Efstathios Iosifidis <iosifidis@opensuse.org>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.gnome-2-26\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-01-03 12:34+0000\n"
-"PO-Revision-Date: 2013-02-26 08:49+0300\n"
+"POT-Creation-Date: 2013-10-14 10:49+0000\n"
+"PO-Revision-Date: 2013-11-05 22:54+0300\n"
 "Last-Translator: Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>\n"
 "Language-Team: team@gnome.gr\n"
 "Language: el\n"
@@ -46,23 +47,23 @@ msgstr ""
 "X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Κείμενο σε μικρογραφία (προεπιλεγμένο: Αα)"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "ΚΕΙΜΕΝΟ"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "Μέγεθος μικρογραφίας (προεπιλογή: 128)"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "ΜΕΓΕΘΟΣ"
 
-#: ../src/font-thumbnailer.c:194
+#: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
@@ -74,72 +75,76 @@ msgstr "Περί Εφαρμογής προβολής γραμματοσειρώ�
 msgid "Quit"
 msgstr "Έξοδος"
 
-#: ../src/font-view.c:178
+#: ../src/font-view.c:176
 msgid "Name"
 msgstr "Όνομα"
 
-#: ../src/font-view.c:181
+#: ../src/font-view.c:179
 msgid "Style"
 msgstr "Πρότυπο"
 
-#: ../src/font-view.c:191
+#: ../src/font-view.c:189
 msgid "Type"
 msgstr "Τύπος"
 
-#: ../src/font-view.c:236 ../src/font-view.c:255
+#: ../src/font-view.c:234 ../src/font-view.c:253
 msgid "Version"
 msgstr "Έκδοση"
 
-#: ../src/font-view.c:241 ../src/font-view.c:261
+#: ../src/font-view.c:239 ../src/font-view.c:259
 msgid "Copyright"
 msgstr "Πνευματικά δικαιώματα"
 
-#: ../src/font-view.c:246
+#: ../src/font-view.c:244
 msgid "Description"
 msgstr "Περιγραφή"
 
-#: ../src/font-view.c:274
+#: ../src/font-view.c:272
 msgid "Install Failed"
 msgstr "Απέτυχε η εγκατάσταση"
 
-#: ../src/font-view.c:280
+#: ../src/font-view.c:278
 msgid "Installed"
 msgstr "Εγκαταστάθηκε"
 
-#: ../src/font-view.c:283 ../src/font-view.c:515
+#: ../src/font-view.c:281 ../src/font-view.c:533
 msgid "Install"
 msgstr "Εγκατάσταση"
 
-#: ../src/font-view.c:416
+#: ../src/font-view.c:414
 msgid "This font could not be displayed."
 msgstr "Αυτή η γραμματοσειρά δε μπορεί να εμφανιστεί."
 
-#: ../src/font-view.c:508
+#: ../src/font-view.c:479
+msgid "_Close"
+msgstr "_Κλείσιμο"
+
+#: ../src/font-view.c:521
 msgid "Info"
 msgstr "Πληροφορίες"
 
-#: ../src/font-view.c:521
+#: ../src/font-view.c:550
 msgid "Back"
 msgstr "Πίσω"
 
-#: ../src/font-view.c:618
+#: ../src/font-view.c:640
 msgid "All Fonts"
 msgstr "Όλες οι γραμματοσειρές"
 
-#: ../src/font-view.c:735 ../src/font-view.c:774
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Εφαρμογή προβολής γραμματοσειρών"
 
-#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Προβολή των γραμματοσειρών του συστήματος"
 
-#: ../src/font-view.c:738
+#: ../src/font-view.c:761
 msgid "translator-credits"
 msgstr ""
 "Δημήτρης Σπίγγος <dmtrs32@gmail.com>\n"
-"Spiros Papadimitriou <spapadim+@cs.cmu.edu>"
+"Spiros Papadimitriou <spapadim+@cs.cmu.edu>\n"
+"Ευστάθιος Ιωσηφίδης <iosifidis@opensuse.org>"
 
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
