@@ -3,7 +3,7 @@
     <section>
       <item>
         <attribute name="action">app.about</attribute>
-        <attribute name="label" translatable="yes">About Font Viewer</attribute>
+        <attribute name="label" translatable="yes">About</attribute>
       </item>
       <item>
        <attribute name="action">app.quit</attribute>
