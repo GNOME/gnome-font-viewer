@@ -19,8 +19,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils-master-po-gl-14799\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-27 03:31+0200\n"
-"PO-Revision-Date: 2013-08-27 03:31+0200\n"
+"POT-Creation-Date: 2013-12-30 01:01+0100\n"
+"PO-Revision-Date: 2013-12-30 01:01+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: gnome-l10n-gl@gnome.org\n"
 "Language: gl\n"
@@ -52,8 +52,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FICHEIRO-DE-TIPOGRAFIA FICHEIRO-DE-SAÍDA"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "Sobre Visor de tipos de letra"
+msgid "About"
+msgstr "Sobre"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -130,6 +130,9 @@ msgstr "Fran Dieguez <frandieguez@gnome.org>, 2012-2013"
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "tipos de letra;fontface;"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "Sobre Visor de tipos de letra"
 
 #~ msgid "Done"
 #~ msgstr "Feito"
