@@ -10,15 +10,16 @@
 # Aron Xu <happyaron.xu@gmail.com>, 2009, 2011.
 # Cheng Lu <chenglu1990@gmail.com>, 2012.
 # tuhaihe <1132321739qq@gmail.com>, 2013
+# Tong Hui <tonghuix@gmail.com>, 2013
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-08-30 21:10+0000\n"
-"PO-Revision-Date: 2013-08-31 14:22+0800\n"
-"Last-Translator: 甘露(Lu Gan) <rhythm.gan@gmail.com>\n"
+"POT-Creation-Date: 2013-12-28 02:14+0000\n"
+"PO-Revision-Date: 2013-12-29 00:26+0800\n"
+"Last-Translator: Tong Hui <tonghuix@gmail.com>\n"
 "Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -48,8 +49,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "字体文件 输出文件"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "关于字体查看器"
+msgid "About"
+msgstr "关于"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -123,11 +124,15 @@ msgstr "查看您系统中的字体"
 msgid "translator-credits"
 msgstr ""
 "Cheng Lu <chenglu1990@gmail.com>, 2012\n"
-"tuhaihe <1132321739qq@gmail.com>, 2013"
+"tuhaihe <1132321739qq@gmail.com>, 2013\n"
+"Tong Hui <tonghuix@gmail.com>, 2013"
 
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "fonts;fontface;字体;"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "关于字体查看器"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "字体大小(默认：64)"
