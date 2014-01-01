@@ -2,15 +2,15 @@
 # Copyright (C) 2000-2006 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-font-viewer package.
 #
-# Matej Urbančič <mateju@svn.gnome.org>, 2007-2013.
+# Matej Urbančič <mateju@svn.gnome.org>, 2007-2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-08-16 05:02+0000\n"
-"PO-Revision-Date: 2013-08-17 16:01+0100\n"
+"POT-Creation-Date: 2014-01-01 09:11+0000\n"
+"PO-Revision-Date: 2014-01-01 19:43+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -43,8 +43,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "DATOTEKA-PISAVE ODVODNA-DATOTEKA"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "O pregledovalniku pisav"
+msgid "About"
+msgstr "O programu"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -82,8 +82,7 @@ msgstr "Namestitev je spodletela"
 msgid "Installed"
 msgstr "Nameščeno"
 
-#. add install button
-#: ../src/font-view.c:281 ../src/font-view.c:532
+#: ../src/font-view.c:281 ../src/font-view.c:533
 msgid "Install"
 msgstr "Namesti"
 
@@ -95,33 +94,36 @@ msgstr "Pisave ni mogoče pokazati."
 msgid "_Close"
 msgstr "_Zapri"
 
-#: ../src/font-view.c:522
+#: ../src/font-view.c:521
 msgid "Info"
 msgstr "Podrobnosti"
 
-#: ../src/font-view.c:546
+#: ../src/font-view.c:550
 msgid "Back"
 msgstr "Nazaj"
 
-#: ../src/font-view.c:635
+#: ../src/font-view.c:640
 msgid "All Fonts"
 msgstr "Vse pisave"
 
-#: ../src/font-view.c:753 ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Pregledovalnik pisav"
 
-#: ../src/font-view.c:754 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Pregled pisav v sistemu"
 
-#: ../src/font-view.c:756
+#: ../src/font-view.c:761
 msgid "translator-credits"
 msgstr "Matej Urbančič <mateju@svn.gnome.org>"
 
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "pisave;fonti;oblika zapisa;zapis;"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "O pregledovalniku pisav"
 
 #~ msgid "Done"
 #~ msgstr "Končano"
