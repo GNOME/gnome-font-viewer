@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: Tajik Gnome\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-08-13 00:20+0000\n"
-"PO-Revision-Date: 2013-08-13 10:55+0500\n"
+"POT-Creation-Date: 2013-12-30 00:01+0000\n"
+"PO-Revision-Date: 2014-01-07 13:45+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: \n"
-"Language: Tajik\n"
+"Language: tg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.3\n"
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -39,8 +39,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ФАЙЛИ-ШРИФТ ФАЙЛИ-БАРОРИШ"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "Дар бораи брномаи пешнамоиши шрифт"
+msgid "About"
+msgstr "Дар бораи барнома"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -78,8 +78,7 @@ msgstr "Насбкунӣ ба анҷом нарасид"
 msgid "Installed"
 msgstr "Насбшуда"
 
-#. add install button
-#: ../src/font-view.c:281 ../src/font-view.c:520
+#: ../src/font-view.c:281 ../src/font-view.c:533
 msgid "Install"
 msgstr "Насб кардан"
 
@@ -91,31 +90,33 @@ msgstr "Ин шрифт намоиш дода намешавад."
 msgid "_Close"
 msgstr "_Пӯшидан"
 
-#: ../src/font-view.c:510
+#: ../src/font-view.c:521
 msgid "Info"
 msgstr "Маълумот"
 
-#: ../src/font-view.c:534
+#: ../src/font-view.c:550
 msgid "Back"
 msgstr "Бозгашт"
 
-#: ../src/font-view.c:623
+#: ../src/font-view.c:640
 msgid "All Fonts"
 msgstr "Ҳамаи шрифтҳо"
 
-#: ../src/font-view.c:741 ../src/font-view.c:780
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Барномаи пешнамоиши шрифт"
 
-#: ../src/font-view.c:742 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Намоиш додани шрифтҳои системаи шумо"
 
-#: ../src/font-view.c:744
+#: ../src/font-view.c:761
 msgid "translator-credits"
 msgstr "Victor Ibragimov"
 
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "шрифт;намуди шрифт;"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "Дар бораи брномаи пешнамоиши шрифт"
