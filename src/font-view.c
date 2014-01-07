@@ -517,17 +517,6 @@ font_view_application_do_open (FontViewApplication *self,
 
     font_view_ensure_model (self);
 
-    if (self->info_button == NULL) {
-        self->info_button = gtk_button_new_with_label (_("Info"));
-        gtk_widget_set_valign (self->info_button, GTK_ALIGN_CENTER);
-        gtk_style_context_add_class (gtk_widget_get_style_context (self->info_button),
-                                     "text-button");
-        gtk_header_bar_pack_end (GTK_HEADER_BAR (self->header), self->info_button);
-
-        g_signal_connect (self->info_button, "clicked",
-                          G_CALLBACK (info_button_clicked_cb), self);
-    }
-
     /* add install button */
     if (self->install_button == NULL) {
         self->install_button = gtk_button_new_with_label (_("Install"));
@@ -538,6 +527,17 @@ font_view_application_do_open (FontViewApplication *self,
 
         g_signal_connect (self->install_button, "clicked",
                           G_CALLBACK (install_button_clicked_cb), self);
+    }
+
+    if (self->info_button == NULL) {
+        self->info_button = gtk_button_new_with_label (_("Info"));
+        gtk_widget_set_valign (self->info_button, GTK_ALIGN_CENTER);
+        gtk_style_context_add_class (gtk_widget_get_style_context (self->info_button),
+                                     "text-button");
+        gtk_header_bar_pack_end (GTK_HEADER_BAR (self->header), self->info_button);
+
+        g_signal_connect (self->info_button, "clicked",
+                          G_CALLBACK (info_button_clicked_cb), self);
     }
 
     if (self->back_button == NULL) {
