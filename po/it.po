@@ -1,19 +1,19 @@
 # Italian traslation of gnome-font-viewer
-# Copyright (C) 1998-2011, 2012, 2013 Free Software Foundation, Inc.
+# Copyright (C) 1998-2011, 2012, 2013, 2014 Free Software Foundation, Inc.
 # This file is released under the same license as the gnome-font-viewer package.
 # Alessio Frusciante <algol@firenze.linux.it>, 2003, 2005.
 # Lapo Calamandrei <lapo@it.gnome.org>, 2003.
 # Luca Ferretti <elle.uca@infinito.it>, 2004.
 # Fabio Marzocca <thesaltydog@gmail.com>, 2007.
 # Andrea Zagli <azagli@libero.it>, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012.
-# Milo Casagrande <milo@ubuntu.com>, 2012, 2013.
+# Milo Casagrande <milo@ubuntu.com>, 2012, 2013, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-18 14:24+0200\n"
-"PO-Revision-Date: 2013-08-18 14:25+0200\n"
+"POT-Creation-Date: 2014-01-10 09:19+0100\n"
+"PO-Revision-Date: 2014-01-10 09:19+0100\n"
 "Last-Translator: Milo Casagrande <milo@ubuntu.com>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
 "Language: it\n"
@@ -44,8 +44,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FILE-CARATTERE FILE-USCITA"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "Informazioni su Visualizzatore di caratteri"
+msgid "About"
+msgstr "Informazioni"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -83,8 +83,7 @@ msgstr "Installazione non riuscita"
 msgid "Installed"
 msgstr "Installato"
 
-#. add install button
-#: ../src/font-view.c:281 ../src/font-view.c:532
+#: ../src/font-view.c:281 ../src/font-view.c:522
 msgid "Install"
 msgstr "Installa"
 
@@ -96,27 +95,27 @@ msgstr "Impossibile visualizzare questo carattere."
 msgid "_Close"
 msgstr "_Chiudi"
 
-#: ../src/font-view.c:522
+#: ../src/font-view.c:533
 msgid "Info"
 msgstr "Informazioni"
 
-#: ../src/font-view.c:546
+#: ../src/font-view.c:550
 msgid "Back"
 msgstr "Indietro"
 
-#: ../src/font-view.c:635
+#: ../src/font-view.c:640
 msgid "All Fonts"
 msgstr "Tutti i caratteri"
 
-#: ../src/font-view.c:753 ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Visualizzatore di caratteri"
 
-#: ../src/font-view.c:754 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Visualizza i caratteri presenti nel sistema"
 
-#: ../src/font-view.c:756
+#: ../src/font-view.c:761
 msgid "translator-credits"
 msgstr ""
 "Milo Casagrande <milo@ubuntu.com>\n"
