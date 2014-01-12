@@ -15,15 +15,15 @@
 # Petr Kovar <pknbe@volny.cz>, 2008, 2009.
 # Lucas Lommer <llommer@svn.gnome.org>, 2009 (just a small fix).
 # Adrian Guniš <andygun696@gmail.com>, 2008, 2009, 2010.
-# Marek Černocký <marek@manet.cz>, 2010 (just a small fixes), 2011, 2012, 2013.
+# Marek Černocký <marek@manet.cz>, 2010 (just a small fixes), 2011, 2012, 2013, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-08-13 00:20+0000\n"
-"PO-Revision-Date: 2013-08-14 17:35+0200\n"
+"POT-Creation-Date: 2013-12-30 00:01+0000\n"
+"PO-Revision-Date: 2014-01-12 09:29+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -54,8 +54,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "SOUBOR-PÍSMA VÝSTUPNÍ-SOUBOR"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "O prohlížeči písem"
+msgid "About"
+msgstr "O aplikaci"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -93,8 +93,7 @@ msgstr "Instalace selhala"
 msgid "Installed"
 msgstr "Nainstalováno"
 
-#. add install button
-#: ../src/font-view.c:281 ../src/font-view.c:520
+#: ../src/font-view.c:281 ../src/font-view.c:533
 msgid "Install"
 msgstr "Nainstalovat"
 
@@ -106,28 +105,27 @@ msgstr "Toto písmo nelze zobrazit."
 msgid "_Close"
 msgstr "_Zavřít"
 
-#: ../src/font-view.c:510
+#: ../src/font-view.c:521
 msgid "Info"
 msgstr "Informace"
 
-#: ../src/font-view.c:534
+#: ../src/font-view.c:550
 msgid "Back"
 msgstr "Zpět"
 
-#: ../src/font-view.c:623
+#: ../src/font-view.c:640
 msgid "All Fonts"
 msgstr "Všechna písma"
 
-#: ../src/font-view.c:741 ../src/font-view.c:780
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Prohlížeč písem"
 
-#: ../src/font-view.c:742 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Prohlížet si písma ve svém systému"
 
-#: ../src/font-view.c:744
+#: ../src/font-view.c:761
 msgid "translator-credits"
 msgstr "Marek Černocký <marek@manet.cz>"
 
