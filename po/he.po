@@ -12,14 +12,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Gil 'Dolfin' Osher <dolfin@rpg.org.il>, 2003, 2005.
 # Yuval Tanny, 2005.
-# Yosef Or Boczko <yoseforb@gmail.com>, 2013.
+# Yosef Or Boczko <yoseforb@gmail.com>, 2013, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.HEAD.he\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-16 22:39+0300\n"
-"PO-Revision-Date: 2013-09-16 22:40+0300\n"
+"POT-Creation-Date: 2014-01-13 09:06+0200\n"
+"PO-Revision-Date: 2014-01-13 09:07+0200\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
 "Language-Team: עברית <>\n"
 "Language: he\n"
@@ -27,7 +27,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Gtranslator 2.91.6\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n>2||n==0) ? 1 : 2;\n"
 "X-Poedit-Language: Hebrew\n"
 
 #: ../src/font-thumbnailer.c:189
@@ -51,8 +51,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "על אודות מציג הגופנים"
+msgid "About"
+msgstr "על אודות"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -90,7 +90,7 @@ msgstr "ההתקנה נכשלה"
 msgid "Installed"
 msgstr "מותקן"
 
-#: ../src/font-view.c:281 ../src/font-view.c:533
+#: ../src/font-view.c:281 ../src/font-view.c:522
 msgid "Install"
 msgstr "התקנה"
 
@@ -102,7 +102,7 @@ msgstr "לא ניתן להציג גופן זה."
 msgid "_Close"
 msgstr "_סגירה"
 
-#: ../src/font-view.c:521
+#: ../src/font-view.c:533
 msgid "Info"
 msgstr "פרטים"
 
@@ -124,11 +124,16 @@ msgstr "צפייה בגופנים במערכת שלך"
 
 #: ../src/font-view.c:761
 msgid "translator-credits"
-msgstr "ירון שהרבני <sh.yaron@gmail.com>"
+msgstr ""
+"ירון שהרבני <sh.yaron@gmail.com>\n"
+"יוסף אור בוצ׳קו <yoseforb@gmail.com>"
 
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "גופנים;גופן;פונטים;גליפים;"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "על אודות מציג הגופנים"
 
 #~ msgid "Done"
 #~ msgstr "בוצע"
