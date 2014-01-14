@@ -4,14 +4,14 @@
 # Sayed Jaffer Al-Mosawi <mosawi@arabeyes.org>, 2002.
 # Abdulaziz Al-Arfaj <alarfaj0@yahoo.com>, 2004.
 # Djihed Afifi <djihed@gmail.com>, 2006.
-# Khaled Hosny <khaledhosny@eglug.org>, 2006, 2007, 2008, 2010, 2011, 2012, 2013.
+# Khaled Hosny <khaledhosny@eglug.org>, 2006, 2007, 2008, 2010, 2011, 2012, 2013, 2014.
 # Anas Afif Emad <anas.e87@gmail.com, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.gnome-2-16.ar\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-16 18:55+0200\n"
-"PO-Revision-Date: 2013-09-16 18:56+0200\n"
+"POT-Creation-Date: 2014-01-15 00:12+0200\n"
+"PO-Revision-Date: 2014-01-15 00:15+0200\n"
 "Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "Language: ar\n"
@@ -44,8 +44,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "عن عارض الخطوط"
+msgid "About"
+msgstr "عنْ"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -83,7 +83,7 @@ msgstr "فشل التّثبيت"
 msgid "Installed"
 msgstr "مثبَّت"
 
-#: ../src/font-view.c:281 ../src/font-view.c:533
+#: ../src/font-view.c:281 ../src/font-view.c:522
 msgid "Install"
 msgstr "ثبّت"
 
@@ -95,7 +95,7 @@ msgstr "تعذّر عرض هذا الخط."
 msgid "_Close"
 msgstr "أ_غلق"
 
-#: ../src/font-view.c:521
+#: ../src/font-view.c:533
 msgid "Info"
 msgstr "معلومات"
 
@@ -124,6 +124,9 @@ msgstr ""
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "خط;خطوط;"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "عن عارض الخطوط"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "Font size (default: 64)"
