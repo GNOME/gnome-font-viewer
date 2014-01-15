@@ -11,15 +11,15 @@
 # Ilkka Tuohela <hile@iki.fi>, 2005-2009.
 # Timo Jyrinki <timo.jyrinki@iki.fi>, 2008.
 # Tommi Vainikainen <thv@iki.fi>, 2009-2011.
-# Jiri Grönroos <jiri.gronroos+l10n@iki.fi>, 2012, 2013.
+# Jiri Grönroos <jiri.gronroos+l10n@iki.fi>, 2012, 2013, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-08-13 00:20+0000\n"
-"PO-Revision-Date: 2013-09-02 22:30+0300\n"
+"POT-Creation-Date: 2013-12-30 00:01+0000\n"
+"PO-Revision-Date: 2014-01-05 19:00+0200\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <gnome-fi-laatu@lists.sourceforge.net>\n"
 "Language: fi\n"
@@ -50,8 +50,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "KIRJASIN-TIEDOSTO TULOSTE-TIEDOSTO"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "Tietoja - Kirjasinkatselin"
+msgid "About"
+msgstr "Tietoja"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -89,8 +89,7 @@ msgstr "Asennus epäonnistui"
 msgid "Installed"
 msgstr "Asennettu"
 
-#. add install button
-#: ../src/font-view.c:281 ../src/font-view.c:520
+#: ../src/font-view.c:281 ../src/font-view.c:533
 msgid "Install"
 msgstr "Asenna"
 
@@ -102,34 +101,36 @@ msgstr "Tämän fontin näyttäminen epäonnistui."
 msgid "_Close"
 msgstr "_Sulje"
 
-#: ../src/font-view.c:510
+#: ../src/font-view.c:521
 msgid "Info"
 msgstr "Tiedot"
 
-#: ../src/font-view.c:534
+#: ../src/font-view.c:550
 msgid "Back"
 msgstr "Takaisin"
 
-#: ../src/font-view.c:623
+#: ../src/font-view.c:640
 msgid "All Fonts"
 msgstr "Kaikki kirjasimet"
 
-#: ../src/font-view.c:741 ../src/font-view.c:780
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Kirjasinkatselin"
 
-#: ../src/font-view.c:742 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Katsele koneellasi olevia kirjasimia"
 
-#: ../src/font-view.c:744
+#: ../src/font-view.c:761
 msgid "translator-credits"
 msgstr "Jiri Grönroos"
 
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "fonts;fontface;fontti;fontit;kirjasin;kirjasimet;"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "Tietoja - Kirjasinkatselin"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "Kirjasinkoko (oletus: 64)"
