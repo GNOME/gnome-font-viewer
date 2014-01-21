@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+<id type="desktop">gnome-font-viewer.desktop</id>
+<licence>CC0</licence>
+<description>
+<_p>
+GNOME Font Viewer shows you the fonts installed on your computer for your use as
+thumbnails.
+Selecting any thumbnails shows the full view of how the font would look under
+various sizes.
+</_p>
+<_p>
+GNOME Font Viewer also supports installing new font files downloaded in the .ttf
+and other formats.
+Fonts may be installed only for your use or made available to all users on the computer.
+</_p>
+</description>
+<url type="homepage">http://www.gnome.org/gnome-3/</url>
+<screenshots>
+<screenshot type="default">https://help.gnome.org/misc/release-notes/3.6/figures/users-font-viewer.png</screenshot>
+</screenshots>
+</application>
