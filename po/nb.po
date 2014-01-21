@@ -1,15 +1,15 @@
 # Norwegian bokmål translation of gnome-font-viewer.
 # Copyright (C) 1999-2005 Free Software Foundation, Inc.
 #
-# Kjartan Maraas <kmaraas@gnome.org>, 1999-2013.
+# Kjartan Maraas <kmaraas@gnome.org>, 1999-2014.
 # Terance Edward Sola <terance@lyse.net>, 2005.
 # Torstein Adolf Winterseth <kvikende@fsfe.org>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-font-viewer 3.9.x\n"
+"Project-Id-Version: gnome-font-viewer 3.11.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-14 14:55+0200\n"
-"PO-Revision-Date: 2013-08-14 14:55+0200\n"
+"POT-Creation-Date: 2014-01-21 20:25+0100\n"
+"PO-Revision-Date: 2014-01-21 20:25+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: \n"
@@ -39,8 +39,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "SKRIFTFIL UTDATAFIL"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "Om Skriftvisning"
+msgid "About"
+msgstr "Om"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -78,8 +78,7 @@ msgstr "Installering feilet"
 msgid "Installed"
 msgstr "Installert"
 
-#. add install button
-#: ../src/font-view.c:281 ../src/font-view.c:532
+#: ../src/font-view.c:281 ../src/font-view.c:522
 msgid "Install"
 msgstr "Installer"
 
@@ -91,27 +90,27 @@ msgstr "Denne skriften kunne ikke vises."
 msgid "_Close"
 msgstr "_Lukk"
 
-#: ../src/font-view.c:522
+#: ../src/font-view.c:533
 msgid "Info"
 msgstr "Informasjon"
 
-#: ../src/font-view.c:546
+#: ../src/font-view.c:550
 msgid "Back"
 msgstr "Tilbake"
 
-#: ../src/font-view.c:635
+#: ../src/font-view.c:640
 msgid "All Fonts"
 msgstr "Alle skrifter"
 
-#: ../src/font-view.c:753 ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Skriftvisning"
 
-#: ../src/font-view.c:754 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Vis skrifter på systemet"
 
-#: ../src/font-view.c:756
+#: ../src/font-view.c:761
 msgid "translator-credits"
 msgstr "Kjartan Maraas <kmaraas@gnome.org>"
 
