@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Tajik Gnome\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-12-30 00:01+0000\n"
-"PO-Revision-Date: 2014-01-07 13:45+0500\n"
+"POT-Creation-Date: 2014-01-22 01:16+0000\n"
+"PO-Revision-Date: 2014-01-22 10:14+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: \n"
 "Language: tg\n"
@@ -18,9 +18,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.3\n"
 
+#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"Барномаи пешнамоиши шрифтҳои GNOME ҳамаи шрифтҳои насбшударо дар компютери "
+"шумо ҳамчун эскизҳо намоиш медиҳад. Вақте, ки эскизи шрифтеро интихоб "
+"мекунед, метавонед бинед ки чӣ тавр шрифти интихобшуда дар андозаҳои гуногун "
+"менамояд."
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"Барномаи пешнамоиши шрифтҳои GNOME инчунин насби файлҳои шрифтҳои навро дар "
+"формати .ttf ва форматҳои дигар дастгирӣ мекунад. Шумо метавонед шрифтҳоро "
+"танҳо барои ниёзҳои худ насб кунед ё онҳоро барои корбарони дигар дар "
+"компютери шумо дастрас кунед."
+
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
-msgstr "Матн ба пешнамоиши кучак (пешфарз: Aa)"
+msgstr "Матн ба эскизи шрифт (пешфарз: Aa)"
 
 #: ../src/font-thumbnailer.c:189
 msgid "TEXT"
@@ -28,7 +50,7 @@ msgstr "МАТН"
 
 #: ../src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
-msgstr "Андозаи пешнамоиши кучак (пешфарз: 128)"
+msgstr "Андозаи эскизи шрифт (пешфарз: 128)"
 
 #: ../src/font-thumbnailer.c:191
 msgid "SIZE"
@@ -78,7 +100,7 @@ msgstr "Насбкунӣ ба анҷом нарасид"
 msgid "Installed"
 msgstr "Насбшуда"
 
-#: ../src/font-view.c:281 ../src/font-view.c:533
+#: ../src/font-view.c:281 ../src/font-view.c:522
 msgid "Install"
 msgstr "Насб кардан"
 
@@ -90,7 +112,7 @@ msgstr "Ин шрифт намоиш дода намешавад."
 msgid "_Close"
 msgstr "_Пӯшидан"
 
-#: ../src/font-view.c:521
+#: ../src/font-view.c:533
 msgid "Info"
 msgstr "Маълумот"
 
