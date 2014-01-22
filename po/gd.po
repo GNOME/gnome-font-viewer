@@ -1,0 +1,129 @@
+# Gaelic; Scottish translation for gnome-font-viewer
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the gnome-font-viewer package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-font-viewer\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-09-18 23:03+0000\n"
+"PO-Revision-Date: 2013-09-19 15:43+0100\n"
+"Last-Translator: GunChleoc <fios@foramnagaidhlig.net>\n"
+"Language-Team: Gaelic; Scottish <gd@li.org>\n"
+"Language: gd\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : (n > 2 && n < 20) ? 2 : 3;\n"
+"X-Launchpad-Export-Date: 2013-09-19 08:00+0000\n"
+"X-Generator: Launchpad (build 16765)\n"
+
+#: ../src/font-thumbnailer.c:189
+msgid "Text to thumbnail (default: Aa)"
+msgstr "Teacsa na dealbhaige (bun-roghainn: Aa)"
+
+#: ../src/font-thumbnailer.c:189
+msgid "TEXT"
+msgstr "TEACSA"
+
+#: ../src/font-thumbnailer.c:191
+msgid "Thumbnail size (default: 128)"
+msgstr "Meud na dealbhaige (bun-roghainn: 128)"
+
+#: ../src/font-thumbnailer.c:191
+msgid "SIZE"
+msgstr "MEUD"
+
+#: ../src/font-thumbnailer.c:193
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "FONT-FILE OUTPUT-FILE"
+
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About Font Viewer"
+msgstr "Mu dhèidhinn sealladair nan cruthan-clò"
+
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "Fàg an-seo"
+
+#: ../src/font-view.c:176
+msgid "Name"
+msgstr "Ainm"
+
+#: ../src/font-view.c:179
+msgid "Style"
+msgstr "Stoidhle"
+
+#: ../src/font-view.c:189
+msgid "Type"
+msgstr "Seòrsa"
+
+#: ../src/font-view.c:234
+#: ../src/font-view.c:253
+msgid "Version"
+msgstr "Tionndadh"
+
+#: ../src/font-view.c:239
+#: ../src/font-view.c:259
+msgid "Copyright"
+msgstr "Còir-lethbhreac"
+
+#: ../src/font-view.c:244
+msgid "Description"
+msgstr "Tuairisgeul"
+
+#: ../src/font-view.c:272
+msgid "Install Failed"
+msgstr "Dh'fhàillig an stàladh"
+
+#: ../src/font-view.c:278
+msgid "Installed"
+msgstr "Air a stàladh"
+
+#: ../src/font-view.c:281
+#: ../src/font-view.c:533
+msgid "Install"
+msgstr "Stàlaich"
+
+#: ../src/font-view.c:414
+msgid "This font could not be displayed."
+msgstr "Cha b' urrainn dhuinn an cruth-clò seo a thaisbeanadh."
+
+#: ../src/font-view.c:479
+msgid "_Close"
+msgstr "_Dùin"
+
+#: ../src/font-view.c:521
+msgid "Info"
+msgstr "Fiosrachadh"
+
+#: ../src/font-view.c:550
+msgid "Back"
+msgstr "Air ais"
+
+#: ../src/font-view.c:640
+msgid "All Fonts"
+msgstr "Na h-uile cruth-clò"
+
+#: ../src/font-view.c:758
+#: ../src/gnome-font-viewer.desktop.in.in.h:1
+msgid "Font Viewer"
+msgstr "Sealladair nan cruthan-clò"
+
+#: ../src/font-view.c:759
+#: ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "Seall na cruthan-clò air an t-siostam agad"
+
+#: ../src/font-view.c:761
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Akerbeltz https://launchpad.net/~fios\n"
+"  alasdair caimbeul https://launchpad.net/~alexd-deactivatedaccount"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "cruthan-clò;aodann crutha-clò;"
+
