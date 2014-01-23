@@ -4,14 +4,14 @@
 #
 # Amitakhya Phukan <aphukan@redhat.com>, 2008.
 # Amitakhya Phukan <amitakhya@svn.gnome.org>, 2008, 2009.
-# Nilamdyuti Goswami <ngoswami@redhat.com>, 2011, 2012, 2013.
+# Nilamdyuti Goswami <ngoswami@redhat.com>, 2011, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: as\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-08-13 00:20+0000\n"
-"PO-Revision-Date: 2013-09-11 19:12+0530\n"
+"POT-Creation-Date: 2014-01-22 01:16+0000\n"
+"PO-Revision-Date: 2014-01-23 14:45+0630\n"
 "Last-Translator: Nilamdyuti Goswami <ngoswami@redhat.com>\n"
 "Language-Team: Assamese <kde-i18n-doc@kde.org>\n"
 "Language: as\n"
@@ -20,6 +20,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1)\n"
 "X-Generator: Lokalize 1.5\n"
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"GNOME ফন্ট দৰ্শকে আপোনাৰ ব্যৱহাৰৰ বাবে আপোনাৰ কমপিউটাৰত ইনস্টল্ড ফন্টসমূহ "
+"থাম্বনেইল ৰূপে "
+"দেখুৱায়। কোনো থাম্বনেইল নিৰ্বাচন কৰিলে বিভিন্ন আকাৰত ফন্ট দেখাত কেনেকুৱা হব "
+"তাৰ সম্পূৰ্ণ দৃশ্য দেখুৱায়।"
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"GNOME ফন্ট দৰ্শকে লগতে ttf আৰু অন্য বিন্যাসত ডাউনল'ড কৰা নতুন ফন্ট ফাইলসমূহ "
+"ইনস্টল "
+"কৰাটো সমৰ্থন কৰে। ফন্টসমূহ কেৱল আপোানৰ ব্যৱহাৰৰ বাবে ইনস্টল কৰা হব পাৰে অথবা "
+"কমপিউটাৰত "
+"অন্য সকলো ব্যৱহাৰকাৰীৰ বাবে উপলব্ধ কৰোৱা হব পাৰে।"
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -42,8 +65,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "ফন্ট দৰ্শকৰ বিষয়ে"
+msgid "About"
+msgstr "বিষয়ে"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -81,8 +104,7 @@ msgstr "ইনস্টল ব্যৰ্থ"
 msgid "Installed"
 msgstr "ইনস্টল্ড"
 
-#. add install button
-#: ../src/font-view.c:281 ../src/font-view.c:520
+#: ../src/font-view.c:281 ../src/font-view.c:522
 msgid "Install"
 msgstr "ইনস্টল কৰক"
 
@@ -94,28 +116,27 @@ msgstr "এই ফন্টক প্ৰদৰ্শন কৰিব নোৱ�
 msgid "_Close"
 msgstr "বন্ধ কৰক (_C)"
 
-#: ../src/font-view.c:510
+#: ../src/font-view.c:533
 msgid "Info"
 msgstr "তথ্য"
 
-#: ../src/font-view.c:534
+#: ../src/font-view.c:550
 msgid "Back"
 msgstr "পিছলৈ"
 
-#: ../src/font-view.c:623
+#: ../src/font-view.c:640
 msgid "All Fonts"
 msgstr "সকলো ফন্ট"
 
-#: ../src/font-view.c:741 ../src/font-view.c:780
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "ফন্ট দৰ্শক"
 
-#: ../src/font-view.c:742 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "আপোনাৰ চিস্টেমৰ ফন্টসমূহ দৰ্শন কৰক"
 
-#: ../src/font-view.c:744
+#: ../src/font-view.c:761
 msgid "translator-credits"
 msgstr ""
 "অমিতাক্ষ ফুকন (aphukan@fedoraproject.org), নীলমদ্যুতি গোস্বামী "
@@ -125,6 +146,9 @@ msgstr ""
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "fonts;fontface;"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "ফন্ট দৰ্শকৰ বিষয়ে"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "ফন্টৰ আকাৰ (অবিকল্পিত: ৬৪)"
