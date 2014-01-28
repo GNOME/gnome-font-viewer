@@ -6,15 +6,15 @@
 # Tomas Kuliavas <tokul@users.sourceforge.net>, 2003.
 # Žygimantas Beručka <zygis@gnome.org>, 2003-2006, 2009, 2010.
 # Gintautas Miliauskas <gintas@akl.lt>, 2006, 2007, 2008.
-# Aurimas Černius <aurisc4@gmail.com>, 2013.
+# Aurimas Černius <aurisc4@gmail.com>, 2013, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-08-13 00:20+0000\n"
-"PO-Revision-Date: 2013-08-26 23:14+0300\n"
+"POT-Creation-Date: 2014-01-22 01:16+0000\n"
+"PO-Revision-Date: 2014-01-28 23:17+0200\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -24,6 +24,26 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Gtranslator 2.91.6\n"
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"GNOME šriftų žiūryklė rodo jūsų kompiuteryje įdiegtus šriftus miniatiūrų "
+"pavidalu. Pasirinkus bet kurią miniatiūrą parodoma, kaip šriftas atrodytų "
+"įvairiais dydžiais."
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"GNOME šriftų žiūryklė taip pat palaiko naujus šriftų failus, parsiųstus .ttf "
+"ir kitais formatais. Šriftai gali būti įdiegti jūsų naudojimui arba padaryti "
+"prieinamais visiems kompiuterio naudotojams."
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -46,8 +66,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ŠRIFTO-FAILAS REZULTATO-FAILAS"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "Apie šriftų žiūryklę"
+msgid "About"
+msgstr "Apie"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -85,8 +105,7 @@ msgstr "Diegimas nepavyko"
 msgid "Installed"
 msgstr "Įdiegta"
 
-#. add install button
-#: ../src/font-view.c:281 ../src/font-view.c:520
+#: ../src/font-view.c:281 ../src/font-view.c:522
 msgid "Install"
 msgstr "Įdiegti"
 
@@ -98,28 +117,27 @@ msgstr "Nepavyko parodyti šio šrifto."
 msgid "_Close"
 msgstr "_Užverti"
 
-#: ../src/font-view.c:510
+#: ../src/font-view.c:533
 msgid "Info"
 msgstr "Informacija"
 
-#: ../src/font-view.c:534
+#: ../src/font-view.c:550
 msgid "Back"
 msgstr "Atgal"
 
-#: ../src/font-view.c:623
+#: ../src/font-view.c:640
 msgid "All Fonts"
 msgstr "Visi šriftai"
 
-#: ../src/font-view.c:741 ../src/font-view.c:780
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Šriftų žiūryklė"
 
-#: ../src/font-view.c:742 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Rodyti sistemos šriftus"
 
-#: ../src/font-view.c:744
+#: ../src/font-view.c:761
 msgid "translator-credits"
 msgstr ""
 "išvertė:\n"
@@ -128,3 +146,4 @@ msgstr ""
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "šriftai;šrifto peržiūra;"
+
