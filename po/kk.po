@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-09-21 09:49+0000\n"
-"PO-Revision-Date: 2013-09-21 16:20+0600\n"
+"POT-Creation-Date: 2014-02-08 19:52+0000\n"
+"PO-Revision-Date: 2014-02-09 10:15+0600\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk@li.org>\n"
 "Language: kk\n"
@@ -17,6 +17,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.4\n"
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"GNOME компьютеріңізде орнатылған қаріптерді кіші үлгілер ретінде ретінде "
+"көрсетеді. Үлгіні таңдау кезінде ол қаріптің толық көрінісі және әр түрлі "
+"өлшемдердегі түрі көрсетіледі."
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"GNOME қаріптер көрсетушісі сонымен қатар .ttf және басқа пішімдегі жаңа "
+"қаріптерді орнатуды қолдайды. Қаріптерді тек өзіңіз немесе компьютердің "
+"барлық пайдаланушылары үшін орнатуға болады."
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -39,8 +59,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ҚАРІП-ФАЙЛ ШЫҒЫС-ФАЙЛЫ"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "Қаріптер көрсетушісі жөнінде"
+msgid "About"
+msgstr "Осы туралы"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -78,7 +98,7 @@ msgstr "Орнату сәтсіз аяқталды"
 msgid "Installed"
 msgstr "Орнатылған"
 
-#: ../src/font-view.c:281 ../src/font-view.c:533
+#: ../src/font-view.c:281 ../src/font-view.c:522
 msgid "Install"
 msgstr "Орнату"
 
@@ -90,7 +110,7 @@ msgstr "Бұл қаріпті көрсету мүмкін емес"
 msgid "_Close"
 msgstr "Жа_бу"
 
-#: ../src/font-view.c:521
+#: ../src/font-view.c:533
 msgid "Info"
 msgstr "Ақпараты"
 
@@ -117,3 +137,6 @@ msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>"
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "қаріп;"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "Қаріптер көрсетушісі жөнінде"
