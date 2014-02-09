@@ -67,6 +67,24 @@ typedef struct {
     GtkApplicationClass parent_class;
 } FontViewApplicationClass;
 
+static gboolean
+_print_version_and_exit (const gchar *option_name,
+                         const gchar *value,
+                         gpointer data,
+                         GError **error)
+{
+    g_print("%s %s\n", _("GNOME Font Viewer"), VERSION);
+    exit (EXIT_SUCCESS);
+    return TRUE;
+}
+
+static const GOptionEntry goption_options[] =
+{
+    { "version", 0, G_OPTION_FLAG_NO_ARG, G_OPTION_ARG_CALLBACK,
+      _print_version_and_exit, N_("Show the application's version"), NULL},
+    { NULL }
+};
+
 G_DEFINE_TYPE (FontViewApplication, font_view_application, GTK_TYPE_APPLICATION);
 
 static void font_view_application_do_overview (FontViewApplication *self);
@@ -135,9 +153,9 @@ strip_version (gchar **original)
 
 static void
 add_row (GtkWidget *grid,
-	 const gchar *name,
-	 const gchar *value,
-	 gboolean multiline)
+         const gchar *name,
+         const gchar *value,
+         gboolean multiline)
 {
     GtkWidget *name_w, *label;
 
@@ -167,7 +185,7 @@ add_row (GtkWidget *grid,
 static void
 populate_grid (FontViewApplication *self,
                GtkWidget *grid,
-	       FT_Face face)
+               FT_Face face)
 {
     gchar *s;
     GFileInfo *info;
@@ -890,6 +908,8 @@ main (int argc,
 {
     GApplication *app;
     gint retval;
+    GError *error = NULL;
+    GOptionContext *ctx;
 
     bindtextdomain (GETTEXT_PACKAGE, GNOMELOCALEDIR);
     bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
@@ -897,6 +917,26 @@ main (int argc,
 
     if (!FcInit ())
         g_critical ("Can't initialize fontconfig library");
+
+    ctx = g_option_context_new (_("[FILE...]"));
+    g_option_context_add_main_entries (ctx, goption_options, PACKAGE);
+    g_option_context_add_group (ctx, gtk_get_option_group (FALSE));
+
+    if (!g_option_context_parse (ctx, &argc, &argv, &error)) {
+        gchar *help_msg;
+
+        /* I18N: The '%s' is replaced with the command name. */
+        help_msg = g_strdup_printf (_("Run '%s --help' to see a full "
+                                      "list of available command line "
+                                      "options."), argv[0]);
+        g_printerr ("%s\n%s\n", error->message, help_msg);
+        g_error_free (error);
+        g_free (help_msg);
+        g_option_context_free (ctx);
+
+        return EXIT_FAILURE;
+    }
+    g_option_context_free (ctx);
 
     app = font_view_application_new ();
     retval = g_application_run (app, argc, argv);
