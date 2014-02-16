@@ -475,7 +475,7 @@ info_button_clicked_cb (GtkButton *button,
     populate_grid (self, grid, face);
 
     dialog = gtk_dialog_new_with_buttons ("", GTK_WINDOW (self->main_window),
-                                          GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT,
+                                          GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT | GTK_DIALOG_USE_HEADER_BAR,
                                           _("_Close"), GTK_RESPONSE_CLOSE,
                                           NULL);
     gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), grid);
