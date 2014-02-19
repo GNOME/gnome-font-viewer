@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer 3.11.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-21 20:25+0100\n"
-"PO-Revision-Date: 2014-01-21 20:25+0100\n"
+"POT-Creation-Date: 2014-02-19 20:07+0100\n"
+"PO-Revision-Date: 2014-02-19 20:09+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: \n"
@@ -17,6 +17,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr "GNOME skriftvisning viser deg skrifter som er installert på din datamaskin som miniatyrer. Ved å velge en miniatyr får du en full visning av hvordan skriften vil se ut i forskjellige størrelser."
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr "GNOME skriftvisning støtter også å installere nye skriftfiler som er lastet ned i ttf- og andre formater. Skriftene kan installeres for personlig bruk eller gjøres tilgjengelig for alle brukere på datamaskinen."
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
