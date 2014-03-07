@@ -7,14 +7,14 @@
 # Raivis Dejus <orvils@gmail.com>, 2006, 2007, 2009.
 # Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2010, 2011.
 # Rudolfs <rudolfs.mazurs@gmail.com>, 2011.
-# Rūdofls Mazurs <rudolfs.mazurs@gmail.com>, 2011, 2012, 2013.
+# Rūdofls Mazurs <rudolfs.mazurs@gmail.com>, 2011, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: lv\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-08-13 00:20+0000\n"
-"PO-Revision-Date: 2013-09-11 16:04+0300\n"
+"POT-Creation-Date: 2014-03-07 07:48+0000\n"
+"PO-Revision-Date: 2014-03-07 16:25+0200\n"
 "Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
@@ -24,6 +24,25 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
 "X-Generator: Lokalize 1.5\n"
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"GNOME fontu skatītājs rāda datorā instalētos fontus kā sīktēlus. Jebkura "
+"sīktēla izvēlēšanās rāda, kā fonts izskatītos dažādos izmēros."
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"GNOME fontu skatītājs arī atbalsta jaunu fontu datņu instalēšanu, kas ir .ttf "
+"un citos formātos. Fontus var instalēt tikai savām vajadzībām vai visiem "
+"datora lietotājiem."
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -45,10 +64,9 @@ msgstr "IZMĒRS"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONTA-DATNE IZVADES-DATNE"
 
-# logview/logview.c:268
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "Par fontu pārlūku"
+msgid "About"
+msgstr "Par"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -87,8 +105,7 @@ msgstr "Instalēšana neizdevās"
 msgid "Installed"
 msgstr "Instalēts"
 
-#. add install button
-#: ../src/font-view.c:281 ../src/font-view.c:520
+#: ../src/font-view.c:281 ../src/font-view.c:522
 msgid "Install"
 msgstr "Instalēt"
 
@@ -100,35 +117,38 @@ msgstr "Šo fontu nevar parādīt."
 msgid "_Close"
 msgstr "_Aizvērt"
 
-#: ../src/font-view.c:510
+#: ../src/font-view.c:533
 msgid "Info"
 msgstr "Informācija"
 
-#: ../src/font-view.c:534
+#: ../src/font-view.c:550
 msgid "Back"
 msgstr "Atpakaļ"
 
-#: ../src/font-view.c:623
+#: ../src/font-view.c:640
 msgid "All Fonts"
 msgstr "Visi fonti"
 
 # logview/logview.c:268
-#: ../src/font-view.c:741 ../src/font-view.c:780
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Fontu pārlūks"
 
-#: ../src/font-view.c:742 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Pārlūkojiet un apskatiet savas sistēmas fontus"
 
-#: ../src/font-view.c:744
+#: ../src/font-view.c:761
 msgid "translator-credits"
 msgstr "Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>"
 
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "fonti;šrifti;"
+
+# logview/logview.c:268
+#~ msgid "About Font Viewer"
+#~ msgstr "Par fontu pārlūku"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "Fonta izmērs (noklusētais: 64)"
