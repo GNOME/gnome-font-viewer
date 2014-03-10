@@ -16,9 +16,9 @@ msgstr ""
 "Project-Id-Version: gnome-utils trunk\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-09-05 07:43+0000\n"
-"PO-Revision-Date: 2013-09-06 23:16+0600\n"
-"Last-Translator: Dmitriy S. Seregin <dseregin@59.ru>\n"
+"POT-Creation-Date: 2014-03-10 07:50+0000\n"
+"PO-Revision-Date: 2014-03-10 21:37+0300\n"
+"Last-Translator: Yuri Myasoedov <omerta13@yandex.ru>\n"
 "Language-Team: Russian <gnome-cyr@gnome.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +27,27 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "10<=4 && (n%100<10 || n%100>=20) ? 1: 2);\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"Просмотрщик шрифтов GNOME показывает в виде миниатюр установленные на вашем "
+"компьютере шрифты. Выбор миниатюры открывает подробный режим просмотра "
+"шрифта, как будет выглядеть шрифт при различных размерах."
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"Просмотрщик шрифтов GNOME также поддерживает установку новых шрифтов из "
+"файлов формата .ttf и прочих форматов. Шрифты можно установить для текущего "
+"пользователя или для всех пользователей компьютера."
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -50,8 +70,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ФАЙЛ-ШРИФТА ФАЙЛ-ВЫВОДА"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "О программе просмотра шрифтов"
+msgid "About"
+msgstr "О приложении"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -89,7 +109,7 @@ msgstr "Сбой при установке"
 msgid "Installed"
 msgstr "Установлено"
 
-#: ../src/font-view.c:281 ../src/font-view.c:533
+#: ../src/font-view.c:281 ../src/font-view.c:522
 msgid "Install"
 msgstr "Установить"
 
@@ -101,7 +121,7 @@ msgstr "Не удалось показать этот шрифт."
 msgid "_Close"
 msgstr "_Закрыть"
 
-#: ../src/font-view.c:521
+#: ../src/font-view.c:533
 msgid "Info"
 msgstr "Информация"
 
@@ -115,7 +135,7 @@ msgstr "Все шрифты"
 
 #: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
-msgstr "Программа просмотра шрифтов"
+msgstr "Просмотрщик шрифтов"
 
 #: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
@@ -123,8 +143,11 @@ msgstr "Просмотр шрифтов, доступных в системе"
 
 #: ../src/font-view.c:761
 msgid "translator-credits"
-msgstr "Юрий Мясоедов <omerta13@yandex.ru>, 2012"
+msgstr "Юрий Мясоедов <ymyasoedov@yandex.ru>, 2012, 2013, 2014."
 
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "шрифты;"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "О программе просмотра шрифтов"
