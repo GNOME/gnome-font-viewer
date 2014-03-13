@@ -3,24 +3,45 @@
 # This file is distributed under the same license as the gnome-utils package.
 #
 # Mohammad DAMT <mdamt@bisnisweb.com>, 2003-2005.
-# Andika Triwidada <andika@gmail.com>, 2010-2013.
+# Andika Triwidada <andika@gmail.com>, 2010-2014.
 # Dirgita <dirgitadevina@yahoo.co.id>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-08-13 00:20+0000\n"
-"PO-Revision-Date: 2013-09-04 12:25+0700\n"
+"POT-Creation-Date: 2014-03-12 19:48+0000\n"
+"PO-Revision-Date: 2014-03-13 11:21+0700\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: GNOME Indonesian Translation Team <gnome@i15n.org>\n"
-"Language: id_ID\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Generator: Poedit 1.5.7\n"
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"GNOME Penilik Fonta menampilkan fonta yang terpasang dan dapat dipakai pada "
+"komputer Anda sebagai gambar mini. Memilih sebarang gambar mini akan "
+"menampilkan tilikan penuh tentang bagaimana fonta akan nampak pada berbagai "
+"ukuran."
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"GNOME Penilik Fonta juga mendukung pemasangan fonta baru yang diunduh dalam ."
+"ttf dan format lain. Fonta bisa dipasang hanya untuk Anda pakai atau dibuat "
+"tersedia bagi semua pengguna pada komputer."
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -43,8 +64,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "BERKAS-FONTA BERKAS-KELUARAN"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "Tentang Penampil Fonta"
+msgid "About"
+msgstr "Tentang"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -82,8 +103,7 @@ msgstr "Pemasangan Gagal"
 msgid "Installed"
 msgstr "Terpasang"
 
-#. add install button
-#: ../src/font-view.c:281 ../src/font-view.c:520
+#: ../src/font-view.c:281 ../src/font-view.c:522
 msgid "Install"
 msgstr "Pasang"
 
@@ -95,33 +115,32 @@ msgstr "Fonta ini tak dapat ditampilkan."
 msgid "_Close"
 msgstr "_Tutup"
 
-#: ../src/font-view.c:510
+#: ../src/font-view.c:533
 msgid "Info"
 msgstr "Info"
 
-#: ../src/font-view.c:534
+#: ../src/font-view.c:550
 msgid "Back"
 msgstr "Mundur"
 
-#: ../src/font-view.c:623
+#: ../src/font-view.c:640
 msgid "All Fonts"
 msgstr "Semua Fonta"
 
-#: ../src/font-view.c:741 ../src/font-view.c:780
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Penampil Fonta"
 
-#: ../src/font-view.c:742 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Lihat fonta pada sistem Anda"
 
-#: ../src/font-view.c:744
+#: ../src/font-view.c:761
 msgid "translator-credits"
 msgstr ""
 "Mohammad DAMT <mdamt@bisnisweb.com>, 2003-2005.\n"
 "Dirgita <dirgitadevina@yahoo.co.id>, 2011.\n"
-"Andika Triwidada <andika@gmail.com>, 2010-2013."
+"Andika Triwidada <andika@gmail.com>, 2010-2014."
 
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
