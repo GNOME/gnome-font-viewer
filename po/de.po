@@ -14,24 +14,48 @@
 # Nathan-J. Hirschauer <nathanhirschauer@verfriemelt.org>, 2009.
 # Mario Blättermann <mariobl@gnome.org>, 2009, 2011, 2013.
 # Paul Seyfert <pseyfert@mathphys.fsk.uni-heidelberg.de>, 2011.
-# Wolfgang Stöggl <c72578@yahoo.de>, 2011.
+# Wolfgang Stöggl <c72578@yahoo.de>, 2011, 2014.
 # Tobias Endrigkeit <tobiasendrigkeit@googlemail.com>, 2012.
 # Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009, 2011, 2012.
+# Benjamin Steinwender <b@stbe.at>, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-08-13 00:20+0000\n"
-"PO-Revision-Date: 2013-09-13 20:23+0100\n"
+"POT-Creation-Date: 2014-03-13 07:50+0000\n"
+"PO-Revision-Date: 2014-03-13 20:32+0100\n"
 "Last-Translator: Benjamin Steinwender <b@stbe.at>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.4\n"
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"GNOME Schriftartenbetrachter zeigt Ihnen eine Vorschau der Schriftarten, die "
+"auf Ihrem Rechner installiert sind. Die Auswahl eines Vorschaubildes zeigt "
+"die vollständige Ansicht, wie die Schriftart unter verschiedenen Größen "
+"aussieht."
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"GNOME Schriftartenbetrachter unterstützt auch die Installation neuer "
+"Schriftartendateien als .ttf oder auch in anderen Formaten. Schriftarten "
+"können zu Ihrer eigenen Verwendung oder für alle Benutzer eines Rechners "
+"installiert werden."
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -54,8 +78,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "SCHRIFT-DATEI AUSGABE-DATEI"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "Info zu Schriftartenbetrachter"
+msgid "About"
+msgstr "Info"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -93,8 +117,7 @@ msgstr "Installation fehlgeschlagen"
 msgid "Installed"
 msgstr "Installiert"
 
-#. add install button
-#: ../src/font-view.c:281 ../src/font-view.c:520
+#: ../src/font-view.c:281 ../src/font-view.c:522
 msgid "Install"
 msgstr "Installieren"
 
@@ -106,36 +129,39 @@ msgstr "Diese Schrift kann nicht angezeigt werden."
 msgid "_Close"
 msgstr "_Schließen"
 
-#: ../src/font-view.c:510
+#: ../src/font-view.c:533
 msgid "Info"
 msgstr "Info"
 
-#: ../src/font-view.c:534
+#: ../src/font-view.c:550
 msgid "Back"
 msgstr "Zurück"
 
-#: ../src/font-view.c:623
+#: ../src/font-view.c:640
 msgid "All Fonts"
 msgstr "Alle Schriftarten"
 
-#: ../src/font-view.c:741 ../src/font-view.c:780
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Schriftartenbetrachter"
 
-#: ../src/font-view.c:742 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Schriftarten Ihres Systems betrachten"
 
-#: ../src/font-view.c:744
+#: ../src/font-view.c:761
 msgid "translator-credits"
 msgstr ""
 "Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009, 2011, 2012.\n"
-"Tobias Endrigkeit <tobiasendrigkeit@googlemail.com>, 2012."
+"Tobias Endrigkeit <tobiasendrigkeit@googlemail.com>, 2012.\n"
+"Benjamin Steinwender <b@stbe.at>, 2014."
 
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "Schrift;Schriftschnitt;"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "Info zu Schriftartenbetrachter"
 
 #, fuzzy
 #~ msgid "Done"
