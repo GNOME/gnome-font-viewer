@@ -1,23 +1,46 @@
 # French translation of gnome-font-viewer.
-# Copyright (C) 1998-2011 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gnome-utils package.
+# Copyright (C) 1998-2014 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-font-viewer package.
 #
-# Bruno Brouard <annoa.b@gmail.com>, 2012
+# Bruno Brouard <annoa.b@gmail.com>, 2012.
+# Bruno Cauet <brunocauet@gmail.com>, 2014.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils HEAD\n"
+"Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-08-13 00:20+0000\n"
-"PO-Revision-Date: 2013-08-22 16:02+0200\n"
-"Last-Translator: Bruno Brouard <annoa.b@gmail.com>\n"
+"POT-Creation-Date: 2014-03-15 07:47+0000\n"
+"PO-Revision-Date: 2014-03-15 15:47+0100\n"
+"Last-Translator: Bruno Cauet <brunocauet@gmail.com>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
-"Language: \n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n>1;\n"
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"Le visionneur de police GNOME affiche les polices de caractères installées "
+"sur votre ordinateur sous la forme de miniatures. En choisissant l'une de "
+"celles-ci, vous obtenez une vue complète de la police à différentes "
+"tailles."
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"Le visionneur de police GNOME prend également en charge l'installation de "
+"nouveaux fichiers de police téléchargés (formats ttf et autres). Les polices "
+"peuvent être installées pour vous seul ou rendues disponibles à tous les "
+"utilisateurs de l'ordinateur."
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -40,8 +63,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FICHIER-POLICE FICHIER-SORTIE"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "À propos du Visionneur de police"
+msgid "About"
+msgstr "À propos"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -79,8 +102,7 @@ msgstr "Échec de l'installation "
 msgid "Installed"
 msgstr "Installé"
 
-#. add install button
-#: ../src/font-view.c:281 ../src/font-view.c:520
+#: ../src/font-view.c:281 ../src/font-view.c:522
 msgid "Install"
 msgstr "Installer"
 
@@ -92,34 +114,38 @@ msgstr "Cette police n'a pas pu être affichée."
 msgid "_Close"
 msgstr "_Fermer"
 
-#: ../src/font-view.c:510
+#: ../src/font-view.c:533
 msgid "Info"
 msgstr "Information"
 
-#: ../src/font-view.c:534
+#: ../src/font-view.c:550
 msgid "Back"
 msgstr "Retour"
 
-#: ../src/font-view.c:623
+#: ../src/font-view.c:640
 msgid "All Fonts"
 msgstr "Toutes les polices"
 
-#: ../src/font-view.c:741 ../src/font-view.c:780
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Visionneur de police"
 
-#: ../src/font-view.c:742 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Affiche les polices de votre système"
 
-#: ../src/font-view.c:744
+#: ../src/font-view.c:761
 msgid "translator-credits"
-msgstr "Bruno Brouard <annoa.b@gmail.com>"
+msgstr ""
+"Bruno Brouard <annoa.b@gmail.com>\n"
+"Bruno Cauet <brunocauet@gmail.com>"
 
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "polices;fontes;"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "À propos du Visionneur de police"
 
 #~ msgid "Done"
 #~ msgstr "Terminé"
