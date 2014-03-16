@@ -10,14 +10,15 @@
 # Tomasz Dominikowski <dominikowski@gmail.com>, 2007-2009.
 # Joanna Mazgaj <jmazgaj@aviary.pl>, 2008.
 # Piotr Drąg <piotrdrag@gmail.com>, 2010-2013.
-# Aviary.pl <gnomepl@aviary.pl>, 2007-2013.
+# Paweł Żołnowski <pawel@zolnowski.name>, 2014.
+# Aviary.pl <gnomepl@aviary.pl>, 2007-2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-20 21:29+0200\n"
-"PO-Revision-Date: 2013-08-20 21:30+0200\n"
-"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"POT-Creation-Date: 2014-03-16 15:57+0100\n"
+"PO-Revision-Date: 2014-03-16 10:03+0100\n"
+"Last-Translator: Paweł Żołnowski <pawel@zolnowski.name>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -27,6 +28,26 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"Przeglądarka czcionek GNOME wyświetla obecnie zainstalowane czcionki na "
+"komputerze w postaci miniatur. Aby zobaczyć, jak dana czcionka prezentuje "
+"się w różnych rozmiarach, wystarczy tylko zaznaczyć jej miniaturę."
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"Za pomocą Przeglądarki czcionek GNOME można również instalować nowe czcionki "
+"z plików w formacie .ttf i wielu innych. Można je zainstalować do własnego "
+"użytku lub udostępnić wszystkim użytkownikom komputera."
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -49,8 +70,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "PLIK-CZCIONKI PLIK-WYJŚCIOWY"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "O przeglądarce czcionek"
+msgid "About"
+msgstr "O programie"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -88,7 +109,7 @@ msgstr "Instalacja się nie powiodła"
 msgid "Installed"
 msgstr "Zainstalowana"
 
-#: ../src/font-view.c:281 ../src/font-view.c:533
+#: ../src/font-view.c:281 ../src/font-view.c:522
 msgid "Install"
 msgstr "Zainstaluj"
 
@@ -100,7 +121,7 @@ msgstr "Nie można wyświetlić tej czcionki."
 msgid "_Close"
 msgstr "Za_mknij"
 
-#: ../src/font-view.c:521
+#: ../src/font-view.c:533
 msgid "Info"
 msgstr "Informacje"
 
@@ -129,7 +150,8 @@ msgstr ""
 "Tomasz Dominikowski <dominikowski@gmail.com>, 2007-2009\n"
 "Joanna Mazgaj <jmazgaj@aviary.pl>, 2008\n"
 "Piotr Drąg <piotrdrag@gmail.com>, 2010-2013\n"
-"Aviary.pl <gnomepl@aviary.pl>, 2007-2013"
+"Paweł Żołnowski <pawel@zolnowski.name>, 2014\n"
+"Aviary.pl <gnomepl@aviary.pl>, 2007-2014"
 
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
