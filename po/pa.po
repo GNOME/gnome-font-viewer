@@ -5,14 +5,14 @@
 #
 # Amanpreet Singh Alam <amanlinux@netscape.net>, 2004.
 # A S Alam <aalam@users.sf.net>, 2005, 2006, 2007,2008, 2009, 2010, 2011.
-# Amanpreet Singh Alam <aalam@users.sf.net>, 2009, 2012, 2013.
+# Amanpreet Singh Alam <aalam@users.sf.net>, 2009, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-08-13 00:20+0000\n"
-"PO-Revision-Date: 2013-09-17 22:23-0500\n"
+"POT-Creation-Date: 2014-03-19 07:47+0000\n"
+"PO-Revision-Date: 2014-03-19 16:28-0500\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <kde-i18n-doc@kde.org>\n"
 "Language: pa\n"
@@ -21,6 +21,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.5\n"
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"ਗਨੋਮ ਫੋਂਟ ਦਰਸ਼ਕ ਤੁਹਾਡੀ ਵਰਤੋਂ ਲਈ ਤੁਹਾਡੇ ਕੰਪਿਊਟਰ ਉੱਤੇ ਇੰਸਟਾਲ ਹੋਏ ਫੋਂਟ ਨੂੰ ਥੰਮਨੇਲ "
+"ਵਜੋਂ ਵੇਖਾਉਂਦਾ ਹੈ। "
+"ਕਿਸੇ ਵੀ ਥੰਮਨੇਲ ਨੂੰ ਚੁਣ ਕੇ ਤੁਸੀਂ ਵੇਖ ਸਕਦੇ ਹੋ ਕਿ ਫੋਂਟ ਵੱਖ-ਵੱਖ ਆਕਾਰਾਂ ਵਿੱਚ ਕਿੰਝ "
+"ਵੇਖਾਈ ਦੇਣਗੇ।"
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"ਗਨੋਮ ਫੋਂਟ ਦਰਸ਼ਕ ਹੁਣ ttf ਤੇ ਹੋਰ ਫਾਰਮੈਟ ਵਿੱਚੋਂ ਡਾਊਨਲੋਡ ਕੀਤੀਆਂ ਨਵੀਂ ਫੋਂਟ ਫਾਇਲਾਂ "
+"ਨੂੰ ਇੰਸਟਾਲ "
+"ਕਰਨ ਲਈ ਸਹਾਇਕ ਹੈ। ਫੋਂਟ ਨੂੰ ਕੇਵਲ ਤੁਹਾਡੀ ਵਰਤੋਂ ਲਈ ਇੰਸਟਾਲ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ ਜਾਂ "
+"ਤੁਸੀਂ ਕੰਪਿਊਟਰ ਉੱਤੇ "
+"ਸਭ ਫੋਂਟ ਵਰਤਣ ਵਾਲਿਆਂ ਲਈ ਵੀ ਇੰਸਟਾਲ ਕਰ ਸਕਦੇ ਹੋ।"
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -43,8 +66,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "ਫੋਂਟ ਦਰਸ਼ਕ ਬਾਰੇ"
+msgid "About"
+msgstr "ਇਸ ਬਾਰੇ"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -82,8 +105,7 @@ msgstr "ਇੰਸਟਾਲ ਫੇਲ੍ਹ"
 msgid "Installed"
 msgstr "ਇੰਸਟਾਲ ਹੈ"
 
-#. add install button
-#: ../src/font-view.c:281 ../src/font-view.c:520
+#: ../src/font-view.c:281 ../src/font-view.c:522
 msgid "Install"
 msgstr "ਇੰਸਟਾਲ"
 
@@ -95,28 +117,27 @@ msgstr "ਇਹ ਫੋਂਟ ਵੇਖਾਇਆ ਨਹੀਂ ਜਾ ਸਕਦਾ�
 msgid "_Close"
 msgstr "ਬੰਦ ਕਰੋ(_C)"
 
-#: ../src/font-view.c:510
+#: ../src/font-view.c:533
 msgid "Info"
 msgstr "ਜਾਣਕਾਰੀ"
 
-#: ../src/font-view.c:534
+#: ../src/font-view.c:550
 msgid "Back"
 msgstr "ਪਿੱਛੇ"
 
-#: ../src/font-view.c:623
+#: ../src/font-view.c:640
 msgid "All Fonts"
 msgstr "ਸਭ ਫੋਂਟ"
 
-#: ../src/font-view.c:741 ../src/font-view.c:780
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "ਫੋਂਟ ਦਰਸ਼ਕ"
 
-#: ../src/font-view.c:742 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "ਆਪਣੇ ਸਿਸਟਮ ਉੱਤੇ ਫੋਂਟ ਵੇਖੋ"
 
-#: ../src/font-view.c:744
+#: ../src/font-view.c:761
 msgid "translator-credits"
 msgstr ""
 "ਅਮਨਪਰੀਤ ਸਿੰਘ ਆਲਮ\n"
@@ -125,6 +146,9 @@ msgstr ""
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "ਫੋਂਟ;ਫੋਂਟਫੇਸ;"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "ਫੋਂਟ ਦਰਸ਼ਕ ਬਾਰੇ"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "ਫੋਂਟ ਆਕਾਰ (ਡਿਫਾਲਟ: 64)"
