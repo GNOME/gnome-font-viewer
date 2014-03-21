@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-01-01 09:11+0000\n"
-"PO-Revision-Date: 2014-01-01 19:43+0100\n"
+"POT-Creation-Date: 2014-03-21 19:52+0000\n"
+"PO-Revision-Date: 2014-03-21 21:56+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -21,6 +21,26 @@ msgstr ""
 "%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: Poedit 1.5.4\n"
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"Program Pregledovalnik pisav za GNOME prikaže pisave, nameščene na "
+"računalniku kot sličice. Z izborom sličice se pokaže pogled pisave pri "
+"različnih velikostih."
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"Program Pregledovalnik pisav za GNOME podpira nameščanje datotek pisav v "
+"zapisu .ttf in drugih. Pisave je mogoče namestiti le za osebno rabo, ali pa "
+"za vse uporabnike računalnika."
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -82,7 +102,7 @@ msgstr "Namestitev je spodletela"
 msgid "Installed"
 msgstr "Nameščeno"
 
-#: ../src/font-view.c:281 ../src/font-view.c:533
+#: ../src/font-view.c:281 ../src/font-view.c:522
 msgid "Install"
 msgstr "Namesti"
 
@@ -94,7 +114,7 @@ msgstr "Pisave ni mogoče pokazati."
 msgid "_Close"
 msgstr "_Zapri"
 
-#: ../src/font-view.c:521
+#: ../src/font-view.c:533
 msgid "Info"
 msgstr "Podrobnosti"
 
