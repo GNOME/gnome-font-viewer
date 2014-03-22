@@ -2,17 +2,17 @@
 # Copyright (C) 2005, 2006, 2007, 2008, 2009, 2010, 2011 Free Software Foundation, Inc.
 # This file is distributed under the same license as the baobab package.
 #
+#
 # Mikel Olasagasti <hey_neken@mundurat.net>, 2005.
 # Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2005, 2006, 2007, 2008, 2009, 2010, 2011.
-# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2012, 2013.
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2012, 2013, 2014.
 # Julen Ruiz Aizpuru <julenx@gmail.com>, 2011.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-16 22:04+0200\n"
-"PO-Revision-Date: 2013-09-16 22:04+0200\n"
+"POT-Creation-Date: 2014-03-22 10:52+0100\n"
+"PO-Revision-Date: 2014-03-22 11:00+0100\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
 "Language-Team: Basque <librezale@librezale.org>\n"
 "Language: eu\n"
@@ -22,6 +22,31 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.4\n"
 "X-Project-Style: gnome\n"
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"GNOMEren Letra-tipoen ikustaileak ordenagailuan instalatuta dauden "
+"letra-tipoak "
+"koadro txikietan erakusten ditu. Edozer koadro-txiki hautatuz letra-tipoa "
+"hainbat "
+"tamainatan nola ikusiko den bistaratzen du."
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"GNOMEren Letra-tipoen ikustaileak letra-tipoen fitxategi berriak (TTF edo "
+"beste formatuan deskargatuta) instala ditzake. Letra-tipoa zure "
+"erabilpenerako "
+"soilik instala daiteke, edo ordenagailuko beste erabiltzaile guztientzako "
+"baita "
+"ere."
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -44,8 +69,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "LETRA-TIPOEN_FITXATEGIA IRTEERAKO-FITXATEGIA"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "Letra-tipoen ikustaileari buruz"
+msgid "About"
+msgstr "Honi buruz"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -83,7 +108,7 @@ msgstr "Instalazioak huts egin du"
 msgid "Installed"
 msgstr "Instalatuta"
 
-#: ../src/font-view.c:281 ../src/font-view.c:533
+#: ../src/font-view.c:281 ../src/font-view.c:522
 msgid "Install"
 msgstr "Instalatu"
 
@@ -95,7 +120,7 @@ msgstr "Letra-tipo hau ezin izan da bistaratu."
 msgid "_Close"
 msgstr "_Itxi"
 
-#: ../src/font-view.c:521
+#: ../src/font-view.c:533
 msgid "Info"
 msgstr "Informazioa"
 
@@ -122,6 +147,9 @@ msgstr "Iñaki Larrañaga Murgoitio <dooteo@zundan.com>"
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "tipografia;letra-tipoak;letra;tipoa;"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "Letra-tipoen ikustaileari buruz"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "Letra-tamaina (lehenetsita: 64)"
