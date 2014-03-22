@@ -1,15 +1,15 @@
 # Serbian translation of gnome-font-viewer
-# Courtesy of Prevod.org team (http://prevod.org/) -- 2012—2013.
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2012—2014.
 # This file is distributed under the same license as the gnome-font-viewer package.
 # Милош Поповић <gpopac@gmail.com>, 2011.
-# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2011, 2012, 2013.
+# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2011—2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils-2.0\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-08-13 00:20+0000\n"
-"PO-Revision-Date: 2013-09-05 09:39+0200\n"
+"POT-Creation-Date: 2014-03-22 07:52+0000\n"
+"PO-Revision-Date: 2014-03-22 09:23+0200\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
@@ -19,6 +19,28 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
 "n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"Гномов прегледач словних ликова вам приказује словне ликове инсталиране на "
+"вашем рачунару за вашу употребу као минијатуре. Бирање неке минијатуре "
+"приказује потпун преглед како би словни лик требао да изгледау разним "
+"величинама."
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"Гномов прегледач словних ликова такође подржава инсталирање датотека нових "
+"словних ликова преузетих у „.ttf“ и другим записима. Словни ликови могу бити "
+"инсталирани само за вашу употребу или могу бити доступни свим корисницима "
+"на рачунару."
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -41,8 +63,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ДАТОТЕКА-ПИСМА ИЗЛАЗНА-ДАТОТЕКА"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "О прегледачу писама"
+msgid "About"
+msgstr "О програму"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -80,8 +102,7 @@ msgstr "Инсталација није успела"
 msgid "Installed"
 msgstr "Инсталирано"
 
-#. add install button
-#: ../src/font-view.c:281 ../src/font-view.c:520
+#: ../src/font-view.c:281 ../src/font-view.c:522
 msgid "Install"
 msgstr "Инсталирај"
 
@@ -93,28 +114,27 @@ msgstr "Овај словни лик не може бити приказан."
 msgid "_Close"
 msgstr "_Затвори"
 
-#: ../src/font-view.c:510
+#: ../src/font-view.c:533
 msgid "Info"
 msgstr "Подаци"
 
-#: ../src/font-view.c:534
+#: ../src/font-view.c:550
 msgid "Back"
 msgstr "Назад"
 
-#: ../src/font-view.c:623
+#: ../src/font-view.c:640
 msgid "All Fonts"
 msgstr "Сва писма"
 
-#: ../src/font-view.c:741 ../src/font-view.c:780
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Прегледач писама"
 
-#: ../src/font-view.c:742 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Прегледајте писма на вашем систему"
 
-#: ../src/font-view.c:744
+#: ../src/font-view.c:761
 msgid "translator-credits"
 msgstr ""
 "  Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
@@ -124,3 +144,6 @@ msgstr ""
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "слова;словни ликови;писма;"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "О прегледачу писама"
