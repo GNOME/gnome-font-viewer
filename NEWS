@@ -1,3 +1,11 @@
+GNOME Font Viewer - 3.12.0
+-------------------------------------------------------------------------------
+
+ • Add support for rendering complex scripts (Khaled Hosny)
+ • Fix header bar item positions (Yosef Or Boczko)
+ • Use header bar in the info dialog
+ • Standardize app menu Help/About/Quit (Michael Catanzaro)
+
 GNOME Font Viewer - 3.10.0
 -------------------------------------------------------------------------------
 
