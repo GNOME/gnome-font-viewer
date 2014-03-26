@@ -7,16 +7,17 @@
 # Vincent van Adrighem <adrighem@gnome.org>, 2006.
 # Wouter Bolsterlee <wbolster@gnome.org>, 2006–2013.
 # Hannie Dumoleyn <hannie@ubuntu-nl.org>, 2010–2011.
-# Erwin Poeze <donnut@outlook.com>, 2013.
+# Erwin Poeze <donnut@outlook.com>, 2013, 2014.
 #
 # side bar = side pane = zijpaneel
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer.master.nl\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-12 20:05+0200\n"
-"PO-Revision-Date: 2013-10-04 14:46+0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-03-26 01:48+0000\n"
+"PO-Revision-Date: 2014-03-24 15:44+0100\n"
 "Last-Translator: Erwin Poeze <donnut@outlook.com>\n"
 "Language-Team: Dutch <gnome-nl-list@gnome.org>\n"
 "Language: nl\n"
@@ -25,6 +26,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.5.4\n"
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"Gnome Lettertypeviewer toont u de lettertypen die op uw computer "
+"geïnstalleerd zijn als miniaturen. Het selecteren van een miniatuur laat "
+"zien hoe het lettertype eruit ziet bij verschillende groottes."
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"Gnome Lettertypeviewer ondersteunt ook het installeren van nieuwe "
+"lettertypen o.a. in de vorm van .ttf-bestanden. Lettertypen kunnen voor "
+"eigen gebruik worden geïnstalleerd of beschikbaar worden gemaakt voor alle "
+"gebruikers van de computer."
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -47,8 +69,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "LETTERTYPEBESTAND UITVOERBESTAND"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "Info Lettertype-voorbeeld"
+msgid "About"
+msgstr "Info"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -86,7 +108,7 @@ msgstr "Installatie is mislukt"
 msgid "Installed"
 msgstr "Geïnstalleerd"
 
-#: ../src/font-view.c:281 ../src/font-view.c:533
+#: ../src/font-view.c:281 ../src/font-view.c:525
 msgid "Install"
 msgstr "Installeren"
 
@@ -94,31 +116,27 @@ msgstr "Installeren"
 msgid "This font could not be displayed."
 msgstr "Dit lettertype kon niet getoond worden."
 
-#: ../src/font-view.c:479
-msgid "_Close"
-msgstr "_Sluiten"
-
-#: ../src/font-view.c:521
+#: ../src/font-view.c:478 ../src/font-view.c:536
 msgid "Info"
 msgstr "Informatie"
 
-#: ../src/font-view.c:550
+#: ../src/font-view.c:553
 msgid "Back"
 msgstr "Terug"
 
-#: ../src/font-view.c:640
+#: ../src/font-view.c:643
 msgid "All Fonts"
 msgstr "Alle lettertypes"
 
-#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:761 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Lettertype-voorbeeld"
 
-#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:762 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Lettertypes op uw systeem bekijken"
 
-#: ../src/font-view.c:761
+#: ../src/font-view.c:764
 msgid "translator-credits"
 msgstr ""
 "Wouter Bolsterlee\n"
@@ -127,7 +145,13 @@ msgstr ""
 
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
-msgstr "lettertype;letter;font;typografie;"
+msgstr "fontface;lettertype;letter;font;typografie;"
+
+#~ msgid "_Close"
+#~ msgstr "_Sluiten"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "Info Lettertype-voorbeeld"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "Lettergrootte (standaard: 64)"
