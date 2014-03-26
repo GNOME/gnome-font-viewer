@@ -474,10 +474,12 @@ info_button_clicked_cb (GtkButton *button,
 
     populate_grid (self, grid, face);
 
-    dialog = gtk_dialog_new_with_buttons ("", GTK_WINDOW (self->main_window),
-                                          GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT | GTK_DIALOG_USE_HEADER_BAR,
-                                          _("_Close"), GTK_RESPONSE_CLOSE,
-                                          NULL);
+    dialog = g_object_new (GTK_TYPE_DIALOG,
+                           "transient-for", self->main_window,
+                           "modal", TRUE,
+                           "destroy-with-parent", TRUE,
+                           "use-header-bar", TRUE,
+                           NULL);
     gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), grid);
     g_signal_connect (dialog, "response",
                       G_CALLBACK (gtk_widget_destroy), NULL);
