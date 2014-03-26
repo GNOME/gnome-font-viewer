@@ -475,6 +475,7 @@ info_button_clicked_cb (GtkButton *button,
     populate_grid (self, grid, face);
 
     dialog = g_object_new (GTK_TYPE_DIALOG,
+                           "title", _("Info"),
                            "transient-for", self->main_window,
                            "modal", TRUE,
                            "destroy-with-parent", TRUE,
