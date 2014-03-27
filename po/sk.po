@@ -13,9 +13,9 @@ msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-08-27 14:48+0000\n"
-"PO-Revision-Date: 2013-08-29 13:54+0100\n"
-"Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
+"POT-Creation-Date: 2014-03-27 08:07+0000\n"
+"PO-Revision-Date: 2014-03-27 20:20+0100\n"
+"Last-Translator: Peter Mráz <etkinator@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
@@ -23,6 +23,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
 "X-Generator: Poedit 1.5.4\n"
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"Prehliadač písem pre prostredie GNOME v podobe miniatúr zobrazuje písma "
+"nainštalované v počítači, ktoré je možné použiť. Po vybratí niektorej "
+"miniatúry sa zobrazí celistvý náhľad vzhľadu písma v rôznych veľkostiach."
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"Prehliadač písiem pre prostredie GNOME podporuje inštalovanie nových písiem "
+"z prevzatých súborov vo formáte .ttf aj v iných formátoch. Písma môžu byť "
+"nainštalované iba pre jedného používateľa alebo všetkých používateľov na "
+"počítači."
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -45,8 +66,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "SÚBOR-S-PÍSMOM VÝSTUPNÝ-SÚBOR"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "O programe Prehliadač písiem"
+msgid "About"
+msgstr "O programe"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -84,7 +105,7 @@ msgstr "Inštalácia zlyhala"
 msgid "Installed"
 msgstr "Nainštalované"
 
-#: ../src/font-view.c:281 ../src/font-view.c:533
+#: ../src/font-view.c:281 ../src/font-view.c:525
 msgid "Install"
 msgstr "Nainštalovať"
 
@@ -92,34 +113,36 @@ msgstr "Nainštalovať"
 msgid "This font could not be displayed."
 msgstr "Toto písmo sa nepodarilo zobraziť."
 
-#: ../src/font-view.c:479
-msgid "_Close"
-msgstr "_Zavrieť"
-
-#: ../src/font-view.c:521
+#: ../src/font-view.c:478 ../src/font-view.c:536
 msgid "Info"
 msgstr "Informácie"
 
-#: ../src/font-view.c:550
+#: ../src/font-view.c:553
 msgid "Back"
 msgstr "Späť"
 
-#: ../src/font-view.c:640
+#: ../src/font-view.c:643
 msgid "All Fonts"
 msgstr "Všetky písma"
 
-#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:761 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Prehliadač písiem"
 
-#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:762 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Zobrazenie písiem vo vašom systéme"
 
-#: ../src/font-view.c:761
+#: ../src/font-view.c:764
 msgid "translator-credits"
 msgstr "Dušan Kazik <prescott66@gmail.com>"
 
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "písmo;písma;rodina;"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "O programe Prehliadač písiem"
+
+#~ msgid "_Close"
+#~ msgstr "_Zavrieť"
