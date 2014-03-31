@@ -12,15 +12,37 @@ msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-08-13 00:20+0000\n"
-"PO-Revision-Date: 2013-08-18 21:59+0200\n"
-"Last-Translator: Joan Duran <jodufi@gmail.com>\n"
+"POT-Creation-Date: 2014-03-26 01:48+0000\n"
+"PO-Revision-Date: 2014-02-26 07:26+0100\n"
+"Last-Translator: Pau Iranzo <paugnu@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bits\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"El Visualitzador de tipus de lletra del GNOME us mostra en miniatures els "
+"tipus de lletra instal·lats a l'ordinador. En seleccionar una de les "
+"miniatures s'us mostrarà la vista completa de com es veurà el tipus de "
+"lletra en diferents mides."
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"El Visualitzador de tipus de lletra del GNOME també permet la instal·lació "
+"de fitxers de tipus de lletra en format .ttf i d'altres. Els tipus de lletra "
+"es poden instal·lar només per al vostre ús o fer-los accessibles per a tots "
+"els usuaris de l'ordinador. "
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -43,8 +65,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FITXER-DE-TIPUS-DE-LLETRA FITXER-DE-SORTIDA"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "Quant al visualitzador de tipus de lletra"
+msgid "About"
+msgstr "Quant a"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -82,8 +104,7 @@ msgstr "Ha fallat la instal·lació"
 msgid "Installed"
 msgstr "S'ha instal·lat"
 
-#. add install button
-#: ../src/font-view.c:281 ../src/font-view.c:520
+#: ../src/font-view.c:281 ../src/font-view.c:525
 msgid "Install"
 msgstr "Instal·la"
 
@@ -91,35 +112,36 @@ msgstr "Instal·la"
 msgid "This font could not be displayed."
 msgstr "No es pot visualitzar aquest tipus de lletra."
 
-#: ../src/font-view.c:479
-msgid "_Close"
-msgstr "_Tanca"
-
-#: ../src/font-view.c:510
+#: ../src/font-view.c:478 ../src/font-view.c:536
 msgid "Info"
 msgstr "Informació"
 
-#: ../src/font-view.c:534
+#: ../src/font-view.c:553
 msgid "Back"
 msgstr "Enrere"
 
-#: ../src/font-view.c:623
+#: ../src/font-view.c:643
 msgid "All Fonts"
 msgstr "Tots els tipus de lletra"
 
-#: ../src/font-view.c:741 ../src/font-view.c:780
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:761 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Visualitzador de tipus de lletra"
 
-#: ../src/font-view.c:742 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:762 ../src/gnome-font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Visualitza tots els tipus de lletra del sistema"
 
-#: ../src/font-view.c:744
+#: ../src/font-view.c:764
 msgid "translator-credits"
 msgstr "Joan Duran <jodufi@gmail.com>"
 
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "tipus de lletra;tipografia;"
+
+#~ msgid "_Close"
+#~ msgstr "_Tanca"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "Quant al visualitzador de tipus de lletra"
