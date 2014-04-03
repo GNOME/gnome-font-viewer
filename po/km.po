@@ -6,11 +6,13 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer.master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-10-26 15:25+0000\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-03-26 12:24+0000\n"
 "PO-Revision-Date: 2012-02-29 08:43+0700\n"
 "Last-Translator: Morn Met <mornmet@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -18,76 +20,145 @@ msgstr ""
 "X-Generator: WordForge 0.8 RC1\n"
 "X-Language: km-KH\n"
 
-#: ../src/font-thumbnailer.c:267
+#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"កម្មវិធីមើល​ពុម្ពអក្សរ GNOME បង្ហាញ​អ្នក​អំពី​ពុម្ពអក្សរ​បាន​ដំឡើង​ក្នុង​កុំ"
+"ព្យូទ័រ​របស់​អ្នក​ម្រាប់​ប្រើ​ជា​រូបភាព​តូចៗ។ ការ​ជ្រើស​រូបភាព​តូចៗ​ណា​មួយ​ប"
+"ង្ហាញ​ទិដ្ឋភាព​ពេញលេញ​នៃ​វិធីដែល​ពុម្ពអក្សរ​បង្ហាញ​តាម​ទំហំ​ផ្សេងៗ​គ្នា។"
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"កម្មវិធី​មើល​ពុម្ពអក្សរ GNOME "
+"ក៏​គាំទ្រ​ការ​ដំឡើង​ឯកសារ​​ពុម្ពអក្សរថ្មី​ដែល​បាន​ទាញ​យក​ជា .ttf "
+"និង​ទ្រង់ទ្រាយ​ផ្សេងៗ។ "
+"ពុម្ពអក្សរ​អាច​ត្រូវ​បាន​ដំឡើង​សម្រាប់តែ​​ឲ្យ​អ្នក​ប្រើ "
+"ឬ​អ្នក​ប្រើ​គ្រប់គ្នា​អាច​ប្រើ​បាន។"
+
+#: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "អត្ថបទ​សម្រាប់​រូបភាព​តូច (លំនាំដើម ៖ Aa)"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "អត្ថបទ"
 
-#: ../src/font-thumbnailer.c:269
-msgid "Font size (default: 64)"
-msgstr "ទំហំ​ពុម្ព​អក្សរ (លំនាំដើម ៖ ៦៤)"
+#: ../src/font-thumbnailer.c:191
+#| msgid "Text to thumbnail (default: Aa)"
+msgid "Thumbnail size (default: 128)"
+msgstr "ទំហំ​រូបភាព​តូចៗ (លំនាំដើម៖ ១២៨)"
 
-#: ../src/font-thumbnailer.c:269
+#: ../src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "ទំហំ"
 
-#: ../src/font-thumbnailer.c:271
+#: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
-#: ../src/font-view.c:284
-msgid "Name:"
-msgstr "ឈ្មោះ ៖"
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About"
+msgstr "អំពី"
 
-#: ../src/font-view.c:287
-msgid "Style:"
-msgstr "រចនាប័ទ្ម ៖"
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "ចាកចេញ"
 
-#: ../src/font-view.c:299
-msgid "Type:"
-msgstr "ប្រភេទ ៖"
+#: ../src/font-view.c:176
+#| msgid "Name:"
+msgid "Name"
+msgstr "ឈ្មោះ"
 
-#: ../src/font-view.c:303
-msgid "Size:"
-msgstr "ទំហំ ៖"
+#: ../src/font-view.c:179
+#| msgid "Style:"
+msgid "Style"
+msgstr "រចនាប័ទ្ម"
 
-#: ../src/font-view.c:347 ../src/font-view.c:360
-msgid "Version:"
-msgstr "កំណែ ៖"
+#: ../src/font-view.c:189
+#| msgid "Type:"
+msgid "Type"
+msgstr "ប្រភេទ"
 
-#: ../src/font-view.c:351 ../src/font-view.c:362
-msgid "Copyright:"
-msgstr "រក្សាសិទ្ធិ ៖"
+#: ../src/font-view.c:234 ../src/font-view.c:253
+#| msgid "Version:"
+msgid "Version"
+msgstr "កំណែ"
 
-#: ../src/font-view.c:355
-msgid "Description:"
-msgstr "សេចក្ដី​ពិពណ៌នា ៖"
+#: ../src/font-view.c:239 ../src/font-view.c:259
+#| msgid "Copyright:"
+msgid "Copyright"
+msgstr "រក្សាសិទ្ធិ"
 
-#: ../src/font-view.c:423
-msgid "Installed"
-msgstr "បាន​ដំឡើង"
+#: ../src/font-view.c:244
+#| msgid "Description:"
+msgid "Description"
+msgstr "​ពិពណ៌នា"
 
-#: ../src/font-view.c:425
+#: ../src/font-view.c:272
 msgid "Install Failed"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ដំឡើង"
 
-#: ../src/font-view.c:497
-#, c-format
-msgid "Usage: %s fontfile\n"
-msgstr "ការ​ប្រើប្រាស់ ៖ %s ឯកសារ​ពុម្ពអក្សរ\n"
+#: ../src/font-view.c:278
+msgid "Installed"
+msgstr "បាន​ដំឡើង"
 
-#: ../src/font-view.c:569
-msgid "I_nstall Font"
-msgstr "ដំឡើង​ពុម្ពអក្សរ"
+#: ../src/font-view.c:281 ../src/font-view.c:522
+#| msgid "Installed"
+msgid "Install"
+msgstr "ដំឡើង"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:414
+msgid "This font could not be displayed."
+msgstr "មិន​អាច​បង្ហាញ​ពុម្ពអក្សរ​នេះ​បាន​ទេ។"
+
+#: ../src/font-view.c:479
+msgid "_Close"
+msgstr "បិទ"
+
+#: ../src/font-view.c:533
+msgid "Info"
+msgstr "ព័ត៌មាន"
+
+#: ../src/font-view.c:550
+msgid "Back"
+msgstr "ថយក្រោយ"
+
+#: ../src/font-view.c:640
+#| msgid "I_nstall Font"
+msgid "All Fonts"
+msgstr "ពុម្ពអក្សរ​ទាំងអស់"
+
+#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "កម្មវិធី​មើល​ពុម្ពអក្សរ"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "Preview fonts"
-msgstr "មើល​ពុម្ពអក្សរ​ជា​មុន"
+#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "មើល​ពុម្ពអក្សរ​លើប្រព័ន្ធ​របស់​អ្នក"
 
+#: ../src/font-view.c:761
+msgid "translator-credits"
+msgstr "ខឹម សុខែម, សេង​​ សុត្ថា , សុខ សុភា"
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "ពុម្ពអក្សរ; លក្ខណៈអក្សរ"
+
+#~ msgid "Font size (default: 64)"
+#~ msgstr "ទំហំ​ពុម្ព​អក្សរ (លំនាំដើម ៖ ៦៤)"
+
+#~ msgid "Size:"
+#~ msgstr "ទំហំ ៖"
+
+#~ msgid "Usage: %s fontfile\n"
+#~ msgstr "ការ​ប្រើប្រាស់ ៖ %s ឯកសារ​ពុម្ពអក្សរ\n"
+
+#~ msgid "Preview fonts"
+#~ msgstr "មើល​ពុម្ពអក្សរ​ជា​មុន"
