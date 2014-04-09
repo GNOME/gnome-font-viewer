@@ -879,9 +879,6 @@ font_view_application_class_init (FontViewApplicationClass *klass)
 static GApplication *
 font_view_application_new (void)
 {
-    if (!FcInit ())
-        g_critical ("Can't initialize fontconfig library");
-
     return g_object_new (FONT_VIEW_TYPE_APPLICATION,
                          "application-id", "org.gnome.font-viewer",
                          "flags", G_APPLICATION_HANDLES_OPEN,
@@ -898,6 +895,9 @@ main (int argc,
     bindtextdomain (GETTEXT_PACKAGE, GNOMELOCALEDIR);
     bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
     textdomain (GETTEXT_PACKAGE);
+
+    if (!FcInit ())
+        g_critical ("Can't initialize fontconfig library");
 
     app = font_view_application_new ();
     retval = g_application_run (app, argc, argv);
