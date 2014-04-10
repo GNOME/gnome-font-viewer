@@ -4,4 +4,4 @@ data/gnome-font-viewer.appdata.xml.in
 src/font-thumbnailer.c
 [type: gettext/glade]src/font-view-app-menu.ui
 src/font-view.c
-src/gnome-font-viewer.desktop.in.in
+src/org.gnome.font-viewer.desktop.in.in
