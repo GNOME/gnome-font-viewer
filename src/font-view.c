@@ -833,7 +833,6 @@ font_view_application_activate (GApplication *application)
 {
     FontViewApplication *self = FONT_VIEW_APPLICATION (application);
 
-    G_APPLICATION_CLASS (font_view_application_parent_class)->activate (application);
     font_view_application_do_overview (self);
 }
 
