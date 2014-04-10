@@ -6,6 +6,7 @@ Icon=preferences-desktop-font
 Exec=gnome-font-viewer %u
 Terminal=false
 Type=Application
+DBusActivatable=true
 StartupNotify=true
 Categories=GTK;GNOME;Utility;
 MimeType=application/x-font-ttf;application/x-font-pcf;application/x-font-type1;application/x-font-otf;

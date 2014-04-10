@@ -48,8 +48,17 @@ gnome_font_viewer_SOURCES = \
 	font-view.c
 
 desktopdir = $(datadir)/applications
-desktop_in_files = gnome-font-viewer.desktop.in
+desktop_in_files = org.gnome.font-viewer.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
+
+dbusservicedir = $(datadir)/dbus-1/services
+dbusservice_DATA = org.gnome.font-viewer.service
+
+org.gnome.font-viewer.service: Makefile
+	$(AM_V_GEN) (echo '[D-BUS Service]'; \
+		     echo 'Name=org.gnome.font-viewer'; \
+		     echo 'Exec=${bindir}/gnome-font-viewer --gapplication-service') > $@.tmp && \
+		     mv $@.tmp $@
 
 thumbnailerdir = $(datadir)/thumbnailers
 thumbnailer_DATA = gnome-font-viewer.thumbnailer
@@ -64,6 +73,7 @@ uninstall-local:
 @INTLTOOL_DIRECTORY_RULE@
 
 CLEANFILES = \
+	$(dbusservice_DATA) \
 	$(desktop_in_files) \
 	$(desktop_DATA) \
 	$(directory_DATA)
@@ -71,7 +81,7 @@ CLEANFILES = \
 EXTRA_DIST = \
 	$(resource_files) \
 	gnome-font-viewer.thumbnailer \
-	gnome-font-viewer.desktop.in.in \
+	org.gnome.font-viewer.desktop.in.in \
 	gnome-font-viewer.gresource.xml
 
 -include $(top_srcdir)/git.mk

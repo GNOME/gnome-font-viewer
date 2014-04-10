@@ -49,7 +49,7 @@ AC_CONFIG_FILES([
 Makefile
 data/Makefile
 src/Makefile
-src/gnome-font-viewer.desktop.in
+src/org.gnome.font-viewer.desktop.in
 po/Makefile.in
 ])
 
