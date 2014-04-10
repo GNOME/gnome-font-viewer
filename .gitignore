@@ -21,6 +21,7 @@ ltmain.sh
 m4/
 missing
 omf.make
+data/gnome-font-viewer.appdata.xml
 po/.intltool-merge-cache
 po/Makefile.in.in
 po/Makevars.template
@@ -40,8 +41,9 @@ src/*.o
 src/font-view-resources.c
 src/font-view-resources.h
 src/gnome-font-viewer
-src/gnome-font-viewer.desktop
-src/gnome-font-viewer.desktop.in
+src/org.gnome.font-viewer.desktop
+src/org.gnome.font-viewer.desktop.in
+src/org.gnome.font-viewer.service
 src/gnome-thumbnail-font
 stamp-h1
 xmldocs.make
