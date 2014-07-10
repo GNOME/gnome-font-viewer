@@ -137,7 +137,7 @@ typedef struct {
     FontViewModel *self;
     GFile *font_file;
     gchar *font_path;
-    cairo_surface_t *surface;
+    GdkPixbuf *pixbuf;
     GtkTreeIter iter;
 } ThumbInfoData;
 
@@ -148,7 +148,7 @@ thumb_info_data_free (gpointer user_data)
 
     g_object_unref (thumb_info->self);
     g_object_unref (thumb_info->font_file);
-    g_clear_pointer (&thumb_info->surface, cairo_surface_destroy);
+    g_clear_object (&thumb_info->pixbuf);
     g_free (thumb_info->font_path);
 
     g_slice_free (ThumbInfoData, thumb_info);
@@ -158,18 +158,23 @@ static gboolean
 one_thumbnail_done (gpointer user_data)
 {
     ThumbInfoData *thumb_info = user_data;
+    gint scale_factor = thumb_info->self->priv->scale_factor;
+    cairo_surface_t *surface;
 
-    if (thumb_info->surface != NULL)
+    if (thumb_info->pixbuf != NULL) {
+        surface = gdk_cairo_surface_create_from_pixbuf (thumb_info->pixbuf, scale_factor, NULL);
         gtk_list_store_set (GTK_LIST_STORE (thumb_info->self), &(thumb_info->iter),
-                            COLUMN_ICON, thumb_info->surface,
+                            COLUMN_ICON, surface,
                             -1);
+        cairo_surface_destroy (surface);
+    }
 
     thumb_info_data_free (thumb_info);
 
     return FALSE;
 }
 
-static cairo_surface_t *
+static GdkPixbuf *
 create_thumbnail (ThumbInfoData *thumb_info)
 {
     GFile *file = thumb_info->font_file;
@@ -177,7 +182,6 @@ create_thumbnail (ThumbInfoData *thumb_info)
     gchar *uri;
     guint64 mtime;
 
-    cairo_surface_t *surface = NULL;
     GdkPixbuf *pixbuf = NULL;
     GFileInfo *info = NULL;
 
@@ -218,13 +222,10 @@ create_thumbnail (ThumbInfoData *thumb_info)
                                                        128 * thumb_info->self->priv->scale_factor,
                                                        GDK_INTERP_BILINEAR);
           g_object_unref (pixbuf);
-
-          surface = gdk_cairo_surface_create_from_pixbuf (scaled, thumb_info->self->priv->scale_factor,
-                                                          NULL);
-          g_object_unref (scaled);
+          pixbuf = scaled;
       }
 
-  return surface;
+  return pixbuf;
 }
 
 static gboolean
@@ -286,10 +287,9 @@ ensure_thumbnails_job (GIOSchedulerJob *job,
                 goto next;
             }
 
-            thumb_info->surface = gdk_cairo_surface_create_from_pixbuf (pixbuf, scale_factor, NULL);
-            g_clear_object (&pixbuf);
+            thumb_info->pixbuf = pixbuf;
         } else {
-            thumb_info->surface = create_thumbnail (thumb_info);
+            thumb_info->pixbuf = create_thumbnail (thumb_info);
         }
 
     next:
