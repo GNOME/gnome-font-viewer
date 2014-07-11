@@ -1,95 +1,164 @@
-# Swedish messages for gnome-utils.
-# Copyright (C) 2000-2011 Free Software Foundation, Inc.
+# Swedish messages for gnome-font-viewer.
+# Copyright © 2000-2011, 2014 Free Software Foundation, Inc.
 # Martin Norbäck <d95mback@dtek.chalmers.se>, 2000.
 # Andreas Hyden <a.hyden@cyberpoint.se>.
 # Christian Rose <menthos@menthos.com>, 2001, 2002, 2003, 2004, 2005.
 # Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009, 2010, 2011.
-#
-# $Id: sv.po,v 1.161 2006/12/11 21:18:20 dnylande Exp $
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2014.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-06 14:36-0400\n"
-"PO-Revision-Date: 2011-08-02 00:26+0100\n"
-"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Project-Id-Version: gnome-font-viewer\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-03-26 01:48+0000\n"
+"PO-Revision-Date: 2014-06-08 15:34+0100\n"
+"Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.4\n"
 
-#: ../src/font-thumbnailer.c:267
+#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"GNOME:s typsnittsvisare visar dig de för dig tillgängliga installerade "
+"typsnitten på din dator som miniatyrbilder. Att välja en miniatyrbild visar "
+"en full överblick över hur typsnittet skulle se ut i olika storlekar."
+
+#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"GNOME:s typsnittsvisare stöder också installation av nya typsnittsfiler "
+"hämtade i formatet .ttf och andra format. Typsnitt kan installeras endast "
+"för dig eller göras tillgängliga för alla användare på datorn."
+
+#: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Text för miniatyrbild (standard: Aa)"
 
-#: ../src/font-thumbnailer.c:267
+#: ../src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "TEXT"
 
-#: ../src/font-thumbnailer.c:269
-msgid "Font size (default: 64)"
-msgstr "Typsnittsstorlek (standard: 64)"
+#: ../src/font-thumbnailer.c:191
+#| msgid "Text to thumbnail (default: Aa)"
+msgid "Thumbnail size (default: 128)"
+msgstr "Storlek på miniatyrbild (standard: 128)"
 
-#: ../src/font-thumbnailer.c:269
+#: ../src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "STORLEK"
 
-#: ../src/font-thumbnailer.c:271
+#: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "TYPSNITTSFIL UTDATAFIL"
 
-#: ../src/font-view.c:289
-msgid "Name:"
-msgstr "Namn:"
+#: ../src/font-view-app-menu.ui.h:1
+msgid "About"
+msgstr "Om"
 
-#: ../src/font-view.c:292
-msgid "Style:"
-msgstr "Stil:"
+#: ../src/font-view-app-menu.ui.h:2
+msgid "Quit"
+msgstr "Avsluta"
 
-#: ../src/font-view.c:304
-msgid "Type:"
-msgstr "Typ:"
+#: ../src/font-view.c:176
+#| msgid "Name:"
+msgid "Name"
+msgstr "Namn"
 
-#: ../src/font-view.c:308
-msgid "Size:"
-msgstr "Storlek:"
+#: ../src/font-view.c:179
+#| msgid "Style:"
+msgid "Style"
+msgstr "Stil"
 
-#: ../src/font-view.c:352 ../src/font-view.c:365
-msgid "Version:"
-msgstr "Version:"
+#: ../src/font-view.c:189
+#| msgid "Type:"
+msgid "Type"
+msgstr "Typ"
 
-#: ../src/font-view.c:356 ../src/font-view.c:367
-msgid "Copyright:"
-msgstr "Upphovsrätt:"
+#: ../src/font-view.c:234 ../src/font-view.c:253
+#| msgid "Version:"
+msgid "Version"
+msgstr "Version"
 
-#: ../src/font-view.c:360
-msgid "Description:"
-msgstr "Beskrivning:"
+#: ../src/font-view.c:239 ../src/font-view.c:259
+#| msgid "Copyright:"
+msgid "Copyright"
+msgstr "Upphovsrätt"
 
-#: ../src/font-view.c:428
-msgid "Installed"
-msgstr "Installerat"
+#: ../src/font-view.c:244
+#| msgid "Description:"
+msgid "Description"
+msgstr "Beskrivning"
 
-#: ../src/font-view.c:430
+#: ../src/font-view.c:272
 msgid "Install Failed"
 msgstr "Installationen misslyckades"
 
-#: ../src/font-view.c:502
-#, c-format
-msgid "Usage: %s fontfile\n"
-msgstr "Användning: %s typsnittsfil\n"
+#: ../src/font-view.c:278
+msgid "Installed"
+msgstr "Installerat"
 
-#: ../src/font-view.c:572
-msgid "I_nstall Font"
-msgstr "I_nstallera typsnitt"
+#: ../src/font-view.c:281 ../src/font-view.c:525
+#| msgid "Installed"
+msgid "Install"
+msgstr "Installera"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:414
+msgid "This font could not be displayed."
+msgstr "Detta typsnitt kunde inte visas."
+
+#: ../src/font-view.c:478 ../src/font-view.c:536
+msgid "Info"
+msgstr "Info"
+
+#: ../src/font-view.c:553
+msgid "Back"
+msgstr "Bakåt"
+
+#: ../src/font-view.c:643
+#| msgid "I_nstall Font"
+msgid "All Fonts"
+msgstr "Alla typsnitt"
+
+#: ../src/font-view.c:761 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Typsnittsvisare"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "Preview fonts"
-msgstr "Förhandsvisa typsnitt"
+#: ../src/font-view.c:762 ../src/gnome-font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "Visa typsnitt på ditt system"
+
+#: ../src/font-view.c:764
+msgid "translator-credits"
+msgstr ""
+"Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
+"\n"
+"Skicka synpunkter på översättningen till\n"
+"<tp-sv@listor.tp-sv.se>."
+
+#: ../src/gnome-font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "typsnitt;teckensnitt;"
+
+#~ msgid "Font size (default: 64)"
+#~ msgstr "Typsnittsstorlek (standard: 64)"
+
+#~ msgid "Size:"
+#~ msgstr "Storlek:"
+
+#~ msgid "Usage: %s fontfile\n"
+#~ msgstr "Användning: %s typsnittsfil\n"
+
+#~ msgid "Preview fonts"
+#~ msgstr "Förhandsvisa typsnitt"
