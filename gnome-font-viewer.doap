@@ -10,14 +10,15 @@
   <license rdf:resource="http://usefulinc.com/doap/licenses/gpl"/>
 
   <download-page rdf:resource="http://download.gnome.org/sources/gnome-font-viewer/"/>
-  <category rdf:resource="http://api.gnome.org/doap-extensions#core" />
   <bug-database rdf:resource="http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer"/>
   <mailing-list rdf:resource="mailto:gnome-utils-list@gnome.org"/>
+  <category rdf:resource="http://api.gnome.org/doap-extensions#core"/>
+  <programming-language>C</programming-language>
 
   <maintainer>
     <foaf:Person>
       <foaf:name>Cosimo Cecchi</foaf:name>
-      <foaf:mbox rdf:resource="mailto:cosimoc@gnome.org" />
+      <foaf:mbox rdf:resource="mailto:cosimoc@gnome.org"/>
       <gnome:userid>cosimoc</gnome:userid>
     </foaf:Person>
   </maintainer>
