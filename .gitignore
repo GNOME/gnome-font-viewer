@@ -21,7 +21,7 @@ ltmain.sh
 m4/
 missing
 omf.make
-data/gnome-font-viewer.appdata.xml
+data/org.gnome.font-viewer.appdata.xml
 po/.intltool-merge-cache
 po/Makefile.in.in
 po/Makevars.template
