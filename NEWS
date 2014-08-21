@@ -1,3 +1,13 @@
+GNOME Font Viewer - 3.13.90
+-------------------------------------------------------------------------------
+
+ • Make DBus activatable
+ • Create cairo surfaces always in the main thread (Rui Matos)
+ • Show regular close button instead of Cancel in info dialog (Yosef Or Boczko)
+ • Add a title to info dialog (Yosef Or Boczko)
+ • Translation updates
+
+
 GNOME Font Viewer - 3.12.0
 -------------------------------------------------------------------------------
 
