@@ -1,14 +1,14 @@
 # translation of gnome-utils.master.gu.po to Gujarati
 # Ankit Patel <ankit644@yahoo.com>, 2005, 2006.
 # Ankit Patel <ankit@redhat.com>, 2005, 2007, 2009.
-# Sweta Kothari <swkothar@redhat.com>, 2009, 2012, 2013.
+# Sweta Kothari <swkothar@redhat.com>, 2009, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master.gu\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
 "cgi?product=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-01-03 12:34+0000\n"
-"PO-Revision-Date: 2013-02-28 13:43+0530\n"
+"POT-Creation-Date: 2014-09-04 06:51+0000\n"
+"PO-Revision-Date: 2014-09-04 12:36+0530\n"
 "Last-Translator: \n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
 "Language: \n"
@@ -46,102 +46,124 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../src/font-thumbnailer.c:190
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"GNOME ફોન્ટ દર્શક થમ્ભનેઇલ તરીકે તમારાં વપરાશ માટે તમારાં કમ્પ્યૂટર પર "
+"સ્થાપિત થયેલ ફોન્ટને તમને બતાવે છે. કોઇપણ થમ્ભનેઇલને પસંદ કરીને સંપૂર્ણ "
+"દેખાવને બતાવે છે કે કેવી રીતે ફોન્ટ વિવિધ માપ હેઠળ દેખાશે."
+
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"GNOME ફોન્ટ દર્શક પણ ttf અને બીજા બંધારણોમાં ડાઉનલોડ થયેલ નવી ફોન્ટ ફાઇલોને "
+"સ્થાપિત કરવા પણ આધાર આપે છે. ફોન્ટ તમારાં વપરાશ માટે પણ સ્થાપિત કરી શકાય છે "
+"અથવા કમ્પ્યૂટર પર બધા વપરાશકર્તાઓ માટે ઉપલબ્ધ બને છે."
+
+#: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "થમ્ભનેઇલ માટે લખાણ (મૂળભૂત: Aa)"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "TEXT"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "થમ્ભનેઇલ માપ (મૂળભૂત: 128)"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "SIZE"
 
-#: ../src/font-thumbnailer.c:194
+#: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "ફોન્ટ દર્શક વિશે"
+msgid "About"
+msgstr "વિશે"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
 msgstr "બહાર નીકળો"
 
-#: ../src/font-view.c:178
+#: ../src/font-view.c:176
 msgid "Name"
 msgstr "નામ"
 
-#: ../src/font-view.c:181
+#: ../src/font-view.c:179
 msgid "Style"
 msgstr "શૈલી"
 
-#: ../src/font-view.c:191
+#: ../src/font-view.c:189
 msgid "Type"
 msgstr "પ્રકાર"
 
-#: ../src/font-view.c:236 ../src/font-view.c:255
+#: ../src/font-view.c:234 ../src/font-view.c:253
 msgid "Version"
 msgstr "આવૃત્તિ"
 
-#: ../src/font-view.c:241 ../src/font-view.c:261
+#: ../src/font-view.c:239 ../src/font-view.c:259
 msgid "Copyright"
 msgstr "કોપીરાઇટ"
 
-#: ../src/font-view.c:246
+#: ../src/font-view.c:244
 msgid "Description"
 msgstr "વર્ણન"
 
-#: ../src/font-view.c:274
+#: ../src/font-view.c:272
 msgid "Install Failed"
 msgstr "સ્થાપન નિષ્ફળ"
 
-#: ../src/font-view.c:280
+#: ../src/font-view.c:278
 msgid "Installed"
 msgstr "સ્થાપિત થયેલ"
 
-#: ../src/font-view.c:283 ../src/font-view.c:515
+#: ../src/font-view.c:281 ../src/font-view.c:525
 msgid "Install"
 msgstr "સ્થાપિત કરો"
 
-#: ../src/font-view.c:416
+#: ../src/font-view.c:414
 msgid "This font could not be displayed."
 msgstr "આ ફોન્ટને દર્શાવી શક્યા નહિં."
 
-#: ../src/font-view.c:508
+#: ../src/font-view.c:478 ../src/font-view.c:536
 msgid "Info"
 msgstr "જાણકારી"
 
-#: ../src/font-view.c:521
+#: ../src/font-view.c:553
 msgid "Back"
 msgstr "પાછા જાઓ"
 
-#: ../src/font-view.c:618
+#: ../src/font-view.c:643
 msgid "All Fonts"
 msgstr "બધા ફોન્ટ"
 
-#: ../src/font-view.c:735 ../src/font-view.c:774
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:761 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "ફોન્ટ દર્શક"
 
-#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:762 ../src/org.gnome.font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "તમારી સિસ્ટમ પર ફોન્ટ જુઓ"
 
-#: ../src/font-view.c:738
+#: ../src/font-view.c:764
 msgid "translator-credits"
 msgstr "Sweta Kothari <swkothar@redhat.com>"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:3
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "ફોન્ટ;ફોન્ટફેસ;"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "ફોન્ટ દર્શક વિશે"
 
 #, fuzzy
 #~ msgid "Size:"
