@@ -4,14 +4,14 @@
 #
 # sandeep shedmake <sandeep.shedmake@gmail.com>, 2007.
 # Sandeep Shedmake <sshedmak@redhat.com>, 2008, 2009.
-# Sandeep Shedmake <sshedmak@redhat.com>, 2009, 2012, 2013.
+# Sandeep Shedmake <sshedmak@redhat.com>, 2009, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: mr\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-01-03 12:34+0000\n"
-"PO-Revision-Date: 2013-03-21 18:51+0530\n"
+"POT-Creation-Date: 2014-09-14 18:46+0000\n"
+"PO-Revision-Date: 2014-09-15 09:28+0530\n"
 "Last-Translator: Sandeep Shedmake <sshedmak@redhat.com>\n"
 "Language-Team: Marathi <fedora-trans-mr@redhat.com>\n"
 "Language: mr\n"
@@ -29,102 +29,124 @@ msgstr ""
 "\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: ../src/font-thumbnailer.c:190
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"GNOME फाँट व्युअर तुम्हाला थंबनेल्स म्हणून वापरकरिता संगणकावरील इंस्टॉल "
+"केलेले फाँट्स दाखवते. कोणतेही थंबनेल्स पसंत केल्याने तुम्हाला फाँट विविध "
+"आकारात कसे दिसेल त्याचे संपूर्णतया अवलोकन पुरवते."
+
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"GNOME फाँट व्युअर नवीन फाँट फाइल्सना .ttf आणि इतर रूपणमध्ये इंस्टॉल "
+"करण्यासाठी समर्थन पुरवते. फाँट्सला फक्त तुमच्या वापरकरिता किंवा संगणकावरील "
+"सर्व वापरकर्त्यांना उपलब्ध करून देण्याकरिता होऊ शकते."
+
+#: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "मजकूर ते थम्बनेल (पूर्वनिर्धारित: Aa)"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "मजकूर"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "थम्बनेल आकार (पूर्वनिर्धारित: 128)"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "आकार"
 
-#: ../src/font-thumbnailer.c:194
+#: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "फाँट व्युअरविषयी"
+msgid "About"
+msgstr "विषयी"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
 msgstr "बाहेर पडा"
 
-#: ../src/font-view.c:178
+#: ../src/font-view.c:176
 msgid "Name"
 msgstr "नाव"
 
-#: ../src/font-view.c:181
+#: ../src/font-view.c:179
 msgid "Style"
 msgstr "शैली"
 
-#: ../src/font-view.c:191
+#: ../src/font-view.c:189
 msgid "Type"
 msgstr "प्रकार"
 
-#: ../src/font-view.c:236 ../src/font-view.c:255
+#: ../src/font-view.c:234 ../src/font-view.c:253
 msgid "Version"
 msgstr "आवृत्ती"
 
-#: ../src/font-view.c:241 ../src/font-view.c:261
+#: ../src/font-view.c:239 ../src/font-view.c:259
 msgid "Copyright"
 msgstr "सर्वहक्काधिकार"
 
-#: ../src/font-view.c:246
+#: ../src/font-view.c:244
 msgid "Description"
 msgstr "वर्णन"
 
-#: ../src/font-view.c:274
+#: ../src/font-view.c:272
 msgid "Install Failed"
 msgstr "प्रतिष्ठापन अपयशी"
 
-#: ../src/font-view.c:280
+#: ../src/font-view.c:278
 msgid "Installed"
 msgstr "प्रतिष्ठापीत"
 
-#: ../src/font-view.c:283 ../src/font-view.c:515
+#: ../src/font-view.c:281 ../src/font-view.c:525
 msgid "Install"
 msgstr "प्रतिष्ठापीत करा"
 
-#: ../src/font-view.c:416
+#: ../src/font-view.c:414
 msgid "This font could not be displayed."
 msgstr "या फाँटला दाखवणे अशक्य."
 
-#: ../src/font-view.c:508
+#: ../src/font-view.c:478 ../src/font-view.c:536
 msgid "Info"
 msgstr "माहिती"
 
-#: ../src/font-view.c:521
+#: ../src/font-view.c:553
 msgid "Back"
 msgstr "मागे"
 
-#: ../src/font-view.c:618
+#: ../src/font-view.c:643
 msgid "All Fonts"
 msgstr "सर्व फाँट्स्"
 
-#: ../src/font-view.c:735 ../src/font-view.c:774
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:761 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "फाँट व्युअर"
 
-#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:762 ../src/org.gnome.font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "प्रणालीवरील फाँट्स्चे दृष्य"
 
-#: ../src/font-view.c:738
+#: ../src/font-view.c:764
 msgid "translator-credits"
 msgstr "संदिप शेडमाके <sshedmak@redhat.com>, 2012"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:3
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "फाँट्स;फाँटफेस;"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "फाँट व्युअरविषयी"
 
 #, fuzzy
 #~ msgid "Size:"
