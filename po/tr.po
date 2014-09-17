@@ -9,23 +9,35 @@
 # Baris Cicek <baris@teamforce.name.tr>, 2004, 2005, 2008, 2009.
 # İlker DAĞLI <ilker@ilkerdagli.info>, 2011.
 # Osman Karagöz <osmank3@gmail.com>, 2012.
-# Muhammet Kara <muhammetk@gmail.com>, 2011, 2012, 2013.
+# Muhammet Kara <muhammetk@gmail.com>, 2011, 2012, 2013, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-09-24 14:07+0000\n"
-"PO-Revision-Date: 2013-10-06 12:32+0200\n"
-"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-09-17 06:49+0000\n"
+"PO-Revision-Date: 2014-09-17 12:52+0000\n"
+"Last-Translator: Muhammet Kara <muhammetk@gmail.com>\n"
 "Language-Team: Turkish <gnome-turk@gnome.org>\n"
-"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: tr_TR\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.5.4\n"
+
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr "GNOME Yazıtipi Görüntüleyici, kullanımınız için bilgisayarınızda yüklü yazı tiplerini küçük resim olarak gösterir. Herhangi bir küçük resmi seçmek, yazı tipinin çeşitli boyutlarda nasıl görüneceğine dair tam bir görünümü gösterir."
+
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the "
+".ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr "Ayrıca GNOME Yazıtipi Görüntüleyici, .ttf ve diğer biçimlerde indirilen yeni yazıtipi dosyalarının kurulumuna da izin verir. Yazıtipleri sadece kendi kullanımınız için kurulabilir ya da bilgisayardaki tüm kullanıcıların kullanımına sunulabilir."
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -48,8 +60,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "YAZI-TİPİ-DOSYASI ÇIKTI-DOSYASI"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "Yazı Tipi Görüntüleyici Hakkında"
+msgid "About"
+msgstr "Hakkında"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
@@ -87,7 +99,7 @@ msgstr "Kurulum Başarısız"
 msgid "Installed"
 msgstr "Kuruldu"
 
-#: ../src/font-view.c:281 ../src/font-view.c:533
+#: ../src/font-view.c:281 ../src/font-view.c:525
 msgid "Install"
 msgstr "Kur"
 
@@ -95,46 +107,30 @@ msgstr "Kur"
 msgid "This font could not be displayed."
 msgstr "Bu yazı tipi görüntülenemiyor."
 
-#: ../src/font-view.c:479
-msgid "_Close"
-msgstr "_Kapat"
-
-#: ../src/font-view.c:521
+#: ../src/font-view.c:478 ../src/font-view.c:536
 msgid "Info"
 msgstr "Bilgi"
 
-#: ../src/font-view.c:550
+#: ../src/font-view.c:553
 msgid "Back"
 msgstr "Geri"
 
-#: ../src/font-view.c:640
+#: ../src/font-view.c:643
 msgid "All Fonts"
 msgstr "Tüm Yazı Tipleri"
 
-#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:761 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Yazı Tipi Görüntüleyici"
 
-#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:762 ../src/org.gnome.font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Sisteminizdeki yazı tiplerini görüntüleyin"
 
-#: ../src/font-view.c:761
+#: ../src/font-view.c:764
 msgid "translator-credits"
 msgstr "GNOME Türkiye Çeviri Takımı <gnometurk@gnome.org>"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:3
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "yazı tipleri; yazı tipi ailesi;"
-
-#~ msgid "Font size (default: 64)"
-#~ msgstr "Yazıtipi boyutu (öntanımlı: 64)"
-
-#~ msgid "Size:"
-#~ msgstr "Boyut:"
-
-#~ msgid "Usage: %s fontfile\n"
-#~ msgstr "Kullanım: %s yazıtipidosyası\n"
-
-#~ msgid "Preview fonts"
-#~ msgstr "Yazıtipleri önizlemesi"
