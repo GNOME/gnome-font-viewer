@@ -4,14 +4,14 @@
 #
 # Subhransu Behera <arya_subhransu@yahoo.co.in>, 2006.
 # Manoj Kumar Giri <giri.manojkr@gmail.com>, 2008.
-# Manoj Kumar Giri <mgiri@redhat.com>, 2009, 2010, 2012, 2013.
+# Manoj Kumar Giri <mgiri@redhat.com>, 2009, 2010, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master.or\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-01-03 12:34+0000\n"
-"PO-Revision-Date: 2013-03-24 16:43+0530\n"
+"POT-Creation-Date: 2014-09-15 06:49+0000\n"
+"PO-Revision-Date: 2014-09-19 09:51+0530\n"
 "Last-Translator: Manoj Kumar Giri <mgiri@redhat.com>\n"
 "Language-Team: Oriya <oriya-it@googlegroups.com>\n"
 "Language: or\n"
@@ -29,102 +29,125 @@ msgstr ""
 "\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: ../src/font-thumbnailer.c:190
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"GNOME ଫଣ୍ଟ ପ୍ରଦର୍ଶକ ଆପଣଙ୍କ ତନ୍ତ୍ରରେ ସ୍ଥାପିତ ଫଣ୍ଟଗୁଡ଼ିକୁ ଦର୍ଶାଇଥାଏ। କୌଣସି ଏକ "
+"ଥମ୍ବନେଲକୁ ବାଛିବା ଫଳରେ ତାହା ବିଭିନ୍ନ ଆକାରରେ ଫଣ୍ଟ କିପରି ଦେଖାଯାଇଥାଏ ତାହା "
+"ଦର୍ଶାଇଥାଏ।"
+
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"GNOME ଫଣ୍ଟ ପ୍ରଦର୍ଶକ ttf ଏବଂ ଅନ୍ୟାନ୍ୟ ଫରମାଟ୍‌ରେ ଆହରଣ କରାଯାଇଥିବା ନୂଆ ଫଣ୍ଟ "
+"ଫାଇଲଗୁଡ଼ିକୁ ମଧ୍ଯ ସ୍ଥାପନ କରିବାରେ ସହାୟତା କରିଥାଏ।"
+"ଫଣ୍ଟଗୁଡ଼ିକ କେବଳ ଆପଣଙ୍କ ବ୍ୟବହାର ପାଇଁ ସ୍ଥାପନ କରାଯାଇପାରେ ଅଥବା ସେହି କମ୍ପୁଟରରେ "
+"ସମସ୍ତ ବ୍ୟବହାରକାରୀଙ୍କ ପାଇଁ ଉପଲବ୍ଧ କରାଯାଇପାରିବ।"
+
+#: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "ଅଙ୍ଗୁଳି ଚିହ୍ନ ପାଇଁ ପାଠ୍ୟ (ପୂର୍ବନିର୍ଦ୍ଧାରିତ: Aa)"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "ପାଠ୍ୟ"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "ଅଙ୍ଗୁଳି ଚିହ୍ନ ଆକାର (ପୂର୍ବନିର୍ଦ୍ଧାରିତ: 128)"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "ଆକାର"
 
-#: ../src/font-thumbnailer.c:194
+#: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ଅକ୍ଷରରୂପ ଫାଇଲ ଫଳାଫଳ ଫାଇଲ"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "ଅକ୍ଷରରୂପ ପ୍ରଦର୍ଶିକା ବିଷୟରେ"
+msgid "About"
+msgstr "ବିବରଣୀ"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
 msgstr "ବିଦାୟ ନିଅନ୍ତୁ"
 
-#: ../src/font-view.c:178
+#: ../src/font-view.c:176
 msgid "Name"
 msgstr "ନାମ"
 
-#: ../src/font-view.c:181
+#: ../src/font-view.c:179
 msgid "Style"
 msgstr "ଶୈଳୀ"
 
-#: ../src/font-view.c:191
+#: ../src/font-view.c:189
 msgid "Type"
 msgstr "ପ୍ରକାର"
 
-#: ../src/font-view.c:236 ../src/font-view.c:255
+#: ../src/font-view.c:234 ../src/font-view.c:253
 msgid "Version"
 msgstr "ସଂସ୍କରଣ"
 
-#: ../src/font-view.c:241 ../src/font-view.c:261
+#: ../src/font-view.c:239 ../src/font-view.c:259
 msgid "Copyright"
 msgstr "ସତ୍ତ୍ୱାଧୀକାର"
 
-#: ../src/font-view.c:246
+#: ../src/font-view.c:244
 msgid "Description"
 msgstr "ବର୍ଣ୍ଣନା"
 
-#: ../src/font-view.c:274
+#: ../src/font-view.c:272
 msgid "Install Failed"
 msgstr "ସ୍ଥାପନ ବିଫଳ ହେଲା"
 
-#: ../src/font-view.c:280
+#: ../src/font-view.c:278
 msgid "Installed"
 msgstr "ସ୍ଥାପିତ"
 
-#: ../src/font-view.c:283 ../src/font-view.c:515
+#: ../src/font-view.c:281 ../src/font-view.c:525
 msgid "Install"
 msgstr "ସ୍ଥାପନ କରନ୍ତୁ"
 
-#: ../src/font-view.c:416
+#: ../src/font-view.c:414
 msgid "This font could not be displayed."
 msgstr "ଏହି ଅକ୍ଷରରୂପକୁ ଦର୍ଶାଯାଇପାରିବ ନାହିଁ।"
 
-#: ../src/font-view.c:508
+#: ../src/font-view.c:478 ../src/font-view.c:536
 msgid "Info"
 msgstr "ସୂଚନା"
 
-#: ../src/font-view.c:521
+#: ../src/font-view.c:553
 msgid "Back"
 msgstr "ପଛ"
 
-#: ../src/font-view.c:618
+#: ../src/font-view.c:643
 msgid "All Fonts"
 msgstr "ସମସ୍ତ ଅକ୍ଷରରୂପଗୁଡିକ"
 
-#: ../src/font-view.c:735 ../src/font-view.c:774
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:761 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "ଅକ୍ଷରରୂପ ପ୍ରଦର୍ଶିକା"
 
-#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:762 ../src/org.gnome.font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "ଆପଣଙ୍କ ତନ୍ତ୍ରରେ ଅକ୍ଷରରୂପଗୁଡ଼ିକୁ ଦେଖନ୍ତୁ"
 
-#: ../src/font-view.c:738
+#: ../src/font-view.c:764
 msgid "translator-credits"
 msgstr "ମନୋଜ କୁମାର ଗିରି <mgiri@redhat.com>"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:3
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "ଅକ୍ଷରରୂପ;ଅକ୍ଷରରୂପ ମୁଖା;"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "ଅକ୍ଷରରୂପ ପ୍ରଦର୍ଶିକା ବିଷୟରେ"
 
 #, fuzzy
 #~ msgid "Size:"
