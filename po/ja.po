@@ -11,14 +11,14 @@
 # Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009, 2010.
 # Yasumichi Akahoshi <yasumichi@vinelinux.org>, 2010, 2011.
 # OKANO Takayoshi <kano@na.rim.or.jp>, 2011, 2012.
-# Jiro Matsuzawa <jmatsuzawa@gnome.org>, 2012, 2013.
+# Jiro Matsuzawa <jmatsuzawa@gnome.org>, 2012, 2013, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-08-27 14:48+0000\n"
-"PO-Revision-Date: 2013-08-13 09:20+0900\n"
+"POT-Creation-Date: 2014-09-18 06:54+0000\n"
+"PO-Revision-Date: 2014-09-18 22:52+0900\n"
 "Last-Translator: Jiro Matsuzawa <jmatsuzawa@gnome.org>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
@@ -26,6 +26,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
+msgid "GNOME Font Viewer shows you the fonts installed on your computer for your use as thumbnails. Selecting any thumbnails shows the full view of how the font would look under various sizes."
+msgstr ""
+
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
+msgid "GNOME Font Viewer also supports installing new font files downloaded in the .ttf and other formats. Fonts may be installed only for your use or made available to all users on the computer."
+msgstr ""
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -48,7 +56,7 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
+msgid "About"
 msgstr "このアプリケーションについて"
 
 #: ../src/font-view-app-menu.ui.h:2
@@ -87,7 +95,7 @@ msgstr "インストールに失敗しました"
 msgid "Installed"
 msgstr "インストール済み"
 
-#: ../src/font-view.c:281 ../src/font-view.c:533
+#: ../src/font-view.c:281 ../src/font-view.c:525
 msgid "Install"
 msgstr "インストール"
 
@@ -95,31 +103,27 @@ msgstr "インストール"
 msgid "This font could not be displayed."
 msgstr "フォントを表示できませんでした。"
 
-#: ../src/font-view.c:479
-msgid "_Close"
-msgstr "閉じる(_C)"
-
-#: ../src/font-view.c:521
+#: ../src/font-view.c:478 ../src/font-view.c:536
 msgid "Info"
 msgstr "情報"
 
-#: ../src/font-view.c:550
+#: ../src/font-view.c:553
 msgid "Back"
 msgstr "戻る"
 
-#: ../src/font-view.c:640
+#: ../src/font-view.c:643
 msgid "All Fonts"
 msgstr "すべてのフォント"
 
-#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:761 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "フォントビューアー"
 
-#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:762 ../src/org.gnome.font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "システム上のフォントを閲覧します"
 
-#: ../src/font-view.c:761
+#: ../src/font-view.c:764
 msgid "translator-credits"
 msgstr ""
 "Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1998.\n"
@@ -133,11 +137,17 @@ msgstr ""
 "Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009, 2010.\n"
 "Yasumichi Akahoshi <yasumichi@vinelinux.org>, 2010, 2011.\n"
 "OKANO Takayoshi <kano@na.rim.or.jp>, 2011, 2012.\n"
-"松澤 二郎 <jmatsuzawa@gnome.org>, 2012."
+"松澤 二郎 <jmatsuzawa@gnome.org>, 2012, 2013, 2014."
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:3
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "fonts;fontface;フォント書体;"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "このアプリケーションについて"
+
+#~ msgid "_Close"
+#~ msgstr "閉じる(_C)"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "フォントの大きさ (デフォルトは 64)"
