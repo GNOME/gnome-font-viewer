@@ -5,15 +5,15 @@
 # Ravishankar Shrivastava <raviratlami@yahoo.com>, 2004.
 # Rajesh Ranjan <rranjan@redhat.com>, 2005, 2006, 2009.
 # Rajesh Ranjan <rajesh672@gmail.com>, 2009.
-# rajesh <rajeshkajha@yahoo.com>, 2012, 2013.
+# rajesh <rajeshkajha@yahoo.com>, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master.hi\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-03-21 09:51+0000\n"
-"PO-Revision-Date: 2013-03-22 12:15+0530\n"
-"Last-Translator: raj <raj>\n"
+"POT-Creation-Date: 2014-09-19 18:53+0000\n"
+"PO-Revision-Date: 2014-09-22 14:31+0630\n"
+"Last-Translator: rajesh <rajesh>\n"
 "Language-Team: Hindi <kde-i18n-doc@kde.org>\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
@@ -29,6 +29,26 @@ msgstr ""
 "\n"
 "\n"
 "\n"
+
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"गनोम फ़ॉन्ट प्रदर्शक आपके कंप्यूटर पर संस्थापित फ़ॉन्ट को दिखाता है आपके "
+"उपयोग के लिए बतौर थंबनेल. किसी थंबनेल को चुनना दिखाता है कि कैसे फ़ॉन्ट "
+"विभिन्न प्रकार का दिखेगा."
+
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"गनोम फ़ॉन्ट प्रदर्शक .ttf और अन्य प्रारूप में नए फ़ॉन्ट फ़ाइल के संस्थापन का "
+"समर्थन भी करता है. फ़ॉन्ट केवल आपके लिए संस्थापित किया जा सकता है या कंप्यूटर "
+"पर सभी उपयोक्ता के लिए उपलब्ध कराया जा सकता है."
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -51,81 +71,83 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "फ़ॉन्ट प्रदर्शक के बारे में"
+msgid "About"
+msgstr "परिचय"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
 msgstr "बाहर"
 
-#: ../src/font-view.c:178
+#: ../src/font-view.c:176
 msgid "Name"
 msgstr "नाम"
 
-#: ../src/font-view.c:181
+#: ../src/font-view.c:179
 msgid "Style"
 msgstr "शैली"
 
-#: ../src/font-view.c:191
+#: ../src/font-view.c:189
 msgid "Type"
 msgstr "प्रकार"
 
-#: ../src/font-view.c:236 ../src/font-view.c:255
+#: ../src/font-view.c:234 ../src/font-view.c:253
 msgid "Version"
 msgstr "संस्करण"
 
-#: ../src/font-view.c:241 ../src/font-view.c:261
+#: ../src/font-view.c:239 ../src/font-view.c:259
 msgid "Copyright"
 msgstr "कॉपीराइट"
 
-#: ../src/font-view.c:246
+#: ../src/font-view.c:244
 msgid "Description"
 msgstr "वर्णन"
 
-#: ../src/font-view.c:274
+#: ../src/font-view.c:272
 msgid "Install Failed"
 msgstr "संस्थापन विफल"
 
-#: ../src/font-view.c:280
+#: ../src/font-view.c:278
 msgid "Installed"
 msgstr "स्थापित "
 
-#: ../src/font-view.c:283 ../src/font-view.c:517
+#: ../src/font-view.c:281 ../src/font-view.c:525
 msgid "Install"
 msgstr "संस्थापित करें"
 
-#: ../src/font-view.c:416
+#: ../src/font-view.c:414
 msgid "This font could not be displayed."
 msgstr "इस फ़ॉन्ट को प्रदर्शित नहीं किया जा सका."
 
-#: ../src/font-view.c:509
+#: ../src/font-view.c:478 ../src/font-view.c:536
 msgid "Info"
 msgstr "सूचना"
 
-#: ../src/font-view.c:524
+#: ../src/font-view.c:553
 msgid "Back"
 msgstr "पीछे"
 
-#: ../src/font-view.c:611
+#: ../src/font-view.c:643
 msgid "All Fonts"
 msgstr "सभी फ़ॉन्ट"
 
-#: ../src/font-view.c:729 ../src/font-view.c:768
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:761 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "फ़ॉन्ट प्रदर्शक"
 
-#: ../src/font-view.c:730 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:762 ../src/org.gnome.font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "अपने तंत्र पर फ़ॉन्ट देखें"
 
-#: ../src/font-view.c:732
+#: ../src/font-view.c:764
 msgid "translator-credits"
 msgstr "राजेश रंजन (rranjan@redhat.com, rajeshkajha@yahoo.com)"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:3
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "fonts;fontface;"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "फ़ॉन्ट प्रदर्शक के बारे में"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "फाँट आकार (default: 64)"
