@@ -133,7 +133,7 @@ msgstr "Pawan Chitrakar <chautari@gmail.com>"
 
 #: ../src/gnome-font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
-msgstr "फन्ट;फन्टफेस"
+msgstr "फन्ट;फन्टफेस;"
 
 #, fuzzy
 #~ msgid "Size:"
