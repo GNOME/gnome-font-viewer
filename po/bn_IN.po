@@ -2,27 +2,48 @@
 # Bengali India Translation of Gnome-Utils
 # Copyright (C) 2005 Free Software Foundation.
 # This file is distributed under the same license as the gnome-utils package.
-# 
+#
 # Runa Bhattacharjee <runa@bengalinux.org>, 2005.
 # Runa Bhattacharjee <runab@redhat.com>, 2008, 2009, 2010, 2011, 2012.
-# sray <sray@redhat.com>, 2013. #zanata
+# sray <sray@redhat.com>, 2013, 2014. #zanata.
 msgid ""
 msgstr ""
 "Project-Id-Version: bn_IN\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-06-01 19:04+0000\n"
-"PO-Revision-Date: 2013-09-23 05:05-0400\n"
-"Last-Translator: sray <sray@redhat.com>\n"
-"Language-Team: Bengali (India) <anubad@lists.ankur.org.in>\n"
+"POT-Creation-Date: 2014-09-25 06:52+0000\n"
+"PO-Revision-Date: 2014-09-25 16:25+0000\n"
+"Last-Translator: \n"
+"Language-Team: Bengali (India) <kde-i18n-doc@kde.org>\n"
+"Language: bn-IN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: bn-IN\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "\n"
 "\n"
-"X-Generator: Zanata 3.1.2\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"GNOME ফন্ট ভিউয়ার অাপনাকে অাপনার কম্পিউটারে ইনস্টল করা হরফগুলি দেখায়, যাতে "
+"অাপনি থাম্বনেল হিসাবে ব্যবহার করতে পারেন। যেকোনো থাম্বনেলের নির্বাচন, বিভিন্ন "
+"মাপে হরফ কীরূপে দেখানো হবে তার সম্পূর্ণ রূপ দেখায়।"
+
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"GNOME হরফ ভিউয়ার, ."
+"ttf এবং অন্যান্য ফর্ম্যাটে ডাউনলোড করা নতুন হরফ ফাইলগুলির ইনস্টলও সমর্থন করে। "
+"হরফগুলি শুধুমাত্র অাপনার ব্যবহারের জন্য ইনস্টল করা যেতে পারে বা কম্পিউটারে "
+"সকল ব্যবহারকারীর কাছে উপলব্ধ করানো যেতে পারে।"
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -45,83 +66,80 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "ফন্ট প্রদর্শন ব্যবস্থা পরিচিতি"
+msgid "About"
+msgstr "সম্পর্কে"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
 msgstr "প্রস্থান"
 
-#: ../src/font-view.c:178
+#: ../src/font-view.c:176
 msgid "Name"
 msgstr "নাম"
 
-#: ../src/font-view.c:181
+#: ../src/font-view.c:179
 msgid "Style"
 msgstr "বিন্যাস"
 
-#: ../src/font-view.c:191
+#: ../src/font-view.c:189
 msgid "Type"
 msgstr "ধরন"
 
-#: ../src/font-view.c:236
-#: ../src/font-view.c:255
+#: ../src/font-view.c:234 ../src/font-view.c:253
 msgid "Version"
 msgstr "সংস্করণ "
 
-#: ../src/font-view.c:241
-#: ../src/font-view.c:261
+#: ../src/font-view.c:239 ../src/font-view.c:259
 msgid "Copyright"
 msgstr "স্বত্বাধিকার"
 
-#: ../src/font-view.c:246
+#: ../src/font-view.c:244
 msgid "Description"
 msgstr "বিবরণ"
 
-#: ../src/font-view.c:274
+#: ../src/font-view.c:272
 msgid "Install Failed"
 msgstr "ইনস্টল করতে বিফল"
 
-#: ../src/font-view.c:280
+#: ../src/font-view.c:278
 msgid "Installed"
 msgstr "ইনস্টল রয়েছে"
 
-#: ../src/font-view.c:283
-#: ../src/font-view.c:517
+#: ../src/font-view.c:281 ../src/font-view.c:525
 msgid "Install"
 msgstr "ইনস্টল করুন"
 
-#: ../src/font-view.c:416
+#: ../src/font-view.c:414
 msgid "This font could not be displayed."
 msgstr "এই হরফটি দেখানো সম্ভব নয়।"
 
-#: ../src/font-view.c:509
+#: ../src/font-view.c:478 ../src/font-view.c:536
 msgid "Info"
 msgstr "তথ্য"
 
-#: ../src/font-view.c:524
+#: ../src/font-view.c:553
 msgid "Back"
 msgstr "পূর্ববর্তী"
 
-#: ../src/font-view.c:611
+#: ../src/font-view.c:643
 msgid "All Fonts"
 msgstr "সর্বধরনের ফন্ট"
 
-#: ../src/font-view.c:729
-#: ../src/font-view.c:768
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:761 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "ফন্ট প্রদর্শন ব্যবস্থা"
 
-#: ../src/font-view.c:730
-#: ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:762 ../src/org.gnome.font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "সিস্টেমের মধ্যে উপস্থিত ফন্ট দেখুন"
 
-#: ../src/font-view.c:732
+#: ../src/font-view.c:764
 msgid "translator-credits"
 msgstr "রুণা ভট্টাচার্য (runab@fedoraproject.org)"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:3
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "ফন্ট;ফন্টফেস;"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "ফন্ট প্রদর্শন ব্যবস্থা পরিচিতি"
