@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer 3.11.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-19 20:07+0100\n"
-"PO-Revision-Date: 2014-02-19 20:09+0100\n"
+"POT-Creation-Date: 2014-10-31 00:17+0100\n"
+"PO-Revision-Date: 2014-10-31 00:17+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: \n"
@@ -18,19 +18,25 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
 msgid ""
 "GNOME Font Viewer shows you the fonts installed on your computer for your "
 "use as thumbnails. Selecting any thumbnails shows the full view of how the "
 "font would look under various sizes."
-msgstr "GNOME skriftvisning viser deg skrifter som er installert på din datamaskin som miniatyrer. Ved å velge en miniatyr får du en full visning av hvordan skriften vil se ut i forskjellige størrelser."
+msgstr ""
+"GNOME skriftvisning viser deg skrifter som er installert på din datamaskin "
+"som miniatyrer. Ved å velge en miniatyr får du en full visning av hvordan "
+"skriften vil se ut i forskjellige størrelser."
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
 msgid ""
 "GNOME Font Viewer also supports installing new font files downloaded in the ."
 "ttf and other formats. Fonts may be installed only for your use or made "
 "available to all users on the computer."
-msgstr "GNOME skriftvisning støtter også å installere nye skriftfiler som er lastet ned i ttf- og andre formater. Skriftene kan installeres for personlig bruk eller gjøres tilgjengelig for alle brukere på datamaskinen."
+msgstr ""
+"GNOME skriftvisning støtter også å installere nye skriftfiler som er lastet "
+"ned i ttf- og andre formater. Skriftene kan installeres for personlig bruk "
+"eller gjøres tilgjengelig for alle brukere på datamaskinen."
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -60,74 +66,88 @@ msgstr "Om"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: ../src/font-view.c:176
+#: ../src/font-view.c:76
+msgid "GNOME Font Viewer"
+msgstr "GNOME skriftvisning"
+
+#: ../src/font-view.c:84
+msgid "Show the application's version"
+msgstr "Vis programmets versjon"
+
+#: ../src/font-view.c:194
 msgid "Name"
 msgstr "Navn"
 
-#: ../src/font-view.c:179
+#: ../src/font-view.c:197
 msgid "Style"
 msgstr "Stil"
 
-#: ../src/font-view.c:189
+#: ../src/font-view.c:207
 msgid "Type"
 msgstr "Type"
 
-#: ../src/font-view.c:234 ../src/font-view.c:253
+#: ../src/font-view.c:252 ../src/font-view.c:271
 msgid "Version"
 msgstr "Versjon"
 
-#: ../src/font-view.c:239 ../src/font-view.c:259
+#: ../src/font-view.c:257 ../src/font-view.c:277
 msgid "Copyright"
 msgstr "Opphavsrett"
 
-#: ../src/font-view.c:244
+#: ../src/font-view.c:262
 msgid "Description"
 msgstr "Beskrivelse"
 
-#: ../src/font-view.c:272
+#: ../src/font-view.c:290
 msgid "Install Failed"
 msgstr "Installering feilet"
 
-#: ../src/font-view.c:278
+#: ../src/font-view.c:296
 msgid "Installed"
 msgstr "Installert"
 
-#: ../src/font-view.c:281 ../src/font-view.c:522
+#: ../src/font-view.c:299 ../src/font-view.c:543
 msgid "Install"
 msgstr "Installer"
 
-#: ../src/font-view.c:414
+#: ../src/font-view.c:432
 msgid "This font could not be displayed."
 msgstr "Denne skriften kunne ikke vises."
 
-#: ../src/font-view.c:479
-msgid "_Close"
-msgstr "_Lukk"
-
-#: ../src/font-view.c:533
+#: ../src/font-view.c:496 ../src/font-view.c:554
 msgid "Info"
 msgstr "Informasjon"
 
-#: ../src/font-view.c:550
+#: ../src/font-view.c:571
 msgid "Back"
 msgstr "Tilbake"
 
-#: ../src/font-view.c:640
+#: ../src/font-view.c:661
 msgid "All Fonts"
 msgstr "Alle skrifter"
 
-#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:779 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Skriftvisning"
 
-#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:780 ../src/org.gnome.font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Vis skrifter på systemet"
 
-#: ../src/font-view.c:761
+#: ../src/font-view.c:782
 msgid "translator-credits"
 msgstr "Kjartan Maraas <kmaraas@gnome.org>"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:3
+#: ../src/font-view.c:921
+msgid "[FILE...]"
+msgstr "[FIL …]"
+
+#. I18N: The '%s' is replaced with the command name.
+#: ../src/font-view.c:929
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options."
+msgstr "Kjør «%s --help» for å se en full liste med tilgjengelige kommandolinjevalg."
+
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "skrifter;skrifttyper;"
