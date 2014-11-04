@@ -18,8 +18,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.HEAD.he\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-25 23:18+0200\n"
-"PO-Revision-Date: 2014-01-25 23:28+0200\n"
+"POT-Creation-Date: 2014-11-04 18:47+0200\n"
+"PO-Revision-Date: 2014-11-04 18:47+0200\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
 "Language-Team: עברית <>\n"
 "Language: he\n"
@@ -30,7 +30,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n>2||n==0) ? 1 : 2;\n"
 "X-Poedit-Language: Hebrew\n"
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
 msgid ""
 "GNOME Font Viewer shows you the fonts installed on your computer for your "
 "use as thumbnails. Selecting any thumbnails shows the full view of how the "
@@ -40,7 +40,7 @@ msgstr ""
 "כתמונות ממוזערות. בחירת תמונה ממוזערת כלשהי תראה תצוגה מלאה של איך הגופן "
 "נראה בגדלים שונים."
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
 msgid ""
 "GNOME Font Viewer also supports installing new font files downloaded in the ."
 "ttf and other formats. Fonts may be installed only for your use or made "
@@ -78,79 +78,96 @@ msgstr "על אודות"
 msgid "Quit"
 msgstr "יציאה"
 
-#: ../src/font-view.c:176
+#: ../src/font-view.c:76
+msgid "GNOME Font Viewer"
+msgstr "GNOME Font Viewer"
+
+#: ../src/font-view.c:84
+msgid "Show the application's version"
+msgstr "Show the application's version"
+
+#: ../src/font-view.c:194
 msgid "Name"
 msgstr "שם"
 
-#: ../src/font-view.c:179
+#: ../src/font-view.c:197
 msgid "Style"
 msgstr "סגנון"
 
-#: ../src/font-view.c:189
+#: ../src/font-view.c:207
 msgid "Type"
 msgstr "סוג"
 
-#: ../src/font-view.c:234 ../src/font-view.c:253
+#: ../src/font-view.c:252 ../src/font-view.c:271
 msgid "Version"
 msgstr "גרסה"
 
-#: ../src/font-view.c:239 ../src/font-view.c:259
+#: ../src/font-view.c:257 ../src/font-view.c:277
 msgid "Copyright"
 msgstr "זכויות יוצרים"
 
-#: ../src/font-view.c:244
+#: ../src/font-view.c:262
 msgid "Description"
 msgstr "תיאור"
 
-#: ../src/font-view.c:272
+#: ../src/font-view.c:290
 msgid "Install Failed"
 msgstr "ההתקנה נכשלה"
 
-#: ../src/font-view.c:278
+#: ../src/font-view.c:296
 msgid "Installed"
 msgstr "מותקן"
 
-#: ../src/font-view.c:281 ../src/font-view.c:522
+#: ../src/font-view.c:299 ../src/font-view.c:543
 msgid "Install"
 msgstr "התקנה"
 
-#: ../src/font-view.c:414
+#: ../src/font-view.c:432
 msgid "This font could not be displayed."
 msgstr "לא ניתן להציג גופן זה."
 
-#: ../src/font-view.c:479
-msgid "_Close"
-msgstr "_סגירה"
-
-#: ../src/font-view.c:533
+#: ../src/font-view.c:496 ../src/font-view.c:554
 msgid "Info"
 msgstr "פרטים"
 
-#: ../src/font-view.c:550
+#: ../src/font-view.c:571
 msgid "Back"
 msgstr "חזרה"
 
-#: ../src/font-view.c:640
+#: ../src/font-view.c:661
 msgid "All Fonts"
 msgstr "כל הגופנים"
 
-#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:779 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "מציג הגופנים"
 
-#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:780 ../src/org.gnome.font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "צפייה בגופנים במערכת שלך"
 
-#: ../src/font-view.c:761
+#: ../src/font-view.c:782
 msgid "translator-credits"
 msgstr ""
 "ירון שהרבני <sh.yaron@gmail.com>\n"
 "יוסף אור בוצ׳קו <yoseforb@gnome.org>"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:3
+#: ../src/font-view.c:921
+msgid "[FILE...]"
+msgstr "[FILE...]"
+
+#. I18N: The '%s' is replaced with the command name.
+#: ../src/font-view.c:929
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options."
+msgstr "Run '%s --help' to see a full list of available command line options."
+
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "גופנים;גופן;פונטים;גליפים;"
+
+#~ msgid "_Close"
+#~ msgstr "_סגירה"
 
 #~ msgid "About Font Viewer"
 #~ msgstr "על אודות מציג הגופנים"
