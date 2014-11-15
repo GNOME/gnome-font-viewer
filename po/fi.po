@@ -1,6 +1,6 @@
 # Finnish messages for gnome-utils
 # Copyright (C) 2003-2009 Free Software Foundation, Inc.
-# Suomennos: http://gnome.fi/
+# Suomennos: https://l10n.gnome.org/teams/fi/
 #
 # days = päivää sitten, ks. konteksti
 #
@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-17 06:49+0000\n"
+"POT-Creation-Date: 2014-11-07 07:44+0000\n"
 "PO-Revision-Date: 2014-09-17 15:31+0300\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <gnome-fi-laatu@lists.sourceforge.net>\n"
