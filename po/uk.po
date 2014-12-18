@@ -126,7 +126,7 @@ msgstr "Назад"
 
 #: ../src/font-view.c:640
 msgid "All Fonts"
-msgstr "_Усі шрифти"
+msgstr "Усі шрифти"
 
 #: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
