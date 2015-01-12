@@ -11,25 +11,27 @@
 # Vasiliy Faronov <qvvx@yandex.ru>, 2008.
 # Yuri Kozlov <yuray@komyakino.ru>, 2010.
 # Alexander Saprykin <xelfium@gmail.com>, 2010.
+# Stas Solovey <whats_up@tut.by>, 2015.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils trunk\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-03-10 07:50+0000\n"
-"PO-Revision-Date: 2014-03-10 21:37+0300\n"
-"Last-Translator: Yuri Myasoedov <omerta13@yandex.ru>\n"
-"Language-Team: Russian <gnome-cyr@gnome.org>\n"
+"POT-Creation-Date: 2015-01-12 07:44+0000\n"
+"PO-Revision-Date: 2015-01-12 15:58+0300\n"
+"Last-Translator: Stas Solovey <whats_up@tut.by>\n"
+"Language-Team: Русский <gnome-cyr@gnome.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 "10<=4 && (n%100<10 || n%100>=20) ? 1: 2);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Gtranslator 2.91.6\n"
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
 msgid ""
 "GNOME Font Viewer shows you the fonts installed on your computer for your "
 "use as thumbnails. Selecting any thumbnails shows the full view of how the "
@@ -39,7 +41,7 @@ msgstr ""
 "компьютере шрифты. Выбор миниатюры открывает подробный режим просмотра "
 "шрифта, как будет выглядеть шрифт при различных размерах."
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
 msgid ""
 "GNOME Font Viewer also supports installing new font files downloaded in the ."
 "ttf and other formats. Fonts may be installed only for your use or made "
@@ -77,77 +79,91 @@ msgstr "О приложении"
 msgid "Quit"
 msgstr "Закончить"
 
-#: ../src/font-view.c:176
+#: ../src/font-view.c:76
+#| msgid "Font Viewer"
+msgid "GNOME Font Viewer"
+msgstr "Просмотрщик шрифтов GNOME"
+
+#: ../src/font-view.c:84
+msgid "Show the application's version"
+msgstr "Показать версию приложения"
+
+#: ../src/font-view.c:196
 msgid "Name"
 msgstr "Название"
 
-#: ../src/font-view.c:179
+#: ../src/font-view.c:199
 msgid "Style"
 msgstr "Стиль"
 
-#: ../src/font-view.c:189
+#: ../src/font-view.c:209
 msgid "Type"
 msgstr "Тип"
 
-#: ../src/font-view.c:234 ../src/font-view.c:253
+#: ../src/font-view.c:254 ../src/font-view.c:273
 msgid "Version"
 msgstr "Версия"
 
-#: ../src/font-view.c:239 ../src/font-view.c:259
+#: ../src/font-view.c:259 ../src/font-view.c:279
 msgid "Copyright"
 msgstr "Авторское право"
 
-#: ../src/font-view.c:244
+#: ../src/font-view.c:264
 msgid "Description"
 msgstr "Описание"
 
-#: ../src/font-view.c:272
+#: ../src/font-view.c:292
 msgid "Install Failed"
 msgstr "Сбой при установке"
 
-#: ../src/font-view.c:278
+#: ../src/font-view.c:298
 msgid "Installed"
 msgstr "Установлено"
 
-#: ../src/font-view.c:281 ../src/font-view.c:522
+#: ../src/font-view.c:301 ../src/font-view.c:545
 msgid "Install"
 msgstr "Установить"
 
-#: ../src/font-view.c:414
+#: ../src/font-view.c:434
 msgid "This font could not be displayed."
 msgstr "Не удалось показать этот шрифт."
 
-#: ../src/font-view.c:479
-msgid "_Close"
-msgstr "_Закрыть"
-
-#: ../src/font-view.c:533
+#: ../src/font-view.c:498 ../src/font-view.c:556
 msgid "Info"
 msgstr "Информация"
 
-#: ../src/font-view.c:550
+#: ../src/font-view.c:573
 msgid "Back"
 msgstr "Назад"
 
-#: ../src/font-view.c:640
+#: ../src/font-view.c:663
 msgid "All Fonts"
 msgstr "Все шрифты"
 
-#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:781 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Просмотрщик шрифтов"
 
-#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:782 ../src/org.gnome.font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Просмотр шрифтов, доступных в системе"
 
-#: ../src/font-view.c:761
+#: ../src/font-view.c:784
 msgid "translator-credits"
-msgstr "Юрий Мясоедов <ymyasoedov@yandex.ru>, 2012, 2013, 2014."
+msgstr ""
+"Юрий Мясоедов <ymyasoedov@yandex.ru>, 2012, 2013, 2014.\n"
+"Станислав Соловей <whats_up@tut.by>, 2015."
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:3
+#: ../src/font-view.c:923
+msgid "[FILE...]"
+msgstr "[ФАЙЛ…]"
+
+#. I18N: The '%s' is replaced with the command name.
+#: ../src/font-view.c:931
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options."
+msgstr "Введите '%s --help' чтобы увидеть полный список доступных команд."
+
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
-msgstr "шрифты;"
-
-#~ msgid "About Font Viewer"
-#~ msgstr "О программе просмотра шрифтов"
+msgstr "шрифты;fontface;"
