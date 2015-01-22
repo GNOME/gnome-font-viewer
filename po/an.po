@@ -1,25 +1,25 @@
 # Aragonese translation for gnome-font-viewer.
 # Copyright (C) 2012 gnome-font-viewer's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-font-viewer package.
-# Daniel Martinez <entaltoaragon@gmail.com>, 2012.
+# Daniel Martinez <entaltoaragon@gmail.com>, 2012, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-01-28 21:18+0000\n"
-"PO-Revision-Date: 2014-01-30 20:28+0100\n"
-"Last-Translator: Jorge Pérez Pérez <jorgtum@gmail.com>\n"
+"POT-Creation-Date: 2015-01-22 19:44+0000\n"
+"PO-Revision-Date: 2015-01-23 00:35+0100\n"
+"Last-Translator: Daniel Martinez <entaltoaragon@gmail.com>\n"
 "Language-Team: Aragonés <softaragones@googlegroups.com>\n"
 "Language: an\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Poedit 1.6.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 2.91.6\n"
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
 msgid ""
 "GNOME Font Viewer shows you the fonts installed on your computer for your "
 "use as thumbnails. Selecting any thumbnails shows the full view of how the "
@@ -30,7 +30,7 @@ msgstr ""
 "amuestra l'anvista completa de como podría veyer-se a fuent en quantas "
 "grandarias."
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
 msgid ""
 "GNOME Font Viewer also supports installing new font files downloaded in the ."
 "ttf and other formats. Fonts may be installed only for your use or made "
@@ -58,7 +58,7 @@ msgstr "TAMANYO"
 
 #: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
-msgstr "FICHERO-DE-TIPOGRAFÍA FICHERO-DE-SURTIDA"
+msgstr "FICHERO-DE-FUENT FICHERO-DE-SURTIDA"
 
 #: ../src/font-view-app-menu.ui.h:1
 msgid "About"
@@ -68,77 +68,97 @@ msgstr "Sobre"
 msgid "Quit"
 msgstr "Salir"
 
-#: ../src/font-view.c:176
+#: ../src/font-view.c:76
+#| msgid "Font Viewer"
+msgid "GNOME Font Viewer"
+msgstr "Visor de fuents de GNOME"
+
+#: ../src/font-view.c:84
+msgid "Show the application's version"
+msgstr "Amostrar a versión de l'aplicación"
+
+#: ../src/font-view.c:196
 msgid "Name"
 msgstr "Nombre"
 
-#: ../src/font-view.c:179
+#: ../src/font-view.c:199
 msgid "Style"
 msgstr "Estilo"
 
-#: ../src/font-view.c:189
+#: ../src/font-view.c:209
 msgid "Type"
 msgstr "Tipo"
 
-#: ../src/font-view.c:234 ../src/font-view.c:253
+#: ../src/font-view.c:254 ../src/font-view.c:273
 msgid "Version"
 msgstr "Version"
 
-#: ../src/font-view.c:239 ../src/font-view.c:259
+#: ../src/font-view.c:259 ../src/font-view.c:279
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../src/font-view.c:244
+#: ../src/font-view.c:264
 msgid "Description"
 msgstr "Descripción"
 
-#: ../src/font-view.c:272
+#: ../src/font-view.c:292
 msgid "Install Failed"
 msgstr "Falló a instalación"
 
-#: ../src/font-view.c:278
+#: ../src/font-view.c:298
 msgid "Installed"
 msgstr "Instalau"
 
-#: ../src/font-view.c:281 ../src/font-view.c:522
+#: ../src/font-view.c:301 ../src/font-view.c:545
 msgid "Install"
 msgstr "Instalar"
 
-#: ../src/font-view.c:414
+#: ../src/font-view.c:434
 msgid "This font could not be displayed."
-msgstr "No se podió amostrar ista tipografía."
+msgstr "No se podió amostrar ista fuent."
 
-#: ../src/font-view.c:479
-msgid "_Close"
-msgstr "_Zarrar"
-
-#: ../src/font-view.c:533
+#: ../src/font-view.c:498 ../src/font-view.c:556
 msgid "Info"
 msgstr "Información"
 
-#: ../src/font-view.c:550
+#: ../src/font-view.c:573
 msgid "Back"
 msgstr "Tazaga"
 
-#: ../src/font-view.c:640
+#: ../src/font-view.c:663
 msgid "All Fonts"
-msgstr "Todas as tipografías"
+msgstr "Todas as fuents"
 
-#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:781 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
-msgstr "Visor de tipografías"
+msgstr "Visor de fuents"
 
-#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:782 ../src/org.gnome.font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
-msgstr "Veyer as tipografías d'o suyo sistema"
+msgstr "Veyer as fuents d'o suyo sistema"
 
-#: ../src/font-view.c:761
+#: ../src/font-view.c:784
 msgid "translator-credits"
-msgstr "Daniel Martinez <entaltoaragon@gmail.com>, 2012"
+msgstr "Daniel Martinez <entaltoaragon@gmail.com>, 2012, 2015"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:3
+#: ../src/font-view.c:923
+msgid "[FILE...]"
+msgstr "[FICHERO…]"
+
+#. I18N: The '%s' is replaced with the command name.
+#: ../src/font-view.c:931
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options."
+msgstr ""
+"Execute '%s --help' ta veyer una lista completa d'as opcions de linia de "
+"comandos disponibles."
+
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
-msgstr "fuente;tipografia;"
+msgstr "fuents;tipografia;"
+
+#~ msgid "_Close"
+#~ msgstr "_Zarrar"
 
 #~ msgid "About Font Viewer"
 #~ msgstr "Arredol d'o Visor de tipografías"
