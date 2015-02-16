@@ -132,7 +132,7 @@ msgstr "Баҳодир Мансуров <6ahodir@gmail.com>, 2012"
 
 #: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
-msgstr "шрифтлар"
+msgstr "шрифтлар;"
 
 #~ msgid "About Font Viewer"
 #~ msgstr "Ҳарфларни Кўрувчи дастури ҳақида"
