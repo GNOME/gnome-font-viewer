@@ -1,18 +1,18 @@
 # Swedish messages for gnome-font-viewer.
-# Copyright © 2000-2011, 2014 Free Software Foundation, Inc.
+# Copyright © 2000-2011, 2014, 2015 Free Software Foundation, Inc.
 # Martin Norbäck <d95mback@dtek.chalmers.se>, 2000.
 # Andreas Hyden <a.hyden@cyberpoint.se>.
 # Christian Rose <menthos@menthos.com>, 2001, 2002, 2003, 2004, 2005.
 # Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009, 2010, 2011.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2014.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2014, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-03-26 01:48+0000\n"
-"PO-Revision-Date: 2014-06-08 15:34+0100\n"
+"POT-Creation-Date: 2015-01-26 19:48+0000\n"
+"PO-Revision-Date: 2015-01-28 15:53+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -20,25 +20,25 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.7.3\n"
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
 msgid ""
 "GNOME Font Viewer shows you the fonts installed on your computer for your "
 "use as thumbnails. Selecting any thumbnails shows the full view of how the "
 "font would look under various sizes."
 msgstr ""
-"GNOME:s typsnittsvisare visar dig de för dig tillgängliga installerade "
+"GNOME Typsnittsvisare visar dig de för dig tillgängliga installerade "
 "typsnitten på din dator som miniatyrbilder. Att välja en miniatyrbild visar "
 "en full överblick över hur typsnittet skulle se ut i olika storlekar."
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
 msgid ""
 "GNOME Font Viewer also supports installing new font files downloaded in the ."
 "ttf and other formats. Fonts may be installed only for your use or made "
 "available to all users on the computer."
 msgstr ""
-"GNOME:s typsnittsvisare stöder också installation av nya typsnittsfiler "
+"GNOME Typsnittsvisare stöder också installation av nya typsnittsfiler "
 "hämtade i formatet .ttf och andra format. Typsnitt kan installeras endast "
 "för dig eller göras tillgängliga för alla användare på datorn."
 
@@ -51,7 +51,6 @@ msgid "TEXT"
 msgstr "TEXT"
 
 #: ../src/font-thumbnailer.c:191
-#| msgid "Text to thumbnail (default: Aa)"
 msgid "Thumbnail size (default: 128)"
 msgstr "Storlek på miniatyrbild (standard: 128)"
 
@@ -71,75 +70,75 @@ msgstr "Om"
 msgid "Quit"
 msgstr "Avsluta"
 
-#: ../src/font-view.c:176
-#| msgid "Name:"
+#: ../src/font-view.c:76
+msgid "GNOME Font Viewer"
+msgstr "GNOME Typsnittsvisare"
+
+#: ../src/font-view.c:84
+msgid "Show the application's version"
+msgstr "Visa programmets version"
+
+#: ../src/font-view.c:196
 msgid "Name"
 msgstr "Namn"
 
-#: ../src/font-view.c:179
-#| msgid "Style:"
+#: ../src/font-view.c:199
 msgid "Style"
 msgstr "Stil"
 
-#: ../src/font-view.c:189
-#| msgid "Type:"
+#: ../src/font-view.c:209
 msgid "Type"
 msgstr "Typ"
 
-#: ../src/font-view.c:234 ../src/font-view.c:253
-#| msgid "Version:"
+#: ../src/font-view.c:254 ../src/font-view.c:273
 msgid "Version"
 msgstr "Version"
 
-#: ../src/font-view.c:239 ../src/font-view.c:259
-#| msgid "Copyright:"
+#: ../src/font-view.c:259 ../src/font-view.c:279
 msgid "Copyright"
 msgstr "Upphovsrätt"
 
-#: ../src/font-view.c:244
-#| msgid "Description:"
+#: ../src/font-view.c:264
 msgid "Description"
 msgstr "Beskrivning"
 
-#: ../src/font-view.c:272
+#: ../src/font-view.c:292
 msgid "Install Failed"
 msgstr "Installationen misslyckades"
 
-#: ../src/font-view.c:278
+#: ../src/font-view.c:298
 msgid "Installed"
 msgstr "Installerat"
 
-#: ../src/font-view.c:281 ../src/font-view.c:525
-#| msgid "Installed"
+#: ../src/font-view.c:301 ../src/font-view.c:545
 msgid "Install"
 msgstr "Installera"
 
-#: ../src/font-view.c:414
+#: ../src/font-view.c:434
 msgid "This font could not be displayed."
 msgstr "Detta typsnitt kunde inte visas."
 
-#: ../src/font-view.c:478 ../src/font-view.c:536
+#: ../src/font-view.c:498 ../src/font-view.c:556
 msgid "Info"
 msgstr "Info"
 
-#: ../src/font-view.c:553
+#: ../src/font-view.c:573
 msgid "Back"
 msgstr "Bakåt"
 
-#: ../src/font-view.c:643
-#| msgid "I_nstall Font"
+#: ../src/font-view.c:663
 msgid "All Fonts"
 msgstr "Alla typsnitt"
 
-#: ../src/font-view.c:761 ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:781 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Typsnittsvisare"
 
-#: ../src/font-view.c:762 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:782 ../src/org.gnome.font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Visa typsnitt på ditt system"
 
-#: ../src/font-view.c:764
+#: ../src/font-view.c:784
 msgid "translator-credits"
 msgstr ""
 "Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
@@ -147,18 +146,18 @@ msgstr ""
 "Skicka synpunkter på översättningen till\n"
 "<tp-sv@listor.tp-sv.se>."
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:3
+#: ../src/font-view.c:923
+msgid "[FILE...]"
+msgstr "[FIL…]"
+
+#. I18N: The '%s' is replaced with the command name.
+#: ../src/font-view.c:931
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options."
+msgstr ""
+"Kör ”%s --help” för att se en komplett lista över tillgängliga "
+"kommandoradsflaggor."
+
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "typsnitt;teckensnitt;"
-
-#~ msgid "Font size (default: 64)"
-#~ msgstr "Typsnittsstorlek (standard: 64)"
-
-#~ msgid "Size:"
-#~ msgstr "Storlek:"
-
-#~ msgid "Usage: %s fontfile\n"
-#~ msgstr "Användning: %s typsnittsfil\n"
-
-#~ msgid "Preview fonts"
-#~ msgstr "Förhandsvisa typsnitt"
