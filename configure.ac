@@ -1,6 +1,6 @@
 dnl -*- mode: m4 -*-
 AC_PREREQ(2.63)
-AC_INIT([gnome-font-viewer], [3.14.0],
+AC_INIT([gnome-font-viewer], [3.15.90],
 	[http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer],
 	[gnome-font-viewer],
 	[http://live.gnome.org/GnomeUtils])

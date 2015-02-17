@@ -1,3 +1,11 @@
+GNOME Font Viewer - 3.15.90
+-------------------------------------------------------------------------------
+
+ • Add --help and --version (#702809)
+ • Update for deprecations (#739224)
+ • Avoid a crash due to an uninitialized variable
+ • Translation updates
+
 GNOME Font Viewer - 3.14.0
 -------------------------------------------------------------------------------
 
