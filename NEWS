@@ -1,3 +1,9 @@
+GNOME Font Viewer - 3.14.1
+-------------------------------------------------------------------------------
+
+ • Fix a crash dure to an uninitialized variable
+ • Translation updates
+
 GNOME Font Viewer - 3.14.0
 -------------------------------------------------------------------------------
 
