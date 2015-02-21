@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils 3.1.90\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-01-22 01:16+0000\n"
-"PO-Revision-Date: 2014-01-31 20:47+0800\n"
+"POT-Creation-Date: 2015-02-20 07:49+0000\n"
+"PO-Revision-Date: 2015-02-20 20:56+0800\n"
 "Last-Translator: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>\n"
 "Language-Team: Chinese (traditional)\n"
 "Language: zh_TW\n"
@@ -23,9 +23,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.5.3\n"
+"X-Generator: Poedit 1.7.4\n"
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
 msgid ""
 "GNOME Font Viewer shows you the fonts installed on your computer for your "
 "use as thumbnails. Selecting any thumbnails shows the full view of how the "
@@ -34,7 +34,7 @@ msgstr ""
 "GNOME 字型檢視器以縮圖顯示在您電腦上安裝的字型。選擇任何縮圖可以顯示出字型在"
 "各種尺寸下外觀的完整檢視。"
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
 msgid ""
 "GNOME Font Viewer also supports installing new font files downloaded in the ."
 "ttf and other formats. Fonts may be installed only for your use or made "
@@ -71,71 +71,76 @@ msgstr "關於"
 msgid "Quit"
 msgstr "退出"
 
-#: ../src/font-view.c:176
+#: ../src/font-view.c:76
+#| msgid "Font Viewer"
+msgid "GNOME Font Viewer"
+msgstr "GNOME 字型檢視器"
+
+#: ../src/font-view.c:84
+msgid "Show the application's version"
+msgstr "顯示應用程式的版本"
+
+#: ../src/font-view.c:196
 msgid "Name"
 msgstr "名稱"
 
-#: ../src/font-view.c:179
+#: ../src/font-view.c:199
 msgid "Style"
 msgstr "字樣"
 
-#: ../src/font-view.c:189
+#: ../src/font-view.c:209
 msgid "Type"
 msgstr "類型"
 
-#: ../src/font-view.c:234 ../src/font-view.c:253
+#: ../src/font-view.c:254 ../src/font-view.c:273
 msgid "Version"
 msgstr "版本"
 
-#: ../src/font-view.c:239 ../src/font-view.c:259
+#: ../src/font-view.c:259 ../src/font-view.c:279
 msgid "Copyright"
 msgstr "版權"
 
-#: ../src/font-view.c:244
+#: ../src/font-view.c:264
 msgid "Description"
 msgstr "描述"
 
-#: ../src/font-view.c:272
+#: ../src/font-view.c:292
 msgid "Install Failed"
 msgstr "安裝失敗"
 
-#: ../src/font-view.c:278
+#: ../src/font-view.c:298
 msgid "Installed"
 msgstr "已安裝"
 
-#: ../src/font-view.c:281 ../src/font-view.c:522
+#: ../src/font-view.c:301 ../src/font-view.c:545
 msgid "Install"
 msgstr "安裝"
 
-#: ../src/font-view.c:414
+#: ../src/font-view.c:434
 msgid "This font could not be displayed."
 msgstr "無法顯示此字型"
 
-#: ../src/font-view.c:479
-msgid "_Close"
-msgstr "關閉(_C)"
-
-#: ../src/font-view.c:533
+#: ../src/font-view.c:498 ../src/font-view.c:556
 msgid "Info"
 msgstr "資訊"
 
-#: ../src/font-view.c:550
+#: ../src/font-view.c:573
 msgid "Back"
 msgstr "返回"
 
-#: ../src/font-view.c:640
+#: ../src/font-view.c:663
 msgid "All Fonts"
 msgstr "所有字型"
 
-#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:781 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "字型檢視程式"
 
-#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:782 ../src/org.gnome.font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "檢視您系統上的字型"
 
-#: ../src/font-view.c:761
+#: ../src/font-view.c:784
 msgid "translator-credits"
 msgstr ""
 "Ming-Yen Hsu <myhsu@cyberdude.com>, 1999.\n"
@@ -148,9 +153,22 @@ msgstr ""
 "Wei-Lun Chao <chaoweilun@gmail.com>, 2010.\n"
 "Cheng-Chia Tseng <pswo10680@gmail.com>, 2012."
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:3
+#: ../src/font-view.c:923
+msgid "[FILE...]"
+msgstr "[檔案...]"
+
+#. I18N: The '%s' is replaced with the command name.
+#: ../src/font-view.c:931
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options."
+msgstr "執行「%s --help」可列出命令列中可用的完整選項。"
+
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "fonts;fontface;字型;字形;字樣;字體;"
+
+#~ msgid "_Close"
+#~ msgstr "關閉(_C)"
 
 #~ msgid "About Font Viewer"
 #~ msgstr "關於字型檢視器"
