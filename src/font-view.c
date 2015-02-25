@@ -287,19 +287,25 @@ install_button_refresh_appearance (FontViewApplication *self,
                                    GError *error)
 {
     FT_Face face;
+    GtkStyleContext *context;
+
+    context = gtk_widget_get_style_context (self->install_button);
 
     if (error != NULL) {
         gtk_button_set_label (GTK_BUTTON (self->install_button), _("Install Failed"));
         gtk_widget_set_sensitive (self->install_button, FALSE);
+        gtk_style_context_remove_class (context, "suggested-action");
     } else {
         face = sushi_font_widget_get_ft_face (SUSHI_FONT_WIDGET (self->font_widget));
 
         if (font_view_model_get_iter_for_face (FONT_VIEW_MODEL (self->model), face, NULL)) {
             gtk_button_set_label (GTK_BUTTON (self->install_button), _("Installed"));
             gtk_widget_set_sensitive (self->install_button, FALSE);
+            gtk_style_context_remove_class (context, "suggested-action");
         } else {
             gtk_button_set_label (GTK_BUTTON (self->install_button), _("Install"));
             gtk_widget_set_sensitive (self->install_button, TRUE);
+            gtk_style_context_add_class (context, "suggested-action");
         }
     }
 }
