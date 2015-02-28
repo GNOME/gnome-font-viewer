@@ -6,15 +6,15 @@
 # Tomas Kuliavas <tokul@users.sourceforge.net>, 2003.
 # Žygimantas Beručka <zygis@gnome.org>, 2003-2006, 2009, 2010.
 # Gintautas Miliauskas <gintas@akl.lt>, 2006, 2007, 2008.
-# Aurimas Černius <aurisc4@gmail.com>, 2013, 2014.
+# Aurimas Černius <aurisc4@gmail.com>, 2013, 2014, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-01-22 01:16+0000\n"
-"PO-Revision-Date: 2014-01-28 23:17+0200\n"
+"POT-Creation-Date: 2015-02-28 07:52+0000\n"
+"PO-Revision-Date: 2015-02-28 16:29+0200\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -25,7 +25,7 @@ msgstr ""
 "%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Gtranslator 2.91.6\n"
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
 msgid ""
 "GNOME Font Viewer shows you the fonts installed on your computer for your "
 "use as thumbnails. Selecting any thumbnails shows the full view of how the "
@@ -35,7 +35,7 @@ msgstr ""
 "pavidalu. Pasirinkus bet kurią miniatiūrą parodoma, kaip šriftas atrodytų "
 "įvairiais dydžiais."
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
 msgid ""
 "GNOME Font Viewer also supports installing new font files downloaded in the ."
 "ttf and other formats. Fonts may be installed only for your use or made "
@@ -73,77 +73,96 @@ msgstr "Apie"
 msgid "Quit"
 msgstr "Išeiti"
 
-#: ../src/font-view.c:176
+#: ../src/font-view.c:76
+#| msgid "Font Viewer"
+msgid "GNOME Font Viewer"
+msgstr "GNOME šriftų žiūryklė"
+
+#: ../src/font-view.c:84
+msgid "Show the application's version"
+msgstr "Rodyti programos versiją"
+
+#: ../src/font-view.c:196
 msgid "Name"
 msgstr "Pavadinimas"
 
-#: ../src/font-view.c:179
+#: ../src/font-view.c:199
 msgid "Style"
 msgstr "Stilius"
 
-#: ../src/font-view.c:189
+#: ../src/font-view.c:209
 msgid "Type"
 msgstr "Tipas"
 
-#: ../src/font-view.c:234 ../src/font-view.c:253
+#: ../src/font-view.c:254 ../src/font-view.c:273
 msgid "Version"
 msgstr "Versija"
 
-#: ../src/font-view.c:239 ../src/font-view.c:259
+#: ../src/font-view.c:259 ../src/font-view.c:279
 msgid "Copyright"
 msgstr "Autorinės teisės"
 
-#: ../src/font-view.c:244
+#: ../src/font-view.c:264
 msgid "Description"
 msgstr "Aprašymas"
 
-#: ../src/font-view.c:272
+#: ../src/font-view.c:295
 msgid "Install Failed"
 msgstr "Diegimas nepavyko"
 
-#: ../src/font-view.c:278
+#: ../src/font-view.c:302
 msgid "Installed"
 msgstr "Įdiegta"
 
-#: ../src/font-view.c:281 ../src/font-view.c:522
+#: ../src/font-view.c:306 ../src/font-view.c:551
 msgid "Install"
 msgstr "Įdiegti"
 
-#: ../src/font-view.c:414
+#: ../src/font-view.c:440
 msgid "This font could not be displayed."
 msgstr "Nepavyko parodyti šio šrifto."
 
-#: ../src/font-view.c:479
-msgid "_Close"
-msgstr "_Užverti"
-
-#: ../src/font-view.c:533
+#: ../src/font-view.c:504 ../src/font-view.c:562
 msgid "Info"
 msgstr "Informacija"
 
-#: ../src/font-view.c:550
+#: ../src/font-view.c:579
 msgid "Back"
 msgstr "Atgal"
 
-#: ../src/font-view.c:640
+#: ../src/font-view.c:669
 msgid "All Fonts"
 msgstr "Visi šriftai"
 
-#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:787 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Šriftų žiūryklė"
 
-#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:788 ../src/org.gnome.font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Rodyti sistemos šriftus"
 
-#: ../src/font-view.c:761
+#: ../src/font-view.c:790
 msgid "translator-credits"
 msgstr ""
 "išvertė:\n"
 "Aurimas Černius <aurisc4@gmail.com>"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:3
+#: ../src/font-view.c:929
+msgid "[FILE...]"
+msgstr "[FAILAS...]"
+
+#. I18N: The '%s' is replaced with the command name.
+#: ../src/font-view.c:937
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options."
+msgstr ""
+"Paleiskite „%s --help“ visam galimų komandų eilutės parametrų sąrašui "
+"pamatyti."
+
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "šriftai;šrifto peržiūra;"
 
+#~ msgid "_Close"
+#~ msgstr "_Užverti"
