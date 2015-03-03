@@ -14,24 +14,25 @@
 # Suso Baleato <suso.baleato@xunta.es>, 2009.
 # Antón Méixome <meixome@mancomun.org>, 2009.
 # Fran Diéguez <frandieguez@gnome.org>, 2009, 2010, 2011.
-# Fran Dieguez <frandieguez@gnome.org>, 2012, 2013, 2014.
+# Fran Dieguez <frandieguez@gnome.org>, 2012, 2013, 2014, 2015.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils-master-po-gl-14799\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-07 00:45+0100\n"
-"PO-Revision-Date: 2014-02-07 00:50+0200\n"
+"POT-Creation-Date: 2015-03-03 01:19+0100\n"
+"PO-Revision-Date: 2015-03-03 01:20+0100\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
-"Language-Team: gnome-l10n-gl@gnome.org\n"
+"Language-Team: Galician <>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Gtranslator 2.91.6\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
 msgid ""
 "GNOME Font Viewer shows you the fonts installed on your computer for your "
 "use as thumbnails. Selecting any thumbnails shows the full view of how the "
@@ -42,7 +43,7 @@ msgstr ""
 "miniaturas móstrase unha vista completa de como o tipo de letra debería "
 "verse con varios tamaños."
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
 msgid ""
 "GNOME Font Viewer also supports installing new font files downloaded in the ."
 "ttf and other formats. Fonts may be installed only for your use or made "
@@ -81,77 +82,96 @@ msgstr "Sobre"
 msgid "Quit"
 msgstr "_Saír"
 
-#: ../src/font-view.c:176
+#: ../src/font-view.c:76
+msgid "GNOME Font Viewer"
+msgstr "Visor de tipos de letra de GNOME"
+
+#: ../src/font-view.c:84
+msgid "Show the application's version"
+msgstr "Mostrar a versión do aplicativo"
+
+#: ../src/font-view.c:196
 msgid "Name"
 msgstr "Nome"
 
-#: ../src/font-view.c:179
+#: ../src/font-view.c:199
 msgid "Style"
 msgstr "Estilo"
 
-#: ../src/font-view.c:189
+#: ../src/font-view.c:209
 msgid "Type"
 msgstr "Tipo"
 
-#: ../src/font-view.c:234 ../src/font-view.c:253
+#: ../src/font-view.c:254 ../src/font-view.c:273
 msgid "Version"
 msgstr "Versión"
 
-#: ../src/font-view.c:239 ../src/font-view.c:259
+#: ../src/font-view.c:259 ../src/font-view.c:279
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../src/font-view.c:244
+#: ../src/font-view.c:264
 msgid "Description"
 msgstr "Descrición"
 
-#: ../src/font-view.c:272
+#: ../src/font-view.c:292
 msgid "Install Failed"
 msgstr "Produciuse un fallo na instalación"
 
-#: ../src/font-view.c:278
+#: ../src/font-view.c:298
 msgid "Installed"
 msgstr "Instalado"
 
-#: ../src/font-view.c:281 ../src/font-view.c:522
+#: ../src/font-view.c:301 ../src/font-view.c:545
 msgid "Install"
 msgstr "Instalar"
 
-#: ../src/font-view.c:414
+#: ../src/font-view.c:434
 msgid "This font could not be displayed."
 msgstr "Non é posíbel mostrar este tipo de letra."
 
-#: ../src/font-view.c:479
-msgid "_Close"
-msgstr "_Pechar"
-
-#: ../src/font-view.c:533
+#: ../src/font-view.c:498 ../src/font-view.c:556
 msgid "Info"
 msgstr "Información"
 
-#: ../src/font-view.c:550
+#: ../src/font-view.c:573
 msgid "Back"
 msgstr "Atrás"
 
-#: ../src/font-view.c:640
+#: ../src/font-view.c:663
 msgid "All Fonts"
 msgstr "Todos os tipos de letra"
 
-#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:781 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Visor de tipos de letra"
 
-#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:782 ../src/org.gnome.font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Ver os tipos de letra do seu sistema"
 
-#: ../src/font-view.c:761
+#: ../src/font-view.c:784
 msgid "translator-credits"
 msgstr "Fran Dieguez <frandieguez@gnome.org>, 2012-2013"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:3
+#: ../src/font-view.c:923
+msgid "[FILE...]"
+msgstr "[FICHEIRO...]"
+
+#. I18N: The '%s' is replaced with the command name.
+#: ../src/font-view.c:931
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options."
+msgstr ""
+"Execute «%s --help» para ver unha lista completa de opcións de liña de ordes "
+"dispoñíbeis."
+
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "tipos de letra;fontface;"
+
+#~ msgid "_Close"
+#~ msgstr "_Pechar"
 
 #~ msgid "About Font Viewer"
 #~ msgstr "Sobre Visor de tipos de letra"
