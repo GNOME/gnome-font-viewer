@@ -13,18 +13,18 @@ msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-02-16 07:48+0000\n"
-"PO-Revision-Date: 2014-02-16 12:57+0100\n"
-"Last-Translator: Milo Casagrande <milo@ubuntu.com>\n"
+"POT-Creation-Date: 2015-03-03 07:52+0000\n"
+"PO-Revision-Date: 2015-03-03 08:55+0100\n"
+"Last-Translator: Milo Casagrande <milo@milo.name>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Poedit 1.6.4\n"
+"X-Generator: Poedit 1.7.4\n"
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
 msgid ""
 "GNOME Font Viewer shows you the fonts installed on your computer for your "
 "use as thumbnails. Selecting any thumbnails shows the full view of how the "
@@ -34,13 +34,13 @@ msgstr ""
 "computer tramite delle miniature degli stessi: selezionando una miniautra "
 "vengono mostrate le varie dimensioni del carattere."
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
 msgid ""
 "GNOME Font Viewer also supports installing new font files downloaded in the ."
 "ttf and other formats. Fonts may be installed only for your use or made "
 "available to all users on the computer."
 msgstr ""
-"Visualizzatore di caratteri consent di installare nuovi caratteri da file "
+"Visualizzatore di caratteri consente di installare nuovi caratteri da file "
 "scaricati nel formato .ttf e anche altri formati. I caratteri possono essere "
 "installati per uso personale o per tutti gli utenti del computer."
 
@@ -72,71 +72,75 @@ msgstr "Informazioni"
 msgid "Quit"
 msgstr "Esci"
 
-#: ../src/font-view.c:176
+#: ../src/font-view.c:76
+msgid "GNOME Font Viewer"
+msgstr "Visualizzatore di caratteri GNOME"
+
+#: ../src/font-view.c:84
+msgid "Show the application's version"
+msgstr "Mostra la versione dell'applicazione"
+
+#: ../src/font-view.c:196
 msgid "Name"
 msgstr "Nome"
 
-#: ../src/font-view.c:179
+#: ../src/font-view.c:199
 msgid "Style"
 msgstr "Stile"
 
-#: ../src/font-view.c:189
+#: ../src/font-view.c:209
 msgid "Type"
 msgstr "Tipo"
 
-#: ../src/font-view.c:234 ../src/font-view.c:253
+#: ../src/font-view.c:254 ../src/font-view.c:273
 msgid "Version"
 msgstr "Versione"
 
-#: ../src/font-view.c:239 ../src/font-view.c:259
+#: ../src/font-view.c:259 ../src/font-view.c:279
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../src/font-view.c:244
+#: ../src/font-view.c:264
 msgid "Description"
 msgstr "Descrizione"
 
-#: ../src/font-view.c:272
+#: ../src/font-view.c:295
 msgid "Install Failed"
 msgstr "Installazione non riuscita"
 
-#: ../src/font-view.c:278
+#: ../src/font-view.c:302
 msgid "Installed"
 msgstr "Installato"
 
-#: ../src/font-view.c:281 ../src/font-view.c:522
+#: ../src/font-view.c:306 ../src/font-view.c:551
 msgid "Install"
 msgstr "Installa"
 
-#: ../src/font-view.c:414
+#: ../src/font-view.c:440
 msgid "This font could not be displayed."
 msgstr "Impossibile visualizzare questo carattere."
 
-#: ../src/font-view.c:479
-msgid "_Close"
-msgstr "_Chiudi"
-
-#: ../src/font-view.c:533
+#: ../src/font-view.c:504 ../src/font-view.c:562
 msgid "Info"
 msgstr "Informazioni"
 
-#: ../src/font-view.c:550
+#: ../src/font-view.c:579
 msgid "Back"
 msgstr "Indietro"
 
-#: ../src/font-view.c:640
+#: ../src/font-view.c:669
 msgid "All Fonts"
 msgstr "Tutti i caratteri"
 
-#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:787 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Visualizzatore di caratteri"
 
-#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:788 ../src/org.gnome.font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Visualizza i caratteri presenti nel sistema"
 
-#: ../src/font-view.c:761
+#: ../src/font-view.c:790
 msgid "translator-credits"
 msgstr ""
 "Milo Casagrande <milo@ubuntu.com>\n"
@@ -146,6 +150,17 @@ msgstr ""
 "Lapo Calamandrei <lapo@it.gnome.org>\n"
 "Alessio Frusciante <algol@firenze.linux.it>"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:3
+#: ../src/font-view.c:929
+msgid "[FILE...]"
+msgstr "[FILE...]"
+
+#. I18N: The '%s' is replaced with the command name.
+#: ../src/font-view.c:937
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options."
+msgstr ""
+"Eseguire \"%s --help\" per l'elenco completo delle opzioni a riga di comando."
+
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "carattere;caratteri;caratteri tipografici;tipo di carattere;"
