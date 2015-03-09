@@ -1,21 +1,21 @@
 # Bulgarian translation of gnome-font-viewer po-file.
 # Copyright (C) 2002, 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
-# Copyright (C) 2009, 2010, 2011, 2013, 2014 Free Software Foundation, Inc.
+# Copyright (C) 2009, 2010, 2011, 2013, 2014, 2015 Free Software Foundation, Inc.
 # Borislav Aleksandrov <B.Aleksandrov@cnsys.bg>, 2002.
 # Vladimir Petkov <kaladan@gmail.com>, 2004, 2005.
 # Peter Slavov <pslavov@i-space.org>, 2004.
 # Yavor Doganov <yavor@doganov.org>, 2005.
 # Rostislav Raykov <zbrox@i-space.org>, 2006.
 # Alexander Shopov <ash@kambanaria.org>, 2006, 2007, 2008, 2009, 2011.
-# Alexander Shopov <ash@kambanaria.org>, 2012, 2013, 2014.
+# Alexander Shopov <ash@kambanaria.org>, 2012, 2013, 2014, 2015.
 # Krasimir Chonov <mk2616@abv.bg>, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-24 06:58+0300\n"
-"PO-Revision-Date: 2014-09-24 06:58+0300\n"
+"POT-Creation-Date: 2015-03-09 21:05+0200\n"
+"PO-Revision-Date: 2015-03-09 21:05+0200\n"
 "Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "Language: bg\n"
@@ -72,67 +72,75 @@ msgstr "Относно"
 msgid "Quit"
 msgstr "Спиране на програмата"
 
-#: ../src/font-view.c:176
+#: ../src/font-view.c:76
+msgid "GNOME Font Viewer"
+msgstr "Преглед на шрифт"
+
+#: ../src/font-view.c:84
+msgid "Show the application's version"
+msgstr "Извеждане на версията на програмата"
+
+#: ../src/font-view.c:196
 msgid "Name"
 msgstr "Име"
 
-#: ../src/font-view.c:179
+#: ../src/font-view.c:199
 msgid "Style"
 msgstr "Стил"
 
-#: ../src/font-view.c:189
+#: ../src/font-view.c:209
 msgid "Type"
 msgstr "Вид"
 
-#: ../src/font-view.c:234 ../src/font-view.c:253
+#: ../src/font-view.c:254 ../src/font-view.c:273
 msgid "Version"
 msgstr "Версия"
 
-#: ../src/font-view.c:239 ../src/font-view.c:259
+#: ../src/font-view.c:259 ../src/font-view.c:279
 msgid "Copyright"
 msgstr "Авторски права"
 
-#: ../src/font-view.c:244
+#: ../src/font-view.c:264
 msgid "Description"
 msgstr "Описание"
 
-#: ../src/font-view.c:272
+#: ../src/font-view.c:295
 msgid "Install Failed"
 msgstr "Неуспешно инсталиране"
 
-#: ../src/font-view.c:278
+#: ../src/font-view.c:302
 msgid "Installed"
 msgstr "Инсталиран"
 
-#: ../src/font-view.c:281 ../src/font-view.c:525
+#: ../src/font-view.c:306 ../src/font-view.c:551
 msgid "Install"
 msgstr "Инсталиране"
 
-#: ../src/font-view.c:414
+#: ../src/font-view.c:440
 msgid "This font could not be displayed."
 msgstr "Този шрифт не може да бъде показан."
 
-#: ../src/font-view.c:478 ../src/font-view.c:536
+#: ../src/font-view.c:504 ../src/font-view.c:562
 msgid "Info"
 msgstr "Информация"
 
-#: ../src/font-view.c:553
+#: ../src/font-view.c:579
 msgid "Back"
 msgstr "Назад"
 
-#: ../src/font-view.c:643
+#: ../src/font-view.c:669
 msgid "All Fonts"
 msgstr "Всички шрифтове"
 
-#: ../src/font-view.c:761 ../src/org.gnome.font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:787 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Преглед на шрифт"
 
-#: ../src/font-view.c:762 ../src/org.gnome.font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:788 ../src/org.gnome.font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Преглед на шрифтовете"
 
-#: ../src/font-view.c:764
+#: ../src/font-view.c:790
 msgid "translator-credits"
 msgstr ""
 "Александър Шопов <ash@kambanaria.org>\n"
@@ -147,6 +155,18 @@ msgstr ""
 "bg</a>\n"
 "Докладвайте за грешки на <a href=\"http://gnome.cult.bg/bugs\">http://gnome."
 "cult.bg/bugs</a>"
+
+#: ../src/font-view.c:929
+msgid "[FILE...]"
+msgstr "[ФАЙЛ…]"
+
+#. I18N: The '%s' is replaced with the command name.
+#: ../src/font-view.c:937
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options."
+msgstr ""
+"Изпълнете „%s --help“, за да видите списък с наличните опции за командния "
+"ред."
 
 #: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
