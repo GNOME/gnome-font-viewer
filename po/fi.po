@@ -13,15 +13,15 @@
 # Timo Jyrinki <timo.jyrinki@iki.fi>, 2008.
 # Tommi Vainikainen <thv@iki.fi>, 2009-2011.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2014.
-# Jiri Grönroos <jiri.gronroos+l10n@iki.fi>, 2012, 2013, 2014.
+# Jiri Grönroos <jiri.gronroos+l10n@iki.fi>, 2012, 2013, 2014, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-17 06:49+0000\n"
-"PO-Revision-Date: 2014-09-17 15:31+0300\n"
+"POT-Creation-Date: 2015-03-03 07:52+0000\n"
+"PO-Revision-Date: 2015-03-03 21:10+0200\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <gnome-fi-laatu@lists.sourceforge.net>\n"
 "Language: fi\n"
@@ -80,69 +80,90 @@ msgstr "Tietoja"
 msgid "Quit"
 msgstr "Lopeta"
 
-#: ../src/font-view.c:176
+#: ../src/font-view.c:76
+#| msgid "Font Viewer"
+msgid "GNOME Font Viewer"
+msgstr "Gnomen fonttikatselin"
+
+#: ../src/font-view.c:84
+msgid "Show the application's version"
+msgstr "Näytä sovelluksen versio"
+
+#: ../src/font-view.c:196
 msgid "Name"
 msgstr "Nimi"
 
-#: ../src/font-view.c:179
+#: ../src/font-view.c:199
 msgid "Style"
 msgstr "Tyyli"
 
-#: ../src/font-view.c:189
+#: ../src/font-view.c:209
 msgid "Type"
 msgstr "Tyyppi"
 
-#: ../src/font-view.c:234 ../src/font-view.c:253
+#: ../src/font-view.c:254 ../src/font-view.c:273
 msgid "Version"
 msgstr "Versio"
 
-#: ../src/font-view.c:239 ../src/font-view.c:259
+#: ../src/font-view.c:259 ../src/font-view.c:279
 msgid "Copyright"
 msgstr "Tekijänoikeus"
 
-#: ../src/font-view.c:244
+#: ../src/font-view.c:264
 msgid "Description"
 msgstr "Kuvaus"
 
-#: ../src/font-view.c:272
+#: ../src/font-view.c:295
 msgid "Install Failed"
 msgstr "Asennus epäonnistui"
 
-#: ../src/font-view.c:278
+#: ../src/font-view.c:302
 msgid "Installed"
 msgstr "Asennettu"
 
-#: ../src/font-view.c:281 ../src/font-view.c:525
+#: ../src/font-view.c:306 ../src/font-view.c:551
 msgid "Install"
 msgstr "Asenna"
 
-#: ../src/font-view.c:414
+#: ../src/font-view.c:440
 msgid "This font could not be displayed."
 msgstr "Tämän fontin näyttäminen epäonnistui."
 
-#: ../src/font-view.c:478 ../src/font-view.c:536
+#: ../src/font-view.c:504 ../src/font-view.c:562
 msgid "Info"
 msgstr "Tiedot"
 
-#: ../src/font-view.c:553
+#: ../src/font-view.c:579
 msgid "Back"
 msgstr "Takaisin"
 
-#: ../src/font-view.c:643
+#: ../src/font-view.c:669
 msgid "All Fonts"
 msgstr "Kaikki fontit"
 
-#: ../src/font-view.c:761 ../src/org.gnome.font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:787 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Fonttikatselin"
 
-#: ../src/font-view.c:762 ../src/org.gnome.font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:788 ../src/org.gnome.font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Katsele koneellasi olevia fontteja"
 
-#: ../src/font-view.c:764
+#: ../src/font-view.c:790
 msgid "translator-credits"
 msgstr "Jiri Grönroos"
+
+#: ../src/font-view.c:929
+msgid "[FILE...]"
+msgstr "[TIEDOSTO...]"
+
+#. I18N: The '%s' is replaced with the command name.
+#: ../src/font-view.c:937
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options."
+msgstr ""
+"Suorita '%s --help' nähdäksesi kaikki käytettävissä olevat "
+"komentorivivalinnat."
 
 #: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
