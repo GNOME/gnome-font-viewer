@@ -1,5 +1,5 @@
 # Danish Translation of gnome-utils.
-# Copyright (C) 1999-2014 Free Software Foundation, Inc.
+# Copyright (C) 1999-2015 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-utils package.
 # Kenneth Christiansen <kenneth@ripen.dk>, 1998-2000.
 # Kim Schulz <kim@schulz.dk>, 1999.
@@ -9,7 +9,7 @@
 # Martin Willemoes Hansen <mwh@sysrq.dk>, 2004, 05.
 # Kenneth Nielsen <k.nielsen81@gmail.com>, 2008, 2013.
 # Joe Hansen <joedalton2@yahoo.dk>, 2011.
-# Ask Hjorth Larsen <asklarsen@gmail.com>, 2007, 08, 09, 10, 11, 12, 14.
+# Ask Hjorth Larsen <asklarsen@gmail.com>, 2007, 08, 09, 10, 11, 12, 14, 15.
 #
 #
 # Husk at tilføje dig i credit-listen (besked id "translator-credits")
@@ -22,8 +22,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-19 22:13+0100\n"
-"PO-Revision-Date: 2014-03-18 13:39+0100\n"
+"POT-Creation-Date: 2015-03-15 16:46+0100\n"
+"PO-Revision-Date: 2015-03-14 02:47+0100\n"
 "Last-Translator: Kenneth Nielsen <k.nielsen81@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -32,7 +32,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
 msgid ""
 "GNOME Font Viewer shows you the fonts installed on your computer for your "
 "use as thumbnails. Selecting any thumbnails shows the full view of how the "
@@ -42,7 +42,7 @@ msgstr ""
 "computer som miniaturer. Hvis du vælger en miniature, vises en fuld "
 "repræsentation af skrifttypen med forskellige tekststørrelser."
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
 msgid ""
 "GNOME Font Viewer also supports installing new font files downloaded in the ."
 "ttf and other formats. Fonts may be installed only for your use or made "
@@ -80,71 +80,75 @@ msgstr "Om"
 msgid "Quit"
 msgstr "Afslut"
 
-#: ../src/font-view.c:176
+#: ../src/font-view.c:76
+msgid "GNOME Font Viewer"
+msgstr "GNOME Skrifttypefremviser"
+
+#: ../src/font-view.c:84
+msgid "Show the application's version"
+msgstr "Vis programmets version"
+
+#: ../src/font-view.c:196
 msgid "Name"
 msgstr "Navn"
 
-#: ../src/font-view.c:179
+#: ../src/font-view.c:199
 msgid "Style"
 msgstr "Stil"
 
-#: ../src/font-view.c:189
+#: ../src/font-view.c:209
 msgid "Type"
 msgstr "Type"
 
-#: ../src/font-view.c:234 ../src/font-view.c:253
+#: ../src/font-view.c:254 ../src/font-view.c:273
 msgid "Version"
 msgstr "Version"
 
-#: ../src/font-view.c:239 ../src/font-view.c:259
+#: ../src/font-view.c:259 ../src/font-view.c:279
 msgid "Copyright"
 msgstr "Ophavsret"
 
-#: ../src/font-view.c:244
+#: ../src/font-view.c:264
 msgid "Description"
 msgstr "Beskrivelse"
 
-#: ../src/font-view.c:272
+#: ../src/font-view.c:295
 msgid "Install Failed"
 msgstr "Installation mislykkedes"
 
-#: ../src/font-view.c:278
+#: ../src/font-view.c:302
 msgid "Installed"
 msgstr "Installeret"
 
-#: ../src/font-view.c:281 ../src/font-view.c:522
+#: ../src/font-view.c:306 ../src/font-view.c:551
 msgid "Install"
 msgstr "Installér"
 
-#: ../src/font-view.c:414
+#: ../src/font-view.c:440
 msgid "This font could not be displayed."
 msgstr "Denne skrifttype kunne ikke vises."
 
-#: ../src/font-view.c:479
-msgid "_Close"
-msgstr "_Luk"
-
-#: ../src/font-view.c:533
+#: ../src/font-view.c:504 ../src/font-view.c:562
 msgid "Info"
 msgstr "Info"
 
-#: ../src/font-view.c:550
+#: ../src/font-view.c:579
 msgid "Back"
 msgstr "Tilbage"
 
-#: ../src/font-view.c:640
+#: ../src/font-view.c:669
 msgid "All Fonts"
 msgstr "Alle skrifttyper"
 
-#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:787 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Skrifttypefremviser"
 
-#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:788 ../src/org.gnome.font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Vis skrifttyper på dit system"
 
-#: ../src/font-view.c:761
+#: ../src/font-view.c:790
 msgid "translator-credits"
 msgstr ""
 "Kenneth Christiansen\n"
@@ -160,9 +164,24 @@ msgstr ""
 "Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
 "Mere info: http://www.dansk-gruppen.dk"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:3
+#: ../src/font-view.c:929
+msgid "[FILE...]"
+msgstr "[FIL...]"
+
+#. I18N: The '%s' is replaced with the command name.
+#: ../src/font-view.c:937
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options."
+msgstr ""
+"Kør \"%s --help\" for at se en fuld liste af tilgængelige "
+"kommandolinjetilvalg."
+
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "skrifttyper;skrifttypefamilie;skrifttypefremtoning;"
+
+#~ msgid "_Close"
+#~ msgstr "_Luk"
 
 #~ msgid "About Font Viewer"
 #~ msgstr "Om Skrifttypefremviser"
