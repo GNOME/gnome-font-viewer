@@ -10,19 +10,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-03-26 01:48+0000\n"
-"PO-Revision-Date: 2014-02-26 07:26+0100\n"
-"Last-Translator: Pau Iranzo <paugnu@gmail.com>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-03-28 11:46+0100\n"
+"PO-Revision-Date: 2015-03-27 11:56+0100\n"
+"Last-Translator: David <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.6.9\n"
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
 msgid ""
 "GNOME Font Viewer shows you the fonts installed on your computer for your "
 "use as thumbnails. Selecting any thumbnails shows the full view of how the "
@@ -33,7 +33,7 @@ msgstr ""
 "miniatures s'us mostrarà la vista completa de com es veurà el tipus de "
 "lletra en diferents mides."
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
 msgid ""
 "GNOME Font Viewer also supports installing new font files downloaded in the ."
 "ttf and other formats. Fonts may be installed only for your use or made "
@@ -72,71 +72,91 @@ msgstr "Quant a"
 msgid "Quit"
 msgstr "Surt"
 
-#: ../src/font-view.c:176
+#: ../src/font-view.c:76
+msgid "GNOME Font Viewer"
+msgstr "Visualitzador de tipus de lletra del GNOME"
+
+#: ../src/font-view.c:84
+msgid "Show the application's version"
+msgstr "Mostra la versió de l'aplicació"
+
+#: ../src/font-view.c:196
 msgid "Name"
 msgstr "Nom"
 
-#: ../src/font-view.c:179
+#: ../src/font-view.c:199
 msgid "Style"
 msgstr "Estil"
 
-#: ../src/font-view.c:189
+#: ../src/font-view.c:209
 msgid "Type"
 msgstr "Tipus"
 
-#: ../src/font-view.c:234 ../src/font-view.c:253
+#: ../src/font-view.c:254 ../src/font-view.c:273
 msgid "Version"
 msgstr "Versió"
 
-#: ../src/font-view.c:239 ../src/font-view.c:259
+#: ../src/font-view.c:259 ../src/font-view.c:279
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../src/font-view.c:244
+#: ../src/font-view.c:264
 msgid "Description"
 msgstr "Descripció"
 
-#: ../src/font-view.c:272
+#: ../src/font-view.c:295
 msgid "Install Failed"
 msgstr "Ha fallat la instal·lació"
 
-#: ../src/font-view.c:278
+#: ../src/font-view.c:302
 msgid "Installed"
 msgstr "S'ha instal·lat"
 
-#: ../src/font-view.c:281 ../src/font-view.c:525
+#: ../src/font-view.c:306 ../src/font-view.c:551
 msgid "Install"
 msgstr "Instal·la"
 
-#: ../src/font-view.c:414
+#: ../src/font-view.c:440
 msgid "This font could not be displayed."
 msgstr "No es pot visualitzar aquest tipus de lletra."
 
-#: ../src/font-view.c:478 ../src/font-view.c:536
+#: ../src/font-view.c:504 ../src/font-view.c:562
 msgid "Info"
 msgstr "Informació"
 
-#: ../src/font-view.c:553
+#: ../src/font-view.c:579
 msgid "Back"
 msgstr "Enrere"
 
-#: ../src/font-view.c:643
+#: ../src/font-view.c:669
 msgid "All Fonts"
 msgstr "Tots els tipus de lletra"
 
-#: ../src/font-view.c:761 ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:787 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Visualitzador de tipus de lletra"
 
-#: ../src/font-view.c:762 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:788 ../src/org.gnome.font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "Visualitza tots els tipus de lletra del sistema"
 
-#: ../src/font-view.c:764
+#: ../src/font-view.c:790
 msgid "translator-credits"
 msgstr "Joan Duran <jodufi@gmail.com>"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:3
+#: ../src/font-view.c:929
+msgid "[FILE...]"
+msgstr "[FITXER...]"
+
+#. I18N: The '%s' is replaced with the command name.
+#: ../src/font-view.c:937
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options."
+msgstr ""
+"Executeu '%s --help' per veure una llista sencera de les opcions de la línia "
+"d'ordres."
+
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "tipus de lletra;tipografia;"
 
