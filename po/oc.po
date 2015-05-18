@@ -1,24 +1,23 @@
-# Translation of oc.po to Occitan
-# Occitan translation of gnome-utils.
-# Copyright (C) 1998-2007 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gnome-utils package.
-#
-# Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>, 2006-2008.
-# Cédric Valmary (Tot en Òc) <cvalmary@yahoo.fr>, 2008-2013.
+# Occitan translation of gnome-font-viewer.
+# Copyright (C) 1998-2014 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-font-viewer package.
+# Cédric Valmary (Tot en òc) <cvalmary@yahoo.fr>, 2015.
 msgid ""
 msgstr ""
-"Project-Id-Version: oc\n"
+"Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2013-01-03 12:34+0000\n"
-"PO-Revision-Date: 2008-02-26 23:51+0100\n"
-"Last-Translator: Cédric Valmary (Tot en Òc) <cvalmary@yahoo.fr>\n"
-"Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
+"PO-Revision-Date: 2015-05-18 15:57+0200\n"
+"Last-Translator: Cédric Valmary (Tot en òc) <cvalmary@yahoo.fr>\n"
+"Language-Team: Tot en òc (totenoc.eu)\n"
 "Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Project-Style: gnome\n"
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -74,7 +73,7 @@ msgstr "Descripcion"
 
 #: ../src/font-view.c:274
 msgid "Install Failed"
-msgstr "Fracàs de l'installacion "
+msgstr "Fracàs de l'installacion"
 
 #: ../src/font-view.c:280
 msgid "Installed"
@@ -120,3 +119,39 @@ msgstr "poliças;fontas;"
 #~ msgid "Done"
 #~ msgstr "Terminé"
 
+#~ msgid ""
+#~ "GNOME Font Viewer shows you the fonts installed on your computer for your "
+#~ "use as thumbnails. Selecting any thumbnails shows the full view of how the "
+#~ "font would look under various sizes."
+#~ msgstr ""
+#~ "Le visionneur de police GNOME affiche les polices de caractères installées "
+#~ "sur votre ordinateur sous la forme de miniatures. En choisissant l'une de "
+#~ "celles-ci, vous obtenez une vue complète de la police à différentes tailles."
+
+#~ msgid ""
+#~ "GNOME Font Viewer also supports installing new font files downloaded in the ."
+#~ "ttf and other formats. Fonts may be installed only for your use or made "
+#~ "available to all users on the computer."
+#~ msgstr ""
+#~ "Le visionneur de police GNOME prend également en charge l'installation de "
+#~ "nouveaux fichiers de police téléchargés (formats ttf et autres). Les polices "
+#~ "peuvent être installées pour vous seul ou rendues disponibles à tous les "
+#~ "utilisateurs de l'ordinateur."
+
+#~ msgid "About"
+#~ msgstr "À propos"
+
+#~ msgid "GNOME Font Viewer"
+#~ msgstr "Visionneur de police de GNOME"
+
+#~ msgid "Show the application's version"
+#~ msgstr "Affiche la version de l'application"
+
+#~ msgid "[FILE...]"
+#~ msgstr "[FICHIER...]"
+
+#, c-format
+#~ msgid "Run '%s --help' to see a full list of available command line options."
+#~ msgstr ""
+#~ "Lancez « %s --help » pour voir la liste complète des options disponibles en "
+#~ "ligne de commande."
