@@ -6,17 +6,37 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer gnome-3-6\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-01-18 22:39+0000\n"
-"PO-Revision-Date: 2013-01-19 12:21+0100\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-"
+"viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-07-26 19:11+0000\n"
+"PO-Revision-Date: 2015-07-26 23:03+0100\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.1\n"
+
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your use as "
+"thumbnails. Selecting any thumbnails shows the full view of how the font would "
+"look under various sizes."
+msgstr ""
+"Visualizadôr di caratars GNOME al mostre ducj i caratars instalâts sul to "
+"computer come miniaturis. Selezionant une miniature al ven mostrât ce mût un "
+"caratar a si viôt in varis dimensions."
+
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the .ttf "
+"and other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
+msgstr ""
+"Visualizadôr di caratars GNOME al permet di instalâ gnûfs caratars da file "
+"scjariâts tal formât .ttf e ancje altris formâts. I caratars a puedin jessi "
+"instalâts par ûs personâl o par ducj i utents dal computer."
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -36,81 +56,102 @@ msgstr "DIMENSION"
 
 #: ../src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
-msgstr ""
+msgstr "FILE-CARATAR FILE-JESSUDE"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "Informazions su Visôr di Font"
+msgid "About"
+msgstr "Informazions"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
 msgstr "Jes"
 
-#: ../src/font-view.c:178
+#: ../src/font-view.c:76
+msgid "GNOME Font Viewer"
+msgstr "Visualizadôr di caratars GNOME"
+
+#: ../src/font-view.c:84
+msgid "Show the application's version"
+msgstr "Mostre la version de aplicazion"
+
+#: ../src/font-view.c:196
 msgid "Name"
 msgstr "Non"
 
-#: ../src/font-view.c:181
+#: ../src/font-view.c:199
 msgid "Style"
 msgstr "Stîl"
 
-#: ../src/font-view.c:191
+#: ../src/font-view.c:209
 msgid "Type"
 msgstr "Gjenar"
 
-#: ../src/font-view.c:236 ../src/font-view.c:255
+#: ../src/font-view.c:254 ../src/font-view.c:273
 msgid "Version"
 msgstr "Version"
 
-#: ../src/font-view.c:241 ../src/font-view.c:261
+#: ../src/font-view.c:259 ../src/font-view.c:279
 msgid "Copyright"
-msgstr ""
+msgstr "Copyright"
 
-#: ../src/font-view.c:246
+#: ../src/font-view.c:264
 msgid "Description"
 msgstr "Descrizion"
 
-#: ../src/font-view.c:274
+#: ../src/font-view.c:295
 msgid "Install Failed"
 msgstr "Installazion Falide"
 
-#: ../src/font-view.c:280
+#: ../src/font-view.c:302
 msgid "Installed"
 msgstr "Installât"
 
-#: ../src/font-view.c:283 ../src/font-view.c:515
+#: ../src/font-view.c:306 ../src/font-view.c:551
 msgid "Install"
 msgstr "Installe"
 
-#: ../src/font-view.c:416
+#: ../src/font-view.c:440
 msgid "This font could not be displayed."
-msgstr "Chest font a nol puès sedi mostrât."
+msgstr "Chest caratar a nol pues sedi mostrât."
 
-#: ../src/font-view.c:508
+#: ../src/font-view.c:504 ../src/font-view.c:562
 msgid "Info"
 msgstr "Informazions"
 
-#: ../src/font-view.c:521
+#: ../src/font-view.c:579
 msgid "Back"
 msgstr "Indaûr"
 
-#: ../src/font-view.c:618
+#: ../src/font-view.c:669
 msgid "All Fonts"
-msgstr "Ducj i Font"
+msgstr "Ducj i caratars"
 
-#: ../src/font-view.c:735 ../src/font-view.c:774
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:787 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
-msgstr "Visôr di Font"
+msgstr "Visualizadôr di caratars"
 
-#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:788 ../src/org.gnome.font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
-msgstr "Viôt i font tal to sisteme"
+msgstr "Viôt i caratars tal to sisteme"
 
-#: ../src/font-view.c:738
+#: ../src/font-view.c:790
 msgid "translator-credits"
 msgstr "Fabio Tomat <f.t.public@gmail.com>"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:3
-msgid "fonts;fontface;"
+#: ../src/font-view.c:929
+msgid "[FILE...]"
+msgstr "[FILE...]"
+
+#. I18N: The '%s' is replaced with the command name.
+#: ../src/font-view.c:937
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options."
 msgstr ""
+"Eseguî '%s --help' par viodi une liste complete des opzions a rie di comant."
+
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "caratar;caratars;caratars tipografics;gjenar di caratar;"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "Informazions su Visôr di Font"
