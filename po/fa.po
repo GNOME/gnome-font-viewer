@@ -7,16 +7,16 @@
 # Sara Khalatbari <sara@bamdad.org>, 2005.
 # Meelad Zakaria <meelad@farsiweb.info>, 2005, 2006.
 # Sanaz shahrokni <sanaz.shahrokni@gmail.com>, 2006.
-# Arash Mousavi <mousavi.arash@gmail.com>, 2011, 2012, 2014.
+# Arash Mousavi <mousavi.arash@gmail.com>, 2011, 2012, 2014, 2015.
 # Danial Behzadi <dani.behzi@ubuntu.com>, 2012, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-08-01 20:10+0000\n"
-"PO-Revision-Date: 2014-10-10 01:31+0330\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-"
+"viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-09-12 07:20+0000\n"
+"PO-Revision-Date: 2015-09-12 23:44+0430\n"
 "Last-Translator: Arash Mousavi <mousavi.arash@gmail.com>\n"
 "Language-Team: Persian\n"
 "Language: fa\n"
@@ -25,27 +25,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Poedit 1.8.4\n"
 
 #: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
 msgid ""
-"GNOME Font Viewer shows you the fonts installed on your computer for your "
-"use as thumbnails. Selecting any thumbnails shows the full view of how the "
-"font would look under various sizes."
+"GNOME Font Viewer shows you the fonts installed on your computer for your use as "
+"thumbnails. Selecting any thumbnails shows the full view of how the font would "
+"look under various sizes."
 msgstr ""
-"نمایشگر قلم گنوم، قلم‌هایی که روی رایانه‌ی شما نصب شده است را به صورت "
-"بندانگشتی نشانتان می‌دهد. انتخاب هر بندانگشتی، نمای کامل چک.نگی دیده شدن قلم "
-"در اندازه‌های مختلف را نمایش می‌دهد."
+"نمایشگر قلم گنوم، قلم‌هایی که روی رایانه‌ی شما نصب شده است را به صورت بندانگشتی "
+"نشانتان می‌دهد. انتخاب هر بندانگشتی، نمای کامل چک.نگی دیده شدن قلم در اندازه‌های "
+"مختلف را نمایش می‌دهد."
 
 #: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
 msgid ""
-"GNOME Font Viewer also supports installing new font files downloaded in the ."
-"ttf and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
+"GNOME Font Viewer also supports installing new font files downloaded in the .ttf "
+"and other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
 msgstr ""
-"نمایشگر قلم گنوم هم‌چنین از نصب پرونده‌های قلم‌های جدید بارگیری شده در قالب ttf "
-"و دیگر قالب‌ها پشتیبانی می‌کند. قلم‌ها می‌توانند فقط برای استفاده‌ی شما یا قابل "
-"دست‌رسی برای همه‌ی کاربران روی رایانه باشند."
+"نمایشگر قلم گنوم هم‌چنین از نصب پرونده‌های قلم‌های جدید بارگیری شده در قالب ttf و "
+"دیگر قالب‌ها پشتیبانی می‌کند. قلم‌ها می‌توانند فقط برای استفاده‌ی شما یا قابل دست‌رسی "
+"برای همه‌ی کاربران روی رایانه باشند."
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -75,71 +75,89 @@ msgstr "درباره"
 msgid "Quit"
 msgstr "خروج"
 
-#: ../src/font-view.c:176
+#: ../src/font-view.c:76
+msgid "GNOME Font Viewer"
+msgstr "نمایشگر قلم گنوم"
+
+#: ../src/font-view.c:84
+msgid "Show the application's version"
+msgstr "نمایش نسخه برنامه"
+
+#: ../src/font-view.c:196
 msgid "Name"
 msgstr "نام"
 
-#: ../src/font-view.c:179
+#: ../src/font-view.c:199
 msgid "Style"
 msgstr "سبک"
 
-#: ../src/font-view.c:189
+#: ../src/font-view.c:209
 msgid "Type"
 msgstr "نوع"
 
-#: ../src/font-view.c:234 ../src/font-view.c:253
+#: ../src/font-view.c:254 ../src/font-view.c:273
 msgid "Version"
 msgstr "نسخه"
 
-#: ../src/font-view.c:239 ../src/font-view.c:259
+#: ../src/font-view.c:259 ../src/font-view.c:279
 msgid "Copyright"
 msgstr "حق رونوشت"
 
-#: ../src/font-view.c:244
+#: ../src/font-view.c:264
 msgid "Description"
 msgstr "شرح"
 
-#: ../src/font-view.c:272
+#: ../src/font-view.c:295
 msgid "Install Failed"
 msgstr "نصب شکست خورد"
 
-#: ../src/font-view.c:278
+#: ../src/font-view.c:302
 msgid "Installed"
 msgstr "نصب شد"
 
-#: ../src/font-view.c:281 ../src/font-view.c:525
+#: ../src/font-view.c:306 ../src/font-view.c:551
 msgid "Install"
 msgstr "نصب"
 
-#: ../src/font-view.c:414
+#: ../src/font-view.c:440
 msgid "This font could not be displayed."
 msgstr "این قلم را نمی‌توان نمایش داد."
 
-#: ../src/font-view.c:478 ../src/font-view.c:536
+#: ../src/font-view.c:504 ../src/font-view.c:562
 msgid "Info"
 msgstr "اطلاعات"
 
-#: ../src/font-view.c:553
+#: ../src/font-view.c:579
 msgid "Back"
 msgstr "بازگشت"
 
-#: ../src/font-view.c:643
+#: ../src/font-view.c:669
 msgid "All Fonts"
 msgstr "تمام قلم‌ها"
 
-#: ../src/font-view.c:761 ../src/org.gnome.font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:787 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "نمایشگر قلم"
 
-#: ../src/font-view.c:762 ../src/org.gnome.font-viewer.desktop.in.in.h:2
+#: ../src/font-view.c:788 ../src/org.gnome.font-viewer.desktop.in.in.h:2
 msgid "View fonts on your system"
 msgstr "قلم‌های روی سیستم را ببینید"
 
-#: ../src/font-view.c:764
+#: ../src/font-view.c:790
 msgid "translator-credits"
 msgstr ""
 "دانیال بهزادی <dani.behzi@ubuntu.com>\n"
 "آرش موسوی <mousavi.arash@gmail.com>"
+
+#: ../src/font-view.c:929
+msgid "[FILE...]"
+msgstr "[FILE...]"
+
+#. I18N: The '%s' is replaced with the command name.
+#: ../src/font-view.c:937
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options."
+msgstr "برای نمایش تمام گزینه‌های خط فرمان «%s --help» را اجرا کنید."
 
 #: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
