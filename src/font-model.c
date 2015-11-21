@@ -326,7 +326,6 @@ ensure_fallback_icon (FontViewModel *self)
 {
     GtkIconTheme *icon_theme;
     GtkIconInfo *icon_info;
-    GdkPixbuf *pix;
     GIcon *icon = NULL;
 
     if (self->priv->fallback_icon != NULL)

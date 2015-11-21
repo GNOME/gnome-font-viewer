@@ -589,8 +589,6 @@ font_view_application_do_open (FontViewApplication *self,
     uri = g_file_get_uri (file);
 
     if (self->font_widget == NULL) {
-        GtkWidget *w;
-
         self->font_widget = GTK_WIDGET (sushi_font_widget_new (uri));
         gtk_container_add (GTK_CONTAINER (self->swin_preview), self->font_widget);
 

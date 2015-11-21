@@ -228,8 +228,7 @@ check_font_contain_text (FT_Face face,
                          const gchar *text)
 {
   gunichar *string;
-  glong len, idx, map;
-  FT_CharMap charmap;
+  glong len, idx;
   gboolean retval = TRUE;
 
   string = g_utf8_to_ucs4_fast (text, -1, &len);
