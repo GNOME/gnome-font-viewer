@@ -27,6 +27,7 @@
 #include "sushi-font-widget.h"
 #include "sushi-font-loader.h"
 
+#include <hb-glib.h>
 #include <math.h>
 
 enum {
