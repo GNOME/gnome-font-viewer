@@ -1,22 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application>
-<id type="desktop">org.gnome.font-viewer.desktop</id>
-<licence>CC0</licence>
-<description>
-<_p>
-GNOME Font Viewer shows you the fonts installed on your computer for your use as
-thumbnails.
-Selecting any thumbnails shows the full view of how the font would look under
-various sizes.
-</_p>
-<_p>
-GNOME Font Viewer also supports installing new font files downloaded in the .ttf
-and other formats.
-Fonts may be installed only for your use or made available to all users on the computer.
-</_p>
-</description>
-<url type="homepage">http://www.gnome.org/gnome-3/</url>
-<screenshots>
-<screenshot type="default">https://help.gnome.org/misc/release-notes/3.6/figures/users-font-viewer.png</screenshot>
-</screenshots>
-</application>
+<component type="desktop">
+  <id>org.gnome.font-viewer.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <_name>GNOME Font Viewer</_name>
+  <_summary>View fonts on your system</_summary>
+  <description>
+    <_p>
+      GNOME Font Viewer shows you the fonts installed on your computer for your use as
+      thumbnails.
+      Selecting any thumbnails shows the full view of how the font would look under
+      various sizes.
+    </_p>
+    <_p>
+      GNOME Font Viewer also supports installing new font files downloaded in the .ttf
+      and other formats.
+      Fonts may be installed only for your use or made available to all users on the computer.
+    </_p>
+  </description>
+  <url type="homepage">http://www.gnome.org/gnome-3/</url>
+  <url type="bugtracker">https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer</url>
+  <url type="donation">http://www.gnome.org/friends/</url>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://help.gnome.org/misc/release-notes/3.6/figures/users-font-viewer.png</image>
+    </screenshot>
+  </screenshots>
+  <project_group>GNOME</project_group>
+  <kudos>
+    <kudo>AppMenu</kudo>
+    <kudo>ModernToolkit</kudo>
+  </kudos>
+</component>
