@@ -589,7 +589,7 @@ font_view_application_do_open (FontViewApplication *self,
     uri = g_file_get_uri (file);
 
     if (self->font_widget == NULL) {
-        self->font_widget = GTK_WIDGET (sushi_font_widget_new (uri));
+        self->font_widget = GTK_WIDGET (sushi_font_widget_new (uri, 0));
         gtk_container_add (GTK_CONTAINER (self->swin_preview), self->font_widget);
 
         g_signal_connect (self->font_widget, "loaded",
@@ -597,7 +597,8 @@ font_view_application_do_open (FontViewApplication *self,
         g_signal_connect (self->font_widget, "error",
                           G_CALLBACK (font_widget_error_cb), self);
     } else {
-        g_object_set (self->font_widget, "uri", uri, NULL);
+        g_object_set (self->font_widget, "uri", uri, "face-index", 0, NULL);
+        sushi_font_widget_load (SUSHI_FONT_WIDGET (self->font_widget));
     }
 
     g_free (uri);
