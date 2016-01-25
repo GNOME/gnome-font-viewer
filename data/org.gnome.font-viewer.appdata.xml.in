@@ -31,4 +31,5 @@
     <kudo>AppMenu</kudo>
     <kudo>ModernToolkit</kudo>
   </kudos>
+  <translation type="gettext">gnome-font-viewer</translation>
 </component>
