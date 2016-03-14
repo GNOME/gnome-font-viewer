@@ -9,15 +9,15 @@
 # Wadim Dziedzic <wdziedzic@aviary.pl>, 2007.
 # Tomasz Dominikowski <dominikowski@gmail.com>, 2007-2009.
 # Joanna Mazgaj <jmazgaj@aviary.pl>, 2008.
-# Piotr Drąg <piotrdrag@gmail.com>, 2010-2015.
+# Piotr Drąg <piotrdrag@gmail.com>, 2010-2016.
 # Paweł Żołnowski <pawel@zolnowski.name>, 2014-2015.
-# Aviary.pl <gnomepl@aviary.pl>, 2007-2015.
+# Aviary.pl <gnomepl@aviary.pl>, 2007-2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-24 16:50+0200\n"
-"PO-Revision-Date: 2015-08-24 16:51+0200\n"
+"POT-Creation-Date: 2016-03-14 04:07+0100\n"
+"PO-Revision-Date: 2016-03-14 04:08+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -29,7 +29,16 @@ msgstr ""
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1 ../src/font-view.c:76
+msgid "GNOME Font Viewer"
+msgstr "Przeglądarka czcionek GNOME"
+
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2 ../src/font-view.c:790
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "Wyświetlanie czcionek w systemie"
+
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:3
 msgid ""
 "GNOME Font Viewer shows you the fonts installed on your computer for your "
 "use as thumbnails. Selecting any thumbnails shows the full view of how the "
@@ -39,7 +48,7 @@ msgstr ""
 "komputerze w postaci miniatur. Aby zobaczyć, jak dana czcionka prezentuje "
 "się w różnych rozmiarach, wystarczy tylko zaznaczyć jej miniaturę."
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:4
 msgid ""
 "GNOME Font Viewer also supports installing new font files downloaded in the ."
 "ttf and other formats. Fonts may be installed only for your use or made "
@@ -49,23 +58,23 @@ msgstr ""
 "z plików w formacie .ttf i wielu innych. Można je zainstalować do własnego "
 "użytku lub udostępnić wszystkim użytkownikom komputera."
 
-#: ../src/font-thumbnailer.c:189
+#: ../src/font-thumbnailer.c:191
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Tekst w miniaturze (domyślnie: Aa)"
 
-#: ../src/font-thumbnailer.c:189
+#: ../src/font-thumbnailer.c:191
 msgid "TEXT"
 msgstr "TEKST"
 
-#: ../src/font-thumbnailer.c:191
+#: ../src/font-thumbnailer.c:193
 msgid "Thumbnail size (default: 128)"
 msgstr "Rozmiar miniatury (domyślnie: 128)"
 
-#: ../src/font-thumbnailer.c:191
+#: ../src/font-thumbnailer.c:193
 msgid "SIZE"
 msgstr "ROZMIAR"
 
-#: ../src/font-thumbnailer.c:193
+#: ../src/font-thumbnailer.c:195
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "PLIK-CZCIONKI PLIK-WYJŚCIOWY"
 
@@ -76,10 +85,6 @@ msgstr "O programie"
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
 msgstr "Zakończ"
-
-#: ../src/font-view.c:76
-msgid "GNOME Font Viewer"
-msgstr "Przeglądarka czcionek GNOME"
 
 #: ../src/font-view.c:84
 msgid "Show the application's version"
@@ -117,7 +122,7 @@ msgstr "Instalacja się nie powiodła"
 msgid "Installed"
 msgstr "Zainstalowana"
 
-#: ../src/font-view.c:306 ../src/font-view.c:551
+#: ../src/font-view.c:306 ../src/font-view.c:552
 msgid "Install"
 msgstr "Zainstaluj"
 
@@ -125,27 +130,23 @@ msgstr "Zainstaluj"
 msgid "This font could not be displayed."
 msgstr "Nie można wyświetlić tej czcionki."
 
-#: ../src/font-view.c:504 ../src/font-view.c:562
+#: ../src/font-view.c:504 ../src/font-view.c:563
 msgid "Info"
 msgstr "Informacje"
 
-#: ../src/font-view.c:579
+#: ../src/font-view.c:580
 msgid "Back"
 msgstr "Wstecz"
 
-#: ../src/font-view.c:669
+#: ../src/font-view.c:671
 msgid "All Fonts"
 msgstr "Wszystkie czcionki"
 
-#: ../src/font-view.c:787 ../src/org.gnome.font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:789 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
-msgstr "Przeglądarka czcionek"
+msgstr "Czcionki"
 
-#: ../src/font-view.c:788 ../src/org.gnome.font-viewer.desktop.in.in.h:2
-msgid "View fonts on your system"
-msgstr "Wyświetlanie czcionek w systemie"
-
-#: ../src/font-view.c:790
+#: ../src/font-view.c:792
 msgid "translator-credits"
 msgstr ""
 "Zbigniew Chyla <chyla@alice.ci.pwr.wroc.pl>, 1999-2003\n"
@@ -153,22 +154,21 @@ msgstr ""
 "Wadim Dziedzic <wdziedzic@aviary.pl>, 2007\n"
 "Tomasz Dominikowski <dominikowski@gmail.com>, 2007-2009\n"
 "Joanna Mazgaj <jmazgaj@aviary.pl>, 2008\n"
-"Piotr Drąg <piotrdrag@gmail.com>, 2010-2015\n"
+"Piotr Drąg <piotrdrag@gmail.com>, 2010-2016\n"
 "Paweł Żołnowski <pawel@zolnowski.name>, 2014-2015\n"
-"Aviary.pl <gnomepl@aviary.pl>, 2007-2015"
+"Aviary.pl <gnomepl@aviary.pl>, 2007-2016"
 
-#: ../src/font-view.c:929
+#: ../src/font-view.c:931
 msgid "[FILE...]"
 msgstr "[PLIK…]"
 
 #. I18N: The '%s' is replaced with the command name.
-#: ../src/font-view.c:937
+#: ../src/font-view.c:939
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options."
 msgstr ""
-"Wykonanie polecenia „%s --help” wyświetli pełną listę dostępnych opcji "
-"wiersza poleceń."
+"Polecenie „%s --help” wyświetli pełną listę dostępnych opcji wiersza poleceń."
 
 #: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
-msgstr "czcionki;fonty;pismo;znaki;"
+msgstr "czcionki;fonty;pismo;znaki;przeglądarka;"
