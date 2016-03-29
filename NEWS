@@ -1,3 +1,12 @@
+GNOME Font Viewer - 3.20.0
+-------------------------------------------------------------------------------
+
+• Add support for the TrueType Collection format (#752005, Peng Wu)
+• Update AppData file (Richard Hughes)
+• Fix support for HiDpi when rendering sample strings (#742428)
+• Fix crash when no sample string can be constructed (#757680)
+• Translation updates
+
 GNOME Font Viewer - 3.16.2
 -------------------------------------------------------------------------------
 
