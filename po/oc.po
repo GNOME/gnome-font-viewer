@@ -3,15 +3,16 @@
 # This file is distributed under the same license as the gnome-font-viewer package.
 # Cédric Valmary <cvalmary@yahoo.fr>, 2015.
 # Cédric Valmary (Tot en òc) <cvalmary@yahoo.fr>, 2015.
+# Cédric Valmary (totenoc.eu) <cvalmary@yahoo.fr>, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-05-18 19:13+0000\n"
-"PO-Revision-Date: 2015-10-31 08:48+0200\n"
-"Last-Translator: Cédric Valmary (Tot en òc) <cvalmary@yahoo.fr>\n"
-"Language-Team: Tot en òc (totenoc.eu)\n"
+"POT-Creation-Date: 2016-04-29 08:35+0000\n"
+"PO-Revision-Date: 2016-05-05 21:45+0200\n"
+"Last-Translator: Cédric Valmary (totenoc.eu) <cvalmary@yahoo.fr>\n"
+"Language-Team: Tot En Òc\n"
 "Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +21,16 @@ msgstr ""
 "X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1 ../src/font-view.c:76
+msgid "GNOME Font Viewer"
+msgstr "Visionador de poliça de GNOME"
+
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2 ../src/font-view.c:790
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "Aficha las poliças de vòstre sistèma"
+
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:3
 msgid ""
 "GNOME Font Viewer shows you the fonts installed on your computer for your "
 "use as thumbnails. Selecting any thumbnails shows the full view of how the "
@@ -30,7 +40,7 @@ msgstr ""
 "sus vòstre ordenador jos la forma de miniaturas. En causissent una "
 "d'aquelas, obtenètz una vista completa de la poliça de diferentas talhas."
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:4
 msgid ""
 "GNOME Font Viewer also supports installing new font files downloaded in the ."
 "ttf and other formats. Fonts may be installed only for your use or made "
@@ -41,23 +51,23 @@ msgstr ""
 "èsser installadas per vos sol o rendudas disponiblas a totes los utilizaires "
 "de l'ordenador."
 
-#: ../src/font-thumbnailer.c:189
+#: ../src/font-thumbnailer.c:191
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Tèxte de miniaturizar (per defaut : Aa)"
 
-#: ../src/font-thumbnailer.c:189
+#: ../src/font-thumbnailer.c:191
 msgid "TEXT"
 msgstr "TÈXTE"
 
-#: ../src/font-thumbnailer.c:191
+#: ../src/font-thumbnailer.c:193
 msgid "Thumbnail size (default: 128)"
 msgstr "Talha de las vinhetas (per defaut : 128)"
 
-#: ../src/font-thumbnailer.c:191
+#: ../src/font-thumbnailer.c:193
 msgid "SIZE"
 msgstr "TALHA"
 
-#: ../src/font-thumbnailer.c:193
+#: ../src/font-thumbnailer.c:195
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FICHIÈR-POLIÇA FICHIÈR-SORTIDA"
 
@@ -68,10 +78,6 @@ msgstr "A prepaus"
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
 msgstr "Quitar"
-
-#: ../src/font-view.c:76
-msgid "GNOME Font Viewer"
-msgstr "Visionador de poliça de GNOME"
 
 #: ../src/font-view.c:84
 msgid "Show the application's version"
@@ -109,7 +115,7 @@ msgstr "Fracàs de l'installacion"
 msgid "Installed"
 msgstr "Installat"
 
-#: ../src/font-view.c:306 ../src/font-view.c:551
+#: ../src/font-view.c:306 ../src/font-view.c:552
 msgid "Install"
 msgstr "Installar"
 
@@ -117,48 +123,41 @@ msgstr "Installar"
 msgid "This font could not be displayed."
 msgstr "Aquesta poliça a pas pogut èsser afichada."
 
-#: ../src/font-view.c:504 ../src/font-view.c:562
+#: ../src/font-view.c:504 ../src/font-view.c:563
 msgid "Info"
 msgstr "Informacion"
 
-#: ../src/font-view.c:579
+#: ../src/font-view.c:580
 msgid "Back"
 msgstr "Retorn"
 
-#: ../src/font-view.c:669
+#: ../src/font-view.c:671
 msgid "All Fonts"
 msgstr "Totas las poliças"
 
-#: ../src/font-view.c:787 ../src/org.gnome.font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:789 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Visionador de poliça"
 
-#: ../src/font-view.c:788 ../src/org.gnome.font-viewer.desktop.in.in.h:2
-msgid "View fonts on your system"
-msgstr "Aficha las poliças de vòstre sistèma"
-
-#: ../src/font-view.c:790
+#: ../src/font-view.c:792
 msgid "translator-credits"
 msgstr "Cédric Valmary (Tot en Òc) <cvalmary@yahoo.fr>"
-
-#: ../src/font-view.c:929
-msgid "[FILE...]"
-msgstr "[FICHIÈR...]"
-
-#. I18N: The '%s' is replaced with the command name.
-#: ../src/font-view.c:937
-#, c-format
-msgid "Run '%s --help' to see a full list of available command line options."
-msgstr ""
-"Aviatz « %s --help » per veire la lista completa de las opcions disponiblas "
-"en linha de comanda."
 
 #: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "poliças;fontas;"
 
+#~ msgid "[FILE...]"
+#~ msgstr "[FICHIÈR...]"
+
+#~ msgid ""
+#~ "Run '%s --help' to see a full list of available command line options."
+#~ msgstr ""
+#~ "Aviatz « %s --help » per veire la lista completa de las opcions "
+#~ "disponiblas en linha de comanda."
+
 #~ msgid "About Font Viewer"
 #~ msgstr "A prepaus del Visionador de poliça"
 
 #~ msgid "Done"
-#~ msgstr "Terminé"
+#~ msgstr "Acabat"
