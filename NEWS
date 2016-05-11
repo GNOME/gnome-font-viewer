@@ -1,3 +1,12 @@
+GNOME Font Viewer - 3.20.2
+-------------------------------------------------------------------------------
+
+• Use GApplication's internal handling of commandline arguments, for correcting
+  DBus activation (#765518, Allison Ryan Lortie)
+• Translation updates:
+    Friulian (Fabio Tomat)
+    Occitan (Cédric Valmary)
+
 GNOME Font Viewer - 3.20.0
 -------------------------------------------------------------------------------
 
