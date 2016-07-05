@@ -824,6 +824,7 @@ font_view_application_startup (GApplication *application)
     self->main_window = window = gtk_application_window_new (GTK_APPLICATION (application));
     gtk_window_set_resizable (GTK_WINDOW (window), TRUE);
     gtk_window_set_default_size (GTK_WINDOW (window), 800, 600);
+    gtk_window_set_icon_name (GTK_WINDOW (window), "preferences-desktop-font");
 
     self->header = gtk_header_bar_new ();
     gtk_header_bar_set_show_close_button (GTK_HEADER_BAR (self->header), TRUE);
