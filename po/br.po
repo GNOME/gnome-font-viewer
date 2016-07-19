@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2013-07-26 15:20+0000\n"
 "X-Generator: Launchpad (build 16700)\n"
-"Language: \n"
+"Language: br\n"
 
 #: ../src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
