@@ -543,7 +543,6 @@ font_view_application_do_open (FontViewApplication *self,
 {
     GtkWidget *back_image;
     gchar *uri;
-    gboolean rtl;
 
     font_view_ensure_model (self);
 
@@ -572,9 +571,7 @@ font_view_application_do_open (FontViewApplication *self,
 
     if (self->back_button == NULL) {
         self->back_button = gtk_button_new ();
-        rtl = gtk_widget_get_default_direction () == GTK_TEXT_DIR_RTL;
-        back_image = gtk_image_new_from_icon_name (rtl ? "go-previous-rtl-symbolic" :
-                                                   "go-previous-symbolic",
+        back_image = gtk_image_new_from_icon_name ("go-previous-symbolic",
                                                    GTK_ICON_SIZE_MENU);
         gtk_button_set_image (GTK_BUTTON (self->back_button), back_image);
         gtk_widget_set_tooltip_text (self->back_button, _("Back"));
