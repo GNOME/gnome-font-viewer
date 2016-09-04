@@ -7,10 +7,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-05 15:05+0100\n"
-"PO-Revision-Date: 2012-09-05 15:06+0100\n"
-"Last-Translator: Bruce Cowan <bruce@bcowan.me.uk>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2016-05-05 08:39+0000\n"
+"PO-Revision-Date: 2016-09-04 16:29+0200\n"
+"Last-Translator: David King <amigadave@amigadave.com>\n"
 "Language-Team: British English <en@li.org>\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
@@ -20,94 +21,133 @@ msgstr ""
 "X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 
-#: ../src/font-thumbnailer.c:190
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1 ../src/font-view.c:76
+msgid "GNOME Font Viewer"
+msgstr "GNOME Font Viewer"
+
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2 ../src/font-view.c:790
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "View fonts on your system"
+
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:3
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+msgstr ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your "
+"use as thumbnails. Selecting any thumbnails shows the full view of how the "
+"font would look under various sizes."
+
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:4
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"GNOME Font Viewer also supports installing new font files downloaded in the ."
+"ttf and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+
+#: ../src/font-thumbnailer.c:191
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Text to thumbnail (default: Aa)"
 
-#: ../src/font-thumbnailer.c:190
+#: ../src/font-thumbnailer.c:191
 msgid "TEXT"
 msgstr "TEXT"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:193
 msgid "Thumbnail size (default: 128)"
 msgstr "Thumbnail size (default: 128)"
 
-#: ../src/font-thumbnailer.c:192
+#: ../src/font-thumbnailer.c:193
 msgid "SIZE"
 msgstr "SIZE"
 
-#: ../src/font-thumbnailer.c:194
+#: ../src/font-thumbnailer.c:195
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
 #: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "About Font Viewer"
+msgid "About"
+msgstr "About"
 
 #: ../src/font-view-app-menu.ui.h:2
 msgid "Quit"
 msgstr "Quit"
 
-#: ../src/font-view.c:178
+#: ../src/font-view.c:84
+msgid "Show the application's version"
+msgstr "Show the application's version"
+
+#: ../src/font-view.c:196
 msgid "Name"
 msgstr "Name"
 
-#: ../src/font-view.c:181
+#: ../src/font-view.c:199
 msgid "Style"
 msgstr "Style"
 
-#: ../src/font-view.c:191
+#: ../src/font-view.c:209
 msgid "Type"
 msgstr "Type"
 
-#: ../src/font-view.c:236 ../src/font-view.c:255
+#: ../src/font-view.c:254 ../src/font-view.c:273
 msgid "Version"
 msgstr "Version"
 
-#: ../src/font-view.c:241 ../src/font-view.c:261
+#: ../src/font-view.c:259 ../src/font-view.c:279
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../src/font-view.c:246
+#: ../src/font-view.c:264
 msgid "Description"
 msgstr "Description"
 
-#: ../src/font-view.c:274
+#: ../src/font-view.c:295
 msgid "Install Failed"
 msgstr "Install Failed"
 
-#: ../src/font-view.c:280
+#: ../src/font-view.c:302
 msgid "Installed"
 msgstr "Installed"
 
-#: ../src/font-view.c:283 ../src/font-view.c:468
+#: ../src/font-view.c:306 ../src/font-view.c:552
 msgid "Install"
 msgstr "Install"
 
-#: ../src/font-view.c:461
+#: ../src/font-view.c:440
+msgid "This font could not be displayed."
+msgstr "This font could not be displayed."
+
+#: ../src/font-view.c:504 ../src/font-view.c:563
 msgid "Info"
 msgstr "Info"
 
-#: ../src/font-view.c:474
+#: ../src/font-view.c:580
 msgid "Back"
 msgstr "Back"
 
-#: ../src/font-view.c:565
+#: ../src/font-view.c:671
 msgid "All Fonts"
 msgstr "All Fonts"
 
-#: ../src/font-view.c:660 ../src/font-view.c:703
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:789 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Font Viewer"
 
-#: ../src/font-view.c:661 ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "View fonts on your system"
-msgstr "View fonts on your system"
-
-#: ../src/font-view.c:663
+#: ../src/font-view.c:792
 msgid "translator-credits"
 msgstr "Bruce Cowan <bruce@bcowan.me.uk>"
+
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
+msgid "fonts;fontface;"
+msgstr "fonts;fontface;"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "About Font Viewer"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "Font size (default: 64)"
