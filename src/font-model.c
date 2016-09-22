@@ -495,6 +495,7 @@ ensure_font_list (FontViewModel *self)
         self->priv->font_list = NULL;
     }
 
+    FcPatternAddBool (pat, FC_SCALABLE, FcTrue);
     self->priv->font_list = FcFontList (NULL, pat, os);
 
     g_mutex_unlock (&self->priv->font_list_mutex);
