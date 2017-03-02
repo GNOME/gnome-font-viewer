@@ -1,3 +1,9 @@
+GNOME Font Viewer - 3.23.91
+-------------------------------------------------------------------------------
+
+• Listen to fontconfig timestamp notifications instead of using file monitors
+• Only show scalable fonts (#771857, Michael Catanzaro)
+
 GNOME Font Viewer - 3.22.0
 -------------------------------------------------------------------------------
 
