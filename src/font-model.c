@@ -517,6 +517,8 @@ static gboolean
 ensure_font_list_idle (gpointer user_data)
 {
     FontViewModel *self = user_data;
+
+    self->priv->font_list_idle_id = 0;
     ensure_font_list (self);
 
     return FALSE;
