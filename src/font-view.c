@@ -673,6 +673,7 @@ font_view_application_do_overview (FontViewApplication *self)
         GtkCellRenderer *cell;
 
         self->icon_view = icon_view = gtk_icon_view_new_with_model (self->model);
+
         g_object_set (icon_view,
                       "column-spacing", VIEW_COLUMN_SPACING,
                       "margin", VIEW_MARGIN,
@@ -716,9 +717,11 @@ font_view_window_key_press_event_cb (GtkWidget *widget,
                                      GdkEventKey *event,
                                      gpointer user_data)
 {
+    FontViewApplication *self = user_data;
+
     if (event->keyval == GDK_KEY_q &&
         (event->state & GDK_CONTROL_MASK) != 0) {
-        gtk_widget_destroy (widget);
+        g_application_quit (G_APPLICATION (self));
         return TRUE;
     }
 
@@ -799,26 +802,14 @@ static GActionEntry action_entries[] = {
 };
 
 static void
-font_view_application_startup (GApplication *application)
+ensure_window (FontViewApplication *self)
 {
-    FontViewApplication *self = FONT_VIEW_APPLICATION (application);
     GtkWidget *window, *swin;
-    GtkBuilder *builder;
-    GMenuModel *menu;
 
-    G_APPLICATION_CLASS (font_view_application_parent_class)->startup (application);
+    if (self->main_window)
+        return;
 
-    g_action_map_add_action_entries (G_ACTION_MAP (self), action_entries, 
-                                     G_N_ELEMENTS (action_entries), self);
-    builder = gtk_builder_new ();
-    gtk_builder_add_from_resource (builder, "/org/gnome/font-viewer/font-view-app-menu.ui", NULL);
-    menu = G_MENU_MODEL (gtk_builder_get_object (builder, "app-menu"));
-    gtk_application_set_app_menu (GTK_APPLICATION (self), menu);
-
-    g_object_unref (builder);
-    g_object_unref (menu);
-
-    self->main_window = window = gtk_application_window_new (GTK_APPLICATION (application));
+    self->main_window = window = gtk_application_window_new (GTK_APPLICATION (self));
     gtk_window_set_resizable (GTK_WINDOW (window), TRUE);
     gtk_window_set_default_size (GTK_WINDOW (window), 800, 600);
     gtk_window_set_icon_name (GTK_WINDOW (window), "preferences-desktop-font");
@@ -855,19 +846,35 @@ font_view_application_startup (GApplication *application)
 }
 
 static void
+font_view_application_startup (GApplication *application)
+{
+    FontViewApplication *self = FONT_VIEW_APPLICATION (application);
+    GtkBuilder *builder;
+    GMenuModel *menu;
+
+    G_APPLICATION_CLASS (font_view_application_parent_class)->startup (application);
+
+    if (!FcInit ())
+        g_critical ("Can't initialize fontconfig library");
+
+    g_action_map_add_action_entries (G_ACTION_MAP (self), action_entries,
+                                     G_N_ELEMENTS (action_entries), self);
+    builder = gtk_builder_new ();
+    gtk_builder_add_from_resource (builder, "/org/gnome/font-viewer/font-view-app-menu.ui", NULL);
+    menu = G_MENU_MODEL (gtk_builder_get_object (builder, "app-menu"));
+    gtk_application_set_app_menu (GTK_APPLICATION (self), menu);
+
+    g_object_unref (builder);
+    g_object_unref (menu);
+}
+
+static void
 font_view_application_activate (GApplication *application)
 {
     FontViewApplication *self = FONT_VIEW_APPLICATION (application);
 
+    ensure_window (self);
     font_view_application_do_overview (self);
-}
-
-static void
-font_view_application_quit_mainloop (GApplication *application)
-{
-    G_APPLICATION_CLASS (font_view_application_parent_class)->quit_mainloop (application);
-
-    FcFini ();
 }
 
 static void
@@ -896,7 +903,6 @@ font_view_application_class_init (FontViewApplicationClass *klass)
     aclass->activate = font_view_application_activate;
     aclass->startup = font_view_application_startup;
     aclass->open = font_view_application_open;
-    aclass->quit_mainloop = font_view_application_quit_mainloop;
 
     oclass->dispose = font_view_application_dispose;
 }
@@ -921,9 +927,6 @@ main (int argc,
     bindtextdomain (GETTEXT_PACKAGE, GNOMELOCALEDIR);
     bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
     textdomain (GETTEXT_PACKAGE);
-
-    if (!FcInit ())
-        g_critical ("Can't initialize fontconfig library");
 
     app = font_view_application_new ();
     g_application_add_main_option_entries (app, goption_options);
