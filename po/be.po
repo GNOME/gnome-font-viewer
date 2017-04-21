@@ -1,15 +1,16 @@
 # Vital Khilko <dojlid@mova.org>, 2003.
 # Ales Nyakhaychyk <nab@mail.by>, 2003, 2004.
 # Ihar Hrachyshka <ihar.hrachyshka@gmail.com>, 2011, 2013.
+# Yuras Shumovich <shumovichy@gmail.com>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-05-03 06:42+0000\n"
-"PO-Revision-Date: 2012-06-08 18:15+0300\n"
-"Last-Translator: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>\n"
+"POT-Creation-Date: 2017-03-02 03:29+0000\n"
+"PO-Revision-Date: 2017-04-21 22:43+0300\n"
+"Last-Translator: Yuras Shumovich <shumovichy@gmail.com>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
@@ -17,44 +18,54 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.8.11\n"
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:1
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1 ../src/font-view.c:76
+msgid "GNOME Font Viewer"
+msgstr "Праглядальнік шрыфтоў GNOME"
+
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2 ../src/font-view.c:787
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:2
+msgid "View fonts on your system"
+msgstr "Прагляд шрыфтоў у вашай сістэме"
+
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:3
 msgid ""
 "GNOME Font Viewer shows you the fonts installed on your computer for your "
 "use as thumbnails. Selecting any thumbnails shows the full view of how the "
 "font would look under various sizes."
 msgstr ""
-"Праглядальнік шрыфтоў GNOME паказвае шрыфты, усталяваныя на вашым камп'ютары, "
-"у выглядзе мініяцюр. Выбраўшы любую мініяцюру, можна ўбачыць, як адпаведны "
-"шрыфт будзе выглядаць у розных памерах."
+"Праглядальнік шрыфтоў GNOME паказвае шрыфты, усталяваныя на вашым "
+"камп'ютары, у выглядзе мініяцюр. Выбраўшы любую мініяцюру, можна ўбачыць, як "
+"адпаведны шрыфт будзе выглядаць у розных памерах."
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:2
+#: ../data/org.gnome.font-viewer.appdata.xml.in.h:4
 msgid ""
 "GNOME Font Viewer also supports installing new font files downloaded in the ."
 "ttf and other formats. Fonts may be installed only for your use or made "
 "available to all users on the computer."
 msgstr ""
-"Праглядальнік шрыфтоў GNOME таксама падтрымлівае ўсталяванне новых файлаў з шрыфтамі "
-"ў фармаце .ttf ды іншых. Шрыфты могуць быць усталяваны толькі для вас або для "
-"ўсіх карыстальнікаў камп'ютара."
+"Праглядальнік шрыфтоў GNOME таксама падтрымлівае ўсталяванне новых файлаў з "
+"шрыфтамі ў фармаце .ttf ды іншых. Шрыфты могуць быць усталяваны толькі для "
+"вас або для ўсіх карыстальнікаў камп'ютара."
 
-#: ../src/font-thumbnailer.c:189
+#: ../src/font-thumbnailer.c:191
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Тэкст для мініяцюры (прадвызначана: Aa)"
 
-#: ../src/font-thumbnailer.c:189
+#: ../src/font-thumbnailer.c:191
 msgid "TEXT"
 msgstr "ТЭКСТ"
 
-#: ../src/font-thumbnailer.c:191
+#: ../src/font-thumbnailer.c:193
 msgid "Thumbnail size (default: 128)"
 msgstr "Памер мініяцюры (прадвызначана: 128)"
 
-#: ../src/font-thumbnailer.c:191
+#: ../src/font-thumbnailer.c:193
 msgid "SIZE"
 msgstr "ПАМЕР"
 
-#: ../src/font-thumbnailer.c:193
+#: ../src/font-thumbnailer.c:195
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ФАЙЛ_ШРЫФТУ ВЫХАДНЫ_ФАЙЛ"
 
@@ -66,75 +77,75 @@ msgstr "Аб праграме"
 msgid "Quit"
 msgstr "Выйсці"
 
-#: ../src/font-view.c:176
+#: ../src/font-view.c:84
+msgid "Show the application's version"
+msgstr "Паказаць нумар версіі праграмы"
+
+#: ../src/font-view.c:196
 msgid "Name"
 msgstr "Назва"
 
-#: ../src/font-view.c:179
+#: ../src/font-view.c:199
 msgid "Style"
 msgstr "Стыль"
 
-#: ../src/font-view.c:189
+#: ../src/font-view.c:209
 msgid "Type"
 msgstr "Тып"
 
-#: ../src/font-view.c:234 ../src/font-view.c:253
+#: ../src/font-view.c:254 ../src/font-view.c:273
 msgid "Version"
 msgstr "Версія"
 
-#: ../src/font-view.c:239 ../src/font-view.c:259
+#: ../src/font-view.c:259 ../src/font-view.c:279
 msgid "Copyright"
 msgstr "Аўтарскія правы"
 
-#: ../src/font-view.c:244
+#: ../src/font-view.c:264
 msgid "Description"
 msgstr "Апісанне"
 
-#: ../src/font-view.c:272
+#: ../src/font-view.c:295
 msgid "Install Failed"
 msgstr "Няўдалая ўсталёўка"
 
-#: ../src/font-view.c:278
+#: ../src/font-view.c:302
 msgid "Installed"
 msgstr "Усталяваны"
 
-#: ../src/font-view.c:281 ../src/font-view.c:522
+#: ../src/font-view.c:306 ../src/font-view.c:551
 msgid "Install"
 msgstr "Усталяваць"
 
-#: ../src/font-view.c:414
+#: ../src/font-view.c:440
 msgid "This font could not be displayed."
 msgstr "Не ўдалося паказаць гэты шрыфт."
 
-#: ../src/font-view.c:479
-msgid "_Close"
-msgstr "_Закрыць"
-
-#: ../src/font-view.c:533
+#: ../src/font-view.c:504 ../src/font-view.c:562
 msgid "Info"
 msgstr "Звесткі"
 
-#: ../src/font-view.c:550
+#: ../src/font-view.c:577
 msgid "Back"
 msgstr "Назад"
 
-#: ../src/font-view.c:640
+#: ../src/font-view.c:668
 msgid "All Fonts"
 msgstr "Усе шрыфты"
 
-#: ../src/font-view.c:758 ../src/gnome-font-viewer.desktop.in.in.h:1
+#: ../src/font-view.c:786 ../src/org.gnome.font-viewer.desktop.in.in.h:1
 msgid "Font Viewer"
 msgstr "Праглядальнік шрыфтоў"
 
-#: ../src/font-view.c:759 ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "View fonts on your system"
-msgstr "Прагляд шрыфтоў у вашай сістэме"
-
-#: ../src/font-view.c:761
+#: ../src/font-view.c:789
 msgid "translator-credits"
-msgstr "Ігар Грачышка <ihar.hrachyshka@gmail.com>"
+msgstr ""
+"Ігар Грачышка <ihar.hrachyshka@gmail.com>\n"
+"Юрась Шумовіч <shumovichy@gmail.com>"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:3
+#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
 msgid "fonts;fontface;"
 msgstr "шрыфты;"
 
+#~ msgid "_Close"
+#~ msgstr "_Закрыць"
