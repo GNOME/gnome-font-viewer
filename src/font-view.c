@@ -737,6 +737,8 @@ query_info_ready_cb (GObject *object,
     GFileInfo *info;
     GError *error = NULL;
 
+    g_application_release (G_APPLICATION (self));
+
     info = g_file_query_info_finish (G_FILE (object), res, &error);
     if (error != NULL) {
         font_view_application_do_overview (self);
@@ -756,6 +758,8 @@ font_view_application_open (GApplication *application,
                             const gchar *hint)
 {
     FontViewApplication *self = FONT_VIEW_APPLICATION (application);
+
+    g_application_hold (application);
     g_file_query_info_async (files[0], G_FILE_ATTRIBUTE_STANDARD_NAME,
                              G_FILE_QUERY_INFO_NONE,
                              G_PRIORITY_DEFAULT, NULL,
