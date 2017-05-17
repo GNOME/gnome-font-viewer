@@ -88,6 +88,7 @@ static const GOptionEntry goption_options[] =
 G_DEFINE_TYPE (FontViewApplication, font_view_application, GTK_TYPE_APPLICATION);
 
 static void font_view_application_do_overview (FontViewApplication *self);
+static void ensure_window (FontViewApplication *self);
 
 #define VIEW_ITEM_WIDTH 140
 #define VIEW_ITEM_WRAP_WIDTH 128
@@ -737,6 +738,7 @@ query_info_ready_cb (GObject *object,
     GFileInfo *info;
     GError *error = NULL;
 
+    ensure_window (self);
     g_application_release (G_APPLICATION (self));
 
     info = g_file_query_info_finish (G_FILE (object), res, &error);
