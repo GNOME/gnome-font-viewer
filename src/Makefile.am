@@ -54,13 +54,13 @@ desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 	$(AM_V_GEN) $(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
 
 dbusservicedir = $(datadir)/dbus-1/services
-dbusservice_DATA = org.gnome.font-viewer.service
+dbusservice_in_files = org.gnome.font-viewer.service.in
+dbusservice_DATA = $(service_in_files:.service.in=.service)
 
-org.gnome.font-viewer.service: Makefile
-	$(AM_V_GEN) (echo '[D-BUS Service]'; \
-		     echo 'Name=org.gnome.font-viewer'; \
-		     echo 'Exec=${bindir}/gnome-font-viewer --gapplication-service') > $@.tmp && \
-		     mv $@.tmp $@
+org.gnome.font-viewer.service: org.gnome.font-viewer.service.in
+	$(AM_V_GEN)     \
+		[ -d $(@D) ] || $(mkdir_p) $(@D) ; \
+		sed -e "s|\@bindir\@|$(bindir)|" $< > $@.tmp && mv $@.tmp $@
 
 thumbnailerdir = $(datadir)/thumbnailers
 thumbnailer_DATA = gnome-font-viewer.thumbnailer
@@ -79,6 +79,7 @@ CLEANFILES = \
 EXTRA_DIST = \
 	$(desktop_in_files) \
 	$(resource_files) \
+	$(dbusservice_in_files) \
 	gnome-font-viewer.thumbnailer \
 	gnome-font-viewer.gresource.xml
 
