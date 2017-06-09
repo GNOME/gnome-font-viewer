@@ -50,6 +50,8 @@ gnome_font_viewer_SOURCES = \
 desktopdir = $(datadir)/applications
 desktop_in_files = org.gnome.font-viewer.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
+%.desktop: %.desktop.in Makefile
+	$(AM_V_GEN) $(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
 
 dbusservicedir = $(datadir)/dbus-1/services
 dbusservice_DATA = org.gnome.font-viewer.service
@@ -69,19 +71,15 @@ install-desktop-database: install-desktopDATA
 uninstall-local:
 	rm -f $(DESTDIR)$(desktopdir)/mimeinfo.cache
 
-@INTLTOOL_DESKTOP_RULE@
-@INTLTOOL_DIRECTORY_RULE@
-
 CLEANFILES = \
 	$(dbusservice_DATA) \
-	$(desktop_in_files) \
 	$(desktop_DATA) \
 	$(directory_DATA)
 
 EXTRA_DIST = \
+	$(desktop_in_files) \
 	$(resource_files) \
 	gnome-font-viewer.thumbnailer \
-	org.gnome.font-viewer.desktop.in.in \
 	gnome-font-viewer.gresource.xml
 
 -include $(top_srcdir)/git.mk

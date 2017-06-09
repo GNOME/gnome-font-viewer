@@ -16,7 +16,9 @@ AM_SILENT_RULES([yes])
 GETTEXT_PACKAGE=AC_PACKAGE_NAME
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE",[The name of the gettext domain])
-IT_PROG_INTLTOOL(0.40.0)
+AM_GNU_GETTEXT_VERSION([0.19.6])
+AM_GNU_GETTEXT([external])
+
 PKG_PROG_PKG_CONFIG([0.22])
 
 AC_PROG_CC
@@ -49,7 +51,6 @@ AC_CONFIG_FILES([
 Makefile
 data/Makefile
 src/Makefile
-src/org.gnome.font-viewer.desktop.in
 po/Makefile.in
 ])
 
