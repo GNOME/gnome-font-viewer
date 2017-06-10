@@ -73,7 +73,7 @@ _print_version_and_exit (const gchar *option_name,
                          gpointer data,
                          GError **error)
 {
-    g_print("%s %s\n", _("GNOME Font Viewer"), VERSION);
+    g_print("%s %s\n", _("GNOME Fonts"), VERSION);
     exit (EXIT_SUCCESS);
     return TRUE;
 }
@@ -792,7 +792,7 @@ action_about (GSimpleAction *action,
     gtk_show_about_dialog (GTK_WINDOW (self->main_window),
                            "version", VERSION,
                            "authors", authors,
-                           "program-name", _("Font Viewer"),
+                           "program-name", _("Fonts"),
                            "comments", _("View fonts on your system"),
                            "logo-icon-name", "preferences-desktop-font",
                            "translator-credits", _("translator-credits"),

@@ -3,7 +3,7 @@
   <id>org.gnome.font-viewer.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
-  <name>GNOME Font Viewer</name>
+  <name>GNOME Fonts</name>
   <summary>View fonts on your system</summary>
   <description>
     <p>
