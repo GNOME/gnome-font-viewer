@@ -10,17 +10,17 @@
 # Pablo Saratxaga <srtxg@chanae.alphanet.ch> 1999.
 # Manuel de Vega Barreiro <barreiro@arrakis.es> 2000-2001.
 # Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009, 2010, 2011.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012, 2013, 2014.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012, 2013, 2014, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-11-12 07:41+0000\n"
-"PO-Revision-Date: 2014-11-12 12:27+0100\n"
+"POT-Creation-Date: 2017-06-10 17:47+0000\n"
+"PO-Revision-Date: 2017-06-19 13:26+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
-"Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
+"Language-Team: es <gnome-es-list@gnome.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,7 +28,16 @@ msgstr ""
 "X-Generator: Gtranslator 2.91.6\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:76
+msgid "GNOME Font Viewer"
+msgstr "Visor de tipografías de GNOME"
+
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:796
+#: src/org.gnome.font-viewer.desktop.in:4
+msgid "View fonts on your system"
+msgstr "Ver las tipografías de su sistema"
+
+#: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
 "GNOME Font Viewer shows you the fonts installed on your computer for your "
 "use as thumbnails. Selecting any thumbnails shows the full view of how the "
@@ -38,7 +47,7 @@ msgstr ""
 "equipo como miniaturas. Al seleccionar cualquiera de ellas se muestra una "
 "vista completa de cómo queda la tipografía con varios tamaños."
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
+#: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
 "GNOME Font Viewer also supports installing new font files downloaded in the ."
 "ttf and other formats. Fonts may be installed only for your use or made "
@@ -49,122 +58,116 @@ msgstr ""
 "instalar para su uso personal o para que estén disponibles para todos los "
 "usuarios del sistema."
 
-#: ../src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Texto a miniaturizar (predeterminado: Aa)"
 
-#: ../src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "TEXTO"
 
-#: ../src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "Tamaño de la miniatura (predeterminado: 128)"
 
-#: ../src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "TAMAÑO"
 
-#: ../src/font-thumbnailer.c:193
+#: src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ARCHIVO-DE-TIPOGRAFÍA ARCHIVO-DE-SALIDA"
 
-#: ../src/font-view-app-menu.ui.h:1
+#: src/font-view-app-menu.ui:6
 msgid "About"
 msgstr "Acerca de"
 
-#: ../src/font-view-app-menu.ui.h:2
+#: src/font-view-app-menu.ui:10
 msgid "Quit"
 msgstr "Salir"
 
-#: ../src/font-view.c:76
-#| msgid "Font Viewer"
-msgid "GNOME Font Viewer"
-msgstr "Visor de tipografías de GNOME"
-
-#: ../src/font-view.c:84
+#: src/font-view.c:84
 msgid "Show the application's version"
 msgstr "Mostrar la versión de la aplicación"
 
-#: ../src/font-view.c:194
+#: src/font-view.c:197
 msgid "Name"
 msgstr "Nombre"
 
-#: ../src/font-view.c:197
+#: src/font-view.c:200
 msgid "Style"
 msgstr "Estilo"
 
-#: ../src/font-view.c:207
+#: src/font-view.c:210
 msgid "Type"
 msgstr "Tipo"
 
-#: ../src/font-view.c:252 ../src/font-view.c:271
+#: src/font-view.c:255 src/font-view.c:274
 msgid "Version"
 msgstr "Version"
 
-#: ../src/font-view.c:257 ../src/font-view.c:277
+#: src/font-view.c:260 src/font-view.c:280
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../src/font-view.c:262
+#: src/font-view.c:265
 msgid "Description"
 msgstr "Descripción"
 
-#: ../src/font-view.c:290
+#: src/font-view.c:296
 msgid "Install Failed"
 msgstr "Falló la instalación"
 
-#: ../src/font-view.c:296
+#: src/font-view.c:303
 msgid "Installed"
 msgstr "Instalado"
 
-#: ../src/font-view.c:299 ../src/font-view.c:543
+#: src/font-view.c:307 src/font-view.c:552
 msgid "Install"
 msgstr "Instalar"
 
-#: ../src/font-view.c:432
+#: src/font-view.c:441
 msgid "This font could not be displayed."
 msgstr "No se pudo mostrar esta tipografía."
 
-#: ../src/font-view.c:496 ../src/font-view.c:554
+#: src/font-view.c:505 src/font-view.c:563
 msgid "Info"
 msgstr "Información"
 
-#: ../src/font-view.c:571
+#: src/font-view.c:578
 msgid "Back"
 msgstr "Atrás"
 
-#: ../src/font-view.c:661
+#: src/font-view.c:669
 msgid "All Fonts"
 msgstr "Todas las tipografías"
 
-#: ../src/font-view.c:779 ../src/org.gnome.font-viewer.desktop.in.in.h:1
+#: src/font-view.c:795 src/org.gnome.font-viewer.desktop.in:3
 msgid "Font Viewer"
 msgstr "Visor de tipografías"
 
-#: ../src/font-view.c:780 ../src/org.gnome.font-viewer.desktop.in.in.h:2
-msgid "View fonts on your system"
-msgstr "Ver las tipografías de su sistema"
-
-#: ../src/font-view.c:782
+#: src/font-view.c:798
 msgid "translator-credits"
 msgstr "Daniel Mustieles <daniel.mustieles@gmail.com>, 2012"
 
-#: ../src/font-view.c:921
-msgid "[FILE...]"
-msgstr "[ARCHIVO…]"
-
-#. I18N: The '%s' is replaced with the command name.
-#: ../src/font-view.c:929
-#, c-format
-msgid "Run '%s --help' to see a full list of available command line options."
-msgstr ""
-"Ejecute «%s --help» para ver una lista completa de las opciones de línea de "
-"comandos disponibles."
-
-#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
 msgstr "tipografía;letra;tipo;"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: src/org.gnome.font-viewer.desktop.in:8
+msgid "preferences-desktop-font"
+msgstr "preferences-desktop-font"
+
+#~ msgid "[FILE...]"
+#~ msgstr "[ARCHIVO…]"
+
+#~ msgid ""
+#~ "Run '%s --help' to see a full list of available command line options."
+#~ msgstr ""
+#~ "Ejecute «%s --help» para ver una lista completa de las opciones de línea "
+#~ "de comandos disponibles."
 
 #~ msgid "_Close"
 #~ msgstr "_Cerrar"
