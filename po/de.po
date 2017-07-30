@@ -12,7 +12,7 @@
 # Jochen Skulj <jochen@jochenskulj.de>, 2008.
 # Hendrik Richter <hendrikr@gnome.org>, 2004, 2005, 2006, 2007, 2008, 2009.
 # Nathan-J. Hirschauer <nathanhirschauer@verfriemelt.org>, 2009.
-# Mario Blättermann <mariobl@gnome.org>, 2009, 2011, 2013.
+# Mario Blättermann <mariobl@gnome.org>, 2009, 2011, 2013, 2017.
 # Paul Seyfert <pseyfert@mathphys.fsk.uni-heidelberg.de>, 2011.
 # Wolfgang Stöggl <c72578@yahoo.de>, 2011, 2014.
 # Tobias Endrigkeit <tobiasendrigkeit@googlemail.com>, 2012.
@@ -22,21 +22,30 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-10-30 07:40+0000\n"
-"PO-Revision-Date: 2014-10-30 14:21+0100\n"
-"Last-Translator: Bernd Homuth <dev@hmt.im>\n"
+"POT-Creation-Date: 2017-06-27 22:20+0000\n"
+"PO-Revision-Date: 2017-07-30 21:31+0200\n"
+"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 2.0.3\n"
 "X-Poedit-Bookmarks: -1,-1,-1,-1,-1,-1,27,-1,-1,-1\n"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:76
+msgid "GNOME Font Viewer"
+msgstr "GNOME Schriftartenbetrachter"
+
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:796
+#: src/org.gnome.font-viewer.desktop.in:4
+msgid "View fonts on your system"
+msgstr "Schriftarten Ihres Systems betrachten"
+
+#: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
 "GNOME Font Viewer shows you the fonts installed on your computer for your "
 "use as thumbnails. Selecting any thumbnails shows the full view of how the "
@@ -47,7 +56,7 @@ msgstr ""
 "die vollständige Ansicht, wie die Schriftart unter verschiedenen Größen "
 "aussieht."
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
+#: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
 "GNOME Font Viewer also supports installing new font files downloaded in the ."
 "ttf and other formats. Fonts may be installed only for your use or made "
@@ -58,104 +67,95 @@ msgstr ""
 "können zu Ihrer eigenen Verwendung oder für alle Benutzer eines Rechners "
 "installiert werden."
 
-#: ../src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Text der Vorschau (Vorgabe: Aa)"
 
-#: ../src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "TEXT"
 
-#: ../src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "Vorschaugröße (Vorgabe: 128)"
 
-#: ../src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "GRÖSSE"
 
-#: ../src/font-thumbnailer.c:193
+#: src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "SCHRIFTART-DATEI AUSGABE-DATEI"
 
-#: ../src/font-view-app-menu.ui.h:1
+#: src/font-view-app-menu.ui:6
 msgid "About"
 msgstr "Info"
 
-#: ../src/font-view-app-menu.ui.h:2
+#: src/font-view-app-menu.ui:10
 msgid "Quit"
 msgstr "Beenden"
 
-#: ../src/font-view.c:76
-#| msgid "Font Viewer"
-msgid "GNOME Font Viewer"
-msgstr "GNOME Schriftartenbetrachter"
-
-#: ../src/font-view.c:84
+#: src/font-view.c:84
 msgid "Show the application's version"
 msgstr "Die Version der Anwendung anzeigen"
 
-#: ../src/font-view.c:194
+#: src/font-view.c:197
 msgid "Name"
 msgstr "Name"
 
-#: ../src/font-view.c:197
+#: src/font-view.c:200
 msgid "Style"
 msgstr "Stil"
 
-#: ../src/font-view.c:207
+#: src/font-view.c:210
 msgid "Type"
 msgstr "Typ"
 
-#: ../src/font-view.c:252 ../src/font-view.c:271
+#: src/font-view.c:255 src/font-view.c:274
 msgid "Version"
 msgstr "Version"
 
-#: ../src/font-view.c:257 ../src/font-view.c:277
+#: src/font-view.c:260 src/font-view.c:280
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../src/font-view.c:262
+#: src/font-view.c:265
 msgid "Description"
 msgstr "Beschreibung"
 
-#: ../src/font-view.c:290
+#: src/font-view.c:296
 msgid "Install Failed"
 msgstr "Installation fehlgeschlagen"
 
-#: ../src/font-view.c:296
+#: src/font-view.c:303
 msgid "Installed"
 msgstr "Installiert"
 
-#: ../src/font-view.c:299 ../src/font-view.c:543
+#: src/font-view.c:307 src/font-view.c:552
 msgid "Install"
 msgstr "Installieren"
 
-#: ../src/font-view.c:432
+#: src/font-view.c:441
 msgid "This font could not be displayed."
 msgstr "Diese Schriftart kann nicht angezeigt werden."
 
-#: ../src/font-view.c:496 ../src/font-view.c:554
+#: src/font-view.c:505 src/font-view.c:563
 msgid "Info"
 msgstr "Info"
 
-#: ../src/font-view.c:571
+#: src/font-view.c:578
 msgid "Back"
 msgstr "Zurück"
 
-#: ../src/font-view.c:661
+#: src/font-view.c:669
 msgid "All Fonts"
 msgstr "Alle Schriftarten"
 
-#: ../src/font-view.c:779 ../src/org.gnome.font-viewer.desktop.in.in.h:1
+#: src/font-view.c:795 src/org.gnome.font-viewer.desktop.in:3
 msgid "Font Viewer"
 msgstr "Schriftartenbetrachter"
 
-#: ../src/font-view.c:780 ../src/org.gnome.font-viewer.desktop.in.in.h:2
-msgid "View fonts on your system"
-msgstr "Schriftarten Ihres Systems betrachten"
-
-#: ../src/font-view.c:782
+#: src/font-view.c:798
 msgid "translator-credits"
 msgstr ""
 "Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009, 2011, 2012.\n"
@@ -163,40 +163,12 @@ msgstr ""
 "Benjamin Steinwender <b@stbe.at>, 2014.\n"
 "Bernd Homuth <dev@hmt.im>, 2014."
 
-#: ../src/font-view.c:921
-msgid "[FILE...]"
-msgstr "[Datei…]"
-
-#. I18N: The '%s' is replaced with the command name.
-#: ../src/font-view.c:929
-#, c-format
-msgid "Run '%s --help' to see a full list of available command line options."
-msgstr ""
-"»%s --help« ausführen, um eine vollständige Liste der zur Verfügung "
-"stehenden Befehle anzuzeigen."
-
-#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
 msgstr "Schriftart;Schriftartschnitt;"
 
-#~ msgid "_Close"
-#~ msgstr "_Schließen"
-
-#~ msgid "About Font Viewer"
-#~ msgstr "Info zu Schriftartenbetrachter"
-
-#, fuzzy
-#~ msgid "Done"
-#~ msgstr "Erledigt"
-
-#~ msgid "Font size (default: 64)"
-#~ msgstr "Schriftgröße (Vorgabe: 64)"
-
-#~ msgid "Size:"
-#~ msgstr "Größe:"
-
-#~ msgid "Usage: %s fontfile\n"
-#~ msgstr "Aufruf: %s Schriftdatei\n"
-
-#~ msgid "Preview fonts"
-#~ msgstr "Vorschau von Schriften anzeigen"
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: src/org.gnome.font-viewer.desktop.in:8
+msgid "preferences-desktop-font"
+msgstr "preferences-desktop-font"
