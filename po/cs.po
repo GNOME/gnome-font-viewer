@@ -15,156 +15,152 @@
 # Petr Kovar <pknbe@volny.cz>, 2008, 2009.
 # Lucas Lommer <llommer@svn.gnome.org>, 2009 (just a small fix).
 # Adrian Guniš <andygun696@gmail.com>, 2008, 2009, 2010.
-# Marek Černocký <marek@manet.cz>, 2010 (just a small fixes), 2011, 2012, 2013, 2014.
+# Marek Černocký <marek@manet.cz>, 2010 (just a small fixes), 2011, 2012, 2013, 2014, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-10-26 19:40+0000\n"
-"PO-Revision-Date: 2014-10-26 21:49+0100\n"
+"POT-Creation-Date: 2017-07-31 11:43+0000\n"
+"PO-Revision-Date: 2017-07-31 16:59+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
-"Language-Team: čeština <gnome-cs-list@gnome.org>\n"
+"Language-Team: čeština <gnome-cs-list@gnome.org>>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:76
+msgid "GNOME Fonts"
+msgstr "Prohlížeč fontů GNOME"
+
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:796
+#: src/org.gnome.font-viewer.desktop.in:4
+msgid "View fonts on your system"
+msgstr "Zobrazte si fonty ve svém systému"
+
+#: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
 "GNOME Font Viewer shows you the fonts installed on your computer for your "
 "use as thumbnails. Selecting any thumbnails shows the full view of how the "
 "font would look under various sizes."
 msgstr ""
-"Prohlížeč písem GNOME vám zobrazí v podobě náhledů písma nainstalovaná ve "
-"vašem počítači. Po vybrání náhledu uvidíte, jak písmo vypadá v různých "
+"Prohlížeč fontů GNOME vám zobrazí v podobě náhledů fonty nainstalovaná ve "
+"vašem počítači. Po vybrání náhledu uvidíte, jak font vypadá v různých "
 "velikostech."
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
+#: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
 "GNOME Font Viewer also supports installing new font files downloaded in the ."
 "ttf and other formats. Fonts may be installed only for your use or made "
 "available to all users on the computer."
 msgstr ""
-"Prohlížeč písem GNOME podporouje také instalování nových písem získaných ve "
-"formátech .ttf a dalších. Písma je možné instalovat jen pro své použití nebo "
+"Prohlížeč fontů GNOME podporuje také instalování nových fontů získaných ve "
+"formátech .ttf a dalších. Fonty je možné instalovat jen pro své použití nebo "
 "je zpřístupnit všem uživatelům počítače."
 
-#: ../src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Text pro náhled (výchozí: Aa)"
 
-#: ../src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "TEXT"
 
-#: ../src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "Velikost náhledu (výchozí: 128)"
 
-#: ../src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "VELIKOST"
 
-#: ../src/font-thumbnailer.c:193
+#: src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
-msgstr "SOUBOR-PÍSMA VÝSTUPNÍ-SOUBOR"
+msgstr "SOUBOR-FONTU VÝSTUPNÍ-SOUBOR"
 
-#: ../src/font-view-app-menu.ui.h:1
+#: src/font-view-app-menu.ui:6
 msgid "About"
 msgstr "O aplikaci"
 
-#: ../src/font-view-app-menu.ui.h:2
+#: src/font-view-app-menu.ui:10
 msgid "Quit"
 msgstr "Ukončit"
 
-#: ../src/font-view.c:76
-msgid "GNOME Font Viewer"
-msgstr "Prohlížeč písem GNOME"
-
-#: ../src/font-view.c:84
+#: src/font-view.c:84
 msgid "Show the application's version"
 msgstr "Zobrazit verzi aplikace"
 
-#: ../src/font-view.c:194
+#: src/font-view.c:197
 msgid "Name"
 msgstr "Název"
 
-#: ../src/font-view.c:197
+#: src/font-view.c:200
 msgid "Style"
 msgstr "Styl"
 
-#: ../src/font-view.c:207
+#: src/font-view.c:210
 msgid "Type"
 msgstr "Typ"
 
-#: ../src/font-view.c:252 ../src/font-view.c:271
+#: src/font-view.c:255 src/font-view.c:274
 msgid "Version"
 msgstr "Verze"
 
-#: ../src/font-view.c:257 ../src/font-view.c:277
+#: src/font-view.c:260 src/font-view.c:280
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../src/font-view.c:262
+#: src/font-view.c:265
 msgid "Description"
 msgstr "Popis"
 
-#: ../src/font-view.c:290
+#: src/font-view.c:296
 msgid "Install Failed"
 msgstr "Instalace selhala"
 
-#: ../src/font-view.c:296
+#: src/font-view.c:303
 msgid "Installed"
 msgstr "Nainstalováno"
 
-#: ../src/font-view.c:299 ../src/font-view.c:543
+#: src/font-view.c:307 src/font-view.c:552
 msgid "Install"
 msgstr "Nainstalovat"
 
-#: ../src/font-view.c:432
+#: src/font-view.c:441
 msgid "This font could not be displayed."
-msgstr "Toto písmo nelze zobrazit."
+msgstr "Tento font nelze zobrazit."
 
-#: ../src/font-view.c:496 ../src/font-view.c:554
+#: src/font-view.c:505 src/font-view.c:563
 msgid "Info"
 msgstr "Informace"
 
-#: ../src/font-view.c:571
+#: src/font-view.c:578
 msgid "Back"
 msgstr "Zpět"
 
-#: ../src/font-view.c:661
+#: src/font-view.c:669
 msgid "All Fonts"
-msgstr "Všechna písma"
+msgstr "Všechny fonty"
 
-#: ../src/font-view.c:779 ../src/org.gnome.font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "Prohlížeč písem"
+#: src/font-view.c:795 src/org.gnome.font-viewer.desktop.in:3
+msgid "Fonts"
+msgstr "Fonty"
 
-#: ../src/font-view.c:780 ../src/org.gnome.font-viewer.desktop.in.in.h:2
-msgid "View fonts on your system"
-msgstr "Zobrazte si písma ve svém systému"
-
-#: ../src/font-view.c:782
+#: src/font-view.c:798
 msgid "translator-credits"
 msgstr "Marek Černocký <marek@manet.cz>"
 
-#: ../src/font-view.c:921
-msgid "[FILE...]"
-msgstr "[SOUBOR…]"
-
-#. I18N: The '%s' is replaced with the command name.
-#: ../src/font-view.c:929
-#, c-format
-msgid "Run '%s --help' to see a full list of available command line options."
-msgstr ""
-"Spuštěním „%s --help“ si zobrazíte úplný seznam dostupných argumentů "
-"příkazového řádku."
-
-#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
 msgstr "fonty;písma;řezy;"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: src/org.gnome.font-viewer.desktop.in:8
+msgid "preferences-desktop-font"
+msgstr "preferences-desktop-font"
+
