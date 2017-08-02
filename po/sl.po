@@ -2,15 +2,15 @@
 # Copyright (C) 2000-2006 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-font-viewer package.
 #
-# Matej Urbančič <mateju@svn.gnome.org>, 2007-2017.
+# Matej Urbančič <mateju@svn.gnome.org>, 2007–2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-07-21 17:09+0200\n"
-"PO-Revision-Date: 2017-07-21 17:11+0200\n"
+"POT-Creation-Date: 2017-07-31 16:35+0200\n"
+"PO-Revision-Date: 2017-07-31 16:36+0200\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -23,8 +23,8 @@ msgstr ""
 "X-Generator: Poedit 2.0.1\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:76
-msgid "GNOME Font Viewer"
-msgstr "Pregledovalnik pisav za GNOME"
+msgid "GNOME Fonts"
+msgstr "Pisave GNOME"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:796
 #: src/org.gnome.font-viewer.desktop.in:4
@@ -136,8 +136,8 @@ msgid "All Fonts"
 msgstr "Vse pisave"
 
 #: src/font-view.c:795 src/org.gnome.font-viewer.desktop.in:3
-msgid "Font Viewer"
-msgstr "Pregledovalnik pisav"
+msgid "Fonts"
+msgstr "Pisave"
 
 #: src/font-view.c:798
 msgid "translator-credits"
@@ -146,12 +146,15 @@ msgstr "Matej Urbančič <mateju@svn.gnome.org>"
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
-msgstr "pisave;fonti;oblika zapisa;zapis;"
+msgstr "pisave;fonti;oblika zapisa;zapis;črke;besede;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: src/org.gnome.font-viewer.desktop.in:8
 msgid "preferences-desktop-font"
 msgstr "preferences-desktop-font"
+
+#~ msgid "Font Viewer"
+#~ msgstr "Pregledovalnik pisav"
 
 #~ msgid "[FILE...]"
 #~ msgstr "[DATOTEKA ...]"
