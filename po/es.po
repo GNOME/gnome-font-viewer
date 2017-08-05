@@ -17,8 +17,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils.master\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-06-10 17:47+0000\n"
-"PO-Revision-Date: 2017-06-19 13:26+0200\n"
+"POT-Creation-Date: 2017-07-31 11:43+0000\n"
+"PO-Revision-Date: 2017-08-03 09:46+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: es <gnome-es-list@gnome.org>\n"
 "Language: es\n"
@@ -29,8 +29,9 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:76
-msgid "GNOME Font Viewer"
-msgstr "Visor de tipografías de GNOME"
+#| msgid "GNOME Font Viewer"
+msgid "GNOME Fonts"
+msgstr "Tipografías de GNOME"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:796
 #: src/org.gnome.font-viewer.desktop.in:4
@@ -143,8 +144,9 @@ msgid "All Fonts"
 msgstr "Todas las tipografías"
 
 #: src/font-view.c:795 src/org.gnome.font-viewer.desktop.in:3
-msgid "Font Viewer"
-msgstr "Visor de tipografías"
+#| msgid "All Fonts"
+msgid "Fonts"
+msgstr "Tipografías"
 
 #: src/font-view.c:798
 msgid "translator-credits"
@@ -159,6 +161,9 @@ msgstr "tipografía;letra;tipo;"
 #: src/org.gnome.font-viewer.desktop.in:8
 msgid "preferences-desktop-font"
 msgstr "preferences-desktop-font"
+
+#~ msgid "Font Viewer"
+#~ msgstr "Visor de tipografías"
 
 #~ msgid "[FILE...]"
 #~ msgstr "[ARCHIVO…]"
