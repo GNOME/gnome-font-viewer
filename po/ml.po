@@ -11,10 +11,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master.ml\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-01-31 19:31+0000\n"
-"PO-Revision-Date: 2013-02-01 12:12+0530\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-"
+"viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-07-31 11:43+0000\n"
+"PO-Revision-Date: 2017-08-05 22:16+0530\n"
 "Last-Translator: Anish A <aneesh.nl@gmail.com>\n"
 "Language-Team: Swatantra Malayalam Computing\n"
 "Language: ml\n"
@@ -22,108 +22,148 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Poedit 2.0.3\n"
 "X-Project-Style: gnome\n"
 
-#: ../src/font-thumbnailer.c:189
-msgid "Text to thumbnail (default: Aa)"
-msgstr "വാചകത്തെ നഖചിത്രമാക്കുക (സ്വതേ: Aa)"
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:76
+msgid "GNOME Fonts"
+msgstr "ഗ്നോം ഫോണ്ടുകൾ"
 
-#: ../src/font-thumbnailer.c:189
-msgid "TEXT"
-msgstr "വാചകം"
-
-#: ../src/font-thumbnailer.c:191
-msgid "Thumbnail size (default: 128)"
-msgstr "നഖചിത്ര വ്യാപ്തി (സ്വതേ: 128)"
-
-#: ../src/font-thumbnailer.c:191
-msgid "SIZE"
-msgstr "വലിപ്പം"
-
-#: ../src/font-thumbnailer.c:193
-msgid "FONT-FILE OUTPUT-FILE"
-msgstr "അക്ഷരരൂപ-ഫയല്‍ ഔട്ട്പുട്ട്-ഫയല്‍"
-
-#: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "അക്ഷരരൂപ നിരീക്ഷകനെപ്പറ്റി"
-
-#: ../src/font-view-app-menu.ui.h:2
-msgid "Quit"
-msgstr "പുറത്തു് കടക്കുക"
-
-#: ../src/font-view.c:178
-msgid "Name"
-msgstr "പേരു്:"
-
-#: ../src/font-view.c:181
-msgid "Style"
-msgstr "ശൈലി"
-
-#: ../src/font-view.c:191
-msgid "Type"
-msgstr "തരം"
-
-#: ../src/font-view.c:236 ../src/font-view.c:255
-msgid "Version"
-msgstr "പതിപ്പു്"
-
-#: ../src/font-view.c:241 ../src/font-view.c:261
-msgid "Copyright"
-msgstr "പകര്‍പ്പവകാശം"
-
-#: ../src/font-view.c:246
-msgid "Description"
-msgstr "വിവരണം"
-
-#: ../src/font-view.c:274
-msgid "Install Failed"
-msgstr "ഇന്‍സ്റ്റോള്‍ ചെയ്യുന്നതില്‍ പരാജയപ്പെട്ടു"
-
-#: ../src/font-view.c:280
-msgid "Installed"
-msgstr "ഇന്‍സ്റ്റോള്‍ ചെയ്തു"
-
-#: ../src/font-view.c:283 ../src/font-view.c:515
-msgid "Install"
-msgstr "ഇന്‍സ്റ്റോള്‍ ചെയ്യുക"
-
-#: ../src/font-view.c:416
-msgid "This font could not be displayed."
-msgstr "ഈ അക്ഷരസഞ്ചയം പ്രദര്‍ശിപ്പിക്കുവാന്‍ സാധ്യമല്ല."
-
-#: ../src/font-view.c:508
-msgid "Info"
-msgstr "വിവരം"
-
-#: ../src/font-view.c:521
-msgid "Back"
-msgstr "പുറകോട്ടു്"
-
-#: ../src/font-view.c:618
-msgid "All Fonts"
-msgstr "എല്ലാ അക്ഷരൂപങ്ങളും"
-
-#: ../src/font-view.c:735 ../src/font-view.c:774
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "അക്ഷരരൂപ നിരീക്ഷകന്‍"
-
-#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:796
+#: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "നിങ്ങളുടെ സിസ്റ്റത്തില്‍ അക്ഷരസഞ്ചയങ്ങള്‍ കാണുക"
 
-#: ../src/font-view.c:738
+#: data/org.gnome.font-viewer.appdata.xml.in:9
+msgid ""
+"GNOME Font Viewer shows you the fonts installed on your computer for your use as "
+"thumbnails. Selecting any thumbnails shows the full view of how the font would look "
+"under various sizes."
+msgstr ""
+"ഗ്നോം ഫോണ്ട് വ്യൂവർ താങ്കളുടെ കംപ്യൂട്ടറിൽ ചേർത്തിിക്കുന്ന അക്ഷസഞ്ചയങ്ങളെ താങ്കളുടെ ഉപയോഗത്തിനായി "
+"നഖചിത്രങ്ങളായി പ്രദർശ്ശിപ്പിക്കുന്നു. ഏതെങ്കിലും നഖചിത്രം തിരഞ്ഞെടുത്താൽ അക്ഷയസഞ്ചയം വിവിധ വലുപ്പങ്ങളിൽ "
+"എങ്ങനെയായിരിക്കും കാണുക എന്നതിന്റെ പൂർണ്ണദൃശ്യം കാണിക്കുന്നതാണ്."
+
+#: data/org.gnome.font-viewer.appdata.xml.in:15
+msgid ""
+"GNOME Font Viewer also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to all "
+"users on the computer."
+msgstr ""
+"ഗ്നോം ഫോണ്ട് വ്യൂവർ .ttf അല്ലെങ്കിൽ മറ്റേതെങ്കിലും രീതിയിൽ ഡൗൺലോഡ് ചെയ്ത പുതിയ ഫോണ്ട് ഫയലുകൾ ഇൻസ്റ്റാൾ "
+"ചെയ്യാനും സഹായിക്കുന്നു. ഫോണ്ടുകിൽ ഒന്നുകിൽ താങ്കളുടെ മാത്രം ഉപയോഗത്തിനായി മാത്രം ഇൻസ്റ്റാൾ ചെയ്യുകയോ "
+"അല്ലെങ്കിൽ കമ്പ്യൂട്ടറിലെ എല്ലാ ഉപയോക്താക്കൾക്കും ലഭ്യമാക്കുകയോ ചെയ്യാവുന്നതാണ്."
+
+#: src/font-thumbnailer.c:189
+msgid "Text to thumbnail (default: Aa)"
+msgstr "വാചകത്തെ നഖചിത്രമാക്കുക (സ്വതേ: Aa)"
+
+#: src/font-thumbnailer.c:189
+msgid "TEXT"
+msgstr "വാചകം"
+
+#: src/font-thumbnailer.c:191
+msgid "Thumbnail size (default: 128)"
+msgstr "നഖചിത്ര വ്യാപ്തി (സ്വതേ: 128)"
+
+#: src/font-thumbnailer.c:191
+msgid "SIZE"
+msgstr "വലിപ്പം"
+
+#: src/font-thumbnailer.c:193
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "അക്ഷരസഞ്ചയ-ഫയല്‍ ഔട്ട്പുട്ട്-ഫയല്‍"
+
+#: src/font-view-app-menu.ui:6
+msgid "About"
+msgstr "വിവരം"
+
+#: src/font-view-app-menu.ui:10
+msgid "Quit"
+msgstr "പുറത്തു് കടക്കുക"
+
+#: src/font-view.c:84
+msgid "Show the application's version"
+msgstr "പ്രയോഗത്തിന്റെ പതിപ്പ് കാണിക്കുക"
+
+#: src/font-view.c:197
+msgid "Name"
+msgstr "പേരു്"
+
+#: src/font-view.c:200
+msgid "Style"
+msgstr "ശൈലി"
+
+#: src/font-view.c:210
+msgid "Type"
+msgstr "തരം"
+
+#: src/font-view.c:255 src/font-view.c:274
+msgid "Version"
+msgstr "പതിപ്പു്"
+
+#: src/font-view.c:260 src/font-view.c:280
+msgid "Copyright"
+msgstr "പകര്‍പ്പവകാശം"
+
+#: src/font-view.c:265
+msgid "Description"
+msgstr "വിവരണം"
+
+#: src/font-view.c:296
+msgid "Install Failed"
+msgstr "ഇൻസ്റ്റാൾ ചെയ്യുന്നതില്‍ പരാജയപ്പെട്ടു"
+
+#: src/font-view.c:303
+msgid "Installed"
+msgstr "ഇൻസ്റ്റാൾ ചെയ്തു"
+
+#: src/font-view.c:307 src/font-view.c:552
+msgid "Install"
+msgstr "ഇന്‍സ്റ്റാള്‍ ചെയ്യുക"
+
+#: src/font-view.c:441
+msgid "This font could not be displayed."
+msgstr "ഈ അക്ഷരസഞ്ചയം പ്രദര്‍ശിപ്പിക്കുവാന്‍ സാധ്യമല്ല."
+
+#: src/font-view.c:505 src/font-view.c:563
+msgid "Info"
+msgstr "വിവരം"
+
+#: src/font-view.c:578
+msgid "Back"
+msgstr "പുറകോട്ടു്"
+
+#: src/font-view.c:669
+msgid "All Fonts"
+msgstr "എല്ലാ അക്ഷരസഞ്ചയങ്ങളും"
+
+#: src/font-view.c:795 src/org.gnome.font-viewer.desktop.in:3
+msgid "Fonts"
+msgstr "അക്ഷരസഞ്ചയങ്ങൾ"
+
+#: src/font-view.c:798
 msgid "translator-credits"
 msgstr ""
-"സന്തോഷ് തോട്ടിങ്കല്‍ <santhosh.thottingal@gmail.com>, പ്രവീണ്‍ എ <pravi.a@gmail.com>, "
-"ജിഷ്ണു മോഹന്‍ <jishnu7@gmail.com>, അനി പീറ്റര്‍ <peter.ani@gmail.com>, അനീഷ് എ "
-"<aneesh.nl@gmail.com>"
+"സന്തോഷ് തോട്ടിങ്കല്‍ <santhosh.thottingal@gmail.com>, പ്രവീണ്‍ എ <pravi.a@gmail.com>, ജിഷ്ണു "
+"മോഹന്‍ <jishnu7@gmail.com>, അനി പീറ്റര്‍ <peter.ani@gmail.com>, അനീഷ് എ <aneesh.nl@gmail."
+"com>, ബാലശങ്കർ സി <balasankarc@autistici.org>"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
 msgstr "fonts;fontface;"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: src/org.gnome.font-viewer.desktop.in:8
+msgid "preferences-desktop-font"
+msgstr "preferences-desktop-font"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "അക്ഷരരൂപ നിരീക്ഷകനെപ്പറ്റി"
+
+#~ msgid "Font Viewer"
+#~ msgstr "അക്ഷരരൂപ നിരീക്ഷകന്‍"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "ചിഹ്ന വലിപ്പം (സ്വതേ: 64)"
