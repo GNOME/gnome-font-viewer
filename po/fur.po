@@ -8,19 +8,19 @@ msgstr ""
 "Project-Id-Version: gnome-font-viewer gnome-3-6\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-06-10 17:47+0000\n"
-"PO-Revision-Date: 2017-06-14 00:46+0200\n"
+"POT-Creation-Date: 2017-07-31 11:43+0000\n"
+"PO-Revision-Date: 2017-08-08 20:44+0200\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.12\n"
+"X-Generator: Poedit 2.0.2\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:76
-msgid "GNOME Font Viewer"
-msgstr "Visualizadôr di caratars GNOME"
+msgid "GNOME Fonts"
+msgstr "Caratars di GNOME"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:796
 #: src/org.gnome.font-viewer.desktop.in:4
@@ -132,8 +132,8 @@ msgid "All Fonts"
 msgstr "Ducj i caratars"
 
 #: src/font-view.c:795 src/org.gnome.font-viewer.desktop.in:3
-msgid "Font Viewer"
-msgstr "Visualizadôr di caratars"
+msgid "Fonts"
+msgstr "Caratars"
 
 #: src/font-view.c:798
 msgid "translator-credits"
@@ -148,6 +148,9 @@ msgstr "caratar;caratars;caratars tipografics;gjenar di caratar;"
 #: src/org.gnome.font-viewer.desktop.in:8
 msgid "preferences-desktop-font"
 msgstr "preferences-desktop-font"
+
+#~ msgid "Font Viewer"
+#~ msgstr "Visualizadôr di caratars"
 
 #~ msgid "[FILE...]"
 #~ msgstr "[FILE...]"
