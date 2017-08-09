@@ -928,7 +928,6 @@ main (int argc,
 {
     GApplication *app;
     gint retval;
-    GError *error = NULL;
 
     bindtextdomain (GETTEXT_PACKAGE, GNOMELOCALEDIR);
     bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
