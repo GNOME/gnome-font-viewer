@@ -7,13 +7,13 @@
   <summary>View fonts on your system</summary>
   <description>
     <p>
-      GNOME Font Viewer shows you the fonts installed on your computer for your use as
+      GNOME Fonts shows you the fonts installed on your computer for your use as
       thumbnails.
       Selecting any thumbnails shows the full view of how the font would look under
       various sizes.
     </p>
     <p>
-      GNOME Font Viewer also supports installing new font files downloaded in the .ttf
+      GNOME Fonts also supports installing new font files downloaded in the .ttf
       and other formats.
       Fonts may be installed only for your use or made available to all users on the computer.
     </p>
