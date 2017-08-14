@@ -1,17 +1,17 @@
 # Serbian translation of gnome-font-viewer
-# Courtesy of Prevod.org team (http://prevod.org/) -- 2012—2015.
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2012—2017.
 # This file is distributed under the same license as the gnome-font-viewer package.
 # Милош Поповић <gpopac@gmail.com>, 2011.
-# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2011—2015.
+# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2011—2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils-2.0\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-03 07:52+0000\n"
-"PO-Revision-Date: 2015-03-03 20:42+0200\n"
+"POT-Creation-Date: 2017-08-10 23:03+0000\n"
+"PO-Revision-Date: 2017-08-14 20:54+0200\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
-"Language-Team: Serbian <gnom@prevod.org>\n"
+"Language-Team: српски <gnome-sr@googlegroups.org>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,146 +20,161 @@ msgstr ""
 "n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
-msgid ""
-"GNOME Font Viewer shows you the fonts installed on your computer for your "
-"use as thumbnails. Selecting any thumbnails shows the full view of how the "
-"font would look under various sizes."
-msgstr ""
-"Гномов прегледач словних ликова вам приказује словне ликове инсталиране на "
-"вашем рачунару за вашу употребу као минијатуре. Бирање неке минијатуре "
-"приказује потпун преглед како би словни лик требао да изгледау разним "
-"величинама."
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:76
+#| msgid "GNOME Font Viewer"
+msgid "GNOME Fonts"
+msgstr "Гномови фонтови"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
-msgid ""
-"GNOME Font Viewer also supports installing new font files downloaded in the ."
-"ttf and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
-msgstr ""
-"Гномов прегледач словних ликова такође подржава инсталирање датотека нових "
-"словних ликова преузетих у „.ttf“ и другим записима. Словни ликови могу бити "
-"инсталирани само за вашу употребу или могу бити доступни свим корисницима на "
-"рачунару."
-
-#: ../src/font-thumbnailer.c:189
-msgid "Text to thumbnail (default: Aa)"
-msgstr "Текст у минијатуру (основно: Aa)"
-
-#: ../src/font-thumbnailer.c:189
-msgid "TEXT"
-msgstr "ТЕКСТ"
-
-#: ../src/font-thumbnailer.c:191
-msgid "Thumbnail size (default: 128)"
-msgstr "Величина минијатуре (основно: 128)"
-
-#: ../src/font-thumbnailer.c:191
-msgid "SIZE"
-msgstr "ВЕЛИЧИНА"
-
-#: ../src/font-thumbnailer.c:193
-msgid "FONT-FILE OUTPUT-FILE"
-msgstr "ДАТОТЕКА-ПИСМА ИЗЛАЗНА-ДАТОТЕКА"
-
-#: ../src/font-view-app-menu.ui.h:1
-msgid "About"
-msgstr "О програму"
-
-#: ../src/font-view-app-menu.ui.h:2
-msgid "Quit"
-msgstr "Изађи"
-
-#: ../src/font-view.c:76
-#| msgid "Font Viewer"
-msgid "GNOME Font Viewer"
-msgstr "Гномов прегледач слова"
-
-#: ../src/font-view.c:84
-msgid "Show the application's version"
-msgstr "Приказује издање програма"
-
-#: ../src/font-view.c:196
-msgid "Name"
-msgstr "Назив"
-
-#: ../src/font-view.c:199
-msgid "Style"
-msgstr "Стил"
-
-#: ../src/font-view.c:209
-msgid "Type"
-msgstr "Врста"
-
-#: ../src/font-view.c:254 ../src/font-view.c:273
-msgid "Version"
-msgstr "Издање"
-
-#: ../src/font-view.c:259 ../src/font-view.c:279
-msgid "Copyright"
-msgstr "Ауторска права"
-
-#: ../src/font-view.c:264
-msgid "Description"
-msgstr "Опис"
-
-#: ../src/font-view.c:295
-msgid "Install Failed"
-msgstr "Инсталација није успела"
-
-#: ../src/font-view.c:302
-msgid "Installed"
-msgstr "Инсталирано"
-
-#: ../src/font-view.c:306 ../src/font-view.c:551
-msgid "Install"
-msgstr "Инсталирај"
-
-#: ../src/font-view.c:440
-msgid "This font could not be displayed."
-msgstr "Овај словни лик не може бити приказан."
-
-#: ../src/font-view.c:504 ../src/font-view.c:562
-msgid "Info"
-msgstr "Подаци"
-
-#: ../src/font-view.c:579
-msgid "Back"
-msgstr "Назад"
-
-#: ../src/font-view.c:669
-msgid "All Fonts"
-msgstr "Сва писма"
-
-#: ../src/font-view.c:787 ../src/org.gnome.font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "Прегледач писама"
-
-#: ../src/font-view.c:788 ../src/org.gnome.font-viewer.desktop.in.in.h:2
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:796
+#: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Прегледајте писма на вашем систему"
 
-#: ../src/font-view.c:790
+#: data/org.gnome.font-viewer.appdata.xml.in:9
+#| msgid ""
+#| "GNOME Font Viewer shows you the fonts installed on your computer for your "
+#| "use as thumbnails. Selecting any thumbnails shows the full view of how "
+#| "the font would look under various sizes."
+msgid ""
+"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"thumbnails. Selecting any thumbnails shows the full view of how the font "
+"would look under various sizes."
+msgstr ""
+"Гномови фонтови вам приказује фонтове инсталиране на вашем рачунару за вашу "
+"употребу као минијатуре. Бирање неке минијатуре приказује потпун преглед "
+"како би фонт требао да изгледау разним величинама."
+
+#: data/org.gnome.font-viewer.appdata.xml.in:15
+#| msgid ""
+#| "GNOME Font Viewer also supports installing new font files downloaded in "
+#| "the .ttf and other formats. Fonts may be installed only for your use or "
+#| "made available to all users on the computer."
+msgid ""
+"GNOME Fonts also supports installing new font files downloaded in the .ttf "
+"and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"Гномови фонтови такође подржава инсталирање датотека нових фонтова преузетих "
+"у „.ttf“ и другим записима. Фонтови могу бити инсталирани само за вашу "
+"употребу или могу бити доступни свим корисницима на рачунару."
+
+#: src/font-thumbnailer.c:189
+msgid "Text to thumbnail (default: Aa)"
+msgstr "Текст у минијатуру (основно: Aa)"
+
+#: src/font-thumbnailer.c:189
+msgid "TEXT"
+msgstr "ТЕКСТ"
+
+#: src/font-thumbnailer.c:191
+msgid "Thumbnail size (default: 128)"
+msgstr "Величина минијатуре (основно: 128)"
+
+#: src/font-thumbnailer.c:191
+msgid "SIZE"
+msgstr "ВЕЛИЧИНА"
+
+#: src/font-thumbnailer.c:193
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "ДАТОТЕКА-ПИСМА ИЗЛАЗНА-ДАТОТЕКА"
+
+#: src/font-view-app-menu.ui:6
+msgid "About"
+msgstr "О програму"
+
+#: src/font-view-app-menu.ui:10
+msgid "Quit"
+msgstr "Изађи"
+
+#: src/font-view.c:84
+msgid "Show the application's version"
+msgstr "Приказује издање програма"
+
+#: src/font-view.c:197
+msgid "Name"
+msgstr "Назив"
+
+#: src/font-view.c:200
+msgid "Style"
+msgstr "Стил"
+
+#: src/font-view.c:210
+msgid "Type"
+msgstr "Врста"
+
+#: src/font-view.c:255 src/font-view.c:274
+msgid "Version"
+msgstr "Издање"
+
+#: src/font-view.c:260 src/font-view.c:280
+msgid "Copyright"
+msgstr "Ауторска права"
+
+#: src/font-view.c:265
+msgid "Description"
+msgstr "Опис"
+
+#: src/font-view.c:296
+msgid "Install Failed"
+msgstr "Инсталација није успела"
+
+#: src/font-view.c:303
+msgid "Installed"
+msgstr "Инсталирано"
+
+#: src/font-view.c:307 src/font-view.c:552
+msgid "Install"
+msgstr "Инсталирај"
+
+#: src/font-view.c:441
+msgid "This font could not be displayed."
+msgstr "Овај фонт не може бити приказан."
+
+#: src/font-view.c:505 src/font-view.c:563
+msgid "Info"
+msgstr "Подаци"
+
+#: src/font-view.c:578
+msgid "Back"
+msgstr "Назад"
+
+#: src/font-view.c:669
+msgid "All Fonts"
+msgstr "Сва писма"
+
+#: src/font-view.c:795 src/org.gnome.font-viewer.desktop.in:3
+#| msgid "All Fonts"
+msgid "Fonts"
+msgstr "Фонтови"
+
+#: src/font-view.c:798
 msgid "translator-credits"
 msgstr ""
 "  Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "\n"
 "http://prevod.org — превод на српски језик"
 
-#: ../src/font-view.c:929
-msgid "[FILE...]"
-msgstr "[ДАТОТЕКА...]"
-
-#. I18N: The '%s' is replaced with the command name.
-#: ../src/font-view.c:937
-#, c-format
-msgid "Run '%s --help' to see a full list of available command line options."
-msgstr ""
-"Покрените „%s --help“ да видите читав списак доступних опција линије наредби."
-
-#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
-msgstr "слова;словни ликови;писма;"
+msgstr "слова;фонтови;писма;"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: src/org.gnome.font-viewer.desktop.in:8
+msgid "preferences-desktop-font"
+msgstr "preferences-desktop-font"
+
+#~ msgid "Font Viewer"
+#~ msgstr "Прегледач писама"
+
+#~ msgid "[FILE...]"
+#~ msgstr "[ДАТОТЕКА...]"
+
+#~ msgid ""
+#~ "Run '%s --help' to see a full list of available command line options."
+#~ msgstr ""
+#~ "Покрените „%s --help“ да видите читав списак доступних опција линије "
+#~ "наредби."
 
 #~ msgid "_Close"
 #~ msgstr "_Затвори"
