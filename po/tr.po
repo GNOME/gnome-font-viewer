@@ -11,145 +11,174 @@
 # Osman Karagöz <osmank3@gmail.com>, 2012.
 # Muhammet Kara <muhammetk@gmail.com>, 2011, 2012, 2013, 2014.
 # Gökhan Gurbetoğlu <ggurbet@gmail.com>, 2014.
+# Emin Tufan Çetin <etcetin@gmail.com>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-02-14 07:49+0000\n"
-"PO-Revision-Date: 2014-12-25 15:55+0000\n"
-"Last-Translator: Gökhan Gurbetoğlu <ggurbet@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-08-10 23:03+0000\n"
+"PO-Revision-Date: 2017-08-16 12:29+0300\n"
+"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Turkish <gnome-turk@gnome.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Gtranslator 2.91.6\n"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
-msgid ""
-"GNOME Font Viewer shows you the fonts installed on your computer for your "
-"use as thumbnails. Selecting any thumbnails shows the full view of how the "
-"font would look under various sizes."
-msgstr "GNOME Yazıtipi Görüntüleyici, kullanımınız için bilgisayarınızda yüklü yazı tiplerini küçük resim olarak gösterir. Herhangi bir küçük resmi seçmek, yazı tipinin çeşitli boyutlarda nasıl görüneceğine dair tam bir görünümü gösterir."
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:76
+#| msgid "GNOME Font Viewer"
+msgid "GNOME Fonts"
+msgstr "GNOME Yazı Tipleri"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
-msgid ""
-"GNOME Font Viewer also supports installing new font files downloaded in the "
-".ttf and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
-msgstr "Ayrıca GNOME Yazıtipi Görüntüleyici, .ttf ve diğer biçimlerde indirilen yeni yazıtipi dosyalarının kurulumuna da izin verir. Yazıtipleri sadece kendi kullanımınız için kurulabilir ya da bilgisayardaki tüm kullanıcıların kullanımına sunulabilir."
-
-#: ../src/font-thumbnailer.c:189
-msgid "Text to thumbnail (default: Aa)"
-msgstr "Örneklendirilecek metin (öntanımlı: Aa)"
-
-#: ../src/font-thumbnailer.c:189
-msgid "TEXT"
-msgstr "METİN"
-
-#: ../src/font-thumbnailer.c:191
-msgid "Thumbnail size (default: 128)"
-msgstr "Küçük resim boyutu (öntanımlı: 128)"
-
-#: ../src/font-thumbnailer.c:191
-msgid "SIZE"
-msgstr "BOYUT"
-
-#: ../src/font-thumbnailer.c:193
-msgid "FONT-FILE OUTPUT-FILE"
-msgstr "YAZI-TİPİ-DOSYASI ÇIKTI-DOSYASI"
-
-#: ../src/font-view-app-menu.ui.h:1
-msgid "About"
-msgstr "Hakkında"
-
-#: ../src/font-view-app-menu.ui.h:2
-msgid "Quit"
-msgstr "Çıkış"
-
-#: ../src/font-view.c:76
-msgid "GNOME Font Viewer"
-msgstr "GNOME Yazı Tipi Görüntüleyici"
-
-#: ../src/font-view.c:84
-msgid "Show the application's version"
-msgstr "Uygulamanın sürümünü göster"
-
-#: ../src/font-view.c:196
-msgid "Name"
-msgstr "Ad"
-
-#: ../src/font-view.c:199
-msgid "Style"
-msgstr "Biçem"
-
-#: ../src/font-view.c:209
-msgid "Type"
-msgstr "Tür"
-
-#: ../src/font-view.c:254 ../src/font-view.c:273
-msgid "Version"
-msgstr "Sürüm"
-
-#: ../src/font-view.c:259 ../src/font-view.c:279
-msgid "Copyright"
-msgstr "Telif Hakkı"
-
-#: ../src/font-view.c:264
-msgid "Description"
-msgstr "Açıklama"
-
-#: ../src/font-view.c:292
-msgid "Install Failed"
-msgstr "Kurulum Başarısız"
-
-#: ../src/font-view.c:298
-msgid "Installed"
-msgstr "Kuruldu"
-
-#: ../src/font-view.c:301 ../src/font-view.c:545
-msgid "Install"
-msgstr "Kur"
-
-#: ../src/font-view.c:434
-msgid "This font could not be displayed."
-msgstr "Bu yazı tipi görüntülenemiyor."
-
-#: ../src/font-view.c:498 ../src/font-view.c:556
-msgid "Info"
-msgstr "Bilgi"
-
-#: ../src/font-view.c:573
-msgid "Back"
-msgstr "Geri"
-
-#: ../src/font-view.c:663
-msgid "All Fonts"
-msgstr "Tüm Yazı Tipleri"
-
-#: ../src/font-view.c:781 ../src/org.gnome.font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "Yazı Tipi Görüntüleyici"
-
-#: ../src/font-view.c:782 ../src/org.gnome.font-viewer.desktop.in.in.h:2
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:796
+#: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Sisteminizdeki yazı tiplerini görüntüleyin"
 
-#: ../src/font-view.c:784
+#: data/org.gnome.font-viewer.appdata.xml.in:9
+#| msgid ""
+#| "GNOME Font Viewer shows you the fonts installed on your computer for your "
+#| "use as thumbnails. Selecting any thumbnails shows the full view of how "
+#| "the font would look under various sizes."
+msgid ""
+"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"thumbnails. Selecting any thumbnails shows the full view of how the font "
+"would look under various sizes."
+msgstr ""
+"GNOME Yazı Tipleri, kullanımınız için bilgisayarınızda yüklü yazı tiplerini "
+"küçük resim olarak gösterir. Herhangi bir küçük resmi seçmek, yazı tipinin "
+"çeşitli boyutlarda nasıl görüneceğine dair tam bir görünümü gösterir."
+
+#: data/org.gnome.font-viewer.appdata.xml.in:15
+#| msgid ""
+#| "GNOME Font Viewer also supports installing new font files downloaded in "
+#| "the .ttf and other formats. Fonts may be installed only for your use or "
+#| "made available to all users on the computer."
+msgid ""
+"GNOME Fonts also supports installing new font files downloaded in the .ttf "
+"and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"Ayrıca GNOME Yazı Tipleri, .ttf ve diğer biçimlerde indirilen yeni yazı tipi "
+"dosyalarının kurulumuna da izin verir. Yazı tipleri yalnızca kendi "
+"kullanımınız için kurulabilir ya da bilgisayardaki tüm kullanıcıların "
+"kullanımına sunulabilir."
+
+#: src/font-thumbnailer.c:189
+msgid "Text to thumbnail (default: Aa)"
+msgstr "Örneklendirilecek metin (öntanımlı: Aa)"
+
+#: src/font-thumbnailer.c:189
+msgid "TEXT"
+msgstr "METİN"
+
+#: src/font-thumbnailer.c:191
+msgid "Thumbnail size (default: 128)"
+msgstr "Küçük resim boyutu (öntanımlı: 128)"
+
+#: src/font-thumbnailer.c:191
+msgid "SIZE"
+msgstr "BOYUT"
+
+#: src/font-thumbnailer.c:193
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "YAZI-TİPİ-DOSYASI ÇIKTI-DOSYASI"
+
+#: src/font-view-app-menu.ui:6
+msgid "About"
+msgstr "Hakkında"
+
+#: src/font-view-app-menu.ui:10
+msgid "Quit"
+msgstr "Çıkış"
+
+#: src/font-view.c:84
+msgid "Show the application's version"
+msgstr "Uygulamanın sürümünü göster"
+
+#: src/font-view.c:197
+msgid "Name"
+msgstr "Ad"
+
+#: src/font-view.c:200
+msgid "Style"
+msgstr "Biçem"
+
+#: src/font-view.c:210
+msgid "Type"
+msgstr "Tür"
+
+#: src/font-view.c:255 src/font-view.c:274
+msgid "Version"
+msgstr "Sürüm"
+
+#: src/font-view.c:260 src/font-view.c:280
+msgid "Copyright"
+msgstr "Telif Hakkı"
+
+#: src/font-view.c:265
+msgid "Description"
+msgstr "Açıklama"
+
+#: src/font-view.c:296
+msgid "Install Failed"
+msgstr "Kurulum Başarısız"
+
+#: src/font-view.c:303
+msgid "Installed"
+msgstr "Kuruldu"
+
+#: src/font-view.c:307 src/font-view.c:552
+msgid "Install"
+msgstr "Kur"
+
+#: src/font-view.c:441
+msgid "This font could not be displayed."
+msgstr "Bu yazı tipi görüntülenemiyor."
+
+#: src/font-view.c:505 src/font-view.c:563
+msgid "Info"
+msgstr "Bilgi"
+
+#: src/font-view.c:578
+msgid "Back"
+msgstr "Geri"
+
+#: src/font-view.c:669
+msgid "All Fonts"
+msgstr "Tüm Yazı Tipleri"
+
+#: src/font-view.c:795 src/org.gnome.font-viewer.desktop.in:3
+#| msgid "All Fonts"
+msgid "Fonts"
+msgstr "Yazı Tipleri"
+
+#: src/font-view.c:798
 msgid "translator-credits"
 msgstr "GNOME Türkiye Çeviri Takımı <gnometurk@gnome.org>"
 
-#: ../src/font-view.c:923
-msgid "[FILE...]"
-msgstr "[DOSYA...]"
-
-#. I18N: The '%s' is replaced with the command name.
-#: ../src/font-view.c:931
-#, c-format
-msgid "Run '%s --help' to see a full list of available command line options."
-msgstr "Tüm kullanılabilir komut satırı seçeneklerini görmek için '%s --help' komutunu çalıştırın."
-
-#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
 msgstr "yazı tipleri; yazı tipi ailesi;"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: src/org.gnome.font-viewer.desktop.in:8
+msgid "preferences-desktop-font"
+msgstr "preferences-desktop-font"
+
+#~ msgid "Font Viewer"
+#~ msgstr "Yazı Tipi Görüntüleyici"
+
+#~ msgid "[FILE...]"
+#~ msgstr "[DOSYA...]"
+
+#~ msgid ""
+#~ "Run '%s --help' to see a full list of available command line options."
+#~ msgstr ""
+#~ "Tüm kullanılabilir komut satırı seçeneklerini görmek için '%s --help' "
+#~ "komutunu çalıştırın."
