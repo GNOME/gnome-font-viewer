@@ -14,10 +14,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-09-02 09:31+0300\n"
-"PO-Revision-Date: 2017-08-25 10:58+0200\n"
+"POT-Creation-Date: 2017-09-02 06:43+0000\n"
+"PO-Revision-Date: 2017-09-03 10:09+0300\n"
 "Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "Language: bg\n"
@@ -26,95 +26,122 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../src/font-thumbnailer.c:189
-msgid "Text to thumbnail (default: Aa)"
-msgstr "Показван текст (стандартно: „Aa“)"
-
-#: ../src/font-thumbnailer.c:189
-msgid "TEXT"
-msgstr "ТЕКСТ"
-
-#: ../src/font-thumbnailer.c:191
-msgid "Thumbnail size (default: 128)"
-msgstr "Размер на иконата (стандартно: 128)"
-
-#: ../src/font-thumbnailer.c:191
-msgid "SIZE"
-msgstr "РАЗМЕР"
-
-#: ../src/font-thumbnailer.c:193
-msgid "FONT-FILE OUTPUT-FILE"
-msgstr "ФАЙЛ-С-ШРИФТ ИЗХОДЕН-ФАЙЛ"
-
-#: ../src/font-view.c:76
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:76
 msgid "GNOME Fonts"
 msgstr "Преглед на шрифт"
 
-#: ../src/font-view.c:84
-msgid "Show the application's version"
-msgstr "Извеждане на версията на програмата"
-
-#: ../src/font-view.c:197
-msgid "Name"
-msgstr "Име"
-
-#: ../src/font-view.c:200
-msgid "Style"
-msgstr "Стил"
-
-#: ../src/font-view.c:210
-msgid "Type"
-msgstr "Вид"
-
-#: ../src/font-view.c:255 ../src/font-view.c:274
-msgid "Version"
-msgstr "Версия"
-
-#: ../src/font-view.c:260 ../src/font-view.c:280
-msgid "Copyright"
-msgstr "Авторски права"
-
-#: ../src/font-view.c:265
-msgid "Description"
-msgstr "Описание"
-
-#: ../src/font-view.c:296
-msgid "Install Failed"
-msgstr "Неуспешно инсталиране"
-
-#: ../src/font-view.c:303
-msgid "Installed"
-msgstr "Инсталиран"
-
-#: ../src/font-view.c:307 ../src/font-view.c:552
-msgid "Install"
-msgstr "Инсталиране"
-
-#: ../src/font-view.c:441
-msgid "This font could not be displayed."
-msgstr "Този шрифт не може да бъде показан."
-
-#: ../src/font-view.c:505 ../src/font-view.c:563
-msgid "Info"
-msgstr "Информация"
-
-#: ../src/font-view.c:578
-msgid "Back"
-msgstr "Назад"
-
-#: ../src/font-view.c:669
-msgid "All Fonts"
-msgstr "Всички шрифтове"
-
-#: ../src/font-view.c:795
-msgid "Fonts"
-msgstr "Шрифтове"
-
-#: ../src/font-view.c:796
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:796
+#: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Преглед на шрифтовете"
 
-#: ../src/font-view.c:798
+#: data/org.gnome.font-viewer.appdata.xml.in:9
+msgid ""
+"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"thumbnails. Selecting any thumbnails shows the full view of how the font "
+"would look under various sizes."
+msgstr ""
+"Шрифтовете на GNOME показват инсталираните шрифтове като мини-изображение. "
+"Когато ги изберете, ще видите шрифта представен при различни размери."
+
+#: data/org.gnome.font-viewer.appdata.xml.in:15
+msgid ""
+"GNOME Fonts also supports installing new font files downloaded in the .ttf "
+"and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"Шрифтовете на GNOME позволяват инсталирането на допълнителни шрифтове в "
+"множество формати. Инсталирането може да е за един или за всички потребители."
+
+#: src/font-thumbnailer.c:189
+msgid "Text to thumbnail (default: Aa)"
+msgstr "Показван текст (стандартно: „Aa“)"
+
+#: src/font-thumbnailer.c:189
+msgid "TEXT"
+msgstr "ТЕКСТ"
+
+#: src/font-thumbnailer.c:191
+msgid "Thumbnail size (default: 128)"
+msgstr "Размер на иконата (стандартно: 128)"
+
+#: src/font-thumbnailer.c:191
+msgid "SIZE"
+msgstr "РАЗМЕР"
+
+#: src/font-thumbnailer.c:193
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "ФАЙЛ-С-ШРИФТ ИЗХОДЕН-ФАЙЛ"
+
+#: src/font-view-app-menu.ui:6
+msgid "About"
+msgstr "Относно"
+
+#: src/font-view-app-menu.ui:10
+msgid "Quit"
+msgstr "Спиране на програмата"
+
+#: src/font-view.c:84
+msgid "Show the application's version"
+msgstr "Извеждане на версията на програмата"
+
+#: src/font-view.c:197
+msgid "Name"
+msgstr "Име"
+
+#: src/font-view.c:200
+msgid "Style"
+msgstr "Стил"
+
+#: src/font-view.c:210
+msgid "Type"
+msgstr "Вид"
+
+#: src/font-view.c:255 src/font-view.c:274
+msgid "Version"
+msgstr "Версия"
+
+#: src/font-view.c:260 src/font-view.c:280
+msgid "Copyright"
+msgstr "Авторски права"
+
+#: src/font-view.c:265
+msgid "Description"
+msgstr "Описание"
+
+#: src/font-view.c:296
+msgid "Install Failed"
+msgstr "Неуспешно инсталиране"
+
+#: src/font-view.c:303
+msgid "Installed"
+msgstr "Инсталиран"
+
+#: src/font-view.c:307 src/font-view.c:552
+msgid "Install"
+msgstr "Инсталиране"
+
+#: src/font-view.c:441
+msgid "This font could not be displayed."
+msgstr "Този шрифт не може да бъде показан."
+
+#: src/font-view.c:505 src/font-view.c:563
+msgid "Info"
+msgstr "Информация"
+
+#: src/font-view.c:578
+msgid "Back"
+msgstr "Назад"
+
+#: src/font-view.c:669
+msgid "All Fonts"
+msgstr "Всички шрифтове"
+
+#: src/font-view.c:795 src/org.gnome.font-viewer.desktop.in:3
+msgid "Fonts"
+msgstr "Шрифтове"
+
+#: src/font-view.c:798
 msgid "translator-credits"
 msgstr ""
 "Александър Шопов <ash@kambanaria.org>\n"
@@ -129,3 +156,14 @@ msgstr ""
 "bg</a>\n"
 "Докладвайте за грешки на <a href=\"http://gnome.cult.bg/bugs\">http://gnome."
 "cult.bg/bugs</a>"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: src/org.gnome.font-viewer.desktop.in:6
+msgid "fonts;fontface;"
+msgstr ""
+"fonts;fontface;шрифтове;глифи;очертания;уникод;юникод;кирилица;латиница;"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: src/org.gnome.font-viewer.desktop.in:8
+msgid "preferences-desktop-font"
+msgstr "preferences-desktop-font"
