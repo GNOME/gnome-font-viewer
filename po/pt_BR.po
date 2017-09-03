@@ -1,5 +1,5 @@
 # Brazilian Portuguese translation of gnome-font-viewer.
-# Copyright (C) 1999-2014 the GNOME Utils authors.
+# Copyright (C) 1999-2017 the GNOME Utils authors.
 # This file is distributed under the same license as the gnome-font-viewer package.
 # Alexandre Hautequest <hquest@fesppr.br>, 1999.
 # Ariel Bressan da Silva <ariel@conectiva.com.br>, 2000.
@@ -19,145 +19,155 @@
 # Rodrigo Padula de Oliveira <contato@rodrigopadula.com>, 2011.
 # André Gondim <In memoriam>, 2011.
 # Breno Felipe Morais de Santana <breno_info@globomail.com>, 2012.
-# Rafael Ferreira <rafael.f.f1@gmail.com>, 2012.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2012, 2017.
 # Enrico Nicoletto <liverig@gmail.com>, 2013, 2014.
 # Fábio Nogueira <deb-user-ba@ubuntu.com>, 2014.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-10-31 19:39+0000\n"
-"PO-Revision-Date: 2014-10-31 22:35-0300\n"
-"Last-Translator: Enrico Nicoletto <liverig@gmail.com>\n"
+"POT-Creation-Date: 2017-08-10 23:03+0000\n"
+"PO-Revision-Date: 2017-09-03 13:00-0200\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 1.6.3\n"
+"X-Generator: Virtaal 1.0.0-beta1\n"
+"X-Project-Style: gnome\n"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
-msgid ""
-"GNOME Font Viewer shows you the fonts installed on your computer for your "
-"use as thumbnails. Selecting any thumbnails shows the full view of how the "
-"font would look under various sizes."
-msgstr ""
-"O visualizador de fontes do GNOME mostra a você as fontes instaladas em seu "
-"computador para seu uso como miniaturas. Ao selecionar qualquer miniatura é "
-"mostrado a você visão completa de como a fonte pareceria sob vários tamanhos."
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:76
+#| msgid "GNOME Font Viewer"
+msgid "GNOME Fonts"
+msgstr "Fontes do GNOME"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
-msgid ""
-"GNOME Font Viewer also supports installing new font files downloaded in the ."
-"ttf and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
-msgstr ""
-"O visualizador de fontes do GNOME também provê suporte a instalação de novos "
-"arquivos de fontes baixadas em .ttf e em outros formatos. Fontes também "
-"podem ser instaladas apenas para seu uso ou estar disponíveis para todos os "
-"usuários no computador."
-
-#: ../src/font-thumbnailer.c:189
-msgid "Text to thumbnail (default: Aa)"
-msgstr "Texto para miniatura (padrão: Aa)"
-
-#: ../src/font-thumbnailer.c:189
-msgid "TEXT"
-msgstr "TEXTO"
-
-#: ../src/font-thumbnailer.c:191
-msgid "Thumbnail size (default: 128)"
-msgstr "Texto para miniatura (padrão: Aa)"
-
-#: ../src/font-thumbnailer.c:191
-msgid "SIZE"
-msgstr "TAMANHO"
-
-#: ../src/font-thumbnailer.c:193
-msgid "FONT-FILE OUTPUT-FILE"
-msgstr "ARQUIVO-FONTE ARQUIVO-SAÍDA"
-
-#: ../src/font-view-app-menu.ui.h:1
-msgid "About"
-msgstr "Sobre"
-
-#: ../src/font-view-app-menu.ui.h:2
-msgid "Quit"
-msgstr "Sair"
-
-#: ../src/font-view.c:76
-#| msgid "Font Viewer"
-msgid "GNOME Font Viewer"
-msgstr "Visualizador de fontes do GNOME"
-
-#: ../src/font-view.c:84
-msgid "Show the application's version"
-msgstr "Mostra a versão do aplicativo"
-
-#: ../src/font-view.c:194
-msgid "Name"
-msgstr "Nome"
-
-#: ../src/font-view.c:197
-msgid "Style"
-msgstr "Estilo"
-
-#: ../src/font-view.c:207
-msgid "Type"
-msgstr "Tipo"
-
-#: ../src/font-view.c:252 ../src/font-view.c:271
-msgid "Version"
-msgstr "Versão"
-
-#: ../src/font-view.c:257 ../src/font-view.c:277
-msgid "Copyright"
-msgstr "Copyright"
-
-#: ../src/font-view.c:262
-msgid "Description"
-msgstr "Descrição"
-
-#: ../src/font-view.c:290
-msgid "Install Failed"
-msgstr "Instalação falhou"
-
-#: ../src/font-view.c:296
-msgid "Installed"
-msgstr "Instalado"
-
-#: ../src/font-view.c:299 ../src/font-view.c:543
-msgid "Install"
-msgstr "Instalar"
-
-#: ../src/font-view.c:432
-msgid "This font could not be displayed."
-msgstr "Esta fonte não pôde ser exibida."
-
-#: ../src/font-view.c:496 ../src/font-view.c:554
-msgid "Info"
-msgstr "Informação"
-
-#: ../src/font-view.c:571
-msgid "Back"
-msgstr "Voltar"
-
-#: ../src/font-view.c:661
-msgid "All Fonts"
-msgstr "Todas as fontes"
-
-#: ../src/font-view.c:779 ../src/org.gnome.font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "Visualizador de fontes"
-
-#: ../src/font-view.c:780 ../src/org.gnome.font-viewer.desktop.in.in.h:2
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:796
+#: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Ver fontes no seu sistema"
 
-#: ../src/font-view.c:782
+#: data/org.gnome.font-viewer.appdata.xml.in:9
+#| msgid ""
+#| "GNOME Font Viewer shows you the fonts installed on your computer for your "
+#| "use as thumbnails. Selecting any thumbnails shows the full view of how "
+#| "the font would look under various sizes."
+msgid ""
+"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"thumbnails. Selecting any thumbnails shows the full view of how the font "
+"would look under various sizes."
+msgstr ""
+"O Fontes do GNOME mostra a você as fontes instaladas em seu computador para "
+"seu uso como miniaturas. Ao selecionar qualquer miniatura é mostrado a você "
+"visão completa de como a fonte pareceria sob vários tamanhos."
+
+#: data/org.gnome.font-viewer.appdata.xml.in:15
+#| msgid ""
+#| "GNOME Font Viewer also supports installing new font files downloaded in "
+#| "the .ttf and other formats. Fonts may be installed only for your use or "
+#| "made available to all users on the computer."
+msgid ""
+"GNOME Fonts also supports installing new font files downloaded in the .ttf "
+"and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"O Fontes do GNOME também provê suporte a instalação de novos arquivos de "
+"fontes baixadas em .ttf e em outros formatos. Fontes também podem ser "
+"instaladas apenas para seu uso ou estar disponíveis para todos os usuários "
+"no computador."
+
+#: src/font-thumbnailer.c:189
+msgid "Text to thumbnail (default: Aa)"
+msgstr "Texto para miniatura (padrão: Aa)"
+
+#: src/font-thumbnailer.c:189
+msgid "TEXT"
+msgstr "TEXTO"
+
+#: src/font-thumbnailer.c:191
+msgid "Thumbnail size (default: 128)"
+msgstr "Tamanho da miniatura (padrão: 128)"
+
+#: src/font-thumbnailer.c:191
+msgid "SIZE"
+msgstr "TAMANHO"
+
+#: src/font-thumbnailer.c:193
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "ARQUIVO-FONTE ARQUIVO-SAÍDA"
+
+#: src/font-view-app-menu.ui:6
+msgid "About"
+msgstr "Sobre"
+
+#: src/font-view-app-menu.ui:10
+msgid "Quit"
+msgstr "Sair"
+
+#: src/font-view.c:84
+msgid "Show the application's version"
+msgstr "Mostra a versão do aplicativo"
+
+#: src/font-view.c:197
+msgid "Name"
+msgstr "Nome"
+
+#: src/font-view.c:200
+msgid "Style"
+msgstr "Estilo"
+
+#: src/font-view.c:210
+msgid "Type"
+msgstr "Tipo"
+
+#: src/font-view.c:255 src/font-view.c:274
+msgid "Version"
+msgstr "Versão"
+
+#: src/font-view.c:260 src/font-view.c:280
+msgid "Copyright"
+msgstr "Copyright"
+
+#: src/font-view.c:265
+msgid "Description"
+msgstr "Descrição"
+
+#: src/font-view.c:296
+msgid "Install Failed"
+msgstr "Instalação falhou"
+
+#: src/font-view.c:303
+msgid "Installed"
+msgstr "Instalado"
+
+#: src/font-view.c:307 src/font-view.c:552
+msgid "Install"
+msgstr "Instalar"
+
+#: src/font-view.c:441
+msgid "This font could not be displayed."
+msgstr "Esta fonte não pôde ser exibida."
+
+#: src/font-view.c:505 src/font-view.c:563
+msgid "Info"
+msgstr "Informação"
+
+#: src/font-view.c:578
+msgid "Back"
+msgstr "Voltar"
+
+#: src/font-view.c:669
+msgid "All Fonts"
+msgstr "Todas as fontes"
+
+#: src/font-view.c:795 src/org.gnome.font-viewer.desktop.in:3
+#| msgid "All Fonts"
+msgid "Fonts"
+msgstr "Fontes"
+
+#: src/font-view.c:798
 msgid "translator-credits"
 msgstr ""
 "Alexandre Hautequest <hquest@fesppr.br>\n"
@@ -178,24 +188,30 @@ msgstr ""
 "Rodrigo Padula de Oliveira <contato@rodrigopadula.com>\n"
 "André Gondim (In memoriam) <In memoriam>\n"
 "Breno Felipe Morais de Santana <breno_info@globomail.com>\n"
-"Rafael Ferreira <rafael.f.f1@gmail.com>\n"
+"Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Enrico Nicoletto <liverig@gmail.com>"
 
-#: ../src/font-view.c:921
-msgid "[FILE...]"
-msgstr "[ARQUIVO...]"
-
-#. I18N: The '%s' is replaced with the command name.
-#: ../src/font-view.c:929
-#, c-format
-msgid "Run '%s --help' to see a full list of available command line options."
-msgstr ""
-"Execute '%s --help' para ver uma lista completa de opções de linha de "
-"comando disponíveis."
-
-#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
 msgstr "fontes;tipo de fonte;tipo da fonte;"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: src/org.gnome.font-viewer.desktop.in:8
+msgid "preferences-desktop-font"
+msgstr "preferences-desktop-font"
+
+#~ msgid "Font Viewer"
+#~ msgstr "Visualizador de fontes"
+
+#~ msgid "[FILE...]"
+#~ msgstr "[ARQUIVO...]"
+
+#~ msgid ""
+#~ "Run '%s --help' to see a full list of available command line options."
+#~ msgstr ""
+#~ "Execute '%s --help' para ver uma lista completa de opções de linha de "
+#~ "comando disponíveis."
 
 #~ msgid "_Close"
 #~ msgstr "_Fechar"
