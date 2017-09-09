@@ -2,20 +2,20 @@
 # Copyright (C) 2005, 2006, 2007, 2008, 2009, 2010, 2011 Free Software Foundation, Inc.
 # This file is distributed under the same license as the baobab package.
 #
+#
 # Mikel Olasagasti <hey_neken@mundurat.net>, 2005.
 # Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2005, 2006, 2007, 2008, 2009, 2010, 2011.
-# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2012, 2013, 2014.
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2012, 2013, 2014, 2017.
 # Julen Ruiz Aizpuru <julenx@gmail.com>, 2011.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-12-30 15:26+0100\n"
-"PO-Revision-Date: 2014-12-05 23:34+0100\n"
+"POT-Creation-Date: 2017-08-10 23:03+0000\n"
+"PO-Revision-Date: 2017-08-27 14:35+0200\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
-"Language-Team: Basque <librezale@librezale.org>\n"
+"Language-Team: Basque <librezale@librezale.eus>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,140 +24,157 @@ msgstr ""
 "X-Generator: Lokalize 1.5\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:76
+#| msgid "GNOME Font Viewer"
+msgid "GNOME Fonts"
+msgstr "GNOMEren Letra-tipoak"
+
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:796
+#: src/org.gnome.font-viewer.desktop.in:4
+msgid "View fonts on your system"
+msgstr "Ikusi sistemako letra-tipoak"
+
+#: data/org.gnome.font-viewer.appdata.xml.in:9
+#| msgid ""
+#| "GNOME Font Viewer shows you the fonts installed on your computer for your "
+#| "use as thumbnails. Selecting any thumbnails shows the full view of how "
+#| "the font would look under various sizes."
 msgid ""
-"GNOME Font Viewer shows you the fonts installed on your computer for your "
-"use as thumbnails. Selecting any thumbnails shows the full view of how the "
-"font would look under various sizes."
+"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"thumbnails. Selecting any thumbnails shows the full view of how the font "
+"would look under various sizes."
 msgstr ""
-"GNOMEren Letra-tipoen ikustaileak ordenagailuan instalatuta dauden letra-"
+"GNOMEren Letra-tipoak ordenagailuan instalatuta dauden letra-"
 "tipoak koadro txikietan erakusten ditu. Edozer koadro-txiki hautatuz letra-"
 "tipoa hainbat tamainatan nola ikusiko den bistaratzen du."
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
+#: data/org.gnome.font-viewer.appdata.xml.in:15
+#| msgid ""
+#| "GNOME Font Viewer also supports installing new font files downloaded in "
+#| "the .ttf and other formats. Fonts may be installed only for your use or "
+#| "made available to all users on the computer."
 msgid ""
-"GNOME Font Viewer also supports installing new font files downloaded in the ."
-"ttf and other formats. Fonts may be installed only for your use or made "
+"GNOME Fonts also supports installing new font files downloaded in the .ttf "
+"and other formats. Fonts may be installed only for your use or made "
 "available to all users on the computer."
 msgstr ""
-"GNOMEren Letra-tipoen ikustaileak letra-tipoen fitxategi berriak (TTF edo "
+"GNOMEren Letra-tipoak letra-tipoen fitxategi berriak (.ttf edo "
 "beste formatuan deskargatuta) instala ditzake. Letra-tipoa zure "
 "erabilpenerako soilik instala daiteke, edo ordenagailuko beste erabiltzaile "
 "guztientzako baita ere."
 
-#: ../src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Testua txikiagotzeko (lehenetsia: Aa)"
 
-#: ../src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "TESTUA"
 
-#: ../src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "Koadro txikien tamaina (lehenetsia: 128)"
 
-#: ../src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "TAMAINA"
 
-#: ../src/font-thumbnailer.c:193
+#: src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "LETRA-TIPOEN_FITXATEGIA IRTEERAKO-FITXATEGIA"
 
-#: ../src/font-view-app-menu.ui.h:1
+#: src/font-view-app-menu.ui:6
 msgid "About"
 msgstr "Honi buruz"
 
-#: ../src/font-view-app-menu.ui.h:2
+#: src/font-view-app-menu.ui:10
 msgid "Quit"
 msgstr "Irten"
 
-#: ../src/font-view.c:76
-msgid "GNOME Font Viewer"
-msgstr "GNOMEren Letra-tipoen ikustailea"
-
-#: ../src/font-view.c:84
+#: src/font-view.c:84
 msgid "Show the application's version"
 msgstr "Erakutsi aplikazioaren bertsioa"
 
-#: ../src/font-view.c:194
+#: src/font-view.c:197
 msgid "Name"
 msgstr "Izena"
 
-#: ../src/font-view.c:197
+#: src/font-view.c:200
 msgid "Style"
 msgstr "Estiloa"
 
-#: ../src/font-view.c:207
+#: src/font-view.c:210
 msgid "Type"
 msgstr "Mota"
 
-#: ../src/font-view.c:252 ../src/font-view.c:271
+#: src/font-view.c:255 src/font-view.c:274
 msgid "Version"
 msgstr "Bertsioa"
 
-#: ../src/font-view.c:257 ../src/font-view.c:277
+#: src/font-view.c:260 src/font-view.c:280
 msgid "Copyright"
 msgstr "Copyright-a"
 
-#: ../src/font-view.c:262
+#: src/font-view.c:265
 msgid "Description"
 msgstr "Azalpena"
 
-#: ../src/font-view.c:290
+#: src/font-view.c:296
 msgid "Install Failed"
 msgstr "Instalazioak huts egin du"
 
-#: ../src/font-view.c:296
+#: src/font-view.c:303
 msgid "Installed"
 msgstr "Instalatuta"
 
-#: ../src/font-view.c:299 ../src/font-view.c:543
+#: src/font-view.c:307 src/font-view.c:552
 msgid "Install"
 msgstr "Instalatu"
 
-#: ../src/font-view.c:432
+#: src/font-view.c:441
 msgid "This font could not be displayed."
 msgstr "Letra-tipo hau ezin izan da bistaratu."
 
-#: ../src/font-view.c:496 ../src/font-view.c:554
+#: src/font-view.c:505 src/font-view.c:563
 msgid "Info"
 msgstr "Informazioa"
 
-#: ../src/font-view.c:571
+#: src/font-view.c:578
 msgid "Back"
 msgstr "Atzera"
 
-#: ../src/font-view.c:661
+#: src/font-view.c:669
 msgid "All Fonts"
 msgstr "Letra-tipo guztiak"
 
-#: ../src/font-view.c:779 ../src/org.gnome.font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "Letra-tipoen ikustailea"
+#: src/font-view.c:795 src/org.gnome.font-viewer.desktop.in:3
+#| msgid "All Fonts"
+msgid "Fonts"
+msgstr "Letra-tipoak"
 
-#: ../src/font-view.c:780 ../src/org.gnome.font-viewer.desktop.in.in.h:2
-msgid "View fonts on your system"
-msgstr "Ikusi sistemako letra-tipoak"
-
-#: ../src/font-view.c:782
+#: src/font-view.c:798
 msgid "translator-credits"
 msgstr "Iñaki Larrañaga Murgoitio <dooteo@zundan.com>"
 
-#: ../src/font-view.c:921
-msgid "[FILE...]"
-msgstr "[FITXATEGIA...]"
-
-#. I18N: The '%s' is replaced with the command name.
-#: ../src/font-view.c:929
-#, c-format
-msgid "Run '%s --help' to see a full list of available command line options."
-msgstr "Exekutatu '%s --help' komando-lerroko aukera guztiak zerrendatzeko."
-
-#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
 msgstr "tipografia;letra-tipoak;letra;tipoa;"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: src/org.gnome.font-viewer.desktop.in:8
+msgid "preferences-desktop-font"
+msgstr "preferences-desktop-font"
+
+#~ msgid "Font Viewer"
+#~ msgstr "Letra-tipoen ikustailea"
+
+#~ msgid "[FILE...]"
+#~ msgstr "[FITXATEGIA...]"
+
+#~ msgid ""
+#~ "Run '%s --help' to see a full list of available command line options."
+#~ msgstr "Exekutatu '%s --help' komando-lerroko aukera guztiak zerrendatzeko."
 
 #~ msgid "_Close"
 #~ msgstr "_Itxi"
