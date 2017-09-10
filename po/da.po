@@ -10,34 +10,30 @@
 # Kenneth Nielsen <k.nielsen81@gmail.com>, 2008, 2013.
 # Joe Hansen <joedalton2@yahoo.dk>, 2011.
 # Ask Hjorth Larsen <asklarsen@gmail.com>, 2007, 08, 09, 10, 11, 12, 14, 15.
+# Alan Mortensen <alanmortensen.am@gmail.com>, 2017.
 #
 #
 # Husk at tilføje dig i credit-listen (besked id "translator-credits")
 #
-# Konventioner:
-#
-#   bad block -> ugyldig blok
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: "
-"https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-08-10 23:03+0000\n"
-"PO-Revision-Date: 2015-03-14 02:47+0100\n"
-"Last-Translator: Kenneth Nielsen <k.nielsen81@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-08-26 18:23+0000\n"
+"PO-Revision-Date: 2017-09-09 14:42+0200\n"
+"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.7.1\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:76
-#, fuzzy
-#| msgid "GNOME Font Viewer"
 msgid "GNOME Fonts"
-msgstr "GNOME Skrifttypefremviser"
+msgstr "GNOME Skrifttyper"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:796
 #: src/org.gnome.font-viewer.desktop.in:4
@@ -45,26 +41,16 @@ msgid "View fonts on your system"
 msgstr "Vis skrifttyper på dit system"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
-#, fuzzy
-#| msgid ""
-#| "GNOME Font Viewer shows you the fonts installed on your computer for your "
-#| "use as thumbnails. Selecting any thumbnails shows the full view of how the "
-#| "font would look under various sizes."
 msgid ""
 "GNOME Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"GNOME Skrifttypefremviser viser dig skrifttyperne som er installeret på din "
-"computer som miniaturer. Hvis du vælger en miniature, vises en fuld "
+"GNOME Skrifttyper viser dig de skrifttyper, som er installeret på din "
+"computer, som miniaturer. Hvis du vælger en miniature, vises en fuld "
 "repræsentation af skrifttypen med forskellige tekststørrelser."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
-#, fuzzy
-#| msgid ""
-#| "GNOME Font Viewer also supports installing new font files downloaded in the "
-#| ".ttf and other formats. Fonts may be installed only for your use or made "
-#| "available to all users on the computer."
 msgid ""
 "GNOME Fonts also supports installing new font files downloaded in the .ttf "
 "and other formats. Fonts may be installed only for your use or made "
@@ -159,10 +145,8 @@ msgid "All Fonts"
 msgstr "Alle skrifttyper"
 
 #: src/font-view.c:795 src/org.gnome.font-viewer.desktop.in:3
-#, fuzzy
-#| msgid "All Fonts"
 msgid "Fonts"
-msgstr "Alle skrifttyper"
+msgstr "Skrifttyper"
 
 #: src/font-view.c:798
 msgid "translator-credits"
@@ -176,6 +160,7 @@ msgstr ""
 "Kenneth Nielsen\n"
 "Joe Hansen\n"
 "Ask Hjorth Larsen\n"
+"Alan Mortensen\n"
 "\n"
 "Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
 "Mere info: http://www.dansk-gruppen.dk"
@@ -188,7 +173,7 @@ msgstr "skrifttyper;skrifttypefamilie;skrifttypefremtoning;"
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: src/org.gnome.font-viewer.desktop.in:8
 msgid "preferences-desktop-font"
-msgstr ""
+msgstr "preferences-desktop-font"
 
 #~ msgid "Font Viewer"
 #~ msgstr "Skrifttypefremviser"
@@ -196,9 +181,11 @@ msgstr ""
 #~ msgid "[FILE...]"
 #~ msgstr "[FIL...]"
 
-#~ msgid "Run '%s --help' to see a full list of available command line options."
+#~ msgid ""
+#~ "Run '%s --help' to see a full list of available command line options."
 #~ msgstr ""
-#~ "Kør “%s --help” for at se en fuld liste af tilgængelige kommandolinjetilvalg."
+#~ "Kør “%s --help” for at se en fuld liste af tilgængelige "
+#~ "kommandolinjetilvalg."
 
 #~ msgid "_Close"
 #~ msgstr "_Luk"
@@ -217,5 +204,3 @@ msgstr ""
 
 #~ msgid "Preview fonts"
 #~ msgstr "Forhåndsvis skrifttyper"
-
-
