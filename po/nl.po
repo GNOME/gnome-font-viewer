@@ -14,158 +14,168 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer.master.nl\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-01-03 11:07+0000\n"
-"PO-Revision-Date: 2015-01-12 17:40+0100\n"
-"Last-Translator: Hannie Dumoleyn <hannie@ubuntu-nl.org>\n"
+"POT-Creation-Date: 2017-08-23 20:21+0000\n"
+"PO-Revision-Date: 2017-08-24 21:26+0200\n"
+"Last-Translator: Nathan Follens <nthn@unseen.is>\n"
 "Language-Team: Dutch <gnome-nl-list@gnome.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Poedit 2.0.3\n"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
-msgid ""
-"GNOME Font Viewer shows you the fonts installed on your computer for your "
-"use as thumbnails. Selecting any thumbnails shows the full view of how the "
-"font would look under various sizes."
-msgstr ""
-"Gnome Lettertypeviewer toont u de lettertypen die op uw computer "
-"geïnstalleerd zijn als miniaturen. Het selecteren van een miniatuur laat "
-"zien hoe het lettertype eruit ziet bij verschillende groottes."
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:76
+msgid "GNOME Fonts"
+msgstr "Gnome Lettertypen"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
-msgid ""
-"GNOME Font Viewer also supports installing new font files downloaded in the ."
-"ttf and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
-msgstr ""
-"Gnome Lettertypeviewer ondersteunt ook het installeren van nieuwe "
-"lettertypen o.a. in de vorm van .ttf-bestanden. Lettertypen kunnen voor "
-"eigen gebruik worden geïnstalleerd of beschikbaar worden gemaakt voor alle "
-"gebruikers van de computer."
-
-#: ../src/font-thumbnailer.c:189
-msgid "Text to thumbnail (default: Aa)"
-msgstr "Tekst voor miniatuur (standaard: Aa)"
-
-#: ../src/font-thumbnailer.c:189
-msgid "TEXT"
-msgstr "TEKST"
-
-#: ../src/font-thumbnailer.c:191
-msgid "Thumbnail size (default: 128)"
-msgstr "Grootte van miniatuur (standaard: 128)"
-
-#: ../src/font-thumbnailer.c:191
-msgid "SIZE"
-msgstr "GROOTTE"
-
-#: ../src/font-thumbnailer.c:193
-msgid "FONT-FILE OUTPUT-FILE"
-msgstr "LETTERTYPEBESTAND UITVOERBESTAND"
-
-#: ../src/font-view-app-menu.ui.h:1
-msgid "About"
-msgstr "Info"
-
-#: ../src/font-view-app-menu.ui.h:2
-msgid "Quit"
-msgstr "Afsluiten"
-
-#: ../src/font-view.c:76
-msgid "GNOME Font Viewer"
-msgstr "Gnome Lettertypeviewer"
-
-#: ../src/font-view.c:84
-msgid "Show the application's version"
-msgstr "Toon de versie van de toepassing"
-
-#: ../src/font-view.c:196
-msgid "Name"
-msgstr "Naam"
-
-#: ../src/font-view.c:199
-msgid "Style"
-msgstr "Stijl"
-
-#: ../src/font-view.c:209
-msgid "Type"
-msgstr "Type"
-
-#: ../src/font-view.c:254 ../src/font-view.c:273
-msgid "Version"
-msgstr "Versie"
-
-#: ../src/font-view.c:259 ../src/font-view.c:279
-msgid "Copyright"
-msgstr "Copyright"
-
-#: ../src/font-view.c:264
-msgid "Description"
-msgstr "Omschrijving"
-
-#: ../src/font-view.c:292
-msgid "Install Failed"
-msgstr "Installatie is mislukt"
-
-#: ../src/font-view.c:298
-msgid "Installed"
-msgstr "Geïnstalleerd"
-
-#: ../src/font-view.c:301 ../src/font-view.c:545
-msgid "Install"
-msgstr "Installeren"
-
-#: ../src/font-view.c:434
-msgid "This font could not be displayed."
-msgstr "Dit lettertype kon niet getoond worden."
-
-#: ../src/font-view.c:498 ../src/font-view.c:556
-msgid "Info"
-msgstr "Informatie"
-
-#: ../src/font-view.c:573
-msgid "Back"
-msgstr "Terug"
-
-#: ../src/font-view.c:663
-msgid "All Fonts"
-msgstr "Alle lettertypen"
-
-#: ../src/font-view.c:781 ../src/org.gnome.font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "Lettertypeviewer"
-
-#: ../src/font-view.c:782 ../src/org.gnome.font-viewer.desktop.in.in.h:2
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:796
+#: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Lettertypen op uw systeem bekijken"
 
-#: ../src/font-view.c:784
+#: data/org.gnome.font-viewer.appdata.xml.in:9
+msgid ""
+"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"thumbnails. Selecting any thumbnails shows the full view of how the font "
+"would look under various sizes."
+msgstr ""
+"Gnome Lettertypen toont u de lettertypen die op uw computer geïnstalleerd "
+"zijn als miniaturen. Het selecteren van een miniatuur laat zien hoe het "
+"lettertype eruit ziet bij verschillende groottes."
+
+#: data/org.gnome.font-viewer.appdata.xml.in:15
+msgid ""
+"GNOME Fonts also supports installing new font files downloaded in the .ttf "
+"and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"Gnome Lettertypen ondersteunt ook het installeren van nieuwe lettertypen, o."
+"a. in de vorm van .ttf-bestanden. Lettertypen kunnen voor eigen gebruik "
+"worden geïnstalleerd of beschikbaar worden gemaakt voor alle gebruikers van "
+"de computer."
+
+#: src/font-thumbnailer.c:189
+msgid "Text to thumbnail (default: Aa)"
+msgstr "Tekst voor miniatuur (standaard: Aa)"
+
+#: src/font-thumbnailer.c:189
+msgid "TEXT"
+msgstr "TEKST"
+
+#: src/font-thumbnailer.c:191
+msgid "Thumbnail size (default: 128)"
+msgstr "Grootte van miniatuur (standaard: 128)"
+
+#: src/font-thumbnailer.c:191
+msgid "SIZE"
+msgstr "GROOTTE"
+
+#: src/font-thumbnailer.c:193
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "LETTERTYPEBESTAND UITVOERBESTAND"
+
+#: src/font-view-app-menu.ui:6
+msgid "About"
+msgstr "Info"
+
+#: src/font-view-app-menu.ui:10
+msgid "Quit"
+msgstr "Afsluiten"
+
+#: src/font-view.c:84
+msgid "Show the application's version"
+msgstr "Toon de versie van de toepassing"
+
+#: src/font-view.c:197
+msgid "Name"
+msgstr "Naam"
+
+#: src/font-view.c:200
+msgid "Style"
+msgstr "Stijl"
+
+#: src/font-view.c:210
+msgid "Type"
+msgstr "Type"
+
+#: src/font-view.c:255 src/font-view.c:274
+msgid "Version"
+msgstr "Versie"
+
+#: src/font-view.c:260 src/font-view.c:280
+msgid "Copyright"
+msgstr "Copyright"
+
+#: src/font-view.c:265
+msgid "Description"
+msgstr "Omschrijving"
+
+#: src/font-view.c:296
+msgid "Install Failed"
+msgstr "Installatie is mislukt"
+
+#: src/font-view.c:303
+msgid "Installed"
+msgstr "Geïnstalleerd"
+
+#: src/font-view.c:307 src/font-view.c:552
+msgid "Install"
+msgstr "Installeren"
+
+#: src/font-view.c:441
+msgid "This font could not be displayed."
+msgstr "Dit lettertype kon niet getoond worden."
+
+#: src/font-view.c:505 src/font-view.c:563
+msgid "Info"
+msgstr "Informatie"
+
+#: src/font-view.c:578
+msgid "Back"
+msgstr "Terug"
+
+#: src/font-view.c:669
+msgid "All Fonts"
+msgstr "Alle lettertypen"
+
+#: src/font-view.c:795 src/org.gnome.font-viewer.desktop.in:3
+msgid "Fonts"
+msgstr "Lettertypen"
+
+#: src/font-view.c:798
 msgid "translator-credits"
 msgstr ""
 "Wouter Bolsterlee\n"
 "Hannie Dumoleyn\n"
-"Erwin Poeze"
+"Erwin Poeze\n"
+"Nathan Follens\n"
+"\n"
+"Meer info over Gnome-NL http://nl.gnome.org/"
 
-#: ../src/font-view.c:923
-msgid "[FILE...]"
-msgstr "[BESTAND...]"
-
-#. I18N: The '%s' is replaced with the command name.
-#: ../src/font-view.c:931
-#, c-format
-msgid "Run '%s --help' to see a full list of available command line options."
-msgstr ""
-"Voer '%s --help' uit om een volledige lijst met mogelijke opties voor de "
-"opdrachtregel te zien."
-
-#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
 msgstr "fontface;lettertype;letter;font;typografie;"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: src/org.gnome.font-viewer.desktop.in:8
+msgid "preferences-desktop-font"
+msgstr "preferences-desktop-font"
+
+#~ msgid "Font Viewer"
+#~ msgstr "Lettertypeviewer"
+
+#~ msgid "[FILE...]"
+#~ msgstr "[BESTAND...]"
+
+#~ msgid ""
+#~ "Run '%s --help' to see a full list of available command line options."
+#~ msgstr ""
+#~ "Voer '%s --help' uit om een volledige lijst met mogelijke opties voor de "
+#~ "opdrachtregel te zien."
 
 #~ msgid "_Close"
 #~ msgstr "_Sluiten"
