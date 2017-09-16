@@ -179,12 +179,11 @@ add_row (GtkWidget *grid,
     gtk_label_set_line_wrap (GTK_LABEL (label), TRUE);
     gtk_label_set_xalign (GTK_LABEL (label), 0.0);
 
-    gtk_label_set_ellipsize (GTK_LABEL (label), PANGO_ELLIPSIZE_END);
-    gtk_label_set_max_width_chars (GTK_LABEL (label), 64);
     if (multiline && g_utf8_strlen (value, -1) > 64) {
-       gtk_label_set_width_chars (GTK_LABEL (label), 64);
+        gtk_label_set_width_chars (GTK_LABEL (label), 64);
+        gtk_label_set_ellipsize (GTK_LABEL (label), PANGO_ELLIPSIZE_END);
     }
-    gtk_label_set_lines (GTK_LABEL (label), multiline ? 10 : 1);
+    gtk_label_set_max_width_chars (GTK_LABEL (label), 64);
 
     gtk_grid_attach_next_to (GTK_GRID (grid), label, 
                              name_w, GTK_POS_RIGHT,
@@ -196,20 +195,14 @@ add_row (GtkWidget *grid,
 static char *
 describe_axis (FT_Var_Axis *ax)
 {
-  /* Translators, this string is used to display information about
-   * a 'font variation axis'. The %s gets replaced with the name
-   * of the axis, for example 'Width'. The three %g get replaced
-   * with the minimum, maximum and default values for the axis.
-   */
-  return g_strdup_printf (_("%s %g — %g, default %g"), ax->name,
-                          FixedToFloat (ax->minimum),
-                          FixedToFloat (ax->maximum),
-                          FixedToFloat (ax->def));
+  return g_strdup_printf (_("%s [%g, %g], default %g"), ax->name,
+                          FixedToFloat(ax->minimum),
+                          FixedToFloat(ax->maximum),
+                          FixedToFloat(ax->def));
 }
 
 static char *
-get_sfnt_name (FT_Face face,
-               guint id)
+get_sfnt_name (FT_Face face, guint id)
 {
     guint count, i;
 
@@ -235,10 +228,6 @@ get_sfnt_name (FT_Face face,
     return NULL;
 }
 
-/* According to the OpenType spec, valid values for the subfamilyId field
- * of InstanceRecords are 2, 17 or values in the range (255,32768). See
- * https://www.microsoft.com/typography/otspec/fvar.htm#instanceRecord
- */
 static gboolean
 is_valid_subfamily_id (guint id)
 {
@@ -246,45 +235,28 @@ is_valid_subfamily_id (guint id)
 }
 
 static void
-describe_instance (FT_Face face,
-                   FT_Var_Named_Style *ns,
-                   int pos,
-                   GString *s)
+describe_instance (FT_Face face, FT_Var_Named_Style *ns, int pos, GString *s)
 {
-    char *str = NULL;
-
-    if (is_valid_subfamily_id (ns->strid))
-        str = get_sfnt_name (face, ns->strid);
-
-    if (str == NULL)
-        str = g_strdup_printf (_("Instance %d"), pos);
+    if (is_valid_subfamily_id (ns->strid)) {
+        char *str = get_sfnt_name (face, ns->strid);
+        if (str) {
+            if (s->len > 0)
+                g_string_append (s, ", ");
+            g_string_append (s, str);
+            g_free (str);
+            return;
+        }
+    }
 
     if (s->len > 0)
         g_string_append (s, ", ");
-    g_string_append (s, str);
-
-    g_free (str);
+    g_string_append_printf (s, _("Instance %d"), pos);
 }
 
-/* OpenType layout features. This list is incomplete. */
 static struct {
   const char *tag;
   const char *name;
-} named_features[] = {
-  { "aalt", N_("Access All Alternatives") },
-  { "ccmp", N_("Glyph Composition/Decomposition") },
-  { "dnom", N_("Denominators") },
-  { "numr", N_("Numerators") },
-  { "ordn", N_("Ordinals") },
-  { "mark", N_("Mark Positioning") },
-  { "mkmk", N_("Mark to Mark Positioning") },
-  { "rvrn", N_("Required Variation Alternates"), },
-  { "size", N_("Optical size"), },
-  { "opbd", N_("Optical Bounds"), },
-  { "lfbd", N_("Left Bounds"), },
-  { "rtbd", N_("Right Bounds"), },
-  { "rtlm", N_("Right-to-left mirrored forms"), },
-  { "mgrk", N_("Mathematical Greek") },
+} features[] = {
   { "kern", N_("Kerning") },
   { "liga", N_("Common Ligatures") },
   { "dlig", N_("Discretionary Ligatures") },
@@ -325,7 +297,6 @@ static struct {
   { "ss03", N_("Stylistic Set 3") },
   { "ss04", N_("Stylistic Set 4") },
   { "ss05", N_("Stylistic Set 5") },
-  { "ss06", N_("Stylistic Set 6") },
 };
 
 static char *
@@ -348,7 +319,7 @@ get_features (FT_Face face)
             hb_tag_t features[80];
             unsigned int count = G_N_ELEMENTS (features);
             unsigned int script_index = 0;
-            unsigned int lang_index = HB_OT_LAYOUT_DEFAULT_LANGUAGE_INDEX;
+            unsigned int lang_index = 0;
 
             hb_ot_layout_language_get_feature_tags (hb_face,
                                                     tables[i],
@@ -359,21 +330,10 @@ get_features (FT_Face face)
                                                     features);
             for (j = 0; j < count; j++) {
                 char buf[5];
-                const char *name;
-                int k;
-
                 hb_tag_to_string (features[j], buf); buf[4] = '\0';
-                name = buf;
-
-                for (k = 0; k < G_N_ELEMENTS (named_features); k++) {
-                    if (strcmp (named_features[k].tag, buf) == 0) {
-                        name = _(named_features[k].name);
-                        break;
-                    }
-                }
                 if (s->len > 0)
-                    g_string_append (s, ", ");
-                g_string_append (s, name);
+                  g_string_append (s, ", ");
+                g_string_append (s, buf);
             }
         }
     }
@@ -516,15 +476,15 @@ populate_grid (FontViewApplication *self,
     }
     {
         char *s = g_strdup_printf ("%ld", face->num_glyphs);
-        add_row (grid, _("Glyph Count"), s, FALSE);
+        add_row (grid, _("Glyph count"), s, FALSE);
         g_free (s);
     }
-    add_row (grid, _("Color Glyphs"), FT_HAS_COLOR (face) ? _("yes") : _("no"), FALSE);
+    add_row (grid, _("Color glyphs"), FT_HAS_COLOR (face) ? _("yes") : _("no"), FALSE);
 
     {
         char *features = get_features (face);
         if (features)
-             add_row (grid, _("Layout Features"), features, TRUE);
+             add_row (grid, _("Features"), features, TRUE);
         g_free (features);
     }
 
@@ -532,7 +492,7 @@ populate_grid (FontViewApplication *self,
         int i;
         for (i = 0; i < ft_mm_var->num_axis; i++) {
              char *s = describe_axis (&ft_mm_var->axis[i]);
-             add_row (grid, i == 0 ? _("Variation Axes") : "", s, FALSE);
+             add_row (grid, i == 0 ? _("Axes") : "", s, FALSE);
              g_free (s);
         }
         {
@@ -540,10 +500,9 @@ populate_grid (FontViewApplication *self,
             for (i = 0; i < ft_mm_var->num_namedstyles; i++) {
                  describe_instance (face, &ft_mm_var->namedstyle[i], i, s);
              }
-             add_row (grid, _("Named Styles"), s->str, TRUE);
+             add_row (grid, _("Instances"), s->str, TRUE);
              g_string_free (s, TRUE);
         }
-        free (ft_mm_var);
     }
 }
 
