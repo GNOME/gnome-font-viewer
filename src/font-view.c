@@ -175,11 +175,12 @@ add_row (GtkWidget *grid,
     gtk_label_set_line_wrap (GTK_LABEL (label), TRUE);
     gtk_label_set_xalign (GTK_LABEL (label), 0.0);
 
-    if (multiline && g_utf8_strlen (value, -1) > 64) {
-        gtk_label_set_width_chars (GTK_LABEL (label), 64);
-        gtk_label_set_ellipsize (GTK_LABEL (label), PANGO_ELLIPSIZE_END);
-    }
+    gtk_label_set_ellipsize (GTK_LABEL (label), PANGO_ELLIPSIZE_END);
     gtk_label_set_max_width_chars (GTK_LABEL (label), 64);
+    if (multiline && g_utf8_strlen (value, -1) > 64) {
+       gtk_label_set_width_chars (GTK_LABEL (label), 64);
+    }
+    gtk_label_set_lines (GTK_LABEL (label), multiline ? 10 : 1);
 
     gtk_grid_attach_next_to (GTK_GRID (grid), label, 
                              name_w, GTK_POS_RIGHT,
