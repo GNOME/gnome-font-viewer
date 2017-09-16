@@ -266,73 +266,13 @@ describe_instance (FT_Face face,
     g_free (str);
 }
 
-/* OpenType layout features. This list is incomplete. */
-static struct {
-  const char *tag;
-  const char *name;
-} named_features[] = {
-  { "aalt", N_("Access All Alternatives") },
-  { "ccmp", N_("Glyph Composition/Decomposition") },
-  { "dnom", N_("Denominators") },
-  { "numr", N_("Numerators") },
-  { "ordn", N_("Ordinals") },
-  { "mark", N_("Mark Positioning") },
-  { "mkmk", N_("Mark to Mark Positioning") },
-  { "rvrn", N_("Required Variation Alternates"), },
-  { "size", N_("Optical size"), },
-  { "opbd", N_("Optical Bounds"), },
-  { "lfbd", N_("Left Bounds"), },
-  { "rtbd", N_("Right Bounds"), },
-  { "rtlm", N_("Right-to-left mirrored forms"), },
-  { "mgrk", N_("Mathematical Greek") },
-  { "kern", N_("Kerning") },
-  { "liga", N_("Common Ligatures") },
-  { "dlig", N_("Discretionary Ligatures") },
-  { "hlig", N_("Historical Ligatures") },
-  { "clig", N_("Contextual Ligatures") },
-  { "smcp", N_("Small Caps") },
-  { "c2sc", N_("Small Caps from Caps") },
-  { "pcap", N_("Petite Caps") },
-  { "c2pc", N_("Caps to Petite Caps") },
-  { "unic", N_("Unicase") },
-  { "cpsp", N_("Capital Spacing") },
-  { "case", N_("Case-sensitive Forms") },
-  { "lnum", N_("Lining Numbers") },
-  { "onum", N_("Old-Style Numbers") },
-  { "pnum", N_("Proportional Numbers") },
-  { "tnum", N_("Tabular Numbers") },
-  { "frac", N_("Normal Fractions") },
-  { "afrc", N_("Alternate Fractions") },
-  { "zero", N_("Slashed Zero") },
-  { "nalt", N_("Alternative Annotations") },
-  { "sinf", N_("Scientific Inferiors") },
-  { "swsh", N_("Swash Glyphs") },
-  { "cswh", N_("Contextual Swash") },
-  { "locl", N_("Localized Forms") },
-  { "calt", N_("Contextual Alternatives") },
-  { "hist", N_("Historical Alternatives") },
-  { "salt", N_("Stylistic Alternatives") },
-  { "titl", N_("Titling Alternatives") },
-  { "rand", N_("Randomize") },
-  { "subs", N_("Subscript") },
-  { "sups", N_("Superscript") },
-  { "init", N_("Initial Forms") },
-  { "medi", N_("Medial Forms") },
-  { "fina", N_("Final Forms") },
-  { "isol", N_("Isolated Forms") },
-  { "ss01", N_("Stylistic Set 1") },
-  { "ss02", N_("Stylistic Set 2") },
-  { "ss03", N_("Stylistic Set 3") },
-  { "ss04", N_("Stylistic Set 4") },
-  { "ss05", N_("Stylistic Set 5") },
-  { "ss06", N_("Stylistic Set 6") },
-};
+#include "open-type-layout.h"
 
 static char *
 get_features (FT_Face face)
 {
     hb_font_t *hb_font;
-    int i, j;
+    int i, j, k;
     GString *s;
 
     s = g_string_new ("");
@@ -358,22 +298,14 @@ get_features (FT_Face face)
                                                     &count,
                                                     features);
             for (j = 0; j < count; j++) {
-                char buf[5];
-                const char *name;
-                int k;
-
-                hb_tag_to_string (features[j], buf); buf[4] = '\0';
-                name = buf;
-
-                for (k = 0; k < G_N_ELEMENTS (named_features); k++) {
-                    if (strcmp (named_features[k].tag, buf) == 0) {
-                        name = _(named_features[k].name);
+                for (k = 0; k < G_N_ELEMENTS (open_type_layout_features); k++) {
+                    if (open_type_layout_features[k].tag == features[j]) {
+                        if (s->len > 0)
+                            g_string_append (s, ", ");
+                        g_string_append (s, g_dpgettext2 (NULL, "OpenType layout", open_type_layout_features[k].name));
                         break;
                     }
                 }
-                if (s->len > 0)
-                    g_string_append (s, ", ");
-                g_string_append (s, name);
             }
         }
     }

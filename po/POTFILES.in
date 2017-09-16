@@ -5,3 +5,4 @@ src/font-thumbnailer.c
 src/font-view-app-menu.ui
 src/font-view.c
 src/org.gnome.font-viewer.desktop.in
+src/open-type-layout.h
