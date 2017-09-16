@@ -28,6 +28,7 @@
 #include FT_TYPE1_TABLES_H
 #include FT_SFNT_NAMES_H
 #include FT_TRUETYPE_IDS_H
+#include FT_MULTIPLE_MASTERS_H
 #include <cairo/cairo-ft.h>
 #include <fontconfig/fontconfig.h>
 #include <gio/gio.h>
@@ -187,6 +188,81 @@ add_row (GtkWidget *grid,
                              1, 1);
 }
 
+#define FixedToFloat(f) (((float)(f))/65536.0)
+
+static char *
+describe_axis (FT_Var_Axis *ax)
+{
+  /* Translators, this string is used to display information about
+   * a 'font variation axis'. The %s gets replaced with the name
+   * of the axis, for example 'Width'. The three %g get replaced
+   * with the minimum, maximum and default values for the axis.
+   */
+  return g_strdup_printf (_("%s %g — %g, default %g"), ax->name,
+                          FixedToFloat (ax->minimum),
+                          FixedToFloat (ax->maximum),
+                          FixedToFloat (ax->def));
+}
+
+static char *
+get_sfnt_name (FT_Face face,
+               guint id)
+{
+    guint count, i;
+
+    count = FT_Get_Sfnt_Name_Count (face);
+    for (i = 0; i < count; i++) {
+        FT_SfntName sname;
+
+        if (FT_Get_Sfnt_Name (face, i, &sname) != 0)
+            continue;
+
+        if (sname.name_id != id)
+            continue;
+
+        /* only handle the unicode names for US langid */
+        if (!(sname.platform_id == TT_PLATFORM_MICROSOFT &&
+            sname.encoding_id == TT_MS_ID_UNICODE_CS &&
+            sname.language_id == TT_MS_LANGID_ENGLISH_UNITED_STATES))
+            continue;
+
+        return g_convert ((gchar *)sname.string, sname.string_len,
+                          "UTF-8", "UTF-16BE", NULL, NULL, NULL);
+    }
+    return NULL;
+}
+
+/* According to the OpenType spec, valid values for the subfamilyId field
+ * of InstanceRecords are 2, 17 or values in the range (255,32768). See
+ * https://www.microsoft.com/typography/otspec/fvar.htm#instanceRecord
+ */
+static gboolean
+is_valid_subfamily_id (guint id)
+{
+  return id == 2 || id == 17 || (255 < id && id < 32768);
+}
+
+static void
+describe_instance (FT_Face face,
+                   FT_Var_Named_Style *ns,
+                   int pos,
+                   GString *s)
+{
+    char *str = NULL;
+
+    if (is_valid_subfamily_id (ns->strid))
+        str = get_sfnt_name (face, ns->strid);
+
+    if (str == NULL)
+        str = g_strdup_printf (_("Instance %d"), pos);
+
+    if (s->len > 0)
+        g_string_append (s, ", ");
+    g_string_append (s, str);
+
+    g_free (str);
+}
+
 static void
 populate_grid (FontViewApplication *self,
                GtkWidget *grid,
@@ -195,6 +271,7 @@ populate_grid (FontViewApplication *self,
     gchar *s;
     GFileInfo *info;
     PS_FontInfoRec ps_info;
+    FT_MM_Var *ft_mm_var;
 
     add_row (grid, _("Name"), face->family_name, FALSE);
 
@@ -320,6 +397,24 @@ populate_grid (FontViewApplication *self,
         g_free (s);
     }
     add_row (grid, _("Color Glyphs"), FT_HAS_COLOR (face) ? _("yes") : _("no"), FALSE);
+
+    if (FT_Get_MM_Var (face, &ft_mm_var) == 0) {
+        int i;
+        for (i = 0; i < ft_mm_var->num_axis; i++) {
+             char *s = describe_axis (&ft_mm_var->axis[i]);
+             add_row (grid, i == 0 ? _("Variation Axes") : "", s, FALSE);
+             g_free (s);
+        }
+        {
+            GString *s = g_string_new ("");
+            for (i = 0; i < ft_mm_var->num_namedstyles; i++) {
+                 describe_instance (face, &ft_mm_var->namedstyle[i], i, s);
+             }
+             add_row (grid, _("Named Styles"), s->str, TRUE);
+             g_string_free (s, TRUE);
+        }
+        free (ft_mm_var);
+    }
 }
 
 static void
