@@ -173,6 +173,7 @@ add_row (GtkWidget *grid,
     gtk_label_set_selectable (GTK_LABEL(label), TRUE);
 
     gtk_label_set_line_wrap (GTK_LABEL (label), TRUE);
+    gtk_label_set_xalign (GTK_LABEL (label), 0.0);
 
     if (multiline && g_utf8_strlen (value, -1) > 64) {
         gtk_label_set_width_chars (GTK_LABEL (label), 64);
@@ -216,6 +217,7 @@ populate_grid (FontViewApplication *self,
     if (FT_IS_SFNT (face)) {
 	gint i, len;
 	gchar *version = NULL, *copyright = NULL, *description = NULL;
+        gchar *designer = NULL, *manufacturer = NULL, *license = NULL;
 
 	len = FT_Get_Sfnt_Name_Count (face);
 	for (i = 0; i < len; i++) {
@@ -246,6 +248,21 @@ populate_grid (FontViewApplication *self,
 		description = g_convert ((gchar *)sname.string, sname.string_len,
 					 "UTF-8", "UTF-16BE", NULL, NULL, NULL);
 		break;
+	    case TT_NAME_ID_MANUFACTURER:
+		g_free (manufacturer);
+		manufacturer = g_convert ((gchar *)sname.string, sname.string_len,
+			  		 "UTF-8", "UTF-16BE", NULL, NULL, NULL);
+		break;
+	    case TT_NAME_ID_DESIGNER:
+		g_free (designer);
+		designer = g_convert ((gchar *)sname.string, sname.string_len,
+			              "UTF-8", "UTF-16BE", NULL, NULL, NULL);
+		break;
+	    case TT_NAME_ID_LICENSE:
+		g_free (license);
+		license = g_convert ((gchar *)sname.string, sname.string_len,
+		                     "UTF-8", "UTF-16BE", NULL, NULL, NULL);
+		break;
 	    default:
 		break;
 	    }
@@ -265,6 +282,21 @@ populate_grid (FontViewApplication *self,
             add_row (grid, _("Description"), description, TRUE);
 	    g_free (description);
 	}
+	if (manufacturer) {
+            strip_whitespace (&manufacturer);
+            add_row (grid, _("Manufacturer"), manufacturer, TRUE);
+	    g_free (manufacturer);
+	}
+	if (designer) {
+            strip_whitespace (&designer);
+            add_row (grid, _("Designer"), designer, TRUE);
+	    g_free (designer);
+	}
+	if (license) {
+            strip_whitespace (&license);
+            add_row (grid, _("License"), license, TRUE);
+	    g_free (license);
+	}
     } else if (FT_Get_PS_Font_Info (face, &ps_info) == 0) {
         gchar *compressed;
 
@@ -281,6 +313,12 @@ populate_grid (FontViewApplication *self,
             g_free (compressed);
         }
     }
+    {
+        char *s = g_strdup_printf ("%ld", face->num_glyphs);
+        add_row (grid, _("Glyph Count"), s, FALSE);
+        g_free (s);
+    }
+    add_row (grid, _("Color Glyphs"), FT_HAS_COLOR (face) ? _("yes") : _("no"), FALSE);
 }
 
 static void
