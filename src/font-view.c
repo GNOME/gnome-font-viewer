@@ -394,7 +394,6 @@ populate_grid (FontViewApplication *self,
     gchar *s;
     GFileInfo *info;
     PS_FontInfoRec ps_info;
-    FT_MM_Var *ft_mm_var;
 
     add_row (grid, _("Name"), face->family_name, FALSE);
 
@@ -514,34 +513,41 @@ populate_grid (FontViewApplication *self,
             g_free (compressed);
         }
     }
-    {
-        char *s = g_strdup_printf ("%ld", face->num_glyphs);
-        add_row (grid, _("Glyph Count"), s, FALSE);
-        g_free (s);
-    }
+}
+
+static void
+populate_details (FontViewApplication *self,
+                  GtkWidget *grid,
+                  FT_Face face)
+{
+    char *s;
+    FT_MM_Var *ft_mm_var;
+
+    s = g_strdup_printf ("%ld", face->num_glyphs);
+    add_row (grid, _("Glyph Count"), s, FALSE);
+    g_free (s);
+
     add_row (grid, _("Color Glyphs"), FT_HAS_COLOR (face) ? _("yes") : _("no"), FALSE);
 
-    {
-        char *features = get_features (face);
-        if (features)
-             add_row (grid, _("Layout Features"), features, TRUE);
-        g_free (features);
-    }
+    s = get_features (face);
+    if (s)
+        add_row (grid, _("Layout Features"), s, TRUE);
+    g_free (s);
 
     if (FT_Get_MM_Var (face, &ft_mm_var) == 0) {
         int i;
         for (i = 0; i < ft_mm_var->num_axis; i++) {
-             char *s = describe_axis (&ft_mm_var->axis[i]);
+             s = describe_axis (&ft_mm_var->axis[i]);
              add_row (grid, i == 0 ? _("Variation Axes") : "", s, FALSE);
              g_free (s);
         }
         {
-            GString *s = g_string_new ("");
+            GString *str = g_string_new ("");
             for (i = 0; i < ft_mm_var->num_namedstyles; i++) {
-                 describe_instance (face, &ft_mm_var->namedstyle[i], i, s);
+                 describe_instance (face, &ft_mm_var->namedstyle[i], i, str);
              }
-             add_row (grid, _("Named Styles"), s->str, TRUE);
-             g_string_free (s, TRUE);
+             add_row (grid, _("Named Styles"), str->str, TRUE);
+             g_string_free (str, TRUE);
         }
         free (ft_mm_var);
     }
@@ -746,33 +752,47 @@ info_button_clicked_cb (GtkButton *button,
                         gpointer user_data)
 {
     FontViewApplication *self = user_data;
-    GtkWidget *grid, *dialog;
+    GtkWidget *stack, *switcher, *grid, *dialog;
     FT_Face face = sushi_font_widget_get_ft_face (SUSHI_FONT_WIDGET (self->font_widget));
 
     if (face == NULL)
         return;
 
+    dialog = g_object_new (GTK_TYPE_DIALOG,
+                           "transient-for", self->main_window,
+                           "modal", TRUE,
+                           "resizable", FALSE,
+                           "destroy-with-parent", TRUE,
+                           "use-header-bar", TRUE,
+                           NULL);
+    stack = gtk_stack_new ();
+    gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), stack);
+
+    switcher = gtk_stack_switcher_new ();
+    gtk_stack_switcher_set_stack (GTK_STACK_SWITCHER (switcher), GTK_STACK (stack));
+    gtk_header_bar_set_custom_title (GTK_HEADER_BAR (gtk_window_get_titlebar (GTK_WINDOW (dialog))),
+                                     switcher);
+
     grid = gtk_grid_new ();
     gtk_orientable_set_orientation (GTK_ORIENTABLE (grid), GTK_ORIENTATION_VERTICAL);
-    g_object_set (grid,
-                  "margin-top", 6,
-                  "margin-start", 16,
-                  "margin-end", 16,
-                  "margin-bottom", 6,
-                  NULL);
+    g_object_set (grid, "margin", 20, NULL);
     gtk_grid_set_column_spacing (GTK_GRID (grid), 8);
     gtk_grid_set_row_spacing (GTK_GRID (grid), 2);
 
     populate_grid (self, grid, face);
 
-    dialog = g_object_new (GTK_TYPE_DIALOG,
-                           "title", _("Info"),
-                           "transient-for", self->main_window,
-                           "modal", TRUE,
-                           "destroy-with-parent", TRUE,
-                           "use-header-bar", TRUE,
-                           NULL);
-    gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), grid);
+    gtk_stack_add_titled (GTK_STACK (stack), grid, "info", _("General"));
+
+    grid = gtk_grid_new ();
+    gtk_orientable_set_orientation (GTK_ORIENTABLE (grid), GTK_ORIENTATION_VERTICAL);
+    g_object_set (grid, "margin", 20, NULL);
+    gtk_grid_set_column_spacing (GTK_GRID (grid), 8);
+    gtk_grid_set_row_spacing (GTK_GRID (grid), 2);
+
+    populate_details (self, grid, face);
+
+    gtk_stack_add_titled (GTK_STACK (stack), grid, "details", _("Details"));
+
     g_signal_connect (dialog, "response",
                       G_CALLBACK (gtk_widget_destroy), NULL);
     gtk_widget_show_all (dialog);
