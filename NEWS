@@ -1,3 +1,8 @@
+GNOME Font Viewer - 3.26.0
+-------------------------------------------------------------------------------
+• Rename to "Fonts" in AppData file too (#786128, Jeremy Bicha)
+• Translation updates
+
 GNOME Font Viewer - 3.25.90
 -------------------------------------------------------------------------------
 • Use "Fonts" as user-visible application name (#783640, Jeremy Bicha)
