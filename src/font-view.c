@@ -301,7 +301,8 @@ get_features (FT_Face face)
                 for (k = 0; k < G_N_ELEMENTS (open_type_layout_features); k++) {
                     if (open_type_layout_features[k].tag == features[j]) {
                         if (s->len > 0)
-                            g_string_append (s, ", ");
+                            /* Translators, this seperates the list of Layout Features. */
+                            g_string_append (s, C_("OpenType layout", ", "));
                         g_string_append (s, g_dpgettext2 (NULL, "OpenType layout", open_type_layout_features[k].name));
                         break;
                     }
