@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.gnome-2-16.ar\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-24 19:13+0200\n"
-"PO-Revision-Date: 2017-09-26 13:20+0200\n"
+"POT-Creation-Date: 2017-09-27 08:26+0200\n"
+"PO-Revision-Date: 2017-09-27 08:28+0200\n"
 "Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "Language: ar\n"
@@ -27,7 +27,7 @@ msgstr ""
 msgid "GNOME Fonts"
 msgstr "خطوط جنوم"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1012
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1013
 #: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "اعرض الخطوط على نظامك"
@@ -97,111 +97,117 @@ msgstr "‏%s ‏%g ‏— ‏%g، المبدئي %g"
 msgid "Instance %d"
 msgstr "صيرورة %d"
 
-#: src/font-view.c:330
+#. Translators, this seperates the list of Layout Features.
+#: src/font-view.c:305
+msgctxt "OpenType layout"
+msgid ", "
+msgstr "، "
+
+#: src/font-view.c:331
 msgid "Name"
 msgstr "الاسم"
 
-#: src/font-view.c:333
+#: src/font-view.c:334
 msgid "Style"
 msgstr "الطراز"
 
-#: src/font-view.c:343
+#: src/font-view.c:344
 msgid "Type"
 msgstr "النوع"
 
-#: src/font-view.c:404 src/font-view.c:438
+#: src/font-view.c:405 src/font-view.c:439
 msgid "Version"
 msgstr "الإصدارة"
 
-#: src/font-view.c:409 src/font-view.c:444
+#: src/font-view.c:410 src/font-view.c:445
 msgid "Copyright"
 msgstr "حقوق النشر"
 
-#: src/font-view.c:414
+#: src/font-view.c:415
 msgid "Description"
 msgstr "الوصف"
 
-#: src/font-view.c:419
+#: src/font-view.c:420
 msgid "Manufacturer"
 msgstr "الصانع"
 
-#: src/font-view.c:424
+#: src/font-view.c:425
 msgid "Designer"
 msgstr "المصمم"
 
-#: src/font-view.c:429
+#: src/font-view.c:430
 msgid "License"
 msgstr "الرخصة"
 
-#: src/font-view.c:459
+#: src/font-view.c:460
 msgid "Glyph Count"
 msgstr "عدد المحارف"
 
-#: src/font-view.c:462
+#: src/font-view.c:463
 msgid "Color Glyphs"
 msgstr "المحارف الملونة"
 
-#: src/font-view.c:462
+#: src/font-view.c:463
 msgid "yes"
 msgstr "نعم"
 
-#: src/font-view.c:462
+#: src/font-view.c:463
 msgid "no"
 msgstr "لا"
 
-#: src/font-view.c:466
+#: src/font-view.c:467
 msgid "Layout Features"
 msgstr "خصائص التنسيق"
 
-#: src/font-view.c:473
+#: src/font-view.c:474
 msgid "Variation Axes"
 msgstr "محاور التغيير"
 
-#: src/font-view.c:481
+#: src/font-view.c:482
 msgid "Named Styles"
 msgstr "الأنماط المُسمّاة"
 
-#: src/font-view.c:498
+#: src/font-view.c:499
 msgid "Install Failed"
 msgstr "فشل التّثبيت"
 
-#: src/font-view.c:505
+#: src/font-view.c:506
 msgid "Installed"
 msgstr "مثبَّت"
 
-#: src/font-view.c:509 src/font-view.c:768
+#: src/font-view.c:510 src/font-view.c:769
 msgid "Install"
 msgstr "ثبّت"
 
-#: src/font-view.c:643
+#: src/font-view.c:644
 msgid "This font could not be displayed."
 msgstr "تعذّر عرض هذا الخط."
 
-#: src/font-view.c:716
+#: src/font-view.c:717
 msgid "General"
 msgstr "عام"
 
-#: src/font-view.c:726
+#: src/font-view.c:727
 msgid "Details"
 msgstr "تفاصيل"
 
-#: src/font-view.c:779
+#: src/font-view.c:780
 msgid "Info"
 msgstr "معلومات"
 
-#: src/font-view.c:794
+#: src/font-view.c:795
 msgid "Back"
 msgstr "السابق"
 
-#: src/font-view.c:885
+#: src/font-view.c:886
 msgid "All Fonts"
 msgstr "كل الخطوط"
 
-#: src/font-view.c:1011 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1012 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
 msgstr "الخطوط"
 
-#: src/font-view.c:1014
+#: src/font-view.c:1015
 msgid "translator-credits"
 msgstr ""
 "فريق عربآيز للترجمة http://arabeyes.org:\n"
