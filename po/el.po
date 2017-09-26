@@ -33,10 +33,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.gnome-2-26\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-11-02 07:43+0000\n"
-"PO-Revision-Date: 2014-11-02 13:40+0200\n"
+"POT-Creation-Date: 2017-08-10 23:03+0000\n"
+"PO-Revision-Date: 2017-09-09 13:51+0200\n"
 "Last-Translator: Efstathios Iosifidis <iosifidis@opensuse.org>\n"
 "Language-Team: team@lists.gnome.gr\n"
 "Language: el\n"
@@ -47,126 +47,136 @@ msgstr ""
 "X-Generator: Poedit 1.5.7\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
-msgid ""
-"GNOME Font Viewer shows you the fonts installed on your computer for your "
-"use as thumbnails. Selecting any thumbnails shows the full view of how the "
-"font would look under various sizes."
-msgstr ""
-"Η εφαρμογή Προβολή γραμματοσειρών GNOME σας δείχνει τις γραμματοσειρές που "
-"είναι εγκατεστημένες στον υπολογιστή σας για δική σας χρήση, σε μορφή "
-"μικρογραφιών. Επιλέγοντας μια μικρογραφία, θα σας εμφανίσει σε πλήρη προβολή "
-"πως θα έδειχνε αυτή η γραμματοσειρά σε διάφορα μεγέθη."
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:76
+#| msgid "GNOME Font Viewer"
+msgid "GNOME Fonts"
+msgstr "Εφαρμογή Γραμματοσειρές GNOME"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
-msgid ""
-"GNOME Font Viewer also supports installing new font files downloaded in the ."
-"ttf and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
-msgstr ""
-"Η εφαρμογή Προβολή γραμματοσειρών GNOME υποστηρίζει επίσης την εγκατάσταση "
-"αρχείων για νέες γραμματοσειρές που λήφθηκαν σε μορφή .ttf ή σε άλλα "
-"πρότυπα. Οι γραμματοσειρές μπορούν να εγκατασταθούν είτε αποκλειστικά για "
-"δική σας χρήση, είτε να είναι διαθέσιμες για όλους τους χρήστες στον "
-"υπολογιστή σας."
-
-#: ../src/font-thumbnailer.c:189
-msgid "Text to thumbnail (default: Aa)"
-msgstr "Κείμενο σε μικρογραφία (προεπιλεγμένο: Αα)"
-
-#: ../src/font-thumbnailer.c:189
-msgid "TEXT"
-msgstr "ΚΕΙΜΕΝΟ"
-
-#: ../src/font-thumbnailer.c:191
-msgid "Thumbnail size (default: 128)"
-msgstr "Μέγεθος μικρογραφίας (προεπιλογή: 128)"
-
-#: ../src/font-thumbnailer.c:191
-msgid "SIZE"
-msgstr "ΜΕΓΕΘΟΣ"
-
-#: ../src/font-thumbnailer.c:193
-msgid "FONT-FILE OUTPUT-FILE"
-msgstr "FONT-FILE OUTPUT-FILE"
-
-#: ../src/font-view-app-menu.ui.h:1
-msgid "About"
-msgstr "Περί"
-
-#: ../src/font-view-app-menu.ui.h:2
-msgid "Quit"
-msgstr "Έξοδος"
-
-#: ../src/font-view.c:76
-msgid "GNOME Font Viewer"
-msgstr "Εφαρμογή προβολής γραμματοσειρών GNOME"
-
-#: ../src/font-view.c:84
-msgid "Show the application's version"
-msgstr "Εμφάνση έκδοσης της εφαρμογής"
-
-#: ../src/font-view.c:194
-msgid "Name"
-msgstr "Όνομα"
-
-#: ../src/font-view.c:197
-msgid "Style"
-msgstr "Πρότυπο"
-
-#: ../src/font-view.c:207
-msgid "Type"
-msgstr "Τύπος"
-
-#: ../src/font-view.c:252 ../src/font-view.c:271
-msgid "Version"
-msgstr "Έκδοση"
-
-#: ../src/font-view.c:257 ../src/font-view.c:277
-msgid "Copyright"
-msgstr "Πνευματικά δικαιώματα"
-
-#: ../src/font-view.c:262
-msgid "Description"
-msgstr "Περιγραφή"
-
-#: ../src/font-view.c:290
-msgid "Install Failed"
-msgstr "Απέτυχε η εγκατάσταση"
-
-#: ../src/font-view.c:296
-msgid "Installed"
-msgstr "Εγκαταστάθηκε"
-
-#: ../src/font-view.c:299 ../src/font-view.c:543
-msgid "Install"
-msgstr "Εγκατάσταση"
-
-#: ../src/font-view.c:432
-msgid "This font could not be displayed."
-msgstr "Δε μπορεί να εμφανιστεί αυτή η γραμματοσειρά."
-
-#: ../src/font-view.c:496 ../src/font-view.c:554
-msgid "Info"
-msgstr "Πληροφορίες"
-
-#: ../src/font-view.c:571
-msgid "Back"
-msgstr "Πίσω"
-
-#: ../src/font-view.c:661
-msgid "All Fonts"
-msgstr "Όλες οι γραμματοσειρές"
-
-#: ../src/font-view.c:779 ../src/org.gnome.font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "Εφαρμογή προβολής γραμματοσειρών"
-
-#: ../src/font-view.c:780 ../src/org.gnome.font-viewer.desktop.in.in.h:2
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:796
+#: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Δείτε τις γραμματοσειρές του συστήματος σας"
 
-#: ../src/font-view.c:782
+#: data/org.gnome.font-viewer.appdata.xml.in:9
+#| msgid ""
+#| "GNOME Font Viewer shows you the fonts installed on your computer for your "
+#| "use as thumbnails. Selecting any thumbnails shows the full view of how "
+#| "the font would look under various sizes."
+msgid ""
+"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"thumbnails. Selecting any thumbnails shows the full view of how the font "
+"would look under various sizes."
+msgstr ""
+"Η εφαρμογή Γραμματοσειρές GNOME σας δείχνει τις γραμματοσειρές που είναι "
+"εγκατεστημένες στον υπολογιστή σας για δική σας χρήση, σε μορφή "
+"μικρογραφιών. Επιλέγοντας μια μικρογραφία, θα σας εμφανίσει σε πλήρη προβολή "
+"πως θα έδειχνε αυτή η γραμματοσειρά σε διάφορα μεγέθη."
+
+#: data/org.gnome.font-viewer.appdata.xml.in:15
+#| msgid ""
+#| "GNOME Font Viewer also supports installing new font files downloaded in "
+#| "the .ttf and other formats. Fonts may be installed only for your use or "
+#| "made available to all users on the computer."
+msgid ""
+"GNOME Fonts also supports installing new font files downloaded in the .ttf "
+"and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"Η εφαρμογή Γραμματοσειρές GNOME υποστηρίζει επίσης την εγκατάσταση αρχείων "
+"για νέες γραμματοσειρές που λήφθηκαν σε μορφή .ttf ή σε άλλα πρότυπα. Οι "
+"γραμματοσειρές μπορούν να εγκατασταθούν είτε αποκλειστικά για δική σας "
+"χρήση, είτε να είναι διαθέσιμες για όλους τους χρήστες στον υπολογιστή σας."
+
+#: src/font-thumbnailer.c:189
+msgid "Text to thumbnail (default: Aa)"
+msgstr "Κείμενο σε μικρογραφία (προεπιλεγμένο: Αα)"
+
+#: src/font-thumbnailer.c:189
+msgid "TEXT"
+msgstr "ΚΕΙΜΕΝΟ"
+
+#: src/font-thumbnailer.c:191
+msgid "Thumbnail size (default: 128)"
+msgstr "Μέγεθος μικρογραφίας (προεπιλογή: 128)"
+
+#: src/font-thumbnailer.c:191
+msgid "SIZE"
+msgstr "ΜΕΓΕΘΟΣ"
+
+#: src/font-thumbnailer.c:193
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "FONT-FILE OUTPUT-FILE"
+
+#: src/font-view-app-menu.ui:6
+msgid "About"
+msgstr "Περί"
+
+#: src/font-view-app-menu.ui:10
+msgid "Quit"
+msgstr "Έξοδος"
+
+#: src/font-view.c:84
+msgid "Show the application's version"
+msgstr "Εμφάνση έκδοσης της εφαρμογής"
+
+#: src/font-view.c:197
+msgid "Name"
+msgstr "Όνομα"
+
+#: src/font-view.c:200
+msgid "Style"
+msgstr "Πρότυπο"
+
+#: src/font-view.c:210
+msgid "Type"
+msgstr "Τύπος"
+
+#: src/font-view.c:255 src/font-view.c:274
+msgid "Version"
+msgstr "Έκδοση"
+
+#: src/font-view.c:260 src/font-view.c:280
+msgid "Copyright"
+msgstr "Πνευματικά δικαιώματα"
+
+#: src/font-view.c:265
+msgid "Description"
+msgstr "Περιγραφή"
+
+#: src/font-view.c:296
+msgid "Install Failed"
+msgstr "Απέτυχε η εγκατάσταση"
+
+#: src/font-view.c:303
+msgid "Installed"
+msgstr "Εγκαταστάθηκε"
+
+#: src/font-view.c:307 src/font-view.c:552
+msgid "Install"
+msgstr "Εγκατάσταση"
+
+#: src/font-view.c:441
+msgid "This font could not be displayed."
+msgstr "Δε μπορεί να εμφανιστεί αυτή η γραμματοσειρά."
+
+#: src/font-view.c:505 src/font-view.c:563
+msgid "Info"
+msgstr "Πληροφορίες"
+
+#: src/font-view.c:578
+msgid "Back"
+msgstr "Πίσω"
+
+#: src/font-view.c:669
+msgid "All Fonts"
+msgstr "Όλες οι γραμματοσειρές"
+
+#: src/font-view.c:795 src/org.gnome.font-viewer.desktop.in:3
+#| msgid "All Fonts"
+msgid "Fonts"
+msgstr "Γραμματοσειρές"
+
+#: src/font-view.c:798
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα GNOME\n"
@@ -176,21 +186,27 @@ msgstr ""
 "Μαρία Θουκυδίδου <marablack3@gmail.com>\n"
 "Για περισσότερα δείτε http://www.gnome.gr/"
 
-#: ../src/font-view.c:921
-msgid "[FILE...]"
-msgstr "[ΑΡΧΕΙΟ...]"
-
-#. I18N: The '%s' is replaced with the command name.
-#: ../src/font-view.c:929
-#, c-format
-msgid "Run '%s --help' to see a full list of available command line options."
-msgstr ""
-"Εκτελέστε '%s --help' για να δείτε μια πλήρη λίστα των διαθέσιμων επιλογών "
-"της εντολής."
-
-#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
 msgstr "γραμματοσειρές;οικογένεια γραμματοσειρών;fonts;fontface;"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: src/org.gnome.font-viewer.desktop.in:8
+msgid "preferences-desktop-font"
+msgstr "preferences-desktop-font"
+
+#~ msgid "Font Viewer"
+#~ msgstr "Εφαρμογή προβολής γραμματοσειρών"
+
+#~ msgid "[FILE...]"
+#~ msgstr "[ΑΡΧΕΙΟ...]"
+
+#~ msgid ""
+#~ "Run '%s --help' to see a full list of available command line options."
+#~ msgstr ""
+#~ "Εκτελέστε '%s --help' για να δείτε μια πλήρη λίστα των διαθέσιμων "
+#~ "επιλογών της εντολής."
 
 #~ msgid "_Close"
 #~ msgstr "_Κλείσιμο"
