@@ -10,134 +10,163 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-09 00:13+0200\n"
-"PO-Revision-Date: 2014-02-26 07:26+0100\n"
-"Last-Translator: Pau Iranzo <paugnu@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-09-18 18:13+0000\n"
+"PO-Revision-Date: 2017-09-01 13:19+0200\n"
+"Last-Translator: Xavi Ivars <xavi.ivars@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
-"Language: ca@valencia\n"
+"Language: ca-valencia\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.8.11\n"
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:1
-msgid ""
-"GNOME Font Viewer shows you the fonts installed on your computer for your "
-"use as thumbnails. Selecting any thumbnails shows the full view of how the "
-"font would look under various sizes."
-msgstr ""
-"El Visualitzador de tipus de lletra del GNOME vos mostra en miniatures els "
-"tipus de lletra instal·lats a l'ordinador. En seleccionar una de les "
-"miniatures s'vos mostrarà la vista completa de com es veurà el tipus de "
-"lletra en diferents mides."
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:76
+msgid "GNOME Fonts"
+msgstr "Tipus de lletra del GNOME"
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:2
-msgid ""
-"GNOME Font Viewer also supports installing new font files downloaded in the ."
-"ttf and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
-msgstr ""
-"El Visualitzador de tipus de lletra del GNOME també permet la instal·lació "
-"de fitxers de tipus de lletra en format .ttf i d'altres. Els tipus de lletra "
-"es poden instal·lar només per al vostre ús o fer-los accessibles per a tots "
-"els usuaris de l'ordinador. "
-
-#: ../src/font-thumbnailer.c:189
-msgid "Text to thumbnail (default: Aa)"
-msgstr "Text a miniaturitzar (predeterminat: Aa)"
-
-#: ../src/font-thumbnailer.c:189
-msgid "TEXT"
-msgstr "TEXT"
-
-#: ../src/font-thumbnailer.c:191
-msgid "Thumbnail size (default: 128)"
-msgstr "Mida de la miniatura (per defecte: 128)"
-
-#: ../src/font-thumbnailer.c:191
-msgid "SIZE"
-msgstr "MIDA"
-
-#: ../src/font-thumbnailer.c:193
-msgid "FONT-FILE OUTPUT-FILE"
-msgstr "FITXER-DE-TIPUS-DE-LLETRA FITXER-DE-SORTIDA"
-
-#: ../src/font-view-app-menu.ui.h:1
-msgid "About"
-msgstr "Quant a"
-
-#: ../src/font-view-app-menu.ui.h:2
-msgid "Quit"
-msgstr "Ix"
-
-#: ../src/font-view.c:176
-msgid "Name"
-msgstr "Nom"
-
-#: ../src/font-view.c:179
-msgid "Style"
-msgstr "Estil"
-
-#: ../src/font-view.c:189
-msgid "Type"
-msgstr "Tipus"
-
-#: ../src/font-view.c:234 ../src/font-view.c:253
-msgid "Version"
-msgstr "Versió"
-
-#: ../src/font-view.c:239 ../src/font-view.c:259
-msgid "Copyright"
-msgstr "Copyright"
-
-#: ../src/font-view.c:244
-msgid "Description"
-msgstr "Descripció"
-
-#: ../src/font-view.c:272
-msgid "Install Failed"
-msgstr "Ha fallat la instal·lació"
-
-#: ../src/font-view.c:278
-msgid "Installed"
-msgstr "S'ha instal·lat"
-
-#: ../src/font-view.c:281 ../src/font-view.c:525
-msgid "Install"
-msgstr "Instal·la"
-
-#: ../src/font-view.c:414
-msgid "This font could not be displayed."
-msgstr "No es pot visualitzar este tipus de lletra."
-
-#: ../src/font-view.c:478 ../src/font-view.c:536
-msgid "Info"
-msgstr "Informació"
-
-#: ../src/font-view.c:553
-msgid "Back"
-msgstr "Arrere"
-
-#: ../src/font-view.c:643
-msgid "All Fonts"
-msgstr "Tots els tipus de lletra"
-
-#: ../src/font-view.c:761 ../src/org.gnome.font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "Visualitzador de tipus de lletra"
-
-#: ../src/font-view.c:762 ../src/org.gnome.font-viewer.desktop.in.in.h:2
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:796
+#: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Visualitza tots els tipus de lletra del sistema"
 
-#: ../src/font-view.c:764
+#: data/org.gnome.font-viewer.appdata.xml.in:9
+msgid ""
+"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"thumbnails. Selecting any thumbnails shows the full view of how the font "
+"would look under various sizes."
+msgstr ""
+"Els Tipus de lletra del GNOME vos mostra en miniatures els tipus de lletra "
+"instal·lats a l'ordinador. En seleccionar una de les miniatures se vos "
+"mostrarà la vista completa de com es veurà el tipus de lletra en diferents "
+"mides."
+
+#: data/org.gnome.font-viewer.appdata.xml.in:15
+msgid ""
+"GNOME Fonts also supports installing new font files downloaded in the .ttf "
+"and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"Els Tipus de lletra del GNOME també permet la instal·lació de fitxers de "
+"tipus de lletra en format .ttf i d'altres. Els tipus de lletra es poden "
+"instal·lar només per al vostre ús o fer-los accessibles per a tots els "
+"usuaris de l'ordinador. "
+
+#: src/font-thumbnailer.c:189
+msgid "Text to thumbnail (default: Aa)"
+msgstr "Text a miniaturitzar (predeterminat: Aa)"
+
+#: src/font-thumbnailer.c:189
+msgid "TEXT"
+msgstr "TEXT"
+
+#: src/font-thumbnailer.c:191
+msgid "Thumbnail size (default: 128)"
+msgstr "Mida de la miniatura (per defecte: 128)"
+
+#: src/font-thumbnailer.c:191
+msgid "SIZE"
+msgstr "MIDA"
+
+#: src/font-thumbnailer.c:193
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "FITXER-DE-TIPUS-DE-LLETRA FITXER-DE-SORTIDA"
+
+#: src/font-view-app-menu.ui:6
+msgid "About"
+msgstr "Quant a"
+
+#: src/font-view-app-menu.ui:10
+msgid "Quit"
+msgstr "Ix"
+
+#: src/font-view.c:84
+msgid "Show the application's version"
+msgstr "Mostra la versió de l'aplicació"
+
+#: src/font-view.c:197
+msgid "Name"
+msgstr "Nom"
+
+#: src/font-view.c:200
+msgid "Style"
+msgstr "Estil"
+
+#: src/font-view.c:210
+msgid "Type"
+msgstr "Tipus"
+
+#: src/font-view.c:255 src/font-view.c:274
+msgid "Version"
+msgstr "Versió"
+
+#: src/font-view.c:260 src/font-view.c:280
+msgid "Copyright"
+msgstr "Copyright"
+
+#: src/font-view.c:265
+msgid "Description"
+msgstr "Descripció"
+
+#: src/font-view.c:296
+msgid "Install Failed"
+msgstr "Ha fallat la instal·lació"
+
+#: src/font-view.c:303
+msgid "Installed"
+msgstr "S'ha instal·lat"
+
+#: src/font-view.c:307 src/font-view.c:552
+msgid "Install"
+msgstr "Instal·la"
+
+#: src/font-view.c:441
+msgid "This font could not be displayed."
+msgstr "No es pot visualitzar este tipus de lletra."
+
+#: src/font-view.c:505 src/font-view.c:563
+msgid "Info"
+msgstr "Informació"
+
+#: src/font-view.c:578
+msgid "Back"
+msgstr "Arrere"
+
+#: src/font-view.c:669
+msgid "All Fonts"
+msgstr "Tots els tipus de lletra"
+
+#: src/font-view.c:795 src/org.gnome.font-viewer.desktop.in:3
+msgid "Fonts"
+msgstr "Tipus de lletra"
+
+#: src/font-view.c:798
 msgid "translator-credits"
 msgstr "Joan Duran <jodufi@gmail.com>"
 
-#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
 msgstr "tipus de lletra;tipografia;"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: src/org.gnome.font-viewer.desktop.in:8
+msgid "preferences-desktop-font"
+msgstr "preferences-desktop-font"
+
+#~ msgid "Font Viewer"
+#~ msgstr "Visualitzador de tipus de lletra"
+
+#~ msgid "[FILE...]"
+#~ msgstr "[FITXER...]"
+
+#~ msgid ""
+#~ "Run '%s --help' to see a full list of available command line options."
+#~ msgstr ""
+#~ "Executeu '%s --help' per veure una llista sencera de les opcions de la "
+#~ "línia d'ordres."
 
 #~ msgid "_Close"
 #~ msgstr "_Tanca"
