@@ -8,10 +8,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.gnome-2-20.ne\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-03-26 01:48+0000\n"
-"PO-Revision-Date: 2014-09-18 12:51+0400\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-"
+"viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-08-10 23:03+0000\n"
+"PO-Revision-Date: 2017-10-16 15:47+0545\n"
 "Last-Translator: Pawan Chitrakar <chautari@gmail.com>\n"
 "Language-Team: Nepali Translation Team <chautari@gmail.com>\n"
 "Language: ne\n"
@@ -19,120 +19,141 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n !=1;\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Poedit 2.0.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:1
-msgid ""
-"GNOME Font Viewer shows you the fonts installed on your computer for your "
-"use as thumbnails. Selecting any thumbnails shows the full view of how the "
-"font would look under various sizes."
-msgstr ""
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:76
+msgid "GNOME Fonts"
+msgstr "जिनोम फन्ट"
 
-#: ../data/gnome-font-viewer.appdata.xml.in.h:2
-msgid ""
-"GNOME Font Viewer also supports installing new font files downloaded in the ."
-"ttf and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
-msgstr ""
-"जिनोम फन्ट भ्युवर ले ttf र अरु ढाचामा भएको फन्ट स्थापना गर्न सक्छ अनि सबै प्रयोगकर्ताले "
-"त्यो फन्ट प्रयोग गर्न सक्छ"
-
-#: ../src/font-thumbnailer.c:189
-msgid "Text to thumbnail (default: Aa)"
-msgstr "पाठबाट थम्बनेल प्रतिमा (पूर्वनिर्धारित Aa)"
-
-#: ../src/font-thumbnailer.c:189
-msgid "TEXT"
-msgstr "पाठ"
-
-#: ../src/font-thumbnailer.c:191
-msgid "Thumbnail size (default: 128)"
-msgstr "थम्बनेल प्रतिमा साइज(पूर्वनिर्धारित १२८)"
-
-#: ../src/font-thumbnailer.c:191
-msgid "SIZE"
-msgstr "आकार"
-
-#: ../src/font-thumbnailer.c:193
-msgid "FONT-FILE OUTPUT-FILE"
-msgstr "FONT-FILE OUTPUT-FILE"
-
-#: ../src/font-view-app-menu.ui.h:1
-msgid "About"
-msgstr "बारेमा"
-
-#: ../src/font-view-app-menu.ui.h:2
-msgid "Quit"
-msgstr "अन्त्य गर्नुहोस्"
-
-#: ../src/font-view.c:176
-msgid "Name"
-msgstr "नाम: "
-
-#: ../src/font-view.c:179
-msgid "Style"
-msgstr "शैली:"
-
-#: ../src/font-view.c:189
-msgid "Type"
-msgstr "प्रकार"
-
-#: ../src/font-view.c:234 ../src/font-view.c:253
-msgid "Version"
-msgstr "संस्करण:"
-
-#: ../src/font-view.c:239 ../src/font-view.c:259
-msgid "Copyright"
-msgstr "प्रतिलिपिअधिकार "
-
-#: ../src/font-view.c:244
-msgid "Description"
-msgstr "विवरण:"
-
-#: ../src/font-view.c:272
-msgid "Install Failed"
-msgstr "स्थापना असफल भयो "
-
-#: ../src/font-view.c:278
-msgid "Installed"
-msgstr "स्थापित भयो"
-
-#: ../src/font-view.c:281 ../src/font-view.c:525
-msgid "Install"
-msgstr "स्थापना गर्नुहोस्"
-
-#: ../src/font-view.c:414
-msgid "This font could not be displayed."
-msgstr "यो फन्ट प्रदर्शन गर्न सकिएन"
-
-#: ../src/font-view.c:478 ../src/font-view.c:536
-msgid "Info"
-msgstr "सूचना"
-
-#: ../src/font-view.c:553
-msgid "Back"
-msgstr "पछाडि"
-
-#: ../src/font-view.c:643
-msgid "All Fonts"
-msgstr "सबै फन्ट"
-
-#: ../src/font-view.c:761 ../src/gnome-font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "फन्ट प्रदर्शक"
-
-#: ../src/font-view.c:762 ../src/gnome-font-viewer.desktop.in.in.h:2
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:796
+#: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "प्रणालीको फन्ट हेर्नुहोस्"
 
-#: ../src/font-view.c:764
-msgid "translator-credits"
-msgstr "Pawan Chitrakar <chautari@gmail.com>"
+#: data/org.gnome.font-viewer.appdata.xml.in:9
+msgid ""
+"GNOME Fonts shows you the fonts installed on your computer for your use as thumbnails. "
+"Selecting any thumbnails shows the full view of how the font would look under various "
+"sizes."
+msgstr ""
+"जिनोम फन्टहरू तपाइँ थम्बनेलको रूपमा प्रयोगको लागि तपाईंको कम्प्युटरमा स्थापित फन्टहरू देखाउँछ। कुनै पनि "
+"थम्बनेल चयन गर्नाले कसरी विभिन्न आकारहरू मा फन्ट हेर्नेछ भन्ने पूर्ण दृश्य देखाउँदछ।"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:3
+#: data/org.gnome.font-viewer.appdata.xml.in:15
+msgid ""
+"GNOME Fonts also supports installing new font files downloaded in the .ttf and other "
+"formats. Fonts may be installed only for your use or made available to all users on the "
+"computer."
+msgstr ""
+"जिनोम फन्टहरू .ttf र अन्य ढाँचामा डाउनलोड गरिएका नयाँ फन्ट फाइलहरू स्थापना गर्न पनि समर्थन गर्दछ। "
+"फन्टहरू तपाईँको प्रयोगको लागि मात्रै स्थापित वा कम्प्यूटरमा सबै प्रयोगकर्ताहरूको लागि उपलब्ध गराउन "
+"सकिन्छ।"
+
+#: src/font-thumbnailer.c:189
+msgid "Text to thumbnail (default: Aa)"
+msgstr "पाठबाट थम्बनेल प्रतिमा (पूर्वनिर्धारित Aa)"
+
+#: src/font-thumbnailer.c:189
+msgid "TEXT"
+msgstr "पाठ"
+
+#: src/font-thumbnailer.c:191
+msgid "Thumbnail size (default: 128)"
+msgstr "थम्बनेल प्रतिमा साइज(पूर्वनिर्धारित १२८)"
+
+#: src/font-thumbnailer.c:191
+msgid "SIZE"
+msgstr "आकार"
+
+#: src/font-thumbnailer.c:193
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "FONT-FILE OUTPUT-FILE"
+
+#: src/font-view-app-menu.ui:6
+msgid "About"
+msgstr "बारेमा"
+
+#: src/font-view-app-menu.ui:10
+msgid "Quit"
+msgstr "अन्त्य गर्नुहोस्"
+
+#: src/font-view.c:84
+msgid "Show the application's version"
+msgstr "एप्लिकेशनको संसकरण देखाउने"
+
+#: src/font-view.c:197
+msgid "Name"
+msgstr "नाम"
+
+#: src/font-view.c:200
+msgid "Style"
+msgstr "शैली"
+
+#: src/font-view.c:210
+msgid "Type"
+msgstr "प्रकार"
+
+#: src/font-view.c:255 src/font-view.c:274
+msgid "Version"
+msgstr "संस्करण"
+
+#: src/font-view.c:260 src/font-view.c:280
+msgid "Copyright"
+msgstr "प्रतिलिपिअधिकार"
+
+#: src/font-view.c:265
+msgid "Description"
+msgstr "विवरण"
+
+#: src/font-view.c:296
+msgid "Install Failed"
+msgstr "स्थापना असफल भयो"
+
+#: src/font-view.c:303
+msgid "Installed"
+msgstr "स्थापित भयो"
+
+#: src/font-view.c:307 src/font-view.c:552
+msgid "Install"
+msgstr "स्थापना गर्नुहोस्"
+
+#: src/font-view.c:441
+msgid "This font could not be displayed."
+msgstr "यो फन्ट प्रदर्शन गर्न सकिएन."
+
+#: src/font-view.c:505 src/font-view.c:563
+msgid "Info"
+msgstr "सूचना"
+
+#: src/font-view.c:578
+msgid "Back"
+msgstr "पछाडि"
+
+#: src/font-view.c:669
+msgid "All Fonts"
+msgstr "सबै फन्ट"
+
+#: src/font-view.c:795 src/org.gnome.font-viewer.desktop.in:3
+msgid "Fonts"
+msgstr "फन्टहरू"
+
+#: src/font-view.c:798
+msgid "translator-credits"
+msgstr "pawan chitrakar <chautari@gmail.com>"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
 msgstr "फन्ट;फन्टफेस;"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: src/org.gnome.font-viewer.desktop.in:8
+msgid "preferences-desktop-font"
+msgstr "प्राथमिकताहरू-डेस्कटप-फन्ट"
+
+#~ msgid "Font Viewer"
+#~ msgstr "फन्ट प्रदर्शक"
 
 #, fuzzy
 #~ msgid "Size:"
