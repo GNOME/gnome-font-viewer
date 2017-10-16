@@ -150,7 +150,7 @@ msgstr "फन्ट;फन्टफेस;"
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: src/org.gnome.font-viewer.desktop.in:8
 msgid "preferences-desktop-font"
-msgstr "प्राथमिकताहरू-डेस्कटप-फन्ट"
+msgstr "preferences-desktop-font"
 
 #~ msgid "Font Viewer"
 #~ msgstr "फन्ट प्रदर्शक"
