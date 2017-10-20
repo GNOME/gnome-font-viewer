@@ -2,7 +2,7 @@
 # Copyright (C) 2000-2006 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-font-viewer package.
 #
-# Matej Urbančič <mateju@svn.gnome.org>, 2007–2017.
+# Matej Urbančič <mateju@svn.gnome.org>, + 2007–2017.
 #
 msgid ""
 msgstr ""
@@ -37,9 +37,7 @@ msgid ""
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"Program Pregledovalnik pisav za GNOME prikaže obliko pisav, ki so nameščene "
-"na računalniku, kot sličice. Z izborom sličice se pokaže poln prikaz pisave "
-"pri različnih velikostih."
+"Program Pregledovalnik pisav za GNOME prokaže pisave, ki so nameščene v sistemu, kot sličice. Z izborom posamezne sličice se pokaže poln prikaz pisave pri različnih velikostih."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
@@ -47,13 +45,11 @@ msgid ""
 "and other formats. Fonts may be installed only for your use or made "
 "available to all users on the computer."
 msgstr ""
-"Program Pregledovalnik pisav za GNOME podpira nameščanje datotek pisav .ttf "
-"in drugih. Pisave je mogoče namestiti le za osebno rabo, ali pa za vse "
-"uporabnike računalnika."
+"Program Pregledovalnik pisav za GNOME podpira nameščanje datotek pisav .ttf in drugih. Pisave je mogoče namestiti le za osebno rabo, ali pa za vse uporabnike naprave."
 
 #: src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
-msgstr "Besedilo za sličice (privzeto: Aa)"
+msgstr "Besedilo za izris (privzeto: Aa)"
 
 #: src/font-thumbnailer.c:189
 msgid "TEXT"
@@ -161,7 +157,7 @@ msgstr "preferences-desktop-font"
 
 #~ msgid ""
 #~ "Run '%s --help' to see a full list of available command line options."
-#~ msgstr "Za popoln seznam možnosti ukazne vrstice zaženite '%s --help'."
+#~ msgstr "Za popoln seznam možnosti ukazne vrstice zaženite »%s --help«."
 
 #~ msgid "_Close"
 #~ msgstr "_Zapri"
