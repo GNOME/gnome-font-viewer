@@ -22,10 +22,10 @@ msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-08-10 23:03+0000\n"
-"PO-Revision-Date: 2017-08-11 03:13+0200\n"
+"POT-Creation-Date: 2017-09-19 03:28+0000\n"
+"PO-Revision-Date: 2017-10-30 14:52+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
-"Language-Team: čeština <gnome-cs-list@gnome.org>>\n"
+"Language-Team: čeština <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,11 +33,11 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Gtranslator 2.91.7\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:76
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:80
 msgid "GNOME Fonts"
 msgstr "Prohlížeč fontů GNOME"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:796
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1012
 #: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Zobrazte si fonty ve svém systému"
@@ -48,9 +48,8 @@ msgid ""
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"Fonty GNOME vám zobrazí v podobě náhledů fonty nainstalovaná ve "
-"vašem počítači. Po vybrání náhledu uvidíte, jak font vypadá v různých "
-"velikostech."
+"Fonty GNOME vám zobrazí v podobě náhledů fonty nainstalovaná ve vašem "
+"počítači. Po vybrání náhledu uvidíte, jak font vypadá v různých velikostech."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
@@ -90,67 +89,132 @@ msgstr "O aplikaci"
 msgid "Quit"
 msgstr "Ukončit"
 
-#: src/font-view.c:84
+#: src/font-view.c:88
 msgid "Show the application's version"
 msgstr "Zobrazit verzi aplikace"
 
-#: src/font-view.c:197
+#. Translators, this string is used to display information about
+#. * a 'font variation axis'. The %s gets replaced with the name
+#. * of the axis, for example 'Width'. The three %g get replaced
+#. * with the minimum, maximum and default values for the axis.
+#.
+#: src/font-view.c:204
+#, c-format
+msgid "%s %g — %g, default %g"
+msgstr "%s %g — %g, výchozí %g"
+
+#: src/font-view.c:260
+#, c-format
+#| msgid "Installed"
+msgid "Instance %d"
+msgstr "Instance %d"
+
+#: src/font-view.c:330
 msgid "Name"
 msgstr "Název"
 
-#: src/font-view.c:200
+#: src/font-view.c:333
 msgid "Style"
 msgstr "Styl"
 
-#: src/font-view.c:210
+#: src/font-view.c:343
 msgid "Type"
 msgstr "Typ"
 
-#: src/font-view.c:255 src/font-view.c:274
+#: src/font-view.c:404 src/font-view.c:438
 msgid "Version"
 msgstr "Verze"
 
-#: src/font-view.c:260 src/font-view.c:280
+#: src/font-view.c:409 src/font-view.c:444
 msgid "Copyright"
 msgstr "Copyright"
 
-#: src/font-view.c:265
+#: src/font-view.c:414
 msgid "Description"
 msgstr "Popis"
 
-#: src/font-view.c:296
+#: src/font-view.c:419
+msgid "Manufacturer"
+msgstr "Výrobce"
+
+#: src/font-view.c:424
+msgid "Designer"
+msgstr "Návrh"
+
+#: src/font-view.c:429
+msgid "License"
+msgstr "Licence"
+
+#: src/font-view.c:459
+msgid "Glyph Count"
+msgstr "Počet glyfů"
+
+#: src/font-view.c:462
+msgid "Color Glyphs"
+msgstr "Barevné glyfy"
+
+#: src/font-view.c:462
+msgid "yes"
+msgstr "ano"
+
+#: src/font-view.c:462
+#| msgid "Info"
+msgid "no"
+msgstr "ne"
+
+#: src/font-view.c:466
+msgid "Layout Features"
+msgstr "podporované vlastnosti"
+
+#: src/font-view.c:473
+msgid "Variation Axes"
+msgstr "Proměnlivost v osách"
+
+#: src/font-view.c:481
+msgid "Named Styles"
+msgstr "Pojmenované styly"
+
+#: src/font-view.c:498
 msgid "Install Failed"
 msgstr "Instalace selhala"
 
-#: src/font-view.c:303
+#: src/font-view.c:505
 msgid "Installed"
 msgstr "Nainstalováno"
 
-#: src/font-view.c:307 src/font-view.c:552
+#: src/font-view.c:509 src/font-view.c:768
 msgid "Install"
 msgstr "Nainstalovat"
 
-#: src/font-view.c:441
+#: src/font-view.c:643
 msgid "This font could not be displayed."
 msgstr "Tento font nelze zobrazit."
 
-#: src/font-view.c:505 src/font-view.c:563
+#: src/font-view.c:716
+msgid "General"
+msgstr "Obecné"
+
+#: src/font-view.c:726
+msgid "Details"
+msgstr "Podrobnosti"
+
+#: src/font-view.c:779
 msgid "Info"
 msgstr "Informace"
 
-#: src/font-view.c:578
+#: src/font-view.c:794
 msgid "Back"
 msgstr "Zpět"
 
-#: src/font-view.c:669
+#: src/font-view.c:885
 msgid "All Fonts"
 msgstr "Všechny fonty"
 
-#: src/font-view.c:795 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1011 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
 msgstr "Fonty"
 
-#: src/font-view.c:798
+#: src/font-view.c:1014
 msgid "translator-credits"
 msgstr "Marek Černocký <marek@manet.cz>"
 
@@ -163,3 +227,705 @@ msgstr "fonty;písma;řezy;"
 #: src/org.gnome.font-viewer.desktop.in:8
 msgid "preferences-desktop-font"
 msgstr "preferences-desktop-font"
+
+#: src/open-type-layout.h:13
+msgctxt "OpenType layout"
+msgid "Access All Alternates"
+msgstr "přístup ke všem alternativám"
+
+#: src/open-type-layout.h:14
+msgctxt "OpenType layout"
+msgid "Above-base Forms"
+msgstr ""
+
+#: src/open-type-layout.h:15
+msgctxt "OpenType layout"
+msgid "Above-base Mark Positioning"
+msgstr ""
+
+#: src/open-type-layout.h:16
+msgctxt "OpenType layout"
+msgid "Above-base Substitutions"
+msgstr ""
+
+#: src/open-type-layout.h:17
+msgctxt "OpenType layout"
+msgid "Alternative Fractions"
+msgstr "alternativní zlomky"
+
+#: src/open-type-layout.h:18
+msgctxt "OpenType layout"
+msgid "Akhands"
+msgstr "akhand"
+
+#: src/open-type-layout.h:19
+msgctxt "OpenType layout"
+msgid "Below-base Forms"
+msgstr ""
+
+#: src/open-type-layout.h:20
+msgctxt "OpenType layout"
+msgid "Below-base Mark Positioning"
+msgstr ""
+
+#: src/open-type-layout.h:21
+msgctxt "OpenType layout"
+msgid "Below-base Substitutions"
+msgstr ""
+
+#: src/open-type-layout.h:22
+msgctxt "OpenType layout"
+msgid "Contextual Alternates"
+msgstr "kontextové alternativy"
+
+#: src/open-type-layout.h:23
+msgctxt "OpenType layout"
+msgid "Case-Sensitive Forms"
+msgstr "formy vyhovující velkým písmenům"
+
+#: src/open-type-layout.h:24
+msgctxt "OpenType layout"
+msgid "Glyph Composition / Decomposition"
+msgstr "kompozice/dekompozice glyfů"
+
+#: src/open-type-layout.h:25
+msgctxt "OpenType layout"
+msgid "Conjunct Form After Ro"
+msgstr ""
+
+#: src/open-type-layout.h:26
+msgctxt "OpenType layout"
+msgid "Conjunct Forms"
+msgstr ""
+
+#: src/open-type-layout.h:27
+msgctxt "OpenType layout"
+msgid "Contextual Ligatures"
+msgstr "kontextové slitky"
+
+#: src/open-type-layout.h:28
+msgctxt "OpenType layout"
+msgid "Centered CJK Punctuation"
+msgstr "vystředěná interpunkce CJK"
+
+#: src/open-type-layout.h:29
+msgctxt "OpenType layout"
+msgid "Capital Spacing"
+msgstr "kapitálkové mezery"
+
+#: src/open-type-layout.h:30
+msgctxt "OpenType layout"
+msgid "Contextual Swash"
+msgstr ""
+
+#: src/open-type-layout.h:31
+msgctxt "OpenType layout"
+msgid "Cursive Positioning"
+msgstr ""
+
+#: src/open-type-layout.h:32
+msgctxt "OpenType layout"
+msgid "Petite Capitals From Capitals"
+msgstr "petitové kapitálky z kapitálek"
+
+#: src/open-type-layout.h:33
+msgctxt "OpenType layout"
+msgid "Small Capitals From Capitals"
+msgstr "malé kapitálky z kapitálek"
+
+#: src/open-type-layout.h:34
+msgctxt "OpenType layout"
+msgid "Distances"
+msgstr ""
+
+#: src/open-type-layout.h:35
+msgctxt "OpenType layout"
+msgid "Discretionary Ligatures"
+msgstr "vlastní slitky"
+
+#: src/open-type-layout.h:36
+msgctxt "OpenType layout"
+msgid "Denominators"
+msgstr "jmenovatelé"
+
+#: src/open-type-layout.h:37
+msgctxt "OpenType layout"
+msgid "Dotless Forms"
+msgstr "beztečkové formy"
+
+#: src/open-type-layout.h:38
+msgctxt "OpenType layout"
+msgid "Expert Forms"
+msgstr ""
+
+#: src/open-type-layout.h:39
+msgctxt "OpenType layout"
+msgid "Final Glyph on Line Alternates"
+msgstr ""
+
+#: src/open-type-layout.h:40
+msgctxt "OpenType layout"
+msgid "Terminal Forms #2"
+msgstr "terminálové formy č. 2"
+
+#: src/open-type-layout.h:41
+msgctxt "OpenType layout"
+msgid "Terminal Forms #3"
+msgstr "terminálové formy č. 3"
+
+#: src/open-type-layout.h:42
+msgctxt "OpenType layout"
+msgid "Terminal Forms"
+msgstr "terminálové formy"
+
+#: src/open-type-layout.h:43
+msgctxt "OpenType layout"
+msgid "Flattened accent forms"
+msgstr "zploštělé formy diakritiky"
+
+#: src/open-type-layout.h:44
+msgctxt "OpenType layout"
+msgid "Fractions"
+msgstr "zlomky"
+
+#: src/open-type-layout.h:45
+msgctxt "OpenType layout"
+msgid "Full Widths"
+msgstr "plné šířky"
+
+#: src/open-type-layout.h:46
+msgctxt "OpenType layout"
+msgid "Half Forms"
+msgstr "poloviční formy"
+
+#: src/open-type-layout.h:47
+msgctxt "OpenType layout"
+msgid "Halant Forms"
+msgstr "formy s halant"
+
+#: src/open-type-layout.h:48
+msgctxt "OpenType layout"
+msgid "Alternate Half Widths"
+msgstr "alternativní poloviční šířky"
+
+#: src/open-type-layout.h:49
+msgctxt "OpenType layout"
+msgid "Historical Forms"
+msgstr "historické formy"
+
+#: src/open-type-layout.h:50
+msgctxt "OpenType layout"
+msgid "Horizontal Kana Alternates"
+msgstr "vodorovné alternativy kana"
+
+#: src/open-type-layout.h:51
+msgctxt "OpenType layout"
+msgid "Historical Ligatures"
+msgstr "historické slitky"
+
+#: src/open-type-layout.h:52
+msgctxt "OpenType layout"
+msgid "Hangul"
+msgstr "hangul"
+
+#: src/open-type-layout.h:53
+msgctxt "OpenType layout"
+msgid "Hojo Kanji Forms"
+msgstr "formy džójó kandži"
+
+#: src/open-type-layout.h:54
+msgctxt "OpenType layout"
+msgid "Half Widths"
+msgstr "poloviční šířky"
+
+#: src/open-type-layout.h:55
+msgctxt "OpenType layout"
+msgid "Initial Forms"
+msgstr "počáteční formy"
+
+#: src/open-type-layout.h:56
+msgctxt "OpenType layout"
+msgid "Isolated Forms"
+msgstr "izolované formy"
+
+#: src/open-type-layout.h:57
+msgctxt "OpenType layout"
+msgid "Italics"
+msgstr "kurzíva"
+
+#: src/open-type-layout.h:58
+msgctxt "OpenType layout"
+msgid "Justification Alternates"
+msgstr "alternativy zarovnání"
+
+#: src/open-type-layout.h:59
+msgctxt "OpenType layout"
+msgid "JIS78 Forms"
+msgstr "formy JIS78"
+
+#: src/open-type-layout.h:60
+msgctxt "OpenType layout"
+msgid "JIS83 Forms"
+msgstr "formy JIS83"
+
+#: src/open-type-layout.h:61
+msgctxt "OpenType layout"
+msgid "JIS90 Forms"
+msgstr "formy JIS90"
+
+#: src/open-type-layout.h:62
+msgctxt "OpenType layout"
+msgid "JIS2004 Forms"
+msgstr "formy JIS2004"
+
+#: src/open-type-layout.h:63
+msgctxt "OpenType layout"
+msgid "Kerning"
+msgstr "kerning"
+
+#: src/open-type-layout.h:64
+msgctxt "OpenType layout"
+msgid "Left Bounds"
+msgstr ""
+
+#: src/open-type-layout.h:65
+msgctxt "OpenType layout"
+msgid "Standard Ligatures"
+msgstr "standardní slitky"
+
+#: src/open-type-layout.h:66
+msgctxt "OpenType layout"
+msgid "Leading Jamo Forms"
+msgstr "počáteční formy jamo"
+
+#: src/open-type-layout.h:67
+msgctxt "OpenType layout"
+msgid "Lining Figures"
+msgstr ""
+
+#: src/open-type-layout.h:68
+msgctxt "OpenType layout"
+msgid "Localized Forms"
+msgstr "lokalizované formy"
+
+#: src/open-type-layout.h:69
+msgctxt "OpenType layout"
+msgid "Left-to-right alternates"
+msgstr "alternativy zleva doprava"
+
+#: src/open-type-layout.h:70
+msgctxt "OpenType layout"
+msgid "Left-to-right mirrored forms"
+msgstr "zleva doprava zrcadlené formy"
+
+#: src/open-type-layout.h:71
+msgctxt "OpenType layout"
+msgid "Mark Positioning"
+msgstr ""
+
+#: src/open-type-layout.h:72
+msgctxt "OpenType layout"
+msgid "Medial Forms #2"
+msgstr "středové formy č. 2"
+
+#: src/open-type-layout.h:73
+msgctxt "OpenType layout"
+msgid "Medial Forms"
+msgstr "středové formy"
+
+#: src/open-type-layout.h:74
+msgctxt "OpenType layout"
+msgid "Mathematical Greek"
+msgstr "matematická řečtina"
+
+#: src/open-type-layout.h:75
+msgctxt "OpenType layout"
+msgid "Mark to Mark Positioning"
+msgstr ""
+
+#: src/open-type-layout.h:76
+msgctxt "OpenType layout"
+msgid "Mark Positioning via Substitution"
+msgstr ""
+
+#: src/open-type-layout.h:77
+msgctxt "OpenType layout"
+msgid "Alternate Annotation Forms"
+msgstr ""
+
+#: src/open-type-layout.h:78
+msgctxt "OpenType layout"
+msgid "NLC Kanji Forms"
+msgstr "formy NLC kandži"
+
+#: src/open-type-layout.h:79
+msgctxt "OpenType layout"
+msgid "Nukta Forms"
+msgstr "formy nukta"
+
+#: src/open-type-layout.h:80
+msgctxt "OpenType layout"
+msgid "Numerators"
+msgstr "čitatelé"
+
+#: src/open-type-layout.h:81
+msgctxt "OpenType layout"
+msgid "Oldstyle Figures"
+msgstr ""
+
+#: src/open-type-layout.h:82
+msgctxt "OpenType layout"
+msgid "Optical Bounds"
+msgstr ""
+
+#: src/open-type-layout.h:83
+msgctxt "OpenType layout"
+msgid "Ordinals"
+msgstr "pořadové číslovky"
+
+#: src/open-type-layout.h:84
+msgctxt "OpenType layout"
+msgid "Ornaments"
+msgstr "ornamenty"
+
+#: src/open-type-layout.h:85
+msgctxt "OpenType layout"
+msgid "Proportional Alternate Widths"
+msgstr ""
+
+#: src/open-type-layout.h:86
+msgctxt "OpenType layout"
+msgid "Petite Capitals"
+msgstr "petitové kapitálky"
+
+#: src/open-type-layout.h:87
+msgctxt "OpenType layout"
+msgid "Proportional Kana"
+msgstr "proporcionální kana"
+
+#: src/open-type-layout.h:88
+msgctxt "OpenType layout"
+msgid "Proportional Figures"
+msgstr ""
+
+#: src/open-type-layout.h:89
+msgctxt "OpenType layout"
+msgid "Pre-Base Forms"
+msgstr ""
+
+#: src/open-type-layout.h:90
+msgctxt "OpenType layout"
+msgid "Pre-base Substitutions"
+msgstr ""
+
+#: src/open-type-layout.h:91
+msgctxt "OpenType layout"
+msgid "Post-base Forms"
+msgstr ""
+
+#: src/open-type-layout.h:92
+msgctxt "OpenType layout"
+msgid "Post-base Substitutions"
+msgstr ""
+
+#: src/open-type-layout.h:93
+msgctxt "OpenType layout"
+msgid "Proportional Widths"
+msgstr "proporcionální šířky"
+
+#: src/open-type-layout.h:94
+msgctxt "OpenType layout"
+msgid "Quarter Widths"
+msgstr "čtvrtkové šířky"
+
+#: src/open-type-layout.h:95
+msgctxt "OpenType layout"
+msgid "Randomize"
+msgstr ""
+
+#: src/open-type-layout.h:96
+msgctxt "OpenType layout"
+msgid "Required Contextual Alternates"
+msgstr "vyžadované kontextové alternativy"
+
+#: src/open-type-layout.h:97
+msgctxt "OpenType layout"
+msgid "Rakar Forms"
+msgstr "formy rakar"
+
+#: src/open-type-layout.h:98
+msgctxt "OpenType layout"
+msgid "Required Ligatures"
+msgstr "vyžadované slitky"
+
+#: src/open-type-layout.h:99
+msgctxt "OpenType layout"
+msgid "Reph Forms"
+msgstr "formy reph"
+
+#: src/open-type-layout.h:100
+msgctxt "OpenType layout"
+msgid "Right Bounds"
+msgstr ""
+
+#: src/open-type-layout.h:101
+msgctxt "OpenType layout"
+msgid "Right-to-left alternates"
+msgstr "alternativy zprava doleva"
+
+#: src/open-type-layout.h:102
+msgctxt "OpenType layout"
+msgid "Right-to-left mirrored forms"
+msgstr "zprava doleva zrcadlené formy"
+
+#: src/open-type-layout.h:103
+msgctxt "OpenType layout"
+msgid "Ruby Notation Forms"
+msgstr ""
+
+#: src/open-type-layout.h:104
+msgctxt "OpenType layout"
+msgid "Required Variation Alternates"
+msgstr ""
+
+#: src/open-type-layout.h:105
+msgctxt "OpenType layout"
+msgid "Stylistic Alternates"
+msgstr "stylistické alternativy"
+
+#: src/open-type-layout.h:106
+msgctxt "OpenType layout"
+msgid "Scientific Inferiors"
+msgstr ""
+
+#: src/open-type-layout.h:107
+msgctxt "OpenType layout"
+msgid "Optical size"
+msgstr "optická velikost"
+
+#: src/open-type-layout.h:108
+msgctxt "OpenType layout"
+msgid "Small Capitals"
+msgstr "malé kapitálky"
+
+#: src/open-type-layout.h:109
+msgctxt "OpenType layout"
+msgid "Simplified Forms"
+msgstr "zjednodušené formy"
+
+#: src/open-type-layout.h:110
+msgctxt "OpenType layout"
+msgid "Stylistic Set 1"
+msgstr "stylistická sada 1"
+
+#: src/open-type-layout.h:111
+msgctxt "OpenType layout"
+msgid "Stylistic Set 2"
+msgstr "stylistická sada 2"
+
+#: src/open-type-layout.h:112
+msgctxt "OpenType layout"
+msgid "Stylistic Set 3"
+msgstr "stylistická sada 3"
+
+#: src/open-type-layout.h:113
+msgctxt "OpenType layout"
+msgid "Stylistic Set 4"
+msgstr "stylistická sada 4"
+
+#: src/open-type-layout.h:114
+msgctxt "OpenType layout"
+msgid "Stylistic Set 5"
+msgstr "stylistická sada 5"
+
+#: src/open-type-layout.h:115
+msgctxt "OpenType layout"
+msgid "Stylistic Set 6"
+msgstr "stylistická sada 6"
+
+#: src/open-type-layout.h:116
+msgctxt "OpenType layout"
+msgid "Stylistic Set 7"
+msgstr "stylistická sada 7"
+
+#: src/open-type-layout.h:117
+msgctxt "OpenType layout"
+msgid "Stylistic Set 8"
+msgstr "stylistická sada 8"
+
+#: src/open-type-layout.h:118
+msgctxt "OpenType layout"
+msgid "Stylistic Set 9"
+msgstr "stylistická sada 9"
+
+#: src/open-type-layout.h:119
+msgctxt "OpenType layout"
+msgid "Stylistic Set 10"
+msgstr "stylistická sada 10"
+
+#: src/open-type-layout.h:120
+msgctxt "OpenType layout"
+msgid "Stylistic Set 11"
+msgstr "stylistická sada 11"
+
+#: src/open-type-layout.h:121
+msgctxt "OpenType layout"
+msgid "Stylistic Set 12"
+msgstr "stylistická sada 12"
+
+#: src/open-type-layout.h:122
+msgctxt "OpenType layout"
+msgid "Stylistic Set 13"
+msgstr "stylistická sada 13"
+
+#: src/open-type-layout.h:123
+msgctxt "OpenType layout"
+msgid "Stylistic Set 14"
+msgstr "stylistická sada 14"
+
+#: src/open-type-layout.h:124
+msgctxt "OpenType layout"
+msgid "Stylistic Set 15"
+msgstr "stylistická sada 15"
+
+#: src/open-type-layout.h:125
+msgctxt "OpenType layout"
+msgid "Stylistic Set 16"
+msgstr "stylistická sada 16"
+
+#: src/open-type-layout.h:126
+msgctxt "OpenType layout"
+msgid "Stylistic Set 17"
+msgstr "stylistická sada 17"
+
+#: src/open-type-layout.h:127
+msgctxt "OpenType layout"
+msgid "Stylistic Set 18"
+msgstr "stylistická sada 18"
+
+#: src/open-type-layout.h:128
+msgctxt "OpenType layout"
+msgid "Stylistic Set 19"
+msgstr "stylistická sada 19"
+
+#: src/open-type-layout.h:129
+msgctxt "OpenType layout"
+msgid "Stylistic Set 20"
+msgstr "stylistická sada 20"
+
+#: src/open-type-layout.h:130
+msgctxt "OpenType layout"
+msgid "Math script style alternates"
+msgstr ""
+
+#: src/open-type-layout.h:131
+msgctxt "OpenType layout"
+msgid "Stretching Glyph Decomposition"
+msgstr ""
+
+#: src/open-type-layout.h:132
+#| msgid "Description"
+msgctxt "OpenType layout"
+msgid "Subscript"
+msgstr "dolní index"
+
+#: src/open-type-layout.h:133
+#| msgid "Description"
+msgctxt "OpenType layout"
+msgid "Superscript"
+msgstr "horní index"
+
+#: src/open-type-layout.h:134
+msgctxt "OpenType layout"
+msgid "Swash"
+msgstr ""
+
+#: src/open-type-layout.h:135
+msgctxt "OpenType layout"
+msgid "Titling"
+msgstr ""
+
+#: src/open-type-layout.h:136
+msgctxt "OpenType layout"
+msgid "Trailing Jamo Forms"
+msgstr "koncové formy jamo"
+
+#: src/open-type-layout.h:137
+msgctxt "OpenType layout"
+msgid "Traditional Name Forms"
+msgstr ""
+
+#: src/open-type-layout.h:138
+msgctxt "OpenType layout"
+msgid "Tabular Figures"
+msgstr ""
+
+#: src/open-type-layout.h:139
+msgctxt "OpenType layout"
+msgid "Traditional Forms"
+msgstr "tradiční formy"
+
+#: src/open-type-layout.h:140
+msgctxt "OpenType layout"
+msgid "Third Widths"
+msgstr "třetinové šířky"
+
+#: src/open-type-layout.h:141
+msgctxt "OpenType layout"
+msgid "Unicase"
+msgstr "jednotná velikost"
+
+#: src/open-type-layout.h:142
+msgctxt "OpenType layout"
+msgid "Alternate Vertical Metrics"
+msgstr "alternativní svislé metriky"
+
+#: src/open-type-layout.h:143
+msgctxt "OpenType layout"
+msgid "Vattu Variants"
+msgstr "varianty vattu"
+
+#: src/open-type-layout.h:144
+msgctxt "OpenType layout"
+msgid "Vertical Writing"
+msgstr "svislé psaní"
+
+#: src/open-type-layout.h:145
+msgctxt "OpenType layout"
+msgid "Alternate Vertical Half Metrics"
+msgstr "alternativní svislé poloviční metriky"
+
+#: src/open-type-layout.h:146
+msgctxt "OpenType layout"
+msgid "Vowel Jamo Forms"
+msgstr "Formy samohlásek jamo"
+
+#: src/open-type-layout.h:147
+msgctxt "OpenType layout"
+msgid "Vertical Kana Alternates"
+msgstr "svislé alternativy kana"
+
+#: src/open-type-layout.h:148
+msgctxt "OpenType layout"
+msgid "Vertical Kerning"
+msgstr "svislý kerning"
+
+#: src/open-type-layout.h:149
+msgctxt "OpenType layout"
+msgid "Proportional Alternate Vertical Metrics"
+msgstr "proporcionální alternativní svislé metriky"
+
+#: src/open-type-layout.h:150
+msgctxt "OpenType layout"
+msgid "Vertical Alternates and Rotation"
+msgstr "svislé alternativy a otočení"
+
+#: src/open-type-layout.h:151
+msgctxt "OpenType layout"
+msgid "Vertical Alternates for Rotation"
+msgstr "svislé alternativy pro otočení"
+
+#: src/open-type-layout.h:152
+msgctxt "OpenType layout"
+msgid "Slashed Zero"
+msgstr "přeškrtnutá nula"
