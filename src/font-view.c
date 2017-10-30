@@ -748,8 +748,8 @@ font_view_ensure_model (FontViewApplication *self)
     g_signal_connect (self->model, "config-changed",
                       G_CALLBACK (font_model_config_changed_cb), self);
 
-    g_signal_connect (self->main_window, "notify::scale-factor",
-                      G_CALLBACK (font_view_update_scale_factor), self);
+    g_signal_connect_swapped (self->main_window, "notify::scale-factor",
+                              G_CALLBACK (font_view_update_scale_factor), self);
     font_view_update_scale_factor (self);
 }
 
