@@ -365,7 +365,8 @@ ensure_fallback_icon (FontViewModel *self)
     icon_theme = gtk_icon_theme_get_default ();
     icon = g_content_type_get_icon ("application/x-font-ttf");
     icon_info = gtk_icon_theme_lookup_by_gicon_for_scale (icon_theme, icon,
-                                                          128, self->priv->scale_factor, 0);
+                                                          128, self->priv->scale_factor,
+                                                          GTK_ICON_LOOKUP_FORCE_SIZE);
     g_object_unref (icon);
 
     if (!icon_info)
