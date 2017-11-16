@@ -1,3 +1,12 @@
+GNOME Font Viewer - 3.27.0
+-------------------------------------------------------------------------------
+• Show more general font information
+• Show OpenType font variation information
+• Show OpenType layout feature information
+• Handle ttf and otf mimetypes (#788383)
+• Fix a crash (#789511)
+• Translation updates
+
 GNOME Font Viewer - 3.26.0
 -------------------------------------------------------------------------------
 • Rename to "Fonts" in AppData file too (#786128, Jeremy Bicha)
