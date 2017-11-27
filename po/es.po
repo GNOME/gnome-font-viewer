@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: gnome-utils.master\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-11-07 10:50+0000\n"
+"POT-Creation-Date: 2017-11-13 12:03+0000\n"
 "PO-Revision-Date: 2017-11-13 13:00+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: es <gnome-es-list@gnome.org>\n"
@@ -327,12 +327,12 @@ msgstr "Posicionamiento de la cursiva"
 #: src/open-type-layout.h:32
 msgctxt "OpenType layout"
 msgid "Petite Capitals From Capitals"
-msgstr "Mayúsculas diminutas a partir de mayúsculas"
+msgstr "Miniversales a partir de mayúsculas"
 
 #: src/open-type-layout.h:33
 msgctxt "OpenType layout"
 msgid "Small Capitals From Capitals"
-msgstr "Mayúsculas pequeñas a partir de mayúsculas"
+msgstr "Versalitas a partir de mayúsculas"
 
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
@@ -597,7 +597,7 @@ msgstr ""
 #: src/open-type-layout.h:86
 msgctxt "OpenType layout"
 msgid "Petite Capitals"
-msgstr "Mayúsculas diminutas"
+msgstr "Miniversales"
 
 #: src/open-type-layout.h:87
 msgctxt "OpenType layout"
@@ -707,7 +707,7 @@ msgstr "Tamaño óptico"
 #: src/open-type-layout.h:108
 msgctxt "OpenType layout"
 msgid "Small Capitals"
-msgstr "Mayúsculas pequeñas"
+msgstr "Versalitas"
 
 #: src/open-type-layout.h:109
 msgctxt "OpenType layout"
