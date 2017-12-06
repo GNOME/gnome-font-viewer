@@ -12,22 +12,22 @@ msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-08-31 13:10+0000\n"
-"PO-Revision-Date: 2017-09-01 13:19+0200\n"
-"Last-Translator: David <rbndavid@gmail.com>\n"
+"POT-Creation-Date: 2017-10-30 22:59+0000\n"
+"PO-Revision-Date: 2017-12-06 20:50+0100\n"
+"Last-Translator: Jordi Mas <jmas@softcatala.org>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 2.0.4\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:76
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:80
 msgid "GNOME Fonts"
 msgstr "Tipus de lletra del GNOME"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:796
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1013
 #: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Visualitza tots els tipus de lletra del sistema"
@@ -82,67 +82,139 @@ msgstr "Quant a"
 msgid "Quit"
 msgstr "Surt"
 
-#: src/font-view.c:84
+#: src/font-view.c:88
 msgid "Show the application's version"
 msgstr "Mostra la versió de l'aplicació"
 
-#: src/font-view.c:197
+#. Translators, this string is used to display information about
+#. * a 'font variation axis'. The %s gets replaced with the name
+#. * of the axis, for example 'Width'. The three %g get replaced
+#. * with the minimum, maximum and default values for the axis.
+#.
+#: src/font-view.c:204
+#, c-format
+msgid "%s %g — %g, default %g"
+msgstr "%s %g — %g, per defecte %g"
+
+#: src/font-view.c:260
+msgid "Instance %d"
+msgstr "Instància %d"
+
+#. Translators, this seperates the list of Layout Features.
+#: src/font-view.c:305
+msgctxt "OpenType layout"
+msgid ", "
+msgstr ", "
+
+#: src/font-view.c:331
 msgid "Name"
 msgstr "Nom"
 
-#: src/font-view.c:200
+#: src/font-view.c:334
 msgid "Style"
 msgstr "Estil"
 
-#: src/font-view.c:210
+#: src/font-view.c:344
 msgid "Type"
 msgstr "Tipus"
 
-#: src/font-view.c:255 src/font-view.c:274
+#: src/font-view.c:405 src/font-view.c:439
 msgid "Version"
 msgstr "Versió"
 
-#: src/font-view.c:260 src/font-view.c:280
+#: src/font-view.c:410 src/font-view.c:445
 msgid "Copyright"
 msgstr "Copyright"
 
-#: src/font-view.c:265
+#: src/font-view.c:415
 msgid "Description"
 msgstr "Descripció"
 
-#: src/font-view.c:296
+#: src/font-view.c:420
+msgid "Manufacturer"
+msgstr "Fabricant"
+
+#: src/font-view.c:425
+msgid "Designer"
+msgstr "Dissenyador"
+
+#: src/font-view.c:430
+msgid "License"
+msgstr "Llicència"
+
+#: src/font-view.c:460
+msgid "Glyph Count"
+msgstr "Nombre de glifs"
+
+#: src/font-view.c:463
+msgid "Color Glyphs"
+msgstr "Glifs de color"
+
+#: src/font-view.c:463
+msgid "yes"
+msgstr "yes"
+
+#: src/font-view.c:463
+msgid "no"
+msgstr "no"
+
+#: src/font-view.c:467
+#, fuzzy
+msgid "Layout Features"
+msgstr ""
+"La maquetació per defecte justifica els fitxers a l'esquerra o a la dreta "
+"amb el text d'acompanyament al costa oposat"
+
+#: src/font-view.c:474
+#, fuzzy
+msgid "Variation Axes"
+msgstr "Eixos"
+
+#: src/font-view.c:482
+msgid "Named Styles"
+msgstr "Estils amb nom"
+
+#: src/font-view.c:499
 msgid "Install Failed"
 msgstr "Ha fallat la instal·lació"
 
-#: src/font-view.c:303
+#: src/font-view.c:506
 msgid "Installed"
 msgstr "S'ha instal·lat"
 
-#: src/font-view.c:307 src/font-view.c:552
+#: src/font-view.c:510 src/font-view.c:769
 msgid "Install"
 msgstr "Instal·la"
 
-#: src/font-view.c:441
+#: src/font-view.c:644
 msgid "This font could not be displayed."
 msgstr "No es pot visualitzar aquest tipus de lletra."
 
-#: src/font-view.c:505 src/font-view.c:563
+#: src/font-view.c:717
+msgid "General"
+msgstr "General"
+
+#: src/font-view.c:727
+msgid "Details"
+msgstr "Dades"
+
+#: src/font-view.c:780
 msgid "Info"
 msgstr "Informació"
 
-#: src/font-view.c:578
+#: src/font-view.c:795
 msgid "Back"
 msgstr "Enrere"
 
-#: src/font-view.c:669
+#: src/font-view.c:886
 msgid "All Fonts"
 msgstr "Tots els tipus de lletra"
 
-#: src/font-view.c:795 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1012 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
 msgstr "Tipus de lletra"
 
-#: src/font-view.c:798
+#: src/font-view.c:1015
 msgid "translator-credits"
 msgstr "Joan Duran <jodufi@gmail.com>"
 
@@ -155,6 +227,828 @@ msgstr "tipus de lletra;tipografia;"
 #: src/org.gnome.font-viewer.desktop.in:8
 msgid "preferences-desktop-font"
 msgstr "preferences-desktop-font"
+
+#: src/open-type-layout.h:13
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Access All Alternates"
+msgstr "Pot veure els anuncis de tots els grups"
+
+#: src/open-type-layout.h:14
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Above-base Forms"
+msgstr "Formularis"
+
+#: src/open-type-layout.h:15
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Above-base Mark Positioning"
+msgstr "Qualificació base {$a}"
+
+#: src/open-type-layout.h:16
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Above-base Substitutions"
+msgstr "Substitucions"
+
+#: src/open-type-layout.h:17
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Alternative Fractions"
+msgstr "Fraccions"
+
+#: src/open-type-layout.h:18
+msgctxt "OpenType layout"
+msgid "Akhands"
+msgstr ""
+
+#: src/open-type-layout.h:19
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Below-base Forms"
+msgstr "Formularis"
+
+#: src/open-type-layout.h:20
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Below-base Mark Positioning"
+msgstr "Qualificació base {$a}"
+
+#: src/open-type-layout.h:21
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Below-base Substitutions"
+msgstr "Substitucions"
+
+#: src/open-type-layout.h:22
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Contextual Alternates"
+msgstr "Contextuals"
+
+#: src/open-type-layout.h:23
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Case-Sensitive Forms"
+msgstr "Di_stingeix entre majúscules i minúscules"
+
+#: src/open-type-layout.h:24
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Glyph Composition / Decomposition"
+msgstr "Descomposició"
+
+#: src/open-type-layout.h:25
+msgctxt "OpenType layout"
+msgid "Conjunct Form After Ro"
+msgstr ""
+
+#: src/open-type-layout.h:26
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Conjunct Forms"
+msgstr "Formularis"
+
+#: src/open-type-layout.h:27
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Contextual Ligatures"
+msgstr "Contextuals"
+
+#: src/open-type-layout.h:28
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Centered CJK Punctuation"
+msgstr "Puntuació i símbols CJK"
+
+#: src/open-type-layout.h:29
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Capital Spacing"
+msgstr "Capital:"
+
+#: src/open-type-layout.h:30
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Contextual Swash"
+msgstr "Contextuals"
+
+#: src/open-type-layout.h:31
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Cursive Positioning"
+msgstr "&Cursiva:"
+
+#: src/open-type-layout.h:32
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Petite Capitals From Capitals"
+msgstr "&Capitals de regions"
+
+#: src/open-type-layout.h:33
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Small Capitals From Capitals"
+msgstr "Versaletes"
+
+#: src/open-type-layout.h:34
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Distances"
+msgstr "Eina Compàs: mesura distàncies i angles"
+
+#: src/open-type-layout.h:35
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Discretionary Ligatures"
+msgstr ""
+"Lligadures discrecionals. Desactivat per defecte. Taula d'OpenType: «hlig»"
+
+#: src/open-type-layout.h:36
+msgctxt "OpenType layout"
+msgid "Denominators"
+msgstr "Denominadors"
+
+#: src/open-type-layout.h:37
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Dotless Forms"
+msgstr "Formularis"
+
+#: src/open-type-layout.h:38
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Expert Forms"
+msgstr "Expert..."
+
+#: src/open-type-layout.h:39
+msgctxt "OpenType layout"
+msgid "Final Glyph on Line Alternates"
+msgstr ""
+
+#: src/open-type-layout.h:40
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Terminal Forms #2"
+msgstr "Terminal"
+
+#: src/open-type-layout.h:41
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Terminal Forms #3"
+msgstr "Terminal"
+
+#: src/open-type-layout.h:42
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Terminal Forms"
+msgstr "Terminal"
+
+#: src/open-type-layout.h:43
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Flattened accent forms"
+msgstr "sobreescriu l'aplanat"
+
+#: src/open-type-layout.h:44
+msgctxt "OpenType layout"
+msgid "Fractions"
+msgstr "Fraccions"
+
+#: src/open-type-layout.h:45
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Full Widths"
+msgstr "Amplades"
+
+#: src/open-type-layout.h:46
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Half Forms"
+msgstr "_formes d'amplada completa/d'amplada mitjana"
+
+#: src/open-type-layout.h:47
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Halant Forms"
+msgstr "Formularis"
+
+#: src/open-type-layout.h:48
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Alternate Half Widths"
+msgstr "Amplades"
+
+#: src/open-type-layout.h:49
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Historical Forms"
+msgstr "Històriques"
+
+#: src/open-type-layout.h:50
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Horizontal Kana Alternates"
+msgstr "Kana (suplement)"
+
+#: src/open-type-layout.h:51
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Historical Ligatures"
+msgstr ""
+"Lligadures històriques. Desactivat per defecte. Taula d'OpenType: «hlig»"
+
+#: src/open-type-layout.h:52
+msgctxt "OpenType layout"
+msgid "Hangul"
+msgstr "Hangul"
+
+#: src/open-type-layout.h:53
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Hojo Kanji Forms"
+msgstr "Kanji"
+
+#: src/open-type-layout.h:54
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Half Widths"
+msgstr "Amplades"
+
+#: src/open-type-layout.h:55
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Initial Forms"
+msgstr "inicial"
+
+#: src/open-type-layout.h:56
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Isolated Forms"
+msgstr "Aïllat"
+
+#: src/open-type-layout.h:57
+msgctxt "OpenType layout"
+msgid "Italics"
+msgstr "Cursiva"
+
+#: src/open-type-layout.h:58
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Justification Alternates"
+msgstr "sense justificació"
+
+#: src/open-type-layout.h:59
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "JIS78 Forms"
+msgstr "Formularis"
+
+#: src/open-type-layout.h:60
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "JIS83 Forms"
+msgstr "Formularis"
+
+#: src/open-type-layout.h:61
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "JIS90 Forms"
+msgstr "Formularis"
+
+#: src/open-type-layout.h:62
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "JIS2004 Forms"
+msgstr "Formularis"
+
+#: src/open-type-layout.h:63
+msgctxt "OpenType layout"
+msgid "Kerning"
+msgstr "Interlletratge"
+
+#: src/open-type-layout.h:64
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Left Bounds"
+msgstr ": límits"
+
+#: src/open-type-layout.h:65
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Standard Ligatures"
+msgstr "Lligadures"
+
+#: src/open-type-layout.h:66
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Leading Jamo Forms"
+msgstr "Hangul Jamo"
+
+#: src/open-type-layout.h:67
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Lining Figures"
+msgstr "Lineal"
+
+#: src/open-type-layout.h:68
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Localized Forms"
+msgstr "<Sense localitzar>"
+
+#: src/open-type-layout.h:69
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Left-to-right alternates"
+msgstr "() esquerre-dret - \\esquerre(..\\dret)"
+
+#: src/open-type-layout.h:70
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Left-to-right mirrored forms"
+msgstr "() esquerre-dret - \\esquerre(..\\dret)"
+
+#: src/open-type-layout.h:71
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Mark Positioning"
+msgstr "Em&plaçament:"
+
+#: src/open-type-layout.h:72
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Medial Forms #2"
+msgstr " (centrat)"
+
+#: src/open-type-layout.h:73
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Medial Forms"
+msgstr " (centrat)"
+
+#: src/open-type-layout.h:74
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Mathematical Greek"
+msgstr "Grec"
+
+#: src/open-type-layout.h:75
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Mark to Mark Positioning"
+msgstr "_Marca com a..."
+
+#: src/open-type-layout.h:76
+msgctxt "OpenType layout"
+msgid "Mark Positioning via Substitution"
+msgstr ""
+
+#: src/open-type-layout.h:77
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Alternate Annotation Forms"
+msgstr "variant: una de les formes alternatives d'un terme"
+
+#: src/open-type-layout.h:78
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "NLC Kanji Forms"
+msgstr "Kanji"
+
+#: src/open-type-layout.h:79
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Nukta Forms"
+msgstr "Formularis"
+
+#: src/open-type-layout.h:80
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Numerators"
+msgstr ""
+"alineant nombres i denominadors, per exemple, <emph>{alignl a}over{b+c}</"
+"emph>"
+
+#: src/open-type-layout.h:81
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Oldstyle Figures"
+msgstr "Figures"
+
+#: src/open-type-layout.h:82
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Optical Bounds"
+msgstr "Òptics"
+
+#: src/open-type-layout.h:83
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Ordinals"
+msgstr "Ordinals («th» volat, etc.). Taula d'OpenType: «ordn»"
+
+#: src/open-type-layout.h:84
+msgctxt "OpenType layout"
+msgid "Ornaments"
+msgstr ""
+
+#: src/open-type-layout.h:85
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Proportional Alternate Widths"
+msgstr "Proporcional"
+
+#: src/open-type-layout.h:86
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Petite Capitals"
+msgstr "Majúscules"
+
+#: src/open-type-layout.h:87
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Proportional Kana"
+msgstr "Proporcional"
+
+#: src/open-type-layout.h:88
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Proportional Figures"
+msgstr "És proporcional a"
+
+#: src/open-type-layout.h:89
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Pre-Base Forms"
+msgstr "Formularis"
+
+#: src/open-type-layout.h:90
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Pre-base Substitutions"
+msgstr "Substitucions"
+
+#: src/open-type-layout.h:91
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Post-base Forms"
+msgstr "Formularis"
+
+#: src/open-type-layout.h:92
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Post-base Substitutions"
+msgstr "Substitucions"
+
+#: src/open-type-layout.h:93
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Proportional Widths"
+msgstr "Proporcional"
+
+#: src/open-type-layout.h:94
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Quarter Widths"
+msgstr "Trimestre"
+
+#: src/open-type-layout.h:95
+msgctxt "OpenType layout"
+msgid "Randomize"
+msgstr "Aleatoritza"
+
+#: src/open-type-layout.h:96
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Required Contextual Alternates"
+msgstr "Contextuals"
+
+#: src/open-type-layout.h:97
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Rakar Forms"
+msgstr "Formularis"
+
+#: src/open-type-layout.h:98
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Required Ligatures"
+msgstr "Lligadures"
+
+#: src/open-type-layout.h:99
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Reph Forms"
+msgstr "Formularis"
+
+#: src/open-type-layout.h:100
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Right Bounds"
+msgstr ": límits"
+
+#: src/open-type-layout.h:101
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Right-to-left alternates"
+msgstr "() esquerre-dret - \\esquerre(..\\dret)"
+
+#: src/open-type-layout.h:102
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Right-to-left mirrored forms"
+msgstr "() esquerre-dret - \\esquerre(..\\dret)"
+
+#: src/open-type-layout.h:103
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Ruby Notation Forms"
+msgstr "Formularis"
+
+#: src/open-type-layout.h:104
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Required Variation Alternates"
+msgstr "no es pot desenllaçar el fitxer d'alternatives temporal"
+
+#: src/open-type-layout.h:105
+msgctxt "OpenType layout"
+msgid "Stylistic Alternates"
+msgstr ""
+
+#: src/open-type-layout.h:106
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Scientific Inferiors"
+msgstr "Científic"
+
+#: src/open-type-layout.h:107
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Optical size"
+msgstr "Òptics"
+
+#: src/open-type-layout.h:108
+msgctxt "OpenType layout"
+msgid "Small Capitals"
+msgstr "Versaletes"
+
+#: src/open-type-layout.h:109
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Simplified Forms"
+msgstr "Simplificat"
+
+#: src/open-type-layout.h:110
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Stylistic Set 1"
+msgstr "No s'ha pogut establir el criteri «%1»"
+
+#: src/open-type-layout.h:111
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Stylistic Set 2"
+msgstr "Defineix el preferit 2 de la llista de reproducció"
+
+#: src/open-type-layout.h:112
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Stylistic Set 3"
+msgstr "Defineix l'amplada del camí en 3:"
+
+#: src/open-type-layout.h:113
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Stylistic Set 4"
+msgstr "Defineix el preferit 4 de la llista de reproducció"
+
+#: src/open-type-layout.h:114
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Stylistic Set 5"
+msgstr "Defineix l'amplada del camí en 5:"
+
+#: src/open-type-layout.h:115
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Stylistic Set 6"
+msgstr "Defineix el preferit 6 de la llista de reproducció"
+
+#: src/open-type-layout.h:116
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Stylistic Set 7"
+msgstr "Defineix l'amplada del camí en 7:"
+
+#: src/open-type-layout.h:117
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Stylistic Set 8"
+msgstr "Defineix el preferit 8 de la llista de reproducció"
+
+#: src/open-type-layout.h:118
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Stylistic Set 9"
+msgstr "Defineix l'amplada del camí en 9:"
+
+#: src/open-type-layout.h:119
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Stylistic Set 10"
+msgstr "Defineix el preferit 10 de la llista de reproducció"
+
+#: src/open-type-layout.h:120
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Stylistic Set 11"
+msgstr "Espai de treball 11"
+
+#: src/open-type-layout.h:121
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Stylistic Set 12"
+msgstr "12"
+
+#: src/open-type-layout.h:122
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Stylistic Set 13"
+msgstr "openSUSE 13"
+
+#: src/open-type-layout.h:123
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Stylistic Set 14"
+msgstr "14 ->"
+
+#: src/open-type-layout.h:124
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Stylistic Set 15"
+msgstr "INT(15) és igual a 15"
+
+#: src/open-type-layout.h:125
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Stylistic Set 16"
+msgstr "16 ms"
+
+#: src/open-type-layout.h:126
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Stylistic Set 17"
+msgstr "Control 17:"
+
+#: src/open-type-layout.h:127
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Stylistic Set 18"
+msgstr "Auxiliar 18"
+
+#: src/open-type-layout.h:128
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Stylistic Set 19"
+msgstr "Control 19:"
+
+#: src/open-type-layout.h:129
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Stylistic Set 20"
+msgstr "20"
+
+#: src/open-type-layout.h:130
+msgctxt "OpenType layout"
+msgid "Math script style alternates"
+msgstr ""
+
+#: src/open-type-layout.h:131
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Stretching Glyph Decomposition"
+msgstr "Estirament"
+
+#: src/open-type-layout.h:132
+msgctxt "OpenType layout"
+msgid "Subscript"
+msgstr "Subíndex"
+
+#: src/open-type-layout.h:133
+msgctxt "OpenType layout"
+msgid "Superscript"
+msgstr "Superíndex"
+
+#: src/open-type-layout.h:134
+msgctxt "OpenType layout"
+msgid "Swash"
+msgstr ""
+
+#: src/open-type-layout.h:135
+msgctxt "OpenType layout"
+msgid "Titling"
+msgstr "Titulació"
+
+#: src/open-type-layout.h:136
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Trailing Jamo Forms"
+msgstr "Hangul Jamo"
+
+#: src/open-type-layout.h:137
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Traditional Name Forms"
+msgstr "Formularis"
+
+#: src/open-type-layout.h:138
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Tabular Figures"
+msgstr "Taula*"
+
+#: src/open-type-layout.h:139
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Traditional Forms"
+msgstr "Formularis"
+
+#: src/open-type-layout.h:140
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Third Widths"
+msgstr "Amplades"
+
+#: src/open-type-layout.h:141
+msgctxt "OpenType layout"
+msgid "Unicase"
+msgstr "Caixa única"
+
+#: src/open-type-layout.h:142
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Alternate Vertical Metrics"
+msgstr "Mètrica"
+
+#: src/open-type-layout.h:143
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Vattu Variants"
+msgstr "_Variants:"
+
+#: src/open-type-layout.h:144
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Vertical Writing"
+msgstr "Vertical cap endins"
+
+#: src/open-type-layout.h:145
+msgctxt "OpenType layout"
+msgid "Alternate Vertical Half Metrics"
+msgstr ""
+
+#: src/open-type-layout.h:146
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Vowel Jamo Forms"
+msgstr "És una vocal?"
+
+#: src/open-type-layout.h:147
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Vertical Kana Alternates"
+msgstr "Kana (suplement)"
+
+#: src/open-type-layout.h:148
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Vertical Kerning"
+msgstr "_Interlletratge"
+
+#: src/open-type-layout.h:149
+msgctxt "OpenType layout"
+msgid "Proportional Alternate Vertical Metrics"
+msgstr ""
+
+#: src/open-type-layout.h:150
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Vertical Alternates and Rotation"
+msgstr "Gir"
+
+#: src/open-type-layout.h:151
+#, fuzzy
+msgctxt "OpenType layout"
+msgid "Vertical Alternates for Rotation"
+msgstr "Gir"
+
+#: src/open-type-layout.h:152
+msgctxt "OpenType layout"
+msgid "Slashed Zero"
+msgstr "Zero barrat"
 
 #~ msgid "Font Viewer"
 #~ msgstr "Visualitzador de tipus de lletra"
