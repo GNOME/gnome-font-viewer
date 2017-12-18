@@ -2,124 +2,169 @@
 # This file is distributed under the same license as the gnome-utils package.
 # Copyright (C)
 # F Wolff <friedel@translate.org.za>, 2010, 2013.
+# Pieter Schoeman <pieter@sonbesie.co.za>, 2017.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-08-13 00:20+0000\n"
-"PO-Revision-Date: 2013-10-06 13:13-0400\n"
-"Last-Translator: F Wolff <friedel@translate.org.za>\n"
-"Language-Team: translate-discuss-af@lists.sourceforge.net\n"
+"POT-Creation-Date: 2017-09-18 18:13+0000\n"
+"PO-Revision-Date: 2017-12-18 22:54+0200\n"
+"Last-Translator: Pieter Schoeman <pieter@sonbesie.co.za>\n"
+"Language-Team: Afrikaans <pieter@sonbesie.co.za>\n"
 "Language: af\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Gtranslator 2.91.7\n"
 "X-Project-Style: gnome\n"
 
-#: ../src/font-thumbnailer.c:189
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:76
+#| msgid "All Fonts"
+msgid "GNOME Fonts"
+msgstr "GNOME Lettertipes"
+
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:796
+#: src/org.gnome.font-viewer.desktop.in:4
+msgid "View fonts on your system"
+msgstr "Bekyk lettertipes op die stelsel"
+
+#: data/org.gnome.font-viewer.appdata.xml.in:9
+msgid ""
+"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"thumbnails. Selecting any thumbnails shows the full view of how the font "
+"would look under various sizes."
+msgstr ""
+"GNOME Lettertipes wys u die lettertipes geïnstalleer op u rekenaar vir "
+"gebruik as duimnaels. As u enige duimnael kies, wys die toepassing hoe die "
+"lettertipe sal lyk onder verskillende groottes."
+
+#: data/org.gnome.font-viewer.appdata.xml.in:15
+msgid ""
+"GNOME Fonts also supports installing new font files downloaded in the .ttf "
+"and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"GNOME Lettertipes ondersteun ook die installering van nuwe font lêers wat in "
+"die .ttf en ander formate afgelaai word. Lettertipes mag geïnstalleer word "
+"vir slegs u gebruik of beskikbaar gestel word aan alle gebruikers op die "
+"rekenaar."
+
+#: src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Teks vir duimnaal (verstek: Aa)"
 
-#: ../src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "TEKS"
 
-#: ../src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "Duimnaalgrootte (verstek: 128)"
 
-#: ../src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "GROOTTE"
 
-#: ../src/font-thumbnailer.c:193
+#: src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
-msgstr "FONTLÊER AFVOERLÊER"
+msgstr "LETTERTIPE-LÊER AFVOER-LÊER"
 
-#: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "Aangaande Fontkyker"
+#: src/font-view-app-menu.ui:6
+msgid "About"
+msgstr "Aangaande"
 
-#: ../src/font-view-app-menu.ui.h:2
+#: src/font-view-app-menu.ui:10
 msgid "Quit"
 msgstr "Sluit af"
 
-#: ../src/font-view.c:176
+#: src/font-view.c:84
+msgid "Show the application's version"
+msgstr "Vertoon die weergawe van die toepassing"
+
+#: src/font-view.c:197
 msgid "Name"
 msgstr "Naam"
 
-#: ../src/font-view.c:179
+#: src/font-view.c:200
 msgid "Style"
 msgstr "Styl"
 
-#: ../src/font-view.c:189
+#: src/font-view.c:210
 msgid "Type"
 msgstr "Tipe"
 
-#: ../src/font-view.c:234 ../src/font-view.c:253
+#: src/font-view.c:255 src/font-view.c:274
 msgid "Version"
 msgstr "Weergawe"
 
-#: ../src/font-view.c:239 ../src/font-view.c:259
+#: src/font-view.c:260 src/font-view.c:280
 msgid "Copyright"
 msgstr "Kopiereg"
 
-#: ../src/font-view.c:244
+#: src/font-view.c:265
 msgid "Description"
 msgstr "Beskrywing"
 
-#: ../src/font-view.c:272
+#: src/font-view.c:296
 msgid "Install Failed"
 msgstr "Installasie het misluk"
 
-#: ../src/font-view.c:278
+#: src/font-view.c:303
 msgid "Installed"
 msgstr "Geïnstalleer"
 
-#. add install button
-#: ../src/font-view.c:281 ../src/font-view.c:520
+#: src/font-view.c:307 src/font-view.c:552
 msgid "Install"
 msgstr "Installeer"
 
-#: ../src/font-view.c:414
+#: src/font-view.c:441
 msgid "This font could not be displayed."
-msgstr "Dié font kon nie geïnstalleer word nie."
+msgstr "Dié lettertipe kon nie geïnstalleer word nie."
 
-#: ../src/font-view.c:479
-msgid "_Close"
-msgstr "_Sluit"
-
-#: ../src/font-view.c:510
+#: src/font-view.c:505 src/font-view.c:563
 msgid "Info"
 msgstr "Inligting"
 
-#: ../src/font-view.c:534
+#: src/font-view.c:578
 msgid "Back"
 msgstr "Terug"
 
-#: ../src/font-view.c:623
+#: src/font-view.c:669
 msgid "All Fonts"
-msgstr "Alle fonte"
+msgstr "Alle lettertipes"
 
-#: ../src/font-view.c:741 ../src/font-view.c:780
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "Fontkyker"
+#: src/font-view.c:795 src/org.gnome.font-viewer.desktop.in:3
+#| msgid "All Fonts"
+msgid "Fonts"
+msgstr "Lettertipe"
 
-#: ../src/font-view.c:742 ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "View fonts on your system"
-msgstr "Bekyk fonte op die stelsel"
-
-#: ../src/font-view.c:744
+#: src/font-view.c:798
 msgid "translator-credits"
-msgstr "Friedel Wolff"
+msgstr ""
+"Friedel Wolff\n"
+"Pieter Schalk Schoeman"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
 msgstr "fonts;fontface;fonte;lettertipe;skriftipe;"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: src/org.gnome.font-viewer.desktop.in:8
+msgid "preferences-desktop-font"
+msgstr "preferences-desktop-font"
+
+#~ msgid "About Font Viewer"
+#~ msgstr "Aangaande Fontkyker"
+
+#~ msgid "_Close"
+#~ msgstr "_Sluit"
+
+#~ msgid "Font Viewer"
+#~ msgstr "Fontkyker"
 
 #, fuzzy
 #~ msgid "Size:"
