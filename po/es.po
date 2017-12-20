@@ -17,8 +17,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils.master\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-11-13 12:03+0000\n"
-"PO-Revision-Date: 2017-11-13 13:00+0100\n"
+"POT-Creation-Date: 2017-11-27 16:19+0000\n"
+"PO-Revision-Date: 2017-12-05 08:56+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: es <gnome-es-list@gnome.org>\n"
 "Language: es\n"
@@ -342,7 +342,7 @@ msgstr "Distancias"
 #: src/open-type-layout.h:35
 msgctxt "OpenType layout"
 msgid "Discretionary Ligatures"
-msgstr ""
+msgstr "Ligaduras discrecionales"
 
 #: src/open-type-layout.h:36
 msgctxt "OpenType layout"
@@ -402,12 +402,12 @@ msgstr "Formas medias"
 #: src/open-type-layout.h:47
 msgctxt "OpenType layout"
 msgid "Halant Forms"
-msgstr ""
+msgstr "Formas halant"
 
 #: src/open-type-layout.h:48
 msgctxt "OpenType layout"
 msgid "Alternate Half Widths"
-msgstr ""
+msgstr "Anchura media alternativa"
 
 #: src/open-type-layout.h:49
 msgctxt "OpenType layout"
@@ -527,12 +527,12 @@ msgstr "Posicionamiento de las marcas"
 #: src/open-type-layout.h:72
 msgctxt "OpenType layout"
 msgid "Medial Forms #2"
-msgstr ""
+msgstr "Formas medias nº2"
 
 #: src/open-type-layout.h:73
 msgctxt "OpenType layout"
 msgid "Medial Forms"
-msgstr ""
+msgstr "Formas medias"
 
 #: src/open-type-layout.h:74
 msgctxt "OpenType layout"
@@ -592,7 +592,7 @@ msgstr "Adornos"
 #: src/open-type-layout.h:85
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Widths"
-msgstr ""
+msgstr "Anchura alternativa proporcional"
 
 #: src/open-type-layout.h:86
 msgctxt "OpenType layout"
@@ -612,22 +612,22 @@ msgstr "Figuras proporcionales"
 #: src/open-type-layout.h:89
 msgctxt "OpenType layout"
 msgid "Pre-Base Forms"
-msgstr ""
+msgstr "Formas pre-base"
 
 #: src/open-type-layout.h:90
 msgctxt "OpenType layout"
 msgid "Pre-base Substitutions"
-msgstr ""
+msgstr "Sustituciones pre-base"
 
 #: src/open-type-layout.h:91
 msgctxt "OpenType layout"
 msgid "Post-base Forms"
-msgstr ""
+msgstr "Formas post-base"
 
 #: src/open-type-layout.h:92
 msgctxt "OpenType layout"
 msgid "Post-base Substitutions"
-msgstr ""
+msgstr "Sustituciones post-base"
 
 #: src/open-type-layout.h:93
 msgctxt "OpenType layout"
@@ -837,7 +837,7 @@ msgstr "Superíndice"
 #: src/open-type-layout.h:134
 msgctxt "OpenType layout"
 msgid "Swash"
-msgstr ""
+msgstr "Swash"
 
 #: src/open-type-layout.h:135
 msgctxt "OpenType layout"
@@ -872,17 +872,17 @@ msgstr ""
 #: src/open-type-layout.h:141
 msgctxt "OpenType layout"
 msgid "Unicase"
-msgstr ""
+msgstr "Unicase"
 
 #: src/open-type-layout.h:142
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Metrics"
-msgstr ""
+msgstr "Métricas verticales alternativas"
 
 #: src/open-type-layout.h:143
 msgctxt "OpenType layout"
 msgid "Vattu Variants"
-msgstr ""
+msgstr "Variantes de vattu"
 
 #: src/open-type-layout.h:144
 msgctxt "OpenType layout"
@@ -892,7 +892,7 @@ msgstr "Escritura vertical"
 #: src/open-type-layout.h:145
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Half Metrics"
-msgstr ""
+msgstr "Medias métricas verticales alternativas"
 
 #: src/open-type-layout.h:146
 msgctxt "OpenType layout"
