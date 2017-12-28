@@ -73,6 +73,8 @@ struct _FontViewApplication {
     GtkTreeModel *filter_model;
 
     GFile *font_file;
+
+    GCancellable *cancellable;
 };
 
 static gboolean
@@ -525,6 +527,9 @@ install_button_refresh_appearance (FontViewApplication *self,
             gtk_button_set_label (GTK_BUTTON (self->install_button), _("Installed"));
             gtk_widget_set_sensitive (self->install_button, FALSE);
             gtk_style_context_remove_class (context, "suggested-action");
+        } else if (self->cancellable != NULL) {
+            gtk_button_set_label (GTK_BUTTON (self->install_button), _("Installing…"));
+            gtk_widget_set_sensitive (self->install_button, FALSE);
         } else {
             gtk_button_set_label (GTK_BUTTON (self->install_button), _("Install"));
             gtk_widget_set_sensitive (self->install_button, TRUE);
@@ -549,6 +554,8 @@ font_install_finished_cb (GObject      *source_object,
         g_debug ("Install failed: %s", err->message);
         g_error_free (err);
     }
+
+    g_clear_object (&self->cancellable);
 }
 
 static void
@@ -634,9 +641,20 @@ install_button_clicked_cb (GtkButton *button,
     dest_file = g_file_get_child (dest_location, dest_filename);
     g_free (dest_filename);
 
+    self->cancellable = g_cancellable_new ();
+
     /* TODO: show error dialog if file exists */
-    g_file_copy_async (self->font_file, dest_file, G_FILE_COPY_NONE, 0, NULL, NULL, NULL,
-                       font_install_finished_cb, self);
+    g_file_copy_async (self->font_file,
+                       dest_file,
+                       G_FILE_COPY_NONE,
+                       G_PRIORITY_DEFAULT,
+                       self->cancellable,
+                       NULL,
+                       NULL,
+                       font_install_finished_cb,
+                       self);
+
+    install_button_refresh_appearance (self, NULL);
 
     g_object_unref (dest_file);
     g_object_unref (dest_location);
@@ -807,6 +825,7 @@ font_view_application_do_open (FontViewApplication *self,
     if (self->install_button == NULL) {
         self->install_button = gtk_button_new_with_label (_("Install"));
         gtk_widget_set_valign (self->install_button, GTK_ALIGN_CENTER);
+        gtk_widget_set_size_request (self->install_button, 100, -1);
         gtk_style_context_add_class (gtk_widget_get_style_context (self->install_button),
                                      "text-button");
         gtk_header_bar_pack_end (GTK_HEADER_BAR (self->header), self->install_button);
@@ -1191,6 +1210,9 @@ font_view_application_dispose (GObject *obj)
 {
     FontViewApplication *self = FONT_VIEW_APPLICATION (obj);
 
+    g_cancellable_cancel (self->cancellable);
+
+    g_clear_object (&self->cancellable);
     g_clear_object (&self->font_file);
     g_clear_object (&self->filter_model);
     g_clear_object (&self->model);
