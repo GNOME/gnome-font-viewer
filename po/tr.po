@@ -11,18 +11,18 @@
 # Osman Karagöz <osmank3@gmail.com>, 2012.
 # Muhammet Kara <muhammetk@gmail.com>, 2011, 2012, 2013, 2014.
 # Gökhan Gurbetoğlu <ggurbet@gmail.com>, 2014.
-# Emin Tufan Çetin <etcetin@gmail.com>, 2017.
 # Burak Kahraman <burakkaankhrmn@gmail.com>, 2017.
+# Emin Tufan Çetin <etcetin@gmail.com>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-11-18 14:03+0000\n"
-"PO-Revision-Date: 2017-12-09 08:02-0500\n"
-"Last-Translator: Burak Kahraman <burakkaankhrmn@gmail.com>\n"
-"Language-Team: Turkish <gnome-turk@gnome.org>\n"
+"POT-Creation-Date: 2017-12-20 17:08+0000\n"
+"PO-Revision-Date: 2017-12-28 16:46+0300\n"
+"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
+"Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -100,13 +100,13 @@ msgstr "Uygulamanın sürümünü göster"
 #: src/font-view.c:204
 #, c-format
 msgid "%s %g — %g, default %g"
-msgstr ""
+msgstr "%s %g — %g, öntanımlı %g"
 
 #: src/font-view.c:260
-#, fuzzy, c-format
+#, c-format
 #| msgid "Installed"
 msgid "Instance %d"
-msgstr "Kuruldu"
+msgstr "Oluşum %d"
 
 #. Translators, this seperates the list of Layout Features.
 #: src/font-view.c:305
@@ -152,11 +152,11 @@ msgstr "Lisans"
 
 #: src/font-view.c:460
 msgid "Glyph Count"
-msgstr ""
+msgstr "Glif Sayısı"
 
 #: src/font-view.c:463
 msgid "Color Glyphs"
-msgstr ""
+msgstr "Renk Glifleri"
 
 #: src/font-view.c:463
 msgid "yes"
@@ -168,11 +168,11 @@ msgstr "hayır"
 
 #: src/font-view.c:467
 msgid "Layout Features"
-msgstr ""
+msgstr "Düzen Özellikleri"
 
 #: src/font-view.c:474
 msgid "Variation Axes"
-msgstr ""
+msgstr "Değişim Eksenleri"
 
 #: src/font-view.c:482
 msgid "Named Styles"
@@ -220,7 +220,9 @@ msgstr "Yazı Tipleri"
 
 #: src/font-view.c:1015
 msgid "translator-credits"
-msgstr "GNOME Türkiye Çeviri Takımı <gnometurk@gnome.org>"
+msgstr ""
+"GNOME Türkiye Çeviri Takımı <gnometurk@gnome.org>\n"
+"Emin Tufan Çetin <etcetin@gmail.com>"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in:6
@@ -235,52 +237,52 @@ msgstr "preferences-desktop-font"
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
 msgid "Access All Alternates"
-msgstr "Bütün Alternatiflere Erişim"
+msgstr "Tüm Alternatiflere Erişim"
 
 #: src/open-type-layout.h:14
 msgctxt "OpenType layout"
 msgid "Above-base Forms"
-msgstr ""
+msgstr "Temel Üstü Biçimler"
 
 #: src/open-type-layout.h:15
 msgctxt "OpenType layout"
 msgid "Above-base Mark Positioning"
-msgstr ""
+msgstr "Temel Üstü İm Konumlama"
 
 #: src/open-type-layout.h:16
 msgctxt "OpenType layout"
 msgid "Above-base Substitutions"
-msgstr ""
+msgstr "Temel Üstü Ornatmalar"
 
 #: src/open-type-layout.h:17
 msgctxt "OpenType layout"
 msgid "Alternative Fractions"
-msgstr "Altrernatif Kesirler"
+msgstr "Alternatif Kesirler"
 
 #: src/open-type-layout.h:18
 msgctxt "OpenType layout"
 msgid "Akhands"
-msgstr ""
+msgstr "Akhand'lar"
 
 #: src/open-type-layout.h:19
 msgctxt "OpenType layout"
 msgid "Below-base Forms"
-msgstr ""
+msgstr "Temel Altı Biçimler"
 
 #: src/open-type-layout.h:20
 msgctxt "OpenType layout"
 msgid "Below-base Mark Positioning"
-msgstr ""
+msgstr "Temel Altı İm Konumlama"
 
 #: src/open-type-layout.h:21
 msgctxt "OpenType layout"
 msgid "Below-base Substitutions"
-msgstr ""
+msgstr "Temel Altı Ornatmalar"
 
 #: src/open-type-layout.h:22
 msgctxt "OpenType layout"
 msgid "Contextual Alternates"
-msgstr ""
+msgstr "Bağlamsal Alternatifler"
 
 #: src/open-type-layout.h:23
 msgctxt "OpenType layout"
@@ -290,52 +292,52 @@ msgstr "Büyük/Küçük Harf Duyarlı Biçimler"
 #: src/open-type-layout.h:24
 msgctxt "OpenType layout"
 msgid "Glyph Composition / Decomposition"
-msgstr ""
+msgstr "Glif Birleşimi / Ayrışımı"
 
 #: src/open-type-layout.h:25
 msgctxt "OpenType layout"
 msgid "Conjunct Form After Ro"
-msgstr ""
+msgstr "Ro’dan Sonra Bitişik Biçim"
 
 #: src/open-type-layout.h:26
 msgctxt "OpenType layout"
 msgid "Conjunct Forms"
-msgstr ""
+msgstr "Bitişik Biçimler"
 
 #: src/open-type-layout.h:27
 msgctxt "OpenType layout"
 msgid "Contextual Ligatures"
-msgstr ""
+msgstr "Bağlamsal Bağlamalar"
 
 #: src/open-type-layout.h:28
 msgctxt "OpenType layout"
 msgid "Centered CJK Punctuation"
-msgstr ""
+msgstr "Ortalanmış CJK Noktalama"
 
 #: src/open-type-layout.h:29
 msgctxt "OpenType layout"
 msgid "Capital Spacing"
-msgstr ""
+msgstr "İlk Harf Aralama"
 
 #: src/open-type-layout.h:30
 msgctxt "OpenType layout"
 msgid "Contextual Swash"
-msgstr ""
+msgstr "Bağlamsal Süs"
 
 #: src/open-type-layout.h:31
 msgctxt "OpenType layout"
 msgid "Cursive Positioning"
-msgstr ""
+msgstr "El Yazısı Konumlama"
 
 #: src/open-type-layout.h:32
 msgctxt "OpenType layout"
 msgid "Petite Capitals From Capitals"
-msgstr ""
+msgstr "İlk Harflerden Ufacık İlk Harfler"
 
 #: src/open-type-layout.h:33
 msgctxt "OpenType layout"
 msgid "Small Capitals From Capitals"
-msgstr ""
+msgstr "İlk Harflerden Küçük İlk Harfler"
 
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
@@ -345,7 +347,7 @@ msgstr "Uzaklıklar"
 #: src/open-type-layout.h:35
 msgctxt "OpenType layout"
 msgid "Discretionary Ligatures"
-msgstr ""
+msgstr "İhtiyari Bağlamalar"
 
 #: src/open-type-layout.h:36
 msgctxt "OpenType layout"
@@ -355,37 +357,37 @@ msgstr "Paydalar"
 #: src/open-type-layout.h:37
 msgctxt "OpenType layout"
 msgid "Dotless Forms"
-msgstr "Noktasız Formlar"
+msgstr "Noktasız Biçimler"
 
 #: src/open-type-layout.h:38
 msgctxt "OpenType layout"
 msgid "Expert Forms"
-msgstr ""
+msgstr "Uzman Biçimler"
 
 #: src/open-type-layout.h:39
 msgctxt "OpenType layout"
 msgid "Final Glyph on Line Alternates"
-msgstr ""
+msgstr "Satır Sonu Glifi Alternatifleri"
 
 #: src/open-type-layout.h:40
 msgctxt "OpenType layout"
 msgid "Terminal Forms #2"
-msgstr "Terminal Formları #2"
+msgstr "Terminal Biçimleri #2"
 
 #: src/open-type-layout.h:41
 msgctxt "OpenType layout"
 msgid "Terminal Forms #3"
-msgstr "Terminal Formları #3"
+msgstr "Terminal Biçimleri #3"
 
 #: src/open-type-layout.h:42
 msgctxt "OpenType layout"
 msgid "Terminal Forms"
-msgstr "Terminal Formları"
+msgstr "Terminal Biçimleri"
 
 #: src/open-type-layout.h:43
 msgctxt "OpenType layout"
 msgid "Flattened accent forms"
-msgstr ""
+msgstr "Basık vurgu işareti biçimleri"
 
 #: src/open-type-layout.h:44
 msgctxt "OpenType layout"
@@ -395,17 +397,17 @@ msgstr "Kesirler"
 #: src/open-type-layout.h:45
 msgctxt "OpenType layout"
 msgid "Full Widths"
-msgstr "Tam Boyutlar"
+msgstr "Tam Genişlikler"
 
 #: src/open-type-layout.h:46
 msgctxt "OpenType layout"
 msgid "Half Forms"
-msgstr "Yarım Formlar"
+msgstr "Yarım Biçimler"
 
 #: src/open-type-layout.h:47
 msgctxt "OpenType layout"
 msgid "Halant Forms"
-msgstr ""
+msgstr "Halant Biçimleri"
 
 #: src/open-type-layout.h:48
 msgctxt "OpenType layout"
@@ -415,27 +417,27 @@ msgstr "Alternatif Yarı Genişlikler"
 #: src/open-type-layout.h:49
 msgctxt "OpenType layout"
 msgid "Historical Forms"
-msgstr "Geçmiş Formlar "
+msgstr "Tarihî Biçimler"
 
 #: src/open-type-layout.h:50
 msgctxt "OpenType layout"
 msgid "Horizontal Kana Alternates"
-msgstr ""
+msgstr "Yatay Kana Alternatifleri"
 
 #: src/open-type-layout.h:51
 msgctxt "OpenType layout"
 msgid "Historical Ligatures"
-msgstr ""
+msgstr "Tarihî Bağlamalar"
 
 #: src/open-type-layout.h:52
 msgctxt "OpenType layout"
 msgid "Hangul"
-msgstr ""
+msgstr "Hangul"
 
 #: src/open-type-layout.h:53
 msgctxt "OpenType layout"
 msgid "Hojo Kanji Forms"
-msgstr ""
+msgstr "Hojo Kanji Biçimleri"
 
 #: src/open-type-layout.h:54
 msgctxt "OpenType layout"
@@ -445,128 +447,127 @@ msgstr "Yarım Genişlikler"
 #: src/open-type-layout.h:55
 msgctxt "OpenType layout"
 msgid "Initial Forms"
-msgstr "Başlangıç Formları"
+msgstr "Başlangıç Biçimleri"
 
 #: src/open-type-layout.h:56
 msgctxt "OpenType layout"
 msgid "Isolated Forms"
-msgstr ""
+msgstr "Ayrık Biçimler"
 
 #: src/open-type-layout.h:57
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Italics"
-msgstr "Italic Yazı Tipi"
+msgstr "İtalikler"
 
 #: src/open-type-layout.h:58
 msgctxt "OpenType layout"
 msgid "Justification Alternates"
-msgstr ""
+msgstr "Yaslama Alternatifleri"
 
 #: src/open-type-layout.h:59
 msgctxt "OpenType layout"
 msgid "JIS78 Forms"
-msgstr ""
+msgstr "JIS78 Biçimleri"
 
 #: src/open-type-layout.h:60
 msgctxt "OpenType layout"
 msgid "JIS83 Forms"
-msgstr ""
+msgstr "JIS83 Biçimleri"
 
 #: src/open-type-layout.h:61
 msgctxt "OpenType layout"
 msgid "JIS90 Forms"
-msgstr ""
+msgstr "JIS90 Biçimleri"
 
 #: src/open-type-layout.h:62
 msgctxt "OpenType layout"
 msgid "JIS2004 Forms"
-msgstr ""
+msgstr "JIS2004 Biçimleri"
 
 #: src/open-type-layout.h:63
 msgctxt "OpenType layout"
 msgid "Kerning"
-msgstr ""
+msgstr "Aralık Bırakma"
 
 #: src/open-type-layout.h:64
 msgctxt "OpenType layout"
 msgid "Left Bounds"
-msgstr ""
+msgstr "Sol Sınırlar"
 
 #: src/open-type-layout.h:65
 msgctxt "OpenType layout"
 msgid "Standard Ligatures"
-msgstr ""
+msgstr "Standart Bağlamalar"
 
 #: src/open-type-layout.h:66
 msgctxt "OpenType layout"
 msgid "Leading Jamo Forms"
-msgstr ""
+msgstr "Öne Gelen Jamo Biçimleri"
 
 #: src/open-type-layout.h:67
 msgctxt "OpenType layout"
 msgid "Lining Figures"
-msgstr ""
+msgstr "Kaplayan Rakamlar"
 
 #: src/open-type-layout.h:68
 msgctxt "OpenType layout"
 msgid "Localized Forms"
-msgstr "Yerelleştirilmiş Formlar"
+msgstr "Yerelleştirilmiş Biçimler"
 
 #: src/open-type-layout.h:69
 msgctxt "OpenType layout"
 msgid "Left-to-right alternates"
-msgstr ""
+msgstr "Soldan sağa alternatifleri"
 
 #: src/open-type-layout.h:70
 msgctxt "OpenType layout"
 msgid "Left-to-right mirrored forms"
-msgstr ""
+msgstr "Soldan sağa yansıtılmış biçimler"
 
 #: src/open-type-layout.h:71
 msgctxt "OpenType layout"
 msgid "Mark Positioning"
-msgstr ""
+msgstr "İm Konumlama"
 
 #: src/open-type-layout.h:72
 msgctxt "OpenType layout"
 msgid "Medial Forms #2"
-msgstr ""
+msgstr "Medyal Biçimler #2"
 
 #: src/open-type-layout.h:73
 msgctxt "OpenType layout"
 msgid "Medial Forms"
-msgstr ""
+msgstr "Medyal Biçimler"
 
 #: src/open-type-layout.h:74
 msgctxt "OpenType layout"
 msgid "Mathematical Greek"
-msgstr ""
+msgstr "Matematiksel Yunanca"
 
 #: src/open-type-layout.h:75
 msgctxt "OpenType layout"
 msgid "Mark to Mark Positioning"
-msgstr ""
+msgstr "İmden İme Konumlama"
 
 #: src/open-type-layout.h:76
 msgctxt "OpenType layout"
 msgid "Mark Positioning via Substitution"
-msgstr ""
+msgstr "Ornatma Aracılığıyla İm Konumlama"
 
 #: src/open-type-layout.h:77
 msgctxt "OpenType layout"
 msgid "Alternate Annotation Forms"
-msgstr ""
+msgstr "Alternatif Belirtim Biçimleri"
 
 #: src/open-type-layout.h:78
 msgctxt "OpenType layout"
 msgid "NLC Kanji Forms"
-msgstr ""
+msgstr "NLC Kanji Biçimleri"
 
 #: src/open-type-layout.h:79
 msgctxt "OpenType layout"
 msgid "Nukta Forms"
-msgstr ""
+msgstr "Nukta Biçimleri"
 
 #: src/open-type-layout.h:80
 msgctxt "OpenType layout"
@@ -576,68 +577,67 @@ msgstr "Paylar"
 #: src/open-type-layout.h:81
 msgctxt "OpenType layout"
 msgid "Oldstyle Figures"
-msgstr ""
+msgstr "Demode Rakamlar"
 
 #: src/open-type-layout.h:82
 msgctxt "OpenType layout"
 msgid "Optical Bounds"
-msgstr ""
+msgstr "Optik Sınırlar"
 
 #: src/open-type-layout.h:83
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Ordinals"
-msgstr "Sıralı"
+msgstr "Sıra Sayıları"
 
 #: src/open-type-layout.h:84
 msgctxt "OpenType layout"
 msgid "Ornaments"
-msgstr ""
+msgstr "Süsler"
 
 #: src/open-type-layout.h:85
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Widths"
-msgstr ""
+msgstr "Orantısal Alternatif Genişlikler"
 
 #: src/open-type-layout.h:86
 msgctxt "OpenType layout"
 msgid "Petite Capitals"
-msgstr ""
+msgstr "Ufacık İlk Harfler"
 
 #: src/open-type-layout.h:87
 msgctxt "OpenType layout"
 msgid "Proportional Kana"
-msgstr ""
+msgstr "Orantısal Kana"
 
 #: src/open-type-layout.h:88
 msgctxt "OpenType layout"
 msgid "Proportional Figures"
-msgstr ""
+msgstr "Orantısal Rakamlar"
 
 #: src/open-type-layout.h:89
 msgctxt "OpenType layout"
 msgid "Pre-Base Forms"
-msgstr ""
+msgstr "Temel Öncesi Biçimler"
 
 #: src/open-type-layout.h:90
 msgctxt "OpenType layout"
 msgid "Pre-base Substitutions"
-msgstr ""
+msgstr "Temel Öncesi Ornatmalar"
 
 #: src/open-type-layout.h:91
 msgctxt "OpenType layout"
 msgid "Post-base Forms"
-msgstr ""
+msgstr "Temel Sonrası Biçimler"
 
 #: src/open-type-layout.h:92
 msgctxt "OpenType layout"
 msgid "Post-base Substitutions"
-msgstr ""
+msgstr "Temel Sonrası Ornatmalar"
 
 #: src/open-type-layout.h:93
 msgctxt "OpenType layout"
 msgid "Proportional Widths"
-msgstr ""
+msgstr "Orantısal Genişlikler"
 
 #: src/open-type-layout.h:94
 msgctxt "OpenType layout"
@@ -645,70 +645,69 @@ msgid "Quarter Widths"
 msgstr "Çeyrek Genişlikler"
 
 #: src/open-type-layout.h:95
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Randomize"
-msgstr "Rastgele seç"
+msgstr "Rastgeleleştir"
 
 #: src/open-type-layout.h:96
 msgctxt "OpenType layout"
 msgid "Required Contextual Alternates"
-msgstr ""
+msgstr "Gerekli Bağlamsal Alternatifler"
 
 #: src/open-type-layout.h:97
 msgctxt "OpenType layout"
 msgid "Rakar Forms"
-msgstr ""
+msgstr "Rakar Biçimleri"
 
 #: src/open-type-layout.h:98
 msgctxt "OpenType layout"
 msgid "Required Ligatures"
-msgstr ""
+msgstr "Gerekli Bağlamalar"
 
 #: src/open-type-layout.h:99
 msgctxt "OpenType layout"
 msgid "Reph Forms"
-msgstr ""
+msgstr "Reph Biçimleri"
 
 #: src/open-type-layout.h:100
 msgctxt "OpenType layout"
 msgid "Right Bounds"
-msgstr ""
+msgstr "Sağ Sınırlar"
 
 #: src/open-type-layout.h:101
 msgctxt "OpenType layout"
 msgid "Right-to-left alternates"
-msgstr ""
+msgstr "Sağdan sola alternatifler"
 
 #: src/open-type-layout.h:102
 msgctxt "OpenType layout"
 msgid "Right-to-left mirrored forms"
-msgstr ""
+msgstr "Sağdan sola yansıtılmış biçimler"
 
 #: src/open-type-layout.h:103
 msgctxt "OpenType layout"
 msgid "Ruby Notation Forms"
-msgstr ""
+msgstr "Ruby Açıklama Biçimleri"
 
 #: src/open-type-layout.h:104
 msgctxt "OpenType layout"
 msgid "Required Variation Alternates"
-msgstr ""
+msgstr "Gerekli Değişim Alternatifleri"
 
 #: src/open-type-layout.h:105
 msgctxt "OpenType layout"
 msgid "Stylistic Alternates"
-msgstr ""
+msgstr "Biçimsel Alternatifler"
 
 #: src/open-type-layout.h:106
 msgctxt "OpenType layout"
 msgid "Scientific Inferiors"
-msgstr ""
+msgstr "Bilimsel Altlar"
 
 #: src/open-type-layout.h:107
 msgctxt "OpenType layout"
 msgid "Optical size"
-msgstr ""
+msgstr "Optik boyut"
 
 #: src/open-type-layout.h:108
 msgctxt "OpenType layout"
@@ -718,117 +717,117 @@ msgstr "Küçük İlk Harfler"
 #: src/open-type-layout.h:109
 msgctxt "OpenType layout"
 msgid "Simplified Forms"
-msgstr "Sadeleştirilmiş Formlar"
+msgstr "Yalınlaştırılmış Biçimler"
 
 #: src/open-type-layout.h:110
 msgctxt "OpenType layout"
 msgid "Stylistic Set 1"
-msgstr ""
+msgstr "Biçimsel Takım 1"
 
 #: src/open-type-layout.h:111
 msgctxt "OpenType layout"
 msgid "Stylistic Set 2"
-msgstr ""
+msgstr "Biçimsel Takım 2"
 
 #: src/open-type-layout.h:112
 msgctxt "OpenType layout"
 msgid "Stylistic Set 3"
-msgstr ""
+msgstr "Biçimsel Takım 3"
 
 #: src/open-type-layout.h:113
 msgctxt "OpenType layout"
 msgid "Stylistic Set 4"
-msgstr ""
+msgstr "Biçimsel Takım 4"
 
 #: src/open-type-layout.h:114
 msgctxt "OpenType layout"
 msgid "Stylistic Set 5"
-msgstr ""
+msgstr "Biçimsel Takım 5"
 
 #: src/open-type-layout.h:115
 msgctxt "OpenType layout"
 msgid "Stylistic Set 6"
-msgstr ""
+msgstr "Biçimsel Takım 6"
 
 #: src/open-type-layout.h:116
 msgctxt "OpenType layout"
 msgid "Stylistic Set 7"
-msgstr ""
+msgstr "Biçimsel Takım 7"
 
 #: src/open-type-layout.h:117
 msgctxt "OpenType layout"
 msgid "Stylistic Set 8"
-msgstr ""
+msgstr "Biçimsel Takım 8"
 
 #: src/open-type-layout.h:118
 msgctxt "OpenType layout"
 msgid "Stylistic Set 9"
-msgstr ""
+msgstr "Biçimsel Takım 9"
 
 #: src/open-type-layout.h:119
 msgctxt "OpenType layout"
 msgid "Stylistic Set 10"
-msgstr ""
+msgstr "Biçimsel Takım 10"
 
 #: src/open-type-layout.h:120
 msgctxt "OpenType layout"
 msgid "Stylistic Set 11"
-msgstr ""
+msgstr "Biçimsel Takım 11"
 
 #: src/open-type-layout.h:121
 msgctxt "OpenType layout"
 msgid "Stylistic Set 12"
-msgstr ""
+msgstr "Biçimsel Takım 12"
 
 #: src/open-type-layout.h:122
 msgctxt "OpenType layout"
 msgid "Stylistic Set 13"
-msgstr ""
+msgstr "Biçimsel Takım 13"
 
 #: src/open-type-layout.h:123
 msgctxt "OpenType layout"
 msgid "Stylistic Set 14"
-msgstr ""
+msgstr "Biçimsel Takım 14"
 
 #: src/open-type-layout.h:124
 msgctxt "OpenType layout"
 msgid "Stylistic Set 15"
-msgstr ""
+msgstr "Biçimsel Takım 15"
 
 #: src/open-type-layout.h:125
 msgctxt "OpenType layout"
 msgid "Stylistic Set 16"
-msgstr ""
+msgstr "Biçimsel Takım 16"
 
 #: src/open-type-layout.h:126
 msgctxt "OpenType layout"
 msgid "Stylistic Set 17"
-msgstr ""
+msgstr "Biçimsel Takım 17"
 
 #: src/open-type-layout.h:127
 msgctxt "OpenType layout"
 msgid "Stylistic Set 18"
-msgstr ""
+msgstr "Biçimsel Takım 18"
 
 #: src/open-type-layout.h:128
 msgctxt "OpenType layout"
 msgid "Stylistic Set 19"
-msgstr ""
+msgstr "Biçimsel Takım 19"
 
 #: src/open-type-layout.h:129
 msgctxt "OpenType layout"
 msgid "Stylistic Set 20"
-msgstr ""
+msgstr "Biçimsel Takım 20"
 
 #: src/open-type-layout.h:130
 msgctxt "OpenType layout"
 msgid "Math script style alternates"
-msgstr ""
+msgstr "Matematik betik biçimi alternatifleri"
 
 #: src/open-type-layout.h:131
 msgctxt "OpenType layout"
 msgid "Stretching Glyph Decomposition"
-msgstr ""
+msgstr "Esneyen Glif Ayrışımı"
 
 #: src/open-type-layout.h:132
 msgctxt "OpenType layout"
@@ -843,52 +842,52 @@ msgstr "Üst Simge"
 #: src/open-type-layout.h:134
 msgctxt "OpenType layout"
 msgid "Swash"
-msgstr ""
+msgstr "Süs"
 
 #: src/open-type-layout.h:135
 msgctxt "OpenType layout"
 msgid "Titling"
-msgstr ""
+msgstr "Başlık Oluşturma"
 
 #: src/open-type-layout.h:136
 msgctxt "OpenType layout"
 msgid "Trailing Jamo Forms"
-msgstr ""
+msgstr "Arkaya Gelen Jamo Biçimleri"
 
 #: src/open-type-layout.h:137
 msgctxt "OpenType layout"
 msgid "Traditional Name Forms"
-msgstr ""
+msgstr "Geleneksel Ad Biçimleri"
 
 #: src/open-type-layout.h:138
 msgctxt "OpenType layout"
 msgid "Tabular Figures"
-msgstr ""
+msgstr "Çizelgesel Rakamlar"
 
 #: src/open-type-layout.h:139
 msgctxt "OpenType layout"
 msgid "Traditional Forms"
-msgstr ""
+msgstr "Geleneksel Biçimler"
 
 #: src/open-type-layout.h:140
 msgctxt "OpenType layout"
 msgid "Third Widths"
-msgstr ""
+msgstr "Üçlü Genişlikler"
 
 #: src/open-type-layout.h:141
 msgctxt "OpenType layout"
 msgid "Unicase"
-msgstr ""
+msgstr "Tek hâl"
 
 #: src/open-type-layout.h:142
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Metrics"
-msgstr ""
+msgstr "Alternatif Dikey Ölçüler"
 
 #: src/open-type-layout.h:143
 msgctxt "OpenType layout"
 msgid "Vattu Variants"
-msgstr ""
+msgstr "Vattu Değişkeleri"
 
 #: src/open-type-layout.h:144
 msgctxt "OpenType layout"
@@ -898,42 +897,42 @@ msgstr "Dikey Yazım"
 #: src/open-type-layout.h:145
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Half Metrics"
-msgstr ""
+msgstr "Alternatif Dikey Yarım Ölçüler"
 
 #: src/open-type-layout.h:146
 msgctxt "OpenType layout"
 msgid "Vowel Jamo Forms"
-msgstr ""
+msgstr "Sesli Jamo Biçimleri"
 
 #: src/open-type-layout.h:147
 msgctxt "OpenType layout"
 msgid "Vertical Kana Alternates"
-msgstr ""
+msgstr "Dikey Kana Alternatifleri"
 
 #: src/open-type-layout.h:148
 msgctxt "OpenType layout"
 msgid "Vertical Kerning"
-msgstr ""
+msgstr "Dikey Aralık Bırakma"
 
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Vertical Metrics"
-msgstr ""
+msgstr "Orantısal Alternatif Dikey Ölçüler"
 
 #: src/open-type-layout.h:150
 msgctxt "OpenType layout"
 msgid "Vertical Alternates and Rotation"
-msgstr ""
+msgstr "Dikey Alternatifler ve Dönme"
 
 #: src/open-type-layout.h:151
 msgctxt "OpenType layout"
 msgid "Vertical Alternates for Rotation"
-msgstr ""
+msgstr "Dönme için Dikey Alternatifler"
 
 #: src/open-type-layout.h:152
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
-msgstr ""
+msgstr "Eğik Çizgili Sıfır"
 
 #~ msgid "Font Viewer"
 #~ msgstr "Yazı Tipi Görüntüleyici"
