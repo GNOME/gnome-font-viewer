@@ -376,7 +376,7 @@ msgstr "أشكال نهائية"
 #: src/open-type-layout.h:43
 msgctxt "OpenType layout"
 msgid "Flattened accent forms"
-msgstr "أشكال مسطحة من علامات التشكيل"
+msgstr "أشكال مسطحة من الحركات"
 
 #: src/open-type-layout.h:44
 msgctxt "OpenType layout"
@@ -696,7 +696,7 @@ msgstr "محارف علمية سفلى"
 #: src/open-type-layout.h:107
 msgctxt "OpenType layout"
 msgid "Optical size"
-msgstr "مقاس بصري"
+msgstr "الحجم البصري"
 
 #: src/open-type-layout.h:108
 msgctxt "OpenType layout"
