@@ -61,8 +61,12 @@ typedef struct {
     GtkWidget *swin_view;
     GtkWidget *swin_preview;
     GtkWidget *icon_view;
+    GtkWidget *search_bar;
+    GtkWidget *search_entry;
+    GtkWidget *search_toggle;
 
     GtkTreeModel *model;
+    GtkTreeModel *filter_model;
 
     GFile *font_file;
 } FontViewApplication;
@@ -739,6 +743,39 @@ font_view_update_scale_factor (FontViewApplication *self)
                                       scale_factor);
 }
 
+static gboolean
+font_visible_func (GtkTreeModel *model,
+                   GtkTreeIter  *iter,
+                   gpointer      data)
+{
+  FontViewApplication *self = data;
+  gboolean ret;
+  const char *search;
+  char *name;
+  char *cf_name;
+  char *cf_search;
+
+  if (!gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (self->search_toggle)))
+    return TRUE;
+
+  search = gtk_entry_get_text (GTK_ENTRY (self->search_entry));
+
+  gtk_tree_model_get (model, iter,
+                      COLUMN_NAME, &name,
+                      -1);
+
+  cf_name = g_utf8_casefold (name, -1);
+  cf_search = g_utf8_casefold (search, -1);
+
+  ret = strstr (cf_name, cf_search) != NULL;
+
+  g_free (name);
+  g_free (cf_name);
+  g_free (cf_search);
+
+  return ret;
+}
+
 static void
 font_view_ensure_model (FontViewApplication *self)
 {
@@ -746,6 +783,9 @@ font_view_ensure_model (FontViewApplication *self)
         return;
 
     self->model = font_view_model_new ();
+    self->filter_model = gtk_tree_model_filter_new (self->model, NULL);
+    gtk_tree_model_filter_set_visible_func (GTK_TREE_MODEL_FILTER (self->filter_model),
+                                            font_visible_func, self, NULL);
     g_signal_connect (self->model, "config-changed",
                       G_CALLBACK (font_model_config_changed_cb), self);
 
@@ -802,6 +842,8 @@ font_view_application_do_open (FontViewApplication *self,
                           G_CALLBACK (back_button_clicked_cb), self);
     }
 
+    gtk_widget_hide (self->search_toggle);
+
     uri = g_file_get_uri (file);
 
     if (self->font_widget == NULL) {
@@ -830,6 +872,7 @@ icon_view_release_cb (GtkWidget *widget,
 {
     FontViewApplication *self = user_data;
     GtkTreePath *path;
+    GtkTreeIter filter_iter;
     GtkTreeIter iter;
     gchar *font_path;
     gint face_index;
@@ -843,7 +886,10 @@ icon_view_release_cb (GtkWidget *widget,
                                           event->x, event->y);
 
     if (path != NULL &&
-        gtk_tree_model_get_iter (self->model, &iter, path)) {
+        gtk_tree_model_get_iter (self->filter_model, &filter_iter, path)) {
+        gtk_tree_model_filter_convert_iter_to_child_iter (GTK_TREE_MODEL_FILTER (self->filter_model),
+                                                          &iter,
+                                                          &filter_iter);
         gtk_tree_model_get (self->model, &iter,
                             COLUMN_PATH, &font_path,
                             COLUMN_FACE_INDEX, &face_index,
@@ -881,6 +927,8 @@ font_view_application_do_overview (FontViewApplication *self)
         self->install_button = NULL;
     }
 
+    gtk_widget_show (self->search_toggle);
+
     font_view_ensure_model (self);
 
     gtk_header_bar_set_title (GTK_HEADER_BAR (self->header), _("All Fonts"));
@@ -890,7 +938,7 @@ font_view_application_do_overview (FontViewApplication *self)
         GtkWidget *icon_view;
         GtkCellRenderer *cell;
 
-        self->icon_view = icon_view = gtk_icon_view_new_with_model (self->model);
+        self->icon_view = icon_view = gtk_icon_view_new_with_model (self->filter_model);
 
         g_object_set (icon_view,
                       "column-spacing", VIEW_COLUMN_SPACING,
@@ -943,7 +991,7 @@ font_view_window_key_press_event_cb (GtkWidget *widget,
         return TRUE;
     }
 
-    return FALSE;
+    return gtk_search_bar_handle_event (GTK_SEARCH_BAR (self->search_bar), (GdkEvent *)event);
 }
 
 static void
@@ -1025,9 +1073,16 @@ static GActionEntry action_entries[] = {
 };
 
 static void
+search_text_changed (GtkEntry *entry,
+                     FontViewApplication *self)
+{
+  gtk_tree_model_filter_refilter (GTK_TREE_MODEL_FILTER (self->filter_model));
+}
+
+static void
 ensure_window (FontViewApplication *self)
 {
-    GtkWidget *window, *swin;
+    GtkWidget *window, *swin, *box, *image;
 
     if (self->main_window)
         return;
@@ -1055,10 +1110,31 @@ ensure_window (FontViewApplication *self)
     gtk_widget_set_hexpand (self->stack, TRUE);
     gtk_widget_set_vexpand (self->stack, TRUE);
 
+    box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+    gtk_stack_add_named (GTK_STACK (self->stack), box, "overview");
+
+    self->search_bar = gtk_search_bar_new ();
+    gtk_container_add (GTK_CONTAINER (box), self->search_bar);
+    self->search_entry = gtk_search_entry_new ();
+    gtk_entry_set_width_chars (GTK_ENTRY (self->search_entry), 40);
+    gtk_container_add (GTK_CONTAINER (self->search_bar), self->search_entry);
+    self->search_toggle = gtk_toggle_button_new ();
+    gtk_widget_set_no_show_all (self->search_toggle, TRUE);
+    gtk_widget_show (self->search_toggle);
+    image = gtk_image_new_from_icon_name ("edit-find-symbolic", GTK_ICON_SIZE_BUTTON);
+    gtk_widget_show (image);
+    gtk_container_add (GTK_CONTAINER (self->search_toggle), image);
+    gtk_header_bar_pack_end (GTK_HEADER_BAR (self->header), self->search_toggle);
+    g_object_bind_property (self->search_bar, "search-mode-enabled",
+                            self->search_toggle, "active",
+                            G_BINDING_BIDIRECTIONAL);
+
+    g_signal_connect (self->search_entry, "search-changed", G_CALLBACK (search_text_changed), self);
+
     self->swin_view = swin = gtk_scrolled_window_new (NULL, NULL);
     gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (swin),
 				    GTK_POLICY_NEVER, GTK_POLICY_AUTOMATIC);
-    gtk_stack_add_named (GTK_STACK (self->stack), swin, "overview");
+    gtk_container_add (GTK_CONTAINER (box), self->swin_view);
 
     self->swin_preview = swin = gtk_scrolled_window_new (NULL, NULL);
     gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (swin),
@@ -1106,6 +1182,7 @@ font_view_application_dispose (GObject *obj)
     FontViewApplication *self = FONT_VIEW_APPLICATION (obj);
 
     g_clear_object (&self->font_file);
+    g_clear_object (&self->filter_model);
     g_clear_object (&self->model);
 
     G_OBJECT_CLASS (font_view_application_parent_class)->dispose (obj);
