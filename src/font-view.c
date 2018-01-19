@@ -847,8 +847,13 @@ font_view_application_do_open (FontViewApplication *self,
     uri = g_file_get_uri (file);
 
     if (self->font_widget == NULL) {
+        GtkWidget *viewport;
+
         self->font_widget = GTK_WIDGET (sushi_font_widget_new (uri, face_index));
         gtk_container_add (GTK_CONTAINER (self->swin_preview), self->font_widget);
+        viewport = gtk_widget_get_parent (self->font_widget);
+        gtk_scrollable_set_hscroll_policy (GTK_SCROLLABLE (viewport), GTK_SCROLL_NATURAL);
+        gtk_scrollable_set_vscroll_policy (GTK_SCROLLABLE (viewport), GTK_SCROLL_NATURAL);
 
         g_signal_connect (self->font_widget, "loaded",
                           G_CALLBACK (font_widget_loaded_cb), self);
@@ -1138,7 +1143,7 @@ ensure_window (FontViewApplication *self)
 
     self->swin_preview = swin = gtk_scrolled_window_new (NULL, NULL);
     gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (swin),
-         			    GTK_POLICY_AUTOMATIC, GTK_POLICY_NEVER);
+         			    GTK_POLICY_AUTOMATIC, GTK_POLICY_AUTOMATIC);
     gtk_stack_add_named (GTK_STACK (self->stack), swin, "preview");
 
     gtk_widget_show_all (window);
