@@ -60,6 +60,7 @@ typedef struct {
     GtkWidget *stack;
     GtkWidget *swin_view;
     GtkWidget *swin_preview;
+    GtkWidget *swin_info;
     GtkWidget *icon_view;
     GtkWidget *search_bar;
     GtkWidget *search_entry;
@@ -167,6 +168,8 @@ add_row (GtkWidget *grid,
          gboolean multiline)
 {
     GtkWidget *name_w, *label;
+    int i;
+    const char *p;
 
     name_w = gtk_label_new (name);
     gtk_style_context_add_class (gtk_widget_get_style_context (name_w), "dim-label");
@@ -185,12 +188,24 @@ add_row (GtkWidget *grid,
 
     gtk_label_set_ellipsize (GTK_LABEL (label), PANGO_ELLIPSIZE_END);
     gtk_label_set_max_width_chars (GTK_LABEL (label), 64);
-    if (multiline && g_utf8_strlen (value, -1) > 64) {
-       gtk_label_set_width_chars (GTK_LABEL (label), 64);
-    }
-    gtk_label_set_lines (GTK_LABEL (label), multiline ? 10 : 1);
 
-    gtk_grid_attach_next_to (GTK_GRID (grid), label, 
+    if (multiline && g_utf8_strlen (value, -1) > 64) {
+        gtk_label_set_width_chars (GTK_LABEL (label), 64);
+        gtk_label_set_lines (GTK_LABEL (label), 10);
+
+        p = value;
+        i = 0;
+        while (p) {
+            p = strchr (p + 1, '\n');
+            i++;
+        }
+        if (i > 3) { /* multi-paragraph text */
+            gtk_label_set_ellipsize (GTK_LABEL (label), PANGO_ELLIPSIZE_NONE);
+            gtk_label_set_lines (GTK_LABEL (label), -1);
+        }
+    }
+
+    gtk_grid_attach_next_to (GTK_GRID (grid), label,
                              name_w, GTK_POS_RIGHT,
                              1, 1);
 }
@@ -689,26 +704,21 @@ info_button_clicked_cb (GtkButton *button,
                         gpointer user_data)
 {
     FontViewApplication *self = user_data;
-    GtkWidget *stack, *switcher, *grid, *dialog;
+    GtkWidget *grid;
+    GtkWidget *child;
     FT_Face face = sushi_font_widget_get_ft_face (SUSHI_FONT_WIDGET (self->font_widget));
+
+    if (!gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (button))) {
+        gtk_stack_set_visible_child_name (GTK_STACK (self->stack), "preview");
+        return;
+    }
 
     if (face == NULL)
         return;
 
-    dialog = g_object_new (GTK_TYPE_DIALOG,
-                           "transient-for", self->main_window,
-                           "modal", TRUE,
-                           "resizable", FALSE,
-                           "destroy-with-parent", TRUE,
-                           "use-header-bar", TRUE,
-                           NULL);
-    stack = gtk_stack_new ();
-    gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), stack);
-
-    switcher = gtk_stack_switcher_new ();
-    gtk_stack_switcher_set_stack (GTK_STACK_SWITCHER (switcher), GTK_STACK (stack));
-    gtk_header_bar_set_custom_title (GTK_HEADER_BAR (gtk_window_get_titlebar (GTK_WINDOW (dialog))),
-                                     switcher);
+    child = gtk_bin_get_child (GTK_BIN (self->swin_info));
+    if (child)
+        gtk_widget_destroy (child);
 
     grid = gtk_grid_new ();
     gtk_orientable_set_orientation (GTK_ORIENTABLE (grid), GTK_ORIENTATION_VERTICAL);
@@ -717,22 +727,11 @@ info_button_clicked_cb (GtkButton *button,
     gtk_grid_set_row_spacing (GTK_GRID (grid), 2);
 
     populate_grid (self, grid, face);
-
-    gtk_stack_add_titled (GTK_STACK (stack), grid, "info", _("General"));
-
-    grid = gtk_grid_new ();
-    gtk_orientable_set_orientation (GTK_ORIENTABLE (grid), GTK_ORIENTATION_VERTICAL);
-    g_object_set (grid, "margin", 20, NULL);
-    gtk_grid_set_column_spacing (GTK_GRID (grid), 8);
-    gtk_grid_set_row_spacing (GTK_GRID (grid), 2);
-
     populate_details (self, grid, face);
+    gtk_container_add (GTK_CONTAINER (self->swin_info), grid);
 
-    gtk_stack_add_titled (GTK_STACK (stack), grid, "details", _("Details"));
-
-    g_signal_connect (dialog, "response",
-                      G_CALLBACK (gtk_widget_destroy), NULL);
-    gtk_widget_show_all (dialog);
+    gtk_widget_show_all (self->swin_info);
+    gtk_stack_set_visible_child_name (GTK_STACK (self->stack), "info");
 }
 
 static void
@@ -817,13 +816,13 @@ font_view_application_do_open (FontViewApplication *self,
     }
 
     if (self->info_button == NULL) {
-        self->info_button = gtk_button_new_with_label (_("Info"));
+        self->info_button = gtk_toggle_button_new_with_label (_("Info"));
         gtk_widget_set_valign (self->info_button, GTK_ALIGN_CENTER);
         gtk_style_context_add_class (gtk_widget_get_style_context (self->info_button),
                                      "text-button");
         gtk_header_bar_pack_end (GTK_HEADER_BAR (self->header), self->info_button);
 
-        g_signal_connect (self->info_button, "clicked",
+        g_signal_connect (self->info_button, "toggled",
                           G_CALLBACK (info_button_clicked_cb), self);
     }
 
@@ -868,6 +867,7 @@ font_view_application_do_open (FontViewApplication *self,
 
     gtk_widget_show_all (self->main_window);
     gtk_stack_set_visible_child_name (GTK_STACK (self->stack), "preview");
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (self->info_button), FALSE);
 }
 
 static gboolean
@@ -1145,6 +1145,11 @@ ensure_window (FontViewApplication *self)
     gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (swin),
          			    GTK_POLICY_AUTOMATIC, GTK_POLICY_AUTOMATIC);
     gtk_stack_add_named (GTK_STACK (self->stack), swin, "preview");
+
+    self->swin_info = swin = gtk_scrolled_window_new (NULL, NULL);
+    gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (swin),
+         			    GTK_POLICY_AUTOMATIC, GTK_POLICY_AUTOMATIC);
+    gtk_stack_add_named (GTK_STACK (self->stack), swin, "info");
 
     gtk_widget_show_all (window);
 }
