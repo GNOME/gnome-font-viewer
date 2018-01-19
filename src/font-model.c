@@ -357,20 +357,23 @@ ensure_fallback_icon (FontViewModel *self)
 {
     GtkIconTheme *icon_theme;
     GtkIconInfo *icon_info;
+    const char *mimetype = "font/ttf";
     GIcon *icon = NULL;
 
     if (self->priv->fallback_icon != NULL)
         return;
 
     icon_theme = gtk_icon_theme_get_default ();
-    icon = g_content_type_get_icon ("application/x-font-ttf");
+    icon = g_content_type_get_icon (mimetype);
     icon_info = gtk_icon_theme_lookup_by_gicon_for_scale (icon_theme, icon,
                                                           128, self->priv->scale_factor,
                                                           GTK_ICON_LOOKUP_FORCE_SIZE);
     g_object_unref (icon);
 
-    if (!icon_info)
+    if (!icon_info) {
+        g_warning ("Fallback icon for %s not found", mimetype);
         return;
+    }
 
     self->priv->fallback_icon = gtk_icon_info_load_surface (icon_info, NULL, NULL);
     g_object_unref (icon_info);
