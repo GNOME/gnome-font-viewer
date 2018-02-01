@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2017-09-18 18:13+0000\n"
-"PO-Revision-Date: 2017-12-18 22:54+0200\n"
+"PO-Revision-Date: 2018-02-01 13:18+0200\n"
 "Last-Translator: Pieter Schoeman <pieter@sonbesie.co.za>\n"
 "Language-Team: Afrikaans <pieter@sonbesie.co.za>\n"
 "Language: af\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"X-Generator: Poedit 2.0.3\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:76
@@ -139,18 +139,18 @@ msgstr "Alle lettertipes"
 #: src/font-view.c:795 src/org.gnome.font-viewer.desktop.in:3
 #| msgid "All Fonts"
 msgid "Fonts"
-msgstr "Lettertipe"
+msgstr "Lettertipes"
 
 #: src/font-view.c:798
 msgid "translator-credits"
 msgstr ""
 "Friedel Wolff\n"
-"Pieter Schalk Schoeman"
+"Pieter Schoeman"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
-msgstr "fonts;fontface;fonte;lettertipe;skriftipe;"
+msgstr "lettertipe;skriftipe;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: src/org.gnome.font-viewer.desktop.in:8
