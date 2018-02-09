@@ -1,3 +1,11 @@
+GNOME Font Viewer - 3.27.90
+-------------------------------------------------------------------------------
+• Fix icon loading
+• Allow searching for fonts
+• Allow scrolling in both directions
+• Turn the info dialog into a page in the main window
+• Translation updates
+
 GNOME Font Viewer - 3.27.0
 -------------------------------------------------------------------------------
 • Show more general font information
