@@ -6,8 +6,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils 0\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-10-30 22:59+0000\n"
-"PO-Revision-Date: 2017-11-09 17:43+0100\n"
+"POT-Creation-Date: 2018-02-09 00:30+0000\n"
+"PO-Revision-Date: 2018-02-20 13:33+0100\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "Language: hr\n"
@@ -15,13 +15,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2016-09-22 19:56+0000\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 2.0.6\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:80
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:85
 msgid "GNOME Fonts"
 msgstr "GNOME slova"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1013
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1066
 #: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Pregledajte slova na vašem sustavu"
@@ -74,7 +74,7 @@ msgstr "O programu"
 msgid "Quit"
 msgstr "Zatvori"
 
-#: src/font-view.c:88
+#: src/font-view.c:93
 msgid "Show the application's version"
 msgstr "Prikaži inačicu aplikacije"
 
@@ -83,127 +83,119 @@ msgstr "Prikaži inačicu aplikacije"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:204
+#: src/font-view.c:223
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, zadano %g"
 
-#: src/font-view.c:260
+#: src/font-view.c:279
 #, c-format
 msgid "Instance %d"
 msgstr "Primjerak %d"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:305
+#: src/font-view.c:324
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:331
+#: src/font-view.c:350
 msgid "Name"
 msgstr "Naziv"
 
-#: src/font-view.c:334
+#: src/font-view.c:353
 msgid "Style"
 msgstr "Stil"
 
-#: src/font-view.c:344
+#: src/font-view.c:363
 msgid "Type"
 msgstr "Vrsta"
 
-#: src/font-view.c:405 src/font-view.c:439
+#: src/font-view.c:424 src/font-view.c:458
 msgid "Version"
 msgstr "Inačica"
 
-#: src/font-view.c:410 src/font-view.c:445
+#: src/font-view.c:429 src/font-view.c:464
 msgid "Copyright"
 msgstr "Autorsko pravo"
 
-#: src/font-view.c:415
+#: src/font-view.c:434
 msgid "Description"
 msgstr "Opis"
 
-#: src/font-view.c:420
+#: src/font-view.c:439
 msgid "Manufacturer"
 msgstr "Proizvođač"
 
-#: src/font-view.c:425
+#: src/font-view.c:444
 msgid "Designer"
 msgstr "Dizajner"
 
-#: src/font-view.c:430
+#: src/font-view.c:449
 msgid "License"
 msgstr "Licenca"
 
-#: src/font-view.c:460
+#: src/font-view.c:479
 msgid "Glyph Count"
 msgstr "Broj simbola"
 
-#: src/font-view.c:463
+#: src/font-view.c:482
 msgid "Color Glyphs"
 msgstr "Boja simbola"
 
-#: src/font-view.c:463
+#: src/font-view.c:482
 msgid "yes"
 msgstr "da"
 
-#: src/font-view.c:463
+#: src/font-view.c:482
 msgid "no"
 msgstr "ne"
 
-#: src/font-view.c:467
+#: src/font-view.c:486
 msgid "Layout Features"
 msgstr "Značajke rasporeda"
 
-#: src/font-view.c:474
+#: src/font-view.c:493
 msgid "Variation Axes"
-msgstr ""
+msgstr "Osi varijacije"
 
-#: src/font-view.c:482
+#: src/font-view.c:501
 msgid "Named Styles"
 msgstr "Imenovani stilovi"
 
-#: src/font-view.c:499
+#: src/font-view.c:518
 msgid "Install Failed"
 msgstr "Neuspjela instalacija"
 
-#: src/font-view.c:506
+#: src/font-view.c:525
 msgid "Installed"
 msgstr "Instalirano"
 
-#: src/font-view.c:510 src/font-view.c:769
+#: src/font-view.c:529 src/font-view.c:808
 msgid "Install"
 msgstr "Instaliraj"
 
-#: src/font-view.c:644
+#: src/font-view.c:663
 msgid "This font could not be displayed."
 msgstr "Slova ne mogu biti prikazana."
 
-#: src/font-view.c:717
-msgid "General"
-msgstr "Općenito"
-
-#: src/font-view.c:727
-msgid "Details"
-msgstr "Pojedinosti"
-
-#: src/font-view.c:780
+#: src/font-view.c:819
 msgid "Info"
 msgstr "Informacije"
 
-#: src/font-view.c:795
+#: src/font-view.c:834
 msgid "Back"
 msgstr "Natrag"
 
-#: src/font-view.c:886
+#: src/font-view.c:939
 msgid "All Fonts"
 msgstr "Sva slova"
 
-#: src/font-view.c:1012 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1065 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
 msgstr "Slova"
 
-#: src/font-view.c:1015
+#: src/font-view.c:1068
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
@@ -922,6 +914,12 @@ msgstr ""
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr ""
+
+#~ msgid "General"
+#~ msgstr "Općenito"
+
+#~ msgid "Details"
+#~ msgstr "Pojedinosti"
 
 #~ msgid "Font Viewer"
 #~ msgstr "Preglednik slova"
