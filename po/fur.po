@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: gnome-font-viewer gnome-3-6\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-10-30 22:59+0000\n"
-"PO-Revision-Date: 2017-11-07 11:50+0100\n"
+"POT-Creation-Date: 2018-02-20 22:45+0000\n"
+"PO-Revision-Date: 2018-02-23 09:44+0100\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.0.3\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:80
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:85
 msgid "GNOME Fonts"
 msgstr "Caratars di GNOME"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1013
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1066
 #: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Viôt i caratars tal to sisteme"
@@ -75,7 +75,7 @@ msgstr "Informazions"
 msgid "Quit"
 msgstr "Jes"
 
-#: src/font-view.c:88
+#: src/font-view.c:93
 msgid "Show the application's version"
 msgstr "Mostre la version de aplicazion"
 
@@ -84,128 +84,119 @@ msgstr "Mostre la version de aplicazion"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:204
+#: src/font-view.c:223
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, predefinît %g"
 
-#: src/font-view.c:260
+#: src/font-view.c:279
 #, c-format
 msgid "Instance %d"
 msgstr "Istance %d"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:305
+#: src/font-view.c:324
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:331
+#: src/font-view.c:350
 msgid "Name"
 msgstr "Non"
 
-#: src/font-view.c:334
+#: src/font-view.c:353
 msgid "Style"
 msgstr "Stîl"
 
-#: src/font-view.c:344
+#: src/font-view.c:363
 msgid "Type"
 msgstr "Gjenar"
 
-#: src/font-view.c:405 src/font-view.c:439
+#: src/font-view.c:424 src/font-view.c:458
 msgid "Version"
 msgstr "Version"
 
-#: src/font-view.c:410 src/font-view.c:445
+#: src/font-view.c:429 src/font-view.c:464
 msgid "Copyright"
 msgstr "Copyright"
 
-#: src/font-view.c:415
+#: src/font-view.c:434
 msgid "Description"
 msgstr "Descrizion"
 
-#: src/font-view.c:420
+#: src/font-view.c:439
 msgid "Manufacturer"
 msgstr "Produtôr"
 
-#: src/font-view.c:425
+#: src/font-view.c:444
 msgid "Designer"
 msgstr "Disegnadôr"
 
-#: src/font-view.c:430
+#: src/font-view.c:449
 msgid "License"
 msgstr "Licence"
 
-#: src/font-view.c:460
+#: src/font-view.c:479
 msgid "Glyph Count"
 msgstr "Conte dai glifs"
 
-#: src/font-view.c:463
+#: src/font-view.c:482
 msgid "Color Glyphs"
 msgstr "Colôr dai glifs"
 
-#: src/font-view.c:463
+#: src/font-view.c:482
 msgid "yes"
 msgstr "sì"
 
-#: src/font-view.c:463
-#| msgid "Info"
+#: src/font-view.c:482
 msgid "no"
 msgstr "no"
 
-#: src/font-view.c:467
+#: src/font-view.c:486
 msgid "Layout Features"
-msgstr ""
+msgstr "Funzionalitâts disposizion"
 
-#: src/font-view.c:474
+#: src/font-view.c:493
 msgid "Variation Axes"
-msgstr ""
+msgstr "As di variazion"
 
-#: src/font-view.c:482
+#: src/font-view.c:501
 msgid "Named Styles"
-msgstr ""
+msgstr "Stîi cun non"
 
-#: src/font-view.c:499
+#: src/font-view.c:518
 msgid "Install Failed"
 msgstr "Installazion Falide"
 
-#: src/font-view.c:506
+#: src/font-view.c:525
 msgid "Installed"
 msgstr "Installât"
 
-#: src/font-view.c:510 src/font-view.c:769
+#: src/font-view.c:529 src/font-view.c:808
 msgid "Install"
 msgstr "Installe"
 
-#: src/font-view.c:644
+#: src/font-view.c:663
 msgid "This font could not be displayed."
 msgstr "Chest caratar nol pues jessi mostrât."
 
-#: src/font-view.c:717
-msgid "General"
-msgstr "Gjenerâl"
-
-#: src/font-view.c:727
-msgid "Details"
-msgstr "Detais"
-
-#: src/font-view.c:780
+#: src/font-view.c:819
 msgid "Info"
 msgstr "Informazions"
 
-#: src/font-view.c:795
+#: src/font-view.c:834
 msgid "Back"
 msgstr "Indaûr"
 
-#: src/font-view.c:886
+#: src/font-view.c:939
 msgid "All Fonts"
 msgstr "Ducj i caratars"
 
-#: src/font-view.c:1012 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1065 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
 msgstr "Caratars"
 
-#: src/font-view.c:1015
+#: src/font-view.c:1068
 msgid "translator-credits"
 msgstr "Fabio Tomat <f.t.public@gmail.com>"
 
@@ -222,7 +213,7 @@ msgstr "preferences-desktop-font"
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
 msgid "Access All Alternates"
-msgstr ""
+msgstr "Acès a dutis lis alternativis"
 
 #: src/open-type-layout.h:14
 msgctxt "OpenType layout"
@@ -382,7 +373,7 @@ msgstr "Frazions"
 #: src/open-type-layout.h:45
 msgctxt "OpenType layout"
 msgid "Full Widths"
-msgstr ""
+msgstr "Largjecis completis"
 
 #: src/open-type-layout.h:46
 msgctxt "OpenType layout"
@@ -397,7 +388,7 @@ msgstr ""
 #: src/open-type-layout.h:48
 msgctxt "OpenType layout"
 msgid "Alternate Half Widths"
-msgstr ""
+msgstr "Largjecis miezis alternativis"
 
 #: src/open-type-layout.h:49
 msgctxt "OpenType layout"
@@ -407,17 +398,17 @@ msgstr ""
 #: src/open-type-layout.h:50
 msgctxt "OpenType layout"
 msgid "Horizontal Kana Alternates"
-msgstr ""
+msgstr "Alternativis Kana orizontâls"
 
 #: src/open-type-layout.h:51
 msgctxt "OpenType layout"
 msgid "Historical Ligatures"
-msgstr ""
+msgstr "Leaduris storichis"
 
 #: src/open-type-layout.h:52
 msgctxt "OpenType layout"
 msgid "Hangul"
-msgstr ""
+msgstr "Hangul"
 
 #: src/open-type-layout.h:53
 msgctxt "OpenType layout"
@@ -427,7 +418,7 @@ msgstr ""
 #: src/open-type-layout.h:54
 msgctxt "OpenType layout"
 msgid "Half Widths"
-msgstr ""
+msgstr "Largjecis miezis"
 
 #: src/open-type-layout.h:55
 msgctxt "OpenType layout"
@@ -442,12 +433,12 @@ msgstr ""
 #: src/open-type-layout.h:57
 msgctxt "OpenType layout"
 msgid "Italics"
-msgstr ""
+msgstr "Corsîfs"
 
 #: src/open-type-layout.h:58
 msgctxt "OpenType layout"
 msgid "Justification Alternates"
-msgstr ""
+msgstr "Justificazions alternativis"
 
 #: src/open-type-layout.h:59
 msgctxt "OpenType layout"
@@ -477,12 +468,12 @@ msgstr ""
 #: src/open-type-layout.h:64
 msgctxt "OpenType layout"
 msgid "Left Bounds"
-msgstr ""
+msgstr "Limits a çampe"
 
 #: src/open-type-layout.h:65
 msgctxt "OpenType layout"
 msgid "Standard Ligatures"
-msgstr ""
+msgstr "Leaduris standard"
 
 #: src/open-type-layout.h:66
 msgctxt "OpenType layout"
@@ -502,7 +493,7 @@ msgstr ""
 #: src/open-type-layout.h:69
 msgctxt "OpenType layout"
 msgid "Left-to-right alternates"
-msgstr ""
+msgstr "Alternative di di çampe a drete"
 
 #: src/open-type-layout.h:70
 msgctxt "OpenType layout"
@@ -512,7 +503,7 @@ msgstr ""
 #: src/open-type-layout.h:71
 msgctxt "OpenType layout"
 msgid "Mark Positioning"
-msgstr ""
+msgstr "Posizionament dai segns"
 
 #: src/open-type-layout.h:72
 msgctxt "OpenType layout"
@@ -557,7 +548,7 @@ msgstr ""
 #: src/open-type-layout.h:80
 msgctxt "OpenType layout"
 msgid "Numerators"
-msgstr ""
+msgstr "Numeradôrs"
 
 #: src/open-type-layout.h:81
 msgctxt "OpenType layout"
@@ -567,7 +558,7 @@ msgstr ""
 #: src/open-type-layout.h:82
 msgctxt "OpenType layout"
 msgid "Optical Bounds"
-msgstr ""
+msgstr "Limits otics"
 
 #: src/open-type-layout.h:83
 msgctxt "OpenType layout"
@@ -577,7 +568,7 @@ msgstr "Ordenâi"
 #: src/open-type-layout.h:84
 msgctxt "OpenType layout"
 msgid "Ornaments"
-msgstr ""
+msgstr "Ornaments"
 
 #: src/open-type-layout.h:85
 msgctxt "OpenType layout"
@@ -647,7 +638,7 @@ msgstr ""
 #: src/open-type-layout.h:98
 msgctxt "OpenType layout"
 msgid "Required Ligatures"
-msgstr ""
+msgstr "Leaduris domandadis"
 
 #: src/open-type-layout.h:99
 msgctxt "OpenType layout"
@@ -657,12 +648,12 @@ msgstr ""
 #: src/open-type-layout.h:100
 msgctxt "OpenType layout"
 msgid "Right Bounds"
-msgstr ""
+msgstr "Limits a drete"
 
 #: src/open-type-layout.h:101
 msgctxt "OpenType layout"
 msgid "Right-to-left alternates"
-msgstr ""
+msgstr "Alternative di di drete a çampe"
 
 #: src/open-type-layout.h:102
 msgctxt "OpenType layout"
@@ -677,12 +668,12 @@ msgstr ""
 #: src/open-type-layout.h:104
 msgctxt "OpenType layout"
 msgid "Required Variation Alternates"
-msgstr ""
+msgstr "Alternativis di variazions domandadis"
 
 #: src/open-type-layout.h:105
 msgctxt "OpenType layout"
 msgid "Stylistic Alternates"
-msgstr ""
+msgstr "Alternativis di stilistiche"
 
 #: src/open-type-layout.h:106
 msgctxt "OpenType layout"
@@ -867,22 +858,22 @@ msgstr ""
 #: src/open-type-layout.h:142
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Metrics"
-msgstr ""
+msgstr "Metrichis verticâls alternativis"
 
 #: src/open-type-layout.h:143
 msgctxt "OpenType layout"
 msgid "Vattu Variants"
-msgstr ""
+msgstr "Variantis di vattu"
 
 #: src/open-type-layout.h:144
 msgctxt "OpenType layout"
 msgid "Vertical Writing"
-msgstr ""
+msgstr "Scriture verticâl"
 
 #: src/open-type-layout.h:145
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Half Metrics"
-msgstr ""
+msgstr "Metrichis miezis verticâls alternativis"
 
 #: src/open-type-layout.h:146
 msgctxt "OpenType layout"
@@ -892,7 +883,7 @@ msgstr ""
 #: src/open-type-layout.h:147
 msgctxt "OpenType layout"
 msgid "Vertical Kana Alternates"
-msgstr ""
+msgstr "Alternativis Kana verticâls"
 
 #: src/open-type-layout.h:148
 msgctxt "OpenType layout"
@@ -902,22 +893,28 @@ msgstr ""
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Vertical Metrics"
-msgstr ""
+msgstr "Metrichis verticâls alternativis proporzionâls"
 
 #: src/open-type-layout.h:150
 msgctxt "OpenType layout"
 msgid "Vertical Alternates and Rotation"
-msgstr ""
+msgstr "Alternativis verticâls e rotazion"
 
 #: src/open-type-layout.h:151
 msgctxt "OpenType layout"
 msgid "Vertical Alternates for Rotation"
-msgstr ""
+msgstr "Alternativis verticâls pe rotazion"
 
 #: src/open-type-layout.h:152
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
-msgstr ""
+msgstr "Zero sbarât"
+
+#~ msgid "General"
+#~ msgstr "Gjenerâl"
+
+#~ msgid "Details"
+#~ msgstr "Detais"
 
 #~ msgid "Font Viewer"
 #~ msgstr "Visualizadôr di caratars"
