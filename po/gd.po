@@ -2,14 +2,14 @@
 # Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
 # This file is distributed under the same license as the gnome-font-viewer package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
-# GunChleoc <fios@foramnagaidhlig.net>, 2014, 2015.
+# GunChleoc <fios@foramnagaidhlig.net>, 2014, 2015, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-11-16 09:08+0000\n"
-"PO-Revision-Date: 2015-11-16 16:24+0100\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product"
+"=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-09-18 18:13+0000\n"
+"PO-Revision-Date: 2018-03-02 09:59+0100\n"
 "Last-Translator: GunChleoc <fios@foramnagaidhlig.net>\n"
 "Language-Team: Fòram na Gàidhlig\n"
 "Language: gd\n"
@@ -22,147 +22,163 @@ msgstr ""
 "X-Launchpad-Export-Date: 2013-09-19 08:00+0000\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:76
+#| msgid "GNOME Font Viewer"
+msgid "GNOME Fonts"
+msgstr "Cruthan-clò GNOME"
+
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:796
+#: src/org.gnome.font-viewer.desktop.in:4
+msgid "View fonts on your system"
+msgstr "Seall na cruthan-clò air an t-siostam agad"
+
+#: data/org.gnome.font-viewer.appdata.xml.in:9
+#| msgid ""
+#| "GNOME Font Viewer shows you the fonts installed on your computer for your "
+#| "use as thumbnails. Selecting any thumbnails shows the full view of how "
+#| "the font would look under various sizes."
 msgid ""
-"GNOME Font Viewer shows you the fonts installed on your computer for your "
-"use as thumbnails. Selecting any thumbnails shows the full view of how the "
-"font would look under various sizes."
+"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"thumbnails. Selecting any thumbnails shows the full view of how the font "
+"would look under various sizes."
 msgstr ""
-"Seallaidh GNOME Font Viewer na cruthan-clò a bhios stàlaichte air a' "
+"Seallaidh Cruthan-clò GNOME na cruthan-clò a bhios stàlaichte air a’ "
 "choimpiutair agad ach an cleachd thu mar dhealbhagan iad. Tagh dealbhag sam "
 "bith airson sealladh iomlan air cò ris a bhiodh an cruth-clò coltach ann an "
 "caochladh de mheudan."
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
+#: data/org.gnome.font-viewer.appdata.xml.in:15
+#| msgid ""
+#| "GNOME Font Viewer also supports installing new font files downloaded in "
+#| "the .ttf and other formats. Fonts may be installed only for your use or "
+#| "made available to all users on the computer."
 msgid ""
-"GNOME Font Viewer also supports installing new font files downloaded in the ."
-"ttf and other formats. Fonts may be installed only for your use or made "
+"GNOME Fonts also supports installing new font files downloaded in the .ttf "
+"and other formats. Fonts may be installed only for your use or made "
 "available to all users on the computer."
 msgstr ""
-"Cuiridh GNOME Font Viewer cuideachd taic ri stàladh chruthan-clò ùra a "
+"Cuiridh Cruthan-clò GNOME cuideachd taic ri stàladh chruthan-clò ùra a "
 "chaidh a luchdadh a-nuas san fhòrmat .ttf agus eile. Faodaidh tu taghadh an "
-"tèid cruth-clò a stàladh air do shonsa a-mhàin no airson a h-uile duine a "
+"tèid cruth-clò a stàladh air do shon-sa a-mhàin no airson a h-uile duine a "
 "chleachdas an coimpiutair agad."
 
-#: ../src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Teacsa na dealbhaige (bun-roghainn: Aa)"
 
-#: ../src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:189
 msgid "TEXT"
 msgstr "TEACSA"
 
-#: ../src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:191
 msgid "Thumbnail size (default: 128)"
 msgstr "Meud na dealbhaige (bun-roghainn: 128)"
 
-#: ../src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:191
 msgid "SIZE"
 msgstr "MEUD"
 
-#: ../src/font-thumbnailer.c:193
+#: src/font-thumbnailer.c:193
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
-#: ../src/font-view-app-menu.ui.h:1
+#: src/font-view-app-menu.ui:6
 msgid "About"
 msgstr "Mu dhèidhinn"
 
-#: ../src/font-view-app-menu.ui.h:2
+#: src/font-view-app-menu.ui:10
 msgid "Quit"
 msgstr "Fàg an-seo"
 
-#: ../src/font-view.c:76
-#| msgid "Font Viewer"
-msgid "GNOME Font Viewer"
-msgstr "Sealladair chruthan-clò GNOME"
-
-#: ../src/font-view.c:84
+#: src/font-view.c:84
 msgid "Show the application's version"
 msgstr "Seall tionndadh na h-aplacaid"
 
-#: ../src/font-view.c:196
+#: src/font-view.c:197
 msgid "Name"
 msgstr "Ainm"
 
-#: ../src/font-view.c:199
+#: src/font-view.c:200
 msgid "Style"
 msgstr "Stoidhle"
 
-#: ../src/font-view.c:209
+#: src/font-view.c:210
 msgid "Type"
 msgstr "Seòrsa"
 
-#: ../src/font-view.c:254 ../src/font-view.c:273
+#: src/font-view.c:255 src/font-view.c:274
 msgid "Version"
 msgstr "Tionndadh"
 
-#: ../src/font-view.c:259 ../src/font-view.c:279
+#: src/font-view.c:260 src/font-view.c:280
 msgid "Copyright"
 msgstr "Còir-lethbhreac"
 
-#: ../src/font-view.c:264
+#: src/font-view.c:265
 msgid "Description"
 msgstr "Tuairisgeul"
 
-#: ../src/font-view.c:295
+#: src/font-view.c:296
 msgid "Install Failed"
-msgstr "Dh'fhàillig an stàladh"
+msgstr "Dh’fhàillig leis an stàladh"
 
-#: ../src/font-view.c:302
+#: src/font-view.c:303
 msgid "Installed"
 msgstr "Air a stàladh"
 
-#: ../src/font-view.c:306 ../src/font-view.c:551
+#: src/font-view.c:307 src/font-view.c:552
 msgid "Install"
 msgstr "Stàlaich"
 
-#: ../src/font-view.c:440
+#: src/font-view.c:441
 msgid "This font could not be displayed."
-msgstr "Cha b' urrainn dhuinn an cruth-clò seo a thaisbeanadh."
+msgstr "Cha b’ urrainn dhuinn an cruth-clò seo a thaisbeanadh."
 
-#: ../src/font-view.c:504 ../src/font-view.c:562
+#: src/font-view.c:505 src/font-view.c:563
 msgid "Info"
 msgstr "Fiosrachadh"
 
-#: ../src/font-view.c:579
+#: src/font-view.c:578
 msgid "Back"
 msgstr "Air ais"
 
-#: ../src/font-view.c:669
+#: src/font-view.c:669
 msgid "All Fonts"
 msgstr "Na h-uile cruth-clò"
 
-#: ../src/font-view.c:787 ../src/org.gnome.font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "Sealladair nan cruthan-clò"
+#: src/font-view.c:795 src/org.gnome.font-viewer.desktop.in:3
+#| msgid "All Fonts"
+msgid "Fonts"
+msgstr "Cruthan-clò"
 
-#: ../src/font-view.c:788 ../src/org.gnome.font-viewer.desktop.in.in.h:2
-msgid "View fonts on your system"
-msgstr "Seall na cruthan-clò air an t-siostam agad"
-
-#: ../src/font-view.c:790
+#: src/font-view.c:798
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
 "  Akerbeltz https://launchpad.net/~fios\n"
 "  alasdair caimbeul https://launchpad.net/~alexd-deactivatedaccount"
 
-#: ../src/font-view.c:929
-msgid "[FILE...]"
-msgstr "[FAIDHLE...]"
-
-#. I18N: The '%s' is replaced with the command name.
-#: ../src/font-view.c:937
-#, c-format
-msgid "Run '%s --help' to see a full list of available command line options."
-msgstr ""
-"Ruith \"%s --help\" gus liosta shlàn dhe roghainnean na loidhne-àithne a tha "
-"ri fhaighinn a shealltainn."
-
-#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
 msgstr "cruthan-clò;aodann crutha-clò;"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: src/org.gnome.font-viewer.desktop.in:8
+msgid "preferences-desktop-font"
+msgstr "preferences-desktop-font"
+
+#~ msgid "Font Viewer"
+#~ msgstr "Sealladair nan cruthan-clò"
+
+#~ msgid "[FILE...]"
+#~ msgstr "[FAIDHLE...]"
+
+#~ msgid ""
+#~ "Run '%s --help' to see a full list of available command line options."
+#~ msgstr ""
+#~ "Ruith \"%s --help\" gus liosta shlàn dhe roghainnean na loidhne-àithne a "
+#~ "tha ri fhaighinn a shealltainn."
 
 #~ msgid "_Close"
 #~ msgstr "_Dùin"
