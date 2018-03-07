@@ -20,8 +20,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils-master-po-gl-14799\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2018-02-20 22:45+0000\n"
-"PO-Revision-Date: 2018-02-23 01:31+0200\n"
+"POT-Creation-Date: 2018-03-02 10:00+0000\n"
+"PO-Revision-Date: 2018-03-07 23:14+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: Galician\n"
 "Language: gl\n"
@@ -633,7 +633,7 @@ msgstr "Anchuras proporcionais"
 #: src/open-type-layout.h:94
 msgctxt "OpenType layout"
 msgid "Quarter Widths"
-msgstr ""
+msgstr "Guións cuarteados"
 
 #: src/open-type-layout.h:95
 msgctxt "OpenType layout"
@@ -813,12 +813,12 @@ msgstr "Conxunto estilístico nº 20"
 #: src/open-type-layout.h:130
 msgctxt "OpenType layout"
 msgid "Math script style alternates"
-msgstr ""
+msgstr "Estilo de guión alternativo para matemáticas"
 
 #: src/open-type-layout.h:131
 msgctxt "OpenType layout"
 msgid "Stretching Glyph Decomposition"
-msgstr ""
+msgstr "Descomposición de glifos estirada"
 
 #: src/open-type-layout.h:132
 msgctxt "OpenType layout"
@@ -863,12 +863,12 @@ msgstr "Formas tradicionais"
 #: src/open-type-layout.h:140
 msgctxt "OpenType layout"
 msgid "Third Widths"
-msgstr ""
+msgstr "Guións terciados"
 
 #: src/open-type-layout.h:141
 msgctxt "OpenType layout"
 msgid "Unicase"
-msgstr ""
+msgstr "Unicameral"
 
 #: src/open-type-layout.h:142
 msgctxt "OpenType layout"
