@@ -15,15 +15,15 @@
 # Petr Kovar <pknbe@volny.cz>, 2008, 2009.
 # Lucas Lommer <llommer@svn.gnome.org>, 2009 (just a small fix).
 # Adrian Guniš <andygun696@gmail.com>, 2008, 2009, 2010.
-# Marek Černocký <marek@manet.cz>, 2010 (just a small fixes), 2011, 2012, 2013, 2014, 2017.
+# Marek Černocký <marek@manet.cz>, 2010 (just a small fixes), 2011, 2012, 2013, 2014, 2017, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-09-19 03:28+0000\n"
-"PO-Revision-Date: 2017-10-30 14:52+0100\n"
+"POT-Creation-Date: 2018-03-02 10:00+0000\n"
+"PO-Revision-Date: 2018-03-07 17:49+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: čeština <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -33,11 +33,11 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Gtranslator 2.91.7\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:80
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:85
 msgid "GNOME Fonts"
 msgstr "Prohlížeč fontů GNOME"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1012
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1066
 #: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Zobrazte si fonty ve svém systému"
@@ -89,7 +89,7 @@ msgstr "O aplikaci"
 msgid "Quit"
 msgstr "Ukončit"
 
-#: src/font-view.c:88
+#: src/font-view.c:93
 msgid "Show the application's version"
 msgstr "Zobrazit verzi aplikace"
 
@@ -98,123 +98,119 @@ msgstr "Zobrazit verzi aplikace"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:204
+#: src/font-view.c:223
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, výchozí %g"
 
-#: src/font-view.c:260
+#: src/font-view.c:279
 #, c-format
-#| msgid "Installed"
 msgid "Instance %d"
 msgstr "Instance %d"
 
-#: src/font-view.c:330
+#. Translators, this seperates the list of Layout Features.
+#: src/font-view.c:324
+msgctxt "OpenType layout"
+msgid ", "
+msgstr ", "
+
+#: src/font-view.c:350
 msgid "Name"
 msgstr "Název"
 
-#: src/font-view.c:333
+#: src/font-view.c:353
 msgid "Style"
 msgstr "Styl"
 
-#: src/font-view.c:343
+#: src/font-view.c:363
 msgid "Type"
 msgstr "Typ"
 
-#: src/font-view.c:404 src/font-view.c:438
+#: src/font-view.c:424 src/font-view.c:458
 msgid "Version"
 msgstr "Verze"
 
-#: src/font-view.c:409 src/font-view.c:444
+#: src/font-view.c:429 src/font-view.c:464
 msgid "Copyright"
 msgstr "Copyright"
 
-#: src/font-view.c:414
+#: src/font-view.c:434
 msgid "Description"
 msgstr "Popis"
 
-#: src/font-view.c:419
+#: src/font-view.c:439
 msgid "Manufacturer"
 msgstr "Výrobce"
 
-#: src/font-view.c:424
+#: src/font-view.c:444
 msgid "Designer"
 msgstr "Návrh"
 
-#: src/font-view.c:429
+#: src/font-view.c:449
 msgid "License"
 msgstr "Licence"
 
-#: src/font-view.c:459
+#: src/font-view.c:479
 msgid "Glyph Count"
 msgstr "Počet glyfů"
 
-#: src/font-view.c:462
+#: src/font-view.c:482
 msgid "Color Glyphs"
 msgstr "Barevné glyfy"
 
-#: src/font-view.c:462
+#: src/font-view.c:482
 msgid "yes"
 msgstr "ano"
 
-#: src/font-view.c:462
-#| msgid "Info"
+#: src/font-view.c:482
 msgid "no"
 msgstr "ne"
 
-#: src/font-view.c:466
+#: src/font-view.c:486
 msgid "Layout Features"
-msgstr "podporované vlastnosti"
+msgstr "Podporované vlastnosti"
 
-#: src/font-view.c:473
+#: src/font-view.c:493
 msgid "Variation Axes"
 msgstr "Proměnlivost v osách"
 
-#: src/font-view.c:481
+#: src/font-view.c:501
 msgid "Named Styles"
 msgstr "Pojmenované styly"
 
-#: src/font-view.c:498
+#: src/font-view.c:518
 msgid "Install Failed"
 msgstr "Instalace selhala"
 
-#: src/font-view.c:505
+#: src/font-view.c:525
 msgid "Installed"
 msgstr "Nainstalováno"
 
-#: src/font-view.c:509 src/font-view.c:768
+#: src/font-view.c:529 src/font-view.c:808
 msgid "Install"
 msgstr "Nainstalovat"
 
-#: src/font-view.c:643
+#: src/font-view.c:663
 msgid "This font could not be displayed."
 msgstr "Tento font nelze zobrazit."
 
-#: src/font-view.c:716
-msgid "General"
-msgstr "Obecné"
-
-#: src/font-view.c:726
-msgid "Details"
-msgstr "Podrobnosti"
-
-#: src/font-view.c:779
+#: src/font-view.c:819
 msgid "Info"
 msgstr "Informace"
 
-#: src/font-view.c:794
+#: src/font-view.c:834
 msgid "Back"
 msgstr "Zpět"
 
-#: src/font-view.c:885
+#: src/font-view.c:939
 msgid "All Fonts"
 msgstr "Všechny fonty"
 
-#: src/font-view.c:1011 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1065 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
 msgstr "Fonty"
 
-#: src/font-view.c:1014
+#: src/font-view.c:1068
 msgid "translator-credits"
 msgstr "Marek Černocký <marek@manet.cz>"
 
@@ -291,12 +287,12 @@ msgstr "kompozice/dekompozice glyfů"
 #: src/open-type-layout.h:25
 msgctxt "OpenType layout"
 msgid "Conjunct Form After Ro"
-msgstr ""
+msgstr "spojené formy po Ro"
 
 #: src/open-type-layout.h:26
 msgctxt "OpenType layout"
 msgid "Conjunct Forms"
-msgstr ""
+msgstr "spojené formy"
 
 #: src/open-type-layout.h:27
 msgctxt "OpenType layout"
@@ -316,12 +312,12 @@ msgstr "kapitálkové mezery"
 #: src/open-type-layout.h:30
 msgctxt "OpenType layout"
 msgid "Contextual Swash"
-msgstr ""
+msgstr "kontextové koncové tahy"
 
 #: src/open-type-layout.h:31
 msgctxt "OpenType layout"
 msgid "Cursive Positioning"
-msgstr ""
+msgstr "umisťování kurzívy"
 
 #: src/open-type-layout.h:32
 msgctxt "OpenType layout"
@@ -336,7 +332,7 @@ msgstr "malé kapitálky z kapitálek"
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
 msgid "Distances"
-msgstr ""
+msgstr "vzdálenosti"
 
 #: src/open-type-layout.h:35
 msgctxt "OpenType layout"
@@ -356,12 +352,12 @@ msgstr "beztečkové formy"
 #: src/open-type-layout.h:38
 msgctxt "OpenType layout"
 msgid "Expert Forms"
-msgstr ""
+msgstr "expertní formy"
 
 #: src/open-type-layout.h:39
 msgctxt "OpenType layout"
 msgid "Final Glyph on Line Alternates"
-msgstr ""
+msgstr "alternativní glyfy pro konce řádků"
 
 #: src/open-type-layout.h:40
 msgctxt "OpenType layout"
@@ -486,7 +482,7 @@ msgstr "kerning"
 #: src/open-type-layout.h:64
 msgctxt "OpenType layout"
 msgid "Left Bounds"
-msgstr ""
+msgstr "vystrčení vlevo"
 
 #: src/open-type-layout.h:65
 msgctxt "OpenType layout"
@@ -501,7 +497,7 @@ msgstr "počáteční formy jamo"
 #: src/open-type-layout.h:67
 msgctxt "OpenType layout"
 msgid "Lining Figures"
-msgstr ""
+msgstr "tabulární verzálkové číslice"
 
 #: src/open-type-layout.h:68
 msgctxt "OpenType layout"
@@ -551,7 +547,7 @@ msgstr ""
 #: src/open-type-layout.h:77
 msgctxt "OpenType layout"
 msgid "Alternate Annotation Forms"
-msgstr ""
+msgstr "alternativní anotační formy"
 
 #: src/open-type-layout.h:78
 msgctxt "OpenType layout"
@@ -571,12 +567,12 @@ msgstr "čitatelé"
 #: src/open-type-layout.h:81
 msgctxt "OpenType layout"
 msgid "Oldstyle Figures"
-msgstr ""
+msgstr "proporcionální skákavé číslic"
 
 #: src/open-type-layout.h:82
 msgctxt "OpenType layout"
 msgid "Optical Bounds"
-msgstr ""
+msgstr "optické vystrčení"
 
 #: src/open-type-layout.h:83
 msgctxt "OpenType layout"
@@ -591,7 +587,7 @@ msgstr "ornamenty"
 #: src/open-type-layout.h:85
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Widths"
-msgstr ""
+msgstr "proporcionální alternativní šířky"
 
 #: src/open-type-layout.h:86
 msgctxt "OpenType layout"
@@ -606,7 +602,7 @@ msgstr "proporcionální kana"
 #: src/open-type-layout.h:88
 msgctxt "OpenType layout"
 msgid "Proportional Figures"
-msgstr ""
+msgstr "proporcionální verzálkové číslice"
 
 #: src/open-type-layout.h:89
 msgctxt "OpenType layout"
@@ -641,7 +637,7 @@ msgstr "čtvrtkové šířky"
 #: src/open-type-layout.h:95
 msgctxt "OpenType layout"
 msgid "Randomize"
-msgstr ""
+msgstr "náhodnost"
 
 #: src/open-type-layout.h:96
 msgctxt "OpenType layout"
@@ -666,7 +662,7 @@ msgstr "formy reph"
 #: src/open-type-layout.h:100
 msgctxt "OpenType layout"
 msgid "Right Bounds"
-msgstr ""
+msgstr "vystrčení vpravo"
 
 #: src/open-type-layout.h:101
 msgctxt "OpenType layout"
@@ -821,16 +817,14 @@ msgstr ""
 #: src/open-type-layout.h:131
 msgctxt "OpenType layout"
 msgid "Stretching Glyph Decomposition"
-msgstr ""
+msgstr "rozklad roztahovacích glyfů"
 
 #: src/open-type-layout.h:132
-#| msgid "Description"
 msgctxt "OpenType layout"
 msgid "Subscript"
 msgstr "dolní index"
 
 #: src/open-type-layout.h:133
-#| msgid "Description"
 msgctxt "OpenType layout"
 msgid "Superscript"
 msgstr "horní index"
@@ -838,12 +832,12 @@ msgstr "horní index"
 #: src/open-type-layout.h:134
 msgctxt "OpenType layout"
 msgid "Swash"
-msgstr ""
+msgstr "koncové tahy"
 
 #: src/open-type-layout.h:135
 msgctxt "OpenType layout"
 msgid "Titling"
-msgstr ""
+msgstr "nadpisy"
 
 #: src/open-type-layout.h:136
 msgctxt "OpenType layout"
@@ -853,12 +847,12 @@ msgstr "koncové formy jamo"
 #: src/open-type-layout.h:137
 msgctxt "OpenType layout"
 msgid "Traditional Name Forms"
-msgstr ""
+msgstr "tradiční formy pro jména"
 
 #: src/open-type-layout.h:138
 msgctxt "OpenType layout"
 msgid "Tabular Figures"
-msgstr ""
+msgstr "tabulární skákavé číslice"
 
 #: src/open-type-layout.h:139
 msgctxt "OpenType layout"
@@ -929,3 +923,9 @@ msgstr "svislé alternativy pro otočení"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "přeškrtnutá nula"
+
+#~ msgid "General"
+#~ msgstr "Obecné"
+
+#~ msgid "Details"
+#~ msgstr "Podrobnosti"
