@@ -317,7 +317,7 @@ msgstr "kontextové koncové tahy"
 #: src/open-type-layout.h:31
 msgctxt "OpenType layout"
 msgid "Cursive Positioning"
-msgstr "umisťování kurzívy"
+msgstr "umisťování skloněných"
 
 #: src/open-type-layout.h:32
 msgctxt "OpenType layout"
@@ -567,7 +567,7 @@ msgstr "čitatelé"
 #: src/open-type-layout.h:81
 msgctxt "OpenType layout"
 msgid "Oldstyle Figures"
-msgstr "proporcionální skákavé číslic"
+msgstr "proporcionální skákavé číslice"
 
 #: src/open-type-layout.h:82
 msgctxt "OpenType layout"
