@@ -23,7 +23,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2018-03-02 10:00+0000\n"
-"PO-Revision-Date: 2018-03-07 17:49+0100\n"
+"PO-Revision-Date: 2018-03-09 08:23+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: čeština <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -232,17 +232,17 @@ msgstr "přístup ke všem alternativám"
 #: src/open-type-layout.h:14
 msgctxt "OpenType layout"
 msgid "Above-base Forms"
-msgstr ""
+msgstr "formy nad základní glyf"
 
 #: src/open-type-layout.h:15
 msgctxt "OpenType layout"
 msgid "Above-base Mark Positioning"
-msgstr ""
+msgstr "poziční značky nad základní glyf"
 
 #: src/open-type-layout.h:16
 msgctxt "OpenType layout"
 msgid "Above-base Substitutions"
-msgstr ""
+msgstr "substituce nad základní glyf"
 
 #: src/open-type-layout.h:17
 msgctxt "OpenType layout"
@@ -257,17 +257,17 @@ msgstr "akhand"
 #: src/open-type-layout.h:19
 msgctxt "OpenType layout"
 msgid "Below-base Forms"
-msgstr ""
+msgstr "formy pod základní glyf"
 
 #: src/open-type-layout.h:20
 msgctxt "OpenType layout"
 msgid "Below-base Mark Positioning"
-msgstr ""
+msgstr "poziční značky pod základní glyf"
 
 #: src/open-type-layout.h:21
 msgctxt "OpenType layout"
 msgid "Below-base Substitutions"
-msgstr ""
+msgstr "substituce pod základní glyf"
 
 #: src/open-type-layout.h:22
 msgctxt "OpenType layout"
@@ -517,7 +517,7 @@ msgstr "zleva doprava zrcadlené formy"
 #: src/open-type-layout.h:71
 msgctxt "OpenType layout"
 msgid "Mark Positioning"
-msgstr ""
+msgstr "poziční značky vůči základnímu glyfu"
 
 #: src/open-type-layout.h:72
 msgctxt "OpenType layout"
@@ -537,12 +537,12 @@ msgstr "matematická řečtina"
 #: src/open-type-layout.h:75
 msgctxt "OpenType layout"
 msgid "Mark to Mark Positioning"
-msgstr ""
+msgstr "poziční značky vůči značkám"
 
 #: src/open-type-layout.h:76
 msgctxt "OpenType layout"
 msgid "Mark Positioning via Substitution"
-msgstr ""
+msgstr "poziční značky přes substituce"
 
 #: src/open-type-layout.h:77
 msgctxt "OpenType layout"
@@ -607,22 +607,22 @@ msgstr "proporcionální verzálkové číslice"
 #: src/open-type-layout.h:89
 msgctxt "OpenType layout"
 msgid "Pre-Base Forms"
-msgstr ""
+msgstr "formy před základní glyf"
 
 #: src/open-type-layout.h:90
 msgctxt "OpenType layout"
 msgid "Pre-base Substitutions"
-msgstr ""
+msgstr "substituce před základní glyf"
 
 #: src/open-type-layout.h:91
 msgctxt "OpenType layout"
 msgid "Post-base Forms"
-msgstr ""
+msgstr "formy za základní glyf"
 
 #: src/open-type-layout.h:92
 msgctxt "OpenType layout"
 msgid "Post-base Substitutions"
-msgstr ""
+msgstr "substituce za základní glyf"
 
 #: src/open-type-layout.h:93
 msgctxt "OpenType layout"
@@ -677,12 +677,12 @@ msgstr "zprava doleva zrcadlené formy"
 #: src/open-type-layout.h:103
 msgctxt "OpenType layout"
 msgid "Ruby Notation Forms"
-msgstr ""
+msgstr "národní formy ruby"
 
 #: src/open-type-layout.h:104
 msgctxt "OpenType layout"
 msgid "Required Variation Alternates"
-msgstr ""
+msgstr "vyžadovány alternativy u variant"
 
 #: src/open-type-layout.h:105
 msgctxt "OpenType layout"
@@ -692,7 +692,7 @@ msgstr "stylistické alternativy"
 #: src/open-type-layout.h:106
 msgctxt "OpenType layout"
 msgid "Scientific Inferiors"
-msgstr ""
+msgstr "vědecké dolní indexy"
 
 #: src/open-type-layout.h:107
 msgctxt "OpenType layout"
@@ -812,7 +812,7 @@ msgstr "stylistická sada 20"
 #: src/open-type-layout.h:130
 msgctxt "OpenType layout"
 msgid "Math script style alternates"
-msgstr ""
+msgstr "alternativní styly matematických indexů"
 
 #: src/open-type-layout.h:131
 msgctxt "OpenType layout"
@@ -892,7 +892,7 @@ msgstr "alternativní svislé poloviční metriky"
 #: src/open-type-layout.h:146
 msgctxt "OpenType layout"
 msgid "Vowel Jamo Forms"
-msgstr "Formy samohlásek jamo"
+msgstr "formy samohlásek jamo"
 
 #: src/open-type-layout.h:147
 msgctxt "OpenType layout"
