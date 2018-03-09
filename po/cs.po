@@ -477,7 +477,7 @@ msgstr "formy JIS2004"
 #: src/open-type-layout.h:63
 msgctxt "OpenType layout"
 msgid "Kerning"
-msgstr "kerning"
+msgstr "podřezávání"
 
 #: src/open-type-layout.h:64
 msgctxt "OpenType layout"
@@ -902,7 +902,7 @@ msgstr "svislé alternativy kana"
 #: src/open-type-layout.h:148
 msgctxt "OpenType layout"
 msgid "Vertical Kerning"
-msgstr "svislý kerning"
+msgstr "svislé podřezávání"
 
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
