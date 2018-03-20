@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2018-03-04 20:08+0000\n"
-"PO-Revision-Date: 2018-03-06 22:26+0100\n"
+"PO-Revision-Date: 2018-03-19 21:51+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:85
 msgid "GNOME Fonts"
@@ -48,8 +48,8 @@ msgid ""
 "available to all users on the computer."
 msgstr ""
 "Program Pregledovalnik pisav za GNOME podpira nameščanje datotek pisav .ttf "
-"in drugih. Pisave je mogoče namestiti le za osebno rabo, ali pa za vse "
-"uporabnike naprave."
+"in drugih. Pisave je mogoče namestiti le za posameznega uporabnika, ali za "
+"vse uporabnike naprave."
 
 #: src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -91,7 +91,7 @@ msgstr "Pokaži različico programa"
 #: src/font-view.c:223
 #, c-format
 msgid "%s %g — %g, default %g"
-msgstr "%s %g — %g, privzeto %g"
+msgstr "%s %g – %g, privzeto %g"
 
 #: src/font-view.c:279
 #, c-format
@@ -102,7 +102,7 @@ msgstr "Primerek %d"
 #: src/font-view.c:324
 msgctxt "OpenType layout"
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: src/font-view.c:350
 msgid "Name"
@@ -142,11 +142,11 @@ msgstr "Dovoljenje"
 
 #: src/font-view.c:479
 msgid "Glyph Count"
-msgstr ""
+msgstr "Število pismenk"
 
 #: src/font-view.c:482
 msgid "Color Glyphs"
-msgstr ""
+msgstr "Barvne pismenke"
 
 #: src/font-view.c:482
 msgid "yes"
@@ -166,7 +166,7 @@ msgstr ""
 
 #: src/font-view.c:501
 msgid "Named Styles"
-msgstr ""
+msgstr "Poimenovani slogi"
 
 #: src/font-view.c:518
 msgid "Install Failed"
@@ -437,7 +437,7 @@ msgstr ""
 #: src/open-type-layout.h:57
 msgctxt "OpenType layout"
 msgid "Italics"
-msgstr ""
+msgstr "Ležeče pisave"
 
 #: src/open-type-layout.h:58
 msgctxt "OpenType layout"
@@ -702,102 +702,102 @@ msgstr ""
 #: src/open-type-layout.h:110
 msgctxt "OpenType layout"
 msgid "Stylistic Set 1"
-msgstr ""
+msgstr "Slogovni nabor 1"
 
 #: src/open-type-layout.h:111
 msgctxt "OpenType layout"
 msgid "Stylistic Set 2"
-msgstr ""
+msgstr "Slogovni nabor 2"
 
 #: src/open-type-layout.h:112
 msgctxt "OpenType layout"
 msgid "Stylistic Set 3"
-msgstr ""
+msgstr "Slogovni nabor 3"
 
 #: src/open-type-layout.h:113
 msgctxt "OpenType layout"
 msgid "Stylistic Set 4"
-msgstr ""
+msgstr "Slogovni nabor 4"
 
 #: src/open-type-layout.h:114
 msgctxt "OpenType layout"
 msgid "Stylistic Set 5"
-msgstr ""
+msgstr "Slogovni nabor 5"
 
 #: src/open-type-layout.h:115
 msgctxt "OpenType layout"
 msgid "Stylistic Set 6"
-msgstr ""
+msgstr "Slogovni nabor 6"
 
 #: src/open-type-layout.h:116
 msgctxt "OpenType layout"
 msgid "Stylistic Set 7"
-msgstr ""
+msgstr "Slogovni nabor 7"
 
 #: src/open-type-layout.h:117
 msgctxt "OpenType layout"
 msgid "Stylistic Set 8"
-msgstr ""
+msgstr "Slogovni nabor 8"
 
 #: src/open-type-layout.h:118
 msgctxt "OpenType layout"
 msgid "Stylistic Set 9"
-msgstr ""
+msgstr "Slogovni nabor 9"
 
 #: src/open-type-layout.h:119
 msgctxt "OpenType layout"
 msgid "Stylistic Set 10"
-msgstr ""
+msgstr "Slogovni nabor 10"
 
 #: src/open-type-layout.h:120
 msgctxt "OpenType layout"
 msgid "Stylistic Set 11"
-msgstr ""
+msgstr "Slogovni nabor 11"
 
 #: src/open-type-layout.h:121
 msgctxt "OpenType layout"
 msgid "Stylistic Set 12"
-msgstr ""
+msgstr "Slogovni nabor 12"
 
 #: src/open-type-layout.h:122
 msgctxt "OpenType layout"
 msgid "Stylistic Set 13"
-msgstr ""
+msgstr "Slogovni nabor 13"
 
 #: src/open-type-layout.h:123
 msgctxt "OpenType layout"
 msgid "Stylistic Set 14"
-msgstr ""
+msgstr "Slogovni nabor 14"
 
 #: src/open-type-layout.h:124
 msgctxt "OpenType layout"
 msgid "Stylistic Set 15"
-msgstr ""
+msgstr "Slogovni nabor 15"
 
 #: src/open-type-layout.h:125
 msgctxt "OpenType layout"
 msgid "Stylistic Set 16"
-msgstr ""
+msgstr "Slogovni nabor 16"
 
 #: src/open-type-layout.h:126
 msgctxt "OpenType layout"
 msgid "Stylistic Set 17"
-msgstr ""
+msgstr "Slogovni nabor 17"
 
 #: src/open-type-layout.h:127
 msgctxt "OpenType layout"
 msgid "Stylistic Set 18"
-msgstr ""
+msgstr "Slogovni nabor 18"
 
 #: src/open-type-layout.h:128
 msgctxt "OpenType layout"
 msgid "Stylistic Set 19"
-msgstr ""
+msgstr "Slogovni nabor 19"
 
 #: src/open-type-layout.h:129
 msgctxt "OpenType layout"
 msgid "Stylistic Set 20"
-msgstr ""
+msgstr "Slogovni nabor 20"
 
 #: src/open-type-layout.h:130
 msgctxt "OpenType layout"
