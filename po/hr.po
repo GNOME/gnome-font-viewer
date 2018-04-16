@@ -6,8 +6,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils 0\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2018-03-02 10:00+0000\n"
-"PO-Revision-Date: 2018-03-19 15:25+0100\n"
+"POT-Creation-Date: 2018-03-26 22:34+0000\n"
+"PO-Revision-Date: 2018-04-16 21:11+0200\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "Language: hr\n"
@@ -399,7 +399,7 @@ msgstr "Povijesni oblici"
 #: src/open-type-layout.h:50
 msgctxt "OpenType layout"
 msgid "Horizontal Kana Alternates"
-msgstr "Vodoravne Kana zamene"
+msgstr "Vodoravne Kana zamjene"
 
 #: src/open-type-layout.h:51
 msgctxt "OpenType layout"
@@ -659,7 +659,7 @@ msgstr "S desna na lijevo zamjene"
 #: src/open-type-layout.h:102
 msgctxt "OpenType layout"
 msgid "Right-to-left mirrored forms"
-msgstr "Preslikani zamjene s desna na lijevo"
+msgstr "Preslikani oblici s desna na lijevo"
 
 #: src/open-type-layout.h:103
 msgctxt "OpenType layout"
@@ -894,7 +894,7 @@ msgstr "Okomito prilagođavanje razmaka"
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Vertical Metrics"
-msgstr "Srazmjerne okomite metričke zamene"
+msgstr "Srazmjerne okomite metričke zamjene"
 
 #: src/open-type-layout.h:150
 msgctxt "OpenType layout"
