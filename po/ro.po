@@ -12,11 +12,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.gnome-2-14.ro\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-11-27 07:41+0000\n"
-"PO-Revision-Date: 2014-11-29 21:06+0200\n"
-"Last-Translator: Daniel Șerbănescu <daniel [at] serbanescu [dot] dk>\n"
+"POT-Creation-Date: 2018-03-26 22:34+0000\n"
+"PO-Revision-Date: 2018-04-29 11:42+0300\n"
+"Last-Translator: Florentina Mușat <florentina.musat.28 [at] gmail [dot] "
+"com>\n"
 "Language-Team: Gnome Romanian Translation Team\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
@@ -24,145 +25,914 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);;\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Poedit 2.0.7\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
-msgid ""
-"GNOME Font Viewer shows you the fonts installed on your computer for your "
-"use as thumbnails. Selecting any thumbnails shows the full view of how the "
-"font would look under various sizes."
-msgstr ""
-"Vizualizator de fonturi GNOME vă arată fonturile în folosință instalate pe "
-"calculatorul personal ca miniaturi. Selectarea oricărei miniaturi afișează "
-"vederea completă a cum arată fontul în diferite dimensiuni."
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:85
+msgid "GNOME Fonts"
+msgstr "Fonturi GNOME"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
-msgid ""
-"GNOME Font Viewer also supports installing new font files downloaded in the ."
-"ttf and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
-msgstr ""
-"Vizualizator de fonturi GNOME suportă și instalarea de fișiere font "
-"descărcate în format .ttf sau alt tip de format. Fonturile pot fi instalate "
-"numai pentru uz personal sau disponibile tuturor utilizatorilor "
-"calculatorului."
-
-#: ../src/font-thumbnailer.c:189
-msgid "Text to thumbnail (default: Aa)"
-msgstr "Text în miniatură (implicit: Aa)"
-
-#: ../src/font-thumbnailer.c:189
-msgid "TEXT"
-msgstr "TEXT"
-
-#: ../src/font-thumbnailer.c:191
-msgid "Thumbnail size (default: 128)"
-msgstr "Dimensiunea miniaturii (implicit: 128)"
-
-#: ../src/font-thumbnailer.c:191
-msgid "SIZE"
-msgstr "DIMENSIUNE"
-
-#: ../src/font-thumbnailer.c:193
-msgid "FONT-FILE OUTPUT-FILE"
-msgstr "FIȘIER-FONT FIȘIER-IEȘIRE"
-
-#: ../src/font-view-app-menu.ui.h:1
-msgid "About"
-msgstr "Despre"
-
-#: ../src/font-view-app-menu.ui.h:2
-msgid "Quit"
-msgstr "Ieșire"
-
-#: ../src/font-view.c:76
-msgid "GNOME Font Viewer"
-msgstr "Vizualizator de fonturi GNOME"
-
-#: ../src/font-view.c:84
-msgid "Show the application's version"
-msgstr "Afișează versiunea aplicației"
-
-#: ../src/font-view.c:194
-msgid "Name"
-msgstr "Nume"
-
-#: ../src/font-view.c:197
-msgid "Style"
-msgstr "Stil"
-
-#: ../src/font-view.c:207
-msgid "Type"
-msgstr "Tip"
-
-#: ../src/font-view.c:252 ../src/font-view.c:271
-msgid "Version"
-msgstr "Versiune"
-
-#: ../src/font-view.c:257 ../src/font-view.c:277
-msgid "Copyright"
-msgstr "Drepturi de autor"
-
-#: ../src/font-view.c:262
-msgid "Description"
-msgstr "Descriere"
-
-#: ../src/font-view.c:290
-msgid "Install Failed"
-msgstr "Instalarea a eșuat"
-
-#: ../src/font-view.c:296
-msgid "Installed"
-msgstr "Instalat"
-
-#: ../src/font-view.c:299 ../src/font-view.c:543
-msgid "Install"
-msgstr "Instalează"
-
-#: ../src/font-view.c:432
-msgid "This font could not be displayed."
-msgstr "Acest font nu a putut fi afișat."
-
-#: ../src/font-view.c:496 ../src/font-view.c:554
-msgid "Info"
-msgstr "Info"
-
-#: ../src/font-view.c:571
-msgid "Back"
-msgstr "Înapoi"
-
-#: ../src/font-view.c:661
-msgid "All Fonts"
-msgstr "Toate fonturile"
-
-#: ../src/font-view.c:779 ../src/org.gnome.font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "Vizualizator de fonturi"
-
-#: ../src/font-view.c:780 ../src/org.gnome.font-viewer.desktop.in.in.h:2
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1066
+#: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Vizualizați fonturile instalate pe sistemul dumneavoastră"
 
-#: ../src/font-view.c:782
-msgid "translator-credits"
-msgstr "Bogdan Mințoi <mintoi.bogdan@gmail.com>, 2014"
-
-#: ../src/font-view.c:921
-msgid "[FILE...]"
-msgstr "[FIȘIER...]"
-
-#. I18N: The '%s' is replaced with the command name.
-#: ../src/font-view.c:929
-#, c-format
-msgid "Run '%s --help' to see a full list of available command line options."
+#: data/org.gnome.font-viewer.appdata.xml.in:9
+msgid ""
+"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"thumbnails. Selecting any thumbnails shows the full view of how the font "
+"would look under various sizes."
 msgstr ""
-"Rulați „%s --help” pentru o listă completă de opțiuni disponibile în linia "
-"de comandă."
+"Fonturi GNOME vă arată fonturile instalate pe calculator care se pot utiliza "
+"ca miniaturi. Selectarea oricărei miniaturi arată vizualizarea completă a "
+"modului în care ar arăta fontul la diverse dimensiuni."
 
-#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
+#: data/org.gnome.font-viewer.appdata.xml.in:15
+msgid ""
+"GNOME Fonts also supports installing new font files downloaded in the .ttf "
+"and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"Fonturi GNOME suportă și instalarea de fișiere font descărcate în format ."
+"ttf și alte formate. Fonturile pot fi instalate numai pentru uz personal sau "
+"pot fi disponibile tuturor utilizatorilor calculatorului."
+
+#: src/font-thumbnailer.c:189
+msgid "Text to thumbnail (default: Aa)"
+msgstr "Text în miniatură (implicit: Aa)"
+
+#: src/font-thumbnailer.c:189
+msgid "TEXT"
+msgstr "TEXT"
+
+#: src/font-thumbnailer.c:191
+msgid "Thumbnail size (default: 128)"
+msgstr "Dimensiunea miniaturii (implicit: 128)"
+
+#: src/font-thumbnailer.c:191
+msgid "SIZE"
+msgstr "DIMENSIUNE"
+
+#: src/font-thumbnailer.c:193
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "FIȘIER-FONT FIȘIER-IEȘIRE"
+
+#: src/font-view-app-menu.ui:6
+msgid "About"
+msgstr "Despre"
+
+#: src/font-view-app-menu.ui:10
+msgid "Quit"
+msgstr "Ieșire"
+
+#: src/font-view.c:93
+msgid "Show the application's version"
+msgstr "Afișează versiunea aplicației"
+
+#. Translators, this string is used to display information about
+#. * a 'font variation axis'. The %s gets replaced with the name
+#. * of the axis, for example 'Width'. The three %g get replaced
+#. * with the minimum, maximum and default values for the axis.
+#.
+#: src/font-view.c:223
+#, c-format
+msgid "%s %g — %g, default %g"
+msgstr "%s %g — %g, implicit %g"
+
+#: src/font-view.c:279
+#, c-format
+msgid "Instance %d"
+msgstr "Instanța %d"
+
+#. Translators, this seperates the list of Layout Features.
+#: src/font-view.c:324
+msgctxt "OpenType layout"
+msgid ", "
+msgstr ", "
+
+#: src/font-view.c:350
+msgid "Name"
+msgstr "Nume"
+
+#: src/font-view.c:353
+msgid "Style"
+msgstr "Stil"
+
+#: src/font-view.c:363
+msgid "Type"
+msgstr "Tip"
+
+#: src/font-view.c:424 src/font-view.c:458
+msgid "Version"
+msgstr "Versiune"
+
+#: src/font-view.c:429 src/font-view.c:464
+msgid "Copyright"
+msgstr "Drepturi de autor"
+
+#: src/font-view.c:434
+msgid "Description"
+msgstr "Descriere"
+
+#: src/font-view.c:439
+msgid "Manufacturer"
+msgstr "Producător"
+
+#: src/font-view.c:444
+msgid "Designer"
+msgstr "Proiectant"
+
+#: src/font-view.c:449
+msgid "License"
+msgstr "Licență"
+
+#: src/font-view.c:479
+msgid "Glyph Count"
+msgstr "Număr de glife"
+
+#: src/font-view.c:482
+msgid "Color Glyphs"
+msgstr "Glife de culori"
+
+#: src/font-view.c:482
+msgid "yes"
+msgstr "da"
+
+#: src/font-view.c:482
+msgid "no"
+msgstr "nu"
+
+#: src/font-view.c:486
+msgid "Layout Features"
+msgstr "Funcționalități aranjament"
+
+#: src/font-view.c:493
+msgid "Variation Axes"
+msgstr "Axe de variație"
+
+#: src/font-view.c:501
+msgid "Named Styles"
+msgstr "Stiluri denumite"
+
+#: src/font-view.c:518
+msgid "Install Failed"
+msgstr "Instalarea a eșuat"
+
+#: src/font-view.c:525
+msgid "Installed"
+msgstr "Instalat"
+
+#: src/font-view.c:529 src/font-view.c:808
+msgid "Install"
+msgstr "Instalează"
+
+#: src/font-view.c:663
+msgid "This font could not be displayed."
+msgstr "Acest font nu a putut fi afișat."
+
+#: src/font-view.c:819
+msgid "Info"
+msgstr "Info"
+
+#: src/font-view.c:834
+msgid "Back"
+msgstr "Înapoi"
+
+#: src/font-view.c:939
+msgid "All Fonts"
+msgstr "Toate fonturile"
+
+#: src/font-view.c:1065 src/org.gnome.font-viewer.desktop.in:3
+msgid "Fonts"
+msgstr "Fonturi"
+
+#: src/font-view.c:1068
+msgid "translator-credits"
+msgstr ""
+"Bogdan Mințoi <mintoi.bogdan@gmail.com>, 2014\n"
+"Florentina Mușat <florentina.musat.28 [at] gmail [dot] com>, 2018"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
 msgstr "fonts;fontface;fonturi;"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: src/org.gnome.font-viewer.desktop.in:8
+msgid "preferences-desktop-font"
+msgstr "preferences-desktop-font"
+
+#: src/open-type-layout.h:13
+msgctxt "OpenType layout"
+msgid "Access All Alternates"
+msgstr "Accesează toate alternativele"
+
+#: src/open-type-layout.h:14
+msgctxt "OpenType layout"
+msgid "Above-base Forms"
+msgstr "Forme deasupra bazei"
+
+#: src/open-type-layout.h:15
+msgctxt "OpenType layout"
+msgid "Above-base Mark Positioning"
+msgstr "Marcarea poziționării deasupra bazei"
+
+#: src/open-type-layout.h:16
+msgctxt "OpenType layout"
+msgid "Above-base Substitutions"
+msgstr "Substituții deasupra bazei"
+
+#: src/open-type-layout.h:17
+msgctxt "OpenType layout"
+msgid "Alternative Fractions"
+msgstr "Fracții alternative"
+
+#: src/open-type-layout.h:18
+msgctxt "OpenType layout"
+msgid "Akhands"
+msgstr "Akhands"
+
+#: src/open-type-layout.h:19
+msgctxt "OpenType layout"
+msgid "Below-base Forms"
+msgstr "Forme sub bază"
+
+#: src/open-type-layout.h:20
+msgctxt "OpenType layout"
+msgid "Below-base Mark Positioning"
+msgstr "Marcarea poziționării sub bază"
+
+#: src/open-type-layout.h:21
+msgctxt "OpenType layout"
+msgid "Below-base Substitutions"
+msgstr "Substituții sub bază"
+
+#: src/open-type-layout.h:22
+msgctxt "OpenType layout"
+msgid "Contextual Alternates"
+msgstr "Alternative contextuale"
+
+#: src/open-type-layout.h:23
+msgctxt "OpenType layout"
+msgid "Case-Sensitive Forms"
+msgstr "Forme cu majuscule sensitive"
+
+#: src/open-type-layout.h:24
+msgctxt "OpenType layout"
+msgid "Glyph Composition / Decomposition"
+msgstr "Compoziție / decompoziție glifă"
+
+#: src/open-type-layout.h:25
+msgctxt "OpenType layout"
+msgid "Conjunct Form After Ro"
+msgstr "Formă conjunctă după Ro"
+
+#: src/open-type-layout.h:26
+msgctxt "OpenType layout"
+msgid "Conjunct Forms"
+msgstr "Forme conjuncte"
+
+#: src/open-type-layout.h:27
+msgctxt "OpenType layout"
+msgid "Contextual Ligatures"
+msgstr "Ligaturi contextuale"
+
+#: src/open-type-layout.h:28
+msgctxt "OpenType layout"
+msgid "Centered CJK Punctuation"
+msgstr "Punctuație CJK centrată"
+
+#: src/open-type-layout.h:29
+msgctxt "OpenType layout"
+msgid "Capital Spacing"
+msgstr "Spațiere majuscule"
+
+#: src/open-type-layout.h:30
+msgctxt "OpenType layout"
+msgid "Contextual Swash"
+msgstr "Caracter ornamental contextual"
+
+#: src/open-type-layout.h:31
+msgctxt "OpenType layout"
+msgid "Cursive Positioning"
+msgstr "Poziționare cursivă"
+
+#: src/open-type-layout.h:32
+msgctxt "OpenType layout"
+msgid "Petite Capitals From Capitals"
+msgstr "Majuscule foarte mici din majuscule"
+
+#: src/open-type-layout.h:33
+msgctxt "OpenType layout"
+msgid "Small Capitals From Capitals"
+msgstr "Majuscule mici din majuscule"
+
+#: src/open-type-layout.h:34
+msgctxt "OpenType layout"
+msgid "Distances"
+msgstr "Distanțe"
+
+#: src/open-type-layout.h:35
+msgctxt "OpenType layout"
+msgid "Discretionary Ligatures"
+msgstr "Ligaturi discreționare"
+
+#: src/open-type-layout.h:36
+msgctxt "OpenType layout"
+msgid "Denominators"
+msgstr "Denominatori"
+
+#: src/open-type-layout.h:37
+msgctxt "OpenType layout"
+msgid "Dotless Forms"
+msgstr "Forme fără puncte"
+
+#: src/open-type-layout.h:38
+msgctxt "OpenType layout"
+msgid "Expert Forms"
+msgstr "Forme experte"
+
+#: src/open-type-layout.h:39
+msgctxt "OpenType layout"
+msgid "Final Glyph on Line Alternates"
+msgstr "Glifa finală la alternativele de linie"
+
+#: src/open-type-layout.h:40
+msgctxt "OpenType layout"
+msgid "Terminal Forms #2"
+msgstr "Forme de terminal #2"
+
+#: src/open-type-layout.h:41
+msgctxt "OpenType layout"
+msgid "Terminal Forms #3"
+msgstr "Forme de terminal #3"
+
+#: src/open-type-layout.h:42
+msgctxt "OpenType layout"
+msgid "Terminal Forms"
+msgstr "Forme de terminal"
+
+#: src/open-type-layout.h:43
+msgctxt "OpenType layout"
+msgid "Flattened accent forms"
+msgstr "Forme cu accent aplatizat"
+
+#: src/open-type-layout.h:44
+msgctxt "OpenType layout"
+msgid "Fractions"
+msgstr "Fracții"
+
+#: src/open-type-layout.h:45
+msgctxt "OpenType layout"
+msgid "Full Widths"
+msgstr "Lățimi complete"
+
+#: src/open-type-layout.h:46
+msgctxt "OpenType layout"
+msgid "Half Forms"
+msgstr "Forme pe jumătate"
+
+#: src/open-type-layout.h:47
+msgctxt "OpenType layout"
+msgid "Halant Forms"
+msgstr "Forme Halant"
+
+#: src/open-type-layout.h:48
+msgctxt "OpenType layout"
+msgid "Alternate Half Widths"
+msgstr "Lățimi pe jumătate alternative"
+
+#: src/open-type-layout.h:49
+msgctxt "OpenType layout"
+msgid "Historical Forms"
+msgstr "Forme istorice"
+
+#: src/open-type-layout.h:50
+msgctxt "OpenType layout"
+msgid "Horizontal Kana Alternates"
+msgstr "Alternative Kana istorice"
+
+#: src/open-type-layout.h:51
+msgctxt "OpenType layout"
+msgid "Historical Ligatures"
+msgstr "Ligaturi istorice"
+
+#: src/open-type-layout.h:52
+msgctxt "OpenType layout"
+msgid "Hangul"
+msgstr "Hangul"
+
+#: src/open-type-layout.h:53
+msgctxt "OpenType layout"
+msgid "Hojo Kanji Forms"
+msgstr "Forme Hojo Kanji"
+
+#: src/open-type-layout.h:54
+msgctxt "OpenType layout"
+msgid "Half Widths"
+msgstr "Lățimi pe jumătate"
+
+#: src/open-type-layout.h:55
+msgctxt "OpenType layout"
+msgid "Initial Forms"
+msgstr "Forme inițiale"
+
+#: src/open-type-layout.h:56
+msgctxt "OpenType layout"
+msgid "Isolated Forms"
+msgstr "Forme izolate"
+
+#: src/open-type-layout.h:57
+msgctxt "OpenType layout"
+msgid "Italics"
+msgstr "Cursive"
+
+#: src/open-type-layout.h:58
+msgctxt "OpenType layout"
+msgid "Justification Alternates"
+msgstr "Alternative de justificare"
+
+#: src/open-type-layout.h:59
+msgctxt "OpenType layout"
+msgid "JIS78 Forms"
+msgstr "Forme JIS78"
+
+#: src/open-type-layout.h:60
+msgctxt "OpenType layout"
+msgid "JIS83 Forms"
+msgstr "Forme JIS83"
+
+#: src/open-type-layout.h:61
+msgctxt "OpenType layout"
+msgid "JIS90 Forms"
+msgstr "Forme JIS90"
+
+#: src/open-type-layout.h:62
+msgctxt "OpenType layout"
+msgid "JIS2004 Forms"
+msgstr "Forme JIS2004"
+
+#: src/open-type-layout.h:63
+msgctxt "OpenType layout"
+msgid "Kerning"
+msgstr "Kerning"
+
+#: src/open-type-layout.h:64
+msgctxt "OpenType layout"
+msgid "Left Bounds"
+msgstr "Limitele din stânga"
+
+#: src/open-type-layout.h:65
+msgctxt "OpenType layout"
+msgid "Standard Ligatures"
+msgstr "Ligaturi standard"
+
+#: src/open-type-layout.h:66
+msgctxt "OpenType layout"
+msgid "Leading Jamo Forms"
+msgstr "Forme Jamo de început"
+
+#: src/open-type-layout.h:67
+msgctxt "OpenType layout"
+msgid "Lining Figures"
+msgstr "Figuri de placare"
+
+#: src/open-type-layout.h:68
+msgctxt "OpenType layout"
+msgid "Localized Forms"
+msgstr "Forme localizate"
+
+#: src/open-type-layout.h:69
+msgctxt "OpenType layout"
+msgid "Left-to-right alternates"
+msgstr "Alternative stânga-spre-dreapta"
+
+#: src/open-type-layout.h:70
+msgctxt "OpenType layout"
+msgid "Left-to-right mirrored forms"
+msgstr "Forme oglindite stânga-spre-dreapta"
+
+#: src/open-type-layout.h:71
+msgctxt "OpenType layout"
+msgid "Mark Positioning"
+msgstr "Marchează poziționarea"
+
+#: src/open-type-layout.h:72
+msgctxt "OpenType layout"
+msgid "Medial Forms #2"
+msgstr "Forme de mijloc #2"
+
+#: src/open-type-layout.h:73
+msgctxt "OpenType layout"
+msgid "Medial Forms"
+msgstr "Forme de mijloc"
+
+#: src/open-type-layout.h:74
+msgctxt "OpenType layout"
+msgid "Mathematical Greek"
+msgstr "Matematică greacă"
+
+#: src/open-type-layout.h:75
+msgctxt "OpenType layout"
+msgid "Mark to Mark Positioning"
+msgstr "Marchează pentru a marca poziționarea"
+
+#: src/open-type-layout.h:76
+msgctxt "OpenType layout"
+msgid "Mark Positioning via Substitution"
+msgstr "Marchează poziționarea via substituție"
+
+#: src/open-type-layout.h:77
+msgctxt "OpenType layout"
+msgid "Alternate Annotation Forms"
+msgstr "Forme de adnotare alternative"
+
+#: src/open-type-layout.h:78
+msgctxt "OpenType layout"
+msgid "NLC Kanji Forms"
+msgstr "Forme NLC Kanji"
+
+#: src/open-type-layout.h:79
+msgctxt "OpenType layout"
+msgid "Nukta Forms"
+msgstr "Forme Nukta"
+
+#: src/open-type-layout.h:80
+msgctxt "OpenType layout"
+msgid "Numerators"
+msgstr "Numărători"
+
+#: src/open-type-layout.h:81
+msgctxt "OpenType layout"
+msgid "Oldstyle Figures"
+msgstr "Cifre în stilul vechi"
+
+#: src/open-type-layout.h:82
+msgctxt "OpenType layout"
+msgid "Optical Bounds"
+msgstr "Limite optice"
+
+#: src/open-type-layout.h:83
+msgctxt "OpenType layout"
+msgid "Ordinals"
+msgstr "Ordinale"
+
+#: src/open-type-layout.h:84
+msgctxt "OpenType layout"
+msgid "Ornaments"
+msgstr "Ornamente"
+
+#: src/open-type-layout.h:85
+msgctxt "OpenType layout"
+msgid "Proportional Alternate Widths"
+msgstr "Lățimi alternative proporționale"
+
+#: src/open-type-layout.h:86
+msgctxt "OpenType layout"
+msgid "Petite Capitals"
+msgstr "Majuscule foarte mici"
+
+#: src/open-type-layout.h:87
+msgctxt "OpenType layout"
+msgid "Proportional Kana"
+msgstr "Kana proporționale"
+
+#: src/open-type-layout.h:88
+msgctxt "OpenType layout"
+msgid "Proportional Figures"
+msgstr "Figuri proporționale"
+
+#: src/open-type-layout.h:89
+msgctxt "OpenType layout"
+msgid "Pre-Base Forms"
+msgstr "Forme înainte de bază"
+
+#: src/open-type-layout.h:90
+msgctxt "OpenType layout"
+msgid "Pre-base Substitutions"
+msgstr "Substituții înainte de bază"
+
+#: src/open-type-layout.h:91
+msgctxt "OpenType layout"
+msgid "Post-base Forms"
+msgstr "Forme după bază"
+
+#: src/open-type-layout.h:92
+msgctxt "OpenType layout"
+msgid "Post-base Substitutions"
+msgstr "Substituții după bază"
+
+#: src/open-type-layout.h:93
+msgctxt "OpenType layout"
+msgid "Proportional Widths"
+msgstr "Lățimi proporționale"
+
+#: src/open-type-layout.h:94
+msgctxt "OpenType layout"
+msgid "Quarter Widths"
+msgstr "Lățimi sfert"
+
+#: src/open-type-layout.h:95
+msgctxt "OpenType layout"
+msgid "Randomize"
+msgstr "Randomizează"
+
+#: src/open-type-layout.h:96
+msgctxt "OpenType layout"
+msgid "Required Contextual Alternates"
+msgstr "Alternative contextuale necesare"
+
+#: src/open-type-layout.h:97
+msgctxt "OpenType layout"
+msgid "Rakar Forms"
+msgstr "Forme Rakar"
+
+#: src/open-type-layout.h:98
+msgctxt "OpenType layout"
+msgid "Required Ligatures"
+msgstr "Ligaturi necesare"
+
+#: src/open-type-layout.h:99
+msgctxt "OpenType layout"
+msgid "Reph Forms"
+msgstr "Forme reph"
+
+#: src/open-type-layout.h:100
+msgctxt "OpenType layout"
+msgid "Right Bounds"
+msgstr "Limitele din dreapta"
+
+#: src/open-type-layout.h:101
+msgctxt "OpenType layout"
+msgid "Right-to-left alternates"
+msgstr "Alternative dreapta-spre-stânga"
+
+#: src/open-type-layout.h:102
+msgctxt "OpenType layout"
+msgid "Right-to-left mirrored forms"
+msgstr "Forme oglindite dreapta-spre-stânga"
+
+#: src/open-type-layout.h:103
+msgctxt "OpenType layout"
+msgid "Ruby Notation Forms"
+msgstr "Forme de notație Ruby"
+
+#: src/open-type-layout.h:104
+msgctxt "OpenType layout"
+msgid "Required Variation Alternates"
+msgstr "Alternative de variație necesare"
+
+#: src/open-type-layout.h:105
+msgctxt "OpenType layout"
+msgid "Stylistic Alternates"
+msgstr "Alternative stilistice"
+
+#: src/open-type-layout.h:106
+msgctxt "OpenType layout"
+msgid "Scientific Inferiors"
+msgstr "Inferiori științifici"
+
+#: src/open-type-layout.h:107
+msgctxt "OpenType layout"
+msgid "Optical size"
+msgstr "Dimensiune optică"
+
+#: src/open-type-layout.h:108
+msgctxt "OpenType layout"
+msgid "Small Capitals"
+msgstr "Majuscule mici"
+
+#: src/open-type-layout.h:109
+msgctxt "OpenType layout"
+msgid "Simplified Forms"
+msgstr "Forme simplificate"
+
+#: src/open-type-layout.h:110
+msgctxt "OpenType layout"
+msgid "Stylistic Set 1"
+msgstr "Set stilistic 1"
+
+#: src/open-type-layout.h:111
+msgctxt "OpenType layout"
+msgid "Stylistic Set 2"
+msgstr "Set stilistic 2"
+
+#: src/open-type-layout.h:112
+msgctxt "OpenType layout"
+msgid "Stylistic Set 3"
+msgstr "Set stilistic 3"
+
+#: src/open-type-layout.h:113
+msgctxt "OpenType layout"
+msgid "Stylistic Set 4"
+msgstr "Set stilistic 4"
+
+#: src/open-type-layout.h:114
+msgctxt "OpenType layout"
+msgid "Stylistic Set 5"
+msgstr "Set stilistic 5"
+
+#: src/open-type-layout.h:115
+msgctxt "OpenType layout"
+msgid "Stylistic Set 6"
+msgstr "Set stilistic 6"
+
+#: src/open-type-layout.h:116
+msgctxt "OpenType layout"
+msgid "Stylistic Set 7"
+msgstr "Set stilistic 7"
+
+#: src/open-type-layout.h:117
+msgctxt "OpenType layout"
+msgid "Stylistic Set 8"
+msgstr "Set stilistic 8"
+
+#: src/open-type-layout.h:118
+msgctxt "OpenType layout"
+msgid "Stylistic Set 9"
+msgstr "Set stilistic 9"
+
+#: src/open-type-layout.h:119
+msgctxt "OpenType layout"
+msgid "Stylistic Set 10"
+msgstr "Set stilistic 19"
+
+#: src/open-type-layout.h:120
+msgctxt "OpenType layout"
+msgid "Stylistic Set 11"
+msgstr "Set stilistic 11"
+
+#: src/open-type-layout.h:121
+msgctxt "OpenType layout"
+msgid "Stylistic Set 12"
+msgstr "Set stilistic 12"
+
+#: src/open-type-layout.h:122
+msgctxt "OpenType layout"
+msgid "Stylistic Set 13"
+msgstr "Set stilistic 13"
+
+#: src/open-type-layout.h:123
+msgctxt "OpenType layout"
+msgid "Stylistic Set 14"
+msgstr "Set stilistic 14"
+
+#: src/open-type-layout.h:124
+msgctxt "OpenType layout"
+msgid "Stylistic Set 15"
+msgstr "Set stilistic 15"
+
+#: src/open-type-layout.h:125
+msgctxt "OpenType layout"
+msgid "Stylistic Set 16"
+msgstr "Set stilistic 16"
+
+#: src/open-type-layout.h:126
+msgctxt "OpenType layout"
+msgid "Stylistic Set 17"
+msgstr "Set stilistic 17"
+
+#: src/open-type-layout.h:127
+msgctxt "OpenType layout"
+msgid "Stylistic Set 18"
+msgstr "Set stilistic 18"
+
+#: src/open-type-layout.h:128
+msgctxt "OpenType layout"
+msgid "Stylistic Set 19"
+msgstr "Set stilistic 19"
+
+#: src/open-type-layout.h:129
+msgctxt "OpenType layout"
+msgid "Stylistic Set 20"
+msgstr "Set stilistic 20"
+
+#: src/open-type-layout.h:130
+msgctxt "OpenType layout"
+msgid "Math script style alternates"
+msgstr "Alternative ale stilului de script matematic"
+
+#: src/open-type-layout.h:131
+msgctxt "OpenType layout"
+msgid "Stretching Glyph Decomposition"
+msgstr "Decompoziție glifă care se întinde"
+
+#: src/open-type-layout.h:132
+msgctxt "OpenType layout"
+msgid "Subscript"
+msgstr "Indice inferior"
+
+#: src/open-type-layout.h:133
+msgctxt "OpenType layout"
+msgid "Superscript"
+msgstr "Indice superior"
+
+#: src/open-type-layout.h:134
+msgctxt "OpenType layout"
+msgid "Swash"
+msgstr "Caracter ornamental"
+
+#: src/open-type-layout.h:135
+msgctxt "OpenType layout"
+msgid "Titling"
+msgstr "Înclinare"
+
+#: src/open-type-layout.h:136
+msgctxt "OpenType layout"
+msgid "Trailing Jamo Forms"
+msgstr "Forme Jamo de sfârșit"
+
+#: src/open-type-layout.h:137
+msgctxt "OpenType layout"
+msgid "Traditional Name Forms"
+msgstr "Forme de nume tradiționale"
+
+#: src/open-type-layout.h:138
+msgctxt "OpenType layout"
+msgid "Tabular Figures"
+msgstr "Figuri tabulare"
+
+#: src/open-type-layout.h:139
+msgctxt "OpenType layout"
+msgid "Traditional Forms"
+msgstr "Forme tradiționale"
+
+#: src/open-type-layout.h:140
+msgctxt "OpenType layout"
+msgid "Third Widths"
+msgstr "Lățimi treime"
+
+#: src/open-type-layout.h:141
+msgctxt "OpenType layout"
+msgid "Unicase"
+msgstr "Aceeași mărime"
+
+#: src/open-type-layout.h:142
+msgctxt "OpenType layout"
+msgid "Alternate Vertical Metrics"
+msgstr "Măsurători verticale alternative"
+
+#: src/open-type-layout.h:143
+msgctxt "OpenType layout"
+msgid "Vattu Variants"
+msgstr "Variante Vattu"
+
+#: src/open-type-layout.h:144
+msgctxt "OpenType layout"
+msgid "Vertical Writing"
+msgstr "Scriere verticală"
+
+#: src/open-type-layout.h:145
+msgctxt "OpenType layout"
+msgid "Alternate Vertical Half Metrics"
+msgstr "Măsurători verticale pe jumătate alternative"
+
+#: src/open-type-layout.h:146
+msgctxt "OpenType layout"
+msgid "Vowel Jamo Forms"
+msgstr "Forme de vocale Jamo"
+
+#: src/open-type-layout.h:147
+msgctxt "OpenType layout"
+msgid "Vertical Kana Alternates"
+msgstr "Alternative Kana verticale"
+
+#: src/open-type-layout.h:148
+msgctxt "OpenType layout"
+msgid "Vertical Kerning"
+msgstr "Kerning vertical"
+
+#: src/open-type-layout.h:149
+msgctxt "OpenType layout"
+msgid "Proportional Alternate Vertical Metrics"
+msgstr "Măsurători verticale alternative proporționale"
+
+#: src/open-type-layout.h:150
+msgctxt "OpenType layout"
+msgid "Vertical Alternates and Rotation"
+msgstr "Alternative verticale și rotație"
+
+#: src/open-type-layout.h:151
+msgctxt "OpenType layout"
+msgid "Vertical Alternates for Rotation"
+msgstr "Alternative verticale pentru rotație"
+
+#: src/open-type-layout.h:152
+msgctxt "OpenType layout"
+msgid "Slashed Zero"
+msgstr "Zero barat"
+
+#~ msgid "Font Viewer"
+#~ msgstr "Vizualizator de fonturi"
+
+#~ msgid "[FILE...]"
+#~ msgstr "[FIȘIER...]"
+
+#~ msgid ""
+#~ "Run '%s --help' to see a full list of available command line options."
+#~ msgstr ""
+#~ "Rulați „%s --help” pentru o listă completă de opțiuni disponibile în "
+#~ "linia de comandă."
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "Dimensiunea fontului (implicit: 64)"
