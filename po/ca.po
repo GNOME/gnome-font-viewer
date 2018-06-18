@@ -276,7 +276,7 @@ msgstr "Formularis sensitius a majúscules i minúscules"
 #: src/open-type-layout.h:24
 msgctxt "OpenType layout"
 msgid "Glyph Composition / Decomposition"
-msgstr "Glyph Composició / Descomposicó"
+msgstr "Composició / descomposició de glifs"
 
 #: src/open-type-layout.h:25
 msgctxt "OpenType layout"
@@ -951,7 +951,7 @@ msgstr "Formularis tradicionals"
 #: src/open-type-layout.h:159
 msgctxt "OpenType layout"
 msgid "Third Widths"
-msgstr "Amplades dividida per tres"
+msgstr "Amplades dividides per tres"
 
 #: src/open-type-layout.h:160
 msgctxt "OpenType layout"
@@ -1006,7 +1006,7 @@ msgstr "Alternatives verticals i rotació"
 #: src/open-type-layout.h:170
 msgctxt "OpenType layout"
 msgid "Vertical Alternates for Rotation"
-msgstr "Alternatives vertical per rotació"
+msgstr "Alternatives verticals per rotació"
 
 #: src/open-type-layout.h:171
 msgctxt "OpenType layout"
