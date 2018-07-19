@@ -39,23 +39,14 @@ typedef enum {
   NUM_COLUMNS
 } FontViewModelColumns;
 
-typedef struct _FontViewModelPrivate FontViewModelPrivate;
+#define FONT_VIEW_TYPE_MODEL (font_view_model_get_type ())
 
-#define FONT_VIEW_TYPE_MODEL font_view_model_get_type()
-#define FONT_VIEW_MODEL(obj) \
-  (G_TYPE_CHECK_INSTANCE_CAST ((obj), FONT_VIEW_TYPE_MODEL, FontViewModel))
-
-typedef struct {
-  GtkListStore parent;
-
-  FontViewModelPrivate *priv;
-} FontViewModel;
-
-typedef struct {
-  GtkListStoreClass parent_class;
-} FontViewModelClass;
+G_DECLARE_FINAL_TYPE (FontViewModel, font_view_model,
+                      FONT_VIEW, MODEL,
+                      GtkListStore)
 
 GType font_view_model_get_type (void);
+
 GtkTreeModel * font_view_model_new (void);
 
 gboolean font_view_model_get_iter_for_face (FontViewModel *self,

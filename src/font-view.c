@@ -41,11 +41,13 @@
 #include "font-model.h"
 #include "sushi-font-widget.h"
 
-#define FONT_VIEW_TYPE_APPLICATION font_view_application_get_type()
-#define FONT_VIEW_APPLICATION(obj) \
-  (G_TYPE_CHECK_INSTANCE_CAST ((obj), FONT_VIEW_TYPE_APPLICATION, FontViewApplication))
+#define FONT_VIEW_TYPE_APPLICATION (font_view_application_get_type ())
 
-typedef struct {
+G_DECLARE_FINAL_TYPE (FontViewApplication, sushi_font_widget,
+                      FONT_VIEW, APPLICATION,
+                      GtkApplication)
+
+struct _FontViewApplication {
     GtkApplication parent;
 
     GtkWidget *main_window;
@@ -70,11 +72,7 @@ typedef struct {
     GtkTreeModel *filter_model;
 
     GFile *font_file;
-} FontViewApplication;
-
-typedef struct {
-    GtkApplicationClass parent_class;
-} FontViewApplicationClass;
+};
 
 static gboolean
 _print_version_and_exit (const gchar *option_name,
@@ -94,7 +92,8 @@ static const GOptionEntry goption_options[] =
     { NULL }
 };
 
-G_DEFINE_TYPE (FontViewApplication, font_view_application, GTK_TYPE_APPLICATION);
+G_DEFINE_TYPE (FontViewApplication, font_view_application,
+               GTK_TYPE_APPLICATION);
 
 static void font_view_application_do_overview (FontViewApplication *self);
 static void ensure_window (FontViewApplication *self);
