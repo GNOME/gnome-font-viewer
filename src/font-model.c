@@ -43,7 +43,7 @@
 #include "font-utils.h"
 #include "sushi-font-loader.h"
 
-struct _FontViewModelPrivate {
+typedef struct {
     /* list of fonts in fontconfig database */
     FcFontSet *font_list;
     GMutex font_list_mutex;
@@ -56,6 +56,13 @@ struct _FontViewModelPrivate {
     gint scale_factor;
     guint font_list_idle_id;
     guint fontconfig_update_id;
+} FontViewModelPrivate;
+
+struct _FontViewModel
+{
+  GtkListStore parent_instance;
+
+  FontViewModelPrivate *priv;
 };
 
 enum {
@@ -65,7 +72,8 @@ enum {
 
 static guint signals[NUM_SIGNALS] = { 0, };
 
-G_DEFINE_TYPE (FontViewModel, font_view_model, GTK_TYPE_LIST_STORE);
+G_DEFINE_TYPE_WITH_PRIVATE (FontViewModel, font_view_model,
+                            GTK_TYPE_LIST_STORE)
 
 #define ATTRIBUTES_FOR_CREATING_THUMBNAIL \
     G_FILE_ATTRIBUTE_STANDARD_CONTENT_TYPE"," \
@@ -651,8 +659,6 @@ font_view_model_class_init (FontViewModelClass *klass)
                       G_SIGNAL_RUN_FIRST,
                       0, NULL, NULL, NULL,
                       G_TYPE_NONE, 0);
-
-    g_type_class_add_private (klass, sizeof (FontViewModelPrivate));
 }
 
 GtkTreeModel *
