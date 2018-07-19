@@ -11,21 +11,22 @@
 # Manuel de Vega Barreiro <barreiro@arrakis.es> 2000-2001.
 # Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009, 2010, 2011.
 # Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012, 2013, 2014, 2017, 2018.
+# Rodrigo <rodhos92@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2018-04-24 22:22+0000\n"
-"PO-Revision-Date: 2018-04-25 12:33+0200\n"
-"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
-"Language-Team: es <gnome-es-list@gnome.org>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
+"issues\n"
+"POT-Creation-Date: 2018-06-10 16:54+0000\n"
+"PO-Revision-Date: 2018-07-19 16:13+0200\n"
+"Last-Translator: Rodrigo <rodhos92@gmail.com>\n"
+"Language-Team: Español <gnome-es-list@gnome.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Gtranslator 2.91.7\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:85
@@ -229,42 +230,43 @@ msgstr "Acceso a todas las alternativas"
 #: src/open-type-layout.h:14
 msgctxt "OpenType layout"
 msgid "Above-base Forms"
-msgstr ""
+msgstr "Formas sobre la base"
 
 #: src/open-type-layout.h:15
 msgctxt "OpenType layout"
 msgid "Above-base Mark Positioning"
-msgstr ""
+msgstr "Posicionamiento de marca sobre la base"
 
 #: src/open-type-layout.h:16
 msgctxt "OpenType layout"
 msgid "Above-base Substitutions"
-msgstr ""
+msgstr "Sustituciones sobre la base"
 
 #: src/open-type-layout.h:17
 msgctxt "OpenType layout"
 msgid "Alternative Fractions"
 msgstr "Fracciones alternativas"
 
+# Es el nombre de una tipografía
 #: src/open-type-layout.h:18
 msgctxt "OpenType layout"
 msgid "Akhands"
-msgstr ""
+msgstr "Akhands"
 
 #: src/open-type-layout.h:19
 msgctxt "OpenType layout"
 msgid "Below-base Forms"
-msgstr ""
+msgstr "Formas debajo de la base"
 
 #: src/open-type-layout.h:20
 msgctxt "OpenType layout"
 msgid "Below-base Mark Positioning"
-msgstr ""
+msgstr "Posicionamiento de marca debajo de la base"
 
 #: src/open-type-layout.h:21
 msgctxt "OpenType layout"
 msgid "Below-base Substitutions"
-msgstr ""
+msgstr "Sustituciones debajo de la base"
 
 #: src/open-type-layout.h:22
 msgctxt "OpenType layout"
@@ -284,12 +286,12 @@ msgstr "Composición/descomposición de glifos"
 #: src/open-type-layout.h:25
 msgctxt "OpenType layout"
 msgid "Conjunct Form After Ro"
-msgstr ""
+msgstr "Forma de conjunto después de Ro"
 
 #: src/open-type-layout.h:26
 msgctxt "OpenType layout"
 msgid "Conjunct Forms"
-msgstr ""
+msgstr "Formas de conjunto"
 
 #: src/open-type-layout.h:27
 msgctxt "OpenType layout"
@@ -299,17 +301,22 @@ msgstr "Ligaduras contextuales"
 #: src/open-type-layout.h:28
 msgctxt "OpenType layout"
 msgid "Centered CJK Punctuation"
-msgstr ""
+msgstr "Puntuación CJK centrada"
 
 #: src/open-type-layout.h:29
 msgctxt "OpenType layout"
 msgid "Capital Spacing"
-msgstr ""
+msgstr "Interlineado de mayúsculas"
 
+# This feature replaces default character glyphs with corresponding swash glyphs in a specified context...
+# Los swashes son letras decorativas muy comunes en las fuentes manuscritas...
+#
+# https://defharo.com/open-type-features/swash/
+# https://www.preusstype.com/techdata/otf_cswh.php
 #: src/open-type-layout.h:30
 msgctxt "OpenType layout"
 msgid "Contextual Swash"
-msgstr ""
+msgstr "Swash contextual"
 
 #: src/open-type-layout.h:31
 msgctxt "OpenType layout"
@@ -449,7 +456,7 @@ msgstr "Formas expertas"
 #: src/open-type-layout.h:58
 msgctxt "OpenType layout"
 msgid "Final Glyph on Line Alternates"
-msgstr ""
+msgstr "Glifo final en línea alterna"
 
 #: src/open-type-layout.h:59
 msgctxt "OpenType layout"
@@ -469,7 +476,7 @@ msgstr "Formas de terminal"
 #: src/open-type-layout.h:62
 msgctxt "OpenType layout"
 msgid "Flattened accent forms"
-msgstr ""
+msgstr "Formas de acento aplanado"
 
 #: src/open-type-layout.h:63
 msgctxt "OpenType layout"
@@ -584,17 +591,17 @@ msgstr "Ligaduras estándar"
 #: src/open-type-layout.h:85
 msgctxt "OpenType layout"
 msgid "Leading Jamo Forms"
-msgstr ""
+msgstr "Formas Jamo principales"
 
 #: src/open-type-layout.h:86
 msgctxt "OpenType layout"
 msgid "Lining Figures"
-msgstr ""
+msgstr "Figuras revestidas"
 
 #: src/open-type-layout.h:87
 msgctxt "OpenType layout"
 msgid "Localized Forms"
-msgstr ""
+msgstr "Formas localizadas"
 
 #: src/open-type-layout.h:88
 msgctxt "OpenType layout"
@@ -629,12 +636,12 @@ msgstr "Griego matemático"
 #: src/open-type-layout.h:94
 msgctxt "OpenType layout"
 msgid "Mark to Mark Positioning"
-msgstr ""
+msgstr "Marca en posicionamiento de marca"
 
 #: src/open-type-layout.h:95
 msgctxt "OpenType layout"
 msgid "Mark Positioning via Substitution"
-msgstr ""
+msgstr "Posicionamiento de marca mediante sustitución"
 
 #: src/open-type-layout.h:96
 msgctxt "OpenType layout"
@@ -659,7 +666,7 @@ msgstr "Numeradores"
 #: src/open-type-layout.h:100
 msgctxt "OpenType layout"
 msgid "Oldstyle Figures"
-msgstr ""
+msgstr "Figuras antiguas"
 
 #: src/open-type-layout.h:101
 msgctxt "OpenType layout"
@@ -724,7 +731,7 @@ msgstr "Anchuras proporcionales"
 #: src/open-type-layout.h:113
 msgctxt "OpenType layout"
 msgid "Quarter Widths"
-msgstr ""
+msgstr "Anchuras de cuarto"
 
 #: src/open-type-layout.h:114
 msgctxt "OpenType layout"
@@ -734,7 +741,7 @@ msgstr "Aleatorizar"
 #: src/open-type-layout.h:115
 msgctxt "OpenType layout"
 msgid "Required Contextual Alternates"
-msgstr ""
+msgstr "Alternativas contextuales necesarias"
 
 #: src/open-type-layout.h:116
 msgctxt "OpenType layout"
@@ -774,7 +781,7 @@ msgstr "Formas de notación Ruby"
 #: src/open-type-layout.h:123
 msgctxt "OpenType layout"
 msgid "Required Variation Alternates"
-msgstr ""
+msgstr "Alternativas de variantes necesarias"
 
 #: src/open-type-layout.h:124
 msgctxt "OpenType layout"
@@ -784,7 +791,7 @@ msgstr "Alternativas estilísticas"
 #: src/open-type-layout.h:125
 msgctxt "OpenType layout"
 msgid "Scientific Inferiors"
-msgstr ""
+msgstr "Inferiores científicos"
 
 #: src/open-type-layout.h:126
 msgctxt "OpenType layout"
@@ -904,12 +911,12 @@ msgstr "Conjunto estilístico nº 20"
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
 msgid "Math script style alternates"
-msgstr ""
+msgstr "Alternativas de estilo del script matemático"
 
 #: src/open-type-layout.h:150
 msgctxt "OpenType layout"
 msgid "Stretching Glyph Decomposition"
-msgstr ""
+msgstr "Descomposición del glifo por estiramiento"
 
 #: src/open-type-layout.h:151
 msgctxt "OpenType layout"
@@ -929,17 +936,17 @@ msgstr "Swash"
 #: src/open-type-layout.h:154
 msgctxt "OpenType layout"
 msgid "Titling"
-msgstr ""
+msgstr "Titulación"
 
 #: src/open-type-layout.h:155
 msgctxt "OpenType layout"
 msgid "Trailing Jamo Forms"
-msgstr ""
+msgstr "Formas Jamo colgantes"
 
 #: src/open-type-layout.h:156
 msgctxt "OpenType layout"
 msgid "Traditional Name Forms"
-msgstr ""
+msgstr "Formas de nombre tradicional"
 
 #: src/open-type-layout.h:157
 msgctxt "OpenType layout"
@@ -954,7 +961,7 @@ msgstr "Formas tradicionales"
 #: src/open-type-layout.h:159
 msgctxt "OpenType layout"
 msgid "Third Widths"
-msgstr ""
+msgstr "Anchuras de tercio"
 
 #: src/open-type-layout.h:160
 msgctxt "OpenType layout"
@@ -999,7 +1006,7 @@ msgstr "Interletraje vertical"
 #: src/open-type-layout.h:168
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Vertical Metrics"
-msgstr ""
+msgstr "Métrica vertical de alternativa proporcional"
 
 #: src/open-type-layout.h:169
 msgctxt "OpenType layout"
