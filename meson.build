@@ -54,5 +54,6 @@ i18n.merge_file(appdata_file,
 
 subdir('src')
 subdir('po')
+subdir('data')
 
 meson.add_install_script('meson-postinstall.sh')
