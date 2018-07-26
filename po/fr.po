@@ -6,21 +6,23 @@
 # Bruno Cauet <brunocauet@gmail.com>, 2014.
 # Guillaume Bernard <translate@filorin.fr>, 2015.
 # Claude Paroz <claude@2xlibre.net>, 2017-2018
+# Charles Monzat <charles.monzat@numericable.fr>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2018-02-23 08:45+0000\n"
-"PO-Revision-Date: 2018-03-03 13:30+0100\n"
-"Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
+"issues\n"
+"POT-Creation-Date: 2018-06-10 16:54+0000\n"
+"PO-Revision-Date: 2018-07-24 10:29+0200\n"
+"Last-Translator: Charles Monzat <charles.monzat@numericable.fr>\n"
 "Language-Team: français <gnomefr@traduc.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:85
 msgid "GNOME Fonts"
@@ -327,595 +329,690 @@ msgstr "Capitales vers petites capitales"
 
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
+msgid "Character Variation 1"
+msgstr "Variante de caractère 1"
+
+#: src/open-type-layout.h:35
+msgctxt "OpenType layout"
+msgid "Character Variation 2"
+msgstr "Variante de caractère 2"
+
+#: src/open-type-layout.h:36
+msgctxt "OpenType layout"
+msgid "Character Variation 3"
+msgstr "Variante de caractère 3"
+
+#: src/open-type-layout.h:37
+msgctxt "OpenType layout"
+msgid "Character Variation 4"
+msgstr "Variante de caractère 4"
+
+#: src/open-type-layout.h:38
+msgctxt "OpenType layout"
+msgid "Character Variation 5"
+msgstr "Variante de caractère 5"
+
+#: src/open-type-layout.h:39
+msgctxt "OpenType layout"
+msgid "Character Variation 6"
+msgstr "Variante de caractère 6"
+
+#: src/open-type-layout.h:40
+msgctxt "OpenType layout"
+msgid "Character Variation 7"
+msgstr "Variante de caractère 7"
+
+#: src/open-type-layout.h:41
+msgctxt "OpenType layout"
+msgid "Character Variation 8"
+msgstr "Variante de caractère 8"
+
+#: src/open-type-layout.h:42
+msgctxt "OpenType layout"
+msgid "Character Variation 9"
+msgstr "Variante de caractère 9"
+
+#: src/open-type-layout.h:43
+msgctxt "OpenType layout"
+msgid "Character Variation 10"
+msgstr "Variante de caractère 10"
+
+#: src/open-type-layout.h:44
+msgctxt "OpenType layout"
+msgid "Character Variation 11"
+msgstr "Variante de caractère 11"
+
+#: src/open-type-layout.h:45
+msgctxt "OpenType layout"
+msgid "Character Variation 12"
+msgstr "Variante de caractère 12"
+
+#: src/open-type-layout.h:46
+msgctxt "OpenType layout"
+msgid "Character Variation 13"
+msgstr "Variante de caractère 13"
+
+#: src/open-type-layout.h:47
+msgctxt "OpenType layout"
+msgid "Character Variation 14"
+msgstr "Variante de caractère 14"
+
+#: src/open-type-layout.h:48
+msgctxt "OpenType layout"
+msgid "Character Variation 15"
+msgstr "Variante de caractère 15"
+
+#: src/open-type-layout.h:49
+msgctxt "OpenType layout"
+msgid "Character Variation 16"
+msgstr "Variante de caractère 16"
+
+#: src/open-type-layout.h:50
+msgctxt "OpenType layout"
+msgid "Character Variation 17"
+msgstr "Variante de caractère 17"
+
+#: src/open-type-layout.h:51
+msgctxt "OpenType layout"
+msgid "Character Variation 18"
+msgstr "Variante de caractère 18"
+
+#: src/open-type-layout.h:52
+msgctxt "OpenType layout"
+msgid "Character Variation 19"
+msgstr "Variante de caractère 19"
+
+#: src/open-type-layout.h:53
+msgctxt "OpenType layout"
 msgid "Distances"
 msgstr "Distances"
 
-#: src/open-type-layout.h:35
+#: src/open-type-layout.h:54
 msgctxt "OpenType layout"
 msgid "Discretionary Ligatures"
 msgstr "Ligatures facultatives"
 
-#: src/open-type-layout.h:36
+#: src/open-type-layout.h:55
 msgctxt "OpenType layout"
 msgid "Denominators"
 msgstr "Dénominateurs"
 
-#: src/open-type-layout.h:37
+#: src/open-type-layout.h:56
 msgctxt "OpenType layout"
 msgid "Dotless Forms"
 msgstr "Formes isolées"
 
-#: src/open-type-layout.h:38
+#: src/open-type-layout.h:57
 msgctxt "OpenType layout"
 msgid "Expert Forms"
 msgstr "Formes expertes"
 
-#: src/open-type-layout.h:39
+#: src/open-type-layout.h:58
 msgctxt "OpenType layout"
 msgid "Final Glyph on Line Alternates"
 msgstr "Variantes de dernier glyphe de ligne"
 
-#: src/open-type-layout.h:40
+#: src/open-type-layout.h:59
 msgctxt "OpenType layout"
 msgid "Terminal Forms #2"
 msgstr "Formes finales 2"
 
-#: src/open-type-layout.h:41
+#: src/open-type-layout.h:60
 msgctxt "OpenType layout"
 msgid "Terminal Forms #3"
 msgstr "Formes finales 3"
 
-#: src/open-type-layout.h:42
+#: src/open-type-layout.h:61
 msgctxt "OpenType layout"
 msgid "Terminal Forms"
 msgstr "Formes finales"
 
-#: src/open-type-layout.h:43
+#: src/open-type-layout.h:62
 msgctxt "OpenType layout"
 msgid "Flattened accent forms"
 msgstr "Formes d’accents aplatis"
 
-#: src/open-type-layout.h:44
+#: src/open-type-layout.h:63
 msgctxt "OpenType layout"
 msgid "Fractions"
 msgstr "Fractions"
 
-#: src/open-type-layout.h:45
+#: src/open-type-layout.h:64
 msgctxt "OpenType layout"
 msgid "Full Widths"
 msgstr "Pleines largeurs"
 
-#: src/open-type-layout.h:46
+#: src/open-type-layout.h:65
 msgctxt "OpenType layout"
 msgid "Half Forms"
 msgstr "Demi-formes"
 
-#: src/open-type-layout.h:47
+#: src/open-type-layout.h:66
 msgctxt "OpenType layout"
 msgid "Halant Forms"
 msgstr "Formes Halant"
 
-#: src/open-type-layout.h:48
+#: src/open-type-layout.h:67
 msgctxt "OpenType layout"
 msgid "Alternate Half Widths"
 msgstr "Variantes de demi-largeurs"
 
-#: src/open-type-layout.h:49
+#: src/open-type-layout.h:68
 msgctxt "OpenType layout"
 msgid "Historical Forms"
 msgstr "Formes historiques"
 
-#: src/open-type-layout.h:50
+#: src/open-type-layout.h:69
 msgctxt "OpenType layout"
 msgid "Horizontal Kana Alternates"
 msgstr "Kana horizontaux alternatifs"
 
-#: src/open-type-layout.h:51
+#: src/open-type-layout.h:70
 msgctxt "OpenType layout"
 msgid "Historical Ligatures"
 msgstr "Ligatures historiques"
 
-#: src/open-type-layout.h:52
+#: src/open-type-layout.h:71
 msgctxt "OpenType layout"
 msgid "Hangul"
 msgstr "Hangul"
 
-#: src/open-type-layout.h:53
+#: src/open-type-layout.h:72
 msgctxt "OpenType layout"
 msgid "Hojo Kanji Forms"
 msgstr "Formes Hojo Kanji"
 
-#: src/open-type-layout.h:54
+#: src/open-type-layout.h:73
 msgctxt "OpenType layout"
 msgid "Half Widths"
 msgstr "Demi-largeurs"
 
-#: src/open-type-layout.h:55
+#: src/open-type-layout.h:74
 msgctxt "OpenType layout"
 msgid "Initial Forms"
 msgstr "Formes initiales"
 
-#: src/open-type-layout.h:56
+#: src/open-type-layout.h:75
 msgctxt "OpenType layout"
 msgid "Isolated Forms"
 msgstr "Formes isolées"
 
-#: src/open-type-layout.h:57
+#: src/open-type-layout.h:76
 msgctxt "OpenType layout"
 msgid "Italics"
 msgstr "Italiques"
 
-#: src/open-type-layout.h:58
+#: src/open-type-layout.h:77
 msgctxt "OpenType layout"
 msgid "Justification Alternates"
 msgstr "Alternatives de justification"
 
-#: src/open-type-layout.h:59
+#: src/open-type-layout.h:78
 msgctxt "OpenType layout"
 msgid "JIS78 Forms"
 msgstr "Formes JIS78"
 
-#: src/open-type-layout.h:60
+#: src/open-type-layout.h:79
 msgctxt "OpenType layout"
 msgid "JIS83 Forms"
 msgstr "Formes JIS83"
 
-#: src/open-type-layout.h:61
+#: src/open-type-layout.h:80
 msgctxt "OpenType layout"
 msgid "JIS90 Forms"
 msgstr "Formes JIS90"
 
-#: src/open-type-layout.h:62
+#: src/open-type-layout.h:81
 msgctxt "OpenType layout"
 msgid "JIS2004 Forms"
 msgstr "Formes JIS2004"
 
-#: src/open-type-layout.h:63
+#: src/open-type-layout.h:82
 msgctxt "OpenType layout"
 msgid "Kerning"
 msgstr "Crénage"
 
-#: src/open-type-layout.h:64
+#: src/open-type-layout.h:83
 msgctxt "OpenType layout"
 msgid "Left Bounds"
 msgstr "Limites à gauche"
 
-#: src/open-type-layout.h:65
+#: src/open-type-layout.h:84
 msgctxt "OpenType layout"
 msgid "Standard Ligatures"
 msgstr "Ligatures standard"
 
-#: src/open-type-layout.h:66
+#: src/open-type-layout.h:85
 msgctxt "OpenType layout"
 msgid "Leading Jamo Forms"
 msgstr "Formes Jamo initiales"
 
-#: src/open-type-layout.h:67
+#: src/open-type-layout.h:86
 msgctxt "OpenType layout"
 msgid "Lining Figures"
 msgstr "Chiffres modernes"
 
-#: src/open-type-layout.h:68
+#: src/open-type-layout.h:87
 msgctxt "OpenType layout"
 msgid "Localized Forms"
 msgstr "Formes localisées"
 
-#: src/open-type-layout.h:69
+#: src/open-type-layout.h:88
 msgctxt "OpenType layout"
 msgid "Left-to-right alternates"
 msgstr "Alternatives de gauche à droite"
 
-#: src/open-type-layout.h:70
+#: src/open-type-layout.h:89
 msgctxt "OpenType layout"
 msgid "Left-to-right mirrored forms"
 msgstr "Formes reflétées de gauche à droite"
 
-#: src/open-type-layout.h:71
+#: src/open-type-layout.h:90
 msgctxt "OpenType layout"
 msgid "Mark Positioning"
 msgstr "Positionnement de signe"
 
-#: src/open-type-layout.h:72
+#: src/open-type-layout.h:91
 msgctxt "OpenType layout"
 msgid "Medial Forms #2"
 msgstr "Formes médianes 2"
 
-#: src/open-type-layout.h:73
+#: src/open-type-layout.h:92
 msgctxt "OpenType layout"
 msgid "Medial Forms"
 msgstr "Formes médianes"
 
-#: src/open-type-layout.h:74
+#: src/open-type-layout.h:93
 msgctxt "OpenType layout"
 msgid "Mathematical Greek"
 msgstr "Grec mathématique"
 
-#: src/open-type-layout.h:75
+#: src/open-type-layout.h:94
 msgctxt "OpenType layout"
 msgid "Mark to Mark Positioning"
 msgstr "Positionnement signe sur signe"
 
-#: src/open-type-layout.h:76
+#: src/open-type-layout.h:95
 msgctxt "OpenType layout"
 msgid "Mark Positioning via Substitution"
 msgstr "Positionnement de signe par substitution"
 
-#: src/open-type-layout.h:77
+#: src/open-type-layout.h:96
 msgctxt "OpenType layout"
 msgid "Alternate Annotation Forms"
 msgstr "Formes d’annotation alternatives"
 
-#: src/open-type-layout.h:78
+#: src/open-type-layout.h:97
 msgctxt "OpenType layout"
 msgid "NLC Kanji Forms"
 msgstr "Formes Kanji NLC"
 
-#: src/open-type-layout.h:79
+#: src/open-type-layout.h:98
 msgctxt "OpenType layout"
 msgid "Nukta Forms"
 msgstr "Formes Nukta"
 
-#: src/open-type-layout.h:80
+#: src/open-type-layout.h:99
 msgctxt "OpenType layout"
 msgid "Numerators"
 msgstr "Numérateurs"
 
-#: src/open-type-layout.h:81
+#: src/open-type-layout.h:100
 msgctxt "OpenType layout"
 msgid "Oldstyle Figures"
 msgstr "Chiffres médiévaux"
 
-#: src/open-type-layout.h:82
+#: src/open-type-layout.h:101
 msgctxt "OpenType layout"
 msgid "Optical Bounds"
 msgstr "Alignements optiques"
 
-#: src/open-type-layout.h:83
+#: src/open-type-layout.h:102
 msgctxt "OpenType layout"
 msgid "Ordinals"
 msgstr "Ordinaux"
 
-#: src/open-type-layout.h:84
+#: src/open-type-layout.h:103
 msgctxt "OpenType layout"
 msgid "Ornaments"
 msgstr "Ornements"
 
-#: src/open-type-layout.h:85
+#: src/open-type-layout.h:104
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Widths"
 msgstr "Largeurs alternatives proportionnelles"
 
-#: src/open-type-layout.h:86
+#: src/open-type-layout.h:105
 msgctxt "OpenType layout"
 msgid "Petite Capitals"
 msgstr "Petites capitales"
 
-#: src/open-type-layout.h:87
+#: src/open-type-layout.h:106
 msgctxt "OpenType layout"
 msgid "Proportional Kana"
 msgstr "Kana proportionnels"
 
-#: src/open-type-layout.h:88
+#: src/open-type-layout.h:107
 msgctxt "OpenType layout"
 msgid "Proportional Figures"
 msgstr "Chiffres proportionnels"
 
-#: src/open-type-layout.h:89
+#: src/open-type-layout.h:108
 msgctxt "OpenType layout"
 msgid "Pre-Base Forms"
 msgstr "Formes antéposées"
 
-#: src/open-type-layout.h:90
+#: src/open-type-layout.h:109
 msgctxt "OpenType layout"
 msgid "Pre-base Substitutions"
 msgstr "Substitutions antéposées"
 
-#: src/open-type-layout.h:91
+#: src/open-type-layout.h:110
 msgctxt "OpenType layout"
 msgid "Post-base Forms"
 msgstr "Formes postposées"
 
-#: src/open-type-layout.h:92
+#: src/open-type-layout.h:111
 msgctxt "OpenType layout"
 msgid "Post-base Substitutions"
 msgstr "Substitutions postposées"
 
-#: src/open-type-layout.h:93
+#: src/open-type-layout.h:112
 msgctxt "OpenType layout"
 msgid "Proportional Widths"
 msgstr "Largueurs proportionnelles"
 
-#: src/open-type-layout.h:94
+#: src/open-type-layout.h:113
 msgctxt "OpenType layout"
 msgid "Quarter Widths"
 msgstr "Quarts de largeur"
 
-#: src/open-type-layout.h:95
+#: src/open-type-layout.h:114
 msgctxt "OpenType layout"
 msgid "Randomize"
 msgstr "Au hasard"
 
-#: src/open-type-layout.h:96
+#: src/open-type-layout.h:115
 msgctxt "OpenType layout"
 msgid "Required Contextual Alternates"
 msgstr "Alternatives contextuelles requises"
 
-#: src/open-type-layout.h:97
+#: src/open-type-layout.h:116
 msgctxt "OpenType layout"
 msgid "Rakar Forms"
 msgstr "Formes Rakar"
 
-#: src/open-type-layout.h:98
+#: src/open-type-layout.h:117
 msgctxt "OpenType layout"
 msgid "Required Ligatures"
 msgstr "Ligatures requises"
 
-#: src/open-type-layout.h:99
+#: src/open-type-layout.h:118
 msgctxt "OpenType layout"
 msgid "Reph Forms"
 msgstr "Formes Reph"
 
-#: src/open-type-layout.h:100
+#: src/open-type-layout.h:119
 msgctxt "OpenType layout"
 msgid "Right Bounds"
 msgstr "Alignements à droite"
 
-#: src/open-type-layout.h:101
+#: src/open-type-layout.h:120
 msgctxt "OpenType layout"
 msgid "Right-to-left alternates"
 msgstr "Alternatives de droite à gauche"
 
-#: src/open-type-layout.h:102
+#: src/open-type-layout.h:121
 msgctxt "OpenType layout"
 msgid "Right-to-left mirrored forms"
 msgstr "Formes reflétées de droite à gauche"
 
-#: src/open-type-layout.h:103
+#: src/open-type-layout.h:122
 msgctxt "OpenType layout"
 msgid "Ruby Notation Forms"
 msgstr "Formes de notation Ruby"
 
-#: src/open-type-layout.h:104
+#: src/open-type-layout.h:123
 msgctxt "OpenType layout"
 msgid "Required Variation Alternates"
 msgstr "Alternatives de variation requises"
 
-#: src/open-type-layout.h:105
+#: src/open-type-layout.h:124
 msgctxt "OpenType layout"
 msgid "Stylistic Alternates"
 msgstr "Alternatives stylistiques"
 
-#: src/open-type-layout.h:106
+#: src/open-type-layout.h:125
 msgctxt "OpenType layout"
 msgid "Scientific Inferiors"
 msgstr "Indices scientifiques"
 
-#: src/open-type-layout.h:107
+#: src/open-type-layout.h:126
 msgctxt "OpenType layout"
 msgid "Optical size"
 msgstr "Taille optique"
 
-#: src/open-type-layout.h:108
+#: src/open-type-layout.h:127
 msgctxt "OpenType layout"
 msgid "Small Capitals"
 msgstr "Petites capitales"
 
-#: src/open-type-layout.h:109
+#: src/open-type-layout.h:128
 msgctxt "OpenType layout"
 msgid "Simplified Forms"
 msgstr "Formes simplifiées"
 
-#: src/open-type-layout.h:110
+#: src/open-type-layout.h:129
 msgctxt "OpenType layout"
 msgid "Stylistic Set 1"
 msgstr "Série stylistique 1"
 
-#: src/open-type-layout.h:111
+#: src/open-type-layout.h:130
 msgctxt "OpenType layout"
 msgid "Stylistic Set 2"
 msgstr "Série stylistique 2"
 
-#: src/open-type-layout.h:112
+#: src/open-type-layout.h:131
 msgctxt "OpenType layout"
 msgid "Stylistic Set 3"
 msgstr "Série stylistique 3"
 
-#: src/open-type-layout.h:113
+#: src/open-type-layout.h:132
 msgctxt "OpenType layout"
 msgid "Stylistic Set 4"
 msgstr "Série stylistique 4"
 
-#: src/open-type-layout.h:114
+#: src/open-type-layout.h:133
 msgctxt "OpenType layout"
 msgid "Stylistic Set 5"
 msgstr "Série stylistique 5"
 
-#: src/open-type-layout.h:115
+#: src/open-type-layout.h:134
 msgctxt "OpenType layout"
 msgid "Stylistic Set 6"
 msgstr "Série stylistique 6"
 
-#: src/open-type-layout.h:116
+#: src/open-type-layout.h:135
 msgctxt "OpenType layout"
 msgid "Stylistic Set 7"
 msgstr "Série stylistique 7"
 
-#: src/open-type-layout.h:117
+#: src/open-type-layout.h:136
 msgctxt "OpenType layout"
 msgid "Stylistic Set 8"
 msgstr "Série stylistique 8"
 
-#: src/open-type-layout.h:118
+#: src/open-type-layout.h:137
 msgctxt "OpenType layout"
 msgid "Stylistic Set 9"
 msgstr "Série stylistique 9"
 
-#: src/open-type-layout.h:119
+#: src/open-type-layout.h:138
 msgctxt "OpenType layout"
 msgid "Stylistic Set 10"
 msgstr "Série stylistique 10"
 
-#: src/open-type-layout.h:120
+#: src/open-type-layout.h:139
 msgctxt "OpenType layout"
 msgid "Stylistic Set 11"
 msgstr "Série stylistique 11"
 
-#: src/open-type-layout.h:121
+#: src/open-type-layout.h:140
 msgctxt "OpenType layout"
 msgid "Stylistic Set 12"
 msgstr "Série stylistique 12"
 
-#: src/open-type-layout.h:122
+#: src/open-type-layout.h:141
 msgctxt "OpenType layout"
 msgid "Stylistic Set 13"
 msgstr "Série stylistique 13"
 
-#: src/open-type-layout.h:123
+#: src/open-type-layout.h:142
 msgctxt "OpenType layout"
 msgid "Stylistic Set 14"
 msgstr "Série stylistique 14"
 
-#: src/open-type-layout.h:124
+#: src/open-type-layout.h:143
 msgctxt "OpenType layout"
 msgid "Stylistic Set 15"
 msgstr "Série stylistique 15"
 
-#: src/open-type-layout.h:125
+#: src/open-type-layout.h:144
 msgctxt "OpenType layout"
 msgid "Stylistic Set 16"
 msgstr "Série stylistique 16"
 
-#: src/open-type-layout.h:126
+#: src/open-type-layout.h:145
 msgctxt "OpenType layout"
 msgid "Stylistic Set 17"
 msgstr "Série stylistique 17"
 
-#: src/open-type-layout.h:127
+#: src/open-type-layout.h:146
 msgctxt "OpenType layout"
 msgid "Stylistic Set 18"
 msgstr "Série stylistique 18"
 
-#: src/open-type-layout.h:128
+#: src/open-type-layout.h:147
 msgctxt "OpenType layout"
 msgid "Stylistic Set 19"
 msgstr "Série stylistique 19"
 
-#: src/open-type-layout.h:129
+#: src/open-type-layout.h:148
 msgctxt "OpenType layout"
 msgid "Stylistic Set 20"
 msgstr "Série stylistique 20"
 
-#: src/open-type-layout.h:130
+#: src/open-type-layout.h:149
 msgctxt "OpenType layout"
 msgid "Math script style alternates"
 msgstr "Alternatives de style de script mathématique"
 
-#: src/open-type-layout.h:131
+#: src/open-type-layout.h:150
 msgctxt "OpenType layout"
 msgid "Stretching Glyph Decomposition"
 msgstr "Décomposition de glyphe étendue"
 
-#: src/open-type-layout.h:132
+#: src/open-type-layout.h:151
 msgctxt "OpenType layout"
 msgid "Subscript"
 msgstr "Indice"
 
-#: src/open-type-layout.h:133
+#: src/open-type-layout.h:152
 msgctxt "OpenType layout"
 msgid "Superscript"
 msgstr "Exposant"
 
-#: src/open-type-layout.h:134
+#: src/open-type-layout.h:153
 msgctxt "OpenType layout"
 msgid "Swash"
 msgstr "Forme calligraphique"
 
-#: src/open-type-layout.h:135
+#: src/open-type-layout.h:154
 msgctxt "OpenType layout"
 msgid "Titling"
 msgstr "Titrage"
 
-#: src/open-type-layout.h:136
+#: src/open-type-layout.h:155
 msgctxt "OpenType layout"
 msgid "Trailing Jamo Forms"
 msgstr "Formes Jamo finales"
 
-#: src/open-type-layout.h:137
+#: src/open-type-layout.h:156
 msgctxt "OpenType layout"
 msgid "Traditional Name Forms"
 msgstr "Formes traditionnelles de noms propres"
 
-#: src/open-type-layout.h:138
+#: src/open-type-layout.h:157
 msgctxt "OpenType layout"
 msgid "Tabular Figures"
 msgstr "Chiffres tabulaires"
 
-#: src/open-type-layout.h:139
+#: src/open-type-layout.h:158
 msgctxt "OpenType layout"
 msgid "Traditional Forms"
 msgstr "Formes traditionnelles"
 
-#: src/open-type-layout.h:140
+#: src/open-type-layout.h:159
 msgctxt "OpenType layout"
 msgid "Third Widths"
 msgstr "Tiers de largeur"
 
-#: src/open-type-layout.h:141
+#: src/open-type-layout.h:160
 msgctxt "OpenType layout"
 msgid "Unicase"
 msgstr "Unicase"
 
-#: src/open-type-layout.h:142
+#: src/open-type-layout.h:161
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Metrics"
 msgstr "Métriques verticales alternatives"
 
-#: src/open-type-layout.h:143
+#: src/open-type-layout.h:162
 msgctxt "OpenType layout"
 msgid "Vattu Variants"
 msgstr "Variantes Vattu"
 
-#: src/open-type-layout.h:144
+#: src/open-type-layout.h:163
 msgctxt "OpenType layout"
 msgid "Vertical Writing"
 msgstr "Écriture verticale"
 
-#: src/open-type-layout.h:145
+#: src/open-type-layout.h:164
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Half Metrics"
 msgstr "Demi-métriques verticales alternatives"
 
-#: src/open-type-layout.h:146
+#: src/open-type-layout.h:165
 msgctxt "OpenType layout"
 msgid "Vowel Jamo Forms"
 msgstr "Formes de voyelles Jamo"
 
-#: src/open-type-layout.h:147
+#: src/open-type-layout.h:166
 msgctxt "OpenType layout"
 msgid "Vertical Kana Alternates"
 msgstr "Alternatives Kana verticales"
 
-#: src/open-type-layout.h:148
+#: src/open-type-layout.h:167
 msgctxt "OpenType layout"
 msgid "Vertical Kerning"
 msgstr "Crénage vertical"
 
-#: src/open-type-layout.h:149
+#: src/open-type-layout.h:168
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Vertical Metrics"
 msgstr "Métriques verticales alternatives proportionnelles"
 
-#: src/open-type-layout.h:150
+#: src/open-type-layout.h:169
 msgctxt "OpenType layout"
 msgid "Vertical Alternates and Rotation"
 msgstr "Alternatives verticales et rotation"
 
-#: src/open-type-layout.h:151
+#: src/open-type-layout.h:170
 msgctxt "OpenType layout"
 msgid "Vertical Alternates for Rotation"
 msgstr "Alternatives verticales pour rotation"
 
-#: src/open-type-layout.h:152
+#: src/open-type-layout.h:171
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Zéro barré"
