@@ -522,7 +522,7 @@ msgstr "hangul"
 #: src/open-type-layout.h:72
 msgctxt "OpenType layout"
 msgid "Hojo Kanji Forms"
-msgstr "formy džójó kandži"
+msgstr "formy hodžo kandži"
 
 #: src/open-type-layout.h:73
 msgctxt "OpenType layout"
