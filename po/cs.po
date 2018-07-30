@@ -307,7 +307,7 @@ msgstr "vystředěná interpunkce CJK"
 #: src/open-type-layout.h:29
 msgctxt "OpenType layout"
 msgid "Capital Spacing"
-msgstr "kapitálkové mezery"
+msgstr "rozestupy velkých písmen"
 
 #: src/open-type-layout.h:30
 msgctxt "OpenType layout"
@@ -327,7 +327,7 @@ msgstr "petitové kapitálky z kapitálek"
 #: src/open-type-layout.h:33
 msgctxt "OpenType layout"
 msgid "Small Capitals From Capitals"
-msgstr "malé kapitálky z kapitálek"
+msgstr "kapitálky z velkých písmen"
 
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
@@ -432,7 +432,7 @@ msgstr "vzdálenosti"
 #: src/open-type-layout.h:54
 msgctxt "OpenType layout"
 msgid "Discretionary Ligatures"
-msgstr "vlastní slitky"
+msgstr "volitelné slitky"
 
 #: src/open-type-layout.h:55
 msgctxt "OpenType layout"
@@ -592,7 +592,7 @@ msgstr "počáteční formy jamo"
 #: src/open-type-layout.h:86
 msgctxt "OpenType layout"
 msgid "Lining Figures"
-msgstr "tabulární verzálkové číslice"
+msgstr "verzálkové číslice"
 
 #: src/open-type-layout.h:87
 msgctxt "OpenType layout"
@@ -627,7 +627,7 @@ msgstr "středové formy"
 #: src/open-type-layout.h:93
 msgctxt "OpenType layout"
 msgid "Mathematical Greek"
-msgstr "matematická řečtina"
+msgstr "matematické řecké"
 
 #: src/open-type-layout.h:94
 msgctxt "OpenType layout"
@@ -662,7 +662,7 @@ msgstr "čitatelé"
 #: src/open-type-layout.h:100
 msgctxt "OpenType layout"
 msgid "Oldstyle Figures"
-msgstr "proporcionální skákavé číslice"
+msgstr "skákavé číslice"
 
 #: src/open-type-layout.h:101
 msgctxt "OpenType layout"
@@ -672,7 +672,7 @@ msgstr "optické vystrčení"
 #: src/open-type-layout.h:102
 msgctxt "OpenType layout"
 msgid "Ordinals"
-msgstr "pořadové číslovky"
+msgstr "řadové číslovky"
 
 #: src/open-type-layout.h:103
 msgctxt "OpenType layout"
@@ -697,7 +697,7 @@ msgstr "proporcionální kana"
 #: src/open-type-layout.h:107
 msgctxt "OpenType layout"
 msgid "Proportional Figures"
-msgstr "proporcionální verzálkové číslice"
+msgstr "proporcionální číslice"
 
 #: src/open-type-layout.h:108
 msgctxt "OpenType layout"
@@ -772,7 +772,7 @@ msgstr "zprava doleva zrcadlené formy"
 #: src/open-type-layout.h:122
 msgctxt "OpenType layout"
 msgid "Ruby Notation Forms"
-msgstr "národní formy ruby"
+msgstr "formy notace ruby"
 
 #: src/open-type-layout.h:123
 msgctxt "OpenType layout"
@@ -797,7 +797,7 @@ msgstr "optická velikost"
 #: src/open-type-layout.h:127
 msgctxt "OpenType layout"
 msgid "Small Capitals"
-msgstr "malé kapitálky"
+msgstr "kapitálky"
 
 #: src/open-type-layout.h:128
 msgctxt "OpenType layout"
@@ -947,7 +947,7 @@ msgstr "tradiční formy pro jména"
 #: src/open-type-layout.h:157
 msgctxt "OpenType layout"
 msgid "Tabular Figures"
-msgstr "tabulární skákavé číslice"
+msgstr "tabulární číslice"
 
 #: src/open-type-layout.h:158
 msgctxt "OpenType layout"
