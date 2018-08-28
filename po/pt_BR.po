@@ -19,15 +19,15 @@
 # Rodrigo Padula de Oliveira <contato@rodrigopadula.com>, 2011.
 # André Gondim <In memoriam>, 2011.
 # Breno Felipe Morais de Santana <breno_info@globomail.com>, 2012.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2012, 2017-2018.
 # Enrico Nicoletto <liverig@gmail.com>, 2013, 2014.
 # Fábio Nogueira <deb-user-ba@ubuntu.com>, 2014.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2012, 2017-2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2018-04-24 22:22+0000\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
+"issues\n"
+"POT-Creation-Date: 2018-07-19 14:17+0000\n"
 "PO-Revision-Date: 2018-04-28 04:56-0200\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
@@ -252,7 +252,6 @@ msgstr "fontes;tipo de fonte;tipo da fonte;"
 msgid "preferences-desktop-font"
 msgstr "preferences-desktop-font"
 
-# https://web.archive.org/web/20170324180402/http://www.microsoft.com:80/typography/otspec/features_ae.htm#aalt
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
 msgid "Access All Alternates"
@@ -266,7 +265,7 @@ msgstr "Formas sobrescritas"
 #: src/open-type-layout.h:15
 msgctxt "OpenType layout"
 msgid "Above-base Mark Positioning"
-msgstr "Posicionamento de parca sobre a base"
+msgstr "Posicionamento de marca sobre a base"
 
 #: src/open-type-layout.h:16
 msgctxt "OpenType layout"
@@ -291,7 +290,7 @@ msgstr "Formas abaixo da base"
 #: src/open-type-layout.h:20
 msgctxt "OpenType layout"
 msgid "Below-base Mark Positioning"
-msgstr "Posicionamento de parca abaixo da base"
+msgstr "Posicionamento de marca abaixo da base"
 
 #: src/open-type-layout.h:21
 msgctxt "OpenType layout"
@@ -331,7 +330,7 @@ msgstr "Ligaduras contextuais"
 #: src/open-type-layout.h:28
 msgctxt "OpenType layout"
 msgid "Centered CJK Punctuation"
-msgstr "Pontuação CJK centrada"
+msgstr "Pontuação CJK centralizada"
 
 #: src/open-type-layout.h:29
 msgctxt "OpenType layout"
@@ -341,7 +340,7 @@ msgstr "Espaçamento para letras maiúsculas"
 #: src/open-type-layout.h:30
 msgctxt "OpenType layout"
 msgid "Contextual Swash"
-msgstr "Espraiado contextual"
+msgstr "Espraiamento contextual"
 
 #: src/open-type-layout.h:31
 msgctxt "OpenType layout"
@@ -349,14 +348,14 @@ msgid "Cursive Positioning"
 msgstr "Posicionamento cursivo"
 
 # Versaletes, em tipografia, são caracteres maiúsculos com as mesmas
-# dimensões de caracteres minúsculos; não diferença entre small e petite --Rafael
+# dimensões de caracteres minúsculos; sem diferença entre small e petite --Rafael
 #: src/open-type-layout.h:32
 msgctxt "OpenType layout"
 msgid "Petite Capitals From Capitals"
 msgstr "Versaletes (petite) de maiúsculos"
 
 # Versaletes, em tipografia, são caracteres maiúsculos com as mesmas
-# dimensões de caracteres minúsculos; não diferença entre small e petite --Rafael
+# dimensões de caracteres minúsculos; sem diferença entre small e petite --Rafael
 #: src/open-type-layout.h:33
 msgctxt "OpenType layout"
 msgid "Small Capitals From Capitals"
@@ -480,7 +479,7 @@ msgstr "Formas sem ponto"
 #: src/open-type-layout.h:57
 msgctxt "OpenType layout"
 msgid "Expert Forms"
-msgstr "Formas expertas"
+msgstr "Formas de especialistas"
 
 #: src/open-type-layout.h:58
 msgctxt "OpenType layout"
@@ -495,7 +494,7 @@ msgstr "Formas de terminal #2"
 #: src/open-type-layout.h:60
 msgctxt "OpenType layout"
 msgid "Terminal Forms #3"
-msgstr "Formas de terminal #2"
+msgstr "Formas de terminal #3"
 
 #: src/open-type-layout.h:61
 msgctxt "OpenType layout"
@@ -723,7 +722,7 @@ msgstr "Larguras proporcionais de alternativas"
 #: src/open-type-layout.h:105
 msgctxt "OpenType layout"
 msgid "Petite Capitals"
-msgstr "Versaletes"
+msgstr "Versaletes (petite)"
 
 #: src/open-type-layout.h:106
 msgctxt "OpenType layout"
@@ -823,7 +822,7 @@ msgstr "Alternativas estilísticas"
 #: src/open-type-layout.h:125
 msgctxt "OpenType layout"
 msgid "Scientific Inferiors"
-msgstr "Inferiores científiscos"
+msgstr "Inferiores científicos"
 
 #: src/open-type-layout.h:126
 msgctxt "OpenType layout"
@@ -843,102 +842,102 @@ msgstr "Formas simplificadas"
 #: src/open-type-layout.h:129
 msgctxt "OpenType layout"
 msgid "Stylistic Set 1"
-msgstr "Conjunto de estilísticas 1"
+msgstr "Conjunto estilístico 1"
 
 #: src/open-type-layout.h:130
 msgctxt "OpenType layout"
 msgid "Stylistic Set 2"
-msgstr "Conjunto de estilísticas 2"
+msgstr "Conjunto estilístico 2"
 
 #: src/open-type-layout.h:131
 msgctxt "OpenType layout"
 msgid "Stylistic Set 3"
-msgstr "Conjunto de estilísticas 3"
+msgstr "Conjunto estilístico 3"
 
 #: src/open-type-layout.h:132
 msgctxt "OpenType layout"
 msgid "Stylistic Set 4"
-msgstr "Conjunto de estilísticas 4"
+msgstr "Conjunto estilístico 4"
 
 #: src/open-type-layout.h:133
 msgctxt "OpenType layout"
 msgid "Stylistic Set 5"
-msgstr "Conjunto de estilísticas 5"
+msgstr "Conjunto estilístico 5"
 
 #: src/open-type-layout.h:134
 msgctxt "OpenType layout"
 msgid "Stylistic Set 6"
-msgstr "Conjunto de estilísticas 6"
+msgstr "Conjunto estilístico 6"
 
 #: src/open-type-layout.h:135
 msgctxt "OpenType layout"
 msgid "Stylistic Set 7"
-msgstr "Conjunto de estilísticas 7"
+msgstr "Conjunto estilístico 7"
 
 #: src/open-type-layout.h:136
 msgctxt "OpenType layout"
 msgid "Stylistic Set 8"
-msgstr "Conjunto de estilísticas 8"
+msgstr "Conjunto estilístico 8"
 
 #: src/open-type-layout.h:137
 msgctxt "OpenType layout"
 msgid "Stylistic Set 9"
-msgstr "Conjunto de estilísticas 9"
+msgstr "Conjunto estilístico 9"
 
 #: src/open-type-layout.h:138
 msgctxt "OpenType layout"
 msgid "Stylistic Set 10"
-msgstr "Conjunto de estilísticas 10"
+msgstr "Conjunto estilístico 10"
 
 #: src/open-type-layout.h:139
 msgctxt "OpenType layout"
 msgid "Stylistic Set 11"
-msgstr "Conjunto de estilísticas 11"
+msgstr "Conjunto estilístico 11"
 
 #: src/open-type-layout.h:140
 msgctxt "OpenType layout"
 msgid "Stylistic Set 12"
-msgstr "Conjunto de estilísticas 12"
+msgstr "Conjunto estilístico 12"
 
 #: src/open-type-layout.h:141
 msgctxt "OpenType layout"
 msgid "Stylistic Set 13"
-msgstr "Conjunto de estilísticas 13"
+msgstr "Conjunto estilístico 13"
 
 #: src/open-type-layout.h:142
 msgctxt "OpenType layout"
 msgid "Stylistic Set 14"
-msgstr "Conjunto de estilísticas 14"
+msgstr "Conjunto estilístico 14"
 
 #: src/open-type-layout.h:143
 msgctxt "OpenType layout"
 msgid "Stylistic Set 15"
-msgstr "Conjunto de estilísticas 15"
+msgstr "Conjunto estilístico 15"
 
 #: src/open-type-layout.h:144
 msgctxt "OpenType layout"
 msgid "Stylistic Set 16"
-msgstr "Conjunto de estilísticas 16"
+msgstr "Conjunto estilístico 16"
 
 #: src/open-type-layout.h:145
 msgctxt "OpenType layout"
 msgid "Stylistic Set 17"
-msgstr "Conjunto de estilísticas 17"
+msgstr "Conjunto estilístico 17"
 
 #: src/open-type-layout.h:146
 msgctxt "OpenType layout"
 msgid "Stylistic Set 18"
-msgstr "Conjunto de estilísticas 18"
+msgstr "Conjunto estilístico 18"
 
 #: src/open-type-layout.h:147
 msgctxt "OpenType layout"
 msgid "Stylistic Set 19"
-msgstr "Conjunto de estilísticas 19"
+msgstr "Conjunto estilístico 19"
 
 #: src/open-type-layout.h:148
 msgctxt "OpenType layout"
 msgid "Stylistic Set 20"
-msgstr "Conjunto de estilísticas 20"
+msgstr "Conjunto estilístico 20"
 
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
@@ -978,7 +977,7 @@ msgstr "Formas de Jamo ao final"
 #: src/open-type-layout.h:156
 msgctxt "OpenType layout"
 msgid "Traditional Name Forms"
-msgstr "Formas de nome traducional"
+msgstr "Formas de nome tradicional"
 
 #: src/open-type-layout.h:157
 msgctxt "OpenType layout"
@@ -1003,7 +1002,7 @@ msgstr "Tamanho único"
 #: src/open-type-layout.h:161
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Metrics"
-msgstr "Métricas verticais alternativas"
+msgstr "Medida vertical alternativa"
 
 #: src/open-type-layout.h:162
 msgctxt "OpenType layout"
@@ -1018,7 +1017,7 @@ msgstr "Escrita vertical"
 #: src/open-type-layout.h:164
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Half Metrics"
-msgstr "Meias métricas verticais alternativas"
+msgstr "Meia medida vertical alternativa"
 
 #: src/open-type-layout.h:165
 msgctxt "OpenType layout"
@@ -1038,17 +1037,17 @@ msgstr "Kerning vertical"
 #: src/open-type-layout.h:168
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Vertical Metrics"
-msgstr "Métricas proporcionais verticais alternativas"
+msgstr "Medida proporcional vertical alternativa"
 
 #: src/open-type-layout.h:169
 msgctxt "OpenType layout"
 msgid "Vertical Alternates and Rotation"
-msgstr "Rotação e alternativas verticais"
+msgstr "Alternativas verticais e rotação"
 
 #: src/open-type-layout.h:170
 msgctxt "OpenType layout"
 msgid "Vertical Alternates for Rotation"
-msgstr "Rotação para alternativas verticais"
+msgstr "Alternativas verticais para rotação"
 
 #: src/open-type-layout.h:171
 msgctxt "OpenType layout"
