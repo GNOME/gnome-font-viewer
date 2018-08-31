@@ -8,11 +8,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2018-02-09 00:30+0000\n"
-"PO-Revision-Date: 2018-02-19 00:45+0000\n"
-"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
+"issues\n"
+"POT-Creation-Date: 2018-08-30 16:41+0000\n"
+"PO-Revision-Date: 2018-08-31 09:44+0700\n"
+"Last-Translator: Kukuh Syafaat <kukuhsyafaat@gnome.org>\n"
 "Language-Team: GNOME Indonesian Translation Team <gnome@i15n.org>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
@@ -206,7 +206,7 @@ msgstr ""
 "Mohammad DAMT <mdamt@bisnisweb.com>, 2003-2005.\n"
 "Dirgita <dirgitadevina@yahoo.co.id>, 2011.\n"
 "Andika Triwidada <andika@gmail.com>, 2010-2014, 2018.\n"
-"Kukuh Syafaat <syafaatkukuh@gmail.com>, 2017."
+"Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2017, 2018."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in:6
@@ -281,12 +281,12 @@ msgstr "Komposisi / Dekomposisi Glyph"
 #: src/open-type-layout.h:25
 msgctxt "OpenType layout"
 msgid "Conjunct Form After Ro"
-msgstr ""
+msgstr "Bentuk Konjungsi Setelah Ro"
 
 #: src/open-type-layout.h:26
 msgctxt "OpenType layout"
 msgid "Conjunct Forms"
-msgstr ""
+msgstr "Bentuk Konjungsi"
 
 #: src/open-type-layout.h:27
 msgctxt "OpenType layout"
@@ -296,17 +296,17 @@ msgstr "Ligatura Kontekstual"
 #: src/open-type-layout.h:28
 msgctxt "OpenType layout"
 msgid "Centered CJK Punctuation"
-msgstr ""
+msgstr "Tanda Baca CJK Terpusat"
 
 #: src/open-type-layout.h:29
 msgctxt "OpenType layout"
 msgid "Capital Spacing"
-msgstr ""
+msgstr "Spasi Kapital"
 
 #: src/open-type-layout.h:30
 msgctxt "OpenType layout"
 msgid "Contextual Swash"
-msgstr ""
+msgstr "Swash Kontekstual"
 
 #: src/open-type-layout.h:31
 msgctxt "OpenType layout"
@@ -316,12 +316,12 @@ msgstr "Peletakan Kursif"
 #: src/open-type-layout.h:32
 msgctxt "OpenType layout"
 msgid "Petite Capitals From Capitals"
-msgstr ""
+msgstr "Kapital Mungil Dari Kapital"
 
 #: src/open-type-layout.h:33
 msgctxt "OpenType layout"
 msgid "Small Capitals From Capitals"
-msgstr ""
+msgstr "Kapital Kecil Dari Kapital"
 
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
@@ -341,37 +341,37 @@ msgstr "Denominator"
 #: src/open-type-layout.h:37
 msgctxt "OpenType layout"
 msgid "Dotless Forms"
-msgstr ""
+msgstr "Bentuk tanpa titik"
 
 #: src/open-type-layout.h:38
 msgctxt "OpenType layout"
 msgid "Expert Forms"
-msgstr ""
+msgstr "Bentuk Ahli"
 
 #: src/open-type-layout.h:39
 msgctxt "OpenType layout"
 msgid "Final Glyph on Line Alternates"
-msgstr ""
+msgstr "Glyph Akhir pada Alternatif Baris"
 
 #: src/open-type-layout.h:40
 msgctxt "OpenType layout"
 msgid "Terminal Forms #2"
-msgstr ""
+msgstr "Bentuk Terminal #2"
 
 #: src/open-type-layout.h:41
 msgctxt "OpenType layout"
 msgid "Terminal Forms #3"
-msgstr ""
+msgstr "Bentuk Terminal #3"
 
 #: src/open-type-layout.h:42
 msgctxt "OpenType layout"
 msgid "Terminal Forms"
-msgstr ""
+msgstr "Bentuk Terminal"
 
 #: src/open-type-layout.h:43
 msgctxt "OpenType layout"
 msgid "Flattened accent forms"
-msgstr ""
+msgstr "Bentuk-bentuk aksen diratakan"
 
 #: src/open-type-layout.h:44
 msgctxt "OpenType layout"
@@ -431,22 +431,22 @@ msgstr "Lebar Separuh"
 #: src/open-type-layout.h:55
 msgctxt "OpenType layout"
 msgid "Initial Forms"
-msgstr ""
+msgstr "Bentuk Awal"
 
 #: src/open-type-layout.h:56
 msgctxt "OpenType layout"
 msgid "Isolated Forms"
-msgstr ""
+msgstr "Bentuk Terisolasi"
 
 #: src/open-type-layout.h:57
 msgctxt "OpenType layout"
 msgid "Italics"
-msgstr ""
+msgstr "Miring"
 
 #: src/open-type-layout.h:58
 msgctxt "OpenType layout"
 msgid "Justification Alternates"
-msgstr ""
+msgstr "Alternatif Perataan"
 
 #: src/open-type-layout.h:59
 msgctxt "OpenType layout"
@@ -476,7 +476,7 @@ msgstr "Kerning"
 #: src/open-type-layout.h:64
 msgctxt "OpenType layout"
 msgid "Left Bounds"
-msgstr ""
+msgstr "Batas Kiri"
 
 #: src/open-type-layout.h:65
 msgctxt "OpenType layout"
@@ -486,17 +486,17 @@ msgstr "Ligatura Standar"
 #: src/open-type-layout.h:66
 msgctxt "OpenType layout"
 msgid "Leading Jamo Forms"
-msgstr ""
+msgstr "Bentuk Jamo yang Mendahului"
 
 #: src/open-type-layout.h:67
 msgctxt "OpenType layout"
 msgid "Lining Figures"
-msgstr ""
+msgstr "Angka Lining"
 
 #: src/open-type-layout.h:68
 msgctxt "OpenType layout"
 msgid "Localized Forms"
-msgstr ""
+msgstr "Bentuk Dilokalkan"
 
 #: src/open-type-layout.h:69
 msgctxt "OpenType layout"
@@ -511,17 +511,17 @@ msgstr "Bentuk dicerminkan kiri-ke-kanan"
 #: src/open-type-layout.h:71
 msgctxt "OpenType layout"
 msgid "Mark Positioning"
-msgstr ""
+msgstr "Peletakan Tanda"
 
 #: src/open-type-layout.h:72
 msgctxt "OpenType layout"
 msgid "Medial Forms #2"
-msgstr ""
+msgstr "Bentuk Menengah #2"
 
 #: src/open-type-layout.h:73
 msgctxt "OpenType layout"
 msgid "Medial Forms"
-msgstr ""
+msgstr "Bentuk Menengah"
 
 #: src/open-type-layout.h:74
 msgctxt "OpenType layout"
@@ -531,12 +531,12 @@ msgstr "Yunani Matematis"
 #: src/open-type-layout.h:75
 msgctxt "OpenType layout"
 msgid "Mark to Mark Positioning"
-msgstr ""
+msgstr "Peletakan Tanda ke Tanda"
 
 #: src/open-type-layout.h:76
 msgctxt "OpenType layout"
 msgid "Mark Positioning via Substitution"
-msgstr ""
+msgstr "Peletakan Tanda melalui Substitusi"
 
 #: src/open-type-layout.h:77
 msgctxt "OpenType layout"
@@ -561,12 +561,12 @@ msgstr "Numerator"
 #: src/open-type-layout.h:81
 msgctxt "OpenType layout"
 msgid "Oldstyle Figures"
-msgstr ""
+msgstr "Angka Gaya Lama"
 
 #: src/open-type-layout.h:82
 msgctxt "OpenType layout"
 msgid "Optical Bounds"
-msgstr ""
+msgstr "Batas Optik"
 
 #: src/open-type-layout.h:83
 msgctxt "OpenType layout"
@@ -581,12 +581,12 @@ msgstr "Ornamen"
 #: src/open-type-layout.h:85
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Widths"
-msgstr ""
+msgstr "Lebar Alternatif Proporsional"
 
 #: src/open-type-layout.h:86
 msgctxt "OpenType layout"
 msgid "Petite Capitals"
-msgstr ""
+msgstr "Kapital Mungil"
 
 #: src/open-type-layout.h:87
 msgctxt "OpenType layout"
@@ -596,27 +596,27 @@ msgstr "Kana Proporsional"
 #: src/open-type-layout.h:88
 msgctxt "OpenType layout"
 msgid "Proportional Figures"
-msgstr ""
+msgstr "Angka Proporsional"
 
 #: src/open-type-layout.h:89
 msgctxt "OpenType layout"
 msgid "Pre-Base Forms"
-msgstr ""
+msgstr "Bentuk Pra Basis"
 
 #: src/open-type-layout.h:90
 msgctxt "OpenType layout"
 msgid "Pre-base Substitutions"
-msgstr ""
+msgstr "Substitusi Pra Basis"
 
 #: src/open-type-layout.h:91
 msgctxt "OpenType layout"
 msgid "Post-base Forms"
-msgstr ""
+msgstr "Bentuk Pasca Basis"
 
 #: src/open-type-layout.h:92
 msgctxt "OpenType layout"
 msgid "Post-base Substitutions"
-msgstr ""
+msgstr "Substitusi Pasca Basis"
 
 #: src/open-type-layout.h:93
 msgctxt "OpenType layout"
@@ -631,12 +631,12 @@ msgstr "Lebar Seperempat"
 #: src/open-type-layout.h:95
 msgctxt "OpenType layout"
 msgid "Randomize"
-msgstr ""
+msgstr "Mengacak"
 
 #: src/open-type-layout.h:96
 msgctxt "OpenType layout"
 msgid "Required Contextual Alternates"
-msgstr ""
+msgstr "Alternatif Kontekstual yang Diperlukan"
 
 #: src/open-type-layout.h:97
 msgctxt "OpenType layout"
@@ -656,7 +656,7 @@ msgstr "Bentuk Reph"
 #: src/open-type-layout.h:100
 msgctxt "OpenType layout"
 msgid "Right Bounds"
-msgstr ""
+msgstr "Batas Kanan"
 
 #: src/open-type-layout.h:101
 msgctxt "OpenType layout"
@@ -671,32 +671,32 @@ msgstr "Bentuk dicerminkan kanan-ke-kiri"
 #: src/open-type-layout.h:103
 msgctxt "OpenType layout"
 msgid "Ruby Notation Forms"
-msgstr ""
+msgstr "Bentuk Notasi Ruby"
 
 #: src/open-type-layout.h:104
 msgctxt "OpenType layout"
 msgid "Required Variation Alternates"
-msgstr ""
+msgstr "Alternatif Variasi yang Diperlukan"
 
 #: src/open-type-layout.h:105
 msgctxt "OpenType layout"
 msgid "Stylistic Alternates"
-msgstr ""
+msgstr "Alternatif Bergaya"
 
 #: src/open-type-layout.h:106
 msgctxt "OpenType layout"
 msgid "Scientific Inferiors"
-msgstr ""
+msgstr "Inferior Ilmiah"
 
 #: src/open-type-layout.h:107
 msgctxt "OpenType layout"
 msgid "Optical size"
-msgstr ""
+msgstr "Ukuran optik"
 
 #: src/open-type-layout.h:108
 msgctxt "OpenType layout"
 msgid "Small Capitals"
-msgstr ""
+msgstr "Kapital Kecil"
 
 #: src/open-type-layout.h:109
 msgctxt "OpenType layout"
@@ -806,12 +806,12 @@ msgstr "Set Bergaya 20"
 #: src/open-type-layout.h:130
 msgctxt "OpenType layout"
 msgid "Math script style alternates"
-msgstr ""
+msgstr "Alternatif gaya skrip matematika"
 
 #: src/open-type-layout.h:131
 msgctxt "OpenType layout"
 msgid "Stretching Glyph Decomposition"
-msgstr ""
+msgstr "Dekomposisi Glyph Meregang"
 
 #: src/open-type-layout.h:132
 msgctxt "OpenType layout"
@@ -826,27 +826,27 @@ msgstr "Superskrip"
 #: src/open-type-layout.h:134
 msgctxt "OpenType layout"
 msgid "Swash"
-msgstr ""
+msgstr "Swash"
 
 #: src/open-type-layout.h:135
 msgctxt "OpenType layout"
 msgid "Titling"
-msgstr ""
+msgstr "Penjudulan"
 
 #: src/open-type-layout.h:136
 msgctxt "OpenType layout"
 msgid "Trailing Jamo Forms"
-msgstr ""
+msgstr "Bentuk Jamo yang Mengikuti"
 
 #: src/open-type-layout.h:137
 msgctxt "OpenType layout"
 msgid "Traditional Name Forms"
-msgstr ""
+msgstr "Bentuk Nama Tradisional"
 
 #: src/open-type-layout.h:138
 msgctxt "OpenType layout"
 msgid "Tabular Figures"
-msgstr ""
+msgstr "Angka Tabular"
 
 #: src/open-type-layout.h:139
 msgctxt "OpenType layout"
@@ -861,7 +861,7 @@ msgstr "Lebar Sepertiga"
 #: src/open-type-layout.h:141
 msgctxt "OpenType layout"
 msgid "Unicase"
-msgstr ""
+msgstr "Unicase"
 
 #: src/open-type-layout.h:142
 msgctxt "OpenType layout"
@@ -886,7 +886,7 @@ msgstr "Metrik Separuh Vertikal Alternatif"
 #: src/open-type-layout.h:146
 msgctxt "OpenType layout"
 msgid "Vowel Jamo Forms"
-msgstr ""
+msgstr "Bentuk Jamo Vowel"
 
 #: src/open-type-layout.h:147
 msgctxt "OpenType layout"
