@@ -7,7 +7,6 @@ project('gnome-font-viewer', 'c',
 cc = meson.get_compiler('c')
 
 gnome = import('gnome')
-i18n = import('i18n')
 
 prefix = get_option('prefix')
 
@@ -18,7 +17,6 @@ localedir = join_paths(prefix, get_option('localedir'))
 
 pkgdatadir = join_paths(datadir, meson.project_name())
 
-appdatadir = join_paths(datadir, 'metainfo')
 desktopdir = join_paths(datadir, 'applications')
 servicesdir = join_paths(datadir, 'dbus-1', 'services')
 thumbnailerdir = join_paths(datadir, 'thumbnailers')
@@ -42,15 +40,6 @@ config_h.set_quoted('GNOMELOCALEDIR', localedir)
 configure_file(output: 'config.h', configuration: config_h)
 
 root_inc = include_directories('.')
-
-appdata_file = 'org.gnome.font-viewer.appdata.xml'
-i18n.merge_file(appdata_file,
-  input: 'data/' + appdata_file + '.in',
-  output: appdata_file,
-  po_dir: 'po',
-  install: true,
-  install_dir: appdatadir
-)
 
 subdir('src')
 subdir('po')
