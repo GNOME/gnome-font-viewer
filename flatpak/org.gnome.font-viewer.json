@@ -38,7 +38,8 @@
             "sources": [
                 {
                     "type": "git",
-                    "path": ".."
+                    "path": "..",
+                    "branch": "HEAD"
 		}
             ]
         }
