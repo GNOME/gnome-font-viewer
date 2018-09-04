@@ -7,6 +7,7 @@ project('gnome-font-viewer', 'c',
 cc = meson.get_compiler('c')
 
 gnome = import('gnome')
+i18n = import('i18n')
 
 prefix = get_option('prefix')
 
