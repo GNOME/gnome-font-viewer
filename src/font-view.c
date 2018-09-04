@@ -45,6 +45,8 @@
 #define FONT_VIEW_APPLICATION(obj) \
   (G_TYPE_CHECK_INSTANCE_CAST ((obj), FONT_VIEW_TYPE_APPLICATION, FontViewApplication))
 
+#define FONT_VIEW_ICON_NAME "org.gnome.font-viewer"
+
 typedef struct {
     GtkApplication parent;
 
@@ -1064,7 +1066,7 @@ action_about (GSimpleAction *action,
                            "authors", authors,
                            "program-name", _("Fonts"),
                            "comments", _("View fonts on your system"),
-                           "logo-icon-name", "preferences-desktop-font",
+                           "logo-icon-name", FONT_VIEW_ICON_NAME,
                            "translator-credits", _("translator-credits"),
                            "license-type", GTK_LICENSE_GPL_2_0,
                            "wrap-license", TRUE,
@@ -1095,7 +1097,7 @@ ensure_window (FontViewApplication *self)
     self->main_window = window = gtk_application_window_new (GTK_APPLICATION (self));
     gtk_window_set_resizable (GTK_WINDOW (window), TRUE);
     gtk_window_set_default_size (GTK_WINDOW (window), 800, 600);
-    gtk_window_set_icon_name (GTK_WINDOW (window), "preferences-desktop-font");
+    gtk_window_set_icon_name (GTK_WINDOW (window), FONT_VIEW_ICON_NAME);
 
     self->header = gtk_header_bar_new ();
     gtk_header_bar_set_show_close_button (GTK_HEADER_BAR (self->header), TRUE);
