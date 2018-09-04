@@ -4,7 +4,7 @@ Comment=View fonts on your system
 # Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 Keywords=fonts;fontface;
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-Icon=preferences-desktop-font
+Icon=org.gnome.font-viewer
 Exec=gnome-font-viewer %u
 Terminal=false
 Type=Application
