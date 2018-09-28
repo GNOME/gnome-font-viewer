@@ -52,6 +52,20 @@ i18n.merge_file(appdata_file,
   install_dir: appdatadir
 )
 
+install_data('data/org.gnome.font-viewer-48.png',
+  install_dir: join_paths(datadir, 'icons', 'hicolor', '48x48', 'apps'),
+  rename: 'org.gnome.font-viewer.png' 
+)
+
+install_data('data/org.gnome.font-viewer-256.png',
+  install_dir: join_paths(datadir, 'icons', 'hicolor', '256x256', 'apps'),
+  rename: 'org.gnome.font-viewer.png' 
+)
+
+install_data('data/org.gnome.font-viewer-symbolic.svg',
+  install_dir: join_paths(datadir, 'icons', 'hicolor', 'symbolic', 'apps'),
+)
+
 subdir('src')
 subdir('po')
 
