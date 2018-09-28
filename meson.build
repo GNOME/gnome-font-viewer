@@ -42,6 +42,29 @@ configure_file(output: 'config.h', configuration: config_h)
 
 root_inc = include_directories('.')
 
+appdata_file = 'org.gnome.font-viewer.appdata.xml'
+i18n.merge_file(appdata_file,
+  input: 'data/' + appdata_file + '.in',
+  output: appdata_file,
+  po_dir: 'po',
+  install: true,
+  install_dir: appdatadir
+)
+
+install_data('data/org.gnome.font-viewer-48.png',
+  install_dir: join_paths(datadir, 'icons', 'hicolor', '48x48', 'apps'),
+  rename: 'org.gnome.font-viewer.png' 
+)
+
+install_data('data/org.gnome.font-viewer-256.png',
+  install_dir: join_paths(datadir, 'icons', 'hicolor', '256x256', 'apps'),
+  rename: 'org.gnome.font-viewer.png' 
+)
+
+install_data('data/org.gnome.font-viewer-symbolic.svg',
+  install_dir: join_paths(datadir, 'icons', 'hicolor', 'symbolic', 'apps'),
+)
+
 subdir('src')
 subdir('po')
 subdir('data')
