@@ -19,7 +19,7 @@
     </p>
   </description>
   <url type="homepage">http://www.gnome.org/gnome-3/</url>
-  <url type="bugtracker">https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer</url>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues</url>
   <url type="donation">http://www.gnome.org/friends/</url>
   <screenshots>
     <screenshot type="default">
@@ -34,6 +34,13 @@
   </kudos>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="3.30.0" date="2018-08-30">
+      <description>
+        <ul>
+          <li>Show more OpenType features</li>
+          <li>Translation updates</li>
+        </ul>
+      </description>
     <release version="3.28.0" date="2018-03-13">
       <description>
         <ul>
