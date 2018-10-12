@@ -72,6 +72,7 @@ struct _FontViewApplication {
     GtkWidget *search_bar;
     GtkWidget *search_entry;
     GtkWidget *search_toggle;
+    GtkWidget *menu_button;
 
     GtkTreeModel *model;
     GtkTreeModel *filter_model;
@@ -887,6 +888,7 @@ font_view_application_do_open (FontViewApplication *self,
     }
 
     gtk_widget_hide (self->search_toggle);
+    gtk_widget_hide (self->menu_button);
 
     uri = g_file_get_uri (file);
 
@@ -983,6 +985,7 @@ font_view_application_do_overview (FontViewApplication *self)
     }
 
     gtk_widget_show (self->search_toggle);
+    gtk_widget_show (self->menu_button);
 
     font_view_ensure_model (self);
 
@@ -1138,6 +1141,8 @@ static void
 ensure_window (FontViewApplication *self)
 {
     GtkWidget *window, *swin, *box, *image;
+    GtkBuilder *builder;
+    GMenuModel *menu;
 
     if (self->main_window)
         return;
@@ -1167,6 +1172,22 @@ ensure_window (FontViewApplication *self)
 
     box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
     gtk_stack_add_named (GTK_STACK (self->stack), box, "overview");
+
+    builder = gtk_builder_new ();
+    gtk_builder_add_from_resource (builder, "/org/gnome/font-viewer/font-view-app-menu.ui", NULL);
+    menu = G_MENU_MODEL (gtk_builder_get_object (builder, "app-menu"));
+
+    self->menu_button = gtk_menu_button_new ();
+    image = gtk_image_new_from_icon_name ("open-menu-symbolic", GTK_ICON_SIZE_BUTTON);
+    gtk_widget_show (image);
+    gtk_container_add (GTK_CONTAINER (self->menu_button), image);
+    gtk_menu_button_set_menu_model (GTK_MENU_BUTTON (self->menu_button), menu);
+    gtk_widget_set_no_show_all (self->menu_button, TRUE);
+    gtk_widget_show (self->menu_button);
+    gtk_header_bar_pack_end (GTK_HEADER_BAR (self->header), self->menu_button);
+
+    g_object_unref (builder);
+    g_object_unref (menu);
 
     self->search_bar = gtk_search_bar_new ();
     gtk_container_add (GTK_CONTAINER (box), self->search_bar);
@@ -1208,8 +1229,6 @@ static void
 font_view_application_startup (GApplication *application)
 {
     FontViewApplication *self = FONT_VIEW_APPLICATION (application);
-    GtkBuilder *builder;
-    GMenuModel *menu;
 
     G_APPLICATION_CLASS (font_view_application_parent_class)->startup (application);
 
@@ -1218,13 +1237,6 @@ font_view_application_startup (GApplication *application)
 
     g_action_map_add_action_entries (G_ACTION_MAP (self), action_entries,
                                      G_N_ELEMENTS (action_entries), self);
-    builder = gtk_builder_new ();
-    gtk_builder_add_from_resource (builder, "/org/gnome/font-viewer/font-view-app-menu.ui", NULL);
-    menu = G_MENU_MODEL (gtk_builder_get_object (builder, "app-menu"));
-    gtk_application_set_app_menu (GTK_APPLICATION (self), menu);
-
-    g_object_unref (builder);
-    g_object_unref (menu);
 }
 
 static void
