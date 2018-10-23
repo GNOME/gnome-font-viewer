@@ -7,10 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
-"issues\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues\n"
 "POT-Creation-Date: 2018-07-30 21:11+0000\n"
-"PO-Revision-Date: 2018-08-03 17:31+0200\n"
+"PO-Revision-Date: 2018-10-23 16:13+0200\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -20,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.1.1\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:85
 msgid "GNOME Fonts"
@@ -34,22 +33,22 @@ msgstr "Pregled pisav v sistemu"
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
 "GNOME Fonts shows you the fonts installed on your computer for your use as "
-"thumbnails. Selecting any thumbnails shows the full view of how the font "
-"would look under various sizes."
+"thumbnails. Selecting any thumbnails shows the full view of how the font would "
+"look under various sizes."
 msgstr ""
-"Program Pregledovalnik pisav za GNOME pokaže pisave, ki so nameščene v "
-"sistemu, kot sličice. Z izborom posamezne sličice se pokaže poln prikaz "
-"pisave pri različnih velikostih."
+"Program Pregledovalnik pisav za GNOME pokaže pisave, ki so nameščene v sistemu, "
+"kot sličice. Z izborom posamezne sličice se pokaže poln prikaz pisave pri "
+"različnih velikostih."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
-"GNOME Fonts also supports installing new font files downloaded in the .ttf "
-"and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
+"GNOME Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to all "
+"users on the computer."
 msgstr ""
-"Program Pregledovalnik pisav za GNOME podpira nameščanje datotek pisav .ttf "
-"in drugih. Pisave je mogoče namestiti le za posameznega uporabnika, ali za "
-"vse uporabnike naprave."
+"Program Pregledovalnik pisav za GNOME podpira nameščanje datotek pisav .ttf in "
+"drugih. Pisave je mogoče namestiti le za posameznega uporabnika, ali za vse "
+"uporabnike naprave."
 
 #: src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -142,23 +141,23 @@ msgstr "Dovoljenje"
 
 #: src/font-view.c:479
 msgid "Glyph Count"
-msgstr "Število pismenk"
+msgstr "Število znakov"
 
 #: src/font-view.c:482
 msgid "Color Glyphs"
-msgstr "Barvne pismenke"
+msgstr "Barvni znaki"
 
 #: src/font-view.c:482
 msgid "yes"
-msgstr "da"
+msgstr "so zaznani"
 
 #: src/font-view.c:482
 msgid "no"
-msgstr "ne"
+msgstr "niso zaznani"
 
 #: src/font-view.c:486
 msgid "Layout Features"
-msgstr ""
+msgstr "Podrobnosti razporeditve"
 
 #: src/font-view.c:493
 msgid "Variation Axes"
@@ -198,7 +197,7 @@ msgstr "Vse pisave"
 
 #: src/font-view.c:1065 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
-msgstr "Uveljavi _pisave"
+msgstr "Pisave"
 
 #: src/font-view.c:1068
 msgid "translator-credits"
@@ -207,7 +206,7 @@ msgstr "Matej Urbančič <mateju@svn.gnome.org>"
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
-msgstr "pisave;fonti;oblika zapisa;zapis;črke;besede;"
+msgstr "pisave;fonti;oblika zapisa;zapis;črke;besede;znaki;ikone;emotikoni;izrazne;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: src/org.gnome.font-viewer.desktop.in:8
@@ -1015,8 +1014,7 @@ msgstr ""
 #~ msgid "[FILE...]"
 #~ msgstr "[DATOTEKA ...]"
 
-#~ msgid ""
-#~ "Run '%s --help' to see a full list of available command line options."
+#~ msgid "Run '%s --help' to see a full list of available command line options."
 #~ msgstr "Za popoln seznam možnosti ukazne vrstice zaženite »%s --help«."
 
 #~ msgid "_Close"
