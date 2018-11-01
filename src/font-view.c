@@ -44,7 +44,7 @@
 #define FONT_VIEW_TYPE_APPLICATION (font_view_application_get_type ())
 #define FONT_VIEW_ICON_NAME "org.gnome.font-viewer"
 
-G_DECLARE_FINAL_TYPE (FontViewApplication, sushi_font_widget,
+G_DECLARE_FINAL_TYPE (FontViewApplication, font_view_application,
                       FONT_VIEW, APPLICATION,
                       GtkApplication)
 
