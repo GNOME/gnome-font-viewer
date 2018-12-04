@@ -25,6 +25,7 @@
     "modules": [
         {
             "name": "gnome-desktop",
+            "buildsystem": "meson",
             "sources": [
                 {
                     "type": "git",
