@@ -9,13 +9,13 @@ flatpak:
   stage: build
   variables:
     MANIFEST_PATH: "flatpak/org.gnome.font-viewer.json"
-    MESON_ARGS: "-Dprofile=development"
+    MESON_ARGS: ""
     RUNTIME_REPO: "https://sdk.gnome.org/gnome-nightly.flatpakrepo"
     FLATPAK_MODULE: "gnome-font-viewer"
     DBUS_ID: "org.gnome.font-viewer"
   script:
     - flatpak-builder --stop-at=${FLATPAK_MODULE} app ${MANIFEST_PATH}
-    - flatpak build app meson --prefix=/app -Dprofile=development ${MESON_ARGS} _build
+    - flatpak build app meson --prefix=/app ${MESON_ARGS} _build
     - flatpak build app ninja -C _build install
     - flatpak-builder --finish-only --repo=repo app ${MANIFEST_PATH}
     - flatpak build-bundle repo ${BUNDLE} --runtime-repo=${RUNTIME_REPO} ${DBUS_ID}
@@ -24,7 +24,7 @@ flatpak:
     paths:
       - ${BUNDLE}
       - _build/meson-logs/meson-log.txt
-    expire_in: 30 days
+    expire_in: 7 days
   cache:
     paths:
       - .flatpak-builder/downloads
