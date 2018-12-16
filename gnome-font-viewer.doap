@@ -6,7 +6,7 @@
 
   <name xml:lang="en">gnome-font-viewer</name>
   <shortdesc xml:lang="en">A font viewer utility for GNOME</shortdesc>
-
+  <description>Shows a preview of fonts and an overview of all installed fonts</description>
   <license rdf:resource="http://usefulinc.com/doap/licenses/gpl"/>
 
   <download-page rdf:resource="http://download.gnome.org/sources/gnome-font-viewer/"/>
