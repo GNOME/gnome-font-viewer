@@ -226,7 +226,7 @@ msgstr "Accedeix a totes les alternatives"
 #: src/open-type-layout.h:14
 msgctxt "OpenType layout"
 msgid "Above-base Forms"
-msgstr "Formularis anteriors"
+msgstr "Formes sobre la base"
 
 #: src/open-type-layout.h:15
 msgctxt "OpenType layout"
@@ -271,7 +271,7 @@ msgstr "Alternatives contextuals"
 #: src/open-type-layout.h:23
 msgctxt "OpenType layout"
 msgid "Case-Sensitive Forms"
-msgstr "Formularis sensitius a majúscules i minúscules"
+msgstr "Formes sensitives a majúscules i minúscules"
 
 #: src/open-type-layout.h:24
 msgctxt "OpenType layout"
@@ -286,22 +286,22 @@ msgstr "Conjunct Form After Ro"
 #: src/open-type-layout.h:26
 msgctxt "OpenType layout"
 msgid "Conjunct Forms"
-msgstr "Formes Conjuntes"
+msgstr "Formes conjuntes"
 
 #: src/open-type-layout.h:27
 msgctxt "OpenType layout"
 msgid "Contextual Ligatures"
-msgstr "Lligams contextuals"
+msgstr "Lligadures contextuals"
 
 #: src/open-type-layout.h:28
 msgctxt "OpenType layout"
 msgid "Centered CJK Punctuation"
-msgstr "Puntuació CJK Centrada"
+msgstr "Puntuació CJK centrada"
 
 #: src/open-type-layout.h:29
 msgctxt "OpenType layout"
 msgid "Capital Spacing"
-msgstr "Espaiat a les Majúscules"
+msgstr "Espaiat a les majúscules"
 
 #: src/open-type-layout.h:30
 msgctxt "OpenType layout"
@@ -311,7 +311,7 @@ msgstr "Swash contextual"
 #: src/open-type-layout.h:31
 msgctxt "OpenType layout"
 msgid "Cursive Positioning"
-msgstr "Posicionament de les lletres"
+msgstr "Posicionament de la cursiva"
 
 #: src/open-type-layout.h:32
 msgctxt "OpenType layout"
@@ -441,27 +441,27 @@ msgstr "Formes sense punts"
 #: src/open-type-layout.h:57
 msgctxt "OpenType layout"
 msgid "Expert Forms"
-msgstr "Formularis d'experts"
+msgstr "Formes d'experts"
 
 #: src/open-type-layout.h:58
 msgctxt "OpenType layout"
 msgid "Final Glyph on Line Alternates"
-msgstr "Alternatives de glif final en línies"
+msgstr "Glif final en línies alternatives"
 
 #: src/open-type-layout.h:59
 msgctxt "OpenType layout"
 msgid "Terminal Forms #2"
-msgstr "Formularis terminals #2"
+msgstr "Formes terminals #2"
 
 #: src/open-type-layout.h:60
 msgctxt "OpenType layout"
 msgid "Terminal Forms #3"
-msgstr "Formularis terminals #3"
+msgstr "Formes terminals #3"
 
 #: src/open-type-layout.h:61
 msgctxt "OpenType layout"
 msgid "Terminal Forms"
-msgstr "Formularis terminals"
+msgstr "Formes terminals"
 
 #: src/open-type-layout.h:62
 msgctxt "OpenType layout"
@@ -526,7 +526,7 @@ msgstr "Meitat d'amplades"
 #: src/open-type-layout.h:74
 msgctxt "OpenType layout"
 msgid "Initial Forms"
-msgstr "Formularis inicials"
+msgstr "Formes inicials"
 
 #: src/open-type-layout.h:75
 msgctxt "OpenType layout"
@@ -546,22 +546,22 @@ msgstr "Alternatives de justificació"
 #: src/open-type-layout.h:78
 msgctxt "OpenType layout"
 msgid "JIS78 Forms"
-msgstr "Formularis JIS78 "
+msgstr "Formes JIS78"
 
 #: src/open-type-layout.h:79
 msgctxt "OpenType layout"
 msgid "JIS83 Forms"
-msgstr "Formularis JIS83 "
+msgstr "Formes JIS83"
 
 #: src/open-type-layout.h:80
 msgctxt "OpenType layout"
 msgid "JIS90 Forms"
-msgstr "Formularis JIS90"
+msgstr "Formes JIS90"
 
 #: src/open-type-layout.h:81
 msgctxt "OpenType layout"
 msgid "JIS2004 Forms"
-msgstr "Formularis JIS2004"
+msgstr "Formes JIS2004"
 
 #: src/open-type-layout.h:82
 msgctxt "OpenType layout"
@@ -591,7 +591,7 @@ msgstr "Figures de línia"
 #: src/open-type-layout.h:87
 msgctxt "OpenType layout"
 msgid "Localized Forms"
-msgstr "Formularis localitzats"
+msgstr "Formes localitzats"
 
 #: src/open-type-layout.h:88
 msgctxt "OpenType layout"
@@ -611,12 +611,12 @@ msgstr "Marcar posicionament"
 #: src/open-type-layout.h:91
 msgctxt "OpenType layout"
 msgid "Medial Forms #2"
-msgstr "Formularis medials #2"
+msgstr "Formes medials #2"
 
 #: src/open-type-layout.h:92
 msgctxt "OpenType layout"
 msgid "Medial Forms"
-msgstr "Formularis medials"
+msgstr "Formes medials"
 
 #: src/open-type-layout.h:93
 msgctxt "OpenType layout"
@@ -796,7 +796,7 @@ msgstr "Versaletes"
 #: src/open-type-layout.h:128
 msgctxt "OpenType layout"
 msgid "Simplified Forms"
-msgstr "Formularis simplificats"
+msgstr "Formes simplificades"
 
 #: src/open-type-layout.h:129
 msgctxt "OpenType layout"
@@ -946,7 +946,7 @@ msgstr "Figures tabulars"
 #: src/open-type-layout.h:158
 msgctxt "OpenType layout"
 msgid "Traditional Forms"
-msgstr "Formularis tradicionals"
+msgstr "Formes tradicionals"
 
 #: src/open-type-layout.h:159
 msgctxt "OpenType layout"
@@ -986,12 +986,12 @@ msgstr "Formes de vocal Jamo"
 #: src/open-type-layout.h:166
 msgctxt "OpenType layout"
 msgid "Vertical Kana Alternates"
-msgstr "Alternatives de Kana vertical"
+msgstr "Alternatives de Kana verticals"
 
 #: src/open-type-layout.h:167
 msgctxt "OpenType layout"
 msgid "Vertical Kerning"
-msgstr "Kerning vertical"
+msgstr "Interlletratge vertical"
 
 #: src/open-type-layout.h:168
 msgctxt "OpenType layout"
