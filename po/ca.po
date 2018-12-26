@@ -606,7 +606,7 @@ msgstr "Formes reflectides esquerra a dreta"
 #: src/open-type-layout.h:90
 msgctxt "OpenType layout"
 msgid "Mark Positioning"
-msgstr "Marcar posicionament"
+msgstr "Marca posicionament"
 
 #: src/open-type-layout.h:91
 msgctxt "OpenType layout"
@@ -631,12 +631,12 @@ msgstr "Posicionament marca a marca"
 #: src/open-type-layout.h:95
 msgctxt "OpenType layout"
 msgid "Mark Positioning via Substitution"
-msgstr "Marcar posicionament a través de substitució"
+msgstr "Marca posicionament a través de substitució"
 
 #: src/open-type-layout.h:96
 msgctxt "OpenType layout"
 msgid "Alternate Annotation Forms"
-msgstr "Formes d'Anotació Alternatives"
+msgstr "Formes d'anotació alternatives"
 
 #: src/open-type-layout.h:97
 msgctxt "OpenType layout"
@@ -901,7 +901,7 @@ msgstr "Conjunt estilístic 20"
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
 msgid "Math script style alternates"
-msgstr "Alternatives d'stil d'script matemàtic"
+msgstr "Alternatives d'estil d'script matemàtic"
 
 #: src/open-type-layout.h:150
 msgctxt "OpenType layout"
