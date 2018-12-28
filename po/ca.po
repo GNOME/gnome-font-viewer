@@ -281,7 +281,7 @@ msgstr "Composició / descomposició de glifs"
 #: src/open-type-layout.h:25
 msgctxt "OpenType layout"
 msgid "Conjunct Form After Ro"
-msgstr "Conjunct Form After Ro"
+msgstr "Forma de conjunt després de Ro"
 
 #: src/open-type-layout.h:26
 msgctxt "OpenType layout"
@@ -581,7 +581,7 @@ msgstr "Lligadures estàndard"
 #: src/open-type-layout.h:85
 msgctxt "OpenType layout"
 msgid "Leading Jamo Forms"
-msgstr "Formen principals Jamo"
+msgstr "Formes principals Jamo"
 
 #: src/open-type-layout.h:86
 msgctxt "OpenType layout"
