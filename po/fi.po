@@ -18,10 +18,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-10-30 22:59+0000\n"
-"PO-Revision-Date: 2018-01-09 21:21+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
+"issues\n"
+"POT-Creation-Date: 2018-11-01 21:11+0000\n"
+"PO-Revision-Date: 2019-02-07 22:30+0200\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <gnome-fi-laatu@lists.sourceforge.net>\n"
 "Language: fi\n"
@@ -29,13 +29,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 2.0.6\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:80
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
 msgid "GNOME Fonts"
 msgstr "Gnomen Fontit"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1013
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1119
 #: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Katsele koneellasi olevia fontteja"
@@ -82,14 +82,10 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONTTI-TIEDOSTO TULOSTE-TIEDOSTO"
 
 #: src/font-view-app-menu.ui:6
-msgid "About"
-msgstr "Tietoja"
+msgid "About Fonts"
+msgstr "Tietoja - Fontit"
 
-#: src/font-view-app-menu.ui:10
-msgid "Quit"
-msgstr "Lopeta"
-
-#: src/font-view.c:88
+#: src/font-view.c:99
 msgid "Show the application's version"
 msgstr "Näytä sovelluksen versio"
 
@@ -98,128 +94,125 @@ msgstr "Näytä sovelluksen versio"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:204
+#: src/font-view.c:230
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, oletus %g"
 
-#: src/font-view.c:260
-#, fuzzy, c-format
+#: src/font-view.c:286
+#, c-format
 #| msgid "Installed"
 msgid "Instance %d"
-msgstr "Asennettu"
+msgstr "Instanssi %d"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:305
+#: src/font-view.c:331
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:331
+#: src/font-view.c:357
 msgid "Name"
 msgstr "Nimi"
 
-#: src/font-view.c:334
+#: src/font-view.c:360
 msgid "Style"
 msgstr "Tyyli"
 
-#: src/font-view.c:344
+#: src/font-view.c:370
 msgid "Type"
 msgstr "Tyyppi"
 
-#: src/font-view.c:405 src/font-view.c:439
+#: src/font-view.c:431 src/font-view.c:465
 msgid "Version"
 msgstr "Versio"
 
-#: src/font-view.c:410 src/font-view.c:445
+#: src/font-view.c:436 src/font-view.c:471
 msgid "Copyright"
 msgstr "Tekijänoikeus"
 
-#: src/font-view.c:415
+#: src/font-view.c:441
 msgid "Description"
 msgstr "Kuvaus"
 
-#: src/font-view.c:420
+#: src/font-view.c:446
 msgid "Manufacturer"
 msgstr "Valmistaja"
 
-#: src/font-view.c:425
+#: src/font-view.c:451
 msgid "Designer"
 msgstr "Suunnittelija"
 
-#: src/font-view.c:430
+#: src/font-view.c:456
 msgid "License"
 msgstr "Lisenssi"
 
-#: src/font-view.c:460
+#: src/font-view.c:486
 msgid "Glyph Count"
 msgstr "Glyyfien määrä"
 
-#: src/font-view.c:463
+#: src/font-view.c:489
 msgid "Color Glyphs"
 msgstr "Väriglyyfit"
 
-#: src/font-view.c:463
+#: src/font-view.c:489
 msgid "yes"
 msgstr "kyllä"
 
-#: src/font-view.c:463
+#: src/font-view.c:489
 msgid "no"
 msgstr "ei"
 
-#: src/font-view.c:467
+#: src/font-view.c:493
 msgid "Layout Features"
 msgstr "Asettelun ominaisuudet"
 
-#: src/font-view.c:474
+#: src/font-view.c:500
 msgid "Variation Axes"
-msgstr ""
+msgstr "Variaatioakselit"
 
-#: src/font-view.c:482
+#: src/font-view.c:508
 msgid "Named Styles"
 msgstr "Nimetyt tyylit"
 
-#: src/font-view.c:499
-msgid "Install Failed"
-msgstr "Asennus epäonnistui"
-
-#: src/font-view.c:506
-msgid "Installed"
-msgstr "Asennettu"
-
-#: src/font-view.c:510 src/font-view.c:769
-msgid "Install"
-msgstr "Asenna"
-
-#: src/font-view.c:644
+#: src/font-view.c:690
 msgid "This font could not be displayed."
 msgstr "Tämän fontin näyttäminen epäonnistui."
 
-#: src/font-view.c:717
-msgid "General"
-msgstr "Yleiset"
+#: src/font-view.c:838
+msgid "Install"
+msgstr "Asenna"
 
-#: src/font-view.c:727
-msgid "Details"
-msgstr "Yksityiskohdat"
+#: src/font-view.c:841
+#| msgid "Install"
+msgid "Installing…"
+msgstr "Asennetaan…"
 
-#: src/font-view.c:780
+#: src/font-view.c:844
+msgid "Installed"
+msgstr "Asennettu"
+
+#: src/font-view.c:847
+msgid "Failed"
+msgstr "Epäonnistui"
+
+#: src/font-view.c:865
 msgid "Info"
 msgstr "Tiedot"
 
-#: src/font-view.c:795
+#: src/font-view.c:880
 msgid "Back"
 msgstr "Takaisin"
 
-#: src/font-view.c:886
+#: src/font-view.c:992
 msgid "All Fonts"
 msgstr "Kaikki fontit"
 
-#: src/font-view.c:1012 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1118 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
 msgstr "Fontit"
 
-#: src/font-view.c:1015
+#: src/font-view.c:1121
 msgid "translator-credits"
 msgstr "Jiri Grönroos"
 
@@ -230,8 +223,8 @@ msgstr "fonts;fontface;fontti;fontit;kirjasin;kirjasimet;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: src/org.gnome.font-viewer.desktop.in:8
-msgid "preferences-desktop-font"
-msgstr "preferences-desktop-font"
+msgid "org.gnome.font-viewer"
+msgstr "org.gnome.font-viewer"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -340,598 +333,708 @@ msgstr ""
 
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
-msgid "Distances"
+msgid "Character Variation 1"
 msgstr ""
 
 #: src/open-type-layout.h:35
 msgctxt "OpenType layout"
-msgid "Discretionary Ligatures"
+msgid "Character Variation 2"
 msgstr ""
 
 #: src/open-type-layout.h:36
 msgctxt "OpenType layout"
-msgid "Denominators"
+msgid "Character Variation 3"
 msgstr ""
 
 #: src/open-type-layout.h:37
 msgctxt "OpenType layout"
-msgid "Dotless Forms"
+msgid "Character Variation 4"
 msgstr ""
 
 #: src/open-type-layout.h:38
 msgctxt "OpenType layout"
-msgid "Expert Forms"
+msgid "Character Variation 5"
 msgstr ""
 
 #: src/open-type-layout.h:39
 msgctxt "OpenType layout"
-msgid "Final Glyph on Line Alternates"
+msgid "Character Variation 6"
 msgstr ""
 
 #: src/open-type-layout.h:40
 msgctxt "OpenType layout"
-msgid "Terminal Forms #2"
+msgid "Character Variation 7"
 msgstr ""
 
 #: src/open-type-layout.h:41
 msgctxt "OpenType layout"
-msgid "Terminal Forms #3"
+msgid "Character Variation 8"
 msgstr ""
 
 #: src/open-type-layout.h:42
 msgctxt "OpenType layout"
-msgid "Terminal Forms"
+msgid "Character Variation 9"
 msgstr ""
 
 #: src/open-type-layout.h:43
 msgctxt "OpenType layout"
-msgid "Flattened accent forms"
+msgid "Character Variation 10"
 msgstr ""
 
 #: src/open-type-layout.h:44
 msgctxt "OpenType layout"
-msgid "Fractions"
+msgid "Character Variation 11"
 msgstr ""
 
 #: src/open-type-layout.h:45
 msgctxt "OpenType layout"
-msgid "Full Widths"
+msgid "Character Variation 12"
 msgstr ""
 
 #: src/open-type-layout.h:46
 msgctxt "OpenType layout"
-msgid "Half Forms"
+msgid "Character Variation 13"
 msgstr ""
 
 #: src/open-type-layout.h:47
 msgctxt "OpenType layout"
-msgid "Halant Forms"
+msgid "Character Variation 14"
 msgstr ""
 
 #: src/open-type-layout.h:48
 msgctxt "OpenType layout"
-msgid "Alternate Half Widths"
+msgid "Character Variation 15"
 msgstr ""
 
 #: src/open-type-layout.h:49
 msgctxt "OpenType layout"
-msgid "Historical Forms"
+msgid "Character Variation 16"
 msgstr ""
 
 #: src/open-type-layout.h:50
 msgctxt "OpenType layout"
-msgid "Horizontal Kana Alternates"
+msgid "Character Variation 17"
 msgstr ""
 
 #: src/open-type-layout.h:51
 msgctxt "OpenType layout"
-msgid "Historical Ligatures"
+msgid "Character Variation 18"
 msgstr ""
 
 #: src/open-type-layout.h:52
 msgctxt "OpenType layout"
-msgid "Hangul"
+msgid "Character Variation 19"
 msgstr ""
 
 #: src/open-type-layout.h:53
 msgctxt "OpenType layout"
-msgid "Hojo Kanji Forms"
+msgid "Distances"
 msgstr ""
 
 #: src/open-type-layout.h:54
 msgctxt "OpenType layout"
-msgid "Half Widths"
+msgid "Discretionary Ligatures"
 msgstr ""
 
 #: src/open-type-layout.h:55
 msgctxt "OpenType layout"
-msgid "Initial Forms"
+msgid "Denominators"
 msgstr ""
 
 #: src/open-type-layout.h:56
 msgctxt "OpenType layout"
-msgid "Isolated Forms"
+msgid "Dotless Forms"
 msgstr ""
 
 #: src/open-type-layout.h:57
 msgctxt "OpenType layout"
-msgid "Italics"
+msgid "Expert Forms"
 msgstr ""
 
 #: src/open-type-layout.h:58
 msgctxt "OpenType layout"
-msgid "Justification Alternates"
+msgid "Final Glyph on Line Alternates"
 msgstr ""
 
 #: src/open-type-layout.h:59
 msgctxt "OpenType layout"
-msgid "JIS78 Forms"
+msgid "Terminal Forms #2"
 msgstr ""
 
 #: src/open-type-layout.h:60
 msgctxt "OpenType layout"
-msgid "JIS83 Forms"
+msgid "Terminal Forms #3"
 msgstr ""
 
 #: src/open-type-layout.h:61
 msgctxt "OpenType layout"
-msgid "JIS90 Forms"
+msgid "Terminal Forms"
 msgstr ""
 
 #: src/open-type-layout.h:62
 msgctxt "OpenType layout"
-msgid "JIS2004 Forms"
+msgid "Flattened accent forms"
 msgstr ""
 
 #: src/open-type-layout.h:63
 msgctxt "OpenType layout"
-msgid "Kerning"
+msgid "Fractions"
 msgstr ""
 
 #: src/open-type-layout.h:64
 msgctxt "OpenType layout"
-msgid "Left Bounds"
+msgid "Full Widths"
 msgstr ""
 
 #: src/open-type-layout.h:65
 msgctxt "OpenType layout"
-msgid "Standard Ligatures"
+msgid "Half Forms"
 msgstr ""
 
 #: src/open-type-layout.h:66
 msgctxt "OpenType layout"
-msgid "Leading Jamo Forms"
+msgid "Halant Forms"
 msgstr ""
 
 #: src/open-type-layout.h:67
 msgctxt "OpenType layout"
-msgid "Lining Figures"
+msgid "Alternate Half Widths"
 msgstr ""
 
 #: src/open-type-layout.h:68
 msgctxt "OpenType layout"
-msgid "Localized Forms"
+msgid "Historical Forms"
 msgstr ""
 
 #: src/open-type-layout.h:69
 msgctxt "OpenType layout"
-msgid "Left-to-right alternates"
+msgid "Horizontal Kana Alternates"
 msgstr ""
 
 #: src/open-type-layout.h:70
 msgctxt "OpenType layout"
-msgid "Left-to-right mirrored forms"
+msgid "Historical Ligatures"
 msgstr ""
 
 #: src/open-type-layout.h:71
 msgctxt "OpenType layout"
-msgid "Mark Positioning"
+msgid "Hangul"
 msgstr ""
 
 #: src/open-type-layout.h:72
 msgctxt "OpenType layout"
-msgid "Medial Forms #2"
+msgid "Hojo Kanji Forms"
 msgstr ""
 
 #: src/open-type-layout.h:73
 msgctxt "OpenType layout"
-msgid "Medial Forms"
+msgid "Half Widths"
 msgstr ""
 
 #: src/open-type-layout.h:74
 msgctxt "OpenType layout"
-msgid "Mathematical Greek"
+msgid "Initial Forms"
 msgstr ""
 
 #: src/open-type-layout.h:75
 msgctxt "OpenType layout"
-msgid "Mark to Mark Positioning"
+msgid "Isolated Forms"
 msgstr ""
 
 #: src/open-type-layout.h:76
 msgctxt "OpenType layout"
-msgid "Mark Positioning via Substitution"
+msgid "Italics"
 msgstr ""
 
 #: src/open-type-layout.h:77
 msgctxt "OpenType layout"
-msgid "Alternate Annotation Forms"
+msgid "Justification Alternates"
 msgstr ""
 
 #: src/open-type-layout.h:78
 msgctxt "OpenType layout"
-msgid "NLC Kanji Forms"
+msgid "JIS78 Forms"
 msgstr ""
 
 #: src/open-type-layout.h:79
 msgctxt "OpenType layout"
-msgid "Nukta Forms"
+msgid "JIS83 Forms"
 msgstr ""
 
 #: src/open-type-layout.h:80
 msgctxt "OpenType layout"
-msgid "Numerators"
+msgid "JIS90 Forms"
 msgstr ""
 
 #: src/open-type-layout.h:81
 msgctxt "OpenType layout"
-msgid "Oldstyle Figures"
+msgid "JIS2004 Forms"
 msgstr ""
 
 #: src/open-type-layout.h:82
 msgctxt "OpenType layout"
-msgid "Optical Bounds"
+msgid "Kerning"
 msgstr ""
 
 #: src/open-type-layout.h:83
 msgctxt "OpenType layout"
-msgid "Ordinals"
+msgid "Left Bounds"
 msgstr ""
 
 #: src/open-type-layout.h:84
 msgctxt "OpenType layout"
-msgid "Ornaments"
+msgid "Standard Ligatures"
 msgstr ""
 
 #: src/open-type-layout.h:85
 msgctxt "OpenType layout"
-msgid "Proportional Alternate Widths"
+msgid "Leading Jamo Forms"
 msgstr ""
 
 #: src/open-type-layout.h:86
 msgctxt "OpenType layout"
-msgid "Petite Capitals"
+msgid "Lining Figures"
 msgstr ""
 
 #: src/open-type-layout.h:87
 msgctxt "OpenType layout"
-msgid "Proportional Kana"
+msgid "Localized Forms"
 msgstr ""
 
 #: src/open-type-layout.h:88
 msgctxt "OpenType layout"
-msgid "Proportional Figures"
+msgid "Left-to-right alternates"
 msgstr ""
 
 #: src/open-type-layout.h:89
 msgctxt "OpenType layout"
-msgid "Pre-Base Forms"
+msgid "Left-to-right mirrored forms"
 msgstr ""
 
 #: src/open-type-layout.h:90
 msgctxt "OpenType layout"
-msgid "Pre-base Substitutions"
+msgid "Mark Positioning"
 msgstr ""
 
 #: src/open-type-layout.h:91
 msgctxt "OpenType layout"
-msgid "Post-base Forms"
+msgid "Medial Forms #2"
 msgstr ""
 
 #: src/open-type-layout.h:92
 msgctxt "OpenType layout"
-msgid "Post-base Substitutions"
+msgid "Medial Forms"
 msgstr ""
 
 #: src/open-type-layout.h:93
 msgctxt "OpenType layout"
-msgid "Proportional Widths"
+msgid "Mathematical Greek"
 msgstr ""
 
 #: src/open-type-layout.h:94
 msgctxt "OpenType layout"
-msgid "Quarter Widths"
+msgid "Mark to Mark Positioning"
 msgstr ""
 
 #: src/open-type-layout.h:95
 msgctxt "OpenType layout"
-msgid "Randomize"
+msgid "Mark Positioning via Substitution"
 msgstr ""
 
 #: src/open-type-layout.h:96
 msgctxt "OpenType layout"
-msgid "Required Contextual Alternates"
+msgid "Alternate Annotation Forms"
 msgstr ""
 
 #: src/open-type-layout.h:97
 msgctxt "OpenType layout"
-msgid "Rakar Forms"
+msgid "NLC Kanji Forms"
 msgstr ""
 
 #: src/open-type-layout.h:98
 msgctxt "OpenType layout"
-msgid "Required Ligatures"
+msgid "Nukta Forms"
 msgstr ""
 
 #: src/open-type-layout.h:99
 msgctxt "OpenType layout"
-msgid "Reph Forms"
+msgid "Numerators"
 msgstr ""
 
 #: src/open-type-layout.h:100
 msgctxt "OpenType layout"
-msgid "Right Bounds"
+msgid "Oldstyle Figures"
 msgstr ""
 
 #: src/open-type-layout.h:101
 msgctxt "OpenType layout"
-msgid "Right-to-left alternates"
+msgid "Optical Bounds"
 msgstr ""
 
 #: src/open-type-layout.h:102
 msgctxt "OpenType layout"
-msgid "Right-to-left mirrored forms"
+msgid "Ordinals"
 msgstr ""
 
 #: src/open-type-layout.h:103
 msgctxt "OpenType layout"
-msgid "Ruby Notation Forms"
+msgid "Ornaments"
 msgstr ""
 
 #: src/open-type-layout.h:104
 msgctxt "OpenType layout"
-msgid "Required Variation Alternates"
+msgid "Proportional Alternate Widths"
 msgstr ""
 
 #: src/open-type-layout.h:105
 msgctxt "OpenType layout"
-msgid "Stylistic Alternates"
+msgid "Petite Capitals"
 msgstr ""
 
 #: src/open-type-layout.h:106
 msgctxt "OpenType layout"
-msgid "Scientific Inferiors"
+msgid "Proportional Kana"
 msgstr ""
 
 #: src/open-type-layout.h:107
 msgctxt "OpenType layout"
-msgid "Optical size"
+msgid "Proportional Figures"
 msgstr ""
 
 #: src/open-type-layout.h:108
 msgctxt "OpenType layout"
-msgid "Small Capitals"
+msgid "Pre-Base Forms"
 msgstr ""
 
 #: src/open-type-layout.h:109
 msgctxt "OpenType layout"
-msgid "Simplified Forms"
+msgid "Pre-base Substitutions"
 msgstr ""
 
 #: src/open-type-layout.h:110
 msgctxt "OpenType layout"
-msgid "Stylistic Set 1"
+msgid "Post-base Forms"
 msgstr ""
 
 #: src/open-type-layout.h:111
 msgctxt "OpenType layout"
-msgid "Stylistic Set 2"
+msgid "Post-base Substitutions"
 msgstr ""
 
 #: src/open-type-layout.h:112
 msgctxt "OpenType layout"
-msgid "Stylistic Set 3"
+msgid "Proportional Widths"
 msgstr ""
 
 #: src/open-type-layout.h:113
 msgctxt "OpenType layout"
-msgid "Stylistic Set 4"
+msgid "Quarter Widths"
 msgstr ""
 
 #: src/open-type-layout.h:114
 msgctxt "OpenType layout"
-msgid "Stylistic Set 5"
+msgid "Randomize"
 msgstr ""
 
 #: src/open-type-layout.h:115
 msgctxt "OpenType layout"
-msgid "Stylistic Set 6"
+msgid "Required Contextual Alternates"
 msgstr ""
 
 #: src/open-type-layout.h:116
 msgctxt "OpenType layout"
-msgid "Stylistic Set 7"
+msgid "Rakar Forms"
 msgstr ""
 
 #: src/open-type-layout.h:117
 msgctxt "OpenType layout"
-msgid "Stylistic Set 8"
+msgid "Required Ligatures"
 msgstr ""
 
 #: src/open-type-layout.h:118
 msgctxt "OpenType layout"
-msgid "Stylistic Set 9"
+msgid "Reph Forms"
 msgstr ""
 
 #: src/open-type-layout.h:119
 msgctxt "OpenType layout"
-msgid "Stylistic Set 10"
+msgid "Right Bounds"
 msgstr ""
 
 #: src/open-type-layout.h:120
 msgctxt "OpenType layout"
-msgid "Stylistic Set 11"
+msgid "Right-to-left alternates"
 msgstr ""
 
 #: src/open-type-layout.h:121
 msgctxt "OpenType layout"
-msgid "Stylistic Set 12"
+msgid "Right-to-left mirrored forms"
 msgstr ""
 
 #: src/open-type-layout.h:122
 msgctxt "OpenType layout"
-msgid "Stylistic Set 13"
+msgid "Ruby Notation Forms"
 msgstr ""
 
 #: src/open-type-layout.h:123
 msgctxt "OpenType layout"
-msgid "Stylistic Set 14"
+msgid "Required Variation Alternates"
 msgstr ""
 
 #: src/open-type-layout.h:124
 msgctxt "OpenType layout"
-msgid "Stylistic Set 15"
+msgid "Stylistic Alternates"
 msgstr ""
 
 #: src/open-type-layout.h:125
 msgctxt "OpenType layout"
-msgid "Stylistic Set 16"
+msgid "Scientific Inferiors"
 msgstr ""
 
 #: src/open-type-layout.h:126
 msgctxt "OpenType layout"
-msgid "Stylistic Set 17"
+msgid "Optical size"
 msgstr ""
 
 #: src/open-type-layout.h:127
 msgctxt "OpenType layout"
-msgid "Stylistic Set 18"
+msgid "Small Capitals"
 msgstr ""
 
 #: src/open-type-layout.h:128
 msgctxt "OpenType layout"
-msgid "Stylistic Set 19"
+msgid "Simplified Forms"
 msgstr ""
 
 #: src/open-type-layout.h:129
 msgctxt "OpenType layout"
-msgid "Stylistic Set 20"
+msgid "Stylistic Set 1"
 msgstr ""
 
 #: src/open-type-layout.h:130
 msgctxt "OpenType layout"
-msgid "Math script style alternates"
+msgid "Stylistic Set 2"
 msgstr ""
 
 #: src/open-type-layout.h:131
 msgctxt "OpenType layout"
-msgid "Stretching Glyph Decomposition"
+msgid "Stylistic Set 3"
 msgstr ""
 
 #: src/open-type-layout.h:132
 msgctxt "OpenType layout"
-msgid "Subscript"
-msgstr "Alaindeksi"
+msgid "Stylistic Set 4"
+msgstr ""
 
 #: src/open-type-layout.h:133
 msgctxt "OpenType layout"
-msgid "Superscript"
-msgstr "Yläindeksi"
+msgid "Stylistic Set 5"
+msgstr ""
 
 #: src/open-type-layout.h:134
 msgctxt "OpenType layout"
-msgid "Swash"
+msgid "Stylistic Set 6"
 msgstr ""
 
 #: src/open-type-layout.h:135
 msgctxt "OpenType layout"
-msgid "Titling"
+msgid "Stylistic Set 7"
 msgstr ""
 
 #: src/open-type-layout.h:136
 msgctxt "OpenType layout"
-msgid "Trailing Jamo Forms"
+msgid "Stylistic Set 8"
 msgstr ""
 
 #: src/open-type-layout.h:137
 msgctxt "OpenType layout"
-msgid "Traditional Name Forms"
+msgid "Stylistic Set 9"
 msgstr ""
 
 #: src/open-type-layout.h:138
 msgctxt "OpenType layout"
-msgid "Tabular Figures"
+msgid "Stylistic Set 10"
 msgstr ""
 
 #: src/open-type-layout.h:139
 msgctxt "OpenType layout"
-msgid "Traditional Forms"
+msgid "Stylistic Set 11"
 msgstr ""
 
 #: src/open-type-layout.h:140
 msgctxt "OpenType layout"
-msgid "Third Widths"
+msgid "Stylistic Set 12"
 msgstr ""
 
 #: src/open-type-layout.h:141
 msgctxt "OpenType layout"
-msgid "Unicase"
+msgid "Stylistic Set 13"
 msgstr ""
 
 #: src/open-type-layout.h:142
 msgctxt "OpenType layout"
-msgid "Alternate Vertical Metrics"
+msgid "Stylistic Set 14"
 msgstr ""
 
 #: src/open-type-layout.h:143
 msgctxt "OpenType layout"
-msgid "Vattu Variants"
+msgid "Stylistic Set 15"
 msgstr ""
 
 #: src/open-type-layout.h:144
 msgctxt "OpenType layout"
-msgid "Vertical Writing"
+msgid "Stylistic Set 16"
 msgstr ""
 
 #: src/open-type-layout.h:145
 msgctxt "OpenType layout"
-msgid "Alternate Vertical Half Metrics"
+msgid "Stylistic Set 17"
 msgstr ""
 
 #: src/open-type-layout.h:146
 msgctxt "OpenType layout"
-msgid "Vowel Jamo Forms"
+msgid "Stylistic Set 18"
 msgstr ""
 
 #: src/open-type-layout.h:147
 msgctxt "OpenType layout"
-msgid "Vertical Kana Alternates"
+msgid "Stylistic Set 19"
 msgstr ""
 
 #: src/open-type-layout.h:148
 msgctxt "OpenType layout"
-msgid "Vertical Kerning"
+msgid "Stylistic Set 20"
 msgstr ""
 
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
-msgid "Proportional Alternate Vertical Metrics"
+msgid "Math script style alternates"
 msgstr ""
 
 #: src/open-type-layout.h:150
 msgctxt "OpenType layout"
-msgid "Vertical Alternates and Rotation"
+msgid "Stretching Glyph Decomposition"
 msgstr ""
 
 #: src/open-type-layout.h:151
 msgctxt "OpenType layout"
-msgid "Vertical Alternates for Rotation"
-msgstr ""
+msgid "Subscript"
+msgstr "Alaindeksi"
 
 #: src/open-type-layout.h:152
 msgctxt "OpenType layout"
+msgid "Superscript"
+msgstr "Yläindeksi"
+
+#: src/open-type-layout.h:153
+msgctxt "OpenType layout"
+msgid "Swash"
+msgstr ""
+
+#: src/open-type-layout.h:154
+msgctxt "OpenType layout"
+msgid "Titling"
+msgstr ""
+
+#: src/open-type-layout.h:155
+msgctxt "OpenType layout"
+msgid "Trailing Jamo Forms"
+msgstr ""
+
+#: src/open-type-layout.h:156
+msgctxt "OpenType layout"
+msgid "Traditional Name Forms"
+msgstr ""
+
+#: src/open-type-layout.h:157
+msgctxt "OpenType layout"
+msgid "Tabular Figures"
+msgstr ""
+
+#: src/open-type-layout.h:158
+msgctxt "OpenType layout"
+msgid "Traditional Forms"
+msgstr ""
+
+#: src/open-type-layout.h:159
+msgctxt "OpenType layout"
+msgid "Third Widths"
+msgstr ""
+
+#: src/open-type-layout.h:160
+msgctxt "OpenType layout"
+msgid "Unicase"
+msgstr ""
+
+#: src/open-type-layout.h:161
+msgctxt "OpenType layout"
+msgid "Alternate Vertical Metrics"
+msgstr ""
+
+#: src/open-type-layout.h:162
+msgctxt "OpenType layout"
+msgid "Vattu Variants"
+msgstr ""
+
+#: src/open-type-layout.h:163
+msgctxt "OpenType layout"
+msgid "Vertical Writing"
+msgstr ""
+
+#: src/open-type-layout.h:164
+msgctxt "OpenType layout"
+msgid "Alternate Vertical Half Metrics"
+msgstr ""
+
+#: src/open-type-layout.h:165
+msgctxt "OpenType layout"
+msgid "Vowel Jamo Forms"
+msgstr ""
+
+#: src/open-type-layout.h:166
+msgctxt "OpenType layout"
+msgid "Vertical Kana Alternates"
+msgstr ""
+
+#: src/open-type-layout.h:167
+msgctxt "OpenType layout"
+msgid "Vertical Kerning"
+msgstr ""
+
+#: src/open-type-layout.h:168
+msgctxt "OpenType layout"
+msgid "Proportional Alternate Vertical Metrics"
+msgstr ""
+
+#: src/open-type-layout.h:169
+msgctxt "OpenType layout"
+msgid "Vertical Alternates and Rotation"
+msgstr ""
+
+#: src/open-type-layout.h:170
+msgctxt "OpenType layout"
+msgid "Vertical Alternates for Rotation"
+msgstr ""
+
+#: src/open-type-layout.h:171
+msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr ""
+
+#~ msgid "About"
+#~ msgstr "Tietoja"
+
+#~ msgid "Quit"
+#~ msgstr "Lopeta"
+
+#~ msgid "General"
+#~ msgstr "Yleiset"
+
+#~ msgid "Details"
+#~ msgstr "Yksityiskohdat"
+
+#~ msgid "preferences-desktop-font"
+#~ msgstr "preferences-desktop-font"
 
 #~ msgid "Font Viewer"
 #~ msgstr "Fonttikatselin"
