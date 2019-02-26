@@ -8,30 +8,31 @@
 # Updated for gnome-font-viewer package:
 # Kyung-gon Kim <1942kg@gmail.com>, 2017.
 # Changwoo Ryu <cwryu@debian.org>, 2012-2015, 2017-2018.
-#
+# DaeHyun Sung <sungdh86+git@gmail.com>, 2019.
 #
 # 새로 번역하시는 분은 아래 translator-credits에 추가하세요.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues\n"
-"POT-Creation-Date: 2018-08-03 15:54+0000\n"
-"PO-Revision-Date: 2018-08-26 14:03+0900\n"
-"Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
+"issues\n"
+"POT-Creation-Date: 2018-12-08 21:01+0000\n"
+"PO-Revision-Date: 2019-02-23 21:58+0900\n"
+"Last-Translator: DaeHyun Sung <sungdh86+git@gmail.com>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 2.2.1\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:85
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
 msgid "GNOME Fonts"
 msgstr "그놈 글꼴"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1066
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1119
 #: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "시스템에 설치된 글꼴을 봅니다"
@@ -42,8 +43,8 @@ msgid ""
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"그놈 글꼴은 컴퓨터에 설치한 글꼴을 섬네일로 표시합니다. 섬네일을 선택하면 크"
-"기에 따라 글꼴이 어떻게 보이는지 표시합니다."
+"그놈 글꼴은 컴퓨터에 설치한 글꼴을 섬네일로 표시합니다. 섬네일을 선택하면 "
+"크기에 따라 글꼴이 어떻게 보이는지 표시합니다."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
@@ -51,9 +52,9 @@ msgid ""
 "and other formats. Fonts may be installed only for your use or made "
 "available to all users on the computer."
 msgstr ""
-".ttf나 기타 형식으로 다운로드한 글꼴 파일을 설치할 수도 있습니다. 자기만 쓸 "
-"수 있게 설치할 수도 있고 컴퓨터의 모든 사용자가 사용할 수 있게 설치할 수도 있"
-"습니다."
+".ttf나 기타 형식으로 다운로드한 글꼴 파일을 설치할 수도 있습니다. 자기만 "
+"쓸 수 있게 설치할 수도 있고 컴퓨터의 모든 사용자가 사용할 수 있게 설치할 수"
+"도 있습니다."
 
 #: src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -76,14 +77,10 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "<글꼴파일> <출력파일>"
 
 #: src/font-view-app-menu.ui:6
-msgid "About"
-msgstr "정보"
+msgid "About Fonts"
+msgstr "글꼴 프로그램 정보"
 
-#: src/font-view-app-menu.ui:10
-msgid "Quit"
-msgstr "끝내기"
-
-#: src/font-view.c:93
+#: src/font-view.c:99
 msgid "Show the application's version"
 msgstr "프로그램 버전을 표시합니다"
 
@@ -92,139 +89,144 @@ msgstr "프로그램 버전을 표시합니다"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:223
+#: src/font-view.c:230
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, 기본값 %g"
 
-#: src/font-view.c:279
+#: src/font-view.c:286
 #, c-format
 msgid "Instance %d"
 msgstr "인스턴스 %d"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:324
+#: src/font-view.c:331
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:350
+#: src/font-view.c:357
 msgid "Name"
 msgstr "이름"
 
-#: src/font-view.c:353
+#: src/font-view.c:360
 msgid "Style"
 msgstr "모양"
 
-#: src/font-view.c:363
+#: src/font-view.c:370
 msgid "Type"
 msgstr "종류"
 
-#: src/font-view.c:424 src/font-view.c:458
+#: src/font-view.c:431 src/font-view.c:465
 msgid "Version"
 msgstr "버전"
 
-#: src/font-view.c:429 src/font-view.c:464
+#: src/font-view.c:436 src/font-view.c:471
 msgid "Copyright"
 msgstr "저작권"
 
-#: src/font-view.c:434
+#: src/font-view.c:441
 msgid "Description"
 msgstr "설명"
 
-#: src/font-view.c:439
+#: src/font-view.c:446
 msgid "Manufacturer"
 msgstr "제작자"
 
-#: src/font-view.c:444
+#: src/font-view.c:451
 msgid "Designer"
 msgstr "디자이너"
 
-#: src/font-view.c:449
+#: src/font-view.c:456
 msgid "License"
 msgstr "라이선스"
 
-#: src/font-view.c:479
+#: src/font-view.c:486
 msgid "Glyph Count"
 msgstr "글리프 수"
 
-#: src/font-view.c:482
+#: src/font-view.c:489
 msgid "Color Glyphs"
 msgstr "컬러 글리프"
 
-#: src/font-view.c:482
+#: src/font-view.c:489
 msgid "yes"
 msgstr "예"
 
-#: src/font-view.c:482
+#: src/font-view.c:489
 msgid "no"
 msgstr "아니요"
 
-#: src/font-view.c:486
+#: src/font-view.c:493
 msgid "Layout Features"
 msgstr "레이아웃 기능"
 
-#: src/font-view.c:493
+#: src/font-view.c:500
 msgid "Variation Axes"
 msgstr "변형 축"
 
-#: src/font-view.c:501
+#: src/font-view.c:508
 msgid "Named Styles"
 msgstr "스타일 이름"
 
-#: src/font-view.c:518
-msgid "Install Failed"
-msgstr "설치 실패"
-
-#: src/font-view.c:525
-msgid "Installed"
-msgstr "설치함"
-
-#: src/font-view.c:529 src/font-view.c:808
-msgid "Install"
-msgstr "설치"
-
-#: src/font-view.c:663
+#: src/font-view.c:690
 msgid "This font could not be displayed."
 msgstr "이 글꼴은 표시할 수 없습니다."
 
-#: src/font-view.c:819
+#: src/font-view.c:838
+msgid "Install"
+msgstr "설치"
+
+#: src/font-view.c:841
+msgid "Installing…"
+msgstr "설치중…"
+
+#: src/font-view.c:844
+msgid "Installed"
+msgstr "설치함"
+
+#: src/font-view.c:847
+msgid "Failed"
+msgstr "설치 실패"
+
+#: src/font-view.c:865
 msgid "Info"
 msgstr "정보"
 
-#: src/font-view.c:834
+#: src/font-view.c:880
 msgid "Back"
 msgstr "뒤로"
 
-#: src/font-view.c:939
+#: src/font-view.c:992
 msgid "All Fonts"
 msgstr "모든 글꼴"
 
-#: src/font-view.c:1065 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1118 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
 msgstr "글꼴"
 
-#: src/font-view.c:1068
+#: src/font-view.c:1121
 msgid "translator-credits"
 msgstr ""
 "류창우\n"
 "차영호\n"
-"김경곤"
+"김경곤\n"
+"성대현"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
-msgstr "fonts;글꼴;fontface;"
+msgstr "fonts;글꼴;fontface;폰트;서체;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: src/org.gnome.font-viewer.desktop.in:8
-msgid "preferences-desktop-font"
-msgstr "preferences-desktop-font"
+msgid "org.gnome.font-viewer"
+msgstr "org.gnome.font-viewer"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
 msgid "Access All Alternates"
-msgstr "모든 대안에 접근"
+msgstr "모든 대체 문자에 접근"
 
 #: src/open-type-layout.h:14
 msgctxt "OpenType layout"
@@ -326,100 +328,101 @@ msgctxt "OpenType layout"
 msgid "Small Capitals From Capitals"
 msgstr "대문자에서 나온 작은 대문자"
 
+# MS 및 한국타이포그래피학회에서 'variation'을 '변형으로 번역
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
 msgid "Character Variation 1"
-msgstr "문자 변종 1"
+msgstr "문자 변형 1"
 
 #: src/open-type-layout.h:35
 msgctxt "OpenType layout"
 msgid "Character Variation 2"
-msgstr "문자 변종 2"
+msgstr "문자 변형 2"
 
 #: src/open-type-layout.h:36
 msgctxt "OpenType layout"
 msgid "Character Variation 3"
-msgstr "문자 변종 3"
+msgstr "문자 변형 3"
 
 #: src/open-type-layout.h:37
 msgctxt "OpenType layout"
 msgid "Character Variation 4"
-msgstr "문자 변종 4"
+msgstr "문자 변형 4"
 
 #: src/open-type-layout.h:38
 msgctxt "OpenType layout"
 msgid "Character Variation 5"
-msgstr "문자 변종 5"
+msgstr "문자 변형 5"
 
 #: src/open-type-layout.h:39
 msgctxt "OpenType layout"
 msgid "Character Variation 6"
-msgstr "문자 변종 6"
+msgstr "문자 변형 6"
 
 #: src/open-type-layout.h:40
 msgctxt "OpenType layout"
 msgid "Character Variation 7"
-msgstr "문자 변종 7"
+msgstr "문자 변형 7"
 
 #: src/open-type-layout.h:41
 msgctxt "OpenType layout"
 msgid "Character Variation 8"
-msgstr "문자 변종 8"
+msgstr "문자 변형 8"
 
 #: src/open-type-layout.h:42
 msgctxt "OpenType layout"
 msgid "Character Variation 9"
-msgstr "문자 변종 9"
+msgstr "문자 변형 9"
 
 #: src/open-type-layout.h:43
 msgctxt "OpenType layout"
 msgid "Character Variation 10"
-msgstr "문자 변종 10"
+msgstr "문자 변형 10"
 
 #: src/open-type-layout.h:44
 msgctxt "OpenType layout"
 msgid "Character Variation 11"
-msgstr "문자 변종 11"
+msgstr "문자 변형 11"
 
 #: src/open-type-layout.h:45
 msgctxt "OpenType layout"
 msgid "Character Variation 12"
-msgstr "문자 변종 12"
+msgstr "문자 변형 12"
 
 #: src/open-type-layout.h:46
 msgctxt "OpenType layout"
 msgid "Character Variation 13"
-msgstr "문자 변종 13"
+msgstr "문자 변형 13"
 
 #: src/open-type-layout.h:47
 msgctxt "OpenType layout"
 msgid "Character Variation 14"
-msgstr "문자 변종 14"
+msgstr "문자 변형 14"
 
 #: src/open-type-layout.h:48
 msgctxt "OpenType layout"
 msgid "Character Variation 15"
-msgstr "문자 변종 15"
+msgstr "문자 변형 15"
 
 #: src/open-type-layout.h:49
 msgctxt "OpenType layout"
 msgid "Character Variation 16"
-msgstr "문자 변종 16"
+msgstr "문자 변형 16"
 
 #: src/open-type-layout.h:50
 msgctxt "OpenType layout"
 msgid "Character Variation 17"
-msgstr "문자 변종 17"
+msgstr "문자 변형 17"
 
 #: src/open-type-layout.h:51
 msgctxt "OpenType layout"
 msgid "Character Variation 18"
-msgstr "문자 변종 18"
+msgstr "문자 변형 18"
 
 #: src/open-type-layout.h:52
 msgctxt "OpenType layout"
 msgid "Character Variation 19"
-msgstr "문자 변종 19"
+msgstr "문자 변형 19"
 
 #: src/open-type-layout.h:53
 msgctxt "OpenType layout"
@@ -454,17 +457,17 @@ msgstr "줄 대안에서 최종 글리프"
 #: src/open-type-layout.h:59
 msgctxt "OpenType layout"
 msgid "Terminal Forms #2"
-msgstr "터미널 형태 #2"
+msgstr "종결형 #2"
 
 #: src/open-type-layout.h:60
 msgctxt "OpenType layout"
 msgid "Terminal Forms #3"
-msgstr "터미널 형태 #3"
+msgstr "종결형 #3"
 
 #: src/open-type-layout.h:61
 msgctxt "OpenType layout"
 msgid "Terminal Forms"
-msgstr "터미널 형태"
+msgstr "종결형"
 
 #: src/open-type-layout.h:62
 msgctxt "OpenType layout"
@@ -479,7 +482,7 @@ msgstr "분수"
 #: src/open-type-layout.h:64
 msgctxt "OpenType layout"
 msgid "Full Widths"
-msgstr "전체 너비"
+msgstr "전각"
 
 #: src/open-type-layout.h:65
 msgctxt "OpenType layout"
@@ -502,10 +505,11 @@ msgctxt "OpenType layout"
 msgid "Historical Forms"
 msgstr "과거 형태"
 
+# 한국 타이포그래피 학회에서 'Alternates'를 '대체 문자'로 표현
 #: src/open-type-layout.h:69
 msgctxt "OpenType layout"
 msgid "Horizontal Kana Alternates"
-msgstr "가로쓰기 가나 문자 대안"
+msgstr "가로쓰기 가나 문자 대체글자"
 
 #: src/open-type-layout.h:70
 msgctxt "OpenType layout"
@@ -520,7 +524,7 @@ msgstr "한글"
 #: src/open-type-layout.h:72
 msgctxt "OpenType layout"
 msgid "Hojo Kanji Forms"
-msgstr "호조 간지 형태"
+msgstr "일본어의 보조한자 형태"
 
 #: src/open-type-layout.h:73
 msgctxt "OpenType layout"
@@ -545,7 +549,7 @@ msgstr "이탤릭"
 #: src/open-type-layout.h:77
 msgctxt "OpenType layout"
 msgid "Justification Alternates"
-msgstr "정렬 대안"
+msgstr "정렬 대체글자"
 
 #: src/open-type-layout.h:78
 msgctxt "OpenType layout"
@@ -642,10 +646,11 @@ msgctxt "OpenType layout"
 msgid "Alternate Annotation Forms"
 msgstr "대체 주석 형태"
 
+# NLC kanji(表外漢字) - 일본어의 상용한자표이외의 한자(常用漢字表以外の漢字)의 약칭, Beyond Table Kanji
 #: src/open-type-layout.h:97
 msgctxt "OpenType layout"
 msgid "NLC Kanji Forms"
-msgstr "NLC 간지 형태"
+msgstr "NLC 칸지 형태"
 
 #: src/open-type-layout.h:98
 msgctxt "OpenType layout"
@@ -915,7 +920,7 @@ msgstr "늘린 글리프 분해"
 #: src/open-type-layout.h:151
 msgctxt "OpenType layout"
 msgid "Subscript"
-msgstr "아래 첨자"
+msgstr "아랫첨자"
 
 #: src/open-type-layout.h:152
 msgctxt "OpenType layout"
@@ -970,7 +975,7 @@ msgstr "대안 수직 메트릭"
 #: src/open-type-layout.h:162
 msgctxt "OpenType layout"
 msgid "Vattu Variants"
-msgstr "바투 변종"
+msgstr "바투 변형 문자"
 
 #: src/open-type-layout.h:163
 msgctxt "OpenType layout"
@@ -990,7 +995,7 @@ msgstr "모음 자모 형태"
 #: src/open-type-layout.h:166
 msgctxt "OpenType layout"
 msgid "Vertical Kana Alternates"
-msgstr "세로쓰기 가나 대안"
+msgstr "세로쓰기 가나 대체문자"
 
 #: src/open-type-layout.h:167
 msgctxt "OpenType layout"
@@ -1016,3 +1021,12 @@ msgstr "회전에 대한 세로쓰기 대안"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "선이 그어진 0 숫자"
+
+#~ msgid "About"
+#~ msgstr "정보"
+
+#~ msgid "Quit"
+#~ msgstr "끝내기"
+
+#~ msgid "preferences-desktop-font"
+#~ msgstr "preferences-desktop-font"
