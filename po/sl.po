@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
 "POT-Creation-Date: 2018-12-08 21:01+0000\n"
-"PO-Revision-Date: 2019-02-26 19:11+0100\n"
+"PO-Revision-Date: 2019-02-28 19:54+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -283,7 +283,7 @@ msgstr ""
 #: src/open-type-layout.h:26
 msgctxt "OpenType layout"
 msgid "Conjunct Forms"
-msgstr ""
+msgstr "Konjugirane oblike"
 
 #: src/open-type-layout.h:27
 msgctxt "OpenType layout"
@@ -313,12 +313,12 @@ msgstr ""
 #: src/open-type-layout.h:32
 msgctxt "OpenType layout"
 msgid "Petite Capitals From Capitals"
-msgstr ""
+msgstr "Male velike črke iz velikih črk"
 
 #: src/open-type-layout.h:33
 msgctxt "OpenType layout"
 msgid "Small Capitals From Capitals"
-msgstr ""
+msgstr "Male velike črke"
 
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
@@ -333,7 +333,7 @@ msgstr "Diskretne ligature"
 #: src/open-type-layout.h:36
 msgctxt "OpenType layout"
 msgid "Denominators"
-msgstr ""
+msgstr "Denominatorji"
 
 #: src/open-type-layout.h:37
 msgctxt "OpenType layout"
@@ -353,17 +353,17 @@ msgstr ""
 #: src/open-type-layout.h:40
 msgctxt "OpenType layout"
 msgid "Terminal Forms #2"
-msgstr ""
+msgstr "Končne oblike 2"
 
 #: src/open-type-layout.h:41
 msgctxt "OpenType layout"
 msgid "Terminal Forms #3"
-msgstr ""
+msgstr "Končne oblike 3"
 
 #: src/open-type-layout.h:42
 msgctxt "OpenType layout"
 msgid "Terminal Forms"
-msgstr ""
+msgstr "Končne oblike"
 
 #: src/open-type-layout.h:43
 msgctxt "OpenType layout"
@@ -383,12 +383,12 @@ msgstr "Polne širine"
 #: src/open-type-layout.h:46
 msgctxt "OpenType layout"
 msgid "Half Forms"
-msgstr ""
+msgstr "Polovične oblike"
 
 #: src/open-type-layout.h:47
 msgctxt "OpenType layout"
 msgid "Halant Forms"
-msgstr ""
+msgstr "Oblike Halant"
 
 #: src/open-type-layout.h:48
 msgctxt "OpenType layout"
@@ -398,7 +398,7 @@ msgstr "Nadomestne polovične širine"
 #: src/open-type-layout.h:49
 msgctxt "OpenType layout"
 msgid "Historical Forms"
-msgstr ""
+msgstr "Zgodovinski znaki"
 
 #: src/open-type-layout.h:50
 msgctxt "OpenType layout"
@@ -418,7 +418,7 @@ msgstr "Hangul"
 #: src/open-type-layout.h:53
 msgctxt "OpenType layout"
 msgid "Hojo Kanji Forms"
-msgstr ""
+msgstr "Oblike Hojo Kanji"
 
 #: src/open-type-layout.h:54
 msgctxt "OpenType layout"
@@ -428,7 +428,7 @@ msgstr "Polovične širine"
 #: src/open-type-layout.h:55
 msgctxt "OpenType layout"
 msgid "Initial Forms"
-msgstr ""
+msgstr "Začetne oblike"
 
 #: src/open-type-layout.h:56
 msgctxt "OpenType layout"
@@ -448,22 +448,22 @@ msgstr ""
 #: src/open-type-layout.h:59
 msgctxt "OpenType layout"
 msgid "JIS78 Forms"
-msgstr ""
+msgstr "Oblike JIS78"
 
 #: src/open-type-layout.h:60
 msgctxt "OpenType layout"
 msgid "JIS83 Forms"
-msgstr ""
+msgstr "Oblike JIS83"
 
 #: src/open-type-layout.h:61
 msgctxt "OpenType layout"
 msgid "JIS90 Forms"
-msgstr ""
+msgstr "Oblike JIS90"
 
 #: src/open-type-layout.h:62
 msgctxt "OpenType layout"
 msgid "JIS2004 Forms"
-msgstr ""
+msgstr "Oblike JIS2004"
 
 #: src/open-type-layout.h:63
 msgctxt "OpenType layout"
@@ -503,7 +503,7 @@ msgstr ""
 #: src/open-type-layout.h:70
 msgctxt "OpenType layout"
 msgid "Left-to-right mirrored forms"
-msgstr ""
+msgstr "Zrcaljene oblike z leve proti desni"
 
 #: src/open-type-layout.h:71
 msgctxt "OpenType layout"
@@ -513,17 +513,17 @@ msgstr ""
 #: src/open-type-layout.h:72
 msgctxt "OpenType layout"
 msgid "Medial Forms #2"
-msgstr ""
+msgstr "Sredinske oblike 2"
 
 #: src/open-type-layout.h:73
 msgctxt "OpenType layout"
 msgid "Medial Forms"
-msgstr ""
+msgstr "Sredinske oblike"
 
 #: src/open-type-layout.h:74
 msgctxt "OpenType layout"
 msgid "Mathematical Greek"
-msgstr ""
+msgstr "Grški matematični znaki"
 
 #: src/open-type-layout.h:75
 msgctxt "OpenType layout"
@@ -543,17 +543,17 @@ msgstr ""
 #: src/open-type-layout.h:78
 msgctxt "OpenType layout"
 msgid "NLC Kanji Forms"
-msgstr ""
+msgstr "Oblike NLC Kanji"
 
 #: src/open-type-layout.h:79
 msgctxt "OpenType layout"
 msgid "Nukta Forms"
-msgstr ""
+msgstr "Oblike Nukta"
 
 #: src/open-type-layout.h:80
 msgctxt "OpenType layout"
 msgid "Numerators"
-msgstr ""
+msgstr "Numeratorji"
 
 #: src/open-type-layout.h:81
 msgctxt "OpenType layout"
@@ -568,7 +568,7 @@ msgstr "Optične meje"
 #: src/open-type-layout.h:83
 msgctxt "OpenType layout"
 msgid "Ordinals"
-msgstr ""
+msgstr "Ordinalni znaki"
 
 #: src/open-type-layout.h:84
 msgctxt "OpenType layout"
@@ -588,12 +588,12 @@ msgstr "Male velike črke"
 #: src/open-type-layout.h:87
 msgctxt "OpenType layout"
 msgid "Proportional Kana"
-msgstr ""
+msgstr "Sorazmerna Kana"
 
 #: src/open-type-layout.h:88
 msgctxt "OpenType layout"
 msgid "Proportional Figures"
-msgstr ""
+msgstr "Sorazmerne sličice"
 
 #: src/open-type-layout.h:89
 msgctxt "OpenType layout"
@@ -628,7 +628,7 @@ msgstr "Četrtinske širine"
 #: src/open-type-layout.h:95
 msgctxt "OpenType layout"
 msgid "Randomize"
-msgstr ""
+msgstr "Naključno"
 
 #: src/open-type-layout.h:96
 msgctxt "OpenType layout"
@@ -638,7 +638,7 @@ msgstr ""
 #: src/open-type-layout.h:97
 msgctxt "OpenType layout"
 msgid "Rakar Forms"
-msgstr ""
+msgstr "Oblike Rakar"
 
 #: src/open-type-layout.h:98
 msgctxt "OpenType layout"
@@ -848,7 +848,7 @@ msgstr ""
 #: src/open-type-layout.h:139
 msgctxt "OpenType layout"
 msgid "Traditional Forms"
-msgstr ""
+msgstr "Tradicionalne oblike"
 
 #: src/open-type-layout.h:140
 msgctxt "OpenType layout"
@@ -868,7 +868,7 @@ msgstr ""
 #: src/open-type-layout.h:143
 msgctxt "OpenType layout"
 msgid "Vattu Variants"
-msgstr ""
+msgstr "Izpeljanke Vattu"
 
 #: src/open-type-layout.h:144
 msgctxt "OpenType layout"
