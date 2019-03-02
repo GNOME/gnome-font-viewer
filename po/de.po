@@ -18,30 +18,30 @@
 # Tobias Endrigkeit <tobiasendrigkeit@googlemail.com>, 2012.
 # Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009, 2011-2012.
 # Benjamin Steinwender <b@stbe.at>, 2014.
-# Tim Sabsch <tim@sabsch.com>, 2017.
+# Tim Sabsch <tim@sabsch.com>, 2017, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2018-04-24 22:22+0000\n"
-"PO-Revision-Date: 2018-04-27 16:19+0200\n"
-"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
+"issues\n"
+"POT-Creation-Date: 2019-03-02 18:57+0000\n"
+"PO-Revision-Date: 2019-03-02 22:34+0100\n"
+"Last-Translator: Tim Sabsch <tim@sabsch.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.2.1\n"
 "X-Poedit-Bookmarks: -1,-1,-1,-1,-1,-1,27,-1,-1,-1\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:85
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
 msgid "GNOME Fonts"
 msgstr "GNOME Schriften"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1066
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1119
 #: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Schriftarten Ihres Systems betrachten"
@@ -87,14 +87,10 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "SCHRIFTART-DATEI AUSGABE-DATEI"
 
 #: src/font-view-app-menu.ui:6
-msgid "About"
-msgstr "Info"
+msgid "About Fonts"
+msgstr "_Info zu Schriften"
 
-#: src/font-view-app-menu.ui:10
-msgid "Quit"
-msgstr "Beenden"
-
-#: src/font-view.c:93
+#: src/font-view.c:99
 msgid "Show the application's version"
 msgstr "Die Version der Anwendung anzeigen"
 
@@ -103,126 +99,130 @@ msgstr "Die Version der Anwendung anzeigen"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:223
+#: src/font-view.c:230
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, Standard %g"
 
-#: src/font-view.c:279
+#: src/font-view.c:286
 #, c-format
 msgid "Instance %d"
 msgstr "Instanz %d"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:324
+#: src/font-view.c:331
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:350
+#: src/font-view.c:357
 msgid "Name"
 msgstr "Name"
 
-#: src/font-view.c:353
+#: src/font-view.c:360
 msgid "Style"
 msgstr "Stil"
 
-#: src/font-view.c:363
+#: src/font-view.c:370
 msgid "Type"
 msgstr "Typ"
 
-#: src/font-view.c:424 src/font-view.c:458
+#: src/font-view.c:431 src/font-view.c:465
 msgid "Version"
 msgstr "Version"
 
-#: src/font-view.c:429 src/font-view.c:464
+#: src/font-view.c:436 src/font-view.c:471
 msgid "Copyright"
 msgstr "Copyright"
 
-#: src/font-view.c:434
+#: src/font-view.c:441
 msgid "Description"
 msgstr "Beschreibung"
 
-#: src/font-view.c:439
+#: src/font-view.c:446
 msgid "Manufacturer"
 msgstr "Anbieter"
 
-#: src/font-view.c:444
+#: src/font-view.c:451
 msgid "Designer"
 msgstr "Designer"
 
-#: src/font-view.c:449
+#: src/font-view.c:456
 msgid "License"
 msgstr "Lizenz"
 
-#: src/font-view.c:479
+#: src/font-view.c:486
 msgid "Glyph Count"
 msgstr "Anzahl der Glyphen"
 
-#: src/font-view.c:482
+#: src/font-view.c:489
 msgid "Color Glyphs"
 msgstr "Farbglyphen"
 
-#: src/font-view.c:482
+#: src/font-view.c:489
 msgid "yes"
 msgstr "ja"
 
-#: src/font-view.c:482
+#: src/font-view.c:489
 msgid "no"
 msgstr "nein"
 
-#: src/font-view.c:486
+#: src/font-view.c:493
 msgid "Layout Features"
 msgstr "Layout-Funktionen"
 
-#: src/font-view.c:493
+#: src/font-view.c:500
 msgid "Variation Axes"
 msgstr "Variations-Achsen"
 
-#: src/font-view.c:501
+#: src/font-view.c:508
 msgid "Named Styles"
 msgstr "Bezeichnete Stile"
 
-#: src/font-view.c:518
-msgid "Install Failed"
-msgstr "Installation fehlgeschlagen"
-
-#: src/font-view.c:525
-msgid "Installed"
-msgstr "Installiert"
-
-#: src/font-view.c:529 src/font-view.c:808
-msgid "Install"
-msgstr "Installieren"
-
-#: src/font-view.c:663
+#: src/font-view.c:690
 msgid "This font could not be displayed."
 msgstr "Diese Schriftart kann nicht angezeigt werden."
 
-#: src/font-view.c:819
+#: src/font-view.c:838
+msgid "Install"
+msgstr "Installieren"
+
+#: src/font-view.c:841
+msgid "Installing…"
+msgstr "Wird installiert …"
+
+#: src/font-view.c:844
+msgid "Installed"
+msgstr "Installiert"
+
+#: src/font-view.c:847
+msgid "Failed"
+msgstr "Fehlgeschlagen"
+
+#: src/font-view.c:865
 msgid "Info"
 msgstr "Info"
 
-#: src/font-view.c:834
+#: src/font-view.c:880
 msgid "Back"
 msgstr "Zurück"
 
-#: src/font-view.c:939
+#: src/font-view.c:992
 msgid "All Fonts"
 msgstr "Alle Schriftarten"
 
-#: src/font-view.c:1065 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1118 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
 msgstr "Schriften"
 
-#: src/font-view.c:1068
+#: src/font-view.c:1121
 msgid "translator-credits"
 msgstr ""
 "Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009, 2011, 2012.\n"
 "Tobias Endrigkeit <tobiasendrigkeit@googlemail.com>, 2012.\n"
 "Benjamin Steinwender <b@stbe.at>, 2014.\n"
 "Bernd Homuth <dev@hmt.im>, 2014.\n"
-"Tim Sabsch <tim@sabsch.com>, 2017."
+"Tim Sabsch <tim@sabsch.com>, 2017, 2019."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in:6
@@ -231,8 +231,8 @@ msgstr "Schriftart;Schriftartschnitt;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: src/org.gnome.font-viewer.desktop.in:8
-msgid "preferences-desktop-font"
-msgstr "preferences-desktop-font"
+msgid "org.gnome.font-viewer"
+msgstr "org.gnome.font-viewer"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -1028,3 +1028,12 @@ msgstr "Vertikale Alternativen für Rotation"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Durchgestrichene Null"
+
+#~ msgid "About"
+#~ msgstr "Info"
+
+#~ msgid "Quit"
+#~ msgstr "Beenden"
+
+#~ msgid "preferences-desktop-font"
+#~ msgstr "preferences-desktop-font"
