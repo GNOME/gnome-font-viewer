@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
 "POT-Creation-Date: 2018-12-08 21:01+0000\n"
-"PO-Revision-Date: 2019-02-28 19:54+0100\n"
+"PO-Revision-Date: 2019-03-08 18:44+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -218,67 +218,67 @@ msgstr "preferences-desktop-font"
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
 msgid "Access All Alternates"
-msgstr ""
+msgstr "Dostop do vseh alternativnih variacij znakov"
 
 #: src/open-type-layout.h:14
 msgctxt "OpenType layout"
 msgid "Above-base Forms"
-msgstr ""
+msgstr "Oblike nad osnovnico"
 
 #: src/open-type-layout.h:15
 msgctxt "OpenType layout"
 msgid "Above-base Mark Positioning"
-msgstr ""
+msgstr "Oblike označne postavitve nad osnovnicoVertical Kana Alternates"
 
 #: src/open-type-layout.h:16
 msgctxt "OpenType layout"
 msgid "Above-base Substitutions"
-msgstr ""
+msgstr "Zamenjave ligature nad osnovnico"
 
 #: src/open-type-layout.h:17
 msgctxt "OpenType layout"
 msgid "Alternative Fractions"
-msgstr ""
+msgstr "Pokončni ulomki"
 
 #: src/open-type-layout.h:18
 msgctxt "OpenType layout"
 msgid "Akhands"
-msgstr ""
+msgstr "Zamenjave zaporedja znakov Akhandi"
 
 #: src/open-type-layout.h:19
 msgctxt "OpenType layout"
 msgid "Below-base Forms"
-msgstr ""
+msgstr "Oblike pod osnovnico"
 
 #: src/open-type-layout.h:20
 msgctxt "OpenType layout"
 msgid "Below-base Mark Positioning"
-msgstr ""
+msgstr "Oblike označne postavitve pod osnovnico"
 
 #: src/open-type-layout.h:21
 msgctxt "OpenType layout"
 msgid "Below-base Substitutions"
-msgstr ""
+msgstr "Zamenjave ligature pod osnovnico"
 
 #: src/open-type-layout.h:22
 msgctxt "OpenType layout"
 msgid "Contextual Alternates"
-msgstr ""
+msgstr "Vsebinske zamenjave znakov"
 
 #: src/open-type-layout.h:23
 msgctxt "OpenType layout"
 msgid "Case-Sensitive Forms"
-msgstr ""
+msgstr "Prilagoditve za velike črke"
 
 #: src/open-type-layout.h:24
 msgctxt "OpenType layout"
 msgid "Glyph Composition / Decomposition"
-msgstr ""
+msgstr "Sestavljivi / Razstavljivi znaki"
 
 #: src/open-type-layout.h:25
 msgctxt "OpenType layout"
 msgid "Conjunct Form After Ro"
-msgstr ""
+msgstr "Združene oblike za znakom Ro"
 
 #: src/open-type-layout.h:26
 msgctxt "OpenType layout"
@@ -288,27 +288,27 @@ msgstr "Konjugirane oblike"
 #: src/open-type-layout.h:27
 msgctxt "OpenType layout"
 msgid "Contextual Ligatures"
-msgstr "Vsebinske ligature"
+msgstr "Vsebinske ligature znakov"
 
 #: src/open-type-layout.h:28
 msgctxt "OpenType layout"
 msgid "Centered CJK Punctuation"
-msgstr ""
+msgstr "Sredinjeni ločilni znaki CJK"
 
 #: src/open-type-layout.h:29
 msgctxt "OpenType layout"
 msgid "Capital Spacing"
-msgstr ""
+msgstr "Razmične velike črke"
 
 #: src/open-type-layout.h:30
 msgctxt "OpenType layout"
 msgid "Contextual Swash"
-msgstr ""
+msgstr "Znakovni prelivi"
 
 #: src/open-type-layout.h:31
 msgctxt "OpenType layout"
 msgid "Cursive Positioning"
-msgstr ""
+msgstr "Položajno prilagajanje kurzive"
 
 #: src/open-type-layout.h:32
 msgctxt "OpenType layout"
@@ -338,17 +338,17 @@ msgstr "Denominatorji"
 #: src/open-type-layout.h:37
 msgctxt "OpenType layout"
 msgid "Dotless Forms"
-msgstr ""
+msgstr "Ne-točkovne oblike"
 
 #: src/open-type-layout.h:38
 msgctxt "OpenType layout"
 msgid "Expert Forms"
-msgstr ""
+msgstr "Napredne oblike"
 
 #: src/open-type-layout.h:39
 msgctxt "OpenType layout"
 msgid "Final Glyph on Line Alternates"
-msgstr ""
+msgstr "Končni znaki vrstic"
 
 #: src/open-type-layout.h:40
 msgctxt "OpenType layout"
@@ -368,7 +368,7 @@ msgstr "Končne oblike"
 #: src/open-type-layout.h:43
 msgctxt "OpenType layout"
 msgid "Flattened accent forms"
-msgstr ""
+msgstr "Ploske oblike preglasov"
 
 #: src/open-type-layout.h:44
 msgctxt "OpenType layout"
@@ -403,7 +403,7 @@ msgstr "Zgodovinski znaki"
 #: src/open-type-layout.h:50
 msgctxt "OpenType layout"
 msgid "Horizontal Kana Alternates"
-msgstr ""
+msgstr "Dodatni vodoravni znaki Kana"
 
 #: src/open-type-layout.h:51
 msgctxt "OpenType layout"
@@ -433,7 +433,7 @@ msgstr "Začetne oblike"
 #: src/open-type-layout.h:56
 msgctxt "OpenType layout"
 msgid "Isolated Forms"
-msgstr ""
+msgstr "Izolirane oblike"
 
 #: src/open-type-layout.h:57
 msgctxt "OpenType layout"
@@ -443,7 +443,7 @@ msgstr "Ležeče pisave"
 #: src/open-type-layout.h:58
 msgctxt "OpenType layout"
 msgid "Justification Alternates"
-msgstr ""
+msgstr "Poravnalne oblike"
 
 #: src/open-type-layout.h:59
 msgctxt "OpenType layout"
@@ -483,7 +483,7 @@ msgstr "Običajne ligature"
 #: src/open-type-layout.h:66
 msgctxt "OpenType layout"
 msgid "Leading Jamo Forms"
-msgstr ""
+msgstr "Glavne oblike Jamo"
 
 #: src/open-type-layout.h:67
 msgctxt "OpenType layout"
@@ -493,12 +493,12 @@ msgstr ""
 #: src/open-type-layout.h:68
 msgctxt "OpenType layout"
 msgid "Localized Forms"
-msgstr ""
+msgstr "Jezikovno prilagojene oblike"
 
 #: src/open-type-layout.h:69
 msgctxt "OpenType layout"
 msgid "Left-to-right alternates"
-msgstr ""
+msgstr "Različice za zapis z leve proti desni"
 
 #: src/open-type-layout.h:70
 msgctxt "OpenType layout"
@@ -508,7 +508,7 @@ msgstr "Zrcaljene oblike z leve proti desni"
 #: src/open-type-layout.h:71
 msgctxt "OpenType layout"
 msgid "Mark Positioning"
-msgstr ""
+msgstr "Označne postavitve"
 
 #: src/open-type-layout.h:72
 msgctxt "OpenType layout"
@@ -528,12 +528,12 @@ msgstr "Grški matematični znaki"
 #: src/open-type-layout.h:75
 msgctxt "OpenType layout"
 msgid "Mark to Mark Positioning"
-msgstr ""
+msgstr "Označne postavitve"
 
 #: src/open-type-layout.h:76
 msgctxt "OpenType layout"
 msgid "Mark Positioning via Substitution"
-msgstr ""
+msgstr "Oblike označne postavitve z zamenjavo"
 
 #: src/open-type-layout.h:77
 msgctxt "OpenType layout"
@@ -598,22 +598,22 @@ msgstr "Sorazmerne sličice"
 #: src/open-type-layout.h:89
 msgctxt "OpenType layout"
 msgid "Pre-Base Forms"
-msgstr ""
+msgstr "Oblike pred osnovnico"
 
 #: src/open-type-layout.h:90
 msgctxt "OpenType layout"
 msgid "Pre-base Substitutions"
-msgstr ""
+msgstr "Zamenjave ligature pred osnovnico"
 
 #: src/open-type-layout.h:91
 msgctxt "OpenType layout"
 msgid "Post-base Forms"
-msgstr ""
+msgstr "Oblike za osnovnico"
 
 #: src/open-type-layout.h:92
 msgctxt "OpenType layout"
 msgid "Post-base Substitutions"
-msgstr ""
+msgstr "Zamenjave ligature za osnovnico"
 
 #: src/open-type-layout.h:93
 msgctxt "OpenType layout"
@@ -658,12 +658,12 @@ msgstr "Desne meje"
 #: src/open-type-layout.h:101
 msgctxt "OpenType layout"
 msgid "Right-to-left alternates"
-msgstr ""
+msgstr "Različice za zapis z desne proti levi"
 
 #: src/open-type-layout.h:102
 msgctxt "OpenType layout"
 msgid "Right-to-left mirrored forms"
-msgstr ""
+msgstr "Zrcaljene oblike z desne proti levi"
 
 #: src/open-type-layout.h:103
 msgctxt "OpenType layout"
@@ -683,7 +683,7 @@ msgstr "Slogovne različice"
 #: src/open-type-layout.h:106
 msgctxt "OpenType layout"
 msgid "Scientific Inferiors"
-msgstr ""
+msgstr "Znanstveni  zapisi"
 
 #: src/open-type-layout.h:107
 msgctxt "OpenType layout"
@@ -803,7 +803,7 @@ msgstr "Slogovni nabor 20"
 #: src/open-type-layout.h:130
 msgctxt "OpenType layout"
 msgid "Math script style alternates"
-msgstr ""
+msgstr "Matematični slogovni zapisi"
 
 #: src/open-type-layout.h:131
 msgctxt "OpenType layout"
@@ -823,7 +823,7 @@ msgstr "Nadpisano"
 #: src/open-type-layout.h:134
 msgctxt "OpenType layout"
 msgid "Swash"
-msgstr ""
+msgstr "Znakovni prelivi"
 
 #: src/open-type-layout.h:135
 msgctxt "OpenType layout"
@@ -858,7 +858,7 @@ msgstr "Tretjinske širine"
 #: src/open-type-layout.h:141
 msgctxt "OpenType layout"
 msgid "Unicase"
-msgstr ""
+msgstr "Unicase"
 
 #: src/open-type-layout.h:142
 msgctxt "OpenType layout"
