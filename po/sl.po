@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
 "POT-Creation-Date: 2018-12-08 21:01+0000\n"
-"PO-Revision-Date: 2019-03-08 18:44+0100\n"
+"PO-Revision-Date: 2019-03-10 21:49+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -162,7 +162,7 @@ msgstr "Podrobnosti razporeditve"
 
 #: src/font-view.c:493
 msgid "Variation Axes"
-msgstr ""
+msgstr "Variacijska os"
 
 #: src/font-view.c:501
 msgid "Named Styles"
@@ -488,7 +488,7 @@ msgstr "Glavne oblike Jamo"
 #: src/open-type-layout.h:67
 msgctxt "OpenType layout"
 msgid "Lining Figures"
-msgstr ""
+msgstr "Črtni znaki"
 
 #: src/open-type-layout.h:68
 msgctxt "OpenType layout"
@@ -538,7 +538,7 @@ msgstr "Oblike označne postavitve z zamenjavo"
 #: src/open-type-layout.h:77
 msgctxt "OpenType layout"
 msgid "Alternate Annotation Forms"
-msgstr ""
+msgstr "Izmenjujoče anotacijske oblike"
 
 #: src/open-type-layout.h:78
 msgctxt "OpenType layout"
@@ -558,7 +558,7 @@ msgstr "Numeratorji"
 #: src/open-type-layout.h:81
 msgctxt "OpenType layout"
 msgid "Oldstyle Figures"
-msgstr ""
+msgstr "Staroslogovni znaki"
 
 #: src/open-type-layout.h:82
 msgctxt "OpenType layout"
@@ -633,7 +633,7 @@ msgstr "Naključno"
 #: src/open-type-layout.h:96
 msgctxt "OpenType layout"
 msgid "Required Contextual Alternates"
-msgstr ""
+msgstr "Zahtevane vsebinske zamenjave"
 
 #: src/open-type-layout.h:97
 msgctxt "OpenType layout"
@@ -648,7 +648,7 @@ msgstr "Zahtevane ligature"
 #: src/open-type-layout.h:99
 msgctxt "OpenType layout"
 msgid "Reph Forms"
-msgstr ""
+msgstr "Oblike Reph"
 
 #: src/open-type-layout.h:100
 msgctxt "OpenType layout"
@@ -668,12 +668,12 @@ msgstr "Zrcaljene oblike z desne proti levi"
 #: src/open-type-layout.h:103
 msgctxt "OpenType layout"
 msgid "Ruby Notation Forms"
-msgstr ""
+msgstr "Notacijske oblike Ruby"
 
 #: src/open-type-layout.h:104
 msgctxt "OpenType layout"
 msgid "Required Variation Alternates"
-msgstr ""
+msgstr "Zahtevani variacijski znaki"
 
 #: src/open-type-layout.h:105
 msgctxt "OpenType layout"
@@ -808,7 +808,7 @@ msgstr "Matematični slogovni zapisi"
 #: src/open-type-layout.h:131
 msgctxt "OpenType layout"
 msgid "Stretching Glyph Decomposition"
-msgstr ""
+msgstr "Raztegljivi razstavljivi znaki"
 
 #: src/open-type-layout.h:132
 msgctxt "OpenType layout"
@@ -828,22 +828,22 @@ msgstr "Znakovni prelivi"
 #: src/open-type-layout.h:135
 msgctxt "OpenType layout"
 msgid "Titling"
-msgstr ""
+msgstr "Naslavljanje"
 
 #: src/open-type-layout.h:136
 msgctxt "OpenType layout"
 msgid "Trailing Jamo Forms"
-msgstr ""
+msgstr "Podporne oblike Jamo"
 
 #: src/open-type-layout.h:137
 msgctxt "OpenType layout"
 msgid "Traditional Name Forms"
-msgstr ""
+msgstr "Tradicionalne imenske oblike"
 
 #: src/open-type-layout.h:138
 msgctxt "OpenType layout"
 msgid "Tabular Figures"
-msgstr ""
+msgstr "Tabularne oblike"
 
 #: src/open-type-layout.h:139
 msgctxt "OpenType layout"
@@ -863,7 +863,7 @@ msgstr "Unicase"
 #: src/open-type-layout.h:142
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Metrics"
-msgstr ""
+msgstr "Metrično razmerje"
 
 #: src/open-type-layout.h:143
 msgctxt "OpenType layout"
@@ -878,17 +878,17 @@ msgstr "Navpično pisanje"
 #: src/open-type-layout.h:145
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Half Metrics"
-msgstr ""
+msgstr "Nadomestne širine za navpično pisanje"
 
 #: src/open-type-layout.h:146
 msgctxt "OpenType layout"
 msgid "Vowel Jamo Forms"
-msgstr ""
+msgstr "Samoglasniške oblike Jamo"
 
 #: src/open-type-layout.h:147
 msgctxt "OpenType layout"
 msgid "Vertical Kana Alternates"
-msgstr ""
+msgstr "Dodatni navpični znaki Kana"
 
 #: src/open-type-layout.h:148
 msgctxt "OpenType layout"
@@ -898,17 +898,17 @@ msgstr "Navpično spodsekavanje"
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Vertical Metrics"
-msgstr ""
+msgstr "Proporcionalne nadomestne širine za navpično pisanje"
 
 #: src/open-type-layout.h:150
 msgctxt "OpenType layout"
 msgid "Vertical Alternates and Rotation"
-msgstr ""
+msgstr "Pretvorbe znakov za navpično pisanje"
 
 #: src/open-type-layout.h:151
 msgctxt "OpenType layout"
 msgid "Vertical Alternates for Rotation"
-msgstr ""
+msgstr "Zamenjave za navpično pisanje"
 
 #: src/open-type-layout.h:152
 msgctxt "OpenType layout"
