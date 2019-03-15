@@ -1,3 +1,11 @@
+GNOME Font Viewer - 3.32.0
+-------------------------------------------------------------------------------
+• Update the icon to follow the GNOME 3.32 guidelines [Jakub Steiner]
+• Replace deprecated API [Cosimo Cecchi, Martin Blanchard]
+• Improve usability of the Install button [#789699 Martin Blanchard]
+• Remove app menu following GNOME 3.32 guidelines [Matthias Clasen]
+• Translation updates
+
 GNOME Font Viewer - 3.30.0
 -------------------------------------------------------------------------------
 • Show some more OpenType features
