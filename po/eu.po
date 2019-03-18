@@ -2,66 +2,48 @@
 # Copyright (C) 2005, 2006, 2007, 2008, 2009, 2010, 2011 Free Software Foundation, Inc.
 # This file is distributed under the same license as the baobab package.
 #
-#
 # Mikel Olasagasti <hey_neken@mundurat.net>, 2005.
 # Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2005, 2006, 2007, 2008, 2009, 2010, 2011.
 # Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2012, 2013, 2014, 2017.
 # Julen Ruiz Aizpuru <julenx@gmail.com>, 2011.
+# Asier Sarasua Garmendia <asier.sarasua@gmail.com>, 2019.
+#
 msgid ""
-msgstr ""
-"Project-Id-Version: gnome-font-viewer master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-08-10 23:03+0000\n"
-"PO-Revision-Date: 2017-08-27 14:35+0200\n"
-"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
+msgstr "Project-Id-Version: gnome-font-viewer master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues\n"
+"POT-Creation-Date: 2018-11-01 21:11+0000\n"
+"PO-Revision-Date: 2019-03-18 06:00+0100\n"
+"Last-Translator: Asier Sarasua Garmendia <asier.sarasua@gmail.com>\n"
 "Language-Team: Basque <librezale@librezale.eus>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.5\n"
 "X-Project-Style: gnome\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:76
-#| msgid "GNOME Font Viewer"
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
 msgid "GNOME Fonts"
-msgstr "GNOMEren Letra-tipoak"
+msgstr "GNOME Letra-tipoak"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:796
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1119
 #: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Ikusi sistemako letra-tipoak"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
-#| msgid ""
-#| "GNOME Font Viewer shows you the fonts installed on your computer for your "
-#| "use as thumbnails. Selecting any thumbnails shows the full view of how "
-#| "the font would look under various sizes."
 msgid ""
 "GNOME Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
-msgstr ""
-"GNOMEren Letra-tipoak ordenagailuan instalatuta dauden letra-"
-"tipoak koadro txikietan erakusten ditu. Edozer koadro-txiki hautatuz letra-"
-"tipoa hainbat tamainatan nola ikusiko den bistaratzen du."
+msgstr "GNOME Letra-tipoak ordenagailuan instalatuta dauden letra-tipoak koadro txikietan erakusten ditu. Edozer koadro-txiki hautatuz letra-tipoa hainbat tamainatan nola ikusiko den bistaratzen du."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
-#| msgid ""
-#| "GNOME Font Viewer also supports installing new font files downloaded in "
-#| "the .ttf and other formats. Fonts may be installed only for your use or "
-#| "made available to all users on the computer."
 msgid ""
 "GNOME Fonts also supports installing new font files downloaded in the .ttf "
 "and other formats. Fonts may be installed only for your use or made "
 "available to all users on the computer."
-msgstr ""
-"GNOMEren Letra-tipoak letra-tipoen fitxategi berriak (.ttf edo "
-"beste formatuan deskargatuta) instala ditzake. Letra-tipoa zure "
-"erabilpenerako soilik instala daiteke, edo ordenagailuko beste erabiltzaile "
-"guztientzako baita ere."
+msgstr "GNOME Letra-tipoak letra-tipoen fitxategi berriak (.ttf edo beste formatuan deskargatuta) instala ditzake. Letra-tipoa zure erabilpenerako soilik instala daiteke, edo ordenagailuko beste erabiltzaile guztientzako baita ere."
 
 #: src/font-thumbnailer.c:189
 msgid "Text to thumbnail (default: Aa)"
@@ -84,77 +66,137 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "LETRA-TIPOEN_FITXATEGIA IRTEERAKO-FITXATEGIA"
 
 #: src/font-view-app-menu.ui:6
-msgid "About"
-msgstr "Honi buruz"
+msgid "About Fonts"
+msgstr "Letra-tipoak aplikazioari buruz"
 
-#: src/font-view-app-menu.ui:10
-msgid "Quit"
-msgstr "Irten"
-
-#: src/font-view.c:84
+#: src/font-view.c:99
 msgid "Show the application's version"
 msgstr "Erakutsi aplikazioaren bertsioa"
 
-#: src/font-view.c:197
+#. Translators, this string is used to display information about
+#. * a 'font variation axis'. The %s gets replaced with the name
+#. * of the axis, for example 'Width'. The three %g get replaced
+#. * with the minimum, maximum and default values for the axis.
+#.
+#: src/font-view.c:230
+#, c-format
+msgid "%s %g — %g, default %g"
+msgstr "%s %g — %g, lehenetsia %g"
+
+#: src/font-view.c:286
+#, c-format
+msgid "Instance %d"
+msgstr "%d instantzia"
+
+#. Translators, this seperates the list of Layout Features.
+#: src/font-view.c:331
+msgctxt "OpenType layout"
+msgid ", "
+msgstr ", "
+
+#: src/font-view.c:357
 msgid "Name"
 msgstr "Izena"
 
-#: src/font-view.c:200
+#: src/font-view.c:360
 msgid "Style"
 msgstr "Estiloa"
 
-#: src/font-view.c:210
+#: src/font-view.c:370
 msgid "Type"
 msgstr "Mota"
 
-#: src/font-view.c:255 src/font-view.c:274
+#: src/font-view.c:431 src/font-view.c:465
 msgid "Version"
 msgstr "Bertsioa"
 
-#: src/font-view.c:260 src/font-view.c:280
+#: src/font-view.c:436 src/font-view.c:471
 msgid "Copyright"
 msgstr "Copyright-a"
 
-#: src/font-view.c:265
+#: src/font-view.c:441
 msgid "Description"
 msgstr "Azalpena"
 
-#: src/font-view.c:296
-msgid "Install Failed"
-msgstr "Instalazioak huts egin du"
+#: src/font-view.c:446
+msgid "Manufacturer"
+msgstr "Fabrikatzailea"
 
-#: src/font-view.c:303
-msgid "Installed"
-msgstr "Instalatuta"
+#: src/font-view.c:451
+msgid "Designer"
+msgstr "Diseinatzailea"
 
-#: src/font-view.c:307 src/font-view.c:552
-msgid "Install"
-msgstr "Instalatu"
+#: src/font-view.c:456
+msgid "License"
+msgstr "Lizentzia"
 
-#: src/font-view.c:441
+#: src/font-view.c:486
+msgid "Glyph Count"
+msgstr "Glifo kopurua"
+
+#: src/font-view.c:489
+msgid "Color Glyphs"
+msgstr "Kolore-glifoak"
+
+#: src/font-view.c:489
+msgid "yes"
+msgstr "bai"
+
+#: src/font-view.c:489
+msgid "no"
+msgstr "ez"
+
+#: src/font-view.c:493
+msgid "Layout Features"
+msgstr "Diseinu-ezaugarriak"
+
+#: src/font-view.c:500
+msgid "Variation Axes"
+msgstr "Aldaera-ardatzak"
+
+#: src/font-view.c:508
+msgid "Named Styles"
+msgstr "Izendatutako estiloak"
+
+#: src/font-view.c:690
 msgid "This font could not be displayed."
 msgstr "Letra-tipo hau ezin izan da bistaratu."
 
-#: src/font-view.c:505 src/font-view.c:563
+#: src/font-view.c:838
+msgid "Install"
+msgstr "Instalatu"
+
+#: src/font-view.c:841
+msgid "Installing…"
+msgstr "Instalatzen…"
+
+#: src/font-view.c:844
+msgid "Installed"
+msgstr "Instalatuta"
+
+#: src/font-view.c:847
+msgid "Failed"
+msgstr "Huts egin du"
+
+#: src/font-view.c:865
 msgid "Info"
 msgstr "Informazioa"
 
-#: src/font-view.c:578
+#: src/font-view.c:880
 msgid "Back"
 msgstr "Atzera"
 
-#: src/font-view.c:669
+#: src/font-view.c:992
 msgid "All Fonts"
 msgstr "Letra-tipo guztiak"
 
-#: src/font-view.c:795 src/org.gnome.font-viewer.desktop.in:3
-#| msgid "All Fonts"
+#: src/font-view.c:1118 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
 msgstr "Letra-tipoak"
 
-#: src/font-view.c:798
+#: src/font-view.c:1121
 msgid "translator-credits"
-msgstr "Iñaki Larrañaga Murgoitio <dooteo@zundan.com>"
+msgstr "Asier Sarasua Garmendia <asier.sarasua@gmail.com>"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in:6
@@ -163,8 +205,812 @@ msgstr "tipografia;letra-tipoak;letra;tipoa;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: src/org.gnome.font-viewer.desktop.in:8
-msgid "preferences-desktop-font"
-msgstr "preferences-desktop-font"
+msgid "org.gnome.font-viewer"
+msgstr "org.gnome.font-viewer"
+
+#: src/open-type-layout.h:13
+msgctxt "OpenType layout"
+msgid "Access All Alternates"
+msgstr "Atzitu ordezko guztiak"
+
+#: src/open-type-layout.h:14
+msgctxt "OpenType layout"
+msgid "Above-base Forms"
+msgstr "Oinarriz goragoko formak"
+
+#: src/open-type-layout.h:15
+msgctxt "OpenType layout"
+msgid "Above-base Mark Positioning"
+msgstr "Oinarriz goragoko marka-kokatzea"
+
+#: src/open-type-layout.h:16
+msgctxt "OpenType layout"
+msgid "Above-base Substitutions"
+msgstr "Oinarriz goragoko ordezkatzeak"
+
+#: src/open-type-layout.h:17
+msgctxt "OpenType layout"
+msgid "Alternative Fractions"
+msgstr "Bestelako zatikiak"
+
+#: src/open-type-layout.h:18
+msgctxt "OpenType layout"
+msgid "Akhands"
+msgstr "Akhands"
+
+#: src/open-type-layout.h:19
+msgctxt "OpenType layout"
+msgid "Below-base Forms"
+msgstr "Oinarriz beheragoko formak"
+
+#: src/open-type-layout.h:20
+msgctxt "OpenType layout"
+msgid "Below-base Mark Positioning"
+msgstr "Oinarriz beheragoko marka-kokatzea"
+
+#: src/open-type-layout.h:21
+msgctxt "OpenType layout"
+msgid "Below-base Substitutions"
+msgstr "Oinarriz beheragoko ordezkatzeak"
+
+#: src/open-type-layout.h:22
+msgctxt "OpenType layout"
+msgid "Contextual Alternates"
+msgstr "Testuinguruko ordezkoak"
+
+#: src/open-type-layout.h:23
+msgctxt "OpenType layout"
+msgid "Case-Sensitive Forms"
+msgstr "Maiuskulak/minuskulak bereizten dituzten formak"
+
+#: src/open-type-layout.h:24
+msgctxt "OpenType layout"
+msgid "Glyph Composition / Decomposition"
+msgstr "Glifoen konposizioa/deskonposizioa"
+
+#: src/open-type-layout.h:25
+msgctxt "OpenType layout"
+msgid "Conjunct Form After Ro"
+msgstr "Juntagailu forma Ro ondoren"
+
+#: src/open-type-layout.h:26
+msgctxt "OpenType layout"
+msgid "Conjunct Forms"
+msgstr "Juntagailu formak"
+
+#: src/open-type-layout.h:27
+msgctxt "OpenType layout"
+msgid "Contextual Ligatures"
+msgstr "Testuinguruko hizki-loturak"
+
+#: src/open-type-layout.h:28
+msgctxt "OpenType layout"
+msgid "Centered CJK Punctuation"
+msgstr "Zentratutako CJK puntuazioa"
+
+#: src/open-type-layout.h:29
+msgctxt "OpenType layout"
+msgid "Capital Spacing"
+msgstr "Maiuskulen tartea"
+
+#: src/open-type-layout.h:30
+msgctxt "OpenType layout"
+msgid "Contextual Swash"
+msgstr "Testuinguruko apaindua"
+
+#: src/open-type-layout.h:31
+msgctxt "OpenType layout"
+msgid "Cursive Positioning"
+msgstr "Kokatze etzana"
+
+#: src/open-type-layout.h:32
+msgctxt "OpenType layout"
+msgid "Petite Capitals From Capitals"
+msgstr "Maiuskula txikitxoak maiuskuletatik"
+
+#: src/open-type-layout.h:33
+msgctxt "OpenType layout"
+msgid "Small Capitals From Capitals"
+msgstr "Maiuskula txikiak maiuskuletatik"
+
+#: src/open-type-layout.h:34
+msgctxt "OpenType layout"
+msgid "Character Variation 1"
+msgstr "Karaktere-aldaera 1"
+
+#: src/open-type-layout.h:35
+msgctxt "OpenType layout"
+msgid "Character Variation 2"
+msgstr "Karaktere-aldaera 2"
+
+#: src/open-type-layout.h:36
+msgctxt "OpenType layout"
+msgid "Character Variation 3"
+msgstr "Karaktere-aldaera 3"
+
+#: src/open-type-layout.h:37
+msgctxt "OpenType layout"
+msgid "Character Variation 4"
+msgstr "Karaktere-aldaera 4"
+
+#: src/open-type-layout.h:38
+msgctxt "OpenType layout"
+msgid "Character Variation 5"
+msgstr "Karaktere-aldaera 5"
+
+#: src/open-type-layout.h:39
+msgctxt "OpenType layout"
+msgid "Character Variation 6"
+msgstr "Karaktere-aldaera 6"
+
+#: src/open-type-layout.h:40
+msgctxt "OpenType layout"
+msgid "Character Variation 7"
+msgstr "Karaktere-aldaera 7"
+
+#: src/open-type-layout.h:41
+msgctxt "OpenType layout"
+msgid "Character Variation 8"
+msgstr "Karaktere-aldaera 8"
+
+#: src/open-type-layout.h:42
+msgctxt "OpenType layout"
+msgid "Character Variation 9"
+msgstr "Karaktere-aldaera 9"
+
+#: src/open-type-layout.h:43
+msgctxt "OpenType layout"
+msgid "Character Variation 10"
+msgstr "Karaktere-aldaera 10"
+
+#: src/open-type-layout.h:44
+msgctxt "OpenType layout"
+msgid "Character Variation 11"
+msgstr "Karaktere-aldaera 11"
+
+#: src/open-type-layout.h:45
+msgctxt "OpenType layout"
+msgid "Character Variation 12"
+msgstr "Karaktere-aldaera 12"
+
+#: src/open-type-layout.h:46
+msgctxt "OpenType layout"
+msgid "Character Variation 13"
+msgstr "Karaktere-aldaera 13"
+
+#: src/open-type-layout.h:47
+msgctxt "OpenType layout"
+msgid "Character Variation 14"
+msgstr "Karaktere-aldaera 14"
+
+#: src/open-type-layout.h:48
+msgctxt "OpenType layout"
+msgid "Character Variation 15"
+msgstr "Karaktere-aldaera 15"
+
+#: src/open-type-layout.h:49
+msgctxt "OpenType layout"
+msgid "Character Variation 16"
+msgstr "Karaktere-aldaera 16"
+
+#: src/open-type-layout.h:50
+msgctxt "OpenType layout"
+msgid "Character Variation 17"
+msgstr "Karaktere-aldaera 17"
+
+#: src/open-type-layout.h:51
+msgctxt "OpenType layout"
+msgid "Character Variation 18"
+msgstr "Karaktere-aldaera 18"
+
+#: src/open-type-layout.h:52
+msgctxt "OpenType layout"
+msgid "Character Variation 19"
+msgstr "Karaktere-aldaera 19"
+
+#: src/open-type-layout.h:53
+msgctxt "OpenType layout"
+msgid "Distances"
+msgstr "Distantziak"
+
+#: src/open-type-layout.h:54
+msgctxt "OpenType layout"
+msgid "Discretionary Ligatures"
+msgstr "Iritziaren araberako hizki-loturak"
+
+#: src/open-type-layout.h:55
+msgctxt "OpenType layout"
+msgid "Denominators"
+msgstr "Izendatzaileak"
+
+#: src/open-type-layout.h:56
+msgctxt "OpenType layout"
+msgid "Dotless Forms"
+msgstr "Punturik gabeko formak"
+
+#: src/open-type-layout.h:57
+msgctxt "OpenType layout"
+msgid "Expert Forms"
+msgstr "Forma adituak"
+
+#: src/open-type-layout.h:58
+msgctxt "OpenType layout"
+msgid "Final Glyph on Line Alternates"
+msgstr "Azken glifoa lerro-ordezkoetan"
+
+#: src/open-type-layout.h:59
+msgctxt "OpenType layout"
+msgid "Terminal Forms #2"
+msgstr "Forma terminalak #2"
+
+#: src/open-type-layout.h:60
+msgctxt "OpenType layout"
+msgid "Terminal Forms #3"
+msgstr "Forma terminalak #3"
+
+#: src/open-type-layout.h:61
+msgctxt "OpenType layout"
+msgid "Terminal Forms"
+msgstr "Forma terminalak"
+
+#: src/open-type-layout.h:62
+msgctxt "OpenType layout"
+msgid "Flattened accent forms"
+msgstr "Laututako azentu-formak"
+
+#: src/open-type-layout.h:63
+msgctxt "OpenType layout"
+msgid "Fractions"
+msgstr "Zatikiak"
+
+#: src/open-type-layout.h:64
+msgctxt "OpenType layout"
+msgid "Full Widths"
+msgstr "Zabalera osoak"
+
+#: src/open-type-layout.h:65
+msgctxt "OpenType layout"
+msgid "Half Forms"
+msgstr "Forma erdiak"
+
+#: src/open-type-layout.h:66
+msgctxt "OpenType layout"
+msgid "Halant Forms"
+msgstr "Halant formak"
+
+#: src/open-type-layout.h:67
+msgctxt "OpenType layout"
+msgid "Alternate Half Widths"
+msgstr "Ordezko forma erdiak"
+
+#: src/open-type-layout.h:68
+msgctxt "OpenType layout"
+msgid "Historical Forms"
+msgstr "Forma historikoak"
+
+#: src/open-type-layout.h:69
+msgctxt "OpenType layout"
+msgid "Horizontal Kana Alternates"
+msgstr "Ordezko kana horizontalak"
+
+#: src/open-type-layout.h:70
+msgctxt "OpenType layout"
+msgid "Historical Ligatures"
+msgstr "Hizki-lotura historikoak"
+
+#: src/open-type-layout.h:71
+msgctxt "OpenType layout"
+msgid "Hangul"
+msgstr "Hangul"
+
+#: src/open-type-layout.h:72
+msgctxt "OpenType layout"
+msgid "Hojo Kanji Forms"
+msgstr "Hojo Kanji formak"
+
+#: src/open-type-layout.h:73
+msgctxt "OpenType layout"
+msgid "Half Widths"
+msgstr "Zabalera erdiak"
+
+#: src/open-type-layout.h:74
+msgctxt "OpenType layout"
+msgid "Initial Forms"
+msgstr "Hasierako formak"
+
+#: src/open-type-layout.h:75
+msgctxt "OpenType layout"
+msgid "Isolated Forms"
+msgstr "Forma isolatuak"
+
+#: src/open-type-layout.h:76
+msgctxt "OpenType layout"
+msgid "Italics"
+msgstr "Etzanak"
+
+#: src/open-type-layout.h:77
+msgctxt "OpenType layout"
+msgid "Justification Alternates"
+msgstr "Ordezko justifikazioak"
+
+#: src/open-type-layout.h:78
+msgctxt "OpenType layout"
+msgid "JIS78 Forms"
+msgstr "JIS78 formak"
+
+#: src/open-type-layout.h:79
+msgctxt "OpenType layout"
+msgid "JIS83 Forms"
+msgstr "JIS83 formak"
+
+#: src/open-type-layout.h:80
+msgctxt "OpenType layout"
+msgid "JIS90 Forms"
+msgstr "JIS90 formak"
+
+#: src/open-type-layout.h:81
+msgctxt "OpenType layout"
+msgid "JIS2004 Forms"
+msgstr "JIS2004 formak"
+
+#: src/open-type-layout.h:82
+msgctxt "OpenType layout"
+msgid "Kerning"
+msgstr "Karaktere arteko tartea"
+
+#: src/open-type-layout.h:83
+msgctxt "OpenType layout"
+msgid "Left Bounds"
+msgstr "Ezkerreko mugak"
+
+#: src/open-type-layout.h:84
+msgctxt "OpenType layout"
+msgid "Standard Ligatures"
+msgstr "Hizki-lotura estandarrak"
+
+#: src/open-type-layout.h:85
+msgctxt "OpenType layout"
+msgid "Leading Jamo Forms"
+msgstr "Hasierako Jamo formak"
+
+#: src/open-type-layout.h:86
+msgctxt "OpenType layout"
+msgid "Lining Figures"
+msgstr "Zenbaki jantziak"
+
+#: src/open-type-layout.h:87
+msgctxt "OpenType layout"
+msgid "Localized Forms"
+msgstr "Forma lokalizatuak"
+
+#: src/open-type-layout.h:88
+msgctxt "OpenType layout"
+msgid "Left-to-right alternates"
+msgstr "Ezkerretik eskuinerako ordezkoak"
+
+#: src/open-type-layout.h:89
+msgctxt "OpenType layout"
+msgid "Left-to-right mirrored forms"
+msgstr "Ezkerretik eskuinerako forma ispilatuak"
+
+#: src/open-type-layout.h:90
+msgctxt "OpenType layout"
+msgid "Mark Positioning"
+msgstr "Marka-kokatzea"
+
+#: src/open-type-layout.h:91
+msgctxt "OpenType layout"
+msgid "Medial Forms #2"
+msgstr "Forma ertainak #2"
+
+#: src/open-type-layout.h:92
+msgctxt "OpenType layout"
+msgid "Medial Forms"
+msgstr "Forma ertainak"
+
+#: src/open-type-layout.h:93
+msgctxt "OpenType layout"
+msgid "Mathematical Greek"
+msgstr "Greziera matematikoa"
+
+#: src/open-type-layout.h:94
+msgctxt "OpenType layout"
+msgid "Mark to Mark Positioning"
+msgstr "Markatik markarako kokatzea"
+
+#: src/open-type-layout.h:95
+msgctxt "OpenType layout"
+msgid "Mark Positioning via Substitution"
+msgstr "Marka-kokatzea ordezkatzeen bidez"
+
+#: src/open-type-layout.h:96
+msgctxt "OpenType layout"
+msgid "Alternate Annotation Forms"
+msgstr "Ordezko oharpen-formak"
+
+#: src/open-type-layout.h:97
+msgctxt "OpenType layout"
+msgid "NLC Kanji Forms"
+msgstr "NLC Kanji formak"
+
+#: src/open-type-layout.h:98
+msgctxt "OpenType layout"
+msgid "Nukta Forms"
+msgstr "Nukta formak"
+
+#: src/open-type-layout.h:99
+msgctxt "OpenType layout"
+msgid "Numerators"
+msgstr "Zenbakitzaileak"
+
+#: src/open-type-layout.h:100
+msgctxt "OpenType layout"
+msgid "Oldstyle Figures"
+msgstr "Estilo zaharreko zenbakiak"
+
+#: src/open-type-layout.h:101
+msgctxt "OpenType layout"
+msgid "Optical Bounds"
+msgstr "Muga optikoak"
+
+#: src/open-type-layout.h:102
+msgctxt "OpenType layout"
+msgid "Ordinals"
+msgstr "Ordinalak"
+
+#: src/open-type-layout.h:103
+msgctxt "OpenType layout"
+msgid "Ornaments"
+msgstr "Apaingarriak"
+
+#: src/open-type-layout.h:104
+msgctxt "OpenType layout"
+msgid "Proportional Alternate Widths"
+msgstr "Ordezko zabalera proportzionalak"
+
+#: src/open-type-layout.h:105
+msgctxt "OpenType layout"
+msgid "Petite Capitals"
+msgstr "Maiuskula txikitxoak"
+
+#: src/open-type-layout.h:106
+msgctxt "OpenType layout"
+msgid "Proportional Kana"
+msgstr "Kana proportzionala"
+
+#: src/open-type-layout.h:107
+msgctxt "OpenType layout"
+msgid "Proportional Figures"
+msgstr "Zenbaki proportzionalak"
+
+#: src/open-type-layout.h:108
+msgctxt "OpenType layout"
+msgid "Pre-Base Forms"
+msgstr "Oinarri aurreko formak"
+
+#: src/open-type-layout.h:109
+msgctxt "OpenType layout"
+msgid "Pre-base Substitutions"
+msgstr "Oinarri aurreko ordezkatzeak"
+
+#: src/open-type-layout.h:110
+msgctxt "OpenType layout"
+msgid "Post-base Forms"
+msgstr "Oinarri ondoko formak"
+
+#: src/open-type-layout.h:111
+msgctxt "OpenType layout"
+msgid "Post-base Substitutions"
+msgstr "Oinarri ondoko ordezkatzeak"
+
+#: src/open-type-layout.h:112
+msgctxt "OpenType layout"
+msgid "Proportional Widths"
+msgstr "Zabalera proportzionalak"
+
+#: src/open-type-layout.h:113
+msgctxt "OpenType layout"
+msgid "Quarter Widths"
+msgstr "Zabalera laurdenak"
+
+#: src/open-type-layout.h:114
+msgctxt "OpenType layout"
+msgid "Randomize"
+msgstr "Ausazkoa"
+
+#: src/open-type-layout.h:115
+msgctxt "OpenType layout"
+msgid "Required Contextual Alternates"
+msgstr "Derrigorrezko testuinguruko ordezkoak"
+
+#: src/open-type-layout.h:116
+msgctxt "OpenType layout"
+msgid "Rakar Forms"
+msgstr "Rakar formak"
+
+#: src/open-type-layout.h:117
+msgctxt "OpenType layout"
+msgid "Required Ligatures"
+msgstr "Beharrezko hizki-loturak"
+
+#: src/open-type-layout.h:118
+msgctxt "OpenType layout"
+msgid "Reph Forms"
+msgstr "Reph formak"
+
+#: src/open-type-layout.h:119
+msgctxt "OpenType layout"
+msgid "Right Bounds"
+msgstr "Eskuineko mugak"
+
+#: src/open-type-layout.h:120
+msgctxt "OpenType layout"
+msgid "Right-to-left alternates"
+msgstr "Eskuinetik ezkerrerako ordezkoak"
+
+#: src/open-type-layout.h:121
+msgctxt "OpenType layout"
+msgid "Right-to-left mirrored forms"
+msgstr "Eskuinetik ezkerrerako forma ispilatuak"
+
+#: src/open-type-layout.h:122
+msgctxt "OpenType layout"
+msgid "Ruby Notation Forms"
+msgstr "Ruby notazioaren formak"
+
+#: src/open-type-layout.h:123
+msgctxt "OpenType layout"
+msgid "Required Variation Alternates"
+msgstr "Derrigorrezko aldaera-ordezkoak"
+
+#: src/open-type-layout.h:124
+msgctxt "OpenType layout"
+msgid "Stylistic Alternates"
+msgstr "Ordezko estilistikoak"
+
+#: src/open-type-layout.h:125
+msgctxt "OpenType layout"
+msgid "Scientific Inferiors"
+msgstr "Apiindize zientifikoak"
+
+#: src/open-type-layout.h:126
+msgctxt "OpenType layout"
+msgid "Optical size"
+msgstr "Tamaina optikoa"
+
+#: src/open-type-layout.h:127
+msgctxt "OpenType layout"
+msgid "Small Capitals"
+msgstr "Maiuskula txikiak"
+
+#: src/open-type-layout.h:128
+msgctxt "OpenType layout"
+msgid "Simplified Forms"
+msgstr "Forma sinplifikatuak"
+
+#: src/open-type-layout.h:129
+msgctxt "OpenType layout"
+msgid "Stylistic Set 1"
+msgstr "Multzo estilistikoa 1"
+
+#: src/open-type-layout.h:130
+msgctxt "OpenType layout"
+msgid "Stylistic Set 2"
+msgstr "Multzo estilistikoa 2"
+
+#: src/open-type-layout.h:131
+msgctxt "OpenType layout"
+msgid "Stylistic Set 3"
+msgstr "Multzo estilistikoa 3"
+
+#: src/open-type-layout.h:132
+msgctxt "OpenType layout"
+msgid "Stylistic Set 4"
+msgstr "Multzo estilistikoa 4"
+
+#: src/open-type-layout.h:133
+msgctxt "OpenType layout"
+msgid "Stylistic Set 5"
+msgstr "Multzo estilistikoa 5"
+
+#: src/open-type-layout.h:134
+msgctxt "OpenType layout"
+msgid "Stylistic Set 6"
+msgstr "Multzo estilistikoa 6"
+
+#: src/open-type-layout.h:135
+msgctxt "OpenType layout"
+msgid "Stylistic Set 7"
+msgstr "Multzo estilistikoa 7"
+
+#: src/open-type-layout.h:136
+msgctxt "OpenType layout"
+msgid "Stylistic Set 8"
+msgstr "Multzo estilistikoa 8"
+
+#: src/open-type-layout.h:137
+msgctxt "OpenType layout"
+msgid "Stylistic Set 9"
+msgstr "Multzo estilistikoa 9"
+
+#: src/open-type-layout.h:138
+msgctxt "OpenType layout"
+msgid "Stylistic Set 10"
+msgstr "Multzo estilistikoa 10"
+
+#: src/open-type-layout.h:139
+msgctxt "OpenType layout"
+msgid "Stylistic Set 11"
+msgstr "Multzo estilistikoa 11"
+
+#: src/open-type-layout.h:140
+msgctxt "OpenType layout"
+msgid "Stylistic Set 12"
+msgstr "Multzo estilistikoa 12"
+
+#: src/open-type-layout.h:141
+msgctxt "OpenType layout"
+msgid "Stylistic Set 13"
+msgstr "Multzo estilistikoa 13"
+
+#: src/open-type-layout.h:142
+msgctxt "OpenType layout"
+msgid "Stylistic Set 14"
+msgstr "Multzo estilistikoa 14"
+
+#: src/open-type-layout.h:143
+msgctxt "OpenType layout"
+msgid "Stylistic Set 15"
+msgstr "Multzo estilistikoa 15"
+
+#: src/open-type-layout.h:144
+msgctxt "OpenType layout"
+msgid "Stylistic Set 16"
+msgstr "Multzo estilistikoa 16"
+
+#: src/open-type-layout.h:145
+msgctxt "OpenType layout"
+msgid "Stylistic Set 17"
+msgstr "Multzo estilistikoa 17"
+
+#: src/open-type-layout.h:146
+msgctxt "OpenType layout"
+msgid "Stylistic Set 18"
+msgstr "Multzo estilistikoa 18"
+
+#: src/open-type-layout.h:147
+msgctxt "OpenType layout"
+msgid "Stylistic Set 19"
+msgstr "Multzo estilistikoa 19"
+
+#: src/open-type-layout.h:148
+msgctxt "OpenType layout"
+msgid "Stylistic Set 20"
+msgstr "Multzo estilistikoa 20"
+
+#: src/open-type-layout.h:149
+msgctxt "OpenType layout"
+msgid "Math script style alternates"
+msgstr "Math script estiloaren ordezkoak"
+
+#: src/open-type-layout.h:150
+msgctxt "OpenType layout"
+msgid "Stretching Glyph Decomposition"
+msgstr "Glifo tiratuen deskonposizioa"
+
+#: src/open-type-layout.h:151
+msgctxt "OpenType layout"
+msgid "Subscript"
+msgstr "Azpiindizea"
+
+#: src/open-type-layout.h:152
+msgctxt "OpenType layout"
+msgid "Superscript"
+msgstr "Goi-indizea"
+
+#: src/open-type-layout.h:153
+msgctxt "OpenType layout"
+msgid "Swash"
+msgstr "Apaindua"
+
+#: src/open-type-layout.h:154
+msgctxt "OpenType layout"
+msgid "Titling"
+msgstr "Titulua"
+
+#: src/open-type-layout.h:155
+msgctxt "OpenType layout"
+msgid "Trailing Jamo Forms"
+msgstr "Amaierako Jamo formak"
+
+#: src/open-type-layout.h:156
+msgctxt "OpenType layout"
+msgid "Traditional Name Forms"
+msgstr "Izen tradizionalen formak"
+
+#: src/open-type-layout.h:157
+msgctxt "OpenType layout"
+msgid "Tabular Figures"
+msgstr "Taula formako zenbakiak"
+
+#: src/open-type-layout.h:158
+msgctxt "OpenType layout"
+msgid "Traditional Forms"
+msgstr "Forma tradizionalak"
+
+#: src/open-type-layout.h:159
+msgctxt "OpenType layout"
+msgid "Third Widths"
+msgstr "Zabalera herenak"
+
+#: src/open-type-layout.h:160
+msgctxt "OpenType layout"
+msgid "Unicase"
+msgstr "Unicase"
+
+#: src/open-type-layout.h:161
+msgctxt "OpenType layout"
+msgid "Alternate Vertical Metrics"
+msgstr "Metrika bertikal ordezkoak"
+
+#: src/open-type-layout.h:162
+msgctxt "OpenType layout"
+msgid "Vattu Variants"
+msgstr "Vattu aldaerak"
+
+#: src/open-type-layout.h:163
+msgctxt "OpenType layout"
+msgid "Vertical Writing"
+msgstr "Idazkera bertikala"
+
+#: src/open-type-layout.h:164
+msgctxt "OpenType layout"
+msgid "Alternate Vertical Half Metrics"
+msgstr "Metrika erdi bertikal ordezkoak"
+
+#: src/open-type-layout.h:165
+msgctxt "OpenType layout"
+msgid "Vowel Jamo Forms"
+msgstr "Bokalen Jamo formak"
+
+#: src/open-type-layout.h:166
+msgctxt "OpenType layout"
+msgid "Vertical Kana Alternates"
+msgstr "Ordezko Kana horizontalak"
+
+#: src/open-type-layout.h:167
+msgctxt "OpenType layout"
+msgid "Vertical Kerning"
+msgstr "Kernign bertikala"
+
+#: src/open-type-layout.h:168
+msgctxt "OpenType layout"
+msgid "Proportional Alternate Vertical Metrics"
+msgstr "Metrika bertikal ordezko proportzionalak"
+
+#: src/open-type-layout.h:169
+msgctxt "OpenType layout"
+msgid "Vertical Alternates and Rotation"
+msgstr "Ordezko bertikalak eta biraketa"
+
+#: src/open-type-layout.h:170
+msgctxt "OpenType layout"
+msgid "Vertical Alternates for Rotation"
+msgstr "Ordezko bertikalak biraketarako"
+
+#: src/open-type-layout.h:171
+msgctxt "OpenType layout"
+msgid "Slashed Zero"
+msgstr "Barradun zeroa"
+
+#~ msgid "About"
+#~ msgstr "Honi buruz"
+
+#~ msgid "Quit"
+#~ msgstr "Irten"
+
+#~ msgid "preferences-desktop-font"
+#~ msgstr "preferences-desktop-font"
 
 #~ msgid "Font Viewer"
 #~ msgstr "Letra-tipoen ikustailea"
@@ -178,9 +1024,6 @@ msgstr "preferences-desktop-font"
 
 #~ msgid "_Close"
 #~ msgstr "_Itxi"
-
-#~ msgid "About Font Viewer"
-#~ msgstr "Letra-tipoen ikustaileari buruz"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "Letra-tamaina (lehenetsita: 64)"
