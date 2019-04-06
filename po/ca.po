@@ -76,7 +76,7 @@ msgstr "FITXER-DE-TIPUS-DE-LLETRA FITXER-DE-SORTIDA"
 
 #: src/font-view-app-menu.ui:6
 msgid "About Fonts"
-msgstr "Quant Els tipus de lletra"
+msgstr "Quant a Els tipus de lletra"
 
 #: src/font-view.c:99
 msgid "Show the application's version"
