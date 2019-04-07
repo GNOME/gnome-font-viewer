@@ -21,9 +21,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
-"issues\n"
-"POT-Creation-Date: 2018-12-08 21:01+0000\n"
+"Report-Msgid-Bugs-To: "
+"https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues\n"
+"POT-Creation-Date: 2019-03-26 16:54+0000\n"
 "PO-Revision-Date: 2019-02-13 11:39+0100\n"
 "Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -227,18 +227,14 @@ msgstr ""
 "Ask Hjorth Larsen\n"
 "Alan Mortensen\n"
 "\n"
-"Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
-"Mere info: http://www.dansk-gruppen.dk"
+"Dansk-gruppen\n"
+"Websted <http://dansk-gruppen.dk>\n"
+"E-mail <dansk@dansk-gruppen.dk>"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
 msgstr "skrifttyper;skrifttypefamilie;skrifttypefremtoning;fonts;fontface;"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: src/org.gnome.font-viewer.desktop.in:8
-msgid "org.gnome.font-viewer"
-msgstr "org.gnome.font-viewer"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -1044,6 +1040,9 @@ msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Gennemstreget nul"
 
+#~ msgid "org.gnome.font-viewer"
+#~ msgstr "org.gnome.font-viewer"
+
 #~ msgid "About"
 #~ msgstr "Om"
 
@@ -1059,11 +1058,9 @@ msgstr "Gennemstreget nul"
 #~ msgid "[FILE...]"
 #~ msgstr "[FIL...]"
 
-#~ msgid ""
-#~ "Run '%s --help' to see a full list of available command line options."
+#~ msgid "Run '%s --help' to see a full list of available command line options."
 #~ msgstr ""
-#~ "Kør “%s --help” for at se en fuld liste af tilgængelige "
-#~ "kommandolinjetilvalg."
+#~ "Kør “%s --help” for at se en fuld liste af tilgængelige kommandolinjetilvalg."
 
 #~ msgid "_Close"
 #~ msgstr "_Luk"
@@ -1079,3 +1076,4 @@ msgstr "Gennemstreget nul"
 
 #~ msgid "Preview fonts"
 #~ msgstr "Forhåndsvis skrifttyper"
+
