@@ -14,18 +14,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
-"issues\n"
-"POT-Creation-Date: 2018-12-08 21:01+0000\n"
-"PO-Revision-Date: 2019-01-27 17:12+0100\n"
-"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues"
+"\n"
+"POT-Creation-Date: 2019-03-26 16:54+0000\n"
+"PO-Revision-Date: 2019-04-13 07:16+0100\n"
+"Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
 "Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Lokalize 2.0\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
 msgid "GNOME Fonts"
@@ -147,7 +147,7 @@ msgstr "Betűkészletjelek száma"
 
 #: src/font-view.c:489
 msgid "Color Glyphs"
-msgstr "Betűkészletjelek színezése"
+msgstr "Színes betűkészletjelek"
 
 #: src/font-view.c:489
 msgid "yes"
@@ -223,11 +223,6 @@ msgstr ""
 msgid "fonts;fontface;"
 msgstr "betűk;betűkészlet;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: src/org.gnome.font-viewer.desktop.in:8
-msgid "org.gnome.font-viewer"
-msgstr "org.gnome.font-viewer"
-
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
 msgid "Access All Alternates"
@@ -281,7 +276,7 @@ msgstr "Környezetfüggő változatok"
 #: src/open-type-layout.h:23
 msgctxt "OpenType layout"
 msgid "Case-Sensitive Forms"
-msgstr "Kis- és nagybetűket megkülönböztető formák"
+msgstr "Nagybetűkhöz igazított formák"
 
 #: src/open-type-layout.h:24
 msgctxt "OpenType layout"
@@ -311,7 +306,7 @@ msgstr "Középre igazított CJK központozás"
 #: src/open-type-layout.h:29
 msgctxt "OpenType layout"
 msgid "Capital Spacing"
-msgstr "Nagybetűk térköze"
+msgstr "Nagybetűs egalizálás"
 
 #: src/open-type-layout.h:30
 msgctxt "OpenType layout"
@@ -436,7 +431,7 @@ msgstr "Távolságok"
 #: src/open-type-layout.h:54
 msgctxt "OpenType layout"
 msgid "Discretionary Ligatures"
-msgstr "Választható ligatúrák"
+msgstr "Szépítő ligatúrák"
 
 #: src/open-type-layout.h:55
 msgctxt "OpenType layout"
@@ -516,7 +511,7 @@ msgstr "Vízszintes kana változatok"
 #: src/open-type-layout.h:70
 msgctxt "OpenType layout"
 msgid "Historical Ligatures"
-msgstr "Történelmi ligatúrák"
+msgstr "Régi ligatúrák"
 
 #: src/open-type-layout.h:71
 msgctxt "OpenType layout"
@@ -586,7 +581,7 @@ msgstr "Bal oldali korlátok"
 #: src/open-type-layout.h:84
 msgctxt "OpenType layout"
 msgid "Standard Ligatures"
-msgstr "Szabványos ligatúrák"
+msgstr "Bevett ligatúrák"
 
 #: src/open-type-layout.h:85
 msgctxt "OpenType layout"
@@ -596,7 +591,7 @@ msgstr "Kezdő jamo formák"
 #: src/open-type-layout.h:86
 msgctxt "OpenType layout"
 msgid "Lining Figures"
-msgstr "Sorkitöltő alakok"
+msgstr "Álló alakok"
 
 #: src/open-type-layout.h:87
 msgctxt "OpenType layout"
@@ -666,7 +661,7 @@ msgstr "Számlálók"
 #: src/open-type-layout.h:100
 msgctxt "OpenType layout"
 msgid "Oldstyle Figures"
-msgstr "Régi stílusú számok"
+msgstr "Ugráló számok"
 
 #: src/open-type-layout.h:101
 msgctxt "OpenType layout"
@@ -676,7 +671,7 @@ msgstr "Optikai korlátok"
 #: src/open-type-layout.h:102
 msgctxt "OpenType layout"
 msgid "Ordinals"
-msgstr "Sorszámnevek"
+msgstr "Sorszámok"
 
 #: src/open-type-layout.h:103
 msgctxt "OpenType layout"
@@ -811,102 +806,102 @@ msgstr "Egyszerűsített formák"
 #: src/open-type-layout.h:129
 msgctxt "OpenType layout"
 msgid "Stylistic Set 1"
-msgstr "1. stilisztikai készlet"
+msgstr "1. stíluskészlet"
 
 #: src/open-type-layout.h:130
 msgctxt "OpenType layout"
 msgid "Stylistic Set 2"
-msgstr "2. stilisztikai készlet"
+msgstr "2. stíluskészlet"
 
 #: src/open-type-layout.h:131
 msgctxt "OpenType layout"
 msgid "Stylistic Set 3"
-msgstr "3. stilisztikai készlet"
+msgstr "3. stíluskészlet"
 
 #: src/open-type-layout.h:132
 msgctxt "OpenType layout"
 msgid "Stylistic Set 4"
-msgstr "4. stilisztikai készlet"
+msgstr "4. stíluskészlet"
 
 #: src/open-type-layout.h:133
 msgctxt "OpenType layout"
 msgid "Stylistic Set 5"
-msgstr "5. stilisztikai készlet"
+msgstr "5. stíluskészlet"
 
 #: src/open-type-layout.h:134
 msgctxt "OpenType layout"
 msgid "Stylistic Set 6"
-msgstr "6. stilisztikai készlet"
+msgstr "6. stíluskészlet"
 
 #: src/open-type-layout.h:135
 msgctxt "OpenType layout"
 msgid "Stylistic Set 7"
-msgstr "7. stilisztikai készlet"
+msgstr "7. stíluskészlet"
 
 #: src/open-type-layout.h:136
 msgctxt "OpenType layout"
 msgid "Stylistic Set 8"
-msgstr "8. stilisztikai készlet"
+msgstr "8. stíluskészlet"
 
 #: src/open-type-layout.h:137
 msgctxt "OpenType layout"
 msgid "Stylistic Set 9"
-msgstr "9. stilisztikai készlet"
+msgstr "9. stíluskészlet"
 
 #: src/open-type-layout.h:138
 msgctxt "OpenType layout"
 msgid "Stylistic Set 10"
-msgstr "10. stilisztikai készlet"
+msgstr "10. stíluskészlet"
 
 #: src/open-type-layout.h:139
 msgctxt "OpenType layout"
 msgid "Stylistic Set 11"
-msgstr "11. stilisztikai készlet"
+msgstr "11. stíluskészlet"
 
 #: src/open-type-layout.h:140
 msgctxt "OpenType layout"
 msgid "Stylistic Set 12"
-msgstr "12. stilisztikai készlet"
+msgstr "12. stíluskészlet"
 
 #: src/open-type-layout.h:141
 msgctxt "OpenType layout"
 msgid "Stylistic Set 13"
-msgstr "13. stilisztikai készlet"
+msgstr "13. stíluskészlet"
 
 #: src/open-type-layout.h:142
 msgctxt "OpenType layout"
 msgid "Stylistic Set 14"
-msgstr "14. stilisztikai készlet"
+msgstr "14. stíluskészlet"
 
 #: src/open-type-layout.h:143
 msgctxt "OpenType layout"
 msgid "Stylistic Set 15"
-msgstr "15. stilisztikai készlet"
+msgstr "15. stíluskészlet"
 
 #: src/open-type-layout.h:144
 msgctxt "OpenType layout"
 msgid "Stylistic Set 16"
-msgstr "16. stilisztikai készlet"
+msgstr "16. stíluskészlet"
 
 #: src/open-type-layout.h:145
 msgctxt "OpenType layout"
 msgid "Stylistic Set 17"
-msgstr "17. stilisztikai készlet"
+msgstr "17. stíluskészlet"
 
 #: src/open-type-layout.h:146
 msgctxt "OpenType layout"
 msgid "Stylistic Set 18"
-msgstr "18. stilisztikai készlet"
+msgstr "18. stíluskészlet"
 
 #: src/open-type-layout.h:147
 msgctxt "OpenType layout"
 msgid "Stylistic Set 19"
-msgstr "19. stilisztikai készlet"
+msgstr "19. stíluskészlet"
 
 #: src/open-type-layout.h:148
 msgctxt "OpenType layout"
 msgid "Stylistic Set 20"
-msgstr "20. stilisztikai készlet"
+msgstr "20. stíluskészlet"
 
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
@@ -951,7 +946,7 @@ msgstr "Hagyományos név formák"
 #: src/open-type-layout.h:157
 msgctxt "OpenType layout"
 msgid "Tabular Figures"
-msgstr "Táblázatos számok"
+msgstr "Helyiértékes számok"
 
 #: src/open-type-layout.h:158
 msgctxt "OpenType layout"
@@ -1021,5 +1016,4 @@ msgstr "Függőleges változatok forgatáshoz"
 #: src/open-type-layout.h:171
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
-msgstr "Áthúzott zérus"
-
+msgstr "Áthúzott nulla"
