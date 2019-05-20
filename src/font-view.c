@@ -670,14 +670,6 @@ install_button_clicked_cb (GtkButton *button,
 }
 
 static void
-back_button_clicked_cb (GtkButton *button,
-                        gpointer user_data)
-{
-    FontViewApplication *self = user_data;
-    font_view_application_do_overview (self);
-}
-
-static void
 font_view_show_font_error (FontViewApplication *self,
                            const gchar *message)
 {
@@ -883,8 +875,7 @@ font_view_application_do_open (FontViewApplication *self,
                                      "image-button");
         gtk_header_bar_pack_start (GTK_HEADER_BAR (self->header), self->back_button);
 
-        g_signal_connect (self->back_button, "clicked",
-                          G_CALLBACK (back_button_clicked_cb), self);
+        gtk_actionable_set_action_name (GTK_ACTIONABLE (self->back_button), "app.back");
     }
 
     gtk_widget_hide (self->search_toggle);
@@ -1125,9 +1116,19 @@ action_about (GSimpleAction *action,
                            
 }
 
+static void
+action_back (GSimpleAction *action,
+             GVariant      *parameter,
+             gpointer       user_data)
+{
+    FontViewApplication *self = user_data;
+    font_view_application_do_overview (self);
+}
+
 static GActionEntry action_entries[] = {
     { "about", action_about, NULL, NULL, NULL },
-    { "quit", action_quit, NULL, NULL, NULL }
+    { "quit", action_quit, NULL, NULL, NULL },
+    { "back", action_back, NULL, NULL, NULL }
 };
 
 static void
@@ -1236,6 +1237,11 @@ font_view_application_startup (GApplication *application)
 
     g_action_map_add_action_entries (G_ACTION_MAP (self), action_entries,
                                      G_N_ELEMENTS (action_entries), self);
+
+    const gchar *back_accels[] = { "<Alt>Left", NULL };
+    gtk_application_set_accels_for_action (GTK_APPLICATION (application),
+                                           "app.back",
+                                           back_accels );
 }
 
 static void
