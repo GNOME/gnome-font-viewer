@@ -19,29 +19,29 @@
 # Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009, 2011-2012.
 # Benjamin Steinwender <b@stbe.at>, 2014.
 # Tim Sabsch <tim@sabsch.com>, 2017, 2019.
+# Milo Ivir <mail@milotype.de>, 2019.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-font-viewer master\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2019-03-02 18:57+0000\n"
-"PO-Revision-Date: 2019-03-02 22:34+0100\n"
+"POT-Creation-Date: 2019-05-21 00:06+0000\n"
+"PO-Revision-Date: 2019-06-03 20:51+0200\n"
 "Last-Translator: Tim Sabsch <tim@sabsch.com>\n"
-"Language-Team: Deutsch <gnome-de@gnome.org>\n"
+"Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Poedit-Bookmarks: -1,-1,-1,-1,-1,-1,27,-1,-1,-1\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
 msgid "GNOME Fonts"
 msgstr "GNOME Schriften"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1119
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1110
 #: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Schriftarten Ihres Systems betrachten"
@@ -88,7 +88,7 @@ msgstr "SCHRIFTART-DATEI AUSGABE-DATEI"
 
 #: src/font-view-app-menu.ui:6
 msgid "About Fonts"
-msgstr "_Info zu Schriften"
+msgstr "Info zu Schriften"
 
 #: src/font-view.c:99
 msgid "Show the application's version"
@@ -102,7 +102,7 @@ msgstr "Die Version der Anwendung anzeigen"
 #: src/font-view.c:230
 #, c-format
 msgid "%s %g — %g, default %g"
-msgstr "%s %g — %g, Standard %g"
+msgstr "%s %g – %g, Standard %g"
 
 #: src/font-view.c:286
 #, c-format
@@ -141,7 +141,7 @@ msgstr "Beschreibung"
 
 #: src/font-view.c:446
 msgid "Manufacturer"
-msgstr "Anbieter"
+msgstr "Hersteller"
 
 #: src/font-view.c:451
 msgid "Designer"
@@ -157,7 +157,7 @@ msgstr "Anzahl der Glyphen"
 
 #: src/font-view.c:489
 msgid "Color Glyphs"
-msgstr "Farbglyphen"
+msgstr "Farbige Glyphen"
 
 #: src/font-view.c:489
 msgid "yes"
@@ -179,60 +179,56 @@ msgstr "Variations-Achsen"
 msgid "Named Styles"
 msgstr "Bezeichnete Stile"
 
-#: src/font-view.c:690
+#: src/font-view.c:682
 msgid "This font could not be displayed."
 msgstr "Diese Schriftart kann nicht angezeigt werden."
 
-#: src/font-view.c:838
+#: src/font-view.c:830
 msgid "Install"
 msgstr "Installieren"
 
-#: src/font-view.c:841
+#: src/font-view.c:833
 msgid "Installing…"
 msgstr "Wird installiert …"
 
-#: src/font-view.c:844
+#: src/font-view.c:836
 msgid "Installed"
 msgstr "Installiert"
 
-#: src/font-view.c:847
+#: src/font-view.c:839
 msgid "Failed"
 msgstr "Fehlgeschlagen"
 
-#: src/font-view.c:865
+#: src/font-view.c:857
 msgid "Info"
 msgstr "Info"
 
-#: src/font-view.c:880
+#: src/font-view.c:872
 msgid "Back"
 msgstr "Zurück"
 
-#: src/font-view.c:992
+#: src/font-view.c:983
 msgid "All Fonts"
 msgstr "Alle Schriftarten"
 
-#: src/font-view.c:1118 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1109 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
 msgstr "Schriften"
 
-#: src/font-view.c:1121
+#: src/font-view.c:1112
 msgid "translator-credits"
 msgstr ""
 "Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009, 2011, 2012.\n"
 "Tobias Endrigkeit <tobiasendrigkeit@googlemail.com>, 2012.\n"
 "Benjamin Steinwender <b@stbe.at>, 2014.\n"
 "Bernd Homuth <dev@hmt.im>, 2014.\n"
-"Tim Sabsch <tim@sabsch.com>, 2017, 2019."
+"Tim Sabsch <tim@sabsch.com>, 2017, 2019.\n"
+"Milo Ivir <mail@milotype.de>, 2019"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
-msgstr "Schriftart;Schriftartschnitt;"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: src/org.gnome.font-viewer.desktop.in:8
-msgid "org.gnome.font-viewer"
-msgstr "org.gnome.font-viewer"
+msgstr "Schriftart;Schriftschnitt;"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -242,17 +238,17 @@ msgstr "Auf alle Alternativen zugreifen"
 #: src/open-type-layout.h:14
 msgctxt "OpenType layout"
 msgid "Above-base Forms"
-msgstr "Formen über der Grundlinie"
+msgstr "Formen über dem Grundzeichen"
 
 #: src/open-type-layout.h:15
 msgctxt "OpenType layout"
 msgid "Above-base Mark Positioning"
-msgstr "Diakritika-Positionierung über der Grundlinie"
+msgstr "Diakritika-Positionierung über dem Grundzeichen"
 
 #: src/open-type-layout.h:16
 msgctxt "OpenType layout"
 msgid "Above-base Substitutions"
-msgstr "Ersetzungen über der Grundlinie"
+msgstr "Ersetzungen über dem Grundzeichen"
 
 #: src/open-type-layout.h:17
 msgctxt "OpenType layout"
@@ -267,17 +263,17 @@ msgstr "Akhands"
 #: src/open-type-layout.h:19
 msgctxt "OpenType layout"
 msgid "Below-base Forms"
-msgstr "Formen unter der Grundlinie"
+msgstr "Formen unter dem Grundzeichen"
 
 #: src/open-type-layout.h:20
 msgctxt "OpenType layout"
 msgid "Below-base Mark Positioning"
-msgstr "Diakritika-Positionierung unter der Grundlinie"
+msgstr "Diakritika-Positionierung unter dem Grundzeichen"
 
 #: src/open-type-layout.h:21
 msgctxt "OpenType layout"
 msgid "Below-base Substitutions"
-msgstr "Ersetzungen unter der Grundlinie"
+msgstr "Ersetzungen unter dem Grundzeichen"
 
 #: src/open-type-layout.h:22
 msgctxt "OpenType layout"
@@ -712,22 +708,22 @@ msgstr "Proportionalziffern"
 #: src/open-type-layout.h:108
 msgctxt "OpenType layout"
 msgid "Pre-Base Forms"
-msgstr "Formen vor der Grundlinie"
+msgstr "Formen vor dem Grundzeichen"
 
 #: src/open-type-layout.h:109
 msgctxt "OpenType layout"
 msgid "Pre-base Substitutions"
-msgstr "Ersetzungen vor der Grundlinie"
+msgstr "Ersetzungen vor dem Grundzeichen"
 
 #: src/open-type-layout.h:110
 msgctxt "OpenType layout"
 msgid "Post-base Forms"
-msgstr "Formen nach der Grundlinie"
+msgstr "Formen nach dem Grundzeichen"
 
 #: src/open-type-layout.h:111
 msgctxt "OpenType layout"
 msgid "Post-base Substitutions"
-msgstr "Ersetzungen nach der Grundlinie"
+msgstr "Ersetzungen nach dem Grundzeichen"
 
 #: src/open-type-layout.h:112
 msgctxt "OpenType layout"
@@ -922,7 +918,7 @@ msgstr "Alternativen für mathematische Skripte"
 #: src/open-type-layout.h:150
 msgctxt "OpenType layout"
 msgid "Stretching Glyph Decomposition"
-msgstr "Gestreckte Zerlegung von Glyphen"
+msgstr "Zerlegung gestreckter Glyphen"
 
 #: src/open-type-layout.h:151
 msgctxt "OpenType layout"
@@ -1028,12 +1024,3 @@ msgstr "Vertikale Alternativen für Rotation"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Durchgestrichene Null"
-
-#~ msgid "About"
-#~ msgstr "Info"
-
-#~ msgid "Quit"
-#~ msgstr "Beenden"
-
-#~ msgid "preferences-desktop-font"
-#~ msgstr "preferences-desktop-font"
