@@ -18,6 +18,7 @@
       Fonts may be installed only for your use or made available to all users on the computer.
     </p>
   </description>
+  <developer_name>The GNOME Project</developer_name>
   <url type="homepage">http://www.gnome.org/gnome-3/</url>
   <url type="bugtracker">https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues</url>
   <url type="donation">http://www.gnome.org/friends/</url>
