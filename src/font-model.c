@@ -144,7 +144,6 @@ font_view_model_get_iter_for_face (FontViewModel *self,
 typedef struct {
     FontViewModel *self;
     GFile *font_file;
-    gchar *font_path;
     gint face_index;
     gchar *uri;
     cairo_surface_t *surface;
@@ -159,7 +158,6 @@ thumb_info_data_free (gpointer user_data)
     g_object_unref (thumb_info->self);
     g_object_unref (thumb_info->font_file);
     g_clear_pointer (&thumb_info->surface, cairo_surface_destroy);
-    g_free (thumb_info->font_path);
     g_free (thumb_info->uri);
 
     g_slice_free (ThumbInfoData, thumb_info);
