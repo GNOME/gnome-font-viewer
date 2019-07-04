@@ -186,19 +186,24 @@ create_thumbnail (ThumbInfoData *thumb_info)
     GFile *file = thumb_info->font_file;
     GnomeDesktopThumbnailFactory *factory;
     guint64 mtime;
+    GError *error = NULL;
 
     GdkPixbuf *pixbuf = NULL;
     GFileInfo *info = NULL;
 
     info = g_file_query_info (file, ATTRIBUTES_FOR_CREATING_THUMBNAIL,
                               G_FILE_QUERY_INFO_NONE,
-                              NULL, NULL);
+                              NULL, &error);
 
     /* we don't care about reporting errors here, just fail the
      * thumbnail.
      */
-    if (info == NULL)
+    if (info == NULL) {
+        char *font_path = g_file_get_path (file);
+        g_debug ("Can't query info for file %s: %s\n", font_path, error->message);
+        g_free (font_path);
         goto out;
+    }
 
     mtime = g_file_info_get_attribute_uint64 (info, G_FILE_ATTRIBUTE_TIME_MODIFIED);
 
@@ -217,6 +222,7 @@ create_thumbnail (ThumbInfoData *thumb_info)
   g_object_unref (factory);
 
  out:
+  g_clear_error (&error);
   g_clear_object (&info);
 
   if (pixbuf != NULL)
