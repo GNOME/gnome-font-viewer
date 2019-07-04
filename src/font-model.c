@@ -223,15 +223,14 @@ create_thumbnail (ThumbInfoData *thumb_info)
   g_clear_error (&error);
   g_clear_object (&info);
 
-  if (pixbuf != NULL)
-      {
-          GdkPixbuf *scaled = gdk_pixbuf_scale_simple (pixbuf,
-                                                       128 * thumb_info->self->priv->scale_factor,
-                                                       128 * thumb_info->self->priv->scale_factor,
-                                                       GDK_INTERP_BILINEAR);
-          g_object_unref (pixbuf);
-          pixbuf = scaled;
-      }
+  if (pixbuf != NULL) {
+      GdkPixbuf *scaled = gdk_pixbuf_scale_simple (pixbuf,
+                                                   128 * thumb_info->self->priv->scale_factor,
+                                                   128 * thumb_info->self->priv->scale_factor,
+                                                   GDK_INTERP_BILINEAR);
+      g_object_unref (pixbuf);
+      pixbuf = scaled;
+  }
 
   return pixbuf;
 }
@@ -300,9 +299,8 @@ ensure_thumbnails_job (GTask *task,
                                            NULL);
             g_free (filename);
 
-            if (!g_file_test (thumb_path, G_FILE_TEST_IS_REGULAR)) {
+            if (!g_file_test (thumb_path, G_FILE_TEST_IS_REGULAR))
                 g_clear_pointer (&thumb_path, g_free);
-            }
         }
 
         if (thumb_path != NULL) {
