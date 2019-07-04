@@ -548,26 +548,6 @@ install_button_refresh_appearance (FontViewApplication *self,
 }
 
 static void
-font_install_finished_cb (GObject      *source_object,
-                          GAsyncResult *res,
-                          gpointer      user_data)
-{
-    FontViewApplication *self = user_data;
-    GError *err = NULL;
-
-    g_file_copy_finish (G_FILE (source_object), res, &err);
-
-    if (err != NULL) {
-        install_button_refresh_appearance (self, err);
-
-        g_debug ("Install failed: %s", err->message);
-        g_error_free (err);
-    }
-
-    g_clear_object (&self->cancellable);
-}
-
-static void
 font_model_config_changed_cb (FontViewModel *model,
                               gpointer user_data)
 {
@@ -578,18 +558,97 @@ font_model_config_changed_cb (FontViewModel *model,
 }
 
 static void
+font_install_finished (GObject      *source_object,
+                       GAsyncResult *res,
+                       gpointer      user_data)
+{
+    FontViewApplication *self = user_data;
+    GError *err = NULL;
+
+    g_task_propagate_boolean (G_TASK (res), &err);
+
+    if (err != NULL) {
+        /* TODO: show error dialog */
+        install_button_refresh_appearance (self, err);
+
+        g_debug ("Install failed: %s", err->message);
+        g_error_free (err);
+    }
+
+    g_clear_object (&self->cancellable);
+}
+
+static void
+install_font_job (GTask *task,
+                  gpointer source_object,
+                  gpointer user_data,
+                  GCancellable *cancellable)
+{
+    GFile *dest_location = user_data;
+    FontViewApplication *self = FONT_VIEW_APPLICATION (source_object);
+    gchar *dest_basename = g_file_get_basename (self->font_file);
+    gboolean created = FALSE;
+    GError *error = NULL;
+    gint i = 0;
+
+    while (!created) {
+        gchar *dest_filename = (i == 0) ?
+            g_strdup (dest_basename) : g_strdup_printf ("%d%s", i, dest_basename);
+        GFile *dest_file = g_file_get_child (dest_location, dest_filename);
+        g_free (dest_filename);
+
+        created = g_file_copy (self->font_file,
+                               dest_file,
+                               G_FILE_COPY_NONE,
+                               cancellable,
+                               NULL, NULL,
+                               &error);
+        g_object_unref (dest_file);
+
+        if (error != NULL) {
+            if (g_error_matches (error, G_IO_ERROR, G_IO_ERROR_EXISTS)) {
+                g_clear_error (&error);
+                i++;
+                continue;
+            }
+            break;
+        }
+    }
+
+    if (error != NULL)
+        g_task_return_error (task, error);
+    else
+        g_task_return_boolean (task, TRUE);
+
+    g_free (dest_basename);
+}
+
+static void
+font_view_install_font (FontViewApplication *self,
+                        GFile *dest_location)
+{
+    GTask *task;
+
+    self->cancellable = g_cancellable_new ();
+
+    task = g_task_new (self, self->cancellable, font_install_finished, self);
+    g_task_set_task_data (task, g_object_ref (dest_location), g_object_unref);
+    g_task_run_in_thread (task, install_font_job);
+    g_object_unref (task);
+}
+
+static void
 install_button_clicked_cb (GtkButton *button,
                            gpointer user_data)
 {
     FontViewApplication *self = user_data;
-    gchar *dest_filename;
     GError *err = NULL;
     FcConfig *config;
     FcStrList *str_list;
     FcChar8 *path;
     GFile *xdg_prefix, *home_prefix, *file;
     GFile *xdg_location = NULL, *home_location = NULL;
-    GFile *dest_location = NULL, *dest_file;
+    GFile *dest_location = NULL;
 
     config = FcConfigGetCurrent ();
     str_list = FcConfigGetFontDirs (config);
@@ -645,27 +704,10 @@ install_button_clicked_cb (GtkButton *button,
         }
     }
 
-    /* create destination filename */
-    dest_filename = g_file_get_basename (self->font_file);
-    dest_file = g_file_get_child (dest_location, dest_filename);
-    g_free (dest_filename);
-
-    self->cancellable = g_cancellable_new ();
-
-    /* TODO: show error dialog if file exists */
-    g_file_copy_async (self->font_file,
-                       dest_file,
-                       G_FILE_COPY_NONE,
-                       G_PRIORITY_DEFAULT,
-                       self->cancellable,
-                       NULL,
-                       NULL,
-                       font_install_finished_cb,
-                       self);
+    font_view_install_font (self, dest_location);
 
     install_button_refresh_appearance (self, NULL);
 
-    g_object_unref (dest_file);
     g_object_unref (dest_location);
 }
 
