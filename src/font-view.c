@@ -558,6 +558,15 @@ font_model_config_changed_cb (FontViewModel *model,
 }
 
 static void
+font_view_show_install_error (FontViewApplication *self,
+                              GError *error)
+{
+    install_button_refresh_appearance (self, error);
+    g_warning ("Install failed: %s", error->message);
+    g_error_free (error);
+}
+
+static void
 font_install_finished (GObject      *source_object,
                        GAsyncResult *res,
                        gpointer      user_data)
@@ -567,13 +576,8 @@ font_install_finished (GObject      *source_object,
 
     g_task_propagate_boolean (G_TASK (res), &err);
 
-    if (err != NULL) {
-        /* TODO: show error dialog */
-        install_button_refresh_appearance (self, err);
-
-        g_debug ("Install failed: %s", err->message);
-        g_error_free (err);
-    }
+    if (err != NULL)
+        font_view_show_install_error (self, err);
 
     g_clear_object (&self->cancellable);
 }
@@ -696,9 +700,7 @@ install_button_clicked_cb (GtkButton *button,
     if (!g_file_query_exists (dest_location, NULL)) {
         g_file_make_directory_with_parents (dest_location, NULL, &err);
         if (err) {
-            /* TODO: show error dialog */
-            g_warning ("Could not create fonts directory: %s", err->message);
-            g_error_free (err);
+            font_view_show_install_error (self, err);
             g_object_unref (dest_location);
             return;
         }
