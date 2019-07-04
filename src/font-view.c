@@ -558,6 +558,24 @@ font_model_config_changed_cb (FontViewModel *model,
 }
 
 static void
+font_view_show_error (FontViewApplication *self,
+                      const gchar *primary_text,
+                      const gchar *secondary_text)
+{
+    GtkWidget *dialog;
+
+    dialog = gtk_message_dialog_new (GTK_WINDOW (self->main_window),
+                                     GTK_DIALOG_MODAL,
+                                     GTK_MESSAGE_ERROR,
+                                     GTK_BUTTONS_CLOSE,
+                                     primary_text);
+    gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
+                                              "%s", secondary_text);
+    g_signal_connect (dialog, "response", G_CALLBACK (gtk_widget_destroy), NULL);
+    gtk_widget_show (dialog);
+}
+
+static void
 font_view_show_install_error (FontViewApplication *self,
                               GError *error)
 {
@@ -717,18 +735,7 @@ static void
 font_view_show_font_error (FontViewApplication *self,
                            const gchar *message)
 {
-    GtkWidget *dialog;
-
-    dialog = gtk_message_dialog_new (GTK_WINDOW (self->main_window),
-                                     GTK_DIALOG_MODAL,
-                                     GTK_MESSAGE_ERROR,
-                                     GTK_BUTTONS_CLOSE,
-                                     _("This font could not be displayed."));
-    gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
-                                              "%s",
-                                              message);
-    g_signal_connect (dialog, "response", G_CALLBACK (gtk_widget_destroy), NULL);
-    gtk_widget_show (dialog);
+    font_view_show_error (self, _("This font could not be displayed."), message);
 }
 
 static void
