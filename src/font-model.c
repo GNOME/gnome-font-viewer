@@ -84,7 +84,7 @@ G_DEFINE_TYPE_WITH_PRIVATE (FontViewModel, font_view_model,
 
 typedef struct {
     const gchar *file;
-    FT_Face face;
+    gchar *match_name;
     GtkTreeIter iter;
     gboolean found;
 } IterForFaceData;
@@ -96,17 +96,14 @@ iter_for_face_foreach (GtkTreeModel *model,
                        gpointer user_data)
 {
     IterForFaceData *data = user_data;
-    gchar *font_name, *match_name;
+    gchar *font_name;
     gboolean retval;
 
     gtk_tree_model_get (GTK_TREE_MODEL (model), iter,
                         COLUMN_NAME, &font_name,
                         -1);
 
-    match_name = font_utils_get_font_name (data->face);
-    retval = (g_strcmp0 (font_name, match_name) == 0);
-
-    g_free (match_name);
+    retval = (g_strcmp0 (font_name, data->match_name) == 0);
     g_free (font_name);
 
     if (retval) {
@@ -125,7 +122,7 @@ font_view_model_get_iter_for_face (FontViewModel *self,
     IterForFaceData *data = g_slice_new0 (IterForFaceData);
     gboolean found;
 
-    data->face = face;
+    data->match_name = font_utils_get_font_name (face);
     data->found = FALSE;
 
     gtk_tree_model_foreach (GTK_TREE_MODEL (self),
@@ -136,6 +133,7 @@ font_view_model_get_iter_for_face (FontViewModel *self,
     if (found && iter)
         *iter = data->iter;
 
+    g_free (data->match_name);
     g_slice_free (IterForFaceData, data);
 
     return found;
