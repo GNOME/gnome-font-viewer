@@ -1,7 +1,7 @@
 project('gnome-font-viewer', 'c',
         version: '3.32.0',
         license: 'GPLv2+',
-        meson_version: '>= 0.40.1',
+        meson_version: '>= 0.50.0',
 )
 
 cc = meson.get_compiler('c')
