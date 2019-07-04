@@ -147,7 +147,7 @@ typedef struct {
     gchar *font_path;
     gint face_index;
     gchar *uri;
-    GdkPixbuf *pixbuf;
+    cairo_surface_t *surface;
     GtkTreeIter iter;
 } ThumbInfoData;
 
@@ -158,7 +158,7 @@ thumb_info_data_free (gpointer user_data)
 
     g_object_unref (thumb_info->self);
     g_object_unref (thumb_info->font_file);
-    g_clear_object (&thumb_info->pixbuf);
+    g_clear_pointer (&thumb_info->surface, cairo_surface_destroy);
     g_free (thumb_info->font_path);
     g_free (thumb_info->uri);
 
@@ -169,16 +169,11 @@ static gboolean
 one_thumbnail_done (gpointer user_data)
 {
     ThumbInfoData *thumb_info = user_data;
-    gint scale_factor = thumb_info->self->priv->scale_factor;
-    cairo_surface_t *surface;
 
-    if (thumb_info->pixbuf != NULL) {
-        surface = gdk_cairo_surface_create_from_pixbuf (thumb_info->pixbuf, scale_factor, NULL);
+    if (thumb_info->surface != NULL)
         gtk_list_store_set (GTK_LIST_STORE (thumb_info->self), &(thumb_info->iter),
-                            COLUMN_ICON, surface,
+                            COLUMN_ICON, thumb_info->surface,
                             -1);
-        cairo_surface_destroy (surface);
-    }
 
     thumb_info_data_free (thumb_info);
 
@@ -324,10 +319,13 @@ ensure_thumbnails_job (GTask *task,
                 g_debug ("Can't read thumbnail pixbuf %s: %s\n", thumb_path, error->message);
                 goto next;
             }
-
-            thumb_info->pixbuf = pixbuf;
         } else {
-            thumb_info->pixbuf = create_thumbnail (thumb_info);
+            pixbuf = create_thumbnail (thumb_info);
+        }
+
+        if (pixbuf != NULL) {
+            thumb_info->surface = gdk_cairo_surface_create_from_pixbuf (pixbuf, scale_factor, NULL);
+            g_object_unref (pixbuf);
         }
 
     next:
