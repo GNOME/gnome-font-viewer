@@ -580,7 +580,7 @@ font_view_show_install_error (FontViewApplication *self,
                               GError *error)
 {
     install_button_refresh_appearance (self, error);
-    g_warning ("Install failed: %s", error->message);
+    font_view_show_error (self, _("This font could not be installed."), error->message);
     g_error_free (error);
 }
 
