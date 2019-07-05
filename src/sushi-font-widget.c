@@ -329,10 +329,10 @@ set_pango_sample_string (SushiFontWidget *self)
       retval = TRUE;
   }
 
-  if (retval) {
-    g_free (self->sample_string);
+  g_clear_pointer (&self->sample_string, g_free);
+
+  if (retval)
     self->sample_string = g_strdup (sample_string);
-  }
 
   return retval;
 }
