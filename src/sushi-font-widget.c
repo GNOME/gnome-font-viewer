@@ -295,6 +295,9 @@ random_string_from_available_chars (FT_Face face,
   if (total_chars == 0)
     return NULL;
 
+  if (total_chars <= n_chars)
+    return chars;
+
   retval = g_string_new (NULL);
 
   while (idx < n_chars) {
