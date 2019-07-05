@@ -241,9 +241,6 @@ check_font_contain_text (FT_Face face,
   gboolean retval = TRUE;
 
   string = g_utf8_to_ucs4_fast (text, -1, &len);
-
-  FT_Select_Charmap (face, FT_ENCODING_UNICODE);
-
   for (idx = 0; idx < len; idx++) {
     gunichar c = string[idx];
 
@@ -338,8 +335,31 @@ set_pango_sample_string (SushiFontWidget *self)
 }
 
 static void
+select_best_charmap (SushiFontWidget *self)
+{
+  gchar *chars;
+  gint idx, n_chars;
+
+  if (FT_Select_Charmap (self->face, FT_ENCODING_UNICODE) == 0)
+    return;
+
+  for (idx = 0; idx < self->face->num_charmaps; idx++) {
+    if (FT_Set_Charmap (self->face, self->face->charmaps[idx]) != 0)
+      continue;
+
+    chars = build_charlist_for_face (self->face, &n_chars);
+    g_free (chars);
+
+    if (n_chars > 0)
+      break;
+  }
+}
+
+static void
 build_strings_for_face (SushiFontWidget *self)
 {
+  select_best_charmap (self);
+
   /* if we don't have lowercase/uppercase/punctuation text in the face,
    * we omit it directly, and render a random text below.
    */
