@@ -60,42 +60,39 @@ static gboolean
 check_font_contain_text (FT_Face face,
                          const gchar *text)
 {
-  gunichar *string;
-  glong len, idx, map;
-  FT_CharMap charmap;
-  gboolean retval = FALSE;
+    g_autofree gunichar *string = NULL;
+    glong len, map;
 
-  string = g_utf8_to_ucs4_fast (text, -1, &len);
+    string = g_utf8_to_ucs4_fast (text, -1, &len);
 
-  for (map = 0; map < face->num_charmaps; map++) {
-    charmap = face->charmaps[map];
-    FT_Set_Charmap (face, charmap);
+    for (map = 0; map < face->num_charmaps; map++) {
+        gboolean res = TRUE;
+        FT_CharMap charmap = face->charmaps[map];
+        gint idx;
 
-    retval = TRUE;
+        FT_Set_Charmap (face, charmap);
 
-    for (idx = 0; idx < len; idx++) {
-      gunichar c = string[idx];
+        for (idx = 0; idx < len; idx++) {
+            gunichar c = string[idx];
 
-      if (!FT_Get_Char_Index (face, c)) {
-        retval = FALSE;
-        break;
-      }
+            if (!FT_Get_Char_Index (face, c)) {
+                res = FALSE;
+                break;
+            }
+        }
+
+        if (res)
+            return TRUE;
     }
 
-    if (retval)
-      break;
-  }
-
-  g_free (string);
-
-  return retval;
+    return FALSE;
 }
 
 static gchar *
 check_for_ascii_glyph_numbers (FT_Face face,
                                gboolean *found_ascii)
 {
-    GString *ascii_string, *string;
+    g_autoptr(GString) ascii_string = NULL, string = NULL;
     gulong c;
     guint glyph, found = 0;
 
@@ -120,27 +117,24 @@ check_for_ascii_glyph_numbers (FT_Face face,
 
     if (found == 2) {
         *found_ascii = TRUE;
-        g_string_free (string, TRUE);
-        return g_string_free (ascii_string, FALSE);
+        return g_strdup (ascii_string->str);
     } else {
-        g_string_free (ascii_string, TRUE);
-        return g_string_free (string, FALSE);
+        return g_strdup (string->str);
     }
 }
 
 static gchar *
 build_fallback_thumbstr (FT_Face face)
 {
-    gchar *chars;
+    g_autoptr(GString) retval = NULL;
+    g_autofree gchar *chars = NULL;
     gint idx, total_chars;
-    GString *retval;
     gchar *ptr, *end;
     gboolean found_ascii;
 
     chars = check_for_ascii_glyph_numbers (face, &found_ascii);
-
     if (found_ascii)
-        return chars;
+        return g_steal_pointer (&chars);
 
     idx = 0;
     retval = g_string_new (NULL);
@@ -155,31 +149,29 @@ build_fallback_thumbstr (FT_Face face)
         idx++;
     }
 
-  return g_string_free (retval, FALSE);
+    return g_strdup (retval->str);
 }
 
 int
 main (int argc,
       char **argv)
 {
+    g_autoptr(GError) gerror = NULL;
+    g_autoptr(GFile) file = NULL;
+    g_autoptr(GOptionContext) context = NULL;
+    g_autofree gchar *contents = NULL, *help = NULL, *str = NULL, *uri = NULL;
+    g_autofree gchar **arguments = NULL;
     FT_Error error;
     FT_Library library;
     FT_Face face;
-    GFile *file;
     gint font_size, thumb_size = THUMB_SIZE;
-    gchar *thumbstr_utf8 = NULL, *help, *uri;
-    gchar **arguments = NULL;
-    GOptionContext *context;
-    GError *gerror = NULL;
-    gchar *contents = NULL;
+    gchar *thumbstr_utf8 = NULL;
     gboolean retval, default_thumbstr = TRUE;
-    gint rv = 1;
     GdkRGBA black = { 0.0, 0.0, 0.0, 1.0 };
     cairo_surface_t *surface;
     cairo_t *cr;
     cairo_text_extents_t text_extents;
     cairo_font_face_t *font;
-    gchar *str = NULL;
     gdouble scale, scale_x, scale_y;
     gint face_index = 0;
     gchar *fragment;
@@ -206,29 +198,22 @@ main (int argc,
     retval = g_option_context_parse (context, &argc, &argv, &gerror);
     if (!retval) {
 	g_printerr ("Error parsing arguments: %s\n", gerror->message);
-
-	g_option_context_free  (context);
-	g_error_free (gerror);
         return 1;
     }
 
     if (!arguments || g_strv_length (arguments) != 2) {
 	help = g_option_context_get_help (context, TRUE, NULL);
 	g_printerr ("%s", help);
-
-	g_option_context_free (context);
-	goto out;
+        return 1;
     }
-
-    g_option_context_free (context);
 
     if (thumbstr_utf8 != NULL)
 	default_thumbstr = FALSE;
 
     error = FT_Init_FreeType (&library);
     if (error) {
-	g_printerr("Could not initialise freetype: %s\n", get_ft_error (error));
-	goto out;
+        g_printerr ("Could not initialise freetype: %s\n", get_ft_error (error));
+        return 1;
     }
 
     totem_resources_monitor_start (arguments[0], 30 * G_USEC_PER_SEC);
@@ -239,18 +224,12 @@ main (int argc,
 
     file = g_file_new_for_commandline_arg (arguments[0]);
     uri = g_file_get_uri (file);
-    g_object_unref (file);
 
     face = sushi_new_ft_face_from_uri (library, uri, face_index, &contents, &gerror);
     if (gerror) {
-	g_printerr ("Could not load face '%s': %s\n", uri,
-		    gerror->message);
-        g_free (uri);
-        g_error_free (gerror);
-	goto out;
+        g_printerr ("Could not load face '%s': %s\n", uri, gerror->message);
+        return 1;
     }
-
-    g_free (uri);
 
     if (default_thumbstr) {
         if (check_font_contain_text (face, "Aa"))
@@ -302,24 +281,16 @@ main (int argc,
 
     error = FT_Done_Face (face);
     if (error) {
-	g_printerr("Could not unload face: %s\n", get_ft_error (error));
-	goto out;
+        g_printerr ("Could not unload face: %s\n", get_ft_error (error));
+        return 1;
     }
 
     error = FT_Done_FreeType (library);
     if (error) {
-	g_printerr ("Could not finalize freetype library: %s\n",
-		   get_ft_error (error));
-	goto out;
+        g_printerr ("Could not finalize freetype library: %s\n", get_ft_error (error));
+        return 1;
     }
 
-    rv = 0; /* success */
-
-  out:
-
-    g_strfreev (arguments);
-    g_free (str);
-    g_free (contents);
-
-    return rv;
+    /* success */
+    return 0;
 }

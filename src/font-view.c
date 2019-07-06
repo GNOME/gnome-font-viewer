@@ -116,8 +116,8 @@ static void ensure_window (FontViewApplication *self);
 static void
 strip_whitespace (gchar **original)
 {
-    GString *reassembled;
-    gchar **split;
+    g_autofree gchar **split = NULL;
+    g_autoptr(GString) reassembled = NULL;
     const gchar *str;
     gint idx, n_stripped;
     size_t len;
@@ -142,10 +142,8 @@ strip_whitespace (gchar **original)
         g_string_append (reassembled, str);
     }
 
-    g_strfreev (split);
     g_free (*original);
-
-    *original = g_string_free (reassembled, FALSE);
+    *original = g_strdup (reassembled->str);
 }
 
 #define MATCH_VERSION_STR "Version"
@@ -277,7 +275,7 @@ describe_instance (FT_Face face,
                    int pos,
                    GString *s)
 {
-    char *str = NULL;
+    g_autofree char *str = NULL;
 
     if (is_valid_subfamily_id (ns->strid))
         str = get_sfnt_name (face, ns->strid);
@@ -288,8 +286,6 @@ describe_instance (FT_Face face,
     if (s->len > 0)
         g_string_append (s, ", ");
     g_string_append (s, str);
-
-    g_free (str);
 }
 
 #include "open-type-layout.h"
@@ -297,9 +293,9 @@ describe_instance (FT_Face face,
 static char *
 get_features (FT_Face face)
 {
+    g_autoptr(GString) s = NULL;
     hb_font_t *hb_font;
     int i, j, k;
-    GString *s;
 
     s = g_string_new ("");
 
@@ -338,9 +334,7 @@ get_features (FT_Face face)
     }
 
     if (s->len > 0)
-      return g_string_free (s, FALSE);
-
-    g_string_free (s, TRUE);
+        return g_strdup (s->str);
 
     return NULL;
 }
@@ -350,8 +344,7 @@ populate_grid (FontViewApplication *self,
                GtkWidget *grid,
                FT_Face face)
 {
-    gchar *s;
-    GFileInfo *info;
+    g_autoptr (GFileInfo) info = NULL;
     PS_FontInfoRec ps_info;
 
     add_row (grid, _("Name"), face->family_name, FALSE);
@@ -366,17 +359,14 @@ populate_grid (FontViewApplication *self,
                               NULL, NULL);
 
     if (info != NULL) {
-        s = g_content_type_get_description (g_file_info_get_content_type (info));
+        g_autofree gchar *s = g_content_type_get_description (g_file_info_get_content_type (info));
         add_row (grid, _("Type"), s, FALSE);
-        g_free (s);
-
-        g_object_unref (info);
     }
 
     if (FT_IS_SFNT (face)) {
 	gint i, len;
-	gchar *version = NULL, *copyright = NULL, *description = NULL;
-        gchar *designer = NULL, *manufacturer = NULL, *license = NULL;
+        g_autofree gchar *version = NULL, *copyright = NULL, *description = NULL;
+        g_autofree gchar *designer = NULL, *manufacturer = NULL, *license = NULL;
 
 	len = FT_Get_Sfnt_Name_Count (face);
 	for (i = 0; i < len; i++) {
@@ -393,34 +383,34 @@ populate_grid (FontViewApplication *self,
 
 	    switch (sname.name_id) {
 	    case TT_NAME_ID_COPYRIGHT:
-		g_free (copyright);
-		copyright = g_convert ((gchar *)sname.string, sname.string_len,
-				       "UTF-8", "UTF-16BE", NULL, NULL, NULL);
+                if (!copyright)
+                    copyright = g_convert ((gchar *)sname.string, sname.string_len,
+                                           "UTF-8", "UTF-16BE", NULL, NULL, NULL);
 		break;
 	    case TT_NAME_ID_VERSION_STRING:
-		g_free (version);
-		version = g_convert ((gchar *)sname.string, sname.string_len,
-				     "UTF-8", "UTF-16BE", NULL, NULL, NULL);
+                if (!version)
+                    version = g_convert ((gchar *)sname.string, sname.string_len,
+                                         "UTF-8", "UTF-16BE", NULL, NULL, NULL);
 		break;
 	    case TT_NAME_ID_DESCRIPTION:
-		g_free (description);
-		description = g_convert ((gchar *)sname.string, sname.string_len,
-					 "UTF-8", "UTF-16BE", NULL, NULL, NULL);
+                if (!description)
+                    description = g_convert ((gchar *)sname.string, sname.string_len,
+                                             "UTF-8", "UTF-16BE", NULL, NULL, NULL);
 		break;
 	    case TT_NAME_ID_MANUFACTURER:
-		g_free (manufacturer);
-		manufacturer = g_convert ((gchar *)sname.string, sname.string_len,
-			  		 "UTF-8", "UTF-16BE", NULL, NULL, NULL);
+                if (!manufacturer)
+                    manufacturer = g_convert ((gchar *)sname.string, sname.string_len,
+                                              "UTF-8", "UTF-16BE", NULL, NULL, NULL);
 		break;
 	    case TT_NAME_ID_DESIGNER:
-		g_free (designer);
-		designer = g_convert ((gchar *)sname.string, sname.string_len,
-			              "UTF-8", "UTF-16BE", NULL, NULL, NULL);
+                if (!designer)
+                    designer = g_convert ((gchar *)sname.string, sname.string_len,
+                                          "UTF-8", "UTF-16BE", NULL, NULL, NULL);
 		break;
 	    case TT_NAME_ID_LICENSE:
-		g_free (license);
-		license = g_convert ((gchar *)sname.string, sname.string_len,
-		                     "UTF-8", "UTF-16BE", NULL, NULL, NULL);
+                if (!license)
+                    license = g_convert ((gchar *)sname.string, sname.string_len,
+                                         "UTF-8", "UTF-16BE", NULL, NULL, NULL);
 		break;
 	    default:
 		break;
@@ -429,47 +419,37 @@ populate_grid (FontViewApplication *self,
 	if (version) {
             strip_version (&version);
             add_row (grid, _("Version"), version, FALSE);
-	    g_free (version);
 	}
 	if (copyright) {
             strip_whitespace (&copyright);
             add_row (grid, _("Copyright"), copyright, TRUE);
-	    g_free (copyright);
 	}
 	if (description) {
             strip_whitespace (&description);
             add_row (grid, _("Description"), description, TRUE);
-	    g_free (description);
 	}
 	if (manufacturer) {
             strip_whitespace (&manufacturer);
             add_row (grid, _("Manufacturer"), manufacturer, TRUE);
-	    g_free (manufacturer);
 	}
 	if (designer) {
             strip_whitespace (&designer);
             add_row (grid, _("Designer"), designer, TRUE);
-	    g_free (designer);
 	}
 	if (license) {
             strip_whitespace (&license);
             add_row (grid, _("License"), license, TRUE);
-	    g_free (license);
 	}
     } else if (FT_Get_PS_Font_Info (face, &ps_info) == 0) {
-        gchar *compressed;
-
 	if (ps_info.version && g_utf8_validate (ps_info.version, -1, NULL)) {
-            compressed = g_strcompress (ps_info.version);
+            g_autofree gchar *compressed = g_strcompress (ps_info.version);
             strip_version (&compressed);
             add_row (grid, _("Version"), compressed, FALSE);
-            g_free (compressed);
         }
 	if (ps_info.notice && g_utf8_validate (ps_info.notice, -1, NULL)) {
-            compressed = g_strcompress (ps_info.notice);
+            g_autofree gchar *compressed = g_strcompress (ps_info.notice);
             strip_whitespace (&compressed);
             add_row (grid, _("Copyright"), compressed, TRUE);
-            g_free (compressed);
         }
     }
 }
@@ -479,34 +459,30 @@ populate_details (FontViewApplication *self,
                   GtkWidget *grid,
                   FT_Face face)
 {
-    char *s;
+    g_autofree gchar *glyph_count = NULL, *features = NULL;
     FT_MM_Var *ft_mm_var;
 
-    s = g_strdup_printf ("%ld", face->num_glyphs);
-    add_row (grid, _("Glyph Count"), s, FALSE);
-    g_free (s);
+    glyph_count = g_strdup_printf ("%ld", face->num_glyphs);
+    add_row (grid, _("Glyph Count"), glyph_count, FALSE);
 
     add_row (grid, _("Color Glyphs"), FT_HAS_COLOR (face) ? _("yes") : _("no"), FALSE);
 
-    s = get_features (face);
-    if (s)
-        add_row (grid, _("Layout Features"), s, TRUE);
-    g_free (s);
+    features = get_features (face);
+    if (features)
+        add_row (grid, _("Layout Features"), features, TRUE);
 
     if (FT_Get_MM_Var (face, &ft_mm_var) == 0) {
         int i;
         for (i = 0; i < ft_mm_var->num_axis; i++) {
-             s = describe_axis (&ft_mm_var->axis[i]);
-             add_row (grid, i == 0 ? _("Variation Axes") : "", s, FALSE);
-             g_free (s);
+            g_autofree gchar *s = describe_axis (&ft_mm_var->axis[i]);
+            add_row (grid, i == 0 ? _("Variation Axes") : "", s, FALSE);
         }
         {
-            GString *str = g_string_new ("");
-            for (i = 0; i < ft_mm_var->num_namedstyles; i++) {
-                 describe_instance (face, &ft_mm_var->namedstyle[i], i, str);
-             }
-             add_row (grid, _("Named Styles"), str->str, TRUE);
-             g_string_free (str, TRUE);
+            g_autoptr(GString) str = g_string_new ("");
+            for (i = 0; i < ft_mm_var->num_namedstyles; i++)
+                describe_instance (face, &ft_mm_var->namedstyle[i], i, str);
+
+            add_row (grid, _("Named Styles"), str->str, TRUE);
         }
         free (ft_mm_var);
     }
@@ -581,7 +557,6 @@ font_view_show_install_error (FontViewApplication *self,
 {
     install_button_refresh_appearance (self, error);
     font_view_show_error (self, _("This font could not be installed."), error->message);
-    g_error_free (error);
 }
 
 static void
@@ -590,7 +565,7 @@ font_install_finished (GObject      *source_object,
                        gpointer      user_data)
 {
     FontViewApplication *self = user_data;
-    GError *err = NULL;
+    g_autoptr(GError) err = NULL;
 
     g_task_propagate_boolean (G_TASK (res), &err);
 
@@ -608,16 +583,15 @@ install_font_job (GTask *task,
 {
     GFile *dest_location = user_data;
     FontViewApplication *self = FONT_VIEW_APPLICATION (source_object);
-    gchar *dest_basename = g_file_get_basename (self->font_file);
+    g_autofree gchar *dest_basename = g_file_get_basename (self->font_file);
+    g_autoptr(GError) error = NULL;
     gboolean created = FALSE;
-    GError *error = NULL;
     gint i = 0;
 
     while (!created) {
-        gchar *dest_filename = (i == 0) ?
+        g_autofree gchar *dest_filename = (i == 0) ?
             g_strdup (dest_basename) : g_strdup_printf ("%d%s", i, dest_basename);
-        GFile *dest_file = g_file_get_child (dest_location, dest_filename);
-        g_free (dest_filename);
+        g_autoptr(GFile) dest_file = g_file_get_child (dest_location, dest_filename);
 
         created = g_file_copy (self->font_file,
                                dest_file,
@@ -625,7 +599,6 @@ install_font_job (GTask *task,
                                cancellable,
                                NULL, NULL,
                                &error);
-        g_object_unref (dest_file);
 
         if (error != NULL) {
             if (g_error_matches (error, G_IO_ERROR, G_IO_ERROR_EXISTS)) {
@@ -638,25 +611,22 @@ install_font_job (GTask *task,
     }
 
     if (error != NULL)
-        g_task_return_error (task, error);
+        g_task_return_error (task, g_steal_pointer (&error));
     else
         g_task_return_boolean (task, TRUE);
-
-    g_free (dest_basename);
 }
 
 static void
 font_view_install_font (FontViewApplication *self,
                         GFile *dest_location)
 {
-    GTask *task;
+    g_autoptr(GTask) task = NULL;
 
     self->cancellable = g_cancellable_new ();
 
     task = g_task_new (self, self->cancellable, font_install_finished, self);
     g_task_set_task_data (task, g_object_ref (dest_location), g_object_unref);
     g_task_run_in_thread (task, install_font_job);
-    g_object_unref (task);
 }
 
 static void
@@ -664,13 +634,12 @@ install_button_clicked_cb (GtkButton *button,
                            gpointer user_data)
 {
     FontViewApplication *self = user_data;
-    GError *err = NULL;
+    g_autoptr(GError) err = NULL;
+    g_autoptr(GFile) home_prefix = NULL, xdg_prefix = NULL;
+    g_autoptr(GFile) xdg_location = NULL, home_location = NULL, dest_location = NULL;
     FcConfig *config;
     FcStrList *str_list;
     FcChar8 *path;
-    GFile *xdg_prefix, *home_prefix, *file;
-    GFile *xdg_location = NULL, *home_location = NULL;
-    GFile *dest_location = NULL;
 
     config = FcConfigGetCurrent ();
     str_list = FcConfigGetFontDirs (config);
@@ -682,33 +651,26 @@ install_button_clicked_cb (GtkButton *button,
      * under the home directory.
      */
     while ((path = FcStrListNext (str_list)) != NULL) {
-        file = g_file_new_for_path ((const gchar *) path);
+        g_autoptr(GFile) file = g_file_new_for_path ((const gchar *) path);
 
         if (g_file_has_prefix (file, xdg_prefix)) {
-            xdg_location = file;
+            xdg_location = g_steal_pointer (&file);
             break;
         }
 
         if ((home_location == NULL) &&
             g_file_has_prefix (file, home_prefix)) {
-            home_location = file;
+            home_location = g_steal_pointer (&file);
             break;
         }
-
-        g_object_unref (file);
     }
 
     FcStrListDone (str_list);
-    g_object_unref (home_prefix);
-    g_object_unref (xdg_prefix);
 
     if (xdg_location != NULL)
-        dest_location = g_object_ref (xdg_location);
+        dest_location = g_steal_pointer (&xdg_location);
     else if (home_location != NULL)
-        dest_location = g_object_ref (home_location);
-
-    g_clear_object (&home_location);
-    g_clear_object (&xdg_location);
+        dest_location = g_steal_pointer (&home_location);
 
     if (dest_location == NULL) {
         g_warning ("Install failed: can't find any configured user font directory.");
@@ -719,7 +681,6 @@ install_button_clicked_cb (GtkButton *button,
         g_file_make_directory_with_parents (dest_location, NULL, &err);
         if (err) {
             font_view_show_install_error (self, err);
-            g_object_unref (dest_location);
             return;
         }
     }
@@ -727,26 +688,24 @@ install_button_clicked_cb (GtkButton *button,
     font_view_install_font (self, dest_location);
 
     install_button_refresh_appearance (self, NULL);
-
-    g_object_unref (dest_location);
 }
 
 static void
 font_view_show_font_error (FontViewApplication *self,
-                           const gchar *message)
+                           GError *error)
 {
-    font_view_show_error (self, _("This font could not be displayed."), message);
+    font_view_show_error (self, _("This font could not be displayed."), error->message);
 }
 
 static void
 font_widget_error_cb (SushiFontWidget *font_widget,
-                      const gchar *message,
+                      GError *error,
                       gpointer user_data)
 {
     FontViewApplication *self = user_data;
 
     font_view_application_do_overview (self);
-    font_view_show_font_error (self, message);
+    font_view_show_font_error (self, error);
 }
 
 static void
@@ -817,32 +776,23 @@ font_visible_func (GtkTreeModel *model,
                    GtkTreeIter  *iter,
                    gpointer      data)
 {
-  FontViewApplication *self = data;
-  gboolean ret;
-  const char *search;
-  char *name;
-  char *cf_name;
-  char *cf_search;
+    FontViewApplication *self = data;
+    g_autofree gchar *name = NULL, *cf_name = NULL, *cf_search = NULL;
+    const char *search;
 
-  if (!gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (self->search_toggle)))
-    return TRUE;
+    if (!gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (self->search_toggle)))
+        return TRUE;
 
-  search = gtk_entry_get_text (GTK_ENTRY (self->search_entry));
+    search = gtk_entry_get_text (GTK_ENTRY (self->search_entry));
 
-  gtk_tree_model_get (model, iter,
-                      COLUMN_NAME, &name,
-                      -1);
+    gtk_tree_model_get (model, iter,
+                        COLUMN_NAME, &name,
+                        -1);
 
-  cf_name = g_utf8_casefold (name, -1);
-  cf_search = g_utf8_casefold (search, -1);
+    cf_name = g_utf8_casefold (name, -1);
+    cf_search = g_utf8_casefold (search, -1);
 
-  ret = strstr (cf_name, cf_search) != NULL;
-
-  g_free (name);
-  g_free (cf_name);
-  g_free (cf_search);
-
-  return ret;
+    return strstr (cf_name, cf_search) != NULL;
 }
 
 static void
@@ -868,15 +818,13 @@ font_view_application_do_open (FontViewApplication *self,
                                GFile *file,
                                gint face_index)
 {
-    GtkSizeGroup *install_size_group;
-    GtkWidget *back_image;
-    gchar *uri;
+    g_autofree gchar *uri = NULL;
 
     font_view_ensure_model (self);
 
     /* add install button */
     if (self->install_button == NULL) {
-        install_size_group = gtk_size_group_new (GTK_SIZE_GROUP_HORIZONTAL);
+        g_autoptr(GtkSizeGroup) install_size_group = gtk_size_group_new (GTK_SIZE_GROUP_HORIZONTAL);
 
         self->install_label = g_object_ref_sink (gtk_label_new (_("Install")));
         gtk_widget_show (self->install_label);
@@ -900,8 +848,6 @@ font_view_application_do_open (FontViewApplication *self,
 
         g_signal_connect (self->install_button, "clicked",
                           G_CALLBACK (install_button_clicked_cb), self);
-
-        g_object_unref (install_size_group);
     }
 
     if (self->info_button == NULL) {
@@ -916,6 +862,8 @@ font_view_application_do_open (FontViewApplication *self,
     }
 
     if (self->back_button == NULL) {
+        GtkWidget *back_image;
+
         self->back_button = gtk_button_new ();
         back_image = gtk_image_new_from_icon_name ("go-previous-symbolic",
                                                    GTK_ICON_SIZE_MENU);
@@ -952,8 +900,6 @@ font_view_application_do_open (FontViewApplication *self,
         sushi_font_widget_load (SUSHI_FONT_WIDGET (self->font_widget));
     }
 
-    g_free (uri);
-
     gtk_widget_show_all (self->main_window);
     gtk_stack_set_visible_child_name (GTK_STACK (self->stack), "preview");
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (self->info_button), FALSE);
@@ -965,12 +911,8 @@ icon_view_release_cb (GtkWidget *widget,
                       gpointer user_data)
 {
     FontViewApplication *self = user_data;
-    GtkTreePath *path;
+    g_autoptr(GtkTreePath) path = NULL;
     GtkTreeIter filter_iter;
-    GtkTreeIter iter;
-    gchar *font_path;
-    gint face_index;
-    GFile *file;
 
     /* eat double/triple click events */
     if (event->type != GDK_BUTTON_RELEASE)
@@ -981,6 +923,10 @@ icon_view_release_cb (GtkWidget *widget,
 
     if (path != NULL &&
         gtk_tree_model_get_iter (self->filter_model, &filter_iter, path)) {
+        g_autofree gchar *font_path = NULL;
+        GtkTreeIter iter;
+        gint face_index;
+
         gtk_tree_model_filter_convert_iter_to_child_iter (GTK_TREE_MODEL_FILTER (self->filter_model),
                                                           &iter,
                                                           &filter_iter);
@@ -990,12 +936,9 @@ icon_view_release_cb (GtkWidget *widget,
                             -1);
 
         if (font_path != NULL) {
-            file = g_file_new_for_path (font_path);
+            g_autoptr(GFile) file = g_file_new_for_path (font_path);
             font_view_application_do_open (self, file, face_index);
-            g_object_unref (file);
         }
-        gtk_tree_path_free (path);
-        g_free (font_path);
     }
 
     return FALSE;
@@ -1093,8 +1036,8 @@ query_info_ready_cb (GObject *object,
                      gpointer user_data)
 {
     FontViewApplication *self = user_data;
-    GFileInfo *info;
-    GError *error = NULL;
+    g_autoptr(GError) error = NULL;
+    g_autoptr(GFileInfo) info = NULL;
 
     ensure_window (self);
     g_application_release (G_APPLICATION (self));
@@ -1102,13 +1045,10 @@ query_info_ready_cb (GObject *object,
     info = g_file_query_info_finish (G_FILE (object), res, &error);
     if (error != NULL) {
         font_view_application_do_overview (self);
-        font_view_show_font_error (self, error->message);
-        g_error_free (error);
+        font_view_show_font_error (self, error);
     } else {
         font_view_application_do_open (self, G_FILE (object), 0);
     }
-
-    g_clear_object (&info);
 }
 
 static void
@@ -1185,8 +1125,8 @@ search_text_changed (GtkEntry *entry,
 static void
 ensure_window (FontViewApplication *self)
 {
+    g_autoptr(GtkBuilder) builder = NULL;
     GtkWidget *window, *swin, *box, *image;
-    GtkBuilder *builder;
     GMenuModel *menu;
 
     if (self->main_window)
@@ -1230,8 +1170,6 @@ ensure_window (FontViewApplication *self)
     gtk_widget_set_no_show_all (self->menu_button, TRUE);
     gtk_widget_show (self->menu_button);
     gtk_header_bar_pack_end (GTK_HEADER_BAR (self->header), self->menu_button);
-
-    g_object_unref (builder);
 
     self->search_bar = gtk_search_bar_new ();
     gtk_container_add (GTK_CONTAINER (box), self->search_bar);
@@ -1344,7 +1282,7 @@ int
 main (int argc,
       char **argv)
 {
-    GApplication *app;
+    g_autoptr(GApplication) app = NULL;
     gint retval;
 
     bindtextdomain (GETTEXT_PACKAGE, GNOMELOCALEDIR);
@@ -1355,6 +1293,5 @@ main (int argc,
     g_application_add_main_option_entries (app, goption_options);
     retval = g_application_run (app, argc, argv);
 
-    g_object_unref (app);
     return retval;
 }

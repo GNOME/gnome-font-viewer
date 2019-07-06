@@ -96,7 +96,7 @@ iter_for_face_foreach (GtkTreeModel *model,
                        gpointer user_data)
 {
     IterForFaceData *data = user_data;
-    gchar *font_name;
+    g_autofree gchar *font_name = NULL;
     gboolean retval;
 
     gtk_tree_model_get (GTK_TREE_MODEL (model), iter,
@@ -104,7 +104,6 @@ iter_for_face_foreach (GtkTreeModel *model,
                         -1);
 
     retval = (g_strcmp0 (font_name, data->match_name) == 0);
-    g_free (font_name);
 
     if (retval) {
         data->iter = *iter;
@@ -179,15 +178,13 @@ one_thumbnail_done (gpointer user_data)
 static GdkPixbuf *
 create_thumbnail (ThumbInfoData *thumb_info)
 {
-    GFile *file = thumb_info->font_file;
-    GnomeDesktopThumbnailFactory *factory;
+    g_autoptr(GdkPixbuf) pixbuf = NULL;
+    g_autoptr(GError) error = NULL;
+    g_autoptr(GFileInfo) info = NULL;
+    g_autoptr(GnomeDesktopThumbnailFactory) factory = NULL;
     guint64 mtime;
-    GError *error = NULL;
 
-    GdkPixbuf *pixbuf = NULL;
-    GFileInfo *info = NULL;
-
-    info = g_file_query_info (file, ATTRIBUTES_FOR_CREATING_THUMBNAIL,
+    info = g_file_query_info (thumb_info->font_file, ATTRIBUTES_FOR_CREATING_THUMBNAIL,
                               G_FILE_QUERY_INFO_NONE,
                               NULL, &error);
 
@@ -195,42 +192,31 @@ create_thumbnail (ThumbInfoData *thumb_info)
      * thumbnail.
      */
     if (info == NULL) {
-        char *font_path = g_file_get_path (file);
-        g_debug ("Can't query info for file %s: %s\n", font_path, error->message);
-        g_free (font_path);
-        goto out;
+        g_debug ("Can't query info for file %s: %s", thumb_info->uri, error->message);
+        return NULL;
     }
-
-    mtime = g_file_info_get_attribute_uint64 (info, G_FILE_ATTRIBUTE_TIME_MODIFIED);
 
     factory = gnome_desktop_thumbnail_factory_new (GNOME_DESKTOP_THUMBNAIL_SIZE_LARGE);
     pixbuf = gnome_desktop_thumbnail_factory_generate_thumbnail
         (factory, 
          thumb_info->uri, g_file_info_get_content_type (info));
 
-    if (pixbuf != NULL)
+    mtime = g_file_info_get_attribute_uint64 (info, G_FILE_ATTRIBUTE_TIME_MODIFIED);
+    if (pixbuf != NULL) {
+        GdkPixbuf *scaled = gdk_pixbuf_scale_simple (pixbuf,
+                                                     128 * thumb_info->self->priv->scale_factor,
+                                                     128 * thumb_info->self->priv->scale_factor,
+                                                     GDK_INTERP_BILINEAR);
         gnome_desktop_thumbnail_factory_save_thumbnail (factory, pixbuf,
                                                         thumb_info->uri, (time_t) mtime);
-    else
+        g_object_unref (pixbuf);
+        pixbuf = scaled;
+    } else {
         gnome_desktop_thumbnail_factory_create_failed_thumbnail (factory,
                                                                  thumb_info->uri, (time_t) mtime);
+    }
 
-  g_object_unref (factory);
-
- out:
-  g_clear_error (&error);
-  g_clear_object (&info);
-
-  if (pixbuf != NULL) {
-      GdkPixbuf *scaled = gdk_pixbuf_scale_simple (pixbuf,
-                                                   128 * thumb_info->self->priv->scale_factor,
-                                                   128 * thumb_info->self->priv->scale_factor,
-                                                   GDK_INTERP_BILINEAR);
-      g_object_unref (pixbuf);
-      pixbuf = scaled;
-  }
-
-  return pixbuf;
+    return g_steal_pointer (&pixbuf);
 }
 
 static void
@@ -239,21 +225,20 @@ ensure_thumbnails_job (GTask *task,
                        gpointer user_data,
                        GCancellable *cancellable)
 {
+    FontViewModel *self = FONT_VIEW_MODEL (source_object);
     GList *thumb_infos = user_data, *l;
+    gint scale_factor = self->priv->scale_factor;
 
     for (l = thumb_infos; l != NULL; l = l->next) {
-        gboolean thumb_failed;
-        gchar *thumb_path = NULL;
+        g_autoptr(GdkPixbuf) pixbuf = NULL;
+        g_autoptr(GError) error = NULL;
+        g_autofree gchar *thumb_path = NULL;
         ThumbInfoData *thumb_info = l->data;
 
-        GError *error = NULL;
-        GFile *thumb_file = NULL;
-        GFileInputStream *is = NULL;
-        GFileInfo *info = NULL;
-        GdkPixbuf *pixbuf = NULL;
-        gint scale_factor = thumb_info->self->priv->scale_factor;
-
         if (thumb_info->face_index == 0) {
+            g_autoptr(GFileInfo) info = NULL;
+            gboolean thumb_failed;
+
             thumb_info->uri = g_file_get_uri (thumb_info->font_file);
             info = g_file_query_info (thumb_info->font_file,
                                       ATTRIBUTES_FOR_EXISTING_THUMBNAIL,
@@ -261,12 +246,7 @@ ensure_thumbnails_job (GTask *task,
                                       NULL, &error);
 
             if (error != NULL) {
-                gchar *font_path;
-
-                font_path = g_file_get_path (thumb_info->font_file);
-                g_debug ("Can't query info for file %s: %s\n", font_path, error->message);
-                g_free (font_path);
-
+                g_debug ("Can't query info for file %s: %s", thumb_info->uri, error->message);
                 goto next;
             }
 
@@ -276,37 +256,35 @@ ensure_thumbnails_job (GTask *task,
 
             thumb_path = g_strdup (g_file_info_get_attribute_byte_string (info, G_FILE_ATTRIBUTE_THUMBNAIL_PATH));
         } else {
-            gchar *file_uri;
-            gchar *checksum;
-            gchar *filename;
+            g_autofree gchar *checksum = NULL, *filename = NULL, *file_uri = NULL;
 
             file_uri = g_file_get_uri (thumb_info->font_file);
             thumb_info->uri = g_strdup_printf ("%s#0x%08X", file_uri, thumb_info->face_index);
-            g_free (file_uri);
 
             checksum = g_compute_checksum_for_data (G_CHECKSUM_MD5,
                                                     (const guchar *) thumb_info->uri,
                                                     strlen (thumb_info->uri));
             filename = g_strdup_printf ("%s.png", checksum);
-            g_free (checksum);
 
             thumb_path = g_build_filename (g_get_user_cache_dir (),
                                            "thumbnails",
                                            "large",
                                            filename,
                                            NULL);
-            g_free (filename);
 
             if (!g_file_test (thumb_path, G_FILE_TEST_IS_REGULAR))
                 g_clear_pointer (&thumb_path, g_free);
         }
 
         if (thumb_path != NULL) {
+            g_autoptr(GFile) thumb_file = NULL;
+            g_autoptr(GFileInputStream) is = NULL;
+
             thumb_file = g_file_new_for_path (thumb_path);
             is = g_file_read (thumb_file, NULL, &error);
 
             if (error != NULL) {
-                g_debug ("Can't read file %s: %s\n", thumb_path, error->message);
+                g_debug ("Can't read file %s: %s", thumb_path, error->message);
                 goto next;
             }
 
@@ -316,27 +294,18 @@ ensure_thumbnails_job (GTask *task,
                                                           NULL, &error);
 
             if (error != NULL) {
-                g_debug ("Can't read thumbnail pixbuf %s: %s\n", thumb_path, error->message);
+                g_debug ("Can't read thumbnail pixbuf %s: %s", thumb_path, error->message);
                 goto next;
             }
         } else {
             pixbuf = create_thumbnail (thumb_info);
         }
 
-        if (pixbuf != NULL) {
+        if (pixbuf != NULL)
             thumb_info->surface = gdk_cairo_surface_create_from_pixbuf (pixbuf, scale_factor, NULL);
-            g_object_unref (pixbuf);
-        }
 
     next:
-        g_clear_error (&error);
-        g_clear_object (&is);
-        g_clear_object (&thumb_file);
-        g_clear_object (&info);
-        g_clear_pointer (&thumb_path, g_free);
-
-        g_main_context_invoke (NULL, one_thumbnail_done,
-                               thumb_info);
+        g_main_context_invoke (NULL, one_thumbnail_done, thumb_info);
     }
 
     g_list_free (thumb_infos);
@@ -361,10 +330,10 @@ font_info_data_free (gpointer user_data)
 static void
 ensure_fallback_icon (FontViewModel *self)
 {
+    g_autoptr(GIcon) icon = NULL;
+    g_autoptr(GtkIconInfo) icon_info = NULL;
     GtkIconTheme *icon_theme;
-    GtkIconInfo *icon_info;
     const char *mimetype = "font/ttf";
-    GIcon *icon = NULL;
 
     if (self->priv->fallback_icon != NULL)
         return;
@@ -374,15 +343,12 @@ ensure_fallback_icon (FontViewModel *self)
     icon_info = gtk_icon_theme_lookup_by_gicon_for_scale (icon_theme, icon,
                                                           128, self->priv->scale_factor,
                                                           GTK_ICON_LOOKUP_FORCE_SIZE);
-    g_object_unref (icon);
-
     if (!icon_info) {
         g_warning ("Fallback icon for %s not found", mimetype);
         return;
     }
 
     self->priv->fallback_icon = gtk_icon_info_load_surface (icon_info, NULL, NULL);
-    g_object_unref (icon_info);
 }
 
 static void
@@ -391,7 +357,7 @@ font_infos_loaded (GObject *source_object,
                    gpointer user_data)
 {
     FontViewModel *self = FONT_VIEW_MODEL (source_object);
-    GTask *task = NULL;
+    g_autoptr(GTask) task = NULL;
     GList *l, *thumb_infos = NULL;
     GList *font_infos = g_task_propagate_pointer (G_TASK (result), NULL);
 
@@ -399,7 +365,7 @@ font_infos_loaded (GObject *source_object,
 
     for (l = font_infos; l != NULL; l = l->next) {
         FontInfoData *font_info = l->data;
-        gchar *collation_key;
+        g_autofree gchar *collation_key = NULL;
         GtkTreeIter iter;
         ThumbInfoData *thumb_info;
 
@@ -411,7 +377,6 @@ font_infos_loaded (GObject *source_object,
                                            COLUMN_ICON, self->priv->fallback_icon,
                                            COLUMN_COLLATION_KEY, collation_key,
                                            -1);
-        g_free (collation_key);
 
         thumb_info = g_slice_new0 (ThumbInfoData);
         thumb_info->font_file = g_file_new_for_path (font_info->font_path);
@@ -426,10 +391,9 @@ font_infos_loaded (GObject *source_object,
     g_signal_emit (self, signals[CONFIG_CHANGED], 0);
     g_list_free (font_infos);
 
-    task = g_task_new (NULL, NULL, NULL, NULL);
+    task = g_task_new (self, NULL, NULL, NULL);
     g_task_set_task_data (task, thumb_infos, NULL);
     g_task_run_in_thread (task, ensure_thumbnails_job);
-    g_object_unref (task);
 }
 
 static void
@@ -482,7 +446,7 @@ ensure_font_list (FontViewModel *self)
 {
     FcPattern *pat;
     FcObjectSet *os;
-    GTask *task;
+    g_autoptr(GTask) task = NULL;
 
     /* always reinitialize the font database */
     if (!FcInitReinitialize())
@@ -545,8 +509,7 @@ font_view_model_sort_func (GtkTreeModel *model,
                            GtkTreeIter *b,
                            gpointer user_data)
 {
-    gchar *key_a = NULL, *key_b = NULL;
-    int retval;
+    g_autofree gchar *key_a = NULL, *key_b = NULL;
 
     gtk_tree_model_get (model, a,
                         COLUMN_COLLATION_KEY, &key_a,
@@ -555,12 +518,7 @@ font_view_model_sort_func (GtkTreeModel *model,
                         COLUMN_COLLATION_KEY, &key_b,
                         -1);
 
-    retval = g_strcmp0 (key_a, key_b);
-
-    g_free (key_a);
-    g_free (key_b);
-
-    return retval;
+    return g_strcmp0 (key_a, key_b);
 }
 
 static void
