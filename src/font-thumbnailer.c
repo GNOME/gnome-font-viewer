@@ -160,7 +160,7 @@ main (int argc,
     g_autoptr(GFile) file = NULL;
     g_autoptr(GOptionContext) context = NULL;
     g_autofree gchar *contents = NULL, *help = NULL, *str = NULL, *uri = NULL;
-    g_autofree gchar **arguments = NULL;
+    g_auto(GStrv) arguments = NULL;
     FT_Error error;
     FT_Library library;
     FT_Face face;

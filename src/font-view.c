@@ -116,7 +116,7 @@ static void ensure_window (FontViewApplication *self);
 static void
 strip_whitespace (gchar **original)
 {
-    g_autofree gchar **split = NULL;
+    g_auto(GStrv) split = NULL;
     g_autoptr(GString) reassembled = NULL;
     const gchar *str;
     gint idx, n_stripped;
