@@ -350,7 +350,7 @@ populate_grid (FontViewApplication *self,
     add_row (grid, _("Name"), face->family_name, FALSE);
 
     if (face->style_name)
-	add_row (grid, _("Style"), face->style_name, FALSE);
+        add_row (grid, _("Style"), face->style_name, FALSE);
 
     info = g_file_query_info (self->font_file,
                               G_FILE_ATTRIBUTE_STANDARD_CONTENT_TYPE ","
@@ -364,89 +364,89 @@ populate_grid (FontViewApplication *self,
     }
 
     if (FT_IS_SFNT (face)) {
-	gint i, len;
+        gint i, len;
         g_autofree gchar *version = NULL, *copyright = NULL, *description = NULL;
         g_autofree gchar *designer = NULL, *manufacturer = NULL, *license = NULL;
 
-	len = FT_Get_Sfnt_Name_Count (face);
-	for (i = 0; i < len; i++) {
-	    FT_SfntName sname;
+        len = FT_Get_Sfnt_Name_Count (face);
+        for (i = 0; i < len; i++) {
+            FT_SfntName sname;
 
-	    if (FT_Get_Sfnt_Name (face, i, &sname) != 0)
-		continue;
+            if (FT_Get_Sfnt_Name (face, i, &sname) != 0)
+                continue;
 
-	    /* only handle the unicode names for US langid */
-	    if (!(sname.platform_id == TT_PLATFORM_MICROSOFT &&
-		  sname.encoding_id == TT_MS_ID_UNICODE_CS &&
-		  sname.language_id == TT_MS_LANGID_ENGLISH_UNITED_STATES))
-		continue;
+            /* only handle the unicode names for US langid */
+            if (!(sname.platform_id == TT_PLATFORM_MICROSOFT &&
+                  sname.encoding_id == TT_MS_ID_UNICODE_CS &&
+                  sname.language_id == TT_MS_LANGID_ENGLISH_UNITED_STATES))
+                continue;
 
-	    switch (sname.name_id) {
-	    case TT_NAME_ID_COPYRIGHT:
+            switch (sname.name_id) {
+            case TT_NAME_ID_COPYRIGHT:
                 if (!copyright)
                     copyright = g_convert ((gchar *)sname.string, sname.string_len,
                                            "UTF-8", "UTF-16BE", NULL, NULL, NULL);
-		break;
-	    case TT_NAME_ID_VERSION_STRING:
+                break;
+            case TT_NAME_ID_VERSION_STRING:
                 if (!version)
                     version = g_convert ((gchar *)sname.string, sname.string_len,
                                          "UTF-8", "UTF-16BE", NULL, NULL, NULL);
-		break;
-	    case TT_NAME_ID_DESCRIPTION:
+                break;
+            case TT_NAME_ID_DESCRIPTION:
                 if (!description)
                     description = g_convert ((gchar *)sname.string, sname.string_len,
                                              "UTF-8", "UTF-16BE", NULL, NULL, NULL);
-		break;
-	    case TT_NAME_ID_MANUFACTURER:
+                break;
+            case TT_NAME_ID_MANUFACTURER:
                 if (!manufacturer)
                     manufacturer = g_convert ((gchar *)sname.string, sname.string_len,
                                               "UTF-8", "UTF-16BE", NULL, NULL, NULL);
-		break;
-	    case TT_NAME_ID_DESIGNER:
+                break;
+            case TT_NAME_ID_DESIGNER:
                 if (!designer)
                     designer = g_convert ((gchar *)sname.string, sname.string_len,
                                           "UTF-8", "UTF-16BE", NULL, NULL, NULL);
-		break;
-	    case TT_NAME_ID_LICENSE:
+                break;
+            case TT_NAME_ID_LICENSE:
                 if (!license)
                     license = g_convert ((gchar *)sname.string, sname.string_len,
                                          "UTF-8", "UTF-16BE", NULL, NULL, NULL);
-		break;
-	    default:
-		break;
-	    }
-	}
-	if (version) {
+                break;
+            default:
+                break;
+            }
+        }
+        if (version) {
             strip_version (&version);
             add_row (grid, _("Version"), version, FALSE);
-	}
-	if (copyright) {
+        }
+        if (copyright) {
             strip_whitespace (&copyright);
             add_row (grid, _("Copyright"), copyright, TRUE);
-	}
-	if (description) {
+        }
+        if (description) {
             strip_whitespace (&description);
             add_row (grid, _("Description"), description, TRUE);
-	}
-	if (manufacturer) {
+        }
+        if (manufacturer) {
             strip_whitespace (&manufacturer);
             add_row (grid, _("Manufacturer"), manufacturer, TRUE);
-	}
-	if (designer) {
+        }
+        if (designer) {
             strip_whitespace (&designer);
             add_row (grid, _("Designer"), designer, TRUE);
-	}
-	if (license) {
+        }
+        if (license) {
             strip_whitespace (&license);
             add_row (grid, _("License"), license, TRUE);
-	}
+        }
     } else if (FT_Get_PS_Font_Info (face, &ps_info) == 0) {
-	if (ps_info.version && g_utf8_validate (ps_info.version, -1, NULL)) {
+        if (ps_info.version && g_utf8_validate (ps_info.version, -1, NULL)) {
             g_autofree gchar *compressed = g_strcompress (ps_info.version);
             strip_version (&compressed);
             add_row (grid, _("Version"), compressed, FALSE);
         }
-	if (ps_info.notice && g_utf8_validate (ps_info.notice, -1, NULL)) {
+        if (ps_info.notice && g_utf8_validate (ps_info.notice, -1, NULL)) {
             g_autofree gchar *compressed = g_strcompress (ps_info.notice);
             strip_whitespace (&compressed);
             add_row (grid, _("Copyright"), compressed, TRUE);
@@ -1191,17 +1191,17 @@ ensure_window (FontViewApplication *self)
 
     self->swin_view = swin = gtk_scrolled_window_new (NULL, NULL);
     gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (swin),
-				    GTK_POLICY_NEVER, GTK_POLICY_AUTOMATIC);
+                                    GTK_POLICY_NEVER, GTK_POLICY_AUTOMATIC);
     gtk_container_add (GTK_CONTAINER (box), self->swin_view);
 
     self->swin_preview = swin = gtk_scrolled_window_new (NULL, NULL);
     gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (swin),
-         			    GTK_POLICY_AUTOMATIC, GTK_POLICY_AUTOMATIC);
+                                    GTK_POLICY_AUTOMATIC, GTK_POLICY_AUTOMATIC);
     gtk_stack_add_named (GTK_STACK (self->stack), swin, "preview");
 
     self->swin_info = swin = gtk_scrolled_window_new (NULL, NULL);
     gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (swin),
-         			    GTK_POLICY_AUTOMATIC, GTK_POLICY_AUTOMATIC);
+                                    GTK_POLICY_AUTOMATIC, GTK_POLICY_AUTOMATIC);
     gtk_stack_add_named (GTK_STACK (self->stack), swin, "info");
 
     gtk_widget_show_all (window);

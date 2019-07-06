@@ -48,7 +48,7 @@ get_ft_error (FT_Error error)
     switch (error) {
 #include FT_ERRORS_H
     default:
-	return "unknown";
+        return "unknown";
     }
 }
 
@@ -177,13 +177,13 @@ main (int argc,
     gchar *fragment;
 
     const GOptionEntry options[] = {
-	    { "text", 't', 0, G_OPTION_ARG_STRING, &thumbstr_utf8,
-	      N_("Text to thumbnail (default: Aa)"), N_("TEXT") },
-	    { "size", 's', 0, G_OPTION_ARG_INT, &thumb_size,
-	      N_("Thumbnail size (default: 128)"), N_("SIZE") },
-	    { G_OPTION_REMAINING, 0, 0, G_OPTION_ARG_FILENAME_ARRAY, &arguments,
-	      NULL, N_("FONT-FILE OUTPUT-FILE") },
-	    { NULL }
+            { "text", 't', 0, G_OPTION_ARG_STRING, &thumbstr_utf8,
+              N_("Text to thumbnail (default: Aa)"), N_("TEXT") },
+            { "size", 's', 0, G_OPTION_ARG_INT, &thumb_size,
+              N_("Thumbnail size (default: 128)"), N_("SIZE") },
+            { G_OPTION_REMAINING, 0, 0, G_OPTION_ARG_FILENAME_ARRAY, &arguments,
+              NULL, N_("FONT-FILE OUTPUT-FILE") },
+            { NULL }
     };
 
     bindtextdomain (GETTEXT_PACKAGE, GNOMELOCALEDIR);
@@ -197,18 +197,18 @@ main (int argc,
 
     retval = g_option_context_parse (context, &argc, &argv, &gerror);
     if (!retval) {
-	g_printerr ("Error parsing arguments: %s\n", gerror->message);
+        g_printerr ("Error parsing arguments: %s\n", gerror->message);
         return 1;
     }
 
     if (!arguments || g_strv_length (arguments) != 2) {
-	help = g_option_context_get_help (context, TRUE, NULL);
-	g_printerr ("%s", help);
+        help = g_option_context_get_help (context, TRUE, NULL);
+        g_printerr ("%s", help);
         return 1;
     }
 
     if (thumbstr_utf8 != NULL)
-	default_thumbstr = FALSE;
+        default_thumbstr = FALSE;
 
     error = FT_Init_FreeType (&library);
     if (error) {
@@ -220,7 +220,7 @@ main (int argc,
 
     fragment = strrchr (arguments[0], '#');
     if (fragment)
-	face_index = strtol (fragment + 1, NULL, 0);
+        face_index = strtol (fragment + 1, NULL, 0);
 
     file = g_file_new_for_commandline_arg (arguments[0]);
     uri = g_file_get_uri (file);
