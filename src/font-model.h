@@ -45,8 +45,6 @@ G_DECLARE_FINAL_TYPE (FontViewModel, font_view_model,
                       FONT_VIEW, MODEL,
                       GtkListStore)
 
-GType font_view_model_get_type (void);
-
 GtkTreeModel * font_view_model_new (void);
 
 gboolean font_view_model_get_iter_for_face (FontViewModel *self,
