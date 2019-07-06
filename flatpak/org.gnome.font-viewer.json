@@ -2,7 +2,6 @@
     "app-id": "org.gnome.font-viewer",
     "runtime": "org.gnome.Platform",
     "sdk": "org.gnome.Sdk",
-    "runtime-version": "3.32",
     "command": "gnome-font-viewer",
     "finish-args": [
         "--device=dri",
