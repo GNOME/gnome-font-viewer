@@ -1006,15 +1006,8 @@ font_view_application_do_overview (FontViewApplication *self)
 {
     g_clear_object (&self->font_file);
 
-    if (self->back_button) {
-        gtk_widget_destroy (self->back_button);
-        self->back_button = NULL;
-    }
-
-    if (self->info_button) {
-        gtk_widget_destroy (self->info_button);
-        self->info_button = NULL;
-    }
+    g_clear_pointer (&self->back_button, gtk_widget_destroy);
+    g_clear_pointer (&self->info_button, gtk_widget_destroy);
 
     if (self->install_button) {
         g_clear_pointer (&self->install_label, gtk_widget_destroy);

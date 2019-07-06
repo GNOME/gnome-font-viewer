@@ -488,10 +488,8 @@ ensure_font_list (FontViewModel *self)
     if (!FcInitReinitialize())
         return;
 
-    if (self->priv->cancellable) {
-        g_cancellable_cancel (self->priv->cancellable);
-        g_clear_object (&self->priv->cancellable);
-    }
+    g_cancellable_cancel (self->priv->cancellable);
+    g_clear_object (&self->priv->cancellable);
 
     gtk_list_store_clear (GTK_LIST_STORE (self));
 
@@ -500,10 +498,7 @@ ensure_font_list (FontViewModel *self)
 
     g_mutex_lock (&self->priv->font_list_mutex);
 
-    if (self->priv->font_list) {
-        FcFontSetDestroy (self->priv->font_list);
-        self->priv->font_list = NULL;
-    }
+    g_clear_pointer (&self->priv->font_list, FcFontSetDestroy);
 
     FcPatternAddBool (pat, FC_SCALABLE, FcTrue);
     self->priv->font_list = FcFontList (NULL, pat, os);
@@ -613,25 +608,13 @@ font_view_model_finalize (GObject *obj)
     FontViewModel *self = FONT_VIEW_MODEL (obj);
     GtkSettings *settings;
 
-    if (self->priv->cancellable) {
-        g_cancellable_cancel (self->priv->cancellable);
-        g_clear_object (&self->priv->cancellable);
-    }
+    g_cancellable_cancel (self->priv->cancellable);
+    g_clear_object (&self->priv->cancellable);
 
-    if (self->priv->font_list) {
-        FcFontSetDestroy (self->priv->font_list);
-        self->priv->font_list = NULL;
-    }
+    g_clear_pointer (&self->priv->font_list, FcFontSetDestroy);
+    g_clear_pointer (&self->priv->library, FT_Done_FreeType);
 
-    if (self->priv->library != NULL) {
-        FT_Done_FreeType (self->priv->library);
-        self->priv->library = NULL;
-    }
-
-    if (self->priv->font_list_idle_id != 0) {
-        g_source_remove (self->priv->font_list_idle_id);
-        self->priv->font_list_idle_id = 0;
-    }
+    g_clear_handle_id (&self->priv->font_list_idle_id, g_source_remove);
 
     if (self->priv->fontconfig_update_id != 0) {
         settings = gtk_settings_get_default ();
