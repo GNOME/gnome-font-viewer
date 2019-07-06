@@ -345,9 +345,13 @@ populate_grid (FontViewApplication *self,
                FT_Face face)
 {
     g_autoptr (GFileInfo) info = NULL;
+    g_autofree gchar *path = NULL;
     PS_FontInfoRec ps_info;
 
     add_row (grid, _("Name"), face->family_name, FALSE);
+
+    path = g_file_get_path (self->font_file);
+    add_row (grid, _("Location"), path, FALSE);
 
     if (face->style_name)
         add_row (grid, _("Style"), face->style_name, FALSE);
