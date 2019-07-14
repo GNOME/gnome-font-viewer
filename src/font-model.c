@@ -29,6 +29,7 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 
+#include <gio/gio.h>
 #include <gtk/gtk.h>
 #include <cairo-gobject.h>
 
@@ -36,16 +37,13 @@
 #include FT_FREETYPE_H
 #include <fontconfig/fontconfig.h>
 
-#define GNOME_DESKTOP_USE_UNSTABLE_API
-#include <libgnome-desktop/gnome-desktop-thumbnail.h>
-
 #include "font-model.h"
 #include "font-utils.h"
 #include "sushi-font-loader.h"
 
 struct _FontViewModel
 {
-    GtkListStore parent_instance;
+    GObject parent_instance;
 
     /* list of fonts in fontconfig database */
     FcFontSet *font_list;
@@ -53,297 +51,109 @@ struct _FontViewModel
 
     FT_Library library;
 
-    cairo_surface_t *fallback_icon;
+    GListStore *model;
     GCancellable *cancellable;
 
-    gint scale_factor;
     guint font_list_idle_id;
     guint fontconfig_update_id;
 };
 
-enum {
-    CONFIG_CHANGED,
-    NUM_SIGNALS
+G_DEFINE_TYPE (FontViewModel, font_view_model, G_TYPE_OBJECT)
+
+struct _FontViewModelItem
+{
+    GObject parent_instance;
+
+    gchar *collation_key;
+    gchar *font_name;
+    gchar *path;
+    int face_index;
 };
 
-static guint signals[NUM_SIGNALS] = { 0, };
+G_DEFINE_TYPE (FontViewModelItem, font_view_model_item, G_TYPE_OBJECT)
 
-G_DEFINE_TYPE (FontViewModel, font_view_model, GTK_TYPE_LIST_STORE)
-
-#define ATTRIBUTES_FOR_CREATING_THUMBNAIL \
-    G_FILE_ATTRIBUTE_STANDARD_CONTENT_TYPE"," \
-    G_FILE_ATTRIBUTE_TIME_MODIFIED
-#define ATTRIBUTES_FOR_EXISTING_THUMBNAIL \
-    G_FILE_ATTRIBUTE_THUMBNAIL_PATH"," \
-    G_FILE_ATTRIBUTE_THUMBNAILING_FAILED
-
-typedef struct {
-    const gchar *file;
-    gchar *match_name;
-    GtkTreeIter iter;
-    gboolean found;
-} IterForFaceData;
-
-static gboolean
-iter_for_face_foreach (GtkTreeModel *model,
-                       GtkTreePath *path,
-                       GtkTreeIter *iter,
-                       gpointer user_data)
+static void
+font_view_model_item_finalize (GObject *obj)
 {
-    IterForFaceData *data = user_data;
-    g_autofree gchar *font_name = NULL;
-    gboolean retval;
+    FontViewModelItem *self = FONT_VIEW_MODEL_ITEM (obj);
 
-    gtk_tree_model_get (GTK_TREE_MODEL (model), iter,
-                        COLUMN_NAME, &font_name,
-                        -1);
+    g_clear_pointer (&self->collation_key, g_free);
+    g_clear_pointer (&self->font_name, g_free);
+    g_clear_pointer (&self->path, g_free);
 
-    retval = (g_strcmp0 (font_name, data->match_name) == 0);
+    G_OBJECT_CLASS (font_view_model_item_parent_class)->finalize (obj);
+}
 
-    if (retval) {
-        data->iter = *iter;
-        data->found = TRUE;
-    }
+static void
+font_view_model_item_class_init (FontViewModelItemClass *klass)
+{
+    GObjectClass *oclass = G_OBJECT_CLASS (klass);
+    oclass->finalize = font_view_model_item_finalize;
+}
 
-    return retval;
+static void
+font_view_model_item_init (FontViewModelItem *self)
+{
+}
+
+static FontViewModelItem *
+font_view_model_item_new (const gchar *font_name,
+                          const gchar *path,
+                          int          face_index)
+{
+    FontViewModelItem *item = g_object_new (FONT_VIEW_TYPE_MODEL_ITEM, NULL);
+
+    item->collation_key = g_utf8_collate_key (font_name, -1);
+    item->font_name = g_strdup (font_name);
+    item->path = g_strdup (path);
+    item->face_index = face_index;
+
+    return item;
+}
+
+const gchar *
+font_view_model_item_get_collation_key (FontViewModelItem *self)
+{
+    return self->collation_key;
+}
+
+const gchar *
+font_view_model_item_get_font_name (FontViewModelItem *self)
+{
+    return self->font_name;
+}
+
+const gchar *
+font_view_model_item_get_font_path (FontViewModelItem *self)
+{
+    return self->path;
+}
+
+gint
+font_view_model_item_get_face_index (FontViewModelItem *self)
+{
+    return self->face_index;
 }
 
 gboolean
-font_view_model_get_iter_for_face (FontViewModel *self,
-                                   FT_Face face,
-                                   GtkTreeIter *iter)
+font_view_model_has_face (FontViewModel *self,
+                          FT_Face face)
 {
-    IterForFaceData *data = g_slice_new0 (IterForFaceData);
-    gboolean found;
+    guint n_items;
+    gint idx;
+    g_autofree gchar *match_name = NULL;
 
-    data->match_name = font_utils_get_font_name (face);
-    data->found = FALSE;
+    n_items = g_list_model_get_n_items (G_LIST_MODEL (self->model));
+    match_name = font_utils_get_font_name (face);
 
-    gtk_tree_model_foreach (GTK_TREE_MODEL (self),
-                            iter_for_face_foreach,
-                            data);
+    for (idx = 0; idx < n_items; idx++) {
+        FontViewModelItem *item = g_list_model_get_item (G_LIST_MODEL (self->model), idx);
 
-    found = data->found;
-    if (found && iter)
-        *iter = data->iter;
-
-    g_free (data->match_name);
-    g_slice_free (IterForFaceData, data);
-
-    return found;
-}
-
-typedef struct {
-    FontViewModel *self;
-    GFile *font_file;
-    gint face_index;
-    gchar *uri;
-    cairo_surface_t *surface;
-    GtkTreeIter iter;
-} ThumbInfoData;
-
-static void
-thumb_info_data_free (gpointer user_data)
-{
-    ThumbInfoData *thumb_info = user_data;
-
-    g_object_unref (thumb_info->self);
-    g_object_unref (thumb_info->font_file);
-    g_clear_pointer (&thumb_info->surface, cairo_surface_destroy);
-    g_free (thumb_info->uri);
-
-    g_slice_free (ThumbInfoData, thumb_info);
-}
-
-static gboolean
-one_thumbnail_done (gpointer user_data)
-{
-    ThumbInfoData *thumb_info = user_data;
-
-    if (thumb_info->surface != NULL)
-        gtk_list_store_set (GTK_LIST_STORE (thumb_info->self), &(thumb_info->iter),
-                            COLUMN_ICON, thumb_info->surface,
-                            -1);
-
-    thumb_info_data_free (thumb_info);
+        if (g_strcmp0 (item->font_name, match_name) == 0)
+            return TRUE;
+    }
 
     return FALSE;
-}
-
-static GdkPixbuf *
-create_thumbnail (ThumbInfoData *thumb_info)
-{
-    g_autoptr(GdkPixbuf) pixbuf = NULL;
-    g_autoptr(GError) error = NULL;
-    g_autoptr(GFileInfo) info = NULL;
-    g_autoptr(GnomeDesktopThumbnailFactory) factory = NULL;
-    guint64 mtime;
-
-    info = g_file_query_info (thumb_info->font_file, ATTRIBUTES_FOR_CREATING_THUMBNAIL,
-                              G_FILE_QUERY_INFO_NONE,
-                              NULL, &error);
-
-    /* we don't care about reporting errors here, just fail the
-     * thumbnail.
-     */
-    if (info == NULL) {
-        g_debug ("Can't query info for file %s: %s", thumb_info->uri, error->message);
-        return NULL;
-    }
-
-    factory = gnome_desktop_thumbnail_factory_new (GNOME_DESKTOP_THUMBNAIL_SIZE_LARGE);
-    pixbuf = gnome_desktop_thumbnail_factory_generate_thumbnail
-        (factory, 
-         thumb_info->uri, g_file_info_get_content_type (info));
-
-    mtime = g_file_info_get_attribute_uint64 (info, G_FILE_ATTRIBUTE_TIME_MODIFIED);
-    if (pixbuf != NULL) {
-        GdkPixbuf *scaled = gdk_pixbuf_scale_simple (pixbuf,
-                                                     128 * thumb_info->self->scale_factor,
-                                                     128 * thumb_info->self->scale_factor,
-                                                     GDK_INTERP_BILINEAR);
-        gnome_desktop_thumbnail_factory_save_thumbnail (factory, pixbuf,
-                                                        thumb_info->uri, (time_t) mtime);
-        g_object_unref (pixbuf);
-        pixbuf = scaled;
-    } else {
-        gnome_desktop_thumbnail_factory_create_failed_thumbnail (factory,
-                                                                 thumb_info->uri, (time_t) mtime);
-    }
-
-    return g_steal_pointer (&pixbuf);
-}
-
-static void
-ensure_thumbnails_job (GTask *task,
-                       gpointer source_object,
-                       gpointer user_data,
-                       GCancellable *cancellable)
-{
-    FontViewModel *self = FONT_VIEW_MODEL (source_object);
-    GList *thumb_infos = user_data, *l;
-    gint scale_factor = self->scale_factor;
-
-    for (l = thumb_infos; l != NULL; l = l->next) {
-        g_autoptr(GdkPixbuf) pixbuf = NULL;
-        g_autoptr(GError) error = NULL;
-        g_autofree gchar *thumb_path = NULL;
-        ThumbInfoData *thumb_info = l->data;
-
-        if (thumb_info->face_index == 0) {
-            g_autoptr(GFileInfo) info = NULL;
-            gboolean thumb_failed;
-
-            thumb_info->uri = g_file_get_uri (thumb_info->font_file);
-            info = g_file_query_info (thumb_info->font_file,
-                                      ATTRIBUTES_FOR_EXISTING_THUMBNAIL,
-                                      G_FILE_QUERY_INFO_NONE,
-                                      NULL, &error);
-
-            if (error != NULL) {
-                g_debug ("Can't query info for file %s: %s", thumb_info->uri, error->message);
-                goto next;
-            }
-
-            thumb_failed = g_file_info_get_attribute_boolean (info, G_FILE_ATTRIBUTE_THUMBNAILING_FAILED);
-            if (thumb_failed)
-                goto next;
-
-            thumb_path = g_strdup (g_file_info_get_attribute_byte_string (info, G_FILE_ATTRIBUTE_THUMBNAIL_PATH));
-        } else {
-            g_autofree gchar *checksum = NULL, *filename = NULL, *file_uri = NULL;
-
-            file_uri = g_file_get_uri (thumb_info->font_file);
-            thumb_info->uri = g_strdup_printf ("%s#0x%08X", file_uri, thumb_info->face_index);
-
-            checksum = g_compute_checksum_for_data (G_CHECKSUM_MD5,
-                                                    (const guchar *) thumb_info->uri,
-                                                    strlen (thumb_info->uri));
-            filename = g_strdup_printf ("%s.png", checksum);
-
-            thumb_path = g_build_filename (g_get_user_cache_dir (),
-                                           "thumbnails",
-                                           "large",
-                                           filename,
-                                           NULL);
-
-            if (!g_file_test (thumb_path, G_FILE_TEST_IS_REGULAR))
-                g_clear_pointer (&thumb_path, g_free);
-        }
-
-        if (thumb_path != NULL) {
-            g_autoptr(GFile) thumb_file = NULL;
-            g_autoptr(GFileInputStream) is = NULL;
-
-            thumb_file = g_file_new_for_path (thumb_path);
-            is = g_file_read (thumb_file, NULL, &error);
-
-            if (error != NULL) {
-                g_debug ("Can't read file %s: %s", thumb_path, error->message);
-                goto next;
-            }
-
-            pixbuf = gdk_pixbuf_new_from_stream_at_scale (G_INPUT_STREAM (is),
-                                                          128 * scale_factor, 128 * scale_factor,
-                                                          TRUE,
-                                                          NULL, &error);
-
-            if (error != NULL) {
-                g_debug ("Can't read thumbnail pixbuf %s: %s", thumb_path, error->message);
-                goto next;
-            }
-        } else {
-            pixbuf = create_thumbnail (thumb_info);
-        }
-
-        if (pixbuf != NULL)
-            thumb_info->surface = gdk_cairo_surface_create_from_pixbuf (pixbuf, scale_factor, NULL);
-
-    next:
-        g_main_context_invoke (NULL, one_thumbnail_done, thumb_info);
-    }
-
-    g_list_free (thumb_infos);
-}
-
-typedef struct {
-    gchar *font_path;
-    gint face_index;
-    gchar *font_name;
-} FontInfoData;
-
-static void
-font_info_data_free (gpointer user_data)
-{
-    FontInfoData *font_info = user_data;
-
-    g_free (font_info->font_path);
-    g_free (font_info->font_name);
-    g_slice_free (FontInfoData, font_info);
-}
-
-static void
-ensure_fallback_icon (FontViewModel *self)
-{
-    g_autoptr(GIcon) icon = NULL;
-    g_autoptr(GtkIconInfo) icon_info = NULL;
-    GtkIconTheme *icon_theme;
-    const char *mimetype = "font/ttf";
-
-    if (self->fallback_icon != NULL)
-        return;
-
-    icon_theme = gtk_icon_theme_get_default ();
-    icon = g_content_type_get_icon (mimetype);
-    icon_info = gtk_icon_theme_lookup_by_gicon_for_scale (icon_theme, icon,
-                                                          128, self->scale_factor,
-                                                          GTK_ICON_LOOKUP_FORCE_SIZE);
-    if (!icon_info) {
-        g_warning ("Fallback icon for %s not found", mimetype);
-        return;
-    }
-
-    self->fallback_icon = gtk_icon_info_load_surface (icon_info, NULL, NULL);
 }
 
 static void
@@ -352,43 +162,9 @@ font_infos_loaded (GObject *source_object,
                    gpointer user_data)
 {
     FontViewModel *self = FONT_VIEW_MODEL (source_object);
-    g_autoptr(GTask) task = NULL;
-    GList *l, *thumb_infos = NULL;
-    GList *font_infos = g_task_propagate_pointer (G_TASK (result), NULL);
+    g_autoptr(GPtrArray) items = g_task_propagate_pointer (G_TASK (result), NULL);
 
-    ensure_fallback_icon (self);
-
-    for (l = font_infos; l != NULL; l = l->next) {
-        FontInfoData *font_info = l->data;
-        g_autofree gchar *collation_key = NULL;
-        GtkTreeIter iter;
-        ThumbInfoData *thumb_info;
-
-        collation_key = g_utf8_collate_key (font_info->font_name, -1);
-        gtk_list_store_insert_with_values (GTK_LIST_STORE (self), &iter, -1,
-                                           COLUMN_NAME, font_info->font_name,
-                                           COLUMN_PATH, font_info->font_path,
-                                           COLUMN_FACE_INDEX, font_info->face_index,
-                                           COLUMN_ICON, self->fallback_icon,
-                                           COLUMN_COLLATION_KEY, collation_key,
-                                           -1);
-
-        thumb_info = g_slice_new0 (ThumbInfoData);
-        thumb_info->font_file = g_file_new_for_path (font_info->font_path);
-        thumb_info->face_index = font_info->face_index;
-        thumb_info->iter = iter;
-        thumb_info->self = g_object_ref (self);
-
-        font_info_data_free (font_info);
-        thumb_infos = g_list_prepend (thumb_infos, thumb_info);
-    }
-
-    g_signal_emit (self, signals[CONFIG_CHANGED], 0);
-    g_list_free (font_infos);
-
-    task = g_task_new (self, NULL, NULL, NULL);
-    g_task_set_task_data (task, thumb_infos, NULL);
-    g_task_run_in_thread (task, ensure_thumbnails_job);
+    g_list_store_splice (self->model, 0, 0, items->pdata, items->len);
 }
 
 static void
@@ -398,19 +174,20 @@ load_font_infos (GTask *task,
                  GCancellable *cancellable)
 {
     FontViewModel *self = FONT_VIEW_MODEL (source_object);
+    g_autoptr(GPtrArray) items = NULL;
     gint i, n_fonts;
-    GList *font_infos = NULL;
 
     n_fonts = self->font_list->nfont;
+    items = g_ptr_array_new_full (n_fonts, g_object_unref);
 
     for (i = 0; i < n_fonts; i++) {
-        FontInfoData *font_info;
+        FontViewModelItem *item;
         FcChar8 *file;
         int index;
-        gchar *font_name;
+        g_autofree gchar *font_name = NULL;
 
-        if (g_cancellable_is_cancelled (cancellable))
-            break;
+        if (g_task_return_error_if_cancelled (task))
+            return;
 
         g_mutex_lock (&self->font_list_mutex);
         FcPatternGetString (self->font_list->fonts[i], FC_FILE, 0, &file);
@@ -424,15 +201,11 @@ load_font_infos (GTask *task,
         if (!font_name)
             continue;
 
-        font_info = g_slice_new0 (FontInfoData);
-        font_info->font_name = font_name;
-        font_info->font_path = g_strdup ((const gchar *) file);
-        font_info->face_index = index;
-
-        font_infos = g_list_prepend (font_infos, font_info);
+        item = font_view_model_item_new (font_name, (const gchar *) file, index);
+        g_ptr_array_add (items, item);
     }
 
-    g_task_return_pointer (task, font_infos, NULL);
+    g_task_return_pointer (task, g_steal_pointer (&items), NULL);
 }
 
 /* make sure the font list is valid */
@@ -450,7 +223,7 @@ ensure_font_list (FontViewModel *self)
     g_cancellable_cancel (self->cancellable);
     g_clear_object (&self->cancellable);
 
-    gtk_list_store_clear (GTK_LIST_STORE (self));
+    g_list_store_remove_all (self->model);
 
     pat = FcPatternCreate ();
     os = FcObjectSetBuild (FC_FILE, FC_INDEX, FC_FAMILY, FC_WEIGHT, FC_SLANT, NULL);
@@ -498,24 +271,6 @@ schedule_update_font_list (FontViewModel *self)
         g_idle_add (ensure_font_list_idle, self);
 }
 
-static int
-font_view_model_sort_func (GtkTreeModel *model,
-                           GtkTreeIter *a,
-                           GtkTreeIter *b,
-                           gpointer user_data)
-{
-    g_autofree gchar *key_a = NULL, *key_b = NULL;
-
-    gtk_tree_model_get (model, a,
-                        COLUMN_COLLATION_KEY, &key_a,
-                        -1);
-    gtk_tree_model_get (model, b,
-                        COLUMN_COLLATION_KEY, &key_b,
-                        -1);
-
-    return g_strcmp0 (key_a, key_b);
-}
-
 static void
 connect_to_fontconfig_updates (FontViewModel *self)
 {
@@ -530,24 +285,11 @@ connect_to_fontconfig_updates (FontViewModel *self)
 static void
 font_view_model_init (FontViewModel *self)
 {
-    GType types[NUM_COLUMNS] =
-        { G_TYPE_STRING, G_TYPE_STRING, G_TYPE_INT, CAIRO_GOBJECT_TYPE_SURFACE, G_TYPE_STRING };
-
     if (FT_Init_FreeType (&self->library) != FT_Err_Ok)
         g_critical ("Can't initialize FreeType library");
 
     g_mutex_init (&self->font_list_mutex);
-
-    gtk_list_store_set_column_types (GTK_LIST_STORE (self),
-                                     NUM_COLUMNS, types);
-
-    gtk_tree_sortable_set_sort_column_id (GTK_TREE_SORTABLE (self),
-                                          COLUMN_NAME,
-                                          GTK_SORT_ASCENDING);
-    gtk_tree_sortable_set_sort_func (GTK_TREE_SORTABLE (self),
-                                     COLUMN_NAME,
-                                     font_view_model_sort_func,
-                                     NULL, NULL);
+    self->model = g_list_store_new (FONT_VIEW_TYPE_MODEL_ITEM);
 
     schedule_update_font_list (self);
     connect_to_fontconfig_updates (self);
@@ -562,6 +304,7 @@ font_view_model_finalize (GObject *obj)
     g_cancellable_cancel (self->cancellable);
     g_clear_object (&self->cancellable);
 
+    g_clear_object (&self->model);
     g_clear_pointer (&self->font_list, FcFontSetDestroy);
     g_clear_pointer (&self->library, FT_Done_FreeType);
 
@@ -574,7 +317,6 @@ font_view_model_finalize (GObject *obj)
     }
 
     g_mutex_clear (&self->font_list_mutex);
-    g_clear_pointer (&self->fallback_icon, cairo_surface_destroy);
 
     G_OBJECT_CLASS (font_view_model_parent_class)->finalize (obj);
 }
@@ -584,27 +326,16 @@ font_view_model_class_init (FontViewModelClass *klass)
 {
     GObjectClass *oclass = G_OBJECT_CLASS (klass);
     oclass->finalize = font_view_model_finalize;
-
-    signals[CONFIG_CHANGED] = 
-        g_signal_new ("config-changed",
-                      FONT_VIEW_TYPE_MODEL,
-                      G_SIGNAL_RUN_FIRST,
-                      0, NULL, NULL, NULL,
-                      G_TYPE_NONE, 0);
 }
 
-GtkTreeModel *
+FontViewModel *
 font_view_model_new (void)
 {
     return g_object_new (FONT_VIEW_TYPE_MODEL, NULL);
 }
 
-void
-font_view_model_set_scale_factor (FontViewModel *self,
-                                  gint           scale_factor)
+GListModel *
+font_view_model_get_list_model (FontViewModel *self)
 {
-    self->scale_factor = scale_factor;
-
-    g_clear_pointer (&self->fallback_icon, cairo_surface_destroy);
-    schedule_update_font_list (self);
+    return G_LIST_MODEL (self->model);
 }

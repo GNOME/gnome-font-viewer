@@ -40,19 +40,25 @@ typedef enum {
 } FontViewModelColumns;
 
 #define FONT_VIEW_TYPE_MODEL (font_view_model_get_type ())
-
 G_DECLARE_FINAL_TYPE (FontViewModel, font_view_model,
                       FONT_VIEW, MODEL,
-                      GtkListStore)
+                      GObject)
 
-GtkTreeModel * font_view_model_new (void);
+FontViewModel * font_view_model_new (void);
 
-gboolean font_view_model_get_iter_for_face (FontViewModel *self,
-                                            FT_Face        face,
-                                            GtkTreeIter   *iter);
+gboolean font_view_model_has_face (FontViewModel *self,
+                                   FT_Face face);
+GListModel *font_view_model_get_list_model (FontViewModel *self);
 
-void     font_view_model_set_scale_factor  (FontViewModel *self,
-                                            gint           scale_factor);
+#define FONT_VIEW_TYPE_MODEL_ITEM (font_view_model_item_get_type ())
+G_DECLARE_FINAL_TYPE (FontViewModelItem, font_view_model_item,
+                      FONT_VIEW, MODEL_ITEM,
+                      GObject)
+
+gint font_view_model_item_get_face_index (FontViewModelItem *self);
+const gchar *font_view_model_item_get_collation_key (FontViewModelItem *self);
+const gchar *font_view_model_item_get_font_name (FontViewModelItem *self);
+const gchar *font_view_model_item_get_font_path (FontViewModelItem *self);
 
 G_END_DECLS
 
