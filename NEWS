@@ -1,3 +1,15 @@
+GNOME Font Viewer - 3.33.4
+-------------------------------------------------------------------------------
+• Add a keyboard shortcut to go Back [#9, James Westman]
+• Improve appdata file [#6]
+• Fix font installation when filenames would collide [#10, #11]
+• Display an error dialog when installation fails [#20]
+• Improve compatibility for fonts with non-unicode charmaps [#769247]
+• Fix thumbnailing for font collection files [#788149]
+• Add a Location row to the Info dialog [#1]
+• Port to GtkFlowBox [#2]
+• Translation updates
+
 GNOME Font Viewer - 3.32.0
 -------------------------------------------------------------------------------
 • Update the icon to follow the GNOME 3.32 guidelines [Jakub Steiner]
