@@ -29,7 +29,6 @@
 #include FT_SFNT_NAMES_H
 #include FT_TRUETYPE_IDS_H
 #include FT_MULTIPLE_MASTERS_H
-#include <cairo/cairo-ft.h>
 #include <fontconfig/fontconfig.h>
 #include <gio/gio.h>
 #include <gtk/gtk.h>

@@ -24,14 +24,8 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <string.h>
-#include <errno.h>
-#include <sys/stat.h>
-#include <sys/types.h>
-
 #include <gio/gio.h>
 #include <gtk/gtk.h>
-#include <cairo-gobject.h>
 
 #include <ft2build.h>
 #include FT_FREETYPE_H
@@ -39,7 +33,6 @@
 
 #include "font-model.h"
 #include "font-utils.h"
-#include "sushi-font-loader.h"
 
 struct _FontViewModel
 {
