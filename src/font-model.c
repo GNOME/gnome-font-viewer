@@ -59,7 +59,7 @@ struct _FontViewModelItem
 
     gchar *collation_key;
     gchar *font_name;
-    gchar *path;
+    GFile *file;
     int face_index;
 };
 
@@ -72,7 +72,7 @@ font_view_model_item_finalize (GObject *obj)
 
     g_clear_pointer (&self->collation_key, g_free);
     g_clear_pointer (&self->font_name, g_free);
-    g_clear_pointer (&self->path, g_free);
+    g_clear_object (&self->file);
 
     G_OBJECT_CLASS (font_view_model_item_parent_class)->finalize (obj);
 }
@@ -91,14 +91,14 @@ font_view_model_item_init (FontViewModelItem *self)
 
 static FontViewModelItem *
 font_view_model_item_new (const gchar *font_name,
-                          const gchar *path,
+                          GFile       *file,
                           int          face_index)
 {
     FontViewModelItem *item = g_object_new (FONT_VIEW_TYPE_MODEL_ITEM, NULL);
 
     item->collation_key = g_utf8_collate_key (font_name, -1);
     item->font_name = g_strdup (font_name);
-    item->path = g_strdup (path);
+    item->file = g_object_ref (file);
     item->face_index = face_index;
 
     return item;
@@ -116,10 +116,10 @@ font_view_model_item_get_font_name (FontViewModelItem *self)
     return self->font_name;
 }
 
-const gchar *
-font_view_model_item_get_font_path (FontViewModelItem *self)
+GFile *
+font_view_model_item_get_font_file (FontViewModelItem *self)
 {
-    return self->path;
+    return self->file;
 }
 
 gint
@@ -175,26 +175,25 @@ load_font_infos (GTask *task,
 
     for (i = 0; i < n_fonts; i++) {
         FontViewModelItem *item;
-        FcChar8 *file;
+        FcChar8 *path;
         int index;
         g_autofree gchar *font_name = NULL;
+        g_autoptr(GFile) file = NULL;
 
         if (g_task_return_error_if_cancelled (task))
             return;
 
         g_mutex_lock (&self->font_list_mutex);
-        FcPatternGetString (self->font_list->fonts[i], FC_FILE, 0, &file);
+        FcPatternGetString (self->font_list->fonts[i], FC_FILE, 0, &path);
         FcPatternGetInteger (self->font_list->fonts[i], FC_INDEX, 0, &index);
         g_mutex_unlock (&self->font_list_mutex);
 
-        font_name = font_utils_get_font_name_for_file (self->library,
-                                                       (const gchar *) file,
-                                                       index);
-
+        file = g_file_new_for_path ((const gchar *) path);
+        font_name = font_utils_get_font_name_for_file (self->library, file, index);
         if (!font_name)
             continue;
 
-        item = font_view_model_item_new (font_name, (const gchar *) file, index);
+        item = font_view_model_item_new (font_name, file, index);
         g_ptr_array_add (items, item);
     }
 

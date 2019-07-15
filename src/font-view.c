@@ -237,25 +237,23 @@ font_view_item_load_thumbnail_job (GTask *task,
     gint scale_factor = GPOINTER_TO_INT (task_data);
     g_autoptr(GdkPixbuf) pixbuf = NULL;
     g_autoptr(GError) error = NULL;
-    g_autoptr(GFile) file = NULL;
     g_autofree gchar *thumb_path = NULL, *thumb_uri = NULL, *file_uri = NULL;
     gint face_index;
-    const gchar *font_path;
+    GFile *font_file;
 
     if (g_task_return_error_if_cancelled (task))
         return;
 
     face_index = font_view_model_item_get_face_index (item);
-    font_path = font_view_model_item_get_font_path (item);
-    file = g_file_new_for_path (font_path);
-    file_uri = g_file_get_uri (file);
+    font_file = font_view_model_item_get_font_file (item);
+    file_uri = g_file_get_uri (font_file);
 
     if (face_index == 0) {
         g_autoptr(GFileInfo) info = NULL;
         gboolean thumb_failed;
 
         thumb_uri = g_strdup (file_uri);
-        info = g_file_query_info (file,
+        info = g_file_query_info (font_file,
                                   ATTRIBUTES_FOR_EXISTING_THUMBNAIL,
                                   G_FILE_QUERY_INFO_NONE,
                                   NULL, &error);
@@ -311,7 +309,7 @@ font_view_item_load_thumbnail_job (GTask *task,
             return;
         }
     } else {
-        pixbuf = create_thumbnail (file, thumb_uri, scale_factor);
+        pixbuf = create_thumbnail (font_file, thumb_uri, scale_factor);
     }
 
     if (pixbuf != NULL)
@@ -1220,16 +1218,14 @@ view_child_activated_cb (GtkFlowBox *flow_box,
     FontViewApplication *self = user_data;
     FontViewItem *view_item = FONT_VIEW_ITEM (child);
     FontViewModelItem *item = view_item->item;
-    const gchar *font_path;
+    GFile *font_file;
     gint face_index;
 
-    font_path = font_view_model_item_get_font_path (item);
+    font_file = font_view_model_item_get_font_file (item);
     face_index = font_view_model_item_get_face_index (item);
 
-    if (font_path != NULL) {
-        g_autoptr(GFile) file = g_file_new_for_path (font_path);
-        font_view_application_do_open (self, file, face_index);
-    }
+    if (font_file != NULL)
+        font_view_application_do_open (self, font_file, face_index);
 }
 
 static void

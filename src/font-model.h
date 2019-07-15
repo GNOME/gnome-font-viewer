@@ -57,8 +57,8 @@ G_DECLARE_FINAL_TYPE (FontViewModelItem, font_view_model_item,
 
 gint font_view_model_item_get_face_index (FontViewModelItem *self);
 const gchar *font_view_model_item_get_collation_key (FontViewModelItem *self);
+GFile *font_view_model_item_get_font_file (FontViewModelItem *self);
 const gchar *font_view_model_item_get_font_name (FontViewModelItem *self);
-const gchar *font_view_model_item_get_font_path (FontViewModelItem *self);
 
 G_END_DECLS
 
