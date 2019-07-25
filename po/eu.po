@@ -11,8 +11,8 @@
 msgid ""
 msgstr "Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues\n"
-"POT-Creation-Date: 2018-11-01 21:11+0000\n"
-"PO-Revision-Date: 2019-03-18 06:00+0100\n"
+"POT-Creation-Date: 2019-07-06 17:09+0000\n"
+"PO-Revision-Date: 2019-07-24 06:00+0100\n"
 "Last-Translator: Asier Sarasua Garmendia <asier.sarasua@gmail.com>\n"
 "Language-Team: Basque <librezale@librezale.eus>\n"
 "Language: eu\n"
@@ -20,13 +20,12 @@ msgstr "Project-Id-Version: gnome-font-viewer master\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Project-Style: gnome\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
 msgid "GNOME Fonts"
 msgstr "GNOME Letra-tipoak"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1119
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1098
 #: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Ikusi sistemako letra-tipoak"
@@ -45,23 +44,27 @@ msgid ""
 "available to all users on the computer."
 msgstr "GNOME Letra-tipoak letra-tipoen fitxategi berriak (.ttf edo beste formatuan deskargatuta) instala ditzake. Letra-tipoa zure erabilpenerako soilik instala daiteke, edo ordenagailuko beste erabiltzaile guztientzako baita ere."
 
-#: src/font-thumbnailer.c:189
+#: data/org.gnome.font-viewer.appdata.xml.in:21
+msgid "The GNOME Project"
+msgstr "GNOME proiektua"
+
+#: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Testua txikiagotzeko (lehenetsia: Aa)"
 
-#: src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:181
 msgid "TEXT"
 msgstr "TESTUA"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "Thumbnail size (default: 128)"
 msgstr "Koadro txikien tamaina (lehenetsia: 128)"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "SIZE"
 msgstr "TAMAINA"
 
-#: src/font-thumbnailer.c:193
+#: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "LETRA-TIPOEN_FITXATEGIA IRTEERAKO-FITXATEGIA"
 
@@ -78,123 +81,131 @@ msgstr "Erakutsi aplikazioaren bertsioa"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:230
+#: src/font-view.c:228
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, lehenetsia %g"
 
-#: src/font-view.c:286
+#: src/font-view.c:284
 #, c-format
 msgid "Instance %d"
 msgstr "%d instantzia"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:331
+#: src/font-view.c:327
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:357
+#: src/font-view.c:351
 msgid "Name"
 msgstr "Izena"
 
-#: src/font-view.c:360
+#: src/font-view.c:354
+msgid "Location"
+msgstr "Kokalekua"
+
+#: src/font-view.c:357
 msgid "Style"
 msgstr "Estiloa"
 
-#: src/font-view.c:370
+#: src/font-view.c:367
 msgid "Type"
 msgstr "Mota"
 
-#: src/font-view.c:431 src/font-view.c:465
+#: src/font-view.c:425 src/font-view.c:451
 msgid "Version"
 msgstr "Bertsioa"
 
-#: src/font-view.c:436 src/font-view.c:471
+#: src/font-view.c:429 src/font-view.c:456
 msgid "Copyright"
 msgstr "Copyright-a"
 
-#: src/font-view.c:441
+#: src/font-view.c:433
 msgid "Description"
 msgstr "Azalpena"
 
-#: src/font-view.c:446
+#: src/font-view.c:437
 msgid "Manufacturer"
 msgstr "Fabrikatzailea"
 
-#: src/font-view.c:451
+#: src/font-view.c:441
 msgid "Designer"
 msgstr "Diseinatzailea"
 
-#: src/font-view.c:456
+#: src/font-view.c:445
 msgid "License"
 msgstr "Lizentzia"
 
-#: src/font-view.c:486
+#: src/font-view.c:470
 msgid "Glyph Count"
 msgstr "Glifo kopurua"
 
-#: src/font-view.c:489
+#: src/font-view.c:472
 msgid "Color Glyphs"
 msgstr "Kolore-glifoak"
 
-#: src/font-view.c:489
+#: src/font-view.c:472
 msgid "yes"
 msgstr "bai"
 
-#: src/font-view.c:489
+#: src/font-view.c:472
 msgid "no"
 msgstr "ez"
 
-#: src/font-view.c:493
+#: src/font-view.c:476
 msgid "Layout Features"
 msgstr "Diseinu-ezaugarriak"
 
-#: src/font-view.c:500
+#: src/font-view.c:482
 msgid "Variation Axes"
 msgstr "Aldaera-ardatzak"
 
-#: src/font-view.c:508
+#: src/font-view.c:489
 msgid "Named Styles"
 msgstr "Izendatutako estiloak"
 
-#: src/font-view.c:690
+#: src/font-view.c:563
+msgid "This font could not be installed."
+msgstr "Letra-tipo hau ezin izan da instalatu."
+
+#: src/font-view.c:701
 msgid "This font could not be displayed."
 msgstr "Letra-tipo hau ezin izan da bistaratu."
 
-#: src/font-view.c:838
+#: src/font-view.c:833
 msgid "Install"
 msgstr "Instalatu"
 
-#: src/font-view.c:841
+#: src/font-view.c:836
 msgid "Installing…"
 msgstr "Instalatzen…"
 
-#: src/font-view.c:844
+#: src/font-view.c:839
 msgid "Installed"
 msgstr "Instalatuta"
 
-#: src/font-view.c:847
+#: src/font-view.c:842
 msgid "Failed"
 msgstr "Huts egin du"
 
-#: src/font-view.c:865
+#: src/font-view.c:858
 msgid "Info"
 msgstr "Informazioa"
 
-#: src/font-view.c:880
+#: src/font-view.c:875
 msgid "Back"
 msgstr "Atzera"
 
-#: src/font-view.c:992
+#: src/font-view.c:974
 msgid "All Fonts"
 msgstr "Letra-tipo guztiak"
 
-#: src/font-view.c:1118 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1097 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
 msgstr "Letra-tipoak"
 
-#: src/font-view.c:1121
+#: src/font-view.c:1100
 msgid "translator-credits"
 msgstr "Asier Sarasua Garmendia <asier.sarasua@gmail.com>"
 
@@ -202,11 +213,6 @@ msgstr "Asier Sarasua Garmendia <asier.sarasua@gmail.com>"
 #: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
 msgstr "tipografia;letra-tipoak;letra;tipoa;"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: src/org.gnome.font-viewer.desktop.in:8
-msgid "org.gnome.font-viewer"
-msgstr "org.gnome.font-viewer"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -1002,6 +1008,9 @@ msgstr "Ordezko bertikalak biraketarako"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Barradun zeroa"
+
+#~ msgid "org.gnome.font-viewer"
+#~ msgstr "org.gnome.font-viewer"
 
 #~ msgid "About"
 #~ msgstr "Honi buruz"
