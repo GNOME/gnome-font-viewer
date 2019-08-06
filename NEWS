@@ -1,3 +1,8 @@
+GNOME Font Viewer - 3.33.90
+-------------------------------------------------------------------------------
+• Fix compiler warning [!9, Kalev Lember]
+• Translation updates
+
 GNOME Font Viewer - 3.33.4
 -------------------------------------------------------------------------------
 • Add a keyboard shortcut to go Back [#9, James Westman]
