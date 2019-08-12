@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues"
 "\n"
-"POT-Creation-Date: 2018-09-04 00:33+0000\n"
-"PO-Revision-Date: 2019-02-22 17:27+0000\n"
+"POT-Creation-Date: 2019-07-05 15:44+0000\n"
+"PO-Revision-Date: 2019-08-12 07:39+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
 "Language: is\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 2.0\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:85
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
 msgid "GNOME Fonts"
 msgstr "GNOME-letur"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1066
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1119
 #: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Skoða letur á kerfinu þínu"
@@ -68,14 +68,11 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "LETURSKRÁ ÚTTAKSSKRÁ"
 
 #: src/font-view-app-menu.ui:6
-msgid "About"
+#| msgid "All Fonts"
+msgid "About Fonts"
 msgstr "Um hugbúnaðinn"
 
-#: src/font-view-app-menu.ui:10
-msgid "Quit"
-msgstr "Hætta"
-
-#: src/font-view.c:93
+#: src/font-view.c:99
 msgid "Show the application's version"
 msgstr "Birta útgáfuupplýsingar forrits"
 
@@ -84,121 +81,125 @@ msgstr "Birta útgáfuupplýsingar forrits"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:223
+#: src/font-view.c:230
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, sjálfgefið %g"
 
-#: src/font-view.c:279
+#: src/font-view.c:286
 #, c-format
-#| msgid "Installed"
 msgid "Instance %d"
 msgstr "Tilvik %d"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:324
+#: src/font-view.c:331
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:350
+#: src/font-view.c:357
 msgid "Name"
 msgstr "Heiti"
 
-#: src/font-view.c:353
+#: src/font-view.c:360
 msgid "Style"
 msgstr "Stíll"
 
-#: src/font-view.c:363
+#: src/font-view.c:370
 msgid "Type"
 msgstr "Gerð"
 
-#: src/font-view.c:424 src/font-view.c:458
+#: src/font-view.c:431 src/font-view.c:465
 msgid "Version"
 msgstr "Útgáfa"
 
-#: src/font-view.c:429 src/font-view.c:464
+#: src/font-view.c:436 src/font-view.c:471
 msgid "Copyright"
 msgstr "Höfundarréttur"
 
-#: src/font-view.c:434
+#: src/font-view.c:441
 msgid "Description"
 msgstr "Lýsing"
 
-#: src/font-view.c:439
+#: src/font-view.c:446
 msgid "Manufacturer"
 msgstr "Framleiðandi"
 
-#: src/font-view.c:444
+#: src/font-view.c:451
 msgid "Designer"
 msgstr "Hönnuður"
 
-#: src/font-view.c:449
+#: src/font-view.c:456
 msgid "License"
 msgstr "Notkunarleyfi"
 
-#: src/font-view.c:479
+#: src/font-view.c:486
 msgid "Glyph Count"
 msgstr "Fjöldi stafbrigða"
 
-#: src/font-view.c:482
+#: src/font-view.c:489
 msgid "Color Glyphs"
 msgstr ""
 
-#: src/font-view.c:482
+#: src/font-view.c:489
 msgid "yes"
 msgstr "já"
 
-#: src/font-view.c:482
-#| msgid "Info"
+#: src/font-view.c:489
 msgid "no"
 msgstr "nei"
 
-#: src/font-view.c:486
+#: src/font-view.c:493
 msgid "Layout Features"
 msgstr ""
 
-#: src/font-view.c:493
+#: src/font-view.c:500
 msgid "Variation Axes"
 msgstr ""
 
-#: src/font-view.c:501
+#: src/font-view.c:508
 msgid "Named Styles"
 msgstr "Nefndir stílar"
 
-#: src/font-view.c:518
-msgid "Install Failed"
-msgstr "Uppsetning mistókst"
-
-#: src/font-view.c:525
-msgid "Installed"
-msgstr "Uppsett"
-
-#: src/font-view.c:529 src/font-view.c:808
-msgid "Install"
-msgstr "Setja inn"
-
-#: src/font-view.c:663
+#: src/font-view.c:690
 msgid "This font could not be displayed."
 msgstr "Ekki tókst að birta þetta letur."
 
-#: src/font-view.c:819
+#: src/font-view.c:838
+msgid "Install"
+msgstr "Setja inn"
+
+#: src/font-view.c:841
+#| msgid "Install"
+msgid "Installing…"
+msgstr "Uppsetning…"
+
+#: src/font-view.c:844
+msgid "Installed"
+msgstr "Uppsett"
+
+#: src/font-view.c:847
+#| msgid "Install Failed"
+msgid "Failed"
+msgstr "Mistókst"
+
+#: src/font-view.c:865
 msgid "Info"
 msgstr "Upplýsingar"
 
-#: src/font-view.c:834
+#: src/font-view.c:880
 msgid "Back"
 msgstr "Til baka"
 
-#: src/font-view.c:939
+#: src/font-view.c:992
 msgid "All Fonts"
 msgstr "Allt letur"
 
-#: src/font-view.c:1065 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1118 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
 msgstr "Letur"
 
-#: src/font-view.c:1068
+#: src/font-view.c:1121
 msgid "translator-credits"
 msgstr "Sveinn í Felli, sv1@fellsnet.is"
 
@@ -206,11 +207,6 @@ msgstr "Sveinn í Felli, sv1@fellsnet.is"
 #: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
 msgstr "Letur;Leturgerð;"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: src/org.gnome.font-viewer.desktop.in:8
-msgid "preferences-desktop-font"
-msgstr "preferences-desktop-font"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -270,7 +266,7 @@ msgstr ""
 #: src/open-type-layout.h:24
 msgctxt "OpenType layout"
 msgid "Glyph Composition / Decomposition"
-msgstr ""
+msgstr "Samsetning / Sundurliðun staftákna"
 
 #: src/open-type-layout.h:25
 msgctxt "OpenType layout"
@@ -415,7 +411,7 @@ msgstr "Staftilbrigði 19"
 #: src/open-type-layout.h:53
 msgctxt "OpenType layout"
 msgid "Distances"
-msgstr ""
+msgstr "Fjarlægðir"
 
 #: src/open-type-layout.h:54
 msgctxt "OpenType layout"
@@ -585,7 +581,7 @@ msgstr ""
 #: src/open-type-layout.h:87
 msgctxt "OpenType layout"
 msgid "Localized Forms"
-msgstr ""
+msgstr "Staðfærð form"
 
 #: src/open-type-layout.h:88
 msgctxt "OpenType layout"
@@ -665,7 +661,7 @@ msgstr "Raðtölur"
 #: src/open-type-layout.h:103
 msgctxt "OpenType layout"
 msgid "Ornaments"
-msgstr ""
+msgstr "Skreytingar"
 
 #: src/open-type-layout.h:104
 msgctxt "OpenType layout"
@@ -715,7 +711,7 @@ msgstr ""
 #: src/open-type-layout.h:113
 msgctxt "OpenType layout"
 msgid "Quarter Widths"
-msgstr ""
+msgstr "Fjórðungsbreiddir"
 
 #: src/open-type-layout.h:114
 msgctxt "OpenType layout"
@@ -785,7 +781,7 @@ msgstr ""
 #: src/open-type-layout.h:127
 msgctxt "OpenType layout"
 msgid "Small Capitals"
-msgstr ""
+msgstr "Litlir hástafir"
 
 #: src/open-type-layout.h:128
 msgctxt "OpenType layout"
@@ -903,13 +899,11 @@ msgid "Stretching Glyph Decomposition"
 msgstr ""
 
 #: src/open-type-layout.h:151
-#| msgid "Description"
 msgctxt "OpenType layout"
 msgid "Subscript"
 msgstr "Lágletur"
 
 #: src/open-type-layout.h:152
-#| msgid "Description"
 msgctxt "OpenType layout"
 msgid "Superscript"
 msgstr "Háletur"
@@ -1008,6 +1002,15 @@ msgstr ""
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Skástrikað núll"
+
+#~ msgid "About"
+#~ msgstr "Um hugbúnaðinn"
+
+#~ msgid "Quit"
+#~ msgstr "Hætta"
+
+#~ msgid "preferences-desktop-font"
+#~ msgstr "preferences-desktop-font"
 
 #~ msgid "Font Viewer"
 #~ msgstr "Leturskoðari"
