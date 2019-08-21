@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils-2.0\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2018-12-08 21:01+0000\n"
-"PO-Revision-Date: 2019-02-28 20:46+0100\n"
+"POT-Creation-Date: 2019-07-06 17:09+0000\n"
+"PO-Revision-Date: 2019-08-21 23:45+0200\n"
 "Last-Translator: Марко М. Костић <marko.m.kostic@gmail.com>\n"
 "Language-Team: српски <gnome-sr@googlegroups.org>\n"
 "Language: sr\n"
@@ -19,14 +19,14 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.2.3\n"
 "X-Poedit-Bookmarks: -1,21,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
 msgid "GNOME Fonts"
 msgstr "Гномови фонтови"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1119
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1098
 #: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Прегледајте писма на вашем систему"
@@ -51,23 +51,27 @@ msgstr ""
 "у „.ttf“ и другим записима. Фонтови могу бити инсталирани само за вашу "
 "употребу или могу бити доступни свим корисницима на рачунару."
 
-#: src/font-thumbnailer.c:189
+#: data/org.gnome.font-viewer.appdata.xml.in:21
+msgid "The GNOME Project"
+msgstr "Гномов пројекат"
+
+#: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Текст у минијатуру (основно: Aa)"
 
-#: src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:181
 msgid "TEXT"
 msgstr "ТЕКСТ"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "Thumbnail size (default: 128)"
 msgstr "Величина минијатуре (основно: 128)"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "SIZE"
 msgstr "ВЕЛИЧИНА"
 
-#: src/font-thumbnailer.c:193
+#: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ДАТОТЕКА-ПИСМА ИЗЛАЗНА-ДАТОТЕКА"
 
@@ -84,123 +88,131 @@ msgstr "Приказује издање програма"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:230
+#: src/font-view.c:228
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, подразумевано %g"
 
-#: src/font-view.c:286
+#: src/font-view.c:284
 #, c-format
 msgid "Instance %d"
 msgstr "Примерак %d"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:331
+#: src/font-view.c:327
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:357
+#: src/font-view.c:351
 msgid "Name"
 msgstr "Назив"
 
-#: src/font-view.c:360
+#: src/font-view.c:354
+msgid "Location"
+msgstr "Место"
+
+#: src/font-view.c:357
 msgid "Style"
 msgstr "Стил"
 
-#: src/font-view.c:370
+#: src/font-view.c:367
 msgid "Type"
 msgstr "Врста"
 
-#: src/font-view.c:431 src/font-view.c:465
+#: src/font-view.c:425 src/font-view.c:451
 msgid "Version"
 msgstr "Издање"
 
-#: src/font-view.c:436 src/font-view.c:471
+#: src/font-view.c:429 src/font-view.c:456
 msgid "Copyright"
 msgstr "Ауторска права"
 
-#: src/font-view.c:441
+#: src/font-view.c:433
 msgid "Description"
 msgstr "Опис"
 
-#: src/font-view.c:446
+#: src/font-view.c:437
 msgid "Manufacturer"
 msgstr "Произвођач"
 
-#: src/font-view.c:451
+#: src/font-view.c:441
 msgid "Designer"
 msgstr "Дизајнер"
 
-#: src/font-view.c:456
+#: src/font-view.c:445
 msgid "License"
 msgstr "Дозвола"
 
-#: src/font-view.c:486
+#: src/font-view.c:470
 msgid "Glyph Count"
 msgstr "Број знакова"
 
-#: src/font-view.c:489
+#: src/font-view.c:472
 msgid "Color Glyphs"
 msgstr "Обојени знакови"
 
-#: src/font-view.c:489
+#: src/font-view.c:472
 msgid "yes"
 msgstr "да"
 
-#: src/font-view.c:489
+#: src/font-view.c:472
 msgid "no"
 msgstr "не"
 
-#: src/font-view.c:493
+#: src/font-view.c:476
 msgid "Layout Features"
 msgstr "Могућности распореда"
 
-#: src/font-view.c:500
+#: src/font-view.c:482
 msgid "Variation Axes"
 msgstr "Варијација оса"
 
-#: src/font-view.c:508
+#: src/font-view.c:489
 msgid "Named Styles"
 msgstr "Именовани стилови"
 
-#: src/font-view.c:690
+#: src/font-view.c:563
+msgid "This font could not be installed."
+msgstr "Овај фонт не може бити инсталиран."
+
+#: src/font-view.c:701
 msgid "This font could not be displayed."
 msgstr "Овај фонт не може бити приказан."
 
-#: src/font-view.c:838
+#: src/font-view.c:833
 msgid "Install"
 msgstr "Инсталирај"
 
-#: src/font-view.c:841
+#: src/font-view.c:836
 msgid "Installing…"
 msgstr "Инсталирај…"
 
-#: src/font-view.c:844
+#: src/font-view.c:839
 msgid "Installed"
 msgstr "Инсталирано"
 
-#: src/font-view.c:847
+#: src/font-view.c:842
 msgid "Failed"
 msgstr "Није успело"
 
-#: src/font-view.c:865
+#: src/font-view.c:858
 msgid "Info"
 msgstr "Подаци"
 
-#: src/font-view.c:880
+#: src/font-view.c:875
 msgid "Back"
 msgstr "Назад"
 
-#: src/font-view.c:992
+#: src/font-view.c:974
 msgid "All Fonts"
 msgstr "Сва писма"
 
-#: src/font-view.c:1118 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1097 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
 msgstr "Фонтови"
 
-#: src/font-view.c:1121
+#: src/font-view.c:1100
 msgid "translator-credits"
 msgstr ""
 "  Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
@@ -212,11 +224,6 @@ msgstr ""
 #: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
 msgstr "слова;фонтови;писма;"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: src/org.gnome.font-viewer.desktop.in:8
-msgid "org.gnome.font-viewer"
-msgstr "org.gnome.font-viewer"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -1013,6 +1020,9 @@ msgstr "Вертикалне замене за ротирање"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Прецртана нула"
+
+#~ msgid "org.gnome.font-viewer"
+#~ msgstr "org.gnome.font-viewer"
 
 #~ msgid "About"
 #~ msgstr "О програму"
