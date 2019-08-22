@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2019-01-16 08:00+0000\n"
-"PO-Revision-Date: 2017-12-06 20:50+0100\n"
+"POT-Creation-Date: 2019-08-12 07:41+0000\n"
+"PO-Revision-Date: 2019-08-22 05:29+0200\n"
 "Last-Translator: Jordi Mas <jmas@softcatala.org>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
@@ -21,13 +21,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 2.2.1\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:377
 msgid "GNOME Fonts"
 msgstr "Tipus de lletra del GNOME"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1119
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1368
 #: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Visualitza tots els tipus de lletra del sistema"
@@ -54,23 +54,27 @@ msgstr ""
 "instal·lar només per al vostre ús o fer-los accessibles per a tots els "
 "usuaris de l'ordinador. "
 
-#: src/font-thumbnailer.c:189
+#: data/org.gnome.font-viewer.appdata.xml.in:21
+msgid "The GNOME Project"
+msgstr "El projecte GNOME"
+
+#: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Text a miniaturitzar (predeterminat: Aa)"
 
-#: src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:181
 msgid "TEXT"
 msgstr "TEXT"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "Thumbnail size (default: 128)"
 msgstr "Mida de la miniatura (per defecte: 128)"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "SIZE"
 msgstr "MIDA"
 
-#: src/font-thumbnailer.c:193
+#: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FITXER-DE-TIPUS-DE-LLETRA FITXER-DE-SORTIDA"
 
@@ -78,7 +82,7 @@ msgstr "FITXER-DE-TIPUS-DE-LLETRA FITXER-DE-SORTIDA"
 msgid "About Fonts"
 msgstr "Quant a Els tipus de lletra"
 
-#: src/font-view.c:99
+#: src/font-view.c:385
 msgid "Show the application's version"
 msgstr "Mostra la versió de l'aplicació"
 
@@ -87,123 +91,131 @@ msgstr "Mostra la versió de l'aplicació"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:230
+#: src/font-view.c:503
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, per defecte %g"
 
-#: src/font-view.c:286
+#: src/font-view.c:559
 #, c-format
 msgid "Instance %d"
 msgstr "Instància %d"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:331
+#: src/font-view.c:602
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:357
+#: src/font-view.c:626
 msgid "Name"
 msgstr "Nom"
 
-#: src/font-view.c:360
+#: src/font-view.c:629
+msgid "Location"
+msgstr "Ubicació"
+
+#: src/font-view.c:632
 msgid "Style"
 msgstr "Estil"
 
-#: src/font-view.c:370
+#: src/font-view.c:642
 msgid "Type"
 msgstr "Tipus"
 
-#: src/font-view.c:431 src/font-view.c:465
+#: src/font-view.c:700 src/font-view.c:726
 msgid "Version"
 msgstr "Versió"
 
-#: src/font-view.c:436 src/font-view.c:471
+#: src/font-view.c:704 src/font-view.c:731
 msgid "Copyright"
 msgstr "Copyright"
 
-#: src/font-view.c:441
+#: src/font-view.c:708
 msgid "Description"
 msgstr "Descripció"
 
-#: src/font-view.c:446
+#: src/font-view.c:712
 msgid "Manufacturer"
 msgstr "Fabricant"
 
-#: src/font-view.c:451
+#: src/font-view.c:716
 msgid "Designer"
 msgstr "Dissenyador"
 
-#: src/font-view.c:456
+#: src/font-view.c:720
 msgid "License"
 msgstr "Llicència"
 
-#: src/font-view.c:486
+#: src/font-view.c:745
 msgid "Glyph Count"
 msgstr "Nombre de glifs"
 
-#: src/font-view.c:489
+#: src/font-view.c:747
 msgid "Color Glyphs"
 msgstr "Glifs de color"
 
-#: src/font-view.c:489
+#: src/font-view.c:747
 msgid "yes"
 msgstr "sí"
 
-#: src/font-view.c:489
+#: src/font-view.c:747
 msgid "no"
 msgstr "no"
 
-#: src/font-view.c:493
+#: src/font-view.c:751
 msgid "Layout Features"
 msgstr "Característiques de disseny"
 
-#: src/font-view.c:500
+#: src/font-view.c:757
 msgid "Variation Axes"
 msgstr "Eixos de variació"
 
-#: src/font-view.c:508
+#: src/font-view.c:764
 msgid "Named Styles"
 msgstr "Estils amb nom"
 
-#: src/font-view.c:690
+#: src/font-view.c:870
+msgid "This font could not be installed."
+msgstr "No es pot instal·lar aquest tipus de lletra."
+
+#: src/font-view.c:1008
 msgid "This font could not be displayed."
 msgstr "No es pot visualitzar aquest tipus de lletra."
 
-#: src/font-view.c:838
+#: src/font-view.c:1135
 msgid "Install"
 msgstr "Instal·la"
 
-#: src/font-view.c:841
+#: src/font-view.c:1138
 msgid "Installing…"
 msgstr "S'està instal·lant…"
 
-#: src/font-view.c:844
+#: src/font-view.c:1141
 msgid "Installed"
 msgstr "S'ha instal·lat"
 
-#: src/font-view.c:847
+#: src/font-view.c:1144
 msgid "Failed"
 msgstr "Ha fallat"
 
-#: src/font-view.c:865
+#: src/font-view.c:1160
 msgid "Info"
 msgstr "Informació"
 
-#: src/font-view.c:880
+#: src/font-view.c:1177
 msgid "Back"
 msgstr "Enrere"
 
-#: src/font-view.c:992
+#: src/font-view.c:1255
 msgid "All Fonts"
 msgstr "Tots els tipus de lletra"
 
-#: src/font-view.c:1118 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1367 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
 msgstr "Tipus de lletra"
 
-#: src/font-view.c:1121
+#: src/font-view.c:1370
 msgid "translator-credits"
 msgstr "Joan Duran <jodufi@gmail.com>"
 
@@ -211,11 +223,6 @@ msgstr "Joan Duran <jodufi@gmail.com>"
 #: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
 msgstr "tipus de lletra;tipografia;"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: src/org.gnome.font-viewer.desktop.in:8
-msgid "org.gnome.font-viewer"
-msgstr "org.gnome.font-viewer"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -900,7 +907,7 @@ msgstr "Conjunt estilístic 20"
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
 msgid "Math script style alternates"
-msgstr "Alternatives d'estil d'script matemàtic"
+msgstr "Alternatives d'estil de script matemàtic"
 
 #: src/open-type-layout.h:150
 msgctxt "OpenType layout"
