@@ -6,29 +6,29 @@
 # Bruno Cauet <brunocauet@gmail.com>, 2014.
 # Guillaume Bernard <translate@filorin.fr>, 2015.
 # Claude Paroz <claude@2xlibre.net>, 2017-2018
-# Charles Monzat <charles.monzat@numericable.fr>, 2018.
+# Charles Monzat <charles.monzat@free.fr>, 2018-2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2018-12-08 21:01+0000\n"
-"PO-Revision-Date: 2019-02-09 14:42+0100\n"
-"Last-Translator: Charles Monzat <charles.monzat@numericable.fr>\n"
-"Language-Team: français <gnomefr@traduc.org>\n"
+"POT-Creation-Date: 2019-07-06 17:09+0000\n"
+"PO-Revision-Date: 2019-08-05 22:45+0200\n"
+"Last-Translator: Charles Monzat <charles.monzat@free.fr>\n"
+"Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Gtranslator 3.30.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Gtranslator 3.32.1\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
 msgid "GNOME Fonts"
 msgstr "Polices de GNOME"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1119
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1098
 #: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Affiche les polices de votre système"
@@ -54,23 +54,27 @@ msgstr ""
 "installées pour vous seul ou rendues disponibles à tous les utilisateurs de "
 "l’ordinateur."
 
-#: src/font-thumbnailer.c:189
+#: data/org.gnome.font-viewer.appdata.xml.in:21
+msgid "The GNOME Project"
+msgstr "Le projet GNOME"
+
+#: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Texte à miniaturiser (par défaut : Aa)"
 
-#: src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:181
 msgid "TEXT"
 msgstr "TEXTE"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "Thumbnail size (default: 128)"
 msgstr "Taille des vignettes (par défaut : 128)"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "SIZE"
 msgstr "TAILLE"
 
-#: src/font-thumbnailer.c:193
+#: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FICHIER-POLICE FICHIER-SORTIE"
 
@@ -87,123 +91,132 @@ msgstr "Affiche la version de l’application"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:230
+#: src/font-view.c:228
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, %g par défaut"
 
-#: src/font-view.c:286
+#: src/font-view.c:284
 #, c-format
 msgid "Instance %d"
 msgstr "Exemple %d"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:331
+#: src/font-view.c:327
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:357
+#: src/font-view.c:351
 msgid "Name"
 msgstr "Nom"
 
-#: src/font-view.c:360
+#: src/font-view.c:354
+msgid "Location"
+msgstr "Emplacement"
+
+#: src/font-view.c:357
 msgid "Style"
 msgstr "Style"
 
-#: src/font-view.c:370
+#: src/font-view.c:367
 msgid "Type"
 msgstr "Type"
 
-#: src/font-view.c:431 src/font-view.c:465
+#: src/font-view.c:425 src/font-view.c:451
 msgid "Version"
 msgstr "Version"
 
-#: src/font-view.c:436 src/font-view.c:471
+#: src/font-view.c:429 src/font-view.c:456
 msgid "Copyright"
 msgstr "Copyright"
 
-#: src/font-view.c:441
+#: src/font-view.c:433
 msgid "Description"
 msgstr "Description"
 
-#: src/font-view.c:446
+#: src/font-view.c:437
 msgid "Manufacturer"
 msgstr "Éditeur"
 
-#: src/font-view.c:451
+#: src/font-view.c:441
 msgid "Designer"
 msgstr "Concepteur"
 
-#: src/font-view.c:456
+#: src/font-view.c:445
 msgid "License"
 msgstr "Licence"
 
-#: src/font-view.c:486
+#: src/font-view.c:470
 msgid "Glyph Count"
 msgstr "Nombre de glyphes"
 
-#: src/font-view.c:489
+#: src/font-view.c:472
 msgid "Color Glyphs"
 msgstr "Glyphes en couleur"
 
-#: src/font-view.c:489
+#: src/font-view.c:472
 msgid "yes"
 msgstr "oui"
 
-#: src/font-view.c:489
+#: src/font-view.c:472
 msgid "no"
-msgstr "no"
+msgstr "non"
 
-#: src/font-view.c:493
+#: src/font-view.c:476
 msgid "Layout Features"
 msgstr "Types de mise en page"
 
-#: src/font-view.c:500
+#: src/font-view.c:482
 msgid "Variation Axes"
 msgstr "Axes de variation"
 
-#: src/font-view.c:508
+#: src/font-view.c:489
 msgid "Named Styles"
 msgstr "Styles nommés"
 
-#: src/font-view.c:690
+#: src/font-view.c:563
+#| msgid "This font could not be displayed."
+msgid "This font could not be installed."
+msgstr "Cette police n’a pas pu être installée."
+
+#: src/font-view.c:701
 msgid "This font could not be displayed."
 msgstr "Cette police n’a pas pu être affichée."
 
-#: src/font-view.c:838
+#: src/font-view.c:833
 msgid "Install"
 msgstr "Installer"
 
-#: src/font-view.c:841
+#: src/font-view.c:836
 msgid "Installing…"
 msgstr "Installation…"
 
-#: src/font-view.c:844
+#: src/font-view.c:839
 msgid "Installed"
 msgstr "Installé"
 
-#: src/font-view.c:847
+#: src/font-view.c:842
 msgid "Failed"
 msgstr "Échec"
 
-#: src/font-view.c:865
+#: src/font-view.c:858
 msgid "Info"
 msgstr "Informations"
 
-#: src/font-view.c:880
+#: src/font-view.c:875
 msgid "Back"
 msgstr "Retour"
 
-#: src/font-view.c:992
+#: src/font-view.c:974
 msgid "All Fonts"
 msgstr "Toutes les polices"
 
-#: src/font-view.c:1118 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1097 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
 msgstr "Polices"
 
-#: src/font-view.c:1121
+#: src/font-view.c:1100
 msgid "translator-credits"
 msgstr ""
 "Bruno Brouard <annoa.b@gmail.com>\n"
@@ -216,11 +229,6 @@ msgstr ""
 #: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
 msgstr "polices;fontes;"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: src/org.gnome.font-viewer.desktop.in:8
-msgid "org.gnome.font-viewer"
-msgstr "org.gnome.font-viewer"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -1016,3 +1024,6 @@ msgstr "Alternatives verticales pour rotation"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Zéro barré"
+
+#~ msgid "org.gnome.font-viewer"
+#~ msgstr "org.gnome.font-viewer"
