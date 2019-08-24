@@ -10,14 +10,14 @@
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2004, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2014.
 # Mate ORY <orymate at gmail d0t com>, 2006.
 # Lukács Bence <lukacs.bence1 at gmail dot com>, 2012.
-# Balázs Úr <urbalazs at gmail dot com>, 2012, 2013, 2014, 2017, 2018, 2019.
+# Balázs Úr <ur.balazs at fsf dot hu>, 2012, 2013, 2014, 2017, 2018, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues"
 "\n"
-"POT-Creation-Date: 2019-03-26 16:54+0000\n"
-"PO-Revision-Date: 2019-04-13 07:16+0100\n"
+"POT-Creation-Date: 2019-08-12 07:41+0000\n"
+"PO-Revision-Date: 2019-08-24 20:52+0200\n"
 "Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
 "Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
 "Language: hu\n"
@@ -25,13 +25,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 18.12.3\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:377
 msgid "GNOME Fonts"
 msgstr "GNOME Betűkészletek"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1119
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1368
 #: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Telepített betűkészletek megjelenítése"
@@ -56,23 +56,27 @@ msgstr ""
 "betűkészletfájlok telepítését is. A betűkészletek telepíthetők csak "
 "személyes felhasználásra, vagy a számítógép minden felhasználója számára is."
 
-#: src/font-thumbnailer.c:189
+#: data/org.gnome.font-viewer.appdata.xml.in:21
+msgid "The GNOME Project"
+msgstr "A GNOME projekt"
+
+#: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Bélyegkép szövege (alapértelmezés: Aa)"
 
-#: src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:181
 msgid "TEXT"
 msgstr "SZÖVEG"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "Thumbnail size (default: 128)"
 msgstr "Bélyegkép mérete (alapértelmezés: 128)"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "SIZE"
 msgstr "MÉRET"
 
-#: src/font-thumbnailer.c:193
+#: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "BETŰKÉSZLETFÁJL KIMENETIFÁJL"
 
@@ -80,7 +84,7 @@ msgstr "BETŰKÉSZLETFÁJL KIMENETIFÁJL"
 msgid "About Fonts"
 msgstr "A Betűkészletek névjegye"
 
-#: src/font-view.c:99
+#: src/font-view.c:385
 msgid "Show the application's version"
 msgstr "Az alkalmazás verziójának megjelenítése"
 
@@ -89,123 +93,132 @@ msgstr "Az alkalmazás verziójának megjelenítése"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:230
+#: src/font-view.c:503
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, alapértelmezett: %g"
 
-#: src/font-view.c:286
+#: src/font-view.c:559
 #, c-format
 msgid "Instance %d"
 msgstr "%d. példány"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:331
+#: src/font-view.c:602
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:357
+#: src/font-view.c:626
 msgid "Name"
 msgstr "Név"
 
-#: src/font-view.c:360
+#: src/font-view.c:629
+msgid "Location"
+msgstr "Hely"
+
+#: src/font-view.c:632
 msgid "Style"
 msgstr "Stílus"
 
-#: src/font-view.c:370
+#: src/font-view.c:642
 msgid "Type"
 msgstr "Típus"
 
-#: src/font-view.c:431 src/font-view.c:465
+#: src/font-view.c:700 src/font-view.c:726
 msgid "Version"
 msgstr "Verzió"
 
-#: src/font-view.c:436 src/font-view.c:471
+#: src/font-view.c:704 src/font-view.c:731
 msgid "Copyright"
 msgstr "Copyright"
 
-#: src/font-view.c:441
+#: src/font-view.c:708
 msgid "Description"
 msgstr "Leírás"
 
-#: src/font-view.c:446
+#: src/font-view.c:712
 msgid "Manufacturer"
 msgstr "Gyártó"
 
-#: src/font-view.c:451
+#: src/font-view.c:716
 msgid "Designer"
 msgstr "Tervező"
 
-#: src/font-view.c:456
+#: src/font-view.c:720
 msgid "License"
 msgstr "Licenc"
 
-#: src/font-view.c:486
+#: src/font-view.c:745
 msgid "Glyph Count"
 msgstr "Betűkészletjelek száma"
 
-#: src/font-view.c:489
+#: src/font-view.c:747
 msgid "Color Glyphs"
 msgstr "Színes betűkészletjelek"
 
-#: src/font-view.c:489
+#: src/font-view.c:747
 msgid "yes"
 msgstr "igen"
 
-#: src/font-view.c:489
+#: src/font-view.c:747
 msgid "no"
 msgstr "nem"
 
-#: src/font-view.c:493
+#: src/font-view.c:751
 msgid "Layout Features"
 msgstr "Elrendezési tulajdonságok"
 
-#: src/font-view.c:500
+#: src/font-view.c:757
 msgid "Variation Axes"
 msgstr "Variációs tengelyek"
 
-#: src/font-view.c:508
+#: src/font-view.c:764
 msgid "Named Styles"
 msgstr "Megnevezett stílusok"
 
-#: src/font-view.c:690
+#: src/font-view.c:870
+#| msgid "This font could not be displayed."
+msgid "This font could not be installed."
+msgstr "Ezt a betűkészletet nem sikerült telepíteni."
+
+#: src/font-view.c:1008
 msgid "This font could not be displayed."
 msgstr "Ez a betűkészlet nem jeleníthető meg."
 
-#: src/font-view.c:838
+#: src/font-view.c:1135
 msgid "Install"
 msgstr "Telepítés"
 
-#: src/font-view.c:841
+#: src/font-view.c:1138
 msgid "Installing…"
 msgstr "Telepítés…"
 
-#: src/font-view.c:844
+#: src/font-view.c:1141
 msgid "Installed"
 msgstr "Telepítve"
 
-#: src/font-view.c:847
+#: src/font-view.c:1144
 msgid "Failed"
 msgstr "Sikertelen"
 
-#: src/font-view.c:865
+#: src/font-view.c:1160
 msgid "Info"
 msgstr "Információk"
 
-#: src/font-view.c:880
+#: src/font-view.c:1177
 msgid "Back"
 msgstr "Vissza"
 
-#: src/font-view.c:992
+#: src/font-view.c:1255
 msgid "All Fonts"
 msgstr "Minden betűkészlet"
 
-#: src/font-view.c:1118 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1367 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
 msgstr "Betűkészletek"
 
-#: src/font-view.c:1121
+#: src/font-view.c:1370
 msgid "translator-credits"
 msgstr ""
 "Bán Szabolcs <shooby at gnome dot hu>\n"
