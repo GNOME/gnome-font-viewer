@@ -1,7 +1,6 @@
-# Turkish translation of gnome-utils.
-# Copyright (C) 2003 gnome-utils' copyright holder
-# This file is distributed under the same license as the gnome-utils package.
-#
+# Turkish translation of gnome-font-viewer.
+# Copyright (C) 2003-2019 gnome-font-viewer' copyright holder
+# This file is distributed under the same license as the gnome-font-viewer package.
 #
 # Barbaros Ulutaş <tebarul@yahoo.com>, 2003.
 # Rıdvan CAN <ridvan@linuxdeneyimi.com>, 2003.
@@ -12,17 +11,18 @@
 # Muhammet Kara <muhammetk@gmail.com>, 2011, 2012, 2013, 2014.
 # Gökhan Gurbetoğlu <ggurbet@gmail.com>, 2014.
 # Burak Kahraman <burakkaankhrmn@gmail.com>, 2017.
-# Emin Tufan Çetin <etcetin@gmail.com>, 2017.
 # Çağatay Yiğit Şahin <cyigitsahin@outlook.com>, 2018.
+# Emin Tufan Çetin <etcetin@gmail.com>, 2017, 2019.
+# Sabri Ünal <libreajans@gmail.com>, 2019.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils\n"
+"Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2018-12-08 21:01+0000\n"
-"PO-Revision-Date: 2018-12-30 20:26+0200\n"
-"Last-Translator: sabri Ünal <yakushabb@gmail.com>\n"
+"POT-Creation-Date: 2019-07-06 17:09+0000\n"
+"PO-Revision-Date: 2019-08-06 22:48+0300\n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -35,7 +35,7 @@ msgstr ""
 msgid "GNOME Fonts"
 msgstr "GNOME Yazı Tipleri"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1119
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1098
 #: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Sisteminizdeki yazı tiplerini görüntüleyin"
@@ -61,23 +61,27 @@ msgstr ""
 "kullanımınız için kurulabilir ya da bilgisayardaki tüm kullanıcıların "
 "kullanımına sunulabilir."
 
-#: src/font-thumbnailer.c:189
+#: data/org.gnome.font-viewer.appdata.xml.in:21
+msgid "The GNOME Project"
+msgstr "GNOME Projesi"
+
+#: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Örneklendirilecek metin (öntanımlı: Aa)"
 
-#: src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:181
 msgid "TEXT"
 msgstr "METİN"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "Thumbnail size (default: 128)"
 msgstr "Küçük resim boyutu (öntanımlı: 128)"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "SIZE"
 msgstr "BOYUT"
 
-#: src/font-thumbnailer.c:193
+#: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "YAZI-TİPİ-DOSYASI ÇIKTI-DOSYASI"
 
@@ -94,137 +98,151 @@ msgstr "Uygulamanın sürümünü göster"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:230
+#: src/font-view.c:228
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, öntanımlı %g"
 
-#: src/font-view.c:286
+#: src/font-view.c:284
 #, c-format
 msgid "Instance %d"
 msgstr "Oluşum %d"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:331
+#: src/font-view.c:327
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:357
+#: src/font-view.c:351
 msgid "Name"
 msgstr "Ad"
 
-#: src/font-view.c:360
+#: src/font-view.c:354
+msgid "Location"
+msgstr "Konum"
+
+#: src/font-view.c:357
 msgid "Style"
 msgstr "Biçem"
 
-#: src/font-view.c:370
+#: src/font-view.c:367
 msgid "Type"
 msgstr "Tür"
 
-#: src/font-view.c:431 src/font-view.c:465
+#: src/font-view.c:425 src/font-view.c:451
 msgid "Version"
 msgstr "Sürüm"
 
-#: src/font-view.c:436 src/font-view.c:471
+#: src/font-view.c:429 src/font-view.c:456
 msgid "Copyright"
 msgstr "Telif Hakkı"
 
-#: src/font-view.c:441
+#: src/font-view.c:433
 msgid "Description"
 msgstr "Açıklama"
 
-#: src/font-view.c:446
+#: src/font-view.c:437
 msgid "Manufacturer"
 msgstr "Üretici"
 
-#: src/font-view.c:451
+#: src/font-view.c:441
 msgid "Designer"
 msgstr "Tasarımcı"
 
-#: src/font-view.c:456
+#: src/font-view.c:445
 msgid "License"
 msgstr "Lisans"
 
-#: src/font-view.c:486
+#: src/font-view.c:470
 msgid "Glyph Count"
 msgstr "Glif Sayısı"
 
-#: src/font-view.c:489
+#: src/font-view.c:472
 msgid "Color Glyphs"
 msgstr "Renk Glifleri"
 
-#: src/font-view.c:489
+#: src/font-view.c:472
 msgid "yes"
 msgstr "evet"
 
-#: src/font-view.c:489
+#: src/font-view.c:472
 msgid "no"
 msgstr "hayır"
 
-#: src/font-view.c:493
+#: src/font-view.c:476
 msgid "Layout Features"
 msgstr "Düzen Özellikleri"
 
-#: src/font-view.c:500
+#: src/font-view.c:482
 msgid "Variation Axes"
 msgstr "Değişim Eksenleri"
 
-#: src/font-view.c:508
+#: src/font-view.c:489
 msgid "Named Styles"
 msgstr "Adlandırılmış biçemler"
 
-#: src/font-view.c:690
+#: src/font-view.c:563
+msgid "This font could not be installed."
+msgstr "Bu yazı tipi kurulamadı."
+
+#: src/font-view.c:701
 msgid "This font could not be displayed."
 msgstr "Bu yazı tipi görüntülenemiyor."
 
-#: src/font-view.c:838
+#: src/font-view.c:833
 msgid "Install"
 msgstr "Kur"
 
-#: src/font-view.c:841
+#: src/font-view.c:836
 msgid "Installing…"
 msgstr "Kuruluyor…"
 
-#: src/font-view.c:844
+#: src/font-view.c:839
 msgid "Installed"
 msgstr "Kuruldu"
 
-#: src/font-view.c:847
+#: src/font-view.c:842
 msgid "Failed"
 msgstr "Başarısız"
 
-#: src/font-view.c:865
+#: src/font-view.c:858
 msgid "Info"
 msgstr "Bilgi"
 
-#: src/font-view.c:880
+#: src/font-view.c:875
 msgid "Back"
 msgstr "Geri"
 
-#: src/font-view.c:992
+#: src/font-view.c:974
 msgid "All Fonts"
 msgstr "Tüm Yazı Tipleri"
 
-#: src/font-view.c:1118 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1097 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
 msgstr "Yazı Tipleri"
 
-#: src/font-view.c:1121
+#header bilgisinden oluşturulmuştur
+#: src/font-view.c:1100
 msgid "translator-credits"
 msgstr ""
-"GNOME Türkiye Çeviri Takımı <gnometurk@gnome.org>\n"
-"Emin Tufan Çetin <etcetin@gmail.com>"
+"Barbaros Ulutaş <tebarul@yahoo.com>\n"
+"Rıdvan Can <ridvan@linuxdeneyimi.com>\n"
+"Deniz Koçak <lenduha@gmail.com>\n"
+"Baris Cicek <baris@teamforce.name.tr>\n"
+"İlker Dağlı <ilker@ilkerdagli.info>\n"
+"Osman Karagöz <osmank3@gmail.com>\n"
+"Muhammet Kara <muhammetk@gmail.com>\n"
+"Gökhan Gurbetoğlu <ggurbet@gmail.com>\n"
+"Burak Kahraman <burakkaankhrmn@gmail.com>\n"
+"Çağatay Yiğit Şahin <cyigitsahin@outlook.com>\n"
+"Emin Tufan Çetin <etcetin@gmail.com>\n"
+"Sabri Ünal <libreajans@gmail.com>"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
 msgstr "yazı tipleri; yazı tipi ailesi;"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: src/org.gnome.font-viewer.desktop.in:8
-msgid "org.gnome.font-viewer"
-msgstr "org.gnome.font-viewer"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -1020,6 +1038,9 @@ msgstr "Dönme için Dikey Alternatifler"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Eğik Çizgili Sıfır"
+
+#~ msgid "org.gnome.font-viewer"
+#~ msgstr "org.gnome.font-viewer"
 
 #~ msgid "About"
 #~ msgstr "Hakkında"
