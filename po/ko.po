@@ -17,22 +17,22 @@ msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2018-12-08 21:01+0000\n"
-"PO-Revision-Date: 2019-02-23 21:58+0900\n"
-"Last-Translator: DaeHyun Sung <sungdh86+git@gmail.com>\n"
+"POT-Creation-Date: 2019-07-06 17:09+0000\n"
+"PO-Revision-Date: 2019-09-04 00:57+0900\n"
+"Last-Translator: DaeHyun Sung <sungdh86@gmail.com>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.1.1\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
 msgid "GNOME Fonts"
 msgstr "그놈 글꼴"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1119
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1098
 #: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "시스템에 설치된 글꼴을 봅니다"
@@ -56,23 +56,27 @@ msgstr ""
 "쓸 수 있게 설치할 수도 있고 컴퓨터의 모든 사용자가 사용할 수 있게 설치할 수"
 "도 있습니다."
 
-#: src/font-thumbnailer.c:189
+#: data/org.gnome.font-viewer.appdata.xml.in:21
+msgid "The GNOME Project"
+msgstr "그놈 프로젝트"
+
+#: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
 msgstr "섬네일에 사용할 텍스트(기본값: Aa)"
 
-#: src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:181
 msgid "TEXT"
 msgstr "<텍스트>"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "Thumbnail size (default: 128)"
 msgstr "섬네일 크기(기본값: 128)"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "SIZE"
 msgstr "<크기>"
 
-#: src/font-thumbnailer.c:193
+#: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "<글꼴파일> <출력파일>"
 
@@ -89,139 +93,142 @@ msgstr "프로그램 버전을 표시합니다"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:230
+#: src/font-view.c:228
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, 기본값 %g"
 
-#: src/font-view.c:286
+#: src/font-view.c:284
 #, c-format
 msgid "Instance %d"
 msgstr "인스턴스 %d"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:331
+#: src/font-view.c:327
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:357
+#: src/font-view.c:351
 msgid "Name"
 msgstr "이름"
 
-#: src/font-view.c:360
+#: src/font-view.c:354
+msgid "Location"
+msgstr "위치"
+
+#: src/font-view.c:357
 msgid "Style"
 msgstr "모양"
 
-#: src/font-view.c:370
+#: src/font-view.c:367
 msgid "Type"
 msgstr "종류"
 
-#: src/font-view.c:431 src/font-view.c:465
+#: src/font-view.c:425 src/font-view.c:451
 msgid "Version"
 msgstr "버전"
 
-#: src/font-view.c:436 src/font-view.c:471
+#: src/font-view.c:429 src/font-view.c:456
 msgid "Copyright"
 msgstr "저작권"
 
-#: src/font-view.c:441
+#: src/font-view.c:433
 msgid "Description"
 msgstr "설명"
 
-#: src/font-view.c:446
+#: src/font-view.c:437
 msgid "Manufacturer"
 msgstr "제작자"
 
-#: src/font-view.c:451
+#: src/font-view.c:441
 msgid "Designer"
 msgstr "디자이너"
 
-#: src/font-view.c:456
+#: src/font-view.c:445
 msgid "License"
 msgstr "라이선스"
 
-#: src/font-view.c:486
+#: src/font-view.c:470
 msgid "Glyph Count"
 msgstr "글리프 수"
 
-#: src/font-view.c:489
+#: src/font-view.c:472
 msgid "Color Glyphs"
 msgstr "컬러 글리프"
 
-#: src/font-view.c:489
+#: src/font-view.c:472
 msgid "yes"
 msgstr "예"
 
-#: src/font-view.c:489
+#: src/font-view.c:472
 msgid "no"
 msgstr "아니요"
 
-#: src/font-view.c:493
+#: src/font-view.c:476
 msgid "Layout Features"
 msgstr "레이아웃 기능"
 
-#: src/font-view.c:500
+#: src/font-view.c:482
 msgid "Variation Axes"
 msgstr "변형 축"
 
-#: src/font-view.c:508
+#: src/font-view.c:489
 msgid "Named Styles"
 msgstr "스타일 이름"
 
-#: src/font-view.c:690
+#: src/font-view.c:563
+msgid "This font could not be installed."
+msgstr "이 글꼴은 설치할 수 없습니다."
+
+#: src/font-view.c:701
 msgid "This font could not be displayed."
 msgstr "이 글꼴은 표시할 수 없습니다."
 
-#: src/font-view.c:838
+#: src/font-view.c:833
 msgid "Install"
 msgstr "설치"
 
-#: src/font-view.c:841
+#: src/font-view.c:836
 msgid "Installing…"
 msgstr "설치중…"
 
-#: src/font-view.c:844
+#: src/font-view.c:839
 msgid "Installed"
 msgstr "설치함"
 
-#: src/font-view.c:847
+#: src/font-view.c:842
 msgid "Failed"
 msgstr "설치 실패"
 
-#: src/font-view.c:865
+#: src/font-view.c:858
 msgid "Info"
 msgstr "정보"
 
-#: src/font-view.c:880
+#: src/font-view.c:875
 msgid "Back"
 msgstr "뒤로"
 
-#: src/font-view.c:992
+#: src/font-view.c:974
 msgid "All Fonts"
 msgstr "모든 글꼴"
 
-#: src/font-view.c:1118 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1097 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
 msgstr "글꼴"
 
-#: src/font-view.c:1121
+#: src/font-view.c:1100
 msgid "translator-credits"
 msgstr ""
 "류창우\n"
 "차영호\n"
 "김경곤\n"
-"성대현"
+"성대현 <sungdh86@gmail.com>"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
 msgstr "fonts;글꼴;fontface;폰트;서체;"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: src/org.gnome.font-viewer.desktop.in:8
-msgid "org.gnome.font-viewer"
-msgstr "org.gnome.font-viewer"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -1021,6 +1028,9 @@ msgstr "회전에 대한 세로쓰기 대안"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "선이 그어진 0 숫자"
+
+#~ msgid "org.gnome.font-viewer"
+#~ msgstr "org.gnome.font-viewer"
 
 #~ msgid "About"
 #~ msgstr "정보"
