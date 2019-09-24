@@ -1,18 +1,19 @@
 # gnome-font-viewer ja.po.
-# Copyright (C) 1998-2012 gnome-util's COPYRIGHT HOLDER
+# Copyright (C) 1998-2019 gnome-util's COPYRIGHT HOLDER
 # Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1998.
 # Yuusuke Tahara <tahara@gnome.gr.jp>, 2000.
 # Yukihiro Nakai <nakai@gnome.gr.jp>, 2000.
 # Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2000-2002, 2009, 2011.
 # Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.
-# Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
 # KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+# Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
 # Satoru SATOH <ss@gnome.gr.jp>, 2006.
 # Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009, 2010.
 # Yasumichi Akahoshi <yasumichi@vinelinux.org>, 2010, 2011.
 # OKANO Takayoshi <kano@na.rim.or.jp>, 2011, 2012.
 # Jiro Matsuzawa <jmatsuzawa@gnome.org>, 2012, 2013, 2014, 2015.
 # Hajime Taira <htaira@redhat.com>, 2015.
+# sicklylife <translation@sicklylife.jp>, 2019.
 #
 msgid ""
 msgstr ""
@@ -20,8 +21,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
 "POT-Creation-Date: 2019-07-06 17:09+0000\n"
-"PO-Revision-Date: 2015-03-25 15:15+0900\n"
-"Last-Translator: Hajime Taira <htaira@redhat.com>\n"
+"PO-Revision-Date: 2019-09-24 20:00+0900\n"
+"Last-Translator: sicklylife <translation@sicklylife.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -30,10 +31,8 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
-#, fuzzy
-#| msgid "GNOME Font Viewer"
 msgid "GNOME Fonts"
-msgstr "GNOME フォントビューアー"
+msgstr ""
 
 #: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1098
 #: src/org.gnome.font-viewer.desktop.in:4
@@ -41,38 +40,28 @@ msgid "View fonts on your system"
 msgstr "システム上のフォントを閲覧します"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
-#, fuzzy
-#| msgid ""
-#| "GNOME Font Viewer shows you the fonts installed on your computer for your "
-#| "use as thumbnails. Selecting any thumbnails shows the full view of how "
-#| "the font would look under various sizes."
 msgid ""
 "GNOME Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"GNOME フォントビューアーを使用すると、インストール済みのフォントをサムネイル"
+"GNOME Fonts を使用すると、インストール済みのフォントをサムネイル"
 "で一覧表示できます。サムネイルを選択して、様々なサイズでフォントがどのように"
 "表示されるかを確認することができます。"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
-#, fuzzy
-#| msgid ""
-#| "GNOME Font Viewer also supports installing new font files downloaded in "
-#| "the .ttf and other formats. Fonts may be installed only for your use or "
-#| "made available to all users on the computer."
 msgid ""
 "GNOME Fonts also supports installing new font files downloaded in the .ttf "
 "and other formats. Fonts may be installed only for your use or made "
 "available to all users on the computer."
 msgstr ""
-"GNOME フォントビューアーは、.ttf やその他の形式でダウンロードした新しいフォン"
+"GNOME Fonts は .ttf やその他の形式でダウンロードした新しいフォン"
 "トファイルのインストールも可能です。フォントを自分専用にインストールすること"
 "も、コンピューター上のすべてのユーザーで利用可能にすることもできます。"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:21
 msgid "The GNOME Project"
-msgstr ""
+msgstr "The GNOME Project"
 
 #: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
@@ -95,10 +84,8 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
 #: src/font-view-app-menu.ui:6
-#, fuzzy
-#| msgid "About Font Viewer"
 msgid "About Fonts"
-msgstr "このアプリケーションについて"
+msgstr "“フォント”について"
 
 #: src/font-view.c:99
 msgid "Show the application's version"
@@ -115,10 +102,9 @@ msgid "%s %g — %g, default %g"
 msgstr ""
 
 #: src/font-view.c:284
-#, fuzzy, c-format
-#| msgid "Installed"
+#, c-format
 msgid "Instance %d"
-msgstr "インストール済み"
+msgstr ""
 
 #. Translators, this seperates the list of Layout Features.
 #: src/font-view.c:327
@@ -164,25 +150,23 @@ msgstr ""
 
 #: src/font-view.c:445
 msgid "License"
-msgstr ""
+msgstr "ライセンス"
 
 #: src/font-view.c:470
 msgid "Glyph Count"
-msgstr ""
+msgstr "グリフ数"
 
 #: src/font-view.c:472
 msgid "Color Glyphs"
-msgstr ""
+msgstr "カラーグリフ"
 
 #: src/font-view.c:472
 msgid "yes"
 msgstr ""
 
 #: src/font-view.c:472
-#, fuzzy
-#| msgid "Info"
 msgid "no"
-msgstr "情報"
+msgstr ""
 
 #: src/font-view.c:476
 msgid "Layout Features"
@@ -197,10 +181,8 @@ msgid "Named Styles"
 msgstr ""
 
 #: src/font-view.c:563
-#, fuzzy
-#| msgid "This font could not be displayed."
 msgid "This font could not be installed."
-msgstr "フォントを表示できませんでした。"
+msgstr "フォントをインストールできませんでした。"
 
 #: src/font-view.c:701
 msgid "This font could not be displayed."
@@ -211,20 +193,16 @@ msgid "Install"
 msgstr "インストール"
 
 #: src/font-view.c:836
-#, fuzzy
-#| msgid "Install"
 msgid "Installing…"
-msgstr "インストール"
+msgstr "インストール中…"
 
 #: src/font-view.c:839
 msgid "Installed"
 msgstr "インストール済み"
 
 #: src/font-view.c:842
-#, fuzzy
-#| msgid "Install Failed"
 msgid "Failed"
-msgstr "インストールに失敗しました"
+msgstr "失敗"
 
 #: src/font-view.c:858
 msgid "Info"
@@ -239,10 +217,8 @@ msgid "All Fonts"
 msgstr "すべてのフォント"
 
 #: src/font-view.c:1097 src/org.gnome.font-viewer.desktop.in:3
-#, fuzzy
-#| msgid "All Fonts"
 msgid "Fonts"
-msgstr "すべてのフォント"
+msgstr "フォント"
 
 #: src/font-view.c:1100
 msgid "translator-credits"
@@ -252,14 +228,15 @@ msgstr ""
 "Yukihiro Nakai <nakai@gnome.gr.jp>, 2000.\n"
 "Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2000-2002, 2009, 2011.\n"
 "Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.\n"
-"Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.\n"
 "KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.\n"
+"Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.\n"
 "Satoru SATOH <ss@gnome.gr.jp>, 2006.\n"
 "Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009, 2010.\n"
 "Yasumichi Akahoshi <yasumichi@vinelinux.org>, 2010, 2011.\n"
 "OKANO Takayoshi <kano@na.rim.or.jp>, 2011, 2012.\n"
 "松澤 二郎 <jmatsuzawa@gnome.org>, 2012, 2013, 2014, 2015.\n"
-"Hajime Taira <htaira@redhat.com>, 2015."
+"Hajime Taira <htaira@redhat.com>, 2015.\n"
+"sicklylife <translation@sicklylife.jp>, 2019."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in:6
@@ -957,18 +934,14 @@ msgid "Stretching Glyph Decomposition"
 msgstr ""
 
 #: src/open-type-layout.h:151
-#, fuzzy
-#| msgid "Description"
 msgctxt "OpenType layout"
 msgid "Subscript"
-msgstr "説明"
+msgstr ""
 
 #: src/open-type-layout.h:152
-#, fuzzy
-#| msgid "Description"
 msgctxt "OpenType layout"
 msgid "Superscript"
-msgstr "説明"
+msgstr ""
 
 #: src/open-type-layout.h:153
 msgctxt "OpenType layout"
