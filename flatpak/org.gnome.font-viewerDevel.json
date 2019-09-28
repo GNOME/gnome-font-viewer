@@ -1,8 +1,12 @@
 {
-    "app-id": "org.gnome.font-viewer",
+    "app-id": "org.gnome.font-viewerDevel",
     "runtime": "org.gnome.Platform",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-font-viewer",
+    "rename-appdata-file": "org.gnome.font-viewer.appdata.xml",
+    "rename-desktop-file": "org.gnome.font-viewer.desktop",
+    "tags": ["nightly"],
+    "desktop-file-name-prefix": "(Development) ",
     "finish-args": [
         "--device=dri",
         "--share=ipc",
@@ -36,6 +40,7 @@
         {
             "name": "gnome-font-viewer",
             "buildsystem": "meson",
+            "config-opts": ["-Dprofile=development"],
             "sources": [
                 {
                     "type": "dir",

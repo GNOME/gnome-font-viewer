@@ -2,23 +2,23 @@ stages:
   - build
 
 variables:
-  BUNDLE: 'org.gnome.font-viewer.Devel.flatpak'
+  BUNDLE: 'org.gnome.font-viewerDevel.flatpak'
 
 flatpak:
   image: 'registry.gitlab.gnome.org/gnome/gnome-runtime-images/gnome:master'
   stage: 'build'
   variables:
     MANIFEST_PATH: 'flatpak/org.gnome.font-viewer.json'
-    MESON_ARGS: ''
+    MESON_ARGS: '-Dprofile=development'
     RUNTIME_REPO: 'https://sdk.gnome.org/gnome-nightly.flatpakrepo'
     FLATPAK_MODULE: 'gnome-font-viewer'
-    DBUS_ID: 'org.gnome.font-viewer'
+    APP_ID: 'org.gnome.font-viewerDevel'
   script:
     - flatpak-builder --stop-at=${FLATPAK_MODULE} app ${MANIFEST_PATH}
     - flatpak build app meson --prefix=/app ${MESON_ARGS} _build
     - flatpak build app ninja -C _build install
     - flatpak-builder --finish-only --repo=repo app ${MANIFEST_PATH}
-    - flatpak build-bundle repo ${BUNDLE} --runtime-repo=${RUNTIME_REPO} ${DBUS_ID}
+    - flatpak build-bundle repo ${BUNDLE} --runtime-repo=${RUNTIME_REPO} ${APP_ID}
 
   artifacts:
     paths:
