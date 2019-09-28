@@ -37,8 +37,14 @@ executable('gnome-font-viewer', viewer_sources + resources,
   install: true)
 
 desktop_file = 'org.gnome.font-viewer.desktop'
+
+desktop_conf = configuration_data()
+desktop_conf.set('VERSION', meson.project_version())
+desktop_conf.set('APPLICATION_ID', application_id)
 i18n.merge_file(desktop_file,
-  input: desktop_file + '.in',
+  input: configure_file(input: desktop_file + '.in.in',
+    output: desktop_file + '.in',
+    configuration: desktop_conf),
   output: desktop_file,
   po_dir: '../po',
   install: true,
@@ -46,11 +52,13 @@ i18n.merge_file(desktop_file,
   type: 'desktop'
 )
 
+service_file = 'org.gnome.font-viewer.service'
+
 service_conf = configuration_data()
 service_conf.set('bindir', bindir)
-service_file = 'org.gnome.font-viewer.service'
+service_conf.set('application_id', application_id)
 configure_file(input: service_file + '.in',
-  output: service_file,
+  output: '@0@.service'.format(application_id),
   configuration: service_conf,
   install: true,
   install_dir: servicesdir)
