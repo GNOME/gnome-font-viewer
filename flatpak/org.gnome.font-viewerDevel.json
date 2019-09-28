@@ -1,0 +1,52 @@
+{
+    "app-id": "org.gnome.font-viewerDevel",
+    "runtime": "org.gnome.Platform",
+    "sdk": "org.gnome.Sdk",
+    "command": "gnome-font-viewer",
+    "rename-appdata-file": "org.gnome.font-viewer.appdata.xml",
+    "rename-desktop-file": "org.gnome.font-viewer.desktop",
+    "tags": ["nightly"],
+    "desktop-file-name-prefix": "(Development) ",
+    "finish-args": [
+        "--device=dri",
+        "--share=ipc",
+        "--socket=wayland",
+        "--socket=fallback-x11",
+        "--talk-name=org.gtk.vfs", "--talk-name=org.gtk.vfs.*",
+        "--talk-name=ca.desrt.conf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
+        "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro"
+    ],
+    "cleanup": [
+        "/include",
+        "/lib/pkgconfig", "/share/pkgconfig",
+        "/share/aclocal",
+        "/man", "/share/man", "/share/gtk-doc",
+        "*.la", ".a",
+        "/lib/girepository-1.0",
+        "/share/gir-1.0",
+        "/share/doc"
+    ],
+    "modules": [
+        {
+            "name": "gnome-desktop",
+            "buildsystem": "meson",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://git.gnome.org/browse/gnome-desktop"
+                }
+            ]
+        },
+        {
+            "name": "gnome-font-viewer",
+            "buildsystem": "meson",
+            "config-opts": ["-Dprofile=development"],
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": ".."
+		}
+            ]
+        }
+    ]
+}
