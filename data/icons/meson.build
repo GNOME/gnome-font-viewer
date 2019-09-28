@@ -1,6 +1,6 @@
 scalable_icondir = join_paths('hicolor', 'scalable', 'apps')
 install_data (
-  join_paths(scalable_icondir, 'org.gnome.font-viewer.svg'),
+  join_paths(scalable_icondir, '@0@.svg'.format(application_id)),
   install_dir: join_paths(datadir, 'icons', scalable_icondir)
 )
 
