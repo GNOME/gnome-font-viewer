@@ -44,7 +44,7 @@
 #include "sushi-font-widget.h"
 
 #define FONT_VIEW_TYPE_APPLICATION (font_view_application_get_type ())
-#define FONT_VIEW_ICON_NAME "org.gnome.font-viewer"
+#define FONT_VIEW_ICON_NAME APPLICATION_ID
 
 G_DECLARE_FINAL_TYPE (FontViewApplication, font_view_application,
                       FONT_VIEW, APPLICATION,
@@ -1546,7 +1546,7 @@ static GApplication *
 font_view_application_new (void)
 {
     return g_object_new (FONT_VIEW_TYPE_APPLICATION,
-                         "application-id", "org.gnome.font-viewer",
+                         "application-id", APPLICATION_ID,
                          "flags", G_APPLICATION_HANDLES_OPEN,
                          NULL);
 }

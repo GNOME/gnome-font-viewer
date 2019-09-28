@@ -34,10 +34,19 @@ freetype2_dep = dependency('freetype2')
 gnomedesktop_dep = dependency('gnome-desktop-3.0')
 mathlib_dep = cc.find_library('m')
 
+if get_option('profile') == 'development'
+  profile = 'Devel'
+else
+  profile = ''
+endif
+
+application_id = 'org.gnome.font-viewer@0@'.format(profile)
+
 config_h = configuration_data()
 config_h.set_quoted('VERSION', meson.project_version())
 config_h.set_quoted('GETTEXT_PACKAGE', meson.project_name())
 config_h.set_quoted('GNOMELOCALEDIR', localedir)
+config_h.set_quoted('APPLICATION_ID', application_id)
 configure_file(output: 'config.h', configuration: config_h)
 
 root_inc = include_directories('.')
