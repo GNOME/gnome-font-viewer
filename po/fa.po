@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils HEAD\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues\n"
-"POT-Creation-Date: 2019-07-06 17:09+0000\n"
-"PO-Revision-Date: 2019-09-02 16:15+0430\n"
+"POT-Creation-Date: 2019-09-02 11:47+0000\n"
+"PO-Revision-Date: 2019-09-29 15:54+0330\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian\n"
 "Language: fa\n"
@@ -26,11 +26,11 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: Poedit 2.2.1\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:377
 msgid "GNOME Fonts"
 msgstr "قلم‌های گنوم"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1098
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1368
 #: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "دیدن قلم‌های روی سامانه‌تان"
@@ -38,18 +38,17 @@ msgstr "دیدن قلم‌های روی سامانه‌تان"
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
 "GNOME Fonts shows you the fonts installed on your computer for your use as "
-"thumbnails. Selecting any thumbnails shows the full view of how the font would "
-"look under various sizes."
+"thumbnails. Selecting any thumbnails shows the full view of how the font would look "
+"under various sizes."
 msgstr ""
-"قلم‌های گنوم، قلم‌هایی که روی رایانه‌تان نصب شده را به صورت بندانگشتی نشانتان "
-"می‌دهد. گزینش هر بندانگشتی، نمای کامل چگونگی دیده شدن قلم در اندازه‌های مختلف را "
-"نشان می‌دهد."
+"قلم‌های گنوم، قلم‌هایی که روی رایانه‌تان نصب شده را به صورت بندانگشتی نشانتان می‌دهد. "
+"گزینش هر بندانگشتی، نمای کامل چگونگی دیده شدن قلم در اندازه‌های مختلف را نشان می‌دهد."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
-"GNOME Fonts also supports installing new font files downloaded in the .ttf and "
-"other formats. Fonts may be installed only for your use or made available to "
-"all users on the computer."
+"GNOME Fonts also supports installing new font files downloaded in the .ttf and other "
+"formats. Fonts may be installed only for your use or made available to all users on "
+"the computer."
 msgstr ""
 "قلم‌های گنوم هم‌چنین از نصب پرونده‌های قلم‌های جدید بارگیری شده در قالب ttf و دیگر "
 "قالب‌ها پشتیبانی می‌کند. قلم‌ها می‌توانند فقط برای استفادهٔ شما نصب شده یا برای همهٔ "
@@ -83,7 +82,7 @@ msgstr "FONT-FILE OUTPUT-FILE"
 msgid "About Fonts"
 msgstr "دربارهٔ قلم‌ها"
 
-#: src/font-view.c:99
+#: src/font-view.c:385
 msgid "Show the application's version"
 msgstr "نمایش نگارش برنامه"
 
@@ -92,134 +91,135 @@ msgstr "نمایش نگارش برنامه"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:228
+#: src/font-view.c:503
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g، به صورت پیش‌گزیده %g"
 
-#: src/font-view.c:284
+#: src/font-view.c:559
 #, c-format
 msgid "Instance %d"
 msgstr "اجرای %Id"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:327
+#: src/font-view.c:602
 msgctxt "OpenType layout"
 msgid ", "
-msgstr "،"
+msgstr "، "
 
-#: src/font-view.c:351
+#: src/font-view.c:626
 msgid "Name"
 msgstr "نام"
 
-#: src/font-view.c:354
+#: src/font-view.c:629
 msgid "Location"
 msgstr "موقعیت"
 
-#: src/font-view.c:357
+#: src/font-view.c:632
 msgid "Style"
 msgstr "سبک"
 
-#: src/font-view.c:367
+#: src/font-view.c:642
 msgid "Type"
 msgstr "گونه"
 
-#: src/font-view.c:425 src/font-view.c:451
+#: src/font-view.c:700 src/font-view.c:726
 msgid "Version"
 msgstr "نگارش"
 
-#: src/font-view.c:429 src/font-view.c:456
+#: src/font-view.c:704 src/font-view.c:731
 msgid "Copyright"
 msgstr "حق رونوشت"
 
-#: src/font-view.c:433
+#: src/font-view.c:708
 msgid "Description"
 msgstr "شرح"
 
-#: src/font-view.c:437
+#: src/font-view.c:712
 msgid "Manufacturer"
 msgstr "سازنده"
 
-#: src/font-view.c:441
+#: src/font-view.c:716
 msgid "Designer"
 msgstr "طرّاح"
 
-#: src/font-view.c:445
+#: src/font-view.c:720
 msgid "License"
 msgstr "پروانه"
 
-#: src/font-view.c:470
+#: src/font-view.c:745
 msgid "Glyph Count"
 msgstr "شمارش نشان‌ها"
 
-#: src/font-view.c:472
+#: src/font-view.c:747
 msgid "Color Glyphs"
 msgstr "نشان‌های رنگی"
 
-#: src/font-view.c:472
+#: src/font-view.c:747
 msgid "yes"
 msgstr "بله"
 
-#: src/font-view.c:472
+#: src/font-view.c:747
 msgid "no"
 msgstr "نه"
 
-#: src/font-view.c:476
+#: src/font-view.c:751
 msgid "Layout Features"
 msgstr "ویژگی‌های چینش"
 
-#: src/font-view.c:482
+#: src/font-view.c:757
 msgid "Variation Axes"
-msgstr ""
+msgstr "اهرم‌های تغییر"
 
-#: src/font-view.c:489
+#: src/font-view.c:764
 msgid "Named Styles"
 msgstr "سبک‌های نام‌دار"
 
-#: src/font-view.c:563
+#: src/font-view.c:870
 msgid "This font could not be installed."
 msgstr "این قلم قابل نصب نیست."
 
-#: src/font-view.c:701
+#: src/font-view.c:1008
 msgid "This font could not be displayed."
 msgstr "این قلم قابل نمایش نیست."
 
-#: src/font-view.c:833
+#: src/font-view.c:1135
 msgid "Install"
 msgstr "نصب"
 
-#: src/font-view.c:836
+#: src/font-view.c:1138
 msgid "Installing…"
 msgstr "در حال نصب…"
 
-#: src/font-view.c:839
+#: src/font-view.c:1141
 msgid "Installed"
 msgstr "نصب شده"
 
-#: src/font-view.c:842
+#: src/font-view.c:1144
 msgid "Failed"
 msgstr "شکست خورد"
 
-#: src/font-view.c:858
+#: src/font-view.c:1160
 msgid "Info"
 msgstr "اطّلاعات"
 
-#: src/font-view.c:875
+#: src/font-view.c:1177
 msgid "Back"
 msgstr "بازگشت"
 
-#: src/font-view.c:974
+#: src/font-view.c:1255
 msgid "All Fonts"
 msgstr "تمامی قلم‌ها"
 
-#: src/font-view.c:1097 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1367 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
 msgstr "قلم‌ها"
 
-#: src/font-view.c:1100
+#: src/font-view.c:1370
 msgid "translator-credits"
 msgstr ""
 "دانیال بهزادی <dani.behzi@ubuntu.com>\n"
+"ابراهیم بیاگویی <ebraminio@gmail.com>\n"
 "آرش موسوی <mousavi.arash@gmail.com>"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
@@ -255,7 +255,7 @@ msgstr "کسرهای جایگزین"
 #: src/open-type-layout.h:18
 msgctxt "OpenType layout"
 msgid "Akhands"
-msgstr ""
+msgstr "اکندها"
 
 #: src/open-type-layout.h:19
 msgctxt "OpenType layout"
@@ -275,7 +275,7 @@ msgstr "جانشینی‌های زیر زمینه"
 #: src/open-type-layout.h:22
 msgctxt "OpenType layout"
 msgid "Contextual Alternates"
-msgstr "جایگزین‌های وابسته به قراین"
+msgstr "جایگزین‌های بافتاری"
 
 #: src/open-type-layout.h:23
 msgctxt "OpenType layout"
@@ -290,7 +290,7 @@ msgstr "ترکیب/تجزیه نشان"
 #: src/open-type-layout.h:25
 msgctxt "OpenType layout"
 msgid "Conjunct Form After Ro"
-msgstr ""
+msgstr "حالت متصل بعد از Ro"
 
 #: src/open-type-layout.h:26
 msgctxt "OpenType layout"
@@ -300,37 +300,37 @@ msgstr "حالت‌های متّصل"
 #: src/open-type-layout.h:27
 msgctxt "OpenType layout"
 msgid "Contextual Ligatures"
-msgstr ""
+msgstr "جایگزین‌های بافتاری"
 
 #: src/open-type-layout.h:28
 msgctxt "OpenType layout"
 msgid "Centered CJK Punctuation"
-msgstr ""
+msgstr "نقطه‌گذاری‌های وسط چینی‌ژاپنی‌کره‌ای"
 
 #: src/open-type-layout.h:29
 msgctxt "OpenType layout"
 msgid "Capital Spacing"
-msgstr ""
+msgstr "فاصله‌گذاری حروف بزرگ"
 
 #: src/open-type-layout.h:30
 msgctxt "OpenType layout"
 msgid "Contextual Swash"
-msgstr ""
+msgstr "پسروی بافتاری"
 
 #: src/open-type-layout.h:31
 msgctxt "OpenType layout"
 msgid "Cursive Positioning"
-msgstr ""
+msgstr "موقعیت‌گذاری چسپیده"
 
 #: src/open-type-layout.h:32
 msgctxt "OpenType layout"
 msgid "Petite Capitals From Capitals"
-msgstr ""
+msgstr "حروف بزرگ با حالت اندازهٔ ریز"
 
 #: src/open-type-layout.h:33
 msgctxt "OpenType layout"
 msgid "Small Capitals From Capitals"
-msgstr ""
+msgstr "حروف بزرگ با حالت اندازهٔ کوچک"
 
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
@@ -435,12 +435,12 @@ msgstr "فاصله‌ها"
 #: src/open-type-layout.h:54
 msgctxt "OpenType layout"
 msgid "Discretionary Ligatures"
-msgstr ""
+msgstr "جایگزین‌های اختیاری"
 
 #: src/open-type-layout.h:55
 msgctxt "OpenType layout"
 msgid "Denominators"
-msgstr ""
+msgstr "جداکننده‌ها"
 
 #: src/open-type-layout.h:56
 msgctxt "OpenType layout"
@@ -475,7 +475,7 @@ msgstr "حالت‌های پایانی"
 #: src/open-type-layout.h:62
 msgctxt "OpenType layout"
 msgid "Flattened accent forms"
-msgstr ""
+msgstr "حالت‌های اکسنت‌های صاف"
 
 #: src/open-type-layout.h:63
 msgctxt "OpenType layout"
@@ -495,7 +495,7 @@ msgstr "حالت‌های نیمه"
 #: src/open-type-layout.h:66
 msgctxt "OpenType layout"
 msgid "Halant Forms"
-msgstr ""
+msgstr "حالت‌های هالانت"
 
 #: src/open-type-layout.h:67
 msgctxt "OpenType layout"
@@ -515,12 +515,12 @@ msgstr "جایگزین‌های کانای افقس"
 #: src/open-type-layout.h:70
 msgctxt "OpenType layout"
 msgid "Historical Ligatures"
-msgstr ""
+msgstr "جایگزین‌های تاریخی"
 
 #: src/open-type-layout.h:71
 msgctxt "OpenType layout"
 msgid "Hangul"
-msgstr ""
+msgstr "هانگول"
 
 #: src/open-type-layout.h:72
 msgctxt "OpenType layout"
@@ -580,22 +580,22 @@ msgstr "کاهش فاصله"
 #: src/open-type-layout.h:83
 msgctxt "OpenType layout"
 msgid "Left Bounds"
-msgstr ""
+msgstr "مزر چپی"
 
 #: src/open-type-layout.h:84
 msgctxt "OpenType layout"
 msgid "Standard Ligatures"
-msgstr ""
+msgstr "جایگزین‌های استاندارد"
 
 #: src/open-type-layout.h:85
 msgctxt "OpenType layout"
 msgid "Leading Jamo Forms"
-msgstr ""
+msgstr "حالت‌های جاموی ابتدای خط"
 
 #: src/open-type-layout.h:86
 msgctxt "OpenType layout"
 msgid "Lining Figures"
-msgstr ""
+msgstr "اعداد خطوط"
 
 #: src/open-type-layout.h:87
 msgctxt "OpenType layout"
@@ -615,7 +615,7 @@ msgstr "حالت‌های آینه‌ای چپ به راست"
 #: src/open-type-layout.h:90
 msgctxt "OpenType layout"
 msgid "Mark Positioning"
-msgstr ""
+msgstr "موقعیت‌گذاری نشان"
 
 #: src/open-type-layout.h:91
 msgctxt "OpenType layout"
@@ -635,42 +635,42 @@ msgstr "یونانی ریاضی"
 #: src/open-type-layout.h:94
 msgctxt "OpenType layout"
 msgid "Mark to Mark Positioning"
-msgstr ""
+msgstr "موقعیت‌دهی علائم نسبت به هم"
 
 #: src/open-type-layout.h:95
 msgctxt "OpenType layout"
 msgid "Mark Positioning via Substitution"
-msgstr ""
+msgstr "موقعیت‌دهی علائم با جایگذاری"
 
 #: src/open-type-layout.h:96
 msgctxt "OpenType layout"
 msgid "Alternate Annotation Forms"
-msgstr ""
+msgstr "حالت‌های حاشیه‌نویسی جایگزین"
 
 #: src/open-type-layout.h:97
 msgctxt "OpenType layout"
 msgid "NLC Kanji Forms"
-msgstr ""
+msgstr "حالت‌های کانجی NLC"
 
 #: src/open-type-layout.h:98
 msgctxt "OpenType layout"
 msgid "Nukta Forms"
-msgstr ""
+msgstr "حالت‌های نقطهٔ هندی"
 
 #: src/open-type-layout.h:99
 msgctxt "OpenType layout"
 msgid "Numerators"
-msgstr ""
+msgstr "صورت‌های کسر"
 
 #: src/open-type-layout.h:100
 msgctxt "OpenType layout"
 msgid "Oldstyle Figures"
-msgstr ""
+msgstr "اعداد سبک قدیم"
 
 #: src/open-type-layout.h:101
 msgctxt "OpenType layout"
 msgid "Optical Bounds"
-msgstr ""
+msgstr "مرزهای نوری"
 
 #: src/open-type-layout.h:102
 msgctxt "OpenType layout"
@@ -680,27 +680,27 @@ msgstr "ترتیبی‌ها"
 #: src/open-type-layout.h:103
 msgctxt "OpenType layout"
 msgid "Ornaments"
-msgstr ""
+msgstr "زینت‌ها"
 
 #: src/open-type-layout.h:104
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Widths"
-msgstr ""
+msgstr "وهناهای جایگزین متناسب"
 
 #: src/open-type-layout.h:105
 msgctxt "OpenType layout"
 msgid "Petite Capitals"
-msgstr ""
+msgstr "حروف بزرگ با اندازهٔ ریز"
 
 #: src/open-type-layout.h:106
 msgctxt "OpenType layout"
 msgid "Proportional Kana"
-msgstr ""
+msgstr "کانای متناسب"
 
 #: src/open-type-layout.h:107
 msgctxt "OpenType layout"
 msgid "Proportional Figures"
-msgstr ""
+msgstr "شکل‌های متناسب"
 
 #: src/open-type-layout.h:108
 msgctxt "OpenType layout"
@@ -735,32 +735,32 @@ msgstr "ربع پهناها"
 #: src/open-type-layout.h:114
 msgctxt "OpenType layout"
 msgid "Randomize"
-msgstr "تصادفی"
+msgstr "تصادفی‌سازی"
 
 #: src/open-type-layout.h:115
 msgctxt "OpenType layout"
 msgid "Required Contextual Alternates"
-msgstr ""
+msgstr "جایگزین‌های بافتاری ضروری"
 
 #: src/open-type-layout.h:116
 msgctxt "OpenType layout"
 msgid "Rakar Forms"
-msgstr ""
+msgstr "حالت‌های راکار"
 
 #: src/open-type-layout.h:117
 msgctxt "OpenType layout"
 msgid "Required Ligatures"
-msgstr ""
+msgstr "جایگزین‌های ضروری"
 
 #: src/open-type-layout.h:118
 msgctxt "OpenType layout"
 msgid "Reph Forms"
-msgstr ""
+msgstr "حالت‌های رف"
 
 #: src/open-type-layout.h:119
 msgctxt "OpenType layout"
 msgid "Right Bounds"
-msgstr ""
+msgstr "مرز راست"
 
 #: src/open-type-layout.h:120
 msgctxt "OpenType layout"
@@ -775,32 +775,32 @@ msgstr "حالت‌های آینه‌ای راست به چپ"
 #: src/open-type-layout.h:122
 msgctxt "OpenType layout"
 msgid "Ruby Notation Forms"
-msgstr ""
+msgstr "حالت‌های نشانه‌گذاری رابی"
 
 #: src/open-type-layout.h:123
 msgctxt "OpenType layout"
 msgid "Required Variation Alternates"
-msgstr ""
+msgstr "جایگزین‌های تغییرهای ضروری"
 
 #: src/open-type-layout.h:124
 msgctxt "OpenType layout"
 msgid "Stylistic Alternates"
-msgstr ""
+msgstr "جایگزین‌های سبک"
 
 #: src/open-type-layout.h:125
 msgctxt "OpenType layout"
 msgid "Scientific Inferiors"
-msgstr ""
+msgstr "زیرنوشته‌های علمی"
 
 #: src/open-type-layout.h:126
 msgctxt "OpenType layout"
 msgid "Optical size"
-msgstr ""
+msgstr "سایز نوری"
 
 #: src/open-type-layout.h:127
 msgctxt "OpenType layout"
 msgid "Small Capitals"
-msgstr ""
+msgstr "حروف کوچک بزرگ‌شده"
 
 #: src/open-type-layout.h:128
 msgctxt "OpenType layout"
@@ -810,112 +810,112 @@ msgstr "حالت‌های ساده‌شده"
 #: src/open-type-layout.h:129
 msgctxt "OpenType layout"
 msgid "Stylistic Set 1"
-msgstr "مجموعهٔ ادبی ۱"
+msgstr "مجموعهٔ سبکی ۱"
 
 #: src/open-type-layout.h:130
 msgctxt "OpenType layout"
 msgid "Stylistic Set 2"
-msgstr "مجموعهٔ ادبی ۲"
+msgstr "مجموعهٔ سبکی ۲"
 
 #: src/open-type-layout.h:131
 msgctxt "OpenType layout"
 msgid "Stylistic Set 3"
-msgstr "مجموعهٔ ادبی ۳"
+msgstr "مجموعهٔ سبکی ۳"
 
 #: src/open-type-layout.h:132
 msgctxt "OpenType layout"
 msgid "Stylistic Set 4"
-msgstr "مجموعهٔ ادبی ۴"
+msgstr "مجموعهٔ سبکی ۴"
 
 #: src/open-type-layout.h:133
 msgctxt "OpenType layout"
 msgid "Stylistic Set 5"
-msgstr "مجموعهٔ ادبی ۵"
+msgstr "مجموعهٔ سبکی ۵"
 
 #: src/open-type-layout.h:134
 msgctxt "OpenType layout"
 msgid "Stylistic Set 6"
-msgstr "مجموعهٔ ادبی ۶"
+msgstr "مجموعهٔ سبکی ۶"
 
 #: src/open-type-layout.h:135
 msgctxt "OpenType layout"
 msgid "Stylistic Set 7"
-msgstr "مجموعهٔ ادبی ۷"
+msgstr "مجموعهٔ سبکی ۷"
 
 #: src/open-type-layout.h:136
 msgctxt "OpenType layout"
 msgid "Stylistic Set 8"
-msgstr "مجموعهٔ ادبی ۸"
+msgstr "مجموعهٔ سبکی ۸"
 
 #: src/open-type-layout.h:137
 msgctxt "OpenType layout"
 msgid "Stylistic Set 9"
-msgstr "مجموعهٔ ادبی ۹"
+msgstr "مجموعهٔ سبکی ۹"
 
 #: src/open-type-layout.h:138
 msgctxt "OpenType layout"
 msgid "Stylistic Set 10"
-msgstr "مجموعهٔ ادبی ۱"
+msgstr "مجموعهٔ سبکی ۱"
 
 #: src/open-type-layout.h:139
 msgctxt "OpenType layout"
 msgid "Stylistic Set 11"
-msgstr "مجموعهٔ ادبی ۱۱"
+msgstr "مجموعهٔ سبکی ۱۱"
 
 #: src/open-type-layout.h:140
 msgctxt "OpenType layout"
 msgid "Stylistic Set 12"
-msgstr "مجموعهٔ ادبی ۱۲"
+msgstr "مجموعهٔ سبکی ۱۲"
 
 #: src/open-type-layout.h:141
 msgctxt "OpenType layout"
 msgid "Stylistic Set 13"
-msgstr "مجموعهٔ ادبی ۱۳"
+msgstr "مجموعهٔ سبکی ۱۳"
 
 #: src/open-type-layout.h:142
 msgctxt "OpenType layout"
 msgid "Stylistic Set 14"
-msgstr "مجموعهٔ ادبی ۱۴"
+msgstr "مجموعهٔ سبکی ۱۴"
 
 #: src/open-type-layout.h:143
 msgctxt "OpenType layout"
 msgid "Stylistic Set 15"
-msgstr "مجموعهٔ ادبی ۱۵"
+msgstr "مجموعهٔ سبکی ۱۵"
 
 #: src/open-type-layout.h:144
 msgctxt "OpenType layout"
 msgid "Stylistic Set 16"
-msgstr "مجموعهٔ ادبی ۱۶"
+msgstr "مجموعهٔ سبکی ۱۶"
 
 #: src/open-type-layout.h:145
 msgctxt "OpenType layout"
 msgid "Stylistic Set 17"
-msgstr "مجموعهٔ ادبی ۱۷"
+msgstr "مجموعهٔ سبکی ۱۷"
 
 #: src/open-type-layout.h:146
 msgctxt "OpenType layout"
 msgid "Stylistic Set 18"
-msgstr "مجموعهٔ ادبی ۱۸"
+msgstr "مجموعهٔ سبکی ۱۸"
 
 #: src/open-type-layout.h:147
 msgctxt "OpenType layout"
 msgid "Stylistic Set 19"
-msgstr "مجموعهٔ ادبی ۱۹"
+msgstr "مجموعهٔ سبکی ۱۹"
 
 #: src/open-type-layout.h:148
 msgctxt "OpenType layout"
 msgid "Stylistic Set 20"
-msgstr "مجموعهٔ ادبی ۲۰"
+msgstr "مجموعهٔ سبکی ۲۰"
 
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
 msgid "Math script style alternates"
-msgstr "جایگزین‌های سبک نویسهٔ ریاضی"
+msgstr "جایگزین‌های سبک نوشتهٔ ریاضی"
 
 #: src/open-type-layout.h:150
 msgctxt "OpenType layout"
 msgid "Stretching Glyph Decomposition"
-msgstr ""
+msgstr "تجزیهٔ گلیف کششی"
 
 #: src/open-type-layout.h:151
 msgctxt "OpenType layout"
@@ -930,52 +930,52 @@ msgstr "بالانویسه"
 #: src/open-type-layout.h:153
 msgctxt "OpenType layout"
 msgid "Swash"
-msgstr ""
+msgstr "پسروی"
 
 #: src/open-type-layout.h:154
 msgctxt "OpenType layout"
 msgid "Titling"
-msgstr ""
+msgstr "عنوان‌گذاری"
 
 #: src/open-type-layout.h:155
 msgctxt "OpenType layout"
 msgid "Trailing Jamo Forms"
-msgstr ""
+msgstr "حالت‌های جاموی انتهایی"
 
 #: src/open-type-layout.h:156
 msgctxt "OpenType layout"
 msgid "Traditional Name Forms"
-msgstr ""
+msgstr "حالت‌های نام سنتی"
 
 #: src/open-type-layout.h:157
 msgctxt "OpenType layout"
 msgid "Tabular Figures"
-msgstr ""
+msgstr "ارقام جدولی"
 
 #: src/open-type-layout.h:158
 msgctxt "OpenType layout"
 msgid "Traditional Forms"
-msgstr ""
+msgstr "حالت‌های سنتی"
 
 #: src/open-type-layout.h:159
 msgctxt "OpenType layout"
 msgid "Third Widths"
-msgstr ""
+msgstr "عرض سوم"
 
 #: src/open-type-layout.h:160
 msgctxt "OpenType layout"
 msgid "Unicase"
-msgstr ""
+msgstr "بدون حالت"
 
 #: src/open-type-layout.h:161
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Metrics"
-msgstr ""
+msgstr "متریک‌های عمودی جایگزین"
 
 #: src/open-type-layout.h:162
 msgctxt "OpenType layout"
 msgid "Vattu Variants"
-msgstr ""
+msgstr "دگرگونه‌های واتو"
 
 #: src/open-type-layout.h:163
 msgctxt "OpenType layout"
@@ -985,12 +985,12 @@ msgstr "نوشتن عمودی"
 #: src/open-type-layout.h:164
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Half Metrics"
-msgstr ""
+msgstr "نیمه‌متریک‌های عمودی جایگزین"
 
 #: src/open-type-layout.h:165
 msgctxt "OpenType layout"
 msgid "Vowel Jamo Forms"
-msgstr ""
+msgstr "حالت‌های واکه‌دار جمو"
 
 #: src/open-type-layout.h:166
 msgctxt "OpenType layout"
@@ -1005,7 +1005,7 @@ msgstr "کاهش فاصلهٔ عمودی"
 #: src/open-type-layout.h:168
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Vertical Metrics"
-msgstr ""
+msgstr "متریک‌های عمودی جایگزین متناسب"
 
 #: src/open-type-layout.h:169
 msgctxt "OpenType layout"
@@ -1020,7 +1020,7 @@ msgstr "جایگزین‌های عمودی برای چرخش"
 #: src/open-type-layout.h:171
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
-msgstr ""
+msgstr "صفر دارای اسلش"
 
 #~ msgid "About"
 #~ msgstr "درباره"
