@@ -35,6 +35,17 @@
   </kudos>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="3.34.0" date="2019-09-14">
+      <description>
+        <ul>
+          <li>Improve compatibility for fonts with non-unicode charmaps</li>
+          <li>Display an error dialog when installation fails</li>
+          <li>Fix font installation when filenames would collide</li>
+          <li>Fix thumbnailing for font collection files</li>
+          <li>Translation updates</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.32.0" date="2019-03-15">
       <description>
         <ul>
