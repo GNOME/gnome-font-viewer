@@ -9,13 +9,14 @@
 # Sanaz shahrokni <sanaz.shahrokni@gmail.com>, 2006.
 # Arash Mousavi <mousavi.arash@gmail.com>, 2011, 2012, 2014, 2015, 2017.
 # Danial Behzadi <dani.behzi@ubuntu.com>, 2012, 2014, 2018, 2019.
+# Ebrahim Byagowi <ebrahim@gnu.org>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils HEAD\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues\n"
-"POT-Creation-Date: 2019-09-02 11:47+0000\n"
-"PO-Revision-Date: 2019-09-29 15:54+0330\n"
+"POT-Creation-Date: 2019-09-29 00:41+0000\n"
+"PO-Revision-Date: 2019-09-29 16:32+0330\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian\n"
 "Language: fa\n"
@@ -141,7 +142,7 @@ msgstr "سازنده"
 
 #: src/font-view.c:716
 msgid "Designer"
-msgstr "طرّاح"
+msgstr "طراح"
 
 #: src/font-view.c:720
 msgid "License"
@@ -219,7 +220,7 @@ msgstr "قلم‌ها"
 msgid "translator-credits"
 msgstr ""
 "دانیال بهزادی <dani.behzi@ubuntu.com>\n"
-"ابراهیم بیاگویی <ebraminio@gmail.com>\n"
+"ابراهیم بیاگویی <ebrahim@gnu.org>\n"
 "آرش موسوی <mousavi.arash@gmail.com>"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
@@ -580,7 +581,7 @@ msgstr "کاهش فاصله"
 #: src/open-type-layout.h:83
 msgctxt "OpenType layout"
 msgid "Left Bounds"
-msgstr "مزر چپی"
+msgstr "مزرهای چپی"
 
 #: src/open-type-layout.h:84
 msgctxt "OpenType layout"
@@ -680,7 +681,7 @@ msgstr "ترتیبی‌ها"
 #: src/open-type-layout.h:103
 msgctxt "OpenType layout"
 msgid "Ornaments"
-msgstr "زینت‌ها"
+msgstr "زینتی‌ها"
 
 #: src/open-type-layout.h:104
 msgctxt "OpenType layout"
@@ -760,7 +761,7 @@ msgstr "حالت‌های رف"
 #: src/open-type-layout.h:119
 msgctxt "OpenType layout"
 msgid "Right Bounds"
-msgstr "مرز راست"
+msgstr "مرزهای راست"
 
 #: src/open-type-layout.h:120
 msgctxt "OpenType layout"
@@ -795,7 +796,7 @@ msgstr "زیرنوشته‌های علمی"
 #: src/open-type-layout.h:126
 msgctxt "OpenType layout"
 msgid "Optical size"
-msgstr "سایز نوری"
+msgstr "اندازهٔ نوری"
 
 #: src/open-type-layout.h:127
 msgctxt "OpenType layout"
@@ -970,7 +971,7 @@ msgstr "بدون حالت"
 #: src/open-type-layout.h:161
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Metrics"
-msgstr "متریک‌های عمودی جایگزین"
+msgstr "اندازه‌های عمودی جایگزین"
 
 #: src/open-type-layout.h:162
 msgctxt "OpenType layout"
