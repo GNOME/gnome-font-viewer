@@ -21,10 +21,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: "
-"https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues\n"
-"POT-Creation-Date: 2019-03-26 16:54+0000\n"
-"PO-Revision-Date: 2019-02-13 11:39+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
+"issues\n"
+"POT-Creation-Date: 2019-08-12 07:41+0000\n"
+"PO-Revision-Date: 2019-09-09 01:32+0200\n"
 "Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -34,11 +34,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.0.6\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:377
 msgid "GNOME Fonts"
 msgstr "GNOME Skrifttyper"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1119
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1368
 #: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Vis skrifttyper på dit system"
@@ -63,23 +63,27 @@ msgstr ""
 "hentet i .ttf og andre formater. Skrifttyper kan installeres til brug for "
 "kun dig selv, eller gøres tilgængelige for alle brugere af computeren."
 
-#: src/font-thumbnailer.c:189
+#: data/org.gnome.font-viewer.appdata.xml.in:21
+msgid "The GNOME Project"
+msgstr "GNOME-projektet"
+
+#: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Tekst for miniature (som standard: Aa)"
 
-#: src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:181
 msgid "TEXT"
 msgstr "TEKST"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "Thumbnail size (default: 128)"
 msgstr "Miniaturestørrelse (standardværdi: 128)"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "SIZE"
 msgstr "STØRRELSE"
 
-#: src/font-thumbnailer.c:193
+#: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "SKRIFTTYPEFIL OUTPUTFIL"
 
@@ -87,7 +91,7 @@ msgstr "SKRIFTTYPEFIL OUTPUTFIL"
 msgid "About Fonts"
 msgstr "Om Skrifttyper"
 
-#: src/font-view.c:99
+#: src/font-view.c:385
 msgid "Show the application's version"
 msgstr "Vis programmets version"
 
@@ -96,124 +100,132 @@ msgstr "Vis programmets version"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:230
+#: src/font-view.c:503
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, standard %g"
 
-#: src/font-view.c:286
+#: src/font-view.c:559
 #, c-format
 msgid "Instance %d"
 msgstr "Forekomst %d"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:331
+#: src/font-view.c:602
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:357
+#: src/font-view.c:626
 msgid "Name"
 msgstr "Navn"
 
-#: src/font-view.c:360
+#: src/font-view.c:629
+msgid "Location"
+msgstr "Sted"
+
+#: src/font-view.c:632
 msgid "Style"
 msgstr "Stil"
 
-#: src/font-view.c:370
+#: src/font-view.c:642
 msgid "Type"
 msgstr "Type"
 
-#: src/font-view.c:431 src/font-view.c:465
+#: src/font-view.c:700 src/font-view.c:726
 msgid "Version"
 msgstr "Version"
 
-#: src/font-view.c:436 src/font-view.c:471
+#: src/font-view.c:704 src/font-view.c:731
 msgid "Copyright"
 msgstr "Ophavsret"
 
-#: src/font-view.c:441
+#: src/font-view.c:708
 msgid "Description"
 msgstr "Beskrivelse"
 
-#: src/font-view.c:446
+#: src/font-view.c:712
 msgid "Manufacturer"
 msgstr "Producent"
 
-#: src/font-view.c:451
+#: src/font-view.c:716
 msgid "Designer"
 msgstr "Designer"
 
-#: src/font-view.c:456
+#: src/font-view.c:720
 msgid "License"
 msgstr "Licens"
 
-#: src/font-view.c:486
+#: src/font-view.c:745
 msgid "Glyph Count"
 msgstr "Antal glyffer"
 
 # ?
-#: src/font-view.c:489
+#: src/font-view.c:747
 msgid "Color Glyphs"
 msgstr "Farvelagte glyffer"
 
-#: src/font-view.c:489
+#: src/font-view.c:747
 msgid "yes"
 msgstr "ja"
 
-#: src/font-view.c:489
+#: src/font-view.c:747
 msgid "no"
 msgstr "nej"
 
-#: src/font-view.c:493
+#: src/font-view.c:751
 msgid "Layout Features"
 msgstr "Layoutfunktioner"
 
-#: src/font-view.c:500
+#: src/font-view.c:757
 msgid "Variation Axes"
 msgstr "Variationsakser"
 
-#: src/font-view.c:508
+#: src/font-view.c:764
 msgid "Named Styles"
 msgstr "Navngivne stile"
 
-#: src/font-view.c:690
+#: src/font-view.c:870
+msgid "This font could not be installed."
+msgstr "Denne skrifttype kunne ikke installeres."
+
+#: src/font-view.c:1008
 msgid "This font could not be displayed."
 msgstr "Denne skrifttype kunne ikke vises."
 
-#: src/font-view.c:838
+#: src/font-view.c:1135
 msgid "Install"
 msgstr "Installér"
 
-#: src/font-view.c:841
+#: src/font-view.c:1138
 msgid "Installing…"
 msgstr "Installerer …"
 
-#: src/font-view.c:844
+#: src/font-view.c:1141
 msgid "Installed"
 msgstr "Installeret"
 
-#: src/font-view.c:847
+#: src/font-view.c:1144
 msgid "Failed"
 msgstr "Mislykkedes"
 
-#: src/font-view.c:865
+#: src/font-view.c:1160
 msgid "Info"
 msgstr "Info"
 
-#: src/font-view.c:880
+#: src/font-view.c:1177
 msgid "Back"
 msgstr "Tilbage"
 
-#: src/font-view.c:992
+#: src/font-view.c:1255
 msgid "All Fonts"
 msgstr "Alle skrifttyper"
 
-#: src/font-view.c:1118 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1367 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
 msgstr "Skrifttyper"
 
-#: src/font-view.c:1121
+#: src/font-view.c:1370
 msgid "translator-credits"
 msgstr ""
 "Kenneth Christiansen\n"
@@ -1058,9 +1070,11 @@ msgstr "Gennemstreget nul"
 #~ msgid "[FILE...]"
 #~ msgstr "[FIL...]"
 
-#~ msgid "Run '%s --help' to see a full list of available command line options."
+#~ msgid ""
+#~ "Run '%s --help' to see a full list of available command line options."
 #~ msgstr ""
-#~ "Kør “%s --help” for at se en fuld liste af tilgængelige kommandolinjetilvalg."
+#~ "Kør “%s --help” for at se en fuld liste af tilgængelige "
+#~ "kommandolinjetilvalg."
 
 #~ msgid "_Close"
 #~ msgstr "_Luk"
@@ -1076,4 +1090,3 @@ msgstr "Gennemstreget nul"
 
 #~ msgid "Preview fonts"
 #~ msgstr "Forhåndsvis skrifttyper"
-
