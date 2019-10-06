@@ -1,5 +1,3 @@
 # List of source files that should *not* be translated.
 # Please keep this file sorted alphabetically.
 src/org.gnome.font-viewer.desktop.in
-# https://bugs.launchpad.net/intltool/+bug/1117944
-sub/src/org.gnome.font-viewer.desktop.in
