@@ -22,7 +22,7 @@ desktopdir = join_paths(datadir, 'applications')
 servicesdir = join_paths(datadir, 'dbus-1', 'services')
 thumbnailerdir = join_paths(datadir, 'thumbnailers')
 
-glib_req_version = '>= 2.35.1'
+glib_req_version = '>= 2.56.0'
 gtk_req_version = '>= 3.20.0'
 harfbuzz_req_version = '>= 0.9.9'
 
