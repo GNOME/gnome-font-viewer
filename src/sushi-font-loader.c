@@ -67,6 +67,13 @@ font_load_job_free (FontLoadJob *job)
 
 G_DEFINE_AUTOPTR_CLEANUP_FUNC (FontLoadJob, font_load_job_free)
 
+static void
+face_data_finalizer (void *object)
+{
+  FT_Face face = object;
+  g_clear_object (&face->generic.data);
+}
+
 static FT_Face
 create_face_from_contents (FontLoadJob *job,
                            gchar **contents,
@@ -87,6 +94,9 @@ create_face_from_contents (FontLoadJob *job,
                  "Unable to read the font face file '%s'", uri);
     return NULL;
   }
+
+  retval->generic.data = g_object_ref (job->file);
+  retval->generic.finalizer = face_data_finalizer;
 
   *contents = g_steal_pointer (&job->face_contents);
   return retval;
@@ -181,8 +191,22 @@ gchar *
 sushi_get_font_name (FT_Face face,
                      gboolean short_form)
 {
-  if (short_form && g_strcmp0 (face->style_name, "Regular") == 0)
-    return g_strdup (face->family_name);
+  const char *style_name = face->style_name;
+  const char *family_name = face->family_name;
 
-  return g_strconcat (face->family_name, ", ", face->style_name, NULL);
+  if (family_name == NULL) {
+    /* Try to get the basename of the file this was loaded from */
+    GFile *file = face->generic.data;
+    if (G_IS_FILE (file))
+      return g_file_get_basename (file);
+
+    /* Use an empty string as the last fallback */
+    return g_strdup ("");
+  }
+
+  if (style_name == NULL ||
+      (short_form && g_strcmp0 (style_name, "Regular") == 0))
+    return g_strdup (family_name);
+
+  return g_strconcat (family_name, ", ", style_name, NULL);
 }
