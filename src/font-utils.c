@@ -23,15 +23,6 @@
 #include "sushi-font-loader.h"
 
 gchar *
-font_utils_get_font_name (FT_Face face)
-{
-    if (g_strcmp0 (face->style_name, "Regular") == 0)
-        return g_strdup (face->family_name);
-
-    return g_strconcat (face->family_name, ", ", face->style_name, NULL);
-}
-
-gchar *
 font_utils_get_font_name_for_file (FT_Library library,
                                    GFile *file,
                                    gint face_index)
@@ -49,7 +40,7 @@ font_utils_get_font_name_for_file (FT_Library library,
         return NULL;
     }
 
-    name = font_utils_get_font_name (face);
+    name = sushi_get_font_name (face, TRUE);
     FT_Done_Face (face);
 
     return name;

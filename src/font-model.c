@@ -33,6 +33,7 @@
 
 #include "font-model.h"
 #include "font-utils.h"
+#include "sushi-font-loader.h"
 
 struct _FontViewModel
 {
@@ -137,7 +138,7 @@ font_view_model_has_face (FontViewModel *self,
     g_autofree gchar *match_name = NULL;
 
     n_items = g_list_model_get_n_items (G_LIST_MODEL (self->model));
-    match_name = font_utils_get_font_name (face);
+    match_name = sushi_get_font_name (face, TRUE);
 
     for (idx = 0; idx < n_items; idx++) {
         FontViewModelItem *item = g_list_model_get_item (G_LIST_MODEL (self->model), idx);

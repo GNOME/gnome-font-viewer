@@ -25,7 +25,6 @@
 #include FT_FREETYPE_H
 #include <gio/gio.h>
 
-gchar * font_utils_get_font_name (FT_Face face);
 gchar * font_utils_get_font_name_for_file (FT_Library library,
                                            GFile *file,
                                            gint face_index);
