@@ -1033,7 +1033,13 @@ font_widget_loaded_cb (SushiFontWidget *font_widget,
     uri = sushi_font_widget_get_uri (font_widget);
     self->font_file = g_file_new_for_uri (uri);
 
-    gtk_header_bar_set_title (GTK_HEADER_BAR (self->header), face->family_name);
+    if (face->family_name) {
+        gtk_header_bar_set_title (GTK_HEADER_BAR (self->header), face->family_name);
+    } else {
+        g_autofree gchar *basename = g_file_get_basename (self->font_file);
+        gtk_header_bar_set_title (GTK_HEADER_BAR (self->header), basename);
+    }
+
     gtk_header_bar_set_subtitle (GTK_HEADER_BAR (self->header), face->style_name);
 
     install_button_refresh_appearance (self, NULL);
