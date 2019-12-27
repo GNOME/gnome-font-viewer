@@ -1,6 +1,6 @@
-# Translation of gnome-font-viewer ui to zh_CN
-# Copyright (C) 2009, 2011 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gnome-utils package.
+# Chinese (China) translation for gnome-font-viewer.
+# Copyright (C) 2009-2017 gnome-font-viewer's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-font-viewer package.
 # Sun G11n <gnome_int_l10n@ireland.sun.com> 2002.
 # Wang Li <charlesw1234@163.com>, 2001.
 # Xiong Jiang <jxiong@offtopic.org>, 2003.
@@ -14,154 +14,162 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Project-Id-Version: gnome-font-viewer 3.26\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-02-25 21:17+0000\n"
-"PO-Revision-Date: 2014-11-24 00:10+0800\n"
-"Last-Translator: Cheng Lu <chenglu1990@gmail.com>\n"
+"POT-Creation-Date: 2017-09-18 18:13+0000\n"
+"PO-Revision-Date: 2017-10-29 01:50+0800\n"
+"Last-Translator: Dingzhong Chen <wsxy162@gmail.com>\n"
 "Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Poedit 2.0.3\n"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
-msgid ""
-"GNOME Font Viewer shows you the fonts installed on your computer for your "
-"use as thumbnails. Selecting any thumbnails shows the full view of how the "
-"font would look under various sizes."
-msgstr ""
-"GNOME 字体查看器以缩略图的形式显示了安装在您系统中的字体。选择任意一个缩略图"
-"可以完整查看该字体在不同字号下的显示效果。"
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:76
+msgid "GNOME Fonts"
+msgstr "GNOME 字体"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
-msgid ""
-"GNOME Font Viewer also supports installing new font files downloaded in the ."
-"ttf and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
-msgstr ""
-"GNOME 字体查看器还支持安装新字体，支持下载的 ttf 或其他格式的字体文件。字体可"
-"以只为您一人安装使用，亦可为使用此计算机的所有用户安装。"
-
-#: ../src/font-thumbnailer.c:189
-msgid "Text to thumbnail (default: Aa)"
-msgstr "生成缩略图所用的文字(默认：Aa)"
-
-#: ../src/font-thumbnailer.c:189
-msgid "TEXT"
-msgstr "文字"
-
-#: ../src/font-thumbnailer.c:191
-msgid "Thumbnail size (default: 128)"
-msgstr "缩略图大小(默认：128)"
-
-#: ../src/font-thumbnailer.c:191
-msgid "SIZE"
-msgstr "大小"
-
-#: ../src/font-thumbnailer.c:193
-msgid "FONT-FILE OUTPUT-FILE"
-msgstr "字体文件 输出文件"
-
-#: ../src/font-view-app-menu.ui.h:1
-msgid "About"
-msgstr "关于"
-
-#: ../src/font-view-app-menu.ui.h:2
-msgid "Quit"
-msgstr "退出"
-
-#: ../src/font-view.c:76
-msgid "GNOME Font Viewer"
-msgstr "GNOME 字体查看器"
-
-#: ../src/font-view.c:84
-msgid "Show the application's version"
-msgstr "显示应用版本"
-
-#: ../src/font-view.c:196
-msgid "Name"
-msgstr "名称"
-
-#: ../src/font-view.c:199
-msgid "Style"
-msgstr "样式"
-
-#: ../src/font-view.c:209
-msgid "Type"
-msgstr "类型"
-
-#: ../src/font-view.c:254 ../src/font-view.c:273
-msgid "Version"
-msgstr "版本"
-
-#: ../src/font-view.c:259 ../src/font-view.c:279
-msgid "Copyright"
-msgstr "版权"
-
-#: ../src/font-view.c:264
-msgid "Description"
-msgstr "描述"
-
-#: ../src/font-view.c:295
-msgid "Install Failed"
-msgstr "安装失败"
-
-#: ../src/font-view.c:302
-msgid "Installed"
-msgstr "已安装"
-
-#: ../src/font-view.c:306 ../src/font-view.c:551
-msgid "Install"
-msgstr "安装"
-
-#: ../src/font-view.c:440
-msgid "This font could not be displayed."
-msgstr "该字体无法显示。"
-
-#: ../src/font-view.c:504 ../src/font-view.c:562
-msgid "Info"
-msgstr "信息"
-
-#: ../src/font-view.c:579
-msgid "Back"
-msgstr "返回"
-
-#: ../src/font-view.c:669
-msgid "All Fonts"
-msgstr "全部字体"
-
-#: ../src/font-view.c:787 ../src/org.gnome.font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "字体查看器"
-
-#: ../src/font-view.c:788 ../src/org.gnome.font-viewer.desktop.in.in.h:2
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:796
+#: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "查看您系统中的字体"
 
-#: ../src/font-view.c:790
+#: data/org.gnome.font-viewer.appdata.xml.in:9
+msgid ""
+"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"thumbnails. Selecting any thumbnails shows the full view of how the font "
+"would look under various sizes."
+msgstr ""
+"GNOME 字体 以缩略图的形式显示了安装在您系统中的字体。选择任意一个缩略图可以完"
+"整查看该字体在不同字号下的显示效果。"
+
+#: data/org.gnome.font-viewer.appdata.xml.in:15
+msgid ""
+"GNOME Fonts also supports installing new font files downloaded in the .ttf "
+"and other formats. Fonts may be installed only for your use or made "
+"available to all users on the computer."
+msgstr ""
+"GNOME 字体 还支持安装新字体，支持下载的 ttf 或其他格式的字体文件。字体可以只"
+"为您一人安装使用，亦可为使用此计算机的所有用户安装。"
+
+#: src/font-thumbnailer.c:189
+msgid "Text to thumbnail (default: Aa)"
+msgstr "生成缩略图所用的文字（默认：Aa）"
+
+#: src/font-thumbnailer.c:189
+msgid "TEXT"
+msgstr "文字"
+
+#: src/font-thumbnailer.c:191
+msgid "Thumbnail size (default: 128)"
+msgstr "缩略图大小（默认：128）"
+
+#: src/font-thumbnailer.c:191
+msgid "SIZE"
+msgstr "大小"
+
+#: src/font-thumbnailer.c:193
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "字体文件 输出文件"
+
+#: src/font-view-app-menu.ui:6
+msgid "About"
+msgstr "关于"
+
+#: src/font-view-app-menu.ui:10
+msgid "Quit"
+msgstr "退出"
+
+#: src/font-view.c:84
+msgid "Show the application's version"
+msgstr "显示应用版本"
+
+#: src/font-view.c:197
+msgid "Name"
+msgstr "名称"
+
+#: src/font-view.c:200
+msgid "Style"
+msgstr "样式"
+
+#: src/font-view.c:210
+msgid "Type"
+msgstr "类型"
+
+#: src/font-view.c:255 src/font-view.c:274
+msgid "Version"
+msgstr "版本"
+
+#: src/font-view.c:260 src/font-view.c:280
+msgid "Copyright"
+msgstr "版权"
+
+#: src/font-view.c:265
+msgid "Description"
+msgstr "描述"
+
+#: src/font-view.c:296
+msgid "Install Failed"
+msgstr "安装失败"
+
+#: src/font-view.c:303
+msgid "Installed"
+msgstr "已安装"
+
+#: src/font-view.c:307 src/font-view.c:552
+msgid "Install"
+msgstr "安装"
+
+#: src/font-view.c:441
+msgid "This font could not be displayed."
+msgstr "该字体无法显示。"
+
+#: src/font-view.c:505 src/font-view.c:563
+msgid "Info"
+msgstr "信息"
+
+#: src/font-view.c:578
+msgid "Back"
+msgstr "返回"
+
+#: src/font-view.c:669
+msgid "All Fonts"
+msgstr "全部字体"
+
+#: src/font-view.c:795 src/org.gnome.font-viewer.desktop.in:3
+msgid "Fonts"
+msgstr "字体"
+
+#: src/font-view.c:798
 msgid "translator-credits"
 msgstr ""
 "Cheng Lu <chenglu1990@gmail.com>, 2012, 2014\n"
 "tuhaihe <1132321739qq@gmail.com>, 2013\n"
-"Tong Hui <tonghuix@gmail.com>, 2013, 2014"
+"Tong Hui <tonghuix@gmail.com>, 2013, 2014\n"
+"Dingzhong Chen <wsxy162@gmail.com>, 2017"
 
-#: ../src/font-view.c:929
-msgid "[FILE...]"
-msgstr "[FILE...]"
-
-#. I18N: The '%s' is replaced with the command name.
-#: ../src/font-view.c:937
-#, c-format
-msgid "Run '%s --help' to see a full list of available command line options."
-msgstr "运行“%s --help”来查看可用命令行选项的完整列表。"
-
-#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
-msgstr "fonts;fontface;字体;"
+msgstr "fonts;fontface;字体;字体样式;"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: src/org.gnome.font-viewer.desktop.in:8
+msgid "preferences-desktop-font"
+msgstr "preferences-desktop-font"
+
+#~ msgid "Font Viewer"
+#~ msgstr "字体查看器"
+
+#~ msgid "[FILE...]"
+#~ msgstr "[FILE...]"
+
+#~ msgid ""
+#~ "Run '%s --help' to see a full list of available command line options."
+#~ msgstr "运行“%s --help”来查看可用命令行选项的完整列表。"
 
 #~ msgid "_Close"
 #~ msgstr "关闭(_C)"
