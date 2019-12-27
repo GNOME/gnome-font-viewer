@@ -21,23 +21,23 @@ msgstr ""
 "Project-Id-Version: gnome-utils-master-po-gl-14799\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2019-07-06 17:09+0000\n"
-"PO-Revision-Date: 2019-08-26 00:56+0200\n"
-"Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
+"POT-Creation-Date: 2019-09-29 00:41+0000\n"
+"PO-Revision-Date: 2019-12-27 13:52+0100\n"
+"Last-Translator: Fran Diéguez <frandieguez@gnome.org>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.2.4\n"
 "X-Project-Style: gnome\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:377
 msgid "GNOME Fonts"
 msgstr "Tipos de letra de GNOME"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1098
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1368
 #: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Ver os tipos de letra do seu sistema"
@@ -91,142 +91,142 @@ msgstr "FICHEIRO-DE-TIPOGRAFIA FICHEIRO-DE-SAÍDA"
 msgid "About Fonts"
 msgstr "Sobre Tipos de letra"
 
-#: src/font-view.c:99
+#: src/font-view.c:385
 msgid "Show the application's version"
-msgstr "Mostrar a versión do aplicativo"
+msgstr "Mostrar a versión da aplicación"
 
 #. Translators, this string is used to display information about
 #. * a 'font variation axis'. The %s gets replaced with the name
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:228
+#: src/font-view.c:503
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, por omisión %g"
 
-#: src/font-view.c:284
+#: src/font-view.c:559
 #, c-format
 msgid "Instance %d"
 msgstr "Instancia %d"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:327
+#: src/font-view.c:602
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:351
+#: src/font-view.c:626
 msgid "Name"
 msgstr "Nome"
 
-#: src/font-view.c:354
+#: src/font-view.c:629
 msgid "Location"
 msgstr "Localización"
 
-#: src/font-view.c:357
+#: src/font-view.c:632
 msgid "Style"
 msgstr "Estilo"
 
-#: src/font-view.c:367
+#: src/font-view.c:642
 msgid "Type"
 msgstr "Tipo"
 
-#: src/font-view.c:425 src/font-view.c:451
+#: src/font-view.c:700 src/font-view.c:726
 msgid "Version"
 msgstr "Versión"
 
-#: src/font-view.c:429 src/font-view.c:456
+#: src/font-view.c:704 src/font-view.c:731
 msgid "Copyright"
 msgstr "Copyright"
 
-#: src/font-view.c:433
+#: src/font-view.c:708
 msgid "Description"
 msgstr "Descrición"
 
-#: src/font-view.c:437
+#: src/font-view.c:712
 msgid "Manufacturer"
 msgstr "Fabricante"
 
-#: src/font-view.c:441
+#: src/font-view.c:716
 msgid "Designer"
 msgstr "Deseñador"
 
-#: src/font-view.c:445
+#: src/font-view.c:720
 msgid "License"
 msgstr "Licenza"
 
-#: src/font-view.c:470
+#: src/font-view.c:745
 msgid "Glyph Count"
 msgstr "Contía de glifos"
 
-#: src/font-view.c:472
+#: src/font-view.c:747
 msgid "Color Glyphs"
 msgstr "Cor dos glifos"
 
-#: src/font-view.c:472
+#: src/font-view.c:747
 msgid "yes"
 msgstr "sí"
 
-#: src/font-view.c:472
+#: src/font-view.c:747
 msgid "no"
 msgstr "non"
 
-#: src/font-view.c:476
+#: src/font-view.c:751
 msgid "Layout Features"
 msgstr "Características de disposición"
 
-#: src/font-view.c:482
+#: src/font-view.c:757
 msgid "Variation Axes"
 msgstr "Eixos de variación"
 
-#: src/font-view.c:489
+#: src/font-view.c:764
 msgid "Named Styles"
 msgstr "Estilos nomeados"
 
-#: src/font-view.c:563
+#: src/font-view.c:870
 msgid "This font could not be installed."
 msgstr "Este tipo de letra non se pode instalar."
 
-#: src/font-view.c:701
+#: src/font-view.c:1008
 msgid "This font could not be displayed."
 msgstr "Non é posíbel mostrar este tipo de letra."
 
-#: src/font-view.c:833
+#: src/font-view.c:1135
 msgid "Install"
 msgstr "Instalar"
 
-#: src/font-view.c:836
+#: src/font-view.c:1138
 msgid "Installing…"
 msgstr "Instalando…"
 
-#: src/font-view.c:839
+#: src/font-view.c:1141
 msgid "Installed"
 msgstr "Instalado"
 
-#: src/font-view.c:842
+#: src/font-view.c:1144
 msgid "Failed"
 msgstr "Fallado"
 
-#: src/font-view.c:858
+#: src/font-view.c:1160
 msgid "Info"
 msgstr "Información"
 
-#: src/font-view.c:875
+#: src/font-view.c:1177
 msgid "Back"
 msgstr "Atrás"
 
-#: src/font-view.c:974
+#: src/font-view.c:1255
 msgid "All Fonts"
 msgstr "Todos os tipos de letra"
 
-#: src/font-view.c:1097 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1367 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
 msgstr "Tipos de letra"
 
-#: src/font-view.c:1100
+#: src/font-view.c:1370
 msgid "translator-credits"
-msgstr "Fran Dieguez <frandieguez@gnome.org>, 2012-2019"
+msgstr "Fran Diéguez <frandieguez@gnome.org>, 2012-2020"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in:6
@@ -1027,51 +1027,3 @@ msgstr "Alternativas verticais para a rotación"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Cero con barra"
-
-#~ msgid "org.gnome.font-viewer"
-#~ msgstr "org.gnome.font-viewer"
-
-#~ msgid "About"
-#~ msgstr "Sobre"
-
-#~ msgid "Quit"
-#~ msgstr "_Saír"
-
-#~ msgid "preferences-desktop-font"
-#~ msgstr "preferences-desktop-font"
-
-#~ msgid "General"
-#~ msgstr "Xeral"
-
-#~ msgid "Details"
-#~ msgstr "Detalles"
-
-#~ msgid "Font Viewer"
-#~ msgstr "Visor de tipos de letra"
-
-#~ msgid "[FILE...]"
-#~ msgstr "[FICHEIRO...]"
-
-#~ msgid ""
-#~ "Run '%s --help' to see a full list of available command line options."
-#~ msgstr ""
-#~ "Execute «%s --help» para ver unha lista completa de opcións de liña de "
-#~ "ordes dispoñíbeis."
-
-#~ msgid "_Close"
-#~ msgstr "_Pechar"
-
-#~ msgid "Done"
-#~ msgstr "Feito"
-
-#~ msgid "Font size (default: 64)"
-#~ msgstr "Tamaño do tipo de letra (predeterminado: 64)"
-
-#~ msgid "Size:"
-#~ msgstr "Tamaño:"
-
-#~ msgid "Usage: %s fontfile\n"
-#~ msgstr "Uso: %s ficheiro de tipo de letra\n"
-
-#~ msgid "Preview fonts"
-#~ msgstr "Vista previa de tipos de letra"
