@@ -14,23 +14,23 @@ msgstr ""
 "Project-Id-Version: gnome-utils 3.1.90\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2018-06-10 16:54+0000\n"
-"PO-Revision-Date: 2018-06-13 22:37+0800\n"
-"Last-Translator: pan93412 <pan93412@gmail.com>\n"
+"POT-Creation-Date: 2019-12-27 12:57+0000\n"
+"PO-Revision-Date: 2020-01-22 01:26+0800\n"
+"Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
 "Language-Team: Chinese (traditional)\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Poedit 2.2.4\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:85
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:377
 msgid "GNOME Fonts"
 msgstr "GNOME 字型"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1066
-#: src/org.gnome.font-viewer.desktop.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1374
+#: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "檢視您系統上的字型"
 
@@ -52,35 +52,35 @@ msgstr ""
 "GNOME 字型也支援從下載的 .ttf 與其他格式安裝新字型。可以僅安裝字型供您個人"
 "使用，或是給電腦上所有的使用者使用。"
 
-#: src/font-thumbnailer.c:189
+#: data/org.gnome.font-viewer.appdata.xml.in:21
+msgid "The GNOME Project"
+msgstr "GNOME 專案"
+
+#: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
 msgstr "文字轉為縮圖（預設：Aa）"
 
-#: src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:181
 msgid "TEXT"
 msgstr "文字"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "Thumbnail size (default: 128)"
 msgstr "縮圖大小 (預設：128)"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "SIZE"
 msgstr "大小"
 
-#: src/font-thumbnailer.c:193
+#: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "字型檔 輸出檔"
 
 #: src/font-view-app-menu.ui:6
-msgid "About"
-msgstr "關於"
+msgid "About Fonts"
+msgstr "關於字型"
 
-#: src/font-view-app-menu.ui:10
-msgid "Quit"
-msgstr "退出"
-
-#: src/font-view.c:93
+#: src/font-view.c:385
 msgid "Show the application's version"
 msgstr "顯示應用程式的版本"
 
@@ -89,119 +89,131 @@ msgstr "顯示應用程式的版本"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:223
+#: src/font-view.c:503
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g，預設值 %g"
 
-#: src/font-view.c:279
+#: src/font-view.c:559
 #, c-format
 msgid "Instance %d"
 msgstr "實例 %d"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:324
+#: src/font-view.c:602
 msgctxt "OpenType layout"
 msgid ", "
 msgstr "、"
 
-#: src/font-view.c:350
+#: src/font-view.c:626
 msgid "Name"
 msgstr "名稱"
 
-#: src/font-view.c:353
+#: src/font-view.c:629
+msgid "Location"
+msgstr "位置"
+
+#: src/font-view.c:632
 msgid "Style"
 msgstr "字樣"
 
-#: src/font-view.c:363
+#: src/font-view.c:642
 msgid "Type"
 msgstr "類型"
 
-#: src/font-view.c:424 src/font-view.c:458
+#: src/font-view.c:700 src/font-view.c:726
 msgid "Version"
 msgstr "版本"
 
-#: src/font-view.c:429 src/font-view.c:464
+#: src/font-view.c:704 src/font-view.c:731
 msgid "Copyright"
 msgstr "著作權"
 
-#: src/font-view.c:434
+#: src/font-view.c:708
 msgid "Description"
 msgstr "描述"
 
-#: src/font-view.c:439
+#: src/font-view.c:712
 msgid "Manufacturer"
 msgstr "生產商"
 
-#: src/font-view.c:444
+#: src/font-view.c:716
 msgid "Designer"
 msgstr "設計師"
 
-#: src/font-view.c:449
+#: src/font-view.c:720
 msgid "License"
 msgstr "授權"
 
-#: src/font-view.c:479
+#: src/font-view.c:745
 msgid "Glyph Count"
 msgstr "字形計數"
 
-#: src/font-view.c:482
+#: src/font-view.c:747
 msgid "Color Glyphs"
 msgstr "彩色字形"
 
-#: src/font-view.c:482
+#: src/font-view.c:747
 msgid "yes"
 msgstr "有"
 
-#: src/font-view.c:482
+#: src/font-view.c:747
 msgid "no"
 msgstr "沒有"
 
-#: src/font-view.c:486
+#: src/font-view.c:751
 msgid "Layout Features"
 msgstr "佈局功能"
 
-#: src/font-view.c:493
+#: src/font-view.c:757
 msgid "Variation Axes"
 msgstr "變化軸"
 
-#: src/font-view.c:501
+#: src/font-view.c:764
 msgid "Named Styles"
 msgstr "命名風格"
 
-#: src/font-view.c:518
-msgid "Install Failed"
-msgstr "安裝失敗"
+#: src/font-view.c:870
+msgid "This font could not be installed."
+msgstr "此字型無法安裝。"
 
-#: src/font-view.c:525
-msgid "Installed"
-msgstr "已安裝"
-
-#: src/font-view.c:529 src/font-view.c:808
-msgid "Install"
-msgstr "安裝"
-
-#: src/font-view.c:663
+#: src/font-view.c:1008
 msgid "This font could not be displayed."
 msgstr "無法顯示此字型。"
 
-#: src/font-view.c:819
+#: src/font-view.c:1141
+msgid "Install"
+msgstr "安裝"
+
+#: src/font-view.c:1144
+msgid "Installing…"
+msgstr "正在安裝…"
+
+#: src/font-view.c:1147
+msgid "Installed"
+msgstr "已安裝"
+
+#: src/font-view.c:1150
+msgid "Failed"
+msgstr "失敗"
+
+#: src/font-view.c:1166
 msgid "Info"
 msgstr "資訊"
 
-#: src/font-view.c:834
+#: src/font-view.c:1183
 msgid "Back"
 msgstr "返回"
 
-#: src/font-view.c:939
+#: src/font-view.c:1261
 msgid "All Fonts"
 msgstr "所有字型"
 
-#: src/font-view.c:1065 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1373 src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr "字型"
 
-#: src/font-view.c:1068
+#: src/font-view.c:1376
 msgid "translator-credits"
 msgstr ""
 "Ming-Yen Hsu <myhsu@cyberdude.com>, 1999.\n"
@@ -212,17 +224,13 @@ msgstr ""
 "Woodman Tuen <wmtuen@gmail.com>, 2007.\n"
 "Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>,2008, 2009, 2010.\n"
 "Wei-Lun Chao <chaoweilun@gmail.com>, 2010.\n"
-"Cheng-Chia Tseng <pswo10680@gmail.com>, 2012, 2017."
+"Cheng-Chia Tseng <pswo10680@gmail.com>, 2012, 2017.\n"
+"Yi-Jyun Pan <pan93412@gmail.com>, 2020."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in:6
+#: src/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
 msgstr "fonts;fontface;字型;字樣;字體;"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: src/org.gnome.font-viewer.desktop.in:8
-msgid "preferences-desktop-font"
-msgstr "preferences-desktop-font"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -1019,6 +1027,15 @@ msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr ""
 
+#~ msgid "About"
+#~ msgstr "關於"
+
+#~ msgid "Quit"
+#~ msgstr "退出"
+
+#~ msgid "preferences-desktop-font"
+#~ msgstr "preferences-desktop-font"
+
 #~ msgid "Font Viewer"
 #~ msgstr "字型檢視程式"
 
@@ -1031,9 +1048,6 @@ msgstr ""
 
 #~ msgid "_Close"
 #~ msgstr "關閉(_C)"
-
-#~ msgid "About Font Viewer"
-#~ msgstr "關於字型檢視器"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "字型大小（預設：64）"
