@@ -13,7 +13,8 @@
 # OKANO Takayoshi <kano@na.rim.or.jp>, 2011, 2012.
 # Jiro Matsuzawa <jmatsuzawa@gnome.org>, 2012, 2013, 2014, 2015.
 # Hajime Taira <htaira@redhat.com>, 2015.
-# sicklylife <translation@sicklylife.jp>, 2019.
+# Manato Neon <neonmanato@outlook.jp>, 2019.
+# sicklylife <translation@sicklylife.jp>, 2019-2020.
 #
 msgid ""
 msgstr ""
@@ -21,7 +22,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
 "POT-Creation-Date: 2020-02-27 16:23+0000\n"
-"PO-Revision-Date: 2019-09-24 20:00+0900\n"
+"PO-Revision-Date: 2020-02-29 23:00+0900\n"
 "Last-Translator: sicklylife <translation@sicklylife.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
@@ -118,7 +119,7 @@ msgstr "名前"
 
 #: src/font-view.c:629
 msgid "Location"
-msgstr ""
+msgstr "場所"
 
 #: src/font-view.c:632
 msgid "Style"
@@ -142,11 +143,11 @@ msgstr "説明"
 
 #: src/font-view.c:712
 msgid "Manufacturer"
-msgstr ""
+msgstr "メーカー"
 
 #: src/font-view.c:716
 msgid "Designer"
-msgstr ""
+msgstr "デザイナー"
 
 #: src/font-view.c:720
 msgid "License"
@@ -170,7 +171,7 @@ msgstr ""
 
 #: src/font-view.c:751
 msgid "Layout Features"
-msgstr ""
+msgstr "レイアウト機能"
 
 #: src/font-view.c:757
 msgid "Variation Axes"
@@ -236,7 +237,8 @@ msgstr ""
 "OKANO Takayoshi <kano@na.rim.or.jp>, 2011, 2012.\n"
 "松澤 二郎 <jmatsuzawa@gnome.org>, 2012, 2013, 2014, 2015.\n"
 "Hajime Taira <htaira@redhat.com>, 2015.\n"
-"sicklylife <translation@sicklylife.jp>, 2019."
+"Manato Neon <neonmanato@outlook.jp>, 2019.\n"
+"sicklylife <translation@sicklylife.jp>, 2019-2020."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in:6
