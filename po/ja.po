@@ -13,15 +13,16 @@
 # OKANO Takayoshi <kano@na.rim.or.jp>, 2011, 2012.
 # Jiro Matsuzawa <jmatsuzawa@gnome.org>, 2012, 2013, 2014, 2015.
 # Hajime Taira <htaira@redhat.com>, 2015.
-# sicklylife <translation@sicklylife.jp>, 2019.
+# Manato Neon <neonmanato@outlook.jp>, 2019.
+# sicklylife <translation@sicklylife.jp>, 2019-2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2019-12-27 12:57+0000\n"
-"PO-Revision-Date: 2019-09-24 20:00+0900\n"
+"POT-Creation-Date: 2020-02-27 16:23+0000\n"
+"PO-Revision-Date: 2020-02-29 23:00+0900\n"
 "Last-Translator: sicklylife <translation@sicklylife.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
@@ -34,8 +35,8 @@ msgstr ""
 msgid "GNOME Fonts"
 msgstr ""
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1374
-#: src/org.gnome.font-viewer.desktop.in.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1368
+#: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "システム上のフォントを閲覧します"
 
@@ -118,7 +119,7 @@ msgstr "名前"
 
 #: src/font-view.c:629
 msgid "Location"
-msgstr ""
+msgstr "場所"
 
 #: src/font-view.c:632
 msgid "Style"
@@ -142,11 +143,11 @@ msgstr "説明"
 
 #: src/font-view.c:712
 msgid "Manufacturer"
-msgstr ""
+msgstr "メーカー"
 
 #: src/font-view.c:716
 msgid "Designer"
-msgstr ""
+msgstr "デザイナー"
 
 #: src/font-view.c:720
 msgid "License"
@@ -170,7 +171,7 @@ msgstr ""
 
 #: src/font-view.c:751
 msgid "Layout Features"
-msgstr ""
+msgstr "レイアウト機能"
 
 #: src/font-view.c:757
 msgid "Variation Axes"
@@ -188,39 +189,39 @@ msgstr "フォントをインストールできませんでした。"
 msgid "This font could not be displayed."
 msgstr "フォントを表示できませんでした。"
 
-#: src/font-view.c:1141
+#: src/font-view.c:1135
 msgid "Install"
 msgstr "インストール"
 
-#: src/font-view.c:1144
+#: src/font-view.c:1138
 msgid "Installing…"
 msgstr "インストール中…"
 
-#: src/font-view.c:1147
+#: src/font-view.c:1141
 msgid "Installed"
 msgstr "インストール済み"
 
-#: src/font-view.c:1150
+#: src/font-view.c:1144
 msgid "Failed"
 msgstr "失敗"
 
-#: src/font-view.c:1166
+#: src/font-view.c:1160
 msgid "Info"
 msgstr "情報"
 
-#: src/font-view.c:1183
+#: src/font-view.c:1177
 msgid "Back"
 msgstr "戻る"
 
-#: src/font-view.c:1261
+#: src/font-view.c:1255
 msgid "All Fonts"
 msgstr "すべてのフォント"
 
-#: src/font-view.c:1373 src/org.gnome.font-viewer.desktop.in.in:3
+#: src/font-view.c:1367 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
 msgstr "フォント"
 
-#: src/font-view.c:1376
+#: src/font-view.c:1370
 msgid "translator-credits"
 msgstr ""
 "Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1998.\n"
@@ -236,10 +237,11 @@ msgstr ""
 "OKANO Takayoshi <kano@na.rim.or.jp>, 2011, 2012.\n"
 "松澤 二郎 <jmatsuzawa@gnome.org>, 2012, 2013, 2014, 2015.\n"
 "Hajime Taira <htaira@redhat.com>, 2015.\n"
-"sicklylife <translation@sicklylife.jp>, 2019."
+"Manato Neon <neonmanato@outlook.jp>, 2019.\n"
+"sicklylife <translation@sicklylife.jp>, 2019-2020."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in.in:6
+#: src/org.gnome.font-viewer.desktop.in:6
 msgid "fonts;fontface;"
 msgstr "fonts;fontface;フォント書体;"
 
