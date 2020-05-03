@@ -261,12 +261,15 @@ font_view_item_load_thumbnail_job (GTask *task,
 
         if (error != NULL) {
             g_debug ("Can't query info for file %s: %s", file_uri, error->message);
+            g_task_return_error (task, g_steal_pointer(&error));
             return;
         }
 
         thumb_failed = g_file_info_get_attribute_boolean (info, G_FILE_ATTRIBUTE_THUMBNAILING_FAILED);
-        if (thumb_failed)
+        if (thumb_failed) {
+            g_task_return_pointer (task, NULL, NULL);
             return;
+        }
 
         thumb_path = g_strdup (g_file_info_get_attribute_byte_string (info, G_FILE_ATTRIBUTE_THUMBNAIL_PATH));
     } else {
@@ -297,6 +300,7 @@ font_view_item_load_thumbnail_job (GTask *task,
 
         if (error != NULL) {
             g_debug ("Can't read file %s: %s", thumb_path, error->message);
+            g_task_return_error (task, g_steal_pointer(&error));
             return;
         }
 
@@ -307,6 +311,7 @@ font_view_item_load_thumbnail_job (GTask *task,
 
         if (error != NULL) {
             g_debug ("Can't read thumbnail pixbuf %s: %s", thumb_path, error->message);
+            g_task_return_error (task, g_steal_pointer(&error));
             return;
         }
     } else {
