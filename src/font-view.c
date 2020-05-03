@@ -1385,7 +1385,7 @@ action_about (GSimpleAction *action,
                            "license-type", GTK_LICENSE_GPL_2_0,
                            "wrap-license", TRUE,
                            NULL);
-                           
+
 }
 
 static void
