@@ -1308,6 +1308,12 @@ font_view_window_key_press_event_cb (GtkWidget *widget,
         return TRUE;
     }
 
+    if (event->keyval == GDK_KEY_f &&
+        (event->state & GDK_CONTROL_MASK) != 0) {
+        gtk_search_bar_set_search_mode (GTK_SEARCH_BAR (self->search_bar), TRUE);
+        return TRUE;
+    }
+
     return gtk_search_bar_handle_event (GTK_SEARCH_BAR (self->search_bar), (GdkEvent *)event);
 }
 
