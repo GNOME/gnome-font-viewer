@@ -1,29 +1,29 @@
 # Kazakh translation for gnome-font-viewer.
 # Copyright (C) 2013 gnome-font-viewer's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-font-viewer package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2013-2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2018-11-01 21:11+0000\n"
-"PO-Revision-Date: 2019-02-16 19:21+0500\n"
+"POT-Creation-Date: 2020-03-26 15:13+0000\n"
+"PO-Revision-Date: 2020-06-25 12:08+0500\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk@li.org>\n"
 "Language: kk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.3.1\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:377
 msgid "GNOME Fonts"
 msgstr "GNOME қаріптер"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1119
-#: src/org.gnome.font-viewer.desktop.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1374
+#: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Жүйеңіздегі қаріптерді қарау"
 
@@ -47,23 +47,27 @@ msgstr ""
 "орнатуды қолдайды. Қаріптерді тек өзіңіз немесе компьютердің барлық "
 "пайдаланушылары үшін орнатуға болады."
 
-#: src/font-thumbnailer.c:189
+#: data/org.gnome.font-viewer.appdata.xml.in:21
+msgid "The GNOME Project"
+msgstr "GNOME жобасы"
+
+#: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Үлгі үшін мәтін (бастапқысы: Aa)"
 
-#: src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:181
 msgid "TEXT"
 msgstr "МӘТІН"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "Thumbnail size (default: 128)"
 msgstr "Үлгі өлшемі (бастапқысы: 128)"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "SIZE"
 msgstr "ӨЛШЕМІ"
 
-#: src/font-thumbnailer.c:193
+#: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ҚАРІП-ФАЙЛ ШЫҒЫС-ФАЙЛЫ"
 
@@ -71,7 +75,7 @@ msgstr "ҚАРІП-ФАЙЛ ШЫҒЫС-ФАЙЛЫ"
 msgid "About Fonts"
 msgstr "Қаріптер көрсетушісі жөнінде"
 
-#: src/font-view.c:99
+#: src/font-view.c:385
 msgid "Show the application's version"
 msgstr "Қолданба нұсқасын көрсету"
 
@@ -80,135 +84,138 @@ msgstr "Қолданба нұсқасын көрсету"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:230
+#: src/font-view.c:503
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, бастапқысы %g"
 
-#: src/font-view.c:286
+#: src/font-view.c:559
 #, c-format
 msgid "Instance %d"
-msgstr ""
+msgstr "Данасы %d"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:331
+#: src/font-view.c:602
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:357
+#: src/font-view.c:626
 msgid "Name"
 msgstr "Аты"
 
-#: src/font-view.c:360
+#: src/font-view.c:629
+msgid "Location"
+msgstr "Орналасуы"
+
+#: src/font-view.c:632
 msgid "Style"
 msgstr "Стилі"
 
-#: src/font-view.c:370
+#: src/font-view.c:642
 msgid "Type"
 msgstr "Түрі"
 
-#: src/font-view.c:431 src/font-view.c:465
+#: src/font-view.c:700 src/font-view.c:726
 msgid "Version"
 msgstr "Нұсқасы"
 
-#: src/font-view.c:436 src/font-view.c:471
+#: src/font-view.c:704 src/font-view.c:731
 msgid "Copyright"
 msgstr "Copyright"
 
-#: src/font-view.c:441
+#: src/font-view.c:708
 msgid "Description"
 msgstr "Анықтамасы"
 
-#: src/font-view.c:446
+#: src/font-view.c:712
 msgid "Manufacturer"
 msgstr "Шығарушы"
 
-#: src/font-view.c:451
+#: src/font-view.c:716
 msgid "Designer"
 msgstr "Дизайнер"
 
-#: src/font-view.c:456
+#: src/font-view.c:720
 msgid "License"
 msgstr "Лицензиясы"
 
-#: src/font-view.c:486
+#: src/font-view.c:745
 msgid "Glyph Count"
-msgstr ""
+msgstr "Глиф саны"
 
-#: src/font-view.c:489
+#: src/font-view.c:747
 msgid "Color Glyphs"
-msgstr ""
+msgstr "Түсті глифтер"
 
-#: src/font-view.c:489
+#: src/font-view.c:747
 msgid "yes"
 msgstr "иә"
 
-#: src/font-view.c:489
+#: src/font-view.c:747
 msgid "no"
 msgstr "жоқ"
 
-#: src/font-view.c:493
+#: src/font-view.c:751
 msgid "Layout Features"
-msgstr ""
+msgstr "Жайма мүмкіндіктері"
 
-#: src/font-view.c:500
+#: src/font-view.c:757
 msgid "Variation Axes"
-msgstr ""
+msgstr "Нұсқа осьтері"
 
-#: src/font-view.c:508
+#: src/font-view.c:764
 msgid "Named Styles"
-msgstr ""
+msgstr "Аталған стильдер"
 
-#: src/font-view.c:690
+#: src/font-view.c:870
+msgid "This font could not be installed."
+msgstr "Бұл қаріпті орнату мүмкін емес."
+
+#: src/font-view.c:1008
 msgid "This font could not be displayed."
 msgstr "Бұл қаріпті көрсету мүмкін емес."
 
-#: src/font-view.c:838
+#: src/font-view.c:1141
 msgid "Install"
 msgstr "Орнату"
 
-#: src/font-view.c:841
+#: src/font-view.c:1144
 msgid "Installing…"
 msgstr "Орнату…"
 
-#: src/font-view.c:844
+#: src/font-view.c:1147
 msgid "Installed"
 msgstr "Орнатылған"
 
-#: src/font-view.c:847
+#: src/font-view.c:1150
 msgid "Failed"
 msgstr "Сәтсіз аяқталды"
 
-#: src/font-view.c:865
+#: src/font-view.c:1166
 msgid "Info"
 msgstr "Ақпараты"
 
-#: src/font-view.c:880
+#: src/font-view.c:1183
 msgid "Back"
 msgstr "Кері"
 
-#: src/font-view.c:992
+#: src/font-view.c:1261
 msgid "All Fonts"
 msgstr "Барлық қаріптер"
 
-#: src/font-view.c:1118 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1373 src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr "Қаріптер"
 
-#: src/font-view.c:1121
+#: src/font-view.c:1376
 msgid "translator-credits"
 msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in:6
+#: src/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
 msgstr "қаріп;"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: src/org.gnome.font-viewer.desktop.in:8
-msgid "org.gnome.font-viewer"
-msgstr ""
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -238,12 +245,12 @@ msgstr "Баламалы бөлшектер"
 #: src/open-type-layout.h:18
 msgctxt "OpenType layout"
 msgid "Akhands"
-msgstr ""
+msgstr "Акхандс"
 
 #: src/open-type-layout.h:19
 msgctxt "OpenType layout"
 msgid "Below-base Forms"
-msgstr ""
+msgstr "Төмендегі негізгі пішіндер"
 
 #: src/open-type-layout.h:20
 msgctxt "OpenType layout"
@@ -298,122 +305,122 @@ msgstr "Бас әріптер аралығы"
 #: src/open-type-layout.h:30
 msgctxt "OpenType layout"
 msgid "Contextual Swash"
-msgstr ""
+msgstr "Контекстті жарқылдар"
 
 #: src/open-type-layout.h:31
 msgctxt "OpenType layout"
 msgid "Cursive Positioning"
-msgstr ""
+msgstr "Курсивті позициялау"
 
 #: src/open-type-layout.h:32
 msgctxt "OpenType layout"
 msgid "Petite Capitals From Capitals"
-msgstr ""
+msgstr "Бас әріптерді кіші капительге"
 
 #: src/open-type-layout.h:33
 msgctxt "OpenType layout"
 msgid "Small Capitals From Capitals"
-msgstr ""
+msgstr "Бас әріптерді кіші бас әріптерге"
 
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
 msgid "Character Variation 1"
-msgstr ""
+msgstr "Таңба нұсқасы 1"
 
 #: src/open-type-layout.h:35
 msgctxt "OpenType layout"
 msgid "Character Variation 2"
-msgstr ""
+msgstr "Таңба нұсқасы 2"
 
 #: src/open-type-layout.h:36
 msgctxt "OpenType layout"
 msgid "Character Variation 3"
-msgstr ""
+msgstr "Таңба нұсқасы 3"
 
 #: src/open-type-layout.h:37
 msgctxt "OpenType layout"
 msgid "Character Variation 4"
-msgstr ""
+msgstr "Таңба нұсқасы 4"
 
 #: src/open-type-layout.h:38
 msgctxt "OpenType layout"
 msgid "Character Variation 5"
-msgstr ""
+msgstr "Таңба нұсқасы 5"
 
 #: src/open-type-layout.h:39
 msgctxt "OpenType layout"
 msgid "Character Variation 6"
-msgstr ""
+msgstr "Таңба нұсқасы 6"
 
 #: src/open-type-layout.h:40
 msgctxt "OpenType layout"
 msgid "Character Variation 7"
-msgstr ""
+msgstr "Таңба нұсқасы 7"
 
 #: src/open-type-layout.h:41
 msgctxt "OpenType layout"
 msgid "Character Variation 8"
-msgstr ""
+msgstr "Таңба нұсқасы 8"
 
 #: src/open-type-layout.h:42
 msgctxt "OpenType layout"
 msgid "Character Variation 9"
-msgstr ""
+msgstr "Таңба нұсқасы 9"
 
 #: src/open-type-layout.h:43
 msgctxt "OpenType layout"
 msgid "Character Variation 10"
-msgstr ""
+msgstr "Таңба нұсқасы 10"
 
 #: src/open-type-layout.h:44
 msgctxt "OpenType layout"
 msgid "Character Variation 11"
-msgstr ""
+msgstr "Таңба нұсқасы 11"
 
 #: src/open-type-layout.h:45
 msgctxt "OpenType layout"
 msgid "Character Variation 12"
-msgstr ""
+msgstr "Таңба нұсқасы 12"
 
 #: src/open-type-layout.h:46
 msgctxt "OpenType layout"
 msgid "Character Variation 13"
-msgstr ""
+msgstr "Таңба нұсқасы 13"
 
 #: src/open-type-layout.h:47
 msgctxt "OpenType layout"
 msgid "Character Variation 14"
-msgstr ""
+msgstr "Таңба нұсқасы 14"
 
 #: src/open-type-layout.h:48
 msgctxt "OpenType layout"
 msgid "Character Variation 15"
-msgstr ""
+msgstr "Таңба нұсқасы 15"
 
 #: src/open-type-layout.h:49
 msgctxt "OpenType layout"
 msgid "Character Variation 16"
-msgstr ""
+msgstr "Таңба нұсқасы 16"
 
 #: src/open-type-layout.h:50
 msgctxt "OpenType layout"
 msgid "Character Variation 17"
-msgstr ""
+msgstr "Таңба нұсқасы 17"
 
 #: src/open-type-layout.h:51
 msgctxt "OpenType layout"
 msgid "Character Variation 18"
-msgstr ""
+msgstr "Таңба нұсқасы 18"
 
 #: src/open-type-layout.h:52
 msgctxt "OpenType layout"
 msgid "Character Variation 19"
-msgstr ""
+msgstr "Таңба нұсқасы 19"
 
 #: src/open-type-layout.h:53
 msgctxt "OpenType layout"
 msgid "Distances"
-msgstr ""
+msgstr "Арақашықтықтар"
 
 #: src/open-type-layout.h:54
 msgctxt "OpenType layout"
@@ -428,7 +435,7 @@ msgstr "Бөлгiштер"
 #: src/open-type-layout.h:56
 msgctxt "OpenType layout"
 msgid "Dotless Forms"
-msgstr ""
+msgstr "Нүктесіз пішіндер"
 
 #: src/open-type-layout.h:57
 msgctxt "OpenType layout"
@@ -458,7 +465,7 @@ msgstr "Терминал пішіндері"
 #: src/open-type-layout.h:62
 msgctxt "OpenType layout"
 msgid "Flattened accent forms"
-msgstr ""
+msgstr "Жалпақ екпінді пішіндер"
 
 #: src/open-type-layout.h:63
 msgctxt "OpenType layout"
@@ -473,12 +480,12 @@ msgstr "Толық ені"
 #: src/open-type-layout.h:65
 msgctxt "OpenType layout"
 msgid "Half Forms"
-msgstr ""
+msgstr "Жарты пішіндер"
 
 #: src/open-type-layout.h:66
 msgctxt "OpenType layout"
 msgid "Halant Forms"
-msgstr ""
+msgstr "Халант пішіндері"
 
 #: src/open-type-layout.h:67
 msgctxt "OpenType layout"
@@ -508,7 +515,7 @@ msgstr "Хангыл"
 #: src/open-type-layout.h:72
 msgctxt "OpenType layout"
 msgid "Hojo Kanji Forms"
-msgstr ""
+msgstr "Хохо Канджи пішіндері"
 
 #: src/open-type-layout.h:73
 msgctxt "OpenType layout"
@@ -523,7 +530,7 @@ msgstr "Бастапқы пішіндері"
 #: src/open-type-layout.h:75
 msgctxt "OpenType layout"
 msgid "Isolated Forms"
-msgstr ""
+msgstr "Оқшауланған пішіндер"
 
 #: src/open-type-layout.h:76
 msgctxt "OpenType layout"
@@ -573,7 +580,7 @@ msgstr "Стандартты лигатуралар"
 #: src/open-type-layout.h:85
 msgctxt "OpenType layout"
 msgid "Leading Jamo Forms"
-msgstr ""
+msgstr "Жетекші Jamo пішіндері"
 
 #: src/open-type-layout.h:86
 msgctxt "OpenType layout"
@@ -583,17 +590,17 @@ msgstr "Сандар жол биіктігімен"
 #: src/open-type-layout.h:87
 msgctxt "OpenType layout"
 msgid "Localized Forms"
-msgstr ""
+msgstr "Локализацияланған пішіндер"
 
 #: src/open-type-layout.h:88
 msgctxt "OpenType layout"
 msgid "Left-to-right alternates"
-msgstr ""
+msgstr "Солдан оңға қарай баламалар"
 
 #: src/open-type-layout.h:89
 msgctxt "OpenType layout"
 msgid "Left-to-right mirrored forms"
-msgstr ""
+msgstr "Солдан оңға қарай айналы пішіндер"
 
 #: src/open-type-layout.h:90
 msgctxt "OpenType layout"
@@ -613,7 +620,7 @@ msgstr ""
 #: src/open-type-layout.h:93
 msgctxt "OpenType layout"
 msgid "Mathematical Greek"
-msgstr ""
+msgstr "Математикалық грек"
 
 #: src/open-type-layout.h:94
 msgctxt "OpenType layout"
@@ -628,12 +635,12 @@ msgstr ""
 #: src/open-type-layout.h:96
 msgctxt "OpenType layout"
 msgid "Alternate Annotation Forms"
-msgstr ""
+msgstr "Аңдатпа нұсқаларының пішіндері"
 
 #: src/open-type-layout.h:97
 msgctxt "OpenType layout"
 msgid "NLC Kanji Forms"
-msgstr ""
+msgstr "NLC кандзи пішіндері"
 
 #: src/open-type-layout.h:98
 msgctxt "OpenType layout"
@@ -643,17 +650,17 @@ msgstr ""
 #: src/open-type-layout.h:99
 msgctxt "OpenType layout"
 msgid "Numerators"
-msgstr ""
+msgstr "Алымдар"
 
 #: src/open-type-layout.h:100
 msgctxt "OpenType layout"
 msgid "Oldstyle Figures"
-msgstr ""
+msgstr "Минускульды сандар"
 
 #: src/open-type-layout.h:101
 msgctxt "OpenType layout"
 msgid "Optical Bounds"
-msgstr ""
+msgstr "Оптикалық шекаралар"
 
 #: src/open-type-layout.h:102
 msgctxt "OpenType layout"
@@ -668,12 +675,12 @@ msgstr "Оюлар"
 #: src/open-type-layout.h:104
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Widths"
-msgstr ""
+msgstr "Пропорционалды балама ені"
 
 #: src/open-type-layout.h:105
 msgctxt "OpenType layout"
 msgid "Petite Capitals"
-msgstr ""
+msgstr "Кіші капитель"
 
 #: src/open-type-layout.h:106
 msgctxt "OpenType layout"
@@ -683,57 +690,57 @@ msgstr "Пропорционалды Кана"
 #: src/open-type-layout.h:107
 msgctxt "OpenType layout"
 msgid "Proportional Figures"
-msgstr ""
+msgstr "Пропорционалды пішіндер"
 
 #: src/open-type-layout.h:108
 msgctxt "OpenType layout"
 msgid "Pre-Base Forms"
-msgstr ""
+msgstr "Базиске дейінгі пішіндер"
 
 #: src/open-type-layout.h:109
 msgctxt "OpenType layout"
 msgid "Pre-base Substitutions"
-msgstr ""
+msgstr "Базиске дейінгі алмастырулар"
 
 #: src/open-type-layout.h:110
 msgctxt "OpenType layout"
 msgid "Post-base Forms"
-msgstr ""
+msgstr "Базистен кейінгі пішіндер"
 
 #: src/open-type-layout.h:111
 msgctxt "OpenType layout"
 msgid "Post-base Substitutions"
-msgstr ""
+msgstr "Базистен кейінгі алмастырулар"
 
 #: src/open-type-layout.h:112
 msgctxt "OpenType layout"
 msgid "Proportional Widths"
-msgstr ""
+msgstr "Пропорционалды ені"
 
 #: src/open-type-layout.h:113
 msgctxt "OpenType layout"
 msgid "Quarter Widths"
-msgstr ""
+msgstr "Төрттен бір ені"
 
 #: src/open-type-layout.h:114
 msgctxt "OpenType layout"
 msgid "Randomize"
-msgstr ""
+msgstr "Рандомизация"
 
 #: src/open-type-layout.h:115
 msgctxt "OpenType layout"
 msgid "Required Contextual Alternates"
-msgstr ""
+msgstr "Қажетті контекстік баламалар"
 
 #: src/open-type-layout.h:116
 msgctxt "OpenType layout"
 msgid "Rakar Forms"
-msgstr ""
+msgstr "Ракар пішіндері"
 
 #: src/open-type-layout.h:117
 msgctxt "OpenType layout"
 msgid "Required Ligatures"
-msgstr ""
+msgstr "Міндетті лигатуралар"
 
 #: src/open-type-layout.h:118
 msgctxt "OpenType layout"
@@ -743,42 +750,42 @@ msgstr ""
 #: src/open-type-layout.h:119
 msgctxt "OpenType layout"
 msgid "Right Bounds"
-msgstr ""
+msgstr "Оң жақ шекаралар"
 
 #: src/open-type-layout.h:120
 msgctxt "OpenType layout"
 msgid "Right-to-left alternates"
-msgstr ""
+msgstr "Оңнан солға қарай баламалар"
 
 #: src/open-type-layout.h:121
 msgctxt "OpenType layout"
 msgid "Right-to-left mirrored forms"
-msgstr ""
+msgstr "Оңнан солға айналы пішіндер"
 
 #: src/open-type-layout.h:122
 msgctxt "OpenType layout"
 msgid "Ruby Notation Forms"
-msgstr ""
+msgstr "Фуригана пішіндері"
 
 #: src/open-type-layout.h:123
 msgctxt "OpenType layout"
 msgid "Required Variation Alternates"
-msgstr ""
+msgstr "Қажетті нұсқа баламалары"
 
 #: src/open-type-layout.h:124
 msgctxt "OpenType layout"
 msgid "Stylistic Alternates"
-msgstr ""
+msgstr "Стилистикалық баламалар"
 
 #: src/open-type-layout.h:125
 msgctxt "OpenType layout"
 msgid "Scientific Inferiors"
-msgstr ""
+msgstr "Ғылыми жолма-жол аударма"
 
 #: src/open-type-layout.h:126
 msgctxt "OpenType layout"
 msgid "Optical size"
-msgstr ""
+msgstr "Оптикалық өлшемі"
 
 #: src/open-type-layout.h:127
 msgctxt "OpenType layout"
@@ -788,107 +795,107 @@ msgstr "Кіші бас әріптері"
 #: src/open-type-layout.h:128
 msgctxt "OpenType layout"
 msgid "Simplified Forms"
-msgstr ""
+msgstr "Оңайлатылған пішіндер"
 
 #: src/open-type-layout.h:129
 msgctxt "OpenType layout"
 msgid "Stylistic Set 1"
-msgstr ""
+msgstr "Стилистикалық жиынтық 1"
 
 #: src/open-type-layout.h:130
 msgctxt "OpenType layout"
 msgid "Stylistic Set 2"
-msgstr ""
+msgstr "Стилистикалық жиынтық 2"
 
 #: src/open-type-layout.h:131
 msgctxt "OpenType layout"
 msgid "Stylistic Set 3"
-msgstr ""
+msgstr "Стилистикалық жиынтық 3"
 
 #: src/open-type-layout.h:132
 msgctxt "OpenType layout"
 msgid "Stylistic Set 4"
-msgstr ""
+msgstr "Стилистикалық жиынтық 4"
 
 #: src/open-type-layout.h:133
 msgctxt "OpenType layout"
 msgid "Stylistic Set 5"
-msgstr ""
+msgstr "Стилистикалық жиынтық 5"
 
 #: src/open-type-layout.h:134
 msgctxt "OpenType layout"
 msgid "Stylistic Set 6"
-msgstr ""
+msgstr "Стилистикалық жиынтық 6"
 
 #: src/open-type-layout.h:135
 msgctxt "OpenType layout"
 msgid "Stylistic Set 7"
-msgstr ""
+msgstr "Стилистикалық жиынтық 7"
 
 #: src/open-type-layout.h:136
 msgctxt "OpenType layout"
 msgid "Stylistic Set 8"
-msgstr ""
+msgstr "Стилистикалық жиынтық 8"
 
 #: src/open-type-layout.h:137
 msgctxt "OpenType layout"
 msgid "Stylistic Set 9"
-msgstr ""
+msgstr "Стилистикалық жиынтық 9"
 
 #: src/open-type-layout.h:138
 msgctxt "OpenType layout"
 msgid "Stylistic Set 10"
-msgstr ""
+msgstr "Стилистикалық жиынтық 10"
 
 #: src/open-type-layout.h:139
 msgctxt "OpenType layout"
 msgid "Stylistic Set 11"
-msgstr ""
+msgstr "Стилистикалық жиынтық 11"
 
 #: src/open-type-layout.h:140
 msgctxt "OpenType layout"
 msgid "Stylistic Set 12"
-msgstr ""
+msgstr "Стилистикалық жиынтық 12"
 
 #: src/open-type-layout.h:141
 msgctxt "OpenType layout"
 msgid "Stylistic Set 13"
-msgstr ""
+msgstr "Стилистикалық жиынтық 13"
 
 #: src/open-type-layout.h:142
 msgctxt "OpenType layout"
 msgid "Stylistic Set 14"
-msgstr ""
+msgstr "Стилистикалық жиынтық 14"
 
 #: src/open-type-layout.h:143
 msgctxt "OpenType layout"
 msgid "Stylistic Set 15"
-msgstr ""
+msgstr "Стилистикалық жиынтық 15"
 
 #: src/open-type-layout.h:144
 msgctxt "OpenType layout"
 msgid "Stylistic Set 16"
-msgstr ""
+msgstr "Стилистикалық жиынтық 16"
 
 #: src/open-type-layout.h:145
 msgctxt "OpenType layout"
 msgid "Stylistic Set 17"
-msgstr ""
+msgstr "Стилистикалық жиынтық 17"
 
 #: src/open-type-layout.h:146
 msgctxt "OpenType layout"
 msgid "Stylistic Set 18"
-msgstr ""
+msgstr "Стилистикалық жиынтық 18"
 
 #: src/open-type-layout.h:147
 msgctxt "OpenType layout"
 msgid "Stylistic Set 19"
-msgstr ""
+msgstr "Стилистикалық жиынтық 19"
 
 #: src/open-type-layout.h:148
 msgctxt "OpenType layout"
 msgid "Stylistic Set 20"
-msgstr ""
+msgstr "Стилистикалық жиынтық 20"
 
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
@@ -913,12 +920,12 @@ msgstr "Үстіңгі индекс"
 #: src/open-type-layout.h:153
 msgctxt "OpenType layout"
 msgid "Swash"
-msgstr ""
+msgstr "Жарқыл"
 
 #: src/open-type-layout.h:154
 msgctxt "OpenType layout"
 msgid "Titling"
-msgstr ""
+msgstr "Тақырыптық таңбалар"
 
 #: src/open-type-layout.h:155
 msgctxt "OpenType layout"
@@ -928,12 +935,12 @@ msgstr ""
 #: src/open-type-layout.h:156
 msgctxt "OpenType layout"
 msgid "Traditional Name Forms"
-msgstr ""
+msgstr "Аттардың дәстүрлі пішіндері"
 
 #: src/open-type-layout.h:157
 msgctxt "OpenType layout"
 msgid "Tabular Figures"
-msgstr ""
+msgstr "Кестелік сандар"
 
 #: src/open-type-layout.h:158
 msgctxt "OpenType layout"
@@ -953,22 +960,22 @@ msgstr "Дара регистрлік"
 #: src/open-type-layout.h:161
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Metrics"
-msgstr ""
+msgstr "Балама вертикалды метрикалар"
 
 #: src/open-type-layout.h:162
 msgctxt "OpenType layout"
 msgid "Vattu Variants"
-msgstr ""
+msgstr "Ватту варианттары"
 
 #: src/open-type-layout.h:163
 msgctxt "OpenType layout"
 msgid "Vertical Writing"
-msgstr ""
+msgstr "Вертикалды жазу"
 
 #: src/open-type-layout.h:164
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Half Metrics"
-msgstr ""
+msgstr "Балама вертикалды жарты метрикалар"
 
 #: src/open-type-layout.h:165
 msgctxt "OpenType layout"
@@ -978,32 +985,32 @@ msgstr ""
 #: src/open-type-layout.h:166
 msgctxt "OpenType layout"
 msgid "Vertical Kana Alternates"
-msgstr ""
+msgstr "Кананың вертикалды нұсқалары"
 
 #: src/open-type-layout.h:167
 msgctxt "OpenType layout"
 msgid "Vertical Kerning"
-msgstr ""
+msgstr "Вертикалды кернинг"
 
 #: src/open-type-layout.h:168
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Vertical Metrics"
-msgstr ""
+msgstr "Пропорционалды балама вертикалды метрикалар"
 
 #: src/open-type-layout.h:169
 msgctxt "OpenType layout"
 msgid "Vertical Alternates and Rotation"
-msgstr ""
+msgstr "Вертикалды нұсқалар және бұрулар"
 
 #: src/open-type-layout.h:170
 msgctxt "OpenType layout"
 msgid "Vertical Alternates for Rotation"
-msgstr ""
+msgstr "Бұру үшін вертикалды нұсқалар"
 
 #: src/open-type-layout.h:171
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
-msgstr ""
+msgstr "Сызып тасталған нөл"
 
 #~ msgid "About"
 #~ msgstr "Осы туралы"
