@@ -1,5 +1,5 @@
 # Brazilian Portuguese translation of gnome-font-viewer.
-# Copyright (C) 1999-2019 the GNOME Utils authors.
+# Copyright (C) 1999-2020 the GNOME Utils authors.
 # This file is distributed under the same license as the gnome-font-viewer package.
 # Alexandre Hautequest <hquest@fesppr.br>, 1999.
 # Ariel Bressan da Silva <ariel@conectiva.com.br>, 2000.
@@ -21,15 +21,15 @@
 # Breno Felipe Morais de Santana <breno_info@globomail.com>, 2012.
 # Enrico Nicoletto <liverig@gmail.com>, 2013, 2014.
 # Fábio Nogueira <deb-user-ba@ubuntu.com>, 2014.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2012-2019.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2012-2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2019-07-06 17:09+0000\n"
-"PO-Revision-Date: 2019-07-22 00:51-0300\n"
+"POT-Creation-Date: 2020-06-25 07:10+0000\n"
+"PO-Revision-Date: 2020-07-18 09:55-0300\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
@@ -37,17 +37,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"X-Generator: Gtranslator 3.32.0\n"
+"X-Generator: Gtranslator 3.36.0\n"
 "X-Project-Style: gnome\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:377
 msgid "GNOME Fonts"
 msgstr "Fontes do GNOME"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1098
-#: src/org.gnome.font-viewer.desktop.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1374
+#: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
-msgstr "Ver fontes no seu sistema"
+msgstr "Veja fontes no seu sistema"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
@@ -98,7 +98,7 @@ msgstr "ARQUIVO-FONTE ARQUIVO-SAÍDA"
 msgid "About Fonts"
 msgstr "Sobre o Fontes"
 
-#: src/font-view.c:99
+#: src/font-view.c:385
 msgid "Show the application's version"
 msgstr "Mostra a versão do aplicativo"
 
@@ -107,132 +107,131 @@ msgstr "Mostra a versão do aplicativo"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:228
+#: src/font-view.c:503
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, padrão %g"
 
-#: src/font-view.c:284
+#: src/font-view.c:559
 #, c-format
 msgid "Instance %d"
 msgstr "Instância %d"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:327
+#: src/font-view.c:602
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:351
+#: src/font-view.c:626
 msgid "Name"
 msgstr "Nome"
 
-#: src/font-view.c:354
+#: src/font-view.c:629
 msgid "Location"
 msgstr "Localização"
 
-#: src/font-view.c:357
+#: src/font-view.c:632
 msgid "Style"
 msgstr "Estilo"
 
-#: src/font-view.c:367
+#: src/font-view.c:642
 msgid "Type"
 msgstr "Tipo"
 
-#: src/font-view.c:425 src/font-view.c:451
+#: src/font-view.c:700 src/font-view.c:726
 msgid "Version"
 msgstr "Versão"
 
-#: src/font-view.c:429 src/font-view.c:456
+#: src/font-view.c:704 src/font-view.c:731
 msgid "Copyright"
 msgstr "Direitos autorais"
 
-#: src/font-view.c:433
+#: src/font-view.c:708
 msgid "Description"
 msgstr "Descrição"
 
-#: src/font-view.c:437
+#: src/font-view.c:712
 msgid "Manufacturer"
 msgstr "Fabricante"
 
-#: src/font-view.c:441
+#: src/font-view.c:716
 msgid "Designer"
 msgstr "Designer"
 
-#: src/font-view.c:445
+#: src/font-view.c:720
 msgid "License"
 msgstr "Licença"
 
-#: src/font-view.c:470
+#: src/font-view.c:745
 msgid "Glyph Count"
 msgstr "Contagem de glifos"
 
-#: src/font-view.c:472
+#: src/font-view.c:747
 msgid "Color Glyphs"
 msgstr "Glifos coloridos"
 
-#: src/font-view.c:472
+#: src/font-view.c:747
 msgid "yes"
 msgstr "sim"
 
-#: src/font-view.c:472
+#: src/font-view.c:747
 msgid "no"
 msgstr "não"
 
-#: src/font-view.c:476
+#: src/font-view.c:751
 msgid "Layout Features"
 msgstr "Recursos de layout"
 
-#: src/font-view.c:482
+#: src/font-view.c:757
 msgid "Variation Axes"
 msgstr "Eixos de variação"
 
-#: src/font-view.c:489
+#: src/font-view.c:764
 msgid "Named Styles"
 msgstr "Estilos nomeados"
 
-#: src/font-view.c:563
-#| msgid "This font could not be displayed."
+#: src/font-view.c:870
 msgid "This font could not be installed."
 msgstr "Esta fonte não pôde ser instalada."
 
-#: src/font-view.c:701
+#: src/font-view.c:1008
 msgid "This font could not be displayed."
 msgstr "Esta fonte não pôde ser exibida."
 
-#: src/font-view.c:833
+#: src/font-view.c:1141
 msgid "Install"
 msgstr "Instalar"
 
-#: src/font-view.c:836
+#: src/font-view.c:1144
 msgid "Installing…"
 msgstr "Instalando…"
 
-#: src/font-view.c:839
+#: src/font-view.c:1147
 msgid "Installed"
 msgstr "Instalado"
 
-#: src/font-view.c:842
+#: src/font-view.c:1150
 msgid "Failed"
 msgstr "Falhou"
 
-#: src/font-view.c:858
+#: src/font-view.c:1166
 msgid "Info"
 msgstr "Informação"
 
-#: src/font-view.c:875
+#: src/font-view.c:1183
 msgid "Back"
 msgstr "Voltar"
 
-#: src/font-view.c:974
+#: src/font-view.c:1261
 msgid "All Fonts"
 msgstr "Todas as fontes"
 
-#: src/font-view.c:1097 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1373 src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr "Fontes"
 
-#: src/font-view.c:1100
+#: src/font-view.c:1376
 msgid "translator-credits"
 msgstr ""
 "Alexandre Hautequest <hquest@fesppr.br>\n"
@@ -257,7 +256,7 @@ msgstr ""
 "Enrico Nicoletto <liverig@gmail.com>"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in:6
+#: src/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
 msgstr "fontes;tipo de fonte;tipo da fonte;"
 
