@@ -6,16 +6,17 @@
 # António Lima <amrlima@gmail.com>, 2013.
 # Tiago S. <almosthumane@portugalmail.pt>, 2015.
 # José Vieira <jvieira33@sapo.pt>, 2020.
+# Juliano Camargo <julianosc@pm.me>, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 3.8\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2020-06-25 07:10+0000\n"
-"PO-Revision-Date: 2020-09-07 00:05+0100\n"
-"Last-Translator: José Vieira <jvieira33@sapo.pt>\n"
-"Language-Team: Portuguese <>\n"
+"POT-Creation-Date: 2020-09-08 13:05+0000\n"
+"PO-Revision-Date: 2020-09-08 14:47+0100\n"
+"Last-Translator: Juliano Camargo <julianosc@pm.me>\n"
+"Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,7 +25,6 @@ msgstr ""
 "X-Generator: Gtranslator 3.36.0\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:377
-#| msgid "GNOME Font Viewer"
 msgid "GNOME Fonts"
 msgstr "Fontes do GNOME"
 
@@ -34,10 +34,6 @@ msgid "View fonts on your system"
 msgstr "Ver as fontes existentes no sistema"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
-#| msgid ""
-#| "GNOME Font Viewer shows you the fonts installed on your computer for your "
-#| "use as thumbnails. Selecting any thumbnails shows the full view of how "
-#| "the font would look under various sizes."
 msgid ""
 "GNOME Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
@@ -48,10 +44,6 @@ msgstr ""
 "a aparência da fonte em diversos tamanhos."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
-#| msgid ""
-#| "GNOME Font Viewer also supports installing new font files downloaded in "
-#| "the .ttf and other formats. Fonts may be installed only for your use or "
-#| "made available to all users on the computer."
 msgid ""
 "GNOME Fonts also supports installing new font files downloaded in the .ttf "
 "and other formats. Fonts may be installed only for your use or made "
@@ -87,7 +79,6 @@ msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FICHEIRO-DE-FONTE FICHEIRO-RESULTADO"
 
 #: src/font-view-app-menu.ui:6
-#| msgid "About Font Viewer"
 msgid "About Fonts"
 msgstr "Sobre o Fontes do GNOME"
 
@@ -107,7 +98,6 @@ msgstr "%s %g — %g, predefinição %g"
 
 #: src/font-view.c:559
 #, c-format
-#| msgid "Installed"
 msgid "Instance %d"
 msgstr "Instância %d"
 
@@ -170,7 +160,6 @@ msgid "yes"
 msgstr "sim"
 
 #: src/font-view.c:747
-#| msgid "Info"
 msgid "no"
 msgstr "não"
 
@@ -187,7 +176,6 @@ msgid "Named Styles"
 msgstr "Estilos nomeados"
 
 #: src/font-view.c:870
-#| msgid "This font could not be displayed."
 msgid "This font could not be installed."
 msgstr "Impossível mostrar esta fonte."
 
@@ -200,7 +188,6 @@ msgid "Install"
 msgstr "Instalar"
 
 #: src/font-view.c:1144
-#| msgid "Install"
 msgid "Installing…"
 msgstr "A instalar…"
 
@@ -209,7 +196,6 @@ msgid "Installed"
 msgstr "Instalada"
 
 #: src/font-view.c:1150
-#| msgid "Install Failed"
 msgid "Failed"
 msgstr "Falhou"
 
@@ -226,15 +212,14 @@ msgid "All Fonts"
 msgstr "Todas as fontes"
 
 #: src/font-view.c:1373 src/org.gnome.font-viewer.desktop.in.in:3
-#| msgid "All Fonts"
 msgid "Fonts"
 msgstr "Fontes"
 
 #: src/font-view.c:1376
 msgid "translator-credits"
 msgstr ""
-"\"Duarte Loreto <happyguy_pt@hotmail.com>\\n\"\n"
-"\"Pedro Albuquerque <palbuquerque73@gmail.com>\""
+"Duarte Loreto <happyguy_pt@hotmail.com>\n"
+"Pedro Albuquerque <palbuquerque73@gmail.com>"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in.in:6
@@ -932,13 +917,11 @@ msgid "Stretching Glyph Decomposition"
 msgstr "Decomposição em alongamento de glifo"
 
 #: src/open-type-layout.h:151
-#| msgid "Description"
 msgctxt "OpenType layout"
 msgid "Subscript"
 msgstr "Subscrito"
 
 #: src/open-type-layout.h:152
-#| msgid "Description"
 msgctxt "OpenType layout"
 msgid "Superscript"
 msgstr "Sobrescrito"
