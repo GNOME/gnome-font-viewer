@@ -8,22 +8,22 @@ msgstr ""
 "Project-Id-Version: gnome-font-viewer gnome-3-6\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2018-11-01 21:11+0000\n"
-"PO-Revision-Date: 2019-02-05 12:08+0100\n"
+"POT-Creation-Date: 2020-06-25 07:10+0000\n"
+"PO-Revision-Date: 2020-09-11 17:03+0200\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.4.1\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:377
 msgid "GNOME Fonts"
 msgstr "Caratars di GNOME"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1119
-#: src/org.gnome.font-viewer.desktop.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1374
+#: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Viôt i caratars tal to sisteme"
 
@@ -34,7 +34,7 @@ msgid ""
 "would look under various sizes."
 msgstr ""
 "Caratars GNOME al mostre ducj i caratars instalâts sul to computer come "
-"miniaturis. Selezionant une miniature al ven mostrât ce mût che si viôt il "
+"miniaturis. Selezionant une miniature al ven mostrât cemût che si viôt il "
 "caratar tes in varis dimensions."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
@@ -47,23 +47,27 @@ msgstr ""
 "formât .ttf e altris formâts. I caratars a puedin jessi instalâts pal ûs "
 "personâl o par ducj i utents dal computer."
 
-#: src/font-thumbnailer.c:189
+#: data/org.gnome.font-viewer.appdata.xml.in:21
+msgid "The GNOME Project"
+msgstr "Il progjet GNOME"
+
+#: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Test da miniaturizzâ (default: Aa)"
 
-#: src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:181
 msgid "TEXT"
 msgstr "TEST"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "Thumbnail size (default: 128)"
 msgstr "Dimension de miniature (default: 128)"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "SIZE"
 msgstr "DIMENSION"
 
-#: src/font-thumbnailer.c:193
+#: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FILE-CARATAR FILE-JESSUDE"
 
@@ -71,7 +75,7 @@ msgstr "FILE-CARATAR FILE-JESSUDE"
 msgid "About Fonts"
 msgstr "Informazions su Caratars"
 
-#: src/font-view.c:99
+#: src/font-view.c:385
 msgid "Show the application's version"
 msgstr "Mostre la version de aplicazion"
 
@@ -80,135 +84,138 @@ msgstr "Mostre la version de aplicazion"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:230
+#: src/font-view.c:503
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, predefinît %g"
 
-#: src/font-view.c:286
+#: src/font-view.c:559
 #, c-format
 msgid "Instance %d"
 msgstr "Istance %d"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:331
+#: src/font-view.c:602
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:357
+#: src/font-view.c:626
 msgid "Name"
 msgstr "Non"
 
-#: src/font-view.c:360
+#: src/font-view.c:629
+msgid "Location"
+msgstr "Posizion"
+
+#: src/font-view.c:632
 msgid "Style"
 msgstr "Stîl"
 
-#: src/font-view.c:370
+#: src/font-view.c:642
 msgid "Type"
 msgstr "Gjenar"
 
-#: src/font-view.c:431 src/font-view.c:465
+#: src/font-view.c:700 src/font-view.c:726
 msgid "Version"
 msgstr "Version"
 
-#: src/font-view.c:436 src/font-view.c:471
+#: src/font-view.c:704 src/font-view.c:731
 msgid "Copyright"
 msgstr "Copyright"
 
-#: src/font-view.c:441
+#: src/font-view.c:708
 msgid "Description"
 msgstr "Descrizion"
 
-#: src/font-view.c:446
+#: src/font-view.c:712
 msgid "Manufacturer"
 msgstr "Produtôr"
 
-#: src/font-view.c:451
+#: src/font-view.c:716
 msgid "Designer"
 msgstr "Disegnadôr"
 
-#: src/font-view.c:456
+#: src/font-view.c:720
 msgid "License"
 msgstr "Licence"
 
-#: src/font-view.c:486
+#: src/font-view.c:745
 msgid "Glyph Count"
 msgstr "Conte dai glifs"
 
-#: src/font-view.c:489
+#: src/font-view.c:747
 msgid "Color Glyphs"
 msgstr "Colôr dai glifs"
 
-#: src/font-view.c:489
+#: src/font-view.c:747
 msgid "yes"
 msgstr "sì"
 
-#: src/font-view.c:489
+#: src/font-view.c:747
 msgid "no"
 msgstr "no"
 
-#: src/font-view.c:493
+#: src/font-view.c:751
 msgid "Layout Features"
 msgstr "Funzionalitâts disposizion"
 
-#: src/font-view.c:500
+#: src/font-view.c:757
 msgid "Variation Axes"
 msgstr "As di variazion"
 
-#: src/font-view.c:508
+#: src/font-view.c:764
 msgid "Named Styles"
 msgstr "Stîi cun non"
 
-#: src/font-view.c:690
+#: src/font-view.c:870
+msgid "This font could not be installed."
+msgstr "Chest caratar nol pues jessi instalât."
+
+#: src/font-view.c:1008
 msgid "This font could not be displayed."
 msgstr "Chest caratar nol pues jessi mostrât."
 
-#: src/font-view.c:838
+#: src/font-view.c:1141
 msgid "Install"
 msgstr "Installe"
 
-#: src/font-view.c:841
+#: src/font-view.c:1144
 msgid "Installing…"
 msgstr "Daûr a instalâ…"
 
-#: src/font-view.c:844
+#: src/font-view.c:1147
 msgid "Installed"
 msgstr "Installât"
 
-#: src/font-view.c:847
+#: src/font-view.c:1150
 msgid "Failed"
 msgstr "Falît"
 
-#: src/font-view.c:865
+#: src/font-view.c:1166
 msgid "Info"
 msgstr "Informazions"
 
-#: src/font-view.c:880
+#: src/font-view.c:1183
 msgid "Back"
 msgstr "Indaûr"
 
-#: src/font-view.c:992
+#: src/font-view.c:1261
 msgid "All Fonts"
 msgstr "Ducj i caratars"
 
-#: src/font-view.c:1118 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1373 src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr "Caratars"
 
-#: src/font-view.c:1121
+#: src/font-view.c:1376
 msgid "translator-credits"
 msgstr "Fabio Tomat, <f.t.public@gmail.com>"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in:6
+#: src/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
 msgstr "caratar;caratars;caratars tipografics;gjenar di caratar;"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: src/org.gnome.font-viewer.desktop.in:8
-msgid "org.gnome.font-viewer"
-msgstr "org.gnome.font-viewer"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -318,97 +325,97 @@ msgstr ""
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
 msgid "Character Variation 1"
-msgstr ""
+msgstr "Variazion caratar 1"
 
 #: src/open-type-layout.h:35
 msgctxt "OpenType layout"
 msgid "Character Variation 2"
-msgstr ""
+msgstr "Variazion caratar 2"
 
 #: src/open-type-layout.h:36
 msgctxt "OpenType layout"
 msgid "Character Variation 3"
-msgstr ""
+msgstr "Variazion caratar 3"
 
 #: src/open-type-layout.h:37
 msgctxt "OpenType layout"
 msgid "Character Variation 4"
-msgstr ""
+msgstr "Variazion caratar 4"
 
 #: src/open-type-layout.h:38
 msgctxt "OpenType layout"
 msgid "Character Variation 5"
-msgstr ""
+msgstr "Variazion caratar 5"
 
 #: src/open-type-layout.h:39
 msgctxt "OpenType layout"
 msgid "Character Variation 6"
-msgstr ""
+msgstr "Variazion caratar 6"
 
 #: src/open-type-layout.h:40
 msgctxt "OpenType layout"
 msgid "Character Variation 7"
-msgstr ""
+msgstr "Variazion caratar 7"
 
 #: src/open-type-layout.h:41
 msgctxt "OpenType layout"
 msgid "Character Variation 8"
-msgstr ""
+msgstr "Variazion caratar 8"
 
 #: src/open-type-layout.h:42
 msgctxt "OpenType layout"
 msgid "Character Variation 9"
-msgstr ""
+msgstr "Variazion caratar 9"
 
 #: src/open-type-layout.h:43
 msgctxt "OpenType layout"
 msgid "Character Variation 10"
-msgstr ""
+msgstr "Variazion caratar 10"
 
 #: src/open-type-layout.h:44
 msgctxt "OpenType layout"
 msgid "Character Variation 11"
-msgstr ""
+msgstr "Variazion caratar 11"
 
 #: src/open-type-layout.h:45
 msgctxt "OpenType layout"
 msgid "Character Variation 12"
-msgstr ""
+msgstr "Variazion caratar 12"
 
 #: src/open-type-layout.h:46
 msgctxt "OpenType layout"
 msgid "Character Variation 13"
-msgstr ""
+msgstr "Variazion caratar 13"
 
 #: src/open-type-layout.h:47
 msgctxt "OpenType layout"
 msgid "Character Variation 14"
-msgstr ""
+msgstr "Variazion caratar 14"
 
 #: src/open-type-layout.h:48
 msgctxt "OpenType layout"
 msgid "Character Variation 15"
-msgstr ""
+msgstr "Variazion caratar 15"
 
 #: src/open-type-layout.h:49
 msgctxt "OpenType layout"
 msgid "Character Variation 16"
-msgstr ""
+msgstr "Variazion caratar 16"
 
 #: src/open-type-layout.h:50
 msgctxt "OpenType layout"
 msgid "Character Variation 17"
-msgstr ""
+msgstr "Variazion caratar 17"
 
 #: src/open-type-layout.h:51
 msgctxt "OpenType layout"
 msgid "Character Variation 18"
-msgstr ""
+msgstr "Variazion caratar 18"
 
 #: src/open-type-layout.h:52
 msgctxt "OpenType layout"
 msgid "Character Variation 19"
-msgstr ""
+msgstr "Variazion caratar 19"
 
 #: src/open-type-layout.h:53
 msgctxt "OpenType layout"
@@ -1004,6 +1011,9 @@ msgstr "Alternativis verticâls pe rotazion"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Zero sbarât"
+
+#~ msgid "org.gnome.font-viewer"
+#~ msgstr "org.gnome.font-viewer"
 
 #~ msgid "About"
 #~ msgstr "Informazions"
