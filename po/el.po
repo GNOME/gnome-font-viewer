@@ -30,28 +30,30 @@
 # Tom Tryfonidis <tomtryf@gmail.com>, 2012.
 # Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>, 2013, 2014.
 # Efstathios Iosifidis <iosifidis@opensuse.org>, 2013.
+# Dimitris Maroulidis <dmaroulidis@dimitrismaroulidis.com>, 2019.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.gnome-2-26\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2019-03-26 16:54+0000\n"
-"PO-Revision-Date: 2019-06-17 00:59+0300\n"
-"Last-Translator: Efstathios Iosifidis <eiosifidis@gnome.org>\n"
-"Language-Team: team@lists.gnome.gr\n"
+"POT-Creation-Date: 2019-08-12 07:41+0000\n"
+"PO-Revision-Date: 2019-09-10 18:44+0300\n"
+"Last-Translator: Dimitris Maroulidis <dmaroulidis@dimitrismaroulidis.com>\n"
+"Language-Team: Greek, Modern (1453-) <team@gnome.gr>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 3.32.1\n"
 "X-Project-Style: gnome\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:377
 msgid "GNOME Fonts"
 msgstr "Εφαρμογή Γραμματοσειρές GNOME"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1119
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1368
 #: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
 msgstr "Δείτε τις γραμματοσειρές του συστήματος σας"
@@ -78,23 +80,27 @@ msgstr ""
 "γραμματοσειρές μπορούν να εγκατασταθούν είτε αποκλειστικά για δική σας "
 "χρήση, είτε να είναι διαθέσιμες για όλους τους χρήστες στον υπολογιστή σας."
 
-#: src/font-thumbnailer.c:189
+#: data/org.gnome.font-viewer.appdata.xml.in:21
+msgid "The GNOME Project"
+msgstr ""
+
+#: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Κείμενο σε μικρογραφία (προεπιλεγμένο: Αα)"
 
-#: src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:181
 msgid "TEXT"
 msgstr "ΚΕΙΜΕΝΟ"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "Thumbnail size (default: 128)"
 msgstr "Μέγεθος μικρογραφίας (προεπιλογή: 128)"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "SIZE"
 msgstr "ΜΕΓΕΘΟΣ"
 
-#: src/font-thumbnailer.c:193
+#: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
@@ -102,7 +108,7 @@ msgstr "FONT-FILE OUTPUT-FILE"
 msgid "About Fonts"
 msgstr "Περί Εφαρμογής Γραμματοσειρές"
 
-#: src/font-view.c:99
+#: src/font-view.c:385
 msgid "Show the application's version"
 msgstr "Εμφάνση έκδοσης της εφαρμογής"
 
@@ -111,124 +117,133 @@ msgstr "Εμφάνση έκδοσης της εφαρμογής"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:230
+#: src/font-view.c:503
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, προεπιλογή %g"
 
-#: src/font-view.c:286
-#, fuzzy, c-format
+#: src/font-view.c:559
+#, c-format
 #| msgid "Installed"
 msgid "Instance %d"
-msgstr "Εγκαταστάθηκε"
+msgstr "Στιγμιότυπο %d"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:331
+#: src/font-view.c:602
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:357
+#: src/font-view.c:626
 msgid "Name"
 msgstr "Όνομα"
 
-#: src/font-view.c:360
+#: src/font-view.c:629
+msgid "Location"
+msgstr ""
+
+#: src/font-view.c:632
 msgid "Style"
 msgstr "Πρότυπο"
 
-#: src/font-view.c:370
+#: src/font-view.c:642
 msgid "Type"
 msgstr "Τύπος"
 
-#: src/font-view.c:431 src/font-view.c:465
+#: src/font-view.c:700 src/font-view.c:726
 msgid "Version"
 msgstr "Έκδοση"
 
-#: src/font-view.c:436 src/font-view.c:471
+#: src/font-view.c:704 src/font-view.c:731
 msgid "Copyright"
 msgstr "Πνευματικά δικαιώματα"
 
-#: src/font-view.c:441
+#: src/font-view.c:708
 msgid "Description"
 msgstr "Περιγραφή"
 
-#: src/font-view.c:446
+#: src/font-view.c:712
 msgid "Manufacturer"
 msgstr "Κατασκευαστής"
 
-#: src/font-view.c:451
+#: src/font-view.c:716
 msgid "Designer"
 msgstr "Σχεδιαστής"
 
-#: src/font-view.c:456
+#: src/font-view.c:720
 msgid "License"
 msgstr "Άδεια"
 
-#: src/font-view.c:486
+#: src/font-view.c:745
 msgid "Glyph Count"
 msgstr ""
 
-#: src/font-view.c:489
+#: src/font-view.c:747
 msgid "Color Glyphs"
 msgstr ""
 
-#: src/font-view.c:489
+#: src/font-view.c:747
 msgid "yes"
 msgstr "ναι"
 
-#: src/font-view.c:489
+#: src/font-view.c:747
 msgid "no"
 msgstr "όχι"
 
-#: src/font-view.c:493
+#: src/font-view.c:751
 msgid "Layout Features"
 msgstr ""
 
-#: src/font-view.c:500
+#: src/font-view.c:757
 msgid "Variation Axes"
 msgstr ""
 
-#: src/font-view.c:508
+#: src/font-view.c:764
 msgid "Named Styles"
 msgstr ""
 
-#: src/font-view.c:690
+#: src/font-view.c:870
+#| msgid "This font could not be displayed."
+msgid "This font could not be installed."
+msgstr "Η γραμματοσειρά δεν μπόρεσε να εγκατασταθεί."
+
+#: src/font-view.c:1008
 msgid "This font could not be displayed."
 msgstr "Δε μπορεί να εμφανιστεί αυτή η γραμματοσειρά."
 
-#: src/font-view.c:838
+#: src/font-view.c:1135
 msgid "Install"
 msgstr "Εγκατάσταση"
 
-#: src/font-view.c:841
+#: src/font-view.c:1138
 msgid "Installing…"
 msgstr "Εγκατάσταση…"
 
-#: src/font-view.c:844
+#: src/font-view.c:1141
 msgid "Installed"
 msgstr "Εγκαταστάθηκε"
 
-#: src/font-view.c:847
+#: src/font-view.c:1144
 msgid "Failed"
 msgstr "Απέτυχε"
 
-#: src/font-view.c:865
+#: src/font-view.c:1160
 msgid "Info"
 msgstr "Πληροφορίες"
 
-#: src/font-view.c:880
+#: src/font-view.c:1177
 msgid "Back"
 msgstr "Πίσω"
 
-#: src/font-view.c:992
+#: src/font-view.c:1255
 msgid "All Fonts"
 msgstr "Όλες οι γραμματοσειρές"
 
-#: src/font-view.c:1118 src/org.gnome.font-viewer.desktop.in:3
+#: src/font-view.c:1367 src/org.gnome.font-viewer.desktop.in:3
 msgid "Fonts"
 msgstr "Γραμματοσειρές"
 
-#: src/font-view.c:1121
+#: src/font-view.c:1370
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα GNOME\n"
