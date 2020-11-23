@@ -28,7 +28,6 @@
     </screenshot>
   </screenshots>
   <project_group>GNOME</project_group>
-  <compulsory_for_desktop>GNOME</compulsory_for_desktop>
   <kudos>
     <kudo>AppMenu</kudo>
     <kudo>ModernToolkit</kudo>
