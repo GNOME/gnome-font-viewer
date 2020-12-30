@@ -32,7 +32,6 @@
 #include <fontconfig/fontconfig.h>
 
 #include "font-model.h"
-#include "font-utils.h"
 #include "sushi-font-loader.h"
 
 struct _FontViewModel
@@ -58,7 +57,6 @@ struct _FontViewModelItem
 {
     GObject parent_instance;
 
-    gchar *collation_key;
     gchar *font_name;
     GFile *file;
     int face_index;
@@ -71,7 +69,6 @@ font_view_model_item_finalize (GObject *obj)
 {
     FontViewModelItem *self = FONT_VIEW_MODEL_ITEM (obj);
 
-    g_clear_pointer (&self->collation_key, g_free);
     g_clear_pointer (&self->font_name, g_free);
     g_clear_object (&self->file);
 
@@ -97,18 +94,11 @@ font_view_model_item_new (const gchar *font_name,
 {
     FontViewModelItem *item = g_object_new (FONT_VIEW_TYPE_MODEL_ITEM, NULL);
 
-    item->collation_key = g_utf8_collate_key (font_name, -1);
     item->font_name = g_strdup (font_name);
     item->file = g_object_ref (file);
     item->face_index = face_index;
 
     return item;
-}
-
-const gchar *
-font_view_model_item_get_collation_key (FontViewModelItem *self)
-{
-    return self->collation_key;
 }
 
 const gchar *
@@ -161,6 +151,63 @@ font_infos_loaded (GObject *source_object,
     g_list_store_splice (self->model, 0, 0, items->pdata, items->len);
 }
 
+static const gchar* weight_to_name(int weight) {
+    switch (weight) {
+        case FC_WEIGHT_THIN: return "Thin";
+        case FC_WEIGHT_EXTRALIGHT: return "Extralight";
+        case FC_WEIGHT_LIGHT: return "Light";
+        case FC_WEIGHT_SEMILIGHT: return "Semilight";
+        case FC_WEIGHT_BOOK: return "Book";
+        case FC_WEIGHT_REGULAR: return "Regular";
+        case FC_WEIGHT_MEDIUM: return "Medium";
+        case FC_WEIGHT_SEMIBOLD: return "Semibold";
+        case FC_WEIGHT_BOLD: return "Bold";
+        case FC_WEIGHT_EXTRABOLD: return "Extrabold";
+        case FC_WEIGHT_HEAVY: return "Heavy";
+        case FC_WEIGHT_EXTRABLACK: return "Extrablack";
+    }
+
+    return NULL;
+}
+
+static const gchar* slant_to_name(int slant) {
+    switch (slant) {
+        case FC_SLANT_ROMAN: return NULL;
+        case FC_SLANT_ITALIC: return "Italic";
+        case FC_SLANT_OBLIQUE: return "Oblique";
+    }
+
+    return NULL;
+}
+
+static gchar *
+build_font_name (const char *style_name, const char *family_name, int slant, int weight, gboolean short_form)
+{
+   const char* style_name_x = style_name;
+   const gchar* slant_name = slant_to_name(slant);
+   const gchar* weight_name = weight_to_name(weight);
+
+    if (style_name_x == NULL) {
+        if (slant_name != NULL && weight_name == NULL)
+            style_name_x = g_strdup_printf("%s", slant_name);
+        else if (slant_name == NULL && weight_name != NULL)
+            style_name_x = g_strdup_printf("%s", weight_name);
+        else if (slant_name != NULL && weight_name != NULL)
+            style_name_x = g_strdup_printf("%s %s", weight_name, slant_name);
+    }
+
+  if (family_name == NULL) {
+      // TODO Fallback on filename
+    /* Use an empty string as the last fallback */
+    return g_strdup ("");
+  }
+
+  if (style_name_x == NULL || (short_form && g_strcmp0 (style_name_x, "Regular") == 0))
+    return g_strdup (family_name);
+
+  return g_strconcat (family_name, ", ", style_name_x, NULL);
+}
+
 static void
 load_font_infos (GTask *task,
                  gpointer source_object,
@@ -176,8 +223,8 @@ load_font_infos (GTask *task,
 
     for (i = 0; i < n_fonts; i++) {
         FontViewModelItem *item;
-        FcChar8 *path;
-        int index;
+        FcChar8 *path, *family, *style;
+        int index, slant, weight;
         g_autofree gchar *font_name = NULL;
         g_autoptr(GFile) file = NULL;
 
@@ -185,12 +232,34 @@ load_font_infos (GTask *task,
             return;
 
         g_mutex_lock (&self->font_list_mutex);
-        FcPatternGetString (self->font_list->fonts[i], FC_FILE, 0, &path);
-        FcPatternGetInteger (self->font_list->fonts[i], FC_INDEX, 0, &index);
+        FcPattern* font = self->font_list->fonts[i];
+        g_autofree gchar *style_name = NULL; //g_strdup((const gchar*) style);
+        g_autofree gchar *family_name = NULL; //
+        FcResult result = FcPatternGetString(font, FC_FAMILY, 0, &family);
+        if (result == FcResultMatch) {
+            family_name = g_strdup((const gchar*) family);
+        }
+        result = FcPatternGetString(font, FC_STYLE, 0, &style);
+        if (result == FcResultMatch) {
+            style_name = g_strdup((const gchar*) style);
+        }
+        result = FcPatternGetString (font, FC_FILE, 0, &path);
+        // TODO: Handle result.
+        result = FcPatternGetInteger (font, FC_INDEX, 0, &index);
+        result = FcPatternGetInteger(font, FC_SLANT, 0, &slant);
+        if (result != FcResultMatch) {
+            slant = -1;
+        }
+        result = FcPatternGetInteger(font, FC_WEIGHT, 0, &weight);
+        if (result != FcResultMatch) {
+            weight = -1;
+        }
         g_mutex_unlock (&self->font_list_mutex);
 
         file = g_file_new_for_path ((const gchar *) path);
-        font_name = font_utils_get_font_name_for_file (self->library, file, index);
+
+        font_name = build_font_name(style_name, family_name, slant, weight, TRUE);
+
         if (!font_name)
             continue;
 

@@ -1,5 +1,5 @@
 project('gnome-font-viewer', 'c',
-        version: '3.34.0',
+        version: '3.90.0',
         license: 'GPLv2+',
         meson_version: '>= 0.50.0',
 )
@@ -23,15 +23,15 @@ servicesdir = join_paths(datadir, 'dbus-1', 'services')
 thumbnailerdir = join_paths(datadir, 'thumbnailers')
 
 glib_req_version = '>= 2.56.0'
-gtk_req_version = '>= 3.20.0'
+gtk_req_version = '>= 4.0.0'
 harfbuzz_req_version = '>= 0.9.9'
 
 glib_dep = dependency('glib-2.0', version: glib_req_version)
-gtk_dep = dependency('gtk+-3.0', version: gtk_req_version)
+gtk_dep = dependency('gtk4', version: gtk_req_version)
 harfbuzz_dep = dependency('harfbuzz', version: harfbuzz_req_version)
 fontconfig_dep = dependency('fontconfig')
 freetype2_dep = dependency('freetype2')
-gnomedesktop_dep = dependency('gnome-desktop-3.0')
+gnomedesktop_dep = dependency('gnome-desktop-4.0')
 mathlib_dep = cc.find_library('m')
 
 if get_option('profile') == 'development'

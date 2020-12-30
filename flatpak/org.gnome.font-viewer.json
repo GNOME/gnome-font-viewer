@@ -29,6 +29,7 @@
             "sources": [
                 {
                     "type": "git",
+                    "branch": "wip/gtk4",
                     "url": "https://git.gnome.org/browse/gnome-desktop"
                 }
             ]

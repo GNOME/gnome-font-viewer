@@ -35,7 +35,6 @@ typedef enum {
   COLUMN_PATH,
   COLUMN_FACE_INDEX,
   COLUMN_ICON,
-  COLUMN_COLLATION_KEY,
   NUM_COLUMNS
 } FontViewModelColumns;
 
@@ -56,7 +55,6 @@ G_DECLARE_FINAL_TYPE (FontViewModelItem, font_view_model_item,
                       GObject)
 
 gint font_view_model_item_get_face_index (FontViewModelItem *self);
-const gchar *font_view_model_item_get_collation_key (FontViewModelItem *self);
 GFile *font_view_model_item_get_font_file (FontViewModelItem *self);
 const gchar *font_view_model_item_get_font_name (FontViewModelItem *self);
 
