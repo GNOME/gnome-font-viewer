@@ -33,6 +33,7 @@
 #include <gio/gio.h>
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
+#include <libhandy-1/handy.h>
 #include <hb.h>
 #include <hb-ot.h>
 #include <hb-ft.h>
@@ -1034,13 +1035,13 @@ font_widget_loaded_cb (SushiFontWidget *font_widget,
     self->font_file = g_file_new_for_uri (uri);
 
     if (face->family_name) {
-        gtk_header_bar_set_title (GTK_HEADER_BAR (self->header), face->family_name);
+        hdy_header_bar_set_title (HDY_HEADER_BAR (self->header), face->family_name);
     } else {
         g_autofree gchar *basename = g_file_get_basename (self->font_file);
-        gtk_header_bar_set_title (GTK_HEADER_BAR (self->header), basename);
+        hdy_header_bar_set_title (HDY_HEADER_BAR (self->header), basename);
     }
 
-    gtk_header_bar_set_subtitle (GTK_HEADER_BAR (self->header), face->style_name);
+    hdy_header_bar_set_subtitle (HDY_HEADER_BAR (self->header), face->style_name);
 
     install_button_refresh_appearance (self, NULL);
 }
@@ -1156,7 +1157,7 @@ font_view_application_do_open (FontViewApplication *self,
         gtk_widget_set_valign (self->install_button, GTK_ALIGN_CENTER);
         gtk_style_context_add_class (gtk_widget_get_style_context (self->install_button),
                                      "text-button");
-        gtk_header_bar_pack_end (GTK_HEADER_BAR (self->header), self->install_button);
+        hdy_header_bar_pack_end (HDY_HEADER_BAR (self->header), self->install_button);
 
         g_signal_connect (self->install_button, "clicked",
                           G_CALLBACK (install_button_clicked_cb), self);
@@ -1167,7 +1168,7 @@ font_view_application_do_open (FontViewApplication *self,
         gtk_widget_set_valign (self->info_button, GTK_ALIGN_CENTER);
         gtk_style_context_add_class (gtk_widget_get_style_context (self->info_button),
                                      "text-button");
-        gtk_header_bar_pack_end (GTK_HEADER_BAR (self->header), self->info_button);
+        hdy_header_bar_pack_end (HDY_HEADER_BAR (self->header), self->info_button);
 
         g_signal_connect (self->info_button, "toggled",
                           G_CALLBACK (info_button_clicked_cb), self);
@@ -1184,7 +1185,7 @@ font_view_application_do_open (FontViewApplication *self,
         gtk_widget_set_valign (self->back_button, GTK_ALIGN_CENTER);
         gtk_style_context_add_class (gtk_widget_get_style_context (self->back_button),
                                      "image-button");
-        gtk_header_bar_pack_start (GTK_HEADER_BAR (self->header), self->back_button);
+        hdy_header_bar_pack_start (HDY_HEADER_BAR (self->header), self->back_button);
 
         gtk_actionable_set_action_name (GTK_ACTIONABLE (self->back_button), "app.back");
     }
@@ -1258,8 +1259,8 @@ font_view_application_do_overview (FontViewApplication *self)
 
     font_view_ensure_model (self);
 
-    gtk_header_bar_set_title (GTK_HEADER_BAR (self->header), _("All Fonts"));
-    gtk_header_bar_set_subtitle (GTK_HEADER_BAR (self->header), NULL);
+    hdy_header_bar_set_title (HDY_HEADER_BAR (self->header), _("All Fonts"));
+    hdy_header_bar_set_subtitle (HDY_HEADER_BAR (self->header), NULL);
 
     if (self->flow_box == NULL) {
         GtkWidget *flow_box;
@@ -1412,21 +1413,22 @@ ensure_window (FontViewApplication *self)
     if (self->main_window)
         return;
 
-    self->main_window = window = gtk_application_window_new (GTK_APPLICATION (self));
+    self->main_window = window = hdy_application_window_new ();
+    gtk_window_set_application (GTK_WINDOW (window), GTK_APPLICATION (self));
     gtk_window_set_resizable (GTK_WINDOW (window), TRUE);
     gtk_window_set_default_size (GTK_WINDOW (window), 800, 600);
     gtk_window_set_icon_name (GTK_WINDOW (window), FONT_VIEW_ICON_NAME);
 
-    self->header = gtk_header_bar_new ();
-    gtk_header_bar_set_show_close_button (GTK_HEADER_BAR (self->header), TRUE);
+    self->header = hdy_header_bar_new ();
+    hdy_header_bar_set_show_close_button (HDY_HEADER_BAR (self->header), TRUE);
     gtk_style_context_add_class (gtk_widget_get_style_context (GTK_WIDGET (self->header)),
                                  "titlebar");
-    gtk_window_set_titlebar (GTK_WINDOW (self->main_window), self->header);
 
     g_signal_connect (window, "key-press-event",
                       G_CALLBACK (font_view_window_key_press_event_cb), self);
 
     self->main_grid = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+    gtk_container_add (GTK_CONTAINER (self->main_grid), self->header);
     gtk_container_add (GTK_CONTAINER (self->main_window), self->main_grid);
 
     self->stack = gtk_stack_new ();
@@ -1449,7 +1451,7 @@ ensure_window (FontViewApplication *self)
     gtk_menu_button_set_menu_model (GTK_MENU_BUTTON (self->menu_button), menu);
     gtk_widget_set_no_show_all (self->menu_button, TRUE);
     gtk_widget_show (self->menu_button);
-    gtk_header_bar_pack_end (GTK_HEADER_BAR (self->header), self->menu_button);
+    hdy_header_bar_pack_end (HDY_HEADER_BAR (self->header), self->menu_button);
 
     self->search_bar = gtk_search_bar_new ();
     gtk_container_add (GTK_CONTAINER (box), self->search_bar);
@@ -1462,7 +1464,7 @@ ensure_window (FontViewApplication *self)
     image = gtk_image_new_from_icon_name ("edit-find-symbolic", GTK_ICON_SIZE_BUTTON);
     gtk_widget_show (image);
     gtk_container_add (GTK_CONTAINER (self->search_toggle), image);
-    gtk_header_bar_pack_end (GTK_HEADER_BAR (self->header), self->search_toggle);
+    hdy_header_bar_pack_end (HDY_HEADER_BAR (self->header), self->search_toggle);
     g_object_bind_property (self->search_bar, "search-mode-enabled",
                             self->search_toggle, "active",
                             G_BINDING_BIDIRECTIONAL);
@@ -1493,6 +1495,8 @@ font_view_application_startup (GApplication *application)
     FontViewApplication *self = FONT_VIEW_APPLICATION (application);
 
     G_APPLICATION_CLASS (font_view_application_parent_class)->startup (application);
+
+    hdy_init ();
 
     if (!FcInit ())
         g_critical ("Can't initialize fontconfig library");

@@ -33,7 +33,7 @@ executable('gnome-thumbnail-font', thumbnail_sources,
 
 executable('gnome-font-viewer', viewer_sources + resources,
   include_directories: [ root_inc, include_directories('.') ],
-  dependencies: [ mathlib_dep, glib_dep, gtk_dep, harfbuzz_dep, fontconfig_dep, freetype2_dep, gnomedesktop_dep ],
+  dependencies: [ mathlib_dep, glib_dep, gtk_dep, libhandy_dep, harfbuzz_dep, fontconfig_dep, freetype2_dep, gnomedesktop_dep ],
   install: true)
 
 desktop_file = 'org.gnome.font-viewer.desktop'
