@@ -13,16 +13,16 @@ msgstr ""
 "Project-Id-Version: 3.8\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2020-09-08 13:05+0000\n"
-"PO-Revision-Date: 2020-09-08 14:47+0100\n"
-"Last-Translator: Juliano Camargo <julianosc@pm.me>\n"
+"POT-Creation-Date: 2020-09-08 13:48+0000\n"
+"PO-Revision-Date: 2021-02-11 16:37+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Gtranslator 3.36.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:377
 msgid "GNOME Fonts"
@@ -56,7 +56,7 @@ msgstr ""
 
 #: data/org.gnome.font-viewer.appdata.xml.in:21
 msgid "The GNOME Project"
-msgstr "Projeto GNOME"
+msgstr "O Projeto GNOME"
 
 #: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
@@ -219,7 +219,8 @@ msgstr "Fontes"
 msgid "translator-credits"
 msgstr ""
 "Duarte Loreto <happyguy_pt@hotmail.com>\n"
-"Pedro Albuquerque <palbuquerque73@gmail.com>"
+"Pedro Albuquerque <palbuquerque73@gmail.com>\n"
+"Hugo Carvalho <hugokarvalho@hotmail.com>"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in.in:6
@@ -984,7 +985,7 @@ msgstr "Escrita vertical"
 #: src/open-type-layout.h:164
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Half Metrics"
-msgstr "Meia medida vertical alternativa "
+msgstr "Meia medida vertical alternativa"
 
 #: src/open-type-layout.h:165
 msgctxt "OpenType layout"
