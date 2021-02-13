@@ -14,8 +14,6 @@ viewer_sources = [
   loader_sources,
   'font-model.h',
   'font-model.c',
-  'font-utils.h',
-  'font-utils.c',
   'sushi-font-widget.h',
   'sushi-font-widget.c',
   'font-view.c',
