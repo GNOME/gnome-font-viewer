@@ -34,6 +34,36 @@
   </kudos>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="40.beta" date="2021-02-13">
+      <description>
+        <p>Fonts 40 comes with a slight visual refresh, sporting rounded bottom window corners. In addition there have been general bug fixes and improvements.</p>
+        <ul>
+          <li>The About dialog now provides a link to the repository (jridehalgh)</li>
+          <li>Startup should be faster now that we use font-config's APIs directly (Evan Welsh)</li>
+        </ul>
+        <p>Fonts 40 also comes with the following translation updates:</p>
+        <ul>
+          <li>Basque</li>
+          <li>Catalan</li>
+          <li>Chinese (China)</li>
+          <li>Chinese (Taiwan)</li>
+          <li>Danish</li>
+          <li>Dutch</li>
+          <li>Friulian</li>
+          <li>Galician</li>
+          <li>Greek, Modern (1453-)</li>
+          <li>Japanese</li>
+          <li>Kazakh</li>
+          <li>Kurdish, Central</li>
+          <li>Malay</li>
+          <li>Persian</li>
+          <li>Portuguese</li>
+          <li>Portuguese (Brazil)</li>
+          <li>Slovak</li>
+          <li>Ukrainian</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.34.0" date="2019-09-14">
       <description>
         <ul>

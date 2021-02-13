@@ -1,3 +1,32 @@
+GNOME Font Viewer - 40.beta
+-------------------------------------------------------------------------------
+Fonts 40 comes with a slight visual refresh, sporting
+rounded bottom window corners. In addition there have
+been general bug fixes and improvements.
+
+* The About dialog now provides a link to the repository (jridehalgh)
+* Startup should be faster now that we use font-config's APIs directly (Evan Welsh)
+
+* Translation updates:
+ - Basque
+ - Catalan
+ - Chinese (China)
+ - Chinese (Taiwan)
+ - Danish
+ - Dutch
+ - Friulian
+ - Galician
+ - Greek, Modern (1453-)
+ - Japanese
+ - Kazakh
+ - Kurdish, Central
+ - Malay
+ - Persian
+ - Portuguese
+ - Portuguese (Brazil)
+ - Slovak
+ - Ukrainian
+
 GNOME Font Viewer - 3.34.0
 -------------------------------------------------------------------------------
 • Translation updates
