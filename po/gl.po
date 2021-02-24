@@ -5,6 +5,7 @@
 # Proxecto Trasno - Adaptación do software libre á lingua galega:  Se desexas
 # colaborar connosco, podes atopar máis información en http://www.trasno.net
 # First Version: 2000-04-09 18:45+0200
+#
 # Jesús Bravo Álvarez <jba@pobox.com>, 2000-2001.
 # Ruben Lopez Gomez <ryu@mundivia.es>, 1999. (logview from gnome-admin).
 # Ignacio Casal Quinteiro <adorador_del_heavy@hotmail.com>, 2004.
@@ -14,15 +15,14 @@
 # Suso Baleato <suso.baleato@xunta.es>, 2009.
 # Antón Méixome <meixome@mancomun.org>, 2009.
 # Fran Diéguez <frandieguez@gnome.org>, 2009, 2010, 2011.
-# Fran Dieguez <frandieguez@gnome.org>, 2012-2019.
-#
+# Fran Dieguez <frandieguez@gnome.org>, 2012-2019, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils-master-po-gl-14799\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
-"issues\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues"
+"\n"
 "POT-Creation-Date: 2021-02-14 05:45+0000\n"
-"PO-Revision-Date: 2019-12-27 13:52+0100\n"
+"PO-Revision-Date: 2021-02-24 22:50+0100\n"
 "Last-Translator: Fran Diéguez <frandieguez@gnome.org>\n"
 "Language-Team: Proxecto Trasno <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -30,7 +30,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Gtranslator 3.38.0\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:383
@@ -85,7 +85,7 @@ msgstr "TAMAÑO"
 
 #: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
-msgstr "FICHEIRO-DE-TIPOGRAFIA FICHEIRO-DE-SAÍDA"
+msgstr "FICHEIRO-DE-TIPOGRAFÍA FICHEIRO-DE-SAÍDA"
 
 #: src/font-view-app-menu.ui:6
 msgid "About Fonts"
@@ -166,7 +166,7 @@ msgstr "Cor dos glifos"
 
 #: src/font-view.c:753
 msgid "yes"
-msgstr "sí"
+msgstr "si"
 
 #: src/font-view.c:753
 msgid "no"
@@ -178,7 +178,7 @@ msgstr "Características de disposición"
 
 #: src/font-view.c:763
 msgid "Variation Axes"
-msgstr "Eixos de variación"
+msgstr "Eixes de variación"
 
 #: src/font-view.c:770
 msgid "Named Styles"
@@ -291,7 +291,7 @@ msgstr "Formas que distinguen maiúsculas de minúsculas"
 #: src/open-type-layout.h:24
 msgctxt "OpenType layout"
 msgid "Glyph Composition / Decomposition"
-msgstr "Composicón/descomposicón de glifos"
+msgstr "Composición/descomposición de glifos"
 
 #: src/open-type-layout.h:25
 msgctxt "OpenType layout"
@@ -316,7 +316,7 @@ msgstr "Puntuación CJK centrada"
 #: src/open-type-layout.h:29
 msgctxt "OpenType layout"
 msgid "Capital Spacing"
-msgstr "Espaciado de capitais"
+msgstr "Espazado de capitais"
 
 #: src/open-type-layout.h:30
 msgctxt "OpenType layout"
@@ -331,107 +331,107 @@ msgstr "Posicionamento da cursiva"
 #: src/open-type-layout.h:32
 msgctxt "OpenType layout"
 msgid "Petite Capitals From Capitals"
-msgstr "Miniversais a partir de maiúsculas"
+msgstr "Miniversales a partir de maiúsculas"
 
 #: src/open-type-layout.h:33
 msgctxt "OpenType layout"
 msgid "Small Capitals From Capitals"
-msgstr "Versalitas a partir de maiúsculas"
+msgstr "Versaletas a partir de maiúsculas"
 
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
 msgid "Character Variation 1"
-msgstr "Variación de caracter 1"
+msgstr "Variación de carácter 1"
 
 #: src/open-type-layout.h:35
 msgctxt "OpenType layout"
 msgid "Character Variation 2"
-msgstr "Variación de caracter 2"
+msgstr "Variación de carácter 2"
 
 #: src/open-type-layout.h:36
 msgctxt "OpenType layout"
 msgid "Character Variation 3"
-msgstr "Variación de caracter 3"
+msgstr "Variación de carácter 3"
 
 #: src/open-type-layout.h:37
 msgctxt "OpenType layout"
 msgid "Character Variation 4"
-msgstr "Variación de caracter 4"
+msgstr "Variación de carácter 4"
 
 #: src/open-type-layout.h:38
 msgctxt "OpenType layout"
 msgid "Character Variation 5"
-msgstr "Variación de caracter 5"
+msgstr "Variación de carácter 5"
 
 #: src/open-type-layout.h:39
 msgctxt "OpenType layout"
 msgid "Character Variation 6"
-msgstr "Variación de caracter 6"
+msgstr "Variación de carácter 6"
 
 #: src/open-type-layout.h:40
 msgctxt "OpenType layout"
 msgid "Character Variation 7"
-msgstr "Variación de caracter 7"
+msgstr "Variación de carácter 7"
 
 #: src/open-type-layout.h:41
 msgctxt "OpenType layout"
 msgid "Character Variation 8"
-msgstr "Variación de caracter 8"
+msgstr "Variación de carácter 8"
 
 #: src/open-type-layout.h:42
 msgctxt "OpenType layout"
 msgid "Character Variation 9"
-msgstr "Variación de caracter 9"
+msgstr "Variación de carácter 9"
 
 #: src/open-type-layout.h:43
 msgctxt "OpenType layout"
 msgid "Character Variation 10"
-msgstr "Variación de caracter 10"
+msgstr "Variación de carácter 10"
 
 #: src/open-type-layout.h:44
 msgctxt "OpenType layout"
 msgid "Character Variation 11"
-msgstr "Variación de caracter 11"
+msgstr "Variación de carácter 11"
 
 #: src/open-type-layout.h:45
 msgctxt "OpenType layout"
 msgid "Character Variation 12"
-msgstr "Variación de caracter 12"
+msgstr "Variación de carácter 12"
 
 #: src/open-type-layout.h:46
 msgctxt "OpenType layout"
 msgid "Character Variation 13"
-msgstr "Variación de caracter 13"
+msgstr "Variación de carácter 13"
 
 #: src/open-type-layout.h:47
 msgctxt "OpenType layout"
 msgid "Character Variation 14"
-msgstr "Variación de caracter 14"
+msgstr "Variación de carácter 14"
 
 #: src/open-type-layout.h:48
 msgctxt "OpenType layout"
 msgid "Character Variation 15"
-msgstr "Variación de caracter 15"
+msgstr "Variación de carácter 15"
 
 #: src/open-type-layout.h:49
 msgctxt "OpenType layout"
 msgid "Character Variation 16"
-msgstr "Variación de caracter 16"
+msgstr "Variación de carácter 16"
 
 #: src/open-type-layout.h:50
 msgctxt "OpenType layout"
 msgid "Character Variation 17"
-msgstr "Variación de caracter 17"
+msgstr "Variación de carácter 17"
 
 #: src/open-type-layout.h:51
 msgctxt "OpenType layout"
 msgid "Character Variation 18"
-msgstr "Variación de caracter 18"
+msgstr "Variación de carácter 18"
 
 #: src/open-type-layout.h:52
 msgctxt "OpenType layout"
 msgid "Character Variation 19"
-msgstr "Variación de caracter 19"
+msgstr "Variación de carácter 19"
 
 #: src/open-type-layout.h:53
 msgctxt "OpenType layout"
@@ -516,7 +516,7 @@ msgstr "Formas históricas"
 #: src/open-type-layout.h:69
 msgctxt "OpenType layout"
 msgid "Horizontal Kana Alternates"
-msgstr "Alternativas kana horizontais"
+msgstr "Alternativas Kana horizontais"
 
 #: src/open-type-layout.h:70
 msgctxt "OpenType layout"
@@ -556,7 +556,7 @@ msgstr "Cursivas"
 #: src/open-type-layout.h:77
 msgctxt "OpenType layout"
 msgid "Justification Alternates"
-msgstr "Justificación de alternativas"
+msgstr "Xustificación de alternativas"
 
 #: src/open-type-layout.h:78
 msgctxt "OpenType layout"
@@ -666,7 +666,7 @@ msgstr "Formas Nukta"
 #: src/open-type-layout.h:99
 msgctxt "OpenType layout"
 msgid "Numerators"
-msgstr "Numeradors"
+msgstr "Numeradores"
 
 #: src/open-type-layout.h:100
 msgctxt "OpenType layout"
@@ -766,7 +766,7 @@ msgstr "Formas Reqh"
 #: src/open-type-layout.h:119
 msgctxt "OpenType layout"
 msgid "Right Bounds"
-msgstr "Márxes dereitos"
+msgstr "Marxes dereitos"
 
 #: src/open-type-layout.h:120
 msgctxt "OpenType layout"
@@ -796,7 +796,7 @@ msgstr "Alternativas estilísticas"
 #: src/open-type-layout.h:125
 msgctxt "OpenType layout"
 msgid "Scientific Inferiors"
-msgstr "Inferiores cientificas"
+msgstr "Inferiores científicas"
 
 #: src/open-type-layout.h:126
 msgctxt "OpenType layout"
@@ -806,12 +806,12 @@ msgstr "Tamaño óptico"
 #: src/open-type-layout.h:127
 msgctxt "OpenType layout"
 msgid "Small Capitals"
-msgstr "Versalitas"
+msgstr "Versaletas"
 
 #: src/open-type-layout.h:128
 msgctxt "OpenType layout"
 msgid "Simplified Forms"
-msgstr "Fromas simplificadas"
+msgstr "Formas simplificadas"
 
 #: src/open-type-layout.h:129
 msgctxt "OpenType layout"
@@ -966,7 +966,7 @@ msgstr "Formas tradicionais"
 #: src/open-type-layout.h:159
 msgctxt "OpenType layout"
 msgid "Third Widths"
-msgstr "Guións terciados"
+msgstr "Guións terzados"
 
 #: src/open-type-layout.h:160
 msgctxt "OpenType layout"
