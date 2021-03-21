@@ -1,4 +1,4 @@
-GNOME Font Viewer - 40.beta
+GNOME Font Viewer - 40.0
 -------------------------------------------------------------------------------
 Fonts 40 comes with a slight visual refresh, sporting
 rounded bottom window corners. In addition there have
@@ -21,6 +21,7 @@ been general bug fixes and improvements.
  - Kazakh
  - Kurdish, Central
  - Malay
+ - Panjabi
  - Persian
  - Portuguese
  - Portuguese (Brazil)
