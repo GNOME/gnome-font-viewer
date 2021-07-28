@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: gnome-font-viewer gnome-3-6\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2021-02-14 05:45+0000\n"
-"PO-Revision-Date: 2021-03-01 08:45+0100\n"
+"POT-Creation-Date: 2021-04-27 08:57+0000\n"
+"PO-Revision-Date: 2021-07-28 09:52+0200\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:383
 msgid "GNOME Fonts"
@@ -43,8 +43,8 @@ msgid ""
 "and other formats. Fonts may be installed only for your use or made "
 "available to all users on the computer."
 msgstr ""
-"Caratars GNOME al permet di instalâ gnûfs caratars dai files discjariâts "
-"tal formât .ttf e altris formâts. Al è pussibil instalâ i caratars pal ûs "
+"Caratars GNOME al permet di instalâ gnûfs caratars dai files discjariâts tal "
+"formât .ttf e altris formâts. Al è pussibil instalâ i caratars pal ûs "
 "personâl o par ducj i utents dal computer."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:21
@@ -280,7 +280,7 @@ msgstr "Composizion / Decomposizion dai glifs"
 #: src/open-type-layout.h:25
 msgctxt "OpenType layout"
 msgid "Conjunct Form After Ro"
-msgstr ""
+msgstr "Forme tacade dopo Ro"
 
 #: src/open-type-layout.h:26
 msgctxt "OpenType layout"
@@ -425,7 +425,7 @@ msgstr "Distancis"
 #: src/open-type-layout.h:54
 msgctxt "OpenType layout"
 msgid "Discretionary Ligatures"
-msgstr ""
+msgstr "Leaduris discrezionâls"
 
 #: src/open-type-layout.h:55
 msgctxt "OpenType layout"
@@ -580,7 +580,7 @@ msgstr "Leaduris standard"
 #: src/open-type-layout.h:85
 msgctxt "OpenType layout"
 msgid "Leading Jamo Forms"
-msgstr ""
+msgstr "Formis Jamo iniziâls"
 
 #: src/open-type-layout.h:86
 msgctxt "OpenType layout"
@@ -600,7 +600,7 @@ msgstr "Alternative di di çampe a drete"
 #: src/open-type-layout.h:89
 msgctxt "OpenType layout"
 msgid "Left-to-right mirrored forms"
-msgstr ""
+msgstr "Formis spieladis di çampe a diestre"
 
 #: src/open-type-layout.h:90
 msgctxt "OpenType layout"
@@ -655,7 +655,7 @@ msgstr "Numeradôrs"
 #: src/open-type-layout.h:100
 msgctxt "OpenType layout"
 msgid "Oldstyle Figures"
-msgstr ""
+msgstr "Figuris in stîl vecjo"
 
 #: src/open-type-layout.h:101
 msgctxt "OpenType layout"
@@ -760,12 +760,12 @@ msgstr "Alternative di di drete a çampe"
 #: src/open-type-layout.h:121
 msgctxt "OpenType layout"
 msgid "Right-to-left mirrored forms"
-msgstr ""
+msgstr "Formis spieladis di diestre a çampe"
 
 #: src/open-type-layout.h:122
 msgctxt "OpenType layout"
 msgid "Ruby Notation Forms"
-msgstr ""
+msgstr "Formis di notazion Ruby"
 
 #: src/open-type-layout.h:123
 msgctxt "OpenType layout"
@@ -930,7 +930,7 @@ msgstr "Titolazion"
 #: src/open-type-layout.h:155
 msgctxt "OpenType layout"
 msgid "Trailing Jamo Forms"
-msgstr ""
+msgstr "Formis Jamo terminâls"
 
 #: src/open-type-layout.h:156
 msgctxt "OpenType layout"
@@ -940,7 +940,7 @@ msgstr "Formis di nons tradizionâi"
 #: src/open-type-layout.h:157
 msgctxt "OpenType layout"
 msgid "Tabular Figures"
-msgstr ""
+msgstr "Figuris tabulârs"
 
 #: src/open-type-layout.h:158
 msgctxt "OpenType layout"
@@ -980,7 +980,7 @@ msgstr "Metrichis miezis verticâls alternativis"
 #: src/open-type-layout.h:165
 msgctxt "OpenType layout"
 msgid "Vowel Jamo Forms"
-msgstr ""
+msgstr "Formis Jamo vocalichis"
 
 #: src/open-type-layout.h:166
 msgctxt "OpenType layout"
