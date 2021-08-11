@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2021-04-27 08:57+0000\n"
-"PO-Revision-Date: 2021-05-13 09:10+0200\n"
+"POT-Creation-Date: 2021-05-13 07:12+0000\n"
+"PO-Revision-Date: 2021-08-11 17:56+0200\n"
+"Last-Translator: Quentin PAGÈS\n"
 "Language-Team: \n"
+"Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.3\n"
-"Last-Translator: Quentin PAGÈS\n"
-"Language: oc\n"
+"X-Generator: Poedit 3.0\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:383
 msgid "GNOME Fonts"
@@ -43,10 +43,10 @@ msgid ""
 "and other formats. Fonts may be installed only for your use or made "
 "available to all users on the computer."
 msgstr ""
-"Lo visionador de poliça GNOME pren tanben en carga l'installacion de "
-"novèls fichièrs de poliça telecargats (formats ttf e autres). Las poliças "
-"pòdon èsser installadas per vos sol o rendudas disponiblas a totes los "
-"utilizaires de l'ordenador."
+"Lo visionador de poliça GNOME pren tanben en carga l'installacion de novèls "
+"fichièrs de poliça telecargats (formats ttf e autres). Las poliças pòdon "
+"èsser installadas per vos sol o rendudas disponiblas a totes los utilizaires "
+"de l'ordenador."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:21
 msgid "The GNOME Project"
@@ -115,7 +115,7 @@ msgstr "Estil"
 
 #: src/font-view.c:648
 msgid "Type"
-msgstr "Tipe "
+msgstr "Tipe"
 
 #: src/font-view.c:706 src/font-view.c:732
 msgid "Version"
@@ -212,6 +212,11 @@ msgstr "Poliças"
 #: src/font-view.c:1389
 msgid "translator-credits"
 msgstr ""
+"Cédric Valmary (Tot en Òc) <cvalmary@yahoo.fr>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Cédric VALMARY (Tot en òc) https://launchpad.net/~cvalmary\n"
+"  Quentin PAGÈS https://launchpad.net/~kwentin\""
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in.in:6
