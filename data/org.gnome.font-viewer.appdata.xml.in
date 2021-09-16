@@ -19,9 +19,9 @@
     </p>
   </description>
   <developer_name>The GNOME Project</developer_name>
-  <url type="homepage">http://www.gnome.org/gnome-3/</url>
+  <url type="homepage">https://www.gnome.org/</url>
   <url type="bugtracker">https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues</url>
-  <url type="donation">http://www.gnome.org/friends/</url>
+  <url type="donation">https://www.gnome.org/donate/</url>
   <screenshots>
     <screenshot type="default">
       <image>https://help.gnome.org/misc/release-notes/3.6/figures/users-font-viewer.png</image>
