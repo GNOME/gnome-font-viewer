@@ -30,7 +30,7 @@ msgstr "Tipus de lletra del GNOME"
 #: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1368
 #: src/org.gnome.font-viewer.desktop.in:4
 msgid "View fonts on your system"
-msgstr "Visualitza tots els tipus de lletra del sistema"
+msgstr "Visualitzeu tots els tipus de lletra del sistema"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
