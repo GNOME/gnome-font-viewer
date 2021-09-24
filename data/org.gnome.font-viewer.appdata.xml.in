@@ -3,17 +3,17 @@
   <id>org.gnome.font-viewer.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
-  <name>GNOME Fonts</name>
+  <name>Fonts</name>
   <summary>View fonts on your system</summary>
   <description>
     <p>
-      GNOME Fonts shows you the fonts installed on your computer for your use as
+      Fonts shows you the fonts installed on your computer for your use as
       thumbnails.
       Selecting any thumbnails shows the full view of how the font would look under
       various sizes.
     </p>
     <p>
-      GNOME Fonts also supports installing new font files downloaded in the .ttf
+      Fonts also supports installing new font files downloaded in the .ttf
       and other formats.
       Fonts may be installed only for your use or made available to all users on the computer.
     </p>
