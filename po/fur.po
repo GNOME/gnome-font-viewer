@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: gnome-font-viewer gnome-3-6\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2021-04-27 08:57+0000\n"
-"PO-Revision-Date: 2021-07-28 09:52+0200\n"
+"POT-Creation-Date: 2021-09-24 22:15+0000\n"
+"PO-Revision-Date: 2021-11-07 18:30+0100\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
@@ -18,9 +18,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.0\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:383
-msgid "GNOME Fonts"
-msgstr "Caratars di GNOME"
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1385
+#: src/org.gnome.font-viewer.desktop.in.in:3
+msgid "Fonts"
+msgstr "Caratars"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1386
 #: src/org.gnome.font-viewer.desktop.in.in:4
@@ -29,21 +30,21 @@ msgstr "Viôt i caratars sul to sisteme"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
-"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"Caratars GNOME al mostre ducj i caratars instalâts sul to computer come "
+"Caratars al mostre ducj i caratars instalâts sul to computer come "
 "miniaturis. Selezionant une miniature al ven mostrât cemût che si viôt il "
 "caratar tes variis dimensions."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
-"GNOME Fonts also supports installing new font files downloaded in the .ttf "
-"and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
 msgstr ""
-"Caratars GNOME al permet di instalâ gnûfs caratars dai files discjariâts tal "
+"Caratars al permet di instalâ gnûfs caratars dai files discjariâts tal "
 "formât .ttf e altris formâts. Al è pussibil instalâ i caratars pal ûs "
 "personâl o par ducj i utents dal computer."
 
@@ -74,6 +75,10 @@ msgstr "FILE-CARATAR FILE-JESSUDE"
 #: src/font-view-app-menu.ui:6
 msgid "About Fonts"
 msgstr "Informazions su Caratars"
+
+#: src/font-view.c:383
+msgid "GNOME Fonts"
+msgstr "Caratars di GNOME"
 
 #: src/font-view.c:391
 msgid "Show the application's version"
@@ -203,10 +208,6 @@ msgstr "Indaûr"
 #: src/font-view.c:1267
 msgid "All Fonts"
 msgstr "Ducj i caratars"
-
-#: src/font-view.c:1385 src/org.gnome.font-viewer.desktop.in.in:3
-msgid "Fonts"
-msgstr "Caratars"
 
 #: src/font-view.c:1389
 msgid "translator-credits"
@@ -905,7 +906,7 @@ msgstr ""
 #: src/open-type-layout.h:150
 msgctxt "OpenType layout"
 msgid "Stretching Glyph Decomposition"
-msgstr ""
+msgstr "Slungjament de decomposizion dal glif"
 
 #: src/open-type-layout.h:151
 msgctxt "OpenType layout"
