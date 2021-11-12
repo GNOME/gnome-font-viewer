@@ -6,45 +6,46 @@ msgstr ""
 "Project-Id-Version: gnome-utils 0\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2019-08-12 07:41+0000\n"
-"PO-Revision-Date: 2019-09-03 18:41+0200\n"
-"Last-Translator: gogo <linux.hr@protonmail.com>\n"
+"POT-Creation-Date: 2021-09-24 22:15+0000\n"
+"PO-Revision-Date: 2021-11-12 12:57+0100\n"
+"Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2016-09-22 19:56+0000\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.3\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:377
-msgid "GNOME Fonts"
-msgstr "GNOME Slova"
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1385
+#: src/org.gnome.font-viewer.desktop.in.in:3
+msgid "Fonts"
+msgstr "Slova"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1368
-#: src/org.gnome.font-viewer.desktop.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1386
+#: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Pregledajte slova na vašem sustavu"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
-"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"GNOME slova prikazuje vam slova instalirana na vaše računalo, prikazana kao "
+"Slova prikazuje vam slova instalirana na vaše računalo, prikazana kao "
 "minijature. Odabir bilo koje minijature prikazuje cjelovit prikaz kako slova "
 "izgledaju u različitim veličinama."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
-"GNOME Fonts also supports installing new font files downloaded in the .ttf "
-"and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
 msgstr ""
-"GNOME slova isto tako podržava instalaciju datoteka novih slova preuzetih u ."
-"ttf i ostalim formatima. Slova možete instalirati samo za vlastitu upotrebu "
-"ili ih možete učiniti dostupnim ostalim korisnicima na računalu."
+"Slova isto tako podržava instalaciju datoteka novih slova preuzetih u .ttf i "
+"ostalim formatima. Slova možete instalirati samo za vlastitu upotrebu ili ih "
+"možete učiniti dostupnim ostalim korisnicima na računalu."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:21
 msgid "The GNOME Project"
@@ -74,7 +75,11 @@ msgstr "DATOTEKA-SLOVA IZLAZNA-DATOTEKA"
 msgid "About Fonts"
 msgstr "O Slovima"
 
-#: src/font-view.c:385
+#: src/font-view.c:383
+msgid "GNOME Fonts"
+msgstr "GNOME Slova"
+
+#: src/font-view.c:391
 msgid "Show the application's version"
 msgstr "Prikaži inačicu aplikacije"
 
@@ -83,138 +88,134 @@ msgstr "Prikaži inačicu aplikacije"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:503
+#: src/font-view.c:509
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, zadano %g"
 
-#: src/font-view.c:559
+#: src/font-view.c:565
 #, c-format
 msgid "Instance %d"
 msgstr "Primjerak %d"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:602
+#: src/font-view.c:608
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:626
+#: src/font-view.c:632
 msgid "Name"
 msgstr "Naziv"
 
-#: src/font-view.c:629
+#: src/font-view.c:635
 msgid "Location"
 msgstr "Lokacija"
 
-#: src/font-view.c:632
+#: src/font-view.c:638
 msgid "Style"
 msgstr "Stil"
 
-#: src/font-view.c:642
+#: src/font-view.c:648
 msgid "Type"
 msgstr "Vrsta"
 
-#: src/font-view.c:700 src/font-view.c:726
+#: src/font-view.c:706 src/font-view.c:732
 msgid "Version"
 msgstr "Inačica"
 
-#: src/font-view.c:704 src/font-view.c:731
+#: src/font-view.c:710 src/font-view.c:737
 msgid "Copyright"
 msgstr "Autorsko pravo"
 
-#: src/font-view.c:708
+#: src/font-view.c:714
 msgid "Description"
 msgstr "Opis"
 
-#: src/font-view.c:712
+#: src/font-view.c:718
 msgid "Manufacturer"
 msgstr "Proizvođač"
 
-#: src/font-view.c:716
+#: src/font-view.c:722
 msgid "Designer"
 msgstr "Dizajner"
 
-#: src/font-view.c:720
+#: src/font-view.c:726
 msgid "License"
 msgstr "Licenca"
 
-#: src/font-view.c:745
+#: src/font-view.c:751
 msgid "Glyph Count"
 msgstr "Broj simbola"
 
-#: src/font-view.c:747
+#: src/font-view.c:753
 msgid "Color Glyphs"
 msgstr "Boja simbola"
 
-#: src/font-view.c:747
+#: src/font-view.c:753
 msgid "yes"
 msgstr "da"
 
-#: src/font-view.c:747
+#: src/font-view.c:753
 msgid "no"
 msgstr "ne"
 
-#: src/font-view.c:751
+#: src/font-view.c:757
 msgid "Layout Features"
 msgstr "Značajke rasporeda"
 
-#: src/font-view.c:757
+#: src/font-view.c:763
 msgid "Variation Axes"
 msgstr "Osi varijacije"
 
-#: src/font-view.c:764
+#: src/font-view.c:770
 msgid "Named Styles"
 msgstr "Imenovani stilovi"
 
-#: src/font-view.c:870
+#: src/font-view.c:876
 msgid "This font could not be installed."
 msgstr "Slova ne mogu biti instalirana."
 
-#: src/font-view.c:1008
+#: src/font-view.c:1014
 msgid "This font could not be displayed."
 msgstr "Slova ne mogu biti prikazana."
 
-#: src/font-view.c:1135
+#: src/font-view.c:1147
 msgid "Install"
 msgstr "Instaliraj"
 
-#: src/font-view.c:1138
+#: src/font-view.c:1150
 msgid "Installing…"
 msgstr "Instalacija…"
 
-#: src/font-view.c:1141
+#: src/font-view.c:1153
 msgid "Installed"
 msgstr "Instalirano"
 
-#: src/font-view.c:1144
+#: src/font-view.c:1156
 msgid "Failed"
 msgstr "Neuspjela"
 
-#: src/font-view.c:1160
+#: src/font-view.c:1172
 msgid "Info"
 msgstr "Informacije"
 
-#: src/font-view.c:1177
+#: src/font-view.c:1189
 msgid "Back"
 msgstr "Natrag"
 
-#: src/font-view.c:1255
+#: src/font-view.c:1267
 msgid "All Fonts"
 msgstr "Sva slova"
 
-#: src/font-view.c:1367 src/org.gnome.font-viewer.desktop.in:3
-msgid "Fonts"
-msgstr "Slova"
-
-#: src/font-view.c:1370
+#: src/font-view.c:1389
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
 "  gogo https://launchpad.net/~trebelnik-stefina"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in:6
+#: src/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
 msgstr "slova;izgledslova;"
 
