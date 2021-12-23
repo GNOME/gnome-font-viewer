@@ -5,50 +5,51 @@
 # Mohammad DAMT <mdamt@bisnisweb.com>, 2003-2005.
 # Andika Triwidada <andika@gmail.com>, 2010-2014.
 # Dirgita <dirgitadevina@yahoo.co.id>, 2011.
-# Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2017, 2019.
+# Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2017, 2019, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2019-07-06 17:09+0000\n"
-"PO-Revision-Date: 2019-07-08 14:50+0700\n"
+"POT-Creation-Date: 2021-09-24 22:15+0000\n"
+"PO-Revision-Date: 2021-12-23 10:35+0700\n"
 "Last-Translator: Kukuh Syafaat <kukuhsyafaat@gnome.org>\n"
 "Language-Team: GNOME Indonesian Translation Team <gnome@i15n.org>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural= n!=1;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 3.0\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
-msgid "GNOME Fonts"
-msgstr "GNOME Fonta"
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1385
+#: src/org.gnome.font-viewer.desktop.in.in:3
+msgid "Fonts"
+msgstr "Fonta"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1098
-#: src/org.gnome.font-viewer.desktop.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1386
+#: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Lihat fonta pada sistem Anda"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
-"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"GNOME Fonta menampilkan fonta yang terpasang dan dapat dipakai pada komputer "
-"Anda sebagai gambar mini. Memilih sebarang gambar mini akan menampilkan "
-"tilikan penuh tentang bagaimana fonta akan nampak pada berbagai ukuran."
+"Fonta menampilkan fonta yang terpasang dan dapat dipakai pada komputer Anda "
+"sebagai gambar mini. Memilih sebarang gambar mini akan menampilkan tilikan "
+"penuh tentang bagaimana fonta akan nampak pada berbagai ukuran."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
-"GNOME Fonts also supports installing new font files downloaded in the .ttf "
-"and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
 msgstr ""
-"GNOME Fonta juga mendukung pemasangan fonta baru yang diunduh dalam .ttf dan "
+"Fonta juga mendukung pemasangan fonta baru yang diunduh dalam .ttf dan "
 "format lain. Fonta bisa dipasang hanya untuk Anda pakai atau dibuat tersedia "
 "bagi semua pengguna pada komputer."
 
@@ -80,7 +81,11 @@ msgstr "BERKAS-FONTA BERKAS-KELUARAN"
 msgid "About Fonts"
 msgstr "Tentang Fonta"
 
-#: src/font-view.c:99
+#: src/font-view.c:383
+msgid "GNOME Fonts"
+msgstr "GNOME Fonta"
+
+#: src/font-view.c:391
 msgid "Show the application's version"
 msgstr "Tampilkan versi aplikasi"
 
@@ -89,140 +94,136 @@ msgstr "Tampilkan versi aplikasi"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:228
+#: src/font-view.c:509
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, bawaan %g"
 
-#: src/font-view.c:284
+#: src/font-view.c:565
 #, c-format
 msgid "Instance %d"
 msgstr "Instansi %d"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:327
+#: src/font-view.c:608
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:351
+#: src/font-view.c:632
 msgid "Name"
 msgstr "Nama"
 
-#: src/font-view.c:354
+#: src/font-view.c:635
 msgid "Location"
 msgstr "Lokasi"
 
-#: src/font-view.c:357
+#: src/font-view.c:638
 msgid "Style"
 msgstr "Gaya"
 
-#: src/font-view.c:367
+#: src/font-view.c:648
 msgid "Type"
 msgstr "Tipe"
 
-#: src/font-view.c:425 src/font-view.c:451
+#: src/font-view.c:706 src/font-view.c:732
 msgid "Version"
 msgstr "Versi"
 
-#: src/font-view.c:429 src/font-view.c:456
+#: src/font-view.c:710 src/font-view.c:737
 msgid "Copyright"
 msgstr "Hak Cipta"
 
-#: src/font-view.c:433
+#: src/font-view.c:714
 msgid "Description"
 msgstr "Deskripsi"
 
-#: src/font-view.c:437
+#: src/font-view.c:718
 msgid "Manufacturer"
 msgstr "Pabrikan"
 
-#: src/font-view.c:441
+#: src/font-view.c:722
 msgid "Designer"
 msgstr "Perancang"
 
-#: src/font-view.c:445
+#: src/font-view.c:726
 msgid "License"
 msgstr "Lisensi"
 
-#: src/font-view.c:470
+#: src/font-view.c:751
 msgid "Glyph Count"
 msgstr "Cacah Glyph"
 
-#: src/font-view.c:472
+#: src/font-view.c:753
 msgid "Color Glyphs"
 msgstr "Glyph Berwarna"
 
-#: src/font-view.c:472
+#: src/font-view.c:753
 msgid "yes"
 msgstr "ya"
 
-#: src/font-view.c:472
+#: src/font-view.c:753
 msgid "no"
 msgstr "tidak"
 
-#: src/font-view.c:476
+#: src/font-view.c:757
 msgid "Layout Features"
 msgstr "Fitur Tata Letak"
 
-#: src/font-view.c:482
+#: src/font-view.c:763
 msgid "Variation Axes"
 msgstr "Sumbu Variasi"
 
-#: src/font-view.c:489
+#: src/font-view.c:770
 msgid "Named Styles"
 msgstr "Gaya Bernama"
 
-#: src/font-view.c:563
+#: src/font-view.c:876
 msgid "This font could not be installed."
 msgstr "Fonta ini tak dapat dipasang."
 
-#: src/font-view.c:701
+#: src/font-view.c:1014
 msgid "This font could not be displayed."
 msgstr "Fonta ini tak dapat ditampilkan."
 
-#: src/font-view.c:833
+#: src/font-view.c:1147
 msgid "Install"
 msgstr "Pasang"
 
-#: src/font-view.c:836
+#: src/font-view.c:1150
 msgid "Installing…"
 msgstr "Memasang…"
 
-#: src/font-view.c:839
+#: src/font-view.c:1153
 msgid "Installed"
 msgstr "Terpasang"
 
-#: src/font-view.c:842
+#: src/font-view.c:1156
 msgid "Failed"
 msgstr "Gagal"
 
-#: src/font-view.c:858
+#: src/font-view.c:1172
 msgid "Info"
 msgstr "Info"
 
-#: src/font-view.c:875
+#: src/font-view.c:1189
 msgid "Back"
 msgstr "Mundur"
 
-#: src/font-view.c:974
+#: src/font-view.c:1267
 msgid "All Fonts"
 msgstr "Semua Fonta"
 
-#: src/font-view.c:1097 src/org.gnome.font-viewer.desktop.in:3
-msgid "Fonts"
-msgstr "Fonta"
-
-#: src/font-view.c:1100
+#: src/font-view.c:1389
 msgid "translator-credits"
 msgstr ""
 "Mohammad DAMT <mdamt@bisnisweb.com>, 2003-2005.\n"
 "Dirgita <dirgitadevina@yahoo.co.id>, 2011.\n"
 "Andika Triwidada <andika@gmail.com>, 2010-2014, 2018.\n"
-"Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2017, 2019."
+"Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2017, 2019, 2021."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in:6
+#: src/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
 msgstr "fonta;fontface;"
 
