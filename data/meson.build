@@ -1,6 +1,6 @@
 appdatadir = join_paths(datadir, 'metainfo')
 appdata_file = 'org.gnome.font-viewer.appdata.xml'
-merged_appdata = i18n.merge_file(appdata_file,
+merged_appdata = i18n.merge_file(
   input: appdata_file + '.in',
   output: appdata_file,
   po_dir: '../po',
