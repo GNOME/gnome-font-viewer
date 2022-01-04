@@ -11,52 +11,61 @@
 # Manuel de Vega Barreiro <barreiro@arrakis.es> 2000-2001.
 # Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009, 2010, 2011.
 # Rodrigo <rodhos92@gmail.com>, 2018.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011-2019.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011-2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2019-07-06 17:09+0000\n"
-"PO-Revision-Date: 2019-07-24 10:32+0200\n"
+"POT-Creation-Date: 2021-09-24 22:15+0000\n"
+"PO-Revision-Date: 2022-01-04 14:28+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 3.32.1\n"
+"X-Generator: Gtranslator 41.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
-msgid "GNOME Fonts"
-msgstr "Tipografías de GNOME"
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1385
+#: src/org.gnome.font-viewer.desktop.in.in:3
+msgid "Fonts"
+msgstr "Tipografías"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1098
-#: src/org.gnome.font-viewer.desktop.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1386
+#: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Ver las tipografías de su sistema"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
+#| msgid ""
+#| "GNOME Fonts shows you the fonts installed on your computer for your use "
+#| "as thumbnails. Selecting any thumbnails shows the full view of how the "
+#| "font would look under various sizes."
 msgid ""
-"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"Tipografías de GNOME muestra las tipografías instaladas en el equipo como "
-"miniaturas. Al seleccionar cualquiera de ellas se muestra una vista completa "
-"de cómo queda la tipografía con varios tamaños."
+"Tipografías muestra las tipografías instaladas en el equipo como miniaturas. "
+"Al seleccionar cualquiera de ellas se muestra una vista completa de cómo "
+"queda la tipografía con varios tamaños."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
+#| msgid ""
+#| "GNOME Fonts also supports installing new font files downloaded in the ."
+#| "ttf and other formats. Fonts may be installed only for your use or made "
+#| "available to all users on the computer."
 msgid ""
-"GNOME Fonts also supports installing new font files downloaded in the .ttf "
-"and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
 msgstr ""
-"Tipografías de GNOME también soporta instalar nuevas tipografías descargadas "
-"como archivos .ttf u otros formatos. Las tipografías se puede instalar para "
-"su uso personal o para que estén disponibles para todos los usuarios del "
+"Tipografías también soporta instalar nuevas tipografías descargadas como "
+"archivos .ttf u otros formatos. Las tipografías se puede instalar para su "
+"uso personal o para que estén disponibles para todos los usuarios del "
 "sistema."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:21
@@ -87,7 +96,11 @@ msgstr "ARCHIVO-DE-TIPOGRAFÍA ARCHIVO-DE-SALIDA"
 msgid "About Fonts"
 msgstr "Acerca de Tipografías"
 
-#: src/font-view.c:99
+#: src/font-view.c:383
+msgid "GNOME Fonts"
+msgstr "Tipografías de GNOME"
+
+#: src/font-view.c:391
 msgid "Show the application's version"
 msgstr "Mostrar la versión de la aplicación"
 
@@ -96,137 +109,132 @@ msgstr "Mostrar la versión de la aplicación"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:228
+#: src/font-view.c:509
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, predeterminada %g"
 
-#: src/font-view.c:284
+#: src/font-view.c:565
 #, c-format
 msgid "Instance %d"
 msgstr "Instancia %d"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:327
+#: src/font-view.c:608
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:351
+#: src/font-view.c:632
 msgid "Name"
 msgstr "Nombre"
 
-#: src/font-view.c:354
+#: src/font-view.c:635
 msgid "Location"
 msgstr "Ubicación"
 
-#: src/font-view.c:357
+#: src/font-view.c:638
 msgid "Style"
 msgstr "Estilo"
 
-#: src/font-view.c:367
+#: src/font-view.c:648
 msgid "Type"
 msgstr "Tipo"
 
-#: src/font-view.c:425 src/font-view.c:451
+#: src/font-view.c:706 src/font-view.c:732
 msgid "Version"
 msgstr "Version"
 
-#: src/font-view.c:429 src/font-view.c:456
+#: src/font-view.c:710 src/font-view.c:737
 msgid "Copyright"
 msgstr "Copyright"
 
-#: src/font-view.c:433
+#: src/font-view.c:714
 msgid "Description"
 msgstr "Descripción"
 
-#: src/font-view.c:437
+#: src/font-view.c:718
 msgid "Manufacturer"
 msgstr "Fabricante"
 
-#: src/font-view.c:441
+#: src/font-view.c:722
 msgid "Designer"
 msgstr "Diseñador"
 
-#: src/font-view.c:445
+#: src/font-view.c:726
 msgid "License"
 msgstr "Licencia"
 
-#: src/font-view.c:470
+#: src/font-view.c:751
 msgid "Glyph Count"
 msgstr "Contados de glifos"
 
-#: src/font-view.c:472
+#: src/font-view.c:753
 msgid "Color Glyphs"
 msgstr "Glifos de color"
 
-#: src/font-view.c:472
+#: src/font-view.c:753
 msgid "yes"
 msgstr "sí"
 
-#: src/font-view.c:472
+#: src/font-view.c:753
 msgid "no"
 msgstr "no"
 
-#: src/font-view.c:476
+#: src/font-view.c:757
 msgid "Layout Features"
 msgstr "Características de la distribución"
 
-#: src/font-view.c:482
+#: src/font-view.c:763
 msgid "Variation Axes"
 msgstr "Ejes de variación"
 
-#: src/font-view.c:489
+#: src/font-view.c:770
 msgid "Named Styles"
 msgstr "Estilos con nombre"
 
-#: src/font-view.c:563
-#| msgid "This font could not be displayed."
+#: src/font-view.c:876
 msgid "This font could not be installed."
 msgstr "No se pudo instalar esta tipografía."
 
-#: src/font-view.c:701
+#: src/font-view.c:1014
 msgid "This font could not be displayed."
 msgstr "No se pudo mostrar esta tipografía."
 
-#: src/font-view.c:833
+#: src/font-view.c:1147
 msgid "Install"
 msgstr "Instalar"
 
-#: src/font-view.c:836
+#: src/font-view.c:1150
 msgid "Installing…"
 msgstr "Instalando…"
 
-#: src/font-view.c:839
+#: src/font-view.c:1153
 msgid "Installed"
 msgstr "Instalado"
 
-#: src/font-view.c:842
+#: src/font-view.c:1156
 msgid "Failed"
 msgstr "Falló"
 
-#: src/font-view.c:858
+#: src/font-view.c:1172
 msgid "Info"
 msgstr "Información"
 
-#: src/font-view.c:875
+#: src/font-view.c:1189
 msgid "Back"
 msgstr "Atrás"
 
-#: src/font-view.c:974
+#: src/font-view.c:1267
 msgid "All Fonts"
 msgstr "Todas las tipografías"
 
-#: src/font-view.c:1097 src/org.gnome.font-viewer.desktop.in:3
-msgid "Fonts"
-msgstr "Tipografías"
-
-#: src/font-view.c:1100
+#: src/font-view.c:1389
 msgid "translator-credits"
 msgstr "Daniel Mustieles <daniel.mustieles@gmail.com>, 2012"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in:6
+#: src/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
 msgstr "tipografía;letra;tipo;"
 
