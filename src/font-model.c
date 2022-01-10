@@ -1,5 +1,5 @@
 /* -*- mode: C; c-basic-offset: 4 -*-
- * gnome-font-view: 
+ * gnome-font-view:
  *
  * Copyright (C) 2012 Cosimo Cecchi <cosimoc@gnome.org>
  *
@@ -7,7 +7,7 @@
  *
  * fontilus - a collection of font utilities for GNOME
  * Copyright (C) 2002-2003  James Henstridge <james@daa.com.au>
- * 
+ *
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -24,10 +24,10 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
+#include <ft2build.h>
 #include <gio/gio.h>
 #include <gtk/gtk.h>
-
-#include <ft2build.h>
+#include <pango/pango.h>
 #include FT_FREETYPE_H
 #include <fontconfig/fontconfig.h>
 
@@ -57,8 +57,9 @@ struct _FontViewModelItem
 {
     GObject parent_instance;
 
-    gchar *collation_key;
     gchar *font_name;
+    gchar *font_preview_text;
+    PangoFontDescription *font_description;
     GFile *file;
     int face_index;
 };
@@ -70,7 +71,6 @@ font_view_model_item_finalize (GObject *obj)
 {
     FontViewModelItem *self = FONT_VIEW_MODEL_ITEM (obj);
 
-    g_clear_pointer (&self->collation_key, g_free);
     g_clear_pointer (&self->font_name, g_free);
     g_clear_object (&self->file);
 
@@ -91,13 +91,16 @@ font_view_model_item_init (FontViewModelItem *self)
 
 static FontViewModelItem *
 font_view_model_item_new (const gchar *font_name,
-                          GFile       *file,
-                          int          face_index)
+                          const gchar *font_preview_text,
+                          const PangoFontDescription *font_description,
+                          GFile *file,
+                          int face_index)
 {
     FontViewModelItem *item = g_object_new (FONT_VIEW_TYPE_MODEL_ITEM, NULL);
 
-    item->collation_key = g_utf8_collate_key (font_name, -1);
     item->font_name = g_strdup (font_name);
+    item->font_preview_text = g_strdup (font_preview_text);
+    item->font_description = pango_font_description_copy (font_description);
     item->file = g_object_ref (file);
     item->face_index = face_index;
 
@@ -105,15 +108,21 @@ font_view_model_item_new (const gchar *font_name,
 }
 
 const gchar *
-font_view_model_item_get_collation_key (FontViewModelItem *self)
-{
-    return self->collation_key;
-}
-
-const gchar *
 font_view_model_item_get_font_name (FontViewModelItem *self)
 {
     return self->font_name;
+}
+
+const gchar *
+font_view_model_item_get_font_preview_text (FontViewModelItem *self)
+{
+    return self->font_preview_text;
+}
+
+const PangoFontDescription *
+font_view_model_item_get_font_description (FontViewModelItem *self)
+{
+    return self->font_description;
 }
 
 GFile *
@@ -129,8 +138,7 @@ font_view_model_item_get_face_index (FontViewModelItem *self)
 }
 
 gboolean
-font_view_model_has_face (FontViewModel *self,
-                          FT_Face face)
+font_view_model_has_face (FontViewModel *self, FT_Face face)
 {
     guint n_items;
     gint idx;
@@ -140,7 +148,8 @@ font_view_model_has_face (FontViewModel *self,
     match_name = sushi_get_font_name (face, TRUE);
 
     for (idx = 0; idx < n_items; idx++) {
-        FontViewModelItem *item = g_list_model_get_item (G_LIST_MODEL (self->model), idx);
+        FontViewModelItem *item =
+            g_list_model_get_item (G_LIST_MODEL (self->model), idx);
 
         if (g_strcmp0 (item->font_name, match_name) == 0)
             return TRUE;
@@ -155,65 +164,123 @@ font_infos_loaded (GObject *source_object,
                    gpointer user_data)
 {
     FontViewModel *self = FONT_VIEW_MODEL (source_object);
-    g_autoptr(GPtrArray) items = g_task_propagate_pointer (G_TASK (result), NULL);
+    g_autoptr (GPtrArray) items =
+        g_task_propagate_pointer (G_TASK (result), NULL);
 
     g_list_store_splice (self->model, 0, 0, items->pdata, items->len);
 }
 
-static const gchar* weight_to_name(int weight) {
+static const gchar *
+weight_to_name (int weight)
+{
     switch (weight) {
-        case FC_WEIGHT_THIN: return "Thin";
-        case FC_WEIGHT_EXTRALIGHT: return "Extralight";
-        case FC_WEIGHT_LIGHT: return "Light";
-        case FC_WEIGHT_SEMILIGHT: return "Semilight";
-        case FC_WEIGHT_BOOK: return "Book";
-        case FC_WEIGHT_REGULAR: return "Regular";
-        case FC_WEIGHT_MEDIUM: return "Medium";
-        case FC_WEIGHT_SEMIBOLD: return "Semibold";
-        case FC_WEIGHT_BOLD: return "Bold";
-        case FC_WEIGHT_EXTRABOLD: return "Extrabold";
-        case FC_WEIGHT_HEAVY: return "Heavy";
-        case FC_WEIGHT_EXTRABLACK: return "Extrablack";
+    case FC_WEIGHT_THIN:
+        return "Thin";
+    case FC_WEIGHT_EXTRALIGHT:
+        return "Extralight";
+    case FC_WEIGHT_LIGHT:
+        return "Light";
+    case FC_WEIGHT_SEMILIGHT:
+        return "Semilight";
+    case FC_WEIGHT_BOOK:
+        return "Book";
+    case FC_WEIGHT_REGULAR:
+        return "Regular";
+    case FC_WEIGHT_MEDIUM:
+        return "Medium";
+    case FC_WEIGHT_SEMIBOLD:
+        return "Semibold";
+    case FC_WEIGHT_BOLD:
+        return "Bold";
+    case FC_WEIGHT_EXTRABOLD:
+        return "Extrabold";
+    case FC_WEIGHT_HEAVY:
+        return "Heavy";
+    case FC_WEIGHT_EXTRABLACK:
+        return "Extrablack";
     }
 
     return NULL;
 }
 
-static const gchar* slant_to_name(int slant) {
+static const PangoWeight
+fc_weight_to_pango_weight (int weight)
+{
+    switch (weight) {
+    case FC_WEIGHT_THIN:
+        return PANGO_WEIGHT_THIN;
+    case FC_WEIGHT_EXTRALIGHT:
+        return PANGO_WEIGHT_ULTRALIGHT;
+    case FC_WEIGHT_LIGHT:
+        return PANGO_WEIGHT_LIGHT;
+    case FC_WEIGHT_SEMILIGHT:
+        return PANGO_WEIGHT_SEMILIGHT;
+    case FC_WEIGHT_BOOK:
+        return PANGO_WEIGHT_BOOK;
+    case FC_WEIGHT_REGULAR:
+        return PANGO_WEIGHT_NORMAL;
+    case FC_WEIGHT_MEDIUM:
+        return PANGO_WEIGHT_MEDIUM;
+    case FC_WEIGHT_SEMIBOLD:
+        return PANGO_WEIGHT_SEMIBOLD;
+    case FC_WEIGHT_BOLD:
+        return PANGO_WEIGHT_BOLD;
+    case FC_WEIGHT_EXTRABOLD:
+        return PANGO_WEIGHT_ULTRABOLD;
+    case FC_WEIGHT_HEAVY:
+        return PANGO_WEIGHT_HEAVY;
+    case FC_WEIGHT_EXTRABLACK:
+        return PANGO_WEIGHT_ULTRAHEAVY;
+    }
+
+    return PANGO_WEIGHT_NORMAL;
+}
+
+static const gchar *
+slant_to_name (int slant)
+{
     switch (slant) {
-        case FC_SLANT_ROMAN: return NULL;
-        case FC_SLANT_ITALIC: return "Italic";
-        case FC_SLANT_OBLIQUE: return "Oblique";
+    case FC_SLANT_ROMAN:
+        return NULL;
+    case FC_SLANT_ITALIC:
+        return "Italic";
+    case FC_SLANT_OBLIQUE:
+        return "Oblique";
     }
 
     return NULL;
 }
 
 static gchar *
-build_font_name (const char *style_name, const char *family_name, int slant, int weight, gboolean short_form)
+build_font_name (const char *style_name,
+                 const char *family_name,
+                 int slant,
+                 int weight,
+                 gboolean short_form)
 {
-   const char* style_name_x = style_name;
-   const gchar* slant_name = slant_to_name(slant);
-   const gchar* weight_name = weight_to_name(weight);
+    const char *style_name_x = style_name;
+    const gchar *slant_name = slant_to_name (slant);
+    const gchar *weight_name = weight_to_name (weight);
 
     if (style_name_x == NULL) {
         if (slant_name != NULL && weight_name == NULL)
-            style_name_x = g_strdup_printf("%s", slant_name);
+            style_name_x = g_strdup_printf ("%s", slant_name);
         else if (slant_name == NULL && weight_name != NULL)
-            style_name_x = g_strdup_printf("%s", weight_name);
+            style_name_x = g_strdup_printf ("%s", weight_name);
         else if (slant_name != NULL && weight_name != NULL)
-            style_name_x = g_strdup_printf("%s %s", weight_name, slant_name);
+            style_name_x = g_strdup_printf ("%s %s", weight_name, slant_name);
     }
 
-  if (family_name == NULL) {
-    /* Use an empty string as the last fallback */
-    return g_strdup ("");
-  }
+    if (family_name == NULL) {
+        /* Use an empty string as the last fallback */
+        return g_strdup ("");
+    }
 
-  if (style_name_x == NULL || (short_form && g_strcmp0 (style_name_x, "Regular") == 0))
-    return g_strdup (family_name);
+    if (style_name_x == NULL ||
+        (short_form && g_strcmp0 (style_name_x, "Regular") == 0))
+        return g_strdup (family_name);
 
-  return g_strconcat (family_name, ", ", style_name_x, NULL);
+    return g_strconcat (family_name, ", ", style_name_x, NULL);
 }
 
 static void
@@ -223,7 +290,7 @@ load_font_infos (GTask *task,
                  GCancellable *cancellable)
 {
     FontViewModel *self = FONT_VIEW_MODEL (source_object);
-    g_autoptr(GPtrArray) items = NULL;
+    g_autoptr (GPtrArray) items = NULL;
     gint i, n_fonts;
 
     n_fonts = self->font_list->nfont;
@@ -234,41 +301,55 @@ load_font_infos (GTask *task,
         FcChar8 *path, *family, *style;
         int index, slant, weight;
         g_autofree gchar *font_name = NULL;
-        g_autoptr(GFile) file = NULL;
+        g_autoptr (GFile) file = NULL;
 
         if (g_task_return_error_if_cancelled (task))
             return;
 
         g_mutex_lock (&self->font_list_mutex);
-        FcPattern* font = self->font_list->fonts[i];
+        FcPattern *font = self->font_list->fonts[i];
         FcPatternGetString (font, FC_FILE, 0, &path);
         FcPatternGetInteger (font, FC_INDEX, 0, &index);
         g_autofree gchar *style_name = NULL;
         g_autofree gchar *family_name = NULL;
-        FcResult result = FcPatternGetString(font, FC_FAMILY, 0, &family);
+        FcResult result = FcPatternGetString (font, FC_FAMILY, 0, &family);
         if (result == FcResultMatch) {
-            family_name = g_strdup((const gchar*) family);
+            family_name = g_strdup ((const gchar *) family);
         }
-        result = FcPatternGetString(font, FC_STYLE, 0, &style);
+        result = FcPatternGetString (font, FC_STYLE, 0, &style);
         if (result == FcResultMatch) {
-            style_name = g_strdup((const gchar*) style);
+            style_name = g_strdup ((const gchar *) style);
         }
-        result = FcPatternGetInteger(font, FC_SLANT, 0, &slant);
+        result = FcPatternGetInteger (font, FC_SLANT, 0, &slant);
         if (result != FcResultMatch) {
             slant = -1;
         }
-        result = FcPatternGetInteger(font, FC_WEIGHT, 0, &weight);
+        result = FcPatternGetInteger (font, FC_WEIGHT, 0, &weight);
         if (result != FcResultMatch) {
             weight = -1;
         }
         g_mutex_unlock (&self->font_list_mutex);
 
         file = g_file_new_for_path ((const gchar *) path);
-        font_name = build_font_name(style_name, family_name, slant, weight, TRUE);
+
+        font_name =
+            build_font_name (style_name, family_name, slant, weight, TRUE);
         if (!font_name)
             continue;
 
-        item = font_view_model_item_new (font_name, file, index);
+        // TODO: Support scripts which don't contain "Aa"
+        const char *font_preview_text = g_strdup ("Aa");
+
+        PangoFontDescription *font_description = pango_font_description_new ();
+
+        pango_font_description_set_family (font_description, family_name);
+        pango_font_description_set_weight (font_description,
+                                           fc_weight_to_pango_weight (weight));
+        // TODO: Support italics
+        pango_font_description_set_style (font_description, PANGO_STYLE_NORMAL);
+
+        item = font_view_model_item_new (font_name, font_preview_text,
+                                         font_description, file, index);
         g_ptr_array_add (items, item);
     }
 
@@ -281,10 +362,10 @@ ensure_font_list (FontViewModel *self)
 {
     FcPattern *pat;
     FcObjectSet *os;
-    g_autoptr(GTask) task = NULL;
+    g_autoptr (GTask) task = NULL;
 
     /* always reinitialize the font database */
-    if (!FcInitReinitialize())
+    if (!FcInitReinitialize ())
         return;
 
     g_cancellable_cancel (self->cancellable);
@@ -293,7 +374,8 @@ ensure_font_list (FontViewModel *self)
     g_list_store_remove_all (self->model);
 
     pat = FcPatternCreate ();
-    os = FcObjectSetBuild (FC_FILE, FC_INDEX, FC_FAMILY, FC_WEIGHT, FC_SLANT, NULL);
+    os = FcObjectSetBuild (FC_FILE, FC_INDEX, FC_FAMILY, FC_WEIGHT, FC_SLANT,
+                           NULL);
 
     g_mutex_lock (&self->font_list_mutex);
 
@@ -334,8 +416,7 @@ schedule_update_font_list (FontViewModel *self)
     if (self->font_list_idle_id != 0)
         return;
 
-    self->font_list_idle_id =
-        g_idle_add (ensure_font_list_idle, self);
+    self->font_list_idle_id = g_idle_add (ensure_font_list_idle, self);
 }
 
 static void

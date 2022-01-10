@@ -23,17 +23,16 @@ servicesdir = join_paths(datadir, 'dbus-1', 'services')
 thumbnailerdir = join_paths(datadir, 'thumbnailers')
 
 glib_req_version = '>= 2.56.0'
-gtk_req_version = '>= 3.24.1'
-libhandy_req_version = '>= 1.0.0'
+gtk_req_version = '>= 4.5.0'
 harfbuzz_req_version = '>= 0.9.9'
 
 glib_dep = dependency('glib-2.0', version: glib_req_version)
-gtk_dep = dependency('gtk+-3.0', version: gtk_req_version)
-libhandy_dep = dependency('libhandy-1', version: libhandy_req_version)
+gtk_dep = dependency('gtk4', version: gtk_req_version)
+libadwaita_dep = dependency('libadwaita-1')
 harfbuzz_dep = dependency('harfbuzz', version: harfbuzz_req_version)
 fontconfig_dep = dependency('fontconfig')
 freetype2_dep = dependency('freetype2')
-gnomedesktop_dep = dependency('gnome-desktop-3.0')
+gnomedesktop_dep = dependency('gnome-desktop-4')
 mathlib_dep = cc.find_library('m')
 
 if get_option('profile') == 'development'

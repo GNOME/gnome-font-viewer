@@ -30,10 +30,11 @@
         {
             "name": "gnome-desktop",
             "buildsystem": "meson",
+            "config-opts": ["-Dbuild_gtk4=true"],
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://git.gnome.org/browse/gnome-desktop"
+                    "url": "https://gitlab.gnome.org/GNOME/gnome-desktop"
                 }
             ]
         },

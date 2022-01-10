@@ -2,5 +2,6 @@
 <gresources>
   <gresource prefix="/org/gnome/font-viewer">
     <file preprocess="xml-stripblanks">font-view-app-menu.ui</file>
+    <file>application.css</file>
   </gresource>
 </gresources>

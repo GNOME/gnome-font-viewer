@@ -27,6 +27,7 @@
 #include "sushi-font-widget.h"
 #include "sushi-font-loader.h"
 
+#include <graphene.h>
 #include <hb-glib.h>
 #include <math.h>
 
@@ -454,7 +455,6 @@ sushi_font_widget_size_request (GtkWidget *drawing_area,
   cairo_surface_t *surface;
   FT_Face face = self->face;
   GtkStyleContext *context;
-  GtkStateFlags state;
   GtkBorder padding;
 
   if (face == NULL) {
@@ -475,8 +475,7 @@ sushi_font_widget_size_request (GtkWidget *drawing_area,
                                         SURFACE_SIZE, SURFACE_SIZE);
   cr = cairo_create (surface);
   context = gtk_widget_get_style_context (drawing_area);
-  state = gtk_style_context_get_state (context);
-  gtk_style_context_get_padding (context, state, &padding);
+  gtk_style_context_get_padding (context, &padding);
 
   sizes = build_sizes_table (face, &n_sizes, &alpha_size, &title_size);
 
@@ -558,35 +557,27 @@ sushi_font_widget_size_request (GtkWidget *drawing_area,
 }
 
 static void
-sushi_font_widget_get_preferred_width (GtkWidget *drawing_area,
-                                       gint *minimum_width,
-                                       gint *natural_width)
+sushi_font_widget_measure (GtkWidget      *widget,
+                           GtkOrientation  orientation,
+                           int             for_size,
+                           int            *minimum,
+                           int            *natural,
+                           int            *minimum_baseline,
+                           int            *natural_baseline)
 {
-  gint width;
-
-  sushi_font_widget_size_request (drawing_area, &width, NULL, NULL);
-
-  *minimum_width = 0;
-  *natural_width = width;
+  if (orientation == GTK_ORIENTATION_HORIZONTAL) {
+    sushi_font_widget_size_request (widget, natural, NULL, NULL);
+    *minimum = 0;
+  } else {
+    sushi_font_widget_size_request (widget, NULL, natural, minimum);
+  }
 }
 
 static void
-sushi_font_widget_get_preferred_height (GtkWidget *drawing_area,
-                                        gint *minimum_height,
-                                        gint *natural_height)
+sushi_font_widget_snapshot (GtkWidget *drawing_area,
+                            GtkSnapshot *snapshot)
 {
-  gint height, min_height;
-
-  sushi_font_widget_size_request (drawing_area, NULL, &height, &min_height);
-
-  *minimum_height = min_height;
-  *natural_height = height;
-}
-
-static gboolean
-sushi_font_widget_draw (GtkWidget *drawing_area,
-                        cairo_t *cr)
-{
+  
   SushiFontWidget *self = SUSHI_FONT_WIDGET (drawing_area);
   g_autofree gint *sizes = NULL;
   gint n_sizes, alpha_size, title_size, pos_y = 0, i;
@@ -595,23 +586,24 @@ sushi_font_widget_draw (GtkWidget *drawing_area,
   GtkStyleContext *context;
   GdkRGBA color;
   GtkBorder padding;
-  GtkStateFlags state;
   gint allocated_width, allocated_height;
 
   if (face == NULL)
-    return FALSE;
+    return;
 
   context = gtk_widget_get_style_context (drawing_area);
-  state = gtk_style_context_get_state (context);
 
   allocated_width = gtk_widget_get_allocated_width (drawing_area);
   allocated_height = gtk_widget_get_allocated_height (drawing_area);
 
+  graphene_rect_t* rect = graphene_rect_alloc();
+  graphene_rect_init(rect, 0, 0, allocated_width, allocated_height);
+  cairo_t* cr = gtk_snapshot_append_cairo (snapshot, rect);
   gtk_render_background (context, cr,
                          0, 0, allocated_width, allocated_height);
 
-  gtk_style_context_get_color (context, state, &color);
-  gtk_style_context_get_padding (context, state, &padding);
+  gtk_style_context_get_color (context, &color);
+  gtk_style_context_get_padding (context, &padding);
 
   gdk_cairo_set_source_rgba (cr, &color);
 
@@ -662,8 +654,6 @@ sushi_font_widget_draw (GtkWidget *drawing_area,
 
  end:
   cairo_font_face_destroy (font);
-
-  return FALSE;
 }
 
 static void
@@ -709,9 +699,6 @@ sushi_font_widget_init (SushiFontWidget *self)
 
   if (err != FT_Err_Ok)
     g_error ("Unable to initialize FreeType");
-
-  gtk_style_context_add_class (gtk_widget_get_style_context (GTK_WIDGET (self)),
-                               GTK_STYLE_CLASS_VIEW);
 }
 
 static void
@@ -801,9 +788,8 @@ sushi_font_widget_class_init (SushiFontWidgetClass *klass)
   oclass->get_property = sushi_font_widget_get_property;
   oclass->constructed = sushi_font_widget_constructed;
 
-  wclass->draw = sushi_font_widget_draw;
-  wclass->get_preferred_width = sushi_font_widget_get_preferred_width;
-  wclass->get_preferred_height = sushi_font_widget_get_preferred_height;
+  wclass->snapshot = sushi_font_widget_snapshot;
+  wclass->measure = sushi_font_widget_measure;
 
   properties[PROP_URI] =
     g_param_spec_string ("uri",

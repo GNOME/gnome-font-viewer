@@ -21,44 +21,43 @@
  * You should have received a copy of the GNU Lesser General Public
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-*/
+ */
 
 #ifndef __FONT_VIEW_MODEL_H__
 #define __FONT_VIEW_MODEL_H__
 
 #include <gtk/gtk.h>
+#include <pango/pango.h>
 
 G_BEGIN_DECLS
 
 typedef enum {
-  COLUMN_NAME,
-  COLUMN_PATH,
-  COLUMN_FACE_INDEX,
-  COLUMN_ICON,
-  COLUMN_COLLATION_KEY,
-  NUM_COLUMNS
+    COLUMN_NAME,
+    COLUMN_PATH,
+    COLUMN_FACE_INDEX,
+    COLUMN_ICON,
+    NUM_COLUMNS
 } FontViewModelColumns;
 
 #define FONT_VIEW_TYPE_MODEL (font_view_model_get_type ())
-G_DECLARE_FINAL_TYPE (FontViewModel, font_view_model,
-                      FONT_VIEW, MODEL,
-                      GObject)
+G_DECLARE_FINAL_TYPE (FontViewModel, font_view_model, FONT_VIEW, MODEL, GObject)
 
-FontViewModel * font_view_model_new (void);
+FontViewModel *font_view_model_new (void);
 
-gboolean font_view_model_has_face (FontViewModel *self,
-                                   FT_Face face);
+gboolean font_view_model_has_face (FontViewModel *self, FT_Face face);
 GListModel *font_view_model_get_list_model (FontViewModel *self);
 
 #define FONT_VIEW_TYPE_MODEL_ITEM (font_view_model_item_get_type ())
-G_DECLARE_FINAL_TYPE (FontViewModelItem, font_view_model_item,
-                      FONT_VIEW, MODEL_ITEM,
-                      GObject)
+G_DECLARE_FINAL_TYPE (
+    FontViewModelItem, font_view_model_item, FONT_VIEW, MODEL_ITEM, GObject)
 
 gint font_view_model_item_get_face_index (FontViewModelItem *self);
-const gchar *font_view_model_item_get_collation_key (FontViewModelItem *self);
 GFile *font_view_model_item_get_font_file (FontViewModelItem *self);
 const gchar *font_view_model_item_get_font_name (FontViewModelItem *self);
+const gchar *
+font_view_model_item_get_font_preview_text (FontViewModelItem *self);
+const PangoFontDescription *
+font_view_model_item_get_font_description (FontViewModelItem *self);
 
 G_END_DECLS
 

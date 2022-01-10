@@ -30,13 +30,14 @@
 #include FT_TRUETYPE_IDS_H
 #include FT_MULTIPLE_MASTERS_H
 #include <fontconfig/fontconfig.h>
+#include <gdk/gdk.h>
 #include <gio/gio.h>
-#include <gtk/gtk.h>
 #include <glib/gi18n.h>
-#include <libhandy-1/handy.h>
-#include <hb.h>
-#include <hb-ot.h>
+#include <gtk/gtk.h>
 #include <hb-ft.h>
+#include <hb-ot.h>
+#include <hb.h>
+#include <libadwaita-1/adwaita.h>
 
 #define GNOME_DESKTOP_USE_UNSTABLE_API
 #include <libgnome-desktop/gnome-desktop-thumbnail.h>
@@ -47,35 +48,37 @@
 #define FONT_VIEW_TYPE_APPLICATION (font_view_application_get_type ())
 #define FONT_VIEW_ICON_NAME APPLICATION_ID
 
-G_DECLARE_FINAL_TYPE (FontViewApplication, font_view_application,
-                      FONT_VIEW, APPLICATION,
+G_DECLARE_FINAL_TYPE (FontViewApplication,
+                      font_view_application,
+                      FONT_VIEW,
+                      APPLICATION,
                       GtkApplication)
 
-struct _FontViewApplication {
+struct _FontViewApplication
+{
     GtkApplication parent;
 
-    GtkWidget *main_window;
+    GtkApplicationWindow *main_window;
     GtkWidget *main_grid;
     GtkWidget *header;
     GtkWidget *title_label;
     GtkWidget *side_grid;
     GtkWidget *font_widget;
-    GtkWidget *info_button;
-    GtkWidget *install_button;
-    GtkWidget *install_label;
-    GtkWidget *installing_label;
-    GtkWidget *installed_label;
-    GtkWidget *install_failed_label;
+    GtkToggleButton *info_button;
+    GtkButton *install_button;
     GtkWidget *back_button;
     GtkWidget *stack;
     GtkWidget *swin_view;
     GtkWidget *swin_preview;
     GtkWidget *swin_info;
-    GtkWidget *flow_box;
+    GtkWidget *grid_view;
     GtkWidget *search_bar;
     GtkWidget *search_entry;
     GtkWidget *search_toggle;
     GtkWidget *menu_button;
+
+    GtkFilter *filter;
+    GtkSorter *sorter;
 
     FontViewModel *model;
 
@@ -84,58 +87,32 @@ struct _FontViewApplication {
     GCancellable *cancellable;
 };
 
-G_DEFINE_TYPE (FontViewApplication, font_view_application,
+G_DEFINE_TYPE (FontViewApplication,
+               font_view_application,
                GTK_TYPE_APPLICATION);
 
-G_DECLARE_FINAL_TYPE (FontViewItem, font_view_item,
-                      FONT_VIEW, ITEM,
-                      GtkFlowBoxChild);
+G_DECLARE_FINAL_TYPE (
+    FontViewItem, font_view_item, FONT_VIEW, ITEM, GtkFlowBoxChild);
 
-struct _FontViewItem {
+struct _FontViewItem
+{
     GtkFlowBoxChild parent;
 
-    GtkWidget *image;
+    GtkWidget *font_preview;
     GtkWidget *label;
-    FontViewModelItem *item;
 
     GCancellable *thumbnail_cancellable;
 };
 
 #define FONT_VIEW_TYPE_ITEM (font_view_item_get_type ())
-G_DEFINE_TYPE (FontViewItem, font_view_item, GTK_TYPE_FLOW_BOX_CHILD)
 
-static cairo_surface_t *
-load_fallback_icon (gint scale_factor)
-{
-    static cairo_surface_t *fallback_icon = NULL;
-    g_autoptr(GIcon) icon = NULL;
-    g_autoptr(GtkIconInfo) icon_info = NULL;
-    GtkIconTheme *icon_theme;
-    const char *mimetype = "font/ttf";
-
-    if (fallback_icon != NULL)
-        return fallback_icon;
-
-    icon_theme = gtk_icon_theme_get_default ();
-    icon = g_content_type_get_icon (mimetype);
-    icon_info = gtk_icon_theme_lookup_by_gicon_for_scale (icon_theme, icon,
-                                                          128, scale_factor,
-                                                          GTK_ICON_LOOKUP_FORCE_SIZE);
-    if (!icon_info) {
-        g_warning ("Fallback icon for %s not found", mimetype);
-        return NULL;
-    }
-
-    fallback_icon = gtk_icon_info_load_surface (icon_info, NULL, NULL);
-    return fallback_icon;
-}
+G_DEFINE_TYPE (FontViewItem, font_view_item, GTK_TYPE_BOX)
 
 static void
 font_view_item_dispose (GObject *obj)
 {
     FontViewItem *self = FONT_VIEW_ITEM (obj);
 
-    g_clear_object (&self->item);
     g_cancellable_cancel (self->thumbnail_cancellable);
     g_clear_object (&self->thumbnail_cancellable);
 
@@ -152,220 +129,64 @@ font_view_item_class_init (FontViewItemClass *klass)
 static void
 font_view_item_init (FontViewItem *self)
 {
-    GtkWidget *box;
-    gint scale_factor = gtk_widget_get_scale_factor (GTK_WIDGET (self));
+    gtk_widget_add_css_class (GTK_WIDGET (self), "font-item");
+    gtk_orientable_set_orientation (GTK_ORIENTABLE (self),
+                                    GTK_ORIENTATION_VERTICAL);
+    gtk_box_set_spacing (GTK_BOX (self), 6);
 
-    box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
-    gtk_container_add (GTK_CONTAINER (self), box);
-
-    self->image = gtk_image_new ();
-    gtk_widget_set_margin_start (self->image, 6);
-    gtk_widget_set_margin_end (self->image, 6);
-    gtk_widget_set_halign (self->image, GTK_ALIGN_CENTER);
-    gtk_image_set_from_surface (GTK_IMAGE (self->image), load_fallback_icon (scale_factor));
-    gtk_container_add (GTK_CONTAINER (box), self->image);
+    self->font_preview = gtk_label_new (NULL);
+    gtk_widget_add_css_class (self->font_preview, "font-preview");
+    gtk_widget_set_margin_start (self->font_preview, 6);
+    gtk_widget_set_margin_end (self->font_preview, 6);
+    gtk_widget_set_halign (self->font_preview, GTK_ALIGN_CENTER);
+    gtk_box_append (GTK_BOX (self), self->font_preview);
 
     self->label = gtk_label_new (NULL);
     gtk_widget_set_halign (self->label, GTK_ALIGN_CENTER);
-    gtk_label_set_line_wrap (GTK_LABEL (self->label), TRUE);
-    gtk_label_set_line_wrap_mode (GTK_LABEL (self->label), PANGO_WRAP_WORD_CHAR);
+    gtk_label_set_wrap (GTK_LABEL (self->label), TRUE);
+    gtk_label_set_wrap_mode (GTK_LABEL (self->label), PANGO_WRAP_WORD_CHAR);
     gtk_label_set_max_width_chars (GTK_LABEL (self->label), 18);
     gtk_label_set_justify (GTK_LABEL (self->label), GTK_JUSTIFY_CENTER);
-    gtk_container_add (GTK_CONTAINER (box), self->label);
+    gtk_box_append (GTK_BOX (self), self->label);
 }
 
-#define ATTRIBUTES_FOR_CREATING_THUMBNAIL \
-    G_FILE_ATTRIBUTE_STANDARD_CONTENT_TYPE"," \
-    G_FILE_ATTRIBUTE_TIME_MODIFIED
-#define ATTRIBUTES_FOR_EXISTING_THUMBNAIL \
-    G_FILE_ATTRIBUTE_THUMBNAIL_PATH"," \
-    G_FILE_ATTRIBUTE_THUMBNAILING_FAILED
-
-static GdkPixbuf *
-create_thumbnail (GFile       *font_file,
-                  const gchar *thumb_uri,
-                  gint         scale_factor)
-{
-    g_autoptr(GdkPixbuf) pixbuf = NULL;
-    g_autoptr(GError) error = NULL;
-    g_autoptr(GFileInfo) info = NULL;
-    g_autoptr(GnomeDesktopThumbnailFactory) factory = NULL;
-    guint64 mtime;
-
-    info = g_file_query_info (font_file, ATTRIBUTES_FOR_CREATING_THUMBNAIL,
-                              G_FILE_QUERY_INFO_NONE,
-                              NULL, &error);
-
-    /* we don't care about reporting errors here, just fail the
-     * thumbnail.
-     */
-    if (info == NULL) {
-        g_autofree gchar *file_uri = g_file_get_uri (font_file);
-        g_debug ("Can't query info for file %s: %s", file_uri, error->message);
-        return NULL;
-    }
-
-    factory = gnome_desktop_thumbnail_factory_new (GNOME_DESKTOP_THUMBNAIL_SIZE_LARGE);
-    pixbuf = gnome_desktop_thumbnail_factory_generate_thumbnail
-        (factory, thumb_uri, g_file_info_get_content_type (info));
-
-    mtime = g_file_info_get_attribute_uint64 (info, G_FILE_ATTRIBUTE_TIME_MODIFIED);
-    if (pixbuf != NULL) {
-        GdkPixbuf *scaled = gdk_pixbuf_scale_simple (pixbuf,
-                                                     128 * scale_factor,
-                                                     128 * scale_factor,
-                                                     GDK_INTERP_BILINEAR);
-        gnome_desktop_thumbnail_factory_save_thumbnail (factory, pixbuf,
-                                                        thumb_uri, (time_t) mtime);
-        g_object_unref (pixbuf);
-        pixbuf = scaled;
-    } else {
-        gnome_desktop_thumbnail_factory_create_failed_thumbnail (factory,
-                                                                 thumb_uri, (time_t) mtime);
-    }
-
-    return g_steal_pointer (&pixbuf);
-}
-
-static void
-font_view_item_load_thumbnail_job (GTask *task,
-                                   gpointer source_object,
-                                   gpointer task_data,
-                                   GCancellable *cancellable)
-{
-    FontViewItem *self = source_object;
-    FontViewModelItem *item = self->item;
-    gint scale_factor = GPOINTER_TO_INT (task_data);
-    g_autoptr(GdkPixbuf) pixbuf = NULL;
-    g_autoptr(GError) error = NULL;
-    g_autofree gchar *thumb_path = NULL, *thumb_uri = NULL, *file_uri = NULL;
-    gint face_index;
-    GFile *font_file;
-
-    if (g_task_return_error_if_cancelled (task))
-        return;
-
-    face_index = font_view_model_item_get_face_index (item);
-    font_file = font_view_model_item_get_font_file (item);
-    file_uri = g_file_get_uri (font_file);
-
-    if (face_index == 0) {
-        g_autoptr(GFileInfo) info = NULL;
-        gboolean thumb_failed;
-
-        thumb_uri = g_strdup (file_uri);
-        info = g_file_query_info (font_file,
-                                  ATTRIBUTES_FOR_EXISTING_THUMBNAIL,
-                                  G_FILE_QUERY_INFO_NONE,
-                                  NULL, &error);
-
-        if (error != NULL) {
-            g_debug ("Can't query info for file %s: %s", file_uri, error->message);
-            g_task_return_error (task, g_steal_pointer(&error));
-            return;
-        }
-
-        thumb_failed = g_file_info_get_attribute_boolean (info, G_FILE_ATTRIBUTE_THUMBNAILING_FAILED);
-        if (thumb_failed) {
-            g_task_return_pointer (task, NULL, NULL);
-            return;
-        }
-
-        thumb_path = g_strdup (g_file_info_get_attribute_byte_string (info, G_FILE_ATTRIBUTE_THUMBNAIL_PATH));
-    } else {
-        g_autofree gchar *checksum = NULL, *filename = NULL;
-
-        thumb_uri = g_strdup_printf ("%s#0x%08X", file_uri, face_index);
-        checksum = g_compute_checksum_for_data (G_CHECKSUM_MD5,
-                                                (const guchar *) thumb_uri,
-                                                strlen (thumb_uri));
-        filename = g_strdup_printf ("%s.png", checksum);
-
-        thumb_path = g_build_filename (g_get_user_cache_dir (),
-                                       "thumbnails",
-                                       "large",
-                                       filename,
-                                       NULL);
-
-        if (!g_file_test (thumb_path, G_FILE_TEST_IS_REGULAR))
-            g_clear_pointer (&thumb_path, g_free);
-    }
-
-    if (thumb_path != NULL) {
-        g_autoptr(GFile) thumb_file = NULL;
-        g_autoptr(GFileInputStream) is = NULL;
-
-        thumb_file = g_file_new_for_path (thumb_path);
-        is = g_file_read (thumb_file, NULL, &error);
-
-        if (error != NULL) {
-            g_debug ("Can't read file %s: %s", thumb_path, error->message);
-            g_task_return_error (task, g_steal_pointer(&error));
-            return;
-        }
-
-        pixbuf = gdk_pixbuf_new_from_stream_at_scale (G_INPUT_STREAM (is),
-                                                      128 * scale_factor, 128 * scale_factor,
-                                                      TRUE,
-                                                      NULL, &error);
-
-        if (error != NULL) {
-            g_debug ("Can't read thumbnail pixbuf %s: %s", thumb_path, error->message);
-            g_task_return_error (task, g_steal_pointer(&error));
-            return;
-        }
-    } else {
-        pixbuf = create_thumbnail (font_file, thumb_uri, scale_factor);
-    }
-
-    if (pixbuf != NULL)
-        g_task_return_pointer (task, gdk_cairo_surface_create_from_pixbuf (pixbuf, scale_factor, NULL),
-                               (GDestroyNotify) cairo_surface_destroy);
-    else
-        g_task_return_pointer (task, NULL, NULL);
-}
-
-static void
-font_view_item_thumbnail_loaded (GObject *source_object,
-                                 GAsyncResult *result,
-                                 gpointer user_data)
-{
-    FontViewItem *self = user_data;
-    cairo_surface_t *surface = g_task_propagate_pointer (G_TASK (result), NULL);
-
-    g_clear_object (&self->thumbnail_cancellable);
-
-    if (surface != NULL) {
-        gtk_image_set_from_surface (GTK_IMAGE (self->image), surface);
-        cairo_surface_destroy (surface);
-    }
-}
-
-static void
-font_view_item_load_thumbnail (FontViewItem *self)
-{
-    g_autoptr(GTask) task = NULL;
-    gint scale_factor = gtk_widget_get_scale_factor (GTK_WIDGET (self));
-
-    self->thumbnail_cancellable = g_cancellable_new ();
-    task = g_task_new (self, self->thumbnail_cancellable,
-                       font_view_item_thumbnail_loaded, self);
-    g_task_set_task_data (task, GINT_TO_POINTER (scale_factor), NULL);
-    g_task_run_in_thread (task, font_view_item_load_thumbnail_job);
-}
+#define ATTRIBUTES_FOR_CREATING_THUMBNAIL                                      \
+    G_FILE_ATTRIBUTE_STANDARD_CONTENT_TYPE "," G_FILE_ATTRIBUTE_TIME_MODIFIED
+#define ATTRIBUTES_FOR_EXISTING_THUMBNAIL                                      \
+    G_FILE_ATTRIBUTE_THUMBNAIL_PATH "," G_FILE_ATTRIBUTE_THUMBNAILING_FAILED
 
 static GtkWidget *
-font_view_item_new (FontViewModelItem *item)
+font_view_item_new ()
 {
     FontViewItem *view_item = g_object_new (FONT_VIEW_TYPE_ITEM, NULL);
 
-    view_item->item = g_object_ref (item);
-    gtk_label_set_text (GTK_LABEL (view_item->label),
-                        font_view_model_item_get_font_name (item));
-    font_view_item_load_thumbnail (view_item);
-    gtk_widget_show_all (GTK_WIDGET (view_item));
-
     return GTK_WIDGET (view_item);
+}
+
+static void
+font_view_item_bind (FontViewItem *self, FontViewModelItem *item)
+{
+    gtk_label_set_text (GTK_LABEL (self->label),
+                        font_view_model_item_get_font_name (item));
+    gtk_label_set_text (GTK_LABEL (self->font_preview),
+                        font_view_model_item_get_font_preview_text (item));
+
+    PangoAttrList *list = pango_attr_list_new ();
+    PangoAttribute *attr = pango_attr_font_desc_new (
+        font_view_model_item_get_font_description (item));
+    pango_attr_list_insert (list, attr);
+    gtk_label_set_attributes (GTK_LABEL (self->font_preview), list);
+}
+
+static void
+font_view_item_unbind (FontViewItem *self)
+{
+    gtk_label_set_text (GTK_LABEL (self->label), NULL);
+    gtk_label_set_text (GTK_LABEL (self->font_preview), NULL);
+    gtk_label_set_attributes (GTK_LABEL (self->font_preview), NULL);
+
+    g_cancellable_cancel (self->thumbnail_cancellable);
+    g_clear_object (&self->thumbnail_cancellable);
 }
 
 static void font_view_application_do_overview (FontViewApplication *self);
@@ -380,25 +201,23 @@ _print_version_and_exit (const gchar *option_name,
                          gpointer data,
                          GError **error)
 {
-    g_print("%s %s\n", _("GNOME Fonts"), VERSION);
+    g_print ("%s %s\n", _ ("GNOME Fonts"), VERSION);
     exit (EXIT_SUCCESS);
     return TRUE;
 }
 
-static const GOptionEntry goption_options[] =
-{
-    { "version", 0, G_OPTION_FLAG_NO_ARG, G_OPTION_ARG_CALLBACK,
-      _print_version_and_exit, N_("Show the application's version"), NULL},
-    { NULL }
-};
+static const GOptionEntry goption_options[] = {
+    {"version", 0, G_OPTION_FLAG_NO_ARG, G_OPTION_ARG_CALLBACK,
+     _print_version_and_exit, N_ ("Show the application's version"), NULL},
+    {NULL}};
 
 #define WHITESPACE_CHARS "\f \t"
 
 static void
 strip_whitespace (gchar **original)
 {
-    g_auto(GStrv) split = NULL;
-    g_autoptr(GString) reassembled = NULL;
+    g_auto (GStrv) split = NULL;
+    g_autoptr (GString) reassembled = NULL;
     const gchar *str;
     gint idx, n_stripped;
     size_t len;
@@ -448,7 +267,7 @@ strip_version (gchar **original)
 }
 
 static void
-add_row (GtkWidget *grid,
+add_row (GtkBox *list,
          const gchar *name,
          const gchar *value,
          gboolean multiline)
@@ -456,20 +275,19 @@ add_row (GtkWidget *grid,
     GtkWidget *name_w, *label;
     int i;
     const char *p;
-
+    GtkWidget *hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 8);
     name_w = gtk_label_new (name);
-    gtk_style_context_add_class (gtk_widget_get_style_context (name_w), "dim-label");
+    gtk_widget_add_css_class (GTK_WIDGET (name_w), "dim-label");
     gtk_widget_set_halign (name_w, GTK_ALIGN_END);
     gtk_widget_set_valign (name_w, GTK_ALIGN_START);
 
-    gtk_container_add (GTK_CONTAINER (grid), name_w);
+    gtk_box_append (GTK_BOX (hbox), name_w);
 
     label = gtk_label_new (value);
     gtk_widget_set_halign (label, GTK_ALIGN_START);
     gtk_widget_set_valign (label, GTK_ALIGN_START);
-    gtk_label_set_selectable (GTK_LABEL(label), TRUE);
+    gtk_label_set_selectable (GTK_LABEL (label), TRUE);
 
-    gtk_label_set_line_wrap (GTK_LABEL (label), TRUE);
     gtk_label_set_xalign (GTK_LABEL (label), 0.0);
 
     gtk_label_set_ellipsize (GTK_LABEL (label), PANGO_ELLIPSIZE_END);
@@ -491,30 +309,27 @@ add_row (GtkWidget *grid,
         }
     }
 
-    gtk_grid_attach_next_to (GTK_GRID (grid), label,
-                             name_w, GTK_POS_RIGHT,
-                             1, 1);
+    gtk_box_append (GTK_BOX (hbox), label);
+    gtk_box_append (list, hbox);
 }
 
-#define FixedToFloat(f) (((float)(f))/65536.0)
+#define FixedToFloat(f) (((float) (f)) / 65536.0)
 
 static char *
 describe_axis (FT_Var_Axis *ax)
 {
-  /* Translators, this string is used to display information about
-   * a 'font variation axis'. The %s gets replaced with the name
-   * of the axis, for example 'Width'. The three %g get replaced
-   * with the minimum, maximum and default values for the axis.
-   */
-  return g_strdup_printf (_("%s %g — %g, default %g"), ax->name,
-                          FixedToFloat (ax->minimum),
-                          FixedToFloat (ax->maximum),
-                          FixedToFloat (ax->def));
+    /* Translators, this string is used to display information about
+     * a 'font variation axis'. The %s gets replaced with the name
+     * of the axis, for example 'Width'. The three %g get replaced
+     * with the minimum, maximum and default values for the axis.
+     */
+    return g_strdup_printf (_ ("%s %g — %g, default %g"), ax->name,
+                            FixedToFloat (ax->minimum),
+                            FixedToFloat (ax->maximum), FixedToFloat (ax->def));
 }
 
 static char *
-get_sfnt_name (FT_Face face,
-               guint id)
+get_sfnt_name (FT_Face face, guint id)
 {
     guint count, i;
 
@@ -530,12 +345,12 @@ get_sfnt_name (FT_Face face,
 
         /* only handle the unicode names for US langid */
         if (!(sname.platform_id == TT_PLATFORM_MICROSOFT &&
-            sname.encoding_id == TT_MS_ID_UNICODE_CS &&
-            sname.language_id == TT_MS_LANGID_ENGLISH_UNITED_STATES))
+              sname.encoding_id == TT_MS_ID_UNICODE_CS &&
+              sname.language_id == TT_MS_LANGID_ENGLISH_UNITED_STATES))
             continue;
 
-        return g_convert ((gchar *)sname.string, sname.string_len,
-                          "UTF-8", "UTF-16BE", NULL, NULL, NULL);
+        return g_convert ((gchar *) sname.string, sname.string_len, "UTF-8",
+                          "UTF-16BE", NULL, NULL, NULL);
     }
     return NULL;
 }
@@ -547,14 +362,11 @@ get_sfnt_name (FT_Face face,
 static gboolean
 is_valid_subfamily_id (guint id)
 {
-  return id == 2 || id == 17 || (255 < id && id < 32768);
+    return id == 2 || id == 17 || (255 < id && id < 32768);
 }
 
 static void
-describe_instance (FT_Face face,
-                   FT_Var_Named_Style *ns,
-                   int pos,
-                   GString *s)
+describe_instance (FT_Face face, FT_Var_Named_Style *ns, int pos, GString *s)
 {
     g_autofree char *str = NULL;
 
@@ -562,7 +374,7 @@ describe_instance (FT_Face face,
         str = get_sfnt_name (face, ns->strid);
 
     if (str == NULL)
-        str = g_strdup_printf (_("Instance %d"), pos);
+        str = g_strdup_printf (_ ("Instance %d"), pos);
 
     if (s->len > 0)
         g_string_append (s, ", ");
@@ -574,7 +386,7 @@ describe_instance (FT_Face face,
 static char *
 get_features (FT_Face face)
 {
-    g_autoptr(GString) s = NULL;
+    g_autoptr (GString) s = NULL;
     hb_font_t *hb_font;
     int i, j, k;
 
@@ -582,7 +394,7 @@ get_features (FT_Face face)
 
     hb_font = hb_ft_font_create (face, NULL);
     if (hb_font) {
-        hb_tag_t tables[2] = { HB_OT_TAG_GSUB, HB_OT_TAG_GPOS };
+        hb_tag_t tables[2] = {HB_OT_TAG_GSUB, HB_OT_TAG_GPOS};
         hb_face_t *hb_face;
 
         hb_face = hb_font_get_face (hb_font);
@@ -593,20 +405,20 @@ get_features (FT_Face face)
             unsigned int script_index = 0;
             unsigned int lang_index = HB_OT_LAYOUT_DEFAULT_LANGUAGE_INDEX;
 
-            hb_ot_layout_language_get_feature_tags (hb_face,
-                                                    tables[i],
-                                                    script_index,
-                                                    lang_index,
-                                                    0,
-                                                    &count,
-                                                    features);
+            hb_ot_layout_language_get_feature_tags (hb_face, tables[i],
+                                                    script_index, lang_index, 0,
+                                                    &count, features);
             for (j = 0; j < count; j++) {
                 for (k = 0; k < G_N_ELEMENTS (open_type_layout_features); k++) {
                     if (open_type_layout_features[k].tag == features[j]) {
                         if (s->len > 0)
-                            /* Translators, this seperates the list of Layout Features. */
-                            g_string_append (s, C_("OpenType layout", ", "));
-                        g_string_append (s, g_dpgettext2 (NULL, "OpenType layout", open_type_layout_features[k].name));
+                            /* Translators, this seperates the list of Layout
+                             * Features. */
+                            g_string_append (s, C_ ("OpenType layout", ", "));
+                        g_string_append (
+                            s,
+                            g_dpgettext2 (NULL, "OpenType layout",
+                                          open_type_layout_features[k].name));
                         break;
                     }
                 }
@@ -621,37 +433,37 @@ get_features (FT_Face face)
 }
 
 static void
-populate_grid (FontViewApplication *self,
-               GtkWidget *grid,
-               FT_Face face)
+populate_grid (FontViewApplication *self, GtkBox *grid, FT_Face face)
 {
     g_autoptr (GFileInfo) info = NULL;
     g_autofree gchar *path = NULL;
     PS_FontInfoRec ps_info;
 
-    add_row (grid, _("Name"), face->family_name, FALSE);
+    add_row (grid, _ ("Name"), face->family_name, FALSE);
 
     path = g_file_get_path (self->font_file);
-    add_row (grid, _("Location"), path, FALSE);
+    add_row (grid, _ ("Location"), path, FALSE);
 
     if (face->style_name)
-        add_row (grid, _("Style"), face->style_name, FALSE);
+        add_row (grid, _ ("Style"), face->style_name, FALSE);
 
     info = g_file_query_info (self->font_file,
-                              G_FILE_ATTRIBUTE_STANDARD_CONTENT_TYPE ","
-                              G_FILE_ATTRIBUTE_STANDARD_SIZE,
-                              G_FILE_QUERY_INFO_NONE,
-                              NULL, NULL);
+                              G_FILE_ATTRIBUTE_STANDARD_CONTENT_TYPE
+                              "," G_FILE_ATTRIBUTE_STANDARD_SIZE,
+                              G_FILE_QUERY_INFO_NONE, NULL, NULL);
 
     if (info != NULL) {
-        g_autofree gchar *s = g_content_type_get_description (g_file_info_get_content_type (info));
-        add_row (grid, _("Type"), s, FALSE);
+        g_autofree gchar *s = g_content_type_get_description (
+            g_file_info_get_content_type (info));
+        add_row (grid, _ ("Type"), s, FALSE);
     }
 
     if (FT_IS_SFNT (face)) {
         gint i, len;
-        g_autofree gchar *version = NULL, *copyright = NULL, *description = NULL;
-        g_autofree gchar *designer = NULL, *manufacturer = NULL, *license = NULL;
+        g_autofree gchar *version = NULL, *copyright = NULL,
+                         *description = NULL;
+        g_autofree gchar *designer = NULL, *manufacturer = NULL,
+                         *license = NULL;
 
         len = FT_Get_Sfnt_Name_Count (face);
         for (i = 0; i < len; i++) {
@@ -669,33 +481,39 @@ populate_grid (FontViewApplication *self,
             switch (sname.name_id) {
             case TT_NAME_ID_COPYRIGHT:
                 if (!copyright)
-                    copyright = g_convert ((gchar *)sname.string, sname.string_len,
-                                           "UTF-8", "UTF-16BE", NULL, NULL, NULL);
+                    copyright =
+                        g_convert ((gchar *) sname.string, sname.string_len,
+                                   "UTF-8", "UTF-16BE", NULL, NULL, NULL);
                 break;
             case TT_NAME_ID_VERSION_STRING:
                 if (!version)
-                    version = g_convert ((gchar *)sname.string, sname.string_len,
-                                         "UTF-8", "UTF-16BE", NULL, NULL, NULL);
+                    version =
+                        g_convert ((gchar *) sname.string, sname.string_len,
+                                   "UTF-8", "UTF-16BE", NULL, NULL, NULL);
                 break;
             case TT_NAME_ID_DESCRIPTION:
                 if (!description)
-                    description = g_convert ((gchar *)sname.string, sname.string_len,
-                                             "UTF-8", "UTF-16BE", NULL, NULL, NULL);
+                    description =
+                        g_convert ((gchar *) sname.string, sname.string_len,
+                                   "UTF-8", "UTF-16BE", NULL, NULL, NULL);
                 break;
             case TT_NAME_ID_MANUFACTURER:
                 if (!manufacturer)
-                    manufacturer = g_convert ((gchar *)sname.string, sname.string_len,
-                                              "UTF-8", "UTF-16BE", NULL, NULL, NULL);
+                    manufacturer =
+                        g_convert ((gchar *) sname.string, sname.string_len,
+                                   "UTF-8", "UTF-16BE", NULL, NULL, NULL);
                 break;
             case TT_NAME_ID_DESIGNER:
                 if (!designer)
-                    designer = g_convert ((gchar *)sname.string, sname.string_len,
-                                          "UTF-8", "UTF-16BE", NULL, NULL, NULL);
+                    designer =
+                        g_convert ((gchar *) sname.string, sname.string_len,
+                                   "UTF-8", "UTF-16BE", NULL, NULL, NULL);
                 break;
             case TT_NAME_ID_LICENSE:
                 if (!license)
-                    license = g_convert ((gchar *)sname.string, sname.string_len,
-                                         "UTF-8", "UTF-16BE", NULL, NULL, NULL);
+                    license =
+                        g_convert ((gchar *) sname.string, sname.string_len,
+                                   "UTF-8", "UTF-16BE", NULL, NULL, NULL);
                 break;
             default:
                 break;
@@ -703,134 +521,184 @@ populate_grid (FontViewApplication *self,
         }
         if (version) {
             strip_version (&version);
-            add_row (grid, _("Version"), version, FALSE);
+            add_row (grid, _ ("Version"), version, FALSE);
         }
         if (copyright) {
             strip_whitespace (&copyright);
-            add_row (grid, _("Copyright"), copyright, TRUE);
+            add_row (grid, _ ("Copyright"), copyright, TRUE);
         }
         if (description) {
             strip_whitespace (&description);
-            add_row (grid, _("Description"), description, TRUE);
+            add_row (grid, _ ("Description"), description, TRUE);
         }
         if (manufacturer) {
             strip_whitespace (&manufacturer);
-            add_row (grid, _("Manufacturer"), manufacturer, TRUE);
+            add_row (grid, _ ("Manufacturer"), manufacturer, TRUE);
         }
         if (designer) {
             strip_whitespace (&designer);
-            add_row (grid, _("Designer"), designer, TRUE);
+            add_row (grid, _ ("Designer"), designer, TRUE);
         }
         if (license) {
             strip_whitespace (&license);
-            add_row (grid, _("License"), license, TRUE);
+            add_row (grid, _ ("License"), license, TRUE);
         }
     } else if (FT_Get_PS_Font_Info (face, &ps_info) == 0) {
         if (ps_info.version && g_utf8_validate (ps_info.version, -1, NULL)) {
             g_autofree gchar *compressed = g_strcompress (ps_info.version);
             strip_version (&compressed);
-            add_row (grid, _("Version"), compressed, FALSE);
+            add_row (grid, _ ("Version"), compressed, FALSE);
         }
         if (ps_info.notice && g_utf8_validate (ps_info.notice, -1, NULL)) {
             g_autofree gchar *compressed = g_strcompress (ps_info.notice);
             strip_whitespace (&compressed);
-            add_row (grid, _("Copyright"), compressed, TRUE);
+            add_row (grid, _ ("Copyright"), compressed, TRUE);
         }
     }
 }
 
 static void
-populate_details (FontViewApplication *self,
-                  GtkWidget *grid,
-                  FT_Face face)
+populate_details (FontViewApplication *self, GtkBox *grid, FT_Face face)
 {
     g_autofree gchar *glyph_count = NULL, *features = NULL;
     FT_MM_Var *ft_mm_var;
 
     glyph_count = g_strdup_printf ("%ld", face->num_glyphs);
-    add_row (grid, _("Glyph Count"), glyph_count, FALSE);
+    add_row (grid, _ ("Glyph Count"), glyph_count, FALSE);
 
-    add_row (grid, _("Color Glyphs"), FT_HAS_COLOR (face) ? _("yes") : _("no"), FALSE);
+    add_row (grid, _ ("Color Glyphs"),
+             FT_HAS_COLOR (face) ? _ ("yes") : _ ("no"), FALSE);
 
     features = get_features (face);
     if (features)
-        add_row (grid, _("Layout Features"), features, TRUE);
+        add_row (grid, _ ("Layout Features"), features, TRUE);
 
     if (FT_Get_MM_Var (face, &ft_mm_var) == 0) {
         int i;
         for (i = 0; i < ft_mm_var->num_axis; i++) {
             g_autofree gchar *s = describe_axis (&ft_mm_var->axis[i]);
-            add_row (grid, i == 0 ? _("Variation Axes") : "", s, FALSE);
+            add_row (grid, i == 0 ? _ ("Variation Axes") : "", s, FALSE);
         }
         {
-            g_autoptr(GString) str = g_string_new ("");
+            g_autoptr (GString) str = g_string_new ("");
             for (i = 0; i < ft_mm_var->num_namedstyles; i++)
                 describe_instance (face, &ft_mm_var->namedstyle[i], i, str);
 
-            add_row (grid, _("Named Styles"), str->str, TRUE);
+            add_row (grid, _ ("Named Styles"), str->str, TRUE);
         }
         free (ft_mm_var);
     }
 }
 
 static void
-install_button_refresh_appearance (FontViewApplication *self,
-                                   GError *error)
+install_button_refresh_appearance (FontViewApplication *self, GError *error)
 {
     FT_Face face;
-    GtkStyleContext *context;
-    GtkWidget *current_label;
-
-    context = gtk_widget_get_style_context (self->install_button);
-
-    current_label = gtk_bin_get_child (GTK_BIN (self->install_button));
-    gtk_container_remove (GTK_CONTAINER (self->install_button), current_label);
 
     if (error != NULL) {
-        gtk_container_add (GTK_CONTAINER (self->install_button), self->install_failed_label);
-        gtk_widget_set_sensitive (self->install_button, FALSE);
-        gtk_style_context_remove_class (context, "suggested-action");
+        gtk_button_set_label (self->install_button, _ ("Failed"));
+        gtk_widget_set_sensitive (GTK_WIDGET (self->install_button), FALSE);
+        gtk_widget_remove_css_class (GTK_WIDGET (self->install_button),
+                                     "suggested-action");
     } else {
-        face = sushi_font_widget_get_ft_face (SUSHI_FONT_WIDGET (self->font_widget));
+        face = sushi_font_widget_get_ft_face (
+            SUSHI_FONT_WIDGET (self->font_widget));
 
         if (font_view_model_has_face (FONT_VIEW_MODEL (self->model), face)) {
-            gtk_container_add (GTK_CONTAINER (self->install_button), self->installed_label);
-            gtk_widget_set_sensitive (self->install_button, FALSE);
-            gtk_style_context_remove_class (context, "suggested-action");
+            gtk_button_set_label (self->install_button, _ ("Installed"));
+            gtk_widget_set_sensitive (GTK_WIDGET (self->install_button), FALSE);
+            gtk_widget_remove_css_class (GTK_WIDGET (self->install_button),
+                                         "suggested-action");
         } else if (self->cancellable != NULL) {
-            gtk_container_add (GTK_CONTAINER (self->install_button), self->installing_label);
-            gtk_widget_set_sensitive (self->install_button, FALSE);
+            gtk_button_set_label (self->install_button, _ ("Installing"));
+            gtk_widget_set_sensitive (GTK_WIDGET (self->install_button), FALSE);
         } else {
-            gtk_container_add (GTK_CONTAINER (self->install_button), self->install_label);
-            gtk_widget_set_sensitive (self->install_button, TRUE);
-            gtk_style_context_add_class (context, "suggested-action");
+            gtk_button_set_label (self->install_button, _ ("Install"));
+            gtk_widget_set_sensitive (GTK_WIDGET (self->install_button), TRUE);
+            gtk_widget_add_css_class (GTK_WIDGET (self->install_button),
+                                      "suggested-action");
         }
     }
 }
 
-static void
-font_view_populate_from_model (FontViewApplication *self,
-                               guint position,
-                               guint removed,
-                               guint added)
+static char *
+font_name_closure (gpointer self)
 {
-    GtkFlowBox *flow_box = GTK_FLOW_BOX (self->flow_box);
+    FontViewModelItem *item = FONT_VIEW_MODEL_ITEM (self);
+
+    return g_strdup (font_view_model_item_get_font_name (item));
+}
+
+static void
+font_item_setup (GtkSignalListItemFactory *self,
+                 GtkListItem *listitem,
+                 gpointer user_data)
+{
+    gtk_list_item_set_activatable (listitem, true);
+    gtk_list_item_set_child (listitem, font_view_item_new ());
+}
+
+static void
+font_item_bind (GtkSignalListItemFactory *self,
+                GtkListItem *listitem,
+                gpointer user_data)
+{
+    FontViewModelItem *model_item = gtk_list_item_get_item (listitem);
+    FontViewItem *item = FONT_VIEW_ITEM (gtk_list_item_get_child (listitem));
+    font_view_item_bind (item, model_item);
+}
+
+static void
+font_item_unbind (GtkSignalListItemFactory *self,
+                  GtkListItem *listitem,
+                  gpointer user_data)
+{
+    FontViewItem *item = FONT_VIEW_ITEM (gtk_list_item_get_child (listitem));
+    font_view_item_unbind (item);
+}
+
+static void
+font_item_teardown (GtkSignalListItemFactory *self,
+                    GtkListItem *listitem,
+                    gpointer user_data)
+{
+}
+
+static void
+font_view_create_grid_view (FontViewApplication *self)
+{
+
     GListModel *list_model = font_view_model_get_list_model (self->model);
-    gint i;
+    GtkFilter *filter =
+        GTK_FILTER (gtk_string_filter_new (gtk_closure_expression_new (
+            G_TYPE_STRING,
+            g_cclosure_new (G_CALLBACK (font_name_closure), NULL, NULL), 0,
+            NULL)));
+    self->filter = filter;
+    GtkSorter *sorter =
+        GTK_SORTER (gtk_string_sorter_new (gtk_closure_expression_new (
+            G_TYPE_STRING,
+            g_cclosure_new (G_CALLBACK (font_name_closure), NULL, NULL), 0,
+            NULL)));
+    self->sorter = sorter;
 
-    while (removed--) {
-        GtkFlowBoxChild *child;
+    GtkSortListModel *sort_model = gtk_sort_list_model_new (list_model, sorter);
+    GtkFilterListModel *filter_model =
+        gtk_filter_list_model_new (G_LIST_MODEL (sort_model), filter);
+    GtkListItemFactory *factory = gtk_signal_list_item_factory_new ();
 
-        child = gtk_flow_box_get_child_at_index (flow_box, position);
-        gtk_widget_destroy (GTK_WIDGET (child));
-    }
+    g_signal_connect (factory, "setup", G_CALLBACK (font_item_setup), NULL);
+    g_signal_connect (factory, "bind", G_CALLBACK (font_item_bind), NULL);
+    g_signal_connect (factory, "unbind", G_CALLBACK (font_item_unbind), NULL);
+    g_signal_connect (factory, "teardown", G_CALLBACK (font_item_teardown),
+                      NULL);
 
-    for (i = 0; i < added; i++) {
-        g_autoptr(FontViewModelItem) item = g_list_model_get_item (list_model, position + i);
-        GtkWidget *widget = font_view_item_new (item);
-
-        gtk_flow_box_insert (flow_box, widget, position + i);
-    }
+    GtkNoSelection *selection =
+        gtk_no_selection_new (G_LIST_MODEL (filter_model));
+    self->grid_view =
+        gtk_grid_view_new (GTK_SELECTION_MODEL (selection), factory);
+    gtk_grid_view_set_single_click_activate (GTK_GRID_VIEW (self->grid_view),
+                                             true);
 }
 
 static void
@@ -844,9 +712,6 @@ font_model_items_changed_cb (GListModel *model,
 
     if (self->font_file != NULL)
         install_button_refresh_appearance (self, NULL);
-
-    if (self->flow_box != NULL)
-        font_view_populate_from_model (self, position, removed, added);
 }
 
 static void
@@ -857,32 +722,30 @@ font_view_show_error (FontViewApplication *self,
     GtkWidget *dialog;
 
     dialog = gtk_message_dialog_new (GTK_WINDOW (self->main_window),
-                                     GTK_DIALOG_MODAL,
-                                     GTK_MESSAGE_ERROR,
-                                     GTK_BUTTONS_CLOSE,
-                                     "%s",
-                                     primary_text);
-    gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
-                                              "%s", secondary_text);
-    g_signal_connect (dialog, "response", G_CALLBACK (gtk_widget_destroy), NULL);
+                                     GTK_DIALOG_MODAL, GTK_MESSAGE_ERROR,
+                                     GTK_BUTTONS_CLOSE, "%s", primary_text);
+    gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), "%s",
+                                              secondary_text);
+    g_signal_connect (dialog, "response", G_CALLBACK (gtk_widget_unparent),
+                      NULL);
     gtk_widget_show (dialog);
 }
 
 static void
-font_view_show_install_error (FontViewApplication *self,
-                              GError *error)
+font_view_show_install_error (FontViewApplication *self, GError *error)
 {
     install_button_refresh_appearance (self, error);
-    font_view_show_error (self, _("This font could not be installed."), error->message);
+    font_view_show_error (self, _ ("This font could not be installed."),
+                          error->message);
 }
 
 static void
-font_install_finished (GObject      *source_object,
+font_install_finished (GObject *source_object,
                        GAsyncResult *res,
-                       gpointer      user_data)
+                       gpointer user_data)
 {
     FontViewApplication *self = user_data;
-    g_autoptr(GError) err = NULL;
+    g_autoptr (GError) err = NULL;
 
     g_task_propagate_boolean (G_TASK (res), &err);
 
@@ -901,21 +764,19 @@ install_font_job (GTask *task,
     GFile *dest_location = user_data;
     FontViewApplication *self = FONT_VIEW_APPLICATION (source_object);
     g_autofree gchar *dest_basename = g_file_get_basename (self->font_file);
-    g_autoptr(GError) error = NULL;
+    g_autoptr (GError) error = NULL;
     gboolean created = FALSE;
     gint i = 0;
 
     while (!created) {
-        g_autofree gchar *dest_filename = (i == 0) ?
-            g_strdup (dest_basename) : g_strdup_printf ("%d%s", i, dest_basename);
-        g_autoptr(GFile) dest_file = g_file_get_child (dest_location, dest_filename);
+        g_autofree gchar *dest_filename =
+            (i == 0) ? g_strdup (dest_basename)
+                     : g_strdup_printf ("%d%s", i, dest_basename);
+        g_autoptr (GFile) dest_file =
+            g_file_get_child (dest_location, dest_filename);
 
-        created = g_file_copy (self->font_file,
-                               dest_file,
-                               G_FILE_COPY_NONE,
-                               cancellable,
-                               NULL, NULL,
-                               &error);
+        created = g_file_copy (self->font_file, dest_file, G_FILE_COPY_NONE,
+                               cancellable, NULL, NULL, &error);
 
         if (error != NULL) {
             if (g_error_matches (error, G_IO_ERROR, G_IO_ERROR_EXISTS)) {
@@ -934,10 +795,9 @@ install_font_job (GTask *task,
 }
 
 static void
-font_view_install_font (FontViewApplication *self,
-                        GFile *dest_location)
+font_view_install_font (FontViewApplication *self, GFile *dest_location)
 {
-    g_autoptr(GTask) task = NULL;
+    g_autoptr (GTask) task = NULL;
 
     self->cancellable = g_cancellable_new ();
 
@@ -947,13 +807,13 @@ font_view_install_font (FontViewApplication *self,
 }
 
 static void
-install_button_clicked_cb (GtkButton *button,
-                           gpointer user_data)
+install_button_clicked_cb (GtkButton *button, gpointer user_data)
 {
     FontViewApplication *self = user_data;
-    g_autoptr(GError) err = NULL;
-    g_autoptr(GFile) home_prefix = NULL, xdg_prefix = NULL;
-    g_autoptr(GFile) xdg_location = NULL, home_location = NULL, dest_location = NULL;
+    g_autoptr (GError) err = NULL;
+    g_autoptr (GFile) home_prefix = NULL, xdg_prefix = NULL;
+    g_autoptr (GFile) xdg_location = NULL, home_location = NULL,
+                      dest_location = NULL;
     FcConfig *config;
     FcStrList *str_list;
     FcChar8 *path;
@@ -968,15 +828,14 @@ install_button_clicked_cb (GtkButton *button,
      * under the home directory.
      */
     while ((path = FcStrListNext (str_list)) != NULL) {
-        g_autoptr(GFile) file = g_file_new_for_path ((const gchar *) path);
+        g_autoptr (GFile) file = g_file_new_for_path ((const gchar *) path);
 
         if (g_file_has_prefix (file, xdg_prefix)) {
             xdg_location = g_steal_pointer (&file);
             break;
         }
 
-        if ((home_location == NULL) &&
-            g_file_has_prefix (file, home_prefix)) {
+        if ((home_location == NULL) && g_file_has_prefix (file, home_prefix)) {
             home_location = g_steal_pointer (&file);
             break;
         }
@@ -990,7 +849,8 @@ install_button_clicked_cb (GtkButton *button,
         dest_location = g_steal_pointer (&home_location);
 
     if (dest_location == NULL) {
-        g_warning ("Install failed: can't find any configured user font directory.");
+        g_warning (
+            "Install failed: can't find any configured user font directory.");
         return;
     }
 
@@ -1008,10 +868,10 @@ install_button_clicked_cb (GtkButton *button,
 }
 
 static void
-font_view_show_font_error (FontViewApplication *self,
-                           GError *error)
+font_view_show_font_error (FontViewApplication *self, GError *error)
 {
-    font_view_show_error (self, _("This font could not be displayed."), error->message);
+    font_view_show_error (self, _ ("This font could not be displayed."),
+                          error->message);
 }
 
 static void
@@ -1026,8 +886,7 @@ font_widget_error_cb (SushiFontWidget *font_widget,
 }
 
 static void
-font_widget_loaded_cb (SushiFontWidget *font_widget,
-                       gpointer user_data)
+font_widget_loaded_cb (SushiFontWidget *font_widget, gpointer user_data)
 {
     FontViewApplication *self = user_data;
     FT_Face face = sushi_font_widget_get_ft_face (font_widget);
@@ -1040,25 +899,29 @@ font_widget_loaded_cb (SushiFontWidget *font_widget,
     self->font_file = g_file_new_for_uri (uri);
 
     if (face->family_name) {
-        hdy_header_bar_set_title (HDY_HEADER_BAR (self->header), face->family_name);
+        GtkWidget *label = gtk_label_new (face->family_name);
+        gtk_header_bar_set_title_widget (GTK_HEADER_BAR (self->header), label);
     } else {
         g_autofree gchar *basename = g_file_get_basename (self->font_file);
-        hdy_header_bar_set_title (HDY_HEADER_BAR (self->header), basename);
+        GtkWidget *label = gtk_label_new (basename);
+        gtk_header_bar_set_title_widget (GTK_HEADER_BAR (self->header), label);
     }
 
-    hdy_header_bar_set_subtitle (HDY_HEADER_BAR (self->header), face->style_name);
+    // gtk_header_bar_set_subtitle (GTK_HEADER_BAR (self->header),
+    // face->style_name);
 
     install_button_refresh_appearance (self, NULL);
 }
 
 static void
-info_button_clicked_cb (GtkButton *button,
-                        gpointer user_data)
+info_button_clicked_cb (GtkButton *button, gpointer user_data)
 {
     FontViewApplication *self = user_data;
     GtkWidget *grid;
-    GtkWidget *child;
-    FT_Face face = sushi_font_widget_get_ft_face (SUSHI_FONT_WIDGET (self->font_widget));
+    // TODO:
+    // GtkWidget *child;
+    FT_Face face =
+        sushi_font_widget_get_ft_face (SUSHI_FONT_WIDGET (self->font_widget));
 
     if (!gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (button))) {
         gtk_stack_set_visible_child_name (GTK_STACK (self->stack), "preview");
@@ -1068,56 +931,24 @@ info_button_clicked_cb (GtkButton *button,
     if (face == NULL)
         return;
 
-    child = gtk_bin_get_child (GTK_BIN (self->swin_info));
-    if (child)
-        gtk_widget_destroy (child);
+    // TODO:
+    // child = gtk_scrolled_window_get_child (GTK_SCROLLED_WINDOW
+    // (self->swin_info)); if (child)
+    //    gtk_widget_unparent (child);
 
-    grid = gtk_grid_new ();
-    gtk_orientable_set_orientation (GTK_ORIENTABLE (grid), GTK_ORIENTATION_VERTICAL);
-    g_object_set (grid, "margin", 20, NULL);
-    gtk_grid_set_column_spacing (GTK_GRID (grid), 8);
-    gtk_grid_set_row_spacing (GTK_GRID (grid), 2);
+    grid = gtk_box_new (GTK_ORIENTATION_VERTICAL, 2);
+    gtk_orientable_set_orientation (GTK_ORIENTABLE (grid),
+                                    GTK_ORIENTATION_VERTICAL);
+    g_object_set (grid, "margin-start", 20, NULL);
+    g_object_set (grid, "margin-end", 20, NULL);
+    g_object_set (grid, "margin-top", 20, NULL);
+    g_object_set (grid, "margin-bottom", 20, NULL);
 
-    populate_grid (self, grid, face);
-    populate_details (self, grid, face);
-    gtk_container_add (GTK_CONTAINER (self->swin_info), grid);
+    populate_grid (self, GTK_BOX (grid), face);
+    populate_details (self, GTK_BOX (grid), face);
+    gtk_scrolled_window_set_child (GTK_SCROLLED_WINDOW (self->swin_info), grid);
 
-    gtk_widget_show_all (self->swin_info);
     gtk_stack_set_visible_child_name (GTK_STACK (self->stack), "info");
-}
-
-static gboolean
-font_view_filter_func (GtkFlowBoxChild *child,
-                       gpointer user_data)
-{
-    FontViewApplication *self = user_data;
-    FontViewItem *view_item = FONT_VIEW_ITEM (child);
-    FontViewModelItem *item = view_item->item;
-    g_autofree gchar *cf_name = NULL, *cf_search = NULL;
-    const char *font_name, *search;
-
-    if (!gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (self->search_toggle)))
-        return TRUE;
-
-    search = gtk_entry_get_text (GTK_ENTRY (self->search_entry));
-    font_name = font_view_model_item_get_font_name (item);
-
-    cf_name = g_utf8_casefold (font_name, -1);
-    cf_search = g_utf8_casefold (search, -1);
-
-    return strstr (cf_name, cf_search) != NULL;
-}
-
-static gint
-font_view_sort_func (GtkFlowBoxChild *child1,
-                     GtkFlowBoxChild *child2,
-                     gpointer user_data)
-{
-    FontViewModelItem *item1 = FONT_VIEW_ITEM (child1)->item;
-    FontViewModelItem *item2 = FONT_VIEW_ITEM (child2)->item;
-
-    return g_strcmp0 (font_view_model_item_get_collation_key (item1),
-                      font_view_model_item_get_collation_key (item2));
 }
 
 static void
@@ -1127,8 +958,9 @@ font_view_ensure_model (FontViewApplication *self)
         return;
 
     self->model = font_view_model_new ();
-    g_signal_connect (font_view_model_get_list_model (self->model), "items-changed",
-                      G_CALLBACK (font_model_items_changed_cb), self);
+    g_signal_connect (font_view_model_get_list_model (self->model),
+                      "items-changed", G_CALLBACK (font_model_items_changed_cb),
+                      self);
 }
 
 static void
@@ -1142,57 +974,48 @@ font_view_application_do_open (FontViewApplication *self,
 
     /* add install button */
     if (self->install_button == NULL) {
-        g_autoptr(GtkSizeGroup) install_size_group = gtk_size_group_new (GTK_SIZE_GROUP_HORIZONTAL);
+        g_autoptr (GtkSizeGroup) install_size_group =
+            gtk_size_group_new (GTK_SIZE_GROUP_HORIZONTAL);
 
-        self->install_label = g_object_ref_sink (gtk_label_new (_("Install")));
-        gtk_widget_show (self->install_label);
-        gtk_size_group_add_widget (install_size_group, self->install_label);
-        self->installing_label = g_object_ref_sink (gtk_label_new (_("Installing…")));
-        gtk_widget_show (self->installing_label);
-        gtk_size_group_add_widget (install_size_group, self->installing_label);
-        self->installed_label = g_object_ref_sink (gtk_label_new (_("Installed")));
-        gtk_widget_show (self->installed_label);
-        gtk_size_group_add_widget (install_size_group, self->installed_label);
-        self->install_failed_label = g_object_ref_sink (gtk_label_new (_("Failed")));
-        gtk_widget_show (self->install_failed_label);
-        gtk_size_group_add_widget (install_size_group, self->install_failed_label);
-
-        self->install_button = gtk_button_new ();
-        gtk_container_add (GTK_CONTAINER (self->install_button), self->install_label);
-        gtk_widget_set_valign (self->install_button, GTK_ALIGN_CENTER);
-        gtk_style_context_add_class (gtk_widget_get_style_context (self->install_button),
-                                     "text-button");
-        hdy_header_bar_pack_end (HDY_HEADER_BAR (self->header), self->install_button);
+        self->install_button = GTK_BUTTON (gtk_button_new ());
+        gtk_button_set_label (self->install_button, _ ("Install"));
+        gtk_widget_set_valign (GTK_WIDGET (self->install_button),
+                               GTK_ALIGN_CENTER);
+        gtk_widget_add_css_class (GTK_WIDGET (self->install_button),
+                                  "text-button");
+        gtk_header_bar_pack_end (GTK_HEADER_BAR (self->header),
+                                 GTK_WIDGET (self->install_button));
 
         g_signal_connect (self->install_button, "clicked",
                           G_CALLBACK (install_button_clicked_cb), self);
     }
 
     if (self->info_button == NULL) {
-        self->info_button = gtk_toggle_button_new_with_label (_("Info"));
-        gtk_widget_set_valign (self->info_button, GTK_ALIGN_CENTER);
-        gtk_style_context_add_class (gtk_widget_get_style_context (self->info_button),
-                                     "text-button");
-        hdy_header_bar_pack_end (HDY_HEADER_BAR (self->header), self->info_button);
+        self->info_button =
+            GTK_TOGGLE_BUTTON (gtk_toggle_button_new_with_label (_ ("Info")));
+        gtk_widget_set_valign (GTK_WIDGET (self->info_button),
+                               GTK_ALIGN_CENTER);
+        gtk_widget_add_css_class (GTK_WIDGET (self->info_button),
+                                  "text-button");
+        gtk_header_bar_pack_end (GTK_HEADER_BAR (self->header),
+                                 GTK_WIDGET (self->info_button));
 
         g_signal_connect (self->info_button, "toggled",
                           G_CALLBACK (info_button_clicked_cb), self);
     }
 
     if (self->back_button == NULL) {
-        GtkWidget *back_image;
-
         self->back_button = gtk_button_new ();
-        back_image = gtk_image_new_from_icon_name ("go-previous-symbolic",
-                                                   GTK_ICON_SIZE_MENU);
-        gtk_button_set_image (GTK_BUTTON (self->back_button), back_image);
-        gtk_widget_set_tooltip_text (self->back_button, _("Back"));
+        gtk_button_set_icon_name (GTK_BUTTON (self->back_button),
+                                  "go-previous-symbolic");
+        gtk_widget_set_tooltip_text (self->back_button, _ ("Back"));
         gtk_widget_set_valign (self->back_button, GTK_ALIGN_CENTER);
-        gtk_style_context_add_class (gtk_widget_get_style_context (self->back_button),
-                                     "image-button");
-        hdy_header_bar_pack_start (HDY_HEADER_BAR (self->header), self->back_button);
+        gtk_widget_add_css_class (self->back_button, "image-button");
+        gtk_header_bar_pack_start (GTK_HEADER_BAR (self->header),
+                                   self->back_button);
 
-        gtk_actionable_set_action_name (GTK_ACTIONABLE (self->back_button), "app.back");
+        gtk_actionable_set_action_name (GTK_ACTIONABLE (self->back_button),
+                                        "app.back");
     }
 
     gtk_widget_hide (self->search_toggle);
@@ -1203,34 +1026,39 @@ font_view_application_do_open (FontViewApplication *self,
     if (self->font_widget == NULL) {
         GtkWidget *viewport;
 
-        self->font_widget = GTK_WIDGET (sushi_font_widget_new (uri, face_index));
-        gtk_container_add (GTK_CONTAINER (self->swin_preview), self->font_widget);
+        self->font_widget =
+            GTK_WIDGET (sushi_font_widget_new (uri, face_index));
+        gtk_scrolled_window_set_child (GTK_SCROLLED_WINDOW (self->swin_preview),
+                                       self->font_widget);
         viewport = gtk_widget_get_parent (self->font_widget);
-        gtk_scrollable_set_hscroll_policy (GTK_SCROLLABLE (viewport), GTK_SCROLL_NATURAL);
-        gtk_scrollable_set_vscroll_policy (GTK_SCROLLABLE (viewport), GTK_SCROLL_NATURAL);
+        gtk_scrollable_set_hscroll_policy (GTK_SCROLLABLE (viewport),
+                                           GTK_SCROLL_NATURAL);
+        gtk_scrollable_set_vscroll_policy (GTK_SCROLLABLE (viewport),
+                                           GTK_SCROLL_NATURAL);
 
         g_signal_connect (self->font_widget, "loaded",
                           G_CALLBACK (font_widget_loaded_cb), self);
         g_signal_connect (self->font_widget, "error",
                           G_CALLBACK (font_widget_error_cb), self);
     } else {
-        g_object_set (self->font_widget, "uri", uri, "face-index", face_index, NULL);
+        g_object_set (self->font_widget, "uri", uri, "face-index", face_index,
+                      NULL);
         sushi_font_widget_load (SUSHI_FONT_WIDGET (self->font_widget));
     }
 
-    gtk_widget_show_all (self->main_window);
     gtk_stack_set_visible_child_name (GTK_STACK (self->stack), "preview");
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (self->info_button), FALSE);
+    gtk_toggle_button_set_active (self->info_button, FALSE);
 }
 
 static void
-view_child_activated_cb (GtkFlowBox *flow_box,
-                         GtkFlowBoxChild *child,
+view_child_activated_cb (GtkGridView *grid_view,
+                         guint position,
                          gpointer user_data)
 {
     FontViewApplication *self = user_data;
-    FontViewItem *view_item = FONT_VIEW_ITEM (child);
-    FontViewModelItem *item = view_item->item;
+    GtkSelectionModel *model = gtk_grid_view_get_model (grid_view);
+    FontViewModelItem *item = FONT_VIEW_MODEL_ITEM (
+        g_list_model_get_item (G_LIST_MODEL (model), position));
     GFile *font_file;
     gint face_index;
 
@@ -1246,16 +1074,15 @@ font_view_application_do_overview (FontViewApplication *self)
 {
     g_clear_object (&self->font_file);
 
-    g_clear_pointer (&self->back_button, gtk_widget_destroy);
-    g_clear_pointer (&self->info_button, gtk_widget_destroy);
+    g_clear_pointer (&self->back_button, gtk_widget_unparent);
+
+    if (self->info_button) {
+        gtk_widget_unparent (GTK_WIDGET (self->info_button));
+        self->info_button = NULL;
+    }
 
     if (self->install_button) {
-        g_clear_pointer (&self->install_label, gtk_widget_destroy);
-        g_clear_pointer (&self->installing_label, gtk_widget_destroy);
-        g_clear_pointer (&self->installed_label, gtk_widget_destroy);
-        g_clear_pointer (&self->install_failed_label, gtk_widget_destroy);
-
-        gtk_widget_destroy (self->install_button);
+        gtk_widget_unparent (GTK_WIDGET (self->install_button));
         self->install_button = NULL;
     }
 
@@ -1263,73 +1090,36 @@ font_view_application_do_overview (FontViewApplication *self)
     gtk_widget_show (self->menu_button);
 
     font_view_ensure_model (self);
+    GtkWidget *title_label = gtk_label_new (_ ("All Fonts"));
+    gtk_header_bar_set_title_widget (GTK_HEADER_BAR (self->header),
+                                     title_label);
+    // TODO: GTK4 - Setup subtitle
+    // gtk_header_bar_set_subtitle (GTK_HEADER_BAR (self->header), NULL);
 
-    hdy_header_bar_set_title (HDY_HEADER_BAR (self->header), _("All Fonts"));
-    hdy_header_bar_set_subtitle (HDY_HEADER_BAR (self->header), NULL);
+    if (self->grid_view == NULL) {
+        GtkWidget *grid_view;
 
-    if (self->flow_box == NULL) {
-        GtkWidget *flow_box;
+        font_view_create_grid_view (self);
+        grid_view = self->grid_view;
 
-        self->flow_box = flow_box = gtk_flow_box_new ();
-        g_object_set (flow_box,
-                      "column-spacing", VIEW_COLUMN_SPACING,
-                      "margin", VIEW_MARGIN,
-                      "selection-mode", GTK_SELECTION_NONE,
-                      "vexpand", TRUE,
-                      NULL);
-        gtk_flow_box_set_filter_func (GTK_FLOW_BOX (flow_box),
-                                      font_view_filter_func,
-                                      self, NULL);
-        gtk_flow_box_set_sort_func (GTK_FLOW_BOX (flow_box),
-                                    font_view_sort_func,
-                                    self, NULL);
-        g_signal_connect (flow_box, "child-activated",
+        g_object_set (grid_view, "vexpand", TRUE, NULL);
+
+        // TODO: Activate might not be correct/setup correctly
+        g_signal_connect (grid_view, "activate",
                           G_CALLBACK (view_child_activated_cb), self);
-        gtk_container_add (GTK_CONTAINER (self->swin_view), flow_box);
-
-        /* Instead of using gtk_flow_box_bind_model(), we populate the view
-         * manually, since we want to support filtering and sorting through
-         * the flowbox, which somehow gtk_flow_box_bind_model() does not support.
-         */
-        font_view_populate_from_model
-            (self, 0, 0,
-             g_list_model_get_n_items (font_view_model_get_list_model (self->model)));
+        gtk_scrolled_window_set_child (GTK_SCROLLED_WINDOW (self->swin_view),
+                                       grid_view);
     }
 
-    gtk_widget_show_all (self->main_window);
     gtk_stack_set_visible_child_name (GTK_STACK (self->stack), "overview");
 }
 
-static gboolean
-font_view_window_key_press_event_cb (GtkWidget *widget,
-                                     GdkEventKey *event,
-                                     gpointer user_data)
-{
-    FontViewApplication *self = user_data;
-
-    if (event->keyval == GDK_KEY_q &&
-        (event->state & GDK_CONTROL_MASK) != 0) {
-        g_application_quit (G_APPLICATION (self));
-        return TRUE;
-    }
-
-    if (event->keyval == GDK_KEY_f &&
-        (event->state & GDK_CONTROL_MASK) != 0) {
-        gtk_search_bar_set_search_mode (GTK_SEARCH_BAR (self->search_bar), TRUE);
-        return TRUE;
-    }
-
-    return gtk_search_bar_handle_event (GTK_SEARCH_BAR (self->search_bar), (GdkEvent *)event);
-}
-
 static void
-query_info_ready_cb (GObject *object,
-                     GAsyncResult *res,
-                     gpointer user_data)
+query_info_ready_cb (GObject *object, GAsyncResult *res, gpointer user_data)
 {
     FontViewApplication *self = user_data;
-    g_autoptr(GError) error = NULL;
-    g_autoptr(GFileInfo) info = NULL;
+    g_autoptr (GError) error = NULL;
+    g_autoptr (GFileInfo) info = NULL;
 
     ensure_window (self);
     g_application_release (G_APPLICATION (self));
@@ -1353,26 +1143,23 @@ font_view_application_open (GApplication *application,
 
     g_application_hold (application);
     g_file_query_info_async (files[0], G_FILE_ATTRIBUTE_STANDARD_NAME,
-                             G_FILE_QUERY_INFO_NONE,
-                             G_PRIORITY_DEFAULT, NULL,
+                             G_FILE_QUERY_INFO_NONE, G_PRIORITY_DEFAULT, NULL,
                              query_info_ready_cb, self);
 }
 
 static void
-action_quit (GSimpleAction *action,
-             GVariant *parameter,
-             gpointer user_data)
+action_quit (GSimpleAction *action, GVariant *parameter, gpointer user_data)
 {
     FontViewApplication *self = user_data;
-    gtk_widget_destroy (self->main_window);
+    gtk_window_destroy (GTK_WINDOW (self->main_window));
 }
 
 static void
-action_about (GSimpleAction *action,
-              GVariant *parameter,
-              gpointer user_data)
+action_about (GSimpleAction *action, GVariant *parameter, gpointer user_data)
 {
     FontViewApplication *self = user_data;
+
+    // clang-format off
     const gchar *authors[] = {
         "Cosimo Cecchi",
         "James Henstridge",
@@ -1390,62 +1177,63 @@ action_about (GSimpleAction *action,
                            "license-type", GTK_LICENSE_GPL_2_0,
                            "wrap-license", TRUE,
                            NULL);
-
+    // clang-format on
 }
 
 static void
-action_back (GSimpleAction *action,
-             GVariant      *parameter,
-             gpointer       user_data)
+action_back (GSimpleAction *action, GVariant *parameter, gpointer user_data)
 {
     FontViewApplication *self = user_data;
     font_view_application_do_overview (self);
 }
 
 static GActionEntry action_entries[] = {
-    { "about", action_about, NULL, NULL, NULL },
-    { "back", action_back, NULL, NULL, NULL },
-    { "quit", action_quit, NULL, NULL, NULL }
-};
+    {"about", action_about, NULL, NULL, NULL},
+    {"back", action_back, NULL, NULL, NULL},
+    {"quit", action_quit, NULL, NULL, NULL}};
 
 static void
-search_text_changed (GtkEntry *entry,
-                     FontViewApplication *self)
+search_text_changed (GtkEntry *entry, FontViewApplication *self)
 {
-    gtk_flow_box_invalidate_filter (GTK_FLOW_BOX (self->flow_box));
+    const char *search =
+        gtk_editable_get_text (GTK_EDITABLE (self->search_entry));
+
+    if (search == NULL || g_strcmp0 (search, "") == 0) {
+        gtk_string_filter_set_search (GTK_STRING_FILTER (self->filter), NULL);
+        return;
+    }
+
+    gtk_string_filter_set_search (GTK_STRING_FILTER (self->filter),
+                                  g_strdup (search));
 }
 
 static void
 ensure_window (FontViewApplication *self)
 {
-    g_autoptr(GtkBuilder) builder = NULL;
-    GtkWidget *window, *swin, *box, *image;
+    g_autoptr (GtkBuilder) builder = NULL;
+    GtkWidget *swin, *box, *image;
+    GtkApplicationWindow *window;
     GMenuModel *menu;
 
     if (self->main_window)
         return;
 
-    self->main_window = window = hdy_application_window_new ();
-    gtk_window_set_application (GTK_WINDOW (window), GTK_APPLICATION (self));
+    self->main_window = window = GTK_APPLICATION_WINDOW (
+        gtk_application_window_new (GTK_APPLICATION (self)));
     gtk_window_set_resizable (GTK_WINDOW (window), TRUE);
     gtk_window_set_default_size (GTK_WINDOW (window), 800, 600);
     gtk_window_set_icon_name (GTK_WINDOW (window), FONT_VIEW_ICON_NAME);
 
-    self->header = hdy_header_bar_new ();
-    hdy_header_bar_set_show_close_button (HDY_HEADER_BAR (self->header), TRUE);
-    gtk_style_context_add_class (gtk_widget_get_style_context (GTK_WIDGET (self->header)),
-                                 "titlebar");
-
-    g_signal_connect (window, "key-press-event",
-                      G_CALLBACK (font_view_window_key_press_event_cb), self);
+    self->header = gtk_header_bar_new ();
+    gtk_widget_add_css_class (GTK_WIDGET (self->header), "titlebar");
 
     self->main_grid = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-    gtk_container_add (GTK_CONTAINER (self->main_grid), self->header);
-    gtk_container_add (GTK_CONTAINER (self->main_window), self->main_grid);
+    gtk_window_set_child (GTK_WINDOW (self->main_window), self->main_grid);
 
     self->stack = gtk_stack_new ();
-    gtk_stack_set_transition_type (GTK_STACK (self->stack), GTK_STACK_TRANSITION_TYPE_CROSSFADE);
-    gtk_container_add (GTK_CONTAINER (self->main_grid), self->stack);
+    gtk_stack_set_transition_type (GTK_STACK (self->stack),
+                                   GTK_STACK_TRANSITION_TYPE_CROSSFADE);
+    gtk_box_append (GTK_BOX (self->main_grid), self->stack);
     gtk_widget_set_hexpand (self->stack, TRUE);
     gtk_widget_set_vexpand (self->stack, TRUE);
 
@@ -1453,52 +1241,55 @@ ensure_window (FontViewApplication *self)
     gtk_stack_add_named (GTK_STACK (self->stack), box, "overview");
 
     builder = gtk_builder_new ();
-    gtk_builder_add_from_resource (builder, "/org/gnome/font-viewer/font-view-app-menu.ui", NULL);
+    gtk_builder_add_from_resource (
+        builder, "/org/gnome/font-viewer/font-view-app-menu.ui", NULL);
     menu = G_MENU_MODEL (gtk_builder_get_object (builder, "app-menu"));
 
     self->menu_button = gtk_menu_button_new ();
-    image = gtk_image_new_from_icon_name ("open-menu-symbolic", GTK_ICON_SIZE_BUTTON);
-    gtk_widget_show (image);
-    gtk_container_add (GTK_CONTAINER (self->menu_button), image);
+    gtk_menu_button_set_icon_name (GTK_MENU_BUTTON (self->menu_button),
+                                   "open-menu-symbolic");
     gtk_menu_button_set_menu_model (GTK_MENU_BUTTON (self->menu_button), menu);
-    gtk_widget_set_no_show_all (self->menu_button, TRUE);
-    gtk_widget_show (self->menu_button);
-    hdy_header_bar_pack_end (HDY_HEADER_BAR (self->header), self->menu_button);
+
+    gtk_header_bar_pack_end (GTK_HEADER_BAR (self->header), self->menu_button);
 
     self->search_bar = gtk_search_bar_new ();
-    gtk_container_add (GTK_CONTAINER (box), self->search_bar);
+    gtk_box_append (GTK_BOX (box), self->search_bar);
+    gtk_search_bar_set_key_capture_widget (GTK_SEARCH_BAR (self->search_bar),
+                                           GTK_WIDGET (window));
     self->search_entry = gtk_search_entry_new ();
-    gtk_entry_set_width_chars (GTK_ENTRY (self->search_entry), 40);
-    gtk_container_add (GTK_CONTAINER (self->search_bar), self->search_entry);
+    gtk_search_bar_set_child (GTK_SEARCH_BAR (self->search_bar),
+                              self->search_entry);
     self->search_toggle = gtk_toggle_button_new ();
-    gtk_widget_set_no_show_all (self->search_toggle, TRUE);
-    gtk_widget_show (self->search_toggle);
-    image = gtk_image_new_from_icon_name ("edit-find-symbolic", GTK_ICON_SIZE_BUTTON);
-    gtk_widget_show (image);
-    gtk_container_add (GTK_CONTAINER (self->search_toggle), image);
-    hdy_header_bar_pack_end (HDY_HEADER_BAR (self->header), self->search_toggle);
+
+    gtk_button_set_icon_name (GTK_BUTTON (self->search_toggle),
+                              "edit-find-symbolic");
+    gtk_header_bar_pack_end (GTK_HEADER_BAR (self->header),
+                             self->search_toggle);
     g_object_bind_property (self->search_bar, "search-mode-enabled",
                             self->search_toggle, "active",
                             G_BINDING_BIDIRECTIONAL);
 
-    g_signal_connect (self->search_entry, "search-changed", G_CALLBACK (search_text_changed), self);
+    g_signal_connect (self->search_entry, "search-changed",
+                      G_CALLBACK (search_text_changed), self);
 
-    self->swin_view = swin = gtk_scrolled_window_new (NULL, NULL);
+    self->swin_view = swin = gtk_scrolled_window_new ();
     gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (swin),
                                     GTK_POLICY_NEVER, GTK_POLICY_AUTOMATIC);
-    gtk_container_add (GTK_CONTAINER (box), self->swin_view);
+    gtk_box_append (GTK_BOX (box), self->swin_view);
 
-    self->swin_preview = swin = gtk_scrolled_window_new (NULL, NULL);
+    self->swin_preview = swin = gtk_scrolled_window_new ();
     gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (swin),
                                     GTK_POLICY_AUTOMATIC, GTK_POLICY_AUTOMATIC);
     gtk_stack_add_named (GTK_STACK (self->stack), swin, "preview");
 
-    self->swin_info = swin = gtk_scrolled_window_new (NULL, NULL);
+    self->swin_info = swin = gtk_scrolled_window_new ();
     gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (swin),
                                     GTK_POLICY_AUTOMATIC, GTK_POLICY_AUTOMATIC);
     gtk_stack_add_named (GTK_STACK (self->stack), swin, "info");
 
-    gtk_widget_show_all (window);
+    gtk_window_set_titlebar (GTK_WINDOW (window),
+                             GTK_HEADER_BAR (self->header));
+    gtk_window_present (GTK_WINDOW (window));
 }
 
 static void
@@ -1506,9 +1297,10 @@ font_view_application_startup (GApplication *application)
 {
     FontViewApplication *self = FONT_VIEW_APPLICATION (application);
 
-    G_APPLICATION_CLASS (font_view_application_parent_class)->startup (application);
+    G_APPLICATION_CLASS (font_view_application_parent_class)
+        ->startup (application);
 
-    hdy_init ();
+    adw_init ();
 
     if (!FcInit ())
         g_critical ("Can't initialize fontconfig library");
@@ -1516,10 +1308,17 @@ font_view_application_startup (GApplication *application)
     g_action_map_add_action_entries (G_ACTION_MAP (self), action_entries,
                                      G_N_ELEMENTS (action_entries), self);
 
-    const gchar *back_accels[] = { "<Alt>Left", NULL };
+    const gchar *back_accels[] = {"<Alt>Left", NULL};
     gtk_application_set_accels_for_action (GTK_APPLICATION (application),
-                                           "app.back",
-                                           back_accels);
+                                           "app.back", back_accels);
+
+    GtkCssProvider *provider = gtk_css_provider_new ();
+    gtk_css_provider_load_from_resource (
+        GTK_CSS_PROVIDER (provider), "/org/gnome/font-viewer/application.css");
+
+    gtk_style_context_add_provider_for_display (
+        gdk_display_get_default (), GTK_STYLE_PROVIDER (provider),
+        GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
 }
 
 static void
@@ -1567,17 +1366,15 @@ font_view_application_class_init (FontViewApplicationClass *klass)
 static GApplication *
 font_view_application_new (void)
 {
-    return g_object_new (FONT_VIEW_TYPE_APPLICATION,
-                         "application-id", APPLICATION_ID,
-                         "flags", G_APPLICATION_HANDLES_OPEN,
+    return g_object_new (FONT_VIEW_TYPE_APPLICATION, "application-id",
+                         APPLICATION_ID, "flags", G_APPLICATION_HANDLES_OPEN,
                          NULL);
 }
 
 int
-main (int argc,
-      char **argv)
+main (int argc, char **argv)
 {
-    g_autoptr(GApplication) app = NULL;
+    g_autoptr (GApplication) app = NULL;
     gint retval;
 
     bindtextdomain (GETTEXT_PACKAGE, GNOMELOCALEDIR);
