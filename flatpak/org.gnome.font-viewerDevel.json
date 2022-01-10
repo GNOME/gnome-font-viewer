@@ -1,6 +1,7 @@
 {
     "app-id": "org.gnome.font-viewerDevel",
     "runtime": "org.gnome.Platform",
+    "runtime-version" : "master",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-font-viewer",
     "rename-appdata-file": "org.gnome.font-viewer.appdata.xml",
