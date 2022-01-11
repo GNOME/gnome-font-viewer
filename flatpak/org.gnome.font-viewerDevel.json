@@ -7,7 +7,6 @@
     "rename-appdata-file": "org.gnome.font-viewer.appdata.xml",
     "rename-desktop-file": "org.gnome.font-viewer.desktop",
     "tags": ["nightly"],
-    "desktop-file-name-prefix": "(Development) ",
     "finish-args": [
         "--device=dri",
         "--share=ipc",
