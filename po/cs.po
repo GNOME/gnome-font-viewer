@@ -15,15 +15,15 @@
 # Petr Kovar <pknbe@volny.cz>, 2008, 2009.
 # Lucas Lommer <llommer@svn.gnome.org>, 2009 (just a small fix).
 # Adrian Guniš <andygun696@gmail.com>, 2008, 2009, 2010.
-# Marek Černocký <marek@manet.cz>, 2010 (just a small fixes), 2011, 2012, 2013, 2014, 2017, 2018, 2019.
+# Marek Černocký <marek@manet.cz>, 2010 (just a small fixes), 2011, 2012, 2013, 2014, 2017, 2018, 2019, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2019-07-06 17:09+0000\n"
-"PO-Revision-Date: 2019-08-16 10:45+0200\n"
+"POT-Creation-Date: 2021-09-24 22:15+0000\n"
+"PO-Revision-Date: 2022-01-12 18:42+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: čeština <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -33,33 +33,34 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Gtranslator 2.91.7\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
-msgid "GNOME Fonts"
-msgstr "Prohlížeč fontů GNOME"
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1385
+#: src/org.gnome.font-viewer.desktop.in.in:3
+msgid "Fonts"
+msgstr "Fonty"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1098
-#: src/org.gnome.font-viewer.desktop.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1386
+#: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Zobrazte si fonty ve svém systému"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
-"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"Fonty GNOME vám zobrazí v podobě náhledů fonty nainstalovaná ve vašem "
+"Aplikace Fonty vám zobrazí v podobě náhledů fonty nainstalovaná ve vašem "
 "počítači. Po vybrání náhledu uvidíte, jak font vypadá v různých velikostech."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
-"GNOME Fonts also supports installing new font files downloaded in the .ttf "
-"and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
 msgstr ""
-"Fonty GNOME umí také nainstalovat nové fonty poskytnuté ve formátu .ttf a "
-"dalších formátech. Fonty je možné instalovat jen pro své použití nebo je "
-"zpřístupnit všem uživatelům počítače."
+"Umí také nainstalovat nové fonty poskytnuté ve formátu .ttf a dalších "
+"formátech. Fonty je možné instalovat jen pro své použití nebo je zpřístupnit "
+"všem uživatelům počítače."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:21
 msgid "The GNOME Project"
@@ -89,7 +90,11 @@ msgstr "SOUBOR-FONTU VÝSTUPNÍ-SOUBOR"
 msgid "About Fonts"
 msgstr "O aplikaci Fonty"
 
-#: src/font-view.c:99
+#: src/font-view.c:383
+msgid "GNOME Fonts"
+msgstr "Prohlížeč fontů GNOME"
+
+#: src/font-view.c:391
 msgid "Show the application's version"
 msgstr "Zobrazit verzi aplikace"
 
@@ -98,136 +103,132 @@ msgstr "Zobrazit verzi aplikace"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:228
+#: src/font-view.c:509
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, výchozí %g"
 
-#: src/font-view.c:284
+#: src/font-view.c:565
 #, c-format
 msgid "Instance %d"
 msgstr "Instance %d"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:327
+#: src/font-view.c:608
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:351
+#: src/font-view.c:632
 msgid "Name"
 msgstr "Název"
 
-#: src/font-view.c:354
+#: src/font-view.c:635
 msgid "Location"
 msgstr "Umístění"
 
-#: src/font-view.c:357
+#: src/font-view.c:638
 msgid "Style"
 msgstr "Styl"
 
-#: src/font-view.c:367
+#: src/font-view.c:648
 msgid "Type"
 msgstr "Typ"
 
-#: src/font-view.c:425 src/font-view.c:451
+#: src/font-view.c:706 src/font-view.c:732
 msgid "Version"
 msgstr "Verze"
 
-#: src/font-view.c:429 src/font-view.c:456
+#: src/font-view.c:710 src/font-view.c:737
 msgid "Copyright"
 msgstr "Copyright"
 
-#: src/font-view.c:433
+#: src/font-view.c:714
 msgid "Description"
 msgstr "Popis"
 
-#: src/font-view.c:437
+#: src/font-view.c:718
 msgid "Manufacturer"
 msgstr "Výrobce"
 
-#: src/font-view.c:441
+#: src/font-view.c:722
 msgid "Designer"
 msgstr "Návrh"
 
-#: src/font-view.c:445
+#: src/font-view.c:726
 msgid "License"
 msgstr "Licence"
 
-#: src/font-view.c:470
+#: src/font-view.c:751
 msgid "Glyph Count"
 msgstr "Počet glyfů"
 
-#: src/font-view.c:472
+#: src/font-view.c:753
 msgid "Color Glyphs"
 msgstr "Barevné glyfy"
 
-#: src/font-view.c:472
+#: src/font-view.c:753
 msgid "yes"
 msgstr "ano"
 
-#: src/font-view.c:472
+#: src/font-view.c:753
 msgid "no"
 msgstr "ne"
 
-#: src/font-view.c:476
+#: src/font-view.c:757
 msgid "Layout Features"
 msgstr "Podporované vlastnosti"
 
-#: src/font-view.c:482
+#: src/font-view.c:763
 msgid "Variation Axes"
 msgstr "Proměnlivost v osách"
 
-#: src/font-view.c:489
+#: src/font-view.c:770
 msgid "Named Styles"
 msgstr "Pojmenované styly"
 
-#: src/font-view.c:563
+#: src/font-view.c:876
 msgid "This font could not be installed."
 msgstr "Tento font nelze nainstalovat."
 
-#: src/font-view.c:701
+#: src/font-view.c:1014
 msgid "This font could not be displayed."
 msgstr "Tento font nelze zobrazit."
 
-#: src/font-view.c:833
+#: src/font-view.c:1147
 msgid "Install"
 msgstr "Nainstalovat"
 
-#: src/font-view.c:836
+#: src/font-view.c:1150
 msgid "Installing…"
 msgstr "Instaluje se…"
 
-#: src/font-view.c:839
+#: src/font-view.c:1153
 msgid "Installed"
 msgstr "Nainstalováno"
 
-#: src/font-view.c:842
+#: src/font-view.c:1156
 msgid "Failed"
 msgstr "Selhalo"
 
-#: src/font-view.c:858
+#: src/font-view.c:1172
 msgid "Info"
 msgstr "Informace"
 
-#: src/font-view.c:875
+#: src/font-view.c:1189
 msgid "Back"
 msgstr "Zpět"
 
-#: src/font-view.c:974
+#: src/font-view.c:1267
 msgid "All Fonts"
 msgstr "Všechny fonty"
 
-#: src/font-view.c:1097 src/org.gnome.font-viewer.desktop.in:3
-msgid "Fonts"
-msgstr "Fonty"
-
-#: src/font-view.c:1100
+#: src/font-view.c:1389
 msgid "translator-credits"
 msgstr "Marek Černocký <marek@manet.cz>"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in:6
+#: src/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
 msgstr "fonty;písma;řezy;"
 
