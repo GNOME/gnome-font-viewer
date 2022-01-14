@@ -18,9 +18,9 @@ msgstr ""
 "Project-Id-Version: gnome-utils trunk\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2020-06-25 07:10+0000\n"
-"PO-Revision-Date: 2021-06-30 11:44+0300\n"
-"Last-Translator: Alexey Rubtsov <rushills@gmail.com>\n"
+"POT-Creation-Date: 2021-12-13 10:16+0000\n"
+"PO-Revision-Date: 2022-01-10 23:40+0300\n"
+"Last-Translator: Aleksandr Melman <Alexmelman88@gmail.com>\n"
 "Language-Team: Русский <gnome-cyr@gnome.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -31,34 +31,35 @@ msgstr ""
 "10<=4 && (n%100<10 || n%100>=20) ? 1: 2);\n"
 "X-Generator: Poedit 3.0\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:377
-msgid "GNOME Fonts"
-msgstr "Шрифты GNOME"
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1385
+#: src/org.gnome.font-viewer.desktop.in.in:3
+msgid "Fonts"
+msgstr "Шрифты"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1374
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1386
 #: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Просмотр шрифтов, доступных в системе"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
-"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"Приложение «Шрифты GNOME» показывает установленные на вашем компьютере "
-"шрифты в виде миниатюр. Выбор миниатюры открывает подробный режим просмотра "
-"шрифта, как будет выглядеть шрифт при различных размерах."
+"Приложение «Шрифты» показывает установленные на вашем компьютере шрифты в "
+"виде миниатюр. Выбор миниатюры открывает подробный режим просмотра шрифта, "
+"как будет выглядеть шрифт при различных размерах."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
-"GNOME Fonts also supports installing new font files downloaded in the .ttf "
-"and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
 msgstr ""
-"Приложение также поддерживает установку новых шрифтов из файлов формата .ttf "
-"и прочих форматов. Шрифты можно установить для текущего пользователя или для "
-"всех пользователей компьютера."
+"Приложение «Шрифты» также поддерживает установку новых шрифтов из файлов "
+"формата .ttf и прочих форматов. Шрифты можно установить для текущего "
+"пользователя или для всех пользователей компьютера."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:21
 msgid "The GNOME Project"
@@ -86,9 +87,13 @@ msgstr "ФАЙЛ-ШРИФТА ФАЙЛ-ВЫВОДА"
 
 #: src/font-view-app-menu.ui:6
 msgid "About Fonts"
-msgstr "О Шрифтах"
+msgstr "О приложении"
 
-#: src/font-view.c:385
+#: src/font-view.c:383
+msgid "GNOME Fonts"
+msgstr "Шрифты GNOME"
+
+#: src/font-view.c:391
 msgid "Show the application's version"
 msgstr "Показать версию приложения"
 
@@ -97,131 +102,127 @@ msgstr "Показать версию приложения"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:503
+#: src/font-view.c:509
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, по умолчанию %g"
 
-#: src/font-view.c:559
+#: src/font-view.c:565
 #, c-format
 msgid "Instance %d"
 msgstr "Экземпляр %d"
 
 #. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:602
+#: src/font-view.c:608
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:626
+#: src/font-view.c:632
 msgid "Name"
 msgstr "Название"
 
-#: src/font-view.c:629
+#: src/font-view.c:635
 msgid "Location"
-msgstr "Местоположение"
+msgstr "Расположение"
 
-#: src/font-view.c:632
+#: src/font-view.c:638
 msgid "Style"
 msgstr "Стиль"
 
-#: src/font-view.c:642
+#: src/font-view.c:648
 msgid "Type"
 msgstr "Тип"
 
-#: src/font-view.c:700 src/font-view.c:726
+#: src/font-view.c:706 src/font-view.c:732
 msgid "Version"
 msgstr "Версия"
 
-#: src/font-view.c:704 src/font-view.c:731
+#: src/font-view.c:710 src/font-view.c:737
 msgid "Copyright"
 msgstr "Авторское право"
 
-#: src/font-view.c:708
+#: src/font-view.c:714
 msgid "Description"
 msgstr "Описание"
 
-#: src/font-view.c:712
+#: src/font-view.c:718
 msgid "Manufacturer"
 msgstr "Производитель"
 
-#: src/font-view.c:716
+#: src/font-view.c:722
 msgid "Designer"
 msgstr "Дизайнер"
 
-#: src/font-view.c:720
+#: src/font-view.c:726
 msgid "License"
 msgstr "Лицензия"
 
-#: src/font-view.c:745
+#: src/font-view.c:751
 msgid "Glyph Count"
 msgstr "Количество глифов"
 
-#: src/font-view.c:747
+#: src/font-view.c:753
 msgid "Color Glyphs"
 msgstr "Цветные глифы"
 
-#: src/font-view.c:747
+#: src/font-view.c:753
 msgid "yes"
 msgstr "да"
 
-#: src/font-view.c:747
+#: src/font-view.c:753
 msgid "no"
 msgstr "нет"
 
-#: src/font-view.c:751
+#: src/font-view.c:757
 msgid "Layout Features"
 msgstr "Особенности макета"
 
-#: src/font-view.c:757
+#: src/font-view.c:763
 msgid "Variation Axes"
 msgstr "Вариационные оси"
 
-#: src/font-view.c:764
+#: src/font-view.c:770
 msgid "Named Styles"
 msgstr "Именованные стили"
 
-#: src/font-view.c:870
+#: src/font-view.c:876
 msgid "This font could not be installed."
 msgstr "Этот шрифт не удалось установить."
 
-#: src/font-view.c:1008
+#: src/font-view.c:1014
 msgid "This font could not be displayed."
 msgstr "Невозможно показать этот шрифт."
 
-#: src/font-view.c:1141
+#: src/font-view.c:1147
 msgid "Install"
 msgstr "Установить"
 
-#: src/font-view.c:1144
+#: src/font-view.c:1150
 msgid "Installing…"
 msgstr "Установка…"
 
-#: src/font-view.c:1147
+#: src/font-view.c:1153
 msgid "Installed"
 msgstr "Установлено"
 
-#: src/font-view.c:1150
+#: src/font-view.c:1156
 msgid "Failed"
 msgstr "Ошибка"
 
-#: src/font-view.c:1166
+#: src/font-view.c:1172
 msgid "Info"
 msgstr "Информация"
 
-#: src/font-view.c:1183
+#: src/font-view.c:1189
 msgid "Back"
 msgstr "Назад"
 
-#: src/font-view.c:1261
+#: src/font-view.c:1267
 msgid "All Fonts"
 msgstr "Все шрифты"
 
-#: src/font-view.c:1373 src/org.gnome.font-viewer.desktop.in.in:3
-msgid "Fonts"
-msgstr "Шрифты"
-
-#: src/font-view.c:1376
+#: src/font-view.c:1389
 msgid "translator-credits"
 msgstr ""
 "Юрий Мясоедов <ymyasoedov@yandex.ru>, 2012-2014.\n"
@@ -1027,21 +1028,3 @@ msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Срезанный ноль"
 
-#~ msgid "About"
-#~ msgstr "О приложении"
-
-#~ msgid "Quit"
-#~ msgstr "Закончить"
-
-#~ msgid "preferences-desktop-font"
-#~ msgstr "preferences-desktop-font"
-
-#~ msgid "Font Viewer"
-#~ msgstr "Просмотрщик шрифтов"
-
-#~ msgid "[FILE...]"
-#~ msgstr "[ФАЙЛ…]"
-
-#~ msgid ""
-#~ "Run '%s --help' to see a full list of available command line options."
-#~ msgstr "Введите '%s --help' чтобы увидеть полный список доступных команд."
