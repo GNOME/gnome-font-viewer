@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2021-05-13 07:12+0000\n"
-"PO-Revision-Date: 2021-08-11 17:56+0200\n"
+"POT-Creation-Date: 2021-12-13 10:16+0000\n"
+"PO-Revision-Date: 2022-01-27 23:33+0100\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: \n"
 "Language: oc\n"
@@ -18,9 +18,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.0\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:383
-msgid "GNOME Fonts"
-msgstr "Visionador de poliça de GNOME"
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1385
+#: src/org.gnome.font-viewer.desktop.in.in:3
+msgid "Fonts"
+msgstr "Poliças"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1386
 #: src/org.gnome.font-viewer.desktop.in.in:4
@@ -29,24 +30,23 @@ msgstr "Visualizar las poliças de vòstre sistèma"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
-"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"Lo visionador de poliça GNOME aficha las poliças de caractèrs installadas "
-"sus vòstre ordenador jos la forma de miniaturas. En causissent una "
-"d'aquelas, obtenètz una vista completa de la poliça de diferentas talhas."
+"Poliças aficha las poliças de caractèrs installadas sus vòstre ordenador jos "
+"la forma de miniaturas. En causissent una d'aquelas, obtenètz una vista "
+"completa de la poliça de diferentas talhas."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
-"GNOME Fonts also supports installing new font files downloaded in the .ttf "
-"and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
 msgstr ""
-"Lo visionador de poliça GNOME pren tanben en carga l'installacion de novèls "
-"fichièrs de poliça telecargats (formats ttf e autres). Las poliças pòdon "
-"èsser installadas per vos sol o rendudas disponiblas a totes los utilizaires "
-"de l'ordenador."
+"Poliças pren tanben en carga l'installacion de novèls fichièrs de poliça "
+"telecargats (formats ttf e autres). Las poliças pòdon èsser installadas per "
+"vos sol o rendudas disponiblas a totes los utilizaires de l'ordenador."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:21
 msgid "The GNOME Project"
@@ -74,7 +74,11 @@ msgstr "FICHIÈR-POLIÇA FICHIÈR-SORTIDA"
 
 #: src/font-view-app-menu.ui:6
 msgid "About Fonts"
-msgstr "A prepaus del Visionador de poliça"
+msgstr "A prepaus de Poliças"
+
+#: src/font-view.c:383
+msgid "GNOME Fonts"
+msgstr "Visionador de poliça de GNOME"
 
 #: src/font-view.c:391
 msgid "Show the application's version"
@@ -204,10 +208,6 @@ msgstr "Tornar"
 #: src/font-view.c:1267
 msgid "All Fonts"
 msgstr "Totas las poliças"
-
-#: src/font-view.c:1385 src/org.gnome.font-viewer.desktop.in.in:3
-msgid "Fonts"
-msgstr "Poliças"
 
 #: src/font-view.c:1389
 msgid "translator-credits"
