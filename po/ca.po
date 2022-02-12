@@ -12,47 +12,47 @@ msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2019-08-12 07:41+0000\n"
-"PO-Revision-Date: 2019-08-22 05:29+0200\n"
-"Last-Translator: Jordi Mas <jmas@softcatala.org>\n"
+"POT-Creation-Date: 2022-02-12 01:19+0000\n"
+"PO-Revision-Date: 2022-02-12 18:11+0100\n"
+"Last-Translator: maite guix <maite.guix@me.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 3.0.1\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:377
-msgid "GNOME Fonts"
-msgstr "Tipus de lletra del GNOME"
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
+#: src/org.gnome.font-viewer.desktop.in.in:3
+msgid "Fonts"
+msgstr "Tipus de lletra"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1368
-#: src/org.gnome.font-viewer.desktop.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
+#: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Visualitzeu tots els tipus de lletra del sistema"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
-"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"El Tipus de lletra del GNOME us mostra en miniatures les tipografies "
-"instal·lades a l'ordinador. En seleccionar una de les miniatures se us "
-"mostrarà la vista completa de com es veurà el tipus de lletra en diferents "
-"mides."
+"El Tipus de lletra us mostra en miniatures les tipografies instal·lades a "
+"l'ordinador. En seleccionar una de les miniatures se us mostrarà la vista "
+"completa de com es veurà el tipus de lletra en diferents mides."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
-"GNOME Fonts also supports installing new font files downloaded in the .ttf "
-"and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
 msgstr ""
-"El Tipus de lletra del GNOME també permet la instal·lació de fitxers de "
-"tipus de lletra en format .ttf i d'altres. Els tipus de lletra es poden "
-"instal·lar només per al vostre ús o fer-los accessibles per a tots els "
-"usuaris de l'ordinador. "
+"El Tipus de lletra també permet la instal·lació de fitxers de tipus de "
+"lletra en format .ttf i d'altres. Els tipus de lletra es poden instal·lar "
+"només per al vostre ús o fer-los accessibles per a tots els usuaris de "
+"l'ordinador."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:21
 msgid "The GNOME Project"
@@ -82,7 +82,11 @@ msgstr "FITXER-DE-TIPUS-DE-LLETRA FITXER-DE-SORTIDA"
 msgid "About Fonts"
 msgstr "Quant al Tipus de lletra"
 
-#: src/font-view.c:385
+#: src/font-view.c:205
+msgid "GNOME Fonts"
+msgstr "Tipus de lletra del GNOME"
+
+#: src/font-view.c:212
 msgid "Show the application's version"
 msgstr "Mostra la versió de l'aplicació"
 
@@ -91,136 +95,133 @@ msgstr "Mostra la versió de l'aplicació"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:503
+#: src/font-view.c:327
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, per defecte %g"
 
-#: src/font-view.c:559
+#: src/font-view.c:378
 #, c-format
 msgid "Instance %d"
 msgstr "Instància %d"
 
-#. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:602
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view.c:418
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:626
+#: src/font-view.c:443
 msgid "Name"
 msgstr "Nom"
 
-#: src/font-view.c:629
+#: src/font-view.c:446
 msgid "Location"
 msgstr "Ubicació"
 
-#: src/font-view.c:632
+#: src/font-view.c:449
 msgid "Style"
 msgstr "Estil"
 
-#: src/font-view.c:642
+#: src/font-view.c:459
 msgid "Type"
 msgstr "Tipus"
 
-#: src/font-view.c:700 src/font-view.c:726
+#: src/font-view.c:525 src/font-view.c:551
 msgid "Version"
 msgstr "Versió"
 
-#: src/font-view.c:704 src/font-view.c:731
+#: src/font-view.c:529 src/font-view.c:556
 msgid "Copyright"
 msgstr "Copyright"
 
-#: src/font-view.c:708
+#: src/font-view.c:533
 msgid "Description"
 msgstr "Descripció"
 
-#: src/font-view.c:712
+#: src/font-view.c:537
 msgid "Manufacturer"
 msgstr "Fabricant"
 
-#: src/font-view.c:716
+#: src/font-view.c:541
 msgid "Designer"
 msgstr "Dissenyador"
 
-#: src/font-view.c:720
+#: src/font-view.c:545
 msgid "License"
 msgstr "Llicència"
 
-#: src/font-view.c:745
+#: src/font-view.c:568
 msgid "Glyph Count"
 msgstr "Nombre de glifs"
 
-#: src/font-view.c:747
+#: src/font-view.c:570
 msgid "Color Glyphs"
 msgstr "Glifs de color"
 
-#: src/font-view.c:747
+#: src/font-view.c:571
 msgid "yes"
 msgstr "sí"
 
-#: src/font-view.c:747
+#: src/font-view.c:571
 msgid "no"
 msgstr "no"
 
-#: src/font-view.c:751
+#: src/font-view.c:575
 msgid "Layout Features"
 msgstr "Característiques de disseny"
 
-#: src/font-view.c:757
+#: src/font-view.c:581
 msgid "Variation Axes"
 msgstr "Eixos de variació"
 
-#: src/font-view.c:764
+#: src/font-view.c:588
 msgid "Named Styles"
 msgstr "Estils amb nom"
 
-#: src/font-view.c:870
-msgid "This font could not be installed."
-msgstr "No es pot instal·lar aquest tipus de lletra."
-
-#: src/font-view.c:1008
-msgid "This font could not be displayed."
-msgstr "No es pot visualitzar aquest tipus de lletra."
-
-#: src/font-view.c:1135
-msgid "Install"
-msgstr "Instal·la"
-
-#: src/font-view.c:1138
-msgid "Installing…"
-msgstr "S'està instal·lant…"
-
-#: src/font-view.c:1141
-msgid "Installed"
-msgstr "S'ha instal·lat"
-
-#: src/font-view.c:1144
+#: src/font-view.c:600
 msgid "Failed"
 msgstr "Ha fallat"
 
-#: src/font-view.c:1160
+#: src/font-view.c:609
+msgid "Installed"
+msgstr "S'ha instal·lat"
+
+#: src/font-view.c:614
+msgid "Installing"
+msgstr "S'està instal·lant"
+
+#: src/font-view.c:617 src/font-view.c:978
+msgid "Install"
+msgstr "Instal·la"
+
+#: src/font-view.c:739
+msgid "This font could not be installed."
+msgstr "No es pot instal·lar aquest tipus de lletra."
+
+#: src/font-view.c:874
+msgid "This font could not be displayed."
+msgstr "No es pot visualitzar aquest tipus de lletra."
+
+#: src/font-view.c:992
 msgid "Info"
 msgstr "Informació"
 
-#: src/font-view.c:1177
+#: src/font-view.c:1008
 msgid "Back"
 msgstr "Enrere"
 
-#: src/font-view.c:1255
+#: src/font-view.c:1090
 msgid "All Fonts"
 msgstr "Tots els tipus de lletra"
 
-#: src/font-view.c:1367 src/org.gnome.font-viewer.desktop.in:3
-msgid "Fonts"
-msgstr "Tipus de lletra"
-
-#: src/font-view.c:1370
+#: src/font-view.c:1170
 msgid "translator-credits"
 msgstr "Joan Duran <jodufi@gmail.com>"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in:6
+#: src/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
 msgstr "tipus de lletra;tipografia;"
 
