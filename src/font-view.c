@@ -139,6 +139,7 @@ font_view_item_init (FontViewItem *self)
     gtk_widget_set_margin_start (self->font_preview, 6);
     gtk_widget_set_margin_end (self->font_preview, 6);
     gtk_widget_set_halign (self->font_preview, GTK_ALIGN_CENTER);
+    gtk_widget_set_vexpand (self->font_preview, TRUE);
     gtk_box_append (GTK_BOX (self), self->font_preview);
 
     self->label = gtk_label_new (NULL);
