@@ -52,11 +52,11 @@ G_DECLARE_FINAL_TYPE (FontViewApplication,
                       font_view_application,
                       FONT_VIEW,
                       APPLICATION,
-                      GtkApplication)
+                      AdwApplication)
 
 struct _FontViewApplication
 {
-    GtkApplication parent;
+    AdwApplication parent;
 
     GtkApplicationWindow *main_window;
     GtkWidget *main_grid;
@@ -89,7 +89,7 @@ struct _FontViewApplication
 
 G_DEFINE_TYPE (FontViewApplication,
                font_view_application,
-               GTK_TYPE_APPLICATION);
+               ADW_TYPE_APPLICATION);
 
 G_DECLARE_FINAL_TYPE (
     FontViewItem, font_view_item, FONT_VIEW, ITEM, GtkFlowBoxChild);
@@ -1293,8 +1293,6 @@ font_view_application_startup (GApplication *application)
     G_APPLICATION_CLASS (font_view_application_parent_class)
         ->startup (application);
 
-    adw_init ();
-
     if (!FcInit ())
         g_critical ("Can't initialize fontconfig library");
 
@@ -1304,14 +1302,6 @@ font_view_application_startup (GApplication *application)
     const gchar *back_accels[] = {"<Alt>Left", NULL};
     gtk_application_set_accels_for_action (GTK_APPLICATION (application),
                                            "app.back", back_accels);
-
-    GtkCssProvider *provider = gtk_css_provider_new ();
-    gtk_css_provider_load_from_resource (
-        GTK_CSS_PROVIDER (provider), "/org/gnome/font-viewer/application.css");
-
-    gtk_style_context_add_provider_for_display (
-        gdk_display_get_default (), GTK_STYLE_PROVIDER (provider),
-        GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
 }
 
 static void
@@ -1359,8 +1349,10 @@ font_view_application_class_init (FontViewApplicationClass *klass)
 static GApplication *
 font_view_application_new (void)
 {
-    return g_object_new (FONT_VIEW_TYPE_APPLICATION, "application-id",
-                         APPLICATION_ID, "flags", G_APPLICATION_HANDLES_OPEN,
+    return g_object_new (FONT_VIEW_TYPE_APPLICATION,
+                         "application-id", APPLICATION_ID,
+                         "flags", G_APPLICATION_HANDLES_OPEN,
+                         "resource-base-path", "/org/gnome/font-viewer/",
                          NULL);
 }
 
