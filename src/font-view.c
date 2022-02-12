@@ -1284,8 +1284,7 @@ ensure_window (FontViewApplication *self)
                                     GTK_POLICY_AUTOMATIC, GTK_POLICY_AUTOMATIC);
     gtk_stack_add_named (GTK_STACK (self->stack), swin, "info");
 
-    gtk_window_set_titlebar (GTK_WINDOW (window),
-                             GTK_HEADER_BAR (self->header));
+    gtk_window_set_titlebar (GTK_WINDOW (window), self->header);
     gtk_window_present (GTK_WINDOW (window));
 }
 
