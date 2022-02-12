@@ -7,13 +7,13 @@
 # Korostil Daniel <ted.korostiled@gmail.com>, 2011.
 # Re. <ted.korostiled@gmail.com>, 2012.
 # Daniel Korostil <ted.korostiled@gmail.com>, 2013, 2014, 2015.
-# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues\n"
-"POT-Creation-Date: 2021-09-24 22:15+0000\n"
-"PO-Revision-Date: 2021-09-29 16:35+0300\n"
+"POT-Creation-Date: 2022-02-12 01:19+0000\n"
+"PO-Revision-Date: 2022-02-12 18:19+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -24,42 +24,34 @@ msgstr ""
 "X-Generator: Lokalize 20.12.0\n"
 "X-Project-Style: gnome\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1385
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
 #: src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr "Шрифти"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1386
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
 #: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Переглянути шрифти на вашій системі"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
-#| msgid ""
-#| "GNOME Fonts shows you the fonts installed on your computer for your use "
-#| "as thumbnails. Selecting any thumbnails shows the full view of how the "
-#| "font would look under various sizes."
 msgid ""
 "Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"Програма «Шрифти» показує встановлені шрифти у мініатюрі. Вибирання "
-"мініатюр показує, як шрифт виглядає в різних розмірах."
+"Програма «Шрифти» показує встановлені шрифти у мініатюрі. Вибирання мініатюр "
+"показує, як шрифт виглядає в різних розмірах."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
-#| msgid ""
-#| "GNOME Fonts also supports installing new font files downloaded in the ."
-#| "ttf and other formats. Fonts may be installed only for your use or made "
-#| "available to all users on the computer."
 msgid ""
 "Fonts also supports installing new font files downloaded in the .ttf and "
 "other formats. Fonts may be installed only for your use or made available to "
 "all users on the computer."
 msgstr ""
-"У «Шрифтах» також передбачено підтримку встановлення файлів нових "
-"шрифтів, які звантажено в «.ttf» або інших форматах. Шрифти можна встановити "
-"тільки для себе або для всіх користувачів системи."
+"У «Шрифтах» також передбачено підтримку встановлення файлів нових шрифтів, "
+"які звантажено в «.ttf» або інших форматах. Шрифти можна встановити тільки "
+"для себе або для всіх користувачів системи."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:21
 msgid "The GNOME Project"
@@ -89,11 +81,11 @@ msgstr "ФАЙЛ-ШРИФТУ ФАЙЛ-ВИВОДУ"
 msgid "About Fonts"
 msgstr "Про Шрифти"
 
-#: src/font-view.c:383
+#: src/font-view.c:205
 msgid "GNOME Fonts"
 msgstr "Шрифти GNOME"
 
-#: src/font-view.c:391
+#: src/font-view.c:212
 msgid "Show the application's version"
 msgstr "Показати версію програми"
 
@@ -102,127 +94,129 @@ msgstr "Показати версію програми"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:509
+#: src/font-view.c:327
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, типово — %g"
 
-#: src/font-view.c:565
+#: src/font-view.c:378
 #, c-format
 msgid "Instance %d"
 msgstr "Екземпляр %d"
 
-#. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:608
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view.c:418
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:632
+#: src/font-view.c:443
 msgid "Name"
 msgstr "Назва"
 
-#: src/font-view.c:635
+#: src/font-view.c:446
 msgid "Location"
 msgstr "Розташування"
 
-#: src/font-view.c:638
+#: src/font-view.c:449
 msgid "Style"
 msgstr "Стиль"
 
-#: src/font-view.c:648
+#: src/font-view.c:459
 msgid "Type"
 msgstr "Тип"
 
-#: src/font-view.c:706 src/font-view.c:732
+#: src/font-view.c:525 src/font-view.c:551
 msgid "Version"
 msgstr "Версія"
 
-#: src/font-view.c:710 src/font-view.c:737
+#: src/font-view.c:529 src/font-view.c:556
 msgid "Copyright"
 msgstr "Авторські права"
 
-#: src/font-view.c:714
+#: src/font-view.c:533
 msgid "Description"
 msgstr "Опис"
 
-#: src/font-view.c:718
+#: src/font-view.c:537
 msgid "Manufacturer"
 msgstr "Виробник"
 
-#: src/font-view.c:722
+#: src/font-view.c:541
 msgid "Designer"
 msgstr "Дизайнер"
 
-#: src/font-view.c:726
+#: src/font-view.c:545
 msgid "License"
 msgstr "Ліцензування"
 
-#: src/font-view.c:751
+#: src/font-view.c:568
 msgid "Glyph Count"
 msgstr "Кількість гліфів"
 
-#: src/font-view.c:753
+#: src/font-view.c:570
 msgid "Color Glyphs"
 msgstr "Кольорові гліфи"
 
-#: src/font-view.c:753
+#: src/font-view.c:571
 msgid "yes"
 msgstr "так"
 
-#: src/font-view.c:753
+#: src/font-view.c:571
 msgid "no"
 msgstr "ні"
 
-#: src/font-view.c:757
+#: src/font-view.c:575
 msgid "Layout Features"
 msgstr "Можливості компонування"
 
-#: src/font-view.c:763
+#: src/font-view.c:581
 msgid "Variation Axes"
 msgstr "Вісі варіації"
 
-#: src/font-view.c:770
+#: src/font-view.c:588
 msgid "Named Styles"
 msgstr "Іменовані стилі"
 
-#: src/font-view.c:876
-msgid "This font could not be installed."
-msgstr "Цей шрифт не вдалося встановити."
-
-#: src/font-view.c:1014
-msgid "This font could not be displayed."
-msgstr "Цей шрифт неможливо показати."
-
-#: src/font-view.c:1147
-msgid "Install"
-msgstr "Встановити"
-
-#: src/font-view.c:1150
-msgid "Installing…"
-msgstr "Встановлення…"
-
-#: src/font-view.c:1153
-msgid "Installed"
-msgstr "Встановлено"
-
-#: src/font-view.c:1156
+#: src/font-view.c:600
 msgid "Failed"
 msgstr "Помилка"
 
-#: src/font-view.c:1172
+#: src/font-view.c:609
+msgid "Installed"
+msgstr "Встановлено"
+
+#: src/font-view.c:614
+#| msgid "Installing…"
+msgid "Installing"
+msgstr "Встановлення"
+
+#: src/font-view.c:617 src/font-view.c:978
+msgid "Install"
+msgstr "Встановити"
+
+#: src/font-view.c:739
+msgid "This font could not be installed."
+msgstr "Цей шрифт не вдалося встановити."
+
+#: src/font-view.c:874
+msgid "This font could not be displayed."
+msgstr "Цей шрифт неможливо показати."
+
+#: src/font-view.c:992
 msgid "Info"
 msgstr "Інформація"
 
-#: src/font-view.c:1189
+#: src/font-view.c:1008
 msgid "Back"
 msgstr "Назад"
 
-#: src/font-view.c:1267
+#: src/font-view.c:1090
 msgid "All Fonts"
 msgstr "Усі шрифти"
 
-#: src/font-view.c:1389
+#: src/font-view.c:1170
 msgid "translator-credits"
 msgstr "Daniel Korostil <ted.korostiled@gmail.com>"
 
