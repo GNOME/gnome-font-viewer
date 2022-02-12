@@ -890,6 +890,7 @@ font_widget_loaded_cb (SushiFontWidget *font_widget, gpointer user_data)
 {
     FontViewApplication *self = user_data;
     FT_Face face = sushi_font_widget_get_ft_face (font_widget);
+    GtkWidget *title = adw_window_title_new (NULL, NULL);
     const gchar *uri;
 
     if (face == NULL)
@@ -899,16 +900,14 @@ font_widget_loaded_cb (SushiFontWidget *font_widget, gpointer user_data)
     self->font_file = g_file_new_for_uri (uri);
 
     if (face->family_name) {
-        GtkWidget *label = gtk_label_new (face->family_name);
-        gtk_header_bar_set_title_widget (GTK_HEADER_BAR (self->header), label);
+        adw_window_title_set_title (ADW_WINDOW_TITLE (title), face->family_name);
     } else {
         g_autofree gchar *basename = g_file_get_basename (self->font_file);
-        GtkWidget *label = gtk_label_new (basename);
-        gtk_header_bar_set_title_widget (GTK_HEADER_BAR (self->header), label);
+        adw_window_title_set_title (ADW_WINDOW_TITLE (title), basename);
     }
 
-    // gtk_header_bar_set_subtitle (GTK_HEADER_BAR (self->header),
-    // face->style_name);
+    adw_window_title_set_subtitle (ADW_WINDOW_TITLE (title), face->style_name);
+    gtk_header_bar_set_title_widget (GTK_HEADER_BAR (self->header), title);
 
     install_button_refresh_appearance (self, NULL);
 }
@@ -1090,11 +1089,8 @@ font_view_application_do_overview (FontViewApplication *self)
     gtk_widget_show (self->menu_button);
 
     font_view_ensure_model (self);
-    GtkWidget *title_label = gtk_label_new (_ ("All Fonts"));
-    gtk_header_bar_set_title_widget (GTK_HEADER_BAR (self->header),
-                                     title_label);
-    // TODO: GTK4 - Setup subtitle
-    // gtk_header_bar_set_subtitle (GTK_HEADER_BAR (self->header), NULL);
+    GtkWidget *title = adw_window_title_new (_ ("All Fonts"), NULL);
+    gtk_header_bar_set_title_widget (GTK_HEADER_BAR (self->header), title);
 
     if (self->grid_view == NULL) {
         GtkWidget *grid_view;
