@@ -974,9 +974,6 @@ font_view_application_do_open (FontViewApplication *self,
 
     /* add install button */
     if (self->install_button == NULL) {
-        g_autoptr (GtkSizeGroup) install_size_group =
-            gtk_size_group_new (GTK_SIZE_GROUP_HORIZONTAL);
-
         self->install_button = GTK_BUTTON (gtk_button_new ());
         gtk_button_set_label (self->install_button, _ ("Install"));
         gtk_widget_set_valign (GTK_WIDGET (self->install_button),
@@ -1208,7 +1205,7 @@ static void
 ensure_window (FontViewApplication *self)
 {
     g_autoptr (GtkBuilder) builder = NULL;
-    GtkWidget *swin, *box, *image;
+    GtkWidget *swin, *box;
     GtkApplicationWindow *window;
     GMenuModel *menu;
 
