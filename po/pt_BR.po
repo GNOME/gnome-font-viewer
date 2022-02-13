@@ -23,15 +23,16 @@
 # Fábio Nogueira <deb-user-ba@ubuntu.com>, 2014.
 # Rafael Fontenelle <rafaelff@gnome.org>, 2012-2020.
 # Leônidas Araújo <leorusvellt@hotmail.com>, 2022.
+# Matheus Barbosa <mdpb.matheus@gmail.com>, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2022-01-04 13:38+0000\n"
-"PO-Revision-Date: 2022-01-11 09:46-0500\n"
-"Last-Translator: Leônidas Araújo <leorusvellt@hotmail.com>\n"
+"POT-Creation-Date: 2022-02-12 01:19+0000\n"
+"PO-Revision-Date: 2022-02-13 18:26-0300\n"
+"Last-Translator: Matheus Barbosa <mdpb.matheus@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -46,12 +47,12 @@ msgstr ""
 "X-DL-Domain: po\n"
 "X-DL-State: Translating\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1385
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
 #: src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr "Fontes"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1386
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
 #: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Veja fontes no seu sistema"
@@ -104,11 +105,11 @@ msgstr "ARQUIVO-FONTE ARQUIVO-SAÍDA"
 msgid "About Fonts"
 msgstr "Sobre o Fontes"
 
-#: src/font-view.c:383
+#: src/font-view.c:205
 msgid "GNOME Fonts"
 msgstr "Fontes do GNOME"
 
-#: src/font-view.c:391
+#: src/font-view.c:212
 msgid "Show the application's version"
 msgstr "Mostra a versão do aplicativo"
 
@@ -117,127 +118,129 @@ msgstr "Mostra a versão do aplicativo"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:509
+#: src/font-view.c:327
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, padrão %g"
 
-#: src/font-view.c:565
+#: src/font-view.c:378
 #, c-format
 msgid "Instance %d"
 msgstr "Instância %d"
 
-#. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:608
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view.c:418
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:632
+#: src/font-view.c:443
 msgid "Name"
 msgstr "Nome"
 
-#: src/font-view.c:635
+#: src/font-view.c:446
 msgid "Location"
 msgstr "Localização"
 
-#: src/font-view.c:638
+#: src/font-view.c:449
 msgid "Style"
 msgstr "Estilo"
 
-#: src/font-view.c:648
+#: src/font-view.c:459
 msgid "Type"
 msgstr "Tipo"
 
-#: src/font-view.c:706 src/font-view.c:732
+#: src/font-view.c:525 src/font-view.c:551
 msgid "Version"
 msgstr "Versão"
 
-#: src/font-view.c:710 src/font-view.c:737
+#: src/font-view.c:529 src/font-view.c:556
 msgid "Copyright"
 msgstr "Direitos autorais"
 
-#: src/font-view.c:714
+#: src/font-view.c:533
 msgid "Description"
 msgstr "Descrição"
 
-#: src/font-view.c:718
+#: src/font-view.c:537
 msgid "Manufacturer"
 msgstr "Fabricante"
 
-#: src/font-view.c:722
+#: src/font-view.c:541
 msgid "Designer"
 msgstr "Designer"
 
-#: src/font-view.c:726
+#: src/font-view.c:545
 msgid "License"
 msgstr "Licença"
 
-#: src/font-view.c:751
+#: src/font-view.c:568
 msgid "Glyph Count"
 msgstr "Contagem de glifos"
 
-#: src/font-view.c:753
+#: src/font-view.c:570
 msgid "Color Glyphs"
 msgstr "Glifos coloridos"
 
-#: src/font-view.c:753
+#: src/font-view.c:571
 msgid "yes"
 msgstr "sim"
 
-#: src/font-view.c:753
+#: src/font-view.c:571
 msgid "no"
 msgstr "não"
 
-#: src/font-view.c:757
+#: src/font-view.c:575
 msgid "Layout Features"
 msgstr "Recursos de layout"
 
-#: src/font-view.c:763
+#: src/font-view.c:581
 msgid "Variation Axes"
 msgstr "Eixos de variação"
 
-#: src/font-view.c:770
+#: src/font-view.c:588
 msgid "Named Styles"
 msgstr "Estilos nomeados"
 
-#: src/font-view.c:876
-msgid "This font could not be installed."
-msgstr "Esta fonte não pôde ser instalada."
-
-#: src/font-view.c:1014
-msgid "This font could not be displayed."
-msgstr "Esta fonte não pôde ser exibida."
-
-#: src/font-view.c:1147
-msgid "Install"
-msgstr "Instalar"
-
-#: src/font-view.c:1150
-msgid "Installing…"
-msgstr "Instalando…"
-
-#: src/font-view.c:1153
-msgid "Installed"
-msgstr "Instalado"
-
-#: src/font-view.c:1156
+#: src/font-view.c:600
 msgid "Failed"
 msgstr "Falhou"
 
-#: src/font-view.c:1172
+#: src/font-view.c:609
+msgid "Installed"
+msgstr "Instalado"
+
+#: src/font-view.c:614
+#| msgid "Installing…"
+msgid "Installing"
+msgstr "Instalando"
+
+#: src/font-view.c:617 src/font-view.c:978
+msgid "Install"
+msgstr "Instalar"
+
+#: src/font-view.c:739
+msgid "This font could not be installed."
+msgstr "Esta fonte não pôde ser instalada."
+
+#: src/font-view.c:874
+msgid "This font could not be displayed."
+msgstr "Esta fonte não pôde ser exibida."
+
+#: src/font-view.c:992
 msgid "Info"
 msgstr "Informação"
 
-#: src/font-view.c:1189
+#: src/font-view.c:1008
 msgid "Back"
 msgstr "Voltar"
 
-#: src/font-view.c:1267
+#: src/font-view.c:1090
 msgid "All Fonts"
 msgstr "Todas as fontes"
 
-#: src/font-view.c:1389
+#: src/font-view.c:1170
 msgid "translator-credits"
 msgstr ""
 "Alexandre Hautequest <hquest@fesppr.br>\n"
