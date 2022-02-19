@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2021-12-13 10:16+0000\n"
-"PO-Revision-Date: 2022-01-27 23:33+0100\n"
+"POT-Creation-Date: 2022-02-12 01:19+0000\n"
+"PO-Revision-Date: 2022-02-19 10:27+0100\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: \n"
 "Language: oc\n"
@@ -18,12 +18,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.0\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1385
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
 #: src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr "Poliças"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1386
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
 #: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Visualizar las poliças de vòstre sistèma"
@@ -76,11 +76,11 @@ msgstr "FICHIÈR-POLIÇA FICHIÈR-SORTIDA"
 msgid "About Fonts"
 msgstr "A prepaus de Poliças"
 
-#: src/font-view.c:383
+#: src/font-view.c:205
 msgid "GNOME Fonts"
 msgstr "Visionador de poliça de GNOME"
 
-#: src/font-view.c:391
+#: src/font-view.c:212
 msgid "Show the application's version"
 msgstr "Afichar la version de l'aplicacion"
 
@@ -89,127 +89,128 @@ msgstr "Afichar la version de l'aplicacion"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:509
+#: src/font-view.c:327
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, %g per défaut"
 
-#: src/font-view.c:565
+#: src/font-view.c:378
 #, c-format
 msgid "Instance %d"
 msgstr "Instància %d"
 
-#. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:608
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view.c:418
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:632
+#: src/font-view.c:443
 msgid "Name"
 msgstr "Nom"
 
-#: src/font-view.c:635
+#: src/font-view.c:446
 msgid "Location"
 msgstr "Emplaçament"
 
-#: src/font-view.c:638
+#: src/font-view.c:449
 msgid "Style"
 msgstr "Estil"
 
-#: src/font-view.c:648
+#: src/font-view.c:459
 msgid "Type"
 msgstr "Tipe"
 
-#: src/font-view.c:706 src/font-view.c:732
+#: src/font-view.c:525 src/font-view.c:551
 msgid "Version"
 msgstr "Version"
 
-#: src/font-view.c:710 src/font-view.c:737
+#: src/font-view.c:529 src/font-view.c:556
 msgid "Copyright"
 msgstr "Dreches d'autor"
 
-#: src/font-view.c:714
+#: src/font-view.c:533
 msgid "Description"
 msgstr "Descripcion"
 
-#: src/font-view.c:718
+#: src/font-view.c:537
 msgid "Manufacturer"
 msgstr "Editor"
 
-#: src/font-view.c:722
+#: src/font-view.c:541
 msgid "Designer"
 msgstr "Conceptor"
 
-#: src/font-view.c:726
+#: src/font-view.c:545
 msgid "License"
 msgstr "Licéncia"
 
-#: src/font-view.c:751
+#: src/font-view.c:568
 msgid "Glyph Count"
 msgstr "Nombre de glifes"
 
-#: src/font-view.c:753
+#: src/font-view.c:570
 msgid "Color Glyphs"
 msgstr "Glifes en color"
 
-#: src/font-view.c:753
+#: src/font-view.c:571
 msgid "yes"
 msgstr "òc"
 
-#: src/font-view.c:753
+#: src/font-view.c:571
 msgid "no"
 msgstr "non"
 
-#: src/font-view.c:757
+#: src/font-view.c:575
 msgid "Layout Features"
 msgstr "Tipes de mesa en pagina"
 
-#: src/font-view.c:763
+#: src/font-view.c:581
 msgid "Variation Axes"
 msgstr "Axes de variacion"
 
-#: src/font-view.c:770
+#: src/font-view.c:588
 msgid "Named Styles"
 msgstr "Estils nomenats"
 
-#: src/font-view.c:876
-msgid "This font could not be installed."
-msgstr "Se pòt pas installar aquesta poliça."
-
-#: src/font-view.c:1014
-msgid "This font could not be displayed."
-msgstr "Aquesta poliça a pas pogut èsser afichada."
-
-#: src/font-view.c:1147
-msgid "Install"
-msgstr "Installar"
-
-#: src/font-view.c:1150
-msgid "Installing…"
-msgstr "Installacion…"
-
-#: src/font-view.c:1153
-msgid "Installed"
-msgstr "Installada"
-
-#: src/font-view.c:1156
+#: src/font-view.c:600
 msgid "Failed"
 msgstr "Fracàs"
 
-#: src/font-view.c:1172
+#: src/font-view.c:609
+msgid "Installed"
+msgstr "Installada"
+
+#: src/font-view.c:614
+msgid "Installing"
+msgstr "Installacion"
+
+#: src/font-view.c:617 src/font-view.c:978
+msgid "Install"
+msgstr "Installar"
+
+#: src/font-view.c:739
+msgid "This font could not be installed."
+msgstr "Se pòt pas installar aquesta poliça."
+
+#: src/font-view.c:874
+msgid "This font could not be displayed."
+msgstr "Aquesta poliça a pas pogut èsser afichada."
+
+#: src/font-view.c:992
 msgid "Info"
 msgstr "Info"
 
-#: src/font-view.c:1189
+#: src/font-view.c:1008
 msgid "Back"
 msgstr "Tornar"
 
-#: src/font-view.c:1267
+#: src/font-view.c:1090
 msgid "All Fonts"
 msgstr "Totas las poliças"
 
-#: src/font-view.c:1389
+#: src/font-view.c:1170
 msgid "translator-credits"
 msgstr ""
 "Cédric Valmary (Tot en Òc) <cvalmary@yahoo.fr>\n"
