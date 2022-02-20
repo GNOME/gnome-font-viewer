@@ -6,15 +6,15 @@
 # Tomas Kuliavas <tokul@users.sourceforge.net>, 2003.
 # Žygimantas Beručka <zygis@gnome.org>, 2003-2006, 2009, 2010.
 # Gintautas Miliauskas <gintas@akl.lt>, 2006, 2007, 2008.
-# Aurimas Černius <aurisc4@gmail.com>, 2013-2019.
+# Aurimas Černius <aurisc4@gmail.com>, 2013-2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2019-07-06 17:09+0000\n"
-"PO-Revision-Date: 2019-08-20 13:06+0300\n"
+"POT-Creation-Date: 2022-02-12 01:19+0000\n"
+"PO-Revision-Date: 2022-02-20 14:56+0200\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -23,35 +23,44 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2)\n"
-"X-Generator: Gtranslator 3.32.1\n"
+"X-Generator: Gtranslator 40.0\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
-msgid "GNOME Fonts"
-msgstr "GNOME šriftai"
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
+#: src/org.gnome.font-viewer.desktop.in.in:3
+msgid "Fonts"
+msgstr "Šriftai"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1098
-#: src/org.gnome.font-viewer.desktop.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
+#: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Rodyti sistemos šriftus"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
+#| msgid ""
+#| "GNOME Fonts shows you the fonts installed on your computer for your use "
+#| "as thumbnails. Selecting any thumbnails shows the full view of how the "
+#| "font would look under various sizes."
 msgid ""
-"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"GNOME šriftai rodo jūsų kompiuteryje įdiegtus šriftus miniatiūrų pavidalu. "
+"Šriftai rodo jūsų kompiuteryje įdiegtus šriftus miniatiūrų pavidalu. "
 "Pasirinkus bet kurią miniatiūrą parodoma, kaip šriftas atrodytų įvairiais "
 "dydžiais."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
+#| msgid ""
+#| "GNOME Fonts also supports installing new font files downloaded in the ."
+#| "ttf and other formats. Fonts may be installed only for your use or made "
+#| "available to all users on the computer."
 msgid ""
-"GNOME Fonts also supports installing new font files downloaded in the .ttf "
-"and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
 msgstr ""
-"GNOME šriftai taip pat palaiko naujus šriftų failus, parsiųstus .ttf ir "
-"kitais formatais. Šriftai gali būti įdiegti jūsų naudojimui arba padaryti "
+"Šriftai taip pat palaiko naujus šriftų failus, parsiųstus .ttf ir kitais "
+"formatais. Šriftai gali būti įdiegti jūsų naudojimui arba padaryti "
 "prieinamais visiems kompiuterio naudotojams."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:21
@@ -82,7 +91,11 @@ msgstr "ŠRIFTO-FAILAS REZULTATO-FAILAS"
 msgid "About Fonts"
 msgstr "Apie šriftus"
 
-#: src/font-view.c:99
+#: src/font-view.c:205
+msgid "GNOME Fonts"
+msgstr "GNOME šriftai"
+
+#: src/font-view.c:212
 msgid "Show the application's version"
 msgstr "Rodyti programos versiją"
 
@@ -91,139 +104,136 @@ msgstr "Rodyti programos versiją"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:228
+#: src/font-view.c:327
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, numatyta %g"
 
-#: src/font-view.c:284
+#: src/font-view.c:378
 #, c-format
 msgid "Instance %d"
 msgstr "Egzempliorius %d"
 
-#. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:327
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view.c:418
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:351
+#: src/font-view.c:443
 msgid "Name"
 msgstr "Pavadinimas"
 
-#: src/font-view.c:354
+#: src/font-view.c:446
 msgid "Location"
 msgstr "Vieta"
 
-#: src/font-view.c:357
+#: src/font-view.c:449
 msgid "Style"
 msgstr "Stilius"
 
-#: src/font-view.c:367
+#: src/font-view.c:459
 msgid "Type"
 msgstr "Tipas"
 
-#: src/font-view.c:425 src/font-view.c:451
+#: src/font-view.c:525 src/font-view.c:551
 msgid "Version"
 msgstr "Versija"
 
-#: src/font-view.c:429 src/font-view.c:456
+#: src/font-view.c:529 src/font-view.c:556
 msgid "Copyright"
 msgstr "Autorinės teisės"
 
-#: src/font-view.c:433
+#: src/font-view.c:533
 msgid "Description"
 msgstr "Aprašymas"
 
-#: src/font-view.c:437
+#: src/font-view.c:537
 msgid "Manufacturer"
 msgstr "Gamintojas"
 
-#: src/font-view.c:441
+#: src/font-view.c:541
 msgid "Designer"
 msgstr "Dizaineris"
 
-#: src/font-view.c:445
+#: src/font-view.c:545
 msgid "License"
 msgstr "Licencija"
 
-#: src/font-view.c:470
+#: src/font-view.c:568
 msgid "Glyph Count"
 msgstr "Glifų kiekis"
 
-#: src/font-view.c:472
+#: src/font-view.c:570
 msgid "Color Glyphs"
 msgstr "Spalvoti glifai"
 
-#: src/font-view.c:472
+#: src/font-view.c:571
 msgid "yes"
 msgstr "taip"
 
-#: src/font-view.c:472
+#: src/font-view.c:571
 msgid "no"
 msgstr "ne"
 
-#: src/font-view.c:476
+#: src/font-view.c:575
 msgid "Layout Features"
 msgstr "Išdėstymo savybės"
 
-#: src/font-view.c:482
+#: src/font-view.c:581
 msgid "Variation Axes"
 msgstr "Variacijų ašys"
 
-#: src/font-view.c:489
+#: src/font-view.c:588
 msgid "Named Styles"
 msgstr "Vardiniai stiliai"
 
-#: src/font-view.c:563
-#| msgid "This font could not be displayed."
-msgid "This font could not be installed."
-msgstr "Nepavyko įdiegti šio šrifto."
-
-#: src/font-view.c:701
-msgid "This font could not be displayed."
-msgstr "Nepavyko parodyti šio šrifto."
-
-#: src/font-view.c:833
-msgid "Install"
-msgstr "Įdiegti"
-
-#: src/font-view.c:836
-msgid "Installing…"
-msgstr "Diegiama…"
-
-#: src/font-view.c:839
-msgid "Installed"
-msgstr "Įdiegta"
-
-#: src/font-view.c:842
+#: src/font-view.c:600
 msgid "Failed"
 msgstr "Nepavyko"
 
-#: src/font-view.c:858
+#: src/font-view.c:609
+msgid "Installed"
+msgstr "Įdiegta"
+
+#: src/font-view.c:614
+#| msgid "Installing…"
+msgid "Installing"
+msgstr "Diegiama"
+
+#: src/font-view.c:617 src/font-view.c:978
+msgid "Install"
+msgstr "Įdiegti"
+
+#: src/font-view.c:739
+msgid "This font could not be installed."
+msgstr "Nepavyko įdiegti šio šrifto."
+
+#: src/font-view.c:874
+msgid "This font could not be displayed."
+msgstr "Nepavyko parodyti šio šrifto."
+
+#: src/font-view.c:992
 msgid "Info"
 msgstr "Informacija"
 
-#: src/font-view.c:875
+#: src/font-view.c:1008
 msgid "Back"
 msgstr "Atgal"
 
-#: src/font-view.c:974
+#: src/font-view.c:1090
 msgid "All Fonts"
 msgstr "Visi šriftai"
 
-#: src/font-view.c:1097 src/org.gnome.font-viewer.desktop.in:3
-msgid "Fonts"
-msgstr "Šriftai"
-
-#: src/font-view.c:1100
+#: src/font-view.c:1170
 msgid "translator-credits"
 msgstr ""
 "išvertė:\n"
 "Aurimas Černius <aurisc4@gmail.com>"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in:6
+#: src/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
 msgstr "šriftai;šrifto peržiūra;"
 
