@@ -12,54 +12,54 @@
 # Gökhan Gurbetoğlu <ggurbet@gmail.com>, 2014.
 # Burak Kahraman <burakkaankhrmn@gmail.com>, 2017.
 # Çağatay Yiğit Şahin <cyigitsahin@outlook.com>, 2018.
-# Emin Tufan Çetin <etcetin@gmail.com>, 2017, 2019.
 # Sabri Ünal <libreajans@gmail.com>, 2019.
+# Emin Tufan Çetin <etcetin@gmail.com>, 2017, 2019, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2019-07-06 17:09+0000\n"
-"PO-Revision-Date: 2019-08-06 22:48+0300\n"
-"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
+"POT-Creation-Date: 2022-02-12 01:19+0000\n"
+"PO-Revision-Date: 2022-02-23 13:11+0300\n"
+"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.4.3\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
-msgid "GNOME Fonts"
-msgstr "GNOME Yazı Tipleri"
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
+#: src/org.gnome.font-viewer.desktop.in.in:3
+msgid "Fonts"
+msgstr "Yazı Tipleri"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1098
-#: src/org.gnome.font-viewer.desktop.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
+#: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Sisteminizdeki yazı tiplerini görüntüleyin"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
-"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"GNOME Yazı Tipleri, kullanımınız için bilgisayarınızda yüklü yazı tiplerini "
-"küçük resim olarak gösterir. Herhangi bir küçük resmi seçmek, yazı tipinin "
-"çeşitli boyutlarda nasıl görüneceğine dair tam bir görünümü gösterir."
+"Yazı Tipleri, bilgisayarınızda kurulu yazı tiplerini küçük resim olarak "
+"gösterir. Bir küçük resmi seçmek, ilgili yazı tipinin türlü boyutlarda nasıl "
+"görüneceğini tümüyle gösterir."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
-"GNOME Fonts also supports installing new font files downloaded in the .ttf "
-"and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
 msgstr ""
-"Ayrıca GNOME Yazı Tipleri, .ttf ve diğer biçimlerde indirilen yeni yazı tipi "
-"dosyalarının kurulumuna da izin verir. Yazı tipleri yalnızca kendi "
-"kullanımınız için kurulabilir ya da bilgisayardaki tüm kullanıcıların "
-"kullanımına sunulabilir."
+"Yazı Tipleri, .ttf ve diğer biçimlerde indirilen yeni yazı tipi dosyalarının "
+"kurmayı da destekler. Yazı tipleri yalnızca kendi kullanımınız için "
+"kurulabilir ya da bilgisayardaki tüm kullanıcılara sunulabilir."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:21
 msgid "The GNOME Project"
@@ -83,13 +83,17 @@ msgstr "BOYUT"
 
 #: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
-msgstr "YAZI-TİPİ-DOSYASI ÇIKTI-DOSYASI"
+msgstr "YAZITİPİ-DOSYASI ÇIKTI-DOSYASI"
 
 #: src/font-view-app-menu.ui:6
 msgid "About Fonts"
 msgstr "Yazı Tipleri Hakkında"
 
-#: src/font-view.c:99
+#: src/font-view.c:205
+msgid "GNOME Fonts"
+msgstr "GNOME Yazı Tipleri"
+
+#: src/font-view.c:212
 msgid "Show the application's version"
 msgstr "Uygulamanın sürümünü göster"
 
@@ -98,151 +102,139 @@ msgstr "Uygulamanın sürümünü göster"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:228
+#: src/font-view.c:327
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, öntanımlı %g"
 
-#: src/font-view.c:284
+#: src/font-view.c:378
 #, c-format
 msgid "Instance %d"
 msgstr "Oluşum %d"
 
-#. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:327
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view.c:418
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:351
+#: src/font-view.c:443
 msgid "Name"
 msgstr "Ad"
 
-#: src/font-view.c:354
+#: src/font-view.c:446
 msgid "Location"
 msgstr "Konum"
 
-#: src/font-view.c:357
+#: src/font-view.c:449
 msgid "Style"
 msgstr "Biçem"
 
-#: src/font-view.c:367
+#: src/font-view.c:459
 msgid "Type"
 msgstr "Tür"
 
-#: src/font-view.c:425 src/font-view.c:451
+#: src/font-view.c:525 src/font-view.c:551
 msgid "Version"
 msgstr "Sürüm"
 
-#: src/font-view.c:429 src/font-view.c:456
+#: src/font-view.c:529 src/font-view.c:556
 msgid "Copyright"
 msgstr "Telif Hakkı"
 
-#: src/font-view.c:433
+#: src/font-view.c:533
 msgid "Description"
 msgstr "Açıklama"
 
-#: src/font-view.c:437
+#: src/font-view.c:537
 msgid "Manufacturer"
 msgstr "Üretici"
 
-#: src/font-view.c:441
+#: src/font-view.c:541
 msgid "Designer"
 msgstr "Tasarımcı"
 
-#: src/font-view.c:445
+#: src/font-view.c:545
 msgid "License"
 msgstr "Lisans"
 
-#: src/font-view.c:470
+#: src/font-view.c:568
 msgid "Glyph Count"
 msgstr "Glif Sayısı"
 
-#: src/font-view.c:472
+#: src/font-view.c:570
 msgid "Color Glyphs"
 msgstr "Renk Glifleri"
 
-#: src/font-view.c:472
+#: src/font-view.c:571
 msgid "yes"
 msgstr "evet"
 
-#: src/font-view.c:472
+#: src/font-view.c:571
 msgid "no"
 msgstr "hayır"
 
-#: src/font-view.c:476
+#: src/font-view.c:575
 msgid "Layout Features"
 msgstr "Düzen Özellikleri"
 
-#: src/font-view.c:482
+#: src/font-view.c:581
 msgid "Variation Axes"
 msgstr "Değişim Eksenleri"
 
-#: src/font-view.c:489
+#: src/font-view.c:588
 msgid "Named Styles"
 msgstr "Adlandırılmış biçemler"
 
-#: src/font-view.c:563
-msgid "This font could not be installed."
-msgstr "Bu yazı tipi kurulamadı."
-
-#: src/font-view.c:701
-msgid "This font could not be displayed."
-msgstr "Bu yazı tipi görüntülenemiyor."
-
-#: src/font-view.c:833
-msgid "Install"
-msgstr "Kur"
-
-#: src/font-view.c:836
-msgid "Installing…"
-msgstr "Kuruluyor…"
-
-#: src/font-view.c:839
-msgid "Installed"
-msgstr "Kuruldu"
-
-#: src/font-view.c:842
+#: src/font-view.c:600
 msgid "Failed"
 msgstr "Başarısız"
 
-#: src/font-view.c:858
+#: src/font-view.c:609
+msgid "Installed"
+msgstr "Kuruldu"
+
+#: src/font-view.c:614
+msgid "Installing"
+msgstr "Kuruluyor"
+
+#: src/font-view.c:617 src/font-view.c:978
+msgid "Install"
+msgstr "Kur"
+
+#: src/font-view.c:739
+msgid "This font could not be installed."
+msgstr "Bu yazı tipi kurulamadı."
+
+#: src/font-view.c:874
+msgid "This font could not be displayed."
+msgstr "Bu yazı tipi görüntülenemiyor."
+
+#: src/font-view.c:992
 msgid "Info"
 msgstr "Bilgi"
 
-#: src/font-view.c:875
+#: src/font-view.c:1008
 msgid "Back"
 msgstr "Geri"
 
-#: src/font-view.c:974
+#: src/font-view.c:1090
 msgid "All Fonts"
 msgstr "Tüm Yazı Tipleri"
 
-#: src/font-view.c:1097 src/org.gnome.font-viewer.desktop.in:3
-msgid "Fonts"
-msgstr "Yazı Tipleri"
-
-#header bilgisinden oluşturulmuştur
-#: src/font-view.c:1100
+# header bilgisinden oluşturulmuştur
+#: src/font-view.c:1170
 msgid "translator-credits"
 msgstr ""
-"Barbaros Ulutaş <tebarul@yahoo.com>\n"
-"Rıdvan Can <ridvan@linuxdeneyimi.com>\n"
-"Deniz Koçak <lenduha@gmail.com>\n"
-"Baris Cicek <baris@teamforce.name.tr>\n"
-"İlker Dağlı <ilker@ilkerdagli.info>\n"
-"Osman Karagöz <osmank3@gmail.com>\n"
 "Muhammet Kara <muhammetk@gmail.com>\n"
-"Gökhan Gurbetoğlu <ggurbet@gmail.com>\n"
-"Burak Kahraman <burakkaankhrmn@gmail.com>\n"
-"Çağatay Yiğit Şahin <cyigitsahin@outlook.com>\n"
 "Emin Tufan Çetin <etcetin@gmail.com>\n"
-"Sabri Ünal <libreajans@gmail.com>"
+"Baris Cicek <baris@teamforce.name.tr>"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in:6
+#: src/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
-msgstr "yazı tipleri; yazı tipi ailesi;"
+msgstr "yazı tipleri; yazı tipi ailesi;yazıtipleri;"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
