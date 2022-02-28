@@ -1,56 +1,58 @@
 # Swedish messages for gnome-font-viewer.
-# Copyright © 2000-2011, 2014, 2015, 2018, 2019 Free Software Foundation, Inc.
+# Copyright © 2000-2011, 2014, 2015, 2018, 2019, 2021, 2022 Free Software Foundation, Inc.
 # Martin Norbäck <d95mback@dtek.chalmers.se>, 2000.
 # Andreas Hyden <a.hyden@cyberpoint.se>.
 # Christian Rose <menthos@menthos.com>, 2001, 2002, 2003, 2004, 2005.
 # Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009, 2010, 2011.
 # Anders Jonsson <anders.jonsson@norsjovallen.se>, 2014, 2015, 2018, 2019.
 # Josef Andersson <l10nl18nsweja@gmail.com>, 2018.
+# Luna Jernberg <droidbittin@gmail.com>, 2021, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2019-07-06 17:09+0000\n"
-"PO-Revision-Date: 2019-08-04 22:25+0200\n"
-"Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
+"POT-Creation-Date: 2022-02-26 13:34+0000\n"
+"PO-Revision-Date: 2022-02-12 15:02+0100\n"
+"Last-Translator: Luna Jernberg <droidbittin@gmail.com>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 3.0.1\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
-msgid "GNOME Fonts"
-msgstr "GNOME Typsnitt"
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
+#: src/org.gnome.font-viewer.desktop.in.in:3
+msgid "Fonts"
+msgstr "Typsnitt"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1098
-#: src/org.gnome.font-viewer.desktop.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
+#: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Visa typsnitt på ditt system"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
-"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"GNOME Typsnitt visar dig de för dig tillgängliga installerade typsnitten på "
-"din dator som miniatyrbilder. Att välja en miniatyrbild visar en full "
-"överblick över hur typsnittet skulle se ut i olika storlekar."
+"Typsnitt visar dig de för dig tillgängliga installerade typsnitten på din "
+"dator som miniatyrbilder. Att välja en miniatyrbild visar en full överblick "
+"över hur typsnittet skulle se ut i olika storlekar."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
-"GNOME Fonts also supports installing new font files downloaded in the .ttf "
-"and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
 msgstr ""
-"GNOME Typsnitt stöder också installation av nya typsnittsfiler hämtade i "
-"formatet .ttf och andra format. Typsnitt kan installeras endast för dig "
-"eller göras tillgängliga för alla användare på datorn."
+"Typsnitt stöder också installation av nya typsnittsfiler hämtade i formatet ."
+"ttf och andra format. Typsnitt kan installeras endast för dig eller göras "
+"tillgängliga för alla användare på datorn."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:21
 msgid "The GNOME Project"
@@ -80,7 +82,11 @@ msgstr "TYPSNITTSFIL UTDATAFIL"
 msgid "About Fonts"
 msgstr "Om Typsnitt"
 
-#: src/font-view.c:99
+#: src/font-view.c:205
+msgid "GNOME Fonts"
+msgstr "GNOME Typsnitt"
+
+#: src/font-view.c:212
 msgid "Show the application's version"
 msgstr "Visa programmets version"
 
@@ -89,141 +95,139 @@ msgstr "Visa programmets version"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:228
+#: src/font-view.c:327
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, standard %g"
 
-#: src/font-view.c:284
+#: src/font-view.c:378
 #, c-format
 msgid "Instance %d"
 msgstr "Instans %d"
 
-#. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:327
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view.c:418
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:351
+#: src/font-view.c:443
 msgid "Name"
 msgstr "Namn"
 
-#: src/font-view.c:354
+#: src/font-view.c:446
 msgid "Location"
 msgstr "Plats"
 
-#: src/font-view.c:357
+#: src/font-view.c:449
 msgid "Style"
 msgstr "Stil"
 
-#: src/font-view.c:367
+#: src/font-view.c:459
 msgid "Type"
 msgstr "Typ"
 
-#: src/font-view.c:425 src/font-view.c:451
+#: src/font-view.c:525 src/font-view.c:551
 msgid "Version"
 msgstr "Version"
 
-#: src/font-view.c:429 src/font-view.c:456
+#: src/font-view.c:529 src/font-view.c:556
 msgid "Copyright"
 msgstr "Upphovsrätt"
 
-#: src/font-view.c:433
+#: src/font-view.c:533
 msgid "Description"
 msgstr "Beskrivning"
 
-#: src/font-view.c:437
+#: src/font-view.c:537
 msgid "Manufacturer"
 msgstr "Tillverkare"
 
-#: src/font-view.c:441
+#: src/font-view.c:541
 msgid "Designer"
 msgstr "Designer"
 
-#: src/font-view.c:445
+#: src/font-view.c:545
 msgid "License"
 msgstr "Licens"
 
-#: src/font-view.c:470
+#: src/font-view.c:568
 msgid "Glyph Count"
 msgstr "Glyfantal"
 
-#: src/font-view.c:472
+#: src/font-view.c:570
 msgid "Color Glyphs"
 msgstr "Färgglyfer"
 
-#: src/font-view.c:472
+#: src/font-view.c:571
 msgid "yes"
 msgstr "ja"
 
-#: src/font-view.c:472
+#: src/font-view.c:571
 msgid "no"
 msgstr "nej"
 
-#: src/font-view.c:476
+#: src/font-view.c:575
 msgid "Layout Features"
 msgstr "Layoutfunktioner"
 
-#: src/font-view.c:482
+#: src/font-view.c:581
 msgid "Variation Axes"
 msgstr "Variationsaxlar"
 
-#: src/font-view.c:489
+#: src/font-view.c:588
 msgid "Named Styles"
 msgstr "Namngivna stilar"
 
-#: src/font-view.c:563
-msgid "This font could not be installed."
-msgstr "Detta typsnitt kunde inte installeras."
-
-#: src/font-view.c:701
-msgid "This font could not be displayed."
-msgstr "Detta typsnitt kunde inte visas."
-
-#: src/font-view.c:833
-msgid "Install"
-msgstr "Installera"
-
-#: src/font-view.c:836
-msgid "Installing…"
-msgstr "Installerar…"
-
-#: src/font-view.c:839
-msgid "Installed"
-msgstr "Installerat"
-
-#: src/font-view.c:842
+#: src/font-view.c:600
 msgid "Failed"
 msgstr "Misslyckades"
 
-#: src/font-view.c:858
+#: src/font-view.c:609
+msgid "Installed"
+msgstr "Installerat"
+
+#: src/font-view.c:614
+msgid "Installing"
+msgstr "Installerar"
+
+#: src/font-view.c:617 src/font-view.c:978
+msgid "Install"
+msgstr "Installera"
+
+#: src/font-view.c:739
+msgid "This font could not be installed."
+msgstr "Detta typsnitt kunde inte installeras."
+
+#: src/font-view.c:874
+msgid "This font could not be displayed."
+msgstr "Detta typsnitt kunde inte visas."
+
+#: src/font-view.c:992
 msgid "Info"
 msgstr "Info"
 
-#: src/font-view.c:875
+#: src/font-view.c:1008
 msgid "Back"
 msgstr "Bakåt"
 
-#: src/font-view.c:974
+#: src/font-view.c:1090
 msgid "All Fonts"
 msgstr "Alla typsnitt"
 
-#: src/font-view.c:1097 src/org.gnome.font-viewer.desktop.in:3
-msgid "Fonts"
-msgstr "Typsnitt"
-
-#: src/font-view.c:1100
+#: src/font-view.c:1170
 msgid "translator-credits"
 msgstr ""
 "Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Josef Andersson <l10nl18nsweja@gmail.com>\n"
+"Luna Jernberg <droidbittin@gmail.com>\n"
 "\n"
 "Skicka synpunkter på översättningen till\n"
 "<tp-sv@listor.tp-sv.se>."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in:6
+#: src/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
 msgstr "typsnitt;teckensnitt;"
 
@@ -1025,27 +1029,3 @@ msgstr "Vertikala alternativ för rotation"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Nolla med streck genom"
-
-#~ msgid "org.gnome.font-viewer"
-#~ msgstr "org.gnome.font-viewer"
-
-#~ msgid "About"
-#~ msgstr "Om"
-
-#~ msgid "Quit"
-#~ msgstr "Avsluta"
-
-#~ msgid "preferences-desktop-font"
-#~ msgstr "preferences-desktop-font"
-
-#~ msgid "Font Viewer"
-#~ msgstr "Typsnittsvisare"
-
-#~ msgid "[FILE...]"
-#~ msgstr "[FIL…]"
-
-#~ msgid ""
-#~ "Run '%s --help' to see a full list of available command line options."
-#~ msgstr ""
-#~ "Kör ”%s --help” för att se en komplett lista över tillgängliga "
-#~ "kommandoradsflaggor."
