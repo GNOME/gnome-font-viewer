@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils HEAD\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues\n"
-"POT-Creation-Date: 2021-11-07 21:47+0000\n"
-"PO-Revision-Date: 2021-11-19 16:02+0330\n"
+"POT-Creation-Date: 2022-03-05 23:49+0000\n"
+"PO-Revision-Date: 2022-03-07 17:11+0330\n"
 "Last-Translator: MohammadSaleh Kamyab <mskf1383@protonmail.com>\n"
 "Language-Team: Persian\n"
 "Language: fa\n"
@@ -25,23 +25,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1385
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
 #: src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr "قلم‌ها"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1386
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
 #: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "دیدن قلم‌های روی سامانه‌تان"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
-"Fonts shows you the fonts installed on your computer for your use as "
-"thumbnails. Selecting any thumbnails shows the full view of how the font would "
-"look under various sizes."
+"Fonts shows you the fonts installed on your computer for your use as thumbnails. "
+"Selecting any thumbnails shows the full view of how the font would look under "
+"various sizes."
 msgstr ""
 "قلم‌ها، قلم‌هایی که روی رایانه‌تان نصب شده را به صورت بندانگشتی نشان‌تان می‌دهد. "
 "گزینش هر بندانگشتی، نمای کامل چگونگی دیده شدن قلم در اندازه‌های مختلف را نشان "
@@ -50,12 +50,12 @@ msgstr ""
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
 "Fonts also supports installing new font files downloaded in the .ttf and other "
-"formats. Fonts may be installed only for your use or made available to all "
-"users on the computer."
+"formats. Fonts may be installed only for your use or made available to all users "
+"on the computer."
 msgstr ""
-"قلم‌ها هم‌چنین از نصب پرونده‌های قلم جدید بارگیری شده در قالب ttf و دیگر قالب‌ها "
-"پشتیبانی می‌کند. قلم‌ها می‌توانند فقط برای استفادهٔ شما نصب شده یا برای همهٔ کاربران "
-"روی رایانه در دسترس باشند."
+"قلم‌ها همچنین از نصب پرونده‌های قلم جدید بارگیری شده در قالب ttf و دیگر قالب‌ها "
+"پشتیبانی می‌کند. قلم‌ها می‌توانند فقط برای استفادهٔ شما نصب شده یا برای تمامی "
+"کاربران روی رایانه در دسترس باشند."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:21
 msgid "The GNOME Project"
@@ -85,11 +85,11 @@ msgstr "FONT-FILE OUTPUT-FILE"
 msgid "About Fonts"
 msgstr "دربارهٔ قلم‌ها"
 
-#: src/font-view.c:383
+#: src/font-view.c:205
 msgid "GNOME Fonts"
 msgstr "قلم‌های گنوم"
 
-#: src/font-view.c:391
+#: src/font-view.c:212
 msgid "Show the application's version"
 msgstr "نمایش نگارش برنامه"
 
@@ -98,127 +98,128 @@ msgstr "نمایش نگارش برنامه"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:509
+#: src/font-view.c:327
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g، به صورت پیش‌گزیده %g"
 
-#: src/font-view.c:565
+#: src/font-view.c:378
 #, c-format
 msgid "Instance %d"
 msgstr "اجرای %Id"
 
-#. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:608
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view.c:418
 msgctxt "OpenType layout"
 msgid ", "
 msgstr "، "
 
-#: src/font-view.c:632
+#: src/font-view.c:443
 msgid "Name"
 msgstr "نام"
 
-#: src/font-view.c:635
+#: src/font-view.c:446
 msgid "Location"
-msgstr "موقعیت"
+msgstr "مکان"
 
-#: src/font-view.c:638
+#: src/font-view.c:449
 msgid "Style"
 msgstr "سبک"
 
-#: src/font-view.c:648
+#: src/font-view.c:459
 msgid "Type"
 msgstr "گونه"
 
-#: src/font-view.c:706 src/font-view.c:732
+#: src/font-view.c:525 src/font-view.c:551
 msgid "Version"
 msgstr "نگارش"
 
-#: src/font-view.c:710 src/font-view.c:737
+#: src/font-view.c:529 src/font-view.c:556
 msgid "Copyright"
 msgstr "حق رونوشت"
 
-#: src/font-view.c:714
+#: src/font-view.c:533
 msgid "Description"
-msgstr "شرح"
+msgstr "توضیح"
 
-#: src/font-view.c:718
+#: src/font-view.c:537
 msgid "Manufacturer"
 msgstr "سازنده"
 
-#: src/font-view.c:722
+#: src/font-view.c:541
 msgid "Designer"
 msgstr "طراح"
 
-#: src/font-view.c:726
+#: src/font-view.c:545
 msgid "License"
 msgstr "پروانه"
 
-#: src/font-view.c:751
+#: src/font-view.c:568
 msgid "Glyph Count"
 msgstr "شمارش نشان‌ها"
 
-#: src/font-view.c:753
+#: src/font-view.c:570
 msgid "Color Glyphs"
 msgstr "نشان‌های رنگی"
 
-#: src/font-view.c:753
+#: src/font-view.c:571
 msgid "yes"
 msgstr "بله"
 
-#: src/font-view.c:753
+#: src/font-view.c:571
 msgid "no"
 msgstr "نه"
 
-#: src/font-view.c:757
+#: src/font-view.c:575
 msgid "Layout Features"
 msgstr "ویژگی‌های چینش"
 
-#: src/font-view.c:763
+#: src/font-view.c:581
 msgid "Variation Axes"
 msgstr "اهرم‌های تغییر"
 
-#: src/font-view.c:770
+#: src/font-view.c:588
 msgid "Named Styles"
 msgstr "سبک‌های نام‌دار"
 
-#: src/font-view.c:876
-msgid "This font could not be installed."
-msgstr "این قلم قابل نصب نیست."
-
-#: src/font-view.c:1014
-msgid "This font could not be displayed."
-msgstr "این قلم قابل نمایش نیست."
-
-#: src/font-view.c:1147
-msgid "Install"
-msgstr "نصب"
-
-#: src/font-view.c:1150
-msgid "Installing…"
-msgstr "در حال نصب…"
-
-#: src/font-view.c:1153
-msgid "Installed"
-msgstr "نصب شده"
-
-#: src/font-view.c:1156
+#: src/font-view.c:600
 msgid "Failed"
 msgstr "شکست خورد"
 
-#: src/font-view.c:1172
+#: src/font-view.c:609
+msgid "Installed"
+msgstr "نصب شده"
+
+#: src/font-view.c:614
+msgid "Installing"
+msgstr "در حال نصب"
+
+#: src/font-view.c:617 src/font-view.c:978
+msgid "Install"
+msgstr "نصب"
+
+#: src/font-view.c:739
+msgid "This font could not be installed."
+msgstr "این قلم قابل نصب نیست."
+
+#: src/font-view.c:874
+msgid "This font could not be displayed."
+msgstr "این قلم قابل نمایش نیست."
+
+#: src/font-view.c:992
 msgid "Info"
 msgstr "اطّلاعات"
 
-#: src/font-view.c:1189
+#: src/font-view.c:1008
 msgid "Back"
 msgstr "بازگشت"
 
-#: src/font-view.c:1267
+#: src/font-view.c:1090
 msgid "All Fonts"
 msgstr "تمامی قلم‌ها"
 
-#: src/font-view.c:1389
+#: src/font-view.c:1170
 msgid "translator-credits"
 msgstr ""
 "دانیال بهزادی <dani.behzi@ubuntu.com>\n"
@@ -233,7 +234,7 @@ msgstr "fonts;fontface;فونت; قلم;"
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
 msgid "Access All Alternates"
-msgstr "دسترسی به تمام جایگزین‌ها"
+msgstr "دسترسی به تمامی جایگزین‌ها"
 
 #: src/open-type-layout.h:14
 msgctxt "OpenType layout"
@@ -243,7 +244,7 @@ msgstr "حالت‌های بالای زمینه"
 #: src/open-type-layout.h:15
 msgctxt "OpenType layout"
 msgid "Above-base Mark Positioning"
-msgstr "ثبیت موقعیت علامت بالای زمینه"
+msgstr "تثبیت موقعیت علامت بالای زمینه"
 
 #: src/open-type-layout.h:16
 msgctxt "OpenType layout"
@@ -258,7 +259,7 @@ msgstr "کسرهای جایگزین"
 #: src/open-type-layout.h:18
 msgctxt "OpenType layout"
 msgid "Akhands"
-msgstr "اکندها"
+msgstr "اخندها"
 
 #: src/open-type-layout.h:19
 msgctxt "OpenType layout"
@@ -268,7 +269,7 @@ msgstr "حالت‌های زیر زمینه"
 #: src/open-type-layout.h:20
 msgctxt "OpenType layout"
 msgid "Below-base Mark Positioning"
-msgstr "ثبیت موقعیت علامت زیر زمینه"
+msgstr "تثبیت موقعیت علامت زیر زمینه"
 
 #: src/open-type-layout.h:21
 msgctxt "OpenType layout"
@@ -288,12 +289,12 @@ msgstr "حالت‌های حسّاس به بزرگی و کوچکی"
 #: src/open-type-layout.h:24
 msgctxt "OpenType layout"
 msgid "Glyph Composition / Decomposition"
-msgstr "ترکیب/تجزیه نشان"
+msgstr "ترکیب/تجزیهٔ نشان"
 
 #: src/open-type-layout.h:25
 msgctxt "OpenType layout"
 msgid "Conjunct Form After Ro"
-msgstr "حالت متصل بعد از Ro"
+msgstr "حالت متّصل بعد از Ro"
 
 #: src/open-type-layout.h:26
 msgctxt "OpenType layout"
@@ -318,7 +319,7 @@ msgstr "فاصله‌گذاری حروف بزرگ"
 #: src/open-type-layout.h:30
 msgctxt "OpenType layout"
 msgid "Contextual Swash"
-msgstr "پسروی بافتاری"
+msgstr "پس‌روی بافتاری"
 
 #: src/open-type-layout.h:31
 msgctxt "OpenType layout"
@@ -463,12 +464,12 @@ msgstr "جایگزین‌های نشان پایانی روی خط"
 #: src/open-type-layout.h:59
 msgctxt "OpenType layout"
 msgid "Terminal Forms #2"
-msgstr "حالت‌های پایانی #۲"
+msgstr "حالت‌های پایانی ‎#۲"
 
 #: src/open-type-layout.h:60
 msgctxt "OpenType layout"
 msgid "Terminal Forms #3"
-msgstr "حالت‌های پایانی #۳"
+msgstr "حالت‌های پایانی ‎#۳"
 
 #: src/open-type-layout.h:61
 msgctxt "OpenType layout"
@@ -688,7 +689,7 @@ msgstr "زینتی‌ها"
 #: src/open-type-layout.h:104
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Widths"
-msgstr "وهناهای جایگزین متناسب"
+msgstr "پهناهای جایگزین متناسب"
 
 #: src/open-type-layout.h:105
 msgctxt "OpenType layout"
@@ -933,7 +934,7 @@ msgstr "بالانویسه"
 #: src/open-type-layout.h:153
 msgctxt "OpenType layout"
 msgid "Swash"
-msgstr "پسروی"
+msgstr "پس‌روی"
 
 #: src/open-type-layout.h:154
 msgctxt "OpenType layout"
