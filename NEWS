@@ -1,3 +1,30 @@
+GNOME Font Viewer - 42.rc
+-------------------------------------------------------------------------------
+Fonts 42.rc comes with the following translation updates:
+ - Basque
+ - Bulgarian
+ - Catalan
+ - Chinese (China)
+ - Croatian
+ - Czech
+ - Finnish
+ - French
+ - Galician
+ - Indonesian
+ - Korean
+ - Lithuanian
+ - Occitan (post 1500)
+ - Persian
+ - Polish
+ - Portuguese
+ - Portuguese (Brazil)
+ - Russian
+ - Slovenian
+ - Spanish
+ - Swedish
+ - Turkish
+ - Ukrainian
+
 GNOME Font Viewer - 42.beta
 -------------------------------------------------------------------------------
 Fonts 42.beta comes with a port to GTK4 by Evan Welsh,
