@@ -1,5 +1,5 @@
 # gnome-font-viewer ja.po.
-# Copyright (C) 1998-2019 gnome-util's COPYRIGHT HOLDER
+# Copyright (C) 1998, 2000-2015, 2019-2020, 2022 gnome-util's COPYRIGHT HOLDER
 # Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1998.
 # Yuusuke Tahara <tahara@gnome.gr.jp>, 2000.
 # Yukihiro Nakai <nakai@gnome.gr.jp>, 2000.
@@ -8,13 +8,13 @@
 # KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
 # Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
 # Satoru SATOH <ss@gnome.gr.jp>, 2006.
-# Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009, 2010.
-# Yasumichi Akahoshi <yasumichi@vinelinux.org>, 2010, 2011.
-# OKANO Takayoshi <kano@na.rim.or.jp>, 2011, 2012.
-# Jiro Matsuzawa <jmatsuzawa@gnome.org>, 2012, 2013, 2014, 2015.
+# Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009-2010.
+# Yasumichi Akahoshi <yasumichi@vinelinux.org>, 2010-2011.
+# OKANO Takayoshi <kano@na.rim.or.jp>, 2011-2012.
+# Jiro Matsuzawa <jmatsuzawa@gnome.org>, 2012-2015.
 # Hajime Taira <htaira@redhat.com>, 2015.
 # Manato Neon <neonmanato@outlook.jp>, 2019.
-# sicklylife <translation@sicklylife.jp>, 2019-2020.
+# sicklylife <translation@sicklylife.jp>, 2019-2020, 2022.
 #
 msgid ""
 msgstr ""
@@ -22,7 +22,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
 "POT-Creation-Date: 2022-02-26 13:34+0000\n"
-"PO-Revision-Date: 2020-02-29 23:00+0900\n"
+"PO-Revision-Date: 2022-03-13 20:40+0900\n"
 "Last-Translator: sicklylife <translation@sicklylife.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
@@ -42,32 +42,22 @@ msgid "View fonts on your system"
 msgstr "システム上のフォントを閲覧します"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
-#, fuzzy
-#| msgid ""
-#| "GNOME Fonts shows you the fonts installed on your computer for your use "
-#| "as thumbnails. Selecting any thumbnails shows the full view of how the "
-#| "font would look under various sizes."
 msgid ""
 "Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"GNOME Fonts を使用すると、インストール済みのフォントをサムネイルで一覧表示で"
+"“フォント”を使用すると、インストール済みのフォントをサムネイルで一覧表示で"
 "きます。サムネイルを選択して、様々なサイズでフォントがどのように表示されるか"
 "を確認することができます。"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
-#, fuzzy
-#| msgid ""
-#| "GNOME Fonts also supports installing new font files downloaded in the ."
-#| "ttf and other formats. Fonts may be installed only for your use or made "
-#| "available to all users on the computer."
 msgid ""
 "Fonts also supports installing new font files downloaded in the .ttf and "
 "other formats. Fonts may be installed only for your use or made available to "
 "all users on the computer."
 msgstr ""
-"GNOME Fonts は .ttf やその他の形式でダウンロードした新しいフォントファイルの"
+"“フォント”は .ttf やその他の形式でダウンロードした新しいフォントファイルの"
 "インストールも可能です。フォントを自分専用にインストールすることも、コン"
 "ピューター上のすべてのユーザーで利用可能にすることもできます。"
 
@@ -206,10 +196,8 @@ msgid "Installed"
 msgstr "インストール済み"
 
 #: src/font-view.c:614
-#, fuzzy
-#| msgid "Installing…"
 msgid "Installing"
-msgstr "インストール中…"
+msgstr "インストール中"
 
 #: src/font-view.c:617 src/font-view.c:978
 msgid "Install"
@@ -246,13 +234,13 @@ msgstr ""
 "KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.\n"
 "Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.\n"
 "Satoru SATOH <ss@gnome.gr.jp>, 2006.\n"
-"Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009, 2010.\n"
-"Yasumichi Akahoshi <yasumichi@vinelinux.org>, 2010, 2011.\n"
-"OKANO Takayoshi <kano@na.rim.or.jp>, 2011, 2012.\n"
-"松澤 二郎 <jmatsuzawa@gnome.org>, 2012, 2013, 2014, 2015.\n"
+"Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009-2010.\n"
+"Yasumichi Akahoshi <yasumichi@vinelinux.org>, 2010-2011.\n"
+"OKANO Takayoshi <kano@na.rim.or.jp>, 2011-2012.\n"
+"松澤 二郎 <jmatsuzawa@gnome.org>, 2012-2015.\n"
 "Hajime Taira <htaira@redhat.com>, 2015.\n"
 "Manato Neon <neonmanato@outlook.jp>, 2019.\n"
-"sicklylife <translation@sicklylife.jp>, 2019-2020."
+"sicklylife <translation@sicklylife.jp>, 2019-2020, 2022."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in.in:6
