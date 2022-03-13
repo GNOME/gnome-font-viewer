@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2020-02-27 16:23+0000\n"
+"POT-Creation-Date: 2022-02-26 13:34+0000\n"
 "PO-Revision-Date: 2020-02-29 23:00+0900\n"
 "Last-Translator: sicklylife <translation@sicklylife.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
@@ -31,18 +31,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:377
-msgid "GNOME Fonts"
-msgstr ""
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
+#: src/org.gnome.font-viewer.desktop.in.in:3
+msgid "Fonts"
+msgstr "フォント"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1368
-#: src/org.gnome.font-viewer.desktop.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
+#: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "システム上のフォントを閲覧します"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
+#, fuzzy
+#| msgid ""
+#| "GNOME Fonts shows you the fonts installed on your computer for your use "
+#| "as thumbnails. Selecting any thumbnails shows the full view of how the "
+#| "font would look under various sizes."
 msgid ""
-"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
@@ -51,10 +57,15 @@ msgstr ""
 "を確認することができます。"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
+#, fuzzy
+#| msgid ""
+#| "GNOME Fonts also supports installing new font files downloaded in the ."
+#| "ttf and other formats. Fonts may be installed only for your use or made "
+#| "available to all users on the computer."
 msgid ""
-"GNOME Fonts also supports installing new font files downloaded in the .ttf "
-"and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
 msgstr ""
 "GNOME Fonts は .ttf やその他の形式でダウンロードした新しいフォントファイルの"
 "インストールも可能です。フォントを自分専用にインストールすることも、コン"
@@ -88,7 +99,11 @@ msgstr "FONT-FILE OUTPUT-FILE"
 msgid "About Fonts"
 msgstr "“フォント”について"
 
-#: src/font-view.c:385
+#: src/font-view.c:205
+msgid "GNOME Fonts"
+msgstr ""
+
+#: src/font-view.c:212
 msgid "Show the application's version"
 msgstr "アプリケーションのバージョンを表示する"
 
@@ -97,131 +112,130 @@ msgstr "アプリケーションのバージョンを表示する"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:503
+#: src/font-view.c:327
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr ""
 
-#: src/font-view.c:559
+#: src/font-view.c:378
 #, c-format
 msgid "Instance %d"
 msgstr ""
 
-#. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:602
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view.c:418
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ""
 
-#: src/font-view.c:626
+#: src/font-view.c:443
 msgid "Name"
 msgstr "名前"
 
-#: src/font-view.c:629
+#: src/font-view.c:446
 msgid "Location"
 msgstr "場所"
 
-#: src/font-view.c:632
+#: src/font-view.c:449
 msgid "Style"
 msgstr "スタイル"
 
-#: src/font-view.c:642
+#: src/font-view.c:459
 msgid "Type"
 msgstr "種類"
 
-#: src/font-view.c:700 src/font-view.c:726
+#: src/font-view.c:525 src/font-view.c:551
 msgid "Version"
 msgstr "バージョン"
 
-#: src/font-view.c:704 src/font-view.c:731
+#: src/font-view.c:529 src/font-view.c:556
 msgid "Copyright"
 msgstr "著作権"
 
-#: src/font-view.c:708
+#: src/font-view.c:533
 msgid "Description"
 msgstr "説明"
 
-#: src/font-view.c:712
+#: src/font-view.c:537
 msgid "Manufacturer"
 msgstr "メーカー"
 
-#: src/font-view.c:716
+#: src/font-view.c:541
 msgid "Designer"
 msgstr "デザイナー"
 
-#: src/font-view.c:720
+#: src/font-view.c:545
 msgid "License"
 msgstr "ライセンス"
 
-#: src/font-view.c:745
+#: src/font-view.c:568
 msgid "Glyph Count"
 msgstr "グリフ数"
 
-#: src/font-view.c:747
+#: src/font-view.c:570
 msgid "Color Glyphs"
 msgstr "カラーグリフ"
 
-#: src/font-view.c:747
+#: src/font-view.c:571
 msgid "yes"
 msgstr ""
 
-#: src/font-view.c:747
+#: src/font-view.c:571
 msgid "no"
 msgstr ""
 
-#: src/font-view.c:751
+#: src/font-view.c:575
 msgid "Layout Features"
 msgstr "レイアウト機能"
 
-#: src/font-view.c:757
+#: src/font-view.c:581
 msgid "Variation Axes"
 msgstr ""
 
-#: src/font-view.c:764
+#: src/font-view.c:588
 msgid "Named Styles"
 msgstr ""
 
-#: src/font-view.c:870
-msgid "This font could not be installed."
-msgstr "フォントをインストールできませんでした。"
-
-#: src/font-view.c:1008
-msgid "This font could not be displayed."
-msgstr "フォントを表示できませんでした。"
-
-#: src/font-view.c:1135
-msgid "Install"
-msgstr "インストール"
-
-#: src/font-view.c:1138
-msgid "Installing…"
-msgstr "インストール中…"
-
-#: src/font-view.c:1141
-msgid "Installed"
-msgstr "インストール済み"
-
-#: src/font-view.c:1144
+#: src/font-view.c:600
 msgid "Failed"
 msgstr "失敗"
 
-#: src/font-view.c:1160
+#: src/font-view.c:609
+msgid "Installed"
+msgstr "インストール済み"
+
+#: src/font-view.c:614
+#, fuzzy
+#| msgid "Installing…"
+msgid "Installing"
+msgstr "インストール中…"
+
+#: src/font-view.c:617 src/font-view.c:978
+msgid "Install"
+msgstr "インストール"
+
+#: src/font-view.c:739
+msgid "This font could not be installed."
+msgstr "フォントをインストールできませんでした。"
+
+#: src/font-view.c:874
+msgid "This font could not be displayed."
+msgstr "フォントを表示できませんでした。"
+
+#: src/font-view.c:992
 msgid "Info"
 msgstr "情報"
 
-#: src/font-view.c:1177
+#: src/font-view.c:1008
 msgid "Back"
 msgstr "戻る"
 
-#: src/font-view.c:1255
+#: src/font-view.c:1090
 msgid "All Fonts"
 msgstr "すべてのフォント"
 
-#: src/font-view.c:1367 src/org.gnome.font-viewer.desktop.in:3
-msgid "Fonts"
-msgstr "フォント"
-
-#: src/font-view.c:1370
+#: src/font-view.c:1170
 msgid "translator-credits"
 msgstr ""
 "Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1998.\n"
@@ -241,7 +255,7 @@ msgstr ""
 "sicklylife <translation@sicklylife.jp>, 2019-2020."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in:6
+#: src/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
 msgstr "fonts;fontface;フォント書体;"
 
