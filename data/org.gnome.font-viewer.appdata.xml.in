@@ -37,9 +37,9 @@
   </kudos>
   <content_rating type="oars-1.1" />
   <releases>
-    <release version="42.rc" date="2022-03-07">
+    <release version="42.0" date="2022-03-20">
       <description>
-        <p>Fonts 42.rc comes with the following translation updates:</p>
+        <p>Fonts 42.0 comes with a port to GTK4 and the following translation updates:</p>
         <ul>
           <li>Basque</li>
           <li>Bulgarian</li>
@@ -49,7 +49,9 @@
           <li>Czech</li>
           <li>Finnish</li>
           <li>French</li>
+          <li>Friulian</li>
           <li>Galician</li>
+          <li>Icelandic</li>
           <li>Indonesian</li>
           <li>Korean</li>
           <li>Lithuanian</li>
@@ -59,42 +61,11 @@
           <li>Portuguese</li>
           <li>Portuguese (Brazil)</li>
           <li>Russian</li>
+          <li>Slovak</li>
           <li>Slovenian</li>
           <li>Spanish</li>
           <li>Swedish</li>
           <li>Turkish</li>
-          <li>Ukrainian</li>
-        </ul>
-      </description>
-    </release>
-    <release version="42.beta" date="2022-02-12">
-      <description>
-        <p>Fonts 42.beta comes with a port to GTK4 by Evan Welsh, and the following translation updates:</p>
-        <ul>
-          <li>Chinese (China)</li>
-          <li>Czech</li>
-          <li>Occitan (post 1500)</li>
-          <li>Portuguese (Brazil)</li>
-          <li>Russian</li>
-          <li>Slovenian</li>
-        </ul>
-      </description>
-    </release>
-    <release version="42.alpha" date="2022-01-11">
-      <description>
-        <p>Fonts 42.alpha comes with the following translation updates:</p>
-        <ul>
-          <li>Basque</li>
-          <li>Bulgarian</li>
-          <li>Croatian</li>
-          <li>Friulian</li>
-          <li>Galician</li>
-          <li>Icelandic</li>
-          <li>Indonesian</li>
-          <li>Persian</li>
-          <li>Portuguese</li>
-          <li>Slovak</li>
-          <li>Spanish</li>
           <li>Ukrainian</li>
         </ul>
       </description>
