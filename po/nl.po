@@ -11,52 +11,53 @@
 # Wouter Bolsterlee <wbolster@gnome.org>, 2006–2013.
 # Hannie Dumoleyn <hannie@ubuntu-nl.org>, 2010–2011, 2015.
 # Erwin Poeze <donnut@outlook.com>, 2013, 2014.
-# Nathan Follens <nthn@unseen.is>, 2017, 2019.
+# Nathan Follens <nfollens@gnome.org>, 2017, 2019, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer.master.nl\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2019-09-24 11:32+0000\n"
-"PO-Revision-Date: 2019-09-25 12:11+0200\n"
-"Last-Translator: Nathan Follens <nthn@unseen.is>\n"
+"POT-Creation-Date: 2022-02-26 13:34+0000\n"
+"PO-Revision-Date: 2022-03-25 14:02+0100\n"
+"Last-Translator: Nathan Follens <nfollens@gnome.org>\n"
 "Language-Team: Dutch <gnome-nl-list@gnome.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 3.0.1\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:377
-msgid "GNOME Fonts"
-msgstr "Gnome Lettertypen"
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
+#: src/org.gnome.font-viewer.desktop.in.in:3
+msgid "Fonts"
+msgstr "Lettertypen"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1368
-#: src/org.gnome.font-viewer.desktop.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
+#: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Lettertypen op uw systeem bekijken"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
-"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"Gnome Lettertypen toont u de lettertypen die op uw computer geïnstalleerd "
-"zijn als miniaturen. Het selecteren van een miniatuur laat zien hoe het "
-"lettertype eruit ziet bij verschillende groottes."
+"Lettertypen toont u de lettertypen die op uw computer geïnstalleerd zijn als "
+"miniaturen. Het selecteren van een miniatuur laat zien hoe het lettertype "
+"eruitziet bij verschillende groottes."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
-"GNOME Fonts also supports installing new font files downloaded in the .ttf "
-"and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
 msgstr ""
-"Gnome Lettertypen ondersteunt ook het installeren van nieuwe lettertypen, o."
-"a. in de vorm van .ttf-bestanden. Lettertypen kunnen voor eigen gebruik "
-"worden geïnstalleerd of beschikbaar worden gemaakt voor alle gebruikers van "
-"de computer."
+"Lettertypen ondersteunt ook het installeren van nieuwe lettertypen, o.a. in "
+"de vorm van .ttf-bestanden. Lettertypen kunnen voor eigen gebruik worden "
+"geïnstalleerd of beschikbaar worden gemaakt voor alle gebruikers van de "
+"computer."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:21
 msgid "The GNOME Project"
@@ -86,7 +87,11 @@ msgstr "LETTERTYPEBESTAND UITVOERBESTAND"
 msgid "About Fonts"
 msgstr "Over Lettertypen"
 
-#: src/font-view.c:385
+#: src/font-view.c:205
+msgid "GNOME Fonts"
+msgstr "Gnome Lettertypen"
+
+#: src/font-view.c:212
 msgid "Show the application's version"
 msgstr "Toon de versie van de toepassing"
 
@@ -95,142 +100,139 @@ msgstr "Toon de versie van de toepassing"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:503
+#: src/font-view.c:327
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, standaard %g"
 
-#: src/font-view.c:559
+#: src/font-view.c:378
 #, c-format
 msgid "Instance %d"
 msgstr "Instantie %d"
 
-#. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:602
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view.c:418
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:626
+#: src/font-view.c:443
 msgid "Name"
 msgstr "Naam"
 
-#: src/font-view.c:629
+#: src/font-view.c:446
 msgid "Location"
 msgstr "Locatie"
 
-#: src/font-view.c:632
+#: src/font-view.c:449
 msgid "Style"
 msgstr "Stijl"
 
-#: src/font-view.c:642
+#: src/font-view.c:459
 msgid "Type"
 msgstr "Type"
 
-#: src/font-view.c:700 src/font-view.c:726
+#: src/font-view.c:525 src/font-view.c:551
 msgid "Version"
 msgstr "Versie"
 
-#: src/font-view.c:704 src/font-view.c:731
+#: src/font-view.c:529 src/font-view.c:556
 msgid "Copyright"
 msgstr "Copyright"
 
-#: src/font-view.c:708
+#: src/font-view.c:533
 msgid "Description"
 msgstr "Omschrijving"
 
-#: src/font-view.c:712
+#: src/font-view.c:537
 msgid "Manufacturer"
 msgstr "Fabrikant"
 
-#: src/font-view.c:716
+#: src/font-view.c:541
 msgid "Designer"
 msgstr "Ontwerper"
 
-#: src/font-view.c:720
+#: src/font-view.c:545
 msgid "License"
 msgstr "Licentie"
 
-#: src/font-view.c:745
+#: src/font-view.c:568
 msgid "Glyph Count"
 msgstr "Aantal gliefen"
 
-#: src/font-view.c:747
+#: src/font-view.c:570
 msgid "Color Glyphs"
 msgstr "Kleurgliefen"
 
-#: src/font-view.c:747
+#: src/font-view.c:571
 msgid "yes"
 msgstr "ja"
 
-#: src/font-view.c:747
+#: src/font-view.c:571
 msgid "no"
 msgstr "nee"
 
-#: src/font-view.c:751
+#: src/font-view.c:575
 msgid "Layout Features"
 msgstr "Opmaakfuncties"
 
-#: src/font-view.c:757
+#: src/font-view.c:581
 msgid "Variation Axes"
 msgstr "Variatie-assen"
 
-#: src/font-view.c:764
+#: src/font-view.c:588
 msgid "Named Styles"
 msgstr "Benoemde stijlen"
 
-#: src/font-view.c:870
-msgid "This font could not be installed."
-msgstr "Dit lettertype kon niet geïnstalleerd worden."
-
-#: src/font-view.c:1008
-msgid "This font could not be displayed."
-msgstr "Dit lettertype kon niet getoond worden."
-
-#: src/font-view.c:1135
-msgid "Install"
-msgstr "Installeren"
-
-#: src/font-view.c:1138
-msgid "Installing…"
-msgstr "Installeren…"
-
-#: src/font-view.c:1141
-msgid "Installed"
-msgstr "Geïnstalleerd"
-
-#: src/font-view.c:1144
+#: src/font-view.c:600
 msgid "Failed"
 msgstr "Mislukt"
 
-#: src/font-view.c:1160
+#: src/font-view.c:609
+msgid "Installed"
+msgstr "Geïnstalleerd"
+
+#: src/font-view.c:614
+msgid "Installing"
+msgstr "Bezig met installeren"
+
+#: src/font-view.c:617 src/font-view.c:978
+msgid "Install"
+msgstr "Installeren"
+
+#: src/font-view.c:739
+msgid "This font could not be installed."
+msgstr "Dit lettertype kon niet geïnstalleerd worden."
+
+#: src/font-view.c:874
+msgid "This font could not be displayed."
+msgstr "Dit lettertype kon niet getoond worden."
+
+#: src/font-view.c:992
 msgid "Info"
 msgstr "Informatie"
 
-#: src/font-view.c:1177
+#: src/font-view.c:1008
 msgid "Back"
 msgstr "Terug"
 
-#: src/font-view.c:1255
+#: src/font-view.c:1090
 msgid "All Fonts"
 msgstr "Alle lettertypen"
 
-#: src/font-view.c:1367 src/org.gnome.font-viewer.desktop.in:3
-msgid "Fonts"
-msgstr "Lettertypen"
-
-#: src/font-view.c:1370
+#: src/font-view.c:1170
 msgid "translator-credits"
 msgstr ""
 "Wouter Bolsterlee\n"
 "Hannie Dumoleyn\n"
 "Erwin Poeze\n"
-"Nathan Follens\n"
+"Nathan Follens <nfollens@gnome.org>\n"
 "\n"
 "Meer info over Gnome-NL http://nl.gnome.org/"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in:6
+#: src/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
 msgstr "fontface;lettertype;letter;font;typografie;"
 
