@@ -1,16 +1,16 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Sveinn í Felli <sv1@fellsnet.is>, 2015, 2017, 2019, 2021.
+# Sveinn í Felli <sv1@fellsnet.is>, 2015, 2017, 2019, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues"
 "\n"
-"POT-Creation-Date: 2021-10-17 15:22+0000\n"
-"PO-Revision-Date: 2021-12-13 10:15+0000\n"
+"POT-Creation-Date: 2022-02-26 13:34+0000\n"
+"PO-Revision-Date: 2022-04-19 17:36+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
-"Language-Team: Icelandic <translation-team-is@lists.sourceforge.org>\n"
+"Language-Team: Icelandic\n"
 "Language: is\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,43 +18,35 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 19.12.3\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1385
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
 #: src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr "Letur"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1386
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
 #: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Skoða letur á kerfinu þínu"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
-#| msgid ""
-#| "GNOME Fonts shows you the fonts installed on your computer for your use "
-#| "as thumbnails. Selecting any thumbnails shows the full view of how the "
-#| "font would look under various sizes."
 msgid ""
 "Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"Leturskoðarinn sýnir þér sem smámyndir það letur sem uppsett er á kerfinu"
-" þínu. Ef þú velur einhverja smámyndina geturðu séð hvernig letrið lítur út í"
-" mismunandi stærðum."
+"Leturskoðarinn sýnir þér sem smámyndir það letur sem uppsett er á kerfinu "
+"þínu. Ef þú velur einhverja smámyndina geturðu séð hvernig letrið lítur út í "
+"mismunandi stærðum."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
-#| msgid ""
-#| "GNOME Fonts also supports installing new font files downloaded in the ."
-#| "ttf and other formats. Fonts may be installed only for your use or made "
-#| "available to all users on the computer."
 msgid ""
 "Fonts also supports installing new font files downloaded in the .ttf and "
 "other formats. Fonts may be installed only for your use or made available to "
 "all users on the computer."
 msgstr ""
-"Leturskoðarinn styður einnig að setja inn nýjar leturskrár sem þú hefur náð í"
-" á .ttf og fleiri sniðum. Letrið má setja upp fyrir þig einan eða fyrir alla"
-" notendur á tölvunni."
+"Leturskoðarinn styður einnig að setja inn nýjar leturskrár sem þú hefur náð "
+"í á .ttf og fleiri sniðum. Letrið má setja upp fyrir þig einan eða fyrir "
+"alla notendur á tölvunni."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:21
 msgid "The GNOME Project"
@@ -84,11 +76,11 @@ msgstr "LETURSKRÁ ÚTTAKSSKRÁ"
 msgid "About Fonts"
 msgstr "Um hugbúnaðinn"
 
-#: src/font-view.c:383
+#: src/font-view.c:205
 msgid "GNOME Fonts"
 msgstr "GNOME-letur"
 
-#: src/font-view.c:391
+#: src/font-view.c:212
 msgid "Show the application's version"
 msgstr "Birta útgáfuupplýsingar forrits"
 
@@ -97,127 +89,129 @@ msgstr "Birta útgáfuupplýsingar forrits"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:509
+#: src/font-view.c:327
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, sjálfgefið %g"
 
-#: src/font-view.c:565
+#: src/font-view.c:378
 #, c-format
 msgid "Instance %d"
 msgstr "Tilvik %d"
 
-#. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:608
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view.c:418
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:632
+#: src/font-view.c:443
 msgid "Name"
 msgstr "Heiti"
 
-#: src/font-view.c:635
+#: src/font-view.c:446
 msgid "Location"
 msgstr "Staðsetning"
 
-#: src/font-view.c:638
+#: src/font-view.c:449
 msgid "Style"
 msgstr "Stíll"
 
-#: src/font-view.c:648
+#: src/font-view.c:459
 msgid "Type"
 msgstr "Gerð"
 
-#: src/font-view.c:706 src/font-view.c:732
+#: src/font-view.c:525 src/font-view.c:551
 msgid "Version"
 msgstr "Útgáfa"
 
-#: src/font-view.c:710 src/font-view.c:737
+#: src/font-view.c:529 src/font-view.c:556
 msgid "Copyright"
 msgstr "Höfundarréttur"
 
-#: src/font-view.c:714
+#: src/font-view.c:533
 msgid "Description"
 msgstr "Lýsing"
 
-#: src/font-view.c:718
+#: src/font-view.c:537
 msgid "Manufacturer"
 msgstr "Framleiðandi"
 
-#: src/font-view.c:722
+#: src/font-view.c:541
 msgid "Designer"
 msgstr "Hönnuður"
 
-#: src/font-view.c:726
+#: src/font-view.c:545
 msgid "License"
 msgstr "Notkunarleyfi"
 
-#: src/font-view.c:751
+#: src/font-view.c:568
 msgid "Glyph Count"
 msgstr "Fjöldi stafbrigða"
 
-#: src/font-view.c:753
+#: src/font-view.c:570
 msgid "Color Glyphs"
 msgstr "Lituð staftákn"
 
-#: src/font-view.c:753
+#: src/font-view.c:571
 msgid "yes"
 msgstr "já"
 
-#: src/font-view.c:753
+#: src/font-view.c:571
 msgid "no"
 msgstr "nei"
 
-#: src/font-view.c:757
+#: src/font-view.c:575
 msgid "Layout Features"
-msgstr ""
+msgstr "Eiginleikar framsetningar"
 
-#: src/font-view.c:763
+#: src/font-view.c:581
 msgid "Variation Axes"
 msgstr ""
 
-#: src/font-view.c:770
+#: src/font-view.c:588
 msgid "Named Styles"
 msgstr "Nefndir stílar"
 
-#: src/font-view.c:876
-msgid "This font could not be installed."
-msgstr "Ekki tókst að setja upp þetta letur."
-
-#: src/font-view.c:1014
-msgid "This font could not be displayed."
-msgstr "Ekki tókst að birta þetta letur."
-
-#: src/font-view.c:1147
-msgid "Install"
-msgstr "Setja inn"
-
-#: src/font-view.c:1150
-msgid "Installing…"
-msgstr "Uppsetning…"
-
-#: src/font-view.c:1153
-msgid "Installed"
-msgstr "Uppsett"
-
-#: src/font-view.c:1156
+#: src/font-view.c:600
 msgid "Failed"
 msgstr "Mistókst"
 
-#: src/font-view.c:1172
+#: src/font-view.c:609
+msgid "Installed"
+msgstr "Uppsett"
+
+#: src/font-view.c:614
+#| msgid "Installing…"
+msgid "Installing"
+msgstr "Uppsetning"
+
+#: src/font-view.c:617 src/font-view.c:978
+msgid "Install"
+msgstr "Setja inn"
+
+#: src/font-view.c:739
+msgid "This font could not be installed."
+msgstr "Ekki tókst að setja upp þetta letur."
+
+#: src/font-view.c:874
+msgid "This font could not be displayed."
+msgstr "Ekki tókst að birta þetta letur."
+
+#: src/font-view.c:992
 msgid "Info"
 msgstr "Upplýsingar"
 
-#: src/font-view.c:1189
+#: src/font-view.c:1008
 msgid "Back"
 msgstr "Til baka"
 
-#: src/font-view.c:1267
+#: src/font-view.c:1090
 msgid "All Fonts"
 msgstr "Allt letur"
 
-#: src/font-view.c:1389
+#: src/font-view.c:1170
 msgid "translator-credits"
 msgstr "Sveinn í Felli, sv1@fellsnet.is"
 
@@ -459,17 +453,17 @@ msgstr ""
 #: src/open-type-layout.h:59
 msgctxt "OpenType layout"
 msgid "Terminal Forms #2"
-msgstr ""
+msgstr "Endaform #2"
 
 #: src/open-type-layout.h:60
 msgctxt "OpenType layout"
 msgid "Terminal Forms #3"
-msgstr ""
+msgstr "Endaform #3"
 
 #: src/open-type-layout.h:61
 msgctxt "OpenType layout"
 msgid "Terminal Forms"
-msgstr ""
+msgstr "Endaform"
 
 #: src/open-type-layout.h:62
 msgctxt "OpenType layout"
@@ -504,7 +498,7 @@ msgstr ""
 #: src/open-type-layout.h:68
 msgctxt "OpenType layout"
 msgid "Historical Forms"
-msgstr ""
+msgstr "Söguleg form"
 
 #: src/open-type-layout.h:69
 msgctxt "OpenType layout"
@@ -659,7 +653,7 @@ msgstr ""
 #: src/open-type-layout.h:99
 msgctxt "OpenType layout"
 msgid "Numerators"
-msgstr ""
+msgstr "Teljarar"
 
 #: src/open-type-layout.h:100
 msgctxt "OpenType layout"
@@ -669,7 +663,7 @@ msgstr ""
 #: src/open-type-layout.h:101
 msgctxt "OpenType layout"
 msgid "Optical Bounds"
-msgstr ""
+msgstr "Sjónræn mörk"
 
 #: src/open-type-layout.h:102
 msgctxt "OpenType layout"
@@ -794,7 +788,7 @@ msgstr ""
 #: src/open-type-layout.h:126
 msgctxt "OpenType layout"
 msgid "Optical size"
-msgstr ""
+msgstr "Sjónræn stærð"
 
 #: src/open-type-layout.h:127
 msgctxt "OpenType layout"
@@ -954,7 +948,7 @@ msgstr ""
 #: src/open-type-layout.h:158
 msgctxt "OpenType layout"
 msgid "Traditional Forms"
-msgstr ""
+msgstr "Hefðbundin form"
 
 #: src/open-type-layout.h:159
 msgctxt "OpenType layout"
