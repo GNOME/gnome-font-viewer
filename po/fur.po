@@ -8,22 +8,22 @@ msgstr ""
 "Project-Id-Version: gnome-font-viewer gnome-3-6\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2021-09-24 22:15+0000\n"
-"PO-Revision-Date: 2021-11-07 18:30+0100\n"
+"POT-Creation-Date: 2022-02-26 13:34+0000\n"
+"PO-Revision-Date: 2022-05-07 19:25+0200\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.0.1\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1385
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
 #: src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr "Caratars"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1386
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
 #: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Viôt i caratars sul to sisteme"
@@ -76,11 +76,11 @@ msgstr "FILE-CARATAR FILE-JESSUDE"
 msgid "About Fonts"
 msgstr "Informazions su Caratars"
 
-#: src/font-view.c:383
+#: src/font-view.c:205
 msgid "GNOME Fonts"
 msgstr "Caratars di GNOME"
 
-#: src/font-view.c:391
+#: src/font-view.c:212
 msgid "Show the application's version"
 msgstr "Mostre la version de aplicazion"
 
@@ -89,127 +89,128 @@ msgstr "Mostre la version de aplicazion"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:509
+#: src/font-view.c:327
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, predefinît %g"
 
-#: src/font-view.c:565
+#: src/font-view.c:378
 #, c-format
 msgid "Instance %d"
 msgstr "Istance %d"
 
-#. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:608
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view.c:418
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:632
+#: src/font-view.c:443
 msgid "Name"
 msgstr "Non"
 
-#: src/font-view.c:635
+#: src/font-view.c:446
 msgid "Location"
 msgstr "Posizion"
 
-#: src/font-view.c:638
+#: src/font-view.c:449
 msgid "Style"
 msgstr "Stîl"
 
-#: src/font-view.c:648
+#: src/font-view.c:459
 msgid "Type"
 msgstr "Gjenar"
 
-#: src/font-view.c:706 src/font-view.c:732
+#: src/font-view.c:525 src/font-view.c:551
 msgid "Version"
 msgstr "Version"
 
-#: src/font-view.c:710 src/font-view.c:737
+#: src/font-view.c:529 src/font-view.c:556
 msgid "Copyright"
 msgstr "Copyright"
 
-#: src/font-view.c:714
+#: src/font-view.c:533
 msgid "Description"
 msgstr "Descrizion"
 
-#: src/font-view.c:718
+#: src/font-view.c:537
 msgid "Manufacturer"
 msgstr "Produtôr"
 
-#: src/font-view.c:722
+#: src/font-view.c:541
 msgid "Designer"
 msgstr "Disegnadôr"
 
-#: src/font-view.c:726
+#: src/font-view.c:545
 msgid "License"
 msgstr "Licence"
 
-#: src/font-view.c:751
+#: src/font-view.c:568
 msgid "Glyph Count"
 msgstr "Conte dai glifs"
 
-#: src/font-view.c:753
+#: src/font-view.c:570
 msgid "Color Glyphs"
 msgstr "Colôr dai glifs"
 
-#: src/font-view.c:753
+#: src/font-view.c:571
 msgid "yes"
 msgstr "sì"
 
-#: src/font-view.c:753
+#: src/font-view.c:571
 msgid "no"
 msgstr "no"
 
-#: src/font-view.c:757
+#: src/font-view.c:575
 msgid "Layout Features"
 msgstr "Funzionalitâts disposizion"
 
-#: src/font-view.c:763
+#: src/font-view.c:581
 msgid "Variation Axes"
 msgstr "As di variazion"
 
-#: src/font-view.c:770
+#: src/font-view.c:588
 msgid "Named Styles"
 msgstr "Stîi cun non"
 
-#: src/font-view.c:876
-msgid "This font could not be installed."
-msgstr "No si pues instalâ chest caratar."
-
-#: src/font-view.c:1014
-msgid "This font could not be displayed."
-msgstr "No si pues visualizâ chest caratar."
-
-#: src/font-view.c:1147
-msgid "Install"
-msgstr "Instale"
-
-#: src/font-view.c:1150
-msgid "Installing…"
-msgstr "Daûr a instalâ…"
-
-#: src/font-view.c:1153
-msgid "Installed"
-msgstr "Instalât"
-
-#: src/font-view.c:1156
+#: src/font-view.c:600
 msgid "Failed"
 msgstr "Falît"
 
-#: src/font-view.c:1172
+#: src/font-view.c:609
+msgid "Installed"
+msgstr "Instalât"
+
+#: src/font-view.c:614
+msgid "Installing"
+msgstr "Daûr a instalâ"
+
+#: src/font-view.c:617 src/font-view.c:978
+msgid "Install"
+msgstr "Instale"
+
+#: src/font-view.c:739
+msgid "This font could not be installed."
+msgstr "No si pues instalâ chest caratar."
+
+#: src/font-view.c:874
+msgid "This font could not be displayed."
+msgstr "No si pues visualizâ chest caratar."
+
+#: src/font-view.c:992
 msgid "Info"
 msgstr "Informazions"
 
-#: src/font-view.c:1189
+#: src/font-view.c:1008
 msgid "Back"
 msgstr "Indaûr"
 
-#: src/font-view.c:1267
+#: src/font-view.c:1090
 msgid "All Fonts"
 msgstr "Ducj i caratars"
 
-#: src/font-view.c:1389
+#: src/font-view.c:1170
 msgid "translator-credits"
 msgstr "Fabio Tomat, <f.t.public@gmail.com>"
 
@@ -901,7 +902,7 @@ msgstr "Cumbinazion stilistiche 20"
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
 msgid "Math script style alternates"
-msgstr ""
+msgstr "Stîl di caratars matematics alternatîfs"
 
 #: src/open-type-layout.h:150
 msgctxt "OpenType layout"
