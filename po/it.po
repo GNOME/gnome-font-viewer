@@ -8,12 +8,14 @@
 # Fabio Marzocca <thesaltydog@gmail.com>, 2007.
 # Andrea Zagli <azagli@libero.it>, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012.
 # Milo Casagrande <milo@milo.name>, 2012, 2013, 2014, 2017, 2018, 2019, 2022.
+# Marco Ciampa <ciampix@posteo.net>, 2022.
 #
 # Per la traduzione delle caratteristiche tipografiche:
 #    https://en.wikipedia.org/wiki/List_of_typographic_features
 #    https://en.wikipedia.org/wiki/OpenType
 #    https://www.microsoft.com/en-us/Typography/OpenTypeSpecification.aspx
 #    https://docs.microsoft.com/it-it/typography/opentype/spec/
+#    https://it.wikipedia.org/wiki/Tipo_di_carattere
 #
 msgid ""
 msgstr ""
@@ -34,12 +36,12 @@ msgstr ""
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
 #: src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
-msgstr "Caratteri"
+msgstr "Tipi di carattere"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
 #: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
-msgstr "Visualizza i caratteri presenti nel sistema"
+msgstr "Visualizza i tipi di carattere presenti nel sistema"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
@@ -47,9 +49,9 @@ msgid ""
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"Caratteri mostra tutti i caratteri installati sul proprio computer tramite "
-"delle miniature degli stessi: selezionando una miniatura vengono mostrate le "
-"varie dimensioni del carattere."
+"Tipi di carattere mostra tutti i tipi di carattere installati sul proprio computer "
+"tramite delle miniature degli stessi: selezionando una miniatura vengono mostrate "
+"le varie dimensioni del tipo di carattere."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
@@ -57,8 +59,8 @@ msgid ""
 "other formats. Fonts may be installed only for your use or made available to "
 "all users on the computer."
 msgstr ""
-"Caratteri consente di installare nuovi caratteri da file scaricati nel "
-"formato .ttf e anche altri formati. I caratteri possono essere installati "
+"Tipi di carattere consente di installare nuovi tipi di carattere da file scaricati "
+"nel formato .ttf e anche altri formati. I tipi di carattere possono essere installati "
 "per uso personale o per tutti gli utenti del computer."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:21
@@ -83,15 +85,15 @@ msgstr "DIMENSIONE"
 
 #: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
-msgstr "FILE-CARATTERE FILE-USCITA"
+msgstr "FILE-TIPO-CARATTERE FILE-USCITA"
 
 #: src/font-view-app-menu.ui:6
 msgid "About Fonts"
-msgstr "Informazioni su Caratteri"
+msgstr "Informazioni su Tipi di carattere"
 
 #: src/font-view.c:205
 msgid "GNOME Fonts"
-msgstr "Caratteri GNOME"
+msgstr "Tipi di carattere GNOME"
 
 #: src/font-view.c:212
 msgid "Show the application's version"
@@ -205,11 +207,11 @@ msgstr "Installa"
 
 #: src/font-view.c:739
 msgid "This font could not be installed."
-msgstr "Impossibile installare questo carattere."
+msgstr "Impossibile installare questo tipo di carattere."
 
 #: src/font-view.c:874
 msgid "This font could not be displayed."
-msgstr "Impossibile visualizzare questo carattere."
+msgstr "Impossibile visualizzare questo tipo di carattere."
 
 #: src/font-view.c:992
 msgid "Info"
@@ -221,7 +223,7 @@ msgstr "Indietro"
 
 #: src/font-view.c:1090
 msgid "All Fonts"
-msgstr "Tutti i caratteri"
+msgstr "Tutti i tipi di carattere"
 
 #: src/font-view.c:1170
 msgid "translator-credits"
@@ -231,12 +233,13 @@ msgstr ""
 "Fabio Marzocca <thesaltydog@gmail.com>\n"
 "Luca Ferretti <elle.uca@infinito.it>\n"
 "Lapo Calamandrei <lapo@it.gnome.org>\n"
-"Alessio Frusciante <algol@firenze.linux.it>"
+"Alessio Frusciante <algol@firenze.linux.it>\n"
+"Marco Ciampa <ciampix@posteo.net>"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
-msgstr "carattere;caratteri;caratteri tipografici;tipo di carattere;"
+msgstr "tipo di carattere;tipi di carattere;carattere;caratteri;carattere tipografico;caratteri tipografici;"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
