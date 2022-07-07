@@ -1154,22 +1154,22 @@ action_about (GSimpleAction *action, GVariant *parameter, gpointer user_data)
     FontViewApplication *self = user_data;
 
     // clang-format off
-    const gchar *authors[] = {
+    const gchar *developers[] = {
         "Cosimo Cecchi",
         "James Henstridge",
         NULL
     };
 
-    gtk_show_about_dialog (GTK_WINDOW (self->main_window),
+    adw_show_about_window (GTK_WINDOW (self->main_window),
                            "version", VERSION,
-                           "authors", authors,
-                           "program-name", _("Fonts"),
-                           "comments", _("View fonts on your system"),
+                           "developers", developers,
+                           "application-name", _("Fonts"),
+                           "application-icon", FONT_VIEW_ICON_NAME,
+                           "developer-name", _("The GNOME Project"),
                            "website", "https://gitlab.gnome.org/GNOME/gnome-font-viewer/",
-                           "logo-icon-name", FONT_VIEW_ICON_NAME,
+                           "issue-url", "https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/issues/new",
                            "translator-credits", _("translator-credits"),
                            "license-type", GTK_LICENSE_GPL_2_0,
-                           "wrap-license", TRUE,
                            NULL);
     // clang-format on
 }

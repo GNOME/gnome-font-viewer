@@ -24,11 +24,12 @@ thumbnailerdir = join_paths(datadir, 'thumbnailers')
 
 glib_req_version = '>= 2.56.0'
 gtk_req_version = '>= 4.5.0'
+libadwaita_req_version = '>= 1.2.alpha'
 harfbuzz_req_version = '>= 0.9.9'
 
 glib_dep = dependency('glib-2.0', version: glib_req_version)
 gtk_dep = dependency('gtk4', version: gtk_req_version)
-libadwaita_dep = dependency('libadwaita-1')
+libadwaita_dep = dependency('libadwaita-1', version: libadwaita_req_version)
 harfbuzz_dep = dependency('harfbuzz', version: harfbuzz_req_version)
 fontconfig_dep = dependency('fontconfig')
 freetype2_dep = dependency('freetype2')
