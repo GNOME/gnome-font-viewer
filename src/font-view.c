@@ -75,7 +75,7 @@ struct _FontViewApplication
     GtkWidget *search_bar;
     GtkWidget *search_entry;
     GtkWidget *search_toggle;
-    GtkWidget *menu_button;
+    GtkWidget *about_button;
 
     GtkFilter *filter;
     GtkSorter *sorter;
@@ -1016,7 +1016,7 @@ font_view_application_do_open (FontViewApplication *self,
     }
 
     gtk_widget_hide (self->search_toggle);
-    gtk_widget_hide (self->menu_button);
+    gtk_widget_hide (self->about_button);
 
     uri = g_file_get_uri (file);
 
@@ -1084,7 +1084,7 @@ font_view_application_do_overview (FontViewApplication *self)
     }
 
     gtk_widget_show (self->search_toggle);
-    gtk_widget_show (self->menu_button);
+    gtk_widget_show (self->about_button);
 
     font_view_ensure_model (self);
     GtkWidget *title = adw_window_title_new (_ ("All Fonts"), NULL);
@@ -1204,10 +1204,8 @@ search_text_changed (GtkEntry *entry, FontViewApplication *self)
 static void
 ensure_window (FontViewApplication *self)
 {
-    g_autoptr (GtkBuilder) builder = NULL;
     GtkWidget *swin, *box;
     GtkApplicationWindow *window;
-    GMenuModel *menu;
 
     if (self->main_window)
         return;
@@ -1234,17 +1232,11 @@ ensure_window (FontViewApplication *self)
     box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
     gtk_stack_add_named (GTK_STACK (self->stack), box, "overview");
 
-    builder = gtk_builder_new ();
-    gtk_builder_add_from_resource (
-        builder, "/org/gnome/font-viewer/font-view-app-menu.ui", NULL);
-    menu = G_MENU_MODEL (gtk_builder_get_object (builder, "app-menu"));
+    self->about_button = gtk_button_new_from_icon_name ("help-about-symbolic");
+    gtk_actionable_set_action_name (GTK_ACTIONABLE (self->about_button), "app.about");
+    gtk_widget_set_tooltip_text (self->about_button, _("About Fonts"));
 
-    self->menu_button = gtk_menu_button_new ();
-    gtk_menu_button_set_icon_name (GTK_MENU_BUTTON (self->menu_button),
-                                   "open-menu-symbolic");
-    gtk_menu_button_set_menu_model (GTK_MENU_BUTTON (self->menu_button), menu);
-
-    gtk_header_bar_pack_end (GTK_HEADER_BAR (self->header), self->menu_button);
+    gtk_header_bar_pack_end (GTK_HEADER_BAR (self->header), self->about_button);
 
     self->search_bar = gtk_search_bar_new ();
     gtk_box_append (GTK_BOX (box), self->search_bar);
@@ -1257,8 +1249,8 @@ ensure_window (FontViewApplication *self)
 
     gtk_button_set_icon_name (GTK_BUTTON (self->search_toggle),
                               "edit-find-symbolic");
-    gtk_header_bar_pack_end (GTK_HEADER_BAR (self->header),
-                             self->search_toggle);
+    gtk_header_bar_pack_start (GTK_HEADER_BAR (self->header),
+                               self->search_toggle);
     g_object_bind_property (self->search_bar, "search-mode-enabled",
                             self->search_toggle, "active",
                             G_BINDING_BIDIRECTIONAL);
