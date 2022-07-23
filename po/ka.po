@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
 "POT-Creation-Date: 2022-07-08 17:58+0000\n"
-"PO-Revision-Date: 2022-07-10 23:05+0200\n"
+"PO-Revision-Date: 2022-07-23 22:15+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: \n"
 "Language: ka\n"
@@ -27,7 +27,7 @@ msgstr "ფონტები"
 #: data/org.gnome.font-viewer.appdata.xml.in:7
 #: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
-msgstr ""
+msgstr "თქვენს სისტემაში არსებული ფონტების ნახვა"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
@@ -65,15 +65,15 @@ msgstr "SIZE"
 
 #: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
-msgstr ""
+msgstr "FONT-FILE OUTPUT-FILE"
 
 #: src/font-view-app-menu.ui:6
 msgid "About Fonts"
-msgstr ""
+msgstr "Fonts-ის შესახებ"
 
 #: src/font-view.c:205
 msgid "GNOME Fonts"
-msgstr ""
+msgstr "GNOME Fonts"
 
 #: src/font-view.c:212
 msgid "Show the application's version"
@@ -92,7 +92,7 @@ msgstr "%s %g — %g, ნაგულისხმები %g"
 #: src/font-view.c:378
 #, c-format
 msgid "Instance %d"
-msgstr ""
+msgstr "ასლი %d"
 
 #. Translators, this seperates the list of Layout
 #. * Features.
@@ -143,11 +143,11 @@ msgstr "ლიცენზია"
 
 #: src/font-view.c:568
 msgid "Glyph Count"
-msgstr ""
+msgstr "გლიფების რაოდენობა"
 
 #: src/font-view.c:570
 msgid "Color Glyphs"
-msgstr ""
+msgstr "ფერადი გლიფები"
 
 #: src/font-view.c:571
 msgid "yes"
@@ -159,15 +159,15 @@ msgstr "არა"
 
 #: src/font-view.c:575
 msgid "Layout Features"
-msgstr ""
+msgstr "განლაგების თავისებურებები"
 
 #: src/font-view.c:581
 msgid "Variation Axes"
-msgstr ""
+msgstr "ვარიაციული ღერძები"
 
 #: src/font-view.c:588
 msgid "Named Styles"
-msgstr ""
+msgstr "სახელიან სტილები"
 
 #: src/font-view.c:600
 msgid "Failed"
@@ -187,11 +187,11 @@ msgstr "დაყენება"
 
 #: src/font-view.c:739
 msgid "This font could not be installed."
-msgstr ""
+msgstr "ამ ფონტის დაყენება შეუძლებელია."
 
 #: src/font-view.c:874
 msgid "This font could not be displayed."
-msgstr ""
+msgstr "ამ ფონტის ჩვენება შეუძლებელია."
 
 #: src/font-view.c:992
 msgid "Info"
@@ -212,7 +212,7 @@ msgstr "თემური დოღონაძე"
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
-msgstr ""
+msgstr "fonts;fontface;ფონტი;"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -227,7 +227,7 @@ msgstr "ზემოზე დაფუძნებული ფორმებ�
 #: src/open-type-layout.h:15
 msgctxt "OpenType layout"
 msgid "Above-base Mark Positioning"
-msgstr ""
+msgstr "ტირეს საბაზისო ხაზის ზემოთ სწორება"
 
 #: src/open-type-layout.h:16
 msgctxt "OpenType layout"
@@ -242,7 +242,7 @@ msgstr ""
 #: src/open-type-layout.h:18
 msgctxt "OpenType layout"
 msgid "Akhands"
-msgstr ""
+msgstr "ახანდსი"
 
 #: src/open-type-layout.h:19
 msgctxt "OpenType layout"
@@ -302,12 +302,12 @@ msgstr ""
 #: src/open-type-layout.h:30
 msgctxt "OpenType layout"
 msgid "Contextual Swash"
-msgstr ""
+msgstr "კონტექსტური ორნამენტი"
 
 #: src/open-type-layout.h:31
 msgctxt "OpenType layout"
 msgid "Cursive Positioning"
-msgstr ""
+msgstr "კურსივის მდებარეობა"
 
 #: src/open-type-layout.h:32
 msgctxt "OpenType layout"
@@ -322,97 +322,97 @@ msgstr ""
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
 msgid "Character Variation 1"
-msgstr ""
+msgstr "სიმბოლოს ვარიანტი 1"
 
 #: src/open-type-layout.h:35
 msgctxt "OpenType layout"
 msgid "Character Variation 2"
-msgstr ""
+msgstr "სიმბოლოს ვარიანტი 2"
 
 #: src/open-type-layout.h:36
 msgctxt "OpenType layout"
 msgid "Character Variation 3"
-msgstr ""
+msgstr "სიმბოლოს ვარიანტი 3"
 
 #: src/open-type-layout.h:37
 msgctxt "OpenType layout"
 msgid "Character Variation 4"
-msgstr ""
+msgstr "სიმბოლოს ვარიანტი 4"
 
 #: src/open-type-layout.h:38
 msgctxt "OpenType layout"
 msgid "Character Variation 5"
-msgstr ""
+msgstr "სიმბოლოს ვარიანტი 5"
 
 #: src/open-type-layout.h:39
 msgctxt "OpenType layout"
 msgid "Character Variation 6"
-msgstr ""
+msgstr "სიმბოლოს ვარიანტი 6"
 
 #: src/open-type-layout.h:40
 msgctxt "OpenType layout"
 msgid "Character Variation 7"
-msgstr ""
+msgstr "სიმბოლოს ვარიანტი 7"
 
 #: src/open-type-layout.h:41
 msgctxt "OpenType layout"
 msgid "Character Variation 8"
-msgstr ""
+msgstr "სიმბოლოს ვარიანტი 8"
 
 #: src/open-type-layout.h:42
 msgctxt "OpenType layout"
 msgid "Character Variation 9"
-msgstr ""
+msgstr "სიმბოლოს ვარიანტი 9"
 
 #: src/open-type-layout.h:43
 msgctxt "OpenType layout"
 msgid "Character Variation 10"
-msgstr ""
+msgstr "სიმბოლოს ვარიანტი 10"
 
 #: src/open-type-layout.h:44
 msgctxt "OpenType layout"
 msgid "Character Variation 11"
-msgstr ""
+msgstr "სიმბოლოს ვარიანტი 11"
 
 #: src/open-type-layout.h:45
 msgctxt "OpenType layout"
 msgid "Character Variation 12"
-msgstr ""
+msgstr "სიმბოლოს ვარიანტი 12"
 
 #: src/open-type-layout.h:46
 msgctxt "OpenType layout"
 msgid "Character Variation 13"
-msgstr ""
+msgstr "სიმბოლოს ვარიანტი 13"
 
 #: src/open-type-layout.h:47
 msgctxt "OpenType layout"
 msgid "Character Variation 14"
-msgstr ""
+msgstr "სიმბოლოს ვარიანტი 14"
 
 #: src/open-type-layout.h:48
 msgctxt "OpenType layout"
 msgid "Character Variation 15"
-msgstr ""
+msgstr "სიმბოლოს ვარიანტი 15"
 
 #: src/open-type-layout.h:49
 msgctxt "OpenType layout"
 msgid "Character Variation 16"
-msgstr ""
+msgstr "სიმბოლოს ვარიანტი 16"
 
 #: src/open-type-layout.h:50
 msgctxt "OpenType layout"
 msgid "Character Variation 17"
-msgstr ""
+msgstr "სიმბოლოს ვარიანტი 17"
 
 #: src/open-type-layout.h:51
 msgctxt "OpenType layout"
 msgid "Character Variation 18"
-msgstr ""
+msgstr "სიმბოლოს ვარიანტი 18"
 
 #: src/open-type-layout.h:52
 msgctxt "OpenType layout"
 msgid "Character Variation 19"
-msgstr ""
+msgstr "სიმბოლოს ვარიანტი 19"
 
 #: src/open-type-layout.h:53
 msgctxt "OpenType layout"
