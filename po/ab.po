@@ -1,20 +1,15 @@
-# Copyright (C) 2022 The Abkhazian language development fund named after Bagrat Shinkuba
-# This file is distributed under the same license as the gnome-font-viewer package.
-# Нанба Наала <naala-nanba@rambler.ru>, 2022.
-#
-
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-font-viewer\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
+"issues\n"
 "POT-Creation-Date: 2022-07-19 09:52+0000\n"
-"PO-Revision-Date: 2022-07-22 16:00+0000\n"
 "Last-Translator: Нанба Наала <naala-nanba@rambler.ru>\n"
-"Language-Team: Abkhazian <LL@li.org>\n"
+"Language-Team: Abkhazian <ab@li.org>\n"
 "Language: ab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
 #: src/org.gnome.font-viewer.desktop.in.in:3
@@ -42,7 +37,7 @@ msgstr ""
 
 #: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view.c:1168
 msgid "The GNOME Project"
-msgstr ""
+msgstr "The GNOME Project"
 
 #: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
@@ -58,7 +53,7 @@ msgstr ""
 
 #: src/font-thumbnailer.c:183
 msgid "SIZE"
-msgstr ""
+msgstr "SIZE"
 
 #: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
@@ -72,7 +67,13 @@ msgstr ""
 msgid "Show the application's version"
 msgstr ""
 
+#. Translators, this string is used to display information about
+#. * a 'font variation axis'. The %s gets replaced with the name
+#. * of the axis, for example 'Width'. The three %g get replaced
+#. * with the minimum, maximum and default values for the axis.
+#.
 #: src/font-view.c:327
+#, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, ишдыру еиԥш %g"
 
@@ -94,7 +95,7 @@ msgstr ""
 
 #: src/font-view.c:446
 msgid "Location"
-msgstr ""
+msgstr "Аҭыӡҭыԥ"
 
 #: src/font-view.c:449
 msgid "Style"
@@ -108,9 +109,9 @@ msgstr ""
 msgid "Version"
 msgstr ""
 
-#: src/font-view.c:529+src/font-view.c:556
+#: src/font-view.c:529 src/font-view.c:556
 msgid "Copyright"
-msgstr "Аԥҵаҩы изин"
+msgstr "аԥҵаҩы изин"
 
 #: src/font-view.c:533
 msgid "Description"
@@ -194,7 +195,7 @@ msgstr ""
 
 #: src/font-view.c:1171
 msgid "translator-credits"
-msgstr ""
+msgstr "Нанба Наала <naala-nanba@rambler.ru>, 2022"
 
 #: src/font-view.c:1237
 msgid "About Fonts"
@@ -999,39 +1000,3 @@ msgstr ""
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr ""
-
-#: src/font-view.c:418
-msgid ", "
-msgstr ", "
-
-#: src/open-type-layout.h:17
-msgid "Alternative Fractions"
-msgstr "Альтернативтә фракциақәа"
-
-#: src/open-type-layout.h:18
-msgid "Akhands"
-msgstr "Ахандс"
-
-#: src/open-type-layout.h:67
-msgid "Alternate Half Widths"
-msgstr "Альтернативтә ибжатоу аҭбаара"
-
-#: src/open-type-layout.h:77
-msgid "Justification Alternates"
-msgstr "Аиҟаратәра альтерантива"
-
-#: src/open-type-layout.h:96
-msgid "Alternate Annotation Forms"
-msgstr "Аннотациа альтеранативтә формақәа"
-
-#: src/open-type-layout.h:155
-msgid "Trailing Jamo Forms"
-msgstr "Trailing Jamo Forms"
-
-#: src/open-type-layout.h:161
-msgid "Alternate Vertical Metrics"
-msgstr "Альтернативтә агәҵәылатәи аметрика"
-
-#: src/open-type-layout.h:164
-msgid "Alternate Vertical Half Metrics"
-msgstr "Альтернативтә агәҵәылатәи ибжатоу аметрикақәа"
