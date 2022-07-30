@@ -8,25 +8,25 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2022-02-12 01:19+0000\n"
-"PO-Revision-Date: 2022-02-19 10:27+0100\n"
+"POT-Creation-Date: 2022-07-19 09:52+0000\n"
+"PO-Revision-Date: 2022-07-30 19:57+0200\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: \n"
 "Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.1.1\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
 #: src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
-msgstr "Poliças"
+msgstr "Polissas"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
+#: data/org.gnome.font-viewer.appdata.xml.in:7
 #: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
-msgstr "Visualizar las poliças de vòstre sistèma"
+msgstr "Visualizar las polissas de vòstre sistèma"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
@@ -34,9 +34,9 @@ msgid ""
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"Poliças aficha las poliças de caractèrs installadas sus vòstre ordenador jos "
-"la forma de miniaturas. En causissent una d'aquelas, obtenètz una vista "
-"completa de la poliça de diferentas talhas."
+"Polissas aficha las polissas de caractèrs installadas sus vòstre ordenador "
+"jos la forma de miniaturas. En causissent una d'aquelas, obtenètz una vista "
+"completa de la polissa de diferentas talhas."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
@@ -44,11 +44,11 @@ msgid ""
 "other formats. Fonts may be installed only for your use or made available to "
 "all users on the computer."
 msgstr ""
-"Poliças pren tanben en carga l'installacion de novèls fichièrs de poliça "
-"telecargats (formats ttf e autres). Las poliças pòdon èsser installadas per "
+"Polissas pren tanben en carga l'installacion de novèls fichièrs de polissa "
+"telecargats (formats ttf e autres). Las polissas pòdon èsser installadas per "
 "vos sol o rendudas disponiblas a totes los utilizaires de l'ordenador."
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21
+#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view.c:1168
 msgid "The GNOME Project"
 msgstr "Lo projècte GNOME"
 
@@ -70,15 +70,11 @@ msgstr "TALHA"
 
 #: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
-msgstr "FICHIÈR-POLIÇA FICHIÈR-SORTIDA"
-
-#: src/font-view-app-menu.ui:6
-msgid "About Fonts"
-msgstr "A prepaus de Poliças"
+msgstr "FICHIÈR-POLISSA FICHIÈR-SORTIDA"
 
 #: src/font-view.c:205
 msgid "GNOME Fonts"
-msgstr "Visionador de poliça de GNOME"
+msgstr "Visionador de polissa de GNOME"
 
 #: src/font-view.c:212
 msgid "Show the application's version"
@@ -192,11 +188,11 @@ msgstr "Installar"
 
 #: src/font-view.c:739
 msgid "This font could not be installed."
-msgstr "Se pòt pas installar aquesta poliça."
+msgstr "Se pòt pas installar aquesta polissa."
 
 #: src/font-view.c:874
 msgid "This font could not be displayed."
-msgstr "Aquesta poliça a pas pogut èsser afichada."
+msgstr "Aquesta polissa a pas pogut èsser afichada."
 
 #: src/font-view.c:992
 msgid "Info"
@@ -208,9 +204,9 @@ msgstr "Tornar"
 
 #: src/font-view.c:1090
 msgid "All Fonts"
-msgstr "Totas las poliças"
+msgstr "Totas las polissas"
 
-#: src/font-view.c:1170
+#: src/font-view.c:1171
 msgid "translator-credits"
 msgstr ""
 "Cédric Valmary (Tot en Òc) <cvalmary@yahoo.fr>\n"
@@ -219,10 +215,14 @@ msgstr ""
 "  Cédric VALMARY (Tot en òc) https://launchpad.net/~cvalmary\n"
 "  Quentin PAGÈS https://launchpad.net/~kwentin\""
 
+#: src/font-view.c:1237
+msgid "About Fonts"
+msgstr "A prepaus de Polissas"
+
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
-msgstr "poliças;fontas;"
+msgstr "poliças;fontas;polissas;"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
