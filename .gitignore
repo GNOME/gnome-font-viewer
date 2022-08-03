@@ -47,3 +47,5 @@ src/org.gnome.font-viewer.service
 src/gnome-thumbnail-font
 stamp-h1
 xmldocs.make
+.fenv/
+.flatpak-builder/
