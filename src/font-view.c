@@ -723,11 +723,12 @@ font_view_show_error (FontViewApplication *self,
     GtkWidget *dialog;
 
     dialog = gtk_message_dialog_new (GTK_WINDOW (self->main_window),
-                                     GTK_DIALOG_MODAL, GTK_MESSAGE_ERROR,
+                                     GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT,
+                                     GTK_MESSAGE_ERROR,
                                      GTK_BUTTONS_CLOSE, "%s", primary_text);
     gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), "%s",
                                               secondary_text);
-    g_signal_connect (dialog, "response", G_CALLBACK (gtk_widget_unparent),
+    g_signal_connect (dialog, "response", G_CALLBACK (gtk_window_destroy),
                       NULL);
     gtk_widget_show (dialog);
 }
