@@ -34,6 +34,7 @@ harfbuzz_dep = dependency('harfbuzz', version: harfbuzz_req_version)
 fontconfig_dep = dependency('fontconfig')
 freetype2_dep = dependency('freetype2')
 gnomedesktop_dep = dependency('gnome-desktop-4')
+fribidi_dep = dependency('fribidi')
 mathlib_dep = cc.find_library('m')
 
 if get_option('profile') == 'development'

@@ -30,6 +30,7 @@
 #include <graphene.h>
 #include <hb-glib.h>
 #include <math.h>
+#include <fribidi.h>
 
 enum {
   PROP_URI = 1,
@@ -75,6 +76,68 @@ static const gchar lowercase_text_stock[] = "abcdefghijklmnopqrstuvwxyz";
 static const gchar uppercase_text_stock[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 static const gchar punctuation_text_stock[] = "0123456789.:,;(*!?')";
 
+/*
+ * Copied from https://gitlab.gnome.org/GNOME/pango/-/blob/eb973b9bdfd11467f63f1626f16d5d4005eb82a7/pango/pango-bidi-type.c#L259-274
+ *
+ * This function is needed for `fonts_find_base_dir()`, but Pango
+ * has deprecated this function and scheduled it for removal.
+ *
+ * (C) 2004 Red Hat, Owen Taylor <otaylor@redhat.com>
+ *
+ * License: LGPL-2.0-or-later
+ */
+static PangoDirection
+fonts_unichar_direction (gunichar ch)
+{
+  FriBidiCharType fribidi_ch_type;
+
+  G_STATIC_ASSERT (sizeof (FriBidiChar) == sizeof (gunichar));
+
+  fribidi_ch_type = fribidi_get_bidi_type (ch);
+
+  if (!FRIBIDI_IS_STRONG (fribidi_ch_type))
+    return PANGO_DIRECTION_NEUTRAL;
+  else if (FRIBIDI_IS_RTL (fribidi_ch_type))
+    return PANGO_DIRECTION_RTL;
+  else
+    return PANGO_DIRECTION_LTR;
+}
+
+/*
+ * Copied from https://gitlab.gnome.org/GNOME/pango/-/blob/eb973b9bdfd11467f63f1626f16d5d4005eb82a7/pango/pango-utils.c#L866-889
+ *
+ * This function is needed for our `text_to_glyphs ()` function, but Pango
+ * has deprecated this function and scheduled it for removal.
+ *
+ * (C) 2004 Red Hat, Owen Taylor <otaylor@redhat.com>
+ *
+ * License: LGPL-2.0-or-later
+ */
+static PangoDirection
+fonts_find_base_dir (const gchar *text,
+                     gint         length)
+{
+  PangoDirection dir = PANGO_DIRECTION_NEUTRAL;
+  const gchar *p;
+
+  g_return_val_if_fail (text != NULL || length == 0, dir);
+
+  p = text;
+  while ((length < 0 || p < text + length) && *p)
+    {
+      gunichar wc = g_utf8_get_char (p);
+
+      dir = fonts_unichar_direction (wc);
+
+      if (dir != PANGO_DIRECTION_NEUTRAL)
+        break;
+
+      p = g_utf8_next_char (p);
+    }
+
+  return dir;
+}
+
 static void
 text_to_glyphs (cairo_t *cr,
                 const gchar *text,
@@ -96,7 +159,7 @@ text_to_glyphs (cairo_t *cr,
   *num_glyphs = 0;
   *glyphs = NULL;
 
-  base_dir = pango_find_base_dir (text, -1);
+  base_dir = fonts_find_base_dir (text, -1);
 
   cairo_scaled_font_t *cr_font = cairo_get_scaled_font (cr);
   ft_face = cairo_ft_scaled_font_lock_face (cr_font);
