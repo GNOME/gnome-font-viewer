@@ -37,6 +37,14 @@
   </kudos>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="43.rc" date="2022-09-03">
+      <description>
+      <p>Fonts 43.rc the following translation updates:</p>
+        <ul>
+          <li>Abkhazian</li>
+        </ul>
+      </description>
+    </release>
     <release version="43.beta" date="2022-08-07">
       <description>
       <p>Fonts 43.beta comes with a new "About" button in the main window and the following translation updates:</p>
