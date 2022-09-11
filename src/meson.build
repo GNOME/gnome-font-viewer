@@ -47,7 +47,6 @@ executable('gnome-font-viewer', viewer_sources + resources,
 desktop_file = 'org.gnome.font-viewer.desktop'
 
 desktop_conf = configuration_data()
-desktop_conf.set('VERSION', meson.project_version())
 desktop_conf.set('APPLICATION_ID', application_id)
 i18n.merge_file(
   input: configure_file(input: desktop_file + '.in.in',
