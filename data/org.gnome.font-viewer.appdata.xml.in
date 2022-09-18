@@ -37,37 +37,22 @@
   </kudos>
   <content_rating type="oars-1.1" />
   <releases>
-    <release version="43.rc" date="2022-09-03">
+    <release version="43.0" date="2022-09-18">
       <description>
-      <p>Fonts 43.rc the following translation updates:</p>
-        <ul>
-          <li>Abkhazian</li>
-        </ul>
-      </description>
-    </release>
-    <release version="43.beta" date="2022-08-07">
-      <description>
-      <p>Fonts 43.beta comes with a new "About" button in the main window and the following translation updates:</p>
-        <ul>
-          <li>Abkhazian</li>
-          <li>Georgian</li>
-          <li>Occitan (post 1500)</li>
-        </ul>
-      </description>
-    </release>
-    <release version="43.alpha" date="2022-07-13">
-      <description>
-      <p>Fonts 43.alpha comes with the following translation updates:</p>
-        <ul>
-          <li>Dutch</li>
-          <li>Friulian</li>
-          <li>Georgian</li>
-          <li>Hebrew</li>
-          <li>Icelandic</li>
-          <li>Italian</li>
-          <li>Latvian</li>
-          <li>Nepali</li>
-        </ul>
+      <p>Fonts 43.0 comes with a new "About" button in the main window and the following translation updates:</p>
+      <ul>
+        <li>Abkhazian</li>
+        <li>Dutch</li>
+        <li>Friulian</li>
+        <li>Georgian</li>
+        <li>Hebrew</li>
+        <li>Icelandic</li>
+        <li>Italian</li>
+        <li>Latvian</li>
+        <li>Nepali</li>
+        <li>Occitan (post 1500)</li>
+        <li>Turkish</li>
+      </ul>
       </description>
     </release>
     <release version="42.0" date="2022-03-20">
