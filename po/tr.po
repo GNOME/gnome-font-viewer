@@ -1,5 +1,5 @@
 # Turkish translation of gnome-font-viewer.
-# Copyright (C) 2003-2019 gnome-font-viewer' copyright holder
+# Copyright (C) 2003-2022 gnome-font-viewer' copyright holder
 # This file is distributed under the same license as the gnome-font-viewer package.
 #
 # Barbaros Ulutaş <tebarul@yahoo.com>, 2003.
@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2022-02-26 13:34+0000\n"
+"POT-Creation-Date: 2022-07-19 09:52+0000\n"
 "PO-Revision-Date: 2022-03-02 15:55+0300\n"
 "Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
@@ -36,7 +36,7 @@ msgstr ""
 msgid "Fonts"
 msgstr "Yazı Tipleri"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
+#: data/org.gnome.font-viewer.appdata.xml.in:7
 #: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Sisteminizdeki yazı tiplerini görüntüleyin"
@@ -47,9 +47,9 @@ msgid ""
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"Yazı Tipleri, kullanımınız için bilgisayarınızda kurulu yazı tiplerini "
-"küçük resim olarak gösterir. Herhangi bir küçük resmi seçmek, yazı tipinin "
-"türlü boyutlarda nasıl görüneceğini gösterir."
+"Yazı Tipleri, kullanımınız için bilgisayarınızda kurulu yazı tiplerini küçük "
+"resim olarak gösterir. Herhangi bir küçük resmi seçmek, yazı tipinin türlü "
+"boyutlarda nasıl görüneceğini gösterir."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
@@ -58,11 +58,11 @@ msgid ""
 "all users on the computer."
 msgstr ""
 "Yazı Tipleri ayrıca .ttf ve diğer biçimlerde indirilen yeni yazı tipi "
-"dosyalarının kurulumunu da sağlar. Yazı tipleri yalnızca kendi "
-"kullanımınız için kurulabilir ya da bilgisayardaki tüm kullanıcıların "
-"kullanımına sunulabilir."
+"dosyalarının kurulumunu da sağlar. Yazı tipleri yalnızca kendi kullanımınız "
+"için kurulabilir ya da bilgisayardaki tüm kullanıcıların kullanımına "
+"sunulabilir."
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21
+#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view.c:1168
 msgid "The GNOME Project"
 msgstr "GNOME Projesi"
 
@@ -85,10 +85,6 @@ msgstr "BOYUT"
 #: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "YAZI-TİPİ-DOSYASI ÇIKTI-DOSYASI"
-
-#: src/font-view-app-menu.ui:6
-msgid "About Fonts"
-msgstr "Yazı Tipleri Hakkında"
 
 #: src/font-view.c:205
 msgid "GNOME Fonts"
@@ -225,12 +221,16 @@ msgid "All Fonts"
 msgstr "Tüm Yazı Tipleri"
 
 # header bilgisinden oluşturulmuştur
-#: src/font-view.c:1170
+#: src/font-view.c:1171
 msgid "translator-credits"
 msgstr ""
 "Baris Cicek <baris@teamforce.name.tr>\n"
 "Muhammet Kara <muhammetk@gmail.com>\n"
 "Emin Tufan Çetin <etcetin@gmail.com>"
+
+#: src/font-view.c:1237
+msgid "About Fonts"
+msgstr "Yazı Tipleri Hakkında"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in.in:6
@@ -1031,33 +1031,3 @@ msgstr "Dönme için Dikey Alternatifler"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Eğik Çizgili Sıfır"
-
-#~ msgid "org.gnome.font-viewer"
-#~ msgstr "org.gnome.font-viewer"
-
-#~ msgid "About"
-#~ msgstr "Hakkında"
-
-#~ msgid "Quit"
-#~ msgstr "Çıkış"
-
-#~ msgid "preferences-desktop-font"
-#~ msgstr "preferences-desktop-font"
-
-#~ msgid "General"
-#~ msgstr "Genel"
-
-#~ msgid "Details"
-#~ msgstr "Ayrıntılar"
-
-#~ msgid "Font Viewer"
-#~ msgstr "Yazı Tipi Görüntüleyici"
-
-#~ msgid "[FILE...]"
-#~ msgstr "[DOSYA...]"
-
-#~ msgid ""
-#~ "Run '%s --help' to see a full list of available command line options."
-#~ msgstr ""
-#~ "Tüm kullanılabilir komut satırı seçeneklerini görmek için '%s --help' "
-#~ "komutunu çalıştırın."
