@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.gnome-2-20.ne\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues\n"
-"POT-Creation-Date: 2022-02-26 13:34+0000\n"
-"PO-Revision-Date: 2022-05-09 15:14+0545\n"
+"POT-Creation-Date: 2022-08-25 11:32+0000\n"
+"PO-Revision-Date: 2022-09-22 16:40+0545\n"
 "Last-Translator: Pawan Chitrakar <chautari@gmail.com>\n"
 "Language-Team: Nepali Translation Team <chautari@gmail.com>\n"
 "Language: ne\n"
@@ -21,43 +21,32 @@ msgstr ""
 "X-Generator: Poedit 3.0.1\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1167
 #: src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr "फन्टहरू"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
-#: src/org.gnome.font-viewer.desktop.in.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7 src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "प्रणालीको फन्ट हेर्नुहोस्"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
-#, fuzzy
-#| msgid ""
-#| "GNOME Fonts shows you the fonts installed on your computer for your use as thumbnails. "
-#| "Selecting any thumbnails shows the full view of how the font would look under various "
-#| "sizes."
 msgid ""
 "Fonts shows you the fonts installed on your computer for your use as thumbnails. Selecting "
 "any thumbnails shows the full view of how the font would look under various sizes."
 msgstr ""
-"जिनोम फन्टहरू तपाइँ थम्बनेलको रूपमा प्रयोगको लागि तपाईंको कम्प्युटरमा स्थापित फन्टहरू देखाउँछ। कुनै पनि थम्बनेल "
-"चयन गर्नाले कसरी विभिन्न आकारहरू मा फन्ट हेर्नेछ भन्ने पूर्ण दृश्य देखाउँदछ।"
+"फन्टहरूले तपाईँलाई थम्बनेलको रूपमा तपाईँको प्रयोगका लागि तपाईँको कम्प्युटरमा स्थापना गरिएका फन्टहरू देखाउँदछ । "
+"कुनै पनि थम्बनेलहरू चयन गर्दा फन्ट विभिन्न साइजअन्तर्गत कस्तो देखिन्छ भन्ने पूर्ण दृश्य देखाउँछ।"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
-#, fuzzy
-#| msgid ""
-#| "GNOME Fonts also supports installing new font files downloaded in the .ttf and other "
-#| "formats. Fonts may be installed only for your use or made available to all users on the "
-#| "computer."
 msgid ""
 "Fonts also supports installing new font files downloaded in the .ttf and other formats. "
 "Fonts may be installed only for your use or made available to all users on the computer."
 msgstr ""
-"जिनोम फन्टहरू .ttf र अन्य ढाँचामा डाउनलोड गरिएका नयाँ फन्ट फाइलहरू स्थापना गर्न पनि समर्थन गर्दछ। फन्टहरू "
-"तपाईँको प्रयोगको लागि मात्रै स्थापित वा कम्प्यूटरमा सबै प्रयोगकर्ताहरूको लागि उपलब्ध गराउन सकिन्छ।"
+"फन्टहरूले .ttf र अन्य ढाँचाहरूमा डाउनलोड गरिएका नयाँ फन्ट फाइलहरू स्थापना गर्न पनि समर्थन गर्दछ। फन्टहरू "
+"तपाईँको प्रयोगको लागि मात्र स्थापना गर्न सकिन्छ वा कम्प्युटरमा सबै प्रयोगकर्ताहरूलाई उपलब्ध गराउन सकिन्छ।"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21
+#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view.c:1169
 msgid "The GNOME Project"
 msgstr "जिनोम परियोजना"
 
@@ -81,10 +70,6 @@ msgstr "आकार"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
-#: src/font-view-app-menu.ui:6
-msgid "About Fonts"
-msgstr "फन्ट बारेमा"
-
 #: src/font-view.c:205
 msgid "GNOME Fonts"
 msgstr "जिनोम फन्ट"
@@ -104,10 +89,9 @@ msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g,  पुर्बनिर्धारित %g"
 
 #: src/font-view.c:378
-#, fuzzy, c-format
-#| msgid "Installed"
+#, c-format
 msgid "Instance %d"
-msgstr "यस दृष्टान्त मात्र"
+msgstr "दृष्टान्त %d"
 
 #. Translators, this seperates the list of Layout
 #. * Features.
@@ -157,39 +141,32 @@ msgid "License"
 msgstr "इजाजतपत्र"
 
 #: src/font-view.c:568
-#, fuzzy
 msgid "Glyph Count"
-msgstr "गणना गर्नुहोस्:"
+msgstr "ग्लिफ गणना"
 
 #: src/font-view.c:570
-#, fuzzy
 msgid "Color Glyphs"
-msgstr "रङ्ग:"
+msgstr "रङ ग्लिफ"
 
 #: src/font-view.c:571
 msgid "yes"
 msgstr "हो"
 
 #: src/font-view.c:571
-#, fuzzy
-#| msgid "Info"
 msgid "no"
-msgstr "सूचना"
+msgstr "होइन"
 
 #: src/font-view.c:575
-#, fuzzy
 msgid "Layout Features"
-msgstr "विशेषता:"
+msgstr "ढाँचा सुविधाहरू"
 
 #: src/font-view.c:581
-#, fuzzy
 msgid "Variation Axes"
-msgstr "अक्षहरू"
+msgstr "भिन्नता अक्षहरू"
 
 #: src/font-view.c:588
-#, fuzzy
 msgid "Named Styles"
-msgstr "नामाकरण रङ्ग"
+msgstr "नामकरण गरिएका शैलीहरू"
 
 #: src/font-view.c:600
 msgid "Failed"
@@ -203,35 +180,37 @@ msgstr "स्थापित भयो"
 msgid "Installing"
 msgstr "स्थापना गर्दै"
 
-#: src/font-view.c:617 src/font-view.c:978
+#: src/font-view.c:617 src/font-view.c:979
 msgid "Install"
 msgstr "स्थापना गर्नुहोस्"
 
-#: src/font-view.c:739
-#, fuzzy
-#| msgid "This font could not be displayed."
+#: src/font-view.c:740
 msgid "This font could not be installed."
-msgstr "यो फन्ट प्रदर्शन गर्न सकिएन."
+msgstr "यो फन्ट स्थापना गर्न सकिएन ।"
 
-#: src/font-view.c:874
+#: src/font-view.c:875
 msgid "This font could not be displayed."
 msgstr "यो फन्ट प्रदर्शन गर्न सकिएन."
 
-#: src/font-view.c:992
+#: src/font-view.c:993
 msgid "Info"
 msgstr "सूचना"
 
-#: src/font-view.c:1008
+#: src/font-view.c:1009
 msgid "Back"
 msgstr "पछाडि"
 
-#: src/font-view.c:1090
+#: src/font-view.c:1091
 msgid "All Fonts"
 msgstr "सबै फन्ट"
 
-#: src/font-view.c:1170
+#: src/font-view.c:1172
 msgid "translator-credits"
 msgstr "pawan chitrakar <chautari@gmail.com>"
+
+#: src/font-view.c:1238
+msgid "About Fonts"
+msgstr "फन्ट बारेमा"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in.in:6
@@ -239,16 +218,14 @@ msgid "fonts;fontface;"
 msgstr "फन्ट;फन्टफेस;"
 
 #: src/open-type-layout.h:13
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Access All Alternates"
-msgstr "प्रासंगिक वैकल्पिक"
+msgstr "सबै वैकल्पिक पहुँच गर्नुहोस्"
 
 #: src/open-type-layout.h:14
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Above-base Forms"
-msgstr "माथि- आधार चिन्ह स्थिति"
+msgstr "माथि- आधार आकार"
 
 #: src/open-type-layout.h:15
 msgctxt "OpenType layout"
@@ -256,16 +233,14 @@ msgid "Above-base Mark Positioning"
 msgstr "माथि- आधार चिन्ह स्थिति"
 
 #: src/open-type-layout.h:16
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Above-base Substitutions"
-msgstr "माथि- आधार चिन्ह स्थिति"
+msgstr "माथि-आधार प्रतिस्थापनहरू"
 
 #: src/open-type-layout.h:17
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Alternative Fractions"
-msgstr "बैकल्पिक बटन क्रम"
+msgstr "वैकल्पिक भिन्नहरू"
 
 #: src/open-type-layout.h:18
 msgctxt "OpenType layout"
@@ -273,22 +248,19 @@ msgid "Akhands"
 msgstr "अखण्ड"
 
 #: src/open-type-layout.h:19
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Below-base Forms"
-msgstr "स्थानियकरण फारम"
+msgstr "तल-आधार आकार"
 
 #: src/open-type-layout.h:20
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Below-base Mark Positioning"
-msgstr "माथि- आधार चिन्ह स्थिति"
+msgstr "तल-आधार पोजिशनिंग चिनो"
 
 #: src/open-type-layout.h:21
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Below-base Substitutions"
-msgstr "पङ्ति तल:"
+msgstr "तल-आधार प्रतिस्थापनहरू"
 
 #: src/open-type-layout.h:22
 msgctxt "OpenType layout"
@@ -296,26 +268,24 @@ msgid "Contextual Alternates"
 msgstr "प्रासंगिक वैकल्पिक"
 
 #: src/open-type-layout.h:23
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Case-Sensitive Forms"
-msgstr "संवेदनशिल केस:"
+msgstr "संवेदनशिल केस आकार"
 
 #: src/open-type-layout.h:24
 msgctxt "OpenType layout"
 msgid "Glyph Composition / Decomposition"
-msgstr ""
+msgstr "ग्लिफ रचना / विच्छेदन"
 
 #: src/open-type-layout.h:25
 msgctxt "OpenType layout"
 msgid "Conjunct Form After Ro"
-msgstr ""
+msgstr "आरओ पछि संयोजन आकार"
 
 #: src/open-type-layout.h:26
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Conjunct Forms"
-msgstr "स्थानियकरण फारम"
+msgstr "संयोजन आकार"
 
 #: src/open-type-layout.h:27
 msgctxt "OpenType layout"
@@ -323,28 +293,24 @@ msgid "Contextual Ligatures"
 msgstr "प्रासंगिक लिगाचरस्"
 
 #: src/open-type-layout.h:28
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Centered CJK Punctuation"
-msgstr "विराम चिन्ह"
+msgstr "केन्द्रित सीजेके विराम चिन्ह"
 
 #: src/open-type-layout.h:29
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Capital Spacing"
-msgstr "अस्ट्रेलियन क्यापिटल टेर्रिटोरी"
+msgstr "ठुलो-वर्ण खाली स्थान"
 
 #: src/open-type-layout.h:30
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Contextual Swash"
-msgstr "प्रासंगिक मेनु"
+msgstr "सान्दर्भिक स्वाश"
 
 #: src/open-type-layout.h:31
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Cursive Positioning"
-msgstr "चिन्ह स्थिति"
+msgstr "कर्सिभ पोजिसनिङ"
 
 #: src/open-type-layout.h:32
 msgctxt "OpenType layout"
@@ -352,7 +318,6 @@ msgid "Petite Capitals From Capitals"
 msgstr "मसिना ठुला वर्णहरू बाट ठुला वर्णहरू"
 
 #: src/open-type-layout.h:33
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Small Capitals From Capitals"
 msgstr "मसिना ठुला वर्णहरू बाट ठुला वर्णहरू"
@@ -455,64 +420,57 @@ msgstr "क्यारेक्टर भिन्नता १९"
 #: src/open-type-layout.h:53
 msgctxt "OpenType layout"
 msgid "Distances"
-msgstr ""
+msgstr "दुरी"
 
 #: src/open-type-layout.h:54
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Discretionary Ligatures"
-msgstr "लिगाचरस्"
+msgstr "विवेकाधीन लिगाचर"
 
 #: src/open-type-layout.h:55
 msgctxt "OpenType layout"
 msgid "Denominators"
-msgstr ""
+msgstr "भाजक"
 
 #: src/open-type-layout.h:56
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Dotless Forms"
-msgstr "थोप्लोरहित %s"
+msgstr "थोप्लोरहित आकार"
 
 #: src/open-type-layout.h:57
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Expert Forms"
-msgstr "हलन्ट ढाचाँ"
+msgstr "निपूर्ण आकार"
 
 #: src/open-type-layout.h:58
 msgctxt "OpenType layout"
 msgid "Final Glyph on Line Alternates"
-msgstr ""
+msgstr "लाइन अल्टरनेटमा अन्तिम ग्लिफ"
 
 #: src/open-type-layout.h:59
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Terminal Forms #2"
-msgstr "हलन्ट ढाचाँ"
+msgstr "टर्मिनल आकार #२"
 
 #: src/open-type-layout.h:60
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Terminal Forms #3"
-msgstr "हलन्ट ढाचाँ"
+msgstr "टर्मिनल आकार #३"
 
 #: src/open-type-layout.h:61
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Terminal Forms"
-msgstr "हलन्ट ढाचाँ"
+msgstr "टर्मिनल आकार"
 
 #: src/open-type-layout.h:62
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Flattened accent forms"
-msgstr "स्थानियकरण फारम"
+msgstr "चपटा उच्चारण फारमहरू"
 
 #: src/open-type-layout.h:63
 msgctxt "OpenType layout"
 msgid "Fractions"
-msgstr ""
+msgstr "भिन्नहरू"
 
 #: src/open-type-layout.h:64
 msgctxt "OpenType layout"
@@ -520,10 +478,9 @@ msgid "Full Widths"
 msgstr "पुर्ण चौडाई"
 
 #: src/open-type-layout.h:65
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Half Forms"
-msgstr "आधा"
+msgstr "आधा आकार"
 
 #: src/open-type-layout.h:66
 msgctxt "OpenType layout"
@@ -531,28 +488,24 @@ msgid "Halant Forms"
 msgstr "हलन्ट ढाचाँ"
 
 #: src/open-type-layout.h:67
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Alternate Half Widths"
-msgstr "वैकल्पिक ठाडो आधा म्याट्रिक्स"
+msgstr "वैकल्पिक आधा चौडाइ"
 
 #: src/open-type-layout.h:68
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Historical Forms"
-msgstr "ऐतिहासिक"
+msgstr "ऐतिहासिक आकार"
 
 #: src/open-type-layout.h:69
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Horizontal Kana Alternates"
-msgstr "प्रासंगिक वैकल्पिक"
+msgstr "तेर्सो काना वैकल्पिक"
 
 #: src/open-type-layout.h:70
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Historical Ligatures"
-msgstr "लिगाचरस्"
+msgstr "ऐतिहासिक लिगेचरहरू"
 
 #: src/open-type-layout.h:71
 msgctxt "OpenType layout"
@@ -560,10 +513,9 @@ msgid "Hangul"
 msgstr "हनगुल"
 
 #: src/open-type-layout.h:72
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Hojo Kanji Forms"
-msgstr "स्थानियकरण फारम"
+msgstr "होजो खांजी फारमहरू"
 
 #: src/open-type-layout.h:73
 msgctxt "OpenType layout"
@@ -576,10 +528,9 @@ msgid "Initial Forms"
 msgstr "सुरुको ढाचाँ"
 
 #: src/open-type-layout.h:75
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Isolated Forms"
-msgstr "स्थानियकरण फारम"
+msgstr "पृथक आकार"
 
 #: src/open-type-layout.h:76
 msgctxt "OpenType layout"
@@ -587,10 +538,9 @@ msgid "Italics"
 msgstr "छड्के"
 
 #: src/open-type-layout.h:77
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Justification Alternates"
-msgstr "प्रासंगिक वैकल्पिक"
+msgstr "औचित्य वैकल्पिक"
 
 #: src/open-type-layout.h:78
 msgctxt "OpenType layout"
@@ -615,30 +565,27 @@ msgstr "JIS2004 Forms"
 #: src/open-type-layout.h:82
 msgctxt "OpenType layout"
 msgid "Kerning"
-msgstr ""
+msgstr "कर्निङ"
 
 #: src/open-type-layout.h:83
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Left Bounds"
-msgstr "दायाँ सीमा"
+msgstr "बायाँ सीमा"
 
 #: src/open-type-layout.h:84
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Standard Ligatures"
-msgstr "लिगाचरस्"
+msgstr "मानक लिगेचर"
 
 #: src/open-type-layout.h:85
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Leading Jamo Forms"
-msgstr "स्थानियकरण फारम"
+msgstr "जामो आकार"
 
 #: src/open-type-layout.h:86
 msgctxt "OpenType layout"
 msgid "Lining Figures"
-msgstr ""
+msgstr "अस्तर आकृतिहरू"
 
 #: src/open-type-layout.h:87
 msgctxt "OpenType layout"
@@ -646,16 +593,14 @@ msgid "Localized Forms"
 msgstr "स्थानियकरण फारम"
 
 #: src/open-type-layout.h:88
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Left-to-right alternates"
-msgstr "LRM _बायाँ-बाट-दायाँ चिनो"
+msgstr "बायाँ-देखि-दायाँ वैकल्पिक"
 
 #: src/open-type-layout.h:89
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Left-to-right mirrored forms"
-msgstr "LRM _बायाँ-बाट-दायाँ चिनो"
+msgstr "बायाँ-देखि-दायाँ प्रतिबिम्बित आकार"
 
 #: src/open-type-layout.h:90
 msgctxt "OpenType layout"
@@ -663,10 +608,9 @@ msgid "Mark Positioning"
 msgstr "चिन्ह स्थिति"
 
 #: src/open-type-layout.h:91
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Medial Forms #2"
-msgstr "बिचको ढाचाँ"
+msgstr "मेडियल आकार #२"
 
 #: src/open-type-layout.h:92
 msgctxt "OpenType layout"
@@ -674,34 +618,29 @@ msgid "Medial Forms"
 msgstr "बिचको ढाचाँ"
 
 #: src/open-type-layout.h:93
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Mathematical Greek"
-msgstr "ग्रीक"
+msgstr "गणितीय ग्रीक"
 
 #: src/open-type-layout.h:94
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Mark to Mark Positioning"
-msgstr "चिन्ह स्थिति"
+msgstr "मार्क पोजिसनिङमा चिनो लगाउनुहोस्"
 
 #: src/open-type-layout.h:95
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Mark Positioning via Substitution"
-msgstr "माथि- आधार चिन्ह स्थिति"
+msgstr "प्रतिस्थापन मार्फत पोजिशनिङ चिनो"
 
 #: src/open-type-layout.h:96
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Alternate Annotation Forms"
-msgstr "वैकल्पिक"
+msgstr "वैकल्पिक एनोटेसन आकार"
 
 #: src/open-type-layout.h:97
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "NLC Kanji Forms"
-msgstr "स्थानियकरण फारम"
+msgstr "एनएलसी खांजी आकार"
 
 #: src/open-type-layout.h:98
 msgctxt "OpenType layout"
@@ -711,18 +650,17 @@ msgstr "नुक्ता ढाँचा"
 #: src/open-type-layout.h:99
 msgctxt "OpenType layout"
 msgid "Numerators"
-msgstr ""
+msgstr "गणक"
 
 #: src/open-type-layout.h:100
 msgctxt "OpenType layout"
 msgid "Oldstyle Figures"
-msgstr ""
+msgstr "पुरानो शैलीका आकृतिहरू"
 
 #: src/open-type-layout.h:101
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Optical Bounds"
-msgstr "दायाँ सीमा"
+msgstr "अप्टिकल सीमा"
 
 #: src/open-type-layout.h:102
 msgctxt "OpenType layout"
@@ -732,13 +670,12 @@ msgstr "अर्डिनलहरू"
 #: src/open-type-layout.h:103
 msgctxt "OpenType layout"
 msgid "Ornaments"
-msgstr ""
+msgstr "गहना"
 
 #: src/open-type-layout.h:104
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Widths"
-msgstr "चौथाइ चौडाई"
+msgstr "आनुपातिक वैकल्पिक चौडाइ"
 
 #: src/open-type-layout.h:105
 msgctxt "OpenType layout"
@@ -748,36 +685,32 @@ msgstr "मसिना ठुला वर्णहरू"
 #: src/open-type-layout.h:106
 msgctxt "OpenType layout"
 msgid "Proportional Kana"
-msgstr ""
+msgstr "समानुपातिक काना"
 
 #: src/open-type-layout.h:107
 msgctxt "OpenType layout"
 msgid "Proportional Figures"
-msgstr ""
+msgstr "समानुपातिक आकृतिहरू"
 
 #: src/open-type-layout.h:108
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Pre-Base Forms"
-msgstr "स्थानियकरण फारम"
+msgstr "पूर्व-आधार आकार"
 
 #: src/open-type-layout.h:109
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Pre-base Substitutions"
-msgstr "आधार तास: ~a"
+msgstr "पुर्व तल-आधार प्रतिस्थापनहरू"
 
 #: src/open-type-layout.h:110
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Post-base Forms"
-msgstr "लाई पोस्ट गर्नुहोस्:"
+msgstr "पोस्ट-आधार आकार"
 
 #: src/open-type-layout.h:111
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Post-base Substitutions"
-msgstr "लाई पोस्ट गर्नुहोस्:"
+msgstr "पोस्ट-आधार प्रतिस्थापनहरू"
 
 #: src/open-type-layout.h:112
 msgctxt "OpenType layout"
@@ -795,10 +728,9 @@ msgid "Randomize"
 msgstr "अनियमित गर्नुहोस्"
 
 #: src/open-type-layout.h:115
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Required Contextual Alternates"
-msgstr "प्रासंगिक वैकल्पिक"
+msgstr "आवश्यक सान्दर्भिक वैकल्पिक"
 
 #: src/open-type-layout.h:116
 msgctxt "OpenType layout"
@@ -806,10 +738,9 @@ msgid "Rakar Forms"
 msgstr "र-कार ढाचाँहरू"
 
 #: src/open-type-layout.h:117
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Required Ligatures"
-msgstr "लिगाचरस्"
+msgstr "आवश्यक लिगाचरहरू"
 
 #: src/open-type-layout.h:118
 msgctxt "OpenType layout"
@@ -822,34 +753,29 @@ msgid "Right Bounds"
 msgstr "दायाँ सीमा"
 
 #: src/open-type-layout.h:120
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Right-to-left alternates"
-msgstr "LRM _बायाँ-बाट-दायाँ चिनो"
+msgstr "दायाँ-देखि-बायाँ वैकल्पिक"
 
 #: src/open-type-layout.h:121
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Right-to-left mirrored forms"
-msgstr "LRM _बायाँ-बाट-दायाँ चिनो"
+msgstr "दायाँ-देखि-बायाँ प्रतिबिम्बित आकार"
 
 #: src/open-type-layout.h:122
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Ruby Notation Forms"
-msgstr "स्थानियकरण फारम"
+msgstr "रूबी नोटेसन आकार"
 
 #: src/open-type-layout.h:123
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Required Variation Alternates"
-msgstr "प्रासंगिक वैकल्पिक"
+msgstr "आवश्यक भिन्नता वैकल्पिक"
 
 #: src/open-type-layout.h:124
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Stylistic Alternates"
-msgstr "प्रासंगिक वैकल्पिक"
+msgstr "शैलीगत विकल्प"
 
 #: src/open-type-layout.h:125
 msgctxt "OpenType layout"
@@ -862,21 +788,19 @@ msgid "Optical size"
 msgstr "अप्टिकल साइज"
 
 #: src/open-type-layout.h:127
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Small Capitals"
 msgstr "मसिना ठुला वर्णहरू"
 
 #: src/open-type-layout.h:128
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Simplified Forms"
-msgstr "सरलीकृत"
+msgstr "सरलीकृत आकार"
 
 #: src/open-type-layout.h:129
 msgctxt "OpenType layout"
 msgid "Stylistic Set 1"
-msgstr "शैलीगत सेट "
+msgstr "शैलीगत सेट १"
 
 #: src/open-type-layout.h:130
 msgctxt "OpenType layout"
@@ -976,12 +900,12 @@ msgstr "शैलीगत सेट २०"
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
 msgid "Math script style alternates"
-msgstr ""
+msgstr "गणित स्क्रिप्ट शैली वैकल्पिक"
 
 #: src/open-type-layout.h:150
 msgctxt "OpenType layout"
 msgid "Stretching Glyph Decomposition"
-msgstr ""
+msgstr "स्ट्रेचिंग ग्लिफ विच्छेदन"
 
 #: src/open-type-layout.h:151
 msgctxt "OpenType layout"
@@ -996,41 +920,37 @@ msgstr "सुपरस्क्रिप्ट"
 #: src/open-type-layout.h:153
 msgctxt "OpenType layout"
 msgid "Swash"
-msgstr ""
+msgstr "स्वाश"
 
 #: src/open-type-layout.h:154
 msgctxt "OpenType layout"
 msgid "Titling"
-msgstr ""
+msgstr "टिलटिङ्ग"
 
 #: src/open-type-layout.h:155
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Trailing Jamo Forms"
-msgstr "हलन्ट ढाचाँ"
+msgstr "जामो आकार"
 
 #: src/open-type-layout.h:156
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Traditional Name Forms"
-msgstr "परम्परागत"
+msgstr "परम्परागत नाम आकार"
 
 #: src/open-type-layout.h:157
 msgctxt "OpenType layout"
 msgid "Tabular Figures"
-msgstr ""
+msgstr "टेबुलर आकृतिहरू"
 
 #: src/open-type-layout.h:158
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Traditional Forms"
-msgstr "परम्परागत"
+msgstr "परम्परागत आकार"
 
 #: src/open-type-layout.h:159
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Third Widths"
-msgstr "तेस्रो"
+msgstr "तेस्रो चौडाई"
 
 #: src/open-type-layout.h:160
 msgctxt "OpenType layout"
@@ -1038,22 +958,19 @@ msgid "Unicase"
 msgstr "युनिकेस"
 
 #: src/open-type-layout.h:161
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Metrics"
-msgstr "वैकल्पिक ठाडो आधा म्याट्रिक्स"
+msgstr "वैकल्पिक ठाडो मेट्रिक्स"
 
 #: src/open-type-layout.h:162
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Vattu Variants"
-msgstr "वर्ण फरकप्रकार"
+msgstr "वाट्टु फरकप्रकार"
 
 #: src/open-type-layout.h:163
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Vertical Writing"
-msgstr "लेखिदै"
+msgstr "ठाडो लेखन"
 
 #: src/open-type-layout.h:164
 msgctxt "OpenType layout"
@@ -1061,46 +978,39 @@ msgid "Alternate Vertical Half Metrics"
 msgstr "वैकल्पिक ठाडो आधा म्याट्रिक्स"
 
 #: src/open-type-layout.h:165
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Vowel Jamo Forms"
-msgstr "स्थानियकरण फारम"
+msgstr "जामो आकार"
 
 #: src/open-type-layout.h:166
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Vertical Kana Alternates"
-msgstr "प्रासंगिक वैकल्पिक"
+msgstr "ठाडो काना वैकल्पिक"
 
 #: src/open-type-layout.h:167
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Vertical Kerning"
-msgstr "ठाडो:"
+msgstr "ठाडो कर्निङ"
 
 #: src/open-type-layout.h:168
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Vertical Metrics"
-msgstr "वैकल्पिक ठाडो आधा म्याट्रिक्स"
+msgstr "समानुपातिक वैकल्पिक ठाडो मेट्रिक्स"
 
 #: src/open-type-layout.h:169
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Vertical Alternates and Rotation"
-msgstr "प्रासंगिक वैकल्पिक"
+msgstr "ठाडो वैकल्पिक र परिक्रमण"
 
 #: src/open-type-layout.h:170
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Vertical Alternates for Rotation"
-msgstr "प्रासंगिक वैकल्पिक"
+msgstr "परिक्रमणका लागि ठाडो वैकल्पिक"
 
 #: src/open-type-layout.h:171
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
-msgstr "ZWS शून्य चौडाइ खाली स्थान"
+msgstr "शून्यमा काटियो"
 
 #~ msgid "About"
 #~ msgstr "बारेमा"
