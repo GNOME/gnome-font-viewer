@@ -25,7 +25,8 @@
 
 #include <gio/gio.h>
 #include <glib/gi18n.h>
-#include "font-view.h"
+
+#include "font-view-application.h"
 
 static gboolean
 _print_version_and_exit (const gchar *option_name,
