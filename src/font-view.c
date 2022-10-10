@@ -111,6 +111,8 @@ action_about (GSimpleAction *action, GVariant *parameter, gpointer user_data)
 
     // clang-format off
     const gchar *developers[] = {
+        "Christopher Davis",
+        "Evan Welsh",
         "Cosimo Cecchi",
         "James Henstridge",
         NULL
