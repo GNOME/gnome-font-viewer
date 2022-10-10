@@ -23,7 +23,7 @@
 
 #include <adwaita.h>
 
-#include "font-view.h"
+#include "font-view-application.h"
 
 G_BEGIN_DECLS
 

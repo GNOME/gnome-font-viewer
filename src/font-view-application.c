@@ -39,7 +39,7 @@
 #include <hb.h>
 #include <libadwaita-1/adwaita.h>
 
-#include "font-view.h"
+#include "font-view-application.h"
 #include "font-view-window.h"
 
 struct _FontViewApplication
