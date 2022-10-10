@@ -16,7 +16,9 @@ viewer_sources = [
   'font-model.c',
   'sushi-font-widget.h',
   'sushi-font-widget.c',
+  'font-view.h',
   'font-view.c',
+  'main.c',
 ]
 
 resources = gnome.compile_resources('font-view-resources',
