@@ -140,8 +140,8 @@ font_view_model_item_new (const gchar *font_name,
     FontViewModelItem *item = g_object_new (FONT_VIEW_TYPE_MODEL_ITEM, NULL);
 
     item->font_name = g_strdup (font_name);
-    item->font_preview_text = g_strdup (font_preview_text);
-    item->font_description = pango_font_description_copy (font_description);
+    item->font_preview_text = (gchar *) font_preview_text;
+    item->font_description = (PangoFontDescription *) font_description;
     item->file = g_object_ref (file);
     item->face_index = face_index;
 
@@ -189,7 +189,7 @@ font_view_model_has_face (FontViewModel *self, FT_Face face)
     match_name = sushi_get_font_name (face, TRUE);
 
     for (idx = 0; idx < n_items; idx++) {
-        FontViewModelItem *item =
+        g_autoptr (FontViewModelItem) item =
             g_list_model_get_item (G_LIST_MODEL (self->model), idx);
 
         if (g_strcmp0 (item->font_name, match_name) == 0)
@@ -466,9 +466,9 @@ connect_to_fontconfig_updates (FontViewModel *self)
     GtkSettings *settings;
 
     settings = gtk_settings_get_default ();
-    self->fontconfig_update_id =
-        g_signal_connect_swapped (settings, "notify::gtk-fontconfig-timestamp",
-                                  G_CALLBACK (ensure_font_list), self);
+    g_signal_connect_object (settings, "notify::gtk-fontconfig-timestamp",
+                             G_CALLBACK (ensure_font_list), self,
+                             G_CONNECT_SWAPPED);
 }
 
 static void
