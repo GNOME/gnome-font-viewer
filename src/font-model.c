@@ -64,6 +64,15 @@ struct _FontViewModelItem
     int face_index;
 };
 
+enum {
+  PROP_0,
+  PROP_FONT_NAME,
+  PROP_FONT_PREVIEW_TEXT,
+  N_PROPS
+};
+
+static GParamSpec *properties [N_PROPS];
+
 G_DEFINE_TYPE (FontViewModelItem, font_view_model_item, G_TYPE_OBJECT)
 
 static void
@@ -78,10 +87,42 @@ font_view_model_item_finalize (GObject *obj)
 }
 
 static void
+font_view_model_item_get_property (GObject    *object,
+                                   guint       prop_id,
+                                   GValue     *value,
+                                   GParamSpec *pspec)
+{
+    FontViewModelItem *self = FONT_VIEW_MODEL_ITEM (object);
+
+    switch (prop_id) {
+        case PROP_FONT_NAME:
+            g_value_set_string (value, font_view_model_item_get_font_name (self));
+            break;
+        case PROP_FONT_PREVIEW_TEXT:
+            g_value_set_string (value, font_view_model_item_get_font_preview_text (self));
+            break;
+        default:
+            G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
+  }
+}
+
+static void
 font_view_model_item_class_init (FontViewModelItemClass *klass)
 {
     GObjectClass *oclass = G_OBJECT_CLASS (klass);
     oclass->finalize = font_view_model_item_finalize;
+    oclass->get_property = font_view_model_item_get_property;
+
+    properties[PROP_FONT_NAME] =
+        g_param_spec_string ("font-name",
+                             "", "", "",
+                             G_PARAM_READABLE | G_PARAM_STATIC_STRINGS);
+    properties[PROP_FONT_PREVIEW_TEXT] =
+        g_param_spec_string ("preview-text",
+                             "", "", "",
+                             G_PARAM_READABLE | G_PARAM_STATIC_STRINGS);
+
+    g_object_class_install_properties (oclass, N_PROPS, properties);
 }
 
 static void
