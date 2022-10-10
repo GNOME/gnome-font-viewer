@@ -42,17 +42,9 @@
 #define GNOME_DESKTOP_USE_UNSTABLE_API
 #include <libgnome-desktop/gnome-desktop-thumbnail.h>
 
+#include "font-view.h"
 #include "font-model.h"
 #include "sushi-font-widget.h"
-
-#define FONT_VIEW_TYPE_APPLICATION (font_view_application_get_type ())
-#define FONT_VIEW_ICON_NAME APPLICATION_ID
-
-G_DECLARE_FINAL_TYPE (FontViewApplication,
-                      font_view_application,
-                      FONT_VIEW,
-                      APPLICATION,
-                      AdwApplication)
 
 struct _FontViewApplication
 {
@@ -195,22 +187,6 @@ static void ensure_window (FontViewApplication *self);
 
 #define VIEW_COLUMN_SPACING 18
 #define VIEW_MARGIN 16
-
-static gboolean
-_print_version_and_exit (const gchar *option_name,
-                         const gchar *value,
-                         gpointer data,
-                         GError **error)
-{
-    g_print ("%s %s\n", _ ("GNOME Fonts"), VERSION);
-    exit (EXIT_SUCCESS);
-    return TRUE;
-}
-
-static const GOptionEntry goption_options[] = {
-    {"version", 0, G_OPTION_FLAG_NO_ARG, G_OPTION_ARG_CALLBACK,
-     _print_version_and_exit, N_ ("Show the application's version"), NULL},
-    {NULL}};
 
 #define WHITESPACE_CHARS "\f \t"
 
@@ -1339,7 +1315,7 @@ font_view_application_class_init (FontViewApplicationClass *klass)
     oclass->dispose = font_view_application_dispose;
 }
 
-static GApplication *
+GApplication *
 font_view_application_new (void)
 {
     return g_object_new (FONT_VIEW_TYPE_APPLICATION,
@@ -1347,21 +1323,4 @@ font_view_application_new (void)
                          "flags", G_APPLICATION_HANDLES_OPEN,
                          "resource-base-path", "/org/gnome/font-viewer/",
                          NULL);
-}
-
-int
-main (int argc, char **argv)
-{
-    g_autoptr (GApplication) app = NULL;
-    gint retval;
-
-    bindtextdomain (GETTEXT_PACKAGE, GNOMELOCALEDIR);
-    bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-    textdomain (GETTEXT_PACKAGE);
-
-    app = font_view_application_new ();
-    g_application_add_main_option_entries (app, goption_options);
-    retval = g_application_run (app, argc, argv);
-
-    return retval;
 }
