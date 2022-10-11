@@ -7,22 +7,16 @@
     <property name="width-request">360</property>
     <property name="height-request">294</property>
     <property name="content">
-      <object class="AdwLeaflet" id="leaflet">
-        <property name="can-unfold">False</property>
-        <property name="can-navigate-back">True</property>
+      <object class="AdwBrowsingView" id="browsing_view">
         <child>
-          <object class="AdwLeafletPage">
-            <property name="name">overview</property>
+          <object class="AdwBrowsingViewChild">
+            <property name="title" translatable="yes">All Fonts</property>
+            <property name="child-name">overview</property>
             <property name="child">
               <object class="GtkBox">
                 <property name="orientation">vertical</property>
                 <child>
                   <object class="AdwHeaderBar">
-                    <property name="title-widget">
-                      <object class="AdwWindowTitle">
-                        <property name="title" translatable="yes">All Fonts</property>
-                      </object>
-                    </property>
                     <child type="start">
                       <object class="GtkToggleButton">
                         <property name="icon-name">edit-find-symbolic</property>
@@ -152,8 +146,9 @@
           </object>
         </child>
         <child>
-          <object class="AdwLeafletPage">
-            <property name="name">preview</property>
+          <object class="AdwBrowsingViewChild">
+            <signal name="hidden" handler="preview_hidden_cb" swapped="yes"/>
+            <property name="child-name">preview</property>
             <property name="child">
               <object class="GtkBox">
                 <property name="orientation">vertical</property>
@@ -162,13 +157,6 @@
                     <property name="title-widget">
                       <object class="AdwWindowTitle" id="font_title"/>
                     </property>
-                    <child type="start">
-                      <object class="GtkButton">
-                        <property name="icon-name">go-previous-symbolic</property>
-                        <property name="tooltip-text" translatable="yes">Back</property>
-                        <property name="action-name">win.back</property>
-                      </object>
-                    </child>
                     <child type="end">
                       <object class="GtkButton" id="install_button">
                         <property name="label" translatable="yes">Install</property>

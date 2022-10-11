@@ -74,7 +74,6 @@ query_info_ready_cb (GObject *object, GAsyncResult *res, gpointer user_data)
 
     info = g_file_query_info_finish (G_FILE (object), res, &error);
     if (error != NULL) {
-        font_view_window_show_overview (self->main_window);
         font_view_window_show_error (self->main_window,
                                      _("Could Not Display Font"),
                                      error->message);
@@ -157,7 +156,6 @@ font_view_application_activate (GApplication *application)
     FontViewApplication *self = FONT_VIEW_APPLICATION (application);
 
     ensure_window (self);
-    font_view_window_show_overview (self->main_window);
 }
 
 static void

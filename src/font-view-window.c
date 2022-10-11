@@ -51,7 +51,7 @@ struct _FontViewWindow
 {
   AdwApplicationWindow parent_instance;
 
-  AdwLeaflet *leaflet;
+  AdwBrowsingView *browsing_view;
 
   /* Overview */
   GtkSearchBar *search_bar;
@@ -602,16 +602,6 @@ install_font_job (GTask *task,
 }
 
 static void
-action_overview_cb (GtkWidget  *widget,
-                    const char *action_name,
-                    GVariant   *parameter)
-{
-  FontViewWindow *self = FONT_VIEW_WINDOW (widget);
-
-  font_view_window_show_overview (self);
-}
-
-static void
 action_install_font_cb (GtkWidget  *widget,
                         const char *action_name,
                         GVariant   *parameter)
@@ -746,8 +736,14 @@ font_widget_error_cb (FontViewWindow  *self,
                       GError          *error,
                       SushiFontWidget *font_widget)
 {
-  font_view_window_show_overview (self);
+  adw_browsing_view_pop (self->browsing_view, TRUE);
   font_view_window_show_error (self, _("Could Not Display Font"), error->message);
+}
+
+static void
+preview_hidden_cb (FontViewWindow *self)
+{
+  g_clear_object (&self->font_file);
 }
 
 FontViewWindow *
@@ -756,14 +752,6 @@ font_view_window_new (FontViewApplication *app)
   return g_object_new (FONT_VIEW_TYPE_WINDOW,
                        "application", app,
                        NULL);
-}
-
-void
-font_view_window_show_overview (FontViewWindow *self)
-{
-  g_clear_object (&self->font_file);
-
-  adw_leaflet_set_visible_child_name (self->leaflet, "overview");
 }
 
 void
@@ -798,7 +786,7 @@ font_view_window_show_preview (FontViewWindow *self,
   }
 
   gtk_toggle_button_set_active (self->info_button, FALSE);
-  adw_leaflet_set_visible_child_name (self->leaflet, "preview");
+  adw_browsing_view_push_by_name (self->browsing_view, "preview", TRUE);
 }
 
 void
@@ -838,7 +826,7 @@ font_view_window_class_init (FontViewWindowClass *klass)
   gtk_widget_class_set_template_from_resource (widget_class,
                                                "/org/gnome/font-viewer/font-view-window.ui");
 
-  gtk_widget_class_bind_template_child (widget_class, FontViewWindow, leaflet);
+  gtk_widget_class_bind_template_child (widget_class, FontViewWindow, browsing_view);
   gtk_widget_class_bind_template_child (widget_class, FontViewWindow, search_bar);
   gtk_widget_class_bind_template_child (widget_class, FontViewWindow, search_entry);
   gtk_widget_class_bind_template_child (widget_class, FontViewWindow, grid_view);
@@ -855,12 +843,12 @@ font_view_window_class_init (FontViewWindowClass *klass)
 
   gtk_widget_class_bind_template_callback (widget_class, font_widget_loaded_cb);
   gtk_widget_class_bind_template_callback (widget_class, view_child_activated_cb);
+  gtk_widget_class_bind_template_callback (widget_class, preview_hidden_cb);
 
   gtk_widget_class_bind_template_callback (widget_class, font_attribute_closure);
   gtk_widget_class_bind_template_callback (widget_class, font_name_closure);
   gtk_widget_class_bind_template_callback (widget_class, preview_visible_child_closure);
 
-  gtk_widget_class_install_action (widget_class, "win.back", NULL, action_overview_cb);
   gtk_widget_class_install_action (widget_class, "win.install-font", NULL, action_install_font_cb);
 }
 
@@ -885,3 +873,5 @@ font_view_window_init (FontViewWindow *self)
   if (g_str_has_suffix (APPLICATION_ID, "Devel"))
     gtk_widget_add_css_class (GTK_WIDGET (self), "devel");
 }
+
+
