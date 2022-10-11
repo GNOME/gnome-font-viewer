@@ -101,7 +101,7 @@ static void
 action_quit (GSimpleAction *action, GVariant *parameter, gpointer user_data)
 {
     FontViewApplication *self = user_data;
-    gtk_window_destroy (GTK_WINDOW (self->main_window));
+    gtk_window_close (GTK_WINDOW (self->main_window));
 }
 
 static void
