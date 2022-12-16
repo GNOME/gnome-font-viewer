@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2022-10-23 17:06+0000\n"
-"PO-Revision-Date: 2022-12-10 05:02+0700\n"
-"Last-Translator: OIS <mistresssilvara@hotmail.com>\n"
-"Language-Team: IE\n"
-"Language: ie\n"
+"POT-Creation-Date: 2022-12-16 17:57+0700\n"
+"PO-Revision-Date: 2022-12-16 18:07+0700\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"Last-Translator: OIS <mistresssilvara@hotmail.com>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"Language: ie\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1167
 #: src/org.gnome.font-viewer.desktop.in.in:3
@@ -27,7 +27,7 @@ msgstr "Fondes"
 #: data/org.gnome.font-viewer.appdata.xml.in:7
 #: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
-msgstr "Vider fondes in vor sistema"
+msgstr "Vider fondes de vor sistema"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
@@ -48,27 +48,24 @@ msgid "The GNOME Project"
 msgstr "Li projecte GNOME"
 
 #: src/font-thumbnailer.c:181
-#, fuzzy
 msgid "Text to thumbnail (default: Aa)"
-msgstr "Dimension predefinit del icones"
+msgstr "Textu a miniaturisar (predefinit: Aa)"
 
 #: src/font-thumbnailer.c:181
 msgid "TEXT"
 msgstr "TEXTU"
 
 #: src/font-thumbnailer.c:183
-#, fuzzy
 msgid "Thumbnail size (default: 128)"
-msgstr "Dimension predefinit del icones"
+msgstr "Dimension de miniatura (predefinit: 128)"
 
 #: src/font-thumbnailer.c:183
 msgid "SIZE"
-msgstr "GRANDORE"
+msgstr "DIMENSION"
 
 #: src/font-thumbnailer.c:185
-#, fuzzy
 msgid "FONT-FILE OUTPUT-FILE"
-msgstr "Producter un file de header C"
+msgstr "FONDE-FILE PRODUCTION-FILE"
 
 #: src/font-view.c:205
 msgid "GNOME Fonts"
@@ -84,15 +81,14 @@ msgstr "Monstra li version del programma"
 #. * with the minimum, maximum and default values for the axis.
 #.
 #: src/font-view.c:327
-#, fuzzy, c-format
+#, c-format
 msgid "%s %g — %g, default %g"
-msgstr "g_try_realloc () ne successat"
+msgstr "%s %g — %g, %g predefinit"
 
 #: src/font-view.c:378
-#, fuzzy, c-format
-#| msgid "Installed"
+#, c-format
 msgid "Instance %d"
-msgstr "Singul instantie"
+msgstr "Instantie %d"
 
 #. Translators, this seperates the list of Layout
 #. * Features.
@@ -107,7 +103,7 @@ msgstr "Nómine"
 
 #: src/font-view.c:446
 msgid "Location"
-msgstr "Localisation"
+msgstr "Loc"
 
 #: src/font-view.c:449
 msgid "Style"
@@ -131,11 +127,11 @@ msgstr "Descrition"
 
 #: src/font-view.c:537
 msgid "Manufacturer"
-msgstr ""
+msgstr "Fabricator"
 
 #: src/font-view.c:541
 msgid "Designer"
-msgstr ""
+msgstr "Dessinator"
 
 #: src/font-view.c:545
 msgid "License"
@@ -154,18 +150,17 @@ msgid "yes"
 msgstr "yes"
 
 #: src/font-view.c:571
-#| msgid "Info"
 msgid "no"
 msgstr "no"
 
 #: src/font-view.c:575
 #, fuzzy
 msgid "Layout Features"
-msgstr "Nov caracteristicas:"
+msgstr "_Arangeament:"
 
 #: src/font-view.c:581
 msgid "Variation Axes"
-msgstr ""
+msgstr "Axes de variation"
 
 #: src/font-view.c:588
 msgid "Named Styles"
@@ -188,18 +183,16 @@ msgid "Install"
 msgstr "Installar"
 
 #: src/font-view.c:740
-#, fuzzy
 msgid "This font could not be installed."
-msgstr "Selecte un _fonde"
+msgstr "Ti-ci fonde ne posse esser installat."
 
 #: src/font-view.c:875
-#, fuzzy
 msgid "This font could not be displayed."
-msgstr "Li contenete del fólder ne posse esser monstrat"
+msgstr "Ti-ci fonde ne posse esser monstrat."
 
 #: src/font-view.c:993
 msgid "Info"
-msgstr "Info"
+msgstr "Information"
 
 #: src/font-view.c:1009
 msgid "Back"
@@ -211,28 +204,28 @@ msgstr "Omni fondes"
 
 #: src/font-view.c:1172
 msgid "translator-credits"
-msgstr "OIS <mistresssilvara@hotmail.com>, 2016-22"
+msgstr "OIS <mistresssilvara@hotmail.com>, 2022"
 
 #: src/font-view.c:1238
 msgid "About Fonts"
-msgstr "Pri Fondes"
+msgstr "Pri li Fondes"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
-msgstr "fondes;"
+msgstr "fondes;tipes;caracteres;"
 
 #: src/open-type-layout.h:13
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Access All Alternates"
-msgstr "Omni"
+msgstr "Accesse"
 
 #: src/open-type-layout.h:14
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Above-base Forms"
-msgstr "Sur li nómine"
+msgstr "&Superiori"
 
 #: src/open-type-layout.h:15
 msgctxt "OpenType layout"
@@ -243,7 +236,7 @@ msgstr ""
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Above-base Substitutions"
-msgstr "Sur li nómine"
+msgstr "Substitutiones"
 
 #: src/open-type-layout.h:17
 #, fuzzy
@@ -260,7 +253,7 @@ msgstr ""
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Below-base Forms"
-msgstr "Historic formes"
+msgstr "_Basat sur:"
 
 #: src/open-type-layout.h:20
 msgctxt "OpenType layout"
@@ -268,9 +261,10 @@ msgid "Below-base Mark Positioning"
 msgstr ""
 
 #: src/open-type-layout.h:21
+#, fuzzy
 msgctxt "OpenType layout"
 msgid "Below-base Substitutions"
-msgstr ""
+msgstr "Substitutiones"
 
 #: src/open-type-layout.h:22
 msgctxt "OpenType layout"
@@ -281,12 +275,13 @@ msgstr ""
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Case-Sensitive Forms"
-msgstr "Atenter a MAJ/min"
+msgstr "_Atenter a MAJ/min"
 
 #: src/open-type-layout.h:24
+#, fuzzy
 msgctxt "OpenType layout"
 msgid "Glyph Composition / Decomposition"
-msgstr ""
+msgstr "Númere de glifes"
 
 #: src/open-type-layout.h:25
 msgctxt "OpenType layout"
@@ -297,7 +292,7 @@ msgstr ""
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Conjunct Forms"
-msgstr "Formes de terminal"
+msgstr "Isolat formes"
 
 #: src/open-type-layout.h:27
 #, fuzzy
@@ -306,7 +301,6 @@ msgid "Contextual Ligatures"
 msgstr "Ligaturas"
 
 #: src/open-type-layout.h:28
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Centered CJK Punctuation"
 msgstr "Centrat punctuation de CJK"
@@ -315,7 +309,7 @@ msgstr "Centrat punctuation de CJK"
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Capital Spacing"
-msgstr "Interspacie"
+msgstr "Inicial majuscule"
 
 #: src/open-type-layout.h:30
 msgctxt "OpenType layout"
@@ -340,118 +334,99 @@ msgid "Small Capitals From Capitals"
 msgstr "Micri majuscules"
 
 #: src/open-type-layout.h:34
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Character Variation 1"
-msgstr "Conversion de caracteres"
+msgstr "Variation de caracter 1"
 
 #: src/open-type-layout.h:35
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Character Variation 2"
-msgstr "Conversion de caracteres"
+msgstr "Variation de caracter 2"
 
 #: src/open-type-layout.h:36
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Character Variation 3"
-msgstr "Conversion de caracteres"
+msgstr "Variation de caracter 3"
 
 #: src/open-type-layout.h:37
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Character Variation 4"
-msgstr "Conversion de caracteres"
+msgstr "Variation de caracter 4"
 
 #: src/open-type-layout.h:38
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Character Variation 5"
-msgstr "Conversion de caracteres"
+msgstr "Variation de caracter 5"
 
 #: src/open-type-layout.h:39
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Character Variation 6"
-msgstr "Codification de caracteres:"
+msgstr "Variation de caracter 6"
 
 #: src/open-type-layout.h:40
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Character Variation 7"
-msgstr "Conversion de caracteres"
+msgstr "Variation de caracter 7"
 
 #: src/open-type-layout.h:41
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Character Variation 8"
-msgstr "Codification de caracteres:"
+msgstr "Variation de caracter 8"
 
 #: src/open-type-layout.h:42
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Character Variation 9"
-msgstr "Conversion de caracteres"
+msgstr "Variation de caracter 9"
 
 #: src/open-type-layout.h:43
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Character Variation 10"
-msgstr "10×11"
+msgstr "Variation de caracter 10"
 
 #: src/open-type-layout.h:44
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Character Variation 11"
-msgstr "10×11"
+msgstr "Variation de caracter 11"
 
 #: src/open-type-layout.h:45
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Character Variation 12"
-msgstr "Codification de caracteres:"
+msgstr "Variation de caracter 12"
 
 #: src/open-type-layout.h:46
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Character Variation 13"
-msgstr "13 × 18 cm"
+msgstr "Variation de caracter 13"
 
 #: src/open-type-layout.h:47
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Character Variation 14"
-msgstr "Codification de caracteres:"
+msgstr "Variation de caracter 14"
 
 #: src/open-type-layout.h:48
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Character Variation 15"
-msgstr "Codification de caracteres:"
+msgstr "Variation de caracter 15"
 
 #: src/open-type-layout.h:49
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Character Variation 16"
-msgstr "Codification de caracteres:"
+msgstr "Variation de caracter 16"
 
 #: src/open-type-layout.h:50
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Character Variation 17"
-msgstr "Tabloid (11 × 17 in.)"
+msgstr "Variation de caracter 17"
 
 #: src/open-type-layout.h:51
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Character Variation 18"
-msgstr "Codification de caracteres:"
+msgstr "Variation de caracter 18"
 
 #: src/open-type-layout.h:52
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Character Variation 19"
-msgstr "Codification de caracteres:"
+msgstr "Variation de caracter 19"
 
 #: src/open-type-layout.h:53
 msgctxt "OpenType layout"
@@ -465,13 +440,11 @@ msgid "Discretionary Ligatures"
 msgstr "Ligaturas"
 
 #: src/open-type-layout.h:55
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Denominators"
 msgstr "Denominatores"
 
 #: src/open-type-layout.h:56
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Dotless Forms"
 msgstr "Formes sin punctu"
@@ -508,7 +481,7 @@ msgstr "Formes de terminal"
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Flattened accent forms"
-msgstr "Historic formes"
+msgstr "Color de accentu:"
 
 #: src/open-type-layout.h:63
 msgctxt "OpenType layout"
@@ -516,6 +489,7 @@ msgid "Fractions"
 msgstr "Fractiones"
 
 #: src/open-type-layout.h:64
+#, fuzzy
 msgctxt "OpenType layout"
 msgid "Full Widths"
 msgstr "Plen-largore"
@@ -539,6 +513,7 @@ msgid "Alternate Half Widths"
 msgstr "Plen-largore"
 
 #: src/open-type-layout.h:68
+#, fuzzy
 msgctxt "OpenType layout"
 msgid "Historical Forms"
 msgstr "Historic formes"
@@ -547,15 +522,15 @@ msgstr "Historic formes"
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Horizontal Kana Alternates"
-msgstr "_Horizontal:"
+msgstr "Horizontalmen"
 
 #: src/open-type-layout.h:70
+#, fuzzy
 msgctxt "OpenType layout"
 msgid "Historical Ligatures"
 msgstr "Historic ligaturas"
 
 #: src/open-type-layout.h:71
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Hangul"
 msgstr "Hangul"
@@ -573,16 +548,14 @@ msgid "Half Widths"
 msgstr "Plen-largore"
 
 #: src/open-type-layout.h:74
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Initial Forms"
-msgstr "Inicial statu"
+msgstr "Inicial formes"
 
 #: src/open-type-layout.h:75
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Isolated Forms"
-msgstr "Formes de terminal"
+msgstr "Isolat formes"
 
 #: src/open-type-layout.h:76
 msgctxt "OpenType layout"
@@ -590,33 +563,30 @@ msgid "Italics"
 msgstr "Italic"
 
 #: src/open-type-layout.h:77
+#, fuzzy
 msgctxt "OpenType layout"
 msgid "Justification Alternates"
-msgstr ""
+msgstr "Alineament de subtitules"
 
 #: src/open-type-layout.h:78
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "JIS78 Forms"
 msgstr "Formas JIS78"
 
 #: src/open-type-layout.h:79
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "JIS83 Forms"
 msgstr "Formas JIS83"
 
 #: src/open-type-layout.h:80
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "JIS90 Forms"
-msgstr "Formas JIS78"
+msgstr "Formas JIS90"
 
 #: src/open-type-layout.h:81
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "JIS2004 Forms"
-msgstr "Formes sin punctu"
+msgstr "Formas JIS2004"
 
 #: src/open-type-layout.h:82
 msgctxt "OpenType layout"
@@ -639,7 +609,7 @@ msgstr "Standard ligaturas"
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Leading Jamo Forms"
-msgstr "Historic formes"
+msgstr "Remover inicial spacies"
 
 #: src/open-type-layout.h:86
 #, fuzzy
@@ -648,7 +618,6 @@ msgid "Lining Figures"
 msgstr "Ciffres por tabelles"
 
 #: src/open-type-layout.h:87
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Localized Forms"
 msgstr "Localisat formas"
@@ -669,7 +638,7 @@ msgstr "Levul a dextri, alt a bass"
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Mark Positioning"
-msgstr "Marcar partialmen cargat files"
+msgstr "_Marcar"
 
 #: src/open-type-layout.h:91
 #, fuzzy
@@ -693,7 +662,7 @@ msgstr "Matematic grec"
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Mark to Mark Positioning"
-msgstr "Marcar partialmen cargat files"
+msgstr "_Marcar"
 
 #: src/open-type-layout.h:95
 msgctxt "OpenType layout"
@@ -704,7 +673,7 @@ msgstr ""
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Alternate Annotation Forms"
-msgstr "Alternativ:"
+msgstr "Alternativ"
 
 #: src/open-type-layout.h:97
 #, fuzzy
@@ -713,7 +682,6 @@ msgid "NLC Kanji Forms"
 msgstr "Formes NLC kanji"
 
 #: src/open-type-layout.h:98
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Nukta Forms"
 msgstr "Formes nukta"
@@ -721,7 +689,7 @@ msgstr "Formes nukta"
 #: src/open-type-layout.h:99
 msgctxt "OpenType layout"
 msgid "Numerators"
-msgstr ""
+msgstr "Numeratores"
 
 #: src/open-type-layout.h:100
 #, fuzzy
@@ -733,7 +701,7 @@ msgstr "Ciffres por tabelles"
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Optical Bounds"
-msgstr "Límites"
+msgstr "Optical"
 
 #: src/open-type-layout.h:102
 msgctxt "OpenType layout"
@@ -755,12 +723,13 @@ msgstr "Plen-largore"
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Petite Capitals"
-msgstr "Micri majuscules"
+msgstr "Majuscules"
 
 #: src/open-type-layout.h:106
+#, fuzzy
 msgctxt "OpenType layout"
 msgid "Proportional Kana"
-msgstr ""
+msgstr "Japanesi (kana)"
 
 #: src/open-type-layout.h:107
 #, fuzzy
@@ -772,59 +741,60 @@ msgstr "Ciffres por tabelles"
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Pre-Base Forms"
-msgstr "Pre_vider"
+msgstr "Base"
 
 #: src/open-type-layout.h:109
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Pre-base Substitutions"
-msgstr "Pre_vider"
+msgstr "Substitutiones"
 
 #: src/open-type-layout.h:110
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Post-base Forms"
-msgstr "Formes sin punctu"
+msgstr "Base"
 
 #: src/open-type-layout.h:111
+#, fuzzy
 msgctxt "OpenType layout"
 msgid "Post-base Substitutions"
-msgstr ""
+msgstr "Substitutiones"
 
 #: src/open-type-layout.h:112
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Proportional Widths"
-msgstr "Plen-largore"
+msgstr "Automatic largore de columnes"
 
 #: src/open-type-layout.h:113
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Quarter Widths"
-msgstr "Plen-largore"
+msgstr "1-um lun-quarte"
 
 #: src/open-type-layout.h:114
+#, fuzzy
 msgctxt "OpenType layout"
 msgid "Randomize"
-msgstr ""
+msgstr "Mixter li actual playlist"
 
 #: src/open-type-layout.h:115
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Required Contextual Alternates"
-msgstr "Autentication es besonat por printar li document «%s»"
+msgstr "Besonat per"
 
 #: src/open-type-layout.h:116
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Rakar Forms"
-msgstr "Formas JIS78"
+msgstr "Expert formes"
 
 #: src/open-type-layout.h:117
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Required Ligatures"
-msgstr "Ligaturas"
+msgstr "Besonat ligaturas"
 
 #: src/open-type-layout.h:118
 #, fuzzy
@@ -854,161 +824,140 @@ msgstr "Levul a dextri, alt a bass"
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Ruby Notation Forms"
-msgstr "Ruby Application Archive"
+msgstr "Rubi"
 
 #: src/open-type-layout.h:123
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Required Variation Alternates"
-msgstr "Li besonat formate de image"
+msgstr "Variation de caracter 1"
 
 #: src/open-type-layout.h:124
+#, fuzzy
 msgctxt "OpenType layout"
 msgid "Stylistic Alternates"
-msgstr ""
+msgstr "Stilistic serie 1"
 
 #: src/open-type-layout.h:125
+#, fuzzy
 msgctxt "OpenType layout"
 msgid "Scientific Inferiors"
-msgstr ""
+msgstr "Scientific"
 
 #: src/open-type-layout.h:126
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Optical size"
 msgstr "Optical dimension"
 
 #: src/open-type-layout.h:127
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Small Capitals"
 msgstr "Micri majuscules"
 
 #: src/open-type-layout.h:128
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Simplified Forms"
 msgstr "Simplificat formes"
 
 #: src/open-type-layout.h:129
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Stylistic Set 1"
-msgstr "Assignar quam li Tapete"
+msgstr "Stilistic serie 1"
 
 #: src/open-type-layout.h:130
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Stylistic Set 2"
-msgstr "Assignar quam li Tapete"
+msgstr "Stilistic serie 2"
 
 #: src/open-type-layout.h:131
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Stylistic Set 3"
-msgstr "Assignar quam li Tapete"
+msgstr "Stilistic serie 3"
 
 #: src/open-type-layout.h:132
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Stylistic Set 4"
-msgstr "E_valuar"
+msgstr "Stilistic serie 4"
 
 #: src/open-type-layout.h:133
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Stylistic Set 5"
-msgstr "E_valuar"
+msgstr "Stilistic serie 5"
 
 #: src/open-type-layout.h:134
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Stylistic Set 6"
-msgstr "Covert 6×9"
+msgstr "Stilistic serie 6"
 
 #: src/open-type-layout.h:135
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Stylistic Set 7"
-msgstr "Covert 7×9"
+msgstr "Stilistic serie 7"
 
 #: src/open-type-layout.h:136
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Stylistic Set 8"
-msgstr "8 × 10 in."
+msgstr "Stilistic serie 8"
 
 #: src/open-type-layout.h:137
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Stylistic Set 9"
-msgstr "Covert #9"
+msgstr "Stilistic serie 9"
 
 #: src/open-type-layout.h:138
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Stylistic Set 10"
-msgstr "Covert #10"
+msgstr "Stilistic serie 10"
 
 #: src/open-type-layout.h:139
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Stylistic Set 11"
-msgstr "Covert #11"
+msgstr "Stilistic serie 11"
 
 #: src/open-type-layout.h:140
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Stylistic Set 12"
-msgstr "Covert #12"
+msgstr "Stilistic serie 12"
 
 #: src/open-type-layout.h:141
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Stylistic Set 13"
-msgstr "13 × 18 cm"
+msgstr "Stilistic serie 13"
 
 #: src/open-type-layout.h:142
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Stylistic Set 14"
-msgstr "Covert #14"
+msgstr "Stilistic serie 14"
 
 #: src/open-type-layout.h:143
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Stylistic Set 15"
-msgstr "Carte postal (10 × 15 cm)"
+msgstr "Stilistic serie 15"
 
 #: src/open-type-layout.h:144
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Stylistic Set 16"
-msgstr " Subtom :{:16}"
+msgstr "Stilistic serie 16"
 
 #: src/open-type-layout.h:145
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Stylistic Set 17"
-msgstr "Tabloid (11 × 17 in.)"
+msgstr "Stilistic serie 17"
 
 #: src/open-type-layout.h:146
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Stylistic Set 18"
-msgstr "13 × 18 cm"
+msgstr "Stilistic serie 18"
 
 #: src/open-type-layout.h:147
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Stylistic Set 19"
-msgstr "12×19"
+msgstr "Stilistic serie 19"
 
 #: src/open-type-layout.h:148
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Stylistic Set 20"
-msgstr "16 × 20 in."
+msgstr "Stilistic serie 20"
 
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
@@ -1016,20 +965,17 @@ msgid "Math script style alternates"
 msgstr ""
 
 #: src/open-type-layout.h:150
+#, fuzzy
 msgctxt "OpenType layout"
 msgid "Stretching Glyph Decomposition"
-msgstr ""
+msgstr "Extension del fin"
 
 #: src/open-type-layout.h:151
-#, fuzzy
-#| msgid "Description"
 msgctxt "OpenType layout"
 msgid "Subscript"
 msgstr "Subscrition"
 
 #: src/open-type-layout.h:152
-#, fuzzy
-#| msgid "Description"
 msgctxt "OpenType layout"
 msgid "Superscript"
 msgstr "Superscrition"
@@ -1040,7 +986,6 @@ msgid "Swash"
 msgstr ""
 
 #: src/open-type-layout.h:154
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Titling"
 msgstr "Titul-stil"
@@ -1049,7 +994,7 @@ msgstr "Titul-stil"
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Trailing Jamo Forms"
-msgstr "Historic formes"
+msgstr "Formes sin punctu"
 
 #: src/open-type-layout.h:156
 #, fuzzy
@@ -1058,13 +1003,11 @@ msgid "Traditional Name Forms"
 msgstr "Traditional formes"
 
 #: src/open-type-layout.h:157
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Tabular Figures"
 msgstr "Ciffres por tabelles"
 
 #: src/open-type-layout.h:158
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Traditional Forms"
 msgstr "Traditional formes"
@@ -1085,7 +1028,7 @@ msgstr "Unicase"
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Metrics"
-msgstr "Alternativ"
+msgstr "Alternativ:"
 
 #: src/open-type-layout.h:162
 #, fuzzy
@@ -1108,13 +1051,13 @@ msgstr ""
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Vowel Jamo Forms"
-msgstr "Historic formes"
+msgstr "Vocalic punctus de hebreic"
 
 #: src/open-type-layout.h:166
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Vertical Kana Alternates"
-msgstr "_Vertical:"
+msgstr "Verticalmen"
 
 #: src/open-type-layout.h:167
 #, fuzzy
@@ -1131,27 +1074,15 @@ msgstr ""
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Vertical Alternates and Rotation"
-msgstr "_Vertical:"
+msgstr "Verticalmen"
 
 #: src/open-type-layout.h:170
 #, fuzzy
 msgctxt "OpenType layout"
 msgid "Vertical Alternates for Rotation"
-msgstr "_Vertical:"
+msgstr "Verticalmen"
 
 #: src/open-type-layout.h:171
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Trastrecat zero"
-
-#~ msgid "About"
-#~ msgstr "Pri"
-
-#~ msgid "Quit"
-#~ msgstr "Salir"
-
-#~ msgid "Font Viewer"
-#~ msgstr "Visor de fondes"
-
-#~ msgid "[FILE...]"
-#~ msgstr "[FILE…]"
