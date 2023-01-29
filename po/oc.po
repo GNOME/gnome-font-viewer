@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2022-07-19 09:52+0000\n"
-"PO-Revision-Date: 2022-07-30 19:57+0200\n"
+"POT-Creation-Date: 2023-01-28 13:00+0000\n"
+"PO-Revision-Date: 2023-01-29 16:03+0100\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: \n"
 "Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view-application.c:124
 #: src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr "Polissas"
@@ -48,7 +48,7 @@ msgstr ""
 "telecargats (formats ttf e autres). Las polissas pòdon èsser installadas per "
 "vos sol o rendudas disponiblas a totes los utilizaires de l'ordenador."
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view.c:1168
+#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
 msgid "The GNOME Project"
 msgstr "Lo projècte GNOME"
 
@@ -72,141 +72,11 @@ msgstr "TALHA"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FICHIÈR-POLISSA FICHIÈR-SORTIDA"
 
-#: src/font-view.c:205
-msgid "GNOME Fonts"
-msgstr "Visionador de polissa de GNOME"
+#: src/font-view-application.c:79 src/font-view-window.c:750
+msgid "Could Not Display Font"
+msgstr "Afichatge impossible de la polissa"
 
-#: src/font-view.c:212
-msgid "Show the application's version"
-msgstr "Afichar la version de l'aplicacion"
-
-#. Translators, this string is used to display information about
-#. * a 'font variation axis'. The %s gets replaced with the name
-#. * of the axis, for example 'Width'. The three %g get replaced
-#. * with the minimum, maximum and default values for the axis.
-#.
-#: src/font-view.c:327
-#, c-format
-msgid "%s %g — %g, default %g"
-msgstr "%s %g — %g, %g per défaut"
-
-#: src/font-view.c:378
-#, c-format
-msgid "Instance %d"
-msgstr "Instància %d"
-
-#. Translators, this seperates the list of Layout
-#. * Features.
-#: src/font-view.c:418
-msgctxt "OpenType layout"
-msgid ", "
-msgstr ", "
-
-#: src/font-view.c:443
-msgid "Name"
-msgstr "Nom"
-
-#: src/font-view.c:446
-msgid "Location"
-msgstr "Emplaçament"
-
-#: src/font-view.c:449
-msgid "Style"
-msgstr "Estil"
-
-#: src/font-view.c:459
-msgid "Type"
-msgstr "Tipe"
-
-#: src/font-view.c:525 src/font-view.c:551
-msgid "Version"
-msgstr "Version"
-
-#: src/font-view.c:529 src/font-view.c:556
-msgid "Copyright"
-msgstr "Dreches d'autor"
-
-#: src/font-view.c:533
-msgid "Description"
-msgstr "Descripcion"
-
-#: src/font-view.c:537
-msgid "Manufacturer"
-msgstr "Editor"
-
-#: src/font-view.c:541
-msgid "Designer"
-msgstr "Conceptor"
-
-#: src/font-view.c:545
-msgid "License"
-msgstr "Licéncia"
-
-#: src/font-view.c:568
-msgid "Glyph Count"
-msgstr "Nombre de glifes"
-
-#: src/font-view.c:570
-msgid "Color Glyphs"
-msgstr "Glifes en color"
-
-#: src/font-view.c:571
-msgid "yes"
-msgstr "òc"
-
-#: src/font-view.c:571
-msgid "no"
-msgstr "non"
-
-#: src/font-view.c:575
-msgid "Layout Features"
-msgstr "Tipes de mesa en pagina"
-
-#: src/font-view.c:581
-msgid "Variation Axes"
-msgstr "Axes de variacion"
-
-#: src/font-view.c:588
-msgid "Named Styles"
-msgstr "Estils nomenats"
-
-#: src/font-view.c:600
-msgid "Failed"
-msgstr "Fracàs"
-
-#: src/font-view.c:609
-msgid "Installed"
-msgstr "Installada"
-
-#: src/font-view.c:614
-msgid "Installing"
-msgstr "Installacion"
-
-#: src/font-view.c:617 src/font-view.c:978
-msgid "Install"
-msgstr "Installar"
-
-#: src/font-view.c:739
-msgid "This font could not be installed."
-msgstr "Se pòt pas installar aquesta polissa."
-
-#: src/font-view.c:874
-msgid "This font could not be displayed."
-msgstr "Aquesta polissa a pas pogut èsser afichada."
-
-#: src/font-view.c:992
-msgid "Info"
-msgstr "Info"
-
-#: src/font-view.c:1008
-msgid "Back"
-msgstr "Tornar"
-
-#: src/font-view.c:1090
-msgid "All Fonts"
-msgstr "Totas las polissas"
-
-#: src/font-view.c:1171
+#: src/font-view-application.c:129
 msgid "translator-credits"
 msgstr ""
 "Cédric Valmary (Tot en Òc) <cvalmary@yahoo.fr>\n"
@@ -215,9 +85,147 @@ msgstr ""
 "  Cédric VALMARY (Tot en òc) https://launchpad.net/~cvalmary\n"
 "  Quentin PAGÈS https://launchpad.net/~kwentin\""
 
-#: src/font-view.c:1237
+#: src/font-view-window.c:119
+msgid "Failed"
+msgstr "Fracàs"
+
+#: src/font-view-window.c:127
+msgid "Installed"
+msgstr "Installada"
+
+#: src/font-view-window.c:132
+msgid "Installing"
+msgstr "Installacion"
+
+#: src/font-view-window.c:135 src/font-view-window.ui:185
+msgid "Install"
+msgstr "Installar"
+
+#. Translators, this string is used to display information about
+#. * a 'font variation axis'. The %s gets replaced with the name
+#. * of the axis, for example 'Width'. The three %g get replaced
+#. * with the minimum, maximum and default values for the axis.
+#.
+#: src/font-view-window.c:249
+#, c-format
+msgid "%s %g — %g, default %g"
+msgstr "%s %g — %g, %g per defaut"
+
+#: src/font-view-window.c:304
+#, c-format
+msgid "Instance %d"
+msgstr "Instància %d"
+
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view-window.c:342
+msgctxt "OpenType layout"
+msgid ", "
+msgstr ", "
+
+#: src/font-view-window.c:369
+msgid "Name"
+msgstr "Nom"
+
+#: src/font-view-window.c:372
+msgid "Location"
+msgstr "Emplaçament"
+
+#: src/font-view-window.c:375
+msgid "Style"
+msgstr "Estil"
+
+#: src/font-view-window.c:385
+msgid "Type"
+msgstr "Tipe"
+
+#: src/font-view-window.c:451 src/font-view-window.c:477
+msgid "Version"
+msgstr "Version"
+
+#: src/font-view-window.c:455 src/font-view-window.c:482
+msgid "Copyright"
+msgstr "Dreches d'autor"
+
+#: src/font-view-window.c:459
+msgid "Description"
+msgstr "Descripcion"
+
+#: src/font-view-window.c:463
+msgid "Manufacturer"
+msgstr "Editor"
+
+#: src/font-view-window.c:467
+msgid "Designer"
+msgstr "Conceptor"
+
+#: src/font-view-window.c:471
+msgid "License"
+msgstr "Licéncia"
+
+#: src/font-view-window.c:496
+msgid "Glyph Count"
+msgstr "Nombre de glifes"
+
+#: src/font-view-window.c:498
+msgid "Color Glyphs"
+msgstr "Glifes en color"
+
+#: src/font-view-window.c:499
+msgid "yes"
+msgstr "òc"
+
+#: src/font-view-window.c:499
+msgid "no"
+msgstr "non"
+
+#: src/font-view-window.c:503
+msgid "Layout Features"
+msgstr "Tipes de mesa en pagina"
+
+#: src/font-view-window.c:509
+msgid "Variation Axes"
+msgstr "Axes de variacion"
+
+#: src/font-view-window.c:516
+msgid "Named Styles"
+msgstr "Estils nomenats"
+
+#: src/font-view-window.c:558 src/font-view-window.c:670
+msgid "Could Not Install Font"
+msgstr "Installacion impossibla de la polissa"
+
+#: src/font-view-window.ui:34
+msgid "All Fonts"
+msgstr "Totas las polissas"
+
+#: src/font-view-window.ui:40
+msgid "Search"
+msgstr "Recercar"
+
+#: src/font-view-window.ui:48
 msgid "About Fonts"
 msgstr "A prepaus de Polissas"
+
+#: src/font-view-window.ui:179
+msgid "Back"
+msgstr "Tornar"
+
+#: src/font-view-window.ui:191
+msgid "Info"
+msgstr "Info"
+
+#: src/font-view-window.ui:238
+msgid "_Close"
+msgstr "_Tampar"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "Visionador de polissa de GNOME"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "Afichar la version de l'aplicacion"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in.in:6
@@ -762,7 +770,7 @@ msgstr "Alinhaments a drecha"
 #: src/open-type-layout.h:120
 msgctxt "OpenType layout"
 msgid "Right-to-left alternates"
-msgstr "Alternativas de dreitaa a esquèrra"
+msgstr "Alternativas de dreita a esquèrra"
 
 #: src/open-type-layout.h:121
 msgctxt "OpenType layout"
@@ -1018,3 +1026,9 @@ msgstr "Alternativas verticalas per rotacion"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Zèro raiat"
+
+#~ msgid "This font could not be installed."
+#~ msgstr "Se pòt pas installar aquesta polissa."
+
+#~ msgid "This font could not be displayed."
+#~ msgstr "Aquesta polissa a pas pogut èsser afichada."
