@@ -23,29 +23,30 @@
 # Tim Sabsch <tim@sabsch.com>, 2017, 2019.
 # Milo Ivir <mail@milotype.de>, 2019.
 # Philipp Kiemle <philipp.kiemle@gmail.com>, 2022.
+# Jürgen Benvenuti <gastornis@posteo.org>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2022-02-26 13:34+0000\n"
-"PO-Revision-Date: 2022-03-14 02:47+0100\n"
-"Last-Translator: Philipp Kiemle <philipp.kiemle@gmail.com>\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2023-01-28 13:00+0000\n"
+"PO-Revision-Date: 2023-01-28 21:52+0100\n"
+"Last-Translator: Jürgen Benvenuti <gastornis@posteo.org>\n"
+"Language-Team: German <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1.1\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view-application.c:124
 #: src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr "Schriften"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
+#: data/org.gnome.font-viewer.appdata.xml.in:7
 #: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Schriftarten Ihres Systems betrachten"
@@ -70,7 +71,7 @@ msgstr ""
 "ttf« oder auch in anderen Formaten. Schriftarten können nur zu Ihrer eigenen "
 "Verwendung oder für alle Benutzer eines Rechners installiert werden."
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21
+#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
 msgid "The GNOME Project"
 msgstr "Das GNOME-Projekt"
 
@@ -94,145 +95,11 @@ msgstr "GRÖSSE"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "SCHRIFTART-DATEI AUSGABE-DATEI"
 
-#: src/font-view-app-menu.ui:6
-msgid "About Fonts"
-msgstr "Info zu Schriften"
+#: src/font-view-application.c:79 src/font-view-window.c:750
+msgid "Could Not Display Font"
+msgstr "Schriftart konnte nicht angezeigt werden"
 
-#: src/font-view.c:205
-msgid "GNOME Fonts"
-msgstr "GNOME Schriften"
-
-#: src/font-view.c:212
-msgid "Show the application's version"
-msgstr "Die Version der Anwendung anzeigen"
-
-#. Translators, this string is used to display information about
-#. * a 'font variation axis'. The %s gets replaced with the name
-#. * of the axis, for example 'Width'. The three %g get replaced
-#. * with the minimum, maximum and default values for the axis.
-#.
-#: src/font-view.c:327
-#, c-format
-msgid "%s %g — %g, default %g"
-msgstr "%s %g – %g, Standard %g"
-
-#: src/font-view.c:378
-#, c-format
-msgid "Instance %d"
-msgstr "Instanz %d"
-
-#. Translators, this seperates the list of Layout
-#. * Features.
-#: src/font-view.c:418
-msgctxt "OpenType layout"
-msgid ", "
-msgstr ", "
-
-#: src/font-view.c:443
-msgid "Name"
-msgstr "Name"
-
-#: src/font-view.c:446
-msgid "Location"
-msgstr "Ort"
-
-#: src/font-view.c:449
-msgid "Style"
-msgstr "Stil"
-
-#: src/font-view.c:459
-msgid "Type"
-msgstr "Typ"
-
-#: src/font-view.c:525 src/font-view.c:551
-msgid "Version"
-msgstr "Version"
-
-#: src/font-view.c:529 src/font-view.c:556
-msgid "Copyright"
-msgstr "Copyright"
-
-#: src/font-view.c:533
-msgid "Description"
-msgstr "Beschreibung"
-
-#: src/font-view.c:537
-msgid "Manufacturer"
-msgstr "Hersteller"
-
-#: src/font-view.c:541
-msgid "Designer"
-msgstr "Designer"
-
-#: src/font-view.c:545
-msgid "License"
-msgstr "Lizenz"
-
-#: src/font-view.c:568
-msgid "Glyph Count"
-msgstr "Anzahl der Glyphen"
-
-#: src/font-view.c:570
-msgid "Color Glyphs"
-msgstr "Farbige Glyphen"
-
-#: src/font-view.c:571
-msgid "yes"
-msgstr "ja"
-
-#: src/font-view.c:571
-msgid "no"
-msgstr "nein"
-
-#: src/font-view.c:575
-msgid "Layout Features"
-msgstr "Layout-Funktionen"
-
-#: src/font-view.c:581
-msgid "Variation Axes"
-msgstr "Variations-Achsen"
-
-#: src/font-view.c:588
-msgid "Named Styles"
-msgstr "Bezeichnete Stile"
-
-#: src/font-view.c:600
-msgid "Failed"
-msgstr "Fehlgeschlagen"
-
-#: src/font-view.c:609
-msgid "Installed"
-msgstr "Installiert"
-
-#: src/font-view.c:614
-msgid "Installing"
-msgstr "Wird installiert"
-
-#: src/font-view.c:617 src/font-view.c:978
-msgid "Install"
-msgstr "Installieren"
-
-#: src/font-view.c:739
-msgid "This font could not be installed."
-msgstr "Diese Schriftart konnte nicht installiert werden."
-
-#: src/font-view.c:874
-msgid "This font could not be displayed."
-msgstr "Diese Schriftart kann nicht angezeigt werden."
-
-#: src/font-view.c:992
-msgid "Info"
-msgstr "Info"
-
-#: src/font-view.c:1008
-msgid "Back"
-msgstr "Zurück"
-
-#: src/font-view.c:1090
-msgid "All Fonts"
-msgstr "Alle Schriftarten"
-
-#: src/font-view.c:1170
+#: src/font-view-application.c:129
 msgid "translator-credits"
 msgstr ""
 "Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009, 2011, 2012.\n"
@@ -240,7 +107,150 @@ msgstr ""
 "Benjamin Steinwender <b@stbe.at>, 2014.\n"
 "Bernd Homuth <dev@hmt.im>, 2014.\n"
 "Tim Sabsch <tim@sabsch.com>, 2017, 2019.\n"
-"Milo Ivir <mail@milotype.de>, 2019"
+"Milo Ivir <mail@milotype.de>, 2019\n"
+"Jürgen Benvenuti <gastornis@posteo.org>, 2023."
+
+#: src/font-view-window.c:119
+msgid "Failed"
+msgstr "Fehlgeschlagen"
+
+#: src/font-view-window.c:127
+msgid "Installed"
+msgstr "Installiert"
+
+#: src/font-view-window.c:132
+msgid "Installing"
+msgstr "Wird installiert"
+
+#: src/font-view-window.c:135 src/font-view-window.ui:185
+msgid "Install"
+msgstr "Installieren"
+
+#. Translators, this string is used to display information about
+#. * a 'font variation axis'. The %s gets replaced with the name
+#. * of the axis, for example 'Width'. The three %g get replaced
+#. * with the minimum, maximum and default values for the axis.
+#.
+#: src/font-view-window.c:249
+#, c-format
+msgid "%s %g — %g, default %g"
+msgstr "%s %g – %g, Standard %g"
+
+#: src/font-view-window.c:304
+#, c-format
+msgid "Instance %d"
+msgstr "Instanz %d"
+
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view-window.c:342
+msgctxt "OpenType layout"
+msgid ", "
+msgstr ", "
+
+#: src/font-view-window.c:369
+msgid "Name"
+msgstr "Name"
+
+#: src/font-view-window.c:372
+msgid "Location"
+msgstr "Ort"
+
+#: src/font-view-window.c:375
+msgid "Style"
+msgstr "Stil"
+
+#: src/font-view-window.c:385
+msgid "Type"
+msgstr "Typ"
+
+#: src/font-view-window.c:451 src/font-view-window.c:477
+msgid "Version"
+msgstr "Version"
+
+#: src/font-view-window.c:455 src/font-view-window.c:482
+msgid "Copyright"
+msgstr "Copyright"
+
+#: src/font-view-window.c:459
+msgid "Description"
+msgstr "Beschreibung"
+
+#: src/font-view-window.c:463
+msgid "Manufacturer"
+msgstr "Hersteller"
+
+#: src/font-view-window.c:467
+msgid "Designer"
+msgstr "Designer"
+
+#: src/font-view-window.c:471
+msgid "License"
+msgstr "Lizenz"
+
+#: src/font-view-window.c:496
+msgid "Glyph Count"
+msgstr "Anzahl der Glyphen"
+
+#: src/font-view-window.c:498
+msgid "Color Glyphs"
+msgstr "Farbige Glyphen"
+
+#: src/font-view-window.c:499
+msgid "yes"
+msgstr "ja"
+
+#: src/font-view-window.c:499
+msgid "no"
+msgstr "nein"
+
+#: src/font-view-window.c:503
+msgid "Layout Features"
+msgstr "Layout-Funktionen"
+
+#: src/font-view-window.c:509
+msgid "Variation Axes"
+msgstr "Variations-Achsen"
+
+#: src/font-view-window.c:516
+msgid "Named Styles"
+msgstr "Bezeichnete Stile"
+
+#: src/font-view-window.c:558 src/font-view-window.c:670
+msgid "Could Not Install Font"
+msgstr "Schriftart konnte nicht installiert werden"
+
+#: src/font-view-window.ui:34
+msgid "All Fonts"
+msgstr "Alle Schriftarten"
+
+#: src/font-view-window.ui:40
+msgid "Search"
+msgstr "Suchen"
+
+#: src/font-view-window.ui:48
+msgid "About Fonts"
+msgstr "Info zu Schriften"
+
+#: src/font-view-window.ui:179
+msgid "Back"
+msgstr "Zurück"
+
+#: src/font-view-window.ui:191
+msgid "Info"
+msgstr "Info"
+
+#: src/font-view-window.ui:238
+msgid "_Close"
+msgstr "S_chließen"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "GNOME Schriften"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "Die Version der Anwendung anzeigen"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in.in:6
@@ -630,7 +640,7 @@ msgstr "Links-nach-rechts-Alternativen"
 #: src/open-type-layout.h:89
 msgctxt "OpenType layout"
 msgid "Left-to-right mirrored forms"
-msgstr "Gespiegelte links-nach-rechts-Formen"
+msgstr "Gespiegelte Links-nach-rechts-Formen"
 
 #: src/open-type-layout.h:90
 msgctxt "OpenType layout"
@@ -790,7 +800,7 @@ msgstr "Rechts-nach-links-Alternativen"
 #: src/open-type-layout.h:121
 msgctxt "OpenType layout"
 msgid "Right-to-left mirrored forms"
-msgstr "Gespiegelte Rechts-nach-links-Alternativen"
+msgstr "Gespiegelte Rechts-nach-links-Formen"
 
 #: src/open-type-layout.h:122
 msgctxt "OpenType layout"
@@ -1041,3 +1051,9 @@ msgstr "Vertikale Alternativen für Rotation"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Durchgestrichene Null"
+
+#~ msgid "This font could not be installed."
+#~ msgstr "Diese Schriftart konnte nicht installiert werden."
+
+#~ msgid "This font could not be displayed."
+#~ msgstr "Diese Schriftart kann nicht angezeigt werden."
