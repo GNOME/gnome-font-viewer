@@ -7,25 +7,26 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Gil 'Dolfin' Osher <dolfin@rpg.org.il>, 2003, 2005.
 # Yuval Tanny, 2005.
-# Yosef Or Boczko <yoseforb@gmail.com>, 2013-2022.
+# Yosef Or Boczko <yoseforb@gmail.com>, 2013-2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.HEAD.he\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2022-09-18 18:43+0000\n"
-"PO-Revision-Date: 2022-10-23 20:05+0300\n"
+"POT-Creation-Date: 2023-01-28 13:00+0000\n"
+"PO-Revision-Date: 2023-02-10 14:21+0200\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
-"Language-Team: Hebrew <yoseforb@gmail.com>\n"
+"Language-Team: Hebrew <>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Gtranslator 42.0\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n>2||n==0) ? 1 : 2\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? "
+"2 : 3)\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1167
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view-application.c:124
 #: src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr "גופנים"
@@ -54,7 +55,7 @@ msgstr ""
 "מציג הגופנים גם תומך בהתקנת קבצי גופן שהורדו בתבנית ‎.ttf‎ ותבניות נוספות. "
 "גופנים ניתנים להתקנה לשימושך בלבד או להיות זמינים לכל המשתמשים על המחשב."
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view.c:1169
+#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
 msgid "The GNOME Project"
 msgstr "מיזם GNOME"
 
@@ -78,150 +79,158 @@ msgstr "SIZE"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
-#: src/font-view.c:205
-msgid "GNOME Fonts"
-msgstr "מציג הגופנים של GNOME"
+#: src/font-view-application.c:79 src/font-view-window.c:750
+msgid "Could Not Display Font"
+msgstr "לא ניתן להציג את הגופן"
 
-#: src/font-view.c:212
-msgid "Show the application's version"
-msgstr "Show the application's version"
-
-#. Translators, this string is used to display information about
-#. * a 'font variation axis'. The %s gets replaced with the name
-#. * of the axis, for example 'Width'. The three %g get replaced
-#. * with the minimum, maximum and default values for the axis.
-#.
-#: src/font-view.c:327
-#, c-format
-msgid "%s %g — %g, default %g"
-msgstr "‫%s ‏%g‏ — %g, בררת מחדל %g"
-
-#: src/font-view.c:378
-#, c-format
-msgid "Instance %d"
-msgstr "מופע %d"
-
-#. Translators, this seperates the list of Layout
-#. * Features.
-#: src/font-view.c:418
-msgctxt "OpenType layout"
-msgid ", "
-msgstr ", "
-
-#: src/font-view.c:443
-msgid "Name"
-msgstr "שם"
-
-#: src/font-view.c:446
-msgid "Location"
-msgstr "מיקום"
-
-#: src/font-view.c:449
-msgid "Style"
-msgstr "סגנון"
-
-#: src/font-view.c:459
-msgid "Type"
-msgstr "סוג"
-
-#: src/font-view.c:525 src/font-view.c:551
-msgid "Version"
-msgstr "גרסה"
-
-#: src/font-view.c:529 src/font-view.c:556
-msgid "Copyright"
-msgstr "זכויות יוצרים"
-
-#: src/font-view.c:533
-msgid "Description"
-msgstr "תיאור"
-
-#: src/font-view.c:537
-msgid "Manufacturer"
-msgstr "יצרן"
-
-#: src/font-view.c:541
-msgid "Designer"
-msgstr "מעצב"
-
-#: src/font-view.c:545
-msgid "License"
-msgstr "רישיון"
-
-#: src/font-view.c:568
-msgid "Glyph Count"
-msgstr "מספר גליף"
-
-#: src/font-view.c:570
-msgid "Color Glyphs"
-msgstr "גליף צבע"
-
-#: src/font-view.c:571
-msgid "yes"
-msgstr "כן"
-
-#: src/font-view.c:571
-msgid "no"
-msgstr "לא"
-
-#: src/font-view.c:575
-msgid "Layout Features"
-msgstr "תכונות פריסה"
-
-#: src/font-view.c:581
-msgid "Variation Axes"
-msgstr "הגווני צירים"
-
-#: src/font-view.c:588
-msgid "Named Styles"
-msgstr "שם סגנון"
-
-#: src/font-view.c:600
-msgid "Failed"
-msgstr "נכשל"
-
-#: src/font-view.c:609
-msgid "Installed"
-msgstr "מותקן"
-
-#: src/font-view.c:614
-msgid "Installing"
-msgstr "מתקין"
-
-#: src/font-view.c:617 src/font-view.c:979
-msgid "Install"
-msgstr "התקנה"
-
-#: src/font-view.c:740
-msgid "This font could not be installed."
-msgstr "גופן זה לא ניתן להתקנה."
-
-#: src/font-view.c:875
-msgid "This font could not be displayed."
-msgstr "לא ניתן להציג גופן זה."
-
-#: src/font-view.c:993
-msgid "Info"
-msgstr "פרטים"
-
-#: src/font-view.c:1009
-msgid "Back"
-msgstr "חזרה"
-
-#: src/font-view.c:1091
-msgid "All Fonts"
-msgstr "כל הגופנים"
-
-#: src/font-view.c:1172
+#: src/font-view-application.c:129
 msgid "translator-credits"
 msgstr ""
 "ירון שהרבני <sh.yaron@gmail.com>\n"
 "יוסף אור בוצ׳קו <yoseforb@gmail.com>\n"
 "מיזם תרגום GNOME לעברית https://l10n.gnome.org/teams/he/"
 
-#: src/font-view.c:1238
+#: src/font-view-window.c:119
+msgid "Failed"
+msgstr "נכשל"
+
+#: src/font-view-window.c:127
+msgid "Installed"
+msgstr "מותקן"
+
+#: src/font-view-window.c:132
+msgid "Installing"
+msgstr "מתקין"
+
+#: src/font-view-window.c:135 src/font-view-window.ui:185
+msgid "Install"
+msgstr "התקנה"
+
+#. Translators, this string is used to display information about
+#. * a 'font variation axis'. The %s gets replaced with the name
+#. * of the axis, for example 'Width'. The three %g get replaced
+#. * with the minimum, maximum and default values for the axis.
+#.
+#: src/font-view-window.c:249
+#, c-format
+msgid "%s %g — %g, default %g"
+msgstr "‫%s ‏%g‏ — %g, בררת מחדל %g"
+
+#: src/font-view-window.c:304
+#, c-format
+msgid "Instance %d"
+msgstr "מופע %d"
+
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view-window.c:342
+msgctxt "OpenType layout"
+msgid ", "
+msgstr ", "
+
+#: src/font-view-window.c:369
+msgid "Name"
+msgstr "שם"
+
+#: src/font-view-window.c:372
+msgid "Location"
+msgstr "מיקום"
+
+#: src/font-view-window.c:375
+msgid "Style"
+msgstr "סגנון"
+
+#: src/font-view-window.c:385
+msgid "Type"
+msgstr "סוג"
+
+#: src/font-view-window.c:451 src/font-view-window.c:477
+msgid "Version"
+msgstr "גרסה"
+
+#: src/font-view-window.c:455 src/font-view-window.c:482
+msgid "Copyright"
+msgstr "זכויות יוצרים"
+
+#: src/font-view-window.c:459
+msgid "Description"
+msgstr "תיאור"
+
+#: src/font-view-window.c:463
+msgid "Manufacturer"
+msgstr "יצרן"
+
+#: src/font-view-window.c:467
+msgid "Designer"
+msgstr "מעצב"
+
+#: src/font-view-window.c:471
+msgid "License"
+msgstr "רישיון"
+
+#: src/font-view-window.c:496
+msgid "Glyph Count"
+msgstr "מספר גליף"
+
+#: src/font-view-window.c:498
+msgid "Color Glyphs"
+msgstr "גליף צבע"
+
+#: src/font-view-window.c:499
+msgid "yes"
+msgstr "כן"
+
+#: src/font-view-window.c:499
+msgid "no"
+msgstr "לא"
+
+#: src/font-view-window.c:503
+msgid "Layout Features"
+msgstr "תכונות פריסה"
+
+#: src/font-view-window.c:509
+msgid "Variation Axes"
+msgstr "הגווני צירים"
+
+#: src/font-view-window.c:516
+msgid "Named Styles"
+msgstr "שם סגנון"
+
+#: src/font-view-window.c:558 src/font-view-window.c:670
+msgid "Could Not Install Font"
+msgstr "לא ניתן להתקין את הגופן"
+
+#: src/font-view-window.ui:34
+msgid "All Fonts"
+msgstr "כל הגופנים"
+
+#: src/font-view-window.ui:40
+msgid "Search"
+msgstr "חיפוש"
+
+#: src/font-view-window.ui:48
 msgid "About Fonts"
 msgstr "על אודות מציג הגופנים"
+
+#: src/font-view-window.ui:179
+msgid "Back"
+msgstr "חזרה"
+
+#: src/font-view-window.ui:191
+msgid "Info"
+msgstr "פרטים"
+
+#: src/font-view-window.ui:238
+msgid "_Close"
+msgstr "_סגירה"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "מציג הגופנים של GNOME"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "Show the application's version"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in.in:6
@@ -261,7 +270,7 @@ msgstr ""
 #: src/open-type-layout.h:19
 msgctxt "OpenType layout"
 msgid "Below-base Forms"
-msgstr ""
+msgstr "צורות מתחת לבסיס"
 
 #: src/open-type-layout.h:20
 msgctxt "OpenType layout"
@@ -496,12 +505,12 @@ msgstr "צורות חצויות"
 #: src/open-type-layout.h:66
 msgctxt "OpenType layout"
 msgid "Halant Forms"
-msgstr ""
+msgstr "צורות הלנט"
 
 #: src/open-type-layout.h:67
 msgctxt "OpenType layout"
 msgid "Alternate Half Widths"
-msgstr ""
+msgstr "צורות חצויות חלופיות"
 
 #: src/open-type-layout.h:68
 msgctxt "OpenType layout"
@@ -671,12 +680,12 @@ msgstr "צורות בסגנון ישן"
 #: src/open-type-layout.h:101
 msgctxt "OpenType layout"
 msgid "Optical Bounds"
-msgstr ""
+msgstr "גבולות אופטיים"
 
 #: src/open-type-layout.h:102
 msgctxt "OpenType layout"
 msgid "Ordinals"
-msgstr ""
+msgstr "סודרים"
 
 #: src/open-type-layout.h:103
 msgctxt "OpenType layout"
@@ -976,7 +985,7 @@ msgstr ""
 #: src/open-type-layout.h:162
 msgctxt "OpenType layout"
 msgid "Vattu Variants"
-msgstr ""
+msgstr "הגוונים של ואטו"
 
 #: src/open-type-layout.h:163
 msgctxt "OpenType layout"
@@ -991,7 +1000,7 @@ msgstr ""
 #: src/open-type-layout.h:165
 msgctxt "OpenType layout"
 msgid "Vowel Jamo Forms"
-msgstr ""
+msgstr "צורות תנועות בג׳אמו"
 
 #: src/open-type-layout.h:166
 msgctxt "OpenType layout"
@@ -1023,6 +1032,12 @@ msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "אפס עם לוכסן"
 
+#~ msgid "This font could not be installed."
+#~ msgstr "גופן זה לא ניתן להתקנה."
+
+#~ msgid "This font could not be displayed."
+#~ msgstr "לא ניתן להציג גופן זה."
+
 #~ msgid "About"
 #~ msgstr "על אודות"
 
@@ -1039,9 +1054,6 @@ msgstr "אפס עם לוכסן"
 #~ "Run '%s --help' to see a full list of available command line options."
 #~ msgstr ""
 #~ "Run '%s --help' to see a full list of available command line options."
-
-#~ msgid "_Close"
-#~ msgstr "_סגירה"
 
 #~ msgid "Done"
 #~ msgstr "בוצע"
