@@ -54,6 +54,7 @@ struct _FontViewWindow
   AdwLeaflet *leaflet;
 
   /* Overview */
+  GtkToggleButton *search_button;
   GtkSearchBar *search_bar;
   GtkSearchEntry *search_entry;
   GtkGridView *grid_view;
@@ -766,6 +767,14 @@ font_view_window_show_overview (FontViewWindow *self)
   adw_leaflet_set_visible_child_name (self->leaflet, "overview");
 }
 
+static void
+action_toggle_search_cb (FontViewWindow *self)
+{
+
+ gtk_toggle_button_set_active (self->search_button,
+                               !gtk_toggle_button_get_active (self->search_button));
+}
+
 void
 font_view_window_show_preview (FontViewWindow *self,
                                GFile          *file,
@@ -840,6 +849,7 @@ font_view_window_class_init (FontViewWindowClass *klass)
 
   gtk_widget_class_bind_template_child (widget_class, FontViewWindow, leaflet);
   gtk_widget_class_bind_template_child (widget_class, FontViewWindow, search_bar);
+  gtk_widget_class_bind_template_child (widget_class, FontViewWindow, search_button);
   gtk_widget_class_bind_template_child (widget_class, FontViewWindow, search_entry);
   gtk_widget_class_bind_template_child (widget_class, FontViewWindow, grid_view);
   gtk_widget_class_bind_template_child (widget_class, FontViewWindow, font_title);
@@ -856,11 +866,13 @@ font_view_window_class_init (FontViewWindowClass *klass)
   gtk_widget_class_bind_template_callback (widget_class, font_widget_loaded_cb);
   gtk_widget_class_bind_template_callback (widget_class, view_child_activated_cb);
 
+  gtk_widget_class_bind_template_callback (widget_class, action_toggle_search_cb);
   gtk_widget_class_bind_template_callback (widget_class, font_attribute_closure);
   gtk_widget_class_bind_template_callback (widget_class, font_name_closure);
   gtk_widget_class_bind_template_callback (widget_class, preview_visible_child_closure);
 
   gtk_widget_class_install_action (widget_class, "win.back", NULL, action_overview_cb);
+  gtk_widget_class_install_action (widget_class, "win.toggle-search", NULL, action_toggle_search_cb);
   gtk_widget_class_install_action (widget_class, "win.install-font", NULL, action_install_font_cb);
 }
 
