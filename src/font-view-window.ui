@@ -56,7 +56,9 @@
                     <property name="child">
                       <object class="AdwClamp">
                         <property name="child">
-                          <object class="GtkSearchEntry" id="search_entry"/>
+                          <object class="GtkSearchEntry" id="search_entry">
+                            <property name="placeholder-text" translatable="yes">Search fonts</property>
+                          </object>
                         </property>
                       </object>
                     </property>
