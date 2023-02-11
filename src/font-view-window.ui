@@ -187,12 +187,14 @@
                         <property name="label" translatable="yes">_Install</property>
                         <property name="use-underline">True</property>
                         <property name="action-name">win.install-font</property>
+                        <property name="tooltip-text" translatable="yes">Install Font</property>
                       </object>
                     </child>
                     <child type="end">
                       <object class="GtkToggleButton" id="info_button">
                         <property name="label" translatable="yes">I_nfo</property>
                         <property name="use-underline">True</property>
+                        <property name="tooltip-text" translatable="yes">Font Details</property>
                       </object>
                     </child>
                   </object>
