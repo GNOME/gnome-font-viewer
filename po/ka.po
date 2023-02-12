@@ -1,25 +1,25 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Ekaterine Papava <papava.e@gtu.ge>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2022-07-08 17:58+0000\n"
-"PO-Revision-Date: 2022-07-23 22:15+0200\n"
-"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"POT-Creation-Date: 2023-02-11 23:28+0000\n"
+"PO-Revision-Date: 2023-02-12 09:42+0100\n"
+"Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
 "Language-Team: \n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view-application.c:124
 #: src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr "ფონტები"
@@ -43,7 +43,7 @@ msgid ""
 "all users on the computer."
 msgstr ""
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view.c:1168
+#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
 msgid "The GNOME Project"
 msgstr "პროექტი „GNOME“"
 
@@ -67,147 +67,171 @@ msgstr "SIZE"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
-#: src/font-view-app-menu.ui:6
-msgid "About Fonts"
-msgstr "Fonts-ის შესახებ"
+#: src/font-view-application.c:79 src/font-view-window.c:750
+msgid "Could Not Display Font"
+msgstr "ფონტის ჩვენების შეცდომა"
 
-#: src/font-view.c:205
-msgid "GNOME Fonts"
-msgstr "GNOME Fonts"
+#: src/font-view-application.c:129
+msgid "translator-credits"
+msgstr "თემური დოღონაძე"
 
-#: src/font-view.c:212
-msgid "Show the application's version"
-msgstr "აპლიკაციის ვერსიის ჩვენება"
+#: src/font-view-window.c:119
+msgid "Failed"
+msgstr "წარუმატებელი"
+
+#: src/font-view-window.c:127
+msgid "Installed"
+msgstr "ჩადგმულია"
+
+#: src/font-view-window.c:132
+msgid "Installing"
+msgstr "დაყენება"
+
+#: src/font-view-window.c:135
+msgid "Install"
+msgstr "დაყენება"
 
 #. Translators, this string is used to display information about
 #. * a 'font variation axis'. The %s gets replaced with the name
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:327
+#: src/font-view-window.c:249
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, ნაგულისხმები %g"
 
-#: src/font-view.c:378
+#: src/font-view-window.c:304
 #, c-format
 msgid "Instance %d"
 msgstr "ასლი %d"
 
 #. Translators, this seperates the list of Layout
 #. * Features.
-#: src/font-view.c:418
+#: src/font-view-window.c:342
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:443
+#: src/font-view-window.c:369
 msgid "Name"
 msgstr "სახელი"
 
-#: src/font-view.c:446
+#: src/font-view-window.c:372
 msgid "Location"
 msgstr "მდებარეობა"
 
-#: src/font-view.c:449
+#: src/font-view-window.c:375
 msgid "Style"
 msgstr "სტილი"
 
-#: src/font-view.c:459
+#: src/font-view-window.c:385
 msgid "Type"
 msgstr "ტიპი"
 
-#: src/font-view.c:525 src/font-view.c:551
+#: src/font-view-window.c:451 src/font-view-window.c:477
 msgid "Version"
 msgstr "ვერსია"
 
-#: src/font-view.c:529 src/font-view.c:556
+#: src/font-view-window.c:455 src/font-view-window.c:482
 msgid "Copyright"
 msgstr "საავტორო უფლებები"
 
-#: src/font-view.c:533
+#: src/font-view-window.c:459
 msgid "Description"
 msgstr "აღწერა"
 
-#: src/font-view.c:537
+#: src/font-view-window.c:463
 msgid "Manufacturer"
 msgstr "მწარმოებელი"
 
-#: src/font-view.c:541
+#: src/font-view-window.c:467
 msgid "Designer"
 msgstr "დიზაინერი"
 
-#: src/font-view.c:545
+#: src/font-view-window.c:471
 msgid "License"
 msgstr "ლიცენზია"
 
-#: src/font-view.c:568
+#: src/font-view-window.c:496
 msgid "Glyph Count"
 msgstr "გლიფების რაოდენობა"
 
-#: src/font-view.c:570
+#: src/font-view-window.c:498
 msgid "Color Glyphs"
 msgstr "ფერადი გლიფები"
 
-#: src/font-view.c:571
+#: src/font-view-window.c:499
 msgid "yes"
 msgstr "დიახ"
 
-#: src/font-view.c:571
+#: src/font-view-window.c:499
 msgid "no"
 msgstr "არა"
 
-#: src/font-view.c:575
+#: src/font-view-window.c:503
 msgid "Layout Features"
 msgstr "განლაგების თავისებურებები"
 
-#: src/font-view.c:581
+#: src/font-view-window.c:509
 msgid "Variation Axes"
 msgstr "ვარიაციული ღერძები"
 
-#: src/font-view.c:588
+#: src/font-view-window.c:516
 msgid "Named Styles"
 msgstr "სახელიან სტილები"
 
-#: src/font-view.c:600
-msgid "Failed"
-msgstr "წარუმატებელი"
+#: src/font-view-window.c:558 src/font-view-window.c:670
+msgid "Could Not Install Font"
+msgstr "ფონტის დაყენების შეცდომა"
 
-#: src/font-view.c:609
-msgid "Installed"
-msgstr "ჩადგმულია"
-
-#: src/font-view.c:614
-msgid "Installing"
-msgstr "დაყენება"
-
-#: src/font-view.c:617 src/font-view.c:978
-msgid "Install"
-msgstr "დაყენება"
-
-#: src/font-view.c:739
-msgid "This font could not be installed."
-msgstr "ამ ფონტის დაყენება შეუძლებელია."
-
-#: src/font-view.c:874
-msgid "This font could not be displayed."
-msgstr "ამ ფონტის ჩვენება შეუძლებელია."
-
-#: src/font-view.c:992
-msgid "Info"
-msgstr "ინფორმაცია"
-
-#: src/font-view.c:1008
-msgid "Back"
-msgstr "უკან"
-
-#: src/font-view.c:1090
+#: src/font-view-window.ui:34
 msgid "All Fonts"
 msgstr "ყველა ფონტი"
 
-#: src/font-view.c:1171
-msgid "translator-credits"
-msgstr "თემური დოღონაძე"
+#: src/font-view-window.ui:40
+msgid "Search"
+msgstr "ძებნა"
+
+#: src/font-view-window.ui:48
+msgid "About Fonts"
+msgstr "Fonts-ის შესახებ"
+
+#: src/font-view-window.ui:60
+msgid "Search fonts"
+msgstr "ფონტების ძებნა"
+
+#: src/font-view-window.ui:181
+msgid "Back"
+msgstr "უკან"
+
+#: src/font-view-window.ui:187
+msgid "_Install"
+msgstr "_დაყენება"
+
+#: src/font-view-window.ui:190
+msgid "Install Font"
+msgstr "ფონტის დაყენება"
+
+#: src/font-view-window.ui:195
+msgid "I_nfo"
+msgstr "ი_ნფო"
+
+#: src/font-view-window.ui:197
+msgid "Font Details"
+msgstr "ფონტის დეტალები"
+
+#: src/font-view-window.ui:244
+msgid "_Close"
+msgstr "დახურვა"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "GNOME Fonts"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "აპლიკაციის ვერსიის ჩვენება"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in.in:6
@@ -642,12 +666,12 @@ msgstr ""
 #: src/open-type-layout.h:98
 msgctxt "OpenType layout"
 msgid "Nukta Forms"
-msgstr ""
+msgstr "ნუქტას ფორმები"
 
 #: src/open-type-layout.h:99
 msgctxt "OpenType layout"
 msgid "Numerators"
-msgstr ""
+msgstr "ნუმერატორები"
 
 #: src/open-type-layout.h:100
 msgctxt "OpenType layout"
@@ -667,7 +691,7 @@ msgstr ""
 #: src/open-type-layout.h:103
 msgctxt "OpenType layout"
 msgid "Ornaments"
-msgstr ""
+msgstr "ორნამენტები"
 
 #: src/open-type-layout.h:104
 msgctxt "OpenType layout"
@@ -1008,3 +1032,12 @@ msgstr ""
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr ""
+
+#~ msgid "This font could not be installed."
+#~ msgstr "ამ ფონტის დაყენება შეუძლებელია."
+
+#~ msgid "This font could not be displayed."
+#~ msgstr "ამ ფონტის ჩვენება შეუძლებელია."
+
+#~ msgid "Info"
+#~ msgstr "ინფორმაცია"
