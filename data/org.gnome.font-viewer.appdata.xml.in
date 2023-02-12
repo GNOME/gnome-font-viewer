@@ -169,4 +169,12 @@
     </release>
   </releases>
   <translation type="gettext">gnome-font-viewer</translation>
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>touch</control>
+  </recommends>
+  <requires>
+    <display_length>360</display_length>
+  </requires>
 </component>
