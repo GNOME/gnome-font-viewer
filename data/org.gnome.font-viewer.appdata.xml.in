@@ -37,6 +37,31 @@
   </kudos>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="44~beta" date="2023-02-11">
+      <description>
+        <p>Characters 44.beta comes with general consistency improvements to the application:</p>
+        <ul>
+          <li>The app now provides standard shortcuts like Ctrl+Q and Ctrl+F</li>
+          <li>New widgetry allows for navigation via the back mouse button, alt+arrows, and touchscreen swipes</li>
+          <li>Various buttons can now be used with mnemonics</li>
+        </ul>
+        <p>This version brings translation updates for the following locales:</p>
+        <ul>
+          <li>Belarusian (Vasil Pupkin)</li>
+          <li>Galician (Fran Dieguez)</li>
+          <li>German (Jürgen Benvenuti)</li>
+          <li>Hebrew (Yosef Or Boczko)</li>
+          <li>Indonesian (Kukuh Syafaat)</li>
+          <li>Interlingue (Olga Smirnova)</li>
+          <li>Nepali (Pawan Chitrakar)</li>
+          <li>Occitan (post 1500) (Quentin PAGÈS)</li>
+          <li>Portuguese (Hugo Carvalho)</li>
+          <li>Russian (Aleksandr Melman)</li>
+          <li>Turkish (Sabri Ünal)</li>
+          <li>Ukrainian (Yuri Chornoivan)</li>
+        </ul>
+      </description>
+    </release>
     <release version="43.0" date="2022-09-18">
       <description>
       <p>Fonts 43.0 comes with a new "About" button in the main window and the following translation updates:</p>

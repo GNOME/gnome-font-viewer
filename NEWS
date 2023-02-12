@@ -1,3 +1,25 @@
+GNOME Font Viewer - 44.beta
+-------------------------------------------------------------------------------
+Characters 44.beta comes with general consistency improvements to the application:
+
+* The app now provides standard shortcuts like Ctrl+Q and Ctrl+F
+* New widgetry allows for navigation via the back mouse button, alt+arrows, and touchscreen swipes
+* Various buttons can now be used with mnemonics
+
+This version brings translation updates for the following locales:
+ * Belarusian (Vasil Pupkin)
+ * Galician (Fran Dieguez)
+ * German (Jürgen Benvenuti)
+ * Hebrew (Yosef Or Boczko)
+ * Indonesian (Kukuh Syafaat)
+ * Interlingue (Olga Smirnova)
+ * Nepali (Pawan Chitrakar)
+ * Occitan (post 1500) (Quentin PAGÈS)
+ * Portuguese (Hugo Carvalho)
+ * Russian (Aleksandr Melman)
+ * Turkish (Sabri Ünal)
+ * Ukrainian (Yuri Chornoivan)
+
 GNOME Font Viewer - 43.0
 -------------------------------------------------------------------------------
 Fonts 43.beta comes with a new "About" button in the main window and the
