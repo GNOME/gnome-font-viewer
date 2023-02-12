@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues"
 "\n"
-"POT-Creation-Date: 2023-01-28 13:00+0000\n"
-"PO-Revision-Date: 2023-01-28 21:06+0200\n"
+"POT-Creation-Date: 2023-02-11 23:28+0000\n"
+"PO-Revision-Date: 2023-02-12 20:40+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -99,7 +99,7 @@ msgstr "Встановлено"
 msgid "Installing"
 msgstr "Встановлення"
 
-#: src/font-view-window.c:135 src/font-view-window.ui:185
+#: src/font-view-window.c:135
 msgid "Install"
 msgstr "Встановити"
 
@@ -209,15 +209,34 @@ msgstr "Пошук"
 msgid "About Fonts"
 msgstr "Про Шрифти"
 
-#: src/font-view-window.ui:179
+#: src/font-view-window.ui:60
+#| msgid "Search"
+msgid "Search fonts"
+msgstr "Шукати шрифти"
+
+#: src/font-view-window.ui:181
 msgid "Back"
 msgstr "Назад"
 
-#: src/font-view-window.ui:191
-msgid "Info"
-msgstr "Інформація"
+#: src/font-view-window.ui:187
+#| msgid "Install"
+msgid "_Install"
+msgstr "_Встановити"
 
-#: src/font-view-window.ui:238
+#: src/font-view-window.ui:190
+#| msgid "Install"
+msgid "Install Font"
+msgstr "Встановити шрифт"
+
+#: src/font-view-window.ui:195
+msgid "I_nfo"
+msgstr "_Інформація"
+
+#: src/font-view-window.ui:197
+msgid "Font Details"
+msgstr "Подробиці щодо шрифту"
+
+#: src/font-view-window.ui:244
 msgid "_Close"
 msgstr "_Закрити"
 
@@ -1028,6 +1047,9 @@ msgstr "Вертикальні альтернативи для обертанн�
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Перекреслений нуль"
+
+#~ msgid "Info"
+#~ msgstr "Інформація"
 
 #~ msgid "This font could not be installed."
 #~ msgstr "Цей шрифт не вдалося встановити."
