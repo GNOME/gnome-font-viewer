@@ -20,8 +20,8 @@ msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2023-01-28 13:00+0000\n"
-"PO-Revision-Date: 2023-01-28 17:42+0300\n"
+"POT-Creation-Date: 2023-02-12 00:29+0000\n"
+"PO-Revision-Date: 2023-02-12 05:31+0300\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
@@ -86,7 +86,7 @@ msgstr "BOYUT"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "YAZI-TİPİ-DOSYASI ÇIKTI-DOSYASI"
 
-#: src/font-view-application.c:79 src/font-view-window.c:750
+#: src/font-view-application.c:79 src/font-view-window.c:751
 msgid "Could Not Display Font"
 msgstr "Yazı Tipi Gösterilemedi"
 
@@ -98,19 +98,19 @@ msgstr ""
 "Muhammet Kara <muhammetk@gmail.com>\n"
 "Emin Tufan Çetin <etcetin@gmail.com>"
 
-#: src/font-view-window.c:119
+#: src/font-view-window.c:120
 msgid "Failed"
 msgstr "Başarısız"
 
-#: src/font-view-window.c:127
+#: src/font-view-window.c:128
 msgid "Installed"
 msgstr "Kuruldu"
 
-#: src/font-view-window.c:132
+#: src/font-view-window.c:133
 msgid "Installing"
 msgstr "Kuruluyor"
 
-#: src/font-view-window.c:135 src/font-view-window.ui:185
+#: src/font-view-window.c:136
 msgid "Install"
 msgstr "Kur"
 
@@ -119,116 +119,132 @@ msgstr "Kur"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view-window.c:249
+#: src/font-view-window.c:250
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, öntanımlı %g"
 
-#: src/font-view-window.c:304
+#: src/font-view-window.c:305
 #, c-format
 msgid "Instance %d"
 msgstr "Oluşum %d"
 
 #. Translators, this seperates the list of Layout
 #. * Features.
-#: src/font-view-window.c:342
+#: src/font-view-window.c:343
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view-window.c:369
+#: src/font-view-window.c:370
 msgid "Name"
 msgstr "Ad"
 
-#: src/font-view-window.c:372
+#: src/font-view-window.c:373
 msgid "Location"
 msgstr "Konum"
 
-#: src/font-view-window.c:375
+#: src/font-view-window.c:376
 msgid "Style"
 msgstr "Biçem"
 
-#: src/font-view-window.c:385
+#: src/font-view-window.c:386
 msgid "Type"
 msgstr "Tür"
 
-#: src/font-view-window.c:451 src/font-view-window.c:477
+#: src/font-view-window.c:452 src/font-view-window.c:478
 msgid "Version"
 msgstr "Sürüm"
 
-#: src/font-view-window.c:455 src/font-view-window.c:482
+#: src/font-view-window.c:456 src/font-view-window.c:483
 msgid "Copyright"
 msgstr "Telif Hakkı"
 
-#: src/font-view-window.c:459
+#: src/font-view-window.c:460
 msgid "Description"
 msgstr "Açıklama"
 
-#: src/font-view-window.c:463
+#: src/font-view-window.c:464
 msgid "Manufacturer"
 msgstr "Üretici"
 
-#: src/font-view-window.c:467
+#: src/font-view-window.c:468
 msgid "Designer"
 msgstr "Tasarımcı"
 
-#: src/font-view-window.c:471
+#: src/font-view-window.c:472
 msgid "License"
 msgstr "Lisans"
 
-#: src/font-view-window.c:496
+#: src/font-view-window.c:497
 msgid "Glyph Count"
 msgstr "Glif Sayısı"
 
-#: src/font-view-window.c:498
+#: src/font-view-window.c:499
 msgid "Color Glyphs"
 msgstr "Renk Glifleri"
 
-#: src/font-view-window.c:499
+#: src/font-view-window.c:500
 msgid "yes"
 msgstr "evet"
 
-#: src/font-view-window.c:499
+#: src/font-view-window.c:500
 msgid "no"
 msgstr "hayır"
 
-#: src/font-view-window.c:503
+#: src/font-view-window.c:504
 msgid "Layout Features"
 msgstr "Düzen Özellikleri"
 
-#: src/font-view-window.c:509
+#: src/font-view-window.c:510
 msgid "Variation Axes"
 msgstr "Değişim Eksenleri"
 
-#: src/font-view-window.c:516
+#: src/font-view-window.c:517
 msgid "Named Styles"
 msgstr "Adlandırılmış Biçemler"
 
-#: src/font-view-window.c:558 src/font-view-window.c:670
+#: src/font-view-window.c:559 src/font-view-window.c:671
 msgid "Could Not Install Font"
 msgstr "Yazı Tipi Kurulamadı"
 
-#: src/font-view-window.ui:34
+#: src/font-view-window.ui:40
 msgid "All Fonts"
 msgstr "Tüm Yazı Tipleri"
 
-#: src/font-view-window.ui:40
+#: src/font-view-window.ui:46
 msgid "Search"
 msgstr "Ara"
 
-#: src/font-view-window.ui:48
+#: src/font-view-window.ui:54
 msgid "About Fonts"
 msgstr "Yazı Tipleri Hakkında"
 
-#: src/font-view-window.ui:179
+#: src/font-view-window.ui:66
+msgid "Search fonts"
+msgstr "Yazı Tipi Ara"
+
+#: src/font-view-window.ui:187
 msgid "Back"
 msgstr "Geri"
 
-#: src/font-view-window.ui:191
-msgid "Info"
-msgstr "Bilgi"
+#: src/font-view-window.ui:193
+msgid "_Install"
+msgstr "_Kur"
 
-#: src/font-view-window.ui:238
+#: src/font-view-window.ui:196
+msgid "Install Font"
+msgstr "Yazı Tipi Kur"
+
+#: src/font-view-window.ui:201
+msgid "I_nfo"
+msgstr "B_ilgi"
+
+#: src/font-view-window.ui:203
+msgid "Font Details"
+msgstr "Yazı Tipi Ayrıntıları"
+
+#: src/font-view-window.ui:250
 msgid "_Close"
 msgstr "_Kapat"
 
@@ -1039,3 +1055,6 @@ msgstr "Dönme için Dikey Alternatifler"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Eğik Çizgili Sıfır"
+
+#~ msgid "Info"
+#~ msgstr "Bilgi"
