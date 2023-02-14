@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: 3.8\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2023-02-11 18:55+0000\n"
-"PO-Revision-Date: 2023-02-11 22:52+0000\n"
+"POT-Creation-Date: 2023-02-11 23:28+0000\n"
+"PO-Revision-Date: 2023-02-14 11:41+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese (https://l10n.gnome.org/teams/pt/)\n"
 "Language: pt\n"
@@ -106,7 +106,7 @@ msgstr "Instalada"
 msgid "Installing"
 msgstr "A instalar"
 
-#: src/font-view-window.c:135 src/font-view-window.ui:187
+#: src/font-view-window.c:135
 msgid "Install"
 msgstr "Instalar"
 
@@ -224,11 +224,23 @@ msgstr "Procurar fontes"
 msgid "Back"
 msgstr "Recuar"
 
-#: src/font-view-window.ui:193
-msgid "Info"
-msgstr "Informação"
+#: src/font-view-window.ui:187
+msgid "_Install"
+msgstr "_Instalar"
 
-#: src/font-view-window.ui:240
+#: src/font-view-window.ui:190
+msgid "Install Font"
+msgstr "Instalar fonte"
+
+#: src/font-view-window.ui:195
+msgid "I_nfo"
+msgstr "I_nformação"
+
+#: src/font-view-window.ui:197
+msgid "Font Details"
+msgstr "Detalhes da fonte"
+
+#: src/font-view-window.ui:244
 msgid "_Close"
 msgstr "_Fechar"
 
@@ -1039,6 +1051,9 @@ msgstr "Alternativas verticais para rotação"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Zero traçado"
+
+#~ msgid "Info"
+#~ msgstr "Informação"
 
 #~ msgid "This font could not be installed."
 #~ msgstr "Não foi possível instalar esta fonte."
