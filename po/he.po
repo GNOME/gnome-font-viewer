@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils.HEAD.he\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2023-01-28 13:00+0000\n"
-"PO-Revision-Date: 2023-02-10 14:21+0200\n"
+"POT-Creation-Date: 2023-02-11 23:28+0000\n"
+"PO-Revision-Date: 2023-02-18 20:14+0200\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
 "Language-Team: Hebrew <>\n"
 "Language: he\n"
@@ -102,7 +102,7 @@ msgstr "מותקן"
 msgid "Installing"
 msgstr "מתקין"
 
-#: src/font-view-window.c:135 src/font-view-window.ui:185
+#: src/font-view-window.c:135
 msgid "Install"
 msgstr "התקנה"
 
@@ -212,15 +212,31 @@ msgstr "חיפוש"
 msgid "About Fonts"
 msgstr "על אודות מציג הגופנים"
 
-#: src/font-view-window.ui:179
+#: src/font-view-window.ui:60
+msgid "Search fonts"
+msgstr "חיפוש גופנים"
+
+#: src/font-view-window.ui:181
 msgid "Back"
 msgstr "חזרה"
 
-#: src/font-view-window.ui:191
-msgid "Info"
-msgstr "פרטים"
+#: src/font-view-window.ui:187
+msgid "_Install"
+msgstr "_התקנה"
 
-#: src/font-view-window.ui:238
+#: src/font-view-window.ui:190
+msgid "Install Font"
+msgstr "התקנת גופן"
+
+#: src/font-view-window.ui:195
+msgid "I_nfo"
+msgstr "_מידע"
+
+#: src/font-view-window.ui:197
+msgid "Font Details"
+msgstr "פרטי גופן"
+
+#: src/font-view-window.ui:244
 msgid "_Close"
 msgstr "_סגירה"
 
@@ -1031,6 +1047,9 @@ msgstr "חלופות אנכיות לסיבוב"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "אפס עם לוכסן"
+
+#~ msgid "Info"
+#~ msgstr "פרטים"
 
 #~ msgid "This font could not be installed."
 #~ msgstr "גופן זה לא ניתן להתקנה."
