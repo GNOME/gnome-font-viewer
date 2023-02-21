@@ -11,31 +11,30 @@
 # Manuel de Vega Barreiro <barreiro@arrakis.es> 2000-2001.
 # Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009, 2010, 2011.
 # Rodrigo <rodhos92@gmail.com>, 2018.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011-2022.
-# Daniel Mustieles García <daniel.mustieles@gmail.com>, 2022.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2022-2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2022-02-26 13:34+0000\n"
-"PO-Revision-Date: 2022-03-03 11:13+0100\n"
-"Last-Translator: Daniel Mustieles García <daniel.mustieles@gmail.com>\n"
+"POT-Creation-Date: 2023-02-11 23:28+0000\n"
+"PO-Revision-Date: 2023-02-21 11:47+0100\n"
+"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 41.0\n"
+"X-Generator: Gtranslator 42.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view-application.c:124
 #: src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr "Tipografías"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
+#: data/org.gnome.font-viewer.appdata.xml.in:7
 #: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Ver las tipografías de su sistema"
@@ -61,7 +60,7 @@ msgstr ""
 "uso personal o para que estén disponibles para todos los usuarios del "
 "sistema."
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21
+#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
 msgid "The GNOME Project"
 msgstr "El Proyecto GNOME"
 
@@ -85,148 +84,177 @@ msgstr "TAMAÑO"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ARCHIVO-DE-TIPOGRAFÍA ARCHIVO-DE-SALIDA"
 
-#: src/font-view-app-menu.ui:6
-msgid "About Fonts"
-msgstr "Acerca de Tipografías"
+#: src/font-view-application.c:79 src/font-view-window.c:750
+msgid "Could Not Display Font"
+msgstr "No se pudo mostrar la tipografía"
 
-#: src/font-view.c:205
-msgid "GNOME Fonts"
-msgstr "Tipografías de GNOME"
+#: src/font-view-application.c:129
+msgid "translator-credits"
+msgstr "Daniel Mustieles <daniel.mustieles@gmail.com>, 2012-2023"
 
-#: src/font-view.c:212
-msgid "Show the application's version"
-msgstr "Mostrar la versión de la aplicación"
+#: src/font-view-window.c:119
+msgid "Failed"
+msgstr "Falló"
+
+#: src/font-view-window.c:127
+msgid "Installed"
+msgstr "Instalado"
+
+#: src/font-view-window.c:132
+msgid "Installing"
+msgstr "Instalando"
+
+#: src/font-view-window.c:135
+msgid "Install"
+msgstr "Instalar"
 
 #. Translators, this string is used to display information about
 #. * a 'font variation axis'. The %s gets replaced with the name
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:327
+#: src/font-view-window.c:249
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, predeterminada %g"
 
-#: src/font-view.c:378
+#: src/font-view-window.c:304
 #, c-format
 msgid "Instance %d"
 msgstr "Instancia %d"
 
 #. Translators, this seperates the list of Layout
 #. * Features.
-#: src/font-view.c:418
+#: src/font-view-window.c:342
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:443
+#: src/font-view-window.c:369
 msgid "Name"
 msgstr "Nombre"
 
-#: src/font-view.c:446
+#: src/font-view-window.c:372
 msgid "Location"
 msgstr "Ubicación"
 
-#: src/font-view.c:449
+#: src/font-view-window.c:375
 msgid "Style"
 msgstr "Estilo"
 
-#: src/font-view.c:459
+#: src/font-view-window.c:385
 msgid "Type"
 msgstr "Tipo"
 
-#: src/font-view.c:525 src/font-view.c:551
+#: src/font-view-window.c:451 src/font-view-window.c:477
 msgid "Version"
 msgstr "Version"
 
-#: src/font-view.c:529 src/font-view.c:556
+#: src/font-view-window.c:455 src/font-view-window.c:482
 msgid "Copyright"
 msgstr "Copyright"
 
-#: src/font-view.c:533
+#: src/font-view-window.c:459
 msgid "Description"
 msgstr "Descripción"
 
-#: src/font-view.c:537
+#: src/font-view-window.c:463
 msgid "Manufacturer"
 msgstr "Fabricante"
 
-#: src/font-view.c:541
+#: src/font-view-window.c:467
 msgid "Designer"
 msgstr "Diseñador"
 
-#: src/font-view.c:545
+#: src/font-view-window.c:471
 msgid "License"
 msgstr "Licencia"
 
-#: src/font-view.c:568
+#: src/font-view-window.c:496
 msgid "Glyph Count"
 msgstr "Contados de glifos"
 
-#: src/font-view.c:570
+#: src/font-view-window.c:498
 msgid "Color Glyphs"
 msgstr "Glifos de color"
 
-#: src/font-view.c:571
+#: src/font-view-window.c:499
 msgid "yes"
 msgstr "sí"
 
-#: src/font-view.c:571
+#: src/font-view-window.c:499
 msgid "no"
 msgstr "no"
 
-#: src/font-view.c:575
+#: src/font-view-window.c:503
 msgid "Layout Features"
 msgstr "Características de la distribución"
 
-#: src/font-view.c:581
+#: src/font-view-window.c:509
 msgid "Variation Axes"
 msgstr "Ejes de variación"
 
-#: src/font-view.c:588
+#: src/font-view-window.c:516
 msgid "Named Styles"
 msgstr "Estilos con nombre"
 
-#: src/font-view.c:600
-msgid "Failed"
-msgstr "Falló"
+#: src/font-view-window.c:558 src/font-view-window.c:670
+msgid "Could Not Install Font"
+msgstr ""
 
-#: src/font-view.c:609
-msgid "Installed"
-msgstr "Instalado"
-
-#: src/font-view.c:614
-#| msgid "Installing…"
-msgid "Installing"
-msgstr "Instalando"
-
-#: src/font-view.c:617 src/font-view.c:978
-msgid "Install"
-msgstr "Instalar"
-
-#: src/font-view.c:739
-msgid "This font could not be installed."
-msgstr "No se pudo instalar esta tipografía."
-
-#: src/font-view.c:874
-msgid "This font could not be displayed."
-msgstr "No se pudo mostrar esta tipografía."
-
-#: src/font-view.c:992
-msgid "Info"
-msgstr "Información"
-
-#: src/font-view.c:1008
-msgid "Back"
-msgstr "Atrás"
-
-#: src/font-view.c:1090
+#: src/font-view-window.ui:34
 msgid "All Fonts"
 msgstr "Todas las tipografías"
 
-#: src/font-view.c:1170
-msgid "translator-credits"
-msgstr "Daniel Mustieles <daniel.mustieles@gmail.com>, 2012"
+#: src/font-view-window.ui:40
+msgid "Search"
+msgstr ""
+
+#: src/font-view-window.ui:48
+msgid "About Fonts"
+msgstr "Acerca de Tipografías"
+
+#: src/font-view-window.ui:60
+msgid "Search fonts"
+msgstr ""
+
+#: src/font-view-window.ui:181
+msgid "Back"
+msgstr "Atrás"
+
+#: src/font-view-window.ui:187
+#, fuzzy
+#| msgid "Install"
+msgid "_Install"
+msgstr "Instalar"
+
+#: src/font-view-window.ui:190
+#, fuzzy
+#| msgid "Install"
+msgid "Install Font"
+msgstr "Instalar"
+
+#: src/font-view-window.ui:195
+msgid "I_nfo"
+msgstr ""
+
+#: src/font-view-window.ui:197
+#, fuzzy
+#| msgid "Details"
+msgid "Font Details"
+msgstr "Detalles"
+
+#: src/font-view-window.ui:244
+msgid "_Close"
+msgstr "_Cerrar"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "Tipografías de GNOME"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "Mostrar la versión de la aplicación"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in.in:6
@@ -1034,6 +1062,15 @@ msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Cero con barra"
 
+#~ msgid "This font could not be installed."
+#~ msgstr "No se pudo instalar esta tipografía."
+
+#~ msgid "This font could not be displayed."
+#~ msgstr "No se pudo mostrar esta tipografía."
+
+#~ msgid "Info"
+#~ msgstr "Información"
+
 #~ msgid "org.gnome.font-viewer"
 #~ msgstr "org.gnome.font-viewer"
 
@@ -1049,9 +1086,6 @@ msgstr "Cero con barra"
 #~ msgid "General"
 #~ msgstr "General"
 
-#~ msgid "Details"
-#~ msgstr "Detalles"
-
 #~ msgid "Font Viewer"
 #~ msgstr "Visor de tipografías"
 
@@ -1063,9 +1097,6 @@ msgstr "Cero con barra"
 #~ msgstr ""
 #~ "Ejecute «%s --help» para ver una lista completa de las opciones de línea "
 #~ "de comandos disponibles."
-
-#~ msgid "_Close"
-#~ msgstr "_Cerrar"
 
 #~ msgid "Done"
 #~ msgstr "Hecho"
