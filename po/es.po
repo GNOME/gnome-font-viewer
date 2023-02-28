@@ -18,8 +18,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils.master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2023-02-11 23:28+0000\n"
-"PO-Revision-Date: 2023-02-21 11:47+0100\n"
+"POT-Creation-Date: 2023-02-21 10:53+0000\n"
+"PO-Revision-Date: 2023-02-28 13:26+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
@@ -84,7 +84,7 @@ msgstr "TAMAÑO"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ARCHIVO-DE-TIPOGRAFÍA ARCHIVO-DE-SALIDA"
 
-#: src/font-view-application.c:79 src/font-view-window.c:750
+#: src/font-view-application.c:79 src/font-view-window.c:751
 msgid "Could Not Display Font"
 msgstr "No se pudo mostrar la tipografía"
 
@@ -92,19 +92,19 @@ msgstr "No se pudo mostrar la tipografía"
 msgid "translator-credits"
 msgstr "Daniel Mustieles <daniel.mustieles@gmail.com>, 2012-2023"
 
-#: src/font-view-window.c:119
+#: src/font-view-window.c:120
 msgid "Failed"
 msgstr "Falló"
 
-#: src/font-view-window.c:127
+#: src/font-view-window.c:128
 msgid "Installed"
 msgstr "Instalado"
 
-#: src/font-view-window.c:132
+#: src/font-view-window.c:133
 msgid "Installing"
 msgstr "Instalando"
 
-#: src/font-view-window.c:135
+#: src/font-view-window.c:136
 msgid "Install"
 msgstr "Instalar"
 
@@ -113,138 +113,132 @@ msgstr "Instalar"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view-window.c:249
+#: src/font-view-window.c:250
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, predeterminada %g"
 
-#: src/font-view-window.c:304
+#: src/font-view-window.c:305
 #, c-format
 msgid "Instance %d"
 msgstr "Instancia %d"
 
 #. Translators, this seperates the list of Layout
 #. * Features.
-#: src/font-view-window.c:342
+#: src/font-view-window.c:343
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view-window.c:369
+#: src/font-view-window.c:370
 msgid "Name"
 msgstr "Nombre"
 
-#: src/font-view-window.c:372
+#: src/font-view-window.c:373
 msgid "Location"
 msgstr "Ubicación"
 
-#: src/font-view-window.c:375
+#: src/font-view-window.c:376
 msgid "Style"
 msgstr "Estilo"
 
-#: src/font-view-window.c:385
+#: src/font-view-window.c:386
 msgid "Type"
 msgstr "Tipo"
 
-#: src/font-view-window.c:451 src/font-view-window.c:477
+#: src/font-view-window.c:452 src/font-view-window.c:478
 msgid "Version"
 msgstr "Version"
 
-#: src/font-view-window.c:455 src/font-view-window.c:482
+#: src/font-view-window.c:456 src/font-view-window.c:483
 msgid "Copyright"
 msgstr "Copyright"
 
-#: src/font-view-window.c:459
+#: src/font-view-window.c:460
 msgid "Description"
 msgstr "Descripción"
 
-#: src/font-view-window.c:463
+#: src/font-view-window.c:464
 msgid "Manufacturer"
 msgstr "Fabricante"
 
-#: src/font-view-window.c:467
+#: src/font-view-window.c:468
 msgid "Designer"
 msgstr "Diseñador"
 
-#: src/font-view-window.c:471
+#: src/font-view-window.c:472
 msgid "License"
 msgstr "Licencia"
 
-#: src/font-view-window.c:496
+#: src/font-view-window.c:497
 msgid "Glyph Count"
 msgstr "Contados de glifos"
 
-#: src/font-view-window.c:498
+#: src/font-view-window.c:499
 msgid "Color Glyphs"
 msgstr "Glifos de color"
 
-#: src/font-view-window.c:499
+#: src/font-view-window.c:500
 msgid "yes"
 msgstr "sí"
 
-#: src/font-view-window.c:499
+#: src/font-view-window.c:500
 msgid "no"
 msgstr "no"
 
-#: src/font-view-window.c:503
+#: src/font-view-window.c:504
 msgid "Layout Features"
 msgstr "Características de la distribución"
 
-#: src/font-view-window.c:509
+#: src/font-view-window.c:510
 msgid "Variation Axes"
 msgstr "Ejes de variación"
 
-#: src/font-view-window.c:516
+#: src/font-view-window.c:517
 msgid "Named Styles"
 msgstr "Estilos con nombre"
 
-#: src/font-view-window.c:558 src/font-view-window.c:670
+#: src/font-view-window.c:559 src/font-view-window.c:671
 msgid "Could Not Install Font"
-msgstr ""
+msgstr "No se pudo instalar la tipografía"
 
-#: src/font-view-window.ui:34
+#: src/font-view-window.ui:40
 msgid "All Fonts"
 msgstr "Todas las tipografías"
 
-#: src/font-view-window.ui:40
+#: src/font-view-window.ui:46
 msgid "Search"
-msgstr ""
+msgstr "Buscar"
 
-#: src/font-view-window.ui:48
+#: src/font-view-window.ui:54
 msgid "About Fonts"
 msgstr "Acerca de Tipografías"
 
-#: src/font-view-window.ui:60
+#: src/font-view-window.ui:66
 msgid "Search fonts"
-msgstr ""
+msgstr "Buscar tipografías"
 
-#: src/font-view-window.ui:181
+#: src/font-view-window.ui:187
 msgid "Back"
 msgstr "Atrás"
 
-#: src/font-view-window.ui:187
-#, fuzzy
-#| msgid "Install"
+#: src/font-view-window.ui:193
 msgid "_Install"
-msgstr "Instalar"
+msgstr "_Instalar"
 
-#: src/font-view-window.ui:190
-#, fuzzy
-#| msgid "Install"
+#: src/font-view-window.ui:196
 msgid "Install Font"
-msgstr "Instalar"
+msgstr "Instalar tipografía"
 
-#: src/font-view-window.ui:195
+#: src/font-view-window.ui:201
 msgid "I_nfo"
-msgstr ""
+msgstr "I_nformación"
 
-#: src/font-view-window.ui:197
-#, fuzzy
-#| msgid "Details"
+#: src/font-view-window.ui:203
 msgid "Font Details"
-msgstr "Detalles"
+msgstr "Detalles de la tipografía"
 
-#: src/font-view-window.ui:244
+#: src/font-view-window.ui:250
 msgid "_Close"
 msgstr "_Cerrar"
 
