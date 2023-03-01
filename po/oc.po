@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2023-01-28 13:00+0000\n"
-"PO-Revision-Date: 2023-01-29 16:03+0100\n"
+"POT-Creation-Date: 2023-02-11 23:28+0000\n"
+"PO-Revision-Date: 2023-03-01 19:16+0100\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: \n"
 "Language: oc\n"
@@ -97,7 +97,7 @@ msgstr "Installada"
 msgid "Installing"
 msgstr "Installacion"
 
-#: src/font-view-window.c:135 src/font-view-window.ui:185
+#: src/font-view-window.c:135
 msgid "Install"
 msgstr "Installar"
 
@@ -207,15 +207,31 @@ msgstr "Recercar"
 msgid "About Fonts"
 msgstr "A prepaus de Polissas"
 
-#: src/font-view-window.ui:179
+#: src/font-view-window.ui:60
+msgid "Search fonts"
+msgstr "Recercar de polissas"
+
+#: src/font-view-window.ui:181
 msgid "Back"
 msgstr "Tornar"
 
-#: src/font-view-window.ui:191
-msgid "Info"
-msgstr "Info"
+#: src/font-view-window.ui:187
+msgid "_Install"
+msgstr "_Installar"
 
-#: src/font-view-window.ui:238
+#: src/font-view-window.ui:190
+msgid "Install Font"
+msgstr "Installar la polissa"
+
+#: src/font-view-window.ui:195
+msgid "I_nfo"
+msgstr "I_nfo"
+
+#: src/font-view-window.ui:197
+msgid "Font Details"
+msgstr "Detalhs de la polissa"
+
+#: src/font-view-window.ui:244
 msgid "_Close"
 msgstr "_Tampar"
 
@@ -1026,6 +1042,9 @@ msgstr "Alternativas verticalas per rotacion"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Zèro raiat"
+
+#~ msgid "Info"
+#~ msgstr "Info"
 
 #~ msgid "This font could not be installed."
 #~ msgstr "Se pòt pas installar aquesta polissa."
