@@ -5,16 +5,16 @@
 # Bruno Brouard <annoa.b@gmail.com>, 2012.
 # Bruno Cauet <brunocauet@gmail.com>, 2014.
 # Guillaume Bernard <translate@filorin.fr>, 2015.
-# Claude Paroz <claude@2xlibre.net>, 2017-2022
 # Charles Monzat <charles.monzat@free.fr>, 2018-2019.
+# Claude Paroz <claude@2xlibre.net>, 2017-2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2022-02-12 01:19+0000\n"
-"PO-Revision-Date: 2022-02-19 11:41+0100\n"
+"POT-Creation-Date: 2023-02-11 23:28+0000\n"
+"PO-Revision-Date: 2023-03-04 17:47+0100\n"
 "Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "Language: fr\n"
@@ -22,14 +22,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"X-Generator: Gtranslator 3.32.1\n"
+"X-Generator: Gtranslator 42.0\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view-application.c:124
 #: src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr "Polices"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
+#: data/org.gnome.font-viewer.appdata.xml.in:7
 #: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Affiche les polices de votre système"
@@ -40,9 +40,9 @@ msgid ""
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"Polices affiche les polices de caractères installées sur votre "
-"ordinateur sous la forme de miniatures. En choisissant l’une de celles-ci, "
-"vous obtenez une vue complète de la police à différentes tailles."
+"Polices affiche les polices de caractères installées sur votre ordinateur "
+"sous la forme de miniatures. En choisissant l’une de celles-ci, vous obtenez "
+"une vue complète de la police à différentes tailles."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
@@ -50,12 +50,12 @@ msgid ""
 "other formats. Fonts may be installed only for your use or made available to "
 "all users on the computer."
 msgstr ""
-"Polices prend également en charge l’installation de nouveaux fichiers "
-"de police téléchargés (formats ttf et autres). Les polices peuvent être "
+"Polices prend également en charge l’installation de nouveaux fichiers de "
+"police téléchargés (formats ttf et autres). Les polices peuvent être "
 "installées pour vous seul ou rendues disponibles à tous les utilisateurs de "
 "l’ordinateur."
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21
+#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
 msgid "The GNOME Project"
 msgstr "Le projet GNOME"
 
@@ -79,145 +79,11 @@ msgstr "TAILLE"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FICHIER-POLICE FICHIER-SORTIE"
 
-#: src/font-view-app-menu.ui:6
-msgid "About Fonts"
-msgstr "À propos de Polices"
+#: src/font-view-application.c:79 src/font-view-window.c:750
+msgid "Could Not Display Font"
+msgstr "Impossible d’afficher cette police"
 
-#: src/font-view.c:205
-msgid "GNOME Fonts"
-msgstr "Polices de GNOME"
-
-#: src/font-view.c:212
-msgid "Show the application's version"
-msgstr "Affiche la version de l’application"
-
-#. Translators, this string is used to display information about
-#. * a 'font variation axis'. The %s gets replaced with the name
-#. * of the axis, for example 'Width'. The three %g get replaced
-#. * with the minimum, maximum and default values for the axis.
-#.
-#: src/font-view.c:327
-#, c-format
-msgid "%s %g — %g, default %g"
-msgstr "%s %g — %g, %g par défaut"
-
-#: src/font-view.c:378
-#, c-format
-msgid "Instance %d"
-msgstr "Exemple %d"
-
-#. Translators, this seperates the list of Layout
-#. * Features.
-#: src/font-view.c:418
-msgctxt "OpenType layout"
-msgid ", "
-msgstr ", "
-
-#: src/font-view.c:443
-msgid "Name"
-msgstr "Nom"
-
-#: src/font-view.c:446
-msgid "Location"
-msgstr "Emplacement"
-
-#: src/font-view.c:449
-msgid "Style"
-msgstr "Style"
-
-#: src/font-view.c:459
-msgid "Type"
-msgstr "Type"
-
-#: src/font-view.c:525 src/font-view.c:551
-msgid "Version"
-msgstr "Version"
-
-#: src/font-view.c:529 src/font-view.c:556
-msgid "Copyright"
-msgstr "Copyright"
-
-#: src/font-view.c:533
-msgid "Description"
-msgstr "Description"
-
-#: src/font-view.c:537
-msgid "Manufacturer"
-msgstr "Éditeur"
-
-#: src/font-view.c:541
-msgid "Designer"
-msgstr "Concepteur"
-
-#: src/font-view.c:545
-msgid "License"
-msgstr "Licence"
-
-#: src/font-view.c:568
-msgid "Glyph Count"
-msgstr "Nombre de glyphes"
-
-#: src/font-view.c:570
-msgid "Color Glyphs"
-msgstr "Glyphes en couleur"
-
-#: src/font-view.c:571
-msgid "yes"
-msgstr "oui"
-
-#: src/font-view.c:571
-msgid "no"
-msgstr "non"
-
-#: src/font-view.c:575
-msgid "Layout Features"
-msgstr "Types de mise en page"
-
-#: src/font-view.c:581
-msgid "Variation Axes"
-msgstr "Axes de variation"
-
-#: src/font-view.c:588
-msgid "Named Styles"
-msgstr "Styles nommés"
-
-#: src/font-view.c:600
-msgid "Failed"
-msgstr "Échec"
-
-#: src/font-view.c:609
-msgid "Installed"
-msgstr "Installé"
-
-#: src/font-view.c:614
-msgid "Installing"
-msgstr "Installation"
-
-#: src/font-view.c:617 src/font-view.c:978
-msgid "Install"
-msgstr "Installer"
-
-#: src/font-view.c:739
-msgid "This font could not be installed."
-msgstr "Cette police n’a pas pu être installée."
-
-#: src/font-view.c:874
-msgid "This font could not be displayed."
-msgstr "Cette police n’a pas pu être affichée."
-
-#: src/font-view.c:992
-msgid "Info"
-msgstr "Informations"
-
-#: src/font-view.c:1008
-msgid "Back"
-msgstr "Retour"
-
-#: src/font-view.c:1090
-msgid "All Fonts"
-msgstr "Toutes les polices"
-
-#: src/font-view.c:1170
+#: src/font-view-application.c:129
 msgid "translator-credits"
 msgstr ""
 "Bruno Brouard <annoa.b@gmail.com>\n"
@@ -225,6 +91,164 @@ msgstr ""
 "Guillaume Bernard <translate@filorin.fr>\n"
 "Claude Paroz <claude@2xlibre.net>\n"
 "Arnaud Outtier <arnoutti@gmail.com>"
+
+#: src/font-view-window.c:119
+msgid "Failed"
+msgstr "Échec"
+
+#: src/font-view-window.c:127
+msgid "Installed"
+msgstr "Installé"
+
+#: src/font-view-window.c:132
+msgid "Installing"
+msgstr "Installation"
+
+#: src/font-view-window.c:135
+msgid "Install"
+msgstr "Installer"
+
+#. Translators, this string is used to display information about
+#. * a 'font variation axis'. The %s gets replaced with the name
+#. * of the axis, for example 'Width'. The three %g get replaced
+#. * with the minimum, maximum and default values for the axis.
+#.
+#: src/font-view-window.c:249
+#, c-format
+msgid "%s %g — %g, default %g"
+msgstr "%s %g — %g, %g par défaut"
+
+#: src/font-view-window.c:304
+#, c-format
+msgid "Instance %d"
+msgstr "Exemple %d"
+
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view-window.c:342
+msgctxt "OpenType layout"
+msgid ", "
+msgstr ", "
+
+#: src/font-view-window.c:369
+msgid "Name"
+msgstr "Nom"
+
+#: src/font-view-window.c:372
+msgid "Location"
+msgstr "Emplacement"
+
+#: src/font-view-window.c:375
+msgid "Style"
+msgstr "Style"
+
+#: src/font-view-window.c:385
+msgid "Type"
+msgstr "Type"
+
+#: src/font-view-window.c:451 src/font-view-window.c:477
+msgid "Version"
+msgstr "Version"
+
+#: src/font-view-window.c:455 src/font-view-window.c:482
+msgid "Copyright"
+msgstr "Copyright"
+
+#: src/font-view-window.c:459
+msgid "Description"
+msgstr "Description"
+
+#: src/font-view-window.c:463
+msgid "Manufacturer"
+msgstr "Éditeur"
+
+#: src/font-view-window.c:467
+msgid "Designer"
+msgstr "Concepteur"
+
+#: src/font-view-window.c:471
+msgid "License"
+msgstr "Licence"
+
+#: src/font-view-window.c:496
+msgid "Glyph Count"
+msgstr "Nombre de glyphes"
+
+#: src/font-view-window.c:498
+msgid "Color Glyphs"
+msgstr "Glyphes en couleur"
+
+#: src/font-view-window.c:499
+msgid "yes"
+msgstr "oui"
+
+#: src/font-view-window.c:499
+msgid "no"
+msgstr "non"
+
+#: src/font-view-window.c:503
+msgid "Layout Features"
+msgstr "Types de mise en page"
+
+#: src/font-view-window.c:509
+msgid "Variation Axes"
+msgstr "Axes de variation"
+
+#: src/font-view-window.c:516
+msgid "Named Styles"
+msgstr "Styles nommés"
+
+#: src/font-view-window.c:558 src/font-view-window.c:670
+msgid "Could Not Install Font"
+msgstr "Impossible d’installer cette police"
+
+#: src/font-view-window.ui:34
+msgid "All Fonts"
+msgstr "Toutes les polices"
+
+#: src/font-view-window.ui:40
+msgid "Search"
+msgstr "Rechercher"
+
+#: src/font-view-window.ui:48
+msgid "About Fonts"
+msgstr "À propos de Polices"
+
+#: src/font-view-window.ui:60
+msgid "Search fonts"
+msgstr "Rechercher des polices"
+
+#: src/font-view-window.ui:181
+msgid "Back"
+msgstr "Retour"
+
+#: src/font-view-window.ui:187
+msgid "_Install"
+msgstr "_Installer"
+
+#: src/font-view-window.ui:190
+msgid "Install Font"
+msgstr "Installer la police"
+
+#: src/font-view-window.ui:195
+msgid "I_nfo"
+msgstr "I_nformations"
+
+#: src/font-view-window.ui:197
+msgid "Font Details"
+msgstr "Détails de la police"
+
+#: src/font-view-window.ui:244
+msgid "_Close"
+msgstr "_Fermer"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "Polices de GNOME"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "Affiche la version de l’application"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in.in:6
@@ -1025,3 +1049,12 @@ msgstr "Alternatives verticales pour rotation"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Zéro barré"
+
+#~ msgid "This font could not be installed."
+#~ msgstr "Cette police n’a pas pu être installée."
+
+#~ msgid "This font could not be displayed."
+#~ msgstr "Cette police n’a pas pu être affichée."
+
+#~ msgid "Info"
+#~ msgstr "Informations"
