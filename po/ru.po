@@ -18,8 +18,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils trunk\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2023-01-28 13:00+0000\n"
-"PO-Revision-Date: 2023-01-28 17:50+0300\n"
+"POT-Creation-Date: 2023-02-12 08:44+0000\n"
+"PO-Revision-Date: 2023-02-12 11:49+0300\n"
 "Last-Translator: Aleksandr Melman <Alexmelman88@gmail.com>\n"
 "Language-Team: Русский <gnome-cyr@gnome.org>\n"
 "Language: ru\n"
@@ -85,7 +85,7 @@ msgstr "РАЗМЕР"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ФАЙЛ-ШРИФТА ФАЙЛ-ВЫВОДА"
 
-#: src/font-view-application.c:79 src/font-view-window.c:750
+#: src/font-view-application.c:79 src/font-view-window.c:751
 msgid "Could Not Display Font"
 msgstr "Не удалось отобразить шрифт"
 
@@ -93,21 +93,22 @@ msgstr "Не удалось отобразить шрифт"
 msgid "translator-credits"
 msgstr ""
 "Юрий Мясоедов <ymyasoedov@yandex.ru>, 2012-2014.\n"
-"Станислав Соловей <whats_up@tut.by>, 2015-2018."
+"Станислав Соловей <whats_up@tut.by>, 2015-2018.\n"
+"Aleksandr Melman, 2023"
 
-#: src/font-view-window.c:119
+#: src/font-view-window.c:120
 msgid "Failed"
 msgstr "Ошибка"
 
-#: src/font-view-window.c:127
+#: src/font-view-window.c:128
 msgid "Installed"
 msgstr "Установлено"
 
-#: src/font-view-window.c:132
+#: src/font-view-window.c:133
 msgid "Installing"
 msgstr "Установка"
 
-#: src/font-view-window.c:135 src/font-view-window.ui:185
+#: src/font-view-window.c:136
 msgid "Install"
 msgstr "Установить"
 
@@ -116,116 +117,132 @@ msgstr "Установить"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view-window.c:249
+#: src/font-view-window.c:250
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, по умолчанию %g"
 
-#: src/font-view-window.c:304
+#: src/font-view-window.c:305
 #, c-format
 msgid "Instance %d"
 msgstr "Экземпляр %d"
 
 #. Translators, this seperates the list of Layout
 #. * Features.
-#: src/font-view-window.c:342
+#: src/font-view-window.c:343
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view-window.c:369
+#: src/font-view-window.c:370
 msgid "Name"
 msgstr "Название"
 
-#: src/font-view-window.c:372
+#: src/font-view-window.c:373
 msgid "Location"
 msgstr "Расположение"
 
-#: src/font-view-window.c:375
+#: src/font-view-window.c:376
 msgid "Style"
 msgstr "Стиль"
 
-#: src/font-view-window.c:385
+#: src/font-view-window.c:386
 msgid "Type"
 msgstr "Тип"
 
-#: src/font-view-window.c:451 src/font-view-window.c:477
+#: src/font-view-window.c:452 src/font-view-window.c:478
 msgid "Version"
 msgstr "Версия"
 
-#: src/font-view-window.c:455 src/font-view-window.c:482
+#: src/font-view-window.c:456 src/font-view-window.c:483
 msgid "Copyright"
 msgstr "Авторское право"
 
-#: src/font-view-window.c:459
+#: src/font-view-window.c:460
 msgid "Description"
 msgstr "Описание"
 
-#: src/font-view-window.c:463
+#: src/font-view-window.c:464
 msgid "Manufacturer"
 msgstr "Производитель"
 
-#: src/font-view-window.c:467
+#: src/font-view-window.c:468
 msgid "Designer"
 msgstr "Дизайнер"
 
-#: src/font-view-window.c:471
+#: src/font-view-window.c:472
 msgid "License"
 msgstr "Лицензия"
 
-#: src/font-view-window.c:496
+#: src/font-view-window.c:497
 msgid "Glyph Count"
 msgstr "Количество глифов"
 
-#: src/font-view-window.c:498
+#: src/font-view-window.c:499
 msgid "Color Glyphs"
 msgstr "Цветные глифы"
 
-#: src/font-view-window.c:499
+#: src/font-view-window.c:500
 msgid "yes"
 msgstr "да"
 
-#: src/font-view-window.c:499
+#: src/font-view-window.c:500
 msgid "no"
 msgstr "нет"
 
-#: src/font-view-window.c:503
+#: src/font-view-window.c:504
 msgid "Layout Features"
 msgstr "Особенности макета"
 
-#: src/font-view-window.c:509
+#: src/font-view-window.c:510
 msgid "Variation Axes"
 msgstr "Вариационные оси"
 
-#: src/font-view-window.c:516
+#: src/font-view-window.c:517
 msgid "Named Styles"
 msgstr "Именованные стили"
 
-#: src/font-view-window.c:558 src/font-view-window.c:670
+#: src/font-view-window.c:559 src/font-view-window.c:671
 msgid "Could Not Install Font"
 msgstr "Не удалось установить шрифт"
 
-#: src/font-view-window.ui:34
+#: src/font-view-window.ui:40
 msgid "All Fonts"
 msgstr "Все шрифты"
 
-#: src/font-view-window.ui:40
+#: src/font-view-window.ui:46
 msgid "Search"
-msgstr "Найти"
+msgstr "Поиск"
 
-#: src/font-view-window.ui:48
+#: src/font-view-window.ui:54
 msgid "About Fonts"
 msgstr "О приложении"
 
-#: src/font-view-window.ui:179
+#: src/font-view-window.ui:66
+msgid "Search fonts"
+msgstr "Поиск шрифтов"
+
+#: src/font-view-window.ui:187
 msgid "Back"
 msgstr "Назад"
 
-#: src/font-view-window.ui:191
-msgid "Info"
-msgstr "Информация"
+#: src/font-view-window.ui:193
+msgid "_Install"
+msgstr "_Установить"
 
-#: src/font-view-window.ui:238
+#: src/font-view-window.ui:196
+msgid "Install Font"
+msgstr "Установить шрифт"
+
+#: src/font-view-window.ui:201
+msgid "I_nfo"
+msgstr "И_нфо"
+
+#: src/font-view-window.ui:203
+msgid "Font Details"
+msgstr "Подробнее о шрифте"
+
+#: src/font-view-window.ui:250
 msgid "_Close"
 msgstr "_Закрыть"
 
@@ -1036,6 +1053,9 @@ msgstr "Вертикальные альтернативы для вращени�
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Срезанный ноль"
+
+#~ msgid "Info"
+#~ msgstr "Информация"
 
 #~ msgid "This font could not be installed."
 #~ msgstr "Этот шрифт не удалось установить."
