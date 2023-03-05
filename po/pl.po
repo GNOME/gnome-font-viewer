@@ -1,22 +1,22 @@
 # Polish translation for gnome-font-viewer.
-# Copyright © 1999-2022 the gnome-font-viewer authors.
+# Copyright © 1999-2023 the gnome-font-viewer authors.
 # This file is distributed under the same license as the gnome-font-viewer package.
 # Zbigniew Chyla <chyla@alice.ci.pwr.wroc.pl>, 1999-2003.
 # Artur Flinta <aflinta@at.kernel.pl>, 2003-2005.
 # Wadim Dziedzic <wdziedzic@aviary.pl>, 2007.
 # Tomasz Dominikowski <dominikowski@gmail.com>, 2007-2009.
 # Joanna Mazgaj <jmazgaj@aviary.pl>, 2008.
-# Piotr Drąg <piotrdrag@gmail.com>, 2010-2022.
+# Piotr Drąg <piotrdrag@gmail.com>, 2010-2023.
 # Paweł Żołnowski <pawel@zolnowski.name>, 2014-2015.
-# Aviary.pl <community-poland@mozilla.org>, 2007-2022.
+# Aviary.pl <community-poland@mozilla.org>, 2007-2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2022-02-26 13:34+0000\n"
-"PO-Revision-Date: 2022-02-26 14:35+0100\n"
+"POT-Creation-Date: 2023-02-11 23:28+0000\n"
+"PO-Revision-Date: 2023-03-05 18:33+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -26,12 +26,12 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view-application.c:124
 #: src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr "Czcionki"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
+#: data/org.gnome.font-viewer.appdata.xml.in:7
 #: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Wyświetlanie czcionek w systemie"
@@ -56,7 +56,7 @@ msgstr ""
 "z plików w formacie .ttf i wielu innych. Można je zainstalować do własnego "
 "użytku lub udostępnić wszystkim użytkownikom komputera."
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21
+#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
 msgid "The GNOME Project"
 msgstr "Projekt GNOME"
 
@@ -80,145 +80,11 @@ msgstr "ROZMIAR"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "PLIK-CZCIONKI PLIK-WYJŚCIOWY"
 
-#: src/font-view-app-menu.ui:6
-msgid "About Fonts"
-msgstr "O programie"
+#: src/font-view-application.c:79 src/font-view-window.c:750
+msgid "Could Not Display Font"
+msgstr "Nie można wyświetlić czcionki"
 
-#: src/font-view.c:205
-msgid "GNOME Fonts"
-msgstr "Przeglądarka czcionek GNOME"
-
-#: src/font-view.c:212
-msgid "Show the application's version"
-msgstr "Wyświetla wersję programu"
-
-#. Translators, this string is used to display information about
-#. * a 'font variation axis'. The %s gets replaced with the name
-#. * of the axis, for example 'Width'. The three %g get replaced
-#. * with the minimum, maximum and default values for the axis.
-#.
-#: src/font-view.c:327
-#, c-format
-msgid "%s %g — %g, default %g"
-msgstr "%s %g-%g, domyślnie %g"
-
-#: src/font-view.c:378
-#, c-format
-msgid "Instance %d"
-msgstr "Wystąpienie %d"
-
-#. Translators, this seperates the list of Layout
-#. * Features.
-#: src/font-view.c:418
-msgctxt "OpenType layout"
-msgid ", "
-msgstr ", "
-
-#: src/font-view.c:443
-msgid "Name"
-msgstr "Nazwa"
-
-#: src/font-view.c:446
-msgid "Location"
-msgstr "Położenie"
-
-#: src/font-view.c:449
-msgid "Style"
-msgstr "Styl"
-
-#: src/font-view.c:459
-msgid "Type"
-msgstr "Typ"
-
-#: src/font-view.c:525 src/font-view.c:551
-msgid "Version"
-msgstr "Wersja"
-
-#: src/font-view.c:529 src/font-view.c:556
-msgid "Copyright"
-msgstr "Prawa autorskie"
-
-#: src/font-view.c:533
-msgid "Description"
-msgstr "Opis"
-
-#: src/font-view.c:537
-msgid "Manufacturer"
-msgstr "Producent"
-
-#: src/font-view.c:541
-msgid "Designer"
-msgstr "Projektant"
-
-#: src/font-view.c:545
-msgid "License"
-msgstr "Licencja"
-
-#: src/font-view.c:568
-msgid "Glyph Count"
-msgstr "Liczba glifów"
-
-#: src/font-view.c:570
-msgid "Color Glyphs"
-msgstr "Glify kolorowe"
-
-#: src/font-view.c:571
-msgid "yes"
-msgstr "tak"
-
-#: src/font-view.c:571
-msgid "no"
-msgstr "nie"
-
-#: src/font-view.c:575
-msgid "Layout Features"
-msgstr "Funkcje składu"
-
-#: src/font-view.c:581
-msgid "Variation Axes"
-msgstr "Osie odmian"
-
-#: src/font-view.c:588
-msgid "Named Styles"
-msgstr "Nazwane style"
-
-#: src/font-view.c:600
-msgid "Failed"
-msgstr "Niepowodzenie"
-
-#: src/font-view.c:609
-msgid "Installed"
-msgstr "Zainstalowana"
-
-#: src/font-view.c:614
-msgid "Installing"
-msgstr "Instalowanie"
-
-#: src/font-view.c:617 src/font-view.c:978
-msgid "Install"
-msgstr "Zainstaluj"
-
-#: src/font-view.c:739
-msgid "This font could not be installed."
-msgstr "Nie można zainstalować tej czcionki."
-
-#: src/font-view.c:874
-msgid "This font could not be displayed."
-msgstr "Nie można wyświetlić tej czcionki."
-
-#: src/font-view.c:992
-msgid "Info"
-msgstr "Informacje"
-
-#: src/font-view.c:1008
-msgid "Back"
-msgstr "Wstecz"
-
-#: src/font-view.c:1090
-msgid "All Fonts"
-msgstr "Wszystkie czcionki"
-
-#: src/font-view.c:1170
+#: src/font-view-application.c:129
 msgid "translator-credits"
 msgstr ""
 "Zbigniew Chyla <chyla@alice.ci.pwr.wroc.pl>, 1999-2003\n"
@@ -226,9 +92,167 @@ msgstr ""
 "Wadim Dziedzic <wdziedzic@aviary.pl>, 2007\n"
 "Tomasz Dominikowski <dominikowski@gmail.com>, 2007-2009\n"
 "Joanna Mazgaj <jmazgaj@aviary.pl>, 2008\n"
-"Piotr Drąg <piotrdrag@gmail.com>, 2010-2022\n"
+"Piotr Drąg <piotrdrag@gmail.com>, 2010-2023\n"
 "Paweł Żołnowski <pawel@zolnowski.name>, 2014-2015\n"
-"Aviary.pl <community-poland@mozilla.org>, 2007-2022"
+"Aviary.pl <community-poland@mozilla.org>, 2007-2023"
+
+#: src/font-view-window.c:119
+msgid "Failed"
+msgstr "Niepowodzenie"
+
+#: src/font-view-window.c:127
+msgid "Installed"
+msgstr "Zainstalowana"
+
+#: src/font-view-window.c:132
+msgid "Installing"
+msgstr "Instalowanie"
+
+#: src/font-view-window.c:135
+msgid "Install"
+msgstr "Zainstaluj"
+
+#. Translators, this string is used to display information about
+#. * a 'font variation axis'. The %s gets replaced with the name
+#. * of the axis, for example 'Width'. The three %g get replaced
+#. * with the minimum, maximum and default values for the axis.
+#.
+#: src/font-view-window.c:249
+#, c-format
+msgid "%s %g — %g, default %g"
+msgstr "%s %g-%g, domyślnie %g"
+
+#: src/font-view-window.c:304
+#, c-format
+msgid "Instance %d"
+msgstr "Wystąpienie %d"
+
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view-window.c:342
+msgctxt "OpenType layout"
+msgid ", "
+msgstr ", "
+
+#: src/font-view-window.c:369
+msgid "Name"
+msgstr "Nazwa"
+
+#: src/font-view-window.c:372
+msgid "Location"
+msgstr "Położenie"
+
+#: src/font-view-window.c:375
+msgid "Style"
+msgstr "Styl"
+
+#: src/font-view-window.c:385
+msgid "Type"
+msgstr "Typ"
+
+#: src/font-view-window.c:451 src/font-view-window.c:477
+msgid "Version"
+msgstr "Wersja"
+
+#: src/font-view-window.c:455 src/font-view-window.c:482
+msgid "Copyright"
+msgstr "Prawa autorskie"
+
+#: src/font-view-window.c:459
+msgid "Description"
+msgstr "Opis"
+
+#: src/font-view-window.c:463
+msgid "Manufacturer"
+msgstr "Producent"
+
+#: src/font-view-window.c:467
+msgid "Designer"
+msgstr "Projektant"
+
+#: src/font-view-window.c:471
+msgid "License"
+msgstr "Licencja"
+
+#: src/font-view-window.c:496
+msgid "Glyph Count"
+msgstr "Liczba glifów"
+
+#: src/font-view-window.c:498
+msgid "Color Glyphs"
+msgstr "Glify kolorowe"
+
+#: src/font-view-window.c:499
+msgid "yes"
+msgstr "tak"
+
+#: src/font-view-window.c:499
+msgid "no"
+msgstr "nie"
+
+#: src/font-view-window.c:503
+msgid "Layout Features"
+msgstr "Funkcje składu"
+
+#: src/font-view-window.c:509
+msgid "Variation Axes"
+msgstr "Osie odmian"
+
+#: src/font-view-window.c:516
+msgid "Named Styles"
+msgstr "Nazwane style"
+
+#: src/font-view-window.c:558 src/font-view-window.c:670
+msgid "Could Not Install Font"
+msgstr "Nie można zainstalować czcionki"
+
+#: src/font-view-window.ui:34
+msgid "All Fonts"
+msgstr "Wszystkie czcionki"
+
+#: src/font-view-window.ui:40
+msgid "Search"
+msgstr "Wyszukuje"
+
+#: src/font-view-window.ui:48
+msgid "About Fonts"
+msgstr "O programie"
+
+#: src/font-view-window.ui:60
+msgid "Search fonts"
+msgstr "Wyszukiwanie czcionek"
+
+#: src/font-view-window.ui:181
+msgid "Back"
+msgstr "Wstecz"
+
+#: src/font-view-window.ui:187
+msgid "_Install"
+msgstr "Zai_nstaluj"
+
+#: src/font-view-window.ui:190
+msgid "Install Font"
+msgstr "Instaluje czcionkę"
+
+#: src/font-view-window.ui:195
+msgid "I_nfo"
+msgstr "_Informacje"
+
+#: src/font-view-window.ui:197
+msgid "Font Details"
+msgstr "Informacje o czcionce"
+
+#: src/font-view-window.ui:244
+msgid "_Close"
+msgstr "_Zamknij"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "Przeglądarka czcionek GNOME"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "Wyświetla wersję programu"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in.in:6
