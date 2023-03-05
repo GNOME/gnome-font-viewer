@@ -37,6 +37,36 @@
   </kudos>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="44~rc" date="2023-03-05">
+      <description>
+        <p>Fonts 44.rc comes with translation updates for the following locales:</p>
+        <ul>
+          <li>Basque (Asier Sarasua Garmendia)</li>
+          <li>Bulgarian (Alexander Shopov)</li>
+          <li>Czech (Marek Černocký)</li>
+          <li>Finnish (Jiri Grönroos)</li>
+          <li>French (Jean-Marc Tissières)</li>
+          <li>Friulian (Fabio Tomat)</li>
+          <li>Galician (Fran Dieguez)</li>
+          <li>Georgian (Ekaterine Papava)</li>
+          <li>German (Philipp Kiemle)</li>
+          <li>Hebrew (Yosef Or Boczko)</li>
+          <li>Hungarian (Balázs Úr)</li>
+          <li>Indonesian (Kukuh Syafaat)</li>
+          <li>Korean (DaeHyun Sung)</li>
+          <li>Lithuanian (Aurimas Černius)</li>
+          <li>Occitan (post 1500) (Quentin PAGÈS)</li>
+          <li>Polish (Piotr Drąg)</li>
+          <li>Portuguese (Hugo Carvalho)</li>
+          <li>Russian (Aleksandr Melman)</li>
+          <li>Serbian (Марко Костић)</li>
+          <li>Slovenian (Matej Urbančič)</li>
+          <li>Spanish (Daniel)</li>
+          <li>Turkish (Sabri Ünal)</li>
+          <li>Ukrainian (Yuri Chornoivan)</li>
+        </ul>
+      </description>
+    </release>
     <release version="44~beta" date="2023-02-11">
       <description>
         <p>Characters 44.beta comes with general consistency improvements to the application:</p>
