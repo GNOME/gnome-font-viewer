@@ -15,9 +15,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils HEAD\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues\n"
-"POT-Creation-Date: 2022-03-05 23:49+0000\n"
-"PO-Revision-Date: 2022-03-07 17:11+0330\n"
-"Last-Translator: MohammadSaleh Kamyab <mskf1383@protonmail.com>\n"
+"POT-Creation-Date: 2023-03-13 22:48+0000\n"
+"PO-Revision-Date: 2023-03-18 02:50+0330\n"
+"Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
@@ -25,14 +25,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.2.2\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view-application.c:124
 #: src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr "قلم‌ها"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
+#: data/org.gnome.font-viewer.appdata.xml.in:7
 #: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "دیدن قلم‌های روی سامانه‌تان"
@@ -57,7 +57,7 @@ msgstr ""
 "پشتیبانی می‌کند. قلم‌ها می‌توانند فقط برای استفادهٔ شما نصب شده یا برای تمامی "
 "کاربران روی رایانه در دسترس باشند."
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21
+#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
 msgid "The GNOME Project"
 msgstr "پروژهٔ گنوم"
 
@@ -81,150 +81,174 @@ msgstr "SIZE"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
-#: src/font-view-app-menu.ui:6
-msgid "About Fonts"
-msgstr "دربارهٔ قلم‌ها"
+#: src/font-view-application.c:79 src/font-view-window.c:751
+msgid "Could Not Display Font"
+msgstr "نتوانست قلم را نمایش دهد"
 
-#: src/font-view.c:205
-msgid "GNOME Fonts"
-msgstr "قلم‌های گنوم"
+#: src/font-view-application.c:129
+msgid "translator-credits"
+msgstr ""
+"دانیال بهزادی <dani.behzi@ubuntu.com>\n"
+"ابراهیم بیاگویی <ebrahim@gnu.org>\n"
+"آرش موسوی <mousavi.arash@gmail.com>"
 
-#: src/font-view.c:212
-msgid "Show the application's version"
-msgstr "نمایش نگارش برنامه"
+#: src/font-view-window.c:120
+msgid "Failed"
+msgstr "شکست خورد"
+
+#: src/font-view-window.c:128
+msgid "Installed"
+msgstr "نصب شده"
+
+#: src/font-view-window.c:133
+msgid "Installing"
+msgstr "در حال نصب"
+
+#: src/font-view-window.c:136
+msgid "Install"
+msgstr "نصب"
 
 #. Translators, this string is used to display information about
 #. * a 'font variation axis'. The %s gets replaced with the name
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:327
+#: src/font-view-window.c:250
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g، به صورت پیش‌گزیده %g"
 
-#: src/font-view.c:378
+#: src/font-view-window.c:305
 #, c-format
 msgid "Instance %d"
 msgstr "اجرای %Id"
 
 #. Translators, this seperates the list of Layout
 #. * Features.
-#: src/font-view.c:418
+#: src/font-view-window.c:343
 msgctxt "OpenType layout"
 msgid ", "
 msgstr "، "
 
-#: src/font-view.c:443
+#: src/font-view-window.c:370
 msgid "Name"
 msgstr "نام"
 
-#: src/font-view.c:446
+#: src/font-view-window.c:373
 msgid "Location"
 msgstr "مکان"
 
-#: src/font-view.c:449
+#: src/font-view-window.c:376
 msgid "Style"
 msgstr "سبک"
 
-#: src/font-view.c:459
+#: src/font-view-window.c:386
 msgid "Type"
 msgstr "گونه"
 
-#: src/font-view.c:525 src/font-view.c:551
+#: src/font-view-window.c:452 src/font-view-window.c:478
 msgid "Version"
 msgstr "نگارش"
 
-#: src/font-view.c:529 src/font-view.c:556
+#: src/font-view-window.c:456 src/font-view-window.c:483
 msgid "Copyright"
 msgstr "حق رونوشت"
 
-#: src/font-view.c:533
+#: src/font-view-window.c:460
 msgid "Description"
 msgstr "توضیح"
 
-#: src/font-view.c:537
+#: src/font-view-window.c:464
 msgid "Manufacturer"
 msgstr "سازنده"
 
-#: src/font-view.c:541
+#: src/font-view-window.c:468
 msgid "Designer"
 msgstr "طراح"
 
-#: src/font-view.c:545
+#: src/font-view-window.c:472
 msgid "License"
 msgstr "پروانه"
 
-#: src/font-view.c:568
+#: src/font-view-window.c:497
 msgid "Glyph Count"
 msgstr "شمارش نشان‌ها"
 
-#: src/font-view.c:570
+#: src/font-view-window.c:499
 msgid "Color Glyphs"
 msgstr "نشان‌های رنگی"
 
-#: src/font-view.c:571
+#: src/font-view-window.c:500
 msgid "yes"
 msgstr "بله"
 
-#: src/font-view.c:571
+#: src/font-view-window.c:500
 msgid "no"
 msgstr "نه"
 
-#: src/font-view.c:575
+#: src/font-view-window.c:504
 msgid "Layout Features"
 msgstr "ویژگی‌های چینش"
 
-#: src/font-view.c:581
+#: src/font-view-window.c:510
 msgid "Variation Axes"
 msgstr "اهرم‌های تغییر"
 
-#: src/font-view.c:588
+#: src/font-view-window.c:517
 msgid "Named Styles"
 msgstr "سبک‌های نام‌دار"
 
-#: src/font-view.c:600
-msgid "Failed"
-msgstr "شکست خورد"
+#: src/font-view-window.c:559 src/font-view-window.c:671
+msgid "Could Not Install Font"
+msgstr "نتوانست قلم را نصب کند"
 
-#: src/font-view.c:609
-msgid "Installed"
-msgstr "نصب شده"
-
-#: src/font-view.c:614
-msgid "Installing"
-msgstr "در حال نصب"
-
-#: src/font-view.c:617 src/font-view.c:978
-msgid "Install"
-msgstr "نصب"
-
-#: src/font-view.c:739
-msgid "This font could not be installed."
-msgstr "این قلم قابل نصب نیست."
-
-#: src/font-view.c:874
-msgid "This font could not be displayed."
-msgstr "این قلم قابل نمایش نیست."
-
-#: src/font-view.c:992
-msgid "Info"
-msgstr "اطّلاعات"
-
-#: src/font-view.c:1008
-msgid "Back"
-msgstr "بازگشت"
-
-#: src/font-view.c:1090
+#: src/font-view-window.ui:40
 msgid "All Fonts"
 msgstr "تمامی قلم‌ها"
 
-#: src/font-view.c:1170
-msgid "translator-credits"
-msgstr ""
-"دانیال بهزادی <dani.behzi@ubuntu.com>\n"
-"ابراهیم بیاگویی <ebrahim@gnu.org>\n"
-"آرش موسوی <mousavi.arash@gmail.com>"
+#: src/font-view-window.ui:46
+msgid "Search"
+msgstr "جست‌وجو"
+
+#: src/font-view-window.ui:54
+msgid "About Fonts"
+msgstr "دربارهٔ قلم‌ها"
+
+#: src/font-view-window.ui:66
+msgid "Search fonts"
+msgstr "جست‌وجوی قلم‌ها"
+
+#: src/font-view-window.ui:187
+msgid "Back"
+msgstr "بازگشت"
+
+#: src/font-view-window.ui:193
+msgid "_Install"
+msgstr "_نصب"
+
+#: src/font-view-window.ui:196
+msgid "Install Font"
+msgstr "نصب قلم"
+
+#: src/font-view-window.ui:201
+msgid "I_nfo"
+msgstr "_اطّلاعات"
+
+#: src/font-view-window.ui:203
+msgid "Font Details"
+msgstr "جزییات قلم"
+
+#: src/font-view-window.ui:250
+msgid "_Close"
+msgstr "خروج"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "قلم‌های گنوم"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "نمایش نگارش برنامه"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in.in:6
@@ -1026,6 +1050,15 @@ msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "صفر دارای اسلش"
 
+#~ msgid "This font could not be installed."
+#~ msgstr "این قلم قابل نصب نیست."
+
+#~ msgid "This font could not be displayed."
+#~ msgstr "این قلم قابل نمایش نیست."
+
+#~ msgid "Info"
+#~ msgstr "اطّلاعات"
+
 #~ msgid "About"
 #~ msgstr "درباره"
 
@@ -1043,9 +1076,6 @@ msgstr "صفر دارای اسلش"
 
 #~ msgid "Run '%s --help' to see a full list of available command line options."
 #~ msgstr "برای نمایش تمام گزینه‌های خط فرمان «%s --help» را اجرا کنید."
-
-#~ msgid "_Close"
-#~ msgstr "خروج"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "اندازه قلم (پیش‌فرض: ۶۴)"
