@@ -37,6 +37,49 @@
   </kudos>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="44.0" date="2023-03-19">
+      <description>
+        <p>Fonts 44.0 comes with general consistency improvements to the application:</p>
+        <ul>
+          <li>The app now provides standard shortcuts like Ctrl+Q and Ctrl+F</li>
+          <li>New widgetry allows for navigation via the back mouse button, alt+arrows, and touchscreen swipes</li>
+          <li>Various buttons can now be used with mnemonics</li>
+        </ul>
+        <p>This version brings translation updates for the following locales:</p>
+        <ul>
+          <li>Basque (Asier Sarasua Garmendia)</li>
+          <li>Belarusian (Vasil Pupkin)</li>
+          <li>Bulgarian (Alexander Shopov)</li>
+          <li>Catalan (Jordi Mas i Hernandez)</li>
+          <li>Czech (Marek Černocký)</li>
+          <li>Danish (Ask Hjorth Larsen)</li>
+          <li>Finnish (Jiri Grönroos)</li>
+          <li>French (Jean-Marc Tissières)</li>
+          <li>Friulian (Fabio Tomat)</li>
+          <li>Galician (Fran Dieguez)</li>
+          <li>Georgian (Ekaterine Papava)</li>
+          <li>German (Philipp Kiemle, Jürgen Benvenuti)</li>
+          <li>Hebrew (Yosef Or Boczko)</li>
+          <li>Hungarian (Balázs Úr)</li>
+          <li>Indonesian (Kukuh Syafaat)</li>
+          <li>Interlingue (Olga Smirnova)</li>
+          <li>Korean (DaeHyun Sung)</li>
+          <li>Lithuanian (Aurimas Černius)</li>
+          <li>Nepali (Pawan Chitrakar)</li>
+          <li>Occitan (post 1500) (Quentin PAGÈS)</li>
+          <li>Persian (Danial Behzadi)</li>
+          <li>Polish (Piotr Drąg)</li>
+          <li>Portuguese (Hugo Carvalho)</li>
+          <li>Russian (Aleksandr Melman)</li>
+          <li>Serbian (Марко Костић)</li>
+          <li>Slovenian (Matej Urbančič)</li>
+          <li>Spanish (Daniel)</li>
+          <li>Swedish (Luna Jernberg)</li>
+          <li>Turkish (Sabri Ünal)</li>
+          <li>Ukrainian (Yuri Chornoivan)</li>
+        </ul>
+      </description>
+    </release>
     <release version="44~rc" date="2023-03-05">
       <description>
         <p>Fonts 44.rc comes with translation updates for the following locales:</p>

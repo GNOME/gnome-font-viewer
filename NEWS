@@ -1,3 +1,43 @@
+GNOME Font Viewer - 44.0
+-------------------------------------------------------------------------------
+Fonts 44.0 comes with general consistency improvements to the application:
+
+* The app now provides standard shortcuts like Ctrl+Q and Ctrl+F
+* New widgetry allows for navigation via the back mouse button, alt+arrows, and touchscreen swipes
+* Various buttons can now be used with mnemonics
+
+This version brings translation updates for the following locales:
+ * Basque (Asier Sarasua Garmendia)
+ * Belarusian (Vasil Pupkin)
+ * Bulgarian (Alexander Shopov)
+ * Catalan (Jordi Mas i Hernandez)
+ * Czech (Marek Černocký)
+ * Danish (Ask Hjorth Larsen)
+ * Finnish (Jiri Grönroos)
+ * French (Jean-Marc Tissières)
+ * Friulian (Fabio Tomat)
+ * Galician (Fran Dieguez)
+ * Georgian (Ekaterine Papava)
+ * German (Philipp Kiemle, Jürgen Benvenuti)
+ * Hebrew (Yosef Or Boczko)
+ * Hungarian (Balázs Úr)
+ * Indonesian (Kukuh Syafaat)
+ * Interlingue (Olga Smirnova)
+ * Korean (DaeHyun Sung)
+ * Lithuanian (Aurimas Černius)
+ * Nepali (Pawan Chitrakar)
+ * Occitan (post 1500) (Quentin PAGÈS)
+ * Persian (Danial Behzadi)
+ * Polish (Piotr Drąg)
+ * Portuguese (Hugo Carvalho)
+ * Russian (Aleksandr Melman)
+ * Serbian (Марко Костић)
+ * Slovenian (Matej Urbančič)
+ * Spanish (Daniel)
+ * Swedish (Luna Jernberg)
+ * Turkish (Sabri Ünal)
+ * Ukrainian (Yuri Chornoivan)
+
 GNOME Font Viewer - 44.rc
 -------------------------------------------------------------------------------
 Fonts 44.rc comes with the following translation updates:
