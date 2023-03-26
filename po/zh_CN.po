@@ -8,29 +8,30 @@
 # Merrick Zhang <anphorea@gmail.com>, 2020.
 # Dingzhong Chen <wsxy162@gmail.com>, 2018-2021.
 # lumingzh <lumingzh@qq.com>, 2022.
+# Nanling <neithern@outlook.com>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2022-02-12 01:19+0000\n"
-"PO-Revision-Date: 2022-02-12 20:17+0800\n"
-"Last-Translator: lumingzh <lumingzh@qq.com>\n"
+"POT-Creation-Date: 2023-02-11 23:28+0000\n"
+"PO-Revision-Date: 2023-03-26 11:59+0800\n"
+"Last-Translator: Nanling <neithern@outlook.com>\n"
 "Language-Team: Chinese - China <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"X-Generator: Gtranslator 41.0\n"
+"X-Generator: Gtranslator 42.0\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view-application.c:124
 #: src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr "字体"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
+#: data/org.gnome.font-viewer.appdata.xml.in:7
 #: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "查看您系统中的字体"
@@ -53,7 +54,7 @@ msgstr ""
 "GNOME 字体 还支持安装 .ttf 或其他格式下载的新字体文件。字体可以只为您一人安装"
 "使用，亦可为使用此计算机的所有用户安装。"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21
+#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
 msgid "The GNOME Project"
 msgstr "GNOME 项目"
 
@@ -77,146 +78,11 @@ msgstr "大小"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "字体文件 输出文件"
 
-#: src/font-view-app-menu.ui:6
-msgid "About Fonts"
-msgstr "关于字体"
+#: src/font-view-application.c:79 src/font-view-window.c:750
+msgid "Could Not Display Font"
+msgstr "无法显示字体"
 
-#: src/font-view.c:205
-msgid "GNOME Fonts"
-msgstr "GNOME 字体"
-
-#: src/font-view.c:212
-msgid "Show the application's version"
-msgstr "显示应用版本"
-
-#. Translators, this string is used to display information about
-#. * a 'font variation axis'. The %s gets replaced with the name
-#. * of the axis, for example 'Width'. The three %g get replaced
-#. * with the minimum, maximum and default values for the axis.
-#.
-#: src/font-view.c:327
-#, c-format
-msgid "%s %g — %g, default %g"
-msgstr "%s %g — %g，默认 %g"
-
-#: src/font-view.c:378
-#, c-format
-msgid "Instance %d"
-msgstr "实例 %d"
-
-#. Translators, this seperates the list of Layout
-#. * Features.
-#: src/font-view.c:418
-msgctxt "OpenType layout"
-msgid ", "
-msgstr "、"
-
-#: src/font-view.c:443
-msgid "Name"
-msgstr "名称"
-
-#: src/font-view.c:446
-msgid "Location"
-msgstr "位置"
-
-#: src/font-view.c:449
-msgid "Style"
-msgstr "样式"
-
-#: src/font-view.c:459
-msgid "Type"
-msgstr "类型"
-
-#: src/font-view.c:525 src/font-view.c:551
-msgid "Version"
-msgstr "版本"
-
-#: src/font-view.c:529 src/font-view.c:556
-msgid "Copyright"
-msgstr "版权"
-
-#: src/font-view.c:533
-msgid "Description"
-msgstr "描述"
-
-#: src/font-view.c:537
-msgid "Manufacturer"
-msgstr "制作商"
-
-#: src/font-view.c:541
-msgid "Designer"
-msgstr "设计师"
-
-#: src/font-view.c:545
-msgid "License"
-msgstr "许可证"
-
-#: src/font-view.c:568
-msgid "Glyph Count"
-msgstr "字形数量"
-
-#: src/font-view.c:570
-msgid "Color Glyphs"
-msgstr "彩色字形"
-
-#: src/font-view.c:571
-msgid "yes"
-msgstr "是"
-
-#: src/font-view.c:571
-msgid "no"
-msgstr "否"
-
-#: src/font-view.c:575
-msgid "Layout Features"
-msgstr "排版特性"
-
-#: src/font-view.c:581
-msgid "Variation Axes"
-msgstr "变体轴"
-
-#: src/font-view.c:588
-msgid "Named Styles"
-msgstr "命名样式"
-
-#: src/font-view.c:600
-msgid "Failed"
-msgstr "失败"
-
-#: src/font-view.c:609
-msgid "Installed"
-msgstr "已安装"
-
-#: src/font-view.c:614
-#| msgid "Installing…"
-msgid "Installing"
-msgstr "安装中"
-
-#: src/font-view.c:617 src/font-view.c:978
-msgid "Install"
-msgstr "安装"
-
-#: src/font-view.c:739
-msgid "This font could not be installed."
-msgstr "该字体无法安装。"
-
-#: src/font-view.c:874
-msgid "This font could not be displayed."
-msgstr "该字体无法显示。"
-
-#: src/font-view.c:992
-msgid "Info"
-msgstr "信息"
-
-#: src/font-view.c:1008
-msgid "Back"
-msgstr "返回"
-
-#: src/font-view.c:1090
-msgid "All Fonts"
-msgstr "全部字体"
-
-#: src/font-view.c:1170
+#: src/font-view-application.c:129
 msgid "translator-credits"
 msgstr ""
 "Cheng Lu <chenglu1990@gmail.com>, 2012, 2014\n"
@@ -225,6 +91,164 @@ msgstr ""
 "mars <gzhqyz@gmail.com>, 2020\n"
 "Merrick Zhang <anphorea@gmail.com>, 2020\n"
 "Dingzhong <wsxy162@gmail.com>, 2018, 2021"
+
+#: src/font-view-window.c:119
+msgid "Failed"
+msgstr "失败"
+
+#: src/font-view-window.c:127
+msgid "Installed"
+msgstr "已安装"
+
+#: src/font-view-window.c:132
+msgid "Installing"
+msgstr "安装中"
+
+#: src/font-view-window.c:135
+msgid "Install"
+msgstr "安装"
+
+#. Translators, this string is used to display information about
+#. * a 'font variation axis'. The %s gets replaced with the name
+#. * of the axis, for example 'Width'. The three %g get replaced
+#. * with the minimum, maximum and default values for the axis.
+#.
+#: src/font-view-window.c:249
+#, c-format
+msgid "%s %g — %g, default %g"
+msgstr "%s %g — %g，默认 %g"
+
+#: src/font-view-window.c:304
+#, c-format
+msgid "Instance %d"
+msgstr "实例 %d"
+
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view-window.c:342
+msgctxt "OpenType layout"
+msgid ", "
+msgstr "、"
+
+#: src/font-view-window.c:369
+msgid "Name"
+msgstr "名称"
+
+#: src/font-view-window.c:372
+msgid "Location"
+msgstr "位置"
+
+#: src/font-view-window.c:375
+msgid "Style"
+msgstr "样式"
+
+#: src/font-view-window.c:385
+msgid "Type"
+msgstr "类型"
+
+#: src/font-view-window.c:451 src/font-view-window.c:477
+msgid "Version"
+msgstr "版本"
+
+#: src/font-view-window.c:455 src/font-view-window.c:482
+msgid "Copyright"
+msgstr "版权"
+
+#: src/font-view-window.c:459
+msgid "Description"
+msgstr "描述"
+
+#: src/font-view-window.c:463
+msgid "Manufacturer"
+msgstr "制作商"
+
+#: src/font-view-window.c:467
+msgid "Designer"
+msgstr "设计师"
+
+#: src/font-view-window.c:471
+msgid "License"
+msgstr "许可证"
+
+#: src/font-view-window.c:496
+msgid "Glyph Count"
+msgstr "字形数量"
+
+#: src/font-view-window.c:498
+msgid "Color Glyphs"
+msgstr "彩色字形"
+
+#: src/font-view-window.c:499
+msgid "yes"
+msgstr "是"
+
+#: src/font-view-window.c:499
+msgid "no"
+msgstr "否"
+
+#: src/font-view-window.c:503
+msgid "Layout Features"
+msgstr "排版特性"
+
+#: src/font-view-window.c:509
+msgid "Variation Axes"
+msgstr "变体轴"
+
+#: src/font-view-window.c:516
+msgid "Named Styles"
+msgstr "命名样式"
+
+#: src/font-view-window.c:558 src/font-view-window.c:670
+msgid "Could Not Install Font"
+msgstr "无法安装字体"
+
+#: src/font-view-window.ui:34
+msgid "All Fonts"
+msgstr "全部字体"
+
+#: src/font-view-window.ui:40
+msgid "Search"
+msgstr "搜索"
+
+#: src/font-view-window.ui:48
+msgid "About Fonts"
+msgstr "关于字体"
+
+#: src/font-view-window.ui:60
+msgid "Search fonts"
+msgstr "搜索字体"
+
+#: src/font-view-window.ui:181
+msgid "Back"
+msgstr "返回"
+
+#: src/font-view-window.ui:187
+msgid "_Install"
+msgstr "安装(_I)"
+
+#: src/font-view-window.ui:190
+msgid "Install Font"
+msgstr "安装字体"
+
+#: src/font-view-window.ui:195
+msgid "I_nfo"
+msgstr "信息(_N)"
+
+#: src/font-view-window.ui:197
+msgid "Font Details"
+msgstr "字体详情"
+
+#: src/font-view-window.ui:244
+msgid "_Close"
+msgstr "关闭(_C)"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "GNOME 字体"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "显示应用版本"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in.in:6
@@ -1026,6 +1050,15 @@ msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "斜杆零"
 
+#~ msgid "This font could not be installed."
+#~ msgstr "该字体无法安装。"
+
+#~ msgid "This font could not be displayed."
+#~ msgstr "该字体无法显示。"
+
+#~ msgid "Info"
+#~ msgstr "信息"
+
 #~ msgid "About"
 #~ msgstr "关于"
 
@@ -1044,9 +1077,6 @@ msgstr "斜杆零"
 #~ msgid ""
 #~ "Run '%s --help' to see a full list of available command line options."
 #~ msgstr "运行“%s --help”来查看可用命令行选项的完整列表。"
-
-#~ msgid "_Close"
-#~ msgstr "关闭(_C)"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "字体大小(默认：64)"
