@@ -11,29 +11,29 @@
 # Wouter Bolsterlee <wbolster@gnome.org>, 2006–2013.
 # Hannie Dumoleyn <hannie@ubuntu-nl.org>, 2010–2011, 2015.
 # Erwin Poeze <donnut@outlook.com>, 2013, 2014.
-# Nathan Follens <nfollens@gnome.org>, 2017, 2019, 2022.
+# Nathan Follens <nfollens@gnome.org>, 2017, 2019, 2022-2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer.master.nl\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2022-02-26 13:34+0000\n"
-"PO-Revision-Date: 2022-03-25 14:02+0100\n"
+"POT-Creation-Date: 2023-02-11 23:28+0000\n"
+"PO-Revision-Date: 2023-03-26 15:55+0200\n"
 "Last-Translator: Nathan Follens <nfollens@gnome.org>\n"
-"Language-Team: Dutch <gnome-nl-list@gnome.org>\n"
+"Language-Team: Dutch <https://matrix.to/#/#nl:gnome.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view-application.c:124
 #: src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr "Lettertypen"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
+#: data/org.gnome.font-viewer.appdata.xml.in:7
 #: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Lettertypen op uw systeem bekijken"
@@ -59,9 +59,9 @@ msgstr ""
 "geïnstalleerd of beschikbaar worden gemaakt voor alle gebruikers van de "
 "computer."
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21
+#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
 msgid "The GNOME Project"
-msgstr "Het Gnome-project"
+msgstr "Het GNOME-project"
 
 #: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
@@ -83,153 +83,176 @@ msgstr "GROOTTE"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "LETTERTYPEBESTAND UITVOERBESTAND"
 
-#: src/font-view-app-menu.ui:6
-msgid "About Fonts"
-msgstr "Over Lettertypen"
+#: src/font-view-application.c:79 src/font-view-window.c:750
+msgid "Could Not Display Font"
+msgstr "Kon lettertype niet weergeven"
 
-#: src/font-view.c:205
-msgid "GNOME Fonts"
-msgstr "Gnome Lettertypen"
-
-#: src/font-view.c:212
-msgid "Show the application's version"
-msgstr "Toon de versie van de toepassing"
-
-#. Translators, this string is used to display information about
-#. * a 'font variation axis'. The %s gets replaced with the name
-#. * of the axis, for example 'Width'. The three %g get replaced
-#. * with the minimum, maximum and default values for the axis.
-#.
-#: src/font-view.c:327
-#, c-format
-msgid "%s %g — %g, default %g"
-msgstr "%s %g — %g, standaard %g"
-
-#: src/font-view.c:378
-#, c-format
-msgid "Instance %d"
-msgstr "Instantie %d"
-
-#. Translators, this seperates the list of Layout
-#. * Features.
-#: src/font-view.c:418
-msgctxt "OpenType layout"
-msgid ", "
-msgstr ", "
-
-#: src/font-view.c:443
-msgid "Name"
-msgstr "Naam"
-
-#: src/font-view.c:446
-msgid "Location"
-msgstr "Locatie"
-
-#: src/font-view.c:449
-msgid "Style"
-msgstr "Stijl"
-
-#: src/font-view.c:459
-msgid "Type"
-msgstr "Type"
-
-#: src/font-view.c:525 src/font-view.c:551
-msgid "Version"
-msgstr "Versie"
-
-#: src/font-view.c:529 src/font-view.c:556
-msgid "Copyright"
-msgstr "Copyright"
-
-#: src/font-view.c:533
-msgid "Description"
-msgstr "Omschrijving"
-
-#: src/font-view.c:537
-msgid "Manufacturer"
-msgstr "Fabrikant"
-
-#: src/font-view.c:541
-msgid "Designer"
-msgstr "Ontwerper"
-
-#: src/font-view.c:545
-msgid "License"
-msgstr "Licentie"
-
-#: src/font-view.c:568
-msgid "Glyph Count"
-msgstr "Aantal gliefen"
-
-#: src/font-view.c:570
-msgid "Color Glyphs"
-msgstr "Kleurgliefen"
-
-#: src/font-view.c:571
-msgid "yes"
-msgstr "ja"
-
-#: src/font-view.c:571
-msgid "no"
-msgstr "nee"
-
-#: src/font-view.c:575
-msgid "Layout Features"
-msgstr "Opmaakfuncties"
-
-#: src/font-view.c:581
-msgid "Variation Axes"
-msgstr "Variatie-assen"
-
-#: src/font-view.c:588
-msgid "Named Styles"
-msgstr "Benoemde stijlen"
-
-#: src/font-view.c:600
-msgid "Failed"
-msgstr "Mislukt"
-
-#: src/font-view.c:609
-msgid "Installed"
-msgstr "Geïnstalleerd"
-
-#: src/font-view.c:614
-msgid "Installing"
-msgstr "Bezig met installeren"
-
-#: src/font-view.c:617 src/font-view.c:978
-msgid "Install"
-msgstr "Installeren"
-
-#: src/font-view.c:739
-msgid "This font could not be installed."
-msgstr "Dit lettertype kon niet geïnstalleerd worden."
-
-#: src/font-view.c:874
-msgid "This font could not be displayed."
-msgstr "Dit lettertype kon niet getoond worden."
-
-#: src/font-view.c:992
-msgid "Info"
-msgstr "Informatie"
-
-#: src/font-view.c:1008
-msgid "Back"
-msgstr "Terug"
-
-#: src/font-view.c:1090
-msgid "All Fonts"
-msgstr "Alle lettertypen"
-
-#: src/font-view.c:1170
+#: src/font-view-application.c:129
 msgid "translator-credits"
 msgstr ""
 "Wouter Bolsterlee\n"
 "Hannie Dumoleyn\n"
 "Erwin Poeze\n"
 "Nathan Follens <nfollens@gnome.org>\n"
-"\n"
-"Meer info over Gnome-NL http://nl.gnome.org/"
+"Meer info over GNOME-NL https://nl.gnome.org/"
+
+#: src/font-view-window.c:119
+msgid "Failed"
+msgstr "Mislukt"
+
+#: src/font-view-window.c:127
+msgid "Installed"
+msgstr "Geïnstalleerd"
+
+#: src/font-view-window.c:132
+msgid "Installing"
+msgstr "Bezig met installeren"
+
+#: src/font-view-window.c:135
+msgid "Install"
+msgstr "Installeren"
+
+#. Translators, this string is used to display information about
+#. * a 'font variation axis'. The %s gets replaced with the name
+#. * of the axis, for example 'Width'. The three %g get replaced
+#. * with the minimum, maximum and default values for the axis.
+#.
+#: src/font-view-window.c:249
+#, c-format
+msgid "%s %g — %g, default %g"
+msgstr "%s %g — %g, standaard %g"
+
+#: src/font-view-window.c:304
+#, c-format
+msgid "Instance %d"
+msgstr "Instantie %d"
+
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view-window.c:342
+msgctxt "OpenType layout"
+msgid ", "
+msgstr ", "
+
+#: src/font-view-window.c:369
+msgid "Name"
+msgstr "Naam"
+
+#: src/font-view-window.c:372
+msgid "Location"
+msgstr "Locatie"
+
+#: src/font-view-window.c:375
+msgid "Style"
+msgstr "Stijl"
+
+#: src/font-view-window.c:385
+msgid "Type"
+msgstr "Type"
+
+#: src/font-view-window.c:451 src/font-view-window.c:477
+msgid "Version"
+msgstr "Versie"
+
+#: src/font-view-window.c:455 src/font-view-window.c:482
+msgid "Copyright"
+msgstr "Copyright"
+
+#: src/font-view-window.c:459
+msgid "Description"
+msgstr "Omschrijving"
+
+#: src/font-view-window.c:463
+msgid "Manufacturer"
+msgstr "Fabrikant"
+
+#: src/font-view-window.c:467
+msgid "Designer"
+msgstr "Ontwerper"
+
+#: src/font-view-window.c:471
+msgid "License"
+msgstr "Licentie"
+
+#: src/font-view-window.c:496
+msgid "Glyph Count"
+msgstr "Aantal gliefen"
+
+#: src/font-view-window.c:498
+msgid "Color Glyphs"
+msgstr "Kleurgliefen"
+
+#: src/font-view-window.c:499
+msgid "yes"
+msgstr "ja"
+
+#: src/font-view-window.c:499
+msgid "no"
+msgstr "nee"
+
+#: src/font-view-window.c:503
+msgid "Layout Features"
+msgstr "Opmaakfuncties"
+
+#: src/font-view-window.c:509
+msgid "Variation Axes"
+msgstr "Variatie-assen"
+
+#: src/font-view-window.c:516
+msgid "Named Styles"
+msgstr "Benoemde stijlen"
+
+#: src/font-view-window.c:558 src/font-view-window.c:670
+msgid "Could Not Install Font"
+msgstr "Kon lettertype niet installeren"
+
+#: src/font-view-window.ui:34
+msgid "All Fonts"
+msgstr "Alle lettertypen"
+
+#: src/font-view-window.ui:40
+msgid "Search"
+msgstr "Zoeken"
+
+#: src/font-view-window.ui:48
+msgid "About Fonts"
+msgstr "Over Lettertypen"
+
+#: src/font-view-window.ui:60
+msgid "Search fonts"
+msgstr "Zoek naar lettertypen"
+
+#: src/font-view-window.ui:181
+msgid "Back"
+msgstr "Terug"
+
+#: src/font-view-window.ui:187
+msgid "_Install"
+msgstr "_Installeren"
+
+#: src/font-view-window.ui:190
+msgid "Install Font"
+msgstr "Lettertype installeren"
+
+#: src/font-view-window.ui:195
+msgid "I_nfo"
+msgstr "I_nfo"
+
+#: src/font-view-window.ui:197
+msgid "Font Details"
+msgstr "Lettertypedetails"
+
+#: src/font-view-window.ui:244
+msgid "_Close"
+msgstr "_Sluiten"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "GNOME Lettertypen"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "Toon de versie van de toepassing"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in.in:6
@@ -1031,6 +1054,15 @@ msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Nul met schuine streep"
 
+#~ msgid "This font could not be installed."
+#~ msgstr "Dit lettertype kon niet geïnstalleerd worden."
+
+#~ msgid "This font could not be displayed."
+#~ msgstr "Dit lettertype kon niet getoond worden."
+
+#~ msgid "Info"
+#~ msgstr "Informatie"
+
 #~ msgid "org.gnome.font-viewer"
 #~ msgstr "org.gnome.font-viewer"
 
@@ -1042,9 +1074,6 @@ msgstr "Nul met schuine streep"
 
 #~ msgid "General"
 #~ msgstr "Algemeen"
-
-#~ msgid "Details"
-#~ msgstr "Details"
 
 #~ msgid "preferences-desktop-font"
 #~ msgstr "preferences-desktop-font"
@@ -1060,9 +1089,6 @@ msgstr "Nul met schuine streep"
 #~ msgstr ""
 #~ "Voer '%s --help' uit om een volledige lijst met mogelijke opties voor de "
 #~ "opdrachtregel te zien."
-
-#~ msgid "_Close"
-#~ msgstr "_Sluiten"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "Lettergrootte (standaard: 64)"
