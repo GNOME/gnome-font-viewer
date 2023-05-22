@@ -16,29 +16,30 @@
 #    https://www.microsoft.com/en-us/Typography/OpenTypeSpecification.aspx
 #    https://docs.microsoft.com/it-it/typography/opentype/spec/
 #    https://it.wikipedia.org/wiki/Tipo_di_carattere
+# Gianvito Cavasoli <gianvito@gmx.it>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2022-02-26 13:34+0000\n"
-"PO-Revision-Date: 2022-03-15 10:20+0100\n"
-"Last-Translator: Milo Casagrande <milo@milo.name>\n"
-"Language-Team: Italian <tp@lists.linux.it>\n"
+"POT-Creation-Date: 2023-05-05 13:53+0000\n"
+"PO-Revision-Date: 2023-05-18 12:17+0200\n"
+"Last-Translator: Gianvito Cavasoli <gianvito@gmx.it>\n"
+"Language-Team: Italian <gnome-it-list@gnome.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 42.0\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view-application.c:124
 #: src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr "Tipi di carattere"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
+#: data/org.gnome.font-viewer.appdata.xml.in:7
 #: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Visualizza i tipi di carattere presenti nel sistema"
@@ -49,9 +50,9 @@ msgid ""
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"Tipi di carattere mostra tutti i tipi di carattere installati sul proprio computer "
-"tramite delle miniature degli stessi: selezionando una miniatura vengono mostrate "
-"le varie dimensioni del tipo di carattere."
+"Tipi di carattere mostra tutti i tipi di carattere installati sul proprio "
+"computer tramite delle miniature degli stessi: selezionando una miniatura "
+"vengono mostrate le varie dimensioni del tipo di carattere."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
@@ -59,11 +60,12 @@ msgid ""
 "other formats. Fonts may be installed only for your use or made available to "
 "all users on the computer."
 msgstr ""
-"Tipi di carattere consente di installare nuovi tipi di carattere da file scaricati "
-"nel formato .ttf e anche altri formati. I tipi di carattere possono essere installati "
-"per uso personale o per tutti gli utenti del computer."
+"Tipi di carattere consente di installare nuovi tipi di carattere da file "
+"scaricati nel formato .ttf e anche altri formati. I tipi di carattere "
+"possono essere installati per uso personale o per tutti gli utenti del "
+"computer."
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21
+#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
 msgid "The GNOME Project"
 msgstr "Il progetto GNOME"
 
@@ -87,145 +89,11 @@ msgstr "DIMENSIONE"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FILE-TIPO-CARATTERE FILE-USCITA"
 
-#: src/font-view-app-menu.ui:6
-msgid "About Fonts"
-msgstr "Informazioni su Tipi di carattere"
+#: src/font-view-application.c:79 src/font-view-window.c:751
+msgid "Could Not Display Font"
+msgstr "Impossibile mostrare il carattere"
 
-#: src/font-view.c:205
-msgid "GNOME Fonts"
-msgstr "Tipi di carattere GNOME"
-
-#: src/font-view.c:212
-msgid "Show the application's version"
-msgstr "Mostra la versione dell'applicazione"
-
-#. Translators, this string is used to display information about
-#. * a 'font variation axis'. The %s gets replaced with the name
-#. * of the axis, for example 'Width'. The three %g get replaced
-#. * with the minimum, maximum and default values for the axis.
-#.
-#: src/font-view.c:327
-#, c-format
-msgid "%s %g — %g, default %g"
-msgstr "%s %g — %g, predefinito %g"
-
-#: src/font-view.c:378
-#, c-format
-msgid "Instance %d"
-msgstr "Istanza %d"
-
-#. Translators, this seperates the list of Layout
-#. * Features.
-#: src/font-view.c:418
-msgctxt "OpenType layout"
-msgid ", "
-msgstr ", "
-
-#: src/font-view.c:443
-msgid "Name"
-msgstr "Nome"
-
-#: src/font-view.c:446
-msgid "Location"
-msgstr "Posizione"
-
-#: src/font-view.c:449
-msgid "Style"
-msgstr "Stile"
-
-#: src/font-view.c:459
-msgid "Type"
-msgstr "Tipo"
-
-#: src/font-view.c:525 src/font-view.c:551
-msgid "Version"
-msgstr "Versione"
-
-#: src/font-view.c:529 src/font-view.c:556
-msgid "Copyright"
-msgstr "Copyright"
-
-#: src/font-view.c:533
-msgid "Description"
-msgstr "Descrizione"
-
-#: src/font-view.c:537
-msgid "Manufacturer"
-msgstr "Produttore"
-
-#: src/font-view.c:541
-msgid "Designer"
-msgstr "Design di"
-
-#: src/font-view.c:545
-msgid "License"
-msgstr "Licensa"
-
-#: src/font-view.c:568
-msgid "Glyph Count"
-msgstr "Conteggio glifi"
-
-#: src/font-view.c:570
-msgid "Color Glyphs"
-msgstr "Glifi di colore"
-
-#: src/font-view.c:571
-msgid "yes"
-msgstr "sì"
-
-#: src/font-view.c:571
-msgid "no"
-msgstr "no"
-
-#: src/font-view.c:575
-msgid "Layout Features"
-msgstr "Caratteristiche"
-
-#: src/font-view.c:581
-msgid "Variation Axes"
-msgstr "Assi di variazione"
-
-#: src/font-view.c:588
-msgid "Named Styles"
-msgstr "Stili nominali"
-
-#: src/font-view.c:600
-msgid "Failed"
-msgstr "Non riuscito"
-
-#: src/font-view.c:609
-msgid "Installed"
-msgstr "Installato"
-
-#: src/font-view.c:614
-msgid "Installing"
-msgstr "Installazione in corso"
-
-#: src/font-view.c:617 src/font-view.c:978
-msgid "Install"
-msgstr "Installa"
-
-#: src/font-view.c:739
-msgid "This font could not be installed."
-msgstr "Impossibile installare questo tipo di carattere."
-
-#: src/font-view.c:874
-msgid "This font could not be displayed."
-msgstr "Impossibile visualizzare questo tipo di carattere."
-
-#: src/font-view.c:992
-msgid "Info"
-msgstr "Informazioni"
-
-#: src/font-view.c:1008
-msgid "Back"
-msgstr "Indietro"
-
-#: src/font-view.c:1090
-msgid "All Fonts"
-msgstr "Tutti i tipi di carattere"
-
-#: src/font-view.c:1170
+#: src/font-view-application.c:129
 msgid "translator-credits"
 msgstr ""
 "Milo Casagrande <milo@milo.name>\n"
@@ -236,10 +104,170 @@ msgstr ""
 "Alessio Frusciante <algol@firenze.linux.it>\n"
 "Marco Ciampa <ciampix@posteo.net>"
 
+#: src/font-view-window.c:120
+msgid "Failed"
+msgstr "Non riuscito"
+
+#: src/font-view-window.c:128
+msgid "Installed"
+msgstr "Installato"
+
+#: src/font-view-window.c:133
+msgid "Installing"
+msgstr "Installazione in corso"
+
+#: src/font-view-window.c:136
+msgid "Install"
+msgstr "Installa"
+
+#. Translators, this string is used to display information about
+#. * a 'font variation axis'. The %s gets replaced with the name
+#. * of the axis, for example 'Width'. The three %g get replaced
+#. * with the minimum, maximum and default values for the axis.
+#.
+#: src/font-view-window.c:250
+#, c-format
+msgid "%s %g — %g, default %g"
+msgstr "%s %g — %g, predefinito %g"
+
+#: src/font-view-window.c:305
+#, c-format
+msgid "Instance %d"
+msgstr "Istanza %d"
+
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view-window.c:343
+msgctxt "OpenType layout"
+msgid ", "
+msgstr ", "
+
+#: src/font-view-window.c:370
+msgid "Name"
+msgstr "Nome"
+
+#: src/font-view-window.c:373
+msgid "Location"
+msgstr "Posizione"
+
+#: src/font-view-window.c:376
+msgid "Style"
+msgstr "Stile"
+
+#: src/font-view-window.c:386
+msgid "Type"
+msgstr "Tipo"
+
+#: src/font-view-window.c:452 src/font-view-window.c:478
+msgid "Version"
+msgstr "Versione"
+
+#: src/font-view-window.c:456 src/font-view-window.c:483
+msgid "Copyright"
+msgstr "Copyright"
+
+#: src/font-view-window.c:460
+msgid "Description"
+msgstr "Descrizione"
+
+#: src/font-view-window.c:464
+msgid "Manufacturer"
+msgstr "Produttore"
+
+#: src/font-view-window.c:468
+msgid "Designer"
+msgstr "Design di"
+
+#: src/font-view-window.c:472
+msgid "License"
+msgstr "Licensa"
+
+#: src/font-view-window.c:497
+msgid "Glyph Count"
+msgstr "Conteggio glifi"
+
+#: src/font-view-window.c:499
+msgid "Color Glyphs"
+msgstr "Glifi di colore"
+
+#: src/font-view-window.c:500
+msgid "yes"
+msgstr "sì"
+
+#: src/font-view-window.c:500
+msgid "no"
+msgstr "no"
+
+#: src/font-view-window.c:504
+msgid "Layout Features"
+msgstr "Caratteristiche"
+
+#: src/font-view-window.c:510
+msgid "Variation Axes"
+msgstr "Assi di variazione"
+
+#: src/font-view-window.c:517
+msgid "Named Styles"
+msgstr "Stili nominali"
+
+#: src/font-view-window.c:559 src/font-view-window.c:671
+msgid "Could Not Install Font"
+msgstr "Impossibile installare il carattere"
+
+#: src/font-view-window.ui:40
+msgid "All Fonts"
+msgstr "Tutti i tipi di carattere"
+
+#: src/font-view-window.ui:46
+msgid "Search"
+msgstr "Cerca"
+
+#: src/font-view-window.ui:54
+msgid "About Fonts"
+msgstr "Informazioni su Tipi di carattere"
+
+#: src/font-view-window.ui:66
+msgid "Search fonts"
+msgstr "Cerca caratteri"
+
+#: src/font-view-window.ui:187
+msgid "Back"
+msgstr "Indietro"
+
+#: src/font-view-window.ui:193
+msgid "_Install"
+msgstr "_Installa"
+
+#: src/font-view-window.ui:196
+msgid "Install Font"
+msgstr "Installa carattere"
+
+#: src/font-view-window.ui:201
+msgid "I_nfo"
+msgstr "I_nformazioni"
+
+#: src/font-view-window.ui:203
+msgid "Font Details"
+msgstr "Dettagli carattere"
+
+#: src/font-view-window.ui:250
+msgid "_Close"
+msgstr "_Chiudi"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "Tipi di carattere GNOME"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "Mostra la versione dell'applicazione"
+
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
-msgstr "tipo di carattere;tipi di carattere;carattere;caratteri;carattere tipografico;caratteri tipografici;"
+msgstr ""
+"tipo di carattere;tipi di carattere;carattere;caratteri;carattere "
+"tipografico;caratteri tipografici;"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
