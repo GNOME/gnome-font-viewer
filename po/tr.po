@@ -20,10 +20,10 @@ msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2023-02-12 00:29+0000\n"
+"POT-Creation-Date: 2023-05-05 13:53+0000\n"
 "PO-Revision-Date: 2023-02-12 05:31+0300\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
-"Language-Team: Türkçe <gnome-turk@gnome.org>\n"
+"Language-Team: Türkçe <takim@gnome.org.tr>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -76,7 +76,7 @@ msgstr "METİN"
 
 #: src/font-thumbnailer.c:183
 msgid "Thumbnail size (default: 128)"
-msgstr "Küçük resim boyutu (öntanımlı: 128)"
+msgstr "Küçük resim boyutu (öntanımlı: 128)"
 
 #: src/font-thumbnailer.c:183
 msgid "SIZE"
@@ -100,7 +100,7 @@ msgstr ""
 
 #: src/font-view-window.c:120
 msgid "Failed"
-msgstr "Başarısız"
+msgstr "Başarısız"
 
 #: src/font-view-window.c:128
 msgid "Installed"
@@ -146,7 +146,7 @@ msgstr "Konum"
 
 #: src/font-view-window.c:376
 msgid "Style"
-msgstr "Biçem"
+msgstr "Biçem"
 
 #: src/font-view-window.c:386
 msgid "Type"
@@ -1055,6 +1055,3 @@ msgstr "Dönme için Dikey Alternatifler"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Eğik Çizgili Sıfır"
-
-#~ msgid "Info"
-#~ msgstr "Bilgi"
