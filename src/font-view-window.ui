@@ -24,21 +24,15 @@
       </object>
     </child>
     <property name="content">
-      <object class="AdwLeaflet" id="leaflet">
-        <property name="can-unfold">False</property>
-        <property name="can-navigate-back">True</property>
+      <object class="AdwNavigationView" id="nav_view">
         <child>
-          <object class="AdwLeafletPage">
-            <property name="name">overview</property>
+          <object class="AdwNavigationPage">
+            <property name="tag">overview</property>
+            <property name="title" translatable="yes">All Fonts</property>
             <property name="child">
               <object class="AdwToolbarView">
                 <child type="top">
                   <object class="AdwHeaderBar">
-                    <property name="title-widget">
-                      <object class="AdwWindowTitle">
-                        <property name="title" translatable="yes">All Fonts</property>
-                      </object>
-                    </property>
                     <child type="start">
                       <object class="GtkToggleButton" id="search_button">
                         <property name="icon-name">edit-find-symbolic</property>
@@ -173,8 +167,9 @@
           </object>
         </child>
         <child>
-          <object class="AdwLeafletPage">
-            <property name="name">preview</property>
+          <object class="AdwNavigationPage">
+            <property name="tag">preview</property>
+            <property name="title" bind-source="font_title" bind-property="title" bind-flags="sync-create"/>
             <property name="child">
               <object class="AdwToolbarView">
                 <child type="top">
@@ -182,13 +177,6 @@
                     <property name="title-widget">
                       <object class="AdwWindowTitle" id="font_title"/>
                     </property>
-                    <child type="start">
-                      <object class="GtkButton">
-                        <property name="icon-name">go-previous-symbolic</property>
-                        <property name="tooltip-text" translatable="yes">Back</property>
-                        <property name="action-name">win.back</property>
-                      </object>
-                    </child>
                     <child type="end">
                       <object class="GtkButton" id="install_button">
                         <property name="label" translatable="yes">_Install</property>

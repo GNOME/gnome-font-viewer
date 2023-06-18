@@ -51,7 +51,7 @@ struct _FontViewWindow
 {
   AdwApplicationWindow parent_instance;
 
-  AdwLeaflet *leaflet;
+  AdwNavigationView *nav_view;
 
   /* Overview */
   GtkToggleButton *search_button;
@@ -603,16 +603,6 @@ install_font_job (GTask *task,
 }
 
 static void
-action_overview_cb (GtkWidget  *widget,
-                    const char *action_name,
-                    GVariant   *parameter)
-{
-  FontViewWindow *self = FONT_VIEW_WINDOW (widget);
-
-  font_view_window_show_overview (self);
-}
-
-static void
 action_install_font_cb (GtkWidget  *widget,
                         const char *action_name,
                         GVariant   *parameter)
@@ -764,7 +754,7 @@ font_view_window_show_overview (FontViewWindow *self)
 {
   g_clear_object (&self->font_file);
 
-  adw_leaflet_set_visible_child_name (self->leaflet, "overview");
+  adw_navigation_view_pop (self->nav_view);
 }
 
 static void
@@ -807,7 +797,7 @@ font_view_window_show_preview (FontViewWindow *self,
   }
 
   gtk_toggle_button_set_active (self->info_button, FALSE);
-  adw_leaflet_set_visible_child_name (self->leaflet, "preview");
+  adw_navigation_view_push_by_tag (self->nav_view, "preview");
 }
 
 void
@@ -847,7 +837,7 @@ font_view_window_class_init (FontViewWindowClass *klass)
   gtk_widget_class_set_template_from_resource (widget_class,
                                                "/org/gnome/font-viewer/font-view-window.ui");
 
-  gtk_widget_class_bind_template_child (widget_class, FontViewWindow, leaflet);
+  gtk_widget_class_bind_template_child (widget_class, FontViewWindow, nav_view);
   gtk_widget_class_bind_template_child (widget_class, FontViewWindow, search_bar);
   gtk_widget_class_bind_template_child (widget_class, FontViewWindow, search_button);
   gtk_widget_class_bind_template_child (widget_class, FontViewWindow, search_entry);
@@ -871,7 +861,6 @@ font_view_window_class_init (FontViewWindowClass *klass)
   gtk_widget_class_bind_template_callback (widget_class, font_name_closure);
   gtk_widget_class_bind_template_callback (widget_class, preview_visible_child_closure);
 
-  gtk_widget_class_install_action (widget_class, "win.back", NULL, action_overview_cb);
   gtk_widget_class_install_action (widget_class, "win.toggle-search", NULL, action_toggle_search_cb);
   gtk_widget_class_install_action (widget_class, "win.install-font", NULL, action_install_font_cb);
 }
