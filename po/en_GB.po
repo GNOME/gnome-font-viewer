@@ -3,7 +3,7 @@
 # Bastien Nocera <hadess@hadess.net>.
 # Gareth Owen <gowen72@yahoo.com>, David Lodge <dave@cirt.net>, 2004.
 # Philip Withnall <philip@tecnocode.co.uk>, 2009.
-# Bruce Cowan <bruce@bcowan.eu>, 2009, 2010, 2011, 2012, 2018.
+# Bruce Cowan <bruce@bcowan.me.uk>, 2009-2023.
 # Zander Brown <zbrown@gnome.org>, 2019.
 #
 msgid ""
@@ -11,48 +11,57 @@ msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2019-07-06 17:09+0000\n"
-"PO-Revision-Date: 2019-08-25 03:00+0100\n"
-"Last-Translator: Zander Brown <zbrown@gnome.org>\n"
+"POT-Creation-Date: 2023-05-05 13:53+0000\n"
+"PO-Revision-Date: 2023-06-30 10:17+0100\n"
+"Last-Translator: Bruce Cowan <bruce@bcowan.me.uk>\n"
 "Language-Team: English - United Kingdom <en_GB@li.org>\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 3.32.1\n"
+"X-Generator: Poedit 3.3.1\n"
 "X-Project-Style: gnome\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
-msgid "GNOME Fonts"
-msgstr "GNOME Fonts"
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view-application.c:124
+#: src/org.gnome.font-viewer.desktop.in.in:3
+msgid "Fonts"
+msgstr "Fonts"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1098
-#: src/org.gnome.font-viewer.desktop.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7
+#: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "View fonts on your system"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
+#| msgid ""
+#| "GNOME Fonts shows you the fonts installed on your computer for your use "
+#| "as thumbnails. Selecting any thumbnails shows the full view of how the "
+#| "font would look under various sizes."
 msgid ""
-"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
+#| msgid ""
+#| "GNOME Fonts also supports installing new font files downloaded in the ."
+#| "ttf and other formats. Fonts may be installed only for your use or made "
+#| "available to all users on the computer."
 msgid ""
-"GNOME Fonts also supports installing new font files downloaded in the .ttf "
-"and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
 msgstr ""
-"GNOME Fonts also supports installing new font files downloaded in the .ttf "
-"and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21
+#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
 msgid "The GNOME Project"
 msgstr "The GNOME Project"
 
@@ -76,155 +85,179 @@ msgstr "SIZE"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
-#: src/font-view-app-menu.ui:6
-#| msgid "About Font Viewer"
-msgid "About Fonts"
-msgstr "About Fonts"
+#: src/font-view-application.c:79 src/font-view-window.c:751
+msgid "Could Not Display Font"
+msgstr "Could Not Display Font"
 
-#: src/font-view.c:99
-msgid "Show the application's version"
-msgstr "Show the application's version"
+#: src/font-view-application.c:129
+msgid "translator-credits"
+msgstr ""
+"Bruce Cowan <bruce@bcowan.me.uk>\n"
+"Zander Brown <zbrown@gnome.org>"
+
+#: src/font-view-window.c:120
+msgid "Failed"
+msgstr "Failed"
+
+#: src/font-view-window.c:128
+msgid "Installed"
+msgstr "Installed"
+
+#: src/font-view-window.c:133
+#| msgid "Installing…"
+msgid "Installing"
+msgstr "Installing"
+
+#: src/font-view-window.c:136
+msgid "Install"
+msgstr "Install"
 
 #. Translators, this string is used to display information about
 #. * a 'font variation axis'. The %s gets replaced with the name
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:228
+#: src/font-view-window.c:250
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, default %g"
 
-#: src/font-view.c:284
+#: src/font-view-window.c:305
 #, c-format
 msgid "Instance %d"
 msgstr "Instance %d"
 
-#. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:327
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view-window.c:343
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:351
+#: src/font-view-window.c:370
 msgid "Name"
 msgstr "Name"
 
-#: src/font-view.c:354
+#: src/font-view-window.c:373
 msgid "Location"
 msgstr "Location"
 
-#: src/font-view.c:357
+#: src/font-view-window.c:376
 msgid "Style"
 msgstr "Style"
 
-#: src/font-view.c:367
+#: src/font-view-window.c:386
 msgid "Type"
 msgstr "Type"
 
-#: src/font-view.c:425 src/font-view.c:451
+#: src/font-view-window.c:452 src/font-view-window.c:478
 msgid "Version"
 msgstr "Version"
 
-#: src/font-view.c:429 src/font-view.c:456
+#: src/font-view-window.c:456 src/font-view-window.c:483
 msgid "Copyright"
 msgstr "Copyright"
 
-#: src/font-view.c:433
+#: src/font-view-window.c:460
 msgid "Description"
 msgstr "Description"
 
-#: src/font-view.c:437
+#: src/font-view-window.c:464
 msgid "Manufacturer"
 msgstr "Manufacturer"
 
-#: src/font-view.c:441
+#: src/font-view-window.c:468
 msgid "Designer"
 msgstr "Designer"
 
-#: src/font-view.c:445
+#: src/font-view-window.c:472
 msgid "License"
 msgstr "Licence"
 
-#: src/font-view.c:470
+#: src/font-view-window.c:497
 msgid "Glyph Count"
 msgstr "Glyph Count"
 
-#: src/font-view.c:472
+#: src/font-view-window.c:499
 msgid "Color Glyphs"
 msgstr "Colour Glyphs"
 
-#: src/font-view.c:472
+#: src/font-view-window.c:500
 msgid "yes"
 msgstr "yes"
 
-#: src/font-view.c:472
+#: src/font-view-window.c:500
 msgid "no"
 msgstr "no"
 
-#: src/font-view.c:476
+#: src/font-view-window.c:504
 msgid "Layout Features"
 msgstr "Layout Features"
 
-#: src/font-view.c:482
+#: src/font-view-window.c:510
 msgid "Variation Axes"
 msgstr "Variation Axes"
 
-#: src/font-view.c:489
+#: src/font-view-window.c:517
 msgid "Named Styles"
 msgstr "Named Styles"
 
-#: src/font-view.c:563
-#| msgid "This font could not be displayed."
-msgid "This font could not be installed."
-msgstr "This font could not be installed."
+#: src/font-view-window.c:559 src/font-view-window.c:671
+msgid "Could Not Install Font"
+msgstr "Could Not Install Font"
 
-#: src/font-view.c:701
-msgid "This font could not be displayed."
-msgstr "This font could not be displayed."
-
-#: src/font-view.c:833
-msgid "Install"
-msgstr "Install"
-
-#: src/font-view.c:836
-#| msgid "Install"
-msgid "Installing…"
-msgstr "Installing…"
-
-#: src/font-view.c:839
-msgid "Installed"
-msgstr "Installed"
-
-#: src/font-view.c:842
-#| msgid "Install Failed"
-msgid "Failed"
-msgstr "Failed"
-
-#: src/font-view.c:858
-msgid "Info"
-msgstr "Info"
-
-#: src/font-view.c:875
-msgid "Back"
-msgstr "Back"
-
-#: src/font-view.c:974
+#: src/font-view-window.ui:40
 msgid "All Fonts"
 msgstr "All Fonts"
 
-#: src/font-view.c:1097 src/org.gnome.font-viewer.desktop.in:3
-msgid "Fonts"
-msgstr "Fonts"
+#: src/font-view-window.ui:46
+msgid "Search"
+msgstr "Search"
 
-#: src/font-view.c:1100
-msgid "translator-credits"
-msgstr ""
-"Bruce Cowan <bruce@bcowan.eu>\n"
-"Zander Brown <zbrown@gnome.org>"
+#: src/font-view-window.ui:54
+msgid "About Fonts"
+msgstr "About Fonts"
+
+#: src/font-view-window.ui:66
+msgid "Search fonts"
+msgstr "Search fonts"
+
+#: src/font-view-window.ui:187
+msgid "Back"
+msgstr "Back"
+
+#: src/font-view-window.ui:193
+#| msgid "Install"
+msgid "_Install"
+msgstr "_Install"
+
+#: src/font-view-window.ui:196
+#| msgid "Install"
+msgid "Install Font"
+msgstr "Install Font"
+
+#: src/font-view-window.ui:201
+msgid "I_nfo"
+msgstr "I_nfo"
+
+#: src/font-view-window.ui:203
+msgid "Font Details"
+msgstr "Font Details"
+
+#: src/font-view-window.ui:250
+msgid "_Close"
+msgstr "_Close"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "GNOME Fonts"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "Show the application's version"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in:6
+#: src/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
 msgstr "fonts;fontface;"
 
@@ -1022,6 +1055,16 @@ msgstr "Vertical Alternates for Rotation"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Slashed Zero"
+
+#~| msgid "This font could not be displayed."
+#~ msgid "This font could not be installed."
+#~ msgstr "This font could not be installed."
+
+#~ msgid "This font could not be displayed."
+#~ msgstr "This font could not be displayed."
+
+#~ msgid "Info"
+#~ msgstr "Info"
 
 #~ msgid "About"
 #~ msgstr "About"
