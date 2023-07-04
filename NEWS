@@ -1,3 +1,15 @@
+GNOME Font Viewer - 45.alpha
+-------------------------------------------------------------------------------
+Fonts 45.alpha comes with a new look courtesy of the new libadwaita 1.4 widgets.
+
+This version brings translation updates for the following locales:
+ * Chinese (China) (Boyuan Yang)
+ * Dutch (Nathan Follens)
+ * English (United Kingdom) (Bruce Cowan)
+ * Icelandic (Sveinn í Felli)
+ * Italian (Gianvito Cavasoli)
+ * Turkish (Sabri Ünal)
+
 GNOME Font Viewer - 44.0
 -------------------------------------------------------------------------------
 Fonts 44.0 comes with general consistency improvements to the application:
