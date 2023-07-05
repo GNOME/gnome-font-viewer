@@ -1,52 +1,10 @@
-loader_sources = [
-  'sushi-font-loader.h',
-  'sushi-font-loader.c',
-]
-
-thumbnail_sources = [
-  loader_sources,
-  'font-thumbnailer.c',
-  'totem-resources.c',
-  'totem-resources.h',
-]
-
-viewer_sources = [
-  loader_sources,
-  'font-model.h',
-  'font-model.c',
-  'sushi-font-widget.h',
-  'sushi-font-widget.c',
-  'font-view-application.h',
-  'font-view-application.c',
-  'font-view-window.h',
-  'font-view-window.c',
-  'main.c',
-]
-
-resources = gnome.compile_resources('font-view-resources',
+resources = gnome.compile_resources(
+  'gnome-font-viewer',
   'gnome-font-viewer.gresource.xml',
-  source_dir: '.',
-  c_name: 'font_view')
-
-executable('gnome-thumbnail-font', thumbnail_sources,
-  include_directories: [ root_inc, include_directories('.') ],
-  dependencies: [ mathlib_dep, glib_dep, gtk_dep, freetype2_dep],
-  install: true)
-
-executable('gnome-font-viewer', viewer_sources + resources,
-  include_directories: [ root_inc, include_directories('.') ],
-  dependencies: [
-    mathlib_dep,
-    glib_dep,
-    gtk_dep,
-    libadwaita_dep,
-    harfbuzz_dep,
-    fontconfig_dep,
-    freetype2_dep,
-    gnomedesktop_dep,
-    fribidi_dep,
-  ],
-  install: true)
+  gresource_bundle: true,
+  install: true,
+  install_dir: pkgdatadir,
+)
 
 desktop_file = 'org.gnome.font-viewer.desktop'
 
@@ -74,5 +32,79 @@ configure_file(input: service_file + '.in',
   install: true,
   install_dir: servicesdir)
 
-install_data('gnome-font-viewer.thumbnailer',
-  install_dir: thumbnailerdir)
+conf = configuration_data()
+conf.set('APP_ID', application_id)
+conf.set('PKGDATADIR', pkgdatadir)
+conf.set('VERSION', meson.project_version())
+conf.set('LOCALEDIR', localedir)
+
+configure_file(
+    input: 'config.rs.in',
+    output: 'config.rs',
+    configuration: conf
+)
+
+build_root = meson.project_build_root()
+source_root = meson.project_source_root()
+
+# Copy the config.rs output to the source directory.
+run_command(
+  'cp',
+  build_root / 'src' / 'config.rs',
+  source_root / 'src' / 'config.rs',
+  check: true
+)
+
+cargo_options = [ '--manifest-path', source_root / 'Cargo.toml' ]
+cargo_options += [ '--target-dir', build_root / 'src' ]
+
+if get_option('profile') == 'default'
+  cargo_options += [ '--release' ]
+  rust_target = 'release'
+  message('Building in release mode')
+else
+  rust_target = 'debug'
+  message('Building in debug mode')
+endif
+
+cargo_env = { 'CARGO_HOME': build_root / 'cargo-home' }
+
+cargo_build = custom_target(
+  'cargo-build',
+  build_by_default: true,
+  build_always_stale: true,
+  output: 'src',
+  console: true,
+  env: cargo_env,
+  command: [
+    cargo, 'build',
+    cargo_options,
+  ]
+)
+
+copy_binary = custom_target(
+  'cp-binary',
+  depends: cargo_build,
+  build_by_default: true,
+  build_always_stale: true,
+  install: true,
+  install_dir: get_option('bindir'),
+  output: meson.project_name(),
+  command: [
+    'cp',
+    'src' / rust_target / meson.project_name(),
+    '@OUTPUT@',
+  ],
+)
+
+cargo_doc = custom_target(
+  'cargo-doc',
+  build_by_default: false,
+  build_always_stale: true,
+  output: 'doc',
+  console: true,
+  command: [
+    cargo, 'doc',
+    cargo_options + ['--no-deps', '--document-private-items'],
+  ],
+)

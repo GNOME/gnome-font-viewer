@@ -116,11 +116,7 @@
         <property name="vexpand">True</property>
         <property name="margin-start">6</property>
         <property name="margin-end">6</property>
-        <binding name="label">
-          <lookup type="FontViewModelItem" name="preview-text">
-            <lookup name="item">GtkListItem</lookup>
-          </lookup>
-        </binding>
+        <property name="label">Aa</property>
         <binding name="attributes">
           <closure type="PangoAttrList" function="font_attribute_closure">
             <lookup name="item">GtkListItem</lookup>

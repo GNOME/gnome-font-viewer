@@ -1,8 +1,12 @@
 {
-    "app-id": "org.gnome.font-viewerDevel",
+    "id": "org.gnome.font-viewerDevel",
     "runtime": "org.gnome.Platform",
     "runtime-version" : "master",
     "sdk": "org.gnome.Sdk",
+    "sdk-extensions" : [
+        "org.freedesktop.Sdk.Extension.rust-stable",
+        "org.freedesktop.Sdk.Extension.llvm16"
+    ],
     "command": "gnome-font-viewer",
     "rename-appdata-file": "org.gnome.font-viewer.appdata.xml",
     "rename-desktop-file": "org.gnome.font-viewer.desktop",
@@ -14,8 +18,21 @@
         "--socket=fallback-x11",
         "--talk-name=org.gtk.vfs", "--talk-name=org.gtk.vfs.*",
         "--talk-name=ca.desrt.conf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
-        "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro"
+        "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
+        "--env=RUST_LOG=gnome-font-viewer=debug"
     ],
+    "build-options" : {
+        "append-path" : "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm16/bin",
+        "build-args" : [
+            "--share=network"
+        ],
+        "env" : {
+            "CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_LINKER" : "clang",
+            "CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_LINKER" : "clang",
+            "CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_RUSTFLAGS" : "-C link-arg=-fuse-ld=/usr/lib/sdk/rust-stable/bin/mold",
+            "CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_RUSTFLAGS" : "-C link-arg=-fuse-ld=/usr/lib/sdk/rust-stable/bin/mold"
+        }
+    },
     "cleanup": [
         "/include",
         "/lib/pkgconfig", "/share/pkgconfig",

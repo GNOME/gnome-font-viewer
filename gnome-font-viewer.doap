@@ -13,7 +13,7 @@
   <bug-database rdf:resource="https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues/" />
   <mailing-list rdf:resource="mailto:gnome-utils-list@gnome.org"/>
   <category rdf:resource="http://api.gnome.org/doap-extensions#core"/>
-  <programming-language>C</programming-language>
+  <programming-language>Rust</programming-language>
 
   <maintainer>
     <foaf:Person>

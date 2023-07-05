@@ -1,0 +1,4 @@
+pub const APP_ID: &str = "@APP_ID@";
+pub const PKGDATADIR: &str = "@PKGDATADIR@";
+pub const VERSION: &str = "@VERSION@";
+pub const LOCALEDIR: &str = "@localedir@";
