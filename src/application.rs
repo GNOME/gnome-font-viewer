@@ -53,7 +53,10 @@ mod imp {
             let file = files.get(0).unwrap();
 
             let window = self.ensure_window();
-            window.show_preview(file, 0);
+            if let Err(err) = window.show_preview(file, 0) {
+                log::error!("Could not show preview: {err}");
+                // TODO Should we close the window here?
+            }
         }
     }
 

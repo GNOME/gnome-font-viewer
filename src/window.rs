@@ -1,5 +1,6 @@
 use crate::application::FontViewApplication;
 use crate::config;
+use crate::font_preview::FontPreview;
 use crate::model::{FontViewModel, FontViewModelItem};
 
 use gio::prelude::*;
@@ -32,23 +33,8 @@ mod imp {
         #[template_child]
         pub(super) grid_view: TemplateChild<gtk::GridView>,
 
-        // Preview
         #[template_child]
-        pub(super) font_title: TemplateChild<adw::WindowTitle>,
-        #[template_child]
-        pub(super) install_button: TemplateChild<gtk::Button>,
-        #[template_child]
-        pub(super) info_button: TemplateChild<gtk::ToggleButton>,
-        #[template_child]
-        pub(super) preview_stack: TemplateChild<gtk::Stack>,
-        #[template_child]
-        pub(super) swin_preview: TemplateChild<gtk::ScrolledWindow>,
-        #[template_child]
-        pub(super) viewport_preview: TemplateChild<gtk::Viewport>,
-        #[template_child]
-        pub(super) swin_info: TemplateChild<gtk::ScrolledWindow>,
-        #[template_child]
-        pub(super) error_dialog: TemplateChild<adw::MessageDialog>,
+        pub(super) font_preview: TemplateChild<FontPreview>,
 
         #[template_child]
         pub(super) sort_model: TemplateChild<gtk::SortListModel>,
@@ -137,8 +123,13 @@ impl FontViewWindow {
         imp.nav_view.pop();
     }
 
-    pub fn show_preview(&self, file: &gio::File, face_index: u32) {
-        todo!("Implement loading the font preview and pushing it to the user");
+    pub fn show_preview(&self, file: &gio::File, face_index: u32) -> anyhow::Result<()> {
+        let imp = self.imp();
+
+        imp.font_preview.load_font(file, face_index)?;
+        imp.nav_view.push(&*imp.font_preview);
+
+        Ok(())
     }
 
     pub fn show_error(&self) {
@@ -180,6 +171,8 @@ impl FontViewWindow {
         let font_file = item.file();
         let face_index = item.face_index();
 
-        self.show_preview(&font_file, face_index);
+        if let Err(err) = self.show_preview(&font_file, face_index) {
+            log::error!("Could not show preview: {err}");
+        }
     }
 }

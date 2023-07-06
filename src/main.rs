@@ -3,6 +3,7 @@ use gio::{self, prelude::*};
 
 mod application;
 mod config;
+mod font_preview;
 mod model;
 mod utils;
 mod window;

@@ -9,3 +9,8 @@ gridview {
 .font-preview {
   font-size: 128px;
 }
+
+preview .family-label {
+  font-weight: bold;
+  font-size: 48px;
+}
