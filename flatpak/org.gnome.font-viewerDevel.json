@@ -19,7 +19,7 @@
         "--talk-name=org.gtk.vfs", "--talk-name=org.gtk.vfs.*",
         "--talk-name=ca.desrt.conf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
         "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
-        "--env=RUST_LOG=gnome-font-viewer=debug"
+        "--env=RUST_LOG=gnome_font_viewer=debug"
     ],
     "build-options" : {
         "append-path" : "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm16/bin",
