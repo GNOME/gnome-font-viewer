@@ -758,8 +758,11 @@ font_view_window_show_overview (FontViewWindow *self)
 }
 
 static void
-action_toggle_search_cb (FontViewWindow *self)
+action_toggle_search_cb (GtkWidget  *widget,
+                         const char *action_name,
+                         GVariant   *parameter)
 {
+  FontViewWindow *self = FONT_VIEW_WINDOW (widget);
 
  gtk_toggle_button_set_active (self->search_button,
                                !gtk_toggle_button_get_active (self->search_button));
