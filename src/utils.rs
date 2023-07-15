@@ -1,7 +1,18 @@
+use std::path::PathBuf;
+use std::process::Command;
+
 use font_kit::font::Font as FkFont;
 use font_kit::properties::Properties as FkProperties;
 use font_kit::properties::Style as FkStyle;
 use font_kit::properties::Weight as FkWeight;
+use gio::prelude::*;
+use once_cell::sync::Lazy;
+
+static CACHE_PATH: Lazy<PathBuf> = Lazy::new(|| {
+    glib::user_cache_dir()
+        .join("gnome-font-viewer")
+        .join("fonts")
+});
 
 pub(crate) fn fk_weight_to_pango_weight(weight: FkWeight) -> pango::Weight {
     // font-kit's weights don't map exactly to pango font weights.
@@ -81,4 +92,31 @@ pub(crate) fn font_name_from_fk_font(font: &FkFont, props: &FkProperties) -> Str
     } else {
         full_name
     }
+}
+
+fn refresh_cache() -> anyhow::Result<()> {
+    Command::new("fc-cache")
+        .arg("-f")
+        .arg("-v")
+        .arg(&*CACHE_PATH)
+        .output()?;
+
+    Ok(())
+}
+
+pub fn cache_font(font: &gio::File) -> anyhow::Result<gio::File> {
+    std::fs::create_dir_all(&*CACHE_PATH)?;
+
+    let folder = gio::File::for_path(&*CACHE_PATH);
+    let dest = folder.child(&font.basename().unwrap());
+    font.copy(
+        &dest,
+        gio::FileCopyFlags::OVERWRITE,
+        gio::Cancellable::NONE,
+        None,
+    )?;
+
+    refresh_cache()?;
+
+    Ok(dest)
 }

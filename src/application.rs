@@ -52,10 +52,16 @@ mod imp {
             // At least one file is guaranteed if this vfunc is called
             let file = files.get(0).unwrap();
 
-            let window = self.ensure_window();
-            if let Err(err) = window.show_preview(file, 0) {
-                log::error!("Could not show preview: {err}");
-                // TODO Should we close the window here?
+            match crate::utils::cache_font(&file) {
+                Err(err) => log::error!("Could not cache font: {err}"),
+                Ok(file) => {
+                    let window = self.ensure_window();
+
+                    if let Err(err) = window.show_preview(&file, 0) {
+                        log::error!("Could not show preview: {err}");
+                        // TODO Should we close the window here?
+                    }
+                }
             }
         }
     }
