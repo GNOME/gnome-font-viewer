@@ -37,30 +37,36 @@ msgstr ""
 "Project-Id-Version: gnome-utils.gnome-2-26\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2019-08-12 07:41+0000\n"
-"PO-Revision-Date: 2019-09-10 18:44+0300\n"
-"Last-Translator: Dimitris Maroulidis <dmaroulidis@dimitrismaroulidis.com>\n"
+"POT-Creation-Date: 2023-05-05 13:53+0000\n"
+"PO-Revision-Date: 2023-07-26 05:32+0300\n"
+"Last-Translator: Efstathios Iosifidis <iosifidis@opensuse.org>\n"
 "Language-Team: Greek, Modern (1453-) <team@gnome.gr>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Gtranslator 3.32.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
 "X-Project-Style: gnome\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:377
-msgid "GNOME Fonts"
-msgstr "Εφαρμογή Γραμματοσειρές GNOME"
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view-application.c:124
+#: src/org.gnome.font-viewer.desktop.in.in:3
+msgid "Fonts"
+msgstr "Γραμματοσειρές"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1368
-#: src/org.gnome.font-viewer.desktop.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7
+#: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Δείτε τις γραμματοσειρές του συστήματος σας"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
+#, fuzzy
+#| msgid ""
+#| "GNOME Fonts shows you the fonts installed on your computer for your use "
+#| "as thumbnails. Selecting any thumbnails shows the full view of how the "
+#| "font would look under various sizes."
 msgid ""
-"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
@@ -70,19 +76,24 @@ msgstr ""
 "πως θα έδειχνε αυτή η γραμματοσειρά σε διάφορα μεγέθη."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
+#, fuzzy
+#| msgid ""
+#| "GNOME Fonts also supports installing new font files downloaded in the ."
+#| "ttf and other formats. Fonts may be installed only for your use or made "
+#| "available to all users on the computer."
 msgid ""
-"GNOME Fonts also supports installing new font files downloaded in the .ttf "
-"and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
 msgstr ""
 "Η εφαρμογή Γραμματοσειρές GNOME υποστηρίζει επίσης την εγκατάσταση αρχείων "
 "για νέες γραμματοσειρές που λήφθηκαν σε μορφή .ttf ή σε άλλα πρότυπα. Οι "
 "γραμματοσειρές μπορούν να εγκατασταθούν είτε αποκλειστικά για δική σας "
 "χρήση, είτε να είναι διαθέσιμες για όλους τους χρήστες στον υπολογιστή σας."
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21
+#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
 msgid "The GNOME Project"
-msgstr ""
+msgstr "Το έργο GNOME"
 
 #: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
@@ -104,146 +115,11 @@ msgstr "ΜΕΓΕΘΟΣ"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
-#: src/font-view-app-menu.ui:6
-msgid "About Fonts"
-msgstr "Περί Εφαρμογής Γραμματοσειρές"
+#: src/font-view-application.c:79 src/font-view-window.c:751
+msgid "Could Not Display Font"
+msgstr "Αδυναμία προβολής γραμματοσειράς"
 
-#: src/font-view.c:385
-msgid "Show the application's version"
-msgstr "Εμφάνση έκδοσης της εφαρμογής"
-
-#. Translators, this string is used to display information about
-#. * a 'font variation axis'. The %s gets replaced with the name
-#. * of the axis, for example 'Width'. The three %g get replaced
-#. * with the minimum, maximum and default values for the axis.
-#.
-#: src/font-view.c:503
-#, c-format
-msgid "%s %g — %g, default %g"
-msgstr "%s %g — %g, προεπιλογή %g"
-
-#: src/font-view.c:559
-#, c-format
-#| msgid "Installed"
-msgid "Instance %d"
-msgstr "Στιγμιότυπο %d"
-
-#. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:602
-msgctxt "OpenType layout"
-msgid ", "
-msgstr ", "
-
-#: src/font-view.c:626
-msgid "Name"
-msgstr "Όνομα"
-
-#: src/font-view.c:629
-msgid "Location"
-msgstr ""
-
-#: src/font-view.c:632
-msgid "Style"
-msgstr "Πρότυπο"
-
-#: src/font-view.c:642
-msgid "Type"
-msgstr "Τύπος"
-
-#: src/font-view.c:700 src/font-view.c:726
-msgid "Version"
-msgstr "Έκδοση"
-
-#: src/font-view.c:704 src/font-view.c:731
-msgid "Copyright"
-msgstr "Πνευματικά δικαιώματα"
-
-#: src/font-view.c:708
-msgid "Description"
-msgstr "Περιγραφή"
-
-#: src/font-view.c:712
-msgid "Manufacturer"
-msgstr "Κατασκευαστής"
-
-#: src/font-view.c:716
-msgid "Designer"
-msgstr "Σχεδιαστής"
-
-#: src/font-view.c:720
-msgid "License"
-msgstr "Άδεια"
-
-#: src/font-view.c:745
-msgid "Glyph Count"
-msgstr ""
-
-#: src/font-view.c:747
-msgid "Color Glyphs"
-msgstr ""
-
-#: src/font-view.c:747
-msgid "yes"
-msgstr "ναι"
-
-#: src/font-view.c:747
-msgid "no"
-msgstr "όχι"
-
-#: src/font-view.c:751
-msgid "Layout Features"
-msgstr ""
-
-#: src/font-view.c:757
-msgid "Variation Axes"
-msgstr ""
-
-#: src/font-view.c:764
-msgid "Named Styles"
-msgstr ""
-
-#: src/font-view.c:870
-#| msgid "This font could not be displayed."
-msgid "This font could not be installed."
-msgstr "Η γραμματοσειρά δεν μπόρεσε να εγκατασταθεί."
-
-#: src/font-view.c:1008
-msgid "This font could not be displayed."
-msgstr "Δε μπορεί να εμφανιστεί αυτή η γραμματοσειρά."
-
-#: src/font-view.c:1135
-msgid "Install"
-msgstr "Εγκατάσταση"
-
-#: src/font-view.c:1138
-msgid "Installing…"
-msgstr "Εγκατάσταση…"
-
-#: src/font-view.c:1141
-msgid "Installed"
-msgstr "Εγκαταστάθηκε"
-
-#: src/font-view.c:1144
-msgid "Failed"
-msgstr "Απέτυχε"
-
-#: src/font-view.c:1160
-msgid "Info"
-msgstr "Πληροφορίες"
-
-#: src/font-view.c:1177
-msgid "Back"
-msgstr "Πίσω"
-
-#: src/font-view.c:1255
-msgid "All Fonts"
-msgstr "Όλες οι γραμματοσειρές"
-
-#: src/font-view.c:1367 src/org.gnome.font-viewer.desktop.in:3
-msgid "Fonts"
-msgstr "Γραμματοσειρές"
-
-#: src/font-view.c:1370
+#: src/font-view-application.c:129
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα GNOME\n"
@@ -253,15 +129,173 @@ msgstr ""
 "Μαρία Θουκυδίδου <marablack3@gmail.com>\n"
 "Για περισσότερα δείτε http://www.gnome.gr/"
 
+#: src/font-view-window.c:120
+msgid "Failed"
+msgstr "Απέτυχε"
+
+#: src/font-view-window.c:128
+msgid "Installed"
+msgstr "Εγκαταστάθηκε"
+
+#: src/font-view-window.c:133
+msgid "Installing"
+msgstr "Γίνεται εγκατάσταση"
+
+#: src/font-view-window.c:136
+msgid "Install"
+msgstr "Εγκατάσταση"
+
+#. Translators, this string is used to display information about
+#. * a 'font variation axis'. The %s gets replaced with the name
+#. * of the axis, for example 'Width'. The three %g get replaced
+#. * with the minimum, maximum and default values for the axis.
+#.
+#: src/font-view-window.c:250
+#, c-format
+msgid "%s %g — %g, default %g"
+msgstr "%s %g — %g, προεπιλογή %g"
+
+#: src/font-view-window.c:305
+#, c-format
+msgid "Instance %d"
+msgstr "Στιγμιότυπο %d"
+
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view-window.c:343
+msgctxt "OpenType layout"
+msgid ", "
+msgstr ", "
+
+#: src/font-view-window.c:370
+msgid "Name"
+msgstr "Όνομα"
+
+#: src/font-view-window.c:373
+msgid "Location"
+msgstr "Θέση"
+
+#: src/font-view-window.c:376
+msgid "Style"
+msgstr "Πρότυπο"
+
+#: src/font-view-window.c:386
+msgid "Type"
+msgstr "Τύπος"
+
+#: src/font-view-window.c:452 src/font-view-window.c:478
+msgid "Version"
+msgstr "Έκδοση"
+
+#: src/font-view-window.c:456 src/font-view-window.c:483
+msgid "Copyright"
+msgstr "Πνευματικά δικαιώματα"
+
+#: src/font-view-window.c:460
+msgid "Description"
+msgstr "Περιγραφή"
+
+#: src/font-view-window.c:464
+msgid "Manufacturer"
+msgstr "Κατασκευαστής"
+
+#: src/font-view-window.c:468
+msgid "Designer"
+msgstr "Σχεδιαστής"
+
+#: src/font-view-window.c:472
+msgid "License"
+msgstr "Άδεια"
+
+#: src/font-view-window.c:497
+msgid "Glyph Count"
+msgstr ""
+
+#: src/font-view-window.c:499
+msgid "Color Glyphs"
+msgstr ""
+
+#: src/font-view-window.c:500
+msgid "yes"
+msgstr "ναι"
+
+#: src/font-view-window.c:500
+msgid "no"
+msgstr "όχι"
+
+#: src/font-view-window.c:504
+msgid "Layout Features"
+msgstr ""
+
+#: src/font-view-window.c:510
+msgid "Variation Axes"
+msgstr ""
+
+#: src/font-view-window.c:517
+msgid "Named Styles"
+msgstr ""
+
+#: src/font-view-window.c:559 src/font-view-window.c:671
+msgid "Could Not Install Font"
+msgstr "Αδυναμία εγκατάστασης γραμματοσειρών"
+
+#: src/font-view-window.ui:40
+msgid "All Fonts"
+msgstr "Όλες οι γραμματοσειρές"
+
+#: src/font-view-window.ui:46
+msgid "Search"
+msgstr "Αναζήτηση"
+
+#: src/font-view-window.ui:54
+msgid "About Fonts"
+msgstr "Περί Εφαρμογής Γραμματοσειρές"
+
+#: src/font-view-window.ui:66
+msgid "Search fonts"
+msgstr "Αναζήτηση γραμματοσειρών"
+
+#: src/font-view-window.ui:187
+msgid "Back"
+msgstr "Πίσω"
+
+#: src/font-view-window.ui:193
+msgid "_Install"
+msgstr "_Εγκατάσταση"
+
+#: src/font-view-window.ui:196
+msgid "Install Font"
+msgstr "Εγκατάσταση γραμματοσειράς"
+
+#: src/font-view-window.ui:201
+msgid "I_nfo"
+msgstr "_Πληροφορίες"
+
+#: src/font-view-window.ui:203
+msgid "Font Details"
+msgstr "Λεπτομέρειες γραμαμτοσειράς"
+
+#: src/font-view-window.ui:250
+msgid "_Close"
+msgstr "_Κλείσιμο"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "Εφαρμογή Γραμματοσειρές GNOME"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "Εμφάνση έκδοσης της εφαρμογής"
+
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in:6
+#: src/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
 msgstr "γραμματοσειρές;οικογένεια γραμματοσειρών;fonts;fontface;"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
 msgid "Access All Alternates"
-msgstr ""
+msgstr "Πρόσβαση σε όλες τις εναλλακτικές λύσεις"
 
 #: src/open-type-layout.h:14
 msgctxt "OpenType layout"
@@ -1053,6 +1087,16 @@ msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr ""
 
+#~| msgid "This font could not be displayed."
+#~ msgid "This font could not be installed."
+#~ msgstr "Η γραμματοσειρά δεν μπόρεσε να εγκατασταθεί."
+
+#~ msgid "This font could not be displayed."
+#~ msgstr "Δε μπορεί να εμφανιστεί αυτή η γραμματοσειρά."
+
+#~ msgid "Info"
+#~ msgstr "Πληροφορίες"
+
 #~ msgid "About"
 #~ msgstr "Περί"
 
@@ -1073,9 +1117,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Εκτελέστε '%s --help' για να δείτε μια πλήρη λίστα των διαθέσιμων "
 #~ "επιλογών της εντολής."
-
-#~ msgid "_Close"
-#~ msgstr "_Κλείσιμο"
 
 #~ msgid "Done"
 #~ msgstr "Ολοκληρώθηκε"
