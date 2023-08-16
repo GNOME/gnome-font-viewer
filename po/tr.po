@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2023-05-05 13:53+0000\n"
+"POT-Creation-Date: 2023-07-26 02:33+0000\n"
 "PO-Revision-Date: 2023-02-12 05:31+0300\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Türkçe <takim@gnome.org.tr>\n"
@@ -31,13 +31,13 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.1.1\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view-application.c:124
-#: src/org.gnome.font-viewer.desktop.in.in:3
+#: data/org.gnome.font-viewer.appdata.xml.in:6
+#: data/org.gnome.font-viewer.desktop.in.in:3 src/font-view-application.c:124
 msgid "Fonts"
 msgstr "Yazı Tipleri"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:7
-#: src/org.gnome.font-viewer.desktop.in.in:4
+#: data/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Sisteminizdeki yazı tiplerini görüntüleyin"
 
@@ -66,6 +66,11 @@ msgstr ""
 msgid "The GNOME Project"
 msgstr "GNOME Projesi"
 
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.font-viewer.desktop.in.in:6
+msgid "fonts;fontface;"
+msgstr "yazı tipleri;yazıtipleri;yazı tipi ailesi;yazıtipi ailesi;"
+
 #: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Örneklendirilecek metin (öntanımlı: Aa)"
@@ -86,7 +91,7 @@ msgstr "BOYUT"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "YAZI-TİPİ-DOSYASI ÇIKTI-DOSYASI"
 
-#: src/font-view-application.c:79 src/font-view-window.c:751
+#: src/font-view-application.c:79 src/font-view-window.c:741
 msgid "Could Not Display Font"
 msgstr "Yazı Tipi Gösterilemedi"
 
@@ -204,47 +209,43 @@ msgstr "Değişim Eksenleri"
 msgid "Named Styles"
 msgstr "Adlandırılmış Biçemler"
 
-#: src/font-view-window.c:559 src/font-view-window.c:671
+#: src/font-view-window.c:559 src/font-view-window.c:661
 msgid "Could Not Install Font"
 msgstr "Yazı Tipi Kurulamadı"
 
-#: src/font-view-window.ui:40
+#: src/font-view-window.ui:31
 msgid "All Fonts"
 msgstr "Tüm Yazı Tipleri"
 
-#: src/font-view-window.ui:46
+#: src/font-view-window.ui:39
 msgid "Search"
 msgstr "Ara"
 
-#: src/font-view-window.ui:54
+#: src/font-view-window.ui:47
 msgid "About Fonts"
 msgstr "Yazı Tipleri Hakkında"
 
-#: src/font-view-window.ui:66
+#: src/font-view-window.ui:59
 msgid "Search fonts"
 msgstr "Yazı Tipi Ara"
 
-#: src/font-view-window.ui:187
-msgid "Back"
-msgstr "Geri"
-
-#: src/font-view-window.ui:193
+#: src/font-view-window.ui:182
 msgid "_Install"
 msgstr "_Kur"
 
-#: src/font-view-window.ui:196
+#: src/font-view-window.ui:185
 msgid "Install Font"
 msgstr "Yazı Tipi Kur"
 
-#: src/font-view-window.ui:201
+#: src/font-view-window.ui:190
 msgid "I_nfo"
 msgstr "B_ilgi"
 
-#: src/font-view-window.ui:203
+#: src/font-view-window.ui:192
 msgid "Font Details"
 msgstr "Yazı Tipi Ayrıntıları"
 
-#: src/font-view-window.ui:250
+#: src/font-view-window.ui:239
 msgid "_Close"
 msgstr "_Kapat"
 
@@ -255,11 +256,6 @@ msgstr "GNOME Yazı Tipleri"
 #: src/main.c:44
 msgid "Show the application's version"
 msgstr "Uygulamanın sürümünü göster"
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in.in:6
-msgid "fonts;fontface;"
-msgstr "yazı tipleri;yazıtipleri;yazı tipi ailesi;yazıtipi ailesi;"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
