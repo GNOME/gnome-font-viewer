@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils.master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2022-12-09 22:03+0000\n"
-"PO-Revision-Date: 2023-01-01 02:15+0300\n"
+"POT-Creation-Date: 2023-08-19 06:58+0000\n"
+"PO-Revision-Date: 2023-08-24 15:03+0300\n"
 "Last-Translator: Yuras Shumovich <shumovichy@gmail.com>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "Language: be\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.2\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1167
-#: src/org.gnome.font-viewer.desktop.in.in:3
+#: data/org.gnome.font-viewer.appdata.xml.in:6
+#: data/org.gnome.font-viewer.desktop.in.in:3 src/font-view-application.c:124
 msgid "Fonts"
 msgstr "Шрыфты"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:7
-#: src/org.gnome.font-viewer.desktop.in.in:4
+#: data/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Прагляд шрыфтоў вашай сістэмы"
 
@@ -50,9 +50,14 @@ msgstr ""
 "іншых фарматаў. Шрыфты можна ўсталяваць толькі для сябе або для ўсіх "
 "карыстальнікаў камп'ютара."
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view.c:1169
+#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
 msgid "The GNOME Project"
 msgstr "Праект GNOME"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.font-viewer.desktop.in.in:6
+msgid "fonts;fontface;"
+msgstr "fonts;fontface;шрыфты;"
 
 #: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
@@ -74,154 +79,169 @@ msgstr "ПАМЕР"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ФАЙЛ_ШРЫФТУ ВЫХАДНЫ_ФАЙЛ"
 
-#: src/font-view.c:205
-msgid "GNOME Fonts"
-msgstr "Шрыфты GNOME"
+#: src/font-view-application.c:79 src/font-view-window.c:741
+msgid "Could Not Display Font"
+msgstr "Не ўдалося паказаць шрыфт"
 
-#: src/font-view.c:212
-msgid "Show the application's version"
-msgstr "Паказаць версію праграмы"
+#: src/font-view-application.c:129
+msgid "translator-credits"
+msgstr ""
+"Ігар Грачышка <ihar.hrachyshka@gmail.com>\n"
+"Юрась Шумовіч <shumovichy@gmail.com>"
+
+#: src/font-view-window.c:120
+msgid "Failed"
+msgstr "Збой"
+
+#: src/font-view-window.c:128
+msgid "Installed"
+msgstr "Усталяваны"
+
+#: src/font-view-window.c:133
+msgid "Installing"
+msgstr "Усталяванне"
+
+#: src/font-view-window.c:136
+msgid "Install"
+msgstr "Усталяваць"
 
 #. Translators, this string is used to display information about
 #. * a 'font variation axis'. The %s gets replaced with the name
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:327
+#: src/font-view-window.c:250
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, прадвызначана %g"
 
-#: src/font-view.c:378
+#: src/font-view-window.c:305
 #, c-format
 msgid "Instance %d"
 msgstr "Экземпляр %d"
 
 #. Translators, this seperates the list of Layout
 #. * Features.
-#: src/font-view.c:418
+#: src/font-view-window.c:343
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:443
+#: src/font-view-window.c:370
 msgid "Name"
 msgstr "Назва"
 
-#: src/font-view.c:446
+#: src/font-view-window.c:373
 msgid "Location"
 msgstr "Размяшчэнне"
 
-#: src/font-view.c:449
+#: src/font-view-window.c:376
 msgid "Style"
 msgstr "Стыль"
 
-#: src/font-view.c:459
+#: src/font-view-window.c:386
 msgid "Type"
 msgstr "Тып"
 
-#: src/font-view.c:525 src/font-view.c:551
+#: src/font-view-window.c:452 src/font-view-window.c:478
 msgid "Version"
 msgstr "Версія"
 
-#: src/font-view.c:529 src/font-view.c:556
+#: src/font-view-window.c:456 src/font-view-window.c:483
 msgid "Copyright"
 msgstr "Аўтарскія правы"
 
-#: src/font-view.c:533
+#: src/font-view-window.c:460
 msgid "Description"
 msgstr "Апісанне"
 
-#: src/font-view.c:537
+#: src/font-view-window.c:464
 msgid "Manufacturer"
 msgstr "Вытворца"
 
-#: src/font-view.c:541
+#: src/font-view-window.c:468
 msgid "Designer"
 msgstr "Дызайнер"
 
-#: src/font-view.c:545
+#: src/font-view-window.c:472
 msgid "License"
 msgstr "Ліцэнзія"
 
-#: src/font-view.c:568
+#: src/font-view-window.c:497
 msgid "Glyph Count"
 msgstr "Колькасць гліфаў"
 
-#: src/font-view.c:570
+#: src/font-view-window.c:499
 msgid "Color Glyphs"
 msgstr "Каляровыя гліфы"
 
-#: src/font-view.c:571
+#: src/font-view-window.c:500
 msgid "yes"
 msgstr "так"
 
-#: src/font-view.c:571
+#: src/font-view-window.c:500
 msgid "no"
 msgstr "не"
 
-#: src/font-view.c:575
+#: src/font-view-window.c:504
 msgid "Layout Features"
 msgstr ""
 
-#: src/font-view.c:581
+#: src/font-view-window.c:510
 msgid "Variation Axes"
 msgstr ""
 
-#: src/font-view.c:588
+#: src/font-view-window.c:517
 msgid "Named Styles"
 msgstr ""
 
-#: src/font-view.c:600
-msgid "Failed"
-msgstr "Збой"
+#: src/font-view-window.c:559 src/font-view-window.c:661
+msgid "Could Not Install Font"
+msgstr "Не ўдалося ўсталяваць шрыфт"
 
-#: src/font-view.c:609
-msgid "Installed"
-msgstr "Усталяваны"
-
-#: src/font-view.c:614
-msgid "Installing"
-msgstr "Усталяванне"
-
-#: src/font-view.c:617 src/font-view.c:979
-msgid "Install"
-msgstr "Усталяваць"
-
-#: src/font-view.c:740
-msgid "This font could not be installed."
-msgstr "Немагчыма ўсталяваць гэты шрыфт."
-
-#: src/font-view.c:875
-msgid "This font could not be displayed."
-msgstr "Немагчыма паказаць гэты шрыфт."
-
-#: src/font-view.c:993
-msgid "Info"
-msgstr "Звесткі"
-
-#: src/font-view.c:1009
-msgid "Back"
-msgstr "Назад"
-
-#: src/font-view.c:1091
+#: src/font-view-window.ui:31
 msgid "All Fonts"
 msgstr "Усе шрыфты"
 
-#: src/font-view.c:1172
-msgid "translator-credits"
-msgstr ""
-"Ігар Грачышка <ihar.hrachyshka@gmail.com>\n"
-"Юрась Шумовіч <shumovichy@gmail.com>"
+#: src/font-view-window.ui:39
+msgid "Search"
+msgstr "Пошук"
 
-#: src/font-view.c:1238
+#: src/font-view-window.ui:47
 msgid "About Fonts"
 msgstr "Пра Шрыфты"
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in.in:6
-msgid "fonts;fontface;"
-msgstr "fonts;fontface;шрыфты;"
+#: src/font-view-window.ui:59
+msgid "Search fonts"
+msgstr "Пошук шрыфту"
+
+#: src/font-view-window.ui:182
+msgid "_Install"
+msgstr "_Усталяваць"
+
+#: src/font-view-window.ui:185
+msgid "Install Font"
+msgstr "Усталяваць шрыфт"
+
+#: src/font-view-window.ui:190
+msgid "I_nfo"
+msgstr ""
+
+#: src/font-view-window.ui:192
+msgid "Font Details"
+msgstr "Звестки пра шрыфт"
+
+#: src/font-view-window.ui:239
+msgid "_Close"
+msgstr "_Закрыць"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "Шрыфты GNOME"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "Паказаць версію праграмы"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -1018,6 +1038,18 @@ msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Перакрэслены нуль"
 
+#~ msgid "This font could not be installed."
+#~ msgstr "Немагчыма ўсталяваць гэты шрыфт."
+
+#~ msgid "This font could not be displayed."
+#~ msgstr "Немагчыма паказаць гэты шрыфт."
+
+#~ msgid "Info"
+#~ msgstr "Звесткі"
+
+#~ msgid "Back"
+#~ msgstr "Назад"
+
 #~ msgid ""
 #~ "GNOME Fonts shows you the fonts installed on your computer for your use "
 #~ "as thumbnails. Selecting any thumbnails shows the full view of how the "
@@ -1050,6 +1082,3 @@ msgstr "Перакрэслены нуль"
 
 #~ msgid "Font Viewer"
 #~ msgstr "Праглядальнік шрыфтоў"
-
-#~ msgid "_Close"
-#~ msgstr "_Закрыць"
