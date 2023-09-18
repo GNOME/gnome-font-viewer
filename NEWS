@@ -1,3 +1,19 @@
+GNOME Font Viewer - 45.0
+-------------------------------------------------------------------------------
+Fonts 45.0 comes with a new look courtesy of the new libadwaita 1.4 widgets.
+
+This version brings translation updates for the following locales:
+ * Belarusian (Vasil Pupkin)
+ * Chinese (China) (Boyuan Yang)
+ * Dutch (Nathan Follens)
+ * English (United Kingdom) (Bruce Cowan)
+ * Greek, Modern (1453*) (Efstathios Iosifidis)
+ * Icelandic (Sveinn í Felli)
+ * Italian (Gianvito Cavasoli)
+ * Kazakh (Baurzhan Muftakhidinov)
+ * Portuguese (Brazil) (Leônidas Araújo)
+ * Turkish (Sabri Ünal)
+
 GNOME Font Viewer - 45.alpha
 -------------------------------------------------------------------------------
 Fonts 45.alpha comes with a new look courtesy of the new libadwaita 1.4 widgets.

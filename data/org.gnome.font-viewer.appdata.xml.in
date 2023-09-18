@@ -37,16 +37,20 @@
   </kudos>
   <content_rating type="oars-1.1" />
   <releases>
-    <release version="45.alpha" date="2023-07-04">
+    <release version="45.0" date="2023-09-18">
       <description>
-        <p>Fonts 45.alpha comes with a new look courtesy of the new libadwaita 1.4 widgets.</p>
+        <p>Fonts 45.0 comes with a new look courtesy of the new libadwaita 1.4 widgets.</p>
         <p>This version brings translation updates for the following locales:</p>
         <ul>
+          <li>Belarusian (Vasil Pupkin)</li>
           <li>Chinese (China) (Boyuan Yang)</li>
           <li>Dutch (Nathan Follens)</li>
           <li>English (United Kingdom) (Bruce Cowan)</li>
+          <li>Greek, Modern (1453*) (Efstathios Iosifidis)</li>
           <li>Icelandic (Sveinn í Felli)</li>
           <li>Italian (Gianvito Cavasoli)</li>
+          <li>Kazakh (Baurzhan Muftakhidinov)</li>
+          <li>Portuguese (Brazil) (Leônidas Araújo)</li>
           <li>Turkish (Sabri Ünal)</li>
         </ul>
       </description>
