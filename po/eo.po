@@ -3,206 +3,92 @@
 # This file is distributed under the same license as the gnome-font-viewer package.
 # Kevin SCHAEFER <lugubrili@hotmail.com>, 2009.
 # Michael MORONI, <haikara90@gmail.com >, 2009.
-# Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>, 2010, 2011, 2018.
 # Matthew CHISHOLM <mat.eo416@gmail.com>, 2013.
 # Daniel PUENTES <blatberk@openmailbox.org>, 2015.
 # Carmen Bianca BAKKER <carmen@carmenbianca.eu>, 2018.
+# Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>, 2010-2023.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2018-09-04 00:33+0000\n"
-"PO-Revision-Date: 2018-11-26 21:13+0200\n"
+"POT-Creation-Date: 2023-07-15 13:26+0000\n"
+"PO-Revision-Date: 2023-09-20 23:18+0200\n"
 "Last-Translator: Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>\n"
 "Language-Team: Esperanto <gnome-eo-list@gnome.org>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 42.0\n"
 "X-Project-Style: gnome\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:85
-#| msgid "GNOME Font Viewer"
-msgid "GNOME Fonts"
-msgstr "GNOME Tiparoj"
+#: data/org.gnome.font-viewer.appdata.xml.in:6
+#: data/org.gnome.font-viewer.desktop.in.in:3 src/font-view-application.c:124
+msgid "Fonts"
+msgstr "Tiparoj"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1066
-#: src/org.gnome.font-viewer.desktop.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7
+#: data/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Rigardi tiparojn en via sistemo"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
-"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"GNOME Tiparoj montras al vi la instalitajn tiparojn per bildetoj. Elektado "
-"de ajna bildeto montros kiel la elektita tiparo aspektus je kelkaj grandoj."
+"Tiparoj montras al vi la instalitajn tiparojn en via komputilo por via uzo "
+"kiel bildetojn. Elektante ajnajn bildetojn montras la plenan vidon de kiel "
+"la tiparo aspektus sub diversaj grandecoj."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
-"GNOME Fonts also supports installing new font files downloaded in the .ttf "
-"and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
 msgstr ""
-"GNOME Tiparoj ankaŭ subtenas instaladon de .ttf kaj aliaj tiparaj "
-"dosierformoj. Oni povas instali tiparoj por propra uzo aŭ por ĉiuj uzantoj "
-"en la komputilo."
+"Tiparoj ankaŭ subtenas instali novajn tipardosierojn elŝutitajn en la .ttf "
+"kaj aliaj formatoj. Tiparoj povas esti instalitaj nur por via uzo aŭ "
+"disponigitaj al ĉiuj uzantoj en la komputilo."
 
-#: src/font-thumbnailer.c:189
+#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
+msgid "The GNOME Project"
+msgstr "La GNOME-projekto"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.font-viewer.desktop.in.in:6
+msgid "fonts;fontface;"
+msgstr "tiparoj;tiparnomo;"
+
+#: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Teksto por bildetigi (implicite: Aa)"
 
-#: src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:181
 msgid "TEXT"
 msgstr "TEKSTO"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "Thumbnail size (default: 128)"
 msgstr "Grando de bildeto (implicite: 128)"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "SIZE"
 msgstr "GRANDO"
 
-#: src/font-thumbnailer.c:193
+#: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "TIPARO-DOSIERO ELIGO-DOSIERO"
 
-#: src/font-view-app-menu.ui:6
-msgid "About"
-msgstr "Pri"
+#: src/font-view-application.c:79 src/font-view-window.c:741
+msgid "Could Not Display Font"
+msgstr "Ne eblis montri tiparon"
 
-#: src/font-view-app-menu.ui:10
-msgid "Quit"
-msgstr "Ĉesi"
-
-#: src/font-view.c:93
-msgid "Show the application's version"
-msgstr "Montri la version de la programo"
-
-#. Translators, this string is used to display information about
-#. * a 'font variation axis'. The %s gets replaced with the name
-#. * of the axis, for example 'Width'. The three %g get replaced
-#. * with the minimum, maximum and default values for the axis.
-#.
-#: src/font-view.c:223
-#, c-format
-msgid "%s %g — %g, default %g"
-msgstr "%s %g — %g, implicite %g"
-
-#: src/font-view.c:279
-#, c-format
-msgid "Instance %d"
-msgstr ""
-
-#. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:324
-msgctxt "OpenType layout"
-msgid ", "
-msgstr ", "
-
-#: src/font-view.c:350
-msgid "Name"
-msgstr "Nomo"
-
-#: src/font-view.c:353
-msgid "Style"
-msgstr "Stilo"
-
-#: src/font-view.c:363
-msgid "Type"
-msgstr "Tipo"
-
-#: src/font-view.c:424 src/font-view.c:458
-msgid "Version"
-msgstr "Versio"
-
-#: src/font-view.c:429 src/font-view.c:464
-msgid "Copyright"
-msgstr "Kopirajto"
-
-#: src/font-view.c:434
-msgid "Description"
-msgstr "Priskribo"
-
-#: src/font-view.c:439
-msgid "Manufacturer"
-msgstr "Fabrikanto"
-
-#: src/font-view.c:444
-msgid "Designer"
-msgstr "Fasonisto"
-
-#: src/font-view.c:449
-msgid "License"
-msgstr "Permesilo"
-
-#: src/font-view.c:479
-msgid "Glyph Count"
-msgstr "Nombro da signobildoj"
-
-#: src/font-view.c:482
-msgid "Color Glyphs"
-msgstr "Koloraj signobildoj"
-
-#: src/font-view.c:482
-msgid "yes"
-msgstr "jes"
-
-#: src/font-view.c:482
-msgid "no"
-msgstr "ne"
-
-#: src/font-view.c:486
-msgid "Layout Features"
-msgstr ""
-
-#: src/font-view.c:493
-msgid "Variation Axes"
-msgstr ""
-
-#: src/font-view.c:501
-msgid "Named Styles"
-msgstr "Nomitaj stiloj"
-
-#: src/font-view.c:518
-msgid "Install Failed"
-msgstr "Instalado malsukcesis"
-
-#: src/font-view.c:525
-msgid "Installed"
-msgstr "Instalita"
-
-#: src/font-view.c:529 src/font-view.c:808
-msgid "Install"
-msgstr "Instali"
-
-#: src/font-view.c:663
-msgid "This font could not be displayed."
-msgstr "Ĉi tiparon ne eblas vidigi."
-
-#: src/font-view.c:819
-msgid "Info"
-msgstr "Informoj"
-
-#: src/font-view.c:834
-msgid "Back"
-msgstr "Reen"
-
-#: src/font-view.c:939
-msgid "All Fonts"
-msgstr "Ĉiuj tiparoj"
-
-#: src/font-view.c:1065 src/org.gnome.font-viewer.desktop.in:3
-msgid "Fonts"
-msgstr "Tiparoj"
-
-#: src/font-view.c:1068
+#: src/font-view-application.c:129
 msgid "translator-credits"
 msgstr ""
 "Kevin SCHAEFER\n"
@@ -212,20 +98,164 @@ msgstr ""
 "Daniel PUENTES\n"
 "Carmen Bianca BAKKER <carmen@carmenbianca.eu>"
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in:6
-msgid "fonts;fontface;"
-msgstr "tiparoj;tiparnomo;"
+#: src/font-view-window.c:120
+msgid "Failed"
+msgstr "Malsukcesis"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: src/org.gnome.font-viewer.desktop.in:8
-msgid "preferences-desktop-font"
-msgstr "preferences-desktop-font"
+#: src/font-view-window.c:128
+msgid "Installed"
+msgstr "Instalita"
+
+#: src/font-view-window.c:133
+msgid "Installing"
+msgstr "Instalado"
+
+#: src/font-view-window.c:136
+msgid "Install"
+msgstr "Instali"
+
+#. Translators, this string is used to display information about
+#. * a 'font variation axis'. The %s gets replaced with the name
+#. * of the axis, for example 'Width'. The three %g get replaced
+#. * with the minimum, maximum and default values for the axis.
+#.
+#: src/font-view-window.c:250
+#, c-format
+msgid "%s %g — %g, default %g"
+msgstr "%s %g — %g, implicite %g"
+
+#: src/font-view-window.c:305
+#, c-format
+msgid "Instance %d"
+msgstr "Instanco %d"
+
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view-window.c:343
+msgctxt "OpenType layout"
+msgid ", "
+msgstr ", "
+
+#: src/font-view-window.c:370
+msgid "Name"
+msgstr "Nomo"
+
+#: src/font-view-window.c:373
+msgid "Location"
+msgstr "Loko"
+
+#: src/font-view-window.c:376
+msgid "Style"
+msgstr "Stilo"
+
+#: src/font-view-window.c:386
+msgid "Type"
+msgstr "Tipo"
+
+#: src/font-view-window.c:452 src/font-view-window.c:478
+msgid "Version"
+msgstr "Versio"
+
+#: src/font-view-window.c:456 src/font-view-window.c:483
+msgid "Copyright"
+msgstr "Kopirajto"
+
+#: src/font-view-window.c:460
+msgid "Description"
+msgstr "Priskribo"
+
+#: src/font-view-window.c:464
+msgid "Manufacturer"
+msgstr "Fabrikanto"
+
+#: src/font-view-window.c:468
+msgid "Designer"
+msgstr "Fasonisto"
+
+#: src/font-view-window.c:472
+msgid "License"
+msgstr "Permesilo"
+
+#: src/font-view-window.c:497
+msgid "Glyph Count"
+msgstr "Nombro da signobildoj"
+
+#: src/font-view-window.c:499
+msgid "Color Glyphs"
+msgstr "Koloraj signobildoj"
+
+#: src/font-view-window.c:500
+msgid "yes"
+msgstr "jes"
+
+#: src/font-view-window.c:500
+msgid "no"
+msgstr "ne"
+
+#: src/font-view-window.c:504
+msgid "Layout Features"
+msgstr "Dizajnaj ecoj"
+
+#: src/font-view-window.c:510
+msgid "Variation Axes"
+msgstr "Variaj aksoj"
+
+#: src/font-view-window.c:517
+msgid "Named Styles"
+msgstr "Nomitaj stiloj"
+
+#: src/font-view-window.c:559 src/font-view-window.c:661
+msgid "Could Not Install Font"
+msgstr "Ne eblis instali tiparon"
+
+#: src/font-view-window.ui:31
+msgid "All Fonts"
+msgstr "Ĉiuj tiparoj"
+
+#: src/font-view-window.ui:39
+msgid "Search"
+msgstr "Serĉi"
+
+#: src/font-view-window.ui:47
+msgid "About Fonts"
+msgstr "Pri Tiparoj"
+
+#: src/font-view-window.ui:59
+msgid "Search fonts"
+msgstr "Serĉi tiparojn"
+
+#: src/font-view-window.ui:182
+msgid "_Install"
+msgstr "_Instali"
+
+#: src/font-view-window.ui:185
+msgid "Install Font"
+msgstr "Instali tiparon"
+
+#: src/font-view-window.ui:190
+msgid "I_nfo"
+msgstr "I_nformo"
+
+#: src/font-view-window.ui:192
+msgid "Font Details"
+msgstr "Tiparaj etaloj"
+
+#: src/font-view-window.ui:239
+msgid "_Close"
+msgstr "_Fermi"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "GNOME Tiparoj"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "Montri la version de la programo"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
 msgid "Access All Alternates"
-msgstr ""
+msgstr "Aliru Ĉiujn Alternantojn"
 
 #: src/open-type-layout.h:14
 msgctxt "OpenType layout"
@@ -250,7 +280,7 @@ msgstr "Alternativaj frakcioj"
 #: src/open-type-layout.h:18
 msgctxt "OpenType layout"
 msgid "Akhands"
-msgstr ""
+msgstr "Akhandoj"
 
 #: src/open-type-layout.h:19
 msgctxt "OpenType layout"
@@ -270,7 +300,7 @@ msgstr "Subbazaj anstataŭigoj"
 #: src/open-type-layout.h:22
 msgctxt "OpenType layout"
 msgid "Contextual Alternates"
-msgstr ""
+msgstr "Kuntekstaj Alternatoj"
 
 #: src/open-type-layout.h:23
 msgctxt "OpenType layout"
@@ -285,12 +315,12 @@ msgstr "Signobilda kunmeto / divido"
 #: src/open-type-layout.h:25
 msgctxt "OpenType layout"
 msgid "Conjunct Form After Ro"
-msgstr ""
+msgstr "Konjunkcia Formo Post Ro"
 
 #: src/open-type-layout.h:26
 msgctxt "OpenType layout"
 msgid "Conjunct Forms"
-msgstr ""
+msgstr "Konjunktaj Formoj"
 
 #: src/open-type-layout.h:27
 msgctxt "OpenType layout"
@@ -300,7 +330,7 @@ msgstr "Kuntekstaj ligaĵoj"
 #: src/open-type-layout.h:28
 msgctxt "OpenType layout"
 msgid "Centered CJK Punctuation"
-msgstr ""
+msgstr "Centrita CJK-interpunkcio"
 
 #: src/open-type-layout.h:29
 msgctxt "OpenType layout"
@@ -310,7 +340,7 @@ msgstr "Interspaco de majuskloj"
 #: src/open-type-layout.h:30
 msgctxt "OpenType layout"
 msgid "Contextual Swash"
-msgstr ""
+msgstr "Kunteksta Swash"
 
 #: src/open-type-layout.h:31
 msgctxt "OpenType layout"
@@ -320,12 +350,12 @@ msgstr "Meto de kurzivo"
 #: src/open-type-layout.h:32
 msgctxt "OpenType layout"
 msgid "Petite Capitals From Capitals"
-msgstr ""
+msgstr "Petite Capitals From Capitals"
 
 #: src/open-type-layout.h:33
 msgctxt "OpenType layout"
 msgid "Small Capitals From Capitals"
-msgstr ""
+msgstr "Malgrandaj Kapiteloj El Kapiteloj"
 
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
@@ -445,12 +475,12 @@ msgstr "Senpunktaj formoj"
 #: src/open-type-layout.h:57
 msgctxt "OpenType layout"
 msgid "Expert Forms"
-msgstr ""
+msgstr "Spertaj Formoj"
 
 #: src/open-type-layout.h:58
 msgctxt "OpenType layout"
 msgid "Final Glyph on Line Alternates"
-msgstr ""
+msgstr "Fina Glifo sur Linio Alternatoj"
 
 #: src/open-type-layout.h:59
 msgctxt "OpenType layout"
@@ -470,7 +500,7 @@ msgstr "Terminalaj formoj"
 #: src/open-type-layout.h:62
 msgctxt "OpenType layout"
 msgid "Flattened accent forms"
-msgstr ""
+msgstr "Platigitaj akcentformoj"
 
 #: src/open-type-layout.h:63
 msgctxt "OpenType layout"
@@ -490,12 +520,12 @@ msgstr "Duonaj formoj"
 #: src/open-type-layout.h:66
 msgctxt "OpenType layout"
 msgid "Halant Forms"
-msgstr ""
+msgstr "Halant Formoj"
 
 #: src/open-type-layout.h:67
 msgctxt "OpenType layout"
 msgid "Alternate Half Widths"
-msgstr ""
+msgstr "Alterna Duonaj Larĝoj"
 
 #: src/open-type-layout.h:68
 msgctxt "OpenType layout"
@@ -505,7 +535,7 @@ msgstr "Historiaj formoj"
 #: src/open-type-layout.h:69
 msgctxt "OpenType layout"
 msgid "Horizontal Kana Alternates"
-msgstr ""
+msgstr "Horizontala Kana Alternates"
 
 #: src/open-type-layout.h:70
 msgctxt "OpenType layout"
@@ -535,7 +565,7 @@ msgstr "Komencaj formoj"
 #: src/open-type-layout.h:75
 msgctxt "OpenType layout"
 msgid "Isolated Forms"
-msgstr ""
+msgstr "Izolitaj formoj"
 
 #: src/open-type-layout.h:76
 msgctxt "OpenType layout"
@@ -545,7 +575,7 @@ msgstr "Kursiva"
 #: src/open-type-layout.h:77
 msgctxt "OpenType layout"
 msgid "Justification Alternates"
-msgstr ""
+msgstr "Pravigo Alternatoj"
 
 #: src/open-type-layout.h:78
 msgctxt "OpenType layout"
@@ -575,7 +605,7 @@ msgstr "Kunŝovo"
 #: src/open-type-layout.h:83
 msgctxt "OpenType layout"
 msgid "Left Bounds"
-msgstr ""
+msgstr "Maldekstraj Limoj"
 
 #: src/open-type-layout.h:84
 msgctxt "OpenType layout"
@@ -585,42 +615,42 @@ msgstr "Normaj ligaĵoj"
 #: src/open-type-layout.h:85
 msgctxt "OpenType layout"
 msgid "Leading Jamo Forms"
-msgstr ""
+msgstr "Gvidaj Jamo Formoj"
 
 #: src/open-type-layout.h:86
 msgctxt "OpenType layout"
 msgid "Lining Figures"
-msgstr ""
+msgstr "Tegantaj Figuroj"
 
 #: src/open-type-layout.h:87
 msgctxt "OpenType layout"
 msgid "Localized Forms"
-msgstr ""
+msgstr "Lokigitaj Formoj"
 
 #: src/open-type-layout.h:88
 msgctxt "OpenType layout"
 msgid "Left-to-right alternates"
-msgstr ""
+msgstr "De maldekstre al dekstre alternas"
 
 #: src/open-type-layout.h:89
 msgctxt "OpenType layout"
 msgid "Left-to-right mirrored forms"
-msgstr ""
+msgstr "Maldekstre-al-dekstre spegulitaj formoj"
 
 #: src/open-type-layout.h:90
 msgctxt "OpenType layout"
 msgid "Mark Positioning"
-msgstr ""
+msgstr "Marku poziciigon"
 
 #: src/open-type-layout.h:91
 msgctxt "OpenType layout"
 msgid "Medial Forms #2"
-msgstr ""
+msgstr "Medialaj Formoj #2"
 
 #: src/open-type-layout.h:92
 msgctxt "OpenType layout"
 msgid "Medial Forms"
-msgstr ""
+msgstr "Medialaj Formoj"
 
 #: src/open-type-layout.h:93
 msgctxt "OpenType layout"
@@ -630,17 +660,17 @@ msgstr "Matematika greka"
 #: src/open-type-layout.h:94
 msgctxt "OpenType layout"
 msgid "Mark to Mark Positioning"
-msgstr ""
+msgstr "Marki por marki pozicion"
 
 #: src/open-type-layout.h:95
 msgctxt "OpenType layout"
 msgid "Mark Positioning via Substitution"
-msgstr ""
+msgstr "Marku pozicion per Anstataŭigo"
 
 #: src/open-type-layout.h:96
 msgctxt "OpenType layout"
 msgid "Alternate Annotation Forms"
-msgstr ""
+msgstr "Alternaj Komentario Formoj"
 
 #: src/open-type-layout.h:97
 msgctxt "OpenType layout"
@@ -650,7 +680,7 @@ msgstr "NLC-kanji-formoj"
 #: src/open-type-layout.h:98
 msgctxt "OpenType layout"
 msgid "Nukta Forms"
-msgstr ""
+msgstr "Nukta Formoj"
 
 #: src/open-type-layout.h:99
 msgctxt "OpenType layout"
@@ -660,72 +690,72 @@ msgstr "Numerantoj"
 #: src/open-type-layout.h:100
 msgctxt "OpenType layout"
 msgid "Oldstyle Figures"
-msgstr ""
+msgstr "Malnovstilaj Figuroj"
 
 #: src/open-type-layout.h:101
 msgctxt "OpenType layout"
 msgid "Optical Bounds"
-msgstr ""
+msgstr "Optikaj Limoj"
 
 #: src/open-type-layout.h:102
 msgctxt "OpenType layout"
 msgid "Ordinals"
-msgstr ""
+msgstr "Ordinaloj"
 
 #: src/open-type-layout.h:103
 msgctxt "OpenType layout"
 msgid "Ornaments"
-msgstr ""
+msgstr "Ornamaĵoj"
 
 #: src/open-type-layout.h:104
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Widths"
-msgstr ""
+msgstr "Proporciaj Alternaj Larĝoj"
 
 #: src/open-type-layout.h:105
 msgctxt "OpenType layout"
 msgid "Petite Capitals"
-msgstr ""
+msgstr "Petite Capitals"
 
 #: src/open-type-layout.h:106
 msgctxt "OpenType layout"
 msgid "Proportional Kana"
-msgstr ""
+msgstr "Proporcia Kana"
 
 #: src/open-type-layout.h:107
 msgctxt "OpenType layout"
 msgid "Proportional Figures"
-msgstr ""
+msgstr "Proporciaj Ciferoj"
 
 #: src/open-type-layout.h:108
 msgctxt "OpenType layout"
 msgid "Pre-Base Forms"
-msgstr ""
+msgstr "Antaŭbazaj Formoj"
 
 #: src/open-type-layout.h:109
 msgctxt "OpenType layout"
 msgid "Pre-base Substitutions"
-msgstr ""
+msgstr "Antaŭbazaj Anstataŭoj"
 
 #: src/open-type-layout.h:110
 msgctxt "OpenType layout"
 msgid "Post-base Forms"
-msgstr ""
+msgstr "Malantaŭbazaj Formoj"
 
 #: src/open-type-layout.h:111
 msgctxt "OpenType layout"
 msgid "Post-base Substitutions"
-msgstr ""
+msgstr "Malantaŭbazaj Anstataŭojn"
 
 #: src/open-type-layout.h:112
 msgctxt "OpenType layout"
 msgid "Proportional Widths"
-msgstr ""
+msgstr "Proporciaj Larĝoj"
 
 #: src/open-type-layout.h:113
 msgctxt "OpenType layout"
 msgid "Quarter Widths"
-msgstr ""
+msgstr "Kvaronaj Larĝoj"
 
 #: src/open-type-layout.h:114
 msgctxt "OpenType layout"
@@ -735,12 +765,12 @@ msgstr "Hazardigi"
 #: src/open-type-layout.h:115
 msgctxt "OpenType layout"
 msgid "Required Contextual Alternates"
-msgstr ""
+msgstr "Bezonataj Kuntekstaj Alternantoj"
 
 #: src/open-type-layout.h:116
 msgctxt "OpenType layout"
 msgid "Rakar Forms"
-msgstr ""
+msgstr "Rakar Formoj"
 
 #: src/open-type-layout.h:117
 msgctxt "OpenType layout"
@@ -750,42 +780,42 @@ msgstr "Necesaj ligaĵoj"
 #: src/open-type-layout.h:118
 msgctxt "OpenType layout"
 msgid "Reph Forms"
-msgstr ""
+msgstr "Reph Formoj"
 
 #: src/open-type-layout.h:119
 msgctxt "OpenType layout"
 msgid "Right Bounds"
-msgstr ""
+msgstr "Dekstraj Limoj"
 
 #: src/open-type-layout.h:120
 msgctxt "OpenType layout"
 msgid "Right-to-left alternates"
-msgstr ""
+msgstr "Dekstre-maldekstren alternas"
 
 #: src/open-type-layout.h:121
 msgctxt "OpenType layout"
 msgid "Right-to-left mirrored forms"
-msgstr ""
+msgstr "Dekstre-maldekstre spegulitaj formoj"
 
 #: src/open-type-layout.h:122
 msgctxt "OpenType layout"
 msgid "Ruby Notation Forms"
-msgstr ""
+msgstr "Ruby Notation Forms"
 
 #: src/open-type-layout.h:123
 msgctxt "OpenType layout"
 msgid "Required Variation Alternates"
-msgstr ""
+msgstr "Bezonataj Variaj Alternatoj"
 
 #: src/open-type-layout.h:124
 msgctxt "OpenType layout"
 msgid "Stylistic Alternates"
-msgstr ""
+msgstr "Stilaj Alternantoj"
 
 #: src/open-type-layout.h:125
 msgctxt "OpenType layout"
 msgid "Scientific Inferiors"
-msgstr ""
+msgstr "Sciencaj malsuperuloj"
 
 #: src/open-type-layout.h:126
 msgctxt "OpenType layout"
@@ -905,12 +935,12 @@ msgstr "Stila serio 20"
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
 msgid "Math script style alternates"
-msgstr ""
+msgstr "Matematika skriptostilo alternas"
 
 #: src/open-type-layout.h:150
 msgctxt "OpenType layout"
 msgid "Stretching Glyph Decomposition"
-msgstr ""
+msgstr "Streĉanta Glifa Malkomponaĵo"
 
 #: src/open-type-layout.h:151
 msgctxt "OpenType layout"
@@ -925,7 +955,7 @@ msgstr "Alta skribo"
 #: src/open-type-layout.h:153
 msgctxt "OpenType layout"
 msgid "Swash"
-msgstr ""
+msgstr "Swash"
 
 #: src/open-type-layout.h:154
 msgctxt "OpenType layout"
@@ -935,42 +965,42 @@ msgstr "Titoligado"
 #: src/open-type-layout.h:155
 msgctxt "OpenType layout"
 msgid "Trailing Jamo Forms"
-msgstr ""
+msgstr "Malantaŭaj Jamo Formoj"
 
 #: src/open-type-layout.h:156
 msgctxt "OpenType layout"
 msgid "Traditional Name Forms"
-msgstr ""
+msgstr "Tradiciaj Nomaj Formoj"
 
 #: src/open-type-layout.h:157
 msgctxt "OpenType layout"
 msgid "Tabular Figures"
-msgstr ""
+msgstr "Tabelaj Figuroj"
 
 #: src/open-type-layout.h:158
 msgctxt "OpenType layout"
 msgid "Traditional Forms"
-msgstr ""
+msgstr "Tradiciaj Formoj"
 
 #: src/open-type-layout.h:159
 msgctxt "OpenType layout"
 msgid "Third Widths"
-msgstr ""
+msgstr "Triaj Larĝoj"
 
 #: src/open-type-layout.h:160
 msgctxt "OpenType layout"
 msgid "Unicase"
-msgstr ""
+msgstr "Unicase"
 
 #: src/open-type-layout.h:161
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Metrics"
-msgstr ""
+msgstr "Alterna Vertikala Metriko"
 
 #: src/open-type-layout.h:162
 msgctxt "OpenType layout"
 msgid "Vattu Variants"
-msgstr ""
+msgstr "Variaĵoj de Vattu"
 
 #: src/open-type-layout.h:163
 msgctxt "OpenType layout"
@@ -980,17 +1010,17 @@ msgstr "Vertikala skribo"
 #: src/open-type-layout.h:164
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Half Metrics"
-msgstr ""
+msgstr "Alterna Vertikala Duona Metriko"
 
 #: src/open-type-layout.h:165
 msgctxt "OpenType layout"
 msgid "Vowel Jamo Forms"
-msgstr ""
+msgstr "Vokalaj Jamo Formoj"
 
 #: src/open-type-layout.h:166
 msgctxt "OpenType layout"
 msgid "Vertical Kana Alternates"
-msgstr ""
+msgstr "Vertikala Kana Alternates"
 
 #: src/open-type-layout.h:167
 msgctxt "OpenType layout"
@@ -1000,22 +1030,40 @@ msgstr "Vertikala kunŝovo"
 #: src/open-type-layout.h:168
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Vertical Metrics"
-msgstr ""
+msgstr "Proporcia Alterna Vertikala Metriko"
 
 #: src/open-type-layout.h:169
 msgctxt "OpenType layout"
 msgid "Vertical Alternates and Rotation"
-msgstr ""
+msgstr "Vertikalaj Alternantoj kaj Rotacio"
 
 #: src/open-type-layout.h:170
 msgctxt "OpenType layout"
 msgid "Vertical Alternates for Rotation"
-msgstr ""
+msgstr "Vertikalaj Alternatoj por Rotacio"
 
 #: src/open-type-layout.h:171
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Strekita nulo"
+
+#~ msgid "About"
+#~ msgstr "Pri"
+
+#~ msgid "Quit"
+#~ msgstr "Ĉesi"
+
+#~ msgid "This font could not be displayed."
+#~ msgstr "Ĉi tiparon ne eblas vidigi."
+
+#~ msgid "Info"
+#~ msgstr "Informoj"
+
+#~ msgid "Back"
+#~ msgstr "Reen"
+
+#~ msgid "preferences-desktop-font"
+#~ msgstr "preferences-desktop-font"
 
 #~ msgid "Font Viewer"
 #~ msgstr "Tiparovidigilo"
@@ -1028,9 +1076,3 @@ msgstr "Strekita nulo"
 #~ msgstr ""
 #~ "Rulu '%s --help' por vidi kompletan liston de disponeblaj komandliniaj "
 #~ "opcioj."
-
-#~ msgid "About Font Viewer"
-#~ msgstr "Pri tipar-rigardilo"
-
-#~ msgid "_Close"
-#~ msgstr "_Fermi"
