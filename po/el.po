@@ -37,7 +37,7 @@ msgstr ""
 "Project-Id-Version: gnome-utils.gnome-2-26\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2023-05-05 13:53+0000\n"
+"POT-Creation-Date: 2023-07-26 02:33+0000\n"
 "PO-Revision-Date: 2023-07-26 05:32+0300\n"
 "Last-Translator: Efstathios Iosifidis <iosifidis@opensuse.org>\n"
 "Language-Team: Greek, Modern (1453-) <team@gnome.gr>\n"
@@ -49,13 +49,13 @@ msgstr ""
 "X-Generator: Poedit 3.0.1\n"
 "X-Project-Style: gnome\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view-application.c:124
-#: src/org.gnome.font-viewer.desktop.in.in:3
+#: data/org.gnome.font-viewer.appdata.xml.in:6
+#: data/org.gnome.font-viewer.desktop.in.in:3 src/font-view-application.c:124
 msgid "Fonts"
 msgstr "Γραμματοσειρές"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:7
-#: src/org.gnome.font-viewer.desktop.in.in:4
+#: data/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Δείτε τις γραμματοσειρές του συστήματος σας"
 
@@ -95,6 +95,11 @@ msgstr ""
 msgid "The GNOME Project"
 msgstr "Το έργο GNOME"
 
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.font-viewer.desktop.in.in:6
+msgid "fonts;fontface;"
+msgstr "γραμματοσειρές;οικογένεια γραμματοσειρών;fonts;fontface;"
+
 #: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Κείμενο σε μικρογραφία (προεπιλεγμένο: Αα)"
@@ -115,7 +120,7 @@ msgstr "ΜΕΓΕΘΟΣ"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
-#: src/font-view-application.c:79 src/font-view-window.c:751
+#: src/font-view-application.c:79 src/font-view-window.c:741
 msgid "Could Not Display Font"
 msgstr "Αδυναμία προβολής γραμματοσειράς"
 
@@ -209,11 +214,11 @@ msgstr "Άδεια"
 
 #: src/font-view-window.c:497
 msgid "Glyph Count"
-msgstr ""
+msgstr "Αριθμός γλυφικών"
 
 #: src/font-view-window.c:499
 msgid "Color Glyphs"
-msgstr ""
+msgstr "Έγχρωμα γλυφικά"
 
 #: src/font-view-window.c:500
 msgid "yes"
@@ -225,57 +230,53 @@ msgstr "όχι"
 
 #: src/font-view-window.c:504
 msgid "Layout Features"
-msgstr ""
+msgstr "Δυνατότητες διάταξης"
 
 #: src/font-view-window.c:510
 msgid "Variation Axes"
-msgstr ""
+msgstr "Άξονες παραλλαγής"
 
 #: src/font-view-window.c:517
 msgid "Named Styles"
-msgstr ""
+msgstr "Ονομασμένες μορφοποιήσεις"
 
-#: src/font-view-window.c:559 src/font-view-window.c:671
+#: src/font-view-window.c:559 src/font-view-window.c:661
 msgid "Could Not Install Font"
 msgstr "Αδυναμία εγκατάστασης γραμματοσειρών"
 
-#: src/font-view-window.ui:40
+#: src/font-view-window.ui:31
 msgid "All Fonts"
 msgstr "Όλες οι γραμματοσειρές"
 
-#: src/font-view-window.ui:46
+#: src/font-view-window.ui:39
 msgid "Search"
 msgstr "Αναζήτηση"
 
-#: src/font-view-window.ui:54
+#: src/font-view-window.ui:47
 msgid "About Fonts"
 msgstr "Περί Εφαρμογής Γραμματοσειρές"
 
-#: src/font-view-window.ui:66
+#: src/font-view-window.ui:59
 msgid "Search fonts"
 msgstr "Αναζήτηση γραμματοσειρών"
 
-#: src/font-view-window.ui:187
-msgid "Back"
-msgstr "Πίσω"
-
-#: src/font-view-window.ui:193
+#: src/font-view-window.ui:182
 msgid "_Install"
 msgstr "_Εγκατάσταση"
 
-#: src/font-view-window.ui:196
+#: src/font-view-window.ui:185
 msgid "Install Font"
 msgstr "Εγκατάσταση γραμματοσειράς"
 
-#: src/font-view-window.ui:201
+#: src/font-view-window.ui:190
 msgid "I_nfo"
 msgstr "_Πληροφορίες"
 
-#: src/font-view-window.ui:203
+#: src/font-view-window.ui:192
 msgid "Font Details"
 msgstr "Λεπτομέρειες γραμαμτοσειράς"
 
-#: src/font-view-window.ui:250
+#: src/font-view-window.ui:239
 msgid "_Close"
 msgstr "_Κλείσιμο"
 
@@ -287,11 +288,6 @@ msgstr "Εφαρμογή Γραμματοσειρές GNOME"
 msgid "Show the application's version"
 msgstr "Εμφάνση έκδοσης της εφαρμογής"
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in.in:6
-msgid "fonts;fontface;"
-msgstr "γραμματοσειρές;οικογένεια γραμματοσειρών;fonts;fontface;"
-
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
 msgid "Access All Alternates"
@@ -300,102 +296,102 @@ msgstr "Πρόσβαση σε όλες τις εναλλακτικές λύσε�
 #: src/open-type-layout.h:14
 msgctxt "OpenType layout"
 msgid "Above-base Forms"
-msgstr ""
+msgstr "Μορφές πάνω από τη βάση"
 
 #: src/open-type-layout.h:15
 msgctxt "OpenType layout"
 msgid "Above-base Mark Positioning"
-msgstr ""
+msgstr "Θέση των πάνω από τη βάση σημείων"
 
 #: src/open-type-layout.h:16
 msgctxt "OpenType layout"
 msgid "Above-base Substitutions"
-msgstr ""
+msgstr "Αντικαταστάσεις πάνω από τη βάση"
 
 #: src/open-type-layout.h:17
 msgctxt "OpenType layout"
 msgid "Alternative Fractions"
-msgstr ""
+msgstr "Εναλλακτικά κλάσματα"
 
 #: src/open-type-layout.h:18
 msgctxt "OpenType layout"
 msgid "Akhands"
-msgstr ""
+msgstr "Αχάντ"
 
 #: src/open-type-layout.h:19
 msgctxt "OpenType layout"
 msgid "Below-base Forms"
-msgstr ""
+msgstr "Μορφές κάτω από τη βάση"
 
 #: src/open-type-layout.h:20
 msgctxt "OpenType layout"
 msgid "Below-base Mark Positioning"
-msgstr ""
+msgstr "Θέση των κάτω από τη βάση σημείων"
 
 #: src/open-type-layout.h:21
 msgctxt "OpenType layout"
 msgid "Below-base Substitutions"
-msgstr ""
+msgstr "Αντικαταστάσεις κάτω από τη βάση"
 
 #: src/open-type-layout.h:22
 msgctxt "OpenType layout"
 msgid "Contextual Alternates"
-msgstr ""
+msgstr "Συμφραζόμενα εναλλακτικά"
 
 #: src/open-type-layout.h:23
 msgctxt "OpenType layout"
 msgid "Case-Sensitive Forms"
-msgstr ""
+msgstr "Μορφές με διάκριση κεφαλαίων"
 
 #: src/open-type-layout.h:24
 msgctxt "OpenType layout"
 msgid "Glyph Composition / Decomposition"
-msgstr ""
+msgstr "Σύνθεση / αποσύνθεση γλυφικών"
 
 #: src/open-type-layout.h:25
 msgctxt "OpenType layout"
 msgid "Conjunct Form After Ro"
-msgstr ""
+msgstr "Συνδεδεμένη μορφή μετά από ro"
 
 #: src/open-type-layout.h:26
 msgctxt "OpenType layout"
 msgid "Conjunct Forms"
-msgstr ""
+msgstr "Συνδεδεμένες μορφές"
 
 #: src/open-type-layout.h:27
 msgctxt "OpenType layout"
 msgid "Contextual Ligatures"
-msgstr ""
+msgstr "Συμφραζόμενοι σύνδεσμοι"
 
 #: src/open-type-layout.h:28
 msgctxt "OpenType layout"
 msgid "Centered CJK Punctuation"
-msgstr ""
+msgstr "Κεντραρισμένη CJK στίξη"
 
 #: src/open-type-layout.h:29
 msgctxt "OpenType layout"
 msgid "Capital Spacing"
-msgstr ""
+msgstr "Απόσταση κεφαλαίων"
 
 #: src/open-type-layout.h:30
 msgctxt "OpenType layout"
 msgid "Contextual Swash"
-msgstr ""
+msgstr "Συμφραζόμενη καλλιγραφική μορφή"
 
 #: src/open-type-layout.h:31
 msgctxt "OpenType layout"
 msgid "Cursive Positioning"
-msgstr ""
+msgstr "Τοποθέτηση καλλιγραφικών μορφών"
 
 #: src/open-type-layout.h:32
 msgctxt "OpenType layout"
 msgid "Petite Capitals From Capitals"
-msgstr ""
+msgstr "Μικρά κεφαλαία από κεφαλαία"
 
 #: src/open-type-layout.h:33
 msgctxt "OpenType layout"
 msgid "Small Capitals From Capitals"
-msgstr ""
+msgstr "Μικρά κεφαλαία από κεφαλαία"
 
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
@@ -500,247 +496,247 @@ msgstr "Αποστάσεις"
 #: src/open-type-layout.h:54
 msgctxt "OpenType layout"
 msgid "Discretionary Ligatures"
-msgstr ""
+msgstr "Προαιρετικοί σύνδεσμοι"
 
 #: src/open-type-layout.h:55
 msgctxt "OpenType layout"
 msgid "Denominators"
-msgstr ""
+msgstr "Παρονομαστές"
 
 #: src/open-type-layout.h:56
 msgctxt "OpenType layout"
 msgid "Dotless Forms"
-msgstr ""
+msgstr "Μορφές χωρίς τελείες"
 
 #: src/open-type-layout.h:57
 msgctxt "OpenType layout"
 msgid "Expert Forms"
-msgstr ""
+msgstr "Ειδικές μορφές"
 
 #: src/open-type-layout.h:58
 msgctxt "OpenType layout"
 msgid "Final Glyph on Line Alternates"
-msgstr ""
+msgstr "Τελικό γλυφικό στις εναλλακτικές γραμμές"
 
 #: src/open-type-layout.h:59
 msgctxt "OpenType layout"
 msgid "Terminal Forms #2"
-msgstr ""
+msgstr "Τελικές μορφές #2"
 
 #: src/open-type-layout.h:60
 msgctxt "OpenType layout"
 msgid "Terminal Forms #3"
-msgstr ""
+msgstr "Τελικές μορφές #3"
 
 #: src/open-type-layout.h:61
 msgctxt "OpenType layout"
 msgid "Terminal Forms"
-msgstr ""
+msgstr "Τελικές μορφές"
 
 #: src/open-type-layout.h:62
 msgctxt "OpenType layout"
 msgid "Flattened accent forms"
-msgstr ""
+msgstr "Εξομαλυμμένες μορφές τόνων"
 
 #: src/open-type-layout.h:63
 msgctxt "OpenType layout"
 msgid "Fractions"
-msgstr ""
+msgstr "Κλάσματα"
 
 #: src/open-type-layout.h:64
 msgctxt "OpenType layout"
 msgid "Full Widths"
-msgstr ""
+msgstr "Πλήρες πλάτος"
 
 #: src/open-type-layout.h:65
 msgctxt "OpenType layout"
 msgid "Half Forms"
-msgstr ""
+msgstr "Μισό πλάτος"
 
 #: src/open-type-layout.h:66
 msgctxt "OpenType layout"
 msgid "Halant Forms"
-msgstr ""
+msgstr "Μορφές Halant"
 
 #: src/open-type-layout.h:67
 msgctxt "OpenType layout"
 msgid "Alternate Half Widths"
-msgstr ""
+msgstr "Εναλλακτικά μισά πλάτη"
 
 #: src/open-type-layout.h:68
 msgctxt "OpenType layout"
 msgid "Historical Forms"
-msgstr ""
+msgstr "Ιστορικές μορφές"
 
 #: src/open-type-layout.h:69
 msgctxt "OpenType layout"
 msgid "Horizontal Kana Alternates"
-msgstr ""
+msgstr "Εναλλακτικές οριζόντιες μορφές Kana"
 
 #: src/open-type-layout.h:70
 msgctxt "OpenType layout"
 msgid "Historical Ligatures"
-msgstr ""
+msgstr "Ιστορικοί σύνδεσμοι"
 
 #: src/open-type-layout.h:71
 msgctxt "OpenType layout"
 msgid "Hangul"
-msgstr ""
+msgstr "Hangul"
 
 #: src/open-type-layout.h:72
 msgctxt "OpenType layout"
 msgid "Hojo Kanji Forms"
-msgstr ""
+msgstr "Μορφές Hojo Kanji"
 
 #: src/open-type-layout.h:73
 msgctxt "OpenType layout"
 msgid "Half Widths"
-msgstr ""
+msgstr "Μισά πλάτη"
 
 #: src/open-type-layout.h:74
 msgctxt "OpenType layout"
 msgid "Initial Forms"
-msgstr ""
+msgstr "Αρχικές μορφές"
 
 #: src/open-type-layout.h:75
 msgctxt "OpenType layout"
 msgid "Isolated Forms"
-msgstr ""
+msgstr "Μεμονωμένες μορφές"
 
 #: src/open-type-layout.h:76
 msgctxt "OpenType layout"
 msgid "Italics"
-msgstr ""
+msgstr "Πλάγια γράμματα"
 
 #: src/open-type-layout.h:77
 msgctxt "OpenType layout"
 msgid "Justification Alternates"
-msgstr ""
+msgstr "Εναλλακτικές για ευθυγράμμιση"
 
 #: src/open-type-layout.h:78
 msgctxt "OpenType layout"
 msgid "JIS78 Forms"
-msgstr ""
+msgstr "Μορφές JIS78"
 
 #: src/open-type-layout.h:79
 msgctxt "OpenType layout"
 msgid "JIS83 Forms"
-msgstr ""
+msgstr "Μορφές JIS83"
 
 #: src/open-type-layout.h:80
 msgctxt "OpenType layout"
 msgid "JIS90 Forms"
-msgstr ""
+msgstr "Μορφές JIS90"
 
 #: src/open-type-layout.h:81
 msgctxt "OpenType layout"
 msgid "JIS2004 Forms"
-msgstr ""
+msgstr "Μορφές JIS2004"
 
 #: src/open-type-layout.h:82
 msgctxt "OpenType layout"
 msgid "Kerning"
-msgstr ""
+msgstr "Κερνισμός"
 
 #: src/open-type-layout.h:83
 msgctxt "OpenType layout"
 msgid "Left Bounds"
-msgstr ""
+msgstr "Αριστερά όρια"
 
 #: src/open-type-layout.h:84
 msgctxt "OpenType layout"
 msgid "Standard Ligatures"
-msgstr ""
+msgstr "Συνηθισμένοι σύνδεσμοι"
 
 #: src/open-type-layout.h:85
 msgctxt "OpenType layout"
 msgid "Leading Jamo Forms"
-msgstr ""
+msgstr "Μορφές Jamo με αρχικό σύμφωνο"
 
 #: src/open-type-layout.h:86
 msgctxt "OpenType layout"
 msgid "Lining Figures"
-msgstr ""
+msgstr "Συναφείς αριθμοί"
 
 #: src/open-type-layout.h:87
 msgctxt "OpenType layout"
 msgid "Localized Forms"
-msgstr ""
+msgstr "Τοπικές μορφές"
 
 #: src/open-type-layout.h:88
 msgctxt "OpenType layout"
 msgid "Left-to-right alternates"
-msgstr ""
+msgstr "Εναλλακτικές μορφές από αριστερά προς δεξιά"
 
 #: src/open-type-layout.h:89
 msgctxt "OpenType layout"
 msgid "Left-to-right mirrored forms"
-msgstr ""
+msgstr "Καθρεπτίζουσες μορφές από αριστερά προς δεξιά"
 
 #: src/open-type-layout.h:90
 msgctxt "OpenType layout"
 msgid "Mark Positioning"
-msgstr ""
+msgstr "Θέση σημείων"
 
 #: src/open-type-layout.h:91
 msgctxt "OpenType layout"
 msgid "Medial Forms #2"
-msgstr ""
+msgstr "Μεσαίες μορφές #2"
 
 #: src/open-type-layout.h:92
 msgctxt "OpenType layout"
 msgid "Medial Forms"
-msgstr ""
+msgstr "Μεσαίες μορφές"
 
 #: src/open-type-layout.h:93
 msgctxt "OpenType layout"
 msgid "Mathematical Greek"
-msgstr ""
+msgstr "Μαθηματικά ελληνικά"
 
 #: src/open-type-layout.h:94
 msgctxt "OpenType layout"
 msgid "Mark to Mark Positioning"
-msgstr ""
+msgstr "Θέση σημείου σε σημείο"
 
 #: src/open-type-layout.h:95
 msgctxt "OpenType layout"
 msgid "Mark Positioning via Substitution"
-msgstr ""
+msgstr "Θέση σημείων μέσω αντικατάστασης"
 
 #: src/open-type-layout.h:96
 msgctxt "OpenType layout"
 msgid "Alternate Annotation Forms"
-msgstr ""
+msgstr "Εναλλακτικές μορφές σχολιασμού"
 
 #: src/open-type-layout.h:97
 msgctxt "OpenType layout"
 msgid "NLC Kanji Forms"
-msgstr ""
+msgstr "Μορφές NLC Kanji"
 
 #: src/open-type-layout.h:98
 msgctxt "OpenType layout"
 msgid "Nukta Forms"
-msgstr ""
+msgstr "Μορφές Nukta"
 
 #: src/open-type-layout.h:99
 msgctxt "OpenType layout"
 msgid "Numerators"
-msgstr ""
+msgstr "Αριθμητές"
 
 #: src/open-type-layout.h:100
 msgctxt "OpenType layout"
 msgid "Oldstyle Figures"
-msgstr ""
+msgstr "Παλαιότροποι αριθμοί"
 
 #: src/open-type-layout.h:101
 msgctxt "OpenType layout"
 msgid "Optical Bounds"
-msgstr ""
+msgstr "Οπτικά όρια"
 
 #: src/open-type-layout.h:102
 msgctxt "OpenType layout"
 msgid "Ordinals"
-msgstr "Δημοσιεύματα"
+msgstr "Τακτικοί αριθμητικοί"
 
 #: src/open-type-layout.h:103
 msgctxt "OpenType layout"
@@ -750,127 +746,127 @@ msgstr "Στολίδια"
 #: src/open-type-layout.h:104
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Widths"
-msgstr ""
+msgstr "Αναλογικές εναλλακτικές πλάτη"
 
 #: src/open-type-layout.h:105
 msgctxt "OpenType layout"
 msgid "Petite Capitals"
-msgstr ""
+msgstr "Μικρά κεφαλαία"
 
 #: src/open-type-layout.h:106
 msgctxt "OpenType layout"
 msgid "Proportional Kana"
-msgstr ""
+msgstr "Αναλογικά Kana"
 
 #: src/open-type-layout.h:107
 msgctxt "OpenType layout"
 msgid "Proportional Figures"
-msgstr ""
+msgstr "Αναλογικοί αριθμοί"
 
 #: src/open-type-layout.h:108
 msgctxt "OpenType layout"
 msgid "Pre-Base Forms"
-msgstr ""
+msgstr "Μορφές πριν από τη βάση"
 
 #: src/open-type-layout.h:109
 msgctxt "OpenType layout"
 msgid "Pre-base Substitutions"
-msgstr ""
+msgstr "Αντικαταστάσεις πριν από τη βάση"
 
 #: src/open-type-layout.h:110
 msgctxt "OpenType layout"
 msgid "Post-base Forms"
-msgstr ""
+msgstr "Μορφές μετά τη βάση"
 
 #: src/open-type-layout.h:111
 msgctxt "OpenType layout"
 msgid "Post-base Substitutions"
-msgstr ""
+msgstr "Αντικαταστάσεις μετά τη βάση"
 
 #: src/open-type-layout.h:112
 msgctxt "OpenType layout"
 msgid "Proportional Widths"
-msgstr ""
+msgstr "Αναλογικά πλάτη"
 
 #: src/open-type-layout.h:113
 msgctxt "OpenType layout"
 msgid "Quarter Widths"
-msgstr ""
+msgstr "Πλάτη 1/4"
 
 #: src/open-type-layout.h:114
 msgctxt "OpenType layout"
 msgid "Randomize"
-msgstr ""
+msgstr "Τυχαία επιλογή"
 
 #: src/open-type-layout.h:115
 msgctxt "OpenType layout"
 msgid "Required Contextual Alternates"
-msgstr ""
+msgstr "Απαιτούμενες συμφραζόμενες εναλλακτικές"
 
 #: src/open-type-layout.h:116
 msgctxt "OpenType layout"
 msgid "Rakar Forms"
-msgstr ""
+msgstr "Μορφές Rakar"
 
 #: src/open-type-layout.h:117
 msgctxt "OpenType layout"
 msgid "Required Ligatures"
-msgstr ""
+msgstr "Απαιτούμενοι σύνδεσμοι"
 
 #: src/open-type-layout.h:118
 msgctxt "OpenType layout"
 msgid "Reph Forms"
-msgstr ""
+msgstr "Μορφές Reph"
 
 #: src/open-type-layout.h:119
 msgctxt "OpenType layout"
 msgid "Right Bounds"
-msgstr ""
+msgstr "Δεξιά όρια"
 
 #: src/open-type-layout.h:120
 msgctxt "OpenType layout"
 msgid "Right-to-left alternates"
-msgstr ""
+msgstr "Εναλλακτικές από δεξιά προς αριστερά"
 
 #: src/open-type-layout.h:121
 msgctxt "OpenType layout"
 msgid "Right-to-left mirrored forms"
-msgstr ""
+msgstr "Καθρεπτίζουσες μορφές από δεξιά προς αριστερά"
 
 #: src/open-type-layout.h:122
 msgctxt "OpenType layout"
 msgid "Ruby Notation Forms"
-msgstr ""
+msgstr "Μορφές σήμανσης Ruby"
 
 #: src/open-type-layout.h:123
 msgctxt "OpenType layout"
 msgid "Required Variation Alternates"
-msgstr ""
+msgstr "Απαιτούμενες εναλλακτικές παραλλαγές"
 
 #: src/open-type-layout.h:124
 msgctxt "OpenType layout"
 msgid "Stylistic Alternates"
-msgstr ""
+msgstr "Εναλλακτικά στυλ"
 
 #: src/open-type-layout.h:125
 msgctxt "OpenType layout"
 msgid "Scientific Inferiors"
-msgstr ""
+msgstr "Επιστημονικοί κάτω δείκτες"
 
 #: src/open-type-layout.h:126
 msgctxt "OpenType layout"
 msgid "Optical size"
-msgstr ""
+msgstr "Οπτικό μέγεθος"
 
 #: src/open-type-layout.h:127
 msgctxt "OpenType layout"
 msgid "Small Capitals"
-msgstr ""
+msgstr "Μικρά κεφαλαία"
 
 #: src/open-type-layout.h:128
 msgctxt "OpenType layout"
 msgid "Simplified Forms"
-msgstr ""
+msgstr "Απλοποιημένες μορφές"
 
 #: src/open-type-layout.h:129
 msgctxt "OpenType layout"
@@ -975,12 +971,12 @@ msgstr "Στυλιστικό σετ 20"
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
 msgid "Math script style alternates"
-msgstr ""
+msgstr "Εναλλακτικές στυλ μαθηματικών σε γραφή δακτυλόγραφου"
 
 #: src/open-type-layout.h:150
 msgctxt "OpenType layout"
 msgid "Stretching Glyph Decomposition"
-msgstr ""
+msgstr "Αποσύνθεση γλυφικών διαστολής"
 
 #: src/open-type-layout.h:151
 msgctxt "OpenType layout"
@@ -995,97 +991,100 @@ msgstr "Εκθέτης"
 #: src/open-type-layout.h:153
 msgctxt "OpenType layout"
 msgid "Swash"
-msgstr ""
+msgstr "Επιδεικτικές μορφές"
 
 #: src/open-type-layout.h:154
 msgctxt "OpenType layout"
 msgid "Titling"
-msgstr ""
+msgstr "Μορφές τίτλων"
 
 #: src/open-type-layout.h:155
 msgctxt "OpenType layout"
 msgid "Trailing Jamo Forms"
-msgstr ""
+msgstr "Τελικές μορφές Jamo"
 
 #: src/open-type-layout.h:156
 msgctxt "OpenType layout"
 msgid "Traditional Name Forms"
-msgstr ""
+msgstr "Παραδοσιακές μορφές ονομάτων"
 
 #: src/open-type-layout.h:157
 msgctxt "OpenType layout"
 msgid "Tabular Figures"
-msgstr ""
+msgstr "Αριθμητικοί πίνακες"
 
 #: src/open-type-layout.h:158
 msgctxt "OpenType layout"
 msgid "Traditional Forms"
-msgstr ""
+msgstr "Παραδοσιακές μορφές"
 
 #: src/open-type-layout.h:159
 msgctxt "OpenType layout"
 msgid "Third Widths"
-msgstr ""
+msgstr "Πλάτη 1/3"
 
 #: src/open-type-layout.h:160
 msgctxt "OpenType layout"
 msgid "Unicase"
-msgstr ""
+msgstr "Ενοποιημένα κεφαλαία και πεζά"
 
 #: src/open-type-layout.h:161
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Metrics"
-msgstr ""
+msgstr "Εναλλακτικές κατακόρυφες μετρικές"
 
 #: src/open-type-layout.h:162
 msgctxt "OpenType layout"
 msgid "Vattu Variants"
-msgstr ""
+msgstr "Παραλλαγές Vattu"
 
 #: src/open-type-layout.h:163
 msgctxt "OpenType layout"
 msgid "Vertical Writing"
-msgstr ""
+msgstr "Κατακόρυφη γραφή"
 
 #: src/open-type-layout.h:164
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Half Metrics"
-msgstr ""
+msgstr "Εναλλακτικές κατακόρυφες μετρικές μισού μεγέθους"
 
 #: src/open-type-layout.h:165
 msgctxt "OpenType layout"
 msgid "Vowel Jamo Forms"
-msgstr ""
+msgstr "Μορφές φωνηεντικών Jamo"
 
 #: src/open-type-layout.h:166
 msgctxt "OpenType layout"
 msgid "Vertical Kana Alternates"
-msgstr ""
+msgstr "Εναλλακτικές κατακόρυφες μορφές Kana"
 
 #: src/open-type-layout.h:167
 msgctxt "OpenType layout"
 msgid "Vertical Kerning"
-msgstr ""
+msgstr "Κατακόρυφος έλεγχος απόστασης"
 
 #: src/open-type-layout.h:168
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Vertical Metrics"
-msgstr ""
+msgstr "Αναλογικές εναλλακτικές κατακόρυφες μετρικές"
 
 #: src/open-type-layout.h:169
 msgctxt "OpenType layout"
 msgid "Vertical Alternates and Rotation"
-msgstr ""
+msgstr "Κατακόρυφες εναλλακτικές και περιστροφή"
 
 #: src/open-type-layout.h:170
 msgctxt "OpenType layout"
 msgid "Vertical Alternates for Rotation"
-msgstr ""
+msgstr "Κατακόρυφες εναλλακτικές για περιστροφή"
 
 #: src/open-type-layout.h:171
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
-msgstr ""
+msgstr "Διαγραμμένο μηδέν"
+
+#~ msgid "Back"
+#~ msgstr "Πίσω"
 
 #~| msgid "This font could not be displayed."
 #~ msgid "This font could not be installed."
