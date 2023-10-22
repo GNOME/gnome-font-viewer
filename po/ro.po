@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gnome-utils.gnome-2-14.ro\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2023-10-09 15:53+0000\n"
+"POT-Creation-Date: 2023-10-22 14:04+0000\n"
 "PO-Revision-Date: 2023-07-29 14:45+0300\n"
 "Last-Translator: Florentina Mușat <florentina [dot] musat [dot] 28 [at] "
 "gmail [dot] com>\n"
@@ -28,13 +28,13 @@ msgstr ""
 "X-Generator: Poedit 3.3.2\n"
 "X-Project-Style: gnome\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6
-#: data/org.gnome.font-viewer.desktop.in.in:3 src/font-view-application.c:124
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view-application.c:124
+#: src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr "Fonturi"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:7
-#: data/org.gnome.font-viewer.desktop.in.in:4
+#: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Vizualizați fonturile instalate pe sistemul dumneavoastră"
 
@@ -62,11 +62,6 @@ msgstr ""
 msgid "The GNOME Project"
 msgstr "Proiectul GNOME"
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.font-viewer.desktop.in.in:6
-msgid "fonts;fontface;"
-msgstr "fonts;fontface;fonturi;"
-
 #: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Text în miniatură (implicit: Aa)"
@@ -87,7 +82,7 @@ msgstr "DIMENSIUNE"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FIȘIER-FONT FIȘIER-IEȘIRE"
 
-#: src/font-view-application.c:79 src/font-view-window.c:741
+#: src/font-view-application.c:79 src/font-view-window.c:751
 msgid "Could Not Display Font"
 msgstr "Nu s-a putut afișa fontul"
 
@@ -203,43 +198,47 @@ msgstr "Axe de variație"
 msgid "Named Styles"
 msgstr "Stiluri denumite"
 
-#: src/font-view-window.c:559 src/font-view-window.c:661
+#: src/font-view-window.c:559 src/font-view-window.c:671
 msgid "Could Not Install Font"
 msgstr "Nu s-a putut instala fontul"
 
-#: src/font-view-window.ui:31
+#: src/font-view-window.ui:40
 msgid "All Fonts"
 msgstr "Toate fonturile"
 
-#: src/font-view-window.ui:39
+#: src/font-view-window.ui:46
 msgid "Search"
 msgstr "Caută"
 
-#: src/font-view-window.ui:47
+#: src/font-view-window.ui:54
 msgid "About Fonts"
 msgstr "Despre Fonturi"
 
-#: src/font-view-window.ui:59
+#: src/font-view-window.ui:66
 msgid "Search fonts"
 msgstr "Caută fonturi"
 
-#: src/font-view-window.ui:182
+#: src/font-view-window.ui:187
+msgid "Back"
+msgstr "Înapoi"
+
+#: src/font-view-window.ui:193
 msgid "_Install"
 msgstr "_Instalează"
 
-#: src/font-view-window.ui:185
+#: src/font-view-window.ui:196
 msgid "Install Font"
 msgstr "Instalează fontul"
 
-#: src/font-view-window.ui:190
+#: src/font-view-window.ui:201
 msgid "I_nfo"
 msgstr "I_nformații"
 
-#: src/font-view-window.ui:192
+#: src/font-view-window.ui:203
 msgid "Font Details"
 msgstr "Detalii font"
 
-#: src/font-view-window.ui:239
+#: src/font-view-window.ui:250
 msgid "_Close"
 msgstr "În_chide"
 
@@ -250,6 +249,11 @@ msgstr "Fonturi GNOME"
 #: src/main.c:44
 msgid "Show the application's version"
 msgstr "Afișează versiunea aplicației"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: src/org.gnome.font-viewer.desktop.in.in:6
+msgid "fonts;fontface;"
+msgstr "fonts;fontface;fonturi;"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -1054,9 +1058,6 @@ msgstr "Zero barat"
 
 #~ msgid "Info"
 #~ msgstr "Info"
-
-#~ msgid "Back"
-#~ msgstr "Înapoi"
 
 #~ msgid "org.gnome.font-viewer"
 #~ msgstr "org.gnome.font-viewer"
