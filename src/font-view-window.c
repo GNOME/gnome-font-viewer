@@ -133,7 +133,7 @@ install_button_refresh_appearance (FontViewWindow *self,
         gtk_button_set_label (self->install_button, _ ("Installing"));
         gtk_widget_set_sensitive (GTK_WIDGET (self->install_button), FALSE);
     } else {
-        gtk_button_set_label (self->install_button, _ ("Install"));
+        gtk_button_set_label (self->install_button, _ ("_Install"));
         gtk_widget_set_sensitive (GTK_WIDGET (self->install_button), TRUE);
         gtk_widget_add_css_class (GTK_WIDGET (self->install_button),
                                   "suggested-action");
