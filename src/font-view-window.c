@@ -554,13 +554,11 @@ font_install_finished (GObject *source_object,
   g_task_propagate_boolean (G_TASK (res), &err);
 
   if (err != NULL) {
-    install_button_refresh_appearance (self, err);
     font_view_window_show_error (self,
                                  _("Could Not Install Font"),
                                  err->message);
-  } else {
-    install_button_refresh_appearance (self, NULL);
   }
+  install_button_refresh_appearance (self, err);
 
   g_clear_object (&self->cancellable);
 }
