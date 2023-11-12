@@ -558,6 +558,8 @@ font_install_finished (GObject *source_object,
     font_view_window_show_error (self,
                                  _("Could Not Install Font"),
                                  err->message);
+  } else {
+    install_button_refresh_appearance (self, NULL);
   }
 
   g_clear_object (&self->cancellable);
