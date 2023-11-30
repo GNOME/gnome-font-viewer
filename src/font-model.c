@@ -294,6 +294,19 @@ slant_to_name (int slant)
     return NULL;
 }
 
+static const PangoStyle
+fc_slant_to_pango_style (int slant)
+{
+    switch (slant) {
+    case FC_SLANT_ITALIC:
+        return PANGO_STYLE_ITALIC;
+    case FC_SLANT_OBLIQUE:
+        return PANGO_STYLE_OBLIQUE;
+    }
+
+    return PANGO_STYLE_NORMAL;
+}
+
 static gchar *
 build_font_name (const char *style_name,
                  const char *family_name,
@@ -388,8 +401,8 @@ load_font_infos (GTask *task,
         pango_font_description_set_family (font_description, family_name);
         pango_font_description_set_weight (font_description,
                                            fc_weight_to_pango_weight (weight));
-        // TODO: Support italics
-        pango_font_description_set_style (font_description, PANGO_STYLE_NORMAL);
+        pango_font_description_set_style (font_description,
+                                          fc_slant_to_pango_style (slant));
 
         item = font_view_model_item_new (font_name, font_preview_text,
                                          font_description, file, index);
@@ -530,4 +543,3 @@ font_view_model_get_list_model (FontViewModel *self)
 {
     return G_LIST_MODEL (self->model);
 }
-
