@@ -14,29 +14,34 @@ msgstr ""
 "Project-Id-Version: gnome-utils.HEAD.he\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues\n"
-"POT-Creation-Date: 2023-02-11 23:28+0000\n"
-"PO-Revision-Date: 2023-02-18 20:14+0200\n"
-"Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
+"POT-Creation-Date: 2023-09-18 23:25+0000\n"
+"PO-Revision-Date: 2023-12-01 15:22+0200\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 42.0\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? "
-"2 : 3)\n"
+"2 : 3);\n"
+"X-Launchpad-Export-Date: 2023-11-28 08:24+0000\n"
+"X-Generator: Poedit 3.4.1\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view-application.c:124
-#: src/org.gnome.font-viewer.desktop.in.in:3
+#: data/org.gnome.font-viewer.appdata.xml.in:6
+#: data/org.gnome.font-viewer.desktop.in.in:3 src/font-view-application.c:124
 msgid "Fonts"
 msgstr "גופנים"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:7
-#: src/org.gnome.font-viewer.desktop.in.in:4
+#: data/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "צפייה בגופנים במערכת שלך"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
+#| msgid ""
+#| "GNOME Fonts shows you the fonts installed on your computer for your use "
+#| "as thumbnails. Selecting any thumbnails shows the full view of how the "
+#| "font would look under various sizes."
 msgid ""
 "Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
@@ -47,6 +52,10 @@ msgstr ""
 "שונים."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
+#| msgid ""
+#| "GNOME Fonts also supports installing new font files downloaded in the ."
+#| "ttf and other formats. Fonts may be installed only for your use or made "
+#| "available to all users on the computer."
 msgid ""
 "Fonts also supports installing new font files downloaded in the .ttf and "
 "other formats. Fonts may be installed only for your use or made available to "
@@ -58,6 +67,11 @@ msgstr ""
 #: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
 msgid "The GNOME Project"
 msgstr "מיזם GNOME"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.font-viewer.desktop.in.in:6
+msgid "fonts;fontface;"
+msgstr "גופנים;גופן;פונטים;גליפים;"
 
 #: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
@@ -79,7 +93,7 @@ msgstr "SIZE"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
-#: src/font-view-application.c:79 src/font-view-window.c:750
+#: src/font-view-application.c:79 src/font-view-window.c:741
 msgid "Could Not Display Font"
 msgstr "לא ניתן להציג את הגופן"
 
@@ -88,21 +102,26 @@ msgid "translator-credits"
 msgstr ""
 "ירון שהרבני <sh.yaron@gmail.com>\n"
 "יוסף אור בוצ׳קו <yoseforb@gmail.com>\n"
-"מיזם תרגום GNOME לעברית https://l10n.gnome.org/teams/he/"
+"מיזם תרגום GNOME לעברית https://l10n.gnome.org/teams/he/\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Yaron https://launchpad.net/~sh-yaron\n"
+"  Yosef Or Boczko https://launchpad.net/~yoseforb"
 
-#: src/font-view-window.c:119
+#: src/font-view-window.c:120
 msgid "Failed"
 msgstr "נכשל"
 
-#: src/font-view-window.c:127
+#: src/font-view-window.c:128
 msgid "Installed"
 msgstr "מותקן"
 
-#: src/font-view-window.c:132
+#: src/font-view-window.c:133
+#| msgid "Installing…"
 msgid "Installing"
 msgstr "מתקין"
 
-#: src/font-view-window.c:135
+#: src/font-view-window.c:136
 msgid "Install"
 msgstr "התקנה"
 
@@ -111,132 +130,128 @@ msgstr "התקנה"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view-window.c:249
+#: src/font-view-window.c:250
 #, c-format
 msgid "%s %g — %g, default %g"
-msgstr "‫%s ‏%g‏ — %g, בררת מחדל %g"
+msgstr "%s ‏%g‏ — %g, ברירת מחדל %g"
 
-#: src/font-view-window.c:304
+#: src/font-view-window.c:305
 #, c-format
 msgid "Instance %d"
 msgstr "מופע %d"
 
 #. Translators, this seperates the list of Layout
 #. * Features.
-#: src/font-view-window.c:342
+#: src/font-view-window.c:343
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view-window.c:369
+#: src/font-view-window.c:370
 msgid "Name"
 msgstr "שם"
 
-#: src/font-view-window.c:372
+#: src/font-view-window.c:373
 msgid "Location"
 msgstr "מיקום"
 
-#: src/font-view-window.c:375
+#: src/font-view-window.c:376
 msgid "Style"
 msgstr "סגנון"
 
-#: src/font-view-window.c:385
+#: src/font-view-window.c:386
 msgid "Type"
 msgstr "סוג"
 
-#: src/font-view-window.c:451 src/font-view-window.c:477
+#: src/font-view-window.c:452 src/font-view-window.c:478
 msgid "Version"
 msgstr "גרסה"
 
-#: src/font-view-window.c:455 src/font-view-window.c:482
+#: src/font-view-window.c:456 src/font-view-window.c:483
 msgid "Copyright"
 msgstr "זכויות יוצרים"
 
-#: src/font-view-window.c:459
+#: src/font-view-window.c:460
 msgid "Description"
 msgstr "תיאור"
 
-#: src/font-view-window.c:463
+#: src/font-view-window.c:464
 msgid "Manufacturer"
 msgstr "יצרן"
 
-#: src/font-view-window.c:467
+#: src/font-view-window.c:468
 msgid "Designer"
 msgstr "מעצב"
 
-#: src/font-view-window.c:471
+#: src/font-view-window.c:472
 msgid "License"
 msgstr "רישיון"
 
-#: src/font-view-window.c:496
+#: src/font-view-window.c:497
 msgid "Glyph Count"
 msgstr "מספר גליף"
 
-#: src/font-view-window.c:498
+#: src/font-view-window.c:499
 msgid "Color Glyphs"
 msgstr "גליף צבע"
 
-#: src/font-view-window.c:499
+#: src/font-view-window.c:500
 msgid "yes"
 msgstr "כן"
 
-#: src/font-view-window.c:499
+#: src/font-view-window.c:500
 msgid "no"
 msgstr "לא"
 
-#: src/font-view-window.c:503
+#: src/font-view-window.c:504
 msgid "Layout Features"
 msgstr "תכונות פריסה"
 
-#: src/font-view-window.c:509
+#: src/font-view-window.c:510
 msgid "Variation Axes"
 msgstr "הגווני צירים"
 
-#: src/font-view-window.c:516
+#: src/font-view-window.c:517
 msgid "Named Styles"
 msgstr "שם סגנון"
 
-#: src/font-view-window.c:558 src/font-view-window.c:670
+#: src/font-view-window.c:559 src/font-view-window.c:661
 msgid "Could Not Install Font"
 msgstr "לא ניתן להתקין את הגופן"
 
-#: src/font-view-window.ui:34
+#: src/font-view-window.ui:31
 msgid "All Fonts"
 msgstr "כל הגופנים"
 
-#: src/font-view-window.ui:40
+#: src/font-view-window.ui:39
 msgid "Search"
 msgstr "חיפוש"
 
-#: src/font-view-window.ui:48
+#: src/font-view-window.ui:47
 msgid "About Fonts"
 msgstr "על אודות מציג הגופנים"
 
-#: src/font-view-window.ui:60
+#: src/font-view-window.ui:59
 msgid "Search fonts"
 msgstr "חיפוש גופנים"
 
-#: src/font-view-window.ui:181
-msgid "Back"
-msgstr "חזרה"
-
-#: src/font-view-window.ui:187
+#: src/font-view-window.ui:182
 msgid "_Install"
 msgstr "_התקנה"
 
-#: src/font-view-window.ui:190
+#: src/font-view-window.ui:185
 msgid "Install Font"
 msgstr "התקנת גופן"
 
-#: src/font-view-window.ui:195
+#: src/font-view-window.ui:190
 msgid "I_nfo"
 msgstr "_מידע"
 
-#: src/font-view-window.ui:197
+#: src/font-view-window.ui:192
 msgid "Font Details"
 msgstr "פרטי גופן"
 
-#: src/font-view-window.ui:244
+#: src/font-view-window.ui:239
 msgid "_Close"
 msgstr "_סגירה"
 
@@ -247,11 +262,6 @@ msgstr "מציג הגופנים של GNOME"
 #: src/main.c:44
 msgid "Show the application's version"
 msgstr "Show the application's version"
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in.in:6
-msgid "fonts;fontface;"
-msgstr "גופנים;גופן;פונטים;גליפים;"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -266,12 +276,12 @@ msgstr "צורות מעל הבסיס"
 #: src/open-type-layout.h:15
 msgctxt "OpenType layout"
 msgid "Above-base Mark Positioning"
-msgstr ""
+msgstr "מיקום סמן מעל הבסיס"
 
 #: src/open-type-layout.h:16
 msgctxt "OpenType layout"
 msgid "Above-base Substitutions"
-msgstr ""
+msgstr "החלפות מעל הבסיס"
 
 #: src/open-type-layout.h:17
 msgctxt "OpenType layout"
@@ -281,7 +291,7 @@ msgstr "שברים חלופיים"
 #: src/open-type-layout.h:18
 msgctxt "OpenType layout"
 msgid "Akhands"
-msgstr ""
+msgstr "של אכהנד"
 
 #: src/open-type-layout.h:19
 msgctxt "OpenType layout"
@@ -291,12 +301,12 @@ msgstr "צורות מתחת לבסיס"
 #: src/open-type-layout.h:20
 msgctxt "OpenType layout"
 msgid "Below-base Mark Positioning"
-msgstr ""
+msgstr "מיקום סמן מתחת לבסיס"
 
 #: src/open-type-layout.h:21
 msgctxt "OpenType layout"
 msgid "Below-base Substitutions"
-msgstr ""
+msgstr "החלפות מתחת לבסיס"
 
 #: src/open-type-layout.h:22
 msgctxt "OpenType layout"
@@ -316,12 +326,12 @@ msgstr "הרכבת / פירוק גליפים"
 #: src/open-type-layout.h:25
 msgctxt "OpenType layout"
 msgid "Conjunct Form After Ro"
-msgstr ""
+msgstr "תצורת חיבור אחרי רו"
 
 #: src/open-type-layout.h:26
 msgctxt "OpenType layout"
 msgid "Conjunct Forms"
-msgstr ""
+msgstr "צורות מחוברות"
 
 #: src/open-type-layout.h:27
 msgctxt "OpenType layout"
@@ -336,12 +346,12 @@ msgstr "ניקוד בסינית, יפנית וקוריאנית ממורכז"
 #: src/open-type-layout.h:29
 msgctxt "OpenType layout"
 msgid "Capital Spacing"
-msgstr ""
+msgstr "ריווח אותיות גדולות"
 
 #: src/open-type-layout.h:30
 msgctxt "OpenType layout"
 msgid "Contextual Swash"
-msgstr ""
+msgstr "גל מגשר לפי הקשר"
 
 #: src/open-type-layout.h:31
 msgctxt "OpenType layout"
@@ -351,12 +361,12 @@ msgstr "מקום בכתב מחובר"
 #: src/open-type-layout.h:32
 msgctxt "OpenType layout"
 msgid "Petite Capitals From Capitals"
-msgstr ""
+msgstr "אותיות גדולות זעיות מאותיות גדולות"
 
 #: src/open-type-layout.h:33
 msgctxt "OpenType layout"
 msgid "Small Capitals From Capitals"
-msgstr ""
+msgstr "אותיות גדולות קטנות מאותיות גדולות"
 
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
@@ -461,12 +471,12 @@ msgstr "מרחקים"
 #: src/open-type-layout.h:54
 msgctxt "OpenType layout"
 msgid "Discretionary Ligatures"
-msgstr ""
+msgstr "ליגטורה תבונית"
 
 #: src/open-type-layout.h:55
 msgctxt "OpenType layout"
 msgid "Denominators"
-msgstr ""
+msgstr "מכנים"
 
 #: src/open-type-layout.h:56
 msgctxt "OpenType layout"
@@ -481,7 +491,7 @@ msgstr "צורות למומחים"
 #: src/open-type-layout.h:58
 msgctxt "OpenType layout"
 msgid "Final Glyph on Line Alternates"
-msgstr ""
+msgstr "חלופות לגליף אחרון בשורה"
 
 #: src/open-type-layout.h:59
 msgctxt "OpenType layout"
@@ -501,7 +511,7 @@ msgstr "צורות סופיות"
 #: src/open-type-layout.h:62
 msgctxt "OpenType layout"
 msgid "Flattened accent forms"
-msgstr ""
+msgstr "צורות עם סימון דיאקריטי משוטחות"
 
 #: src/open-type-layout.h:63
 msgctxt "OpenType layout"
@@ -551,7 +561,7 @@ msgstr "הנגול"
 #: src/open-type-layout.h:72
 msgctxt "OpenType layout"
 msgid "Hojo Kanji Forms"
-msgstr ""
+msgstr "צורות קאנג׳י של הוג׳ו"
 
 #: src/open-type-layout.h:73
 msgctxt "OpenType layout"
@@ -621,12 +631,12 @@ msgstr "צורות ג׳אמו מובילות"
 #: src/open-type-layout.h:86
 msgctxt "OpenType layout"
 msgid "Lining Figures"
-msgstr ""
+msgstr "ספרות בקו אחיד עם האותיות הגדולות"
 
 #: src/open-type-layout.h:87
 msgctxt "OpenType layout"
 msgid "Localized Forms"
-msgstr ""
+msgstr "צורות טבעיות"
 
 #: src/open-type-layout.h:88
 msgctxt "OpenType layout"
@@ -641,7 +651,7 @@ msgstr "צורות הפוכות משמאל לימין"
 #: src/open-type-layout.h:90
 msgctxt "OpenType layout"
 msgid "Mark Positioning"
-msgstr ""
+msgstr "סימון מקום"
 
 #: src/open-type-layout.h:91
 msgctxt "OpenType layout"
@@ -661,22 +671,22 @@ msgstr "יוונית מתמטית"
 #: src/open-type-layout.h:94
 msgctxt "OpenType layout"
 msgid "Mark to Mark Positioning"
-msgstr ""
+msgstr "סימון לסימון מקום"
 
 #: src/open-type-layout.h:95
 msgctxt "OpenType layout"
 msgid "Mark Positioning via Substitution"
-msgstr ""
+msgstr "סימון מקום דרך החלפה"
 
 #: src/open-type-layout.h:96
 msgctxt "OpenType layout"
 msgid "Alternate Annotation Forms"
-msgstr ""
+msgstr "צורות הדגשה חלופיות"
 
 #: src/open-type-layout.h:97
 msgctxt "OpenType layout"
 msgid "NLC Kanji Forms"
-msgstr ""
+msgstr "צורות קאנג׳י של מועצת השפה הלאומית של יפן"
 
 #: src/open-type-layout.h:98
 msgctxt "OpenType layout"
@@ -686,7 +696,7 @@ msgstr "צורות נוקטה"
 #: src/open-type-layout.h:99
 msgctxt "OpenType layout"
 msgid "Numerators"
-msgstr ""
+msgstr "מונים"
 
 #: src/open-type-layout.h:100
 msgctxt "OpenType layout"
@@ -711,47 +721,47 @@ msgstr "קישוטים"
 #: src/open-type-layout.h:104
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Widths"
-msgstr ""
+msgstr "רוחבים חלופיים יחסיים"
 
 #: src/open-type-layout.h:105
 msgctxt "OpenType layout"
 msgid "Petite Capitals"
-msgstr ""
+msgstr "אותיות גדולות זעירות"
 
 #: src/open-type-layout.h:106
 msgctxt "OpenType layout"
 msgid "Proportional Kana"
-msgstr ""
+msgstr "קאנה יחסית"
 
 #: src/open-type-layout.h:107
 msgctxt "OpenType layout"
 msgid "Proportional Figures"
-msgstr ""
+msgstr "ספרות יחסיות"
 
 #: src/open-type-layout.h:108
 msgctxt "OpenType layout"
 msgid "Pre-Base Forms"
-msgstr ""
+msgstr "צורות בסיס טרומי"
 
 #: src/open-type-layout.h:109
 msgctxt "OpenType layout"
 msgid "Pre-base Substitutions"
-msgstr ""
+msgstr "החלפות בסיס טרומי"
 
 #: src/open-type-layout.h:110
 msgctxt "OpenType layout"
 msgid "Post-base Forms"
-msgstr ""
+msgstr "צורות לאחר בסיס"
 
 #: src/open-type-layout.h:111
 msgctxt "OpenType layout"
 msgid "Post-base Substitutions"
-msgstr ""
+msgstr "החלפות לאחר בסיס"
 
 #: src/open-type-layout.h:112
 msgctxt "OpenType layout"
 msgid "Proportional Widths"
-msgstr ""
+msgstr "רוחבים יחסיים"
 
 #: src/open-type-layout.h:113
 msgctxt "OpenType layout"
@@ -761,17 +771,17 @@ msgstr "רבעי רוחב"
 #: src/open-type-layout.h:114
 msgctxt "OpenType layout"
 msgid "Randomize"
-msgstr ""
+msgstr "בחירה באקראי"
 
 #: src/open-type-layout.h:115
 msgctxt "OpenType layout"
 msgid "Required Contextual Alternates"
-msgstr ""
+msgstr "חלופות נדרשות לפי הקשר"
 
 #: src/open-type-layout.h:116
 msgctxt "OpenType layout"
 msgid "Rakar Forms"
-msgstr ""
+msgstr "צורות רקאר"
 
 #: src/open-type-layout.h:117
 msgctxt "OpenType layout"
@@ -806,7 +816,7 @@ msgstr "צורות סימון רובי"
 #: src/open-type-layout.h:123
 msgctxt "OpenType layout"
 msgid "Required Variation Alternates"
-msgstr ""
+msgstr "חלופות שינוי נחוצות"
 
 #: src/open-type-layout.h:124
 msgctxt "OpenType layout"
@@ -816,7 +826,7 @@ msgstr "חלופות מסוגננות"
 #: src/open-type-layout.h:125
 msgctxt "OpenType layout"
 msgid "Scientific Inferiors"
-msgstr ""
+msgstr "תחתי מדעי"
 
 #: src/open-type-layout.h:126
 msgctxt "OpenType layout"
@@ -941,7 +951,7 @@ msgstr "חלופות סגנון כתב מתמטי"
 #: src/open-type-layout.h:150
 msgctxt "OpenType layout"
 msgid "Stretching Glyph Decomposition"
-msgstr ""
+msgstr "פירוק גליף נמתח"
 
 #: src/open-type-layout.h:151
 msgctxt "OpenType layout"
@@ -956,12 +966,12 @@ msgstr "כתב עלי"
 #: src/open-type-layout.h:153
 msgctxt "OpenType layout"
 msgid "Swash"
-msgstr ""
+msgstr "גל מגשר"
 
 #: src/open-type-layout.h:154
 msgctxt "OpenType layout"
 msgid "Titling"
-msgstr ""
+msgstr "כותרת חלולה"
 
 #: src/open-type-layout.h:155
 msgctxt "OpenType layout"
@@ -991,12 +1001,12 @@ msgstr "שלישי גובה"
 #: src/open-type-layout.h:160
 msgctxt "OpenType layout"
 msgid "Unicase"
-msgstr ""
+msgstr "מצב רישיות אחיד"
 
 #: src/open-type-layout.h:161
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Metrics"
-msgstr ""
+msgstr "מדדים אנכיים חלופיים"
 
 #: src/open-type-layout.h:162
 msgctxt "OpenType layout"
@@ -1011,7 +1021,7 @@ msgstr "כתיבה אנכית"
 #: src/open-type-layout.h:164
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Half Metrics"
-msgstr ""
+msgstr "חצאי מדדים אנכיים חלופיים"
 
 #: src/open-type-layout.h:165
 msgctxt "OpenType layout"
@@ -1031,7 +1041,7 @@ msgstr "קרנינג אנכי"
 #: src/open-type-layout.h:168
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Vertical Metrics"
-msgstr ""
+msgstr "חצאי מדדים אנכיים חלופיים יחסיים"
 
 #: src/open-type-layout.h:169
 msgctxt "OpenType layout"
@@ -1047,44 +1057,3 @@ msgstr "חלופות אנכיות לסיבוב"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "אפס עם לוכסן"
-
-#~ msgid "Info"
-#~ msgstr "פרטים"
-
-#~ msgid "This font could not be installed."
-#~ msgstr "גופן זה לא ניתן להתקנה."
-
-#~ msgid "This font could not be displayed."
-#~ msgstr "לא ניתן להציג גופן זה."
-
-#~ msgid "About"
-#~ msgstr "על אודות"
-
-#~ msgid "Quit"
-#~ msgstr "יציאה"
-
-#~ msgid "Font Viewer"
-#~ msgstr "מציג הגופנים"
-
-#~ msgid "[FILE...]"
-#~ msgstr "[FILE...]"
-
-#~ msgid ""
-#~ "Run '%s --help' to see a full list of available command line options."
-#~ msgstr ""
-#~ "Run '%s --help' to see a full list of available command line options."
-
-#~ msgid "Done"
-#~ msgstr "בוצע"
-
-#~ msgid "Font size (default: 64)"
-#~ msgstr "גודל הגופן (בררת מחדל: 64)"
-
-#~ msgid "Size:"
-#~ msgstr "גודל:"
-
-#~ msgid "Usage: %s fontfile\n"
-#~ msgstr "Usage: %s fontfile\n"
-
-#~ msgid "Preview fonts"
-#~ msgstr "תצוגה מקדימה של הגופנים"
