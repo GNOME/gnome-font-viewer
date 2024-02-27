@@ -292,6 +292,7 @@
     </release>
   </releases>
   <translation type="gettext">gnome-font-viewer</translation>
+  <launchable type="desktop-id">org.gnome.font-viewer.desktop</launchable>
   <recommends>
     <control>keyboard</control>
     <control>pointing</control>
