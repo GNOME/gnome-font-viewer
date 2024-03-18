@@ -4,68 +4,73 @@
 # This file is distributed under the same license as the gnome-utils.HEAD package.
 #
 # Amanpreet Singh Alam <amanlinux@netscape.net>, 2004.
-# A S Alam <aalam@users.sf.net>, 2005, 2006, 2007,2008, 2009, 2010, 2011, 2021.
+# SPDX-FileCopyrightText: 2005, 2006, 2007,2008, 2009, 2010, 2011, 2021, 2024 A S Alam <aalam@users.sf.net>
 # Amanpreet Singh Alam <aalam@users.sf.net>, 2009, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.HEAD\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues"
 "\n"
-"POT-Creation-Date: 2020-06-25 07:10+0000\n"
-"PO-Revision-Date: 2021-03-14 14:52-0700\n"
-"Last-Translator: A S Alam <aalam@satluj.org>\n"
+"POT-Creation-Date: 2023-07-15 13:26+0000\n"
+"PO-Revision-Date: 2024-03-18 17:55-0500\n"
+"Last-Translator: A S Alam <aalam@punlinux.org>\n"
 "Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
 "Language: pa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 20.08.1\n"
+"X-Generator: Lokalize 23.08.5\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:377
-#| msgid "All Fonts"
-msgid "GNOME Fonts"
-msgstr "ਗਨੋਮ ਫ਼ੋਂਟਸ"
+#: data/org.gnome.font-viewer.appdata.xml.in:6
+#: data/org.gnome.font-viewer.desktop.in.in:3 src/font-view-application.c:124
+msgid "Fonts"
+msgstr "ਫ਼ੋਂਟ"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1374
-#: src/org.gnome.font-viewer.desktop.in.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7
+#: data/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "ਆਪਣੇ ਸਿਸਟਮ ਉੱਤੇ ਫੋਂਟ ਵੇਖੋ"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 #| msgid ""
-#| "GNOME Font Viewer shows you the fonts installed on your computer for your "
-#| "use as thumbnails. Selecting any thumbnails shows the full view of how "
-#| "the font would look under various sizes."
+#| "GNOME Fonts shows you the fonts installed on your computer for your use "
+#| "as thumbnails. Selecting any thumbnails shows the full view of how the "
+#| "font would look under various sizes."
 msgid ""
-"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"ਗਨੋਮ ਫੋਂਟਸ ਦਰਸ਼ਕ ਤੁਹਾਡੀ ਵਰਤੋਂ ਲਈ ਤੁਹਾਡੇ ਕੰਪਿਊਟਰ ਉੱਤੇ ਇੰਸਟਾਲ ਹੋਏ ਫੋਂਟ ਨੂੰ"
-" ਥੰਮਨੇਲ ਵਜੋਂ ਵੇਖਾਉਂਦਾ ਹੈ। ਕਿਸੇ "
+"ਫੋਂਟਸ (Fonts) ਤੁਹਾਡੀ ਵਰਤੋਂ ਲਈ ਤੁਹਾਡੇ ਕੰਪਿਊਟਰ ਉੱਤੇ ਇੰਸਟਾਲ ਹੋਏ ਫੋਂਟ ਨੂੰ ਥੰਮਨੇਲ"
+" ਵਜੋਂ ਵੇਖਾਉਂਦਾ ਹੈ। ਕਿਸੇ "
 "ਵੀ ਥੰਮਨੇਲ ਨੂੰ ਚੁਣ ਕੇ ਤੁਸੀਂ ਵੇਖ ਸਕਦੇ ਹੋ ਕਿ ਫੋਂਟ ਵੱਖ-ਵੱਖ ਆਕਾਰਾਂ ਵਿੱਚ ਕਿੰਝ ਵੇਖਾਈ"
 " ਦੇਣਗੇ।"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 #| msgid ""
-#| "GNOME Font Viewer also supports installing new font files downloaded in "
-#| "the .ttf and other formats. Fonts may be installed only for your use or "
-#| "made available to all users on the computer."
+#| "GNOME Fonts also supports installing new font files downloaded in the ."
+#| "ttf and other formats. Fonts may be installed only for your use or made "
+#| "available to all users on the computer."
 msgid ""
-"GNOME Fonts also supports installing new font files downloaded in the .ttf "
-"and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
 msgstr ""
-"ਗਨੋਮ ਫ਼ੋਂਟਸ ਦਰਸ਼ਕ ਹੁਣ ttf ਤੇ ਹੋਰ ਫਾਰਮੈਟ ਵਿੱਚੋਂ ਡਾਊਨਲੋਡ ਕੀਤੀਆਂ ਨਵੀਂ ਫੋਂਟ ਫਾਇਲਾਂ"
+"ਫ਼ੋਂਟਸ (Fonts) ਹੁਣ ttf ਤੇ ਹੋਰ ਫਾਰਮੈਟ ਵਿੱਚੋਂ ਡਾਊਨਲੋਡ ਕੀਤੀਆਂ ਨਵੀਂ ਫੋਂਟ ਫਾਇਲਾਂ"
 " ਨੂੰ ਇੰਸਟਾਲ ਕਰਨ ਲਈ "
 "ਸਹਾਇਕ ਹੈ। ਫੋਂਟ ਨੂੰ ਕੇਵਲ ਤੁਹਾਡੀ ਵਰਤੋਂ ਲਈ ਇੰਸਟਾਲ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ ਜਾਂ ਤੁਸੀਂ"
 " ਕੰਪਿਊਟਰ ਉੱਤੇ ਸਭ ਫੋਂਟ "
 "ਵਰਤਣ ਵਾਲਿਆਂ ਲਈ ਵੀ ਇੰਸਟਾਲ ਕਰ ਸਕਦੇ ਹੋ।"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21
+#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
 msgid "The GNOME Project"
 msgstr "ਗਨੋਮ ਪਰੋਜੈਕਟ"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.font-viewer.desktop.in.in:6
+msgid "fonts;fontface;"
+msgstr "ਫੋਂਟ;ਫ਼ੋਂਟਫੇਸ;ਫ਼ੋਂਟ;"
 
 #: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
@@ -87,160 +92,172 @@ msgstr "ਅਕਾਰ"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
-#: src/font-view-app-menu.ui:6
-#| msgid "About Font Viewer"
-msgid "About Fonts"
-msgstr "ਫ਼ੋਂਟ ਦਰਸ਼ਕ ਬਾਰੇ"
+#: src/font-view-application.c:79 src/font-view-window.c:741
+msgid "Could Not Display Font"
+msgstr "ਫ਼ੋਂਟ ਨੂੰ ਵੇਖਾਇਆ ਨਹੀਂ ਜਾ ਸਕਿਆ"
 
-#: src/font-view.c:385
-msgid "Show the application's version"
-msgstr "ਐਪਲੀਕੇਸ਼ਨ ਦਾ ਵਰਜ਼ਨ ਵੇਖਾਓ"
+#: src/font-view-application.c:129
+msgid "translator-credits"
+msgstr ""
+"ਅ ਸ ਆਲਮ (A S Alam) ੨੦੨੧\n"
+"Punjabi OpenSource Team (POST) www.satluj.org"
+
+#: src/font-view-window.c:120
+msgid "Failed"
+msgstr "ਫੇਲ੍ਹ ਹੈ"
+
+#: src/font-view-window.c:128
+msgid "Installed"
+msgstr "ਇੰਸਟਾਲ ਹੈ"
+
+#: src/font-view-window.c:133
+#| msgid "Installing…"
+msgid "Installing"
+msgstr "ਇੰਸਟਾਲ ਕਰਨੇ"
+
+#: src/font-view-window.c:136
+msgid "Install"
+msgstr "ਇੰਸਟਾਲ"
 
 #. Translators, this string is used to display information about
 #. * a 'font variation axis'. The %s gets replaced with the name
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:503
+#: src/font-view-window.c:250
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, default %g"
 
-#: src/font-view.c:559
+#: src/font-view-window.c:305
 #, c-format
-#| msgid "Installed"
 msgid "Instance %d"
 msgstr "ਮੌਕਾ %d"
 
-#. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:602
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view-window.c:343
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:626
+#: src/font-view-window.c:370
 msgid "Name"
 msgstr "ਨਾਂ"
 
-#: src/font-view.c:629
+#: src/font-view-window.c:373
 msgid "Location"
 msgstr "ਟਿਕਾਣਾ"
 
-#: src/font-view.c:632
+#: src/font-view-window.c:376
 msgid "Style"
 msgstr "ਸ਼ੈਲੀ"
 
-#: src/font-view.c:642
+#: src/font-view-window.c:386
 msgid "Type"
 msgstr "ਕਿਸਮ"
 
-#: src/font-view.c:700 src/font-view.c:726
+#: src/font-view-window.c:452 src/font-view-window.c:478
 msgid "Version"
 msgstr "ਵਰਜ਼ਨ"
 
-#: src/font-view.c:704 src/font-view.c:731
+#: src/font-view-window.c:456 src/font-view-window.c:483
 msgid "Copyright"
 msgstr "ਕਾਪੀਰਾਈਟ"
 
-#: src/font-view.c:708
+#: src/font-view-window.c:460
 msgid "Description"
 msgstr "ਵਰਣਨ"
 
-#: src/font-view.c:712
+#: src/font-view-window.c:464
 msgid "Manufacturer"
 msgstr "ਨਿਰਮਾਤਾ"
 
-#: src/font-view.c:716
+#: src/font-view-window.c:468
 msgid "Designer"
 msgstr "ਡਿਜ਼ਾਈਨਰ"
 
-#: src/font-view.c:720
+#: src/font-view-window.c:472
 msgid "License"
 msgstr "ਲਸੰਸ"
 
-#: src/font-view.c:745
+#: src/font-view-window.c:497
 msgid "Glyph Count"
 msgstr "ਗਲਿਫ਼ ਗਿਣਤੀ"
 
-#: src/font-view.c:747
+#: src/font-view-window.c:499
 msgid "Color Glyphs"
 msgstr "ਰੰਗ ਗਲਿਫ਼"
 
-#: src/font-view.c:747
+#: src/font-view-window.c:500
 msgid "yes"
 msgstr "ਹਾਂ"
 
-#: src/font-view.c:747
-#| msgid "Info"
+#: src/font-view-window.c:500
 msgid "no"
 msgstr "ਨਹੀਂ"
 
-#: src/font-view.c:751
+#: src/font-view-window.c:504
 msgid "Layout Features"
 msgstr "ਲੇਆਉਟ ਫ਼ੀਚਰ"
 
-#: src/font-view.c:757
+#: src/font-view-window.c:510
 msgid "Variation Axes"
 msgstr "ਬਦਲਵਾਂ ਧੁਰਾ"
 
-#: src/font-view.c:764
+#: src/font-view-window.c:517
 msgid "Named Styles"
 msgstr "ਨਾਮੀ ਸ਼ੈਲੀਆਂ"
 
-#: src/font-view.c:870
-#| msgid "This font could not be displayed."
-msgid "This font could not be installed."
-msgstr "ਇਹ ਫੋਂਟ ਇੰਸਟਾਲ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।"
+#: src/font-view-window.c:559 src/font-view-window.c:661
+msgid "Could Not Install Font"
+msgstr "ਫ਼ੋਂਟ ਇੰਸਟਾਲ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ"
 
-#: src/font-view.c:1008
-msgid "This font could not be displayed."
-msgstr "ਇਹ ਫੋਂਟ ਵੇਖਾਇਆ ਨਹੀਂ ਜਾ ਸਕਦਾ।"
-
-#: src/font-view.c:1141
-msgid "Install"
-msgstr "ਇੰਸਟਾਲ"
-
-#: src/font-view.c:1144
-#| msgid "Install"
-msgid "Installing…"
-msgstr "ਇੰਸਟਾਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…"
-
-#: src/font-view.c:1147
-msgid "Installed"
-msgstr "ਇੰਸਟਾਲ ਹੈ"
-
-#: src/font-view.c:1150
-#| msgid "Install Failed"
-msgid "Failed"
-msgstr "ਫੇਲ੍ਹ ਹੈ"
-
-#: src/font-view.c:1166
-msgid "Info"
-msgstr "ਜਾਣਕਾਰੀ"
-
-#: src/font-view.c:1183
-msgid "Back"
-msgstr "ਪਿੱਛੇ"
-
-#: src/font-view.c:1261
+#: src/font-view-window.ui:31
 msgid "All Fonts"
 msgstr "ਸਭ ਫ਼ੋਂਟ"
 
-#: src/font-view.c:1373 src/org.gnome.font-viewer.desktop.in.in:3
-#| msgid "All Fonts"
-msgid "Fonts"
-msgstr "ਫ਼ੋਂਟ"
+#: src/font-view-window.ui:39
+msgid "Search"
+msgstr "ਖੋਜੋ"
 
-#: src/font-view.c:1376
-msgid "translator-credits"
-msgstr ""
-"ਅ ਸ ਆਲਮ (A S Alam) ੨੦੨੧\n"
-"Punjabi OpenSource Team (POST) www.satluj.org"
+#: src/font-view-window.ui:47
+msgid "About Fonts"
+msgstr "ਫ਼ੋਂਟ ਦਰਸ਼ਕ ਬਾਰੇ"
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in.in:6
-msgid "fonts;fontface;"
-msgstr "ਫੋਂਟ;ਫ਼ੋਂਟਫੇਸ;ਫ਼ੋਂਟ;"
+#: src/font-view-window.ui:59
+msgid "Search fonts"
+msgstr "ਫ਼ੋਂਟਾਂ ਨੂੰ ਲੱਭੋ"
+
+#: src/font-view-window.ui:182
+#| msgid "Install"
+msgid "_Install"
+msgstr "ਇੰਸਟਾਲ ਕਰੋ(_I)"
+
+#: src/font-view-window.ui:185
+#| msgid "Install"
+msgid "Install Font"
+msgstr "ਫ਼ੋਂਟ ਨੂੰ ਇੰਸਟਾਲ"
+
+#: src/font-view-window.ui:190
+msgid "I_nfo"
+msgstr "ਜਾਣਕਾਰੀ(_n)"
+
+#: src/font-view-window.ui:192
+msgid "Font Details"
+msgstr "ਫ਼ੋਂਟ ਦੇ ਵੇਰਵੇ"
+
+#: src/font-view-window.ui:239
+msgid "_Close"
+msgstr "ਬੰਦ ਕਰੋ(_C)"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "ਗਨੋਮ ਫ਼ੋਂਟਸ"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "ਐਪਲੀਕੇਸ਼ਨ ਦਾ ਵਰਜ਼ਨ ਵੇਖਾਓ"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -933,13 +950,11 @@ msgid "Stretching Glyph Decomposition"
 msgstr "ਖਿਚਣ ਵਾਲਾ ਗਲਿਫ਼ ਵੰਡਣ "
 
 #: src/open-type-layout.h:151
-#| msgid "Description"
 msgctxt "OpenType layout"
 msgid "Subscript"
 msgstr "ਸਬ-ਸਕ੍ਰਿਪਟ"
 
 #: src/open-type-layout.h:152
-#| msgid "Description"
 msgctxt "OpenType layout"
 msgid "Superscript"
 msgstr "ਸੁਪਰ-ਸਕ੍ਰਿਪਟ"
@@ -1039,14 +1054,24 @@ msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "ਟੱਕ ਵਾਲੀ ਜ਼ੀਰੋ"
 
+#~| msgid "This font could not be displayed."
+#~ msgid "This font could not be installed."
+#~ msgstr "ਇਹ ਫੋਂਟ ਇੰਸਟਾਲ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।"
+
+#~ msgid "This font could not be displayed."
+#~ msgstr "ਇਹ ਫੋਂਟ ਵੇਖਾਇਆ ਨਹੀਂ ਜਾ ਸਕਦਾ।"
+
+#~ msgid "Info"
+#~ msgstr "ਜਾਣਕਾਰੀ"
+
+#~ msgid "Back"
+#~ msgstr "ਪਿੱਛੇ"
+
 #~ msgid "About"
 #~ msgstr "ਇਸ ਬਾਰੇ"
 
 #~ msgid "Quit"
 #~ msgstr "ਬਾਹਰ"
-
-#~ msgid "_Close"
-#~ msgstr "ਬੰਦ ਕਰੋ(_C)"
 
 #~ msgid "Font Viewer"
 #~ msgstr "ਫੋਂਟ ਦਰਸ਼ਕ"
@@ -1062,3 +1087,4 @@ msgstr "ਟੱਕ ਵਾਲੀ ਜ਼ੀਰੋ"
 
 #~ msgid "Preview fonts"
 #~ msgstr "ਫੋਂਟ ਝਲਕ"
+
