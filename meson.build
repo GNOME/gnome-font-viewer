@@ -1,5 +1,5 @@
 project('gnome-font-viewer', 'c',
-        version: '45.0',
+        version: '46.0',
         license: 'GPLv2+',
         meson_version: '>= 0.50.0',
 )

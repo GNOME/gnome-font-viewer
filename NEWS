@@ -1,3 +1,19 @@
+GNOME Font Viewer - 46.0
+-------------------------------------------------------------------------------
+Fonts 46.0 comes with the following improvements:
+* Fix incorrect/missing URLs (Vaishnavi Nawghare)
+* Improve app metainfo (Sabri Ünal)
+
+This version brings translation updates for the following locales:
+ * Esperanto (Kristjan SCHMIDT)
+ * Georgian (Ekaterine Papava)
+ * Greek, Modern (1453-) (Efstathios Iosifidis)
+ * Hebrew (Yaron Shahrabani)
+ * Latvian (Rūdolfs Mazurs)
+ * Panjabi (A S Alam)
+ * Romanian (Florentina Mușat)
+
+
 GNOME Font Viewer - 45.0
 -------------------------------------------------------------------------------
 Fonts 45.0 comes with a new look courtesy of the new libadwaita 1.4 widgets.

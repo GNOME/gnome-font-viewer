@@ -44,6 +44,25 @@
   </kudos>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="46.0" date="2024-03-21">
+      <description>
+        <p>Fonts 46.0 comes with the following improvements:</p>
+        <ul>
+          <li>Fix incorrect/missing URLs (Vaishnavi Nawghare)</li>
+          <li>Improve app metainfo (Sabri Ünal)</li>
+        </ul>
+        <p>This version brings translation updates for the following locales:</p>
+        <ul>
+          <li>Esperanto (Kristjan SCHMIDT)</li>
+          <li>Georgian (Ekaterine Papava)</li>
+          <li>Greek, Modern (1453-) (Efstathios Iosifidis)</li>
+          <li>Hebrew (Yaron Shahrabani)</li>
+          <li>Latvian (Rūdolfs Mazurs)</li>
+          <li>Panjabi (A S Alam)</li>
+          <li>Romanian (Florentina Mușat)</li>
+        </ul>
+      </description>
+    </release>
     <release version="45.0" date="2023-09-18">
       <description>
         <p>Fonts 45.0 comes with a new look courtesy of the new libadwaita 1.4 widgets.</p>
