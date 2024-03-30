@@ -31,10 +31,13 @@
   <url type="contribute">https://welcome.gnome.org/app/FontViewer/</url>
   <screenshots>
     <screenshot type="default">
-      <image>https://gitlab.gnome.org/GNOME/gnome-font-viewer/raw/HEAD/data/screenshots/fonts-1.png</image>
+      <image>https://static.gnome.org/appdata/gnome-46/fonts/fonts-main.png</image>
     </screenshot>
     <screenshot>
-      <image>https://gitlab.gnome.org/GNOME/gnome-font-viewer/raw/HEAD/data/screenshots/fonts-2.png</image>
+      <image>https://static.gnome.org/appdata/gnome-46/fonts/fonts-preview.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://static.gnome.org/appdata/gnome-46/fonts/fonts-search.png</image>
     </screenshot>
   </screenshots>
   <project_group>GNOME</project_group>
