@@ -6,21 +6,23 @@
 # Rajesh Ranjan <rranjan@redhat.com>, 2005, 2006, 2009.
 # Rajesh Ranjan <rajesh672@gmail.com>, 2009.
 # rajesh <rajeshkajha@yahoo.com>, 2012, 2013, 2014.
+# Scrambled777 <weblate.scrambled777@simplelogin.com>, 2024.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master.hi\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-19 18:53+0000\n"
-"PO-Revision-Date: 2014-09-22 14:31+0630\n"
-"Last-Translator: rajesh <rajesh>\n"
-"Language-Team: Hindi <kde-i18n-doc@kde.org>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
+"issues\n"
+"POT-Creation-Date: 2023-07-15 13:26+0000\n"
+"PO-Revision-Date: 2024-04-17 15:41+0530\n"
+"Last-Translator: Scrambled777 <weblate.scrambled777@simplelogin.com>\n"
+"Language-Team: Hindi\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.5\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Gtranslator 46.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "\n"
 "\n"
 "\n"
@@ -30,124 +32,1037 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
-msgid ""
-"GNOME Font Viewer shows you the fonts installed on your computer for your "
-"use as thumbnails. Selecting any thumbnails shows the full view of how the "
-"font would look under various sizes."
-msgstr ""
-"गनोम फ़ॉन्ट प्रदर्शक आपके कंप्यूटर पर संस्थापित फ़ॉन्ट को दिखाता है आपके "
-"उपयोग के लिए बतौर थंबनेल. किसी थंबनेल को चुनना दिखाता है कि कैसे फ़ॉन्ट "
-"विभिन्न प्रकार का दिखेगा."
+#: data/org.gnome.font-viewer.appdata.xml.in:6
+#: data/org.gnome.font-viewer.desktop.in.in:3 src/font-view-application.c:124
+msgid "Fonts"
+msgstr "फॉन्ट्स"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
-msgid ""
-"GNOME Font Viewer also supports installing new font files downloaded in the ."
-"ttf and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
-msgstr ""
-"गनोम फ़ॉन्ट प्रदर्शक .ttf और अन्य प्रारूप में नए फ़ॉन्ट फ़ाइल के संस्थापन का "
-"समर्थन भी करता है. फ़ॉन्ट केवल आपके लिए संस्थापित किया जा सकता है या कंप्यूटर "
-"पर सभी उपयोक्ता के लिए उपलब्ध कराया जा सकता है."
-
-#: ../src/font-thumbnailer.c:189
-msgid "Text to thumbnail (default: Aa)"
-msgstr "पाठ से लघुचित्र (default: Aa)"
-
-#: ../src/font-thumbnailer.c:189
-msgid "TEXT"
-msgstr "TEXT"
-
-#: ../src/font-thumbnailer.c:191
-msgid "Thumbnail size (default: 128)"
-msgstr "लघुचित्र आकार (default: Aa)"
-
-#: ../src/font-thumbnailer.c:191
-msgid "SIZE"
-msgstr "आकार"
-
-#: ../src/font-thumbnailer.c:193
-msgid "FONT-FILE OUTPUT-FILE"
-msgstr "FONT-FILE OUTPUT-FILE"
-
-#: ../src/font-view-app-menu.ui.h:1
-msgid "About"
-msgstr "परिचय"
-
-#: ../src/font-view-app-menu.ui.h:2
-msgid "Quit"
-msgstr "बाहर"
-
-#: ../src/font-view.c:176
-msgid "Name"
-msgstr "नाम"
-
-#: ../src/font-view.c:179
-msgid "Style"
-msgstr "शैली"
-
-#: ../src/font-view.c:189
-msgid "Type"
-msgstr "प्रकार"
-
-#: ../src/font-view.c:234 ../src/font-view.c:253
-msgid "Version"
-msgstr "संस्करण"
-
-#: ../src/font-view.c:239 ../src/font-view.c:259
-msgid "Copyright"
-msgstr "कॉपीराइट"
-
-#: ../src/font-view.c:244
-msgid "Description"
-msgstr "वर्णन"
-
-#: ../src/font-view.c:272
-msgid "Install Failed"
-msgstr "संस्थापन विफल"
-
-#: ../src/font-view.c:278
-msgid "Installed"
-msgstr "स्थापित "
-
-#: ../src/font-view.c:281 ../src/font-view.c:525
-msgid "Install"
-msgstr "संस्थापित करें"
-
-#: ../src/font-view.c:414
-msgid "This font could not be displayed."
-msgstr "इस फ़ॉन्ट को प्रदर्शित नहीं किया जा सका."
-
-#: ../src/font-view.c:478 ../src/font-view.c:536
-msgid "Info"
-msgstr "सूचना"
-
-#: ../src/font-view.c:553
-msgid "Back"
-msgstr "पीछे"
-
-#: ../src/font-view.c:643
-msgid "All Fonts"
-msgstr "सभी फ़ॉन्ट"
-
-#: ../src/font-view.c:761 ../src/org.gnome.font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "फ़ॉन्ट प्रदर्शक"
-
-#: ../src/font-view.c:762 ../src/org.gnome.font-viewer.desktop.in.in.h:2
+#: data/org.gnome.font-viewer.appdata.xml.in:7
+#: data/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
-msgstr "अपने तंत्र पर फ़ॉन्ट देखें"
+msgstr "अपने तंत्र पर फॉन्ट देखें"
 
-#: ../src/font-view.c:764
-msgid "translator-credits"
-msgstr "राजेश रंजन (rranjan@redhat.com, rajeshkajha@yahoo.com)"
+#: data/org.gnome.font-viewer.appdata.xml.in:9
+msgid ""
+"Fonts shows you the fonts installed on your computer for your use as "
+"thumbnails. Selecting any thumbnails shows the full view of how the font "
+"would look under various sizes."
+msgstr ""
+"फॉन्ट्स आपके कंप्यूटर पर संस्थापित फॉन्ट को दिखाता है आपके उपयोग के लिए बतौर थंबनेल। किसी "
+"थंबनेल को चुनना दिखाता है कि कैसे फॉन्ट विभिन्न प्रकार का दिखेगा।"
 
-#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
+#: data/org.gnome.font-viewer.appdata.xml.in:15
+msgid ""
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
+msgstr ""
+"फॉन्ट्स .ttf और अन्य प्रारूप में नए फॉन्ट फ़ाइल के संस्थापन का समर्थन भी करता है। फॉन्ट केवल "
+"आपके लिए संस्थापित किया जा सकता है या कंप्यूटर पर सभी उपयोक्ता के लिए उपलब्ध कराया जा "
+"सकता है।"
+
+#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
+msgid "The GNOME Project"
+msgstr "GNOME परियोजना"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
 msgstr "fonts;fontface;"
 
-#~ msgid "About Font Viewer"
-#~ msgstr "फ़ॉन्ट प्रदर्शक के बारे में"
+#: src/font-thumbnailer.c:181
+msgid "Text to thumbnail (default: Aa)"
+msgstr "पाठ से लघुचित्र (default: Aa)"
+
+#: src/font-thumbnailer.c:181
+msgid "TEXT"
+msgstr "TEXT"
+
+#: src/font-thumbnailer.c:183
+msgid "Thumbnail size (default: 128)"
+msgstr "लघुचित्र आकार (default: Aa)"
+
+#: src/font-thumbnailer.c:183
+msgid "SIZE"
+msgstr "आकार"
+
+#: src/font-thumbnailer.c:185
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "FONT-FILE OUTPUT-FILE"
+
+#: src/font-view-application.c:79 src/font-view-window.c:741
+msgid "Could Not Display Font"
+msgstr "फॉन्ट प्रदर्शित नहीं किया जा सका"
+
+#: src/font-view-application.c:129
+msgid "translator-credits"
+msgstr ""
+"राजेश रंजन (rranjan@redhat.com, rajeshkajha@yahoo.com)\n"
+"Scrambled777 <weblate.scrambled777@simplelogin.com>"
+
+#: src/font-view-window.c:120
+msgid "Failed"
+msgstr "असफल"
+
+#: src/font-view-window.c:128
+msgid "Installed"
+msgstr "संस्थापित"
+
+#: src/font-view-window.c:133
+msgid "Installing"
+msgstr "संस्थापित किया जा रहा है"
+
+#: src/font-view-window.c:136
+msgid "Install"
+msgstr "संस्थापित करें"
+
+#. Translators, this string is used to display information about
+#. * a 'font variation axis'. The %s gets replaced with the name
+#. * of the axis, for example 'Width'. The three %g get replaced
+#. * with the minimum, maximum and default values for the axis.
+#.
+#: src/font-view-window.c:250
+#, c-format
+msgid "%s %g — %g, default %g"
+msgstr "%s %g — %g, डिफॉल्ट %g"
+
+#: src/font-view-window.c:305
+#, c-format
+msgid "Instance %d"
+msgstr "इंस्टैंस %d"
+
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view-window.c:343
+msgctxt "OpenType layout"
+msgid ", "
+msgstr ", "
+
+#: src/font-view-window.c:370
+msgid "Name"
+msgstr "नाम"
+
+#: src/font-view-window.c:373
+msgid "Location"
+msgstr "स्थान"
+
+#: src/font-view-window.c:376
+msgid "Style"
+msgstr "शैली"
+
+#: src/font-view-window.c:386
+msgid "Type"
+msgstr "प्रकार"
+
+#: src/font-view-window.c:452 src/font-view-window.c:478
+msgid "Version"
+msgstr "संस्करण"
+
+#: src/font-view-window.c:456 src/font-view-window.c:483
+msgid "Copyright"
+msgstr "कॉपीराइट"
+
+#: src/font-view-window.c:460
+msgid "Description"
+msgstr "वर्णन"
+
+#: src/font-view-window.c:464
+msgid "Manufacturer"
+msgstr "उत्पादक"
+
+#: src/font-view-window.c:468
+msgid "Designer"
+msgstr "डिजाइनर"
+
+#: src/font-view-window.c:472
+msgid "License"
+msgstr "लाइसेंस"
+
+#: src/font-view-window.c:497
+msgid "Glyph Count"
+msgstr "ग्लिफ़ गणना"
+
+#: src/font-view-window.c:499
+msgid "Color Glyphs"
+msgstr "रंगीन ग्लिफ़"
+
+#: src/font-view-window.c:500
+msgid "yes"
+msgstr "हां"
+
+#: src/font-view-window.c:500
+msgid "no"
+msgstr "नहीं"
+
+#: src/font-view-window.c:504
+msgid "Layout Features"
+msgstr "अभिन्यास विशेषताएं"
+
+#: src/font-view-window.c:510
+msgid "Variation Axes"
+msgstr "भिन्नता अक्ष"
+
+#: src/font-view-window.c:517
+msgid "Named Styles"
+msgstr "नामित शैलियाँ"
+
+#: src/font-view-window.c:559 src/font-view-window.c:661
+msgid "Could Not Install Font"
+msgstr "फॉन्ट स्थापित नहीं कर सके"
+
+#: src/font-view-window.ui:31
+msgid "All Fonts"
+msgstr "सभी फॉन्ट"
+
+#: src/font-view-window.ui:39
+msgid "Search"
+msgstr "खोजें"
+
+#: src/font-view-window.ui:47
+msgid "About Fonts"
+msgstr "फॉन्ट के बारे में"
+
+#: src/font-view-window.ui:59
+msgid "Search fonts"
+msgstr "फॉन्ट खोजें"
+
+#: src/font-view-window.ui:182
+msgid "_Install"
+msgstr "संस्थापित करें (_I)"
+
+#: src/font-view-window.ui:185
+msgid "Install Font"
+msgstr "फॉन्ट संस्थापित करें"
+
+#: src/font-view-window.ui:190
+msgid "I_nfo"
+msgstr "जानकारी (_n)"
+
+#: src/font-view-window.ui:192
+msgid "Font Details"
+msgstr "फॉन्ट विवरण"
+
+#: src/font-view-window.ui:239
+msgid "_Close"
+msgstr "बंद (_C)"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "गनोम फॉन्ट्स"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "अनुप्रयोग का संस्करण दिखाएं"
+
+#: src/open-type-layout.h:13
+msgctxt "OpenType layout"
+msgid "Access All Alternates"
+msgstr "सभी विकल्पों तक पहुंचें"
+
+#: src/open-type-layout.h:14
+msgctxt "OpenType layout"
+msgid "Above-base Forms"
+msgstr "उपरोक्त-आधार प्रपत्र"
+
+#: src/open-type-layout.h:15
+msgctxt "OpenType layout"
+msgid "Above-base Mark Positioning"
+msgstr "उपरोक्त-आधार मार्क पोजीशनिंग"
+
+#: src/open-type-layout.h:16
+msgctxt "OpenType layout"
+msgid "Above-base Substitutions"
+msgstr "उपरोक्त-आधार प्रतिस्थापन"
+
+#: src/open-type-layout.h:17
+msgctxt "OpenType layout"
+msgid "Alternative Fractions"
+msgstr "वैकल्पिक भिन्न"
+
+#: src/open-type-layout.h:18
+msgctxt "OpenType layout"
+msgid "Akhands"
+msgstr "अखण्ड"
+
+#: src/open-type-layout.h:19
+msgctxt "OpenType layout"
+msgid "Below-base Forms"
+msgstr "निम्न-आधार फॉर्म"
+
+#: src/open-type-layout.h:20
+msgctxt "OpenType layout"
+msgid "Below-base Mark Positioning"
+msgstr "निम्न-आधार मार्क पोजिशनिंग"
+
+#: src/open-type-layout.h:21
+msgctxt "OpenType layout"
+msgid "Below-base Substitutions"
+msgstr "निम्न-आधार प्रतिस्थापन"
+
+#: src/open-type-layout.h:22
+msgctxt "OpenType layout"
+msgid "Contextual Alternates"
+msgstr "प्रासंगिक विकल्प"
+
+#: src/open-type-layout.h:23
+msgctxt "OpenType layout"
+msgid "Case-Sensitive Forms"
+msgstr "केस-सेंसिटिव फॉर्म"
+
+#: src/open-type-layout.h:24
+msgctxt "OpenType layout"
+msgid "Glyph Composition / Decomposition"
+msgstr "ग्लिफ़ रचना / अपघटन"
+
+#: src/open-type-layout.h:25
+msgctxt "OpenType layout"
+msgid "Conjunct Form After Ro"
+msgstr "रो के बाद संयुक्त रूप"
+
+#: src/open-type-layout.h:26
+msgctxt "OpenType layout"
+msgid "Conjunct Forms"
+msgstr "संयुक्त रूप"
+
+#: src/open-type-layout.h:27
+msgctxt "OpenType layout"
+msgid "Contextual Ligatures"
+msgstr "प्रासंगिक संयुक्ताक्षर"
+
+#: src/open-type-layout.h:28
+msgctxt "OpenType layout"
+msgid "Centered CJK Punctuation"
+msgstr "केंद्रित सीजेके विराम चिह्न"
+
+#: src/open-type-layout.h:29
+msgctxt "OpenType layout"
+msgid "Capital Spacing"
+msgstr "बड़ा अंतरण"
+
+#: src/open-type-layout.h:30
+msgctxt "OpenType layout"
+msgid "Contextual Swash"
+msgstr "प्रासंगिक स्वाश"
+
+#: src/open-type-layout.h:31
+msgctxt "OpenType layout"
+msgid "Cursive Positioning"
+msgstr "कर्सिव पोजिशनिंग"
+
+#: src/open-type-layout.h:32
+msgctxt "OpenType layout"
+msgid "Petite Capitals From Capitals"
+msgstr "बड़े अक्षरों के आधार पर अतिरिक्त छोटे अक्षर बनाएं"
+
+#: src/open-type-layout.h:33
+msgctxt "OpenType layout"
+msgid "Small Capitals From Capitals"
+msgstr "बड़े अक्षरों के आधार पर छोटे अक्षर बनाएं"
+
+#: src/open-type-layout.h:34
+msgctxt "OpenType layout"
+msgid "Character Variation 1"
+msgstr "चरित्र भिन्नता 1"
+
+#: src/open-type-layout.h:35
+msgctxt "OpenType layout"
+msgid "Character Variation 2"
+msgstr "चरित्र भिन्नता 2"
+
+#: src/open-type-layout.h:36
+msgctxt "OpenType layout"
+msgid "Character Variation 3"
+msgstr "चरित्र भिन्नता 3"
+
+#: src/open-type-layout.h:37
+msgctxt "OpenType layout"
+msgid "Character Variation 4"
+msgstr "चरित्र भिन्नता 4"
+
+#: src/open-type-layout.h:38
+msgctxt "OpenType layout"
+msgid "Character Variation 5"
+msgstr "चरित्र भिन्नता 5"
+
+#: src/open-type-layout.h:39
+msgctxt "OpenType layout"
+msgid "Character Variation 6"
+msgstr "चरित्र भिन्नता 6"
+
+#: src/open-type-layout.h:40
+msgctxt "OpenType layout"
+msgid "Character Variation 7"
+msgstr "चरित्र भिन्नता 7"
+
+#: src/open-type-layout.h:41
+msgctxt "OpenType layout"
+msgid "Character Variation 8"
+msgstr "चरित्र भिन्नता 8"
+
+#: src/open-type-layout.h:42
+msgctxt "OpenType layout"
+msgid "Character Variation 9"
+msgstr "चरित्र भिन्नता 9"
+
+#: src/open-type-layout.h:43
+msgctxt "OpenType layout"
+msgid "Character Variation 10"
+msgstr "चरित्र भिन्नता 10"
+
+#: src/open-type-layout.h:44
+msgctxt "OpenType layout"
+msgid "Character Variation 11"
+msgstr "चरित्र भिन्नता 11"
+
+#: src/open-type-layout.h:45
+msgctxt "OpenType layout"
+msgid "Character Variation 12"
+msgstr "चरित्र भिन्नता 12"
+
+#: src/open-type-layout.h:46
+msgctxt "OpenType layout"
+msgid "Character Variation 13"
+msgstr "चरित्र भिन्नता 13"
+
+#: src/open-type-layout.h:47
+msgctxt "OpenType layout"
+msgid "Character Variation 14"
+msgstr "चरित्र भिन्नता 14"
+
+#: src/open-type-layout.h:48
+msgctxt "OpenType layout"
+msgid "Character Variation 15"
+msgstr "चरित्र भिन्नता 15"
+
+#: src/open-type-layout.h:49
+msgctxt "OpenType layout"
+msgid "Character Variation 16"
+msgstr "चरित्र भिन्नता 16"
+
+#: src/open-type-layout.h:50
+msgctxt "OpenType layout"
+msgid "Character Variation 17"
+msgstr "चरित्र भिन्नता 17"
+
+#: src/open-type-layout.h:51
+msgctxt "OpenType layout"
+msgid "Character Variation 18"
+msgstr "चरित्र भिन्नता 18"
+
+#: src/open-type-layout.h:52
+msgctxt "OpenType layout"
+msgid "Character Variation 19"
+msgstr "चरित्र भिन्नता 19"
+
+#: src/open-type-layout.h:53
+msgctxt "OpenType layout"
+msgid "Distances"
+msgstr "दूरी"
+
+#: src/open-type-layout.h:54
+msgctxt "OpenType layout"
+msgid "Discretionary Ligatures"
+msgstr "विवेकाधीन संयुक्ताक्षर"
+
+#: src/open-type-layout.h:55
+msgctxt "OpenType layout"
+msgid "Denominators"
+msgstr "भाजक"
+
+#: src/open-type-layout.h:56
+msgctxt "OpenType layout"
+msgid "Dotless Forms"
+msgstr "बिंदुरहित रूप"
+
+#: src/open-type-layout.h:57
+msgctxt "OpenType layout"
+msgid "Expert Forms"
+msgstr "विशेषज्ञ रूप"
+
+#: src/open-type-layout.h:58
+msgctxt "OpenType layout"
+msgid "Final Glyph on Line Alternates"
+msgstr "रेखा विकल्प पर अंतिम ग्लिफ़"
+
+#: src/open-type-layout.h:59
+msgctxt "OpenType layout"
+msgid "Terminal Forms #2"
+msgstr "टर्मिनल रूप #2"
+
+#: src/open-type-layout.h:60
+msgctxt "OpenType layout"
+msgid "Terminal Forms #3"
+msgstr "टर्मिनल रूप #3"
+
+#: src/open-type-layout.h:61
+msgctxt "OpenType layout"
+msgid "Terminal Forms"
+msgstr "टर्मिनल रूप"
+
+#: src/open-type-layout.h:62
+msgctxt "OpenType layout"
+msgid "Flattened accent forms"
+msgstr "चपटा उच्चारण रूप"
+
+#: src/open-type-layout.h:63
+msgctxt "OpenType layout"
+msgid "Fractions"
+msgstr "अंश"
+
+#: src/open-type-layout.h:64
+msgctxt "OpenType layout"
+msgid "Full Widths"
+msgstr "पूर्ण चौड़ाई"
+
+#: src/open-type-layout.h:65
+msgctxt "OpenType layout"
+msgid "Half Forms"
+msgstr "आधा रूप"
+
+#: src/open-type-layout.h:66
+msgctxt "OpenType layout"
+msgid "Halant Forms"
+msgstr "हलन्त रूप"
+
+#: src/open-type-layout.h:67
+msgctxt "OpenType layout"
+msgid "Alternate Half Widths"
+msgstr "वैकल्पिक आधी चौड़ाई"
+
+#: src/open-type-layout.h:68
+msgctxt "OpenType layout"
+msgid "Historical Forms"
+msgstr "ऐतिहासिक रूप"
+
+#: src/open-type-layout.h:69
+msgctxt "OpenType layout"
+msgid "Horizontal Kana Alternates"
+msgstr "क्षैतिज काना विकल्प"
+
+#: src/open-type-layout.h:70
+msgctxt "OpenType layout"
+msgid "Historical Ligatures"
+msgstr "ऐतिहासिक संयुक्ताक्षर"
+
+#: src/open-type-layout.h:71
+msgctxt "OpenType layout"
+msgid "Hangul"
+msgstr "हंगुल"
+
+#: src/open-type-layout.h:72
+msgctxt "OpenType layout"
+msgid "Hojo Kanji Forms"
+msgstr "होजो कांजी रूप"
+
+#: src/open-type-layout.h:73
+msgctxt "OpenType layout"
+msgid "Half Widths"
+msgstr "आधी चौड़ाई"
+
+#: src/open-type-layout.h:74
+msgctxt "OpenType layout"
+msgid "Initial Forms"
+msgstr "प्रारंभिक रूप"
+
+#: src/open-type-layout.h:75
+msgctxt "OpenType layout"
+msgid "Isolated Forms"
+msgstr "पृथक रूप"
+
+#: src/open-type-layout.h:76
+msgctxt "OpenType layout"
+msgid "Italics"
+msgstr "इटैलिक"
+
+#: src/open-type-layout.h:77
+msgctxt "OpenType layout"
+msgid "Justification Alternates"
+msgstr "औचित्य वैकल्पिक"
+
+#: src/open-type-layout.h:78
+msgctxt "OpenType layout"
+msgid "JIS78 Forms"
+msgstr "JIS78 रूप"
+
+#: src/open-type-layout.h:79
+msgctxt "OpenType layout"
+msgid "JIS83 Forms"
+msgstr "JIS83 रूप"
+
+#: src/open-type-layout.h:80
+msgctxt "OpenType layout"
+msgid "JIS90 Forms"
+msgstr "JIS90 रूप"
+
+#: src/open-type-layout.h:81
+msgctxt "OpenType layout"
+msgid "JIS2004 Forms"
+msgstr "JIS2004 रूप"
+
+#: src/open-type-layout.h:82
+msgctxt "OpenType layout"
+msgid "Kerning"
+msgstr "कर्निंग"
+
+#: src/open-type-layout.h:83
+msgctxt "OpenType layout"
+msgid "Left Bounds"
+msgstr "बाएं सीमाएं"
+
+#: src/open-type-layout.h:84
+msgctxt "OpenType layout"
+msgid "Standard Ligatures"
+msgstr "मानक संयुक्ताक्षर"
+
+#: src/open-type-layout.h:85
+msgctxt "OpenType layout"
+msgid "Leading Jamo Forms"
+msgstr "अग्रणी जामो रूप"
+
+#: src/open-type-layout.h:86
+msgctxt "OpenType layout"
+msgid "Lining Figures"
+msgstr "लाइनिंग आकृतियाँ"
+
+#: src/open-type-layout.h:87
+msgctxt "OpenType layout"
+msgid "Localized Forms"
+msgstr "स्थानीयकृत रूप"
+
+#: src/open-type-layout.h:88
+msgctxt "OpenType layout"
+msgid "Left-to-right alternates"
+msgstr "बाएं-से-दाएं विकल्प"
+
+#: src/open-type-layout.h:89
+msgctxt "OpenType layout"
+msgid "Left-to-right mirrored forms"
+msgstr "बाएं-से-दाएं प्रतिबिंबित रूप"
+
+#: src/open-type-layout.h:90
+msgctxt "OpenType layout"
+msgid "Mark Positioning"
+msgstr "मार्क पोजिशनिंग"
+
+#: src/open-type-layout.h:91
+msgctxt "OpenType layout"
+msgid "Medial Forms #2"
+msgstr "औसत रूप #2"
+
+#: src/open-type-layout.h:92
+msgctxt "OpenType layout"
+msgid "Medial Forms"
+msgstr "औसत रूप"
+
+#: src/open-type-layout.h:93
+msgctxt "OpenType layout"
+msgid "Mathematical Greek"
+msgstr "गणितीय यूनानी"
+
+#: src/open-type-layout.h:94
+msgctxt "OpenType layout"
+msgid "Mark to Mark Positioning"
+msgstr "मार्क से मार्क पोजिशनिंग"
+
+#: src/open-type-layout.h:95
+msgctxt "OpenType layout"
+msgid "Mark Positioning via Substitution"
+msgstr "प्रतिस्थापन के माध्यम से मार्क पोजीशनिंग"
+
+#: src/open-type-layout.h:96
+msgctxt "OpenType layout"
+msgid "Alternate Annotation Forms"
+msgstr "वैकल्पिक एनोटेशन रूप"
+
+#: src/open-type-layout.h:97
+msgctxt "OpenType layout"
+msgid "NLC Kanji Forms"
+msgstr "NLC कांजी रूप"
+
+#: src/open-type-layout.h:98
+msgctxt "OpenType layout"
+msgid "Nukta Forms"
+msgstr "नुक्ता रूप"
+
+#: src/open-type-layout.h:99
+msgctxt "OpenType layout"
+msgid "Numerators"
+msgstr "अंश"
+
+#: src/open-type-layout.h:100
+msgctxt "OpenType layout"
+msgid "Oldstyle Figures"
+msgstr "पुरानी शैली की आकृतियाँ"
+
+#: src/open-type-layout.h:101
+msgctxt "OpenType layout"
+msgid "Optical Bounds"
+msgstr "ऑप्टिकल सीमाएं"
+
+#: src/open-type-layout.h:102
+msgctxt "OpenType layout"
+msgid "Ordinals"
+msgstr "क्रमवाचक"
+
+#: src/open-type-layout.h:103
+msgctxt "OpenType layout"
+msgid "Ornaments"
+msgstr "आभूषण"
+
+#: src/open-type-layout.h:104
+msgctxt "OpenType layout"
+msgid "Proportional Alternate Widths"
+msgstr "आनुपातिक वैकल्पिक चौड़ाई"
+
+#: src/open-type-layout.h:105
+msgctxt "OpenType layout"
+msgid "Petite Capitals"
+msgstr "अतिरिक्त छोटे अक्षर"
+
+#: src/open-type-layout.h:106
+msgctxt "OpenType layout"
+msgid "Proportional Kana"
+msgstr "आनुपातिक काना"
+
+#: src/open-type-layout.h:107
+msgctxt "OpenType layout"
+msgid "Proportional Figures"
+msgstr "आनुपातिक आकृतियाँ"
+
+#: src/open-type-layout.h:108
+msgctxt "OpenType layout"
+msgid "Pre-Base Forms"
+msgstr "पूर्व-आधार रूप"
+
+#: src/open-type-layout.h:109
+msgctxt "OpenType layout"
+msgid "Pre-base Substitutions"
+msgstr "पूर्व-आधार प्रतिस्थापन"
+
+#: src/open-type-layout.h:110
+msgctxt "OpenType layout"
+msgid "Post-base Forms"
+msgstr "पोस्ट-आधार रूप"
+
+#: src/open-type-layout.h:111
+msgctxt "OpenType layout"
+msgid "Post-base Substitutions"
+msgstr "पोस्ट-आधार प्रतिस्थापन"
+
+#: src/open-type-layout.h:112
+msgctxt "OpenType layout"
+msgid "Proportional Widths"
+msgstr "आनुपातिक चौड़ाई"
+
+#: src/open-type-layout.h:113
+msgctxt "OpenType layout"
+msgid "Quarter Widths"
+msgstr "चौथाई चौड़ाई"
+
+#: src/open-type-layout.h:114
+msgctxt "OpenType layout"
+msgid "Randomize"
+msgstr "यादृच्छिक करें"
+
+#: src/open-type-layout.h:115
+msgctxt "OpenType layout"
+msgid "Required Contextual Alternates"
+msgstr "आवश्यक प्रासंगिक विकल्प"
+
+#: src/open-type-layout.h:116
+msgctxt "OpenType layout"
+msgid "Rakar Forms"
+msgstr "रकार रूप"
+
+#: src/open-type-layout.h:117
+msgctxt "OpenType layout"
+msgid "Required Ligatures"
+msgstr "आवश्यक संयुक्ताक्षर"
+
+#: src/open-type-layout.h:118
+msgctxt "OpenType layout"
+msgid "Reph Forms"
+msgstr "रेफ रूप"
+
+#: src/open-type-layout.h:119
+msgctxt "OpenType layout"
+msgid "Right Bounds"
+msgstr "दाएं सीमाएं"
+
+#: src/open-type-layout.h:120
+msgctxt "OpenType layout"
+msgid "Right-to-left alternates"
+msgstr "दाएं-से-बाएं विकल्प"
+
+#: src/open-type-layout.h:121
+msgctxt "OpenType layout"
+msgid "Right-to-left mirrored forms"
+msgstr "दाएं-से-बाएं प्रतिबिम्बित रूप"
+
+#: src/open-type-layout.h:122
+msgctxt "OpenType layout"
+msgid "Ruby Notation Forms"
+msgstr "रूबी संकेतन रूप"
+
+#: src/open-type-layout.h:123
+msgctxt "OpenType layout"
+msgid "Required Variation Alternates"
+msgstr "आवश्यक विविधता विकल्प"
+
+#: src/open-type-layout.h:124
+msgctxt "OpenType layout"
+msgid "Stylistic Alternates"
+msgstr "शैलीगत विकल्प"
+
+#: src/open-type-layout.h:125
+msgctxt "OpenType layout"
+msgid "Scientific Inferiors"
+msgstr "वैज्ञानिक अवर"
+
+#: src/open-type-layout.h:126
+msgctxt "OpenType layout"
+msgid "Optical size"
+msgstr "ऑप्टिकल आकार"
+
+#: src/open-type-layout.h:127
+msgctxt "OpenType layout"
+msgid "Small Capitals"
+msgstr "छोटे अक्षर"
+
+#: src/open-type-layout.h:128
+msgctxt "OpenType layout"
+msgid "Simplified Forms"
+msgstr "सरलीकृत रूप"
+
+#: src/open-type-layout.h:129
+msgctxt "OpenType layout"
+msgid "Stylistic Set 1"
+msgstr "शैलीगत सेट 1"
+
+#: src/open-type-layout.h:130
+msgctxt "OpenType layout"
+msgid "Stylistic Set 2"
+msgstr "शैलीगत सेट 2"
+
+#: src/open-type-layout.h:131
+msgctxt "OpenType layout"
+msgid "Stylistic Set 3"
+msgstr "शैलीगत सेट 3"
+
+#: src/open-type-layout.h:132
+msgctxt "OpenType layout"
+msgid "Stylistic Set 4"
+msgstr "शैलीगत सेट 4"
+
+#: src/open-type-layout.h:133
+msgctxt "OpenType layout"
+msgid "Stylistic Set 5"
+msgstr "शैलीगत सेट 5"
+
+#: src/open-type-layout.h:134
+msgctxt "OpenType layout"
+msgid "Stylistic Set 6"
+msgstr "शैलीगत सेट 6"
+
+#: src/open-type-layout.h:135
+msgctxt "OpenType layout"
+msgid "Stylistic Set 7"
+msgstr "शैलीगत सेट 7"
+
+#: src/open-type-layout.h:136
+msgctxt "OpenType layout"
+msgid "Stylistic Set 8"
+msgstr "शैलीगत सेट 8"
+
+#: src/open-type-layout.h:137
+msgctxt "OpenType layout"
+msgid "Stylistic Set 9"
+msgstr "शैलीगत सेट 9"
+
+#: src/open-type-layout.h:138
+msgctxt "OpenType layout"
+msgid "Stylistic Set 10"
+msgstr "शैलीगत सेट 10"
+
+#: src/open-type-layout.h:139
+msgctxt "OpenType layout"
+msgid "Stylistic Set 11"
+msgstr "शैलीगत सेट 11"
+
+#: src/open-type-layout.h:140
+msgctxt "OpenType layout"
+msgid "Stylistic Set 12"
+msgstr "शैलीगत सेट 12"
+
+#: src/open-type-layout.h:141
+msgctxt "OpenType layout"
+msgid "Stylistic Set 13"
+msgstr "शैलीगत सेट 13"
+
+#: src/open-type-layout.h:142
+msgctxt "OpenType layout"
+msgid "Stylistic Set 14"
+msgstr "शैलीगत सेट 14"
+
+#: src/open-type-layout.h:143
+msgctxt "OpenType layout"
+msgid "Stylistic Set 15"
+msgstr "शैलीगत सेट 15"
+
+#: src/open-type-layout.h:144
+msgctxt "OpenType layout"
+msgid "Stylistic Set 16"
+msgstr "शैलीगत सेट 16"
+
+#: src/open-type-layout.h:145
+msgctxt "OpenType layout"
+msgid "Stylistic Set 17"
+msgstr "शैलीगत सेट 17"
+
+#: src/open-type-layout.h:146
+msgctxt "OpenType layout"
+msgid "Stylistic Set 18"
+msgstr "शैलीगत सेट 18"
+
+#: src/open-type-layout.h:147
+msgctxt "OpenType layout"
+msgid "Stylistic Set 19"
+msgstr "शैलीगत सेट 19"
+
+#: src/open-type-layout.h:148
+msgctxt "OpenType layout"
+msgid "Stylistic Set 20"
+msgstr "शैलीगत सेट 20"
+
+#: src/open-type-layout.h:149
+msgctxt "OpenType layout"
+msgid "Math script style alternates"
+msgstr "गणित लिपि शैली के विकल्प"
+
+#: src/open-type-layout.h:150
+msgctxt "OpenType layout"
+msgid "Stretching Glyph Decomposition"
+msgstr "स्ट्रेचिंग ग्लिफ़ अपघटन"
+
+#: src/open-type-layout.h:151
+msgctxt "OpenType layout"
+msgid "Subscript"
+msgstr "सबस्क्रिप्ट"
+
+#: src/open-type-layout.h:152
+msgctxt "OpenType layout"
+msgid "Superscript"
+msgstr "सुपरस्क्रिप्ट"
+
+#: src/open-type-layout.h:153
+msgctxt "OpenType layout"
+msgid "Swash"
+msgstr "स्वाश"
+
+#: src/open-type-layout.h:154
+msgctxt "OpenType layout"
+msgid "Titling"
+msgstr "शीर्षक"
+
+#: src/open-type-layout.h:155
+msgctxt "OpenType layout"
+msgid "Trailing Jamo Forms"
+msgstr "अनुगामी जामो रूप"
+
+#: src/open-type-layout.h:156
+msgctxt "OpenType layout"
+msgid "Traditional Name Forms"
+msgstr "पारंपरिक नाम रूप"
+
+#: src/open-type-layout.h:157
+msgctxt "OpenType layout"
+msgid "Tabular Figures"
+msgstr "सारणीबद्ध आकृतियाँ"
+
+#: src/open-type-layout.h:158
+msgctxt "OpenType layout"
+msgid "Traditional Forms"
+msgstr "पारंपरिक रूप"
+
+#: src/open-type-layout.h:159
+msgctxt "OpenType layout"
+msgid "Third Widths"
+msgstr "तीसरी चौड़ाई"
+
+#: src/open-type-layout.h:160
+msgctxt "OpenType layout"
+msgid "Unicase"
+msgstr "यूनिकेस"
+
+#: src/open-type-layout.h:161
+msgctxt "OpenType layout"
+msgid "Alternate Vertical Metrics"
+msgstr "वैकल्पिक लंबवत मेट्रिक्स"
+
+#: src/open-type-layout.h:162
+msgctxt "OpenType layout"
+msgid "Vattu Variants"
+msgstr "वट्टू वेरिएंट"
+
+#: src/open-type-layout.h:163
+msgctxt "OpenType layout"
+msgid "Vertical Writing"
+msgstr "ऊर्ध्वाधर लेखन"
+
+#: src/open-type-layout.h:164
+msgctxt "OpenType layout"
+msgid "Alternate Vertical Half Metrics"
+msgstr "वैकल्पिक ऊर्ध्वाधर आधा मेट्रिक्स"
+
+#: src/open-type-layout.h:165
+msgctxt "OpenType layout"
+msgid "Vowel Jamo Forms"
+msgstr "स्वर जामो रूप"
+
+#: src/open-type-layout.h:166
+msgctxt "OpenType layout"
+msgid "Vertical Kana Alternates"
+msgstr "लंबवत काना विकल्प"
+
+#: src/open-type-layout.h:167
+msgctxt "OpenType layout"
+msgid "Vertical Kerning"
+msgstr "ऊर्ध्वाधर कर्निंग"
+
+#: src/open-type-layout.h:168
+msgctxt "OpenType layout"
+msgid "Proportional Alternate Vertical Metrics"
+msgstr "आनुपातिक वैकल्पिक ऊर्ध्वाधर मेट्रिक्स"
+
+#: src/open-type-layout.h:169
+msgctxt "OpenType layout"
+msgid "Vertical Alternates and Rotation"
+msgstr "ऊर्ध्वाधर विकल्प और घूर्णन"
+
+#: src/open-type-layout.h:170
+msgctxt "OpenType layout"
+msgid "Vertical Alternates for Rotation"
+msgstr "घूर्णन के लिए ऊर्ध्वाधर विकल्प"
+
+#: src/open-type-layout.h:171
+msgctxt "OpenType layout"
+msgid "Slashed Zero"
+msgstr "तिर्यक शून्य"
+
+#~ msgid "About"
+#~ msgstr "परिचय"
+
+#~ msgid "Quit"
+#~ msgstr "बाहर"
+
+#~ msgid "This font could not be displayed."
+#~ msgstr "इस फ़ॉन्ट को प्रदर्शित नहीं किया जा सका."
+
+#~ msgid "Back"
+#~ msgstr "पीछे"
+
+#~ msgid "Font Viewer"
+#~ msgstr "फ़ॉन्ट प्रदर्शक"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "फाँट आकार (default: 64)"
