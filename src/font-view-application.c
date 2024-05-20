@@ -125,7 +125,7 @@ action_about (GSimpleAction *action, GVariant *parameter, gpointer user_data)
                            "application-icon", FONT_VIEW_ICON_NAME,
                            "developer-name", _("The GNOME Project"),
                            "website", "https://gitlab.gnome.org/GNOME/gnome-font-viewer/",
-                           "issue-url", "https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/issues/new",
+                           "issue-url", "https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/issues/",
                            "translator-credits", _("translator-credits"),
                            "license-type", GTK_LICENSE_GPL_2_0,
                            NULL);
