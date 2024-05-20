@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Ekaterine Papava <papava.e@gtu.ge>, 2023.
+# Ekaterine Papava <papava.e@gtu.ge>, 2023-2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
-"issues\n"
-"POT-Creation-Date: 2023-02-11 23:28+0000\n"
-"PO-Revision-Date: 2023-02-12 09:42+0100\n"
+"issues/\n"
+"POT-Creation-Date: 2024-05-19 12:39+0000\n"
+"PO-Revision-Date: 2024-05-20 02:06+0200\n"
 "Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
 "Language-Team: \n"
 "Language: ka\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.2\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view-application.c:124
-#: src/org.gnome.font-viewer.desktop.in.in:3
+#: data/org.gnome.font-viewer.appdata.xml.in:6
+#: data/org.gnome.font-viewer.desktop.in.in:3 src/font-view-application.c:124
 msgid "Fonts"
 msgstr "ფონტები"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:7
-#: src/org.gnome.font-viewer.desktop.in.in:4
+#: data/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "თქვენს სისტემაში არსებული ფონტების ნახვა"
 
@@ -35,6 +35,9 @@ msgid ""
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
+"Fonts თქვენს კომპიუტერზე დაყენებულ ფონტებს გაჩვენებთ, მინიატურებისთვის. "
+"ნებისმიერი მინიატურის მონიშვნა გაჩვენებთ, როგორ გამოჩნდებოდა ესა თუ ს ფონტი "
+"სხვადასხვა ზომებით."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
@@ -42,14 +45,22 @@ msgid ""
 "other formats. Fonts may be installed only for your use or made available to "
 "all users on the computer."
 msgstr ""
+"Fonts-ს ასევე აქვს მხარდაჭერა, ახალი .ttf ან სხვა ახალი ფონტები დააყენოთ. "
+"ფონტები, შეგიძლიათ, მხოლოდ თქვენთვის, ან კომპიუტერის ყველა მომხმარებლისთვის "
+"დააყენოთ."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
 msgid "The GNOME Project"
 msgstr "პროექტი „GNOME“"
 
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.font-viewer.desktop.in.in:6
+msgid "fonts;fontface;"
+msgstr "fonts;fontface;ფონტი;"
+
 #: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
-msgstr ""
+msgstr "ტექსტი მინიატურისთვის (ნაგულისხმევი: Aa)"
 
 #: src/font-thumbnailer.c:181
 msgid "TEXT"
@@ -57,7 +68,7 @@ msgstr "ტექსტი"
 
 #: src/font-thumbnailer.c:183
 msgid "Thumbnail size (default: 128)"
-msgstr ""
+msgstr "მინიატურის ზომა (ნაგულისხმევი: 128)"
 
 #: src/font-thumbnailer.c:183
 msgid "SIZE"
@@ -67,7 +78,7 @@ msgstr "SIZE"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
-#: src/font-view-application.c:79 src/font-view-window.c:750
+#: src/font-view-application.c:79 src/font-view-window.c:741
 msgid "Could Not Display Font"
 msgstr "ფონტის ჩვენების შეცდომა"
 
@@ -75,19 +86,19 @@ msgstr "ფონტის ჩვენების შეცდომა"
 msgid "translator-credits"
 msgstr "თემური დოღონაძე"
 
-#: src/font-view-window.c:119
+#: src/font-view-window.c:120
 msgid "Failed"
 msgstr "წარუმატებელი"
 
-#: src/font-view-window.c:127
+#: src/font-view-window.c:128
 msgid "Installed"
 msgstr "ჩადგმულია"
 
-#: src/font-view-window.c:132
+#: src/font-view-window.c:133
 msgid "Installing"
 msgstr "დაყენება"
 
-#: src/font-view-window.c:135
+#: src/font-view-window.c:136
 msgid "Install"
 msgstr "დაყენება"
 
@@ -96,132 +107,128 @@ msgstr "დაყენება"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view-window.c:249
+#: src/font-view-window.c:250
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, ნაგულისხმები %g"
 
-#: src/font-view-window.c:304
+#: src/font-view-window.c:305
 #, c-format
 msgid "Instance %d"
 msgstr "ასლი %d"
 
 #. Translators, this seperates the list of Layout
 #. * Features.
-#: src/font-view-window.c:342
+#: src/font-view-window.c:343
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view-window.c:369
+#: src/font-view-window.c:370
 msgid "Name"
 msgstr "სახელი"
 
-#: src/font-view-window.c:372
+#: src/font-view-window.c:373
 msgid "Location"
 msgstr "მდებარეობა"
 
-#: src/font-view-window.c:375
+#: src/font-view-window.c:376
 msgid "Style"
 msgstr "სტილი"
 
-#: src/font-view-window.c:385
+#: src/font-view-window.c:386
 msgid "Type"
 msgstr "ტიპი"
 
-#: src/font-view-window.c:451 src/font-view-window.c:477
+#: src/font-view-window.c:452 src/font-view-window.c:478
 msgid "Version"
 msgstr "ვერსია"
 
-#: src/font-view-window.c:455 src/font-view-window.c:482
+#: src/font-view-window.c:456 src/font-view-window.c:483
 msgid "Copyright"
 msgstr "საავტორო უფლებები"
 
-#: src/font-view-window.c:459
+#: src/font-view-window.c:460
 msgid "Description"
 msgstr "აღწერა"
 
-#: src/font-view-window.c:463
+#: src/font-view-window.c:464
 msgid "Manufacturer"
 msgstr "მწარმოებელი"
 
-#: src/font-view-window.c:467
+#: src/font-view-window.c:468
 msgid "Designer"
 msgstr "დიზაინერი"
 
-#: src/font-view-window.c:471
+#: src/font-view-window.c:472
 msgid "License"
 msgstr "ლიცენზია"
 
-#: src/font-view-window.c:496
+#: src/font-view-window.c:497
 msgid "Glyph Count"
 msgstr "გლიფების რაოდენობა"
 
-#: src/font-view-window.c:498
+#: src/font-view-window.c:499
 msgid "Color Glyphs"
 msgstr "ფერადი გლიფები"
 
-#: src/font-view-window.c:499
+#: src/font-view-window.c:500
 msgid "yes"
 msgstr "დიახ"
 
-#: src/font-view-window.c:499
+#: src/font-view-window.c:500
 msgid "no"
 msgstr "არა"
 
-#: src/font-view-window.c:503
+#: src/font-view-window.c:504
 msgid "Layout Features"
 msgstr "განლაგების თავისებურებები"
 
-#: src/font-view-window.c:509
+#: src/font-view-window.c:510
 msgid "Variation Axes"
 msgstr "ვარიაციული ღერძები"
 
-#: src/font-view-window.c:516
+#: src/font-view-window.c:517
 msgid "Named Styles"
 msgstr "სახელიან სტილები"
 
-#: src/font-view-window.c:558 src/font-view-window.c:670
+#: src/font-view-window.c:559 src/font-view-window.c:661
 msgid "Could Not Install Font"
 msgstr "ფონტის დაყენების შეცდომა"
 
-#: src/font-view-window.ui:34
+#: src/font-view-window.ui:31
 msgid "All Fonts"
 msgstr "ყველა ფონტი"
 
-#: src/font-view-window.ui:40
+#: src/font-view-window.ui:39
 msgid "Search"
 msgstr "ძებნა"
 
-#: src/font-view-window.ui:48
+#: src/font-view-window.ui:47
 msgid "About Fonts"
 msgstr "Fonts-ის შესახებ"
 
-#: src/font-view-window.ui:60
+#: src/font-view-window.ui:59
 msgid "Search fonts"
 msgstr "ფონტების ძებნა"
 
-#: src/font-view-window.ui:181
-msgid "Back"
-msgstr "უკან"
-
-#: src/font-view-window.ui:187
+#: src/font-view-window.ui:182
 msgid "_Install"
 msgstr "_დაყენება"
 
-#: src/font-view-window.ui:190
+#: src/font-view-window.ui:185
 msgid "Install Font"
 msgstr "ფონტის დაყენება"
 
-#: src/font-view-window.ui:195
+#: src/font-view-window.ui:190
 msgid "I_nfo"
 msgstr "ი_ნფო"
 
-#: src/font-view-window.ui:197
+#: src/font-view-window.ui:192
 msgid "Font Details"
 msgstr "ფონტის დეტალები"
 
-#: src/font-view-window.ui:244
+#: src/font-view-window.ui:239
 msgid "_Close"
 msgstr "დახურვა"
 
@@ -232,11 +239,6 @@ msgstr "GNOME Fonts"
 #: src/main.c:44
 msgid "Show the application's version"
 msgstr "აპლიკაციის ვერსიის ჩვენება"
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in.in:6
-msgid "fonts;fontface;"
-msgstr "fonts;fontface;ფონტი;"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -256,12 +258,12 @@ msgstr "ტირეს საბაზისო ხაზის ზემოთ
 #: src/open-type-layout.h:16
 msgctxt "OpenType layout"
 msgid "Above-base Substitutions"
-msgstr ""
+msgstr "შეცვლა საბაზისო ხაზის ზემოთ"
 
 #: src/open-type-layout.h:17
 msgctxt "OpenType layout"
 msgid "Alternative Fractions"
-msgstr ""
+msgstr "ალტერნატიული ფრაქციები"
 
 #: src/open-type-layout.h:18
 msgctxt "OpenType layout"
@@ -271,57 +273,57 @@ msgstr "ახანდსი"
 #: src/open-type-layout.h:19
 msgctxt "OpenType layout"
 msgid "Below-base Forms"
-msgstr ""
+msgstr "საბაზისო ხაზის ქვემო ფორმები"
 
 #: src/open-type-layout.h:20
 msgctxt "OpenType layout"
 msgid "Below-base Mark Positioning"
-msgstr ""
+msgstr "ტირეს პოზიცირება საბაზისო ხაზის ქვემოთ"
 
 #: src/open-type-layout.h:21
 msgctxt "OpenType layout"
 msgid "Below-base Substitutions"
-msgstr ""
+msgstr "შეცვლა საბაზისო ხაზის ქვემოთ"
 
 #: src/open-type-layout.h:22
 msgctxt "OpenType layout"
 msgid "Contextual Alternates"
-msgstr ""
+msgstr "კონტექსტური ალტერნატივები"
 
 #: src/open-type-layout.h:23
 msgctxt "OpenType layout"
 msgid "Case-Sensitive Forms"
-msgstr ""
+msgstr "რეგისტრზე-დამოკიდებული ფორმები"
 
 #: src/open-type-layout.h:24
 msgctxt "OpenType layout"
 msgid "Glyph Composition / Decomposition"
-msgstr ""
+msgstr "გლიფის შედგენა / დაშლა"
 
 #: src/open-type-layout.h:25
 msgctxt "OpenType layout"
 msgid "Conjunct Form After Ro"
-msgstr ""
+msgstr "მიბმული ფორმა \"Ro\" ნიშნის შემდეგ"
 
 #: src/open-type-layout.h:26
 msgctxt "OpenType layout"
 msgid "Conjunct Forms"
-msgstr ""
+msgstr "მიბმული ფორმები"
 
 #: src/open-type-layout.h:27
 msgctxt "OpenType layout"
 msgid "Contextual Ligatures"
-msgstr ""
+msgstr "კონტექსტური ლიგატურები"
 
 #: src/open-type-layout.h:28
 msgctxt "OpenType layout"
 msgid "Centered CJK Punctuation"
-msgstr ""
+msgstr "CJK-ის ცენტრირებული პუნქტუაცია"
 
 #: src/open-type-layout.h:29
 msgctxt "OpenType layout"
 msgid "Capital Spacing"
-msgstr ""
+msgstr "ადგილი მაღალ რეგისტრებს შორის"
 
 #: src/open-type-layout.h:30
 msgctxt "OpenType layout"
@@ -336,12 +338,12 @@ msgstr "კურსივის მდებარეობა"
 #: src/open-type-layout.h:32
 msgctxt "OpenType layout"
 msgid "Petite Capitals From Capitals"
-msgstr ""
+msgstr "პატარა მაღალი რეგისტრის მქონეები მაღალი რეგისტრის მქონეებიდან"
 
 #: src/open-type-layout.h:33
 msgctxt "OpenType layout"
 msgid "Small Capitals From Capitals"
-msgstr ""
+msgstr "ძალიან პატარა მაღალი რეგისტრის მქონეები მაღალი რეგისტრის მქონეებიდან"
 
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
@@ -446,7 +448,7 @@ msgstr "დაშორებები"
 #: src/open-type-layout.h:54
 msgctxt "OpenType layout"
 msgid "Discretionary Ligatures"
-msgstr ""
+msgstr "არააუცილებელი ლიგატურები"
 
 #: src/open-type-layout.h:55
 msgctxt "OpenType layout"
@@ -466,7 +468,7 @@ msgstr "ექსპერტული ფორმები"
 #: src/open-type-layout.h:58
 msgctxt "OpenType layout"
 msgid "Final Glyph on Line Alternates"
-msgstr ""
+msgstr "საბოლოო გლიფი ალტერნატიულ ხაზებზე"
 
 #: src/open-type-layout.h:59
 msgctxt "OpenType layout"
@@ -486,7 +488,7 @@ msgstr "ტერმინალის ფორმები"
 #: src/open-type-layout.h:62
 msgctxt "OpenType layout"
 msgid "Flattened accent forms"
-msgstr ""
+msgstr "ბრტყელი აქცენტის ფორმები"
 
 #: src/open-type-layout.h:63
 msgctxt "OpenType layout"
@@ -506,7 +508,7 @@ msgstr "ნახევარი ფორმები"
 #: src/open-type-layout.h:66
 msgctxt "OpenType layout"
 msgid "Halant Forms"
-msgstr ""
+msgstr "Halant-ის ფორმები"
 
 #: src/open-type-layout.h:67
 msgctxt "OpenType layout"
@@ -561,7 +563,7 @@ msgstr "დახრილები"
 #: src/open-type-layout.h:77
 msgctxt "OpenType layout"
 msgid "Justification Alternates"
-msgstr ""
+msgstr "სწორების ალტერნატივები"
 
 #: src/open-type-layout.h:78
 msgctxt "OpenType layout"
@@ -586,27 +588,27 @@ msgstr "JIS2004 ფორმები"
 #: src/open-type-layout.h:82
 msgctxt "OpenType layout"
 msgid "Kerning"
-msgstr ""
+msgstr "კერნინგი"
 
 #: src/open-type-layout.h:83
 msgctxt "OpenType layout"
 msgid "Left Bounds"
-msgstr ""
+msgstr "მარცხენა საზღვრები"
 
 #: src/open-type-layout.h:84
 msgctxt "OpenType layout"
 msgid "Standard Ligatures"
-msgstr ""
+msgstr "სტანდარტული ლიგატურები"
 
 #: src/open-type-layout.h:85
 msgctxt "OpenType layout"
 msgid "Leading Jamo Forms"
-msgstr ""
+msgstr "Jamo-ის წამყვანი ფორმები"
 
 #: src/open-type-layout.h:86
 msgctxt "OpenType layout"
 msgid "Lining Figures"
-msgstr ""
+msgstr "სარჩულის ფიგურები"
 
 #: src/open-type-layout.h:87
 msgctxt "OpenType layout"
@@ -631,37 +633,37 @@ msgstr "ნიშნის მდებარეობა"
 #: src/open-type-layout.h:91
 msgctxt "OpenType layout"
 msgid "Medial Forms #2"
-msgstr ""
+msgstr "მედიალური ფორმები #2"
 
 #: src/open-type-layout.h:92
 msgctxt "OpenType layout"
 msgid "Medial Forms"
-msgstr ""
+msgstr "მედიალური ფორმები"
 
 #: src/open-type-layout.h:93
 msgctxt "OpenType layout"
 msgid "Mathematical Greek"
-msgstr ""
+msgstr "მათემატიკური ბერძნული ენა"
 
 #: src/open-type-layout.h:94
 msgctxt "OpenType layout"
 msgid "Mark to Mark Positioning"
-msgstr ""
+msgstr "ჭდიდან ჭდემდე პოზიცირება"
 
 #: src/open-type-layout.h:95
 msgctxt "OpenType layout"
 msgid "Mark Positioning via Substitution"
-msgstr ""
+msgstr "ჭდის პოზიცირება ჩანაცვლებით"
 
 #: src/open-type-layout.h:96
 msgctxt "OpenType layout"
 msgid "Alternate Annotation Forms"
-msgstr ""
+msgstr "ალტერნატიული ანოტაციის ფორმები"
 
 #: src/open-type-layout.h:97
 msgctxt "OpenType layout"
 msgid "NLC Kanji Forms"
-msgstr ""
+msgstr "NLC კანჯის ფორმები"
 
 #: src/open-type-layout.h:98
 msgctxt "OpenType layout"
@@ -676,17 +678,17 @@ msgstr "ნუმერატორები"
 #: src/open-type-layout.h:100
 msgctxt "OpenType layout"
 msgid "Oldstyle Figures"
-msgstr ""
+msgstr "ფიგურები ძველ სტილში"
 
 #: src/open-type-layout.h:101
 msgctxt "OpenType layout"
 msgid "Optical Bounds"
-msgstr ""
+msgstr "ოპტიკური საზღვრები"
 
 #: src/open-type-layout.h:102
 msgctxt "OpenType layout"
 msgid "Ordinals"
-msgstr ""
+msgstr "რიგობითი რიცხვითი"
 
 #: src/open-type-layout.h:103
 msgctxt "OpenType layout"
@@ -696,42 +698,42 @@ msgstr "ორნამენტები"
 #: src/open-type-layout.h:104
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Widths"
-msgstr ""
+msgstr "პროპორციული ალტერნატიული სიგანეები"
 
 #: src/open-type-layout.h:105
 msgctxt "OpenType layout"
 msgid "Petite Capitals"
-msgstr ""
+msgstr "პატარა მაღალი რეგისტრის მქონე სიმბოლოები"
 
 #: src/open-type-layout.h:106
 msgctxt "OpenType layout"
 msgid "Proportional Kana"
-msgstr ""
+msgstr "პროპორციული კანა"
 
 #: src/open-type-layout.h:107
 msgctxt "OpenType layout"
 msgid "Proportional Figures"
-msgstr ""
+msgstr "პროპორციული ფიგურები"
 
 #: src/open-type-layout.h:108
 msgctxt "OpenType layout"
 msgid "Pre-Base Forms"
-msgstr ""
+msgstr "წინასწარი ფორმები"
 
 #: src/open-type-layout.h:109
 msgctxt "OpenType layout"
 msgid "Pre-base Substitutions"
-msgstr ""
+msgstr "წინასწარი ფორმის ჩანაცვლებები"
 
 #: src/open-type-layout.h:110
 msgctxt "OpenType layout"
 msgid "Post-base Forms"
-msgstr ""
+msgstr "პოსტ-საბაზისო ფორმები"
 
 #: src/open-type-layout.h:111
 msgctxt "OpenType layout"
 msgid "Post-base Substitutions"
-msgstr ""
+msgstr "პოსტ-საბაზისო ჩანაცვლებები"
 
 #: src/open-type-layout.h:112
 msgctxt "OpenType layout"
@@ -771,37 +773,37 @@ msgstr "რეფის ფორმები"
 #: src/open-type-layout.h:119
 msgctxt "OpenType layout"
 msgid "Right Bounds"
-msgstr ""
+msgstr "მარჯვენა საზღვრები"
 
 #: src/open-type-layout.h:120
 msgctxt "OpenType layout"
 msgid "Right-to-left alternates"
-msgstr ""
+msgstr "მარჯვნიდან-მარცხნივ წერა"
 
 #: src/open-type-layout.h:121
 msgctxt "OpenType layout"
 msgid "Right-to-left mirrored forms"
-msgstr ""
+msgstr "მარჯვნიდან-მარცხნივ სარკისებური ფორმები"
 
 #: src/open-type-layout.h:122
 msgctxt "OpenType layout"
 msgid "Ruby Notation Forms"
-msgstr ""
+msgstr "Ruby-ის ნოტაციის ფორმები"
 
 #: src/open-type-layout.h:123
 msgctxt "OpenType layout"
 msgid "Required Variation Alternates"
-msgstr ""
+msgstr "აუცილებელი ალტერნატიული ვარიანტები"
 
 #: src/open-type-layout.h:124
 msgctxt "OpenType layout"
 msgid "Stylistic Alternates"
-msgstr ""
+msgstr "სტილისტური ალტერნატივები"
 
 #: src/open-type-layout.h:125
 msgctxt "OpenType layout"
 msgid "Scientific Inferiors"
-msgstr ""
+msgstr "სამეცნიერო ალტერნატივა"
 
 #: src/open-type-layout.h:126
 msgctxt "OpenType layout"
@@ -921,12 +923,12 @@ msgstr "სტილისტური ნაკრები 20"
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
 msgid "Math script style alternates"
-msgstr ""
+msgstr "მათემატიკური სკრიპტის სტილის ალტერნატივები"
 
 #: src/open-type-layout.h:150
 msgctxt "OpenType layout"
 msgid "Stretching Glyph Decomposition"
-msgstr ""
+msgstr "გლიფების დაშლა გაწელილი სახით"
 
 #: src/open-type-layout.h:151
 msgctxt "OpenType layout"
@@ -941,47 +943,47 @@ msgstr "ზედა ხაზზე"
 #: src/open-type-layout.h:153
 msgctxt "OpenType layout"
 msgid "Swash"
-msgstr ""
+msgstr "ძლიერი დინება"
 
 #: src/open-type-layout.h:154
 msgctxt "OpenType layout"
 msgid "Titling"
-msgstr ""
+msgstr "სათაურის სიმბოლოები"
 
 #: src/open-type-layout.h:155
 msgctxt "OpenType layout"
 msgid "Trailing Jamo Forms"
-msgstr ""
+msgstr "Trailing Jamo Forms"
 
 #: src/open-type-layout.h:156
 msgctxt "OpenType layout"
 msgid "Traditional Name Forms"
-msgstr ""
+msgstr "სახელის ტრადიციული ფორმები"
 
 #: src/open-type-layout.h:157
 msgctxt "OpenType layout"
 msgid "Tabular Figures"
-msgstr ""
+msgstr "სურათები ცხრილის სახით"
 
 #: src/open-type-layout.h:158
 msgctxt "OpenType layout"
 msgid "Traditional Forms"
-msgstr ""
+msgstr "ტრა"
 
 #: src/open-type-layout.h:159
 msgctxt "OpenType layout"
 msgid "Third Widths"
-msgstr ""
+msgstr "მესამე სიგანეები"
 
 #: src/open-type-layout.h:160
 msgctxt "OpenType layout"
 msgid "Unicase"
-msgstr ""
+msgstr "ერთრეგისტრიანი"
 
 #: src/open-type-layout.h:161
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Metrics"
-msgstr ""
+msgstr "ალტერნატიული ვერტიკალური მეტრიკები"
 
 #: src/open-type-layout.h:162
 msgctxt "OpenType layout"
@@ -996,12 +998,12 @@ msgstr "ვერტიკალურად წერა"
 #: src/open-type-layout.h:164
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Half Metrics"
-msgstr ""
+msgstr "ალტერნატიული ვერტიკალური ნახევარი მეტრიკები"
 
 #: src/open-type-layout.h:165
 msgctxt "OpenType layout"
 msgid "Vowel Jamo Forms"
-msgstr ""
+msgstr "ხმოვნის ჯამოს ფორმები"
 
 #: src/open-type-layout.h:166
 msgctxt "OpenType layout"
@@ -1016,22 +1018,25 @@ msgstr "სიმბოლოებს შორის ვერტიკალ�
 #: src/open-type-layout.h:168
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Vertical Metrics"
-msgstr ""
+msgstr "პროპორციული ალტერნატიული ვერტიკალური მეტრიკები"
 
 #: src/open-type-layout.h:169
 msgctxt "OpenType layout"
 msgid "Vertical Alternates and Rotation"
-msgstr ""
+msgstr "ვერტიკალური ალტერნატივები და მობრუნება"
 
 #: src/open-type-layout.h:170
 msgctxt "OpenType layout"
 msgid "Vertical Alternates for Rotation"
-msgstr ""
+msgstr "ვერტიკალური ალტერნატივები მობრუნებისთვის"
 
 #: src/open-type-layout.h:171
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
-msgstr ""
+msgstr "გაჭრილი ნული"
+
+#~ msgid "Back"
+#~ msgstr "უკან"
 
 #~ msgid "This font could not be installed."
 #~ msgstr "ამ ფონტის დაყენება შეუძლებელია."
