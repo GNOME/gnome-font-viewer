@@ -118,7 +118,7 @@ action_about (GSimpleAction *action, GVariant *parameter, gpointer user_data)
         NULL
     };
 
-    adw_show_about_window (GTK_WINDOW (self->main_window),
+    adw_show_about_dialog (GTK_WIDGET (self->main_window),
                            "version", VERSION,
                            "developers", developers,
                            "application-name", _("Fonts"),
