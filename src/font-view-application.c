@@ -147,6 +147,9 @@ font_view_application_startup (GApplication *application)
     if (!FcInit ())
         g_critical ("Can't initialize fontconfig library");
 
+    g_set_application_name (_("Fonts"));
+    gtk_window_set_default_icon_name (FONT_VIEW_ICON_NAME);
+
     g_action_map_add_action_entries (G_ACTION_MAP (self), action_entries,
                                      G_N_ELEMENTS (action_entries), self);
 }
