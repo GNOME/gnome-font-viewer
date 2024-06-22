@@ -12,9 +12,7 @@
         "--share=ipc",
         "--socket=wayland",
         "--socket=fallback-x11",
-        "--talk-name=org.gtk.vfs", "--talk-name=org.gtk.vfs.*",
-        "--talk-name=ca.desrt.conf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
-        "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro"
+        "--filesystem=xdg-data/fonts:create"
     ],
     "cleanup": [
         "/include",
