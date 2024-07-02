@@ -11,76 +11,64 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master.hi\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
-"issues\n"
-"POT-Creation-Date: 2023-07-15 13:26+0000\n"
-"PO-Revision-Date: 2024-04-17 15:41+0530\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues/\n"
+"POT-Creation-Date: 2024-06-10 01:51+0000\n"
+"PO-Revision-Date: 2024-06-19 14:33+0530\n"
 "Last-Translator: Scrambled777 <weblate.scrambled777@simplelogin.com>\n"
-"Language-Team: Hindi\n"
+"Language-Team: Hindi <indlinux-hindi@lists.sourceforge.net>\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 46.0\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
+"X-Generator: Poedit 3.4.4\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6
-#: data/org.gnome.font-viewer.desktop.in.in:3 src/font-view-application.c:124
+#: data/org.gnome.font-viewer.appdata.xml.in:6 data/org.gnome.font-viewer.desktop.in.in:3
+#: src/font-view-application.c:124
 msgid "Fonts"
 msgstr "फॉन्ट्स"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7
-#: data/org.gnome.font-viewer.desktop.in.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7 data/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "अपने तंत्र पर फॉन्ट देखें"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
-"Fonts shows you the fonts installed on your computer for your use as "
-"thumbnails. Selecting any thumbnails shows the full view of how the font "
-"would look under various sizes."
+"Fonts shows you the fonts installed on your computer for your use as thumbnails. Selecting "
+"any thumbnails shows the full view of how the font would look under various sizes."
 msgstr ""
-"फॉन्ट्स आपके कंप्यूटर पर संस्थापित फॉन्ट को दिखाता है आपके उपयोग के लिए बतौर थंबनेल। किसी "
-"थंबनेल को चुनना दिखाता है कि कैसे फॉन्ट विभिन्न प्रकार का दिखेगा।"
+"फॉन्ट्स आपके कंप्यूटर पर संस्थापित फॉन्ट को दिखाता है आपके उपयोग के लिए बतौर थंबनेल। किसी थंबनेल को चुनना "
+"दिखाता है कि कैसे फॉन्ट विभिन्न प्रकार का दिखेगा।"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
-"Fonts also supports installing new font files downloaded in the .ttf and "
-"other formats. Fonts may be installed only for your use or made available to "
-"all users on the computer."
+"Fonts also supports installing new font files downloaded in the .ttf and other formats. "
+"Fonts may be installed only for your use or made available to all users on the computer."
 msgstr ""
-"फॉन्ट्स .ttf और अन्य प्रारूप में नए फॉन्ट फ़ाइल के संस्थापन का समर्थन भी करता है। फॉन्ट केवल "
-"आपके लिए संस्थापित किया जा सकता है या कंप्यूटर पर सभी उपयोक्ता के लिए उपलब्ध कराया जा "
-"सकता है।"
+"फॉन्ट्स .ttf और अन्य प्रारूप में नए फॉन्ट फाइल के संस्थापन का समर्थन भी करता है। फॉन्ट केवल आपके लिए "
+"संस्थापित किया जा सकता है या कंप्यूटर पर सभी उपयोक्ता के लिए उपलब्ध कराया जा सकता है।"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.font-viewer.appdata.xml.in:22 src/font-view-application.c:126
 msgid "The GNOME Project"
 msgstr "GNOME परियोजना"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
-msgstr "fonts;fontface;"
+msgstr "फॉन्ट;फॉन्टफेस;"
 
 #: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
-msgstr "पाठ से लघुचित्र (default: Aa)"
+msgstr "पाठ से लघुचित्र (तयशुदा: Aa)"
 
 #: src/font-thumbnailer.c:181
 msgid "TEXT"
-msgstr "TEXT"
+msgstr "पाठ"
 
 #: src/font-thumbnailer.c:183
 msgid "Thumbnail size (default: 128)"
-msgstr "लघुचित्र आकार (default: Aa)"
+msgstr "लघुचित्र आकार (तयशुदा: Aa)"
 
 #: src/font-thumbnailer.c:183
 msgid "SIZE"
@@ -88,7 +76,7 @@ msgstr "आकार"
 
 #: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
-msgstr "FONT-FILE OUTPUT-FILE"
+msgstr "फॉन्ट-फाइल आउटपुट-फाइल"
 
 #: src/font-view-application.c:79 src/font-view-window.c:741
 msgid "Could Not Display Font"
@@ -124,7 +112,7 @@ msgstr "संस्थापित करें"
 #: src/font-view-window.c:250
 #, c-format
 msgid "%s %g — %g, default %g"
-msgstr "%s %g — %g, डिफॉल्ट %g"
+msgstr "%s %g — %g, तयशुदा %g"
 
 #: src/font-view-window.c:305
 #, c-format
@@ -164,7 +152,7 @@ msgstr "कॉपीराइट"
 
 #: src/font-view-window.c:460
 msgid "Description"
-msgstr "वर्णन"
+msgstr "विवरण"
 
 #: src/font-view-window.c:464
 msgid "Manufacturer"
@@ -244,7 +232,7 @@ msgstr "फॉन्ट विवरण"
 
 #: src/font-view-window.ui:239
 msgid "_Close"
-msgstr "बंद (_C)"
+msgstr "बंद करें (_C)"
 
 #: src/main.c:37
 msgid "GNOME Fonts"
@@ -362,97 +350,97 @@ msgstr "बड़े अक्षरों के आधार पर छोट�
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
 msgid "Character Variation 1"
-msgstr "चरित्र भिन्नता 1"
+msgstr "वर्ण भिन्नता 1"
 
 #: src/open-type-layout.h:35
 msgctxt "OpenType layout"
 msgid "Character Variation 2"
-msgstr "चरित्र भिन्नता 2"
+msgstr "वर्ण भिन्नता 2"
 
 #: src/open-type-layout.h:36
 msgctxt "OpenType layout"
 msgid "Character Variation 3"
-msgstr "चरित्र भिन्नता 3"
+msgstr "वर्ण भिन्नता 3"
 
 #: src/open-type-layout.h:37
 msgctxt "OpenType layout"
 msgid "Character Variation 4"
-msgstr "चरित्र भिन्नता 4"
+msgstr "वर्ण भिन्नता 4"
 
 #: src/open-type-layout.h:38
 msgctxt "OpenType layout"
 msgid "Character Variation 5"
-msgstr "चरित्र भिन्नता 5"
+msgstr "वर्ण भिन्नता 5"
 
 #: src/open-type-layout.h:39
 msgctxt "OpenType layout"
 msgid "Character Variation 6"
-msgstr "चरित्र भिन्नता 6"
+msgstr "वर्ण भिन्नता 6"
 
 #: src/open-type-layout.h:40
 msgctxt "OpenType layout"
 msgid "Character Variation 7"
-msgstr "चरित्र भिन्नता 7"
+msgstr "वर्ण भिन्नता 7"
 
 #: src/open-type-layout.h:41
 msgctxt "OpenType layout"
 msgid "Character Variation 8"
-msgstr "चरित्र भिन्नता 8"
+msgstr "वर्ण भिन्नता 8"
 
 #: src/open-type-layout.h:42
 msgctxt "OpenType layout"
 msgid "Character Variation 9"
-msgstr "चरित्र भिन्नता 9"
+msgstr "वर्ण भिन्नता 9"
 
 #: src/open-type-layout.h:43
 msgctxt "OpenType layout"
 msgid "Character Variation 10"
-msgstr "चरित्र भिन्नता 10"
+msgstr "वर्ण भिन्नता 10"
 
 #: src/open-type-layout.h:44
 msgctxt "OpenType layout"
 msgid "Character Variation 11"
-msgstr "चरित्र भिन्नता 11"
+msgstr "वर्ण भिन्नता 11"
 
 #: src/open-type-layout.h:45
 msgctxt "OpenType layout"
 msgid "Character Variation 12"
-msgstr "चरित्र भिन्नता 12"
+msgstr "वर्ण भिन्नता 12"
 
 #: src/open-type-layout.h:46
 msgctxt "OpenType layout"
 msgid "Character Variation 13"
-msgstr "चरित्र भिन्नता 13"
+msgstr "वर्ण भिन्नता 13"
 
 #: src/open-type-layout.h:47
 msgctxt "OpenType layout"
 msgid "Character Variation 14"
-msgstr "चरित्र भिन्नता 14"
+msgstr "वर्ण भिन्नता 14"
 
 #: src/open-type-layout.h:48
 msgctxt "OpenType layout"
 msgid "Character Variation 15"
-msgstr "चरित्र भिन्नता 15"
+msgstr "वर्ण भिन्नता 15"
 
 #: src/open-type-layout.h:49
 msgctxt "OpenType layout"
 msgid "Character Variation 16"
-msgstr "चरित्र भिन्नता 16"
+msgstr "वर्ण भिन्नता 16"
 
 #: src/open-type-layout.h:50
 msgctxt "OpenType layout"
 msgid "Character Variation 17"
-msgstr "चरित्र भिन्नता 17"
+msgstr "वर्ण भिन्नता 17"
 
 #: src/open-type-layout.h:51
 msgctxt "OpenType layout"
 msgid "Character Variation 18"
-msgstr "चरित्र भिन्नता 18"
+msgstr "वर्ण भिन्नता 18"
 
 #: src/open-type-layout.h:52
 msgctxt "OpenType layout"
 msgid "Character Variation 19"
-msgstr "चरित्र भिन्नता 19"
+msgstr "वर्ण भिन्नता 19"
 
 #: src/open-type-layout.h:53
 msgctxt "OpenType layout"
@@ -607,7 +595,7 @@ msgstr "कर्निंग"
 #: src/open-type-layout.h:83
 msgctxt "OpenType layout"
 msgid "Left Bounds"
-msgstr "बाएं सीमाएं"
+msgstr "बायीं सीमाएं"
 
 #: src/open-type-layout.h:84
 msgctxt "OpenType layout"
@@ -1048,29 +1036,3 @@ msgstr "घूर्णन के लिए ऊर्ध्वाधर वि�
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "तिर्यक शून्य"
-
-#~ msgid "About"
-#~ msgstr "परिचय"
-
-#~ msgid "Quit"
-#~ msgstr "बाहर"
-
-#~ msgid "This font could not be displayed."
-#~ msgstr "इस फ़ॉन्ट को प्रदर्शित नहीं किया जा सका."
-
-#~ msgid "Back"
-#~ msgstr "पीछे"
-
-#~ msgid "Font Viewer"
-#~ msgstr "फ़ॉन्ट प्रदर्शक"
-
-#~ msgid "Font size (default: 64)"
-#~ msgstr "फाँट आकार (default: 64)"
-
-#, fuzzy
-#~ msgid "Size:"
-#~ msgstr "आकारः"
-
-#, fuzzy
-#~ msgid "Preview fonts"
-#~ msgstr "पूर्वावलोकन फान्ट"
