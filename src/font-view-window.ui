@@ -233,8 +233,7 @@
       </object>
     </property>
   </template>
-  <object class="AdwMessageDialog" id="error_dialog">
-    <property name="transient-for">FontViewWindow</property>
+  <object class="AdwAlertDialog" id="error_dialog">
     <responses>
       <response id="close" translatable="yes">_Close</response>
     </responses>

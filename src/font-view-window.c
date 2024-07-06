@@ -69,7 +69,7 @@ struct _FontViewWindow
   GtkScrolledWindow *swin_info;
   SushiFontWidget *font_widget;
 
-  AdwMessageDialog *error_dialog;
+  AdwAlertDialog *error_dialog;
 
   FontViewModel *model;
   GtkSortListModel *sort_model;
@@ -808,9 +808,9 @@ font_view_window_show_error (FontViewWindow *self,
                              const char     *heading,
                              const char     *body)
 {
-  adw_message_dialog_set_heading (self->error_dialog, heading);
-  adw_message_dialog_set_body (self->error_dialog, heading);
-  gtk_window_present (GTK_WINDOW (self->error_dialog));
+  adw_alert_dialog_set_heading (self->error_dialog, heading);
+  adw_alert_dialog_set_body (self->error_dialog, heading);
+  adw_dialog_present (ADW_DIALOG (self->error_dialog), GTK_WIDGET (self));
 }
 
 static void
