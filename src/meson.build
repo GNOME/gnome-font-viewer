@@ -43,7 +43,6 @@ executable('gnome-font-viewer', viewer_sources + resources,
     harfbuzz_dep,
     fontconfig_dep,
     freetype2_dep,
-    gnomedesktop_dep,
     fribidi_dep,
   ],
   install: true)

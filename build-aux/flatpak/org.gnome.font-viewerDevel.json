@@ -26,17 +26,6 @@
     ],
     "modules": [
         {
-            "name": "gnome-desktop",
-            "buildsystem": "meson",
-            "config-opts": ["-Dbuild_gtk4=true"],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/gnome-desktop"
-                }
-            ]
-        },
-        {
             "name": "gnome-font-viewer",
             "buildsystem": "meson",
             "builddir" : true,
