@@ -1,3 +1,15 @@
+GNOME Font Viewer - 47.alpha
+-------------------------------------------------------------------------------
+Fonts 47.alpha comes with the following improvements:
+ * Add slant preview (Jeremias Ortega)
+ * Fix install button mnemonic (Automeris naranja)
+ * Fix the "Install" button stuck in "Installing" when font install is successful (Houssam Elbadissi)
+ * Use adaptive dialogs (Automeris naranja, Christopher Davis)
+
+This version brings translation updates for the following locales:
+ * Hindi (Guntupalli Karunakar, Scrambled 777)
+ * Kabyle (Rachida SACI)
+
 GNOME Font Viewer - 46.0
 -------------------------------------------------------------------------------
 Fonts 46.0 comes with the following improvements:

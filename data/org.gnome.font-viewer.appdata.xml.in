@@ -47,6 +47,23 @@
   </kudos>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="47.alpha" date="2024-07-11">
+      <description>
+        <p>Fonts 47.alpha comes with the following improvements:</p>
+        <ul>
+          <li>Add slant preview (Jeremias Ortega)</li>
+          <li>Fix install button mnemonic (Automeris naranja)</li>
+          <li>Fix the &quot;Install&quot; button stuck in &quot;Installing&quot; when font install is successful (Houssam Elbadissi)</li>
+          <li>Use adaptive dialogs (Automeris naranja, Christopher Davis)</li>
+        </ul>
+        <p>This version brings translation updates for the following locales:</p>
+        <ul>
+          <li>Hindi (Guntupalli Karunakar, Scrambled 777)</li>
+          <li>Kabyle (Rachida SACI)</li>
+        </ul>
+        <p>Fonts 47.alpha comes with the following improvements:</p>
+      </description>
+    </release>
     <release version="46.0" date="2024-03-21">
       <description>
         <p>Fonts 46.0 comes with the following improvements:</p>
