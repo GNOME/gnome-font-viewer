@@ -13,9 +13,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.gnome-2-14.ro\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
-"issues\n"
-"POT-Creation-Date: 2019-07-06 17:09+0000\n"
-"PO-Revision-Date: 2019-08-04 14:10+0300\n"
+"issues/\n"
+"POT-Creation-Date: 2024-05-19 12:39+0000\n"
+"PO-Revision-Date: 2024-07-26 15:39+0200\n"
 "Last-Translator: Florentina Mușat <florentina.musat.28 [at] gmail [dot] "
 "com>\n"
 "Language-Team: Gnome Romanian Translation Team\n"
@@ -25,41 +25,47 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);;\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 3.4.4\n"
 "X-Project-Style: gnome\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:91
-msgid "GNOME Fonts"
-msgstr "Fonturi GNOME"
+#: data/org.gnome.font-viewer.appdata.xml.in:6
+#: data/org.gnome.font-viewer.desktop.in.in:3 src/font-view-application.c:124
+msgid "Fonts"
+msgstr "Fonturi"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1098
-#: src/org.gnome.font-viewer.desktop.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7
+#: data/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "Vizualizați fonturile instalate pe sistemul dumneavoastră"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
-"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"Fonturi GNOME vă arată fonturile instalate pe calculator care se pot utiliza "
-"ca miniaturi. Selectarea oricărei miniaturi arată vizualizarea completă a "
+"Fonturi vă arată fonturile instalate pe calculator care se pot utiliza ca "
+"miniaturi. Selectarea oricărei miniaturi arată vizualizarea completă a "
 "modului în care ar arăta fontul la diverse dimensiuni."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
-"GNOME Fonts also supports installing new font files downloaded in the .ttf "
-"and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
 msgstr ""
-"Fonturi GNOME suportă și instalarea de fișiere font descărcate în format ."
-"ttf și alte formate. Fonturile pot fi instalate numai pentru uz personal sau "
-"pot fi disponibile tuturor utilizatorilor calculatorului."
+"Fonturi suportă și instalarea de fișiere font descărcate în format .ttf și "
+"alte formate. Fonturile pot fi instalate numai pentru uz personal sau pot fi "
+"disponibile tuturor utilizatorilor calculatorului."
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21
+#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
 msgid "The GNOME Project"
 msgstr "Proiectul GNOME"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.font-viewer.desktop.in.in:6
+msgid "fonts;fontface;"
+msgstr "fonts;fontface;fonturi;"
 
 #: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
@@ -81,153 +87,169 @@ msgstr "DIMENSIUNE"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FIȘIER-FONT FIȘIER-IEȘIRE"
 
-#: src/font-view-app-menu.ui:6
-msgid "About Fonts"
-msgstr "Despre Fonturi"
+#: src/font-view-application.c:79 src/font-view-window.c:741
+msgid "Could Not Display Font"
+msgstr "Nu s-a putut afișa fontul"
 
-#: src/font-view.c:99
-msgid "Show the application's version"
-msgstr "Afișează versiunea aplicației"
+#: src/font-view-application.c:129
+msgid "translator-credits"
+msgstr ""
+"Bogdan Mințoi <mintoi.bogdan@gmail.com>, 2014\n"
+"Florentina Mușat <florentina.musat.28 [at] gmail [dot] com>, 2019"
+
+#: src/font-view-window.c:120
+msgid "Failed"
+msgstr "Eșuat"
+
+#: src/font-view-window.c:128
+msgid "Installed"
+msgstr "Instalat"
+
+#: src/font-view-window.c:133
+msgid "Installing"
+msgstr "Se instalează"
+
+#: src/font-view-window.c:136
+msgid "Install"
+msgstr "Instalează"
 
 #. Translators, this string is used to display information about
 #. * a 'font variation axis'. The %s gets replaced with the name
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:228
+#: src/font-view-window.c:250
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, implicit %g"
 
-#: src/font-view.c:284
+#: src/font-view-window.c:305
 #, c-format
 msgid "Instance %d"
 msgstr "Instanța %d"
 
-#. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:327
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view-window.c:343
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:351
+#: src/font-view-window.c:370
 msgid "Name"
 msgstr "Nume"
 
-#: src/font-view.c:354
+#: src/font-view-window.c:373
 msgid "Location"
 msgstr "Locație"
 
-#: src/font-view.c:357
+#: src/font-view-window.c:376
 msgid "Style"
 msgstr "Stil"
 
-#: src/font-view.c:367
+#: src/font-view-window.c:386
 msgid "Type"
 msgstr "Tip"
 
-#: src/font-view.c:425 src/font-view.c:451
+#: src/font-view-window.c:452 src/font-view-window.c:478
 msgid "Version"
 msgstr "Versiune"
 
-#: src/font-view.c:429 src/font-view.c:456
+#: src/font-view-window.c:456 src/font-view-window.c:483
 msgid "Copyright"
 msgstr "Drepturi de autor"
 
-#: src/font-view.c:433
+#: src/font-view-window.c:460
 msgid "Description"
 msgstr "Descriere"
 
-#: src/font-view.c:437
+#: src/font-view-window.c:464
 msgid "Manufacturer"
 msgstr "Producător"
 
-#: src/font-view.c:441
+#: src/font-view-window.c:468
 msgid "Designer"
 msgstr "Proiectant"
 
-#: src/font-view.c:445
+#: src/font-view-window.c:472
 msgid "License"
 msgstr "Licență"
 
-#: src/font-view.c:470
+#: src/font-view-window.c:497
 msgid "Glyph Count"
 msgstr "Număr de glife"
 
-#: src/font-view.c:472
+#: src/font-view-window.c:499
 msgid "Color Glyphs"
 msgstr "Glife de culori"
 
-#: src/font-view.c:472
+#: src/font-view-window.c:500
 msgid "yes"
 msgstr "da"
 
-#: src/font-view.c:472
+#: src/font-view-window.c:500
 msgid "no"
 msgstr "nu"
 
-#: src/font-view.c:476
+#: src/font-view-window.c:504
 msgid "Layout Features"
 msgstr "Funcționalități aranjament"
 
-#: src/font-view.c:482
+#: src/font-view-window.c:510
 msgid "Variation Axes"
 msgstr "Axe de variație"
 
-#: src/font-view.c:489
+#: src/font-view-window.c:517
 msgid "Named Styles"
 msgstr "Stiluri denumite"
 
-#: src/font-view.c:563
-msgid "This font could not be installed."
-msgstr "Acest font nu a putut fi instalat."
+#: src/font-view-window.c:559 src/font-view-window.c:661
+msgid "Could Not Install Font"
+msgstr "Nu s-a putut instala fontul"
 
-#: src/font-view.c:701
-msgid "This font could not be displayed."
-msgstr "Acest font nu a putut fi afișat."
-
-#: src/font-view.c:833
-msgid "Install"
-msgstr "Instalează"
-
-#: src/font-view.c:836
-msgid "Installing…"
-msgstr "Se instalează…"
-
-#: src/font-view.c:839
-msgid "Installed"
-msgstr "Instalat"
-
-#: src/font-view.c:842
-msgid "Failed"
-msgstr "Eșuat"
-
-#: src/font-view.c:858
-msgid "Info"
-msgstr "Info"
-
-#: src/font-view.c:875
-msgid "Back"
-msgstr "Înapoi"
-
-#: src/font-view.c:974
+#: src/font-view-window.ui:31
 msgid "All Fonts"
 msgstr "Toate fonturile"
 
-#: src/font-view.c:1097 src/org.gnome.font-viewer.desktop.in:3
-msgid "Fonts"
-msgstr "Fonturi"
+#: src/font-view-window.ui:39
+msgid "Search"
+msgstr "Caută"
 
-#: src/font-view.c:1100
-msgid "translator-credits"
-msgstr ""
-"Bogdan Mințoi <mintoi.bogdan@gmail.com>, 2014\n"
-"Florentina Mușat <florentina.musat.28 [at] gmail [dot] com>, 2019"
+#: src/font-view-window.ui:47
+msgid "About Fonts"
+msgstr "Despre Fonturi"
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in:6
-msgid "fonts;fontface;"
-msgstr "fonts;fontface;fonturi;"
+#: src/font-view-window.ui:59
+msgid "Search fonts"
+msgstr "Caută fonturi"
+
+#: src/font-view-window.ui:182
+msgid "_Install"
+msgstr "_Instalează"
+
+#: src/font-view-window.ui:185
+msgid "Install Font"
+msgstr "Instalează fontul"
+
+#: src/font-view-window.ui:190
+msgid "I_nfo"
+msgstr "I_formații"
+
+#: src/font-view-window.ui:192
+msgid "Font Details"
+msgstr "Detalii font"
+
+#: src/font-view-window.ui:239
+msgid "_Close"
+msgstr "în_chide"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "Fonturi GNOME"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "Afișează versiunea aplicației"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -1023,6 +1045,18 @@ msgstr "Alternative verticale pentru rotație"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Zero barat"
+
+#~ msgid "This font could not be installed."
+#~ msgstr "Acest font nu a putut fi instalat."
+
+#~ msgid "This font could not be displayed."
+#~ msgstr "Acest font nu a putut fi afișat."
+
+#~ msgid "Info"
+#~ msgstr "Info"
+
+#~ msgid "Back"
+#~ msgstr "Înapoi"
 
 #~ msgid "org.gnome.font-viewer"
 #~ msgstr "org.gnome.font-viewer"
