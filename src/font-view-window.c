@@ -64,7 +64,7 @@ struct _FontViewWindow
   GtkStack *preview_stack;
   GtkScrolledWindow *swin_preview;
   GtkViewport *viewport_preview;
-  GtkScrolledWindow *swin_info;
+  AdwPreferencesPage *swin_info;
   SushiFontWidget *font_widget;
 
   AdwAlertDialog *error_dialog;
@@ -168,50 +168,22 @@ strip_version (gchar **original)
 }
 
 static void
-add_row (GtkBox      *list,
-         const gchar *name,
-         const gchar *value,
-         gboolean     multiline)
+add_row (AdwPreferencesGroup      *group,
+         const gchar              *name,
+         const gchar              *value,
+         gboolean                 multiline)
 {
-    GtkWidget *name_w, *label;
-    int i;
-    const char *p;
-    GtkWidget *hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 8);
-    name_w = gtk_label_new (name);
-    gtk_widget_add_css_class (GTK_WIDGET (name_w), "dim-label");
-    gtk_widget_set_halign (name_w, GTK_ALIGN_END);
-    gtk_widget_set_valign (name_w, GTK_ALIGN_START);
+    GtkWidget *row = adw_action_row_new ();
 
-    gtk_box_append (GTK_BOX (hbox), name_w);
+    adw_preferences_row_set_use_markup (ADW_PREFERENCES_ROW (row), FALSE);
+    adw_preferences_row_set_use_underline (ADW_PREFERENCES_ROW (row), FALSE);
+    adw_action_row_set_subtitle_selectable (ADW_ACTION_ROW (row), TRUE);
+    gtk_widget_add_css_class (row, "property");
 
-    label = gtk_label_new (value);
-    gtk_widget_set_halign (label, GTK_ALIGN_START);
-    gtk_widget_set_valign (label, GTK_ALIGN_START);
-    gtk_label_set_selectable (GTK_LABEL (label), TRUE);
+    adw_preferences_row_set_title (ADW_PREFERENCES_ROW (row), name);
+    adw_action_row_set_subtitle (ADW_ACTION_ROW (row), value);
 
-    gtk_label_set_xalign (GTK_LABEL (label), 0.0);
-
-    gtk_label_set_ellipsize (GTK_LABEL (label), PANGO_ELLIPSIZE_END);
-    gtk_label_set_max_width_chars (GTK_LABEL (label), 64);
-
-    if (multiline && g_utf8_strlen (value, -1) > 64) {
-        gtk_label_set_width_chars (GTK_LABEL (label), 64);
-        gtk_label_set_lines (GTK_LABEL (label), 10);
-
-        p = value;
-        i = 0;
-        while (p) {
-            p = strchr (p + 1, '\n');
-            i++;
-        }
-        if (i > 3) { /* multi-paragraph text */
-            gtk_label_set_ellipsize (GTK_LABEL (label), PANGO_ELLIPSIZE_NONE);
-            gtk_label_set_lines (GTK_LABEL (label), -1);
-        }
-    }
-
-    gtk_box_append (GTK_BOX (hbox), label);
-    gtk_box_append (list, hbox);
+    adw_preferences_group_add (ADW_PREFERENCES_GROUP (group), row);
 }
 
 static char *
@@ -336,21 +308,21 @@ get_features (FT_Face face)
 }
 
 static void
-populate_grid (FontViewWindow *self,
-               GtkBox         *grid,
-               FT_Face         face)
+populate_grid (FontViewWindow              *self,
+               AdwPreferencesGroup         *group,
+               FT_Face                      face)
 {
     g_autoptr (GFileInfo) info = NULL;
     g_autofree gchar *path = NULL;
     PS_FontInfoRec ps_info;
 
-    add_row (grid, _ ("Name"), face->family_name, FALSE);
+    add_row (group, _ ("Name"), face->family_name, FALSE);
 
     path = g_file_get_path (self->font_file);
-    add_row (grid, _ ("Location"), path, FALSE);
+    add_row (group, _ ("Location"), path, FALSE);
 
     if (face->style_name)
-        add_row (grid, _ ("Style"), face->style_name, FALSE);
+        add_row (group, _ ("Style"), face->style_name, FALSE);
 
     info = g_file_query_info (self->font_file,
                               G_FILE_ATTRIBUTE_STANDARD_CONTENT_TYPE
@@ -360,7 +332,7 @@ populate_grid (FontViewWindow *self,
     if (info != NULL) {
         g_autofree gchar *s = g_content_type_get_description (
             g_file_info_get_content_type (info));
-        add_row (grid, _ ("Type"), s, FALSE);
+        add_row (group, _ ("Type"), s, FALSE);
     }
 
     if (FT_IS_SFNT (face)) {
@@ -426,72 +398,72 @@ populate_grid (FontViewWindow *self,
         }
         if (version) {
             strip_version (&version);
-            add_row (grid, _ ("Version"), version, FALSE);
+            add_row (group, _ ("Version"), version, FALSE);
         }
         if (copyright) {
             strip_whitespace (&copyright);
-            add_row (grid, _ ("Copyright"), copyright, TRUE);
+            add_row (group, _ ("Copyright"), copyright, TRUE);
         }
         if (description) {
             strip_whitespace (&description);
-            add_row (grid, _ ("Description"), description, TRUE);
+            add_row (group, _ ("Description"), description, TRUE);
         }
         if (manufacturer) {
             strip_whitespace (&manufacturer);
-            add_row (grid, _ ("Manufacturer"), manufacturer, TRUE);
+            add_row (group, _ ("Manufacturer"), manufacturer, TRUE);
         }
         if (designer) {
             strip_whitespace (&designer);
-            add_row (grid, _ ("Designer"), designer, TRUE);
+            add_row (group, _ ("Designer"), designer, TRUE);
         }
         if (license) {
             strip_whitespace (&license);
-            add_row (grid, _ ("License"), license, TRUE);
+            add_row (group, _ ("License"), license, TRUE);
         }
     } else if (FT_Get_PS_Font_Info (face, &ps_info) == 0) {
         if (ps_info.version && g_utf8_validate (ps_info.version, -1, NULL)) {
             g_autofree gchar *compressed = g_strcompress (ps_info.version);
             strip_version (&compressed);
-            add_row (grid, _ ("Version"), compressed, FALSE);
+            add_row (group, _ ("Version"), compressed, FALSE);
         }
         if (ps_info.notice && g_utf8_validate (ps_info.notice, -1, NULL)) {
             g_autofree gchar *compressed = g_strcompress (ps_info.notice);
             strip_whitespace (&compressed);
-            add_row (grid, _ ("Copyright"), compressed, TRUE);
+            add_row (group, _ ("Copyright"), compressed, TRUE);
         }
     }
 }
 
 static void
-populate_details (FontViewWindow *self,
-                  GtkBox         *grid,
-                  FT_Face         face)
+populate_details (FontViewWindow              *self,
+                  AdwPreferencesGroup         *group,
+                  FT_Face                      face)
 {
     g_autofree gchar *glyph_count = NULL, *features = NULL;
     FT_MM_Var *ft_mm_var;
 
     glyph_count = g_strdup_printf ("%ld", face->num_glyphs);
-    add_row (grid, _ ("Glyph Count"), glyph_count, FALSE);
+    add_row (group, _ ("Glyph Count"), glyph_count, FALSE);
 
-    add_row (grid, _ ("Color Glyphs"),
+    add_row (group, _ ("Color Glyphs"),
              FT_HAS_COLOR (face) ? _ ("yes") : _ ("no"), FALSE);
 
     features = get_features (face);
     if (features)
-        add_row (grid, _ ("Layout Features"), features, TRUE);
+        add_row (group, _ ("Layout Features"), features, TRUE);
 
     if (FT_Get_MM_Var (face, &ft_mm_var) == 0) {
         int i;
         for (i = 0; i < ft_mm_var->num_axis; i++) {
             g_autofree gchar *s = describe_axis (&ft_mm_var->axis[i]);
-            add_row (grid, i == 0 ? _ ("Variation Axes") : "", s, FALSE);
+            add_row (group, i == 0 ? _ ("Variation Axes") : "", s, FALSE);
         }
         {
             g_autoptr (GString) str = g_string_new ("");
             for (i = 0; i < ft_mm_var->num_namedstyles; i++)
                 describe_instance (face, &ft_mm_var->namedstyle[i], i, str);
 
-            add_row (grid, _ ("Named Styles"), str->str, TRUE);
+            add_row (group, _ ("Named Styles"), str->str, TRUE);
         }
         free (ft_mm_var);
     }
@@ -500,24 +472,26 @@ populate_details (FontViewWindow *self,
 static void
 load_font_info (FontViewWindow *self)
 {
-  GtkWidget *grid;
+  GtkWidget *new_group;
+  AdwPreferencesGroup *old_group;
   FT_Face face =
         sushi_font_widget_get_ft_face (SUSHI_FONT_WIDGET (self->font_widget));
 
   if (face == NULL)
     return;
 
-  grid = gtk_box_new (GTK_ORIENTATION_VERTICAL, 2);
-  gtk_orientable_set_orientation (GTK_ORIENTABLE (grid),
-                                  GTK_ORIENTATION_VERTICAL);
-  g_object_set (grid, "margin-start", 20, NULL);
-  g_object_set (grid, "margin-end", 20, NULL);
-  g_object_set (grid, "margin-top", 20, NULL);
-  g_object_set (grid, "margin-bottom", 20, NULL);
+  old_group = adw_preferences_page_get_group (self->swin_info, 0);
 
-  populate_grid (self, GTK_BOX (grid), face);
-  populate_details (self, GTK_BOX (grid), face);
-  gtk_scrolled_window_set_child (GTK_SCROLLED_WINDOW (self->swin_info), grid);
+  if (old_group != NULL) {
+    adw_preferences_page_remove (self->swin_info, old_group);
+  }
+
+  new_group = adw_preferences_group_new ();
+
+  populate_grid (self, ADW_PREFERENCES_GROUP (new_group), face);
+  populate_details (self, ADW_PREFERENCES_GROUP (new_group), face);
+
+  adw_preferences_page_add (self->swin_info, ADW_PREFERENCES_GROUP (new_group));
 }
 
 static void
