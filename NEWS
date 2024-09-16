@@ -1,3 +1,13 @@
+GNOME Font Viewer - 47.0
+-------------------------------------------------------------------------------
+Fonts 47.0 comes with the following improvements:
+ * Set application name and icon (Balló György)
+ * Remove unused dependency on gnome-desktop (Balló György)
+
+This version brings translation updates for the following locales:
+ * Slovak (Jose Riha)
+ * Turkish (Sabri Ünal)
+
 GNOME Font Viewer - 47.alpha
 -------------------------------------------------------------------------------
 Fonts 47.alpha comes with the following improvements:
