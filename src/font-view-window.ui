@@ -27,27 +27,10 @@
               <object class="AdwToolbarView">
                 <child type="top">
                   <object class="AdwHeaderBar">
-                    <child type="start">
-                      <object class="GtkToggleButton" id="search_button">
-                        <property name="icon-name">edit-find-symbolic</property>
-                        <property name="tooltip-text" translatable="yes">Search</property>
-                        <property name="active" bind-source="search_bar" bind-property="search-mode-enabled" bind-flags="bidirectional|sync-create"/>
-                      </object>
-                    </child>
-                    <child type="end">
-                      <object class="GtkButton">
-                        <property name="icon-name">help-about-symbolic</property>
-                        <property name="action-name">app.about</property>
-                        <property name="tooltip-text" translatable="yes">About Fonts</property>
-                      </object>
-                    </child>
-                  </object>
-                </child>
-                <child type="top">
-                  <object class="GtkSearchBar" id="search_bar">
-                    <property name="key-capture-widget">FontViewWindow</property>
-                    <property name="child">
+                    <property name="title-widget">
                       <object class="AdwClamp">
+                        <property name="maximum-size">400</property>
+                        <property name="tightening-threshold">150</property>
                         <property name="child">
                           <object class="GtkSearchEntry" id="search_entry">
                             <property name="placeholder-text" translatable="yes">Search fonts</property>
@@ -55,6 +38,13 @@
                         </property>
                       </object>
                     </property>
+                    <child type="end">
+                      <object class="GtkButton">
+                        <property name="icon-name">help-about-symbolic</property>
+                        <property name="action-name">app.about</property>
+                        <property name="tooltip-text" translatable="yes">About Fonts</property>
+                      </object>
+                    </child>
                   </object>
                 </child>
                 <property name="content">

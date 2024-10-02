@@ -54,8 +54,6 @@ struct _FontViewWindow
   AdwNavigationView *nav_view;
 
   /* Overview */
-  GtkToggleButton *search_button;
-  GtkSearchBar *search_bar;
   GtkSearchEntry *search_entry;
   GtkGridView *grid_view;
 
@@ -751,8 +749,7 @@ action_toggle_search_cb (GtkWidget  *widget,
 {
   FontViewWindow *self = FONT_VIEW_WINDOW (widget);
 
- gtk_toggle_button_set_active (self->search_button,
-                               !gtk_toggle_button_get_active (self->search_button));
+  gtk_widget_grab_focus (GTK_WIDGET (self->search_entry));
 }
 
 void
@@ -833,8 +830,6 @@ font_view_window_class_init (FontViewWindowClass *klass)
                                                "/org/gnome/font-viewer/font-view-window.ui");
 
   gtk_widget_class_bind_template_child (widget_class, FontViewWindow, nav_view);
-  gtk_widget_class_bind_template_child (widget_class, FontViewWindow, search_bar);
-  gtk_widget_class_bind_template_child (widget_class, FontViewWindow, search_button);
   gtk_widget_class_bind_template_child (widget_class, FontViewWindow, search_entry);
   gtk_widget_class_bind_template_child (widget_class, FontViewWindow, grid_view);
   gtk_widget_class_bind_template_child (widget_class, FontViewWindow, font_title);
@@ -874,9 +869,9 @@ font_view_window_init (FontViewWindow *self)
   gtk_sort_list_model_set_model (self->sort_model,
                                  font_view_model_get_list_model (self->model));
 
-  gtk_search_bar_connect_entry (self->search_bar,
-                                GTK_EDITABLE (self->search_entry));
-
   if (g_str_has_suffix (APPLICATION_ID, "Devel"))
     gtk_widget_add_css_class (GTK_WIDGET (self), "devel");
+
+  /* Workaround: Make the search bar expandable */
+  gtk_widget_set_hexpand (gtk_widget_get_parent (GTK_WIDGET (self->search_entry)), TRUE);
 }
