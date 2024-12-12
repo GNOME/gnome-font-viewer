@@ -47,7 +47,7 @@
   </kudos>
   <content_rating type="oars-1.1" />
   <releases>
-    <release version="48.alpha" date="2024-11-12">
+    <release version="48.alpha.1" date="2024-11-12">
       <description>
         <p>This version brings translation updates for the following locales:</p>
         <ul>
