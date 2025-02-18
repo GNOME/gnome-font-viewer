@@ -85,13 +85,6 @@ font_name_closure (FontViewModelItem *item)
   return g_strdup (font_view_model_item_get_font_name (item));
 }
 
-static char*
-preview_visible_child_closure (FontViewWindow *self,
-                               gboolean        info_active)
-{
-  return g_strdup (info_active ? "info" : "preview");
-}
-
 static void
 install_button_refresh_appearance (FontViewWindow *self,
                                    GError         *error)
@@ -848,7 +841,6 @@ font_view_window_class_init (FontViewWindowClass *klass)
 
   gtk_widget_class_bind_template_callback (widget_class, action_toggle_search_cb);
   gtk_widget_class_bind_template_callback (widget_class, font_name_closure);
-  gtk_widget_class_bind_template_callback (widget_class, preview_visible_child_closure);
 
   gtk_widget_class_install_action (widget_class, "win.toggle-search", NULL, action_toggle_search_cb);
   gtk_widget_class_install_action (widget_class, "win.install-font", NULL, action_install_font_cb);
