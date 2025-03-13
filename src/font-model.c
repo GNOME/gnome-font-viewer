@@ -207,10 +207,17 @@ font_infos_loaded (GObject *source_object,
                    gpointer user_data)
 {
     FontViewModel *self = FONT_VIEW_MODEL (source_object);
-    g_autoptr (GPtrArray) items =
-        g_task_propagate_pointer (G_TASK (result), NULL);
+    g_autoptr (GPtrArray) items = NULL;
+    g_autoptr (GError) err = NULL;
 
-    g_list_store_splice (self->model, 0, 0, items->pdata, items->len);
+    items = g_task_propagate_pointer (G_TASK (result), &err);
+
+    if (err == NULL)
+        g_list_store_splice (self->model, 0, 0, items->pdata, items->len);
+    else if (g_error_matches (err, G_IO_ERROR, G_IO_ERROR_CANCELLED))
+        g_debug ("Loading fonts canceled");
+    else
+        g_warning ("Could not load font infos: %s", err->message);
 }
 
 static const gchar *
