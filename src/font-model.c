@@ -401,7 +401,7 @@ load_font_infos (GTask *task,
             continue;
 
         // TODO: Support scripts which don't contain "Aa"
-        const char *font_preview_text = g_strdup ("Aa");
+        const char *font_preview_text = "Aa";
 
         PangoFontDescription *font_description = pango_font_description_new ();
 
