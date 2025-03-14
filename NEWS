@@ -1,3 +1,10 @@
+GNOME Font Viewer - 48.0
+-------------------------------------------------------------------------------
+ * Fix a crash when installing fonts
+
+This version brings translation updates for the following locales:
+ * Chinese (Taiwan) (Cheng-Chia Tseng)
+
 GNOME Font Viewer - 48.alpha.1
 -------------------------------------------------------------------------------
  * Automate publishing of the Release Tarballs
