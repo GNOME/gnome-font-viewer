@@ -41,10 +41,6 @@
     </screenshot>
   </screenshots>
   <project_group>GNOME</project_group>
-  <kudos>
-    <kudo>AppMenu</kudo>
-    <kudo>ModernToolkit</kudo>
-  </kudos>
   <content_rating type="oars-1.1" />
   <releases>
     <release version="48.0" date="2025-03-14">
