@@ -42,6 +42,10 @@
   </screenshots>
   <project_group>GNOME</project_group>
   <content_rating type="oars-1.1" />
+  <branding>
+    <color type="primary" scheme_preference="light">#dc8add</color>
+    <color type="primary" scheme_preference="dark">#613583</color>
+  </branding>
   <releases>
     <release version="48.0" date="2025-03-14">
       <description>
