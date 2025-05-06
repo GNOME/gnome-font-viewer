@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils.master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues/\n"
-"POT-Creation-Date: 2024-10-02 19:13+0000\n"
-"PO-Revision-Date: 2024-11-19 07:42+0300\n"
+"POT-Creation-Date: 2025-04-11 00:02+0000\n"
+"PO-Revision-Date: 2025-05-07 02:50+0300\n"
 "Last-Translator: Yuras Shumovich <shumovichy@gmail.com>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "Language: be\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.6\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6
 #: data/org.gnome.font-viewer.desktop.in.in:3 src/font-view-application.c:124
@@ -38,8 +38,8 @@ msgid ""
 "would look under various sizes."
 msgstr ""
 "Праграма «Шрыфты» паказвае ў выглядзе мініяцюр, усталяваныя на камп'ютары "
-"шрыфты. Калі выбраць любую мініяцюру, можна ўбачыць, як адпаведны шрыфт "
-"будзе выглядаць у розных памерах."
+"шрыфты. Пры выбары мініяцюры можна ўбачыць, як шрыфт будзе выглядаць у "
+"розных памерах."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
@@ -120,7 +120,7 @@ msgstr "%s %g — %g, прадвызначана %g"
 #: src/font-view-window.c:305
 #, c-format
 msgid "Instance %d"
-msgstr "Экземпляр %d"
+msgstr "Экзэмпляр %d"
 
 #. Translators, this seperates the list of Layout
 #. * Features.
@@ -246,22 +246,23 @@ msgctxt "OpenType layout"
 msgid "Access All Alternates"
 msgstr "Доступ да ўсіх альтэрнатыў"
 
+# індыйскае пісьмо, падобна на лігатуры (матры), спалучае два сімвалы ў адзін, дзе над (пад, перад, пасля) зычным стаіць значок галоснай літары
 #: src/open-type-layout.h:14
 msgctxt "OpenType layout"
 msgid "Above-base Forms"
-msgstr "Падбазавыя формы"
+msgstr "Надбазавыя формы"
 
 # Lookup type 4
 # https://learn.microsoft.com/en-us/typography/opentype/spec/gpos
 #: src/open-type-layout.h:15
 msgctxt "OpenType layout"
 msgid "Above-base Mark Positioning"
-msgstr "Падбазавае пазіцыянаванне знакаў"
+msgstr "Надбазавае пазіцыянаванне знакаў"
 
 #: src/open-type-layout.h:16
 msgctxt "OpenType layout"
 msgid "Above-base Substitutions"
-msgstr "Падбазавыя падстаноўкі"
+msgstr "Надбазавыя замены"
 
 #: src/open-type-layout.h:17
 msgctxt "OpenType layout"
@@ -276,17 +277,18 @@ msgstr "Акханд"
 #: src/open-type-layout.h:19
 msgctxt "OpenType layout"
 msgid "Below-base Forms"
-msgstr ""
+msgstr "Падбазавыя формы"
 
 #: src/open-type-layout.h:20
 msgctxt "OpenType layout"
 msgid "Below-base Mark Positioning"
-msgstr ""
+msgstr "Падбазавае пазіцыянаванне знакаў"
 
+# індыйскае пісьмо, падобна на лігатуры (матры), спалучае два сімвалы ў адзін, дзе пад зычным стаіць значок галоснай літары
 #: src/open-type-layout.h:21
 msgctxt "OpenType layout"
 msgid "Below-base Substitutions"
-msgstr ""
+msgstr "Падбазавыя замены"
 
 #: src/open-type-layout.h:22
 msgctxt "OpenType layout"
@@ -303,15 +305,17 @@ msgctxt "OpenType layout"
 msgid "Glyph Composition / Decomposition"
 msgstr "Кампанаванне/раскампанаванне гліфаў"
 
+# кхмерскае пісьмо
 #: src/open-type-layout.h:25
 msgctxt "OpenType layout"
 msgid "Conjunct Form After Ro"
-msgstr ""
+msgstr "Спалучаныя формы пасля Ро"
 
+# Індыйскае пісьмо, 'cjct' зычны+вірама+зычны замяняеца на лігатуру, (а ў Below-base Forms дадаецца падрадковы знак вірама замест зычны+вірама)
 #: src/open-type-layout.h:26
 msgctxt "OpenType layout"
 msgid "Conjunct Forms"
-msgstr ""
+msgstr "Спалучаныя формы"
 
 #: src/open-type-layout.h:27
 msgctxt "OpenType layout"
@@ -333,10 +337,11 @@ msgctxt "OpenType layout"
 msgid "Contextual Swash"
 msgstr "Кантэкстны росчырк"
 
+# звычайна для арабскага пісьма, рукапіснага тэксту, для праільнага злучэння асобных сімвалаў
 #: src/open-type-layout.h:31
 msgctxt "OpenType layout"
 msgid "Cursive Positioning"
-msgstr ""
+msgstr "Пазіцыянаванне курсіву"
 
 #: src/open-type-layout.h:32
 msgctxt "OpenType layout"
@@ -448,10 +453,13 @@ msgctxt "OpenType layout"
 msgid "Distances"
 msgstr "Адлегласці"
 
+# 'liga'Standard Ligatures, прадвызначана ўключаны, але можна адключыць;
+# 'rlig' Required Ligatures уключаны і нельга адкл;
+# 'dlig' Discretionary Ligatures адкл, але можна укл; магчымы варыянт дыскрэцыйныя і дадатковыя лігатуры, зробена з улікам усіх трох варыянтаў абавязковы-неабавязковы-стандартны
 #: src/open-type-layout.h:54
 msgctxt "OpenType layout"
 msgid "Discretionary Ligatures"
-msgstr "Дадатковыя лігатуры"
+msgstr "Неабавязковыя лігатуры"
 
 # dnom, ніжняя частка дробу, fraction
 #: src/open-type-layout.h:55
@@ -473,7 +481,7 @@ msgstr "Экспертныя формы"
 #: src/open-type-layout.h:58
 msgctxt "OpenType layout"
 msgid "Final Glyph on Line Alternates"
-msgstr ""
+msgstr "Варыянты завяршальнага гліфа радка"
 
 #: src/open-type-layout.h:59
 msgctxt "OpenType layout"
@@ -485,11 +493,13 @@ msgctxt "OpenType layout"
 msgid "Terminal Forms #3"
 msgstr "Канцавыя формы №3"
 
+# сімвалы ў канцы слова
 #: src/open-type-layout.h:61
 msgctxt "OpenType layout"
 msgid "Terminal Forms"
 msgstr "Канцавыя формы"
 
+# у матэматычных формулах
 #: src/open-type-layout.h:62
 msgctxt "OpenType layout"
 msgid "Flattened accent forms"
@@ -508,7 +518,7 @@ msgstr "Поўная шырыня"
 #: src/open-type-layout.h:65
 msgctxt "OpenType layout"
 msgid "Half Forms"
-msgstr ""
+msgstr "Паўформы"
 
 #: src/open-type-layout.h:66
 msgctxt "OpenType layout"
@@ -528,7 +538,7 @@ msgstr "Гістарычныя формы"
 #: src/open-type-layout.h:69
 msgctxt "OpenType layout"
 msgid "Horizontal Kana Alternates"
-msgstr "Варыянты гарызантальнай кана"
+msgstr "Гарызантальныя варыянты кана"
 
 #: src/open-type-layout.h:70
 msgctxt "OpenType layout"
@@ -540,6 +550,8 @@ msgctxt "OpenType layout"
 msgid "Hangul"
 msgstr "Хангыль"
 
+# Кандзі ходзё, 補助, кана ほじょ
+# Японскі стандарт JIS X 0212:1990, насамрэч ходзё кандзі на японскай азначае дадатковыя сімвалы, але ў арыгінале не перакладзена і я таксама пакіну як ёсць
 #: src/open-type-layout.h:72
 msgctxt "OpenType layout"
 msgid "Hojo Kanji Forms"
@@ -565,10 +577,11 @@ msgctxt "OpenType layout"
 msgid "Italics"
 msgstr "Курсіў"
 
+# Арабская, іўрыт. Спалучэнне сімвалаў, падстаўляе адмыслова створаныя сімвалы з іншай шырынёй.
 #: src/open-type-layout.h:77
 msgctxt "OpenType layout"
 msgid "Justification Alternates"
-msgstr ""
+msgstr "Варыянты выраўноўвання"
 
 #: src/open-type-layout.h:78
 msgctxt "OpenType layout"
@@ -605,6 +618,7 @@ msgctxt "OpenType layout"
 msgid "Standard Ligatures"
 msgstr "Стандартныя лігатуры"
 
+# Карэйскае пісьмо хангыль, кожны сімвал складаецца з трох элементаў (чамо): пачатковага, цэнтральнага і канцавога. Часам чамо перакладаюць апісальна «элемент хангыль»
 #: src/open-type-layout.h:85
 msgctxt "OpenType layout"
 msgid "Leading Jamo Forms"
@@ -615,20 +629,22 @@ msgctxt "OpenType layout"
 msgid "Lining Figures"
 msgstr "Маюскульныя лічбы"
 
+# напрыклад абрысы балгарскай кірыліцы адрозніваюцца ад нашых
 #: src/open-type-layout.h:87
 msgctxt "OpenType layout"
 msgid "Localized Forms"
 msgstr "Лакалізаваныя формы"
 
+# Для арабскага пісьма, неведама нашто, бо неведама калі трэба пісаць арабіцай злева направа
 #: src/open-type-layout.h:88
 msgctxt "OpenType layout"
 msgid "Left-to-right alternates"
-msgstr ""
+msgstr "Варыянты для напрамку злева направа"
 
 #: src/open-type-layout.h:89
 msgctxt "OpenType layout"
 msgid "Left-to-right mirrored forms"
-msgstr ""
+msgstr "Люстраныя формы для напрамку злева направа"
 
 #: src/open-type-layout.h:90
 msgctxt "OpenType layout"
@@ -638,27 +654,29 @@ msgstr "Пазіцыянаванне знакаў"
 #: src/open-type-layout.h:91
 msgctxt "OpenType layout"
 msgid "Medial Forms #2"
-msgstr ""
+msgstr "Сярэдзінныя формы №2"
 
+# Для арабскай вязі, розныя рысункі сімвалаў размешчаных ў сярэдзіне, пачатку, канцы слова, размешчаных асобна
+# Medial Forms (medi), Initial Forms (init), Final Forms (fina), Isolated Forms (isol)
 #: src/open-type-layout.h:92
 msgctxt "OpenType layout"
 msgid "Medial Forms"
-msgstr ""
+msgstr "Сярэдзінныя формы"
 
 #: src/open-type-layout.h:93
 msgctxt "OpenType layout"
 msgid "Mathematical Greek"
-msgstr ""
+msgstr "Грэчаскія матэматычныя"
 
 #: src/open-type-layout.h:94
 msgctxt "OpenType layout"
 msgid "Mark to Mark Positioning"
-msgstr ""
+msgstr "Пазіцыянаванне знак да знака"
 
 #: src/open-type-layout.h:95
 msgctxt "OpenType layout"
 msgid "Mark Positioning via Substitution"
-msgstr ""
+msgstr "Пазіцыянаванне знакаў праз замену"
 
 # анатацыя мае іншы сэнс, функцыя заключае сімвал у геаметрычныя фігуры, дужкі
 #: src/open-type-layout.h:96
@@ -674,7 +692,7 @@ msgstr "Формы кандзі NLC"
 #: src/open-type-layout.h:98
 msgctxt "OpenType layout"
 msgid "Nukta Forms"
-msgstr "Формы Нукта"
+msgstr "Формы нукта"
 
 # numr, верхняя частка дробу, fraction
 #: src/open-type-layout.h:99
@@ -724,25 +742,27 @@ msgctxt "OpenType layout"
 msgid "Proportional Figures"
 msgstr "Прапарцыянальныя лічбы"
 
+# кхмерскае пісьмо, падобна на лігатуры, спалучае два сімвалы ў адзін, дзе перад, (пад, над, пасля) зычным стаіць значок галоснай літары
 #: src/open-type-layout.h:108
 msgctxt "OpenType layout"
 msgid "Pre-Base Forms"
-msgstr ""
+msgstr "Перадбазавыя формы"
 
 #: src/open-type-layout.h:109
 msgctxt "OpenType layout"
 msgid "Pre-base Substitutions"
-msgstr ""
+msgstr "Перадбазавыя замены"
 
+# кхмерскае пісьмо, падобна на лігатуры, спалучае два сімвалы ў адзін, дзе пасля (пад, над, перад) зычнага стаіць значок галоснай літары
 #: src/open-type-layout.h:110
 msgctxt "OpenType layout"
 msgid "Post-base Forms"
-msgstr ""
+msgstr "Паслябазавыя формы"
 
 #: src/open-type-layout.h:111
 msgctxt "OpenType layout"
 msgid "Post-base Substitutions"
-msgstr ""
+msgstr "Паслябазавыя замены"
 
 #: src/open-type-layout.h:112
 msgctxt "OpenType layout"
@@ -754,30 +774,34 @@ msgctxt "OpenType layout"
 msgid "Quarter Widths"
 msgstr "Чвэрць шырыні"
 
+# чаргаванне рысункаў аднаго сімвала, напрыклад пры імітацыіі каліграфіі
 #: src/open-type-layout.h:114
 msgctxt "OpenType layout"
 msgid "Randomize"
-msgstr ""
+msgstr "Выпадковасць"
 
 #: src/open-type-layout.h:115
 msgctxt "OpenType layout"
 msgid "Required Contextual Alternates"
-msgstr ""
+msgstr "Абавязковыя кантэкстныя варыянты"
 
+# дэванагары, спалучэнні з сімвалам Ra, замена спалучэнняў на адмысловыя сімвалы, reph надрадковы Ra, rakar падрадковы Ra
 #: src/open-type-layout.h:116
 msgctxt "OpenType layout"
 msgid "Rakar Forms"
-msgstr "Формы Ракар"
+msgstr "Формы ракар"
 
+# Арабскае пісьмо, rlig, пасляддоўнасці сімвалаў, якія заўсёды павінны пераўтварацца ў лігатуры
 #: src/open-type-layout.h:117
 msgctxt "OpenType layout"
 msgid "Required Ligatures"
-msgstr ""
+msgstr "Абавязковыя лігатуры"
 
+# дэванагары, спалучэнні з сімвалам Ra, замена спалучэнняў на адмысловыя сімвалы, reph надрадковы Ra, rakar падрадковы Ra
 #: src/open-type-layout.h:118
 msgctxt "OpenType layout"
 msgid "Reph Forms"
-msgstr ""
+msgstr "Формы рэпх"
 
 #: src/open-type-layout.h:119
 msgctxt "OpenType layout"
@@ -787,22 +811,24 @@ msgstr "Правыя межы"
 #: src/open-type-layout.h:120
 msgctxt "OpenType layout"
 msgid "Right-to-left alternates"
-msgstr ""
+msgstr "Варыянты для напрамку справа налева"
 
 #: src/open-type-layout.h:121
 msgctxt "OpenType layout"
 msgid "Right-to-left mirrored forms"
-msgstr ""
+msgstr "Люстраныя формы для напрамку справа налева"
 
+# японскае пісьмо, яно ж фурыгана, дробным шрыфтам побач з (або над) іерогліфамі пішацца вымаўленне хіраганай/катаканай, а таксама рамадзі -транслітарацыя лацінкай
 #: src/open-type-layout.h:122
 msgctxt "OpenType layout"
 msgid "Ruby Notation Forms"
-msgstr ""
+msgstr "Формы дапаможных запісаў рубі"
 
+# У варыятыўных шрыфтах, для пэўных значэнняў насычанасці або шырыні (ці іншай уласцівасці), рысунак сімвала заменяецца на іншы адмыслова створаны варыянт
 #: src/open-type-layout.h:123
 msgctxt "OpenType layout"
 msgid "Required Variation Alternates"
-msgstr ""
+msgstr "Абавязковыя альтэрнатывы варыяцый"
 
 #: src/open-type-layout.h:124
 msgctxt "OpenType layout"
@@ -929,11 +955,13 @@ msgctxt "OpenType layout"
 msgid "Stylistic Set 20"
 msgstr "Стылістычны набор 20"
 
+# для ніжняга і верхняга індэкса, можа быць 2 узроўні. Напрыклад Х у ступені У, дзе У у ступені (Х-1)
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
 msgid "Math script style alternates"
-msgstr ""
+msgstr "Варыянты стылю матэматычных запісаў"
 
+# stch, нешта пра арабскае пісьмо і расцягванне сімвала на ўсю шырыню тэкста праз замену паслядоўнайцей сімвалаў, падстаноўка канцавога сімвала. Спеціфічны шахер-махер.
 #: src/open-type-layout.h:150
 msgctxt "OpenType layout"
 msgid "Stretching Glyph Decomposition"
@@ -964,10 +992,11 @@ msgctxt "OpenType layout"
 msgid "Trailing Jamo Forms"
 msgstr "Канцавыя формы чамо"
 
+# Японскае пісьмо. Замяняе сімвалы са спрошчаных на традыцыйныя ва ўласных імёнах
 #: src/open-type-layout.h:156
 msgctxt "OpenType layout"
 msgid "Traditional Name Forms"
-msgstr ""
+msgstr "Традыцыйныя формы назваў"
 
 #: src/open-type-layout.h:157
 msgctxt "OpenType layout"
@@ -992,7 +1021,7 @@ msgstr "Адзіны рэгістр"
 #: src/open-type-layout.h:161
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Metrics"
-msgstr ""
+msgstr "Альтэрнатыўныя вертыкальныя метрыкі"
 
 #: src/open-type-layout.h:162
 msgctxt "OpenType layout"
@@ -1007,7 +1036,7 @@ msgstr "Вертыкальнае пісьмо"
 #: src/open-type-layout.h:164
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Half Metrics"
-msgstr ""
+msgstr "Альтэрнатыўныя вертыкальныя палавінныя метрыкі"
 
 #: src/open-type-layout.h:165
 msgctxt "OpenType layout"
@@ -1027,7 +1056,7 @@ msgstr "Вертыкальны кернінг"
 #: src/open-type-layout.h:168
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Vertical Metrics"
-msgstr ""
+msgstr "Прапарцыянальныя альтэрнатыўныя вертыкальныя метрыкі"
 
 #: src/open-type-layout.h:169
 msgctxt "OpenType layout"
@@ -1069,13 +1098,13 @@ msgstr "Перакрэслены нуль"
 #~ "будзе выглядаць у розных памерах."
 
 #~ msgid ""
-#~ "GNOME Fonts also supports installing new font files downloaded in the ."
-#~ "ttf and other formats. Fonts may be installed only for your use or made "
-#~ "available to all users on the computer."
+#~ "GNOME Fonts also supports installing new font files downloaded in "
+#~ "the .ttf and other formats. Fonts may be installed only for your use or "
+#~ "made available to all users on the computer."
 #~ msgstr ""
-#~ "«Шрыфты GNOME» таксама падтрымлівае ўсталяванне новых шрыфтоў з файлаў ."
-#~ "ttf і іншых фарматаў. Шрыфты можна ўсталяваць толькі для сябе або для "
-#~ "ўсіх карыстальнікаў камп'ютара."
+#~ "«Шрыфты GNOME» таксама падтрымлівае ўсталяванне новых шрыфтоў з "
+#~ "файлаў .ttf і іншых фарматаў. Шрыфты можна ўсталяваць толькі для сябе або "
+#~ "для ўсіх карыстальнікаў камп'ютара."
 
 #~ msgid "Installing…"
 #~ msgstr "Усталяванне…"
