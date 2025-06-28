@@ -1,9 +1,9 @@
 # gnome-font-viewer ja.po.
-# Copyright (C) 1998, 2000-2015, 2019-2020, 2022 gnome-util's COPYRIGHT HOLDER
+# Copyright (C) 1998, 2000-2015, 2019-2020, 2022, 2025 gnome-font-viewer's COPYRIGHT HOLDER
 # Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1998.
 # Yuusuke Tahara <tahara@gnome.gr.jp>, 2000.
 # Yukihiro Nakai <nakai@gnome.gr.jp>, 2000.
-# Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2000-2002, 2009, 2011.
+# Kusano Takayuki <https://bsky.app/profile/tkusano.jp>, 2000-2002, 2009, 2011, 2025.
 # Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.
 # KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
 # Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
@@ -15,29 +15,32 @@
 # Hajime Taira <htaira@redhat.com>, 2015.
 # Manato Neon <neonmanato@outlook.jp>, 2019.
 # sicklylife <translation@sicklylife.jp>, 2019-2020, 2022.
+# Makoto Sakaguchi <ycco34vx@gmail.com>, 2025.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-font-viewer master\n"
+"Project-Id-Version: gnome-font-viewer main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
-"issues\n"
-"POT-Creation-Date: 2022-02-26 13:34+0000\n"
-"PO-Revision-Date: 2022-03-13 20:40+0900\n"
-"Last-Translator: sicklylife <translation@sicklylife.jp>\n"
-"Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
+"issues/\n"
+"POT-Creation-Date: 2025-05-27 23:10+0000\n"
+"PO-Revision-Date: 2025-06-28 21:45+0900\n"
+"Last-Translator: Makoto Sakaguchi <ycco34vx@gmail.com>\n"
+"Language-Team: Japanese <https://l10n.gnome.org/teams/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.6\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:1166
-#: src/org.gnome.font-viewer.desktop.in.in:3
+#: data/org.gnome.font-viewer.appdata.xml.in:6
+#: data/org.gnome.font-viewer.desktop.in.in:3 src/font-view-application.c:124
+#: src/font-view-application.c:150
 msgid "Fonts"
 msgstr "フォント"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1167
-#: src/org.gnome.font-viewer.desktop.in.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7
+#: data/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "システム上のフォントを閲覧します"
 
@@ -47,9 +50,9 @@ msgid ""
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"“フォント”を使用すると、インストール済みのフォントをサムネイルで一覧表示で"
-"きます。サムネイルを選択して、様々なサイズでフォントがどのように表示されるか"
-"を確認することができます。"
+"“フォント”を使用すると、お使いのコンピューターにインストールされているフォン"
+"トをサムネイルで表示します。サムネイルを選択して、そのフォントがさまざまなサ"
+"イズでどのように表示されるかを詳しく確認できます。"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
@@ -57,13 +60,20 @@ msgid ""
 "other formats. Fonts may be installed only for your use or made available to "
 "all users on the computer."
 msgstr ""
-"“フォント”は .ttf やその他の形式でダウンロードした新しいフォントファイルの"
-"インストールも可能です。フォントを自分専用にインストールすることも、コン"
-"ピューター上のすべてのユーザーで利用可能にすることもできます。"
+"“フォント”では、ダウンロードした .ttf ファイルやその他の形式の新しいフォント"
+"ファイルのインストールにも対応しています。フォントを自分専用としてインストー"
+"ルすることも、コンピューター上のすべてのユーザーが使用できるようにインストー"
+"ルできます。"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.font-viewer.appdata.xml.in:22 src/font-view-application.c:126
 msgid "The GNOME Project"
 msgstr "The GNOME Project"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.font-viewer.desktop.in.in:6
+msgid "fonts;fontface;"
+msgstr "fonts;fontface;フォント;フォントフェイス;フォント書体;"
 
 #: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
@@ -85,962 +95,988 @@ msgstr "SIZE"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
-#: src/font-view-app-menu.ui:6
-msgid "About Fonts"
-msgstr "“フォント”について"
+#: src/font-view-application.c:79 src/font-view-window.c:741
+msgid "Could Not Display Font"
+msgstr "フォントを表示できませんでした"
 
-#: src/font-view.c:205
-msgid "GNOME Fonts"
+#: src/font-view-application.c:129
+msgid "translator-credits"
 msgstr ""
+"Eiichiro ITANI <emu@ceres.dti.ne.jp>\n"
+"Yuusuke Tahara <tahara@gnome.gr.jp>\n"
+"Yukihiro Nakai <nakai@gnome.gr.jp>\n"
+"Kusano Takayuki https://bsky.app/profile/tkusano.jp\n"
+"Japanese Translation Team https://l10n.gnome.org/teams/ja/\n"
+"Sun G11n <gnome_int_l10n@ireland.sun.com>\n"
+"KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>\n"
+"Takeshi AIHANA <takeshi.aihana@gmail.com>\n"
+"Satoru SATOH <ss@gnome.gr.jp>\n"
+"Hideki Yamane (Debian-JP) <henrich@debian.or.jp>\n"
+"Yasumichi Akahoshi <yasumichi@vinelinux.org>\n"
+"OKANO Takayoshi <kano@na.rim.or.jp>\n"
+"松澤 二郎 <jmatsuzawa@gnome.org>\n"
+"Hajime Taira <htaira@redhat.com>\n"
+"Manato Neon <neonmanato@outlook.jp>\n"
+"sicklylife <translation@sicklylife.jp>\n"
+"Makoto Sakaguchi <ycco34vx@gmail.com>"
 
-#: src/font-view.c:212
-msgid "Show the application's version"
-msgstr "アプリケーションのバージョンを表示する"
+#: src/font-view-window.c:120
+msgid "Failed"
+msgstr "失敗"
+
+#: src/font-view-window.c:128
+msgid "Installed"
+msgstr "インストール済み"
+
+#: src/font-view-window.c:133
+msgid "Installing"
+msgstr "インストール中"
+
+#: src/font-view-window.c:136 src/font-view-window.ui:182
+msgid "_Install"
+msgstr "インストール(_I)"
 
 #. Translators, this string is used to display information about
 #. * a 'font variation axis'. The %s gets replaced with the name
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:327
+#: src/font-view-window.c:250
 #, c-format
 msgid "%s %g — %g, default %g"
-msgstr ""
+msgstr "%s %g — %g、既定値 %g"
 
-#: src/font-view.c:378
+#: src/font-view-window.c:305
 #, c-format
 msgid "Instance %d"
-msgstr ""
+msgstr "インスタンス %d"
 
 #. Translators, this seperates the list of Layout
 #. * Features.
-#: src/font-view.c:418
+#: src/font-view-window.c:343
 msgctxt "OpenType layout"
 msgid ", "
-msgstr ""
+msgstr "、"
 
-#: src/font-view.c:443
+#: src/font-view-window.c:370
 msgid "Name"
 msgstr "名前"
 
-#: src/font-view.c:446
+#: src/font-view-window.c:373
 msgid "Location"
 msgstr "場所"
 
-#: src/font-view.c:449
+#: src/font-view-window.c:376
 msgid "Style"
 msgstr "スタイル"
 
-#: src/font-view.c:459
+#: src/font-view-window.c:386
 msgid "Type"
 msgstr "種類"
 
-#: src/font-view.c:525 src/font-view.c:551
+#: src/font-view-window.c:452 src/font-view-window.c:478
 msgid "Version"
 msgstr "バージョン"
 
-#: src/font-view.c:529 src/font-view.c:556
+#: src/font-view-window.c:456 src/font-view-window.c:483
 msgid "Copyright"
 msgstr "著作権"
 
-#: src/font-view.c:533
+#: src/font-view-window.c:460
 msgid "Description"
 msgstr "説明"
 
-#: src/font-view.c:537
+#: src/font-view-window.c:464
 msgid "Manufacturer"
 msgstr "メーカー"
 
-#: src/font-view.c:541
+#: src/font-view-window.c:468
 msgid "Designer"
 msgstr "デザイナー"
 
-#: src/font-view.c:545
+#: src/font-view-window.c:472
 msgid "License"
 msgstr "ライセンス"
 
-#: src/font-view.c:568
+#: src/font-view-window.c:497
 msgid "Glyph Count"
 msgstr "グリフ数"
 
-#: src/font-view.c:570
+#: src/font-view-window.c:499
 msgid "Color Glyphs"
 msgstr "カラーグリフ"
 
-#: src/font-view.c:571
+#: src/font-view-window.c:500
 msgid "yes"
-msgstr ""
+msgstr "はい"
 
-#: src/font-view.c:571
+#: src/font-view-window.c:500
 msgid "no"
-msgstr ""
+msgstr "いいえ"
 
-#: src/font-view.c:575
+#: src/font-view-window.c:504
 msgid "Layout Features"
 msgstr "レイアウト機能"
 
-#: src/font-view.c:581
+#: src/font-view-window.c:510
 msgid "Variation Axes"
-msgstr ""
+msgstr "バリエーション軸"
 
-#: src/font-view.c:588
+#: src/font-view-window.c:517
 msgid "Named Styles"
-msgstr ""
+msgstr "名前付きスタイル"
 
-#: src/font-view.c:600
-msgid "Failed"
-msgstr "失敗"
+#: src/font-view-window.c:558 src/font-view-window.c:661
+msgid "Could Not Install Font"
+msgstr "フォントをインストールできませんでした"
 
-#: src/font-view.c:609
-msgid "Installed"
-msgstr "インストール済み"
-
-#: src/font-view.c:614
-msgid "Installing"
-msgstr "インストール中"
-
-#: src/font-view.c:617 src/font-view.c:978
-msgid "Install"
-msgstr "インストール"
-
-#: src/font-view.c:739
-msgid "This font could not be installed."
-msgstr "フォントをインストールできませんでした。"
-
-#: src/font-view.c:874
-msgid "This font could not be displayed."
-msgstr "フォントを表示できませんでした。"
-
-#: src/font-view.c:992
-msgid "Info"
-msgstr "情報"
-
-#: src/font-view.c:1008
-msgid "Back"
-msgstr "戻る"
-
-#: src/font-view.c:1090
+#: src/font-view-window.ui:31
 msgid "All Fonts"
 msgstr "すべてのフォント"
 
-#: src/font-view.c:1170
-msgid "translator-credits"
-msgstr ""
-"Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1998.\n"
-"Yuusuke Tahara <tahara@gnome.gr.jp>, 2000.\n"
-"Yukihiro Nakai <nakai@gnome.gr.jp>, 2000.\n"
-"Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2000-2002, 2009, 2011.\n"
-"Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.\n"
-"KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.\n"
-"Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.\n"
-"Satoru SATOH <ss@gnome.gr.jp>, 2006.\n"
-"Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009-2010.\n"
-"Yasumichi Akahoshi <yasumichi@vinelinux.org>, 2010-2011.\n"
-"OKANO Takayoshi <kano@na.rim.or.jp>, 2011-2012.\n"
-"松澤 二郎 <jmatsuzawa@gnome.org>, 2012-2015.\n"
-"Hajime Taira <htaira@redhat.com>, 2015.\n"
-"Manato Neon <neonmanato@outlook.jp>, 2019.\n"
-"sicklylife <translation@sicklylife.jp>, 2019-2020, 2022."
+#: src/font-view-window.ui:39
+msgid "Search"
+msgstr "検索"
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in.in:6
-msgid "fonts;fontface;"
-msgstr "fonts;fontface;フォント書体;"
+#: src/font-view-window.ui:47
+msgid "About Fonts"
+msgstr "“フォント”について"
+
+#: src/font-view-window.ui:59
+msgid "Search fonts"
+msgstr "フォントを検索"
+
+#: src/font-view-window.ui:185
+msgid "Install Font"
+msgstr "フォントをインストール"
+
+#: src/font-view-window.ui:190
+msgid "I_nfo"
+msgstr "情報(_N)"
+
+#: src/font-view-window.ui:192
+msgid "Font Details"
+msgstr "フォントの詳細"
+
+#: src/font-view-window.ui:238
+msgid "_Close"
+msgstr "閉じる(_C)"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "GNOME フォント"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "アプリケーションのバージョンを表示する"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
 msgid "Access All Alternates"
-msgstr ""
+msgstr "代替グリフにアクセス"
 
 #: src/open-type-layout.h:14
 msgctxt "OpenType layout"
 msgid "Above-base Forms"
-msgstr ""
+msgstr "ベース上字形"
 
 #: src/open-type-layout.h:15
 msgctxt "OpenType layout"
 msgid "Above-base Mark Positioning"
-msgstr ""
+msgstr "ベース上マーク配置"
 
 #: src/open-type-layout.h:16
 msgctxt "OpenType layout"
 msgid "Above-base Substitutions"
-msgstr ""
+msgstr "ベース上置換"
 
 #: src/open-type-layout.h:17
 msgctxt "OpenType layout"
 msgid "Alternative Fractions"
-msgstr ""
+msgstr "代替分数"
 
 #: src/open-type-layout.h:18
 msgctxt "OpenType layout"
 msgid "Akhands"
-msgstr ""
+msgstr "Akhand"
 
 #: src/open-type-layout.h:19
 msgctxt "OpenType layout"
 msgid "Below-base Forms"
-msgstr ""
+msgstr "ベース下字形"
 
 #: src/open-type-layout.h:20
 msgctxt "OpenType layout"
 msgid "Below-base Mark Positioning"
-msgstr ""
+msgstr "ベース下マーク配置"
 
 #: src/open-type-layout.h:21
 msgctxt "OpenType layout"
 msgid "Below-base Substitutions"
-msgstr ""
+msgstr "ベース下置換"
 
 #: src/open-type-layout.h:22
 msgctxt "OpenType layout"
 msgid "Contextual Alternates"
-msgstr ""
+msgstr "前後関係に依存する字形"
 
 #: src/open-type-layout.h:23
 msgctxt "OpenType layout"
 msgid "Case-Sensitive Forms"
-msgstr ""
+msgstr "大小文字対応字形"
 
 #: src/open-type-layout.h:24
 msgctxt "OpenType layout"
 msgid "Glyph Composition / Decomposition"
-msgstr ""
+msgstr "字体粗版・分解"
 
 #: src/open-type-layout.h:25
 msgctxt "OpenType layout"
 msgid "Conjunct Form After Ro"
-msgstr ""
+msgstr "ロ後結合字形"
 
 #: src/open-type-layout.h:26
 msgctxt "OpenType layout"
 msgid "Conjunct Forms"
-msgstr ""
+msgstr "結合字形"
 
 #: src/open-type-layout.h:27
 msgctxt "OpenType layout"
 msgid "Contextual Ligatures"
-msgstr ""
+msgstr "前後関係に依存する合字"
 
 #: src/open-type-layout.h:28
 msgctxt "OpenType layout"
 msgid "Centered CJK Punctuation"
-msgstr ""
+msgstr "CJK 句読点中央配置"
 
 #: src/open-type-layout.h:29
 msgctxt "OpenType layout"
 msgid "Capital Spacing"
-msgstr ""
+msgstr "大文字間隔"
 
 #: src/open-type-layout.h:30
 msgctxt "OpenType layout"
 msgid "Contextual Swash"
-msgstr ""
+msgstr "前後関係に依存するスワッシュ字形"
 
 #: src/open-type-layout.h:31
 msgctxt "OpenType layout"
 msgid "Cursive Positioning"
-msgstr ""
+msgstr "筆記体配置"
 
 #: src/open-type-layout.h:32
 msgctxt "OpenType layout"
 msgid "Petite Capitals From Capitals"
-msgstr ""
+msgstr "大文字からの極小型大文字"
 
 #: src/open-type-layout.h:33
 msgctxt "OpenType layout"
 msgid "Small Capitals From Capitals"
-msgstr ""
+msgstr "大文字からの小型大文字"
 
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
 msgid "Character Variation 1"
-msgstr ""
+msgstr "字形変種 1"
 
 #: src/open-type-layout.h:35
 msgctxt "OpenType layout"
 msgid "Character Variation 2"
-msgstr ""
+msgstr "字形変種 2"
 
 #: src/open-type-layout.h:36
 msgctxt "OpenType layout"
 msgid "Character Variation 3"
-msgstr ""
+msgstr "字形変種 3"
 
 #: src/open-type-layout.h:37
 msgctxt "OpenType layout"
 msgid "Character Variation 4"
-msgstr ""
+msgstr "字形変種 4"
 
 #: src/open-type-layout.h:38
 msgctxt "OpenType layout"
 msgid "Character Variation 5"
-msgstr ""
+msgstr "字形変種 5"
 
 #: src/open-type-layout.h:39
 msgctxt "OpenType layout"
 msgid "Character Variation 6"
-msgstr ""
+msgstr "字形変種 6"
 
 #: src/open-type-layout.h:40
 msgctxt "OpenType layout"
 msgid "Character Variation 7"
-msgstr ""
+msgstr "字形変種 7"
 
 #: src/open-type-layout.h:41
 msgctxt "OpenType layout"
 msgid "Character Variation 8"
-msgstr ""
+msgstr "字形変種 8"
 
 #: src/open-type-layout.h:42
 msgctxt "OpenType layout"
 msgid "Character Variation 9"
-msgstr ""
+msgstr "字形変種 9"
 
 #: src/open-type-layout.h:43
 msgctxt "OpenType layout"
 msgid "Character Variation 10"
-msgstr ""
+msgstr "字形変種 10"
 
 #: src/open-type-layout.h:44
 msgctxt "OpenType layout"
 msgid "Character Variation 11"
-msgstr ""
+msgstr "字形変種 11"
 
 #: src/open-type-layout.h:45
 msgctxt "OpenType layout"
 msgid "Character Variation 12"
-msgstr ""
+msgstr "字形変種 12"
 
 #: src/open-type-layout.h:46
 msgctxt "OpenType layout"
 msgid "Character Variation 13"
-msgstr ""
+msgstr "字形変種 13"
 
 #: src/open-type-layout.h:47
 msgctxt "OpenType layout"
 msgid "Character Variation 14"
-msgstr ""
+msgstr "字形変種 14"
 
 #: src/open-type-layout.h:48
 msgctxt "OpenType layout"
 msgid "Character Variation 15"
-msgstr ""
+msgstr "字形変種 15"
 
 #: src/open-type-layout.h:49
 msgctxt "OpenType layout"
 msgid "Character Variation 16"
-msgstr ""
+msgstr "字形変種 16"
 
 #: src/open-type-layout.h:50
 msgctxt "OpenType layout"
 msgid "Character Variation 17"
-msgstr ""
+msgstr "字形変種 17"
 
 #: src/open-type-layout.h:51
 msgctxt "OpenType layout"
 msgid "Character Variation 18"
-msgstr ""
+msgstr "字形変種 18"
 
 #: src/open-type-layout.h:52
 msgctxt "OpenType layout"
 msgid "Character Variation 19"
-msgstr ""
+msgstr "字形変種 19"
 
 #: src/open-type-layout.h:53
 msgctxt "OpenType layout"
 msgid "Distances"
-msgstr ""
+msgstr "距離"
 
 #: src/open-type-layout.h:54
 msgctxt "OpenType layout"
 msgid "Discretionary Ligatures"
-msgstr ""
+msgstr "任意の合字"
 
 #: src/open-type-layout.h:55
 msgctxt "OpenType layout"
 msgid "Denominators"
-msgstr ""
+msgstr "分母"
 
 #: src/open-type-layout.h:56
 msgctxt "OpenType layout"
 msgid "Dotless Forms"
-msgstr ""
+msgstr "無点形"
 
 #: src/open-type-layout.h:57
 msgctxt "OpenType layout"
 msgid "Expert Forms"
-msgstr ""
+msgstr "エキスパート字形"
 
 #: src/open-type-layout.h:58
 msgctxt "OpenType layout"
 msgid "Final Glyph on Line Alternates"
-msgstr ""
+msgstr "行末字形代替"
 
 #: src/open-type-layout.h:59
 msgctxt "OpenType layout"
 msgid "Terminal Forms #2"
-msgstr ""
+msgstr "語末形 #2"
 
 #: src/open-type-layout.h:60
 msgctxt "OpenType layout"
 msgid "Terminal Forms #3"
-msgstr ""
+msgstr "語末形 #3"
 
 #: src/open-type-layout.h:61
 msgctxt "OpenType layout"
 msgid "Terminal Forms"
-msgstr ""
+msgstr "語末形"
 
 #: src/open-type-layout.h:62
 msgctxt "OpenType layout"
 msgid "Flattened accent forms"
-msgstr ""
+msgstr "平坦化アクセント形"
 
 #: src/open-type-layout.h:63
 msgctxt "OpenType layout"
 msgid "Fractions"
-msgstr ""
+msgstr "分数"
 
 #: src/open-type-layout.h:64
 msgctxt "OpenType layout"
 msgid "Full Widths"
-msgstr ""
+msgstr "等幅全角字形"
 
 #: src/open-type-layout.h:65
 msgctxt "OpenType layout"
 msgid "Half Forms"
-msgstr ""
+msgstr "半形"
 
 #: src/open-type-layout.h:66
 msgctxt "OpenType layout"
 msgid "Halant Forms"
-msgstr ""
+msgstr "Halant 字形"
 
 #: src/open-type-layout.h:67
 msgctxt "OpenType layout"
 msgid "Alternate Half Widths"
-msgstr ""
+msgstr "字幅半角メトリクス"
 
 #: src/open-type-layout.h:68
 msgctxt "OpenType layout"
 msgid "Historical Forms"
-msgstr ""
+msgstr "歴史的字形"
 
 #: src/open-type-layout.h:69
 msgctxt "OpenType layout"
 msgid "Horizontal Kana Alternates"
-msgstr ""
+msgstr "横組み用かな"
 
 #: src/open-type-layout.h:70
 msgctxt "OpenType layout"
 msgid "Historical Ligatures"
-msgstr ""
+msgstr "歴史的合字"
 
 #: src/open-type-layout.h:71
 msgctxt "OpenType layout"
 msgid "Hangul"
-msgstr ""
+msgstr "ハングル文字"
 
 #: src/open-type-layout.h:72
 msgctxt "OpenType layout"
 msgid "Hojo Kanji Forms"
-msgstr ""
+msgstr "補助漢字形"
 
 #: src/open-type-layout.h:73
 msgctxt "OpenType layout"
 msgid "Half Widths"
-msgstr ""
+msgstr "等幅半角字形"
 
 #: src/open-type-layout.h:74
 msgctxt "OpenType layout"
 msgid "Initial Forms"
-msgstr ""
+msgstr "語頭字形"
 
 #: src/open-type-layout.h:75
 msgctxt "OpenType layout"
 msgid "Isolated Forms"
-msgstr ""
+msgstr "独立字形"
 
 #: src/open-type-layout.h:76
 msgctxt "OpenType layout"
 msgid "Italics"
-msgstr ""
+msgstr "イタリック"
 
 #: src/open-type-layout.h:77
 msgctxt "OpenType layout"
 msgid "Justification Alternates"
-msgstr ""
+msgstr "両端揃え代替字形"
 
 #: src/open-type-layout.h:78
 msgctxt "OpenType layout"
 msgid "JIS78 Forms"
-msgstr ""
+msgstr "JIS78 字形"
 
 #: src/open-type-layout.h:79
 msgctxt "OpenType layout"
 msgid "JIS83 Forms"
-msgstr ""
+msgstr "JIS83 字形"
 
 #: src/open-type-layout.h:80
 msgctxt "OpenType layout"
 msgid "JIS90 Forms"
-msgstr ""
+msgstr "JIS90 字形"
 
 #: src/open-type-layout.h:81
 msgctxt "OpenType layout"
 msgid "JIS2004 Forms"
-msgstr ""
+msgstr "JIS2004 字形"
 
 #: src/open-type-layout.h:82
 msgctxt "OpenType layout"
 msgid "Kerning"
-msgstr ""
+msgstr "カーニング"
 
 #: src/open-type-layout.h:83
 msgctxt "OpenType layout"
 msgid "Left Bounds"
-msgstr ""
+msgstr "左境界"
 
 #: src/open-type-layout.h:84
 msgctxt "OpenType layout"
 msgid "Standard Ligatures"
-msgstr ""
+msgstr "標準合字"
 
 #: src/open-type-layout.h:85
 msgctxt "OpenType layout"
 msgid "Leading Jamo Forms"
-msgstr ""
+msgstr "Leading Jamo 字形"
 
 #: src/open-type-layout.h:86
 msgctxt "OpenType layout"
 msgid "Lining Figures"
-msgstr ""
+msgstr "ライニング数字"
 
 #: src/open-type-layout.h:87
 msgctxt "OpenType layout"
 msgid "Localized Forms"
-msgstr ""
+msgstr "ローカライズ字形"
 
 #: src/open-type-layout.h:88
 msgctxt "OpenType layout"
 msgid "Left-to-right alternates"
-msgstr ""
+msgstr "左横書き字形"
 
 #: src/open-type-layout.h:89
 msgctxt "OpenType layout"
 msgid "Left-to-right mirrored forms"
-msgstr ""
+msgstr "左横書き鏡像字形"
 
 #: src/open-type-layout.h:90
 msgctxt "OpenType layout"
 msgid "Mark Positioning"
-msgstr ""
+msgstr "記号配置"
 
 #: src/open-type-layout.h:91
 msgctxt "OpenType layout"
 msgid "Medial Forms #2"
-msgstr ""
+msgstr "語中形 #2"
 
 #: src/open-type-layout.h:92
 msgctxt "OpenType layout"
 msgid "Medial Forms"
-msgstr ""
+msgstr "語中形"
 
 #: src/open-type-layout.h:93
 msgctxt "OpenType layout"
 msgid "Mathematical Greek"
-msgstr ""
+msgstr "数学用ギリシャ文字"
 
 #: src/open-type-layout.h:94
 msgctxt "OpenType layout"
 msgid "Mark to Mark Positioning"
-msgstr ""
+msgstr "記号間配置"
 
 #: src/open-type-layout.h:95
 msgctxt "OpenType layout"
 msgid "Mark Positioning via Substitution"
-msgstr ""
+msgstr "置換による記号配置"
 
 #: src/open-type-layout.h:96
 msgctxt "OpenType layout"
 msgid "Alternate Annotation Forms"
-msgstr ""
+msgstr "修飾字形"
 
 #: src/open-type-layout.h:97
 msgctxt "OpenType layout"
 msgid "NLC Kanji Forms"
-msgstr ""
+msgstr "印刷標準字体"
 
 #: src/open-type-layout.h:98
 msgctxt "OpenType layout"
 msgid "Nukta Forms"
-msgstr ""
+msgstr "Nukta 字形"
 
 #: src/open-type-layout.h:99
 msgctxt "OpenType layout"
 msgid "Numerators"
-msgstr ""
+msgstr "分子"
 
 #: src/open-type-layout.h:100
 msgctxt "OpenType layout"
 msgid "Oldstyle Figures"
-msgstr ""
+msgstr "オールドスタイル数字"
 
 #: src/open-type-layout.h:101
 msgctxt "OpenType layout"
 msgid "Optical Bounds"
-msgstr ""
+msgstr "視覚的境界"
 
 #: src/open-type-layout.h:102
 msgctxt "OpenType layout"
 msgid "Ordinals"
-msgstr ""
+msgstr "上付き序数表記"
 
 #: src/open-type-layout.h:103
 msgctxt "OpenType layout"
 msgid "Ornaments"
-msgstr ""
+msgstr "オーナメント"
 
 #: src/open-type-layout.h:104
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Widths"
-msgstr ""
+msgstr "プロポーショナルメトリクス"
 
 #: src/open-type-layout.h:105
 msgctxt "OpenType layout"
 msgid "Petite Capitals"
-msgstr ""
+msgstr "小型大文字"
 
 #: src/open-type-layout.h:106
 msgctxt "OpenType layout"
 msgid "Proportional Kana"
-msgstr ""
+msgstr "プロポーショナルかな"
 
 #: src/open-type-layout.h:107
 msgctxt "OpenType layout"
 msgid "Proportional Figures"
-msgstr ""
+msgstr "プロポーショナル数字"
 
 #: src/open-type-layout.h:108
 msgctxt "OpenType layout"
 msgid "Pre-Base Forms"
-msgstr ""
+msgstr "基底前字形"
 
 #: src/open-type-layout.h:109
 msgctxt "OpenType layout"
 msgid "Pre-base Substitutions"
-msgstr ""
+msgstr "基底前置換"
 
 #: src/open-type-layout.h:110
 msgctxt "OpenType layout"
 msgid "Post-base Forms"
-msgstr ""
+msgstr "基底後字形"
 
 #: src/open-type-layout.h:111
 msgctxt "OpenType layout"
 msgid "Post-base Substitutions"
-msgstr ""
+msgstr "基底後置換"
 
 #: src/open-type-layout.h:112
 msgctxt "OpenType layout"
 msgid "Proportional Widths"
-msgstr ""
+msgstr "プロポーショナル字形"
 
 #: src/open-type-layout.h:113
 msgctxt "OpenType layout"
 msgid "Quarter Widths"
-msgstr ""
+msgstr "等幅四分字形"
 
 #: src/open-type-layout.h:114
 msgctxt "OpenType layout"
 msgid "Randomize"
-msgstr ""
+msgstr "ランダム化"
 
 #: src/open-type-layout.h:115
 msgctxt "OpenType layout"
 msgid "Required Contextual Alternates"
-msgstr ""
+msgstr "必須文脈字形"
 
 #: src/open-type-layout.h:116
 msgctxt "OpenType layout"
 msgid "Rakar Forms"
-msgstr ""
+msgstr "Rakar 字形"
 
 #: src/open-type-layout.h:117
 msgctxt "OpenType layout"
 msgid "Required Ligatures"
-msgstr ""
+msgstr "必須合字"
 
 #: src/open-type-layout.h:118
 msgctxt "OpenType layout"
 msgid "Reph Forms"
-msgstr ""
+msgstr "Reph 字形"
 
 #: src/open-type-layout.h:119
 msgctxt "OpenType layout"
 msgid "Right Bounds"
-msgstr ""
+msgstr "右境界"
 
 #: src/open-type-layout.h:120
 msgctxt "OpenType layout"
 msgid "Right-to-left alternates"
-msgstr ""
+msgstr "右横書き字形"
 
 #: src/open-type-layout.h:121
 msgctxt "OpenType layout"
 msgid "Right-to-left mirrored forms"
-msgstr ""
+msgstr "右横書き鏡像字形"
 
 #: src/open-type-layout.h:122
 msgctxt "OpenType layout"
 msgid "Ruby Notation Forms"
-msgstr ""
+msgstr "ルビ用字形"
 
 #: src/open-type-layout.h:123
 msgctxt "OpenType layout"
 msgid "Required Variation Alternates"
-msgstr ""
+msgstr "必須バリエーション字形"
 
 #: src/open-type-layout.h:124
 msgctxt "OpenType layout"
 msgid "Stylistic Alternates"
-msgstr ""
+msgstr "装飾字形"
 
 #: src/open-type-layout.h:125
 msgctxt "OpenType layout"
 msgid "Scientific Inferiors"
-msgstr ""
+msgstr "科学下付き文字"
 
 #: src/open-type-layout.h:126
 msgctxt "OpenType layout"
 msgid "Optical size"
-msgstr ""
+msgstr "オプティカルサイズ"
 
 #: src/open-type-layout.h:127
 msgctxt "OpenType layout"
 msgid "Small Capitals"
-msgstr ""
+msgstr "スモールキャップス"
 
 #: src/open-type-layout.h:128
 msgctxt "OpenType layout"
 msgid "Simplified Forms"
-msgstr ""
+msgstr "簡体字形"
 
 #: src/open-type-layout.h:129
 msgctxt "OpenType layout"
 msgid "Stylistic Set 1"
-msgstr ""
+msgstr "スタイリスティックセット 1"
 
 #: src/open-type-layout.h:130
 msgctxt "OpenType layout"
 msgid "Stylistic Set 2"
-msgstr ""
+msgstr "スタイリスティックセット 2"
 
 #: src/open-type-layout.h:131
 msgctxt "OpenType layout"
 msgid "Stylistic Set 3"
-msgstr ""
+msgstr "スタイリスティックセット 3"
 
 #: src/open-type-layout.h:132
 msgctxt "OpenType layout"
 msgid "Stylistic Set 4"
-msgstr ""
+msgstr "スタイリスティックセット 4"
 
 #: src/open-type-layout.h:133
 msgctxt "OpenType layout"
 msgid "Stylistic Set 5"
-msgstr ""
+msgstr "スタイリスティックセット 5"
 
 #: src/open-type-layout.h:134
 msgctxt "OpenType layout"
 msgid "Stylistic Set 6"
-msgstr ""
+msgstr "スタイリスティックセット 6"
 
 #: src/open-type-layout.h:135
 msgctxt "OpenType layout"
 msgid "Stylistic Set 7"
-msgstr ""
+msgstr "スタイリスティックセット 7"
 
 #: src/open-type-layout.h:136
 msgctxt "OpenType layout"
 msgid "Stylistic Set 8"
-msgstr ""
+msgstr "スタイリスティックセット 8"
 
 #: src/open-type-layout.h:137
 msgctxt "OpenType layout"
 msgid "Stylistic Set 9"
-msgstr ""
+msgstr "スタイリスティックセット 9"
 
 #: src/open-type-layout.h:138
 msgctxt "OpenType layout"
 msgid "Stylistic Set 10"
-msgstr ""
+msgstr "スタイリスティックセット 10"
 
 #: src/open-type-layout.h:139
 msgctxt "OpenType layout"
 msgid "Stylistic Set 11"
-msgstr ""
+msgstr "スタイリスティックセット 11"
 
 #: src/open-type-layout.h:140
 msgctxt "OpenType layout"
 msgid "Stylistic Set 12"
-msgstr ""
+msgstr "スタイリスティックセット 12"
 
 #: src/open-type-layout.h:141
 msgctxt "OpenType layout"
 msgid "Stylistic Set 13"
-msgstr ""
+msgstr "スタイリスティックセット 13"
 
 #: src/open-type-layout.h:142
 msgctxt "OpenType layout"
 msgid "Stylistic Set 14"
-msgstr ""
+msgstr "スタイリスティックセット 14"
 
 #: src/open-type-layout.h:143
 msgctxt "OpenType layout"
 msgid "Stylistic Set 15"
-msgstr ""
+msgstr "スタイリスティックセット 15"
 
 #: src/open-type-layout.h:144
 msgctxt "OpenType layout"
 msgid "Stylistic Set 16"
-msgstr ""
+msgstr "スタイリスティックセット 16"
 
 #: src/open-type-layout.h:145
 msgctxt "OpenType layout"
 msgid "Stylistic Set 17"
-msgstr ""
+msgstr "スタイリスティックセット 17"
 
 #: src/open-type-layout.h:146
 msgctxt "OpenType layout"
 msgid "Stylistic Set 18"
-msgstr ""
+msgstr "スタイリスティックセット 18"
 
 #: src/open-type-layout.h:147
 msgctxt "OpenType layout"
 msgid "Stylistic Set 19"
-msgstr ""
+msgstr "スタイリスティックセット 19"
 
 #: src/open-type-layout.h:148
 msgctxt "OpenType layout"
 msgid "Stylistic Set 20"
-msgstr ""
+msgstr "スタイリスティックセット 20"
 
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
 msgid "Math script style alternates"
-msgstr ""
+msgstr "数学筆記体字形"
 
 #: src/open-type-layout.h:150
 msgctxt "OpenType layout"
 msgid "Stretching Glyph Decomposition"
-msgstr ""
+msgstr "伸縮グリフ分解"
 
 #: src/open-type-layout.h:151
 msgctxt "OpenType layout"
 msgid "Subscript"
-msgstr ""
+msgstr "下付き文字"
 
 #: src/open-type-layout.h:152
 msgctxt "OpenType layout"
 msgid "Superscript"
-msgstr ""
+msgstr "上付き文字"
 
 #: src/open-type-layout.h:153
 msgctxt "OpenType layout"
 msgid "Swash"
-msgstr ""
+msgstr "スワッシュ字形"
 
 #: src/open-type-layout.h:154
 msgctxt "OpenType layout"
 msgid "Titling"
-msgstr ""
+msgstr "タイトリング"
 
 #: src/open-type-layout.h:155
 msgctxt "OpenType layout"
 msgid "Trailing Jamo Forms"
-msgstr ""
+msgstr "Trailing Jamo 字形"
 
 #: src/open-type-layout.h:156
 msgctxt "OpenType layout"
 msgid "Traditional Name Forms"
-msgstr ""
+msgstr "等幅字形"
 
 #: src/open-type-layout.h:157
 msgctxt "OpenType layout"
 msgid "Tabular Figures"
-msgstr ""
+msgstr "等幅数字"
 
 #: src/open-type-layout.h:158
 msgctxt "OpenType layout"
 msgid "Traditional Forms"
-msgstr ""
+msgstr "旧字体"
 
 #: src/open-type-layout.h:159
 msgctxt "OpenType layout"
 msgid "Third Widths"
-msgstr ""
+msgstr "等幅三分字形"
 
 #: src/open-type-layout.h:160
 msgctxt "OpenType layout"
 msgid "Unicase"
-msgstr ""
+msgstr "ユニケース"
 
 #: src/open-type-layout.h:161
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Metrics"
-msgstr ""
+msgstr "縦組みメトリクス"
 
 #: src/open-type-layout.h:162
 msgctxt "OpenType layout"
 msgid "Vattu Variants"
-msgstr ""
+msgstr "Vattu 字形"
 
 #: src/open-type-layout.h:163
 msgctxt "OpenType layout"
 msgid "Vertical Writing"
-msgstr ""
+msgstr "縦書き"
 
 #: src/open-type-layout.h:164
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Half Metrics"
-msgstr ""
+msgstr "縦組み字幅半角メトリクス"
 
+# 韓国語の字体における「Vowel Jamo」
 #: src/open-type-layout.h:165
 msgctxt "OpenType layout"
 msgid "Vowel Jamo Forms"
-msgstr ""
+msgstr "Vowel Jamo 字形"
 
 #: src/open-type-layout.h:166
 msgctxt "OpenType layout"
 msgid "Vertical Kana Alternates"
-msgstr ""
+msgstr "縦組み用かな"
 
 #: src/open-type-layout.h:167
 msgctxt "OpenType layout"
 msgid "Vertical Kerning"
-msgstr ""
+msgstr "縦方向カーニング"
 
 #: src/open-type-layout.h:168
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Vertical Metrics"
-msgstr ""
+msgstr "縦組みプロポーショナルメトリクス"
 
 #: src/open-type-layout.h:169
 msgctxt "OpenType layout"
 msgid "Vertical Alternates and Rotation"
-msgstr ""
+msgstr "縦書き代替文字と回転"
 
 #: src/open-type-layout.h:170
 msgctxt "OpenType layout"
 msgid "Vertical Alternates for Rotation"
-msgstr ""
+msgstr "回転用縦書き代替字形"
 
 #: src/open-type-layout.h:171
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
-msgstr ""
+msgstr "スラッシュ付きゼロ"
+
+#~ msgid "This font could not be installed."
+#~ msgstr "フォントをインストールできませんでした。"
+
+#~ msgid "This font could not be displayed."
+#~ msgstr "フォントを表示できませんでした。"
+
+#~ msgid "Info"
+#~ msgstr "情報"
+
+#~ msgid "Back"
+#~ msgstr "戻る"
 
 #~ msgid "About"
 #~ msgstr "このアプリケーションについて"
@@ -1059,9 +1095,6 @@ msgstr ""
 #~ msgstr ""
 #~ "利用可能なコマンドラインオプションの一覧を表示するには '%s --help' を実行"
 #~ "してください。"
-
-#~ msgid "_Close"
-#~ msgstr "閉じる(_C)"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "フォントの大きさ (デフォルトは 64)"
