@@ -10,10 +10,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-14 07:52+0000\n"
-"PO-Revision-Date: 2015-03-20 10:56+0700\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues/\n"
+"POT-Creation-Date: 2024-09-01 11:12+0000\n"
+"PO-Revision-Date: 2025-07-08 14:53+0700\n"
 "Last-Translator: Akom Chotiphantawanon <knight2000@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "Language: th\n"
@@ -21,144 +20,1044 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Poedit 3.6\n"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:1
-msgid ""
-"GNOME Font Viewer shows you the fonts installed on your computer for your "
-"use as thumbnails. Selecting any thumbnails shows the full view of how the "
-"font would look under various sizes."
-msgstr ""
-"โปรแกรมดูแบบอักษรของ GNOME จะแสดงแบบอักษรต่างๆ ที่ติดตั้งในคอมพิวเตอร์ของคุณในแบบภาพย่อ "
-"การเลือกภาพย่อใดๆ จะแสดงภาพเต็มของแบบอักษรในขนาดต่างๆ"
+#: data/org.gnome.font-viewer.appdata.xml.in:6 data/org.gnome.font-viewer.desktop.in.in:3
+#: src/font-view-application.c:124 src/font-view-application.c:150
+msgid "Fonts"
+msgstr "แบบอักษร"
 
-#: ../data/org.gnome.font-viewer.appdata.xml.in.h:2
-msgid ""
-"GNOME Font Viewer also supports installing new font files downloaded in the ."
-"ttf and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
-msgstr ""
-"โปรแกรมดูแบบอักษรของ GNOME ยังรองรับการติดตั้งแฟ้มแบบอักษรใหม่ที่ดาวน์โหลดเป็น .ttf "
-"หรือรูปแบบอื่นด้วย แบบอักษรอาจติดตั้งสำหรับคุณคนเดียวหรือให้ผู้ใช้ทุกคนในเครื่องสามารถใช้งานได้"
-
-#: ../src/font-thumbnailer.c:189
-msgid "Text to thumbnail (default: Aa)"
-msgstr "ข้อความที่จะใช้ทำภาพย่อ (ค่าปริยาย: Aa)"
-
-#: ../src/font-thumbnailer.c:189
-msgid "TEXT"
-msgstr "ข้อความ"
-
-#: ../src/font-thumbnailer.c:191
-msgid "Thumbnail size (default: 128)"
-msgstr "ขนาดของภาพย่อ (ค่าปริยาย: 128)"
-
-#: ../src/font-thumbnailer.c:191
-msgid "SIZE"
-msgstr "ขนาด"
-
-#: ../src/font-thumbnailer.c:193
-msgid "FONT-FILE OUTPUT-FILE"
-msgstr "แฟ้มแบบอักษร แฟ้มผลลัพธ์"
-
-#: ../src/font-view-app-menu.ui.h:1
-msgid "About"
-msgstr "เกี่ยวกับ"
-
-#: ../src/font-view-app-menu.ui.h:2
-msgid "Quit"
-msgstr "ออก"
-
-#: ../src/font-view.c:76
-msgid "GNOME Font Viewer"
-msgstr "โปรแกรมดูแบบอักษรของ GNOME"
-
-#: ../src/font-view.c:84
-msgid "Show the application's version"
-msgstr "แสดงรุ่นของโปรแกรม"
-
-#: ../src/font-view.c:196
-msgid "Name"
-msgstr "ชื่อ"
-
-#: ../src/font-view.c:199
-msgid "Style"
-msgstr "สไตล์"
-
-#: ../src/font-view.c:209
-msgid "Type"
-msgstr "ชนิด"
-
-#: ../src/font-view.c:254 ../src/font-view.c:273
-msgid "Version"
-msgstr "รุ่น"
-
-#: ../src/font-view.c:259 ../src/font-view.c:279
-msgid "Copyright"
-msgstr "ลิขสิทธิ์"
-
-#: ../src/font-view.c:264
-msgid "Description"
-msgstr "คำบรรยาย"
-
-#: ../src/font-view.c:295
-msgid "Install Failed"
-msgstr "ติดตั้งไม่สำเร็จ"
-
-#: ../src/font-view.c:302
-msgid "Installed"
-msgstr "ติดตั้งแล้ว"
-
-#: ../src/font-view.c:306 ../src/font-view.c:551
-msgid "Install"
-msgstr "ติดตั้ง"
-
-#: ../src/font-view.c:440
-msgid "This font could not be displayed."
-msgstr "แบบอักษรนี้ไม่สามารถแสดงได้"
-
-#: ../src/font-view.c:504 ../src/font-view.c:562
-msgid "Info"
-msgstr "ข้อมูล"
-
-#: ../src/font-view.c:579
-msgid "Back"
-msgstr "ย้อนกลับ"
-
-#: ../src/font-view.c:669
-msgid "All Fonts"
-msgstr "แบบอักษรทั้งหมด"
-
-#: ../src/font-view.c:787 ../src/org.gnome.font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "โปรแกรมดูแบบอักษร"
-
-#: ../src/font-view.c:788 ../src/org.gnome.font-viewer.desktop.in.in.h:2
+#: data/org.gnome.font-viewer.appdata.xml.in:7 data/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "ดูแบบอักษรต่างๆ ในระบบของคุณ"
 
-#: ../src/font-view.c:790
-msgid "translator-credits"
+#: data/org.gnome.font-viewer.appdata.xml.in:9
+msgid ""
+"Fonts shows you the fonts installed on your computer for your use as thumbnails. Selecting any thumbnails "
+"shows the full view of how the font would look under various sizes."
 msgstr ""
-"Theppitak Karoonboonyanan <theppitak@gmail.com>\n"
-"Akom Chotiphantawanon <knight2000@gmail.com>"
+"“แบบอักษร” จะแสดงแบบอักษรต่าง ๆ ที่ติดตั้งในคอมพิวเตอร์ของคุณในแบบภาพย่อ การเลือกภาพย่อใด ๆ "
+"จะแสดงภาพเต็มของแบบอักษรในขนาดต่าง ๆ"
 
-#: ../src/font-view.c:929
-msgid "[FILE...]"
-msgstr "[แฟ้ม...]"
+#: data/org.gnome.font-viewer.appdata.xml.in:15
+msgid ""
+"Fonts also supports installing new font files downloaded in the .ttf and other formats. Fonts may be "
+"installed only for your use or made available to all users on the computer."
+msgstr ""
+"“แบบอักษร” ยังรองรับการติดตั้งไฟล์แบบอักษรใหม่ที่ดาวน์โหลดเป็น .ttf หรือรูปแบบอื่นด้วย "
+"แบบอักษรอาจติดตั้งสำหรับคุณคนเดียวหรือให้ผู้ใช้ทุกคนในเครื่องสามารถใช้งานได้"
 
-#. I18N: The '%s' is replaced with the command name.
-#: ../src/font-view.c:937
-#, c-format
-msgid "Run '%s --help' to see a full list of available command line options."
-msgstr "เรียก '%s --help' เพื่อดูตัวเลือกทั้งหมดที่มีของบรรทัดคำสั่ง"
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.font-viewer.appdata.xml.in:22 src/font-view-application.c:126
+msgid "The GNOME Project"
+msgstr "โครงการ GNOME"
 
-#: ../src/org.gnome.font-viewer.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
 msgstr "แบบอักษร;ฟอนต์;"
 
-#~ msgid "About Font Viewer"
-#~ msgstr "เกี่ยวกับโปรแกรมดูแบบอักษร"
+#: src/font-thumbnailer.c:181
+msgid "Text to thumbnail (default: Aa)"
+msgstr "ข้อความที่จะใช้ทำภาพย่อ (ค่าปริยาย: Aa)"
+
+#: src/font-thumbnailer.c:181
+msgid "TEXT"
+msgstr "ข้อความ"
+
+#: src/font-thumbnailer.c:183
+msgid "Thumbnail size (default: 128)"
+msgstr "ขนาดของภาพย่อ (ค่าปริยาย: 128)"
+
+#: src/font-thumbnailer.c:183
+msgid "SIZE"
+msgstr "ขนาด"
+
+#: src/font-thumbnailer.c:185
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "ไฟล์แบบอักษร ไฟล์ผลลัพธ์"
+
+#: src/font-view-application.c:79 src/font-view-window.c:741
+msgid "Could Not Display Font"
+msgstr "ไม่สามารถแสดงผลแบบอักษรได้"
+
+#: src/font-view-application.c:129
+msgid "translator-credits"
+msgstr ""
+"Theppitak Karoonboonyanan <theppitak@gmail.com>\n"
+"Akom Chotiphantawanon <knight2000@gmail.com>\n"
+"Aefgh Threenine <aefgh39622@gmail.com>"
+
+#: src/font-view-window.c:120
+msgid "Failed"
+msgstr "ล้มเหลว"
+
+#: src/font-view-window.c:128
+msgid "Installed"
+msgstr "ติดตั้งแล้ว"
+
+#: src/font-view-window.c:133
+msgid "Installing"
+msgstr "กำลังติดตั้ง"
+
+#: src/font-view-window.c:136 src/font-view-window.ui:182
+msgid "_Install"
+msgstr "_ติดตั้ง"
+
+#. Translators, this string is used to display information about
+#. * a 'font variation axis'. The %s gets replaced with the name
+#. * of the axis, for example 'Width'. The three %g get replaced
+#. * with the minimum, maximum and default values for the axis.
+#.
+#: src/font-view-window.c:250
+#, c-format
+msgid "%s %g — %g, default %g"
+msgstr "%s %g — %g, ค่าปริยาย %g"
+
+#: src/font-view-window.c:305
+#, c-format
+msgid "Instance %d"
+msgstr "อินสแตนซ์ %d"
+
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view-window.c:343
+msgctxt "OpenType layout"
+msgid ", "
+msgstr ", "
+
+#: src/font-view-window.c:370
+msgid "Name"
+msgstr "ชื่อ"
+
+#: src/font-view-window.c:373
+msgid "Location"
+msgstr "ตำแหน่งที่ตั้ง"
+
+#: src/font-view-window.c:376
+msgid "Style"
+msgstr "สไตล์"
+
+#: src/font-view-window.c:386
+msgid "Type"
+msgstr "ชนิด"
+
+#: src/font-view-window.c:452 src/font-view-window.c:478
+msgid "Version"
+msgstr "รุ่น"
+
+#: src/font-view-window.c:456 src/font-view-window.c:483
+msgid "Copyright"
+msgstr "ลิขสิทธิ์"
+
+#: src/font-view-window.c:460
+msgid "Description"
+msgstr "คำบรรยาย"
+
+#: src/font-view-window.c:464
+msgid "Manufacturer"
+msgstr "ผู้ผลิต"
+
+#: src/font-view-window.c:468
+msgid "Designer"
+msgstr "ผู้ออกแบบ"
+
+#: src/font-view-window.c:472
+msgid "License"
+msgstr "สัญญาอนุญาต"
+
+#: src/font-view-window.c:497
+msgid "Glyph Count"
+msgstr "จำนวนรูปอักขระ"
+
+#: src/font-view-window.c:499
+msgid "Color Glyphs"
+msgstr "รูปอักขระสี"
+
+#: src/font-view-window.c:500
+msgid "yes"
+msgstr "ใช่"
+
+#: src/font-view-window.c:500
+msgid "no"
+msgstr "ไม่"
+
+#: src/font-view-window.c:504
+msgid "Layout Features"
+msgstr "คุณลักษณะเค้าโครง"
+
+#: src/font-view-window.c:510
+msgid "Variation Axes"
+msgstr "แกนการแปรผัน"
+
+#: src/font-view-window.c:517
+msgid "Named Styles"
+msgstr "ลักษณะที่ตั้งชื่อ"
+
+#: src/font-view-window.c:558 src/font-view-window.c:661
+msgid "Could Not Install Font"
+msgstr "ไม่สามารถติดตั้งแบบอักษรได้"
+
+#: src/font-view-window.ui:31
+msgid "All Fonts"
+msgstr "แบบอักษรทั้งหมด"
+
+#: src/font-view-window.ui:39
+msgid "Search"
+msgstr "ค้นหา"
+
+#: src/font-view-window.ui:47
+msgid "About Fonts"
+msgstr "เกี่ยวกับ “แบบอักษร”"
+
+#: src/font-view-window.ui:59
+msgid "Search fonts"
+msgstr "ค้นหาแบบอักษร"
+
+#: src/font-view-window.ui:185
+msgid "Install Font"
+msgstr "ติดตั้งแบบอักษร"
+
+#: src/font-view-window.ui:190
+msgid "I_nfo"
+msgstr "_ข้อมูล"
+
+#: src/font-view-window.ui:192
+msgid "Font Details"
+msgstr "รายละเอียดแบบอักษร"
+
+#: src/font-view-window.ui:238
+msgid "_Close"
+msgstr "_ปิด"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "“แบบอักษร” ของ GNOME"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "แสดงรุ่นของแอปพลิเคชัน"
+
+#: src/open-type-layout.h:13
+msgctxt "OpenType layout"
+msgid "Access All Alternates"
+msgstr ""
+
+#: src/open-type-layout.h:14
+msgctxt "OpenType layout"
+msgid "Above-base Forms"
+msgstr ""
+
+#: src/open-type-layout.h:15
+msgctxt "OpenType layout"
+msgid "Above-base Mark Positioning"
+msgstr ""
+
+#: src/open-type-layout.h:16
+msgctxt "OpenType layout"
+msgid "Above-base Substitutions"
+msgstr ""
+
+#: src/open-type-layout.h:17
+msgctxt "OpenType layout"
+msgid "Alternative Fractions"
+msgstr ""
+
+#: src/open-type-layout.h:18
+msgctxt "OpenType layout"
+msgid "Akhands"
+msgstr ""
+
+#: src/open-type-layout.h:19
+msgctxt "OpenType layout"
+msgid "Below-base Forms"
+msgstr ""
+
+#: src/open-type-layout.h:20
+msgctxt "OpenType layout"
+msgid "Below-base Mark Positioning"
+msgstr ""
+
+#: src/open-type-layout.h:21
+msgctxt "OpenType layout"
+msgid "Below-base Substitutions"
+msgstr ""
+
+#: src/open-type-layout.h:22
+msgctxt "OpenType layout"
+msgid "Contextual Alternates"
+msgstr ""
+
+#: src/open-type-layout.h:23
+msgctxt "OpenType layout"
+msgid "Case-Sensitive Forms"
+msgstr ""
+
+#: src/open-type-layout.h:24
+msgctxt "OpenType layout"
+msgid "Glyph Composition / Decomposition"
+msgstr ""
+
+#: src/open-type-layout.h:25
+msgctxt "OpenType layout"
+msgid "Conjunct Form After Ro"
+msgstr ""
+
+#: src/open-type-layout.h:26
+msgctxt "OpenType layout"
+msgid "Conjunct Forms"
+msgstr ""
+
+#: src/open-type-layout.h:27
+msgctxt "OpenType layout"
+msgid "Contextual Ligatures"
+msgstr ""
+
+#: src/open-type-layout.h:28
+msgctxt "OpenType layout"
+msgid "Centered CJK Punctuation"
+msgstr ""
+
+#: src/open-type-layout.h:29
+msgctxt "OpenType layout"
+msgid "Capital Spacing"
+msgstr ""
+
+#: src/open-type-layout.h:30
+msgctxt "OpenType layout"
+msgid "Contextual Swash"
+msgstr ""
+
+#: src/open-type-layout.h:31
+msgctxt "OpenType layout"
+msgid "Cursive Positioning"
+msgstr ""
+
+#: src/open-type-layout.h:32
+msgctxt "OpenType layout"
+msgid "Petite Capitals From Capitals"
+msgstr ""
+
+#: src/open-type-layout.h:33
+msgctxt "OpenType layout"
+msgid "Small Capitals From Capitals"
+msgstr ""
+
+#: src/open-type-layout.h:34
+msgctxt "OpenType layout"
+msgid "Character Variation 1"
+msgstr ""
+
+#: src/open-type-layout.h:35
+msgctxt "OpenType layout"
+msgid "Character Variation 2"
+msgstr ""
+
+#: src/open-type-layout.h:36
+msgctxt "OpenType layout"
+msgid "Character Variation 3"
+msgstr ""
+
+#: src/open-type-layout.h:37
+msgctxt "OpenType layout"
+msgid "Character Variation 4"
+msgstr ""
+
+#: src/open-type-layout.h:38
+msgctxt "OpenType layout"
+msgid "Character Variation 5"
+msgstr ""
+
+#: src/open-type-layout.h:39
+msgctxt "OpenType layout"
+msgid "Character Variation 6"
+msgstr ""
+
+#: src/open-type-layout.h:40
+msgctxt "OpenType layout"
+msgid "Character Variation 7"
+msgstr ""
+
+#: src/open-type-layout.h:41
+msgctxt "OpenType layout"
+msgid "Character Variation 8"
+msgstr ""
+
+#: src/open-type-layout.h:42
+msgctxt "OpenType layout"
+msgid "Character Variation 9"
+msgstr ""
+
+#: src/open-type-layout.h:43
+msgctxt "OpenType layout"
+msgid "Character Variation 10"
+msgstr ""
+
+#: src/open-type-layout.h:44
+msgctxt "OpenType layout"
+msgid "Character Variation 11"
+msgstr ""
+
+#: src/open-type-layout.h:45
+msgctxt "OpenType layout"
+msgid "Character Variation 12"
+msgstr ""
+
+#: src/open-type-layout.h:46
+msgctxt "OpenType layout"
+msgid "Character Variation 13"
+msgstr ""
+
+#: src/open-type-layout.h:47
+msgctxt "OpenType layout"
+msgid "Character Variation 14"
+msgstr ""
+
+#: src/open-type-layout.h:48
+msgctxt "OpenType layout"
+msgid "Character Variation 15"
+msgstr ""
+
+#: src/open-type-layout.h:49
+msgctxt "OpenType layout"
+msgid "Character Variation 16"
+msgstr ""
+
+#: src/open-type-layout.h:50
+msgctxt "OpenType layout"
+msgid "Character Variation 17"
+msgstr ""
+
+#: src/open-type-layout.h:51
+msgctxt "OpenType layout"
+msgid "Character Variation 18"
+msgstr ""
+
+#: src/open-type-layout.h:52
+msgctxt "OpenType layout"
+msgid "Character Variation 19"
+msgstr ""
+
+#: src/open-type-layout.h:53
+msgctxt "OpenType layout"
+msgid "Distances"
+msgstr ""
+
+#: src/open-type-layout.h:54
+msgctxt "OpenType layout"
+msgid "Discretionary Ligatures"
+msgstr ""
+
+#: src/open-type-layout.h:55
+msgctxt "OpenType layout"
+msgid "Denominators"
+msgstr ""
+
+#: src/open-type-layout.h:56
+msgctxt "OpenType layout"
+msgid "Dotless Forms"
+msgstr ""
+
+#: src/open-type-layout.h:57
+msgctxt "OpenType layout"
+msgid "Expert Forms"
+msgstr ""
+
+#: src/open-type-layout.h:58
+msgctxt "OpenType layout"
+msgid "Final Glyph on Line Alternates"
+msgstr ""
+
+#: src/open-type-layout.h:59
+msgctxt "OpenType layout"
+msgid "Terminal Forms #2"
+msgstr ""
+
+#: src/open-type-layout.h:60
+msgctxt "OpenType layout"
+msgid "Terminal Forms #3"
+msgstr ""
+
+#: src/open-type-layout.h:61
+msgctxt "OpenType layout"
+msgid "Terminal Forms"
+msgstr ""
+
+#: src/open-type-layout.h:62
+msgctxt "OpenType layout"
+msgid "Flattened accent forms"
+msgstr ""
+
+#: src/open-type-layout.h:63
+msgctxt "OpenType layout"
+msgid "Fractions"
+msgstr ""
+
+#: src/open-type-layout.h:64
+msgctxt "OpenType layout"
+msgid "Full Widths"
+msgstr ""
+
+#: src/open-type-layout.h:65
+msgctxt "OpenType layout"
+msgid "Half Forms"
+msgstr ""
+
+#: src/open-type-layout.h:66
+msgctxt "OpenType layout"
+msgid "Halant Forms"
+msgstr ""
+
+#: src/open-type-layout.h:67
+msgctxt "OpenType layout"
+msgid "Alternate Half Widths"
+msgstr ""
+
+#: src/open-type-layout.h:68
+msgctxt "OpenType layout"
+msgid "Historical Forms"
+msgstr ""
+
+#: src/open-type-layout.h:69
+msgctxt "OpenType layout"
+msgid "Horizontal Kana Alternates"
+msgstr ""
+
+#: src/open-type-layout.h:70
+msgctxt "OpenType layout"
+msgid "Historical Ligatures"
+msgstr ""
+
+#: src/open-type-layout.h:71
+msgctxt "OpenType layout"
+msgid "Hangul"
+msgstr ""
+
+#: src/open-type-layout.h:72
+msgctxt "OpenType layout"
+msgid "Hojo Kanji Forms"
+msgstr ""
+
+#: src/open-type-layout.h:73
+msgctxt "OpenType layout"
+msgid "Half Widths"
+msgstr ""
+
+#: src/open-type-layout.h:74
+msgctxt "OpenType layout"
+msgid "Initial Forms"
+msgstr ""
+
+#: src/open-type-layout.h:75
+msgctxt "OpenType layout"
+msgid "Isolated Forms"
+msgstr ""
+
+#: src/open-type-layout.h:76
+msgctxt "OpenType layout"
+msgid "Italics"
+msgstr ""
+
+#: src/open-type-layout.h:77
+msgctxt "OpenType layout"
+msgid "Justification Alternates"
+msgstr ""
+
+#: src/open-type-layout.h:78
+msgctxt "OpenType layout"
+msgid "JIS78 Forms"
+msgstr ""
+
+#: src/open-type-layout.h:79
+msgctxt "OpenType layout"
+msgid "JIS83 Forms"
+msgstr ""
+
+#: src/open-type-layout.h:80
+msgctxt "OpenType layout"
+msgid "JIS90 Forms"
+msgstr ""
+
+#: src/open-type-layout.h:81
+msgctxt "OpenType layout"
+msgid "JIS2004 Forms"
+msgstr ""
+
+#: src/open-type-layout.h:82
+msgctxt "OpenType layout"
+msgid "Kerning"
+msgstr ""
+
+#: src/open-type-layout.h:83
+msgctxt "OpenType layout"
+msgid "Left Bounds"
+msgstr ""
+
+#: src/open-type-layout.h:84
+msgctxt "OpenType layout"
+msgid "Standard Ligatures"
+msgstr ""
+
+#: src/open-type-layout.h:85
+msgctxt "OpenType layout"
+msgid "Leading Jamo Forms"
+msgstr ""
+
+#: src/open-type-layout.h:86
+msgctxt "OpenType layout"
+msgid "Lining Figures"
+msgstr ""
+
+#: src/open-type-layout.h:87
+msgctxt "OpenType layout"
+msgid "Localized Forms"
+msgstr ""
+
+#: src/open-type-layout.h:88
+msgctxt "OpenType layout"
+msgid "Left-to-right alternates"
+msgstr ""
+
+#: src/open-type-layout.h:89
+msgctxt "OpenType layout"
+msgid "Left-to-right mirrored forms"
+msgstr ""
+
+#: src/open-type-layout.h:90
+msgctxt "OpenType layout"
+msgid "Mark Positioning"
+msgstr ""
+
+#: src/open-type-layout.h:91
+msgctxt "OpenType layout"
+msgid "Medial Forms #2"
+msgstr ""
+
+#: src/open-type-layout.h:92
+msgctxt "OpenType layout"
+msgid "Medial Forms"
+msgstr ""
+
+#: src/open-type-layout.h:93
+msgctxt "OpenType layout"
+msgid "Mathematical Greek"
+msgstr ""
+
+#: src/open-type-layout.h:94
+msgctxt "OpenType layout"
+msgid "Mark to Mark Positioning"
+msgstr ""
+
+#: src/open-type-layout.h:95
+msgctxt "OpenType layout"
+msgid "Mark Positioning via Substitution"
+msgstr ""
+
+#: src/open-type-layout.h:96
+msgctxt "OpenType layout"
+msgid "Alternate Annotation Forms"
+msgstr ""
+
+#: src/open-type-layout.h:97
+msgctxt "OpenType layout"
+msgid "NLC Kanji Forms"
+msgstr ""
+
+#: src/open-type-layout.h:98
+msgctxt "OpenType layout"
+msgid "Nukta Forms"
+msgstr ""
+
+#: src/open-type-layout.h:99
+msgctxt "OpenType layout"
+msgid "Numerators"
+msgstr ""
+
+#: src/open-type-layout.h:100
+msgctxt "OpenType layout"
+msgid "Oldstyle Figures"
+msgstr ""
+
+#: src/open-type-layout.h:101
+msgctxt "OpenType layout"
+msgid "Optical Bounds"
+msgstr ""
+
+#: src/open-type-layout.h:102
+msgctxt "OpenType layout"
+msgid "Ordinals"
+msgstr ""
+
+#: src/open-type-layout.h:103
+msgctxt "OpenType layout"
+msgid "Ornaments"
+msgstr ""
+
+#: src/open-type-layout.h:104
+msgctxt "OpenType layout"
+msgid "Proportional Alternate Widths"
+msgstr ""
+
+#: src/open-type-layout.h:105
+msgctxt "OpenType layout"
+msgid "Petite Capitals"
+msgstr ""
+
+#: src/open-type-layout.h:106
+msgctxt "OpenType layout"
+msgid "Proportional Kana"
+msgstr ""
+
+#: src/open-type-layout.h:107
+msgctxt "OpenType layout"
+msgid "Proportional Figures"
+msgstr ""
+
+#: src/open-type-layout.h:108
+msgctxt "OpenType layout"
+msgid "Pre-Base Forms"
+msgstr ""
+
+#: src/open-type-layout.h:109
+msgctxt "OpenType layout"
+msgid "Pre-base Substitutions"
+msgstr ""
+
+#: src/open-type-layout.h:110
+msgctxt "OpenType layout"
+msgid "Post-base Forms"
+msgstr ""
+
+#: src/open-type-layout.h:111
+msgctxt "OpenType layout"
+msgid "Post-base Substitutions"
+msgstr ""
+
+#: src/open-type-layout.h:112
+msgctxt "OpenType layout"
+msgid "Proportional Widths"
+msgstr ""
+
+#: src/open-type-layout.h:113
+msgctxt "OpenType layout"
+msgid "Quarter Widths"
+msgstr ""
+
+#: src/open-type-layout.h:114
+msgctxt "OpenType layout"
+msgid "Randomize"
+msgstr ""
+
+#: src/open-type-layout.h:115
+msgctxt "OpenType layout"
+msgid "Required Contextual Alternates"
+msgstr ""
+
+#: src/open-type-layout.h:116
+msgctxt "OpenType layout"
+msgid "Rakar Forms"
+msgstr ""
+
+#: src/open-type-layout.h:117
+msgctxt "OpenType layout"
+msgid "Required Ligatures"
+msgstr ""
+
+#: src/open-type-layout.h:118
+msgctxt "OpenType layout"
+msgid "Reph Forms"
+msgstr ""
+
+#: src/open-type-layout.h:119
+msgctxt "OpenType layout"
+msgid "Right Bounds"
+msgstr ""
+
+#: src/open-type-layout.h:120
+msgctxt "OpenType layout"
+msgid "Right-to-left alternates"
+msgstr ""
+
+#: src/open-type-layout.h:121
+msgctxt "OpenType layout"
+msgid "Right-to-left mirrored forms"
+msgstr ""
+
+#: src/open-type-layout.h:122
+msgctxt "OpenType layout"
+msgid "Ruby Notation Forms"
+msgstr ""
+
+#: src/open-type-layout.h:123
+msgctxt "OpenType layout"
+msgid "Required Variation Alternates"
+msgstr ""
+
+#: src/open-type-layout.h:124
+msgctxt "OpenType layout"
+msgid "Stylistic Alternates"
+msgstr ""
+
+#: src/open-type-layout.h:125
+msgctxt "OpenType layout"
+msgid "Scientific Inferiors"
+msgstr ""
+
+#: src/open-type-layout.h:126
+msgctxt "OpenType layout"
+msgid "Optical size"
+msgstr ""
+
+#: src/open-type-layout.h:127
+msgctxt "OpenType layout"
+msgid "Small Capitals"
+msgstr ""
+
+#: src/open-type-layout.h:128
+msgctxt "OpenType layout"
+msgid "Simplified Forms"
+msgstr ""
+
+#: src/open-type-layout.h:129
+msgctxt "OpenType layout"
+msgid "Stylistic Set 1"
+msgstr ""
+
+#: src/open-type-layout.h:130
+msgctxt "OpenType layout"
+msgid "Stylistic Set 2"
+msgstr ""
+
+#: src/open-type-layout.h:131
+msgctxt "OpenType layout"
+msgid "Stylistic Set 3"
+msgstr ""
+
+#: src/open-type-layout.h:132
+msgctxt "OpenType layout"
+msgid "Stylistic Set 4"
+msgstr ""
+
+#: src/open-type-layout.h:133
+msgctxt "OpenType layout"
+msgid "Stylistic Set 5"
+msgstr ""
+
+#: src/open-type-layout.h:134
+msgctxt "OpenType layout"
+msgid "Stylistic Set 6"
+msgstr ""
+
+#: src/open-type-layout.h:135
+msgctxt "OpenType layout"
+msgid "Stylistic Set 7"
+msgstr ""
+
+#: src/open-type-layout.h:136
+msgctxt "OpenType layout"
+msgid "Stylistic Set 8"
+msgstr ""
+
+#: src/open-type-layout.h:137
+msgctxt "OpenType layout"
+msgid "Stylistic Set 9"
+msgstr ""
+
+#: src/open-type-layout.h:138
+msgctxt "OpenType layout"
+msgid "Stylistic Set 10"
+msgstr ""
+
+#: src/open-type-layout.h:139
+msgctxt "OpenType layout"
+msgid "Stylistic Set 11"
+msgstr ""
+
+#: src/open-type-layout.h:140
+msgctxt "OpenType layout"
+msgid "Stylistic Set 12"
+msgstr ""
+
+#: src/open-type-layout.h:141
+msgctxt "OpenType layout"
+msgid "Stylistic Set 13"
+msgstr ""
+
+#: src/open-type-layout.h:142
+msgctxt "OpenType layout"
+msgid "Stylistic Set 14"
+msgstr ""
+
+#: src/open-type-layout.h:143
+msgctxt "OpenType layout"
+msgid "Stylistic Set 15"
+msgstr ""
+
+#: src/open-type-layout.h:144
+msgctxt "OpenType layout"
+msgid "Stylistic Set 16"
+msgstr ""
+
+#: src/open-type-layout.h:145
+msgctxt "OpenType layout"
+msgid "Stylistic Set 17"
+msgstr ""
+
+#: src/open-type-layout.h:146
+msgctxt "OpenType layout"
+msgid "Stylistic Set 18"
+msgstr ""
+
+#: src/open-type-layout.h:147
+msgctxt "OpenType layout"
+msgid "Stylistic Set 19"
+msgstr ""
+
+#: src/open-type-layout.h:148
+msgctxt "OpenType layout"
+msgid "Stylistic Set 20"
+msgstr ""
+
+#: src/open-type-layout.h:149
+msgctxt "OpenType layout"
+msgid "Math script style alternates"
+msgstr ""
+
+#: src/open-type-layout.h:150
+msgctxt "OpenType layout"
+msgid "Stretching Glyph Decomposition"
+msgstr ""
+
+#: src/open-type-layout.h:151
+#, fuzzy
+#| msgid "Description"
+msgctxt "OpenType layout"
+msgid "Subscript"
+msgstr "คำบรรยาย"
+
+#: src/open-type-layout.h:152
+#, fuzzy
+#| msgid "Description"
+msgctxt "OpenType layout"
+msgid "Superscript"
+msgstr "คำบรรยาย"
+
+#: src/open-type-layout.h:153
+msgctxt "OpenType layout"
+msgid "Swash"
+msgstr ""
+
+#: src/open-type-layout.h:154
+msgctxt "OpenType layout"
+msgid "Titling"
+msgstr ""
+
+#: src/open-type-layout.h:155
+msgctxt "OpenType layout"
+msgid "Trailing Jamo Forms"
+msgstr ""
+
+#: src/open-type-layout.h:156
+msgctxt "OpenType layout"
+msgid "Traditional Name Forms"
+msgstr ""
+
+#: src/open-type-layout.h:157
+msgctxt "OpenType layout"
+msgid "Tabular Figures"
+msgstr ""
+
+#: src/open-type-layout.h:158
+msgctxt "OpenType layout"
+msgid "Traditional Forms"
+msgstr ""
+
+#: src/open-type-layout.h:159
+msgctxt "OpenType layout"
+msgid "Third Widths"
+msgstr ""
+
+#: src/open-type-layout.h:160
+msgctxt "OpenType layout"
+msgid "Unicase"
+msgstr ""
+
+#: src/open-type-layout.h:161
+msgctxt "OpenType layout"
+msgid "Alternate Vertical Metrics"
+msgstr ""
+
+#: src/open-type-layout.h:162
+msgctxt "OpenType layout"
+msgid "Vattu Variants"
+msgstr ""
+
+#: src/open-type-layout.h:163
+msgctxt "OpenType layout"
+msgid "Vertical Writing"
+msgstr ""
+
+#: src/open-type-layout.h:164
+msgctxt "OpenType layout"
+msgid "Alternate Vertical Half Metrics"
+msgstr ""
+
+#: src/open-type-layout.h:165
+msgctxt "OpenType layout"
+msgid "Vowel Jamo Forms"
+msgstr ""
+
+#: src/open-type-layout.h:166
+msgctxt "OpenType layout"
+msgid "Vertical Kana Alternates"
+msgstr ""
+
+#: src/open-type-layout.h:167
+msgctxt "OpenType layout"
+msgid "Vertical Kerning"
+msgstr ""
+
+#: src/open-type-layout.h:168
+msgctxt "OpenType layout"
+msgid "Proportional Alternate Vertical Metrics"
+msgstr ""
+
+#: src/open-type-layout.h:169
+msgctxt "OpenType layout"
+msgid "Vertical Alternates and Rotation"
+msgstr ""
+
+#: src/open-type-layout.h:170
+msgctxt "OpenType layout"
+msgid "Vertical Alternates for Rotation"
+msgstr ""
+
+#: src/open-type-layout.h:171
+msgctxt "OpenType layout"
+msgid "Slashed Zero"
+msgstr ""
+
+#~ msgid "About"
+#~ msgstr "เกี่ยวกับ"
+
+#~ msgid "Quit"
+#~ msgstr "ออก"
+
+#~ msgid "This font could not be displayed."
+#~ msgstr "แบบอักษรนี้ไม่สามารถแสดงได้"
+
+#~ msgid "Back"
+#~ msgstr "ย้อนกลับ"
+
+#~ msgid "Font Viewer"
+#~ msgstr "โปรแกรมดูแบบอักษร"
+
+#~ msgid "[FILE...]"
+#~ msgstr "[แฟ้ม...]"
+
+#, c-format
+#~ msgid "Run '%s --help' to see a full list of available command line options."
+#~ msgstr "เรียก '%s --help' เพื่อดูตัวเลือกทั้งหมดที่มีของบรรทัดคำสั่ง"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "ขนาดแบบอักษร (ค่าปริยาย: 64)"
