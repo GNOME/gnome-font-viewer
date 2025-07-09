@@ -81,22 +81,6 @@ struct _FontViewWindow
 
 G_DEFINE_FINAL_TYPE (FontViewWindow, font_view_window, ADW_TYPE_APPLICATION_WINDOW)
 
-static PangoAttrList *
-font_attribute_closure (gpointer obj,
-                        FontViewModelItem *item)
-{
-  PangoAttrList *list = pango_attr_list_new ();
-
-  if (FONT_VIEW_IS_MODEL_ITEM (item)) {
-    PangoAttribute *attr = pango_attr_font_desc_new (
-        font_view_model_item_get_font_description (item));
-
-    pango_attr_list_insert (list, attr);
-  }
-
-  return list;
-}
-
 static char *
 font_name_closure (FontViewModelItem *item)
 {
@@ -863,7 +847,6 @@ font_view_window_class_init (FontViewWindowClass *klass)
   gtk_widget_class_bind_template_callback (widget_class, view_child_activated_cb);
 
   gtk_widget_class_bind_template_callback (widget_class, action_toggle_search_cb);
-  gtk_widget_class_bind_template_callback (widget_class, font_attribute_closure);
   gtk_widget_class_bind_template_callback (widget_class, font_name_closure);
   gtk_widget_class_bind_template_callback (widget_class, preview_visible_child_closure);
 

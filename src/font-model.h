@@ -56,8 +56,8 @@ GFile *font_view_model_item_get_font_file (FontViewModelItem *self);
 const gchar *font_view_model_item_get_font_name (FontViewModelItem *self);
 const gchar *
 font_view_model_item_get_font_preview_text (FontViewModelItem *self);
-const PangoFontDescription *
-font_view_model_item_get_font_description (FontViewModelItem *self);
+PangoAttrList *
+font_view_model_item_get_attribute_list (FontViewModelItem *self);
 
 G_END_DECLS
 
