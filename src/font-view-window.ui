@@ -116,9 +116,9 @@
           </lookup>
         </binding>
         <binding name="attributes">
-          <closure type="PangoAttrList" function="font_attribute_closure">
+          <lookup type="FontViewModelItem" name="attr-list">
             <lookup name="item">GtkListItem</lookup>
-          </closure>
+          </lookup>
         </binding>
         <style>
           <class name="font-preview"/>
