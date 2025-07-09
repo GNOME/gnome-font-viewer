@@ -60,6 +60,7 @@ struct _FontViewModelItem
     gchar *font_name;
     gchar *font_preview_text;
     PangoFontDescription *font_description;
+    PangoAttrList *attr_list;
     GFile *file;
     int face_index;
 };
@@ -68,6 +69,7 @@ enum {
   PROP_0,
   PROP_FONT_NAME,
   PROP_FONT_PREVIEW_TEXT,
+  PROP_ATTR_LIST,
   N_PROPS
 };
 
@@ -82,7 +84,7 @@ font_view_model_item_finalize (GObject *obj)
 
     g_clear_pointer (&self->font_name, g_free);
     g_clear_pointer (&self->font_preview_text, g_free);
-    g_clear_pointer (&self->font_description, pango_font_description_free);
+    g_clear_pointer (&self->attr_list, pango_attr_list_unref);
     g_clear_object (&self->file);
 
     G_OBJECT_CLASS (font_view_model_item_parent_class)->finalize (obj);
@@ -102,6 +104,9 @@ font_view_model_item_get_property (GObject    *object,
             break;
         case PROP_FONT_PREVIEW_TEXT:
             g_value_set_string (value, font_view_model_item_get_font_preview_text (self));
+            break;
+        case PROP_ATTR_LIST:
+            g_value_set_boxed (value, font_view_model_item_get_attribute_list (self));
             break;
         default:
             G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
@@ -123,6 +128,11 @@ font_view_model_item_class_init (FontViewModelItemClass *klass)
         g_param_spec_string ("preview-text",
                              "", "", "",
                              G_PARAM_READABLE | G_PARAM_STATIC_STRINGS);
+    properties[PROP_ATTR_LIST] =
+        g_param_spec_boxed ("attr-list",
+                            "", "",
+                            PANGO_TYPE_ATTR_LIST,
+                            G_PARAM_READABLE | G_PARAM_STATIC_STRINGS);
 
     g_object_class_install_properties (oclass, N_PROPS, properties);
 }
@@ -140,10 +150,15 @@ font_view_model_item_new (const gchar *font_name,
                           int face_index)
 {
     FontViewModelItem *item = g_object_new (FONT_VIEW_TYPE_MODEL_ITEM, NULL);
+    PangoAttrList *list = pango_attr_list_new ();
+    PangoAttribute *attr = pango_attr_font_desc_new (font_description);
 
     item->font_name = g_strdup (font_name);
     item->font_preview_text = g_strdup (font_preview_text);
-    item->font_description = font_description;
+
+    pango_attr_list_insert (list, attr);
+    item->attr_list = list;
+
     item->file = g_object_ref (file);
     item->face_index = face_index;
 
@@ -162,10 +177,10 @@ font_view_model_item_get_font_preview_text (FontViewModelItem *self)
     return self->font_preview_text;
 }
 
-const PangoFontDescription *
-font_view_model_item_get_font_description (FontViewModelItem *self)
+PangoAttrList *
+font_view_model_item_get_attribute_list (FontViewModelItem *item)
 {
-    return self->font_description;
+    return item->attr_list;
 }
 
 GFile *
