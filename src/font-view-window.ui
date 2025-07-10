@@ -105,12 +105,12 @@
     <property name="orientation">vertical</property>
     <property name="spacing">6</property>
     <child>
-      <object class="GtkLabel">
+      <object class="FontInscription">
         <property name="halign">center</property>
         <property name="vexpand">True</property>
         <property name="margin-start">6</property>
         <property name="margin-end">6</property>
-        <binding name="label">
+        <binding name="text">
           <lookup type="FontViewModelItem" name="preview-text">
             <lookup name="item">GtkListItem</lookup>
           </lookup>

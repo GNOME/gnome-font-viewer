@@ -38,7 +38,7 @@
 #include <freetype2/ft2build.h>
 
 #include "font-view-window.h"
-
+#include "font-inscription.h"
 #include "open-type-layout.h"
 #include "sushi-font-widget.h"
 #include "font-model.h"
@@ -823,6 +823,8 @@ font_view_window_class_init (FontViewWindowClass *klass)
   GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
 
   object_class->dispose = font_view_window_dispose;
+
+  g_type_ensure (FONT_TYPE_INSCRIPTION);
 
   gtk_widget_class_set_template_from_resource (widget_class,
                                                "/org/gnome/font-viewer/font-view-window.ui");
