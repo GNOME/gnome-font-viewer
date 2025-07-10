@@ -770,6 +770,9 @@ font_view_window_show_preview (FontViewWindow *self,
   if (self->font_widget == NULL) {
     self->font_widget = sushi_font_widget_new (uri, face_index);
 
+    gtk_widget_set_margin_bottom (GTK_WIDGET (self->font_widget), 12);
+    gtk_widget_set_margin_start (GTK_WIDGET (self->font_widget), 12);
+    gtk_widget_set_margin_end (GTK_WIDGET (self->font_widget), 12);
     gtk_widget_set_vexpand (GTK_WIDGET (self->font_widget), TRUE);
 
     gtk_viewport_set_child (self->viewport_preview, GTK_WIDGET (self->font_widget));
