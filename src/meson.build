@@ -16,6 +16,8 @@ viewer_sources = [
   'font-model.c',
   'sushi-font-widget.h',
   'sushi-font-widget.c',
+  'font-inscription.h',
+  'font-inscription.c',
   'font-view-application.h',
   'font-view-application.c',
   'font-view-window.h',
