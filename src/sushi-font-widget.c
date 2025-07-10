@@ -279,7 +279,7 @@ draw_string (SushiFontWidget *self,
   if (text_dir == GTK_TEXT_DIR_LTR)
     pos_x = padding.left;
   else {
-    pos_x = gtk_widget_get_allocated_width (GTK_WIDGET (self)) -
+    pos_x = gtk_widget_get_width (GTK_WIDGET (self)) -
       extents.x_advance - padding.right;
   }
 
@@ -656,8 +656,8 @@ sushi_font_widget_snapshot (GtkWidget *drawing_area,
 
   context = gtk_widget_get_style_context (drawing_area);
 
-  allocated_width = gtk_widget_get_allocated_width (drawing_area);
-  allocated_height = gtk_widget_get_allocated_height (drawing_area);
+  allocated_width = gtk_widget_get_width (drawing_area);
+  allocated_height = gtk_widget_get_height (drawing_area);
 
   graphene_rect_t rect = GRAPHENE_RECT_INIT (0, 0, allocated_width, allocated_height);
   cairo_t* cr = gtk_snapshot_append_cairo (snapshot, &rect);
