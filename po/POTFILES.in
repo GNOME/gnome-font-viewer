@@ -1,7 +1,7 @@
 # List of source files containing translatable strings.
 # Please keep this file sorted alphabetically.
-data/org.gnome.font-viewer.appdata.xml.in
 data/org.gnome.font-viewer.desktop.in.in
+data/org.gnome.font-viewer.metainfo.xml.in
 src/font-thumbnailer.c
 src/font-view-application.c
 src/font-view-window.c

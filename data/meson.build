@@ -1,21 +1,21 @@
 subdir('icons')
 
-appdatadir = join_paths(datadir, 'metainfo')
-appdata_file = 'org.gnome.font-viewer.appdata.xml'
-merged_appdata = i18n.merge_file(
-  input: appdata_file + '.in',
-  output: appdata_file,
+metainfodir = join_paths(datadir, 'metainfo')
+metainfo_file = 'org.gnome.font-viewer.metainfo.xml'
+merged_metainfo = i18n.merge_file(
+  input: metainfo_file + '.in',
+  output: metainfo_file,
   po_dir: '../po',
   install: true,
-  install_dir: appdatadir
+  install_dir: metainfodir
 )
 
 appstreamcli = find_program('appstreamcli', required: false)
 if appstreamcli.found()
   test(
-    'validate-appdata',
+    'validate-metainfo',
     appstreamcli,
-    args: ['validate', '--no-net', '--explain', merged_appdata.full_path()]
+    args: ['validate', '--no-net', '--explain', merged_metainfo.full_path()]
   )
 endif
 

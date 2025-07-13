@@ -4,7 +4,7 @@
     "runtime-version" : "master",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-font-viewer",
-    "rename-appdata-file": "org.gnome.font-viewer.appdata.xml",
+    "rename-appdata-file": "org.gnome.font-viewer.metainfo.xml",
     "rename-desktop-file": "org.gnome.font-viewer.desktop",
     "tags": ["nightly"],
     "finish-args": [
