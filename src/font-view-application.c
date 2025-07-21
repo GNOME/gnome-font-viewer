@@ -155,6 +155,8 @@ font_view_application_startup (GApplication *application)
 
     gtk_application_set_accels_for_action (GTK_APPLICATION (self), "app.quit",
                                            (const gchar*[]) { "<Control>q", NULL });
+    gtk_application_set_accels_for_action (GTK_APPLICATION (self), "window.close",
+                                           (const gchar*[]) { "<Control>w", NULL });
 }
 
 static void
