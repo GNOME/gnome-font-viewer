@@ -152,6 +152,9 @@ font_view_application_startup (GApplication *application)
 
     g_action_map_add_action_entries (G_ACTION_MAP (self), action_entries,
                                      G_N_ELEMENTS (action_entries), self);
+
+    gtk_application_set_accels_for_action (GTK_APPLICATION (self), "app.quit",
+                                           (const gchar*[]) { "<Control>q", NULL });
 }
 
 static void
