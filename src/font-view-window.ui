@@ -126,13 +126,10 @@
       </object>
     </child>
     <child>
-      <object class="GtkLabel">
-        <property name="halign">center</property>
-        <property name="vexpand">True</property>
-        <property name="wrap">True</property>
-        <property name="wrap-mode">word-char</property>
-        <property name="max-width-chars">18</property>
-        <binding name="label">
+      <object class="GtkInscription">
+        <property name="xalign">0.5</property>
+        <property name="text-overflow">ellipsize-end</property>
+        <binding name="text">
           <lookup type="FontViewModelItem" name="font-name">
             <lookup name="item">GtkListItem</lookup>
           </lookup>
