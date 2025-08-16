@@ -350,6 +350,8 @@ get_features (FT_Face face)
                 }
             }
         }
+
+        hb_font_destroy (hb_font);
     }
 
     if (s->len > 0)
