@@ -659,9 +659,8 @@ sushi_font_widget_snapshot (GtkWidget *drawing_area,
   allocated_width = gtk_widget_get_allocated_width (drawing_area);
   allocated_height = gtk_widget_get_allocated_height (drawing_area);
 
-  graphene_rect_t* rect = graphene_rect_alloc();
-  graphene_rect_init(rect, 0, 0, allocated_width, allocated_height);
-  cairo_t* cr = gtk_snapshot_append_cairo (snapshot, rect);
+  graphene_rect_t rect = GRAPHENE_RECT_INIT (0, 0, allocated_width, allocated_height);
+  cairo_t* cr = gtk_snapshot_append_cairo (snapshot, &rect);
   gtk_render_background (context, cr,
                          0, 0, allocated_width, allocated_height);
 
