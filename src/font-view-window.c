@@ -718,6 +718,7 @@ font_widget_loaded_cb (FontViewWindow  *self,
     return;
 
   uri = sushi_font_widget_get_uri (font_widget);
+  g_clear_object (&self->font_file);
   self->font_file = g_file_new_for_uri (uri);
 
   if (face->family_name) {
