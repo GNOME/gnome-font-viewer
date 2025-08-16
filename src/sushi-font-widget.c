@@ -726,6 +726,7 @@ font_face_async_ready_cb (GObject *object,
   SushiFontWidget *self = user_data;
   g_autoptr(GError) error = NULL;
 
+  g_clear_pointer (&self->face_contents, g_free);
   self->face =
     sushi_new_ft_face_from_uri_finish (result,
                                        &self->face_contents,
