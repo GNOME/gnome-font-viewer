@@ -94,7 +94,7 @@ font_attribute_closure (gpointer obj,
     pango_attr_list_insert (list, attr);
   }
 
-  return pango_attr_list_copy (list);
+  return list;
 }
 
 static char *
