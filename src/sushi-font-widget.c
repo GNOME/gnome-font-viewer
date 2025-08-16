@@ -794,6 +794,7 @@ sushi_font_widget_set_property (GObject *object,
 
   switch (prop_id) {
   case PROP_URI:
+    g_clear_pointer (&self->uri, g_free);
     self->uri = g_value_dup_string (value);
     break;
   case PROP_FACE_INDEX:
