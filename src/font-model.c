@@ -321,7 +321,7 @@ build_font_name (const char *style_name,
                  int weight,
                  gboolean short_form)
 {
-    const char *style_name_x = style_name;
+    g_autofree char *style_name_x = g_strdup (style_name);
     const gchar *slant_name = slant_to_name (slant);
     const gchar *weight_name = weight_to_name (weight);
 
