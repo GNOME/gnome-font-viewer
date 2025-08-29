@@ -22,8 +22,8 @@ msgstr ""
 "Project-Id-Version: gnome-font-viewer main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues/\n"
-"POT-Creation-Date: 2025-05-27 23:10+0000\n"
-"PO-Revision-Date: 2025-06-28 21:45+0900\n"
+"POT-Creation-Date: 2025-07-08 07:54+0000\n"
+"PO-Revision-Date: 2025-07-15 06:47+0900\n"
 "Last-Translator: Makoto Sakaguchi <ycco34vx@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.gnome.org/teams/ja/>\n"
 "Language: ja\n"
@@ -648,7 +648,7 @@ msgstr "ローカライズ字形"
 #: src/open-type-layout.h:88
 msgctxt "OpenType layout"
 msgid "Left-to-right alternates"
-msgstr "左横書き字形"
+msgstr "左横書き用代替"
 
 #: src/open-type-layout.h:89
 msgctxt "OpenType layout"
@@ -783,7 +783,7 @@ msgstr "ランダム化"
 #: src/open-type-layout.h:115
 msgctxt "OpenType layout"
 msgid "Required Contextual Alternates"
-msgstr "必須文脈字形"
+msgstr "必須文脈依存代替"
 
 #: src/open-type-layout.h:116
 msgctxt "OpenType layout"
@@ -808,7 +808,7 @@ msgstr "右境界"
 #: src/open-type-layout.h:120
 msgctxt "OpenType layout"
 msgid "Right-to-left alternates"
-msgstr "右横書き字形"
+msgstr "右横書き用代替"
 
 #: src/open-type-layout.h:121
 msgctxt "OpenType layout"
@@ -823,12 +823,12 @@ msgstr "ルビ用字形"
 #: src/open-type-layout.h:123
 msgctxt "OpenType layout"
 msgid "Required Variation Alternates"
-msgstr "必須バリエーション字形"
+msgstr "必須バリエーション代替"
 
 #: src/open-type-layout.h:124
 msgctxt "OpenType layout"
 msgid "Stylistic Alternates"
-msgstr "装飾字形"
+msgstr "装飾的代替"
 
 #: src/open-type-layout.h:125
 msgctxt "OpenType layout"
@@ -953,7 +953,7 @@ msgstr "スタイリスティックセット 20"
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
 msgid "Math script style alternates"
-msgstr "数学筆記体字形"
+msgstr "数学用筆記体代替"
 
 #: src/open-type-layout.h:150
 msgctxt "OpenType layout"
@@ -988,7 +988,7 @@ msgstr "Trailing Jamo 字形"
 #: src/open-type-layout.h:156
 msgctxt "OpenType layout"
 msgid "Traditional Name Forms"
-msgstr "等幅字形"
+msgstr "伝統的字形"
 
 #: src/open-type-layout.h:157
 msgctxt "OpenType layout"
@@ -1044,22 +1044,24 @@ msgstr "縦組み用かな"
 #: src/open-type-layout.h:167
 msgctxt "OpenType layout"
 msgid "Vertical Kerning"
-msgstr "縦方向カーニング"
+msgstr "縦組みペアカーニング"
 
 #: src/open-type-layout.h:168
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Vertical Metrics"
 msgstr "縦組みプロポーショナルメトリクス"
 
+# https://learn.microsoft.com/ja-jp/typography/opentype/spec/features_uz#vrt2
 #: src/open-type-layout.h:169
 msgctxt "OpenType layout"
 msgid "Vertical Alternates and Rotation"
-msgstr "縦書き代替文字と回転"
+msgstr "縦組み用字形と回転"
 
+# https://learn.microsoft.com/ja-jp/typography/opentype/spec/features_uz#vrtr
 #: src/open-type-layout.h:170
 msgctxt "OpenType layout"
 msgid "Vertical Alternates for Rotation"
-msgstr "回転用縦書き代替字形"
+msgstr "回転用縦組み字形"
 
 #: src/open-type-layout.h:171
 msgctxt "OpenType layout"
