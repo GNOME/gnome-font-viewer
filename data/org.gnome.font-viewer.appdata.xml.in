@@ -47,6 +47,24 @@
     <color type="primary" scheme_preference="dark">#613583</color>
   </branding>
   <releases>
+    <release version="49.rc" date="2025-08-30" type="development">
+      <description>
+        <p>Fonts 49.rc comes with the following improvements:</p>
+        <ul>
+          <li>Plug multiple memory leaks</li>
+          <li>appdata: Remove kudos and add branding</li>
+          <li>Add ctrl+w shortcut for window.close</li>
+        </ul>
+        <p>This version brings translation updates for the following locales:</p>
+        <ul>
+          <li>Belarusian (Vasil Pupkin)</li>
+          <li>Japanese (Makoto Sakaguchi, Takayuki Kusano)</li>
+          <li>Nepali (Pawan Chitrakar)</li>
+          <li>Thai (Aefgh Threenine)</li>
+          <li>Uzbek (Baxrom Raxmatov)</li>
+        </ul>
+      </description>
+    </release>
     <release version="48.0" date="2025-03-14">
       <description>
         <p>Fonts 48.0 comes with the following improvements:</p>
