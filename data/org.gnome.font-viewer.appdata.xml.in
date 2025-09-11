@@ -47,9 +47,9 @@
     <color type="primary" scheme_preference="dark">#613583</color>
   </branding>
   <releases>
-    <release version="49.rc" date="2025-08-30" type="development">
+    <release version="49.0" date="2025-09-11">
       <description>
-        <p>Fonts 49.rc comes with the following improvements:</p>
+        <p>Fonts 49.0 comes with the following improvements:</p>
         <ul>
           <li>Plug multiple memory leaks</li>
           <li>appdata: Remove kudos and add branding</li>
