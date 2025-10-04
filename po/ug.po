@@ -7,115 +7,1031 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-01-18 00:16+0000\n"
-"PO-Revision-Date: 2013-02-16 13:06+0900\n"
-"Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues/\n"
+"POT-Creation-Date: 2025-09-10 17:05+0000\n"
+"PO-Revision-Date: 2025-10-04 17:30-0400\n"
+"Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: ug\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.7\n"
 
-#: ../src/font-thumbnailer.c:189
+#: data/org.gnome.font-viewer.appdata.xml.in:6 data/org.gnome.font-viewer.desktop.in.in:2 src/font-view-application.c:124 src/font-view-application.c:150
+msgid "Fonts"
+msgstr "خەت نۇسخا"
+
+#: data/org.gnome.font-viewer.appdata.xml.in:7 data/org.gnome.font-viewer.desktop.in.in:3
+msgid "View fonts on your system"
+msgstr "سىستېمىدىكى خەت نۇسخىلىرىنى كۆرۈش پىروگراممىسى"
+
+#: data/org.gnome.font-viewer.appdata.xml.in:9
+msgid "Fonts shows you the fonts installed on your computer for your use as thumbnails. Selecting any thumbnails shows the full view of how the font would look under various sizes."
+msgstr "خەت نۇسخا كومپيۇتېرىڭىزغا ئورنىتىلغان خەت نۇسخىسىنى كىچىك سۈرەت شەكلىدە  كۆرسىتىدۇ. خالىغان بىر كىچىك سۈرەت تاللانسا شۇ خەت نۇسخىسىنىڭ ئوخشاش بولمىغان چوڭلۇقتىكى ھالىتىنىڭ تولۇق كۆرۈنۈش ئۈنۈمىنى كۆرسىتىدۇ."
+
+#: data/org.gnome.font-viewer.appdata.xml.in:15
+msgid "Fonts also supports installing new font files downloaded in the .ttf and other formats. Fonts may be installed only for your use or made available to all users on the computer."
+msgstr "خەت نۇسخا يەنە .ttf  ۋە باشقا پىچىمدىكى يېڭى خەت نۇسخىسىنى ئورنىتىشنى قوللايدۇ. خەت نۇسخىسىنى پەقەت نۆۋەتتىكى ئىشلەتكۈچىگە ياكى كومپيۇتېردىكى بارلىق ئىشلەتكۈچىگە ئورنىتىشنى قوللايدۇ."
+
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.font-viewer.appdata.xml.in:22 src/font-view-application.c:126
+msgid "The GNOME Project"
+msgstr "GNOME قۇرۇلۇشى"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.font-viewer.desktop.in.in:5
+msgid "fonts;fontface;"
+msgstr "خەت نۇسخا;فونت;fonts;fontface;"
+
+#: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
 msgstr "كىچىك سۈرەتكە تېكىست ئىشلەت (كۆڭۈلدىكى: Aa)"
 
-#: ../src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:181
 msgid "TEXT"
 msgstr "تېكىست"
 
-#: ../src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "Thumbnail size (default: 128)"
 msgstr "كىچىك سۈرەت چوڭلۇقى(كۆڭۈلدىكىسى: 128)"
 
-#: ../src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "SIZE"
 msgstr "چوڭلۇقى"
 
-#: ../src/font-thumbnailer.c:193
+#: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "خەت نۇسخا-ھۆججەت چىقار-ھۆججەت"
 
-#: ../src/font-view-app-menu.ui.h:1
-msgid "About Font Viewer"
-msgstr "خەت نۇسخا كۆرگۈ ھەققىدە"
+#: src/font-view-application.c:79 src/font-view-window.c:744
+msgid "Could Not Display Font"
+msgstr "خەت نۇسخىسىنى كۆرسىتەلمەيدۇ"
 
-#: ../src/font-view-app-menu.ui.h:2
-msgid "Quit"
-msgstr "ئاخىرلاشتۇر"
+#: src/font-view-application.c:129
+msgid "translator-credits"
+msgstr ""
+"تەرجىمان تۆھپىسى\n"
+" Gheyret Kenji <gheyret@gmail.com>\n"
+"ئابدۇقادىر ئابلىز <sahranbay@gmail.com>"
 
-#: ../src/font-view.c:178
-msgid "Name"
-msgstr "ئاتى"
+#: src/font-view-window.c:120
+msgid "Failed"
+msgstr "مەغلۇپ بولدى"
 
-#: ../src/font-view.c:181
-msgid "Style"
-msgstr "ئۇسلۇب"
-
-#: ../src/font-view.c:191
-msgid "Type"
-msgstr "تىپى"
-
-#: ../src/font-view.c:236 ../src/font-view.c:255
-msgid "Version"
-msgstr "نەشرى"
-
-#: ../src/font-view.c:241 ../src/font-view.c:261
-msgid "Copyright"
-msgstr "نەشر ھوقۇقى"
-
-#: ../src/font-view.c:246
-msgid "Description"
-msgstr "چۈشەندۈرۈش"
-
-#: ../src/font-view.c:274
-msgid "Install Failed"
-msgstr "ئورنىتىش مەغلۇپ بولدى."
-
-#: ../src/font-view.c:280
+#: src/font-view-window.c:128
 msgid "Installed"
 msgstr "ئورنىتىلغان"
 
-#: ../src/font-view.c:283 ../src/font-view.c:515
-msgid "Install"
-msgstr "ئورنات"
+#: src/font-view-window.c:133
+msgid "Installing"
+msgstr "ئورنىتىۋاتىدۇ"
 
-#: ../src/font-view.c:416
-msgid "This font could not be displayed."
-msgstr "مەزكۇر خەت نۇسخىسىنى كۆرسەتكىلى بولمىدى."
+#: src/font-view-window.c:136 src/font-view-window.ui:176
+msgid "_Install"
+msgstr "ئورنات(_I)"
 
-#: ../src/font-view.c:508
-msgid "Info"
-msgstr "ئۇچۇر"
+#. Translators, this string is used to display information about
+#. * a 'font variation axis'. The %s gets replaced with the name
+#. * of the axis, for example 'Width'. The three %g get replaced
+#. * with the minimum, maximum and default values for the axis.
+#.
+#: src/font-view-window.c:250
+#, c-format
+msgid "%s %g — %g, default %g"
+msgstr "%s %g — %g، كۆڭۈلدىكى %g"
 
-#: ../src/font-view.c:521
-msgid "Back"
-msgstr "كەينى"
+#: src/font-view-window.c:305
+#, c-format
+msgid "Instance %d"
+msgstr "مىسال %d"
 
-#: ../src/font-view.c:618
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view-window.c:343
+msgctxt "OpenType layout"
+msgid ", "
+msgstr "، "
+
+#: src/font-view-window.c:372
+msgid "Name"
+msgstr "ئاتى"
+
+#: src/font-view-window.c:375
+msgid "Location"
+msgstr "ئورنى"
+
+#: src/font-view-window.c:378
+msgid "Style"
+msgstr "ئۇسلۇب"
+
+#: src/font-view-window.c:388
+msgid "Type"
+msgstr "تۈرى"
+
+#: src/font-view-window.c:454 src/font-view-window.c:480
+msgid "Version"
+msgstr "نەشرى"
+
+#: src/font-view-window.c:458 src/font-view-window.c:485
+msgid "Copyright"
+msgstr "نەشر ھوقۇقى"
+
+#: src/font-view-window.c:462
+msgid "Description"
+msgstr "چۈشەندۈرۈش"
+
+#: src/font-view-window.c:466
+msgid "Manufacturer"
+msgstr "ياسىغۇچى سودىگەر"
+
+#: src/font-view-window.c:470
+msgid "Designer"
+msgstr "لايىھەلىگۈچى"
+
+#: src/font-view-window.c:474
+msgid "License"
+msgstr "ئىجازەتنامە"
+
+#: src/font-view-window.c:499
+msgid "Glyph Count"
+msgstr "شەكىل سانى"
+
+#: src/font-view-window.c:501
+msgid "Color Glyphs"
+msgstr "رەڭ شەكلى"
+
+#: src/font-view-window.c:502
+msgid "yes"
+msgstr "ھەئە"
+
+#: src/font-view-window.c:502
+msgid "no"
+msgstr "ياق"
+
+#: src/font-view-window.c:506
+msgid "Layout Features"
+msgstr "ئورۇنلاشتۇرۇش ئالاھىدىلىكى"
+
+#: src/font-view-window.c:512
+msgid "Variation Axes"
+msgstr "ئۆزگىرىش ئوقى"
+
+#: src/font-view-window.c:519
+msgid "Named Styles"
+msgstr "ئاتاش ئۇسلۇبى"
+
+#: src/font-view-window.c:560 src/font-view-window.c:663
+msgid "Could Not Install Font"
+msgstr "خەت نۇسخىسىنى ئورنىتالمايدۇ"
+
+#: src/font-view-window.ui:25
 msgid "All Fonts"
 msgstr "بارلىق خەت نۇسخىلىرى"
 
-#: ../src/font-view.c:735 ../src/font-view.c:774
-#: ../src/gnome-font-viewer.desktop.in.in.h:1
-msgid "Font Viewer"
-msgstr "خەت نۇسخا كۆرگۈ"
+#: src/font-view-window.ui:33
+msgid "Search"
+msgstr "ئىزدە"
 
-#: ../src/font-view.c:736 ../src/gnome-font-viewer.desktop.in.in.h:2
-msgid "View fonts on your system"
-msgstr "بۇ سىستېمىدىكى خەت نۇسخىلىرىنى كۆرۈش پروگراممىسىدۇر"
+#: src/font-view-window.ui:41
+msgid "About Fonts"
+msgstr "خەت نۇسخا ھەققىدە"
 
-#: ../src/font-view.c:738
-msgid "translator-credits"
-msgstr "Gheyret Kenji <gheyret@gmail.com>\n"
-"Sahran<sahran@live.com>\n"
-"Muhemmed Erdem <misran_erdem@hotmail.com>"
+#: src/font-view-window.ui:53
+msgid "Search fonts"
+msgstr "خەت نۇسخا ئىزدە"
 
-#: ../src/gnome-font-viewer.desktop.in.in.h:3
-msgid "fonts;fontface;"
-msgstr "خەت نۇسخا;فونت;fonts;fontface;"
+#: src/font-view-window.ui:179
+msgid "Install Font"
+msgstr "خەت نۇسخا ئورنات"
+
+#: src/font-view-window.ui:184
+msgid "I_nfo"
+msgstr "ئۇچۇر(_N)"
+
+#: src/font-view-window.ui:186
+msgid "Font Details"
+msgstr "خەت نۇسخا تەپسىلاتى"
+
+#: src/font-view-window.ui:232
+msgid "_Close"
+msgstr "ياپ(_C)"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "GNOME خەت نۇسخا"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "پىروگراممىنىڭ نەشرىنى كۆرسەت"
+
+#: src/open-type-layout.h:13
+msgctxt "OpenType layout"
+msgid "Access All Alternates"
+msgstr "بارلىق ئورۇن باسارلارنى زىيارەت"
+
+#: src/open-type-layout.h:14
+msgctxt "OpenType layout"
+msgid "Above-base Forms"
+msgstr "ئۈستى ئىندېكس شەكلى"
+
+#: src/open-type-layout.h:15
+msgctxt "OpenType layout"
+msgid "Above-base Mark Positioning"
+msgstr "ئۈستى ئىندېكس شەكلىنىڭ ئورنى"
+
+#: src/open-type-layout.h:16
+msgctxt "OpenType layout"
+msgid "Above-base Substitutions"
+msgstr "ئۈستى ئىندېكس ئالماشتۇرۇش"
+
+#: src/open-type-layout.h:17
+msgctxt "OpenType layout"
+msgid "Alternative Fractions"
+msgstr "زاپاس كەسىر"
+
+#: src/open-type-layout.h:18
+msgctxt "OpenType layout"
+msgid "Akhands"
+msgstr "Akhands"
+
+#: src/open-type-layout.h:19
+msgctxt "OpenType layout"
+msgid "Below-base Forms"
+msgstr "ئاستى ئىندېكس شەكلى"
+
+#: src/open-type-layout.h:20
+msgctxt "OpenType layout"
+msgid "Below-base Mark Positioning"
+msgstr "ئاستى ئىندېكس شەكلىنىڭ ئورنى"
+
+#: src/open-type-layout.h:21
+msgctxt "OpenType layout"
+msgid "Below-base Substitutions"
+msgstr "ئاستى ئىندېكس ئالماشتۇرۇش"
+
+#: src/open-type-layout.h:22
+msgctxt "OpenType layout"
+msgid "Contextual Alternates"
+msgstr "مەزمۇن ئالماشتۇرۇش"
+
+#: src/open-type-layout.h:23
+msgctxt "OpenType layout"
+msgid "Case-Sensitive Forms"
+msgstr "چوڭ كىچىك ھەرپنى پەرقلەندۈرىدىغان شەكىل"
+
+#: src/open-type-layout.h:24
+msgctxt "OpenType layout"
+msgid "Glyph Composition / Decomposition"
+msgstr "خەت شەكلى بىرىكتۈرۈش/پارچىلاش"
+
+#: src/open-type-layout.h:25
+msgctxt "OpenType layout"
+msgid "Conjunct Form After Ro"
+msgstr "Ro دىن كېيىنكى بىرلەشكەن شەكلى"
+
+#: src/open-type-layout.h:26
+msgctxt "OpenType layout"
+msgid "Conjunct Forms"
+msgstr "بىرلەشكەن شەكلى"
+
+#: src/open-type-layout.h:27
+msgctxt "OpenType layout"
+msgid "Contextual Ligatures"
+msgstr "مەزمۇن قوشما ھەرپ"
+
+#: src/open-type-layout.h:28
+msgctxt "OpenType layout"
+msgid "Centered CJK Punctuation"
+msgstr "CJK ئوتتۇرىغا توغرىلانغان تىنىش بەلگىسى"
+
+#: src/open-type-layout.h:29
+msgctxt "OpenType layout"
+msgid "Capital Spacing"
+msgstr "چوڭ ھەرپ بوشلۇق"
+
+#: src/open-type-layout.h:30
+msgctxt "OpenType layout"
+msgid "Contextual Swash"
+msgstr "مەزمۇن ئۆزگىرىشچان ھەرپ"
+
+#: src/open-type-layout.h:31
+msgctxt "OpenType layout"
+msgid "Cursive Positioning"
+msgstr "ئۇلاپ يېزىش ئورنى"
+
+#: src/open-type-layout.h:32
+msgctxt "OpenType layout"
+msgid "Petite Capitals From Capitals"
+msgstr "چوڭ ھەرپكە ئاساسەن ئىنتايىن كىچىكىنى ھاسىللايدۇ"
+
+#: src/open-type-layout.h:33
+msgctxt "OpenType layout"
+msgid "Small Capitals From Capitals"
+msgstr "چوڭ ھەرپكە ئاساسەن كىچىكىنى ھاسىللايدۇ"
+
+#: src/open-type-layout.h:34
+msgctxt "OpenType layout"
+msgid "Character Variation 1"
+msgstr "1-ھەرپ ئۆزگىرىشى"
+
+#: src/open-type-layout.h:35
+msgctxt "OpenType layout"
+msgid "Character Variation 2"
+msgstr "2-ھەرپ ئۆزگىرىشى"
+
+#: src/open-type-layout.h:36
+msgctxt "OpenType layout"
+msgid "Character Variation 3"
+msgstr "3-ھەرپ ئۆزگىرىشى"
+
+#: src/open-type-layout.h:37
+msgctxt "OpenType layout"
+msgid "Character Variation 4"
+msgstr "4-ھەرپ ئۆزگىرىشى"
+
+#: src/open-type-layout.h:38
+msgctxt "OpenType layout"
+msgid "Character Variation 5"
+msgstr "5-ھەرپ ئۆزگىرىشى"
+
+#: src/open-type-layout.h:39
+msgctxt "OpenType layout"
+msgid "Character Variation 6"
+msgstr "6-ھەرپ ئۆزگىرىشى"
+
+#: src/open-type-layout.h:40
+msgctxt "OpenType layout"
+msgid "Character Variation 7"
+msgstr "7-ھەرپ ئۆزگىرىشى"
+
+#: src/open-type-layout.h:41
+msgctxt "OpenType layout"
+msgid "Character Variation 8"
+msgstr "8-ھەرپ ئۆزگىرىشى"
+
+#: src/open-type-layout.h:42
+msgctxt "OpenType layout"
+msgid "Character Variation 9"
+msgstr "9-ھەرپ ئۆزگىرىشى"
+
+#: src/open-type-layout.h:43
+msgctxt "OpenType layout"
+msgid "Character Variation 10"
+msgstr "10-ھەرپ ئۆزگىرىشى"
+
+#: src/open-type-layout.h:44
+msgctxt "OpenType layout"
+msgid "Character Variation 11"
+msgstr "11-ھەرپ ئۆزگىرىشى"
+
+#: src/open-type-layout.h:45
+msgctxt "OpenType layout"
+msgid "Character Variation 12"
+msgstr "12-ھەرپ ئۆزگىرىشى"
+
+#: src/open-type-layout.h:46
+msgctxt "OpenType layout"
+msgid "Character Variation 13"
+msgstr "13-ھەرپ ئۆزگىرىشى"
+
+#: src/open-type-layout.h:47
+msgctxt "OpenType layout"
+msgid "Character Variation 14"
+msgstr "14-ھەرپ ئۆزگىرىشى"
+
+#: src/open-type-layout.h:48
+msgctxt "OpenType layout"
+msgid "Character Variation 15"
+msgstr "15-ھەرپ ئۆزگىرىشى"
+
+#: src/open-type-layout.h:49
+msgctxt "OpenType layout"
+msgid "Character Variation 16"
+msgstr "16-ھەرپ ئۆزگىرىشى"
+
+#: src/open-type-layout.h:50
+msgctxt "OpenType layout"
+msgid "Character Variation 17"
+msgstr "17-ھەرپ ئۆزگىرىشى"
+
+#: src/open-type-layout.h:51
+msgctxt "OpenType layout"
+msgid "Character Variation 18"
+msgstr "18-ھەرپ ئۆزگىرىشى"
+
+#: src/open-type-layout.h:52
+msgctxt "OpenType layout"
+msgid "Character Variation 19"
+msgstr "19-ھەرپ ئۆزگىرىشى"
+
+#: src/open-type-layout.h:53
+msgctxt "OpenType layout"
+msgid "Distances"
+msgstr "ئارىلىق"
+
+#: src/open-type-layout.h:54
+msgctxt "OpenType layout"
+msgid "Discretionary Ligatures"
+msgstr "ئىختىيارىي قوشما ھەرپ"
+
+#: src/open-type-layout.h:55
+msgctxt "OpenType layout"
+msgid "Denominators"
+msgstr "مەخرەج"
+
+#: src/open-type-layout.h:56
+msgctxt "OpenType layout"
+msgid "Dotless Forms"
+msgstr "چېكىتسىز شەكلى"
+
+#: src/open-type-layout.h:57
+msgctxt "OpenType layout"
+msgid "Expert Forms"
+msgstr "مۇتەخەسسىس شەكلى"
+
+#: src/open-type-layout.h:58
+msgctxt "OpenType layout"
+msgid "Final Glyph on Line Alternates"
+msgstr "قۇر ئاخىرى شەكلىنى ئالماشتۇرۇش"
+
+#: src/open-type-layout.h:59
+msgctxt "OpenType layout"
+msgid "Terminal Forms #2"
+msgstr "ئاخىرلىشىش شەكلى #2"
+
+#: src/open-type-layout.h:60
+msgctxt "OpenType layout"
+msgid "Terminal Forms #3"
+msgstr "ئاخىرلىشىش شەكلى #3"
+
+#: src/open-type-layout.h:61
+msgctxt "OpenType layout"
+msgid "Terminal Forms"
+msgstr "ئاخىرلىشىش شەكلى"
+
+#: src/open-type-layout.h:62
+msgctxt "OpenType layout"
+msgid "Flattened accent forms"
+msgstr "ئۇرغۇلۇق شەكلى"
+
+#: src/open-type-layout.h:63
+msgctxt "OpenType layout"
+msgid "Fractions"
+msgstr "كەسىر"
+
+#: src/open-type-layout.h:64
+msgctxt "OpenType layout"
+msgid "Full Widths"
+msgstr "تولۇق كەڭلىك"
+
+#: src/open-type-layout.h:65
+msgctxt "OpenType layout"
+msgid "Half Forms"
+msgstr "بىر بايتلىق"
+
+#: src/open-type-layout.h:66
+msgctxt "OpenType layout"
+msgid "Halant Forms"
+msgstr "Halant شەكلى"
+
+#: src/open-type-layout.h:67
+msgctxt "OpenType layout"
+msgid "Alternate Half Widths"
+msgstr "ئالماشتۇرىدىغان بىر بايتلىق"
+
+#: src/open-type-layout.h:68
+msgctxt "OpenType layout"
+msgid "Historical Forms"
+msgstr "تارىخىي شەكلى"
+
+#: src/open-type-layout.h:69
+msgctxt "OpenType layout"
+msgid "Horizontal Kana Alternates"
+msgstr "توغرىسىغا كاتاكانا ئالماشتۇرۇش"
+
+#: src/open-type-layout.h:70
+msgctxt "OpenType layout"
+msgid "Historical Ligatures"
+msgstr "تارىخىي قوشما ھەرپ"
+
+#: src/open-type-layout.h:71
+msgctxt "OpenType layout"
+msgid "Hangul"
+msgstr "كورېيەچە"
+
+#: src/open-type-layout.h:72
+msgctxt "OpenType layout"
+msgid "Hojo Kanji Forms"
+msgstr "Hojo Kanji شەكلى"
+
+#: src/open-type-layout.h:73
+msgctxt "OpenType layout"
+msgid "Half Widths"
+msgstr "بىر بايتلىق"
+
+#: src/open-type-layout.h:74
+msgctxt "OpenType layout"
+msgid "Initial Forms"
+msgstr "باش شەكلى"
+
+#: src/open-type-layout.h:75
+msgctxt "OpenType layout"
+msgid "Isolated Forms"
+msgstr "يالغۇز شەكلى"
+
+#: src/open-type-layout.h:76
+msgctxt "OpenType layout"
+msgid "Italics"
+msgstr "يانتۇ"
+
+#: src/open-type-layout.h:77
+msgctxt "OpenType layout"
+msgid "Justification Alternates"
+msgstr "توغرىلاش ئالماشتۇرغۇچ"
+
+#: src/open-type-layout.h:78
+msgctxt "OpenType layout"
+msgid "JIS78 Forms"
+msgstr "JIS78 شەكلى"
+
+#: src/open-type-layout.h:79
+msgctxt "OpenType layout"
+msgid "JIS83 Forms"
+msgstr "JIS83 شەكلى"
+
+#: src/open-type-layout.h:80
+msgctxt "OpenType layout"
+msgid "JIS90 Forms"
+msgstr "JIS90 شەكلى"
+
+#: src/open-type-layout.h:81
+msgctxt "OpenType layout"
+msgid "JIS2004 Forms"
+msgstr "JIS2004 شەكلى"
+
+#: src/open-type-layout.h:82
+msgctxt "OpenType layout"
+msgid "Kerning"
+msgstr "ھەرپ ئارىلىق تەڭشىكى"
+
+#: src/open-type-layout.h:83
+msgctxt "OpenType layout"
+msgid "Left Bounds"
+msgstr "سول چېگراسى"
+
+#: src/open-type-layout.h:84
+msgctxt "OpenType layout"
+msgid "Standard Ligatures"
+msgstr "ئۆلچەملىك قوشما ھەرپ"
+
+#: src/open-type-layout.h:85
+msgctxt "OpenType layout"
+msgid "Leading Jamo Forms"
+msgstr "باشلىنىش Jamo شەكلى"
+
+#: src/open-type-layout.h:86
+msgctxt "OpenType layout"
+msgid "Lining Figures"
+msgstr "تەڭ ئېگىزلىكتىكى شەكىل"
+
+#: src/open-type-layout.h:87
+msgctxt "OpenType layout"
+msgid "Localized Forms"
+msgstr "يەرلىكلەشتۈرۈلگەن شەكلى"
+
+#: src/open-type-layout.h:88
+msgctxt "OpenType layout"
+msgid "Left-to-right alternates"
+msgstr "سولدىن ئوڭغا ئالماشتۇرۇش"
+
+#: src/open-type-layout.h:89
+msgctxt "OpenType layout"
+msgid "Left-to-right mirrored forms"
+msgstr "سولدىن ئوڭغا ئەكسى شەكلى"
+
+#: src/open-type-layout.h:90
+msgctxt "OpenType layout"
+msgid "Mark Positioning"
+msgstr "بەلگە ئورنى"
+
+#: src/open-type-layout.h:91
+msgctxt "OpenType layout"
+msgid "Medial Forms #2"
+msgstr "ئوتتۇرا شەكلى #2"
+
+#: src/open-type-layout.h:92
+msgctxt "OpenType layout"
+msgid "Medial Forms"
+msgstr "ئوتتۇرا شەكلى"
+
+#: src/open-type-layout.h:93
+msgctxt "OpenType layout"
+msgid "Mathematical Greek"
+msgstr "ماتېماتىكا گىرېكچە ھەرپ"
+
+#: src/open-type-layout.h:94
+msgctxt "OpenType layout"
+msgid "Mark to Mark Positioning"
+msgstr "بەلگە ئارىسىدىكى ئورۇن"
+
+#: src/open-type-layout.h:95
+msgctxt "OpenType layout"
+msgid "Mark Positioning via Substitution"
+msgstr "ئالماشتۇرۇش ئارقىلىق بەلگە قويۇش ئورنى"
+
+#: src/open-type-layout.h:96
+msgctxt "OpenType layout"
+msgid "Alternate Annotation Forms"
+msgstr "زاپاس ئىزاھات شەكلى"
+
+#: src/open-type-layout.h:97
+msgctxt "OpenType layout"
+msgid "NLC Kanji Forms"
+msgstr "NLC Kanji شەكلى"
+
+#: src/open-type-layout.h:98
+msgctxt "OpenType layout"
+msgid "Nukta Forms"
+msgstr "Nukta شەكلى"
+
+#: src/open-type-layout.h:99
+msgctxt "OpenType layout"
+msgid "Numerators"
+msgstr "سۈرەت"
+
+#: src/open-type-layout.h:100
+msgctxt "OpenType layout"
+msgid "Oldstyle Figures"
+msgstr "كونا ئۇسلۇبتىكى سان"
+
+#: src/open-type-layout.h:101
+msgctxt "OpenType layout"
+msgid "Optical Bounds"
+msgstr "كۆرەلەيدىغان چېگرا"
+
+#: src/open-type-layout.h:102
+msgctxt "OpenType layout"
+msgid "Ordinals"
+msgstr "تەرتىپ"
+
+#: src/open-type-layout.h:103
+msgctxt "OpenType layout"
+msgid "Ornaments"
+msgstr "بېزەك ھەرپ"
+
+#: src/open-type-layout.h:104
+msgctxt "OpenType layout"
+msgid "Proportional Alternate Widths"
+msgstr "نىسپىي كەڭلىك ئالماشتۇرۇش"
+
+#: src/open-type-layout.h:105
+msgctxt "OpenType layout"
+msgid "Petite Capitals"
+msgstr "ئىنتايىن كىچىك يېزىلغان چوڭ ھەرپ"
+
+#: src/open-type-layout.h:106
+msgctxt "OpenType layout"
+msgid "Proportional Kana"
+msgstr "تەڭ كەڭلىكسىز كاتاكانا"
+
+#: src/open-type-layout.h:107
+msgctxt "OpenType layout"
+msgid "Proportional Figures"
+msgstr "تەڭ كەڭلىكسىز سان"
+
+#: src/open-type-layout.h:108
+msgctxt "OpenType layout"
+msgid "Pre-Base Forms"
+msgstr "Pre-Base شەكلى"
+
+#: src/open-type-layout.h:109
+msgctxt "OpenType layout"
+msgid "Pre-base Substitutions"
+msgstr "ئالدىن ئاساسىي ئالماشتۇرۇش"
+
+#: src/open-type-layout.h:110
+msgctxt "OpenType layout"
+msgid "Post-base Forms"
+msgstr "ئاساسىدىن كېيىنكى شەكلى"
+
+#: src/open-type-layout.h:111
+msgctxt "OpenType layout"
+msgid "Post-base Substitutions"
+msgstr "ئاساسىدىن كېيىنكى ئالماشتۇرۇش"
+
+#: src/open-type-layout.h:112
+msgctxt "OpenType layout"
+msgid "Proportional Widths"
+msgstr "نىسبەت كەڭلىكى"
+
+#: src/open-type-layout.h:113
+msgctxt "OpenType layout"
+msgid "Quarter Widths"
+msgstr "تۆتتىن بىر كەڭلىك"
+
+#: src/open-type-layout.h:114
+msgctxt "OpenType layout"
+msgid "Randomize"
+msgstr "ئىختىيارىي"
+
+#: src/open-type-layout.h:115
+msgctxt "OpenType layout"
+msgid "Required Contextual Alternates"
+msgstr "مەزمۇنغا ئاساسەن مەجبۇرىي ئالماشتۇرۇش"
+
+#: src/open-type-layout.h:116
+msgctxt "OpenType layout"
+msgid "Rakar Forms"
+msgstr "Rakar شەكلى"
+
+#: src/open-type-layout.h:117
+msgctxt "OpenType layout"
+msgid "Required Ligatures"
+msgstr "مەجبۇرىي قوشما ھەرپ"
+
+#: src/open-type-layout.h:118
+msgctxt "OpenType layout"
+msgid "Reph Forms"
+msgstr "Reph شەكلى"
+
+#: src/open-type-layout.h:119
+msgctxt "OpenType layout"
+msgid "Right Bounds"
+msgstr "ئوڭ چېكى"
+
+#: src/open-type-layout.h:120
+msgctxt "OpenType layout"
+msgid "Right-to-left alternates"
+msgstr "ئوڭدىن سولغا ئالماشتۇرۇش"
+
+#: src/open-type-layout.h:121
+msgctxt "OpenType layout"
+msgid "Right-to-left mirrored forms"
+msgstr "ئوڭدىن سولغا ئەكسى شەكلى"
+
+#: src/open-type-layout.h:122
+msgctxt "OpenType layout"
+msgid "Ruby Notation Forms"
+msgstr "Ruby ئىزاھات شەكلى"
+
+#: src/open-type-layout.h:123
+msgctxt "OpenType layout"
+msgid "Required Variation Alternates"
+msgstr "مەجبۇرىي شەكىل ئالماشتۇرۇش"
+
+#: src/open-type-layout.h:124
+msgctxt "OpenType layout"
+msgid "Stylistic Alternates"
+msgstr "ئالماشتۇرۇش ئۇسلۇبى"
+
+#: src/open-type-layout.h:125
+msgctxt "OpenType layout"
+msgid "Scientific Inferiors"
+msgstr "ئىلمىي ئاستى ئىندېكس"
+
+#: src/open-type-layout.h:126
+msgctxt "OpenType layout"
+msgid "Optical size"
+msgstr "كۆرەلەيدىغان چوڭلۇقى"
+
+#: src/open-type-layout.h:127
+msgctxt "OpenType layout"
+msgid "Small Capitals"
+msgstr "كىچىك چوڭ يېزىلغان ھەرپ"
+
+#: src/open-type-layout.h:128
+msgctxt "OpenType layout"
+msgid "Simplified Forms"
+msgstr "ئاددىي شەكىل"
+
+#: src/open-type-layout.h:129
+msgctxt "OpenType layout"
+msgid "Stylistic Set 1"
+msgstr "1-ئۇسلۇب توپلىمى"
+
+#: src/open-type-layout.h:130
+msgctxt "OpenType layout"
+msgid "Stylistic Set 2"
+msgstr "2-ئۇسلۇب توپلىمى"
+
+#: src/open-type-layout.h:131
+msgctxt "OpenType layout"
+msgid "Stylistic Set 3"
+msgstr "3-ئۇسلۇب توپلىمى"
+
+#: src/open-type-layout.h:132
+msgctxt "OpenType layout"
+msgid "Stylistic Set 4"
+msgstr "4-ئۇسلۇب توپلىمى"
+
+#: src/open-type-layout.h:133
+msgctxt "OpenType layout"
+msgid "Stylistic Set 5"
+msgstr "5-ئۇسلۇب توپلىمى"
+
+#: src/open-type-layout.h:134
+msgctxt "OpenType layout"
+msgid "Stylistic Set 6"
+msgstr "6-ئۇسلۇب توپلىمى"
+
+#: src/open-type-layout.h:135
+msgctxt "OpenType layout"
+msgid "Stylistic Set 7"
+msgstr "7-ئۇسلۇب توپلىمى"
+
+#: src/open-type-layout.h:136
+msgctxt "OpenType layout"
+msgid "Stylistic Set 8"
+msgstr "8-ئۇسلۇب توپلىمى"
+
+#: src/open-type-layout.h:137
+msgctxt "OpenType layout"
+msgid "Stylistic Set 9"
+msgstr "9-ئۇسلۇب توپلىمى"
+
+#: src/open-type-layout.h:138
+msgctxt "OpenType layout"
+msgid "Stylistic Set 10"
+msgstr "10-ئۇسلۇب توپلىمى"
+
+#: src/open-type-layout.h:139
+msgctxt "OpenType layout"
+msgid "Stylistic Set 11"
+msgstr "11-ئۇسلۇب توپلىمى"
+
+#: src/open-type-layout.h:140
+msgctxt "OpenType layout"
+msgid "Stylistic Set 12"
+msgstr "12-ئۇسلۇب توپلىمى"
+
+#: src/open-type-layout.h:141
+msgctxt "OpenType layout"
+msgid "Stylistic Set 13"
+msgstr "13-ئۇسلۇب توپلىمى"
+
+#: src/open-type-layout.h:142
+msgctxt "OpenType layout"
+msgid "Stylistic Set 14"
+msgstr "14-ئۇسلۇب توپلىمى"
+
+#: src/open-type-layout.h:143
+msgctxt "OpenType layout"
+msgid "Stylistic Set 15"
+msgstr "15-ئۇسلۇب توپلىمى"
+
+#: src/open-type-layout.h:144
+msgctxt "OpenType layout"
+msgid "Stylistic Set 16"
+msgstr "16-ئۇسلۇب توپلىمى"
+
+#: src/open-type-layout.h:145
+msgctxt "OpenType layout"
+msgid "Stylistic Set 17"
+msgstr "17-ئۇسلۇب توپلىمى"
+
+#: src/open-type-layout.h:146
+msgctxt "OpenType layout"
+msgid "Stylistic Set 18"
+msgstr "18-ئۇسلۇب توپلىمى"
+
+#: src/open-type-layout.h:147
+msgctxt "OpenType layout"
+msgid "Stylistic Set 19"
+msgstr "19-ئۇسلۇب توپلىمى"
+
+#: src/open-type-layout.h:148
+msgctxt "OpenType layout"
+msgid "Stylistic Set 20"
+msgstr "20-ئۇسلۇب توپلىمى"
+
+#: src/open-type-layout.h:149
+msgctxt "OpenType layout"
+msgid "Math script style alternates"
+msgstr "ماتېماتىكىلىق يازما ئۇسلۇبىنى ئالماشتۇرۇش"
+
+#: src/open-type-layout.h:150
+msgctxt "OpenType layout"
+msgid "Stretching Glyph Decomposition"
+msgstr "گىرافىكنى سوزۇشنى پارچىلاش"
+
+#: src/open-type-layout.h:151
+msgctxt "OpenType layout"
+msgid "Subscript"
+msgstr "تۆۋەنكى ئىندېكس"
+
+#: src/open-type-layout.h:152
+msgctxt "OpenType layout"
+msgid "Superscript"
+msgstr "يۇقىرى ئىندېكس"
+
+#: src/open-type-layout.h:153
+msgctxt "OpenType layout"
+msgid "Swash"
+msgstr "ئۆزگىرىشچان ھەرپ"
+
+#: src/open-type-layout.h:154
+msgctxt "OpenType layout"
+msgid "Titling"
+msgstr "ماۋزۇ"
+
+#: src/open-type-layout.h:155
+msgctxt "OpenType layout"
+msgid "Trailing Jamo Forms"
+msgstr "ئاخىرلىشىش Jamo شەكلى"
+
+#: src/open-type-layout.h:156
+msgctxt "OpenType layout"
+msgid "Traditional Name Forms"
+msgstr "ئەنئەنىۋى ئىسىم شەكلى"
+
+#: src/open-type-layout.h:157
+msgctxt "OpenType layout"
+msgid "Tabular Figures"
+msgstr "تەڭ كەڭلىكتىكى سان"
+
+#: src/open-type-layout.h:158
+msgctxt "OpenType layout"
+msgid "Traditional Forms"
+msgstr "مۇرەككەپ شەكىل"
+
+#: src/open-type-layout.h:159
+msgctxt "OpenType layout"
+msgid "Third Widths"
+msgstr "ئۈچتىن بىر كەڭلىك"
+
+#: src/open-type-layout.h:160
+msgctxt "OpenType layout"
+msgid "Unicase"
+msgstr "چوڭ كىچىك ھەرپ ئوخشاشلاشتۇرۇش"
+
+#: src/open-type-layout.h:161
+msgctxt "OpenType layout"
+msgid "Alternate Vertical Metrics"
+msgstr "بويىغا ئۆلچەمنى ئالماشتۇرۇش"
+
+#: src/open-type-layout.h:162
+msgctxt "OpenType layout"
+msgid "Vattu Variants"
+msgstr "Vattu شالغۇتى"
+
+#: src/open-type-layout.h:163
+msgctxt "OpenType layout"
+msgid "Vertical Writing"
+msgstr "تىك يېزىش"
+
+#: src/open-type-layout.h:164
+msgctxt "OpenType layout"
+msgid "Alternate Vertical Half Metrics"
+msgstr "تىك يېرىم ئۆلچەمگە ئالماشتۇرۇش"
+
+#: src/open-type-layout.h:165
+msgctxt "OpenType layout"
+msgid "Vowel Jamo Forms"
+msgstr "سوزۇق تاۋۇش Jamo شەكلى"
+
+#: src/open-type-layout.h:166
+msgctxt "OpenType layout"
+msgid "Vertical Kana Alternates"
+msgstr "بويىغا كاتاكانا ئالماشتۇرۇش"
+
+#: src/open-type-layout.h:167
+msgctxt "OpenType layout"
+msgid "Vertical Kerning"
+msgstr "بويىغا ھەرپ ئارىلىقى"
+
+#: src/open-type-layout.h:168
+msgctxt "OpenType layout"
+msgid "Proportional Alternate Vertical Metrics"
+msgstr "بويىغا نىسبەت ئۆلچەمنى ئالماشتۇرۇش"
+
+#: src/open-type-layout.h:169
+msgctxt "OpenType layout"
+msgid "Vertical Alternates and Rotation"
+msgstr "بويىغا ئالماشتۇرۇش ۋە ئايلاندۇرۇش"
+
+#: src/open-type-layout.h:170
+msgctxt "OpenType layout"
+msgid "Vertical Alternates for Rotation"
+msgstr "ئايلاندۇرۇشنىڭ بويىغا ئالماشتۇرۇشى"
+
+#: src/open-type-layout.h:171
+msgctxt "OpenType layout"
+msgid "Slashed Zero"
+msgstr "يانتۇلۇقى نۆل"
+
+#~ msgid "Quit"
+#~ msgstr "ئاخىرلاشتۇر"
+
+#~ msgid "This font could not be displayed."
+#~ msgstr "مەزكۇر خەت نۇسخىسىنى كۆرسەتكىلى بولمىدى."
+
+#~ msgid "Back"
+#~ msgstr "كەينى"
+
+#~ msgid "Font Viewer"
+#~ msgstr "خەت نۇسخا كۆرگۈ"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "خەت چوڭلۇقى (كۆڭۈلدىكى: 64)"
