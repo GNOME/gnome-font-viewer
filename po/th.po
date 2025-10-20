@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: gnome-font-viewer\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues/\n"
 "POT-Creation-Date: 2025-10-10 21:10+0000\n"
-"PO-Revision-Date: 2025-10-17 15:38+0700\n"
+"PO-Revision-Date: 2025-10-20 12:18+0700\n"
 "Last-Translator: Akom Chotiphantawanon <knight2000@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "Language: th\n"
@@ -33,9 +33,8 @@ msgstr "ดูแบบอักษรต่างๆ ในระบบขอ�
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
-"Fonts shows you the fonts installed on your computer for your use as thumbnails. "
-"Selecting any thumbnails shows the full view of how the font would look under various "
-"sizes."
+"Fonts shows you the fonts installed on your computer for your use as thumbnails. Selecting "
+"any thumbnails shows the full view of how the font would look under various sizes."
 msgstr ""
 "“แบบอักษร” จะแสดงแบบอักษรต่าง ๆ ที่ติดตั้งในคอมพิวเตอร์ของคุณในแบบภาพย่อ การเลือกภาพย่อใด ๆ "
 "จะแสดงภาพเต็มของแบบอักษรในขนาดต่าง ๆ"
@@ -252,7 +251,7 @@ msgstr "รูปแบบเหนืออักขระฐาน"
 #: src/open-type-layout.h:15
 msgctxt "OpenType layout"
 msgid "Above-base Mark Positioning"
-msgstr "การจัดตำแหน่งเครื่องหมายเหนืออักขระฐาน"
+msgstr "การจัดวางเครื่องหมายเหนืออักขระฐาน"
 
 #: src/open-type-layout.h:16
 msgctxt "OpenType layout"
@@ -277,7 +276,7 @@ msgstr "รูปแบบใต้อักขระฐาน"
 #: src/open-type-layout.h:20
 msgctxt "OpenType layout"
 msgid "Below-base Mark Positioning"
-msgstr "การจัดตำแหน่งเครื่องหมายใต้อักขระฐาน"
+msgstr "การจัดวางเครื่องหมายใต้อักขระฐาน"
 
 #: src/open-type-layout.h:21
 msgctxt "OpenType layout"
@@ -332,7 +331,7 @@ msgstr "หางอักษรตามบริบท"
 #: src/open-type-layout.h:31
 msgctxt "OpenType layout"
 msgid "Cursive Positioning"
-msgstr "การจัดตำแหน่งตัวเขียน"
+msgstr "การจัดวางตัวเขียน"
 
 #: src/open-type-layout.h:32
 msgctxt "OpenType layout"
@@ -627,7 +626,7 @@ msgstr "รูปแบบสะท้อนซ้ายไปขวา"
 #: src/open-type-layout.h:90
 msgctxt "OpenType layout"
 msgid "Mark Positioning"
-msgstr "การจัดตำแหน่งเครื่องหมาย"
+msgstr "การจัดวางเครื่องหมาย"
 
 #: src/open-type-layout.h:91
 msgctxt "OpenType layout"
@@ -647,12 +646,12 @@ msgstr "กรีกเชิงคณิตศาสตร์"
 #: src/open-type-layout.h:94
 msgctxt "OpenType layout"
 msgid "Mark to Mark Positioning"
-msgstr "การจัดตำแหน่งเครื่องหมายเข้ากับเครื่องหมาย"
+msgstr "การจัดวางเครื่องหมายซ้อนเครื่องหมาย"
 
 #: src/open-type-layout.h:95
 msgctxt "OpenType layout"
 msgid "Mark Positioning via Substitution"
-msgstr "การจัดตำแหน่งเครื่องหมายผ่านการแทนที่"
+msgstr "การจัดวางเครื่องหมายผ่านการแทนที่"
 
 #: src/open-type-layout.h:96
 msgctxt "OpenType layout"
@@ -787,7 +786,7 @@ msgstr "รูปแบบสะท้อนขวาไปซ้าย"
 #: src/open-type-layout.h:122
 msgctxt "OpenType layout"
 msgid "Ruby Notation Forms"
-msgstr "รูปแบบเครื่องหมายระบุการออกเสียง"
+msgstr "รูปแบบเครื่องหมายตัวช่วยการออกเสียง"
 
 #: src/open-type-layout.h:123
 msgctxt "OpenType layout"
