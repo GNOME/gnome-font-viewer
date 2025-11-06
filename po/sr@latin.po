@@ -6,217 +6,244 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils-2.0\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2018-02-14 23:10+0000\n"
-"PO-Revision-Date: 2018-02-16 09:11+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
+"issues/\n"
+"POT-Creation-Date: 2025-10-26 15:03+0000\n"
+"PO-Revision-Date: 2023-02-18 07:28+0100\n"
 "Last-Translator: Marko M. Kostić <marko.m.kostic@gmail.com>\n"
 "Language-Team: srpski <gnome-sr@googlegroups.org>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n"
-"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
+"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 3.1.1\n"
 "X-Poedit-Bookmarks: -1,21,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:85
-msgid "GNOME Fonts"
-msgstr "Gnomovi fontovi"
+#: data/org.gnome.font-viewer.appdata.xml.in:6
+#: data/org.gnome.font-viewer.desktop.in.in:2 src/font-view-application.c:124
+#: src/font-view-application.c:150
+msgid "Fonts"
+msgstr "Fontovi"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1066
-#: src/org.gnome.font-viewer.desktop.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7
+#: data/org.gnome.font-viewer.desktop.in.in:3
 msgid "View fonts on your system"
 msgstr "Pregledajte pisma na vašem sistemu"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
-"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"Gnomovi fontovi vam prikazuje fontove instalirane na vašem računaru za vašu "
-"upotrebu kao minijature. Biranje neke minijature prikazuje potpun pregled "
-"kako bi font trebao da izgledau raznim veličinama."
+"Fontovi vam prikazuju fontove instalirane na vašem računaru za vašu upotrebu "
+"kao minijature. Biranje neke minijature prikazuje potpun pregled kako bi font "
+"trebao da izgledau raznim veličinama."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
-"GNOME Fonts also supports installing new font files downloaded in the .ttf "
-"and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
 msgstr ""
-"Gnomovi fontovi takođe podržava instaliranje datoteka novih fontova preuzetih "
-"u „.ttf“ i drugim zapisima. Fontovi mogu biti instalirani samo za vašu "
+"Fontovi takođe podržavaju instaliranje datoteka novih fontova preuzetih u "
+"„.ttf“ i drugim zapisima. Fontovi mogu biti instalirani samo za vašu "
 "upotrebu ili mogu biti dostupni svim korisnicima na računaru."
 
-#: src/font-thumbnailer.c:189
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.font-viewer.appdata.xml.in:22 src/font-view-application.c:126
+msgid "The GNOME Project"
+msgstr "Gnomov projekat"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.font-viewer.desktop.in.in:5
+msgid "fonts;fontface;"
+msgstr "slova;fontovi;pisma;"
+
+#: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
 msgstr "Tekst u minijaturu (osnovno: Aa)"
 
-#: src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:181
 msgid "TEXT"
 msgstr "TEKST"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "Thumbnail size (default: 128)"
 msgstr "Veličina minijature (osnovno: 128)"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "SIZE"
 msgstr "VELIČINA"
 
-#: src/font-thumbnailer.c:193
+#: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "DATOTEKA-PISMA IZLAZNA-DATOTEKA"
 
-#: src/font-view-app-menu.ui:6
-msgid "About"
-msgstr "O programu"
+#: src/font-view-application.c:79 src/font-view-window.c:744
+msgid "Could Not Display Font"
+msgstr "Ne mogu prikazati font"
 
-#: src/font-view-app-menu.ui:10
-msgid "Quit"
-msgstr "Izađi"
+#: src/font-view-application.c:129
+msgid "translator-credits"
+msgstr ""
+"  Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
+"  Marko M. Kostić <marko.m.kostic@gmail.com>\n"
+"\n"
+"https://gnom.srb — prevod Gnoma na srpski jezik."
 
-#: src/font-view.c:93
-msgid "Show the application's version"
-msgstr "Prikazuje izdanje programa"
+#: src/font-view-window.c:120
+msgid "Failed"
+msgstr "Nije uspelo"
+
+#: src/font-view-window.c:128
+msgid "Installed"
+msgstr "Instalirano"
+
+#: src/font-view-window.c:133
+msgid "Installing"
+msgstr "Instaliram"
+
+#: src/font-view-window.c:136 src/font-view-window.ui:176
+msgid "_Install"
+msgstr "_Instaliraj"
 
 #. Translators, this string is used to display information about
 #. * a 'font variation axis'. The %s gets replaced with the name
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:223
+#: src/font-view-window.c:250
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, podrazumevano %g"
 
-#: src/font-view.c:279
+#: src/font-view-window.c:305
 #, c-format
 msgid "Instance %d"
 msgstr "Primerak %d"
 
-#. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:324
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view-window.c:343
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view.c:350
+#: src/font-view-window.c:372
 msgid "Name"
 msgstr "Naziv"
 
-#: src/font-view.c:353
+#: src/font-view-window.c:375
+msgid "Location"
+msgstr "Mesto"
+
+#: src/font-view-window.c:378
 msgid "Style"
 msgstr "Stil"
 
-#: src/font-view.c:363
+#: src/font-view-window.c:388
 msgid "Type"
 msgstr "Vrsta"
 
-#: src/font-view.c:424 src/font-view.c:458
+#: src/font-view-window.c:454 src/font-view-window.c:480
 msgid "Version"
 msgstr "Izdanje"
 
-#: src/font-view.c:429 src/font-view.c:464
+#: src/font-view-window.c:458 src/font-view-window.c:485
 msgid "Copyright"
 msgstr "Autorska prava"
 
-#: src/font-view.c:434
+#: src/font-view-window.c:462
 msgid "Description"
 msgstr "Opis"
 
-#: src/font-view.c:439
+#: src/font-view-window.c:466
 msgid "Manufacturer"
 msgstr "Proizvođač"
 
-#: src/font-view.c:444
+#: src/font-view-window.c:470
 msgid "Designer"
 msgstr "Dizajner"
 
-#: src/font-view.c:449
+#: src/font-view-window.c:474
 msgid "License"
 msgstr "Dozvola"
 
-#: src/font-view.c:479
+#: src/font-view-window.c:499
 msgid "Glyph Count"
 msgstr "Broj znakova"
 
-#: src/font-view.c:482
+#: src/font-view-window.c:501
 msgid "Color Glyphs"
 msgstr "Obojeni znakovi"
 
-#: src/font-view.c:482
+#: src/font-view-window.c:502
 msgid "yes"
 msgstr "da"
 
-#: src/font-view.c:482
+#: src/font-view-window.c:502
 msgid "no"
 msgstr "ne"
 
-#: src/font-view.c:486
+#: src/font-view-window.c:506
 msgid "Layout Features"
 msgstr "Mogućnosti rasporeda"
 
-#: src/font-view.c:493
+#: src/font-view-window.c:512
 msgid "Variation Axes"
 msgstr "Varijacija osa"
 
-#: src/font-view.c:501
+#: src/font-view-window.c:519
 msgid "Named Styles"
 msgstr "Imenovani stilovi"
 
-#: src/font-view.c:518
-msgid "Install Failed"
-msgstr "Instalacija nije uspela"
+#: src/font-view-window.c:560 src/font-view-window.c:663
+msgid "Could Not Install Font"
+msgstr "Ne mogu instalirati font"
 
-#: src/font-view.c:525
-msgid "Installed"
-msgstr "Instalirano"
-
-#: src/font-view.c:529 src/font-view.c:808
-msgid "Install"
-msgstr "Instaliraj"
-
-#: src/font-view.c:663
-msgid "This font could not be displayed."
-msgstr "Ovaj font ne može biti prikazan."
-
-#: src/font-view.c:819
-msgid "Info"
-msgstr "Podaci"
-
-#: src/font-view.c:834
-msgid "Back"
-msgstr "Nazad"
-
-#: src/font-view.c:939
+#: src/font-view-window.ui:25
 msgid "All Fonts"
 msgstr "Sva pisma"
 
-#: src/font-view.c:1065 src/org.gnome.font-viewer.desktop.in:3
-msgid "Fonts"
-msgstr "Fontovi"
+#: src/font-view-window.ui:33
+msgid "Search"
+msgstr "Pretraga"
 
-#: src/font-view.c:1068
-msgid "translator-credits"
-msgstr ""
-"  Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
-"  Marko M. Kostić <marko.m.kostic@gmail.com>\n"
-"\n"
-"http://prevod.org — prevod na srpski jezik"
+#: src/font-view-window.ui:41
+msgid "About Fonts"
+msgstr "O Fontovima"
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in:6
-msgid "fonts;fontface;"
-msgstr "slova;fontovi;pisma;"
+#: src/font-view-window.ui:53
+msgid "Search fonts"
+msgstr "Pretraži fontove"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: src/org.gnome.font-viewer.desktop.in:8
-msgid "preferences-desktop-font"
-msgstr "preferences-desktop-font"
+#: src/font-view-window.ui:179
+msgid "Install Font"
+msgstr "Instaliraj font"
+
+#: src/font-view-window.ui:184
+msgid "I_nfo"
+msgstr "Po_daci"
+
+#: src/font-view-window.ui:186
+msgid "Font Details"
+msgstr "Pojedinosti fonta"
+
+#: src/font-view-window.ui:232
+msgid "_Close"
+msgstr "_Zatvori"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "Gnomovi fontovi"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "Prikazuje izdanje programa"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -326,598 +353,720 @@ msgstr "Mala početna slova iz početnih slova"
 
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
+msgid "Character Variation 1"
+msgstr "Varijacija znaka 1"
+
+#: src/open-type-layout.h:35
+msgctxt "OpenType layout"
+msgid "Character Variation 2"
+msgstr "Varijacija znaka 2"
+
+#: src/open-type-layout.h:36
+msgctxt "OpenType layout"
+msgid "Character Variation 3"
+msgstr "Varijacija znaka 3"
+
+#: src/open-type-layout.h:37
+msgctxt "OpenType layout"
+msgid "Character Variation 4"
+msgstr "Varijacija znaka 4"
+
+#: src/open-type-layout.h:38
+msgctxt "OpenType layout"
+msgid "Character Variation 5"
+msgstr "Varijacija znaka 5"
+
+#: src/open-type-layout.h:39
+msgctxt "OpenType layout"
+msgid "Character Variation 6"
+msgstr "Varijacija znaka 6"
+
+#: src/open-type-layout.h:40
+msgctxt "OpenType layout"
+msgid "Character Variation 7"
+msgstr "Varijacija znaka 7"
+
+#: src/open-type-layout.h:41
+msgctxt "OpenType layout"
+msgid "Character Variation 8"
+msgstr "Varijacija znaka 8"
+
+#: src/open-type-layout.h:42
+msgctxt "OpenType layout"
+msgid "Character Variation 9"
+msgstr "Varijacija znaka 9"
+
+#: src/open-type-layout.h:43
+msgctxt "OpenType layout"
+msgid "Character Variation 10"
+msgstr "Varijacija znaka 10"
+
+#: src/open-type-layout.h:44
+msgctxt "OpenType layout"
+msgid "Character Variation 11"
+msgstr "Varijacija znaka 11"
+
+#: src/open-type-layout.h:45
+msgctxt "OpenType layout"
+msgid "Character Variation 12"
+msgstr "Varijacija znaka 12"
+
+#: src/open-type-layout.h:46
+msgctxt "OpenType layout"
+msgid "Character Variation 13"
+msgstr "Varijacija znaka 13"
+
+#: src/open-type-layout.h:47
+msgctxt "OpenType layout"
+msgid "Character Variation 14"
+msgstr "Varijacija znaka 14"
+
+#: src/open-type-layout.h:48
+msgctxt "OpenType layout"
+msgid "Character Variation 15"
+msgstr "Varijacija znaka 15"
+
+#: src/open-type-layout.h:49
+msgctxt "OpenType layout"
+msgid "Character Variation 16"
+msgstr "Varijacija znaka 16"
+
+#: src/open-type-layout.h:50
+msgctxt "OpenType layout"
+msgid "Character Variation 17"
+msgstr "Varijacija znaka 17"
+
+#: src/open-type-layout.h:51
+msgctxt "OpenType layout"
+msgid "Character Variation 18"
+msgstr "Varijacija znaka 18"
+
+#: src/open-type-layout.h:52
+msgctxt "OpenType layout"
+msgid "Character Variation 19"
+msgstr "Varijacija znaka 19"
+
+#: src/open-type-layout.h:53
+msgctxt "OpenType layout"
 msgid "Distances"
 msgstr "Daljine"
 
-#: src/open-type-layout.h:35
+#: src/open-type-layout.h:54
 msgctxt "OpenType layout"
 msgid "Discretionary Ligatures"
 msgstr "Diskrecione ligature"
 
-#: src/open-type-layout.h:36
+#: src/open-type-layout.h:55
 msgctxt "OpenType layout"
 msgid "Denominators"
 msgstr "Imenioci"
 
-#: src/open-type-layout.h:37
+#: src/open-type-layout.h:56
 msgctxt "OpenType layout"
 msgid "Dotless Forms"
 msgstr "Oblici bez tačke"
 
-#: src/open-type-layout.h:38
+#: src/open-type-layout.h:57
 msgctxt "OpenType layout"
 msgid "Expert Forms"
 msgstr "Oblici za stručnjake"
 
-#: src/open-type-layout.h:39
+#: src/open-type-layout.h:58
 msgctxt "OpenType layout"
 msgid "Final Glyph on Line Alternates"
 msgstr "Završni znak na linijskim zamenama"
 
-#: src/open-type-layout.h:40
+#: src/open-type-layout.h:59
 msgctxt "OpenType layout"
 msgid "Terminal Forms #2"
 msgstr "Terminalni oblik #2"
 
-#: src/open-type-layout.h:41
+#: src/open-type-layout.h:60
 msgctxt "OpenType layout"
 msgid "Terminal Forms #3"
 msgstr "Terminalni oblik #3"
 
-#: src/open-type-layout.h:42
+#: src/open-type-layout.h:61
 msgctxt "OpenType layout"
 msgid "Terminal Forms"
 msgstr "Terminalni oblici"
 
-#: src/open-type-layout.h:43
+#: src/open-type-layout.h:62
 msgctxt "OpenType layout"
 msgid "Flattened accent forms"
 msgstr "Poravnati oblici naglasaka"
 
-#: src/open-type-layout.h:44
+#: src/open-type-layout.h:63
 msgctxt "OpenType layout"
 msgid "Fractions"
 msgstr "Razlomci"
 
-#: src/open-type-layout.h:45
+#: src/open-type-layout.h:64
 msgctxt "OpenType layout"
 msgid "Full Widths"
 msgstr "Pune širine"
 
-#: src/open-type-layout.h:46
+#: src/open-type-layout.h:65
 msgctxt "OpenType layout"
 msgid "Half Forms"
 msgstr "Polu-oblici"
 
-#: src/open-type-layout.h:47
+#: src/open-type-layout.h:66
 msgctxt "OpenType layout"
 msgid "Halant Forms"
 msgstr "Oblici sa kukicom"
 
-#: src/open-type-layout.h:48
+#: src/open-type-layout.h:67
 msgctxt "OpenType layout"
 msgid "Alternate Half Widths"
 msgstr "Zamenski polu-oblici"
 
-#: src/open-type-layout.h:49
+#: src/open-type-layout.h:68
 msgctxt "OpenType layout"
 msgid "Historical Forms"
 msgstr "Istorijski oblici"
 
-#: src/open-type-layout.h:50
+#: src/open-type-layout.h:69
 msgctxt "OpenType layout"
 msgid "Horizontal Kana Alternates"
 msgstr "Horizontalne Kana zamene"
 
-#: src/open-type-layout.h:51
+#: src/open-type-layout.h:70
 msgctxt "OpenType layout"
 msgid "Historical Ligatures"
 msgstr "Istorijske ligature"
 
-#: src/open-type-layout.h:52
+#: src/open-type-layout.h:71
 msgctxt "OpenType layout"
 msgid "Hangul"
 msgstr "Hangul"
 
-#: src/open-type-layout.h:53
+#: src/open-type-layout.h:72
 msgctxt "OpenType layout"
 msgid "Hojo Kanji Forms"
 msgstr "Hodžo Kandži oblici"
 
-#: src/open-type-layout.h:54
+#: src/open-type-layout.h:73
 msgctxt "OpenType layout"
 msgid "Half Widths"
 msgstr "Polu-širine"
 
-#: src/open-type-layout.h:55
+#: src/open-type-layout.h:74
 msgctxt "OpenType layout"
 msgid "Initial Forms"
 msgstr "Početni oblici"
 
-#: src/open-type-layout.h:56
+#: src/open-type-layout.h:75
 msgctxt "OpenType layout"
 msgid "Isolated Forms"
 msgstr "Izolovani oblici"
 
-#: src/open-type-layout.h:57
+#: src/open-type-layout.h:76
 msgctxt "OpenType layout"
 msgid "Italics"
 msgstr "Iskošeni"
 
-#: src/open-type-layout.h:58
+#: src/open-type-layout.h:77
 msgctxt "OpenType layout"
 msgid "Justification Alternates"
 msgstr "Zamenski poravnatelji"
 
-#: src/open-type-layout.h:59
+#: src/open-type-layout.h:78
 msgctxt "OpenType layout"
 msgid "JIS78 Forms"
 msgstr "JIS78 oblici"
 
-#: src/open-type-layout.h:60
+#: src/open-type-layout.h:79
 msgctxt "OpenType layout"
 msgid "JIS83 Forms"
 msgstr "JIS83 oblici"
 
-#: src/open-type-layout.h:61
+#: src/open-type-layout.h:80
 msgctxt "OpenType layout"
 msgid "JIS90 Forms"
 msgstr "JIS90 oblici"
 
-#: src/open-type-layout.h:62
+#: src/open-type-layout.h:81
 msgctxt "OpenType layout"
 msgid "JIS2004 Forms"
 msgstr "JIS2004 oblici"
 
-#: src/open-type-layout.h:63
+#: src/open-type-layout.h:82
 msgctxt "OpenType layout"
 msgid "Kerning"
 msgstr "Kernovanje"
 
-#: src/open-type-layout.h:64
+#: src/open-type-layout.h:83
 msgctxt "OpenType layout"
 msgid "Left Bounds"
 msgstr "Leve granice"
 
-#: src/open-type-layout.h:65
+#: src/open-type-layout.h:84
 msgctxt "OpenType layout"
 msgid "Standard Ligatures"
 msgstr "Standardne ligature"
 
-#: src/open-type-layout.h:66
+#: src/open-type-layout.h:85
 msgctxt "OpenType layout"
 msgid "Leading Jamo Forms"
 msgstr "Vodeći Džamo oblici"
 
-#: src/open-type-layout.h:67
+#: src/open-type-layout.h:86
 msgctxt "OpenType layout"
 msgid "Lining Figures"
 msgstr "Figure u liniji"
 
-#: src/open-type-layout.h:68
+#: src/open-type-layout.h:87
 msgctxt "OpenType layout"
 msgid "Localized Forms"
 msgstr "Lokalizovani oblici"
 
-#: src/open-type-layout.h:69
+#: src/open-type-layout.h:88
 msgctxt "OpenType layout"
 msgid "Left-to-right alternates"
 msgstr "Sa leva na desno zamene"
 
-#: src/open-type-layout.h:70
+#: src/open-type-layout.h:89
 msgctxt "OpenType layout"
 msgid "Left-to-right mirrored forms"
 msgstr "Preslikani oblici sa leva na desno"
 
-#: src/open-type-layout.h:71
+#: src/open-type-layout.h:90
 msgctxt "OpenType layout"
 msgid "Mark Positioning"
 msgstr "Pozicioniranje naglasaka"
 
-#: src/open-type-layout.h:72
+#: src/open-type-layout.h:91
 msgctxt "OpenType layout"
 msgid "Medial Forms #2"
 msgstr "Medijalni oblici #2"
 
-#: src/open-type-layout.h:73
+#: src/open-type-layout.h:92
 msgctxt "OpenType layout"
 msgid "Medial Forms"
 msgstr "Medijalni oblici"
 
-#: src/open-type-layout.h:74
+#: src/open-type-layout.h:93
 msgctxt "OpenType layout"
 msgid "Mathematical Greek"
 msgstr "Grčki matematički"
 
-#: src/open-type-layout.h:75
+#: src/open-type-layout.h:94
 msgctxt "OpenType layout"
 msgid "Mark to Mark Positioning"
 msgstr "Pozicioniranje naglaska na naglasak"
 
-#: src/open-type-layout.h:76
+#: src/open-type-layout.h:95
 msgctxt "OpenType layout"
 msgid "Mark Positioning via Substitution"
 msgstr "Pozicioniranje naglasaka zamenom"
 
-#: src/open-type-layout.h:77
+#: src/open-type-layout.h:96
 msgctxt "OpenType layout"
 msgid "Alternate Annotation Forms"
 msgstr "Zamenski oblici zabeleški"
 
-#: src/open-type-layout.h:78
+#: src/open-type-layout.h:97
 msgctxt "OpenType layout"
 msgid "NLC Kanji Forms"
 msgstr "NLC Kandži oblici"
 
-#: src/open-type-layout.h:79
+#: src/open-type-layout.h:98
 msgctxt "OpenType layout"
 msgid "Nukta Forms"
 msgstr "Nukta oblici"
 
-#: src/open-type-layout.h:80
+#: src/open-type-layout.h:99
 msgctxt "OpenType layout"
 msgid "Numerators"
 msgstr "Brojači"
 
-#: src/open-type-layout.h:81
+#: src/open-type-layout.h:100
 msgctxt "OpenType layout"
 msgid "Oldstyle Figures"
 msgstr "Starinske figure"
 
-#: src/open-type-layout.h:82
+#: src/open-type-layout.h:101
 msgctxt "OpenType layout"
 msgid "Optical Bounds"
 msgstr "Optičke granice"
 
-#: src/open-type-layout.h:83
+#: src/open-type-layout.h:102
 msgctxt "OpenType layout"
 msgid "Ordinals"
 msgstr "Redni"
 
-#: src/open-type-layout.h:84
+#: src/open-type-layout.h:103
 msgctxt "OpenType layout"
 msgid "Ornaments"
 msgstr "Ukrasni"
 
-#: src/open-type-layout.h:85
+#: src/open-type-layout.h:104
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Widths"
 msgstr "Srazmerne zamenske širine"
 
-#: src/open-type-layout.h:86
+#: src/open-type-layout.h:105
 msgctxt "OpenType layout"
 msgid "Petite Capitals"
 msgstr "Umanjeni početni znakovi"
 
-#: src/open-type-layout.h:87
+#: src/open-type-layout.h:106
 msgctxt "OpenType layout"
 msgid "Proportional Kana"
 msgstr "Srazmerna Kana"
 
-#: src/open-type-layout.h:88
+#: src/open-type-layout.h:107
 msgctxt "OpenType layout"
 msgid "Proportional Figures"
 msgstr "Srazmerne figure"
 
-#: src/open-type-layout.h:89
+#: src/open-type-layout.h:108
 msgctxt "OpenType layout"
 msgid "Pre-Base Forms"
 msgstr "Oblici pre podnožja"
 
-#: src/open-type-layout.h:90
+#: src/open-type-layout.h:109
 msgctxt "OpenType layout"
 msgid "Pre-base Substitutions"
 msgstr "Zamene pre podnožja"
 
-#: src/open-type-layout.h:91
+#: src/open-type-layout.h:110
 msgctxt "OpenType layout"
 msgid "Post-base Forms"
 msgstr "Oblici posle podnožja"
 
-#: src/open-type-layout.h:92
+#: src/open-type-layout.h:111
 msgctxt "OpenType layout"
 msgid "Post-base Substitutions"
 msgstr "Zamene posle podnožja"
 
-#: src/open-type-layout.h:93
+#: src/open-type-layout.h:112
 msgctxt "OpenType layout"
 msgid "Proportional Widths"
 msgstr "Srazmerne širine"
 
-#: src/open-type-layout.h:94
+#: src/open-type-layout.h:113
 msgctxt "OpenType layout"
 msgid "Quarter Widths"
 msgstr "Četvrt-širine"
 
-#: src/open-type-layout.h:95
+#: src/open-type-layout.h:114
 msgctxt "OpenType layout"
 msgid "Randomize"
 msgstr "Izmešaj"
 
-#: src/open-type-layout.h:96
+#: src/open-type-layout.h:115
 msgctxt "OpenType layout"
 msgid "Required Contextual Alternates"
 msgstr "Zahtevane kontekstualne zamene"
 
-#: src/open-type-layout.h:97
+#: src/open-type-layout.h:116
 msgctxt "OpenType layout"
 msgid "Rakar Forms"
 msgstr "Rakar oblici"
 
-#: src/open-type-layout.h:98
+#: src/open-type-layout.h:117
 msgctxt "OpenType layout"
 msgid "Required Ligatures"
 msgstr "Zahtevane ligature"
 
-#: src/open-type-layout.h:99
+#: src/open-type-layout.h:118
 msgctxt "OpenType layout"
 msgid "Reph Forms"
 msgstr "Ref oblici"
 
-#: src/open-type-layout.h:100
+#: src/open-type-layout.h:119
 msgctxt "OpenType layout"
 msgid "Right Bounds"
 msgstr "Desne granice"
 
-#: src/open-type-layout.h:101
+#: src/open-type-layout.h:120
 msgctxt "OpenType layout"
 msgid "Right-to-left alternates"
 msgstr "Sa desna na levo zamene"
 
-#: src/open-type-layout.h:102
+#: src/open-type-layout.h:121
 msgctxt "OpenType layout"
 msgid "Right-to-left mirrored forms"
 msgstr "Preslikani zamene sa desna na levo"
 
-#: src/open-type-layout.h:103
+#: src/open-type-layout.h:122
 msgctxt "OpenType layout"
 msgid "Ruby Notation Forms"
 msgstr "Rubi oblici zabeleški"
 
-#: src/open-type-layout.h:104
+#: src/open-type-layout.h:123
 msgctxt "OpenType layout"
 msgid "Required Variation Alternates"
 msgstr "Zahtevane zamenske varijacije"
 
-#: src/open-type-layout.h:105
+#: src/open-type-layout.h:124
 msgctxt "OpenType layout"
 msgid "Stylistic Alternates"
 msgstr "Stilističke zamene"
 
-#: src/open-type-layout.h:106
+#: src/open-type-layout.h:125
 msgctxt "OpenType layout"
 msgid "Scientific Inferiors"
 msgstr "Inferiorni naučni"
 
-#: src/open-type-layout.h:107
+#: src/open-type-layout.h:126
 msgctxt "OpenType layout"
 msgid "Optical size"
 msgstr "Optička veličina"
 
-#: src/open-type-layout.h:108
+#: src/open-type-layout.h:127
 msgctxt "OpenType layout"
 msgid "Small Capitals"
 msgstr "Mala početna slova"
 
-#: src/open-type-layout.h:109
+#: src/open-type-layout.h:128
 msgctxt "OpenType layout"
 msgid "Simplified Forms"
 msgstr "Pojednostavljeni oblici"
 
-#: src/open-type-layout.h:110
+#: src/open-type-layout.h:129
 msgctxt "OpenType layout"
 msgid "Stylistic Set 1"
 msgstr "Stilistički komplet 1"
 
-#: src/open-type-layout.h:111
+#: src/open-type-layout.h:130
 msgctxt "OpenType layout"
 msgid "Stylistic Set 2"
 msgstr "Stilistički komplet 2"
 
-#: src/open-type-layout.h:112
+#: src/open-type-layout.h:131
 msgctxt "OpenType layout"
 msgid "Stylistic Set 3"
 msgstr "Stilistički komplet 3"
 
-#: src/open-type-layout.h:113
+#: src/open-type-layout.h:132
 msgctxt "OpenType layout"
 msgid "Stylistic Set 4"
 msgstr "Stilistički komplet 4"
 
-#: src/open-type-layout.h:114
+#: src/open-type-layout.h:133
 msgctxt "OpenType layout"
 msgid "Stylistic Set 5"
 msgstr "Stilistički komplet 5"
 
-#: src/open-type-layout.h:115
+#: src/open-type-layout.h:134
 msgctxt "OpenType layout"
 msgid "Stylistic Set 6"
 msgstr "Stilistički komplet 6"
 
-#: src/open-type-layout.h:116
+#: src/open-type-layout.h:135
 msgctxt "OpenType layout"
 msgid "Stylistic Set 7"
 msgstr "Stilistički komplet 7"
 
-#: src/open-type-layout.h:117
+#: src/open-type-layout.h:136
 msgctxt "OpenType layout"
 msgid "Stylistic Set 8"
 msgstr "Stilistički komplet 8"
 
-#: src/open-type-layout.h:118
+#: src/open-type-layout.h:137
 msgctxt "OpenType layout"
 msgid "Stylistic Set 9"
 msgstr "Stilistički komplet 9"
 
-#: src/open-type-layout.h:119
+#: src/open-type-layout.h:138
 msgctxt "OpenType layout"
 msgid "Stylistic Set 10"
 msgstr "Stilistički komplet 10"
 
-#: src/open-type-layout.h:120
+#: src/open-type-layout.h:139
 msgctxt "OpenType layout"
 msgid "Stylistic Set 11"
 msgstr "Stilistički komplet 11"
 
-#: src/open-type-layout.h:121
+#: src/open-type-layout.h:140
 msgctxt "OpenType layout"
 msgid "Stylistic Set 12"
 msgstr "Stilistički komplet 12"
 
-#: src/open-type-layout.h:122
+#: src/open-type-layout.h:141
 msgctxt "OpenType layout"
 msgid "Stylistic Set 13"
 msgstr "Stilistički komplet 13"
 
-#: src/open-type-layout.h:123
+#: src/open-type-layout.h:142
 msgctxt "OpenType layout"
 msgid "Stylistic Set 14"
 msgstr "Stilistički komplet 14"
 
-#: src/open-type-layout.h:124
+#: src/open-type-layout.h:143
 msgctxt "OpenType layout"
 msgid "Stylistic Set 15"
 msgstr "Stilistički komplet 15"
 
-#: src/open-type-layout.h:125
+#: src/open-type-layout.h:144
 msgctxt "OpenType layout"
 msgid "Stylistic Set 16"
 msgstr "Stilistički komplet 16"
 
-#: src/open-type-layout.h:126
+#: src/open-type-layout.h:145
 msgctxt "OpenType layout"
 msgid "Stylistic Set 17"
 msgstr "Stilistički komplet 17"
 
-#: src/open-type-layout.h:127
+#: src/open-type-layout.h:146
 msgctxt "OpenType layout"
 msgid "Stylistic Set 18"
 msgstr "Stilistički komplet 18"
 
-#: src/open-type-layout.h:128
+#: src/open-type-layout.h:147
 msgctxt "OpenType layout"
 msgid "Stylistic Set 19"
 msgstr "Stilistički komplet 19"
 
-#: src/open-type-layout.h:129
+#: src/open-type-layout.h:148
 msgctxt "OpenType layout"
 msgid "Stylistic Set 20"
 msgstr "Stilistički komplet 20"
 
-#: src/open-type-layout.h:130
+#: src/open-type-layout.h:149
 msgctxt "OpenType layout"
 msgid "Math script style alternates"
 msgstr "Zamene u stilu matematičkog pisma"
 
-#: src/open-type-layout.h:131
+#: src/open-type-layout.h:150
 msgctxt "OpenType layout"
 msgid "Stretching Glyph Decomposition"
 msgstr "Rastavljanje razvlačenjem znaka"
 
-#: src/open-type-layout.h:132
+#: src/open-type-layout.h:151
 msgctxt "OpenType layout"
 msgid "Subscript"
 msgstr "Podskript"
 
-#: src/open-type-layout.h:133
+#: src/open-type-layout.h:152
 msgctxt "OpenType layout"
 msgid "Superscript"
 msgstr "Superskript"
 
-#: src/open-type-layout.h:134
+#: src/open-type-layout.h:153
 msgctxt "OpenType layout"
 msgid "Swash"
 msgstr "Kaligrafski"
 
-#: src/open-type-layout.h:135
+#: src/open-type-layout.h:154
 msgctxt "OpenType layout"
 msgid "Titling"
 msgstr "Naslovljavanje"
 
-#: src/open-type-layout.h:136
+#: src/open-type-layout.h:155
 msgctxt "OpenType layout"
 msgid "Trailing Jamo Forms"
 msgstr "Prateći Džamo oblici"
 
-#: src/open-type-layout.h:137
+#: src/open-type-layout.h:156
 msgctxt "OpenType layout"
 msgid "Traditional Name Forms"
 msgstr "Tradicionalni oblici imena"
 
-#: src/open-type-layout.h:138
+#: src/open-type-layout.h:157
 msgctxt "OpenType layout"
 msgid "Tabular Figures"
 msgstr "Tabularne figure"
 
-#: src/open-type-layout.h:139
+#: src/open-type-layout.h:158
 msgctxt "OpenType layout"
 msgid "Traditional Forms"
 msgstr "Tradicionalni oblici"
 
-#: src/open-type-layout.h:140
+#: src/open-type-layout.h:159
 msgctxt "OpenType layout"
 msgid "Third Widths"
 msgstr "Trećinske širine"
 
-#: src/open-type-layout.h:141
+#: src/open-type-layout.h:160
 msgctxt "OpenType layout"
 msgid "Unicase"
 msgstr "Bilo koja veličina"
 
-#: src/open-type-layout.h:142
+#: src/open-type-layout.h:161
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Metrics"
 msgstr "Zamenski vertikalni metrički"
 
-#: src/open-type-layout.h:143
+#: src/open-type-layout.h:162
 msgctxt "OpenType layout"
 msgid "Vattu Variants"
 msgstr "Vatu varijante"
 
-#: src/open-type-layout.h:144
+#: src/open-type-layout.h:163
 msgctxt "OpenType layout"
 msgid "Vertical Writing"
 msgstr "Vertikalni pisani"
 
-#: src/open-type-layout.h:145
+#: src/open-type-layout.h:164
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Half Metrics"
 msgstr "Zamenski vertikalni polumetrički"
 
-#: src/open-type-layout.h:146
+#: src/open-type-layout.h:165
 msgctxt "OpenType layout"
 msgid "Vowel Jamo Forms"
 msgstr "Samoglasnički Džamo oblici"
 
-#: src/open-type-layout.h:147
+#: src/open-type-layout.h:166
 msgctxt "OpenType layout"
 msgid "Vertical Kana Alternates"
 msgstr "Vertikalne Kana zamene"
 
-#: src/open-type-layout.h:148
+#: src/open-type-layout.h:167
 msgctxt "OpenType layout"
 msgid "Vertical Kerning"
 msgstr "Vertikalno kernovanje"
 
-#: src/open-type-layout.h:149
+#: src/open-type-layout.h:168
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Vertical Metrics"
 msgstr "Srazmerne vertikalne metričke zamene"
 
-#: src/open-type-layout.h:150
+#: src/open-type-layout.h:169
 msgctxt "OpenType layout"
 msgid "Vertical Alternates and Rotation"
 msgstr "Vertikalne zamene i rotiranje"
 
-#: src/open-type-layout.h:151
+#: src/open-type-layout.h:170
 msgctxt "OpenType layout"
 msgid "Vertical Alternates for Rotation"
 msgstr "Vertikalne zamene za rotiranje"
 
-#: src/open-type-layout.h:152
+#: src/open-type-layout.h:171
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Precrtana nula"
+
+#~ msgid "Install"
+#~ msgstr "Instaliraj"
+
+#~ msgid "Back"
+#~ msgstr "Nazad"
+
+#~ msgid "This font could not be installed."
+#~ msgstr "Ovaj font ne može biti instaliran."
+
+#~ msgid "This font could not be displayed."
+#~ msgstr "Ovaj font ne može biti prikazan."
+
+#~ msgid "Info"
+#~ msgstr "Podaci"
+
+#~ msgid "org.gnome.font-viewer"
+#~ msgstr "org.gnome.font-viewer"
+
+#~ msgid "About"
+#~ msgstr "O programu"
+
+#~ msgid "Quit"
+#~ msgstr "Izađi"
+
+#~ msgid "preferences-desktop-font"
+#~ msgstr "preferences-desktop-font"
 
 #~ msgid "Font Viewer"
 #~ msgstr "Pregledač pisama"
@@ -930,9 +1079,3 @@ msgstr "Precrtana nula"
 #~ msgstr ""
 #~ "Pokrenite „%s --help“ da vidite čitav spisak dostupnih opcija linije "
 #~ "naredbi."
-
-#~ msgid "_Close"
-#~ msgstr "_Zatvori"
-
-#~ msgid "About Font Viewer"
-#~ msgstr "O pregledaču pisama"
