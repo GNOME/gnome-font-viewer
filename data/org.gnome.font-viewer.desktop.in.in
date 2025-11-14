@@ -11,5 +11,5 @@ Type=Application
 DBusActivatable=true
 StartupNotify=true
 Categories=GTK;GNOME;Utility;
-MimeType=application/x-font-ttf;application/x-font-pcf;application/x-font-type1;application/x-font-otf;font/ttf;font/otf;font/woff;
+MimeType=application/x-font-ttf;application/x-font-pcf;application/x-font-type1;application/x-font-otf;font/ttf;font/otf;font/woff;font/collection;
 X-Purism-FormFactor=Workstation;Mobile;
