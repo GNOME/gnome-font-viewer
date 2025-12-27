@@ -366,11 +366,11 @@
   </releases>
   <translation type="gettext">gnome-font-viewer</translation>
   <launchable type="desktop-id">org.gnome.font-viewer.desktop</launchable>
-  <recommends>
+  <supports>
     <control>keyboard</control>
     <control>pointing</control>
     <control>touch</control>
-  </recommends>
+  </supports>
   <requires>
     <display_length>360</display_length>
   </requires>
