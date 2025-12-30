@@ -1,0 +1,1035 @@
+# Santali translation for gnome-font-viewer.
+# Copyright (C) 2025 gnome-font-viewer's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-font-viewer package.
+# Prasanta Hembram <prasantahembram720@gmail.com>,  2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-font-viewer main\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
+"issues/\n"
+"POT-Creation-Date: 2025-12-28 16:32+0000\n"
+"PO-Revision-Date: 2025-12-30 21:47+0530\n"
+"Last-Translator: \n"
+"Language-Team: Santali <sat@li.org>\n"
+"Language: sat\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n==2 ? 1 : 2;\n"
+"X-Generator: Poedit 3.8\n"
+
+#: data/org.gnome.font-viewer.desktop.in.in:2
+#: data/org.gnome.font-viewer.metainfo.xml.in:6 src/font-view-application.c:124
+#: src/font-view-application.c:150
+msgid "Fonts"
+msgstr "ᱯᱷᱚᱱᱴ ᱠᱚ"
+
+#: data/org.gnome.font-viewer.desktop.in.in:3
+#: data/org.gnome.font-viewer.metainfo.xml.in:7
+msgid "View fonts on your system"
+msgstr "ᱟᱢᱟᱜ ᱥᱤᱥᱴᱚᱢ ᱨᱮ ᱯᱷᱚᱱᱴ ᱠᱚ ᱧᱮᱞ ᱢᱮ"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.font-viewer.desktop.in.in:5
+msgid "fonts;fontface;"
+msgstr "ᱯᱷᱚᱱᱴᱥ;ᱯᱷᱚᱱᱴᱯᱷᱮᱥ;"
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:9
+msgid ""
+"Fonts shows you the fonts installed on your computer for your use as "
+"thumbnails. Selecting any thumbnails shows the full view of how the font "
+"would look under various sizes."
+msgstr ""
+"ᱯᱷᱚᱱᱴ ᱫᱚ ᱟᱢ ᱟᱢᱟᱜ ᱠᱚᱢᱯᱭᱩᱴᱟᱨ ᱨᱮ ᱛᱷᱟᱢᱵᱱᱮᱞ ᱞᱮᱠᱟᱛᱮ ᱵᱮᱵᱷᱟᱨ ᱞᱟᱹᱜᱤᱫ ᱵᱚᱦᱟᱞ ᱟᱠᱟᱱ ᱯᱷᱚᱱᱴ "
+"ᱠᱚ ᱩᱫᱩᱜ ᱟᱢᱟ᱾ ᱡᱟᱦᱟᱱ ᱛᱷᱟᱢᱵᱱᱮᱞ ᱵᱟᱪᱷᱟᱣ ᱠᱟᱛᱮ ᱯᱷᱚᱱᱴ ᱪᱮᱫ ᱞᱮᱠᱟ ᱧᱮᱞᱚᱜᱼᱟ ᱚᱱᱟ ᱨᱮᱭᱟᱜ "
+"ᱯᱩᱨᱟᱹ ᱧᱮᱞ ᱩᱫᱩᱜᱚᱜᱼᱟ᱾"
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:15
+msgid ""
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
+msgstr ""
+"ᱯᱷᱚᱱᱴ ᱠᱚ ᱫᱚ .ttf ᱟᱨ ᱮᱴᱟᱜ ᱯᱨᱚᱨᱩᱢ ᱨᱮ ᱰᱟᱩᱱᱞᱳᱰ ᱟᱠᱟᱱ ᱱᱟᱶᱟ ᱯᱷᱚᱱᱴ ᱨᱮᱫ ᱠᱚ ᱵᱚᱦᱟᱞ "
+"ᱞᱟᱹᱜᱤᱫ ᱥᱟᱯᱚᱨᱴ ᱮᱢᱟᱭᱟ ᱾ ᱯᱷᱚᱱᱴ ᱠᱚ ᱫᱚ ᱠᱷᱟᱹᱞᱤ ᱟᱢᱟᱜ ᱵᱮᱵᱷᱟᱨ ᱞᱟᱹᱜᱤᱫ ᱜᱮ ᱵᱚᱦᱟᱞ ᱦᱩᱭ "
+"ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱟᱨᱵᱟᱝ ᱠᱚᱢᱯᱭᱩᱴᱟᱨ ᱨᱮ ᱥᱟᱱᱟᱢ ᱵᱮᱵᱷᱟᱨᱤᱭᱟᱹ ᱠᱚ ᱞᱟᱹᱜᱤᱫ ᱢᱮᱱᱟᱜᱼᱟ ᱾"
+
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.font-viewer.metainfo.xml.in:22
+#: src/font-view-application.c:126
+msgid "The GNOME Project"
+msgstr "GNOME ᱯᱟᱱᱛᱷᱟ"
+
+#: src/font-thumbnailer.c:181
+msgid "Text to thumbnail (default: Aa)"
+msgstr "ᱛᱷᱟᱢᱵᱱᱮᱞ ᱨᱮ ᱚᱞ (ᱰᱤᱯᱷᱚᱞᱴ: ᱟᱟ)"
+
+#: src/font-thumbnailer.c:181
+msgid "TEXT"
+msgstr "ᱚᱞ"
+
+#: src/font-thumbnailer.c:183
+msgid "Thumbnail size (default: 128)"
+msgstr "ᱛᱷᱟᱢᱵᱱᱮᱞ ᱥᱟᱭᱤᱡᱽ (ᱰᱤᱯᱷᱚᱞᱴ: ᱑᱒᱘)"
+
+#: src/font-thumbnailer.c:183
+msgid "SIZE"
+msgstr "ᱥᱟᱭᱤᱡᱽ"
+
+#: src/font-thumbnailer.c:185
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "ᱯᱷᱚᱱᱴ-ᱨᱮᱫ ᱟᱩᱴᱯᱩᱴ-ᱨᱮᱫ"
+
+#: src/font-view-application.c:79 src/font-view-window.c:728
+msgid "Could Not Display Font"
+msgstr "ᱯᱷᱚᱱᱴ ᱵᱟᱝ ᱩᱫᱩᱜ ᱫᱟᱲᱮᱭᱟᱜ ᱠᱟᱱᱟ"
+
+#: src/font-view-application.c:129
+msgid "translator-credits"
+msgstr "ᱛᱚᱨᱡᱚᱢᱟᱭ-ᱠᱨᱮᱰᱤᱴᱥ"
+
+#: src/font-view-window.c:104
+msgid "Failed"
+msgstr "ᱵᱟᱝ ᱥᱟᱹᱛ ᱟᱠᱟᱱᱟ"
+
+#: src/font-view-window.c:112
+msgid "Installed"
+msgstr "ᱵᱚᱦᱟᱞ ᱦᱩᱭ ᱟᱠᱟᱱᱟ"
+
+#: src/font-view-window.c:117
+msgid "Installing"
+msgstr "ᱵᱚᱦᱟᱞ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ"
+
+#: src/font-view-window.c:120 src/font-view-window.ui:174
+msgid "_Install"
+msgstr "_ᱵᱚᱦᱟᱞ"
+
+#. Translators, this string is used to display information about
+#. * a 'font variation axis'. The %s gets replaced with the name
+#. * of the axis, for example 'Width'. The three %g get replaced
+#. * with the minimum, maximum and default values for the axis.
+#.
+#: src/font-view-window.c:234
+#, c-format
+msgid "%s %g — %g, default %g"
+msgstr "%s %g — %g, ᱰᱤᱯᱷᱚᱞᱴ %g"
+
+#: src/font-view-window.c:289
+#, c-format
+msgid "Instance %d"
+msgstr "ᱫᱟᱹᱭᱠᱟᱹ %d"
+
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view-window.c:327
+msgctxt "OpenType layout"
+msgid ", "
+msgstr ", "
+
+#: src/font-view-window.c:356
+msgid "Name"
+msgstr "ᱧᱩᱛᱩᱢ"
+
+#: src/font-view-window.c:359
+msgid "Location"
+msgstr "ᱴᱷᱟᱶ"
+
+#: src/font-view-window.c:362
+msgid "Style"
+msgstr "ᱥᱴᱟᱭᱤᱞ"
+
+#: src/font-view-window.c:372
+msgid "Type"
+msgstr "ᱯᱨᱚᱠᱟᱨ"
+
+#: src/font-view-window.c:438 src/font-view-window.c:464
+msgid "Version"
+msgstr "ᱵᱷᱟᱨᱥᱚᱱ"
+
+#: src/font-view-window.c:442 src/font-view-window.c:469
+msgid "Copyright"
+msgstr "ᱠᱚᱯᱤᱨᱟᱭᱤᱴ"
+
+#: src/font-view-window.c:446
+msgid "Description"
+msgstr "ᱵᱤᱵᱨᱚᱬ"
+
+#: src/font-view-window.c:450
+msgid "Manufacturer"
+msgstr "ᱵᱮᱱᱟᱣᱤᱡ"
+
+#: src/font-view-window.c:454
+msgid "Designer"
+msgstr "ᱰᱤᱡᱟᱭᱤᱱᱟᱹᱨ"
+
+#: src/font-view-window.c:458
+msgid "License"
+msgstr "ᱞᱟᱭᱥᱮᱱᱥ"
+
+#: src/font-view-window.c:483
+msgid "Glyph Count"
+msgstr "ᱜᱞᱟᱭᱯᱷ ᱞᱮᱠᱷᱟ"
+
+#: src/font-view-window.c:485
+msgid "Color Glyphs"
+msgstr "ᱨᱚᱝ ᱜᱞᱟᱭᱯᱷᱥ"
+
+#: src/font-view-window.c:486
+msgid "yes"
+msgstr "ᱦᱮᱸ"
+
+#: src/font-view-window.c:486
+msgid "no"
+msgstr "ᱵᱟᱝᱟ"
+
+#: src/font-view-window.c:490
+msgid "Layout Features"
+msgstr "ᱞᱮᱭᱟᱣᱩᱴ ᱯᱷᱤᱪᱟᱨᱥ"
+
+#: src/font-view-window.c:496
+msgid "Variation Axes"
+msgstr "ᱵᱷᱮᱜᱟᱨ ᱟᱠᱥᱮᱥ"
+
+#: src/font-view-window.c:503
+msgid "Named Styles"
+msgstr "ᱧᱩᱛᱩᱢ ᱟᱠᱟᱱ ᱥᱴᱟᱭᱤᱞ"
+
+#: src/font-view-window.c:544 src/font-view-window.c:647
+msgid "Could Not Install Font"
+msgstr "ᱯᱷᱚᱱᱴ ᱵᱟᱝ ᱵᱚᱦᱟᱞ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ"
+
+#: src/font-view-window.ui:25
+msgid "All Fonts"
+msgstr "ᱥᱟᱱᱟᱢ ᱯᱷᱚᱱᱴ"
+
+#: src/font-view-window.ui:33
+msgid "Search"
+msgstr "ᱥᱮᱸᱫᱽᱨᱟ"
+
+#: src/font-view-window.ui:41
+msgid "About Fonts"
+msgstr "ᱯᱷᱚᱱᱴ ᱠᱚ ᱵᱟᱨᱮᱛᱮ"
+
+#: src/font-view-window.ui:53
+msgid "Search fonts"
+msgstr "ᱯᱷᱚᱱᱴ ᱠᱚ ᱥᱮᱸᱫᱽᱨᱟᱭ ᱢᱮ"
+
+#: src/font-view-window.ui:177
+msgid "Install Font"
+msgstr "ᱯᱷᱚᱱᱴ ᱵᱚᱦᱟᱞ ᱢᱮ"
+
+#: src/font-view-window.ui:182
+msgid "I_nfo"
+msgstr "ᱵᱤᱵᱨᱚᱬ"
+
+#: src/font-view-window.ui:184
+msgid "Font Details"
+msgstr "ᱯᱷᱚᱱᱴ ᱵᱤᱵᱨᱚᱬ"
+
+#: src/font-view-window.ui:230
+msgid "_Close"
+msgstr "_ᱵᱚᱸᱫ ᱢᱮ"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "GNOME ᱯᱷᱚᱱᱴ ᱠᱚ"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "ᱮᱯᱞᱤᱠᱮᱥᱚᱱ ᱨᱮᱭᱟᱜ ᱵᱷᱟᱨᱥᱚᱱ ᱩᱫᱩᱜ ᱢᱮ"
+
+#: src/open-type-layout.h:13
+msgctxt "OpenType layout"
+msgid "Access All Alternates"
+msgstr "ᱥᱟᱱᱟᱢ ᱵᱤᱠᱚᱞᱯᱚ ᱮᱠᱥᱮᱥ"
+
+#: src/open-type-layout.h:14
+msgctxt "OpenType layout"
+msgid "Above-base Forms"
+msgstr "ᱪᱮᱛᱟᱱ-ᱵᱮᱥ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:15
+msgctxt "OpenType layout"
+msgid "Above-base Mark Positioning"
+msgstr "ᱪᱮᱛᱟᱱ-ᱵᱮᱥ ᱪᱤᱱᱦᱟᱹ ᱯᱚᱡᱤᱥᱚᱱᱤᱝ"
+
+#: src/open-type-layout.h:16
+msgctxt "OpenType layout"
+msgid "Above-base Substitutions"
+msgstr "ᱪᱮᱛᱟᱱ-ᱵᱮᱥ ᱵᱚᱫᱚᱞ"
+
+#: src/open-type-layout.h:17
+msgctxt "OpenType layout"
+msgid "Alternative Fractions"
+msgstr "ᱵᱤᱠᱚᱞᱯᱚ ᱯᱷᱨᱟᱠᱥᱚᱱ"
+
+#: src/open-type-layout.h:18
+msgctxt "OpenType layout"
+msgid "Akhands"
+msgstr "ᱟᱠᱷᱟᱱᱰᱥ"
+
+#: src/open-type-layout.h:19
+msgctxt "OpenType layout"
+msgid "Below-base Forms"
+msgstr "ᱞᱟᱛᱟᱨ ᱨᱮ - ᱵᱮᱥ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:20
+msgctxt "OpenType layout"
+msgid "Below-base Mark Positioning"
+msgstr "ᱞᱟᱛᱟᱨ ᱨᱮ - ᱵᱮᱥ ᱪᱤᱱᱦᱟᱹ ᱯᱚᱡᱤᱥᱚᱱᱤᱝ"
+
+#: src/open-type-layout.h:21
+msgctxt "OpenType layout"
+msgid "Below-base Substitutions"
+msgstr "ᱞᱟᱛᱟᱨ ᱨᱮ - ᱵᱮᱥ ᱵᱚᱫᱚᱞ"
+
+#: src/open-type-layout.h:22
+msgctxt "OpenType layout"
+msgid "Contextual Alternates"
+msgstr "ᱥᱟᱛᱟᱢ ᱵᱤᱠᱚᱞᱯᱚ"
+
+#: src/open-type-layout.h:23
+msgctxt "OpenType layout"
+msgid "Case-Sensitive Forms"
+msgstr "ᱠᱮᱥ-ᱥᱮᱱᱥᱮᱴᱤᱵᱷ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:24
+msgctxt "OpenType layout"
+msgid "Glyph Composition / Decomposition"
+msgstr "ᱜᱞᱟᱭᱯᱷ ᱠᱚᱢᱯᱚᱡᱤᱥᱚᱱ/ ᱰᱤᱠᱚᱢᱯᱚᱡᱤᱥᱚᱱ"
+
+#: src/open-type-layout.h:25
+msgctxt "OpenType layout"
+msgid "Conjunct Form After Ro"
+msgstr "ᱨᱚ ᱛᱟᱭᱚᱢ ᱠᱚᱱᱡᱟᱱᱠᱴ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:26
+msgctxt "OpenType layout"
+msgid "Conjunct Forms"
+msgstr "ᱠᱚᱱᱡᱟᱱᱠᱴ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:27
+msgctxt "OpenType layout"
+msgid "Contextual Ligatures"
+msgstr "ᱥᱟᱛᱟᱢ ᱞᱤᱜᱟᱪᱟᱨᱥ"
+
+#: src/open-type-layout.h:28
+msgctxt "OpenType layout"
+msgid "Centered CJK Punctuation"
+msgstr "ᱛᱟᱞᱟ ᱨᱮ ᱢᱮᱱᱟᱜ CJK ᱵᱤᱨᱚᱫ ᱪᱤᱱᱦᱟᱹ"
+
+#: src/open-type-layout.h:29
+msgctxt "OpenType layout"
+msgid "Capital Spacing"
+msgstr "ᱨᱟᱡᱷᱚᱛᱤ ᱥᱯᱮᱥᱤᱝ"
+
+#: src/open-type-layout.h:30
+msgctxt "OpenType layout"
+msgid "Contextual Swash"
+msgstr "ᱥᱟᱛᱟᱢ ᱥᱣᱟᱥ"
+
+#: src/open-type-layout.h:31
+msgctxt "OpenType layout"
+msgid "Cursive Positioning"
+msgstr "ᱠᱟᱨᱥᱤᱵᱷ ᱯᱚᱡᱤᱥᱚᱱᱤᱝ"
+
+#: src/open-type-layout.h:32
+msgctxt "OpenType layout"
+msgid "Petite Capitals From Capitals"
+msgstr "ᱨᱟᱡᱷᱚᱛᱤ ᱠᱷᱚᱱ ᱠᱟᱹᱴᱤᱡ ᱨᱟᱡᱷᱚᱛᱤ"
+
+#: src/open-type-layout.h:33
+msgctxt "OpenType layout"
+msgid "Small Capitals From Capitals"
+msgstr "ᱨᱟᱡᱷᱚᱛᱤ ᱠᱷᱚᱱ ᱠᱟᱹᱴᱤᱡ ᱨᱟᱡᱷᱚᱛᱤ"
+
+#: src/open-type-layout.h:34
+msgctxt "OpenType layout"
+msgid "Character Variation 1"
+msgstr "ᱪᱤᱠᱤ ᱵᱷᱮᱜᱟᱨ ᱑"
+
+#: src/open-type-layout.h:35
+msgctxt "OpenType layout"
+msgid "Character Variation 2"
+msgstr "ᱪᱟᱹᱨᱤᱛ ᱵᱷᱮᱜᱟᱨ ᱒"
+
+#: src/open-type-layout.h:36
+msgctxt "OpenType layout"
+msgid "Character Variation 3"
+msgstr "ᱪᱟᱹᱨᱤᱛ ᱵᱷᱮᱜᱟᱨ ᱓"
+
+#: src/open-type-layout.h:37
+msgctxt "OpenType layout"
+msgid "Character Variation 4"
+msgstr "ᱪᱟᱹᱨᱤᱛ ᱵᱷᱮᱜᱟᱨ ᱔"
+
+#: src/open-type-layout.h:38
+msgctxt "OpenType layout"
+msgid "Character Variation 5"
+msgstr "ᱪᱟᱹᱨᱤᱛ ᱵᱷᱮᱜᱟᱨ ᱕"
+
+#: src/open-type-layout.h:39
+msgctxt "OpenType layout"
+msgid "Character Variation 6"
+msgstr "ᱪᱟᱹᱨᱤᱛ ᱵᱷᱮᱜᱟᱨ ᱖"
+
+#: src/open-type-layout.h:40
+msgctxt "OpenType layout"
+msgid "Character Variation 7"
+msgstr "ᱪᱟᱹᱨᱤᱛ ᱵᱷᱮᱜᱟᱨ ᱗"
+
+#: src/open-type-layout.h:41
+msgctxt "OpenType layout"
+msgid "Character Variation 8"
+msgstr "ᱪᱟᱹᱨᱤᱛ ᱵᱷᱮᱜᱟᱨ ᱘"
+
+#: src/open-type-layout.h:42
+msgctxt "OpenType layout"
+msgid "Character Variation 9"
+msgstr "ᱪᱟᱹᱨᱤᱛ ᱵᱷᱮᱜᱟᱨ ᱙"
+
+#: src/open-type-layout.h:43
+msgctxt "OpenType layout"
+msgid "Character Variation 10"
+msgstr "ᱪᱟᱹᱨᱤᱛ ᱵᱷᱮᱜᱟᱨ ᱑᱐"
+
+#: src/open-type-layout.h:44
+msgctxt "OpenType layout"
+msgid "Character Variation 11"
+msgstr "ᱪᱟᱹᱨᱤᱛ ᱵᱷᱮᱜᱟᱨ ᱑᱑"
+
+#: src/open-type-layout.h:45
+msgctxt "OpenType layout"
+msgid "Character Variation 12"
+msgstr "ᱪᱟᱹᱨᱤᱛ ᱵᱷᱮᱜᱟᱨ ᱑᱒"
+
+#: src/open-type-layout.h:46
+msgctxt "OpenType layout"
+msgid "Character Variation 13"
+msgstr "ᱪᱟᱹᱨᱤᱛ ᱵᱷᱮᱜᱟᱨ ᱑᱓"
+
+#: src/open-type-layout.h:47
+msgctxt "OpenType layout"
+msgid "Character Variation 14"
+msgstr "ᱪᱟᱹᱨᱤᱛ ᱵᱷᱮᱜᱟᱨ ᱑᱔"
+
+#: src/open-type-layout.h:48
+msgctxt "OpenType layout"
+msgid "Character Variation 15"
+msgstr "ᱪᱟᱹᱨᱤᱛ ᱵᱷᱮᱜᱟᱨ ᱑᱕"
+
+#: src/open-type-layout.h:49
+msgctxt "OpenType layout"
+msgid "Character Variation 16"
+msgstr "ᱪᱟᱹᱨᱤᱛ ᱵᱷᱮᱜᱟᱨ ᱑᱖"
+
+#: src/open-type-layout.h:50
+msgctxt "OpenType layout"
+msgid "Character Variation 17"
+msgstr "ᱪᱟᱹᱨᱤᱛ ᱵᱷᱮᱜᱟᱨ ᱑᱗"
+
+#: src/open-type-layout.h:51
+msgctxt "OpenType layout"
+msgid "Character Variation 18"
+msgstr "ᱪᱟᱹᱨᱤᱛ ᱵᱷᱮᱜᱟᱨ ᱑᱘"
+
+#: src/open-type-layout.h:52
+msgctxt "OpenType layout"
+msgid "Character Variation 19"
+msgstr "ᱪᱟᱹᱨᱤᱛ ᱵᱷᱮᱜᱟᱨ ᱑᱙"
+
+#: src/open-type-layout.h:53
+msgctxt "OpenType layout"
+msgid "Distances"
+msgstr "ᱡᱷᱟᱹᱞ ᱠᱚ"
+
+#: src/open-type-layout.h:54
+msgctxt "OpenType layout"
+msgid "Discretionary Ligatures"
+msgstr "ᱵᱤᱪᱟᱹᱨ ᱞᱤᱜᱟᱪᱚᱨᱥ"
+
+#: src/open-type-layout.h:55
+msgctxt "OpenType layout"
+msgid "Denominators"
+msgstr "ᱰᱮᱱᱚᱢᱤᱱᱮᱴᱟᱨᱥ"
+
+#: src/open-type-layout.h:56
+msgctxt "OpenType layout"
+msgid "Dotless Forms"
+msgstr "ᱰᱚᱴᱞᱮᱥ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:57
+msgctxt "OpenType layout"
+msgid "Expert Forms"
+msgstr "ᱜᱟᱹᱠᱷᱩᱲᱤᱭᱟᱹ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:58
+msgctxt "OpenType layout"
+msgid "Final Glyph on Line Alternates"
+msgstr "ᱞᱟᱭᱤᱱ ᱵᱤᱠᱚᱞᱯᱚ ᱨᱮ ᱢᱩᱪᱟᱹᱫ ᱜᱞᱟᱭᱯᱷ"
+
+#: src/open-type-layout.h:59
+msgctxt "OpenType layout"
+msgid "Terminal Forms #2"
+msgstr "ᱴᱟᱨᱢᱤᱱᱟᱞ ᱯᱷᱚᱨᱢ #2"
+
+#: src/open-type-layout.h:60
+msgctxt "OpenType layout"
+msgid "Terminal Forms #3"
+msgstr "ᱴᱟᱨᱢᱤᱱᱟᱞ ᱯᱷᱚᱨᱢ #᱓"
+
+#: src/open-type-layout.h:61
+msgctxt "OpenType layout"
+msgid "Terminal Forms"
+msgstr "ᱴᱟᱨᱢᱤᱱᱟᱞ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:62
+msgctxt "OpenType layout"
+msgid "Flattened accent forms"
+msgstr "ᱯᱷᱞᱮᱴᱮᱱᱰ ᱮᱠᱥᱮᱱᱴ ᱨᱩᱯ"
+
+#: src/open-type-layout.h:63
+msgctxt "OpenType layout"
+msgid "Fractions"
+msgstr "ᱯᱷᱨᱟᱠᱥᱚᱱ"
+
+#: src/open-type-layout.h:64
+msgctxt "OpenType layout"
+msgid "Full Widths"
+msgstr "ᱯᱩᱨᱟᱹ ᱚᱥᱟᱨ"
+
+#: src/open-type-layout.h:65
+msgctxt "OpenType layout"
+msgid "Half Forms"
+msgstr "ᱟᱫᱷᱟ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:66
+msgctxt "OpenType layout"
+msgid "Halant Forms"
+msgstr "ᱦᱟᱞᱟᱱᱴ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:67
+msgctxt "OpenType layout"
+msgid "Alternate Half Widths"
+msgstr "ᱵᱤᱠᱚᱞᱯᱚ ᱟᱫᱷᱟ ᱚᱥᱟᱨ"
+
+#: src/open-type-layout.h:68
+msgctxt "OpenType layout"
+msgid "Historical Forms"
+msgstr "ᱱᱟᱜᱟᱢᱤᱭᱟᱹ ᱨᱩᱯ"
+
+#: src/open-type-layout.h:69
+msgctxt "OpenType layout"
+msgid "Horizontal Kana Alternates"
+msgstr "ᱜᱟᱱᱟᱴ ᱠᱟᱱᱟ ᱵᱤᱠᱚᱞᱯᱚ"
+
+#: src/open-type-layout.h:70
+msgctxt "OpenType layout"
+msgid "Historical Ligatures"
+msgstr "ᱱᱟᱜᱟᱢᱤᱭᱟᱹ ᱞᱤᱜᱟᱪᱚᱨᱥ"
+
+#: src/open-type-layout.h:71
+msgctxt "OpenType layout"
+msgid "Hangul"
+msgstr "ᱦᱟᱝᱜᱩᱞ"
+
+#: src/open-type-layout.h:72
+msgctxt "OpenType layout"
+msgid "Hojo Kanji Forms"
+msgstr "ᱦᱚᱡᱚ ᱠᱟᱱᱡᱤ ᱨᱩᱯ"
+
+#: src/open-type-layout.h:73
+msgctxt "OpenType layout"
+msgid "Half Widths"
+msgstr "ᱟᱫᱷᱟ ᱚᱥᱟᱨ"
+
+#: src/open-type-layout.h:74
+msgctxt "OpenType layout"
+msgid "Initial Forms"
+msgstr "ᱮᱛᱚᱦᱚᱵ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:75
+msgctxt "OpenType layout"
+msgid "Isolated Forms"
+msgstr "ᱵᱷᱮᱜᱟᱨ ᱟᱠᱟᱱ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:76
+msgctxt "OpenType layout"
+msgid "Italics"
+msgstr "ᱤᱴᱟᱞᱤᱠ"
+
+#: src/open-type-layout.h:77
+msgctxt "OpenType layout"
+msgid "Justification Alternates"
+msgstr "ᱡᱟᱥᱴᱤᱥᱯᱷᱤᱠᱮᱥᱚᱱ ᱵᱤᱠᱚᱞᱯᱚ"
+
+#: src/open-type-layout.h:78
+msgctxt "OpenType layout"
+msgid "JIS78 Forms"
+msgstr "ᱡᱮᱭᱮᱥ᱗᱘ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:79
+msgctxt "OpenType layout"
+msgid "JIS83 Forms"
+msgstr "ᱡᱮᱭᱮᱥ᱘᱓ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:80
+msgctxt "OpenType layout"
+msgid "JIS90 Forms"
+msgstr "ᱡᱮᱭᱮᱥ᱙᱐ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:81
+msgctxt "OpenType layout"
+msgid "JIS2004 Forms"
+msgstr "ᱡᱮᱭᱮᱥ᱒᱐᱐᱔ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:82
+msgctxt "OpenType layout"
+msgid "Kerning"
+msgstr "ᱠᱟᱨᱱᱤᱝ"
+
+#: src/open-type-layout.h:83
+msgctxt "OpenType layout"
+msgid "Left Bounds"
+msgstr "ᱞᱮᱸᱜᱟ ᱥᱤᱢᱟᱹ"
+
+#: src/open-type-layout.h:84
+msgctxt "OpenType layout"
+msgid "Standard Ligatures"
+msgstr "ᱥᱚᱨᱠᱟᱨᱤ ᱞᱤᱜᱟᱪᱚᱨᱥ"
+
+#: src/open-type-layout.h:85
+msgctxt "OpenType layout"
+msgid "Leading Jamo Forms"
+msgstr "ᱞᱤᱰᱤᱝ ᱡᱟᱢᱳ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:86
+msgctxt "OpenType layout"
+msgid "Lining Figures"
+msgstr "ᱞᱟᱭᱱᱤᱝ ᱯᱷᱤᱜᱟᱨᱥ"
+
+#: src/open-type-layout.h:87
+msgctxt "OpenType layout"
+msgid "Localized Forms"
+msgstr "ᱴᱚᱴᱷᱟᱹᱠᱤᱭᱟᱹ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:88
+msgctxt "OpenType layout"
+msgid "Left-to-right alternates"
+msgstr "ᱞᱮᱸᱜᱟ ᱠᱷᱚᱱ ᱡᱚᱡᱚᱢ ᱵᱤᱠᱚᱞᱯᱚ"
+
+#: src/open-type-layout.h:89
+msgctxt "OpenType layout"
+msgid "Left-to-right mirrored forms"
+msgstr "ᱞᱮᱸᱜᱟ ᱠᱷᱚᱱ ᱡᱚᱡᱚᱢ ᱟᱹᱨᱥᱤ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:90
+msgctxt "OpenType layout"
+msgid "Mark Positioning"
+msgstr "ᱪᱤᱱᱦᱟᱹ ᱯᱚᱡᱤᱥᱚᱱᱤᱝ"
+
+#: src/open-type-layout.h:91
+msgctxt "OpenType layout"
+msgid "Medial Forms #2"
+msgstr "ᱢᱮᱰᱤᱭᱟᱞ ᱯᱷᱚᱨᱢ #2"
+
+#: src/open-type-layout.h:92
+msgctxt "OpenType layout"
+msgid "Medial Forms"
+msgstr "ᱢᱮᱰᱤᱭᱟᱞ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:93
+msgctxt "OpenType layout"
+msgid "Mathematical Greek"
+msgstr "ᱮᱞᱠᱷᱟ ᱜᱽᱨᱤᱠ"
+
+#: src/open-type-layout.h:94
+msgctxt "OpenType layout"
+msgid "Mark to Mark Positioning"
+msgstr "ᱪᱤᱱᱦᱟᱹ ᱠᱷᱚᱱ ᱪᱤᱱᱦᱟᱹ ᱯᱚᱡᱤᱥᱚᱱᱤᱝ"
+
+#: src/open-type-layout.h:95
+msgctxt "OpenType layout"
+msgid "Mark Positioning via Substitution"
+msgstr "ᱵᱚᱫᱚᱞ ᱦᱚᱛᱮᱛᱮ ᱪᱤᱱᱦᱟᱹ ᱯᱚᱡᱤᱥᱚᱱᱤᱝ"
+
+#: src/open-type-layout.h:96
+msgctxt "OpenType layout"
+msgid "Alternate Annotation Forms"
+msgstr "ᱵᱤᱠᱚᱞᱯᱚ ᱮᱱᱚᱴᱮᱥᱚᱱ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:97
+msgctxt "OpenType layout"
+msgid "NLC Kanji Forms"
+msgstr "ᱮᱱᱮᱞᱥᱤ ᱠᱟᱱᱡᱤ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:98
+msgctxt "OpenType layout"
+msgid "Nukta Forms"
+msgstr "ᱱᱩᱠᱛᱟ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:99
+msgctxt "OpenType layout"
+msgid "Numerators"
+msgstr "ᱞᱮᱠᱷᱟᱭᱤᱡ"
+
+#: src/open-type-layout.h:100
+msgctxt "OpenType layout"
+msgid "Oldstyle Figures"
+msgstr "ᱢᱟᱨᱮ ᱥᱴᱟᱭᱤᱞ ᱯᱷᱤᱜᱟᱨᱥ"
+
+#: src/open-type-layout.h:101
+msgctxt "OpenType layout"
+msgid "Optical Bounds"
+msgstr "ᱚᱯᱴᱤᱠᱟᱞ ᱥᱤᱢᱟᱹ"
+
+#: src/open-type-layout.h:102
+msgctxt "OpenType layout"
+msgid "Ordinals"
+msgstr "ᱥᱟᱫᱷᱟᱨᱚᱱ"
+
+#: src/open-type-layout.h:103
+msgctxt "OpenType layout"
+msgid "Ornaments"
+msgstr "ᱥᱟᱡᱟᱣ ᱡᱤᱱᱤᱥ"
+
+#: src/open-type-layout.h:104
+msgctxt "OpenType layout"
+msgid "Proportional Alternate Widths"
+msgstr "ᱥᱚᱢᱟᱱ ᱵᱤᱠᱚᱞᱯᱚ ᱚᱥᱟᱨ"
+
+#: src/open-type-layout.h:105
+msgctxt "OpenType layout"
+msgid "Petite Capitals"
+msgstr "ᱯᱮᱴᱤᱴ ᱠᱮᱯᱤᱴᱟᱞᱥ"
+
+#: src/open-type-layout.h:106
+msgctxt "OpenType layout"
+msgid "Proportional Kana"
+msgstr "ᱯᱨᱚᱯᱚᱨᱥᱚᱱᱟᱞ ᱠᱟᱱᱟ"
+
+#: src/open-type-layout.h:107
+msgctxt "OpenType layout"
+msgid "Proportional Figures"
+msgstr "ᱯᱨᱚᱯᱚᱨᱥᱚᱱᱟᱞ ᱯᱷᱤᱜᱟᱨᱥ"
+
+#: src/open-type-layout.h:108
+msgctxt "OpenType layout"
+msgid "Pre-Base Forms"
+msgstr "ᱯᱨᱤ-ᱵᱮᱥ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:109
+msgctxt "OpenType layout"
+msgid "Pre-base Substitutions"
+msgstr "ᱯᱨᱤ-ᱵᱮᱥ ᱵᱚᱫᱚᱞ"
+
+#: src/open-type-layout.h:110
+msgctxt "OpenType layout"
+msgid "Post-base Forms"
+msgstr "ᱯᱚᱥᱴ-ᱵᱮᱥ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:111
+msgctxt "OpenType layout"
+msgid "Post-base Substitutions"
+msgstr "ᱯᱚᱥᱴ-ᱵᱮᱥ ᱵᱚᱫᱚᱞ"
+
+#: src/open-type-layout.h:112
+msgctxt "OpenType layout"
+msgid "Proportional Widths"
+msgstr "ᱥᱚᱢᱟᱱ ᱚᱥᱟᱨ"
+
+#: src/open-type-layout.h:113
+msgctxt "OpenType layout"
+msgid "Quarter Widths"
+msgstr "ᱯᱩᱱ ᱪᱟᱸᱫᱚ ᱚᱥᱟᱨ"
+
+#: src/open-type-layout.h:114
+msgctxt "OpenType layout"
+msgid "Randomize"
+msgstr "ᱨᱮᱱᱰᱚᱢᱟᱭᱤᱡᱽ"
+
+#: src/open-type-layout.h:115
+msgctxt "OpenType layout"
+msgid "Required Contextual Alternates"
+msgstr "ᱞᱟᱹᱠᱛᱤᱭᱟᱱ ᱥᱟᱛᱟᱢ ᱵᱤᱠᱚᱞᱯᱚ"
+
+#: src/open-type-layout.h:116
+msgctxt "OpenType layout"
+msgid "Rakar Forms"
+msgstr "ᱨᱟᱠᱟᱨ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:117
+msgctxt "OpenType layout"
+msgid "Required Ligatures"
+msgstr "ᱞᱟᱹᱠᱛᱤᱭᱟᱱ ᱞᱤᱜᱟᱪᱚᱨ"
+
+#: src/open-type-layout.h:118
+msgctxt "OpenType layout"
+msgid "Reph Forms"
+msgstr "ᱨᱮᱯᱷ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:119
+msgctxt "OpenType layout"
+msgid "Right Bounds"
+msgstr "ᱡᱚᱡᱚᱢ ᱥᱤᱢᱟᱹ"
+
+#: src/open-type-layout.h:120
+msgctxt "OpenType layout"
+msgid "Right-to-left alternates"
+msgstr "ᱡᱚᱡᱚᱢ ᱠᱷᱚᱱ ᱞᱮᱸᱜᱟ ᱵᱤᱠᱚᱞᱯᱚ"
+
+#: src/open-type-layout.h:121
+msgctxt "OpenType layout"
+msgid "Right-to-left mirrored forms"
+msgstr "ᱡᱚᱡᱚᱢ ᱠᱷᱚᱱ ᱞᱮᱸᱜᱟ ᱟᱹᱨᱥᱤ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:122
+msgctxt "OpenType layout"
+msgid "Ruby Notation Forms"
+msgstr "ᱨᱩᱵᱤ ᱱᱚᱴᱮᱥᱚᱱ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:123
+msgctxt "OpenType layout"
+msgid "Required Variation Alternates"
+msgstr "ᱞᱟᱹᱠᱛᱤᱭᱟᱱ ᱵᱷᱮᱜᱟᱨ ᱵᱤᱠᱚᱞᱯᱚ"
+
+#: src/open-type-layout.h:124
+msgctxt "OpenType layout"
+msgid "Stylistic Alternates"
+msgstr "ᱥᱴᱟᱭᱞᱤᱥᱴᱤᱠ ᱵᱤᱠᱚᱞᱯᱚ"
+
+#: src/open-type-layout.h:125
+msgctxt "OpenType layout"
+msgid "Scientific Inferiors"
+msgstr "ᱥᱟᱬᱮᱥᱤ ᱠᱷᱟᱴᱚ"
+
+#: src/open-type-layout.h:126
+msgctxt "OpenType layout"
+msgid "Optical size"
+msgstr "ᱚᱯᱴᱤᱠᱟᱞ ᱥᱟᱭᱤᱡᱽ"
+
+#: src/open-type-layout.h:127
+msgctxt "OpenType layout"
+msgid "Small Capitals"
+msgstr "ᱠᱟᱹᱴᱤᱡ ᱨᱟᱡᱷᱚᱛᱤ"
+
+#: src/open-type-layout.h:128
+msgctxt "OpenType layout"
+msgid "Simplified Forms"
+msgstr "ᱟᱞᱜᱟ ᱟᱠᱟᱱ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:129
+msgctxt "OpenType layout"
+msgid "Stylistic Set 1"
+msgstr "ᱥᱴᱟᱭᱞᱤᱥᱴᱤᱠ ᱥᱮᱴ ᱑"
+
+#: src/open-type-layout.h:130
+msgctxt "OpenType layout"
+msgid "Stylistic Set 2"
+msgstr "ᱥᱴᱟᱭᱞᱤᱥᱴᱤᱠ ᱥᱮᱴ ᱒"
+
+#: src/open-type-layout.h:131
+msgctxt "OpenType layout"
+msgid "Stylistic Set 3"
+msgstr "ᱥᱴᱟᱭᱞᱤᱥᱴᱤᱠ ᱥᱮᱴ ᱓"
+
+#: src/open-type-layout.h:132
+msgctxt "OpenType layout"
+msgid "Stylistic Set 4"
+msgstr "ᱥᱴᱟᱭᱞᱤᱥᱴᱤᱠ ᱥᱮᱴ ᱔"
+
+#: src/open-type-layout.h:133
+msgctxt "OpenType layout"
+msgid "Stylistic Set 5"
+msgstr "ᱥᱴᱟᱭᱞᱤᱥᱴᱤᱠ ᱥᱮᱴ ᱕"
+
+#: src/open-type-layout.h:134
+msgctxt "OpenType layout"
+msgid "Stylistic Set 6"
+msgstr "ᱥᱴᱟᱭᱞᱤᱥᱴᱤᱠ ᱥᱮᱴ ᱖"
+
+#: src/open-type-layout.h:135
+msgctxt "OpenType layout"
+msgid "Stylistic Set 7"
+msgstr "ᱥᱴᱟᱭᱞᱤᱥᱴᱤᱠ ᱥᱮᱴ ᱗"
+
+#: src/open-type-layout.h:136
+msgctxt "OpenType layout"
+msgid "Stylistic Set 8"
+msgstr "ᱥᱴᱟᱭᱞᱤᱥᱴᱤᱠ ᱥᱮᱴ ᱘"
+
+#: src/open-type-layout.h:137
+msgctxt "OpenType layout"
+msgid "Stylistic Set 9"
+msgstr "ᱥᱴᱟᱭᱞᱤᱥᱴᱤᱠ ᱥᱮᱴ ᱙"
+
+#: src/open-type-layout.h:138
+msgctxt "OpenType layout"
+msgid "Stylistic Set 10"
+msgstr "ᱥᱴᱟᱭᱞᱤᱥᱴᱤᱠ ᱥᱮᱴ ᱑᱐"
+
+#: src/open-type-layout.h:139
+msgctxt "OpenType layout"
+msgid "Stylistic Set 11"
+msgstr "ᱥᱴᱟᱭᱞᱤᱥᱴᱤᱠ ᱥᱮᱴ ᱑᱑"
+
+#: src/open-type-layout.h:140
+msgctxt "OpenType layout"
+msgid "Stylistic Set 12"
+msgstr "ᱥᱴᱟᱭᱞᱤᱥᱴᱤᱠ ᱥᱮᱴ ᱑᱒"
+
+#: src/open-type-layout.h:141
+msgctxt "OpenType layout"
+msgid "Stylistic Set 13"
+msgstr "ᱥᱴᱟᱭᱞᱤᱥᱴᱤᱠ ᱥᱮᱴ ᱑᱓"
+
+#: src/open-type-layout.h:142
+msgctxt "OpenType layout"
+msgid "Stylistic Set 14"
+msgstr "ᱥᱴᱟᱭᱞᱤᱥᱴᱤᱠ ᱥᱮᱴ ᱑᱔"
+
+#: src/open-type-layout.h:143
+msgctxt "OpenType layout"
+msgid "Stylistic Set 15"
+msgstr "ᱥᱴᱟᱭᱞᱤᱥᱴᱤᱠ ᱥᱮᱴ ᱑᱕"
+
+#: src/open-type-layout.h:144
+msgctxt "OpenType layout"
+msgid "Stylistic Set 16"
+msgstr "ᱥᱴᱟᱭᱞᱤᱥᱴᱤᱠ ᱥᱮᱴ ᱑᱖"
+
+#: src/open-type-layout.h:145
+msgctxt "OpenType layout"
+msgid "Stylistic Set 17"
+msgstr "ᱥᱴᱟᱭᱞᱤᱥᱴᱤᱠ ᱥᱮᱴ ᱑᱗"
+
+#: src/open-type-layout.h:146
+msgctxt "OpenType layout"
+msgid "Stylistic Set 18"
+msgstr "ᱥᱴᱟᱭᱞᱤᱥᱴᱤᱠ ᱥᱮᱴ ᱑᱘"
+
+#: src/open-type-layout.h:147
+msgctxt "OpenType layout"
+msgid "Stylistic Set 19"
+msgstr "ᱥᱴᱟᱭᱞᱤᱥᱴᱤᱠ ᱥᱮᱴ ᱑᱙"
+
+#: src/open-type-layout.h:148
+msgctxt "OpenType layout"
+msgid "Stylistic Set 20"
+msgstr "ᱥᱴᱟᱭᱞᱤᱥᱴᱤᱠ ᱥᱮᱴ ᱒᱐"
+
+#: src/open-type-layout.h:149
+msgctxt "OpenType layout"
+msgid "Math script style alternates"
+msgstr "ᱮᱞᱠᱷᱟ ᱥᱠᱨᱤᱯᱴ ᱥᱴᱟᱭᱤᱞ ᱵᱤᱠᱚᱞᱯᱚ"
+
+#: src/open-type-layout.h:150
+msgctxt "OpenType layout"
+msgid "Stretching Glyph Decomposition"
+msgstr "ᱥᱴᱨᱮᱪᱤᱝ ᱜᱞᱟᱭᱯᱷ ᱰᱤᱠᱚᱢᱯᱚᱡᱤᱥᱚᱱ"
+
+#: src/open-type-layout.h:151
+msgctxt "OpenType layout"
+msgid "Subscript"
+msgstr "ᱥᱟᱵᱽᱥᱠᱨᱤᱯᱴ"
+
+#: src/open-type-layout.h:152
+msgctxt "OpenType layout"
+msgid "Superscript"
+msgstr "ᱥᱩᱯᱟᱨᱥᱠᱨᱤᱯᱴ"
+
+#: src/open-type-layout.h:153
+msgctxt "OpenType layout"
+msgid "Swash"
+msgstr "ᱥᱣᱟᱥ"
+
+#: src/open-type-layout.h:154
+msgctxt "OpenType layout"
+msgid "Titling"
+msgstr "ᱴᱟᱭᱴᱟᱞᱤᱝ"
+
+#: src/open-type-layout.h:155
+msgctxt "OpenType layout"
+msgid "Trailing Jamo Forms"
+msgstr "ᱛᱟᱭᱚᱢ ᱥᱮᱫ ᱡᱟᱢᱚ ᱯᱷᱚᱨᱢ"
+
+#: src/open-type-layout.h:156
+msgctxt "OpenType layout"
+msgid "Traditional Name Forms"
+msgstr "ᱯᱚᱨᱚᱢᱟᱱᱟᱜ ᱧᱩᱛᱩᱢ ᱨᱩᱯ"
+
+#: src/open-type-layout.h:157
+msgctxt "OpenType layout"
+msgid "Tabular Figures"
+msgstr "ᱴᱮᱵᱩᱞᱟᱨ ᱯᱷᱤᱜᱟᱨᱥ"
+
+#: src/open-type-layout.h:158
+msgctxt "OpenType layout"
+msgid "Traditional Forms"
+msgstr "ᱯᱚᱨᱚᱢᱟᱱᱟᱜ ᱨᱩᱯ"
+
+#: src/open-type-layout.h:159
+msgctxt "OpenType layout"
+msgid "Third Widths"
+msgstr "ᱯᱮᱭᱟ ᱚᱥᱟᱨ"
+
+#: src/open-type-layout.h:160
+msgctxt "OpenType layout"
+msgid "Unicase"
+msgstr "ᱭᱩᱱᱤᱠᱮᱥ"
+
+#: src/open-type-layout.h:161
+msgctxt "OpenType layout"
+msgid "Alternate Vertical Metrics"
+msgstr "ᱵᱤᱠᱚᱞᱯᱚ ᱩᱞᱴᱟᱹ ᱢᱮᱴᱨᱤᱠ"
+
+#: src/open-type-layout.h:162
+msgctxt "OpenType layout"
+msgid "Vattu Variants"
+msgstr "ᱣᱟᱴᱴᱩ ᱵᱷᱮᱨᱤᱭᱮᱱᱴᱥ"
+
+#: src/open-type-layout.h:163
+msgctxt "OpenType layout"
+msgid "Vertical Writing"
+msgstr "ᱩᱞᱴᱟᱹ ᱚᱞ"
+
+#: src/open-type-layout.h:164
+msgctxt "OpenType layout"
+msgid "Alternate Vertical Half Metrics"
+msgstr "ᱵᱤᱠᱚᱞᱯᱚ ᱪᱮᱛᱟᱱ ᱟᱫᱷᱟ ᱢᱮᱴᱨᱤᱠ"
+
+#: src/open-type-layout.h:165
+msgctxt "OpenType layout"
+msgid "Vowel Jamo Forms"
+msgstr "ᱥᱟᱨᱟ ᱡᱟᱢᱳ ᱨᱩᱯ"
+
+#: src/open-type-layout.h:166
+msgctxt "OpenType layout"
+msgid "Vertical Kana Alternates"
+msgstr "ᱣᱮᱨᱴᱤᱠᱟᱞ ᱠᱟᱱᱟ ᱵᱤᱠᱚᱞᱯᱚ"
+
+#: src/open-type-layout.h:167
+msgctxt "OpenType layout"
+msgid "Vertical Kerning"
+msgstr "ᱣᱮᱨᱴᱤᱠᱟᱞ ᱠᱟᱨᱱᱤᱝ"
+
+#: src/open-type-layout.h:168
+msgctxt "OpenType layout"
+msgid "Proportional Alternate Vertical Metrics"
+msgstr "ᱥᱚᱢᱟᱱ ᱵᱤᱠᱚᱞᱯᱚ ᱪᱮᱛᱟᱱ ᱢᱮᱴᱨᱤᱠ"
+
+#: src/open-type-layout.h:169
+msgctxt "OpenType layout"
+msgid "Vertical Alternates and Rotation"
+msgstr "ᱩᱞᱴᱟᱹ ᱵᱤᱠᱚᱞᱯᱚ ᱟᱨ ᱟᱹᱪᱩᱨᱚᱜ"
+
+#: src/open-type-layout.h:170
+msgctxt "OpenType layout"
+msgid "Vertical Alternates for Rotation"
+msgstr "ᱟᱹᱪᱩᱨᱚᱜ ᱞᱟᱹᱜᱤᱫ ᱩᱞᱴᱟᱹ ᱵᱤᱠᱚᱞᱯᱚ"
+
+#: src/open-type-layout.h:171
+msgctxt "OpenType layout"
+msgid "Slashed Zero"
+msgstr "ᱥᱞᱮᱥᱰ ᱥᱩᱱ"
