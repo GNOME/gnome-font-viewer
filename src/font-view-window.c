@@ -719,6 +719,16 @@ action_focus_search_cb (GtkWidget  *widget,
   gtk_widget_grab_focus (GTK_WIDGET (self->search_entry));
 }
 
+static void
+action_clear_search_cb (GtkWidget  *widget,
+                        const char *action_name,
+                        GVariant   *parameter)
+{
+  FontViewWindow *self = FONT_VIEW_WINDOW (widget);
+
+  gtk_editable_set_text (GTK_EDITABLE (self->search_entry), "");
+}
+
 void
 font_view_window_show_preview (FontViewWindow *self,
                                GFile          *file,
@@ -816,6 +826,7 @@ font_view_window_class_init (FontViewWindowClass *klass)
   gtk_widget_class_bind_template_callback (widget_class, font_name_closure);
 
   gtk_widget_class_install_action (widget_class, "win.focus-search", NULL, action_focus_search_cb);
+  gtk_widget_class_install_action (widget_class, "win.clear-search", NULL, action_clear_search_cb);
   gtk_widget_class_install_action (widget_class, "win.install-font", NULL, action_install_font_cb);
 }
 
