@@ -710,7 +710,7 @@ font_view_window_show_overview (FontViewWindow *self)
 }
 
 static void
-action_toggle_search_cb (GtkWidget  *widget,
+action_focus_search_cb (GtkWidget  *widget,
                          const char *action_name,
                          GVariant   *parameter)
 {
@@ -813,10 +813,9 @@ font_view_window_class_init (FontViewWindowClass *klass)
   gtk_widget_class_bind_template_callback (widget_class, font_widget_loaded_cb);
   gtk_widget_class_bind_template_callback (widget_class, view_child_activated_cb);
 
-  gtk_widget_class_bind_template_callback (widget_class, action_toggle_search_cb);
   gtk_widget_class_bind_template_callback (widget_class, font_name_closure);
 
-  gtk_widget_class_install_action (widget_class, "win.toggle-search", NULL, action_toggle_search_cb);
+  gtk_widget_class_install_action (widget_class, "win.focus-search", NULL, action_focus_search_cb);
   gtk_widget_class_install_action (widget_class, "win.install-font", NULL, action_install_font_cb);
 }
 
