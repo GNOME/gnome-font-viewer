@@ -709,6 +709,22 @@ font_view_window_show_overview (FontViewWindow *self)
   adw_navigation_view_pop (self->nav_view);
 }
 
+static gboolean
+search_entry_key_event (GtkEventControllerKey *controller,
+                         guint                  keyval,
+                         guint                  keycode,
+                         GdkModifierType        state,
+                         gpointer               user_data)
+{
+  FontViewWindow *self = FONT_VIEW_WINDOW (user_data);
+
+  if (keyval == GDK_KEY_Escape) {
+    return gtk_event_controller_key_forward (controller, GTK_WIDGET (self));
+  }
+
+  return GDK_EVENT_STOP;
+}
+
 static void
 action_focus_search_cb (GtkWidget  *widget,
                          const char *action_name,
@@ -820,6 +836,7 @@ font_view_window_class_init (FontViewWindowClass *klass)
 
   gtk_widget_class_bind_template_child (widget_class, FontViewWindow, sort_model);
 
+  gtk_widget_class_bind_template_callback (widget_class, search_entry_key_event);
   gtk_widget_class_bind_template_callback (widget_class, font_widget_loaded_cb);
   gtk_widget_class_bind_template_callback (widget_class, view_child_activated_cb);
 

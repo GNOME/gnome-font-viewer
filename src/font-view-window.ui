@@ -41,6 +41,12 @@
                         <property name="child">
                           <object class="GtkSearchEntry" id="search_entry">
                             <property name="placeholder-text" translatable="yes">Search fonts</property>
+                            <child>
+                              <object class="GtkEventControllerKey">
+                                <signal name="key-pressed" handler="search_entry_key_event" swapped="no"/>
+                                <signal name="key-released" handler="search_entry_key_event" swapped="no"/>
+                              </object>
+                            </child>
                           </object>
                         </property>
                       </object>
