@@ -24,7 +24,7 @@ thumbnailerdir = join_paths(datadir, 'thumbnailers')
 
 glib_req_version = '>= 2.56.0'
 gtk_req_version = '>= 4.5.0'
-libadwaita_req_version = '>= 1.5'
+libadwaita_req_version = '>= 1.8'
 harfbuzz_req_version = '>= 0.9.9'
 
 glib_dep = dependency('glib-2.0', version: glib_req_version)
