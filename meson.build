@@ -1,7 +1,7 @@
 project('gnome-font-viewer', 'c',
         version: '49.0',
         license: 'GPLv2+',
-        meson_version: '>= 0.50.0',
+        meson_version: '>= 0.59.0',
 )
 
 cc = meson.get_compiler('c')
@@ -57,4 +57,6 @@ subdir('src')
 subdir('po')
 subdir('data')
 
-meson.add_install_script('meson-postinstall.sh')
+gnome.post_install(
+  update_desktop_database: true
+)
