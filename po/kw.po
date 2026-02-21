@@ -1,0 +1,1038 @@
+# Cornish translation for gnome-font-viewer.
+# Copyright (C) 2026 gnome-font-viewer's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-font-viewer package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Flynn Peck <cirilla@tuta.io>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-font-viewer main\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
+"issues/\n"
+"POT-Creation-Date: 2026-01-16 18:43+0000\n"
+"PO-Revision-Date: 2026-02-19 16:47+0000\n"
+"Last-Translator: Flynn Peck <cirilla@tuta.io>\n"
+"Language-Team: kw\n"
+"Language: kw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-DL-VCS-Web: https://gitlab.gnome.org/GNOME/gnome-font-viewer/\n"
+"X-DL-Lang: kw\n"
+"X-DL-Module: gnome-font-viewer\n"
+"X-DL-Branch: main\n"
+"X-DL-Domain: po\n"
+"X-DL-State: Translating\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 49.0\n"
+
+#: data/org.gnome.font-viewer.desktop.in.in:2
+#: data/org.gnome.font-viewer.metainfo.xml.in:6 src/font-view-application.c:124
+#: src/font-view-application.c:150
+msgid "Fonts"
+msgstr "Fontow"
+
+#: data/org.gnome.font-viewer.desktop.in.in:3
+#: data/org.gnome.font-viewer.metainfo.xml.in:7
+msgid "View fonts on your system"
+msgstr "Gweles fontys war dha system"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.font-viewer.desktop.in.in:5
+msgid "fonts;fontface;"
+msgstr "fontow;fontys;"
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:9
+msgid ""
+"Fonts shows you the fonts installed on your computer for your use as "
+"thumbnails. Selecting any thumbnails shows the full view of how the font "
+"would look under various sizes."
+msgstr ""
+"Fontow diskwedhes ty an fontys leys war dha amontyell rag dha devnydh avel "
+"avenyow byghan. Ow dewis neb avenyow diskwedhes an gwel leun a fatel an font "
+"a wrussa heveli yn brasterow dyffrans."
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:15
+msgid ""
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
+msgstr ""
+"Ynwedh, Fontow skoodhya ow lea restrennow font nowydh iskargys y'n .ttf ha "
+"furvasow aral. Fontow a yll bos leys rag dha devnydh hepken po gwrys kavadow "
+"rag oll usyoryon war'n amontyell."
+
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.font-viewer.metainfo.xml.in:22
+#: src/font-view-application.c:126
+msgid "The GNOME Project"
+msgstr "An Ragdres GNOME"
+
+#: src/font-thumbnailer.c:181
+msgid "Text to thumbnail (default: Aa)"
+msgstr "Tekst dhe aven byghan (defowt: Aa)"
+
+#: src/font-thumbnailer.c:181
+msgid "TEXT"
+msgstr "TEKST"
+
+#: src/font-thumbnailer.c:183
+msgid "Thumbnail size (default: 128)"
+msgstr "Braster aven byghan (defowt: 128)"
+
+#: src/font-thumbnailer.c:183
+msgid "SIZE"
+msgstr "BRASTER"
+
+#: src/font-thumbnailer.c:185
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "RESTREN-FONT RESTREN-ESKORRANS"
+
+#: src/font-view-application.c:79 src/font-view-window.c:693
+msgid "Could Not Display Font"
+msgstr "Ny Yllir Diskwedhes Font"
+
+#: src/font-view-application.c:129
+msgid "translator-credits"
+msgstr "Flynn"
+
+#: src/font-view-window.c:95
+msgid "Failed"
+msgstr "Fyllis"
+
+#: src/font-view-window.c:103
+msgid "Installed"
+msgstr "Leys"
+
+#: src/font-view-window.c:108
+msgid "Installing"
+msgstr "Ow Lea"
+
+#: src/font-view-window.c:111 src/font-view-window.ui:177
+msgid "_Install"
+msgstr "_Lea"
+
+#. Translators, this string is used to display information about
+#. * a 'font variation axis'. The %s gets replaced with the name
+#. * of the axis, for example 'Width'. The three %g get replaced
+#. * with the minimum, maximum and default values for the axis.
+#.
+#: src/font-view-window.c:197
+#, c-format
+msgid "%s %g — %g, default %g"
+msgstr "%s %g — %g, defowt %g"
+
+#: src/font-view-window.c:252
+#, c-format
+msgid "Instance %d"
+msgstr "Gweyth %d"
+
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view-window.c:290
+msgctxt "OpenType layout"
+msgid ", "
+msgstr ","
+
+#: src/font-view-window.c:319
+msgid "Name"
+msgstr "Hanow"
+
+#: src/font-view-window.c:322
+msgid "Location"
+msgstr "Tyller"
+
+#: src/font-view-window.c:325
+msgid "Style"
+msgstr "Gis"
+
+#: src/font-view-window.c:335
+msgid "Type"
+msgstr "Eghen"
+
+#: src/font-view-window.c:401 src/font-view-window.c:427
+msgid "Version"
+msgstr "Versyon"
+
+#: src/font-view-window.c:405 src/font-view-window.c:432
+msgid "Copyright"
+msgstr "Gwirbryntyans"
+
+#: src/font-view-window.c:409
+msgid "Description"
+msgstr "Deskrifans"
+
+#: src/font-view-window.c:413
+msgid "Manufacturer"
+msgstr "Gwrier"
+
+#: src/font-view-window.c:417
+msgid "Designer"
+msgstr "Desiner"
+
+#: src/font-view-window.c:421
+msgid "License"
+msgstr "Leshyans"
+
+#: src/font-view-window.c:446
+msgid "Glyph Count"
+msgstr "Somm Lytheren"
+
+#: src/font-view-window.c:448
+msgid "Color Glyphs"
+msgstr "Lytherennow Kolor"
+
+#: src/font-view-window.c:449
+msgid "yes"
+msgstr "ya"
+
+#: src/font-view-window.c:449
+msgid "no"
+msgstr "na"
+
+#: src/font-view-window.c:453
+msgid "Layout Features"
+msgstr "Nasyow Aray"
+
+#: src/font-view-window.c:459
+msgid "Variation Axes"
+msgstr "Axes Varyans"
+
+#: src/font-view-window.c:466
+msgid "Named Styles"
+msgstr "Gisyow Henwys"
+
+#: src/font-view-window.c:509 src/font-view-window.c:612
+msgid "Could Not Install Font"
+msgstr "Ny Yllir Lea Font"
+
+#: src/font-view-window.ui:32
+msgid "All Fonts"
+msgstr "Oll Fontys"
+
+#: src/font-view-window.ui:43
+msgid "Search fonts"
+msgstr "Hwilas fontys"
+
+#: src/font-view-window.ui:58
+msgid "About Fonts"
+msgstr "A-dro Fontow"
+
+#: src/font-view-window.ui:180
+msgid "Install Font"
+msgstr "Lea Font"
+
+#: src/font-view-window.ui:185
+msgid "I_nfo"
+msgstr "_Kedhlow"
+
+#: src/font-view-window.ui:187
+msgid "Font Details"
+msgstr "Manylyon Font"
+
+#: src/font-view-window.ui:245
+msgid "_Close"
+msgstr "_Degea"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "GNOME Fontow"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "Diskwedhes an versyon app"
+
+#: src/open-type-layout.h:13
+msgctxt "OpenType layout"
+msgid "Access All Alternates"
+msgstr "Drehedhes Oll Tereylyansow"
+
+#: src/open-type-layout.h:14
+msgctxt "OpenType layout"
+msgid "Above-base Forms"
+msgstr "Furvow A-ugh-sel"
+
+#: src/open-type-layout.h:15
+msgctxt "OpenType layout"
+msgid "Above-base Mark Positioning"
+msgstr "Leans Merk A-ugh-sel"
+
+#: src/open-type-layout.h:16
+msgctxt "OpenType layout"
+msgid "Above-base Substitutions"
+msgstr "Asleansow A-ugh-sel"
+
+#: src/open-type-layout.h:17
+msgctxt "OpenType layout"
+msgid "Alternative Fractions"
+msgstr "Rannrivyow Aral"
+
+#: src/open-type-layout.h:18
+msgctxt "OpenType layout"
+msgid "Akhands"
+msgstr "Akhands"
+
+#: src/open-type-layout.h:19
+msgctxt "OpenType layout"
+msgid "Below-base Forms"
+msgstr "Furvow A-woles-sel"
+
+#: src/open-type-layout.h:20
+msgctxt "OpenType layout"
+msgid "Below-base Mark Positioning"
+msgstr "Leans Merk A-woles-sel"
+
+#: src/open-type-layout.h:21
+msgctxt "OpenType layout"
+msgid "Below-base Substitutions"
+msgstr "Asleansow A-woles-sel"
+
+#: src/open-type-layout.h:22
+msgctxt "OpenType layout"
+msgid "Contextual Alternates"
+msgstr "Tereylyansow Kettestenek"
+
+#: src/open-type-layout.h:23
+msgctxt "OpenType layout"
+msgid "Case-Sensitive Forms"
+msgstr "Furvow Kas-Serghek"
+
+#: src/open-type-layout.h:24
+msgctxt "OpenType layout"
+msgid "Glyph Composition / Decomposition"
+msgstr "Komposyans Diskomposyans Lytheren"
+
+#: src/open-type-layout.h:25
+msgctxt "OpenType layout"
+msgid "Conjunct Form After Ro"
+msgstr "Mellya Furv Wosa Ro"
+
+#: src/open-type-layout.h:26
+msgctxt "OpenType layout"
+msgid "Conjunct Forms"
+msgstr "Mellya Furvow"
+
+#: src/open-type-layout.h:27
+msgctxt "OpenType layout"
+msgid "Contextual Ligatures"
+msgstr "Ligaturys Kettestenek"
+
+#: src/open-type-layout.h:28
+msgctxt "OpenType layout"
+msgid "Centered CJK Punctuation"
+msgstr "Poyntyans CJK Kresys"
+
+#: src/open-type-layout.h:29
+msgctxt "OpenType layout"
+msgid "Capital Spacing"
+msgstr "Efanderyans Pennlytherennow"
+
+#: src/open-type-layout.h:30
+msgctxt "OpenType layout"
+msgid "Contextual Swash"
+msgstr "Swash Kettestenek"
+
+#: src/open-type-layout.h:31
+msgctxt "OpenType layout"
+msgid "Cursive Positioning"
+msgstr "Leans Dornek"
+
+#: src/open-type-layout.h:32
+msgctxt "OpenType layout"
+msgid "Petite Capitals From Capitals"
+msgstr "Pennlytherennow Munys Dhyworth Pennlytherennow"
+
+#: src/open-type-layout.h:33
+msgctxt "OpenType layout"
+msgid "Small Capitals From Capitals"
+msgstr "Pennlytherennow Byghan Dhyworth Pennlytherennow"
+
+#: src/open-type-layout.h:34
+msgctxt "OpenType layout"
+msgid "Character Variation 1"
+msgstr "Varyans Lytheren 1"
+
+#: src/open-type-layout.h:35
+msgctxt "OpenType layout"
+msgid "Character Variation 2"
+msgstr "Varyans Lytheren 2"
+
+#: src/open-type-layout.h:36
+msgctxt "OpenType layout"
+msgid "Character Variation 3"
+msgstr "Varyans Lytheren 3"
+
+#: src/open-type-layout.h:37
+msgctxt "OpenType layout"
+msgid "Character Variation 4"
+msgstr "Varyans Lytheren 4"
+
+#: src/open-type-layout.h:38
+msgctxt "OpenType layout"
+msgid "Character Variation 5"
+msgstr "Varyans Lytheren 5"
+
+#: src/open-type-layout.h:39
+msgctxt "OpenType layout"
+msgid "Character Variation 6"
+msgstr "Varyans Lytheren 6"
+
+#: src/open-type-layout.h:40
+msgctxt "OpenType layout"
+msgid "Character Variation 7"
+msgstr "Varyans Lytheren 7"
+
+#: src/open-type-layout.h:41
+msgctxt "OpenType layout"
+msgid "Character Variation 8"
+msgstr "Varyans Lytheren 8"
+
+#: src/open-type-layout.h:42
+msgctxt "OpenType layout"
+msgid "Character Variation 9"
+msgstr "Varyans Lytheren 9"
+
+#: src/open-type-layout.h:43
+msgctxt "OpenType layout"
+msgid "Character Variation 10"
+msgstr "Varyans Lytheren 10"
+
+#: src/open-type-layout.h:44
+msgctxt "OpenType layout"
+msgid "Character Variation 11"
+msgstr "Varyans Lytheren 11"
+
+#: src/open-type-layout.h:45
+msgctxt "OpenType layout"
+msgid "Character Variation 12"
+msgstr "Varyans Lytheren 12"
+
+#: src/open-type-layout.h:46
+msgctxt "OpenType layout"
+msgid "Character Variation 13"
+msgstr "Varyans Lytheren 13"
+
+#: src/open-type-layout.h:47
+msgctxt "OpenType layout"
+msgid "Character Variation 14"
+msgstr "Varyans Lytheren 14"
+
+#: src/open-type-layout.h:48
+msgctxt "OpenType layout"
+msgid "Character Variation 15"
+msgstr "Varyans Lytheren 15"
+
+#: src/open-type-layout.h:49
+msgctxt "OpenType layout"
+msgid "Character Variation 16"
+msgstr "Varyans Lytheren 16"
+
+#: src/open-type-layout.h:50
+msgctxt "OpenType layout"
+msgid "Character Variation 17"
+msgstr "Varyans Lytheren 17"
+
+#: src/open-type-layout.h:51
+msgctxt "OpenType layout"
+msgid "Character Variation 18"
+msgstr "Varyans Lytheren 18"
+
+#: src/open-type-layout.h:52
+msgctxt "OpenType layout"
+msgid "Character Variation 19"
+msgstr "Varyans Lytheren 19"
+
+#: src/open-type-layout.h:53
+msgctxt "OpenType layout"
+msgid "Distances"
+msgstr "Pellderyow"
+
+#: src/open-type-layout.h:54
+msgctxt "OpenType layout"
+msgid "Discretionary Ligatures"
+msgstr "Ligaturys Dewisys"
+
+#: src/open-type-layout.h:55
+msgctxt "OpenType layout"
+msgid "Denominators"
+msgstr "Rumenoryon"
+
+#: src/open-type-layout.h:56
+msgctxt "OpenType layout"
+msgid "Dotless Forms"
+msgstr "Furvow Heb Dyjynnow"
+
+#: src/open-type-layout.h:57
+msgctxt "OpenType layout"
+msgid "Expert Forms"
+msgstr "Furvow Konnyk"
+
+#: src/open-type-layout.h:58
+msgctxt "OpenType layout"
+msgid "Final Glyph on Line Alternates"
+msgstr "Lytheren Finek war Linen Tereylya"
+
+#: src/open-type-layout.h:59
+msgctxt "OpenType layout"
+msgid "Terminal Forms #2"
+msgstr "Furvow Termynal #2"
+
+#: src/open-type-layout.h:60
+msgctxt "OpenType layout"
+msgid "Terminal Forms #3"
+msgstr "Furvow Termynal #3"
+
+#: src/open-type-layout.h:61
+msgctxt "OpenType layout"
+msgid "Terminal Forms"
+msgstr "Furvow Termynal"
+
+#: src/open-type-layout.h:62
+msgctxt "OpenType layout"
+msgid "Flattened accent forms"
+msgstr "Furvow Ughverk Plattys"
+
+#: src/open-type-layout.h:63
+msgctxt "OpenType layout"
+msgid "Fractions"
+msgstr "Rannrivyow"
+
+#: src/open-type-layout.h:64
+msgctxt "OpenType layout"
+msgid "Full Widths"
+msgstr "Lesyow Leun"
+
+#: src/open-type-layout.h:65
+msgctxt "OpenType layout"
+msgid "Half Forms"
+msgstr "Hanterfurvow"
+
+#: src/open-type-layout.h:66
+msgctxt "OpenType layout"
+msgid "Halant Forms"
+msgstr "Furvow Halant"
+
+#: src/open-type-layout.h:67
+msgctxt "OpenType layout"
+msgid "Alternate Half Widths"
+msgstr "Hanterfurvow Aral"
+
+#: src/open-type-layout.h:68
+msgctxt "OpenType layout"
+msgid "Historical Forms"
+msgstr "Furvow Istorek"
+
+#: src/open-type-layout.h:69
+msgctxt "OpenType layout"
+msgid "Horizontal Kana Alternates"
+msgstr "Tereylyansow Kana Gorwelyek"
+
+#: src/open-type-layout.h:70
+msgctxt "OpenType layout"
+msgid "Historical Ligatures"
+msgstr "Ligaturys Istorek"
+
+#: src/open-type-layout.h:71
+msgctxt "OpenType layout"
+msgid "Hangul"
+msgstr "Hangul"
+
+#: src/open-type-layout.h:72
+msgctxt "OpenType layout"
+msgid "Hojo Kanji Forms"
+msgstr "Furvow Kanji Hojo"
+
+#: src/open-type-layout.h:73
+msgctxt "OpenType layout"
+msgid "Half Widths"
+msgstr "Hanterlesyow"
+
+#: src/open-type-layout.h:74
+msgctxt "OpenType layout"
+msgid "Initial Forms"
+msgstr "Furvow Kynsa"
+
+#: src/open-type-layout.h:75
+msgctxt "OpenType layout"
+msgid "Isolated Forms"
+msgstr "Furvow Enyshes"
+
+#: src/open-type-layout.h:76
+msgctxt "OpenType layout"
+msgid "Italics"
+msgstr "Italegow"
+
+#: src/open-type-layout.h:77
+msgctxt "OpenType layout"
+msgid "Justification Alternates"
+msgstr "Tereylyansow Justifyans"
+
+#: src/open-type-layout.h:78
+msgctxt "OpenType layout"
+msgid "JIS78 Forms"
+msgstr "Furvow JIS78"
+
+#: src/open-type-layout.h:79
+msgctxt "OpenType layout"
+msgid "JIS83 Forms"
+msgstr "Furvow JIS83"
+
+#: src/open-type-layout.h:80
+msgctxt "OpenType layout"
+msgid "JIS90 Forms"
+msgstr "Furvow JIS90"
+
+#: src/open-type-layout.h:81
+msgctxt "OpenType layout"
+msgid "JIS2004 Forms"
+msgstr "Furvow JIS2004"
+
+#: src/open-type-layout.h:82
+msgctxt "OpenType layout"
+msgid "Kerning"
+msgstr "Kerning"
+
+#: src/open-type-layout.h:83
+msgctxt "OpenType layout"
+msgid "Left Bounds"
+msgstr "Oryon Kledh"
+
+#: src/open-type-layout.h:84
+msgctxt "OpenType layout"
+msgid "Standard Ligatures"
+msgstr "Ligaturys Savonek"
+
+#: src/open-type-layout.h:85
+msgctxt "OpenType layout"
+msgid "Leading Jamo Forms"
+msgstr "Furvow Jamo Ledyer"
+
+#: src/open-type-layout.h:86
+msgctxt "OpenType layout"
+msgid "Lining Figures"
+msgstr "Furvow Ispan"
+
+#: src/open-type-layout.h:87
+msgctxt "OpenType layout"
+msgid "Localized Forms"
+msgstr "Furvow Leel"
+
+#: src/open-type-layout.h:88
+msgctxt "OpenType layout"
+msgid "Left-to-right alternates"
+msgstr "Tereylyansow kledh-dhe-dyghow"
+
+#: src/open-type-layout.h:89
+msgctxt "OpenType layout"
+msgid "Left-to-right mirrored forms"
+msgstr "Furvow dastewynnys kledh-dhe-dyghow"
+
+#: src/open-type-layout.h:90
+msgctxt "OpenType layout"
+msgid "Mark Positioning"
+msgstr "Leans Merk"
+
+#: src/open-type-layout.h:91
+msgctxt "OpenType layout"
+msgid "Medial Forms #2"
+msgstr "Furvow Kres #2"
+
+#: src/open-type-layout.h:92
+msgctxt "OpenType layout"
+msgid "Medial Forms"
+msgstr "Furvow Kres"
+
+#: src/open-type-layout.h:93
+msgctxt "OpenType layout"
+msgid "Mathematical Greek"
+msgstr "Grek Mathematigel"
+
+#: src/open-type-layout.h:94
+msgctxt "OpenType layout"
+msgid "Mark to Mark Positioning"
+msgstr "Leans Merk dhe Merk"
+
+#: src/open-type-layout.h:95
+msgctxt "OpenType layout"
+msgid "Mark Positioning via Substitution"
+msgstr "Leans Merk der Asleans"
+
+#: src/open-type-layout.h:96
+msgctxt "OpenType layout"
+msgid "Alternate Annotation Forms"
+msgstr "Furvow Notennyans Aral"
+
+#: src/open-type-layout.h:97
+msgctxt "OpenType layout"
+msgid "NLC Kanji Forms"
+msgstr "Furvow Kanji NLC"
+
+#: src/open-type-layout.h:98
+msgctxt "OpenType layout"
+msgid "Nukta Forms"
+msgstr "Furvow Nukta"
+
+#: src/open-type-layout.h:99
+msgctxt "OpenType layout"
+msgid "Numerators"
+msgstr "Niveroryon"
+
+#: src/open-type-layout.h:100
+msgctxt "OpenType layout"
+msgid "Oldstyle Figures"
+msgstr "Furvow Hengis"
+
+#: src/open-type-layout.h:101
+msgctxt "OpenType layout"
+msgid "Optical Bounds"
+msgstr "Oryon Optek"
+
+#: src/open-type-layout.h:102
+msgctxt "OpenType layout"
+msgid "Ordinals"
+msgstr "Ordinels"
+
+#: src/open-type-layout.h:103
+msgctxt "OpenType layout"
+msgid "Ornaments"
+msgstr "Tegennow"
+
+#: src/open-type-layout.h:104
+msgctxt "OpenType layout"
+msgid "Proportional Alternate Widths"
+msgstr "Lesyow Aral Kemusurel"
+
+#: src/open-type-layout.h:105
+msgctxt "OpenType layout"
+msgid "Petite Capitals"
+msgstr "Pennlytherennow Munys"
+
+#: src/open-type-layout.h:106
+msgctxt "OpenType layout"
+msgid "Proportional Kana"
+msgstr "Kana Kemusurel"
+
+#: src/open-type-layout.h:107
+msgctxt "OpenType layout"
+msgid "Proportional Figures"
+msgstr "Furvow Kemusurel"
+
+#: src/open-type-layout.h:108
+msgctxt "OpenType layout"
+msgid "Pre-Base Forms"
+msgstr "Furvow Rag-Sel"
+
+#: src/open-type-layout.h:109
+msgctxt "OpenType layout"
+msgid "Pre-base Substitutions"
+msgstr "Asleansow Rag-sel"
+
+#: src/open-type-layout.h:110
+msgctxt "OpenType layout"
+msgid "Post-base Forms"
+msgstr "Furvow Wosa-Sel"
+
+#: src/open-type-layout.h:111
+msgctxt "OpenType layout"
+msgid "Post-base Substitutions"
+msgstr "Asleansow Wosa-sel"
+
+#: src/open-type-layout.h:112
+msgctxt "OpenType layout"
+msgid "Proportional Widths"
+msgstr "Lesyow Kemusurel"
+
+#: src/open-type-layout.h:113
+msgctxt "OpenType layout"
+msgid "Quarter Widths"
+msgstr "Lesyow Kwarter"
+
+#: src/open-type-layout.h:114
+msgctxt "OpenType layout"
+msgid "Randomize"
+msgstr "Chonsya"
+
+#: src/open-type-layout.h:115
+msgctxt "OpenType layout"
+msgid "Required Contextual Alternates"
+msgstr "Tereylyansow Kettestenek A Res"
+
+#: src/open-type-layout.h:116
+msgctxt "OpenType layout"
+msgid "Rakar Forms"
+msgstr "Furvow Rakar"
+
+#: src/open-type-layout.h:117
+msgctxt "OpenType layout"
+msgid "Required Ligatures"
+msgstr "Ligaturys A Res"
+
+#: src/open-type-layout.h:118
+msgctxt "OpenType layout"
+msgid "Reph Forms"
+msgstr "Furvow Reph"
+
+#: src/open-type-layout.h:119
+msgctxt "OpenType layout"
+msgid "Right Bounds"
+msgstr "Oryon Dyghow"
+
+#: src/open-type-layout.h:120
+msgctxt "OpenType layout"
+msgid "Right-to-left alternates"
+msgstr "Tereylyansow Dyghow-dhe-kledh"
+
+#: src/open-type-layout.h:121
+msgctxt "OpenType layout"
+msgid "Right-to-left mirrored forms"
+msgstr "Furvow dastewynnys Dyghow-dhe-kledh"
+
+#: src/open-type-layout.h:122
+msgctxt "OpenType layout"
+msgid "Ruby Notation Forms"
+msgstr "Furvow Notennans Ruby"
+
+#: src/open-type-layout.h:123
+msgctxt "OpenType layout"
+msgid "Required Variation Alternates"
+msgstr "Tereylyansow Varyans A Res"
+
+#: src/open-type-layout.h:124
+msgctxt "OpenType layout"
+msgid "Stylistic Alternates"
+msgstr "Tereylyansow Kelvydh"
+
+#: src/open-type-layout.h:125
+msgctxt "OpenType layout"
+msgid "Scientific Inferiors"
+msgstr "Gweth Godhoniethek"
+
+#: src/open-type-layout.h:126
+msgctxt "OpenType layout"
+msgid "Optical size"
+msgstr "Braster optek"
+
+#: src/open-type-layout.h:127
+msgctxt "OpenType layout"
+msgid "Small Capitals"
+msgstr "Pennlytherennow Byghan"
+
+#: src/open-type-layout.h:128
+msgctxt "OpenType layout"
+msgid "Simplified Forms"
+msgstr "Furvow Sempel"
+
+#: src/open-type-layout.h:129
+msgctxt "OpenType layout"
+msgid "Stylistic Set 1"
+msgstr "Sett Helvydh 1"
+
+#: src/open-type-layout.h:130
+msgctxt "OpenType layout"
+msgid "Stylistic Set 2"
+msgstr "Sett Helvydh 2"
+
+#: src/open-type-layout.h:131
+msgctxt "OpenType layout"
+msgid "Stylistic Set 3"
+msgstr "Sett Helvydh 3"
+
+#: src/open-type-layout.h:132
+msgctxt "OpenType layout"
+msgid "Stylistic Set 4"
+msgstr "Sett Helvydh 4"
+
+#: src/open-type-layout.h:133
+msgctxt "OpenType layout"
+msgid "Stylistic Set 5"
+msgstr "Sett Helvydh 5"
+
+#: src/open-type-layout.h:134
+msgctxt "OpenType layout"
+msgid "Stylistic Set 6"
+msgstr "Sett Helvydh 6"
+
+#: src/open-type-layout.h:135
+msgctxt "OpenType layout"
+msgid "Stylistic Set 7"
+msgstr "Sett Helvydh 7"
+
+#: src/open-type-layout.h:136
+msgctxt "OpenType layout"
+msgid "Stylistic Set 8"
+msgstr "Sett Helvydh 8"
+
+#: src/open-type-layout.h:137
+msgctxt "OpenType layout"
+msgid "Stylistic Set 9"
+msgstr "Sett Helvydh 9"
+
+#: src/open-type-layout.h:138
+msgctxt "OpenType layout"
+msgid "Stylistic Set 10"
+msgstr "Sett Helvydh 10"
+
+#: src/open-type-layout.h:139
+msgctxt "OpenType layout"
+msgid "Stylistic Set 11"
+msgstr "Sett Helvydh 11"
+
+#: src/open-type-layout.h:140
+msgctxt "OpenType layout"
+msgid "Stylistic Set 12"
+msgstr "Sett Helvydh 12"
+
+#: src/open-type-layout.h:141
+msgctxt "OpenType layout"
+msgid "Stylistic Set 13"
+msgstr "Sett Helvydh 13"
+
+#: src/open-type-layout.h:142
+msgctxt "OpenType layout"
+msgid "Stylistic Set 14"
+msgstr "Sett Helvydh 14"
+
+#: src/open-type-layout.h:143
+msgctxt "OpenType layout"
+msgid "Stylistic Set 15"
+msgstr "Sett Helvydh 15"
+
+#: src/open-type-layout.h:144
+msgctxt "OpenType layout"
+msgid "Stylistic Set 16"
+msgstr "Sett Helvydh 16"
+
+#: src/open-type-layout.h:145
+msgctxt "OpenType layout"
+msgid "Stylistic Set 17"
+msgstr "Sett Helvydh 17"
+
+#: src/open-type-layout.h:146
+msgctxt "OpenType layout"
+msgid "Stylistic Set 18"
+msgstr "Sett Helvydh 18"
+
+#: src/open-type-layout.h:147
+msgctxt "OpenType layout"
+msgid "Stylistic Set 19"
+msgstr "Sett Helvydh 19"
+
+#: src/open-type-layout.h:148
+msgctxt "OpenType layout"
+msgid "Stylistic Set 20"
+msgstr "Sett Helvydh 20"
+
+#: src/open-type-layout.h:149
+msgctxt "OpenType layout"
+msgid "Math script style alternates"
+msgstr "Tereylyansow gis skrif mathematigel"
+
+#: src/open-type-layout.h:150
+msgctxt "OpenType layout"
+msgid "Stretching Glyph Decomposition"
+msgstr "Diskomposyans Lytheren Tenna"
+
+#: src/open-type-layout.h:151
+msgctxt "OpenType layout"
+msgid "Subscript"
+msgstr "Islytherennow"
+
+#: src/open-type-layout.h:152
+msgctxt "OpenType layout"
+msgid "Superscript"
+msgstr "Gorlytherennow"
+
+#: src/open-type-layout.h:153
+msgctxt "OpenType layout"
+msgid "Swash"
+msgstr "Swash"
+
+#: src/open-type-layout.h:154
+msgctxt "OpenType layout"
+msgid "Titling"
+msgstr "Titlow"
+
+#: src/open-type-layout.h:155
+msgctxt "OpenType layout"
+msgid "Trailing Jamo Forms"
+msgstr "Furvow Jamo A Sew"
+
+#: src/open-type-layout.h:156
+msgctxt "OpenType layout"
+msgid "Traditional Name Forms"
+msgstr "Furvow Hanow Tradicyonal"
+
+#: src/open-type-layout.h:157
+msgctxt "OpenType layout"
+msgid "Tabular Figures"
+msgstr "Furvow Mosen"
+
+#: src/open-type-layout.h:158
+msgctxt "OpenType layout"
+msgid "Traditional Forms"
+msgstr "Furvow Tradicyonal"
+
+#: src/open-type-layout.h:159
+msgctxt "OpenType layout"
+msgid "Third Widths"
+msgstr "Lesyow Tressa"
+
+#: src/open-type-layout.h:160
+msgctxt "OpenType layout"
+msgid "Unicase"
+msgstr "Unikas"
+
+#: src/open-type-layout.h:161
+msgctxt "OpenType layout"
+msgid "Alternate Vertical Metrics"
+msgstr "Metregow Plommwedhek Aral"
+
+#: src/open-type-layout.h:162
+msgctxt "OpenType layout"
+msgid "Vattu Variants"
+msgstr "Varyansow Vattu"
+
+#: src/open-type-layout.h:163
+msgctxt "OpenType layout"
+msgid "Vertical Writing"
+msgstr "Skrif Plommwedhek"
+
+#: src/open-type-layout.h:164
+msgctxt "OpenType layout"
+msgid "Alternate Vertical Half Metrics"
+msgstr "Hantermetregow Plommwedhek Aral"
+
+#: src/open-type-layout.h:165
+msgctxt "OpenType layout"
+msgid "Vowel Jamo Forms"
+msgstr "Furvow Jamo Bogalen"
+
+#: src/open-type-layout.h:166
+msgctxt "OpenType layout"
+msgid "Vertical Kana Alternates"
+msgstr "Tereylyansow Kana Plommwedhek"
+
+#: src/open-type-layout.h:167
+msgctxt "OpenType layout"
+msgid "Vertical Kerning"
+msgstr "Kerning Plommwedhek"
+
+#: src/open-type-layout.h:168
+msgctxt "OpenType layout"
+msgid "Proportional Alternate Vertical Metrics"
+msgstr "Metregow Plommwedhek Aral Kemusurel"
+
+#: src/open-type-layout.h:169
+msgctxt "OpenType layout"
+msgid "Vertical Alternates and Rotation"
+msgstr "Tereylyansow Plommwedhek ha Rosellans"
+
+#: src/open-type-layout.h:170
+msgctxt "OpenType layout"
+msgid "Vertical Alternates for Rotation"
+msgstr "Tereylyansow Plommwedhek rag Rosellans"
+
+#: src/open-type-layout.h:171
+msgctxt "OpenType layout"
+msgid "Slashed Zero"
+msgstr "Mann Treghys"
