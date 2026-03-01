@@ -32,12 +32,15 @@
   <screenshots>
     <screenshot type="default">
       <image>https://static.gnome.org/appdata/gnome-50/org.gnome.font-viewer/fonts-main.png</image>
+      <caption>Main Window</caption>
     </screenshot>
     <screenshot>
       <image>https://static.gnome.org/appdata/gnome-50/org.gnome.font-viewer/fonts-preview.png</image>
+      <caption>Font Preview</caption>
     </screenshot>
     <screenshot>
       <image>https://static.gnome.org/appdata/gnome-50/org.gnome.font-viewer/fonts-search.png</image>
+      <caption>Font Search</caption>
     </screenshot>
   </screenshots>
   <project_group>GNOME</project_group>
