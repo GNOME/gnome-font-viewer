@@ -615,6 +615,8 @@ action_install_font_cb (GtkWidget  *widget,
     }
   }
 
+  g_cancellable_cancel (self->cancellable);
+  g_clear_object (&self->cancellable);
   self->cancellable = g_cancellable_new ();
 
   task = g_task_new (self, self->cancellable, font_install_finished, self);
