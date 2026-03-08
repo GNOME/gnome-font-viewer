@@ -60,6 +60,7 @@ font_inscription_dispose (GObject *object)
 
     g_clear_pointer (&self->text, g_free);
     g_clear_object (&self->layout);
+    g_clear_pointer (&self->attrs, pango_attr_list_unref);
 
     G_OBJECT_CLASS (font_inscription_parent_class)->dispose (object);
 }
