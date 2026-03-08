@@ -428,6 +428,9 @@ load_font_infos (GTask *task,
 
         item = font_view_model_item_new (font_name, font_preview_text,
                                          font_description, file, index);
+
+        pango_font_description_free (font_description);
+
         g_ptr_array_add (items, item);
     }
 
