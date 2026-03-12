@@ -24,6 +24,7 @@
 
 #define BASELINE_FRACTION 0.7
 #define INSCRIPTION_WIDTH 220
+#define INSCRIPTION_HEIGHT 180
 
 /**
  * FontInscription:
@@ -112,50 +113,6 @@ font_inscription_set_property (GObject      *object,
     }
 }
 
-static PangoFontMetrics *
-font_inscription_get_font_metrics (FontInscription *self)
-{
-    PangoContext *context = gtk_widget_get_pango_context (GTK_WIDGET (self));
-
-    return pango_context_get_metrics (context, NULL, NULL);
-}
-
-static int
-get_line_pixels (FontInscription *self,
-                 int             *baseline)
-{
-    PangoFontMetrics *metrics = font_inscription_get_font_metrics (self);
-    int ascent = pango_font_metrics_get_ascent (metrics);
-    int descent = pango_font_metrics_get_descent (metrics);
-
-    pango_font_metrics_unref (metrics);
-
-    if (baseline)
-        *baseline = ascent;
-
-    return ascent + descent;
-}
-
-static void
-font_inscription_measure_height (FontInscription *self,
-                                 int             *minimum,
-                                 int             *natural,
-                                 int             *minimum_baseline,
-                                 int             *natural_baseline)
-{
-    int line_pixels, baseline;
-
-    line_pixels = get_line_pixels (self, &baseline);
-
-    *minimum = line_pixels;
-    *natural = line_pixels;
-
-    if (minimum_baseline)
-        *minimum_baseline = baseline;
-    if (natural_baseline)
-        *natural_baseline = baseline;
-}
-
 static void
 font_inscription_measure (GtkWidget      *widget,
                          GtkOrientation  orientation,
@@ -165,22 +122,21 @@ font_inscription_measure (GtkWidget      *widget,
                          int            *minimum_baseline,
                          int            *natural_baseline)
 {
-    FontInscription *self = FONT_INSCRIPTION (widget);
-
     if (orientation == GTK_ORIENTATION_HORIZONTAL)
     {
-        *minimum = INSCRIPTION_WIDTH * PANGO_SCALE;
-        *natural = INSCRIPTION_WIDTH * PANGO_SCALE;
+        *minimum = INSCRIPTION_WIDTH;
+        *natural = INSCRIPTION_WIDTH;
     }
     else
-        font_inscription_measure_height (self, minimum, natural, minimum_baseline, natural_baseline);
+    {
+        *minimum = INSCRIPTION_HEIGHT;
+        *natural = INSCRIPTION_HEIGHT;
 
-    *minimum = PANGO_PIXELS_CEIL (*minimum);
-    *natural = PANGO_PIXELS_CEIL (*natural);
-    if (*minimum_baseline > 0)
-        *minimum_baseline = PANGO_PIXELS_CEIL (*minimum_baseline);
-    if (*natural_baseline > 0)
-        *natural_baseline = PANGO_PIXELS_CEIL (*natural_baseline);
+        if (minimum_baseline)
+            *minimum_baseline = INSCRIPTION_HEIGHT * BASELINE_FRACTION;
+        if (natural_baseline)
+            *natural_baseline = INSCRIPTION_HEIGHT * BASELINE_FRACTION;
+    }
 }
 
 GskTransform *
@@ -191,21 +147,24 @@ font_inscription_get_layout_location (FontInscription *self)
     const int widget_height = gtk_widget_get_height (widget);
     PangoRectangle ink;
     int layout_baseline = pango_layout_get_baseline (self->layout) / PANGO_SCALE;
-    float effective_height = layout_baseline + (1 - BASELINE_FRACTION) * widget_height;
-    float factor = 1.0, x, y;
+    float factor = 1.0, x, y, descent;
     GskTransform *transform = NULL;
 
     pango_layout_get_pixel_extents (self->layout, &ink, NULL);
+    descent = ink.height + ink.y - layout_baseline;
 
     if (ink.width > widget_width ||
-        effective_height > widget_height)
+        layout_baseline > BASELINE_FRACTION * widget_height ||
+        fabs(descent) > (1.0 - BASELINE_FRACTION) * widget_height)
     {
         factor = MIN ((float) widget_width / (float) ink.width,
-                      (float) widget_height / (float) effective_height);
+                      (BASELINE_FRACTION * widget_height) / (float) layout_baseline);
+        factor = MIN (factor,
+                      ((1.0 - BASELINE_FRACTION) * widget_height) / fabs(descent));
     }
 
     x = floor (0.5 * (widget_width - ink.width * factor) - ink.x * factor);
-    y = floor (BASELINE_FRACTION * widget_height - layout_baseline * factor);
+    y = ceil (BASELINE_FRACTION * widget_height - layout_baseline * factor);
 
     transform = gsk_transform_translate (transform, &GRAPHENE_POINT_INIT (x, y));
     transform = gsk_transform_scale (transform, factor, factor);
