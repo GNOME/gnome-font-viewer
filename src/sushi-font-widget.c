@@ -326,9 +326,11 @@ build_charlist_for_face (FT_Face face,
   c = FT_Get_First_Char (face, &glyph);
 
   while (glyph != 0) {
-    g_string_append_unichar (string, (gunichar) c);
+    if (c != 0) {
+      g_string_append_unichar (string, (gunichar) c);
+      total_chars++;
+    }
     c = FT_Get_Next_Char (face, c, &glyph);
-    total_chars++;
   }
 
   if (length)
