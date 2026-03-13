@@ -42,6 +42,7 @@
                         <property name="child">
                           <object class="GtkSearchEntry" id="search_entry">
                             <property name="placeholder-text" translatable="yes">Search fonts</property>
+                            <property name="search-delay">0</property>
                           </object>
                         </property>
                       </object>
