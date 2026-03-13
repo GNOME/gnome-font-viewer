@@ -712,7 +712,7 @@ font_view_window_show_overview (FontViewWindow *self)
 }
 
 static gboolean
-search_entry_key_event (GtkEventControllerKey *controller,
+window_bubble_key_event (GtkEventControllerKey *controller,
                          guint                  keyval,
                          guint                  keycode,
                          GdkModifierType        state,
@@ -721,10 +721,34 @@ search_entry_key_event (GtkEventControllerKey *controller,
   FontViewWindow *self = FONT_VIEW_WINDOW (user_data);
 
   if (keyval == GDK_KEY_Escape) {
-    return gtk_event_controller_key_forward (controller, GTK_WIDGET (self));
+    gtk_editable_set_text (GTK_EDITABLE (self->search_entry), "");
+
+    return GDK_EVENT_STOP;
   }
 
-  return GDK_EVENT_STOP;
+  if ((keyval == GDK_KEY_Tab || keyval == GDK_KEY_KP_Tab ||
+       keyval == GDK_KEY_Up || keyval == GDK_KEY_KP_Up ||
+       keyval == GDK_KEY_Down || keyval == GDK_KEY_KP_Down ||
+       keyval == GDK_KEY_Left || keyval == GDK_KEY_KP_Left ||
+       keyval == GDK_KEY_Right || keyval == GDK_KEY_KP_Right ||
+       keyval == GDK_KEY_Home || keyval == GDK_KEY_KP_Home ||
+       keyval == GDK_KEY_End || keyval == GDK_KEY_KP_End ||
+       keyval == GDK_KEY_Page_Up || keyval == GDK_KEY_KP_Page_Up ||
+       keyval == GDK_KEY_Page_Down || keyval == GDK_KEY_KP_Page_Down ||
+       ((state & (GDK_CONTROL_MASK | GDK_ALT_MASK)) != 0)) ||
+       keyval == GDK_KEY_space ||
+       keyval == GDK_KEY_Menu) {
+    return GDK_EVENT_PROPAGATE;
+  }
+
+  /* Forward to the GtkText inside GtkSearchEntry */
+  GtkWidget *text = GTK_WIDGET (gtk_editable_get_delegate (GTK_EDITABLE (self->search_entry)));
+  gboolean handled = gtk_event_controller_key_forward (controller, text);
+
+  if (handled)
+    gtk_window_set_focus (GTK_WINDOW (self), GTK_WIDGET (self->search_entry));
+
+  return handled;
 }
 
 static void
@@ -735,16 +759,6 @@ action_focus_search_cb (GtkWidget  *widget,
   FontViewWindow *self = FONT_VIEW_WINDOW (widget);
 
   gtk_widget_grab_focus (GTK_WIDGET (self->search_entry));
-}
-
-static void
-action_clear_search_cb (GtkWidget  *widget,
-                        const char *action_name,
-                        GVariant   *parameter)
-{
-  FontViewWindow *self = FONT_VIEW_WINDOW (widget);
-
-  gtk_editable_set_text (GTK_EDITABLE (self->search_entry), "");
 }
 
 void
@@ -838,14 +852,13 @@ font_view_window_class_init (FontViewWindowClass *klass)
 
   gtk_widget_class_bind_template_child (widget_class, FontViewWindow, sort_model);
 
-  gtk_widget_class_bind_template_callback (widget_class, search_entry_key_event);
+  gtk_widget_class_bind_template_callback (widget_class, window_bubble_key_event);
   gtk_widget_class_bind_template_callback (widget_class, font_widget_loaded_cb);
   gtk_widget_class_bind_template_callback (widget_class, view_child_activated_cb);
 
   gtk_widget_class_bind_template_callback (widget_class, font_name_closure);
 
   gtk_widget_class_install_action (widget_class, "win.focus-search", NULL, action_focus_search_cb);
-  gtk_widget_class_install_action (widget_class, "win.clear-search", NULL, action_clear_search_cb);
   gtk_widget_class_install_action (widget_class, "win.install-font", NULL, action_install_font_cb);
 }
 

@@ -16,12 +16,13 @@
             <property name="action">action(win.focus-search)</property>
           </object>
         </child>
-        <child>
-          <object class="GtkShortcut">
-            <property name="trigger">Escape</property>
-            <property name="action">action(win.clear-search)</property>
-          </object>
-        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkEventControllerKey">
+	<property name="propagation-phase">bubble</property>
+        <signal name="key-pressed" handler="window_bubble_key_event" swapped="no"/>
+        <signal name="key-released" handler="window_bubble_key_event" swapped="no"/>
       </object>
     </child>
     <property name="content">
@@ -41,12 +42,6 @@
                         <property name="child">
                           <object class="GtkSearchEntry" id="search_entry">
                             <property name="placeholder-text" translatable="yes">Search fonts</property>
-                            <child>
-                              <object class="GtkEventControllerKey">
-                                <signal name="key-pressed" handler="search_entry_key_event" swapped="no"/>
-                                <signal name="key-released" handler="search_entry_key_event" swapped="no"/>
-                              </object>
-                            </child>
                           </object>
                         </property>
                       </object>
