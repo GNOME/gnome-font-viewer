@@ -195,7 +195,7 @@ font_inscription_snapshot (GtkWidget   *widget,
 
     const int widget_width = gtk_widget_get_width (widget);
     const int widget_height = gtk_widget_get_height (widget);
-    GskTransform *layout_transform;
+    g_autoptr (GskTransform) layout_transform = NULL;
     GdkRGBA color;
 
     gtk_snapshot_push_clip (snapshot,
