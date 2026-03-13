@@ -6,215 +6,246 @@
 # Djihed Afifi <djihed@gmail.com>, 2006.
 # Khaled Hosny <khaledhosny@eglug.org>, 2006, 2007, 2008, 2010, 2011, 2012, 2013, 2014, 2015, 2017, 2018.
 # Anas Afif Emad <anas.e87@gmail.com, 2008.
+# Khalid Abu Shawarib <khalid.shawarib@gmail.com>, 2025.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.gnome-2-16.ar\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
-"issues\n"
-"POT-Creation-Date: 2018-09-04 00:33+0000\n"
-"PO-Revision-Date: 2018-09-20 17:04+0200\n"
-"Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
+"issues/\n"
+"POT-Creation-Date: 2025-03-14 16:21+0000\n"
+"PO-Revision-Date: 2025-05-03 21:55+0300\n"
+"Last-Translator: Ahmed Najmawi <iramosu@protonmail.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
-"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Virtaal 0.7.1\n"
+"Plural-Forms: nplurals=6; plural= n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Poedit 3.4.4\n"
 "X-Project-Style: gnome\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:85
-msgid "GNOME Fonts"
-msgstr "خطوط جنوم"
+#: data/org.gnome.font-viewer.appdata.xml.in:6
+#: data/org.gnome.font-viewer.desktop.in.in:3 src/font-view-application.c:124
+#: src/font-view-application.c:150
+msgid "Fonts"
+msgstr "الخطوط"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1066
-#: src/org.gnome.font-viewer.desktop.in:4
+#: data/org.gnome.font-viewer.appdata.xml.in:7
+#: data/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr "اعرض الخطوط على نظامك"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
-"GNOME Fonts shows you the fonts installed on your computer for your use as "
+"Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"يعرض برنامج خطوط جنوم الخطوط المنصبة على حاسوبك على شكل مصغرات. اختيار أي "
+"يعرض تطبيق «الخطوط» الخطوط المنصبة على حاسوبك على شكل مصغرات. اختيار أي "
 "مصغرة ينتقل إلى المنظور الكامل لكيفية ظهور الخط في مختلف الأحجام."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
-"GNOME Fonts also supports installing new font files downloaded in the .ttf "
-"and other formats. Fonts may be installed only for your use or made "
-"available to all users on the computer."
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
 msgstr ""
-"كما يدعم برنامج خطوط جنوم تنصيب ملفات الخطوط الجديدة بأنساقها المختلفة. يمكن "
-"تنصيب الخطوط لاستخدامك الشخصي فقط أو لكل المستخدمين."
+"كما يدعم تطبيق «الخطوط» تنصيب ملفات الخطوط الجديدة المحملة كـ ttf وبأنساق "
+"أخرى. يمكن تنصيب الخطوط لاستخدامك الشخصي فقط أو لكل المستخدمين على الحاسوب."
 
-#: src/font-thumbnailer.c:189
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.font-viewer.appdata.xml.in:22 src/font-view-application.c:126
+msgid "The GNOME Project"
+msgstr "مشروع جنوم"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.font-viewer.desktop.in.in:6
+msgid "fonts;fontface;"
+msgstr "خط;خطوط;"
+
+#: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
-msgstr "النص الذي سيوضع في المصغرة (المبدئي: Aa)"
+msgstr "النص الذي سيوضع في المصغَّرة (المبدئي: Aa)"
 
-#: src/font-thumbnailer.c:189
+#: src/font-thumbnailer.c:181
 msgid "TEXT"
 msgstr "نص"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "Thumbnail size (default: 128)"
-msgstr "حجم المصغرة (المبدئي: 128)"
+msgstr "حجم المصغَّرة (المبدئي: 128)"
 
-#: src/font-thumbnailer.c:191
+#: src/font-thumbnailer.c:183
 msgid "SIZE"
 msgstr "SIZE"
 
-#: src/font-thumbnailer.c:193
+#: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
-#: src/font-view-app-menu.ui:6
-msgid "About"
-msgstr "عنْ"
+#: src/font-view-application.c:79 src/font-view-window.c:741
+msgid "Could Not Display Font"
+msgstr "تعذَّر عرض الخط"
 
-#: src/font-view-app-menu.ui:10
-msgid "Quit"
-msgstr "أنهِ"
+#: src/font-view-application.c:129
+msgid "translator-credits"
+msgstr ""
+"فريق عربآيز للترجمة http://arabeyes.org:\n"
+"خالد حسني <khaledhosny@eglug.org>\n"
+"خالد أبوشوارب <khalid.shawarib@gmail.com>\n"
+"أحمد النجماوي <iramosu@protonmail.com>"
 
-#: src/font-view.c:93
-msgid "Show the application's version"
-msgstr "اعرض نسخة التّطبيق"
+#: src/font-view-window.c:120
+msgid "Failed"
+msgstr "فشل"
+
+#: src/font-view-window.c:128
+msgid "Installed"
+msgstr "مثبَّت"
+
+#: src/font-view-window.c:133
+msgid "Installing"
+msgstr "يُثبَّت"
+
+#: src/font-view-window.c:136 src/font-view-window.ui:182
+msgid "_Install"
+msgstr "_ثبِّت"
 
 #. Translators, this string is used to display information about
 #. * a 'font variation axis'. The %s gets replaced with the name
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view.c:223
+#: src/font-view-window.c:250
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "‏%s ‏%g ‏— ‏%g، المبدئي %g"
 
-#: src/font-view.c:279
+#: src/font-view-window.c:305
 #, c-format
 msgid "Instance %d"
 msgstr "صيرورة %d"
 
-#. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:324
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view-window.c:343
 msgctxt "OpenType layout"
 msgid ", "
 msgstr "، "
 
-#: src/font-view.c:350
+#: src/font-view-window.c:370
 msgid "Name"
 msgstr "الاسم"
 
-#: src/font-view.c:353
+#: src/font-view-window.c:373
+msgid "Location"
+msgstr "الموقع"
+
+#: src/font-view-window.c:376
 msgid "Style"
 msgstr "الطراز"
 
-#: src/font-view.c:363
+#: src/font-view-window.c:386
 msgid "Type"
 msgstr "النوع"
 
-#: src/font-view.c:424 src/font-view.c:458
+#: src/font-view-window.c:452 src/font-view-window.c:478
 msgid "Version"
 msgstr "الإصدارة"
 
-#: src/font-view.c:429 src/font-view.c:464
+#: src/font-view-window.c:456 src/font-view-window.c:483
 msgid "Copyright"
 msgstr "حقوق النشر"
 
-#: src/font-view.c:434
+#: src/font-view-window.c:460
 msgid "Description"
 msgstr "الوصف"
 
-#: src/font-view.c:439
+#: src/font-view-window.c:464
 msgid "Manufacturer"
-msgstr "الصانع"
+msgstr "المُصنِّع"
 
-#: src/font-view.c:444
+#: src/font-view-window.c:468
 msgid "Designer"
 msgstr "المصمم"
 
-#: src/font-view.c:449
+#: src/font-view-window.c:472
 msgid "License"
 msgstr "الرخصة"
 
-#: src/font-view.c:479
+#: src/font-view-window.c:497
 msgid "Glyph Count"
 msgstr "عدد المحارف"
 
-#: src/font-view.c:482
+#: src/font-view-window.c:499
 msgid "Color Glyphs"
 msgstr "المحارف الملونة"
 
-#: src/font-view.c:482
+#: src/font-view-window.c:500
 msgid "yes"
 msgstr "نعم"
 
-#: src/font-view.c:482
+#: src/font-view-window.c:500
 msgid "no"
 msgstr "لا"
 
-#: src/font-view.c:486
+#: src/font-view-window.c:504
 msgid "Layout Features"
 msgstr "خصائص التنسيق"
 
-#: src/font-view.c:493
+#: src/font-view-window.c:510
 msgid "Variation Axes"
 msgstr "محاور التغيير"
 
-#: src/font-view.c:501
+#: src/font-view-window.c:517
 msgid "Named Styles"
-msgstr "الأنماط المُسمّاة"
+msgstr "الأنماط المُسمَّاة"
 
-#: src/font-view.c:518
-msgid "Install Failed"
-msgstr "فشل التّثبيت"
+#: src/font-view-window.c:558 src/font-view-window.c:661
+msgid "Could Not Install Font"
+msgstr "تعذَّر تثبيت الخط"
 
-#: src/font-view.c:525
-msgid "Installed"
-msgstr "مثبَّت"
-
-#: src/font-view.c:529 src/font-view.c:808
-msgid "Install"
-msgstr "ثبّت"
-
-#: src/font-view.c:663
-msgid "This font could not be displayed."
-msgstr "تعذّر عرض هذا الخط."
-
-#: src/font-view.c:819
-msgid "Info"
-msgstr "معلومات"
-
-#: src/font-view.c:834
-msgid "Back"
-msgstr "السابق"
-
-#: src/font-view.c:939
+#: src/font-view-window.ui:31
 msgid "All Fonts"
 msgstr "كل الخطوط"
 
-#: src/font-view.c:1065 src/org.gnome.font-viewer.desktop.in:3
-msgid "Fonts"
-msgstr "الخطوط"
+#: src/font-view-window.ui:39
+msgid "Search"
+msgstr "بحث"
 
-#: src/font-view.c:1068
-msgid "translator-credits"
-msgstr ""
-"فريق عربآيز للترجمة http://arabeyes.org:\n"
-"خالد حسني <khaledhosny@eglug.org>"
+#: src/font-view-window.ui:47
+msgid "About Fonts"
+msgstr "عَنْ «الخطوط»"
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in:6
-msgid "fonts;fontface;"
-msgstr "خط;خطوط;"
+#: src/font-view-window.ui:59
+msgid "Search fonts"
+msgstr "ابحث في الخطوط"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: src/org.gnome.font-viewer.desktop.in:8
-msgid "preferences-desktop-font"
-msgstr "preferences-desktop-font"
+#: src/font-view-window.ui:185
+msgid "Install Font"
+msgstr "ثبِّت الخط"
+
+#: src/font-view-window.ui:190
+msgid "I_nfo"
+msgstr "م_علومات"
+
+#: src/font-view-window.ui:192
+msgid "Font Details"
+msgstr "تفاصيل الخط"
+
+#: src/font-view-window.ui:238
+msgid "_Close"
+msgstr "أ_غلق"
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr "خطوط جنوم"
+
+#: src/main.c:44
+msgid "Show the application's version"
+msgstr "اعرض إصدار التّطبيق"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -324,97 +355,97 @@ msgstr "حروف كبيرة مصغرة من الحروف الكبيرة"
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
 msgid "Character Variation 1"
-msgstr "تنويعة الحرف ١"
+msgstr "تنويعة الحرف 1"
 
 #: src/open-type-layout.h:35
 msgctxt "OpenType layout"
 msgid "Character Variation 2"
-msgstr "تنويعة الحرف ٢"
+msgstr "تنويعة الحرف 2"
 
 #: src/open-type-layout.h:36
 msgctxt "OpenType layout"
 msgid "Character Variation 3"
-msgstr "تنويعة الحرف ٣"
+msgstr "تنويعة الحرف 3"
 
 #: src/open-type-layout.h:37
 msgctxt "OpenType layout"
 msgid "Character Variation 4"
-msgstr "تنويعة الحرف ٤"
+msgstr "تنويعة الحرف 4"
 
 #: src/open-type-layout.h:38
 msgctxt "OpenType layout"
 msgid "Character Variation 5"
-msgstr "تنويعة الحرف ٥"
+msgstr "تنويعة الحرف 5"
 
 #: src/open-type-layout.h:39
 msgctxt "OpenType layout"
 msgid "Character Variation 6"
-msgstr "تنويعة الحرف ٦"
+msgstr "تنويعة الحرف 6"
 
 #: src/open-type-layout.h:40
 msgctxt "OpenType layout"
 msgid "Character Variation 7"
-msgstr "تنويعة الحرف ٧"
+msgstr "تنويعة الحرف 7"
 
 #: src/open-type-layout.h:41
 msgctxt "OpenType layout"
 msgid "Character Variation 8"
-msgstr "تنويعة الحرف ٨"
+msgstr "تنويعة الحرف 8"
 
 #: src/open-type-layout.h:42
 msgctxt "OpenType layout"
 msgid "Character Variation 9"
-msgstr "تنويعة الحرف ٩"
+msgstr "تنويعة الحرف 9"
 
 #: src/open-type-layout.h:43
 msgctxt "OpenType layout"
 msgid "Character Variation 10"
-msgstr "تنويعة الحرف ١٠"
+msgstr "تنويعة الحرف 10"
 
 #: src/open-type-layout.h:44
 msgctxt "OpenType layout"
 msgid "Character Variation 11"
-msgstr "تنويعة الحرف ١١"
+msgstr "تنويعة الحرف 11"
 
 #: src/open-type-layout.h:45
 msgctxt "OpenType layout"
 msgid "Character Variation 12"
-msgstr "تنويعة الحرف ١٢"
+msgstr "تنويعة الحرف 12"
 
 #: src/open-type-layout.h:46
 msgctxt "OpenType layout"
 msgid "Character Variation 13"
-msgstr "تنويعة الحرف ١٣"
+msgstr "تنويعة الحرف 13"
 
 #: src/open-type-layout.h:47
 msgctxt "OpenType layout"
 msgid "Character Variation 14"
-msgstr "تنويعة الحرف ١٤"
+msgstr "تنويعة الحرف 14"
 
 #: src/open-type-layout.h:48
 msgctxt "OpenType layout"
 msgid "Character Variation 15"
-msgstr "تنويعة الحرف ١٥"
+msgstr "تنويعة الحرف 15"
 
 #: src/open-type-layout.h:49
 msgctxt "OpenType layout"
 msgid "Character Variation 16"
-msgstr "تنويعة الحرف ١٦"
+msgstr "تنويعة الحرف 16"
 
 #: src/open-type-layout.h:50
 msgctxt "OpenType layout"
 msgid "Character Variation 17"
-msgstr "تنويعة الحرف ١٧"
+msgstr "تنويعة الحرف 17"
 
 #: src/open-type-layout.h:51
 msgctxt "OpenType layout"
 msgid "Character Variation 18"
-msgstr "تنويعة الحرف ١٨"
+msgstr "تنويعة الحرف 18"
 
 #: src/open-type-layout.h:52
 msgctxt "OpenType layout"
 msgid "Character Variation 19"
-msgstr "تنويعة الحرف ١٩"
+msgstr "تنويعة الحرف 19"
 
 #: src/open-type-layout.h:53
 msgctxt "OpenType layout"
@@ -449,12 +480,12 @@ msgstr "بدائل آخر محرف في السطر"
 #: src/open-type-layout.h:59
 msgctxt "OpenType layout"
 msgid "Terminal Forms #2"
-msgstr "أشكال نهائية ٢"
+msgstr "أشكال نهائية 2"
 
 #: src/open-type-layout.h:60
 msgctxt "OpenType layout"
 msgid "Terminal Forms #3"
-msgstr "أشكال نهائية ٣"
+msgstr "أشكال نهائية 3"
 
 #: src/open-type-layout.h:61
 msgctxt "OpenType layout"
@@ -609,7 +640,7 @@ msgstr "تموضع الحركات"
 #: src/open-type-layout.h:91
 msgctxt "OpenType layout"
 msgid "Medial Forms #2"
-msgstr "أشكال متوسطة ٢"
+msgstr "أشكال متوسطة 2"
 
 #: src/open-type-layout.h:92
 msgctxt "OpenType layout"
@@ -799,102 +830,102 @@ msgstr "أشكال مبسطة"
 #: src/open-type-layout.h:129
 msgctxt "OpenType layout"
 msgid "Stylistic Set 1"
-msgstr "طقم أسلوبي ١"
+msgstr "طقم أسلوبي 1"
 
 #: src/open-type-layout.h:130
 msgctxt "OpenType layout"
 msgid "Stylistic Set 2"
-msgstr "طقم أسلوبي ٢"
+msgstr "طقم أسلوبي 2"
 
 #: src/open-type-layout.h:131
 msgctxt "OpenType layout"
 msgid "Stylistic Set 3"
-msgstr "طقم أسلوبي ٣"
+msgstr "طقم أسلوبي 3"
 
 #: src/open-type-layout.h:132
 msgctxt "OpenType layout"
 msgid "Stylistic Set 4"
-msgstr "طقم أسلوبي ٤"
+msgstr "طقم أسلوبي 4"
 
 #: src/open-type-layout.h:133
 msgctxt "OpenType layout"
 msgid "Stylistic Set 5"
-msgstr "طقم أسلوبي ٥"
+msgstr "طقم أسلوبي 5"
 
 #: src/open-type-layout.h:134
 msgctxt "OpenType layout"
 msgid "Stylistic Set 6"
-msgstr "طقم أسلوبي ٦"
+msgstr "طقم أسلوبي 6"
 
 #: src/open-type-layout.h:135
 msgctxt "OpenType layout"
 msgid "Stylistic Set 7"
-msgstr "طقم أسلوبي ٧"
+msgstr "طقم أسلوبي 7"
 
 #: src/open-type-layout.h:136
 msgctxt "OpenType layout"
 msgid "Stylistic Set 8"
-msgstr "طقم أسلوبي ٨"
+msgstr "طقم أسلوبي 8"
 
 #: src/open-type-layout.h:137
 msgctxt "OpenType layout"
 msgid "Stylistic Set 9"
-msgstr "طقم أسلوبي ٩"
+msgstr "طقم أسلوبي 9"
 
 #: src/open-type-layout.h:138
 msgctxt "OpenType layout"
 msgid "Stylistic Set 10"
-msgstr "طقم أسلوبي ١٠"
+msgstr "طقم أسلوبي 10"
 
 #: src/open-type-layout.h:139
 msgctxt "OpenType layout"
 msgid "Stylistic Set 11"
-msgstr "طقم أسلوبي ١١"
+msgstr "طقم أسلوبي 11"
 
 #: src/open-type-layout.h:140
 msgctxt "OpenType layout"
 msgid "Stylistic Set 12"
-msgstr "طقم أسلوبي ١٢"
+msgstr "طقم أسلوبي 12"
 
 #: src/open-type-layout.h:141
 msgctxt "OpenType layout"
 msgid "Stylistic Set 13"
-msgstr "طقم أسلوبي ١٣"
+msgstr "طقم أسلوبي 13"
 
 #: src/open-type-layout.h:142
 msgctxt "OpenType layout"
 msgid "Stylistic Set 14"
-msgstr "طقم أسلوبي ١٤"
+msgstr "طقم أسلوبي 14"
 
 #: src/open-type-layout.h:143
 msgctxt "OpenType layout"
 msgid "Stylistic Set 15"
-msgstr "طقم أسلوبي ١٥"
+msgstr "طقم أسلوبي 15"
 
 #: src/open-type-layout.h:144
 msgctxt "OpenType layout"
 msgid "Stylistic Set 16"
-msgstr "طقم أسلوبي ١٦"
+msgstr "طقم أسلوبي 16"
 
 #: src/open-type-layout.h:145
 msgctxt "OpenType layout"
 msgid "Stylistic Set 17"
-msgstr "طقم أسلوبي ١٧"
+msgstr "طقم أسلوبي 17"
 
 #: src/open-type-layout.h:146
 msgctxt "OpenType layout"
 msgid "Stylistic Set 18"
-msgstr "طقم أسلوبي ١٨"
+msgstr "طقم أسلوبي 18"
 
 #: src/open-type-layout.h:147
 msgctxt "OpenType layout"
 msgid "Stylistic Set 19"
-msgstr "طقم أسلوبي ١٩"
+msgstr "طقم أسلوبي 19"
 
 #: src/open-type-layout.h:148
 msgctxt "OpenType layout"
 msgid "Stylistic Set 20"
-msgstr "طقم أسلوبي ٢٠"
+msgstr "طقم أسلوبي 20"
 
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
@@ -1011,20 +1042,29 @@ msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "صفر بشرطة"
 
+#~ msgid "About"
+#~ msgstr "عنْ"
+
+#~ msgid "Quit"
+#~ msgstr "أنهِ"
+
+#~ msgid "This font could not be displayed."
+#~ msgstr "تعذّر عرض هذا الخط."
+
+#~ msgid "Info"
+#~ msgstr "معلومات"
+
+#~ msgid "Back"
+#~ msgstr "السابق"
+
+#~ msgid "preferences-desktop-font"
+#~ msgstr "preferences-desktop-font"
+
 #~ msgid "General"
 #~ msgstr "عام"
 
-#~ msgid "Details"
-#~ msgstr "تفاصيل"
-
 #~ msgid "Font Viewer"
 #~ msgstr "عارض الخطوط"
-
-#~ msgid "_Close"
-#~ msgstr "أ_غلق"
-
-#~ msgid "About Font Viewer"
-#~ msgstr "عن عارض الخطوط"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "Font size (default: 64)"
