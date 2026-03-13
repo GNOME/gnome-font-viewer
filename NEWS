@@ -1,3 +1,26 @@
+GNOME Font Viewer - 50.0
+-------------------------------------------------------------------------------
+Fonts 50.0 comes with the following improvements:
+
+ * Redesigned font preview grid that has a consistent preview size (Khaid Abu Shawarib)
+ * Search entry moved to the headerbar to be always visible, and with automatic key stroke
+   forwarding to the entry and Esc for clearing search. (Automeris naranja,
+   Khaid Abu Shawarib)
+ * Reorganized font information page (Automeris naranja)
+ * Enhance application metadata (Maximiliano, Daniel Rusek)
+ * Plug multiple memory leaks (Maximiliano)
+ * Correctly claim to open font collection files (Gregor)
+
+This version brings translation updates for the following locales:
+ * Arabic (Khaid Abu Shawarib)
+ * Chinese (Taiwan) (Chao-Hsiung Liao)
+ * Cornish (Flynn)
+ * Norwegian Bokmål (Kjartan Maraas)
+ * Santali (Prasanta Hembram)
+ * Serbian (Latin) (Miloš Popović)
+ * Thai (Aefgh Threenine)
+ * Uighur (Abduqadir Abliz)
+
 GNOME Font Viewer - 49.0
 -------------------------------------------------------------------------------
 Fonts 49.0 comes with no changes since 49.rc.

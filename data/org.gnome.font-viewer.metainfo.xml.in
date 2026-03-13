@@ -31,13 +31,13 @@
   <url type="contribute">https://welcome.gnome.org/app/FontViewer/</url>
   <screenshots>
     <screenshot type="default">
-      <image>https://static.gnome.org/appdata/gnome-46/fonts/fonts-main.png</image>
+      <image>https://static.gnome.org/appdata/gnome-50/org.gnome.font-viewer/fonts-main.png</image>
     </screenshot>
     <screenshot>
-      <image>https://static.gnome.org/appdata/gnome-46/fonts/fonts-preview.png</image>
+      <image>https://static.gnome.org/appdata/gnome-50/org.gnome.font-viewer/fonts-preview.png</image>
     </screenshot>
     <screenshot>
-      <image>https://static.gnome.org/appdata/gnome-46/fonts/fonts-search.png</image>
+      <image>https://static.gnome.org/appdata/gnome-50/org.gnome.font-viewer/fonts-search.png</image>
     </screenshot>
   </screenshots>
   <project_group>GNOME</project_group>
@@ -47,6 +47,36 @@
     <color type="primary" scheme_preference="dark">#613583</color>
   </branding>
   <releases>
+    <release version="50.0" date="2026-03-14">
+      <description>
+        <p>
+          Fonts 50.0 comes with the following improvements:
+        </p>
+        <ul>
+          <li>Redesigned font preview grid that has a consistent preview size (Khaid Abu Shawarib)</li>
+          <li>
+            Search entry moved to the headerbar to be always visible, and with automatic key stroke
+            forwarding to the entry and Esc for clearing search. (Automeris naranja, Khaid
+            Abu Shawarib)
+          </li>
+          <li>Reorganized font information page (Automeris naranja)</li>
+          <li>Enhance application metadata (Maximiliano, Daniel Rusek)</li>
+          <li>Plug multiple memory leaks (Maximiliano)</li>
+          <li>Correctly claim to open font collection files (Gregor)</li>
+        </ul>
+        <p>This version brings translation updates for the following locales:</p>
+        <ul>
+          <li>Arabic (Khaid Abu Shawarib)</li>
+          <li>Chinese (Taiwan) (Chao-Hsiung Liao)</li>
+          <li>Cornish (Flynn)</li>
+          <li>Norwegian Bokmål (Kjartan Maraas)</li>
+          <li>Santali (Prasanta Hembram)</li>
+          <li>Serbian (Latin) (Miloš Popović)</li>
+          <li>Thai (Aefgh Threenine)</li>
+          <li>Uighur (Abduqadir Abliz)</li>
+        </ul>
+      </description>
+    </release>
     <release version="49.0" date="2025-09-11">
       <description>
         <p>Fonts 49.0 comes with the following improvements:</p>
