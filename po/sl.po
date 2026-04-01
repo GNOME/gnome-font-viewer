@@ -8,10 +8,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
-"issues\n"
-"POT-Creation-Date: 2023-02-25 10:12+0000\n"
-"PO-Revision-Date: 2023-02-27 21:40+0100\n"
-"Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
+"issues/\n"
+"POT-Creation-Date: 2026-03-22 12:23+0000\n"
+"PO-Revision-Date: 2026-04-01 18:29+0200\n"
+"Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
 "MIME-Version: 1.0\n"
@@ -20,19 +20,26 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
 "n%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.8\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view-application.c:124
-#: src/org.gnome.font-viewer.desktop.in.in:3
+#: data/org.gnome.font-viewer.desktop.in.in:2
+#: data/org.gnome.font-viewer.metainfo.xml.in:6 src/font-view-application.c:124
+#: src/font-view-application.c:150
 msgid "Fonts"
 msgstr "Pisave"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7
-#: src/org.gnome.font-viewer.desktop.in.in:4
+#: data/org.gnome.font-viewer.desktop.in.in:3
+#: data/org.gnome.font-viewer.metainfo.xml.in:7
 msgid "View fonts on your system"
 msgstr "Pregledovalnik sistemskih pisav"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:9
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.font-viewer.desktop.in.in:5
+msgid "fonts;fontface;"
+msgstr ""
+"pisave;fonti;oblika zapisa;zapis;črke;besede;znaki;ikone;emotikoni;izrazne;"
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:9
 msgid ""
 "Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
@@ -41,7 +48,7 @@ msgstr ""
 "Program omogoča prikaz pisav, nameščenih v sistem kot sličice. Z izborom "
 "posamezne sličice se pokaže poln prikaz pisave pri različnih velikostih."
 
-#: data/org.gnome.font-viewer.appdata.xml.in:15
+#: data/org.gnome.font-viewer.metainfo.xml.in:15
 msgid ""
 "Fonts also supports installing new font files downloaded in the .ttf and "
 "other formats. Fonts may be installed only for your use or made available to "
@@ -51,9 +58,23 @@ msgstr ""
 "Namestiti jih je mogoče le za posameznega uporabnika, ali za vse uporabnike "
 "naprave."
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.font-viewer.metainfo.xml.in:22
+#: src/font-view-application.c:126
 msgid "The GNOME Project"
 msgstr "Projekt GNOME"
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:35
+msgid "Main Window"
+msgstr "Glavno okno"
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:39
+msgid "Font Preview"
+msgstr "Predogled pisave"
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:43
+msgid "Font Search"
+msgstr "Iskanje pisave"
 
 #: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
@@ -75,7 +96,7 @@ msgstr "VELIKOST"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "DATOTEKA-PISAVE ODVODNA-DATOTEKA"
 
-#: src/font-view-application.c:79 src/font-view-window.c:751
+#: src/font-view-application.c:79 src/font-view-window.c:695
 msgid "Could Not Display Font"
 msgstr "Pisave ni mogoče pokazati"
 
@@ -83,153 +104,141 @@ msgstr "Pisave ni mogoče pokazati"
 msgid "translator-credits"
 msgstr "Matej Urbančič <mateju@src.gnome.org>"
 
-#: src/font-view-window.c:120
+#: src/font-view-window.c:95
 msgid "Failed"
 msgstr "Napaka"
 
-#: src/font-view-window.c:128
+#: src/font-view-window.c:103
 msgid "Installed"
 msgstr "Nameščeno"
 
-#: src/font-view-window.c:133
+#: src/font-view-window.c:108
 msgid "Installing"
 msgstr "Poteka nameščanje …"
 
-#: src/font-view-window.c:136
-msgid "Install"
-msgstr "Namesti"
+#: src/font-view-window.c:111 src/font-view-window.ui:173
+msgid "_Install"
+msgstr "_Namesti"
 
 #. Translators, this string is used to display information about
 #. * a 'font variation axis'. The %s gets replaced with the name
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view-window.c:250
+#: src/font-view-window.c:197
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g – %g, privzeto %g"
 
-#: src/font-view-window.c:305
+#: src/font-view-window.c:252
 #, c-format
 msgid "Instance %d"
 msgstr "Primerek %d"
 
 #. Translators, this seperates the list of Layout
 #. * Features.
-#: src/font-view-window.c:343
+#: src/font-view-window.c:290
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view-window.c:370
+#: src/font-view-window.c:319
 msgid "Name"
 msgstr "Ime"
 
-#: src/font-view-window.c:373
+#: src/font-view-window.c:322
 msgid "Location"
 msgstr "Mesto"
 
-#: src/font-view-window.c:376
+#: src/font-view-window.c:325
 msgid "Style"
 msgstr "Slog"
 
-#: src/font-view-window.c:386
+#: src/font-view-window.c:335
 msgid "Type"
 msgstr "Vrsta"
 
-#: src/font-view-window.c:452 src/font-view-window.c:478
+#: src/font-view-window.c:401 src/font-view-window.c:427
 msgid "Version"
 msgstr "Različica"
 
-#: src/font-view-window.c:456 src/font-view-window.c:483
+#: src/font-view-window.c:405 src/font-view-window.c:432
 msgid "Copyright"
 msgstr "Avtorske pravice"
 
-#: src/font-view-window.c:460
+#: src/font-view-window.c:409
 msgid "Description"
 msgstr "Opis"
 
-#: src/font-view-window.c:464
+#: src/font-view-window.c:413
 msgid "Manufacturer"
 msgstr "Proizvajalec"
 
-#: src/font-view-window.c:468
+#: src/font-view-window.c:417
 msgid "Designer"
 msgstr "Oblikovalec"
 
-#: src/font-view-window.c:472
+#: src/font-view-window.c:421
 msgid "License"
 msgstr "Dovoljenje"
 
-#: src/font-view-window.c:497
+#: src/font-view-window.c:446
 msgid "Glyph Count"
 msgstr "Število znakov"
 
-#: src/font-view-window.c:499
+#: src/font-view-window.c:448
 msgid "Color Glyphs"
 msgstr "Barvni znaki"
 
-#: src/font-view-window.c:500
+#: src/font-view-window.c:449
 msgid "yes"
 msgstr "so zaznani"
 
-#: src/font-view-window.c:500
+#: src/font-view-window.c:449
 msgid "no"
 msgstr "niso zaznani"
 
-#: src/font-view-window.c:504
+#: src/font-view-window.c:453
 msgid "Layout Features"
 msgstr "Podrobnosti razporeditve"
 
-#: src/font-view-window.c:510
+#: src/font-view-window.c:459
 msgid "Variation Axes"
 msgstr "Variacijska os"
 
-#: src/font-view-window.c:517
+#: src/font-view-window.c:466
 msgid "Named Styles"
 msgstr "Poimenovani slogi"
 
-#: src/font-view-window.c:559 src/font-view-window.c:671
+#: src/font-view-window.c:509 src/font-view-window.c:612
 msgid "Could Not Install Font"
 msgstr "Pisave ni mogoče namestiti"
 
-#: src/font-view-window.ui:40
+#: src/font-view-window.ui:33
 msgid "All Fonts"
 msgstr "Vse pisave"
 
-#: src/font-view-window.ui:46
-msgid "Search"
-msgstr "Poišči"
+#: src/font-view-window.ui:44
+msgid "Search fonts"
+msgstr "Poišči pisave"
 
 #: src/font-view-window.ui:54
 msgid "About Fonts"
 msgstr "O programu"
 
-#: src/font-view-window.ui:66
-msgid "Search fonts"
-msgstr "Poišči pisave"
-
-#: src/font-view-window.ui:187
-msgid "Back"
-msgstr "Nazaj"
-
-#: src/font-view-window.ui:193
-msgid "_Install"
-msgstr "_Namesti"
-
-#: src/font-view-window.ui:196
+#: src/font-view-window.ui:176
 msgid "Install Font"
 msgstr "Namesti pisave"
 
-#: src/font-view-window.ui:201
+#: src/font-view-window.ui:181
 msgid "I_nfo"
 msgstr "_Podrobnosti"
 
-#: src/font-view-window.ui:203
+#: src/font-view-window.ui:183
 msgid "Font Details"
 msgstr "Podrobnosti pisave"
 
-#: src/font-view-window.ui:250
+#: src/font-view-window.ui:241
 msgid "_Close"
 msgstr "_Zapri"
 
@@ -240,12 +249,6 @@ msgstr "Pisave GNOME"
 #: src/main.c:44
 msgid "Show the application's version"
 msgstr "Pokaži različico programa"
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in.in:6
-msgid "fonts;fontface;"
-msgstr ""
-"pisave;fonti;oblika zapisa;zapis;črke;besede;znaki;ikone;emotikoni;izrazne;"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -1041,52 +1044,3 @@ msgstr "Zamenjave za navpično pisanje"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Prečrtana ničla"
-
-#~ msgid "This font could not be installed."
-#~ msgstr "Izbrane pisave ni mogoče namestiti."
-
-#~ msgid "This font could not be displayed."
-#~ msgstr "Pisave ni mogoče pokazati."
-
-#~ msgid "Info"
-#~ msgstr "Podrobnosti"
-
-#~ msgid "About"
-#~ msgstr "O programu"
-
-#~ msgid "Quit"
-#~ msgstr "Končaj"
-
-#~ msgid "Install Failed"
-#~ msgstr "Namestitev je spodletela"
-
-#~ msgid "preferences-desktop-font"
-#~ msgstr "preferences-desktop-font"
-
-#~ msgid "org.gnome.font-viewer"
-#~ msgstr "org.gnome.font-viewer"
-
-#~ msgid "Font Viewer"
-#~ msgstr "Pregledovalnik pisav"
-
-#~ msgid "[FILE...]"
-#~ msgstr "[DATOTEKA ...]"
-
-#~ msgid ""
-#~ "Run '%s --help' to see a full list of available command line options."
-#~ msgstr "Za popoln seznam možnosti ukazne vrstice zaženite »%s --help«."
-
-#~ msgid "Done"
-#~ msgstr "Končano"
-
-#~ msgid "Font size (default: 64)"
-#~ msgstr "Velikost pisave (privzeto: 64)"
-
-#~ msgid "Size:"
-#~ msgstr "Velikost:"
-
-#~ msgid "Usage: %s fontfile\n"
-#~ msgstr "Uporaba: %s ime_datoteke_pisave\n"
-
-#~ msgid "Preview fonts"
-#~ msgstr "Predogled pisav"
