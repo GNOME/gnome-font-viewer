@@ -17,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues/\n"
 "POT-Creation-Date: 2026-03-22 12:23+0000\n"
-"PO-Revision-Date: 2026-04-02 17:27+0200\n"
+"PO-Revision-Date: 2026-04-03 10:59+0200\n"
 "Last-Translator: Antonio Marin <gnmer.6qxyg@slmail.me>\n"
 "Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
 "Language: ro\n"
@@ -38,7 +38,7 @@ msgstr "Tipuri de caractere"
 #: data/org.gnome.font-viewer.desktop.in.in:3
 #: data/org.gnome.font-viewer.metainfo.xml.in:7
 msgid "View fonts on your system"
-msgstr "Vizualizează tipurile de caractere din propriul sistem"
+msgstr "Afișează tipurile de caractere din sistem"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.font-viewer.desktop.in.in:5
@@ -113,7 +113,8 @@ msgstr "Nu s-a putut afișa tipul de caractere"
 msgid "translator-credits"
 msgstr ""
 "Bogdan Mințoi <mintoi.bogdan@gmail.com>\n"
-"Florentina Mușat <florentina.musat.28 [at] gmail [dot] com>"
+"Florentina Mușat <florentina.musat.28 [at] gmail [dot] com>\n"
+"Antonio Marin <gnmer.6qxyg@slmail.me>"
 
 #: src/font-view-window.c:95
 msgid "Failed"
@@ -319,7 +320,7 @@ msgstr "Forme în funcție de majuscule/minuscule"
 #: src/open-type-layout.h:24
 msgctxt "OpenType layout"
 msgid "Glyph Composition / Decomposition"
-msgstr "Compoziție / decompoziție glifă"
+msgstr "Compune / Descompune Glife"
 
 #: src/open-type-layout.h:25
 msgctxt "OpenType layout"
