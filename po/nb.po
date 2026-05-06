@@ -1,16 +1,15 @@
 # Norwegian bokmål translation of gnome-font-viewer.
 # Copyright (C) 1999-2005 Free Software Foundation, Inc.
 #
-# Kjartan Maraas <kmaraas@gnome.org>, 1999-2025.
+# Kjartan Maraas <kmaraas@gnome.org>, 1999-2026.
 # Terance Edward Sola <terance@lyse.net>, 2005.
 # Torstein Adolf Winterseth <kvikende@fsfe.org>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer 3.27.x\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
-"issues/\n"
-"POT-Creation-Date: 2025-10-10 21:10+0000\n"
-"PO-Revision-Date: 2025-10-16 18:20+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues/\n"
+"POT-Creation-Date: 2026-03-14 21:32+0000\n"
+"PO-Revision-Date: 2026-05-06 09:31+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -19,40 +18,47 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6
-#: data/org.gnome.font-viewer.desktop.in.in:2 src/font-view-application.c:124
+#: data/org.gnome.font-viewer.desktop.in.in:2
+#: data/org.gnome.font-viewer.metainfo.xml.in:6 src/font-view-application.c:124
 #: src/font-view-application.c:150
 msgid "Fonts"
 msgstr "Skrifter"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7
 #: data/org.gnome.font-viewer.desktop.in.in:3
+#: data/org.gnome.font-viewer.metainfo.xml.in:7
 msgid "View fonts on your system"
 msgstr "Vis skrifter på systemet"
-
-#: data/org.gnome.font-viewer.appdata.xml.in:9
-msgid ""
-"Fonts shows you the fonts installed on your computer for your use as "
-"thumbnails. Selecting any thumbnails shows the full view of how the font "
-"would look under various sizes."
-msgstr "Skrifter viser deg skrifter som er installert på din datamaskin som miniatyrer. Ved å velge en miniatyr får du en full visning av hvordan skriften vil se ut i forskjellige størrelser."
-
-#: data/org.gnome.font-viewer.appdata.xml.in:15
-msgid ""
-"Fonts also supports installing new font files downloaded in the .ttf and "
-"other formats. Fonts may be installed only for your use or made available to "
-"all users on the computer."
-msgstr "Skrifter støtter også å installere nye skriftfiler som er lastet ned i ttf- og andre formater. Skriftene kan installeres for personlig bruk eller gjøres tilgjengelig for alle brukere på datamaskinen."
-
-#. developer_name tag deprecated with Appstream 1.0
-#: data/org.gnome.font-viewer.appdata.xml.in:22 src/font-view-application.c:126
-msgid "The GNOME Project"
-msgstr "GNOME prosjektet"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.font-viewer.desktop.in.in:5
 msgid "fonts;fontface;"
 msgstr "skrifter;skrifttyper;"
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:9
+msgid ""
+"Fonts shows you the fonts installed on your computer for your use as "
+"thumbnails. Selecting any thumbnails shows the full view of how the font "
+"would look under various sizes."
+msgstr ""
+"Skrifter viser deg skrifter som er installert på din datamaskin som "
+"miniatyrer. Ved å velge en miniatyr får du en full visning av hvordan "
+"skriften vil se ut i forskjellige størrelser."
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:15
+msgid ""
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
+msgstr ""
+"Skrifter støtter også å installere nye skriftfiler som er lastet ned i ttf- "
+"og andre formater. Skriftene kan installeres for personlig bruk eller gjøres "
+"tilgjengelig for alle brukere på datamaskinen."
+
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.font-viewer.metainfo.xml.in:22
+#: src/font-view-application.c:126
+msgid "The GNOME Project"
+msgstr "GNOME prosjektet"
 
 #: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
@@ -74,7 +80,7 @@ msgstr "STØRRELSE"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "SKRIFTFIL UTDATAFIL"
 
-#: src/font-view-application.c:79 src/font-view-window.c:744
+#: src/font-view-application.c:79 src/font-view-window.c:695
 msgid "Could Not Display Font"
 msgstr "Kunne ikke vise skrift"
 
@@ -82,19 +88,19 @@ msgstr "Kunne ikke vise skrift"
 msgid "translator-credits"
 msgstr "Kjartan Maraas <kmaraas@gnome.org>"
 
-#: src/font-view-window.c:120
+#: src/font-view-window.c:95
 msgid "Failed"
 msgstr "Feilet"
 
-#: src/font-view-window.c:128
+#: src/font-view-window.c:103
 msgid "Installed"
 msgstr "Installert"
 
-#: src/font-view-window.c:133
+#: src/font-view-window.c:108
 msgid "Installing"
 msgstr "Installerer"
 
-#: src/font-view-window.c:136 src/font-view-window.ui:176
+#: src/font-view-window.c:111 src/font-view-window.ui:173
 msgid "_Install"
 msgstr "_Installer"
 
@@ -103,124 +109,120 @@ msgstr "_Installer"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view-window.c:250
+#: src/font-view-window.c:197
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g – %g, forvalg %g"
 
-#: src/font-view-window.c:305
+#: src/font-view-window.c:252
 #, c-format
 msgid "Instance %d"
 msgstr "Instans %d"
 
 #. Translators, this seperates the list of Layout
 #. * Features.
-#: src/font-view-window.c:343
+#: src/font-view-window.c:290
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view-window.c:372
+#: src/font-view-window.c:319
 msgid "Name"
 msgstr "Navn"
 
-#: src/font-view-window.c:375
+#: src/font-view-window.c:322
 msgid "Location"
 msgstr "Lokasjon"
 
-#: src/font-view-window.c:378
+#: src/font-view-window.c:325
 msgid "Style"
 msgstr "Stil"
 
-#: src/font-view-window.c:388
+#: src/font-view-window.c:335
 msgid "Type"
 msgstr "Type"
 
-#: src/font-view-window.c:454 src/font-view-window.c:480
+#: src/font-view-window.c:401 src/font-view-window.c:427
 msgid "Version"
 msgstr "Versjon"
 
-#: src/font-view-window.c:458 src/font-view-window.c:485
+#: src/font-view-window.c:405 src/font-view-window.c:432
 msgid "Copyright"
 msgstr "Opphavsrett"
 
-#: src/font-view-window.c:462
+#: src/font-view-window.c:409
 msgid "Description"
 msgstr "Beskrivelse"
 
-#: src/font-view-window.c:466
+#: src/font-view-window.c:413
 msgid "Manufacturer"
 msgstr "Produsent"
 
-#: src/font-view-window.c:470
+#: src/font-view-window.c:417
 msgid "Designer"
 msgstr "Designer"
 
-#: src/font-view-window.c:474
+#: src/font-view-window.c:421
 msgid "License"
 msgstr "Lisens"
 
-#: src/font-view-window.c:499
+#: src/font-view-window.c:446
 msgid "Glyph Count"
 msgstr ""
 
-#: src/font-view-window.c:501
+#: src/font-view-window.c:448
 msgid "Color Glyphs"
 msgstr ""
 
-#: src/font-view-window.c:502
+#: src/font-view-window.c:449
 msgid "yes"
 msgstr "ja"
 
-#: src/font-view-window.c:502
+#: src/font-view-window.c:449
 msgid "no"
 msgstr "nei"
 
-#: src/font-view-window.c:506
+#: src/font-view-window.c:453
 msgid "Layout Features"
 msgstr ""
 
-#: src/font-view-window.c:512
+#: src/font-view-window.c:459
 msgid "Variation Axes"
 msgstr ""
 
-#: src/font-view-window.c:519
+#: src/font-view-window.c:466
 msgid "Named Styles"
-msgstr ""
+msgstr "Navngitte stiler"
 
-#: src/font-view-window.c:560 src/font-view-window.c:663
+#: src/font-view-window.c:509 src/font-view-window.c:612
 msgid "Could Not Install Font"
 msgstr "Kunne ikke installere skrift"
 
-#: src/font-view-window.ui:25
+#: src/font-view-window.ui:33
 msgid "All Fonts"
 msgstr "Alle skrifter"
 
-#: src/font-view-window.ui:33
-msgid "Search"
-msgstr "Søk"
-
-#: src/font-view-window.ui:41
-msgid "About Fonts"
-msgstr "Om Skrifter"
-
-#: src/font-view-window.ui:53
+#: src/font-view-window.ui:44
 msgid "Search fonts"
 msgstr "Søk i skrifter"
 
-#: src/font-view-window.ui:179
+#: src/font-view-window.ui:54
+msgid "About Fonts"
+msgstr "Om Skrifter"
+
+#: src/font-view-window.ui:176
 msgid "Install Font"
 msgstr "Installer skrift"
 
-#: src/font-view-window.ui:184
+#: src/font-view-window.ui:181
 msgid "I_nfo"
 msgstr "I_nfo"
 
-#: src/font-view-window.ui:186
+#: src/font-view-window.ui:183
 msgid "Font Details"
 msgstr "Detaljer om skrift"
 
-#: src/font-view-window.ui:232
+#: src/font-view-window.ui:241
 msgid "_Close"
 msgstr "_Lukk"
 
@@ -260,7 +262,7 @@ msgstr ""
 #: src/open-type-layout.h:18
 msgctxt "OpenType layout"
 msgid "Akhands"
-msgstr ""
+msgstr "Akhands"
 
 #: src/open-type-layout.h:19
 msgctxt "OpenType layout"
@@ -340,102 +342,102 @@ msgstr ""
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
 msgid "Character Variation 1"
-msgstr ""
+msgstr "Tegnvariasjon 1"
 
 #: src/open-type-layout.h:35
 msgctxt "OpenType layout"
 msgid "Character Variation 2"
-msgstr ""
+msgstr "Tegnvariasjon 2"
 
 #: src/open-type-layout.h:36
 msgctxt "OpenType layout"
 msgid "Character Variation 3"
-msgstr ""
+msgstr "Tegnvariasjon 3"
 
 #: src/open-type-layout.h:37
 msgctxt "OpenType layout"
 msgid "Character Variation 4"
-msgstr ""
+msgstr "Tegnvariasjon 4"
 
 #: src/open-type-layout.h:38
 msgctxt "OpenType layout"
 msgid "Character Variation 5"
-msgstr ""
+msgstr "Tegnvariasjon 5"
 
 #: src/open-type-layout.h:39
 msgctxt "OpenType layout"
 msgid "Character Variation 6"
-msgstr ""
+msgstr "Tegnvariasjon 6"
 
 #: src/open-type-layout.h:40
 msgctxt "OpenType layout"
 msgid "Character Variation 7"
-msgstr ""
+msgstr "Tegnvariasjon 7"
 
 #: src/open-type-layout.h:41
 msgctxt "OpenType layout"
 msgid "Character Variation 8"
-msgstr ""
+msgstr "Tegnvariasjon 8"
 
 #: src/open-type-layout.h:42
 msgctxt "OpenType layout"
 msgid "Character Variation 9"
-msgstr ""
+msgstr "Tegnvariasjon 9"
 
 #: src/open-type-layout.h:43
 msgctxt "OpenType layout"
 msgid "Character Variation 10"
-msgstr ""
+msgstr "Tegnvariasjon 10"
 
 #: src/open-type-layout.h:44
 msgctxt "OpenType layout"
 msgid "Character Variation 11"
-msgstr ""
+msgstr "Tegnvariasjon 11"
 
 #: src/open-type-layout.h:45
 msgctxt "OpenType layout"
 msgid "Character Variation 12"
-msgstr ""
+msgstr "Tegnvariasjon 12"
 
 #: src/open-type-layout.h:46
 msgctxt "OpenType layout"
 msgid "Character Variation 13"
-msgstr ""
+msgstr "Tegnvariasjon 13"
 
 #: src/open-type-layout.h:47
 msgctxt "OpenType layout"
 msgid "Character Variation 14"
-msgstr ""
+msgstr "Tegnvariasjon 14"
 
 #: src/open-type-layout.h:48
 msgctxt "OpenType layout"
 msgid "Character Variation 15"
-msgstr ""
+msgstr "Tegnvariasjon 15"
 
 #: src/open-type-layout.h:49
 msgctxt "OpenType layout"
 msgid "Character Variation 16"
-msgstr ""
+msgstr "Tegnvariasjon 16"
 
 #: src/open-type-layout.h:50
 msgctxt "OpenType layout"
 msgid "Character Variation 17"
-msgstr ""
+msgstr "Tegnvariasjon 17"
 
 #: src/open-type-layout.h:51
 msgctxt "OpenType layout"
 msgid "Character Variation 18"
-msgstr ""
+msgstr "Tegnvariasjon 18"
 
 #: src/open-type-layout.h:52
 msgctxt "OpenType layout"
 msgid "Character Variation 19"
-msgstr ""
+msgstr "Tegnvariasjon 19"
 
 #: src/open-type-layout.h:53
 msgctxt "OpenType layout"
 msgid "Distances"
-msgstr ""
+msgstr "Avstander"
 
 #: src/open-type-layout.h:54
 msgctxt "OpenType layout"
@@ -525,7 +527,7 @@ msgstr ""
 #: src/open-type-layout.h:71
 msgctxt "OpenType layout"
 msgid "Hangul"
-msgstr ""
+msgstr "Hangul"
 
 #: src/open-type-layout.h:72
 msgctxt "OpenType layout"
@@ -558,15 +560,14 @@ msgid "Justification Alternates"
 msgstr ""
 
 #: src/open-type-layout.h:78
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "JIS78 Forms"
-msgstr "JIS78"
+msgstr "JIS78 former"
 
 #: src/open-type-layout.h:79
 msgctxt "OpenType layout"
 msgid "JIS83 Forms"
-msgstr ""
+msgstr "JIS83 former"
 
 #: src/open-type-layout.h:80
 msgctxt "OpenType layout"
@@ -581,17 +582,17 @@ msgstr ""
 #: src/open-type-layout.h:82
 msgctxt "OpenType layout"
 msgid "Kerning"
-msgstr ""
+msgstr "Kerning"
 
 #: src/open-type-layout.h:83
 msgctxt "OpenType layout"
 msgid "Left Bounds"
-msgstr ""
+msgstr "Venstre grenser"
 
 #: src/open-type-layout.h:84
 msgctxt "OpenType layout"
 msgid "Standard Ligatures"
-msgstr ""
+msgstr "Standardligaturer"
 
 #: src/open-type-layout.h:85
 msgctxt "OpenType layout"
@@ -766,7 +767,7 @@ msgstr ""
 #: src/open-type-layout.h:119
 msgctxt "OpenType layout"
 msgid "Right Bounds"
-msgstr ""
+msgstr "Høyre grenser"
 
 #: src/open-type-layout.h:120
 msgctxt "OpenType layout"
@@ -801,7 +802,7 @@ msgstr ""
 #: src/open-type-layout.h:126
 msgctxt "OpenType layout"
 msgid "Optical size"
-msgstr ""
+msgstr "Optisk størrelse"
 
 #: src/open-type-layout.h:127
 msgctxt "OpenType layout"
@@ -811,107 +812,107 @@ msgstr ""
 #: src/open-type-layout.h:128
 msgctxt "OpenType layout"
 msgid "Simplified Forms"
-msgstr ""
+msgstr "Forenklede former"
 
 #: src/open-type-layout.h:129
 msgctxt "OpenType layout"
 msgid "Stylistic Set 1"
-msgstr ""
+msgstr "Stilistisk sett 1"
 
 #: src/open-type-layout.h:130
 msgctxt "OpenType layout"
 msgid "Stylistic Set 2"
-msgstr ""
+msgstr "Stilistisk sett 2"
 
 #: src/open-type-layout.h:131
 msgctxt "OpenType layout"
 msgid "Stylistic Set 3"
-msgstr ""
+msgstr "Stilistisk sett 3"
 
 #: src/open-type-layout.h:132
 msgctxt "OpenType layout"
 msgid "Stylistic Set 4"
-msgstr ""
+msgstr "Stilistisk sett 4"
 
 #: src/open-type-layout.h:133
 msgctxt "OpenType layout"
 msgid "Stylistic Set 5"
-msgstr ""
+msgstr "Stilistisk sett 5"
 
 #: src/open-type-layout.h:134
 msgctxt "OpenType layout"
 msgid "Stylistic Set 6"
-msgstr ""
+msgstr "Stilistisk sett 6"
 
 #: src/open-type-layout.h:135
 msgctxt "OpenType layout"
 msgid "Stylistic Set 7"
-msgstr ""
+msgstr "Stilistisk sett 7"
 
 #: src/open-type-layout.h:136
 msgctxt "OpenType layout"
 msgid "Stylistic Set 8"
-msgstr ""
+msgstr "Stilistisk sett 8"
 
 #: src/open-type-layout.h:137
 msgctxt "OpenType layout"
 msgid "Stylistic Set 9"
-msgstr ""
+msgstr "Stilistisk sett 9"
 
 #: src/open-type-layout.h:138
 msgctxt "OpenType layout"
 msgid "Stylistic Set 10"
-msgstr ""
+msgstr "Stilistisk sett 10"
 
 #: src/open-type-layout.h:139
 msgctxt "OpenType layout"
 msgid "Stylistic Set 11"
-msgstr ""
+msgstr "Stilistisk sett 11"
 
 #: src/open-type-layout.h:140
 msgctxt "OpenType layout"
 msgid "Stylistic Set 12"
-msgstr ""
+msgstr "Stilistisk sett 12"
 
 #: src/open-type-layout.h:141
 msgctxt "OpenType layout"
 msgid "Stylistic Set 13"
-msgstr ""
+msgstr "Stilistisk sett 13"
 
 #: src/open-type-layout.h:142
 msgctxt "OpenType layout"
 msgid "Stylistic Set 14"
-msgstr ""
+msgstr "Stilistisk sett 14"
 
 #: src/open-type-layout.h:143
 msgctxt "OpenType layout"
 msgid "Stylistic Set 15"
-msgstr ""
+msgstr "Stilistisk sett 15"
 
 #: src/open-type-layout.h:144
 msgctxt "OpenType layout"
 msgid "Stylistic Set 16"
-msgstr ""
+msgstr "Stilistisk sett 16"
 
 #: src/open-type-layout.h:145
 msgctxt "OpenType layout"
 msgid "Stylistic Set 17"
-msgstr ""
+msgstr "Stilistisk sett 17"
 
 #: src/open-type-layout.h:146
 msgctxt "OpenType layout"
 msgid "Stylistic Set 18"
-msgstr ""
+msgstr "Stilistisk sett 18"
 
 #: src/open-type-layout.h:147
 msgctxt "OpenType layout"
 msgid "Stylistic Set 19"
-msgstr ""
+msgstr "Stilistisk sett 19"
 
 #: src/open-type-layout.h:148
 msgctxt "OpenType layout"
 msgid "Stylistic Set 20"
-msgstr ""
+msgstr "Stilistisk sett 20"
 
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
@@ -1006,7 +1007,7 @@ msgstr ""
 #: src/open-type-layout.h:167
 msgctxt "OpenType layout"
 msgid "Vertical Kerning"
-msgstr ""
+msgstr "Vertikal kerning"
 
 #: src/open-type-layout.h:168
 msgctxt "OpenType layout"
