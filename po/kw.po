@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-font-viewer main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues/\n"
-"POT-Creation-Date: 2026-01-16 18:43+0000\n"
-"PO-Revision-Date: 2026-02-19 16:47+0000\n"
+"POT-Creation-Date: 2026-03-22 12:23+0000\n"
+"PO-Revision-Date: 2026-05-22 20:56+0100\n"
 "Last-Translator: Flynn Peck <cirilla@tuta.io>\n"
 "Language-Team: kw\n"
 "Language: kw\n"
@@ -24,7 +24,7 @@ msgstr ""
 "X-DL-Domain: po\n"
 "X-DL-State: Translating\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 49.0\n"
+"X-Generator: Gtranslator 50.0\n"
 
 #: data/org.gnome.font-viewer.desktop.in.in:2
 #: data/org.gnome.font-viewer.metainfo.xml.in:6 src/font-view-application.c:124
@@ -35,7 +35,7 @@ msgstr "Fontow"
 #: data/org.gnome.font-viewer.desktop.in.in:3
 #: data/org.gnome.font-viewer.metainfo.xml.in:7
 msgid "View fonts on your system"
-msgstr "Gweles fontys war dha system"
+msgstr "Gweles fontys war agas system"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.font-viewer.desktop.in.in:5
@@ -48,9 +48,9 @@ msgid ""
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"Fontow diskwedhes ty an fontys leys war dha amontyell rag dha devnydh avel "
-"avenyow byghan. Ow dewis neb avenyow diskwedhes an gwel leun a fatel an font "
-"a wrussa heveli yn brasterow dyffrans."
+"Fontow a dhiskwedh dhywgh an fontys leys war agas amontyell rag agas devnydh "
+"avel skeusennik. Ow tewis neb skeusenigow a dhiskwedh an gwel leun a fatel "
+"an font a wrussa heveli yn brasterow dyffrans."
 
 #: data/org.gnome.font-viewer.metainfo.xml.in:15
 msgid ""
@@ -58,9 +58,9 @@ msgid ""
 "other formats. Fonts may be installed only for your use or made available to "
 "all users on the computer."
 msgstr ""
-"Ynwedh, Fontow skoodhya ow lea restrennow font nowydh iskargys y'n .ttf ha "
-"furvasow aral. Fontow a yll bos leys rag dha devnydh hepken po gwrys kavadow "
-"rag oll usyoryon war'n amontyell."
+"Ynwedh, Fontow a skoodh ow lea restrennow font nowydh iskargys y'n .ttf ha "
+"furvasow erel. Fontow a yll bos leys rag agas devnydh hepken po gwrys "
+"kavadow rag oll devnydhyoryon war'n amontyell."
 
 #. developer_name tag deprecated with Appstream 1.0
 #: data/org.gnome.font-viewer.metainfo.xml.in:22
@@ -68,9 +68,21 @@ msgstr ""
 msgid "The GNOME Project"
 msgstr "An Ragdres GNOME"
 
+#: data/org.gnome.font-viewer.metainfo.xml.in:35
+msgid "Main Window"
+msgstr "Pennfenester"
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:39
+msgid "Font Preview"
+msgstr "Ragwolok Font"
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:43
+msgid "Font Search"
+msgstr "Hwithrans Font"
+
 #: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
-msgstr "Tekst dhe aven byghan (defowt: Aa)"
+msgstr "Tekst dhe skeusennik (defowt: Aa)"
 
 #: src/font-thumbnailer.c:181
 msgid "TEXT"
@@ -78,7 +90,7 @@ msgstr "TEKST"
 
 #: src/font-thumbnailer.c:183
 msgid "Thumbnail size (default: 128)"
-msgstr "Braster aven byghan (defowt: 128)"
+msgstr "Braster skeusennik (defowt: 128)"
 
 #: src/font-thumbnailer.c:183
 msgid "SIZE"
@@ -88,7 +100,7 @@ msgstr "BRASTER"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "RESTREN-FONT RESTREN-ESKORRANS"
 
-#: src/font-view-application.c:79 src/font-view-window.c:693
+#: src/font-view-application.c:79 src/font-view-window.c:695
 msgid "Could Not Display Font"
 msgstr "Ny Yllir Diskwedhes Font"
 
@@ -108,7 +120,7 @@ msgstr "Leys"
 msgid "Installing"
 msgstr "Ow Lea"
 
-#: src/font-view-window.c:111 src/font-view-window.ui:177
+#: src/font-view-window.c:111 src/font-view-window.ui:173
 msgid "_Install"
 msgstr "_Lea"
 
@@ -152,7 +164,7 @@ msgstr "Eghen"
 
 #: src/font-view-window.c:401 src/font-view-window.c:427
 msgid "Version"
-msgstr "Versyon"
+msgstr "Dyllans"
 
 #: src/font-view-window.c:405 src/font-view-window.c:432
 msgid "Copyright"
@@ -180,11 +192,11 @@ msgstr "Somm Lytheren"
 
 #: src/font-view-window.c:448
 msgid "Color Glyphs"
-msgstr "Lytherennow Kolor"
+msgstr "Lytherennow Liw"
 
 #: src/font-view-window.c:449
 msgid "yes"
-msgstr "ya"
+msgstr "ea"
 
 #: src/font-view-window.c:449
 msgid "no"
@@ -206,31 +218,31 @@ msgstr "Gisyow Henwys"
 msgid "Could Not Install Font"
 msgstr "Ny Yllir Lea Font"
 
-#: src/font-view-window.ui:32
+#: src/font-view-window.ui:33
 msgid "All Fonts"
 msgstr "Oll Fontys"
 
-#: src/font-view-window.ui:43
+#: src/font-view-window.ui:44
 msgid "Search fonts"
 msgstr "Hwilas fontys"
 
-#: src/font-view-window.ui:58
+#: src/font-view-window.ui:54
 msgid "About Fonts"
-msgstr "A-dro Fontow"
+msgstr "A-dro dhe Fontow"
 
-#: src/font-view-window.ui:180
+#: src/font-view-window.ui:176
 msgid "Install Font"
 msgstr "Lea Font"
 
-#: src/font-view-window.ui:185
+#: src/font-view-window.ui:181
 msgid "I_nfo"
 msgstr "_Kedhlow"
 
-#: src/font-view-window.ui:187
+#: src/font-view-window.ui:183
 msgid "Font Details"
 msgstr "Manylyon Font"
 
-#: src/font-view-window.ui:245
+#: src/font-view-window.ui:241
 msgid "_Close"
 msgstr "_Degea"
 
@@ -240,7 +252,7 @@ msgstr "GNOME Fontow"
 
 #: src/main.c:44
 msgid "Show the application's version"
-msgstr "Diskwedhes an versyon app"
+msgstr "Diskwedhes an dyllans a'n app"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
