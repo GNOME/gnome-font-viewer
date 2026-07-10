@@ -7,9 +7,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer 3.27.x\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues/\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
+"issues/\n"
 "POT-Creation-Date: 2026-03-14 21:32+0000\n"
-"PO-Revision-Date: 2026-05-06 09:31+0200\n"
+"PO-Revision-Date: 2026-07-10 12:20+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -168,7 +169,7 @@ msgstr "Lisens"
 
 #: src/font-view-window.c:446
 msgid "Glyph Count"
-msgstr ""
+msgstr "Antall tegn"
 
 #: src/font-view-window.c:448
 msgid "Color Glyphs"
@@ -184,11 +185,11 @@ msgstr "nei"
 
 #: src/font-view-window.c:453
 msgid "Layout Features"
-msgstr ""
+msgstr "Funksjoner for utforming"
 
 #: src/font-view-window.c:459
 msgid "Variation Axes"
-msgstr ""
+msgstr "Variasjonsakser"
 
 #: src/font-view-window.c:466
 msgid "Named Styles"
@@ -282,7 +283,7 @@ msgstr ""
 #: src/open-type-layout.h:22
 msgctxt "OpenType layout"
 msgid "Contextual Alternates"
-msgstr ""
+msgstr "Kontekstuelle alternativer"
 
 #: src/open-type-layout.h:23
 msgctxt "OpenType layout"
@@ -307,7 +308,7 @@ msgstr ""
 #: src/open-type-layout.h:27
 msgctxt "OpenType layout"
 msgid "Contextual Ligatures"
-msgstr ""
+msgstr "Kontekstuelle ligaturer"
 
 #: src/open-type-layout.h:28
 msgctxt "OpenType layout"
@@ -322,12 +323,12 @@ msgstr ""
 #: src/open-type-layout.h:30
 msgctxt "OpenType layout"
 msgid "Contextual Swash"
-msgstr ""
+msgstr "Kontekstuelle sløyfer"
 
 #: src/open-type-layout.h:31
 msgctxt "OpenType layout"
 msgid "Cursive Positioning"
-msgstr ""
+msgstr "Kursiv posisjonering"
 
 #: src/open-type-layout.h:32
 msgctxt "OpenType layout"
@@ -442,7 +443,7 @@ msgstr "Avstander"
 #: src/open-type-layout.h:54
 msgctxt "OpenType layout"
 msgid "Discretionary Ligatures"
-msgstr ""
+msgstr "Diskrete ligaturer"
 
 #: src/open-type-layout.h:55
 msgctxt "OpenType layout"
@@ -487,22 +488,22 @@ msgstr ""
 #: src/open-type-layout.h:63
 msgctxt "OpenType layout"
 msgid "Fractions"
-msgstr ""
+msgstr "Brøker"
 
 #: src/open-type-layout.h:64
 msgctxt "OpenType layout"
 msgid "Full Widths"
-msgstr ""
+msgstr "Fulle bredder"
 
 #: src/open-type-layout.h:65
 msgctxt "OpenType layout"
 msgid "Half Forms"
-msgstr ""
+msgstr "Halve former"
 
 #: src/open-type-layout.h:66
 msgctxt "OpenType layout"
 msgid "Halant Forms"
-msgstr ""
+msgstr "Halantformer"
 
 #: src/open-type-layout.h:67
 msgctxt "OpenType layout"
@@ -512,7 +513,7 @@ msgstr ""
 #: src/open-type-layout.h:68
 msgctxt "OpenType layout"
 msgid "Historical Forms"
-msgstr ""
+msgstr "Historiske former"
 
 #: src/open-type-layout.h:69
 msgctxt "OpenType layout"
@@ -522,7 +523,7 @@ msgstr ""
 #: src/open-type-layout.h:70
 msgctxt "OpenType layout"
 msgid "Historical Ligatures"
-msgstr ""
+msgstr "Historiske ligaturer"
 
 #: src/open-type-layout.h:71
 msgctxt "OpenType layout"
@@ -537,7 +538,7 @@ msgstr ""
 #: src/open-type-layout.h:73
 msgctxt "OpenType layout"
 msgid "Half Widths"
-msgstr ""
+msgstr "Halvbredder"
 
 #: src/open-type-layout.h:74
 msgctxt "OpenType layout"
@@ -547,7 +548,7 @@ msgstr ""
 #: src/open-type-layout.h:75
 msgctxt "OpenType layout"
 msgid "Isolated Forms"
-msgstr ""
+msgstr "Isolerte former"
 
 #: src/open-type-layout.h:76
 msgctxt "OpenType layout"
@@ -572,12 +573,12 @@ msgstr "JIS83 former"
 #: src/open-type-layout.h:80
 msgctxt "OpenType layout"
 msgid "JIS90 Forms"
-msgstr ""
+msgstr "JIS90-former"
 
 #: src/open-type-layout.h:81
 msgctxt "OpenType layout"
 msgid "JIS2004 Forms"
-msgstr ""
+msgstr "JIS2004-former"
 
 #: src/open-type-layout.h:82
 msgctxt "OpenType layout"
@@ -607,12 +608,12 @@ msgstr ""
 #: src/open-type-layout.h:87
 msgctxt "OpenType layout"
 msgid "Localized Forms"
-msgstr ""
+msgstr "Lokaliserte former"
 
 #: src/open-type-layout.h:88
 msgctxt "OpenType layout"
 msgid "Left-to-right alternates"
-msgstr ""
+msgstr "Venstre-til-høyre alternativer"
 
 #: src/open-type-layout.h:89
 msgctxt "OpenType layout"
@@ -637,7 +638,7 @@ msgstr ""
 #: src/open-type-layout.h:93
 msgctxt "OpenType layout"
 msgid "Mathematical Greek"
-msgstr ""
+msgstr "Matematisk gresk"
 
 #: src/open-type-layout.h:94
 msgctxt "OpenType layout"
@@ -657,12 +658,12 @@ msgstr ""
 #: src/open-type-layout.h:97
 msgctxt "OpenType layout"
 msgid "NLC Kanji Forms"
-msgstr ""
+msgstr "NLC Kanji-former"
 
 #: src/open-type-layout.h:98
 msgctxt "OpenType layout"
 msgid "Nukta Forms"
-msgstr ""
+msgstr "Nukta-former"
 
 #: src/open-type-layout.h:99
 msgctxt "OpenType layout"
@@ -677,7 +678,7 @@ msgstr ""
 #: src/open-type-layout.h:101
 msgctxt "OpenType layout"
 msgid "Optical Bounds"
-msgstr ""
+msgstr "Optiske grenser"
 
 #: src/open-type-layout.h:102
 msgctxt "OpenType layout"
@@ -687,7 +688,7 @@ msgstr ""
 #: src/open-type-layout.h:103
 msgctxt "OpenType layout"
 msgid "Ornaments"
-msgstr ""
+msgstr "Ornamenter"
 
 #: src/open-type-layout.h:104
 msgctxt "OpenType layout"
@@ -707,7 +708,7 @@ msgstr ""
 #: src/open-type-layout.h:107
 msgctxt "OpenType layout"
 msgid "Proportional Figures"
-msgstr ""
+msgstr "Proporsjonale figurer"
 
 #: src/open-type-layout.h:108
 msgctxt "OpenType layout"
@@ -732,17 +733,17 @@ msgstr ""
 #: src/open-type-layout.h:112
 msgctxt "OpenType layout"
 msgid "Proportional Widths"
-msgstr ""
+msgstr "Proporsjonale bredder"
 
 #: src/open-type-layout.h:113
 msgctxt "OpenType layout"
 msgid "Quarter Widths"
-msgstr ""
+msgstr "Kvartbredder"
 
 #: src/open-type-layout.h:114
 msgctxt "OpenType layout"
 msgid "Randomize"
-msgstr ""
+msgstr "Tilfeldiggjør"
 
 #: src/open-type-layout.h:115
 msgctxt "OpenType layout"
@@ -752,7 +753,7 @@ msgstr ""
 #: src/open-type-layout.h:116
 msgctxt "OpenType layout"
 msgid "Rakar Forms"
-msgstr ""
+msgstr "Rakar-former"
 
 #: src/open-type-layout.h:117
 msgctxt "OpenType layout"
@@ -772,7 +773,7 @@ msgstr "Høyre grenser"
 #: src/open-type-layout.h:120
 msgctxt "OpenType layout"
 msgid "Right-to-left alternates"
-msgstr ""
+msgstr "Høyre-til-venstre alternativer"
 
 #: src/open-type-layout.h:121
 msgctxt "OpenType layout"
@@ -792,7 +793,7 @@ msgstr ""
 #: src/open-type-layout.h:124
 msgctxt "OpenType layout"
 msgid "Stylistic Alternates"
-msgstr ""
+msgstr "Stilistiske alternativer"
 
 #: src/open-type-layout.h:125
 msgctxt "OpenType layout"
@@ -937,7 +938,7 @@ msgstr "Superscript"
 #: src/open-type-layout.h:153
 msgctxt "OpenType layout"
 msgid "Swash"
-msgstr ""
+msgstr "Sløyfe"
 
 #: src/open-type-layout.h:154
 msgctxt "OpenType layout"
@@ -962,7 +963,7 @@ msgstr ""
 #: src/open-type-layout.h:158
 msgctxt "OpenType layout"
 msgid "Traditional Forms"
-msgstr ""
+msgstr "Tradisjonelle former"
 
 #: src/open-type-layout.h:159
 msgctxt "OpenType layout"
@@ -987,7 +988,7 @@ msgstr ""
 #: src/open-type-layout.h:163
 msgctxt "OpenType layout"
 msgid "Vertical Writing"
-msgstr ""
+msgstr "Vertikal skriving"
 
 #: src/open-type-layout.h:164
 msgctxt "OpenType layout"
@@ -1002,7 +1003,7 @@ msgstr ""
 #: src/open-type-layout.h:166
 msgctxt "OpenType layout"
 msgid "Vertical Kana Alternates"
-msgstr ""
+msgstr "Vertikale Kana-alternativer"
 
 #: src/open-type-layout.h:167
 msgctxt "OpenType layout"
@@ -1017,12 +1018,12 @@ msgstr ""
 #: src/open-type-layout.h:169
 msgctxt "OpenType layout"
 msgid "Vertical Alternates and Rotation"
-msgstr ""
+msgstr "Vertikale alternativer og rotasjon"
 
 #: src/open-type-layout.h:170
 msgctxt "OpenType layout"
 msgid "Vertical Alternates for Rotation"
-msgstr ""
+msgstr "Vertikale alternativer for rotasjon"
 
 #: src/open-type-layout.h:171
 msgctxt "OpenType layout"
