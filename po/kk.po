@@ -7,55 +7,70 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
-"issues\n"
-"POT-Creation-Date: 2023-07-15 13:26+0000\n"
-"PO-Revision-Date: 2023-08-19 12:58+0600\n"
+"issues/\n"
+"POT-Creation-Date: 2026-03-22 12:23+0000\n"
+"PO-Revision-Date: 2026-07-30 11:35+0500\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk@li.org>\n"
 "Language: kk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.9\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6
-#: data/org.gnome.font-viewer.desktop.in.in:3 src/font-view-application.c:124
+#: data/org.gnome.font-viewer.desktop.in.in:2
+#: data/org.gnome.font-viewer.metainfo.xml.in:6 src/font-view-application.c:124
+#: src/font-view-application.c:150
 msgid "Fonts"
 msgstr "Қаріптер"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7
-#: data/org.gnome.font-viewer.desktop.in.in:4
+#: data/org.gnome.font-viewer.desktop.in.in:3
+#: data/org.gnome.font-viewer.metainfo.xml.in:7
 msgid "View fonts on your system"
 msgstr "Жүйеңіздегі қаріптерді қарау"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:9
+#. Translators: Search terms to find this application. Do NOT translate or
+#. localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.font-viewer.desktop.in.in:5
+msgid "fonts;fontface;"
+msgstr "қаріп;"
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:9
 msgid ""
 "Fonts shows you the fonts installed on your computer for your use as "
-"thumbnails. Selecting any thumbnails shows the full view of how the font "
-"would look under various sizes."
+"thumbnails. Selecting any thumbnails shows the full view of how the font would "
+"look under various sizes."
 msgstr ""
-"Қаріптер қолданбасы компьютеріңізде орнатылған қаріптерді кіші үлгілер "
-"ретінде ретінде көрсетеді. Үлгіні таңдау кезінде ол қаріптің толық көрінісі "
-"және әр түрлі өлшемдердегі түрі көрсетіледі."
+"Қаріптер қолданбасы компьютеріңізде орнатылған қаріптерді кіші үлгілер ретінде "
+"ретінде көрсетеді. Үлгіні таңдау кезінде ол қаріптің толық көрінісі және әр "
+"түрлі өлшемдердегі түрі көрсетіледі."
 
-#: data/org.gnome.font-viewer.appdata.xml.in:15
+#: data/org.gnome.font-viewer.metainfo.xml.in:15
 msgid ""
-"Fonts also supports installing new font files downloaded in the .ttf and "
-"other formats. Fonts may be installed only for your use or made available to "
-"all users on the computer."
+"Fonts also supports installing new font files downloaded in the .ttf and other "
+"formats. Fonts may be installed only for your use or made available to all "
+"users on the computer."
 msgstr ""
 "Қаріптер қолданбасы сонымен қатар .ttf және басқа пішімдегі жаңа қаріптерді "
 "орнатуды қолдайды. Қаріптерді тек өзіңіз немесе компьютердің барлық "
 "пайдаланушылары үшін орнатуға болады."
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.font-viewer.metainfo.xml.in:22 src/font-view-application.c:126
 msgid "The GNOME Project"
 msgstr "GNOME жобасы"
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.font-viewer.desktop.in.in:6
-msgid "fonts;fontface;"
-msgstr "қаріп;"
+#: data/org.gnome.font-viewer.metainfo.xml.in:35
+msgid "Main Window"
+msgstr "Негізгі терезе"
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:39
+msgid "Font Preview"
+msgstr "Қаріпті алдын ала қарау"
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:43
+msgid "Font Search"
+msgstr "Қаріпті іздеу"
 
 #: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
@@ -77,7 +92,7 @@ msgstr "ӨЛШЕМІ"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ҚАРІП-ФАЙЛ ШЫҒЫС-ФАЙЛЫ"
 
-#: src/font-view-application.c:79 src/font-view-window.c:741
+#: src/font-view-application.c:79 src/font-view-window.c:695
 msgid "Could Not Display Font"
 msgstr "Қаріпті көрсету мүмкін емес"
 
@@ -85,149 +100,140 @@ msgstr "Қаріпті көрсету мүмкін емес"
 msgid "translator-credits"
 msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>"
 
-#: src/font-view-window.c:120
+#: src/font-view-window.c:95
 msgid "Failed"
 msgstr "Сәтсіз аяқталды"
 
-#: src/font-view-window.c:128
+#: src/font-view-window.c:103
 msgid "Installed"
 msgstr "Орнатылған"
 
-#: src/font-view-window.c:133
+#: src/font-view-window.c:108
 msgid "Installing"
 msgstr "Орнатылуда"
 
-#: src/font-view-window.c:136
-msgid "Install"
-msgstr "Орнату"
+#: src/font-view-window.c:111 src/font-view-window.ui:173
+msgid "_Install"
+msgstr "_Орнату"
 
 #. Translators, this string is used to display information about
 #. * a 'font variation axis'. The %s gets replaced with the name
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
-#.
-#: src/font-view-window.c:250
+#: src/font-view-window.c:197
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, бастапқысы %g"
 
-#: src/font-view-window.c:305
+#: src/font-view-window.c:252
 #, c-format
 msgid "Instance %d"
 msgstr "Данасы %d"
 
 #. Translators, this seperates the list of Layout
 #. * Features.
-#: src/font-view-window.c:343
+#: src/font-view-window.c:290
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view-window.c:370
+#: src/font-view-window.c:319
 msgid "Name"
 msgstr "Аты"
 
-#: src/font-view-window.c:373
+#: src/font-view-window.c:322
 msgid "Location"
 msgstr "Орналасуы"
 
-#: src/font-view-window.c:376
+#: src/font-view-window.c:325
 msgid "Style"
 msgstr "Стилі"
 
-#: src/font-view-window.c:386
+#: src/font-view-window.c:335
 msgid "Type"
 msgstr "Түрі"
 
-#: src/font-view-window.c:452 src/font-view-window.c:478
+#: src/font-view-window.c:401 src/font-view-window.c:427
 msgid "Version"
 msgstr "Нұсқасы"
 
-#: src/font-view-window.c:456 src/font-view-window.c:483
+#: src/font-view-window.c:405 src/font-view-window.c:432
 msgid "Copyright"
 msgstr "Copyright"
 
-#: src/font-view-window.c:460
+#: src/font-view-window.c:409
 msgid "Description"
 msgstr "Анықтамасы"
 
-#: src/font-view-window.c:464
+#: src/font-view-window.c:413
 msgid "Manufacturer"
 msgstr "Шығарушы"
 
-#: src/font-view-window.c:468
+#: src/font-view-window.c:417
 msgid "Designer"
 msgstr "Дизайнер"
 
-#: src/font-view-window.c:472
+#: src/font-view-window.c:421
 msgid "License"
 msgstr "Лицензиясы"
 
-#: src/font-view-window.c:497
+#: src/font-view-window.c:446
 msgid "Glyph Count"
 msgstr "Глиф саны"
 
-#: src/font-view-window.c:499
+#: src/font-view-window.c:448
 msgid "Color Glyphs"
 msgstr "Түсті глифтер"
 
-#: src/font-view-window.c:500
+#: src/font-view-window.c:449
 msgid "yes"
 msgstr "иә"
 
-#: src/font-view-window.c:500
+#: src/font-view-window.c:449
 msgid "no"
 msgstr "жоқ"
 
-#: src/font-view-window.c:504
+#: src/font-view-window.c:453
 msgid "Layout Features"
 msgstr "Жайма мүмкіндіктері"
 
-#: src/font-view-window.c:510
+#: src/font-view-window.c:459
 msgid "Variation Axes"
 msgstr "Нұсқа осьтері"
 
-#: src/font-view-window.c:517
+#: src/font-view-window.c:466
 msgid "Named Styles"
 msgstr "Аталған стильдер"
 
-#: src/font-view-window.c:559 src/font-view-window.c:661
+#: src/font-view-window.c:509 src/font-view-window.c:612
 msgid "Could Not Install Font"
 msgstr "Қаріпті орнату мүмкін емес"
 
-#: src/font-view-window.ui:31
+#: src/font-view-window.ui:33
 msgid "All Fonts"
 msgstr "Барлық қаріптер"
 
-#: src/font-view-window.ui:39
-msgid "Search"
-msgstr "Іздеу"
-
-#: src/font-view-window.ui:47
-msgid "About Fonts"
-msgstr "Қаріптер көрсетушісі жөнінде"
-
-#: src/font-view-window.ui:59
+#: src/font-view-window.ui:44
 msgid "Search fonts"
 msgstr "Қаріптер ішінен іздеу"
 
-#: src/font-view-window.ui:182
-msgid "_Install"
-msgstr "_Орнату"
+#: src/font-view-window.ui:54
+msgid "About Fonts"
+msgstr "Қаріптер көрсетушісі жөнінде"
 
-#: src/font-view-window.ui:185
+#: src/font-view-window.ui:176
 msgid "Install Font"
 msgstr "Қаріпті орнату"
 
-#: src/font-view-window.ui:190
+#: src/font-view-window.ui:181
 msgid "I_nfo"
 msgstr "Ақ_параты"
 
-#: src/font-view-window.ui:192
+#: src/font-view-window.ui:183
 msgid "Font Details"
 msgstr "Қаріп ақпараты"
 
-#: src/font-view-window.ui:239
+#: src/font-view-window.ui:241
 msgid "_Close"
 msgstr "Жа_бу"
 
@@ -1034,6 +1040,9 @@ msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Сызып тасталған нөл"
 
+#~ msgid "Install"
+#~ msgstr "Орнату"
+
 #~ msgid "This font could not be installed."
 #~ msgstr "Бұл қаріпті орнату мүмкін емес."
 
@@ -1055,13 +1064,8 @@ msgstr "Сызып тасталған нөл"
 #~ msgid "preferences-desktop-font"
 #~ msgstr "preferences-desktop-font"
 
-#~ msgid "Font Viewer"
-#~ msgstr "Қаріптер көрсетушісі"
-
 #~ msgid "[FILE...]"
 #~ msgstr "[ФАЙЛ...]"
 
-#~ msgid ""
-#~ "Run '%s --help' to see a full list of available command line options."
-#~ msgstr ""
-#~ "Командалық жолдың барлық опцияларын қарау үшін '%s --help' енгізіңіз."
+#~ msgid "Run '%s --help' to see a full list of available command line options."
+#~ msgstr "Командалық жолдың барлық опцияларын қарау үшін '%s --help' енгізіңіз."
