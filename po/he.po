@@ -13,9 +13,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.HEAD.he\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
-"issues\n"
-"POT-Creation-Date: 2023-09-18 23:25+0000\n"
-"PO-Revision-Date: 2023-12-01 15:22+0200\n"
+"issues/\n"
+"POT-Creation-Date: 2026-03-22 12:23+0000\n"
+"PO-Revision-Date: 2026-08-09 10:34+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <>\n"
 "Language: he\n"
@@ -25,23 +25,25 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? "
 "2 : 3);\n"
 "X-Launchpad-Export-Date: 2023-11-28 08:24+0000\n"
-"X-Generator: Poedit 3.4.1\n"
+"X-Generator: Poedit 3.9\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6
-#: data/org.gnome.font-viewer.desktop.in.in:3 src/font-view-application.c:124
+#: data/org.gnome.font-viewer.desktop.in.in:2
+#: data/org.gnome.font-viewer.metainfo.xml.in:6 src/font-view-application.c:124
+#: src/font-view-application.c:150
 msgid "Fonts"
 msgstr "גופנים"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7
-#: data/org.gnome.font-viewer.desktop.in.in:4
+#: data/org.gnome.font-viewer.desktop.in.in:3
+#: data/org.gnome.font-viewer.metainfo.xml.in:7
 msgid "View fonts on your system"
 msgstr "צפייה בגופנים במערכת שלך"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:9
-#| msgid ""
-#| "GNOME Fonts shows you the fonts installed on your computer for your use "
-#| "as thumbnails. Selecting any thumbnails shows the full view of how the "
-#| "font would look under various sizes."
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.font-viewer.desktop.in.in:5
+msgid "fonts;fontface;"
+msgstr "גופנים;גופן;פונטים;גליפים;"
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:9
 msgid ""
 "Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
@@ -51,11 +53,7 @@ msgstr ""
 "ממוזערות. בחירת תמונה ממוזערת כלשהי תראה תצוגה מלאה של איך הגופן נראה בגדלים "
 "שונים."
 
-#: data/org.gnome.font-viewer.appdata.xml.in:15
-#| msgid ""
-#| "GNOME Fonts also supports installing new font files downloaded in the ."
-#| "ttf and other formats. Fonts may be installed only for your use or made "
-#| "available to all users on the computer."
+#: data/org.gnome.font-viewer.metainfo.xml.in:15
 msgid ""
 "Fonts also supports installing new font files downloaded in the .ttf and "
 "other formats. Fonts may be installed only for your use or made available to "
@@ -64,14 +62,24 @@ msgstr ""
 "מציג הגופנים גם תומך בהתקנת קבצי גופן שהורדו בתבנית ‎.ttf‎ ותבניות נוספות. "
 "גופנים ניתנים להתקנה לשימושך בלבד או להיות זמינים לכל המשתמשים על המחשב."
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.font-viewer.metainfo.xml.in:22
+#: data/org.gnome.font-viewer.metainfo.xml.in:24
+#: src/font-view-application.c:126
 msgid "The GNOME Project"
 msgstr "מיזם GNOME"
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.font-viewer.desktop.in.in:6
-msgid "fonts;fontface;"
-msgstr "גופנים;גופן;פונטים;גליפים;"
+#: data/org.gnome.font-viewer.metainfo.xml.in:35
+msgid "Main Window"
+msgstr "החלון הראשי"
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:39
+msgid "Font Preview"
+msgstr "תצוגת גופן מקדימה"
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:43
+msgid "Font Search"
+msgstr "חיפוש גופנים"
 
 #: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
@@ -93,7 +101,7 @@ msgstr "SIZE"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONT-FILE OUTPUT-FILE"
 
-#: src/font-view-application.c:79 src/font-view-window.c:741
+#: src/font-view-application.c:79 src/font-view-window.c:695
 msgid "Could Not Display Font"
 msgstr "לא ניתן להציג את הגופן"
 
@@ -108,150 +116,141 @@ msgstr ""
 "  Yaron https://launchpad.net/~sh-yaron\n"
 "  Yosef Or Boczko https://launchpad.net/~yoseforb"
 
-#: src/font-view-window.c:120
+#: src/font-view-window.c:95
 msgid "Failed"
 msgstr "נכשל"
 
-#: src/font-view-window.c:128
+#: src/font-view-window.c:103
 msgid "Installed"
 msgstr "מותקן"
 
-#: src/font-view-window.c:133
-#| msgid "Installing…"
+#: src/font-view-window.c:108
 msgid "Installing"
 msgstr "מתקין"
 
-#: src/font-view-window.c:136
-msgid "Install"
-msgstr "התקנה"
+#: src/font-view-window.c:111 src/font-view-window.ui:173
+msgid "_Install"
+msgstr "_התקנה"
 
 #. Translators, this string is used to display information about
 #. * a 'font variation axis'. The %s gets replaced with the name
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view-window.c:250
+#: src/font-view-window.c:197
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s ‏%g‏ — %g, ברירת מחדל %g"
 
-#: src/font-view-window.c:305
+#: src/font-view-window.c:252
 #, c-format
 msgid "Instance %d"
 msgstr "מופע %d"
 
 #. Translators, this seperates the list of Layout
 #. * Features.
-#: src/font-view-window.c:343
+#: src/font-view-window.c:290
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view-window.c:370
+#: src/font-view-window.c:319
 msgid "Name"
 msgstr "שם"
 
-#: src/font-view-window.c:373
+#: src/font-view-window.c:322
 msgid "Location"
 msgstr "מיקום"
 
-#: src/font-view-window.c:376
+#: src/font-view-window.c:325
 msgid "Style"
 msgstr "סגנון"
 
-#: src/font-view-window.c:386
+#: src/font-view-window.c:335
 msgid "Type"
 msgstr "סוג"
 
-#: src/font-view-window.c:452 src/font-view-window.c:478
+#: src/font-view-window.c:401 src/font-view-window.c:427
 msgid "Version"
 msgstr "גרסה"
 
-#: src/font-view-window.c:456 src/font-view-window.c:483
+#: src/font-view-window.c:405 src/font-view-window.c:432
 msgid "Copyright"
 msgstr "זכויות יוצרים"
 
-#: src/font-view-window.c:460
+#: src/font-view-window.c:409
 msgid "Description"
 msgstr "תיאור"
 
-#: src/font-view-window.c:464
+#: src/font-view-window.c:413
 msgid "Manufacturer"
 msgstr "יצרן"
 
-#: src/font-view-window.c:468
+#: src/font-view-window.c:417
 msgid "Designer"
 msgstr "מעצב"
 
-#: src/font-view-window.c:472
+#: src/font-view-window.c:421
 msgid "License"
 msgstr "רישיון"
 
-#: src/font-view-window.c:497
+#: src/font-view-window.c:446
 msgid "Glyph Count"
 msgstr "מספר גליף"
 
-#: src/font-view-window.c:499
+#: src/font-view-window.c:448
 msgid "Color Glyphs"
 msgstr "גליף צבע"
 
-#: src/font-view-window.c:500
+#: src/font-view-window.c:449
 msgid "yes"
 msgstr "כן"
 
-#: src/font-view-window.c:500
+#: src/font-view-window.c:449
 msgid "no"
 msgstr "לא"
 
-#: src/font-view-window.c:504
+#: src/font-view-window.c:453
 msgid "Layout Features"
 msgstr "תכונות פריסה"
 
-#: src/font-view-window.c:510
+#: src/font-view-window.c:459
 msgid "Variation Axes"
 msgstr "הגווני צירים"
 
-#: src/font-view-window.c:517
+#: src/font-view-window.c:466
 msgid "Named Styles"
 msgstr "שם סגנון"
 
-#: src/font-view-window.c:559 src/font-view-window.c:661
+#: src/font-view-window.c:509 src/font-view-window.c:612
 msgid "Could Not Install Font"
 msgstr "לא ניתן להתקין את הגופן"
 
-#: src/font-view-window.ui:31
+#: src/font-view-window.ui:33
 msgid "All Fonts"
 msgstr "כל הגופנים"
 
-#: src/font-view-window.ui:39
-msgid "Search"
-msgstr "חיפוש"
-
-#: src/font-view-window.ui:47
-msgid "About Fonts"
-msgstr "על אודות מציג הגופנים"
-
-#: src/font-view-window.ui:59
+#: src/font-view-window.ui:44
 msgid "Search fonts"
 msgstr "חיפוש גופנים"
 
-#: src/font-view-window.ui:182
-msgid "_Install"
-msgstr "_התקנה"
+#: src/font-view-window.ui:54
+msgid "About Fonts"
+msgstr "על אודות מציג הגופנים"
 
-#: src/font-view-window.ui:185
+#: src/font-view-window.ui:176
 msgid "Install Font"
 msgstr "התקנת גופן"
 
-#: src/font-view-window.ui:190
+#: src/font-view-window.ui:181
 msgid "I_nfo"
 msgstr "_מידע"
 
-#: src/font-view-window.ui:192
+#: src/font-view-window.ui:183
 msgid "Font Details"
 msgstr "פרטי גופן"
 
-#: src/font-view-window.ui:239
+#: src/font-view-window.ui:241
 msgid "_Close"
 msgstr "_סגירה"
 
@@ -1057,3 +1056,6 @@ msgstr "חלופות אנכיות לסיבוב"
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "אפס עם לוכסן"
+
+#~ msgid "Install"
+#~ msgstr "התקנה"
