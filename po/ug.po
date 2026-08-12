@@ -7,9 +7,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues/\n"
-"POT-Creation-Date: 2025-09-10 17:05+0000\n"
-"PO-Revision-Date: 2025-10-04 17:30-0400\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
+"issues/\n"
+"POT-Creation-Date: 2026-03-22 12:23+0000\n"
+"PO-Revision-Date: 2026-08-12 15:16-0400\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: ug\n"
@@ -17,33 +18,62 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.7\n"
+"X-Generator: Poedit 3.9\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 data/org.gnome.font-viewer.desktop.in.in:2 src/font-view-application.c:124 src/font-view-application.c:150
+#: data/org.gnome.font-viewer.desktop.in.in:2
+#: data/org.gnome.font-viewer.metainfo.xml.in:6 src/font-view-application.c:124
+#: src/font-view-application.c:150
 msgid "Fonts"
 msgstr "خەت نۇسخا"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 data/org.gnome.font-viewer.desktop.in.in:3
+#: data/org.gnome.font-viewer.desktop.in.in:3
+#: data/org.gnome.font-viewer.metainfo.xml.in:7
 msgid "View fonts on your system"
 msgstr "سىستېمىدىكى خەت نۇسخىلىرىنى كۆرۈش پىروگراممىسى"
-
-#: data/org.gnome.font-viewer.appdata.xml.in:9
-msgid "Fonts shows you the fonts installed on your computer for your use as thumbnails. Selecting any thumbnails shows the full view of how the font would look under various sizes."
-msgstr "خەت نۇسخا كومپيۇتېرىڭىزغا ئورنىتىلغان خەت نۇسخىسىنى كىچىك سۈرەت شەكلىدە  كۆرسىتىدۇ. خالىغان بىر كىچىك سۈرەت تاللانسا شۇ خەت نۇسخىسىنىڭ ئوخشاش بولمىغان چوڭلۇقتىكى ھالىتىنىڭ تولۇق كۆرۈنۈش ئۈنۈمىنى كۆرسىتىدۇ."
-
-#: data/org.gnome.font-viewer.appdata.xml.in:15
-msgid "Fonts also supports installing new font files downloaded in the .ttf and other formats. Fonts may be installed only for your use or made available to all users on the computer."
-msgstr "خەت نۇسخا يەنە .ttf  ۋە باشقا پىچىمدىكى يېڭى خەت نۇسخىسىنى ئورنىتىشنى قوللايدۇ. خەت نۇسخىسىنى پەقەت نۆۋەتتىكى ئىشلەتكۈچىگە ياكى كومپيۇتېردىكى بارلىق ئىشلەتكۈچىگە ئورنىتىشنى قوللايدۇ."
-
-#. developer_name tag deprecated with Appstream 1.0
-#: data/org.gnome.font-viewer.appdata.xml.in:22 src/font-view-application.c:126
-msgid "The GNOME Project"
-msgstr "GNOME قۇرۇلۇشى"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.font-viewer.desktop.in.in:5
 msgid "fonts;fontface;"
 msgstr "خەت نۇسخا;فونت;fonts;fontface;"
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:9
+msgid ""
+"Fonts shows you the fonts installed on your computer for your use as "
+"thumbnails. Selecting any thumbnails shows the full view of how the font "
+"would look under various sizes."
+msgstr ""
+"خەت نۇسخا كومپيۇتېرىڭىزغا ئورنىتىلغان خەت نۇسخىسىنى كىچىك سۈرەت شەكلىدە  "
+"كۆرسىتىدۇ. خالىغان بىر كىچىك سۈرەت تاللانسا شۇ خەت نۇسخىسىنىڭ ئوخشاش "
+"بولمىغان چوڭلۇقتىكى ھالىتىنىڭ تولۇق كۆرۈنۈش ئۈنۈمىنى كۆرسىتىدۇ."
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:15
+msgid ""
+"Fonts also supports installing new font files downloaded in the .ttf and "
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
+msgstr ""
+"خەت نۇسخا يەنە .ttf  ۋە باشقا پىچىمدىكى يېڭى خەت نۇسخىسىنى ئورنىتىشنى "
+"قوللايدۇ. خەت نۇسخىسىنى پەقەت نۆۋەتتىكى ئىشلەتكۈچىگە ياكى كومپيۇتېردىكى "
+"بارلىق ئىشلەتكۈچىگە ئورنىتىشنى قوللايدۇ."
+
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.font-viewer.metainfo.xml.in:22
+#: data/org.gnome.font-viewer.metainfo.xml.in:24
+#: src/font-view-application.c:126
+msgid "The GNOME Project"
+msgstr "GNOME قۇرۇلۇشى"
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:35
+msgid "Main Window"
+msgstr "ئاساسىي كۆزنەك"
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:39
+msgid "Font Preview"
+msgstr "خەت نۇسخا ئالدىن كۆزەت"
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:43
+msgid "Font Search"
+msgstr "خەت نۇسخا ئىزدە"
 
 #: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
@@ -65,7 +95,7 @@ msgstr "چوڭلۇقى"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "خەت نۇسخا-ھۆججەت چىقار-ھۆججەت"
 
-#: src/font-view-application.c:79 src/font-view-window.c:744
+#: src/font-view-application.c:79 src/font-view-window.c:695
 msgid "Could Not Display Font"
 msgstr "خەت نۇسخىسىنى كۆرسىتەلمەيدۇ"
 
@@ -76,19 +106,19 @@ msgstr ""
 " Gheyret Kenji <gheyret@gmail.com>\n"
 "ئابدۇقادىر ئابلىز <sahranbay@gmail.com>"
 
-#: src/font-view-window.c:120
+#: src/font-view-window.c:95
 msgid "Failed"
 msgstr "مەغلۇپ بولدى"
 
-#: src/font-view-window.c:128
+#: src/font-view-window.c:103
 msgid "Installed"
 msgstr "ئورنىتىلغان"
 
-#: src/font-view-window.c:133
+#: src/font-view-window.c:108
 msgid "Installing"
 msgstr "ئورنىتىۋاتىدۇ"
 
-#: src/font-view-window.c:136 src/font-view-window.ui:176
+#: src/font-view-window.c:111 src/font-view-window.ui:173
 msgid "_Install"
 msgstr "ئورنات(_I)"
 
@@ -97,124 +127,120 @@ msgstr "ئورنات(_I)"
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view-window.c:250
+#: src/font-view-window.c:197
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g، كۆڭۈلدىكى %g"
 
-#: src/font-view-window.c:305
+#: src/font-view-window.c:252
 #, c-format
 msgid "Instance %d"
 msgstr "مىسال %d"
 
 #. Translators, this seperates the list of Layout
 #. * Features.
-#: src/font-view-window.c:343
+#: src/font-view-window.c:290
 msgctxt "OpenType layout"
 msgid ", "
 msgstr "، "
 
-#: src/font-view-window.c:372
+#: src/font-view-window.c:319
 msgid "Name"
 msgstr "ئاتى"
 
-#: src/font-view-window.c:375
+#: src/font-view-window.c:322
 msgid "Location"
 msgstr "ئورنى"
 
-#: src/font-view-window.c:378
+#: src/font-view-window.c:325
 msgid "Style"
 msgstr "ئۇسلۇب"
 
-#: src/font-view-window.c:388
+#: src/font-view-window.c:335
 msgid "Type"
 msgstr "تۈرى"
 
-#: src/font-view-window.c:454 src/font-view-window.c:480
+#: src/font-view-window.c:401 src/font-view-window.c:427
 msgid "Version"
 msgstr "نەشرى"
 
-#: src/font-view-window.c:458 src/font-view-window.c:485
+#: src/font-view-window.c:405 src/font-view-window.c:432
 msgid "Copyright"
 msgstr "نەشر ھوقۇقى"
 
-#: src/font-view-window.c:462
+#: src/font-view-window.c:409
 msgid "Description"
 msgstr "چۈشەندۈرۈش"
 
-#: src/font-view-window.c:466
+#: src/font-view-window.c:413
 msgid "Manufacturer"
 msgstr "ياسىغۇچى سودىگەر"
 
-#: src/font-view-window.c:470
+#: src/font-view-window.c:417
 msgid "Designer"
 msgstr "لايىھەلىگۈچى"
 
-#: src/font-view-window.c:474
+#: src/font-view-window.c:421
 msgid "License"
 msgstr "ئىجازەتنامە"
 
-#: src/font-view-window.c:499
+#: src/font-view-window.c:446
 msgid "Glyph Count"
 msgstr "شەكىل سانى"
 
-#: src/font-view-window.c:501
+#: src/font-view-window.c:448
 msgid "Color Glyphs"
 msgstr "رەڭ شەكلى"
 
-#: src/font-view-window.c:502
+#: src/font-view-window.c:449
 msgid "yes"
 msgstr "ھەئە"
 
-#: src/font-view-window.c:502
+#: src/font-view-window.c:449
 msgid "no"
 msgstr "ياق"
 
-#: src/font-view-window.c:506
+#: src/font-view-window.c:453
 msgid "Layout Features"
 msgstr "ئورۇنلاشتۇرۇش ئالاھىدىلىكى"
 
-#: src/font-view-window.c:512
+#: src/font-view-window.c:459
 msgid "Variation Axes"
 msgstr "ئۆزگىرىش ئوقى"
 
-#: src/font-view-window.c:519
+#: src/font-view-window.c:466
 msgid "Named Styles"
 msgstr "ئاتاش ئۇسلۇبى"
 
-#: src/font-view-window.c:560 src/font-view-window.c:663
+#: src/font-view-window.c:509 src/font-view-window.c:612
 msgid "Could Not Install Font"
 msgstr "خەت نۇسخىسىنى ئورنىتالمايدۇ"
 
-#: src/font-view-window.ui:25
+#: src/font-view-window.ui:33
 msgid "All Fonts"
 msgstr "بارلىق خەت نۇسخىلىرى"
 
-#: src/font-view-window.ui:33
-msgid "Search"
-msgstr "ئىزدە"
-
-#: src/font-view-window.ui:41
-msgid "About Fonts"
-msgstr "خەت نۇسخا ھەققىدە"
-
-#: src/font-view-window.ui:53
+#: src/font-view-window.ui:44
 msgid "Search fonts"
 msgstr "خەت نۇسخا ئىزدە"
 
-#: src/font-view-window.ui:179
+#: src/font-view-window.ui:54
+msgid "About Fonts"
+msgstr "خەت نۇسخا ھەققىدە"
+
+#: src/font-view-window.ui:176
 msgid "Install Font"
 msgstr "خەت نۇسخا ئورنات"
 
-#: src/font-view-window.ui:184
+#: src/font-view-window.ui:181
 msgid "I_nfo"
 msgstr "ئۇچۇر(_N)"
 
-#: src/font-view-window.ui:186
+#: src/font-view-window.ui:183
 msgid "Font Details"
 msgstr "خەت نۇسخا تەپسىلاتى"
 
-#: src/font-view-window.ui:232
+#: src/font-view-window.ui:241
 msgid "_Close"
 msgstr "ياپ(_C)"
 
@@ -1029,9 +1055,6 @@ msgstr "يانتۇلۇقى نۆل"
 
 #~ msgid "Back"
 #~ msgstr "كەينى"
-
-#~ msgid "Font Viewer"
-#~ msgstr "خەت نۇسخا كۆرگۈ"
 
 #~ msgid "Font size (default: 64)"
 #~ msgstr "خەت چوڭلۇقى (كۆڭۈلدىكى: 64)"
