@@ -19,9 +19,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
-"issues\n"
-"POT-Creation-Date: 2023-02-11 23:28+0000\n"
-"PO-Revision-Date: 2023-02-28 22:12+0200\n"
+"issues/\n"
+"POT-Creation-Date: 2026-03-22 12:23+0000\n"
+"PO-Revision-Date: 2026-08-17 19:10+0300\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <gnome-fi-laatu@lists.sourceforge.net>\n"
 "Language: fi\n"
@@ -29,19 +29,25 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.9\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view-application.c:124
-#: src/org.gnome.font-viewer.desktop.in.in:3
+#: data/org.gnome.font-viewer.desktop.in.in:2
+#: data/org.gnome.font-viewer.metainfo.xml.in:6 src/font-view-application.c:124
+#: src/font-view-application.c:150
 msgid "Fonts"
 msgstr "Fontit"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7
-#: src/org.gnome.font-viewer.desktop.in.in:4
+#: data/org.gnome.font-viewer.desktop.in.in:3
+#: data/org.gnome.font-viewer.metainfo.xml.in:7
 msgid "View fonts on your system"
 msgstr "Katsele koneellasi olevia fontteja"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:9
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.font-viewer.desktop.in.in:5
+msgid "fonts;fontface;"
+msgstr "fonts;fontface;fontti;fontit;kirjasin;kirjasimet;"
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:9
 msgid ""
 "Fonts shows you the fonts installed on your computer for your use as "
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
@@ -50,7 +56,7 @@ msgstr ""
 "Fontit näyttää järjestelmään asennetut fontit esikatselukuvina. Minkä "
 "tahansa esikatselukuvan valitseminen näyttää fontin eri kokoluokissa."
 
-#: data/org.gnome.font-viewer.appdata.xml.in:15
+#: data/org.gnome.font-viewer.metainfo.xml.in:15
 msgid ""
 "Fonts also supports installing new font files downloaded in the .ttf and "
 "other formats. Fonts may be installed only for your use or made available to "
@@ -60,9 +66,24 @@ msgstr ""
 "muodoissa olevia fonttitiedostoja. Fontit on mahdollista asentaa vain omaan "
 "käyttöön tai kaikkien järjestelmää käyttävien saataville."
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.font-viewer.metainfo.xml.in:22
+#: data/org.gnome.font-viewer.metainfo.xml.in:24
+#: src/font-view-application.c:126
 msgid "The GNOME Project"
 msgstr "Gnome-projekti"
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:35
+msgid "Main Window"
+msgstr "Pääikkuna"
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:39
+msgid "Font Preview"
+msgstr "Fontin esikatselu"
+
+#: data/org.gnome.font-viewer.metainfo.xml.in:43
+msgid "Font Search"
+msgstr "Fontin haku"
 
 #: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
@@ -84,7 +105,7 @@ msgstr "KOKO"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "FONTTI-TIEDOSTO TULOSTE-TIEDOSTO"
 
-#: src/font-view-application.c:79 src/font-view-window.c:750
+#: src/font-view-application.c:79 src/font-view-window.c:695
 msgid "Could Not Display Font"
 msgstr "Fonttia ei voitu näyttää"
 
@@ -92,153 +113,141 @@ msgstr "Fonttia ei voitu näyttää"
 msgid "translator-credits"
 msgstr "Jiri Grönroos"
 
-#: src/font-view-window.c:119
+#: src/font-view-window.c:95
 msgid "Failed"
 msgstr "Epäonnistui"
 
-#: src/font-view-window.c:127
+#: src/font-view-window.c:103
 msgid "Installed"
 msgstr "Asennettu"
 
-#: src/font-view-window.c:132
+#: src/font-view-window.c:108
 msgid "Installing"
 msgstr "Asennetaan"
 
-#: src/font-view-window.c:135
-msgid "Install"
-msgstr "Asenna"
+#: src/font-view-window.c:111 src/font-view-window.ui:173
+msgid "_Install"
+msgstr "_Asenna"
 
 #. Translators, this string is used to display information about
 #. * a 'font variation axis'. The %s gets replaced with the name
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #.
-#: src/font-view-window.c:249
+#: src/font-view-window.c:197
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr "%s %g — %g, oletus %g"
 
-#: src/font-view-window.c:304
+#: src/font-view-window.c:252
 #, c-format
 msgid "Instance %d"
 msgstr "Instanssi %d"
 
 #. Translators, this seperates the list of Layout
 #. * Features.
-#: src/font-view-window.c:342
+#: src/font-view-window.c:290
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ", "
 
-#: src/font-view-window.c:369
+#: src/font-view-window.c:319
 msgid "Name"
 msgstr "Nimi"
 
-#: src/font-view-window.c:372
+#: src/font-view-window.c:322
 msgid "Location"
 msgstr "Sijainti"
 
-#: src/font-view-window.c:375
+#: src/font-view-window.c:325
 msgid "Style"
 msgstr "Tyyli"
 
-#: src/font-view-window.c:385
+#: src/font-view-window.c:335
 msgid "Type"
 msgstr "Tyyppi"
 
-#: src/font-view-window.c:451 src/font-view-window.c:477
+#: src/font-view-window.c:401 src/font-view-window.c:427
 msgid "Version"
 msgstr "Versio"
 
-#: src/font-view-window.c:455 src/font-view-window.c:482
+#: src/font-view-window.c:405 src/font-view-window.c:432
 msgid "Copyright"
 msgstr "Tekijänoikeus"
 
-#: src/font-view-window.c:459
+#: src/font-view-window.c:409
 msgid "Description"
 msgstr "Kuvaus"
 
-#: src/font-view-window.c:463
+#: src/font-view-window.c:413
 msgid "Manufacturer"
 msgstr "Valmistaja"
 
-#: src/font-view-window.c:467
+#: src/font-view-window.c:417
 msgid "Designer"
 msgstr "Suunnittelija"
 
-#: src/font-view-window.c:471
+#: src/font-view-window.c:421
 msgid "License"
 msgstr "Lisenssi"
 
-#: src/font-view-window.c:496
+#: src/font-view-window.c:446
 msgid "Glyph Count"
 msgstr "Glyyfien määrä"
 
-#: src/font-view-window.c:498
+#: src/font-view-window.c:448
 msgid "Color Glyphs"
 msgstr "Väriglyyfit"
 
-#: src/font-view-window.c:499
+#: src/font-view-window.c:449
 msgid "yes"
 msgstr "kyllä"
 
-#: src/font-view-window.c:499
+#: src/font-view-window.c:449
 msgid "no"
 msgstr "ei"
 
-#: src/font-view-window.c:503
+#: src/font-view-window.c:453
 msgid "Layout Features"
 msgstr "Asettelun ominaisuudet"
 
-#: src/font-view-window.c:509
+#: src/font-view-window.c:459
 msgid "Variation Axes"
 msgstr "Variaatioakselit"
 
-#: src/font-view-window.c:516
+#: src/font-view-window.c:466
 msgid "Named Styles"
 msgstr "Nimetyt tyylit"
 
-#: src/font-view-window.c:558 src/font-view-window.c:670
+#: src/font-view-window.c:509 src/font-view-window.c:612
 msgid "Could Not Install Font"
 msgstr "Fonttia ei voitu asentaa"
 
-#: src/font-view-window.ui:34
+#: src/font-view-window.ui:33
 msgid "All Fonts"
 msgstr "Kaikki fontit"
 
-#: src/font-view-window.ui:40
-msgid "Search"
-msgstr "Etsi"
-
-#: src/font-view-window.ui:48
-msgid "About Fonts"
-msgstr "Tietoja - Fontit"
-
-#: src/font-view-window.ui:60
+#: src/font-view-window.ui:44
 msgid "Search fonts"
 msgstr "Etsi fontteja"
 
-#: src/font-view-window.ui:181
-msgid "Back"
-msgstr "Takaisin"
+#: src/font-view-window.ui:54
+msgid "About Fonts"
+msgstr "Tietoja - Fontit"
 
-#: src/font-view-window.ui:187
-msgid "_Install"
-msgstr "_Asenna"
-
-#: src/font-view-window.ui:190
+#: src/font-view-window.ui:176
 msgid "Install Font"
 msgstr "Asenna fontti"
 
-#: src/font-view-window.ui:195
+#: src/font-view-window.ui:181
 msgid "I_nfo"
 msgstr "Tied_ot"
 
-#: src/font-view-window.ui:197
+#: src/font-view-window.ui:183
 msgid "Font Details"
 msgstr "Fontin tiedot"
 
-#: src/font-view-window.ui:244
+#: src/font-view-window.ui:241
 msgid "_Close"
 msgstr "_Sulje"
 
@@ -249,11 +258,6 @@ msgstr "Gnomen Fontit"
 #: src/main.c:44
 msgid "Show the application's version"
 msgstr "Näytä sovelluksen versio"
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in.in:6
-msgid "fonts;fontface;"
-msgstr "fonts;fontface;fontti;fontit;kirjasin;kirjasimet;"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -1050,6 +1054,12 @@ msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "Slashed Zero"
 
+#~ msgid "Install"
+#~ msgstr "Asenna"
+
+#~ msgid "Back"
+#~ msgstr "Takaisin"
+
 #~ msgid "This font could not be installed."
 #~ msgstr "Tätä fonttia ei voitu asentaa."
 
@@ -1073,9 +1083,6 @@ msgstr "Slashed Zero"
 
 #~ msgid "preferences-desktop-font"
 #~ msgstr "preferences-desktop-font"
-
-#~ msgid "Font Viewer"
-#~ msgstr "Fonttikatselin"
 
 #~ msgid "[FILE...]"
 #~ msgstr "[TIEDOSTO...]"
