@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues/\n"
 "POT-Creation-Date: 2026-03-22 12:23+0000\n"
-"PO-Revision-Date: 2026-08-24 20:14+0200\n"
+"PO-Revision-Date: 2026-09-09 10:02+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -186,7 +186,7 @@ msgstr "Antall tegn"
 
 #: src/font-view-window.c:448
 msgid "Color Glyphs"
-msgstr ""
+msgstr "Fargeglyfer"
 
 #: src/font-view-window.c:449
 msgid "yes"
@@ -251,12 +251,12 @@ msgstr "Vis programmets versjon"
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
 msgid "Access All Alternates"
-msgstr ""
+msgstr "Aksesser alle alternativer"
 
 #: src/open-type-layout.h:14
 msgctxt "OpenType layout"
 msgid "Above-base Forms"
-msgstr ""
+msgstr "Overliggende glyfformer"
 
 #: src/open-type-layout.h:15
 msgctxt "OpenType layout"
@@ -281,7 +281,7 @@ msgstr "Akhands"
 #: src/open-type-layout.h:19
 msgctxt "OpenType layout"
 msgid "Below-base Forms"
-msgstr ""
+msgstr "Underliggende glyfformer"
 
 #: src/open-type-layout.h:20
 msgctxt "OpenType layout"
@@ -324,9 +324,10 @@ msgid "Contextual Ligatures"
 msgstr "Kontekstuelle ligaturer"
 
 #: src/open-type-layout.h:28
+#, fuzzy
 msgctxt "OpenType layout"
 msgid "Centered CJK Punctuation"
-msgstr ""
+msgstr "Sentrert CJK"
 
 #: src/open-type-layout.h:29
 msgctxt "OpenType layout"
@@ -461,12 +462,12 @@ msgstr "Diskrete ligaturer"
 #: src/open-type-layout.h:55
 msgctxt "OpenType layout"
 msgid "Denominators"
-msgstr ""
+msgstr "Nevnerglyfer"
 
 #: src/open-type-layout.h:56
 msgctxt "OpenType layout"
 msgid "Dotless Forms"
-msgstr ""
+msgstr "Prikkløse former"
 
 #: src/open-type-layout.h:57
 msgctxt "OpenType layout"
@@ -481,17 +482,17 @@ msgstr ""
 #: src/open-type-layout.h:59
 msgctxt "OpenType layout"
 msgid "Terminal Forms #2"
-msgstr ""
+msgstr "Sluttformer #2"
 
 #: src/open-type-layout.h:60
 msgctxt "OpenType layout"
 msgid "Terminal Forms #3"
-msgstr ""
+msgstr "Sluttformer #3"
 
 #: src/open-type-layout.h:61
 msgctxt "OpenType layout"
 msgid "Terminal Forms"
-msgstr ""
+msgstr "Sluttformer"
 
 #: src/open-type-layout.h:62
 msgctxt "OpenType layout"
@@ -531,7 +532,7 @@ msgstr "Historiske former"
 #: src/open-type-layout.h:69
 msgctxt "OpenType layout"
 msgid "Horizontal Kana Alternates"
-msgstr ""
+msgstr "Horisontale Kana-alternativer"
 
 #: src/open-type-layout.h:70
 msgctxt "OpenType layout"
@@ -546,7 +547,7 @@ msgstr "Hangul"
 #: src/open-type-layout.h:72
 msgctxt "OpenType layout"
 msgid "Hojo Kanji Forms"
-msgstr ""
+msgstr "Hojo Kanji former"
 
 #: src/open-type-layout.h:73
 msgctxt "OpenType layout"
@@ -556,7 +557,7 @@ msgstr "Halvbredder"
 #: src/open-type-layout.h:74
 msgctxt "OpenType layout"
 msgid "Initial Forms"
-msgstr ""
+msgstr "Startformer"
 
 #: src/open-type-layout.h:75
 msgctxt "OpenType layout"
@@ -681,7 +682,7 @@ msgstr "Nukta-former"
 #: src/open-type-layout.h:99
 msgctxt "OpenType layout"
 msgid "Numerators"
-msgstr ""
+msgstr "Numeratorer"
 
 #: src/open-type-layout.h:100
 msgctxt "OpenType layout"
@@ -696,7 +697,7 @@ msgstr "Optiske grenser"
 #: src/open-type-layout.h:102
 msgctxt "OpenType layout"
 msgid "Ordinals"
-msgstr ""
+msgstr "Ordinaler"
 
 #: src/open-type-layout.h:103
 msgctxt "OpenType layout"
