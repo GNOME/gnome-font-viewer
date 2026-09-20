@@ -3,21 +3,22 @@
 # Freddy Cheng <freddy4212@gmail.com>, 2022.
 # pan93412 <pan93412@gmail.com>, 2019, 2025.
 #
+# SPDX-FileCopyrightText: 2026 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 3.1.90\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues/\n"
-"POT-Creation-Date: 2026-01-16 18:43+0000\n"
-"PO-Revision-Date: 2025-02-20 17:44+0800\n"
+"POT-Creation-Date: 2026-03-14 21:32+0000\n"
+"PO-Revision-Date: 2026-09-20 20:32+0800\n"
 "Last-Translator: Cheng-Chia Tseng <zerngjia@gmail.com>\n"
-"Language-Team: Chinese (traditional)\n"
+"Language-Team: Chinese (Traditional) <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.9\n"
 
 #: data/org.gnome.font-viewer.desktop.in.in:2
 #: data/org.gnome.font-viewer.metainfo.xml.in:6 src/font-view-application.c:124
@@ -55,13 +56,14 @@ msgstr ""
 
 #. developer_name tag deprecated with Appstream 1.0
 #: data/org.gnome.font-viewer.metainfo.xml.in:22
+#: data/org.gnome.font-viewer.metainfo.xml.in:24
 #: src/font-view-application.c:126
 msgid "The GNOME Project"
 msgstr "GNOME 專案"
 
 #: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
-msgstr "文字轉為縮圖（預設：Aa）"
+msgstr "要看縮圖的文字（預設：Aa）"
 
 #: src/font-thumbnailer.c:181
 msgid "TEXT"
@@ -79,7 +81,7 @@ msgstr "大小"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "字型檔 輸出檔"
 
-#: src/font-view-application.c:79 src/font-view-window.c:693
+#: src/font-view-application.c:79 src/font-view-window.c:695
 msgid "Could Not Display Font"
 msgstr "無法顯示字型"
 
@@ -101,7 +103,7 @@ msgstr "已安裝"
 msgid "Installing"
 msgstr "正在安裝"
 
-#: src/font-view-window.c:111 src/font-view-window.ui:177
+#: src/font-view-window.c:111 src/font-view-window.ui:173
 msgid "_Install"
 msgstr "安裝(_I)"
 
@@ -199,31 +201,31 @@ msgstr "命名樣式"
 msgid "Could Not Install Font"
 msgstr "無法安裝字型"
 
-#: src/font-view-window.ui:32
+#: src/font-view-window.ui:33
 msgid "All Fonts"
 msgstr "所有字型"
 
-#: src/font-view-window.ui:43
+#: src/font-view-window.ui:44
 msgid "Search fonts"
 msgstr "搜尋字型"
 
-#: src/font-view-window.ui:58
+#: src/font-view-window.ui:54
 msgid "About Fonts"
 msgstr "關於字型"
 
-#: src/font-view-window.ui:180
+#: src/font-view-window.ui:176
 msgid "Install Font"
 msgstr "安裝字型"
 
-#: src/font-view-window.ui:185
+#: src/font-view-window.ui:181
 msgid "I_nfo"
 msgstr "資訊(_N)"
 
-#: src/font-view-window.ui:187
+#: src/font-view-window.ui:183
 msgid "Font Details"
 msgstr "字型詳細資訊"
 
-#: src/font-view-window.ui:245
+#: src/font-view-window.ui:241
 msgid "_Close"
 msgstr "關閉(_C)"
 
@@ -1030,8 +1032,16 @@ msgctxt "OpenType layout"
 msgid "Slashed Zero"
 msgstr "斜槓零"
 
-#~ msgid "Search"
-#~ msgstr "搜尋"
+#~ msgid "Main Window"
+#~ msgstr "主視窗"
+
+#~| msgid "Font Viewer"
+#~ msgid "Font Preview"
+#~ msgstr "字型預覽"
+
+#~| msgid "Search"
+#~ msgid "Font Search"
+#~ msgstr "字型搜尋"
 
 #~ msgid "This font could not be installed."
 #~ msgstr "此字型無法安裝。"
@@ -1053,9 +1063,6 @@ msgstr "斜槓零"
 
 #~ msgid "preferences-desktop-font"
 #~ msgstr "preferences-desktop-font"
-
-#~ msgid "Font Viewer"
-#~ msgstr "字型檢視程式"
 
 #~ msgid "[FILE...]"
 #~ msgstr "[檔案...]"
