@@ -7,8 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-font-viewer 3.27.x\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
-"issues/\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues/\n"
 "POT-Creation-Date: 2026-03-22 12:23+0000\n"
 "PO-Revision-Date: 2026-09-09 10:02+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
@@ -20,8 +19,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: data/org.gnome.font-viewer.desktop.in.in:2
-#: data/org.gnome.font-viewer.metainfo.xml.in:6 src/font-view-application.c:124
-#: src/font-view-application.c:150
+#: data/org.gnome.font-viewer.metainfo.xml.in:6
+#: src/font-view-application.c:124 src/font-view-application.c:150
 msgid "Fonts"
 msgstr "Skrifter"
 
@@ -30,7 +29,8 @@ msgstr "Skrifter"
 msgid "View fonts on your system"
 msgstr "Vis skrifter på systemet"
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#. Translators: Search terms to find this application. Do NOT translate or
+#. localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.font-viewer.desktop.in.in:5
 msgid "fonts;fontface;"
 msgstr "skrifter;skrifttyper;"
@@ -48,12 +48,12 @@ msgstr ""
 #: data/org.gnome.font-viewer.metainfo.xml.in:15
 msgid ""
 "Fonts also supports installing new font files downloaded in the .ttf and "
-"other formats. Fonts may be installed only for your use or made available to "
-"all users on the computer."
+"other formats. Fonts may be installed only for your use or made available to"
+" all users on the computer."
 msgstr ""
 "Skrifter støtter også å installere nye skriftfiler som er lastet ned i ttf- "
-"og andre formater. Skriftene kan installeres for personlig bruk eller gjøres "
-"tilgjengelig for alle brukere på datamaskinen."
+"og andre formater. Skriftene kan installeres for personlig bruk eller gjøres"
+" tilgjengelig for alle brukere på datamaskinen."
 
 #. developer_name tag deprecated with Appstream 1.0
 #: data/org.gnome.font-viewer.metainfo.xml.in:22
@@ -122,7 +122,6 @@ msgstr "_Installer"
 #. * a 'font variation axis'. The %s gets replaced with the name
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
-#.
 #: src/font-view-window.c:197
 #, c-format
 msgid "%s %g — %g, default %g"
@@ -138,7 +137,7 @@ msgstr "Instans %d"
 #: src/font-view-window.c:290
 msgctxt "OpenType layout"
 msgid ", "
-msgstr ", "
+msgstr ","
 
 #: src/font-view-window.c:319
 msgid "Name"
@@ -261,17 +260,17 @@ msgstr "Overliggende glyfformer"
 #: src/open-type-layout.h:15
 msgctxt "OpenType layout"
 msgid "Above-base Mark Positioning"
-msgstr ""
+msgstr "Over-base-markering av posisjonering"
 
 #: src/open-type-layout.h:16
 msgctxt "OpenType layout"
 msgid "Above-base Substitutions"
-msgstr ""
+msgstr "Overliggende substitusjoner"
 
 #: src/open-type-layout.h:17
 msgctxt "OpenType layout"
 msgid "Alternative Fractions"
-msgstr ""
+msgstr "Alternative inndelinger"
 
 #: src/open-type-layout.h:18
 msgctxt "OpenType layout"
@@ -286,12 +285,12 @@ msgstr "Underliggende glyfformer"
 #: src/open-type-layout.h:20
 msgctxt "OpenType layout"
 msgid "Below-base Mark Positioning"
-msgstr ""
+msgstr "Under-base-markering-posisjonering"
 
 #: src/open-type-layout.h:21
 msgctxt "OpenType layout"
 msgid "Below-base Substitutions"
-msgstr ""
+msgstr "Underliggende substitusjoner"
 
 #: src/open-type-layout.h:22
 msgctxt "OpenType layout"
@@ -301,22 +300,22 @@ msgstr "Kontekstuelle alternativer"
 #: src/open-type-layout.h:23
 msgctxt "OpenType layout"
 msgid "Case-Sensitive Forms"
-msgstr ""
+msgstr "Case-Sensitive-skjemaer"
 
 #: src/open-type-layout.h:24
 msgctxt "OpenType layout"
 msgid "Glyph Composition / Decomposition"
-msgstr ""
+msgstr "Glyf-sammensetning / dekomponering"
 
 #: src/open-type-layout.h:25
 msgctxt "OpenType layout"
 msgid "Conjunct Form After Ro"
-msgstr ""
+msgstr "Conjunct Form After Ro"
 
 #: src/open-type-layout.h:26
 msgctxt "OpenType layout"
 msgid "Conjunct Forms"
-msgstr ""
+msgstr "Konjunktformer"
 
 #: src/open-type-layout.h:27
 msgctxt "OpenType layout"
@@ -324,15 +323,14 @@ msgid "Contextual Ligatures"
 msgstr "Kontekstuelle ligaturer"
 
 #: src/open-type-layout.h:28
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Centered CJK Punctuation"
-msgstr "Sentrert CJK"
+msgstr "Sentret CJK-tegnsetting"
 
 #: src/open-type-layout.h:29
 msgctxt "OpenType layout"
 msgid "Capital Spacing"
-msgstr ""
+msgstr "Stor bokstav-avstand"
 
 #: src/open-type-layout.h:30
 msgctxt "OpenType layout"
@@ -347,12 +345,12 @@ msgstr "Kursiv posisjonering"
 #: src/open-type-layout.h:32
 msgctxt "OpenType layout"
 msgid "Petite Capitals From Capitals"
-msgstr ""
+msgstr "Petite Capitals Fra Capitals"
 
 #: src/open-type-layout.h:33
 msgctxt "OpenType layout"
 msgid "Small Capitals From Capitals"
-msgstr ""
+msgstr "Små versaler fra versaler"
 
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
@@ -472,12 +470,12 @@ msgstr "Prikkløse former"
 #: src/open-type-layout.h:57
 msgctxt "OpenType layout"
 msgid "Expert Forms"
-msgstr ""
+msgstr "Ekspertformer"
 
 #: src/open-type-layout.h:58
 msgctxt "OpenType layout"
 msgid "Final Glyph on Line Alternates"
-msgstr ""
+msgstr "Siste glyf på linje alternativer"
 
 #: src/open-type-layout.h:59
 msgctxt "OpenType layout"
@@ -497,7 +495,7 @@ msgstr "Sluttformer"
 #: src/open-type-layout.h:62
 msgctxt "OpenType layout"
 msgid "Flattened accent forms"
-msgstr ""
+msgstr "Flate aksentformer"
 
 #: src/open-type-layout.h:63
 msgctxt "OpenType layout"
@@ -522,7 +520,7 @@ msgstr "Halantformer"
 #: src/open-type-layout.h:67
 msgctxt "OpenType layout"
 msgid "Alternate Half Widths"
-msgstr ""
+msgstr "Alternativ halvbredde"
 
 #: src/open-type-layout.h:68
 msgctxt "OpenType layout"
@@ -572,7 +570,7 @@ msgstr "Kursiv"
 #: src/open-type-layout.h:77
 msgctxt "OpenType layout"
 msgid "Justification Alternates"
-msgstr ""
+msgstr "Begrunnelse alternativer"
 
 #: src/open-type-layout.h:78
 msgctxt "OpenType layout"
@@ -612,12 +610,12 @@ msgstr "Standardligaturer"
 #: src/open-type-layout.h:85
 msgctxt "OpenType layout"
 msgid "Leading Jamo Forms"
-msgstr ""
+msgstr "Ledende Jamo-former"
 
 #: src/open-type-layout.h:86
 msgctxt "OpenType layout"
 msgid "Lining Figures"
-msgstr ""
+msgstr "Lining Figures"
 
 #: src/open-type-layout.h:87
 msgctxt "OpenType layout"
@@ -632,14 +630,15 @@ msgstr "Venstre-til-høyre alternativer"
 #: src/open-type-layout.h:89
 msgctxt "OpenType layout"
 msgid "Left-to-right mirrored forms"
-msgstr ""
+msgstr "Venstre-til-høyre speilede former"
 
 #: src/open-type-layout.h:90
 msgctxt "OpenType layout"
 msgid "Mark Positioning"
-msgstr ""
+msgstr "Markering av posisjon"
 
 #: src/open-type-layout.h:91
+#, fuzzy
 msgctxt "OpenType layout"
 msgid "Medial Forms #2"
 msgstr ""
@@ -647,7 +646,7 @@ msgstr ""
 #: src/open-type-layout.h:92
 msgctxt "OpenType layout"
 msgid "Medial Forms"
-msgstr ""
+msgstr "Medial Forms"
 
 #: src/open-type-layout.h:93
 msgctxt "OpenType layout"
@@ -657,17 +656,17 @@ msgstr "Matematisk gresk"
 #: src/open-type-layout.h:94
 msgctxt "OpenType layout"
 msgid "Mark to Mark Positioning"
-msgstr ""
+msgstr "Markering av posisjonering"
 
 #: src/open-type-layout.h:95
 msgctxt "OpenType layout"
 msgid "Mark Positioning via Substitution"
-msgstr ""
+msgstr "Markposisjonering via substitusjon"
 
 #: src/open-type-layout.h:96
 msgctxt "OpenType layout"
 msgid "Alternate Annotation Forms"
-msgstr ""
+msgstr "Alternative annoteringsformer"
 
 #: src/open-type-layout.h:97
 msgctxt "OpenType layout"
@@ -687,7 +686,7 @@ msgstr "Numeratorer"
 #: src/open-type-layout.h:100
 msgctxt "OpenType layout"
 msgid "Oldstyle Figures"
-msgstr ""
+msgstr "Gamle tall-stil"
 
 #: src/open-type-layout.h:101
 msgctxt "OpenType layout"
@@ -707,17 +706,17 @@ msgstr "Ornamenter"
 #: src/open-type-layout.h:104
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Widths"
-msgstr ""
+msgstr "Proposjonal alternativ bredde"
 
 #: src/open-type-layout.h:105
 msgctxt "OpenType layout"
 msgid "Petite Capitals"
-msgstr ""
+msgstr "Petite Capitals"
 
 #: src/open-type-layout.h:106
 msgctxt "OpenType layout"
 msgid "Proportional Kana"
-msgstr ""
+msgstr "Proporsjonell Kana"
 
 #: src/open-type-layout.h:107
 msgctxt "OpenType layout"
@@ -727,22 +726,22 @@ msgstr "Proporsjonale figurer"
 #: src/open-type-layout.h:108
 msgctxt "OpenType layout"
 msgid "Pre-Base Forms"
-msgstr ""
+msgstr "Pre-Base-former"
 
 #: src/open-type-layout.h:109
 msgctxt "OpenType layout"
 msgid "Pre-base Substitutions"
-msgstr ""
+msgstr "Pre-base-substitusjoner"
 
 #: src/open-type-layout.h:110
 msgctxt "OpenType layout"
 msgid "Post-base Forms"
-msgstr ""
+msgstr "Post-base-skjemaer"
 
 #: src/open-type-layout.h:111
 msgctxt "OpenType layout"
 msgid "Post-base Substitutions"
-msgstr ""
+msgstr "Post-base-substitusjoner"
 
 #: src/open-type-layout.h:112
 msgctxt "OpenType layout"
@@ -762,7 +761,7 @@ msgstr "Tilfeldiggjør"
 #: src/open-type-layout.h:115
 msgctxt "OpenType layout"
 msgid "Required Contextual Alternates"
-msgstr ""
+msgstr "Nødvendige kontekstuelle alternativer"
 
 #: src/open-type-layout.h:116
 msgctxt "OpenType layout"
@@ -772,12 +771,12 @@ msgstr "Rakar-former"
 #: src/open-type-layout.h:117
 msgctxt "OpenType layout"
 msgid "Required Ligatures"
-msgstr ""
+msgstr "Nødvendige ligaturer"
 
 #: src/open-type-layout.h:118
 msgctxt "OpenType layout"
 msgid "Reph Forms"
-msgstr ""
+msgstr "Reph former"
 
 #: src/open-type-layout.h:119
 msgctxt "OpenType layout"
@@ -792,17 +791,17 @@ msgstr "Høyre-til-venstre alternativer"
 #: src/open-type-layout.h:121
 msgctxt "OpenType layout"
 msgid "Right-to-left mirrored forms"
-msgstr ""
+msgstr "Høyre-til-venstre speilede former"
 
 #: src/open-type-layout.h:122
 msgctxt "OpenType layout"
 msgid "Ruby Notation Forms"
-msgstr ""
+msgstr "Ruby-notasjon-skjemaer"
 
 #: src/open-type-layout.h:123
 msgctxt "OpenType layout"
 msgid "Required Variation Alternates"
-msgstr ""
+msgstr "Nødvendig variasjon alternativer"
 
 #: src/open-type-layout.h:124
 msgctxt "OpenType layout"
@@ -812,7 +811,7 @@ msgstr "Stilistiske alternativer"
 #: src/open-type-layout.h:125
 msgctxt "OpenType layout"
 msgid "Scientific Inferiors"
-msgstr ""
+msgstr "Vitenskapelige underlegger"
 
 #: src/open-type-layout.h:126
 msgctxt "OpenType layout"
@@ -822,7 +821,7 @@ msgstr "Optisk størrelse"
 #: src/open-type-layout.h:127
 msgctxt "OpenType layout"
 msgid "Small Capitals"
-msgstr ""
+msgstr "Små bokstaver i start av ord"
 
 #: src/open-type-layout.h:128
 msgctxt "OpenType layout"
@@ -932,12 +931,12 @@ msgstr "Stilistisk sett 20"
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
 msgid "Math script style alternates"
-msgstr ""
+msgstr "Matematisk skriptstil-alternativer"
 
 #: src/open-type-layout.h:150
 msgctxt "OpenType layout"
 msgid "Stretching Glyph Decomposition"
-msgstr ""
+msgstr "Stretching Glyph Decomposition"
 
 #: src/open-type-layout.h:151
 msgctxt "OpenType layout"
@@ -957,22 +956,22 @@ msgstr "Sløyfe"
 #: src/open-type-layout.h:154
 msgctxt "OpenType layout"
 msgid "Titling"
-msgstr ""
+msgstr "Tittel"
 
 #: src/open-type-layout.h:155
 msgctxt "OpenType layout"
 msgid "Trailing Jamo Forms"
-msgstr ""
+msgstr "Trailing Jamo Forms"
 
 #: src/open-type-layout.h:156
 msgctxt "OpenType layout"
 msgid "Traditional Name Forms"
-msgstr ""
+msgstr "Tradisjonelle navneformer"
 
 #: src/open-type-layout.h:157
 msgctxt "OpenType layout"
 msgid "Tabular Figures"
-msgstr ""
+msgstr "Tabulære tall"
 
 #: src/open-type-layout.h:158
 msgctxt "OpenType layout"
@@ -982,22 +981,22 @@ msgstr "Tradisjonelle former"
 #: src/open-type-layout.h:159
 msgctxt "OpenType layout"
 msgid "Third Widths"
-msgstr ""
+msgstr "Third Widths"
 
 #: src/open-type-layout.h:160
 msgctxt "OpenType layout"
 msgid "Unicase"
-msgstr ""
+msgstr "Unicase"
 
 #: src/open-type-layout.h:161
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Metrics"
-msgstr ""
+msgstr "Alternative vertikale målinger"
 
 #: src/open-type-layout.h:162
 msgctxt "OpenType layout"
 msgid "Vattu Variants"
-msgstr ""
+msgstr "Vattu-varianter"
 
 #: src/open-type-layout.h:163
 msgctxt "OpenType layout"
@@ -1007,12 +1006,12 @@ msgstr "Vertikal skriving"
 #: src/open-type-layout.h:164
 msgctxt "OpenType layout"
 msgid "Alternate Vertical Half Metrics"
-msgstr ""
+msgstr "Alternativ vertikal halvmetrikk"
 
 #: src/open-type-layout.h:165
 msgctxt "OpenType layout"
 msgid "Vowel Jamo Forms"
-msgstr ""
+msgstr "Vokal Jamo-former"
 
 #: src/open-type-layout.h:166
 msgctxt "OpenType layout"
@@ -1027,7 +1026,7 @@ msgstr "Vertikal kerning"
 #: src/open-type-layout.h:168
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Vertical Metrics"
-msgstr ""
+msgstr "Proposjonal alternativ vertikal metrikk"
 
 #: src/open-type-layout.h:169
 msgctxt "OpenType layout"
@@ -1042,4 +1041,4 @@ msgstr "Vertikale alternativer for rotasjon"
 #: src/open-type-layout.h:171
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
-msgstr ""
+msgstr "Slashed Zero"
