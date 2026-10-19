@@ -9,9 +9,9 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/"
 "issues/\n"
 "POT-Creation-Date: 2026-03-22 12:23+0000\n"
-"PO-Revision-Date: 2026-09-01 12:30+1200\n"
+"PO-Revision-Date: 2026-10-19 12:26+1300\n"
 "Last-Translator: Arlewatyerre Tuhoro-Bell <aidan@ursa.nz>\n"
-"Language-Team: Māori <https://l10n.gnome.org/teams/mi/>\n"
+"Language-Team: Māori <https://gitlab.gnome.org/Teams/Translation/mi>\n"
 "Language: mi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -74,7 +74,7 @@ msgstr ""
 
 #: src/font-thumbnailer.c:181
 msgid "TEXT"
-msgstr ""
+msgstr "KUPUTUHI"
 
 #: src/font-thumbnailer.c:183
 msgid "Thumbnail size (default: 128)"
@@ -82,7 +82,7 @@ msgstr ""
 
 #: src/font-thumbnailer.c:183
 msgid "SIZE"
-msgstr ""
+msgstr "RAHI"
 
 #: src/font-thumbnailer.c:185
 msgid "FONT-FILE OUTPUT-FILE"
@@ -112,7 +112,7 @@ msgstr ""
 
 #: src/font-view-window.c:111 src/font-view-window.ui:173
 msgid "_Install"
-msgstr ""
+msgstr "_Tāuta"
 
 #. Translators, this string is used to display information about
 #. * a 'font variation axis'. The %s gets replaced with the name
@@ -166,7 +166,7 @@ msgstr "Whakaahuatanga"
 
 #: src/font-view-window.c:413
 msgid "Manufacturer"
-msgstr ""
+msgstr "Kaiwhakanao"
 
 #: src/font-view-window.c:417
 msgid "Designer"
@@ -186,11 +186,11 @@ msgstr ""
 
 #: src/font-view-window.c:449
 msgid "yes"
-msgstr ""
+msgstr "āe"
 
 #: src/font-view-window.c:449
 msgid "no"
-msgstr ""
+msgstr "kāo"
 
 #: src/font-view-window.c:453
 msgid "Layout Features"
@@ -226,7 +226,7 @@ msgstr ""
 
 #: src/font-view-window.ui:181
 msgid "I_nfo"
-msgstr ""
+msgstr "_Mōhiohio"
 
 #: src/font-view-window.ui:183
 msgid "Font Details"
@@ -937,7 +937,7 @@ msgstr ""
 #: src/open-type-layout.h:151
 msgctxt "OpenType layout"
 msgid "Subscript"
-msgstr ""
+msgstr "Hauraro"
 
 #: src/open-type-layout.h:152
 msgctxt "OpenType layout"
