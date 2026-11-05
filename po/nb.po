@@ -6,10 +6,10 @@
 # Torstein Adolf Winterseth <kvikende@fsfe.org>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-font-viewer 3.27.x\n"
+"Project-Id-Version: gnome-font-viewer 51\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues/\n"
 "POT-Creation-Date: 2026-03-22 12:23+0000\n"
-"PO-Revision-Date: 2026-09-09 10:02+0200\n"
+"PO-Revision-Date: 2026-11-05 14:29+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -19,8 +19,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: data/org.gnome.font-viewer.desktop.in.in:2
-#: data/org.gnome.font-viewer.metainfo.xml.in:6
-#: src/font-view-application.c:124 src/font-view-application.c:150
+#: data/org.gnome.font-viewer.metainfo.xml.in:6 src/font-view-application.c:124
+#: src/font-view-application.c:150
 msgid "Fonts"
 msgstr "Skrifter"
 
@@ -29,8 +29,7 @@ msgstr "Skrifter"
 msgid "View fonts on your system"
 msgstr "Vis skrifter på systemet"
 
-#. Translators: Search terms to find this application. Do NOT translate or
-#. localize the semicolons! The list MUST also end with a semicolon!
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.font-viewer.desktop.in.in:5
 msgid "fonts;fontface;"
 msgstr "skrifter;skrifttyper;"
@@ -48,12 +47,12 @@ msgstr ""
 #: data/org.gnome.font-viewer.metainfo.xml.in:15
 msgid ""
 "Fonts also supports installing new font files downloaded in the .ttf and "
-"other formats. Fonts may be installed only for your use or made available to"
-" all users on the computer."
+"other formats. Fonts may be installed only for your use or made available to "
+"all users on the computer."
 msgstr ""
 "Skrifter støtter også å installere nye skriftfiler som er lastet ned i ttf- "
-"og andre formater. Skriftene kan installeres for personlig bruk eller gjøres"
-" tilgjengelig for alle brukere på datamaskinen."
+"og andre formater. Skriftene kan installeres for personlig bruk eller gjøres "
+"tilgjengelig for alle brukere på datamaskinen."
 
 #. developer_name tag deprecated with Appstream 1.0
 #: data/org.gnome.font-viewer.metainfo.xml.in:22
@@ -122,6 +121,7 @@ msgstr "_Installer"
 #. * a 'font variation axis'. The %s gets replaced with the name
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
+#.
 #: src/font-view-window.c:197
 #, c-format
 msgid "%s %g — %g, default %g"
@@ -638,10 +638,9 @@ msgid "Mark Positioning"
 msgstr "Markering av posisjon"
 
 #: src/open-type-layout.h:91
-#, fuzzy
 msgctxt "OpenType layout"
 msgid "Medial Forms #2"
-msgstr ""
+msgstr "Medial Forms #2"
 
 #: src/open-type-layout.h:92
 msgctxt "OpenType layout"
